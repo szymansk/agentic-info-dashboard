@@ -1,9 +1,14 @@
-# ai-news-dashboard
+# agentic-info-dashboard
 
-Lokales Multi-Dashboard-Setup für AI/Agentic-AI-News. Ein Python-Webserver
-serviert mehrere Dashboards aus `./dashboards/`, generiert eine Landing-Page
-mit Übersicht. Tägliche Updates laufen automatisch (YouTube via systemd-Timer,
-Tagesbriefing via Claude Code Background-Session mit `/loop`).
+Multi-Dashboard für AI/Agentic-AI-News.
+
+- **Live**: https://szymansk.github.io/agentic-info-dashboard/
+- **Lokal**: `python3 serve.py` → http://localhost:8000/
+
+Ein Python-Webserver serviert lokal mehrere Dashboards aus `./dashboards/`.
+Tägliche Updates laufen automatisch (YouTube via systemd-Timer, Tagesbriefing
+via Claude Code Background-Session mit `/loop`). `bin/deploy.sh` baut den
+statischen Pages-Output (`docs/`) und pusht nach jedem Update.
 
 ## Quickstart auf einem frischen System
 
@@ -87,9 +92,22 @@ sudo systemctl start ai-news-dashboard-youtube-fetch.service
 # Daily-Loop starten / neu aufsetzen
 ./bin/start-daily-loop.sh
 
+# Pages-Output bauen + pushen (manuell)
+./bin/deploy.sh "custom commit message"
+
 # Health-Check
 ./bin/check.sh
 ```
+
+## GitHub Pages
+
+- URL: https://szymansk.github.io/agentic-info-dashboard/
+- Source: branch `main`, folder `/docs`
+- Build via `scripts/build-pages.py`: kopiert `dashboards/` → `docs/` und
+  schreibt absolute Pfade `/foo` zu `/agentic-info-dashboard/foo` um.
+- `docs/` ist eingecheckt; `bin/deploy.sh` wird automatisch von der
+  YouTube-Fetch-Unit (`ExecStartPost`) und am Ende von `DAILY_UPDATE.md`
+  aufgerufen.
 
 ## Server-Verwaltung
 

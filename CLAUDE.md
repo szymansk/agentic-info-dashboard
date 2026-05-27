@@ -1,29 +1,45 @@
 # Projekt-Kontext für Claude
 
-Du bist in `ai-news-dashboard` — einem lokalen Multi-Dashboard-Server für
-AI/Agentic-AI-Themen. Die Inhalte werden teils manuell, teils automatisch
-über eine Background-Claude-Session aktualisiert.
+Du bist in `agentic-info-dashboard` — einem Multi-Dashboard für AI/Agentic-AI-
+Themen. Lokal via `serve.py`, öffentlich via GitHub Pages
+(**https://szymansk.github.io/agentic-info-dashboard/**). Inhalte werden teils
+manuell, teils automatisch über eine Background-Claude-Session aktualisiert.
 
 ## Architektur in 30 Sekunden
 
 ```
 .
-├── serve.py                    # stdlib-Webserver, Threading, kein Reverse-DNS
+├── serve.py                    # stdlib-Webserver für lokale Entwicklung
 ├── install.sh                  # Setup auf frischem System (systemd + firewall)
 ├── DAILY_UPDATE.md             # Orchestrator-Prompt für die Background-Session
 ├── bin/
 │   ├── start-daily-loop.sh     # idempotenter Launcher (von systemd aufgerufen)
 │   ├── loop.sh                 # Wrapper: status/log/attach/stop/restart
+│   ├── deploy.sh               # build-pages → git commit → push
 │   └── check.sh                # Health-Check
 ├── scripts/
-│   └── fetch-youtube.py        # täglicher RSS-Crawl der YT-Channels
-└── dashboards/
-    ├── _shared/people.js       # einzige Quelle für Personen-Daten + Tooltips
-    ├── ai-news/                # Tagesbriefing (täglich neu, mit Archive)
-    ├── youtube/                # Hot Videos (täglich frisch via Cron)
-    ├── whoiswho/               # Top 20 Köpfe (manuelle Pflege)
-    └── sources/                # Quellen-Sammlung (manuelle Pflege)
+│   ├── fetch-youtube.py        # täglicher RSS-Crawl der YT-Channels
+│   └── build-pages.py          # baut docs/ für Pages (Pfad-Rewriting)
+├── dashboards/                 # Source — lokal über serve.py
+│   ├── _shared/people.js       # einzige Quelle für Personen-Daten + Tooltips
+│   ├── ai-news/                # Tagesbriefing (täglich neu, mit Archive)
+│   ├── youtube/                # Hot Videos (täglich frisch via Cron)
+│   ├── whoiswho/               # Top 20 Köpfe (manuelle Pflege)
+│   └── sources/                # Quellen-Sammlung (manuelle Pflege)
+└── docs/                       # Build-Output für GitHub-Pages (eingecheckt)
 ```
+
+## Veröffentlichung (GitHub Pages)
+
+`scripts/build-pages.py` kopiert `dashboards/` → `docs/` und schreibt alle
+absoluten Pfade `/foo` zu `/agentic-info-dashboard/foo` um (Sub-Path der
+Pages-URL). `docs/` ist eingecheckt, Pages-Source = `main` branch, `/docs`
+folder. `bin/deploy.sh` automatisiert den Zyklus build → commit → push.
+
+Aufrufe von `deploy.sh`:
+- nach `fetch-youtube.py` (via systemd ExecStartPost)
+- am Ende von `DAILY_UPDATE.md` Step 7 (Background-Session)
+- manuell wenn du sofort live haben willst
 
 ## Update-Verantwortlichkeiten
 
@@ -99,7 +115,9 @@ attached Session.
 - Mehrere `systemd`-Units in einem `sudo`-Call schreiben — User wird sonst
   zweimal nach Passwort gefragt
 - Snapshot-Archive löschen — das ist die historische Timeline
-- Auto-Commit (Repo hat keinen Git-Ursprung, soll lokal bleiben)
+- `docs/` von Hand editieren — das ist Build-Output, immer via `build-pages.py`
+- absolute Pfade `/foo` in Edits durch transformierte Pfade ersetzen —
+  Source-HTMLs nutzen IMMER `/foo`, build-pages.py macht das Rewriting
 
 ## Wo finde ich was
 

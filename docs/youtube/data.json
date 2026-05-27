@@ -1,0 +1,623 @@
+{
+  "last_updated": "2026-05-26T22:37:43+00:00",
+  "channels": [
+    {
+      "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
+      "name": "Andrej Karpathy",
+      "category": "researcher",
+      "tier": 1,
+      "color": "#7aa2f7"
+    },
+    {
+      "id": "UCYO_jab_esuFRV4b17AJtAw",
+      "name": "3Blue1Brown",
+      "category": "researcher",
+      "tier": 2,
+      "color": "#7aa2f7"
+    },
+    {
+      "id": "UCbfYPyITQ-7l4upoX8nvctg",
+      "name": "Two Minute Papers",
+      "category": "researcher",
+      "tier": 2,
+      "color": "#7aa2f7"
+    },
+    {
+      "id": "UCZHmQk67mSJgfCCTn7xBfew",
+      "name": "Yannic Kilcher",
+      "category": "researcher",
+      "tier": 2,
+      "color": "#7aa2f7"
+    },
+    {
+      "id": "UC9-y-6csu5WGm29I7JiwpnA",
+      "name": "Computerphile",
+      "category": "researcher",
+      "tier": 3,
+      "color": "#7aa2f7"
+    },
+    {
+      "id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "name": "AI Explained",
+      "category": "news",
+      "tier": 1,
+      "color": "#e0a857"
+    },
+    {
+      "id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "name": "Matthew Berman",
+      "category": "news",
+      "tier": 2,
+      "color": "#e0a857"
+    },
+    {
+      "id": "UCSHZKyawb77ixDdsGog4iWA",
+      "name": "Lex Fridman",
+      "category": "podcast",
+      "tier": 1,
+      "color": "#b04bd1"
+    },
+    {
+      "id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "tier": 2,
+      "color": "#b04bd1"
+    },
+    {
+      "id": "UCrDwWp7EBBv4NwvScIpBDOA",
+      "name": "Anthropic",
+      "category": "lab",
+      "tier": 1,
+      "color": "#c39a4a"
+    },
+    {
+      "id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "name": "OpenAI",
+      "category": "lab",
+      "tier": 1,
+      "color": "#6ec38b"
+    },
+    {
+      "id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "name": "Google DeepMind",
+      "category": "lab",
+      "tier": 1,
+      "color": "#6ec38b"
+    },
+    {
+      "id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "name": "Hugging Face",
+      "category": "lab",
+      "tier": 3,
+      "color": "#c39a4a"
+    },
+    {
+      "id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "name": "a16z",
+      "category": "industry",
+      "tier": 3,
+      "color": "#e15a5a"
+    },
+    {
+      "id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "name": "DeepLearningAI",
+      "category": "industry",
+      "tier": 3,
+      "color": "#e15a5a"
+    },
+    {
+      "id": "UCsBjURrPoezykLs9EqgamOA",
+      "name": "Fireship",
+      "category": "practitioner",
+      "tier": 3,
+      "color": "#6ec38b"
+    }
+  ],
+  "featured": [
+    {
+      "video_id": "pm5PBbo6l2k",
+      "title": "Gemini for Science is here. 🧬",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_name": "Google DeepMind",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-05-26T16:17:10+00:00",
+      "url": "https://www.youtube.com/shorts/pm5PBbo6l2k",
+      "thumbnail": "https://img.youtube.com/vi/pm5PBbo6l2k/mqdefault.jpg",
+      "description": "",
+      "why": ""
+    },
+    {
+      "video_id": "KHasJMg4zV4",
+      "title": "Sid vs Career | With ChatGPT",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-05-26T06:18:36+00:00",
+      "url": "https://www.youtube.com/watch?v=KHasJMg4zV4",
+      "thumbnail": "https://img.youtube.com/vi/KHasJMg4zV4/mqdefault.jpg",
+      "description": "Expertise at your fingertips with ChatGPT\n\nCredits\nDirector: Abhinav Pratiman\nDOP: Tassaduq Hussain\nProduction House: Early Man Film\nCreative agency: Hue & Why",
+      "why": ""
+    },
+    {
+      "video_id": "o_av1b9rs2g",
+      "title": "Two Rival Bets on AGI: Google I/O Highlights",
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "channel_name": "AI Explained",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-05-20T16:50:34+00:00",
+      "url": "https://www.youtube.com/watch?v=o_av1b9rs2g",
+      "thumbnail": "https://img.youtube.com/vi/o_av1b9rs2g/mqdefault.jpg",
+      "description": "The biggest Google AI push of the year, but what is the bigger story? Why is Google pursuing a different fork in the road than OpenAI or Anthropic? \n\nhttps://assemblyai.com/aiexplained\n\nWhat does Gemini 3.5 Flash mean for the near-term futu",
+      "why": ""
+    }
+  ],
+  "recent": [
+    {
+      "video_id": "qPuzWFvRajk",
+      "title": "10 weird OSS projects you need right now...",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-05-26T17:53:11+00:00",
+      "url": "https://www.youtube.com/watch?v=qPuzWFvRajk",
+      "thumbnail": "https://img.youtube.com/vi/qPuzWFvRajk/mqdefault.jpg",
+      "description": "Get $1,000 in Hyperagent inference credits: https://www.hyperagent.com/fireship \n\nApply to the Founding 500 to get $20k for your project: https://www.hyperagent.com\n\nIn today's video, we'll look at 10 new open source projects that are savin"
+    },
+    {
+      "video_id": "kIvvzCR5NjA",
+      "title": "Google DeepMind CEO Likes Hard Questions",
+      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+      "channel_name": "Two Minute Papers",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-05-26T17:35:28+00:00",
+      "url": "https://www.youtube.com/shorts/kIvvzCR5NjA",
+      "thumbnail": "https://img.youtube.com/vi/kIvvzCR5NjA/mqdefault.jpg",
+      "description": "Full video: https://youtu.be/huAwz_BR8WM\n#shorts"
+    },
+    {
+      "video_id": "v8bdDQ6SM-Q",
+      "title": "How good is AI memory?",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-05-26T17:23:38+00:00",
+      "url": "https://www.youtube.com/shorts/v8bdDQ6SM-Q",
+      "thumbnail": "https://img.youtube.com/vi/v8bdDQ6SM-Q/mqdefault.jpg",
+      "description": "Humans can keep a few ideas in working memory at once. Modern AI models can process the equivalent of multiple Harry Potter books in a single conversation.\n\nUnderstanding context windows changes how you prompt, write, research, and work wit"
+    },
+    {
+      "video_id": "GBISeUYMzoU",
+      "title": "Cursor just beat EVERYONE.",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-05-26T16:40:27+00:00",
+      "url": "https://www.youtube.com/watch?v=GBISeUYMzoU",
+      "thumbnail": "https://img.youtube.com/vi/GBISeUYMzoU/mqdefault.jpg",
+      "description": "If scale is your next challenge check out DigitalOcean: do.co/forwardfutureai \n\nDownload The 25 OpenClaw Use Cases eBook 👇🏼\nhttps://bit.ly/4aBQwo1\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: http"
+    },
+    {
+      "video_id": "pm5PBbo6l2k",
+      "title": "Gemini for Science is here. 🧬",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_name": "Google DeepMind",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-05-26T16:17:10+00:00",
+      "url": "https://www.youtube.com/shorts/pm5PBbo6l2k",
+      "thumbnail": "https://img.youtube.com/vi/pm5PBbo6l2k/mqdefault.jpg",
+      "description": ""
+    },
+    {
+      "video_id": "-14t6_yu-7w",
+      "title": "The \"Trick\" that Compilers Use for Long Division - Computerphile",
+      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
+      "channel_name": "Computerphile",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-05-26T13:05:22+00:00",
+      "url": "https://www.youtube.com/watch?v=-14t6_yu-7w",
+      "thumbnail": "https://img.youtube.com/vi/-14t6_yu-7w/mqdefault.jpg",
+      "description": "Long division can be arduous - division in general is something that even computer processors try to avoid with a simple technique. Matt Godbolt demos it and then shows how a simple C program can cause a compiler to employ this trick. \n\nCom"
+    },
+    {
+      "video_id": "KHasJMg4zV4",
+      "title": "Sid vs Career | With ChatGPT",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-05-26T06:18:36+00:00",
+      "url": "https://www.youtube.com/watch?v=KHasJMg4zV4",
+      "thumbnail": "https://img.youtube.com/vi/KHasJMg4zV4/mqdefault.jpg",
+      "description": "Expertise at your fingertips with ChatGPT\n\nCredits\nDirector: Abhinav Pratiman\nDOP: Tassaduq Hussain\nProduction House: Early Man Film\nCreative agency: Hue & Why"
+    },
+    {
+      "video_id": "huAwz_BR8WM",
+      "title": "DeepMind’s Insane AI Breakthroughs With CEO Demis Hassabis",
+      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+      "channel_name": "Two Minute Papers",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-05-25T17:49:30+00:00",
+      "url": "https://www.youtube.com/watch?v=huAwz_BR8WM",
+      "thumbnail": "https://img.youtube.com/vi/huAwz_BR8WM/mqdefault.jpg",
+      "description": "Thank you to Google DeepMind for the invite. 🙏\n\n❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\nOur Patreon if you wish to support us: https://www.patreon.com/TwoMinutePapers\n\n🙏 We would like to thank our"
+    },
+    {
+      "video_id": "fAfuQN0WwFE",
+      "title": "AI Dev 26 x SF | Ara Khan: Evals Are Broken Use Them Anyway",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-05-22T23:14:59+00:00",
+      "url": "https://www.youtube.com/watch?v=fAfuQN0WwFE",
+      "thumbnail": "https://img.youtube.com/vi/fAfuQN0WwFE/mqdefault.jpg",
+      "description": "This talk by Cline's Ara Khan explains why they went from \"evals are useless\" to using them as a core part of my agent improvement loop. I share practical heuristics for interpreting, running, and creating evals, and why doing them anyway i"
+    },
+    {
+      "video_id": "HaaKUFAOi84",
+      "title": "Workspace agents in ChatGPT: Admin and builder controls",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-05-22T22:48:37+00:00",
+      "url": "https://www.youtube.com/watch?v=HaaKUFAOi84",
+      "thumbnail": "https://img.youtube.com/vi/HaaKUFAOi84/mqdefault.jpg",
+      "description": "Workspace agents in ChatGPT help teams turn repeatable workflows into shared agents that can pull in context, use tools, and move work forward on their own.\n\nIn this demo, you’ll see how admins and builders can set safeguards for workspace "
+    },
+    {
+      "video_id": "ECkHTfvf2e8",
+      "title": "Create and edit presentations faster in PowerPoint",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-05-22T19:41:41+00:00",
+      "url": "https://www.youtube.com/watch?v=ECkHTfvf2e8",
+      "thumbnail": "https://img.youtube.com/vi/ECkHTfvf2e8/mqdefault.jpg",
+      "description": "ChatGPT now works directly inside PowerPoint. \n\nSee how ChatGPT can help you turn source material into a polished presentation, right inside PowerPoint. Bring in files and context, draft a deck, refine the structure, and edit slide content "
+    },
+    {
+      "video_id": "S_xwTgs8zmo",
+      "title": "Semantic Search Starts With Embeddings",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-05-22T19:12:39+00:00",
+      "url": "https://www.youtube.com/shorts/S_xwTgs8zmo",
+      "thumbnail": "https://img.youtube.com/vi/S_xwTgs8zmo/mqdefault.jpg",
+      "description": "“Budget” and “financials” are different words, but embeddings understand they’re related.\n\nThat’s the foundation behind semantic search and one of the core building blocks of modern multimodal systems.\n\nLearn how embeddings power retrieval "
+    },
+    {
+      "video_id": "cnt83ML6-fA",
+      "title": "AI Dev 26 x SF | Andi Partovi: Why Every Agent Needs a Simulation Sandbox",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-05-22T17:21:19+00:00",
+      "url": "https://www.youtube.com/watch?v=cnt83ML6-fA",
+      "thumbnail": "https://img.youtube.com/vi/cnt83ML6-fA/mqdefault.jpg",
+      "description": "AI agents fail in unpredictable ways that traditional testing can't catch — hallucinations, wrong tool calls, policy violations, and more. Teams only discover these failures after users hit them in production. \n\nA simulation sandbox gives y"
+    },
+    {
+      "video_id": "hsy02uiKcAM",
+      "title": "AI Dev 26 x SF | João Moura: Building Recurring, Governed, and Embedded Enterprise Workflows",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-05-22T17:18:08+00:00",
+      "url": "https://www.youtube.com/watch?v=hsy02uiKcAM",
+      "thumbnail": "https://img.youtube.com/vi/hsy02uiKcAM/mqdefault.jpg",
+      "description": "Modern enterprises don't struggle to experiment with AI — they struggle to operationalize it reliably. In this talk, CrewAI's CEO outlines how leading organizations are moving beyond one-off automations to build recurring, governed, and dee"
+    },
+    {
+      "video_id": "ksfHQLmV-Fg",
+      "title": "Personal Finance in ChatGPT",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-05-22T16:56:18+00:00",
+      "url": "https://www.youtube.com/watch?v=ksfHQLmV-Fg",
+      "thumbnail": "https://img.youtube.com/vi/ksfHQLmV-Fg/mqdefault.jpg",
+      "description": "Today we’re releasing a preview of a new personal finance experience in ChatGPT to Pro users in the U.S. \n\nNow you can securely connect your financial accounts, see a dashboard of where your money is going, and ask ChatGPT questions grounde"
+    },
+    {
+      "video_id": "9OQ5vaYbGV0",
+      "title": "Google’s AI endgame is here… everything you missed at I/O 2026",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-05-22T16:38:42+00:00",
+      "url": "https://www.youtube.com/watch?v=9OQ5vaYbGV0",
+      "thumbnail": "https://img.youtube.com/vi/9OQ5vaYbGV0/mqdefault.jpg",
+      "description": "Try using Emergent's specialized agents in parallel to build any full-stack application - https://app.emergent.sh/?utm_shift=redirect&via=fireship\n\nAt Google I/O 2026, Sundar Pichai and Demis Hassabis set out the roadmap for Google's 'agent"
+    },
+    {
+      "video_id": "EF1BFaNZN9U",
+      "title": "SynthID, our imperceptible watermark for AI-generated content, is expanding to more partners.",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_name": "Google DeepMind",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-05-22T16:09:49+00:00",
+      "url": "https://www.youtube.com/shorts/EF1BFaNZN9U",
+      "thumbnail": "https://img.youtube.com/vi/EF1BFaNZN9U/mqdefault.jpg",
+      "description": ""
+    },
+    {
+      "video_id": "oRsn3pyeXuw",
+      "title": "Cisco Builds AI Defense with Codex",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-05-22T13:59:47+00:00",
+      "url": "https://www.youtube.com/watch?v=oRsn3pyeXuw",
+      "thumbnail": "https://img.youtube.com/vi/oRsn3pyeXuw/mqdefault.jpg",
+      "description": "AI Defense is Cisco's end-to-end AI security solution that protects against safety and security risks introduced by AI. Codex was used by Cisco's team to write the majority of AI Defense and nearly every new feature that Cisco is building. "
+    },
+    {
+      "video_id": "LpXhy2iiaQE",
+      "title": "DeepSeek’s New AI Is A Game Changer",
+      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+      "channel_name": "Two Minute Papers",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-05-22T00:47:58+00:00",
+      "url": "https://www.youtube.com/watch?v=LpXhy2iiaQE",
+      "thumbnail": "https://img.youtube.com/vi/LpXhy2iiaQE/mqdefault.jpg",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The paper is available here:\nhttps://github.com/ailuntx/Thinking-with-Visual-Primitives\nhttps://huggingface.co/datasets/NodeLinker/deepseek-ai-Thinking-wi"
+    },
+    {
+      "video_id": "ZHXt0-_gSj4",
+      "title": "Tie random ends: How many loops?",
+      "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
+      "channel_name": "3Blue1Brown",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-05-21T21:49:47+00:00",
+      "url": "https://www.youtube.com/shorts/ZHXt0-_gSj4",
+      "thumbnail": "https://img.youtube.com/vi/ZHXt0-_gSj4/mqdefault.jpg",
+      "description": "Recent puzzle solutions on Patreon:\nhttps://members.3blue1brown.com/posts/158885046?pr=true"
+    },
+    {
+      "video_id": "tk9lt-9x8mE",
+      "title": "Composer 2.5 and I INTERVIEWED THE CEO OF ALPHABET",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-05-21T19:49:20+00:00",
+      "url": "https://www.youtube.com/watch?v=tk9lt-9x8mE",
+      "thumbnail": "https://img.youtube.com/vi/tk9lt-9x8mE/mqdefault.jpg",
+      "description": "Download The 25 OpenClaw Use Cases eBook 👇🏼\nhttps://bit.ly/4aBQwo1\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Inst"
+    },
+    {
+      "video_id": "Td2TaMWNUtA",
+      "title": "This is absolutely CRAZY",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-05-21T19:43:02+00:00",
+      "url": "https://www.youtube.com/watch?v=Td2TaMWNUtA",
+      "thumbnail": "https://img.youtube.com/vi/Td2TaMWNUtA/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https://discord.gg/VhFuFJJs\n👉🏻 Spotify: https://open.sp"
+    },
+    {
+      "video_id": "7knwihgj0fU",
+      "title": "On the slow death of Scaling (birth of Adaption Labs) | Sara Hooker | HF ML Club India EP2",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-05-21T05:29:18+00:00",
+      "url": "https://www.youtube.com/watch?v=7knwihgj0fU",
+      "thumbnail": "https://img.youtube.com/vi/7knwihgj0fU/mqdefault.jpg",
+      "description": "This video features Dr. Sara Hooker, co-founder of Adaption Labs, discussing the transition from monolithic model scaling to an era of adaptive intelligence. Addressing the Hugging Face ML Club India, she explores why the \"bigger is better\""
+    },
+    {
+      "video_id": "R6mM0m3IZWY",
+      "title": "Gemini 3.5 Flash has landed.",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_name": "Google DeepMind",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-05-20T20:10:43+00:00",
+      "url": "https://www.youtube.com/shorts/R6mM0m3IZWY",
+      "thumbnail": "https://img.youtube.com/vi/R6mM0m3IZWY/mqdefault.jpg",
+      "description": ""
+    },
+    {
+      "video_id": "IB7IW6zX-H0",
+      "title": "Google CEO: Agents, Open Source, Race to AGI, Cybersecurity, Chips, China",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-05-20T18:55:27+00:00",
+      "url": "https://www.youtube.com/watch?v=IB7IW6zX-H0",
+      "thumbnail": "https://img.youtube.com/vi/IB7IW6zX-H0/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai/newsletter\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 TikT"
+    },
+    {
+      "video_id": "o_av1b9rs2g",
+      "title": "Two Rival Bets on AGI: Google I/O Highlights",
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "channel_name": "AI Explained",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-05-20T16:50:34+00:00",
+      "url": "https://www.youtube.com/watch?v=o_av1b9rs2g",
+      "thumbnail": "https://img.youtube.com/vi/o_av1b9rs2g/mqdefault.jpg",
+      "description": "The biggest Google AI push of the year, but what is the bigger story? Why is Google pursuing a different fork in the road than OpenAI or Anthropic? \n\nhttps://assemblyai.com/aiexplained\n\nWhat does Gemini 3.5 Flash mean for the near-term futu"
+    },
+    {
+      "video_id": "AREWYbVtX64",
+      "title": "Intelligence is collective, not artificial — Prof. Michael I. Jordan (UC Berkeley / Inria)",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-05-20T08:26:23+00:00",
+      "url": "https://www.youtube.com/watch?v=AREWYbVtX64",
+      "thumbnail": "https://img.youtube.com/vi/AREWYbVtX64/mqdefault.jpg",
+      "description": "Michael I. Jordan, described by Science magazine as the most influential computer scientist alive, has never thought of himself as an AI researcher. In this conversation he explains why that distinction matters.\n\nSPONSOR:\n---\nCyber Fund bui"
+    },
+    {
+      "video_id": "u3T_0HmNbHM",
+      "title": "Build your next story with Gemini Omni.",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_name": "Google DeepMind",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-05-20T00:21:16+00:00",
+      "url": "https://www.youtube.com/shorts/u3T_0HmNbHM",
+      "thumbnail": "https://img.youtube.com/vi/u3T_0HmNbHM/mqdefault.jpg",
+      "description": ""
+    },
+    {
+      "video_id": "aSY_vFFmkW0",
+      "title": "Generating novel scientific hypotheses with Co-Scientist",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_name": "Google DeepMind",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-05-19T17:51:44+00:00",
+      "url": "https://www.youtube.com/watch?v=aSY_vFFmkW0",
+      "thumbnail": "https://img.youtube.com/vi/aSY_vFFmkW0/mqdefault.jpg",
+      "description": "In an era of information overload, the search for transformative scientific ideas has become a significant bottleneck for progress.\n\nEvery great scientific breakthrough begins with a single, transformative idea. The spark of discovery relie"
+    },
+    {
+      "video_id": "pddFfZy4nZU",
+      "title": "Is Defense the Next Trillion-Dollar Category? | a16z American Dynamism Summit",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-05-19T14:30:37+00:00",
+      "url": "https://www.youtube.com/watch?v=pddFfZy4nZU",
+      "thumbnail": "https://img.youtube.com/vi/pddFfZy4nZU/mqdefault.jpg",
+      "description": "Erin Price-Wright speaks with Michael Duffey and Dino Mavrookas about what it will take to rebuild the American defense industrial base for a new era of competition. As production capacity becomes a central constraint, they outline how the "
+    },
+    {
+      "video_id": "IMHqGNLLoxo",
+      "title": "So Anthropic is just winning now",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-05-18T16:30:38+00:00",
+      "url": "https://www.youtube.com/shorts/IMHqGNLLoxo",
+      "thumbnail": "https://img.youtube.com/vi/IMHqGNLLoxo/mqdefault.jpg",
+      "description": "Follow me ► x.com/matthewberman\nInstagram ► https://www.instagram.com/matthewberman_ai\n\nMedia/Sponsorship Inquiries ► https://bit.ly/44TC45V"
+    },
+    {
+      "video_id": "Ie07zcmbnhM",
+      "title": "How Founders Can Build for Law Enforcement and First Responders | The a16z Show",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-05-18T14:30:32+00:00",
+      "url": "https://www.youtube.com/watch?v=Ie07zcmbnhM",
+      "thumbnail": "https://img.youtube.com/vi/Ie07zcmbnhM/mqdefault.jpg",
+      "description": "David Ulevitch speaks with Col. Jeffrey Glover and Rahul Sidhu about how AI, drones, and sensor networks are reshaping public safety and what it takes to bring new technology into law enforcement at scale. As departments face staffing short"
+    },
+    {
+      "video_id": "E3hvLz717zM",
+      "title": "Why Multi-Threaded Code Can Sometimes Misbehave (Weak Memory Concurrency) - Computerphile",
+      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
+      "channel_name": "Computerphile",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-05-18T13:30:20+00:00",
+      "url": "https://www.youtube.com/watch?v=E3hvLz717zM",
+      "thumbnail": "https://img.youtube.com/vi/E3hvLz717zM/mqdefault.jpg",
+      "description": "Learn more and apply to Jane Street’s WiSE program in New York, London or Hong Kong: https://jane-st.co/Computerphile-WiSE-2026 (episode sponsor)\nProfessor Azalea Raad leads the Veritas Lab at Imperial College London... More information abo"
+    },
+    {
+      "video_id": "3tbB2dffx0s",
+      "title": "I can’t believe this trial is real...",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-05-15T18:51:21+00:00",
+      "url": "https://www.youtube.com/watch?v=3tbB2dffx0s",
+      "thumbnail": "https://img.youtube.com/vi/3tbB2dffx0s/mqdefault.jpg",
+      "description": "Try out Kernel for free - https://www.kernel.sh/ to give your agents blazing fast, open source infra to access the internet.\n\nScam Altman and Elon Muskrat have been battling it out in court over the future of OpenAI. Let's break it down.\n\nW"
+    },
+    {
+      "video_id": "4aU4y02V8AA",
+      "title": "Brian Chesky on the three stages of building a company.",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-05-14T22:00:38+00:00",
+      "url": "https://www.youtube.com/shorts/4aU4y02V8AA",
+      "thumbnail": "https://img.youtube.com/vi/4aU4y02V8AA/mqdefault.jpg",
+      "description": ""
+    },
+    {
+      "video_id": "gwTQLZSIlsU",
+      "title": "A single PR just hijacked the NPM registry...",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-05-14T17:39:11+00:00",
+      "url": "https://www.youtube.com/watch?v=gwTQLZSIlsU",
+      "thumbnail": "https://img.youtube.com/vi/gwTQLZSIlsU/mqdefault.jpg",
+      "description": "Try Seer Agent for free - https://sentry.io/fireship. It uses all of Sentry's context on your app to investigate production issues for you.\n\nEarlier this week Tanstack was poisoned with a sophisticated supply chain attack . In this video we"
+    },
+    {
+      "video_id": "4wC8hnQawiA",
+      "title": "NVIDIA New AI Is An Efficiency Monster",
+      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+      "channel_name": "Two Minute Papers",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-05-13T16:07:20+00:00",
+      "url": "https://www.youtube.com/watch?v=4wC8hnQawiA",
+      "thumbnail": "https://img.youtube.com/vi/4wC8hnQawiA/mqdefault.jpg",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The paper is available here:\nhttps://arxiv.org/abs/2604.24954\nhttps://developer.nvidia.com/blog/nvidia-nemotron-3-nano-omni-powers-multimodal-agent-reason"
+    },
+    {
+      "video_id": "FnJaDj5zUhY",
+      "title": "The Founders Who Left Tesla to Rebuild America | a16z",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-05-13T14:39:25+00:00",
+      "url": "https://www.youtube.com/watch?v=FnJaDj5zUhY",
+      "thumbnail": "https://img.youtube.com/vi/FnJaDj5zUhY/mqdefault.jpg",
+      "description": "Erin Price-Wright speaks with Turner Caldwell and Drew Baglino about what it will take to close America's critical minerals gap and modernize the power infrastructure that underpins the AI economy. With the US more than 50 years behind Chin"
+    }
+  ],
+  "stats": {
+    "total_videos": 38,
+    "total_channels": 16,
+    "successful_channels": 16,
+    "failed_channels": [],
+    "window_days": 14
+  }
+}

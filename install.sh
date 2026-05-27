@@ -124,12 +124,13 @@ User=$RUN_USER
 Group=$RUN_GROUP
 WorkingDirectory=$PROJECT_DIR
 ExecStart=$PY $PROJECT_DIR/scripts/fetch-youtube.py
+ExecStartPost=$PROJECT_DIR/bin/deploy.sh
 
 NoNewPrivileges=true
 PrivateTmp=true
 ProtectSystem=strict
 ProtectHome=read-only
-ReadWritePaths=$PROJECT_DIR/dashboards/youtube
+ReadWritePaths=$PROJECT_DIR
 ProtectKernelTunables=true
 ProtectKernelModules=true
 ProtectControlGroups=true

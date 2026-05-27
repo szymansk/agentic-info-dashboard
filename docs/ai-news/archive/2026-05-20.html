@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tagesbriefing · Agentic AI</title>
+<style>
+  :root {
+    --bg: #0b0d12;
+    --bg-2: #11141c;
+    --panel: #161a24;
+    --panel-2: #1b2030;
+    --line: #232a3a;
+    --text: #e7ecf3;
+    --body: #d8dce6;
+    --muted: #8b94a8;
+    --dim: #5d6577;
+    --accent: #c39a4a;       /* warm gold */
+    --accent-2: #7aa2f7;
+    --good: #6ec38b;
+    --warn: #e0a857;
+    --hot:  #e15a5a;
+    --crit: #b04bd1;
+    --radius: 14px;
+    --shadow: 0 10px 30px rgba(0,0,0,.35), 0 1px 0 rgba(255,255,255,.03) inset;
+  }
+  * { box-sizing: border-box; }
+  html, body { background: var(--bg); color: var(--text); }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, Roboto, 'Helvetica Neue', sans-serif;
+    margin: 0; line-height: 1.55;
+    background:
+      radial-gradient(1100px 700px at 90% -10%, rgba(195,154,74,.08), transparent 60%),
+      radial-gradient(900px 600px at -10% 10%, rgba(122,162,247,.07), transparent 60%),
+      var(--bg);
+    min-height: 100vh;
+  }
+  a { color: var(--accent-2); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+
+  /* ── Layout ──────────────────────────────────────────────── */
+  .wrap { max-width: 1280px; margin: 0 auto; padding: 28px 28px 80px; }
+
+  /* ── Top Nav ─────────────────────────────────────────────── */
+  .topnav {
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+    margin-bottom: 22px;
+    font-size: 13px;
+  }
+  .topnav a {
+    color: var(--muted); padding: 6px 12px; border-radius: 999px;
+    border: 1px solid var(--line);
+    transition: color .12s ease, border-color .12s ease, background .12s ease;
+  }
+  .topnav a:hover { color: var(--text); border-color: var(--accent); text-decoration: none; }
+  .topnav a.active {
+    color: var(--accent); border-color: var(--accent);
+    background: rgba(195,154,74,.08);
+  }
+
+  /* ── Timeline strip ──────────────────────────────────────── */
+  .timeline-bar {
+    display: flex; align-items: center; gap: 8px;
+    padding: 12px 14px; margin-bottom: 24px;
+    background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+    border: 1px solid var(--line); border-radius: var(--radius);
+    overflow-x: auto;
+    scrollbar-width: thin; scrollbar-color: var(--line) transparent;
+  }
+  .timeline-bar::-webkit-scrollbar { height: 6px; }
+  .timeline-bar::-webkit-scrollbar-thumb { background: var(--line); border-radius: 3px; }
+  .timeline-bar .label {
+    color: var(--dim); font-size: 11px; letter-spacing: .08em;
+    text-transform: uppercase; padding-right: 8px; flex-shrink: 0;
+    border-right: 1px solid var(--line); margin-right: 4px;
+  }
+  .tl-pill {
+    display: inline-flex; flex-direction: column; align-items: center;
+    flex-shrink: 0;
+    padding: 6px 12px; border-radius: 10px;
+    border: 1px solid var(--line);
+    background: rgba(255,255,255,.02);
+    color: var(--muted);
+    font-size: 11px; text-decoration: none;
+    transition: all .12s ease;
+    min-width: 64px;
+  }
+  .tl-pill:hover {
+    color: var(--text); border-color: var(--accent);
+    background: rgba(195,154,74,.06); text-decoration: none;
+  }
+  .tl-pill.active {
+    color: var(--bg); background: var(--accent); border-color: var(--accent);
+    font-weight: 700;
+  }
+  .tl-pill .dow { font-size: 10px; opacity: .8; letter-spacing: .04em; text-transform: uppercase; }
+  .tl-pill .date { font-family: ui-monospace, monospace; font-size: 13px; margin-top: 2px; font-weight: 600; }
+  .tl-pill.future { opacity: .4; pointer-events: none; }
+
+  /* ── Header ──────────────────────────────────────────────── */
+  header.main {
+    display: flex; align-items: end; justify-content: space-between;
+    gap: 24px; padding-bottom: 22px; margin-bottom: 28px;
+    border-bottom: 1px solid var(--line);
+  }
+  header.main .title { display: flex; align-items: baseline; gap: 14px; }
+  header.main .title h1 {
+    margin: 0; font-size: 30px; letter-spacing: -.02em; font-weight: 800;
+  }
+  header.main .title .dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: var(--hot); box-shadow: 0 0 0 4px rgba(225,90,90,.18);
+    animation: pulse 2.4s infinite;
+  }
+  @keyframes pulse {
+    0%,100% { box-shadow: 0 0 0 4px rgba(225,90,90,.18); }
+    50%     { box-shadow: 0 0 0 9px rgba(225,90,90,.05); }
+  }
+  header.main .subtitle { color: var(--muted); font-size: 14px; }
+  header.main .meta { text-align: right; font-size: 13px; color: var(--muted); }
+  header.main .meta .date { color: var(--text); font-weight: 600; font-size: 15px; }
+  header.main .meta .tag {
+    display: inline-block; margin-top: 6px; padding: 3px 8px;
+    border: 1px solid var(--line); border-radius: 999px;
+    color: var(--muted); font-size: 11px; letter-spacing: .04em; text-transform: uppercase;
+  }
+
+  /* ── Section heading ─────────────────────────────────────── */
+  section { margin-top: 40px; }
+  .section-head { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+  .section-head h2 {
+    margin: 0; font-size: 18px; font-weight: 700;
+    letter-spacing: .02em; text-transform: uppercase;
+  }
+  .section-head .rule { flex: 1; height: 1px; background: var(--line); }
+  .section-head .hint { color: var(--dim); font-size: 12px; }
+
+  /* ── BRIEFING (editorial) ────────────────────────────────── */
+  .briefing-wrap {
+    max-width: 740px; margin: 0 auto;
+  }
+  .briefing-head {
+    text-align: left; margin-bottom: 28px;
+    padding-bottom: 22px; border-bottom: 1px solid var(--line);
+  }
+  .briefing-head h2.kicker {
+    margin: 0; font-size: 12px; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--accent); font-weight: 700;
+  }
+  .briefing-head h1 {
+    margin: 8px 0 10px; font-size: 32px; line-height: 1.2;
+    letter-spacing: -.02em; font-weight: 800; color: var(--text);
+  }
+  .briefing-head .byline {
+    color: var(--muted); font-size: 13px;
+    display: flex; gap: 12px; flex-wrap: wrap; align-items: center;
+  }
+  .briefing-head .byline .dot-sep { color: var(--dim); }
+  .briefing-head .lede {
+    margin-top: 22px; font-size: 18px; line-height: 1.55;
+    color: var(--text); font-weight: 400;
+  }
+  .briefing-head .lede::first-letter {
+    font-size: 56px; line-height: 1; font-weight: 800;
+    float: left; padding: 4px 10px 0 0; color: var(--accent);
+  }
+
+  .briefing-body { font-size: 16px; line-height: 1.7; color: var(--body); }
+  .briefing-body section { margin-top: 36px; }
+  .briefing-body h3 {
+    margin: 0 0 12px; font-size: 22px; line-height: 1.25;
+    letter-spacing: -.01em; font-weight: 700; color: var(--text);
+  }
+  .briefing-body h3 .num {
+    color: var(--accent); margin-right: 10px; font-family: ui-monospace, monospace;
+    font-size: 18px; font-weight: 600;
+  }
+  .briefing-body p { margin: 0 0 14px; }
+  .briefing-body p strong { color: var(--text); font-weight: 600; }
+  .briefing-body em { color: var(--text); font-style: italic; }
+  .briefing-body ol, .briefing-body ul { margin: 12px 0 16px; padding-left: 20px; }
+  .briefing-body li { margin-bottom: 8px; }
+  .briefing-body blockquote.takeaway {
+    margin: 22px 0; padding: 14px 18px;
+    border-left: 3px solid var(--accent);
+    background: rgba(195,154,74,.06);
+    border-radius: 0 8px 8px 0;
+    color: var(--text); font-size: 15px; line-height: 1.6;
+  }
+  .briefing-body blockquote.takeaway strong { color: var(--accent); letter-spacing: .04em; text-transform: uppercase; font-size: 11px; display: block; margin-bottom: 6px; }
+  .briefing-end {
+    margin-top: 36px; padding-top: 22px;
+    border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 13px; text-align: center;
+  }
+
+  /* ── Grid for cards (Breaking News + Claude Code) ────────── */
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 980px) { .grid.cols-3, .grid.cols-2 { grid-template-columns: 1fr; } }
+
+  .card {
+    background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+    border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 18px 18px 16px; box-shadow: var(--shadow);
+    position: relative; overflow: hidden;
+  }
+  .card h3 { margin: 0 0 6px; font-size: 16px; font-weight: 700; letter-spacing: -.005em; }
+  .card p  { margin: 0 0 10px; color: var(--muted); font-size: 13.5px; }
+  .card .row { display: flex; align-items: center; gap: 8px; }
+  .card ul { margin: 8px 0 0; padding-left: 18px; }
+  .card li { font-size: 13.5px; color: var(--muted); margin-bottom: 4px; }
+
+  /* ── Breaking News ───────────────────────────────────────── */
+  .news-card { padding-left: 18px; }
+  .news-card::before {
+    content: ""; position: absolute; left: 0; top: 0; bottom: 0;
+    width: 4px; background: var(--accent-2);
+  }
+  .news-card.crit::before { background: var(--crit); }
+  .news-card.hot::before  { background: var(--hot); }
+  .news-card.warn::before { background: var(--warn); }
+  .news-card.info::before { background: var(--accent-2); }
+  .news-meta {
+    display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
+    font-size: 12px; color: var(--dim); margin-top: 10px;
+  }
+  .pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 2px 9px; border-radius: 999px;
+    border: 1px solid var(--line); color: var(--muted);
+    font-size: 11px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase;
+  }
+  .pill.crit { color: #f1bdfb; border-color: rgba(176,75,209,.45); background: rgba(176,75,209,.10); }
+  .pill.hot  { color: #ffc4c4; border-color: rgba(225,90,90,.4);  background: rgba(225,90,90,.08); }
+  .pill.warn { color: #ffd99a; border-color: rgba(224,168,87,.4); background: rgba(224,168,87,.08); }
+  .pill.info { color: #cfe0ff; border-color: rgba(122,162,247,.4); background: rgba(122,162,247,.08); }
+  .score {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 2px 9px; border-radius: 999px;
+    background: rgba(255,255,255,.04); border: 1px solid var(--line);
+    font-family: ui-monospace, monospace; font-size: 11px; color: var(--text);
+  }
+  .score b { color: var(--accent); }
+
+  /* ── Claude Code ─────────────────────────────────────────── */
+  .cc-grid { grid-template-columns: 1.2fr .8fr; }
+  @media (max-width: 980px) { .cc-grid { grid-template-columns: 1fr; } }
+  .release {
+    display: flex; align-items: flex-start; gap: 12px; padding: 10px 0;
+    border-bottom: 1px dashed var(--line);
+  }
+  .release:last-child { border-bottom: none; }
+  .release .ver {
+    flex: 0 0 auto; min-width: 76px;
+    font-family: ui-monospace, monospace; font-size: 12.5px;
+    color: var(--accent); font-weight: 600;
+  }
+  .release .when { flex: 0 0 78px; color: var(--dim); font-size: 12px; font-family: ui-monospace, monospace; }
+  .release .what { color: var(--text); font-size: 13.5px; }
+  .release .what em { color: var(--muted); font-style: normal; }
+  .release .what strong { color: var(--text); }
+  .badge { display: inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .04em; }
+  .badge.feat { color: #b9efcb; background: rgba(110,195,139,.12); border: 1px solid rgba(110,195,139,.3); }
+  .badge.sec  { color: #ffc4c4; background: rgba(225,90,90,.12);  border: 1px solid rgba(225,90,90,.35); }
+  .badge.fix  { color: #ffd99a; background: rgba(224,168,87,.12); border: 1px solid rgba(224,168,87,.3); }
+  .src-card .links { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
+  .src-card .links a {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 8px 10px; border-radius: 8px;
+    border: 1px solid var(--line); background: rgba(255,255,255,.02);
+    color: var(--text); font-size: 13.5px;
+    transition: background .12s ease, border-color .12s ease;
+  }
+  .src-card .links a:hover { background: rgba(122,162,247,.06); border-color: rgba(122,162,247,.4); text-decoration: none; }
+  .src-card .links a .arrow { color: var(--dim); font-size: 12px; }
+
+  /* ── Snapshot banner (archive only) ──────────────────────── */
+  .snap-banner {
+    display: none;
+    background: rgba(195,154,74,.10);
+    border: 1px solid rgba(195,154,74,.3);
+    border-radius: 10px; padding: 10px 14px; margin-bottom: 18px;
+    color: var(--accent); font-size: 13px;
+    align-items: center; justify-content: space-between; gap: 12px;
+  }
+  .snap-banner.show { display: flex; }
+
+  /* ── Footer ──────────────────────────────────────────────── */
+  footer {
+    margin-top: 60px; padding-top: 18px;
+    border-top: 1px solid var(--line);
+    color: var(--dim); font-size: 12px;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+  footer .mono { color: var(--muted); }
+</style>
+</head>
+<body data-snapshot-date="2026-05-20" data-snapshot-mode="archive">
+<div class="wrap">
+
+  <!-- ─── Top Nav ─── -->
+  <nav class="topnav">
+    <a href="/agentic-info-dashboard/">📊 Übersicht</a>
+    <a href="/agentic-info-dashboard/ai-news/" class="active">📰 AI News (Tagesbriefing)</a>
+    <a href="/agentic-info-dashboard/youtube/">▶ YouTube Hot</a>
+    <a href="/agentic-info-dashboard/whoiswho/">👥 Who is Who</a>
+    <a href="/agentic-info-dashboard/sources/">📚 Quellen</a>
+  </nav>
+
+  <!-- ─── Timeline strip ─── -->
+  <div class="timeline-bar" id="timeline">
+    <span class="label">Zeitstrahl</span>
+    <!-- JS füllt aus archive/manifest.json. Fallback statisch: -->
+    <a class="tl-pill active" href="/agentic-info-dashboard/ai-news/" data-date="2026-05-20">
+      <span class="dow">Mi</span><span class="date">20.05.</span>
+    </a>
+  </div>
+
+  <!-- ─── Snapshot Banner (nur in Archiv-Versionen) ─── -->
+  <div class="snap-banner" id="snap-banner">
+    <span>📌 Du siehst einen archivierten Snapshot.</span>
+    <a href="/agentic-info-dashboard/ai-news/">← Zurück zum heutigen Briefing</a>
+  </div>
+
+  <!-- ─── Header ─── -->
+  <header class="main">
+    <div class="title">
+      <span class="dot" title="Live"></span>
+      <div>
+        <h1>Agentic AI · Tagesbriefing</h1>
+        <div class="subtitle">Was heute zählt — in 10 Minuten Lesezeit auf den Punkt.</div>
+      </div>
+    </div>
+    <div class="meta">
+      <div class="date" id="today">Mittwoch, 20. Mai 2026</div>
+      <div class="tag">Snapshot · KW 21 / 2026</div>
+    </div>
+  </header>
+
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <!-- ════════════════ TAGESBRIEFING (Editorial) ═══════════════ -->
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <article class="briefing-wrap">
+
+    <header class="briefing-head">
+      <h2 class="kicker">Tagesbriefing · Agentic AI & GenAI</h2>
+      <h1>Googles Agentic Era trifft Anthropics Talente-Welle — und Security wird zum ersten echten Killer-Use-Case</h1>
+      <div class="byline">
+        <span>✍️ Kuratiert &amp; analysiert</span>
+        <span class="dot-sep">·</span>
+        <span>~10 Min Lesezeit</span>
+        <span class="dot-sep">·</span>
+        <span id="byline-date">20. Mai 2026</span>
+      </div>
+      <p class="lede">
+        Das Stichwort gestern auf der I/O-Bühne lautete <em>„Agentic Era"</em>. Sundar Pichai redete sich in eine Vision, in der Software nicht mehr gefragt, sondern beauftragt wird. Gleichzeitig bestätigte sich, was viele seit Wochen gemutmaßt hatten: <span data-person="andrej-karpathy">Andrej Karpathy</span> steigt bei <span data-person="dario-amodei">Anthropic</span> ein. Wer aus diesen beiden Schlagzeilen nur eine Botschaft mitnimmt, sollte sie so formulieren: 2026 ist das Jahr, in dem die zwei großen Frontier-Labs ihre Identität schärfen — und beide schärfen sie um Agenten herum. Während Google die Distribution monetarisiert, kauft Anthropic Forschungs-Talent ein und positioniert sich als Sicherheits-Marktführer. Dazu kommt eine erste echte Anwendung, die das Versprechen nicht nur als Demo erfüllt: autonome Schwachstellen-Analyse.
+      </p>
+    </header>
+
+    <div class="briefing-body">
+
+      <section>
+        <h3><span class="num">01</span>Google I/O 2026 — Der Agentic-Pivot wird Produkt</h3>
+        <p>Auf der I/O hat Google das gemacht, was Google am besten kann: ein Konzept, das andere bauen, mit gigantischer Distribution ausstatten und als Produkt umlabeln. Drei Bausteine standen im Mittelpunkt.</p>
+        <p><strong>Gemini 3.5 Flash</strong> ist eine schnellere, günstigere Variante des Flagship-Modells. Das wäre für sich genommen eine inkrementelle Nachricht — wenn nicht der Subtext lauten würde: Agenten brauchen viele schnelle Modell-Calls hintereinander. Mit Flash sinken die Per-Token-Kosten, die Loops werden tragbar. Genau das fehlte bisher, um agentische Workflows in der Breite einzusetzen.</p>
+        <p><strong>Omni</strong> nennt Google ein „World Model". Hinter dem Buzzword steckt ein Modell, das physikalische Szenen simuliert und vorhersagt, was aus einer Aktion folgt. Klingt nach Robotik-Spielerei, hat aber zwei reale Implikationen: erstens als Trainingsumgebung für Agenten (synthetische, kostengünstige Erfahrung); zweitens als Grundlage für Anwendungen in Gaming, Logistik und Manufacturing — überall dort, wo <em>„Was passiert, wenn ich X tue?"</em> bisher eine teure Frage ist.</p>
+        <p><strong>Gemini Spark</strong> ist der konkrete agentische Assistent. Wichtig: Google packt Spark in ein eigenes Subscription-Produkt. Das ist die strategische Botschaft. Google traut sich, die Suche um ein Bezahlangebot zu erweitern, das tatsächlich Aufgaben erledigt, statt nur Links auszuspucken. Das Kannibalisierungs-Risiko des Suchgeschäfts wird gegen die Aussicht auf eine zweite Abo-Geldquelle abgewogen — eine Wette, die Pichai sich offenbar zutraut.</p>
+        <blockquote class="takeaway">
+          <strong>Was es bedeutet</strong>
+          Google hat begriffen, dass „Antwortmaschine" nicht der Endzustand ist. Der Endzustand ist „Erledigungsmaschine". Spark ist der erste konsequente Schritt nach diesem Verständnis aus einem Frontier-Lab heraus. OpenAI und Anthropic stehen jetzt unter Zugzwang, ähnliche Konsumenten-Produkte zu liefern — oder die Enterprise-Karte konsequent zu spielen.
+        </blockquote>
+      </section>
+
+      <section>
+        <h3><span class="num">02</span>Talente kippen Richtung Anthropic</h3>
+        <p><span data-person="andrej-karpathy">Andrej Karpathy</span> zu Anthropic. Wenn ein Mensch zwischen Tesla-Mitgründungs-Aura, OpenAI-Gründungsteam, eigener Bildungs-Initiative (Eureka Labs) und jetzt Anthropic wechselt, ist das mehr als ein Personalwechsel. Es ist eine Marktbewertung.</p>
+        <p>Was Anthropic für ihn attraktiv macht: keine klassische Konzern-Struktur, klares Sicherheits-Narrativ, eine Forschungs-Kultur, die im Vergleich zu OpenAI als weniger politisch und im Vergleich zu <span data-person="demis-hassabis">DeepMind</span> als schneller gilt. Was <span data-person="andrej-karpathy">Karpathy</span> Anthropic bringt: Sichtbarkeit, didaktische Stärke (seine Vorlesungs-Inhalte sind unter Engineers Pflichtprogramm) und ein konkretes Forschungs-Schwergewicht für die nächste Trainings-Runde.</p>
+        <p>Im breiteren Bild: Anthropic gewinnt das Talent-Narrativ. Die Liste der namhaften Wechsler in den letzten zwölf Monaten ist substantiell — und sie geht überwiegend in eine Richtung. Wer 2024 noch sagte, OpenAI sei das Default-Lab, müsste das heute begründen.</p>
+        <blockquote class="takeaway">
+          <strong>Was es bedeutet</strong>
+          Forschungs-Talent ist der schwerstwiegende Wettbewerbs-Faktor, weil er nur langsam aufzubauen ist. Anthropic akkumuliert ihn schneller als die Konkurrenz. Das verschiebt die Erwartungen für 2027er-Releases zu deren Gunsten.
+        </blockquote>
+      </section>
+
+      <section>
+        <h3><span class="num">03</span>Security wird zum Killer-Use-Case</h3>
+        <p>Was bisher fehlte: ein agentischer Anwendungsfall, den niemand mehr als <em>„das kann ChatGPT doch auch"</em> abtun konnte. Anthropic liefert ihn diese Woche.</p>
+        <p><strong>Project Glasswing</strong> ist ein eingeschränkter Vorab-Zugang zu <em>Claude Mythos Preview</em> — Anthropics noch unveröffentlichtem Frontier-Modell. Geladen sind AWS, Apple, Cisco, Google, JPMorgan und Microsoft. Aufgabe: kritische Software-Schwachstellen autonom finden und beheben. Nicht <em>„mit Unterstützung"</em>, sondern selbstständig.</p>
+        <p>Das ist signifikant, weil Schwachstellen-Analyse drei Eigenschaften hat, die Agenten besonders gut beherrschen:</p>
+        <ol>
+          <li><strong>Sie ist iterativ und prüfbar.</strong> Der Agent kann Hypothesen über mögliche Bugs aufstellen, sie testen, Fehlschläge interpretieren, neu ansetzen. Das Feedback ist objektiv — kompiliert es? crasht es? exfiltriert es Daten?</li>
+          <li><strong>Sie ist zeit-intensiv für Menschen.</strong> Ein erfahrener Security-Researcher braucht Stunden bis Tage pro Codebase. Ein Agent, der parallel über tausende Repositories läuft, deckt eine andere Größenordnung ab.</li>
+          <li><strong>Sie hat klaren ROI.</strong> Pro entdeckter Schwachstelle lassen sich Schadens-Vermeidungskosten quantifizieren. Ein CISO kann das budgetieren.</li>
+        </ol>
+        <p>Die Wahl der Pilot-Partner ist kein Zufall: Cloud-Hyperscaler (Infrastruktur-Lieferanten, deren Compromise tausende Kunden trifft), Finanz (regulatorischer Druck), Hardware/Networking-Riesen (massive Codebasen). Anthropic baut hier den ersten Branchenstandard.</p>
+        <blockquote class="takeaway">
+          <strong>Was es bedeutet</strong>
+          Wenn Glasswing in den nächsten Quartalen messbare Findings produziert, hat Anthropic einen Anker-Use-Case, gegen den sich Wettbewerber positionieren müssen. Microsoft Security Copilot, Google Threat Intelligence und CrowdStrikes Charlotte AI bewegen sich im selben Feld — aber Glasswing setzt die Latte explizit auf „autonom".
+        </blockquote>
+      </section>
+
+      <section>
+        <h3><span class="num">04</span>Konsolidierung und Geldfluss</h3>
+        <p>Zwei Signale aus dem Markt.</p>
+        <p><strong>Cohere kauft Reliant AI.</strong> Reliants Document-Intelligence-Stack — spezialisiert auf strukturierte Extraktion aus regulierten Dokumenten (Verträge, Compliance-Reports, klinische Studien) — wird in Coheres North-Plattform integriert. Strategischer Sinn: Cohere bedient den Enterprise-Mittelbau, der nicht zu OpenAI oder Anthropic greifen will, weil dort die Vendor-Macht zu groß und die Souveränitäts-Frage offen ist. Reliants Vertical-Tech füllt eine Lücke im Stack.</p>
+        <p><strong>Globale KI-Ausgaben 2026: 2,59 Billionen US-Dollar</strong> — laut Gartner-Indikator, der heute durchs deutsche Tech-Web ging. Plus 47 Prozent gegenüber 2025. Der bemerkenswerte Subtext: der Engpass verschiebt sich. Bisher hieß es <em>„GPUs"</em>. Jetzt zunehmend <em>„Strom"</em> und <em>„Glasfaser-Backbone"</em>. Hyperscaler-CapEx fließt nicht mehr nur in Beschleuniger, sondern in Energie-Verträge, Substations und Cross-Continent-Links.</p>
+        <p>Was das praktisch heißt: Wer in den nächsten achtzehn Monaten ein agentisches System in Production bringen will, sollte Kostenrechnungen auf Strom- und Egress-Tarife basieren, nicht primär auf Token-Preise. Letztere fallen weiter; Energie-Preise tendenziell nicht.</p>
+        <blockquote class="takeaway">
+          <strong>Was es bedeutet</strong>
+          M&amp;A im AI-Markt wird in den nächsten Quartalen über vertikale Stacks getrieben — Branchen-Know-How verkauft sich besser als generische Modelle. Und Capacity Planning für Agent-Workloads wird zur Strom-Diskussion.
+        </blockquote>
+      </section>
+
+      <section>
+        <h3><span class="num">05</span>Werkzeuge des Tages — Claude Code v2.1.145</h3>
+        <p>Anthropic hat gestern Abend Claude Code <code>v2.1.145</code> veröffentlicht. Drei Punkte, die sich Engineers heute notieren sollten:</p>
+        <ol>
+          <li><strong><code>claude agents --json</code></strong> — Live-Sessions strukturiert auflisten. Klingt klein, ist aber die Grundlage für saubere Scripting-Integration: tmux-Resurrect, Status-Bars, Session-Picker. Bisher musste man das aus dem TUI parsen.</li>
+          <li><strong>OTEL-Trace-Parenting</strong> für Subagent-Spans. Wer Claude-Code-Sessions observability-mäßig in Honeycomb, Grafana oder Datadog zieht, sieht Subagent-Aufrufe jetzt korrekt unter ihren Eltern-Agenten. Vorher waren die Spans verwaist.</li>
+          <li><strong>Security-Fix:</strong> Bare Variable-Assignments zu nicht-allowlisteten Env-Variablen in Bash-Kommandos wurden auto-approved und umgingen den Permission-Prompt. Wer in geteilten Umgebungen oder mit <code>--dangerously-skip-permissions</code> arbeitet, sollte zügig updaten.</li>
+        </ol>
+        <p>Der Release-Takt liegt bei ungefähr täglich. Die Patch-Notes lohnen sich für niemanden im Detail — die einzelnen Release-Highlights weiter unten reichen für den Überblick.</p>
+      </section>
+
+      <div class="briefing-end">
+        <strong>Was morgen zu beobachten ist:</strong> OpenAIs Reaktion auf Gemini Spark — eine Anschlussankündigung wird erwartet. Anthropics nächstes Modell-Release könnte mit dem Glasswing-Programm zusammenfallen. Im DACH-Markt: heise berichtet morgen vom Hannover-Messe-Abschluss, wo Agentic-AI in der Fertigung das Leit-Thema war. Und auf arXiv: erste Reaktionen auf das Omni-Whitepaper sind innerhalb der nächsten Tage zu erwarten — interessant, wie die Community die Behauptungen zur Sample-Effizienz aufnimmt.
+      </div>
+
+    </article>
+
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <!-- ════════════════════ BREAKING NEWS ═══════════════════════ -->
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <section>
+    <div class="section-head">
+      <h2>⚡ Breaking News</h2>
+      <div class="rule"></div>
+      <div class="hint">LLM-Score 1–10 · letzte 7 Tage</div>
+    </div>
+
+    <div class="grid cols-3">
+
+      <article class="card news-card crit">
+        <div class="row">
+          <span class="pill crit">Major Release</span>
+          <span class="score">Score <b>9.4</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Google I/O 2026: Gemini 3.5 Flash, Omni World-Model &amp; „Gemini Spark"</h3>
+        <p>Google läutet die <em>Agentic Gemini Era</em> ein: schnelleres Frontier-Modell, ein neues „World Model" für physikalische Simulation und ein agentischer Assistent als Subscription-Produkt.</p>
+        <div class="news-meta">
+          <span>📅 19.–20.05.2026</span><span>·</span><span>🏢 Google DeepMind</span><span>·</span>
+          <a href="https://blog.google/technology/ai/google-io-2026/">Pressemeldung</a>
+        </div>
+      </article>
+
+      <article class="card news-card hot">
+        <div class="row">
+          <span class="pill hot">Personalie</span>
+          <span class="score">Score <b>8.2</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px"><span data-person="andrej-karpathy">Andrej Karpathy</span> wechselt zu Anthropic</h3>
+        <p>Ehem. Tesla- &amp; OpenAI-Gründungsmitglied verstärkt das Anthropic-Forschungsteam. Signal-Effekt für den Talent-Markt im Frontier-Lab-Rennen.</p>
+        <div class="news-meta">
+          <span>📅 19.05.2026</span><span>·</span><span>🏢 Anthropic</span><span>·</span>
+          <a href="https://www.anthropic.com/news">Anthropic News</a>
+        </div>
+      </article>
+
+      <article class="card news-card hot">
+        <div class="row">
+          <span class="pill hot">Security / Agents</span>
+          <span class="score">Score <b>8.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Anthropic „Project Glasswing": Claude Mythos Preview für Vuln-Detection</h3>
+        <p>Vorab-Zugang zum unveröffentlichten Frontier-Modell für AWS, Apple, Cisco, Google, JPMorgan &amp; Microsoft. Fokus: autonome Erkennung kritischer SW-Schwachstellen.</p>
+        <div class="news-meta">
+          <span>📅 17.05.2026</span><span>·</span><span>🏢 Anthropic + Partner</span>
+        </div>
+      </article>
+
+      <article class="card news-card warn">
+        <div class="row">
+          <span class="pill warn">Tooling</span>
+          <span class="score">Score <b>7.6</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Claude Code v2.1.145 — `claude agents --json` &amp; OTEL-Tracing</h3>
+        <p>Strukturierte Session-Auflistung für Scripting, korrektes Trace-Parenting für Subagent-Spans, Security-Fix für Permission-Prompt-Bypass.</p>
+        <div class="news-meta">
+          <span>📅 19.05.2026</span><span>·</span><span>🏢 Anthropic</span><span>·</span>
+          <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.145">Release Notes</a>
+        </div>
+      </article>
+
+      <article class="card news-card warn">
+        <div class="row">
+          <span class="pill warn">M&amp;A</span>
+          <span class="score">Score <b>6.8</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Cohere übernimmt Reliant AI</h3>
+        <p>Konsolidierung im Enterprise-Agent-Markt: Reliants Document-Intelligence-Stack soll Coheres North-Plattform für regulierte Branchen erweitern.</p>
+        <div class="news-meta">
+          <span>📅 18.05.2026</span><span>·</span><span>🏢 Cohere</span>
+        </div>
+      </article>
+
+      <article class="card news-card info">
+        <div class="row">
+          <span class="pill info">Marktdaten</span>
+          <span class="score">Score <b>6.3</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Globale KI-Ausgaben 2026: 2,59 Bio. USD (+47 %)</h3>
+        <p>Gartner-Indikator: Agentic-Workloads treiben CapEx-Spitzen bei Hyperscalern. Power- &amp; Networking-Engpässe werden zum dominanten Thema.</p>
+        <div class="news-meta">
+          <span>📅 16.05.2026</span><span>·</span><span>🏢 heise online</span><span>·</span>
+          <a href="https://www.heise.de/news/2-59-Billionen-US-Dollar-Ausgaben-fuer-KI-wachsen-ungebremst-11299669.html">Bericht</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <!-- ═════════════════════ CLAUDE CODE ═══════════════════════ -->
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <section>
+    <div class="section-head">
+      <h2>🛠 Claude Code · Releases &amp; Watch</h2>
+      <div class="rule"></div>
+      <div class="hint">Quelle: anthropics/claude-code · GitHub Releases</div>
+    </div>
+
+    <div class="grid cc-grid">
+
+      <article class="card">
+        <h3>Letzte Releases</h3>
+        <p>Aktuelle Version <code>v2.1.145</code>, ~tägliche Patch-Kadenz.</p>
+
+        <div class="release">
+          <div class="ver">v2.1.145</div>
+          <div class="when">19.05.</div>
+          <div class="what">
+            <strong><code>claude agents --json</code></strong> für Scripting · OTEL-Trace-Parenting für Subagents
+            <span class="badge feat">FEATURE</span>
+            <br><em>Security-Fix: Permission-Prompt-Bypass bei bare Variable-Assignments in Bash.</em>
+            <span class="badge sec">SECURITY</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.144</div>
+          <div class="when">19.05.</div>
+          <div class="what">
+            <strong><code>/resume</code> für Background-Sessions</strong>, Modellwahl jetzt session-scoped (Default via <code>d</code>)
+            <span class="badge feat">FEATURE</span>
+            <br><em>Startup-Hang bei unreachable api.anthropic.com behoben (max. 15 s Timeout).</em>
+            <span class="badge fix">FIX</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.143</div>
+          <div class="when">15.05.</div>
+          <div class="what">
+            <strong>Plugin-Dependency-Enforcement</strong> bei <code>plugin disable/enable</code>, Token-Cost-Projektion im Marketplace
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.142</div>
+          <div class="when">14.05.</div>
+          <div class="what">
+            <strong>Fast Mode default auf Opus 4.7</strong> (vorher 4.6) · Plugin-LSP-Server im Detail-Pane
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.141</div>
+          <div class="when">13.05.</div>
+          <div class="what">
+            <code>terminalSequence</code>-Feld für Hooks (Desktop-Notifications) · <code>ANTHROPIC_WORKSPACE_ID</code> für Workload-Federation
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.140</div>
+          <div class="when">12.05.</div>
+          <div class="what">
+            Agent-Tool <code>subagent_type</code> case-/separator-insensitiv · Diverse Windows- &amp; Hook-Fixes
+            <span class="badge fix">FIX</span>
+          </div>
+        </div>
+
+        <p style="margin-top: 14px;">
+          <a href="https://github.com/anthropics/claude-code/releases">→ Alle Releases auf GitHub</a><br/>
+          <a href="https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md">→ Vollständiger CHANGELOG.md</a>
+        </p>
+      </article>
+
+      <article class="card src-card">
+        <h3>Watch-List</h3>
+        <p>Worauf in den nächsten Releases zu achten ist:</p>
+        <ul>
+          <li><strong>Agentic Tooling</strong>: Erweiterungen rund um <code>claude agents</code> &amp; background sessions (<code>/bg</code>, <code>/resume</code>).</li>
+          <li><strong>Sicherheit</strong>: Permission-Prompt-Härtung und Hook-Sicherheit (siehe v2.1.145).</li>
+          <li><strong>Plugin-Ökosystem</strong>: Marketplace-Discovery, Dependency-Enforcement, Token-Cost-Sichtbarkeit.</li>
+          <li><strong>OTEL-Observability</strong>: Tool- und Subagent-Tracing wird ausgebaut.</li>
+          <li><strong>Modell-Defaults</strong>: Fast Mode = Opus 4.7. Augen auf Sonnet- &amp; Haiku-Defaults und 1M-Context-Picker.</li>
+        </ul>
+        <p style="margin-top:12px"><strong>Empfohlene Watch-Quellen:</strong></p>
+        <div class="links">
+          <a href="https://github.com/anthropics/claude-code/releases.atom"><span>📡 RSS · GitHub Releases</span><span class="arrow">→</span></a>
+          <a href="https://github.com/anthropics/claude-code/commits/main.atom"><span>📡 RSS · main-Branch Commits</span><span class="arrow">→</span></a>
+          <a href="https://docs.claude.com/en/docs/claude-code/overview"><span>📘 Offizielle Docs</span><span class="arrow">→</span></a>
+          <a href="https://www.anthropic.com/news"><span>📰 Anthropic News</span><span class="arrow">→</span></a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <footer>
+    <div>Snapshot · <span class="mono" id="generated">20. Mai 2026</span></div>
+    <div>
+      <a href="/agentic-info-dashboard/sources/">📚 Quellen-Sammlung</a> ·
+      <a href="/agentic-info-dashboard/">📊 Übersicht</a>
+    </div>
+  </footer>
+
+</div>
+
+<script src="/agentic-info-dashboard/_shared/people.js" defer></script>
+<script>
+  // ── Datum im Header lokalisieren ──────────────────────────
+  const SNAPSHOT_DATE = document.body.dataset.snapshotDate; // YYYY-MM-DD
+  const fmtLong = new Intl.DateTimeFormat('de-DE', {
+    weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'
+  });
+  if (SNAPSHOT_DATE) {
+    const d = new Date(SNAPSHOT_DATE);
+    document.getElementById('today').textContent = fmtLong.format(d);
+    document.getElementById('byline-date').textContent = fmtLong.format(d);
+    document.getElementById('generated').textContent = fmtLong.format(d);
+  }
+
+  // ── Timeline aus manifest.json bauen ──────────────────────
+  (async () => {
+    try {
+      const res = await fetch('/agentic-info-dashboard/ai-news/archive/manifest.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error('manifest not found');
+      const data = await res.json();
+      const snapshots = (data.snapshots || []).sort((a, b) => b.date.localeCompare(a.date));
+      if (!snapshots.length) return;
+
+      const bar = document.getElementById('timeline');
+      // Bestehende Pills (Fallback) entfernen, label behalten
+      bar.querySelectorAll('.tl-pill').forEach(p => p.remove());
+
+      const fmtPill = new Intl.DateTimeFormat('de-DE', { weekday: 'short' });
+      for (const s of snapshots) {
+        const d = new Date(s.date);
+        const dow = fmtPill.format(d).replace('.', '');
+        const dd = String(d.getDate()).padStart(2, '0');
+        const mm = String(d.getMonth() + 1).padStart(2, '0');
+        const a = document.createElement('a');
+        a.className = 'tl-pill';
+        a.dataset.date = s.date;
+        a.href = s.url;
+        a.title = s.summary || '';
+        a.innerHTML = `<span class="dow">${dow}</span><span class="date">${dd}.${mm}.</span>`;
+        if (s.date === SNAPSHOT_DATE) a.classList.add('active');
+        bar.appendChild(a);
+      }
+    } catch (e) {
+      // Manifest fehlt oder Fehler — der Fallback im HTML bleibt sichtbar.
+    }
+  })();
+
+  // ── Snapshot-Banner bei Archiv-Versionen ──────────────────
+  if (document.body.dataset.snapshotMode === 'archive') {
+    document.getElementById('snap-banner').classList.add('show');
+  }
+</script>
+</body>
+</html>

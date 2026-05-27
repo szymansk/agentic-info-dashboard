@@ -139,14 +139,34 @@ Wenn irgendwas fehlschlägt: STOP, halte an, warte auf User-Input
 
 ---
 
-## 7. Status loggen
+## 7. Deploy auf GitHub Pages
+
+Nach erfolgreicher Verifikation pushst du den aktuellen Stand live:
+
+```bash
+./bin/deploy.sh "daily: briefing <heute>"
+```
+
+Das Skript:
+1. baut `docs/` neu via `scripts/build-pages.py` (kopiert dashboards/ und
+   schreibt absolute Pfade auf `/agentic-info-dashboard/...` um)
+2. staged alle Änderungen
+3. commitet nur falls etwas neu ist
+4. pusht nach `origin/main` — Pages rendert in ~30s neu
+
+Wenn `deploy.sh` mit Exit-Code ≠ 0 endet: STOP, halte an, logge die
+Fehlermeldung. NICHT erzwingen.
+
+---
+
+## 8. Status loggen
 
 Am Ende des erfolgreichen Laufs, eine knappe Bilanz ausgeben:
 
 ```
 Lauf vom <heute>: <N> Breaking-News-Items, <M> Wörter Briefing, gestern
 archiviert als <gestern>.html. YouTube refresh: <K> Videos. Claude Code:
-v<latest> aktuell.
+v<latest> aktuell. Deploy: ✓
 ```
 
 Diese Zeile wird im `claude logs daily-ai-update` sichtbar — die ist der
