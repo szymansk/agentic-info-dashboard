@@ -47,6 +47,15 @@ def rewrite_paths(text: str) -> str:
     return text
 
 
+def rewrite_json_paths(text: str) -> str:
+    """Rewrites URL-valued JSON keys (url, href, link) starting with single /."""
+    return re.sub(
+        r'("(?:url|href|link)"\s*:\s*")(/(?!/)[^"]*)"',
+        rf'\1{PREFIX}\2"',
+        text,
+    )
+
+
 def discover_dashboards():
     """Mirror of serve.py:discover_dashboards()."""
     items = []
@@ -206,14 +215,23 @@ def main():
     # 2. Copy dashboards/ → docs/
     shutil.copytree(SRC, DST)
 
-    # 3. Rewrite absolute paths in all .html files
-    count = 0
+    # 3a. Rewrite absolute paths in all .html files
+    count_html = 0
     for html in DST.rglob("*.html"):
         text = html.read_text("utf-8")
         new_text = rewrite_paths(text)
         if new_text != text:
             html.write_text(new_text, "utf-8")
-            count += 1
+            count_html += 1
+
+    # 3b. Rewrite URL-valued fields in JSON files (manifest.json etc.)
+    count_json = 0
+    for j in DST.rglob("*.json"):
+        text = j.read_text("utf-8")
+        new_text = rewrite_json_paths(text)
+        if new_text != text:
+            j.write_text(new_text, "utf-8")
+            count_json += 1
 
     # 4. Generate static landing page → docs/index.html
     items = discover_dashboards()
@@ -227,7 +245,8 @@ def main():
     total_files = sum(1 for _ in DST.rglob("*") if _.is_file())
     print(f"✓ Built {DST.relative_to(ROOT)}/")
     print(f"  · {len(items)} dashboards")
-    print(f"  · {count} HTML files with path rewrites")
+    print(f"  · {count_html} HTML files with path rewrites")
+    print(f"  · {count_json} JSON files with URL rewrites")
     print(f"  · {total_files} total files")
     print(f"  · Pages source: branch=main path=/docs")
 

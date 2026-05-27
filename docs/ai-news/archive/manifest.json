@@ -3,31 +3,31 @@
   "snapshots": [
     {
       "date": "2026-05-27",
-      "url": "/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/",
       "headline": "OpenAIs Frontier-Konter, Anthropics Run-Rate-Verdopplung und EU schärft die High-Risk-Liste",
       "summary": "OpenAI launcht Frontier-Plattform (Konter zu Managed Agents) · Anthropic ARR $14B→$30B in 12 Wochen · EU AI Act High-Risk-Guidelines für 8 Bereiche · Waymo World Model auf Genie 3 · Modal Labs $355M · Standard Chartered/Meta Personal-Reshuffle"
     },
     {
       "date": "2026-05-26",
-      "url": "/ai-news/archive/2026-05-26.html",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-05-26.html",
       "headline": "Anthropic auf 900 Milliarden, vier Labs kaufen in fünf Tagen — die Konsolidierungs-Phase beginnt",
       "summary": "Anthropic schließt $30 Mrd. bei $900 Mrd. Bewertung · Anthropic/Mistral/DeepMind/Meta akquirieren in 5 Tagen · SAP übernimmt Prior Labs + $1,18 Mrd. eigenes Frontier-Lab · Google Antigravity 2.0 + Spark gehen mainstream · Claude Code hält bei v2.1.150"
     },
     {
       "date": "2026-05-25",
-      "url": "/ai-news/archive/2026-05-25.html",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-05-25.html",
       "headline": "Drei Pakte schreiben den Frontier-Markt um — DeployCo, Colossus, Eval-Ausweitung",
       "summary": "OpenAI gründet $4B Beratungs-Tochter DeployCo · Anthropic koppelt sich an SpaceX Colossus 1 · US-Regierung dehnt Pre-Release-Eval auf DeepMind/MS/xAI aus · Anthropic Managed Agents: self-hosted Sandboxes + MCP Tunnels · Claude Code v2.1.150"
     },
     {
       "date": "2026-05-21",
-      "url": "/ai-news/archive/2026-05-21.html",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-05-21.html",
       "headline": "Drei Tage nach der I/O: Kapital wandert, M&A-Welle bricht, Five Eyes schreibt Agent-Doktrin",
       "summary": "JPMorgan reklassifiziert AI auf $19,8B Infrastruktur · SpaceX-Option auf Cursor $60B · Five-Eyes-Memo zu Agentic AI · Anthropic Mythos schlägt GPT-5.5 im 32-Step-Cyber-Range · Claude Code v2.1.146"
     },
     {
       "date": "2026-05-20",
-      "url": "/ai-news/archive/2026-05-20.html",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-05-20.html",
       "headline": "Googles Agentic Era trifft Anthropics Talente-Welle",
       "summary": "Google I/O 2026 (Gemini 3.5 Flash, Omni, Spark) · Karpathy → Anthropic · Project Glasswing · Claude Code v2.1.145"
     }
