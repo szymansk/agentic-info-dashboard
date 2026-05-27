@@ -298,46 +298,43 @@
   footer .mono { color: var(--muted); }
 </style>
 </head>
-<body data-snapshot-date="2026-05-28" data-snapshot-mode="live">
+<body data-snapshot-date="2026-05-27" data-snapshot-mode="archive">
 <div class="wrap">
 
   <!-- ─── Top Nav ─── -->
   <nav class="topnav">
-    <a href="/">📊 Übersicht</a>
-    <a href="/ai-news/" class="active">📰 AI News (Tagesbriefing)</a>
-    <a href="/youtube/">▶ YouTube Hot</a>
-    <a href="/whoiswho/">👥 Who is Who</a>
-    <a href="/sources/">📚 Quellen</a>
+    <a href="/agentic-info-dashboard/">📊 Übersicht</a>
+    <a href="/agentic-info-dashboard/ai-news/" class="active">📰 AI News (Tagesbriefing)</a>
+    <a href="/agentic-info-dashboard/youtube/">▶ YouTube Hot</a>
+    <a href="/agentic-info-dashboard/whoiswho/">👥 Who is Who</a>
+    <a href="/agentic-info-dashboard/sources/">📚 Quellen</a>
   </nav>
 
   <!-- ─── Timeline strip ─── -->
   <div class="timeline-bar" id="timeline">
     <span class="label">Zeitstrahl</span>
     <!-- JS füllt aus archive/manifest.json. Fallback statisch: -->
-    <a class="tl-pill" href="/ai-news/archive/2026-05-20.html" data-date="2026-05-20">
+    <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-05-20.html" data-date="2026-05-20">
       <span class="dow">Mi</span><span class="date">20.05.</span>
     </a>
-    <a class="tl-pill" href="/ai-news/archive/2026-05-21.html" data-date="2026-05-21">
+    <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-05-21.html" data-date="2026-05-21">
       <span class="dow">Do</span><span class="date">21.05.</span>
     </a>
-    <a class="tl-pill" href="/ai-news/archive/2026-05-25.html" data-date="2026-05-25">
+    <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-05-25.html" data-date="2026-05-25">
       <span class="dow">Mo</span><span class="date">25.05.</span>
     </a>
-    <a class="tl-pill" href="/ai-news/archive/2026-05-26.html" data-date="2026-05-26">
+    <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-05-26.html" data-date="2026-05-26">
       <span class="dow">Di</span><span class="date">26.05.</span>
     </a>
-    <a class="tl-pill" href="/ai-news/archive/2026-05-27.html" data-date="2026-05-27">
+    <a class="tl-pill active" href="/agentic-info-dashboard/ai-news/" data-date="2026-05-27">
       <span class="dow">Mi</span><span class="date">27.05.</span>
-    </a>
-    <a class="tl-pill active" href="/ai-news/" data-date="2026-05-28">
-      <span class="dow">Do</span><span class="date">28.05.</span>
     </a>
   </div>
 
   <!-- ─── Snapshot Banner (nur in Archiv-Versionen) ─── -->
   <div class="snap-banner" id="snap-banner">
     <span>📌 Du siehst einen archivierten Snapshot.</span>
-    <a href="/ai-news/">← Zurück zum heutigen Briefing</a>
+    <a href="/agentic-info-dashboard/ai-news/">← Zurück zum heutigen Briefing</a>
   </div>
 
   <!-- ─── Header ─── -->
@@ -350,7 +347,7 @@
       </div>
     </div>
     <div class="meta">
-      <div class="date" id="today">Donnerstag, 28. Mai 2026</div>
+      <div class="date" id="today">Mittwoch, 27. Mai 2026</div>
       <div class="tag">Snapshot · KW 22 / 2026</div>
     </div>
   </header>
@@ -362,78 +359,74 @@
 
     <header class="briefing-head">
       <h2 class="kicker">Tagesbriefing · Agentic AI &amp; GenAI</h2>
-      <h1>Berners-Lee zum Agentic Web, Claude Code wird zum Editor, Anthropic übernimmt Colossus 1 vollständig</h1>
+      <h1>OpenAIs Frontier-Konter, Anthropics Run-Rate-Verdopplung und EU schärft die High-Risk-Liste</h1>
       <div class="byline">
         <span>✍️ Kuratiert &amp; analysiert</span>
         <span class="dot-sep">·</span>
         <span>~12 Min Lesezeit</span>
         <span class="dot-sep">·</span>
-        <span id="byline-date">28. Mai 2026</span>
+        <span id="byline-date">27. Mai 2026</span>
       </div>
       <p class="lede">
-        Sir Tim Berners-Lee hat heute Vormittag beim IAB Tech Lab <em>Agentic Web Summit</em> in New York erstmals öffentlich Stellung zum agentischen Web bezogen — und seine Botschaft ist eindringlicher als der Konferenzname vermuten lässt: Wenn Browser zu Aktionsschnittstellen für Agenten werden, müssen die Web-Standards dezentrale Identitäten und überprüfbare Verträge zwischen Mensch und Agent dazubekommen, sonst wird das offene Web ein zweites Mal an Plattform-Aggregation verloren gehen. Im Lab-Stack rückt parallel die zweite große Verschiebung der Woche nach: Anthropic übernimmt nicht nur einen Teil, sondern <em>die gesamte</em> Compute-Kapazität von SpaceX' Colossus-1-Anlage in Tennessee — 300 Megawatt und über 220.000 Nvidia-GPUs gehen exklusiv an das Lab, während xAI das größere Colossus 2 für sich behält. Und Claude Code <code>v2.1.152</code> hat in der Nacht das Spiel für Code-Reviews verändert: <code>/code-review --fix</code> setzt Findings direkt im Working Tree um — die Skill macht aus Empfehlung Edit. Dazu: Anthropic eröffnet ein Korea-Office, die EU-Transparenz-Pflichten nach Artikel 50 AI Act rücken auf zwei Monate heran, und Coupa kauft Tonkean für die Procurement-Agent-Schicht.
+        OpenAI hat in der Nacht <em>Frontier</em> vorgestellt — eine Plattform für Build, Deployment und Management von Enterprise-Agenten mit geteiltem Kontext über Systeme hinweg. Es ist die direkte Antwort auf Anthropics Managed Agents, und der Zeitpunkt — drei Tage nach Bloomberg-Bestätigung der 30-Milliarden-Runde — ist nicht zufällig. Gleichzeitig sickert eine Anthropic-interne Zahl durch: die Annualized Run Rate ist von 14 Milliarden Dollar im Februar auf 30 Milliarden Dollar im April gesprungen — eine Verdopplung in zwölf Wochen, die die 900-Milliarden-Bewertung in einem anderen Licht erscheinen lässt. Brüssel hat am 22. Mai die Durchführungs-Guidelines für High-Risk-AI nach Artikel 6 EU AI Act veröffentlicht und damit zum ersten Mal die acht Risiko-Bereiche konkret benannt, in denen 2026/27 die Compliance-Praxis sich neu sortieren muss. Im Hintergrund: Waymo hat mit DeepMinds Genie 3 ein <em>World Model</em> für synthetisches Edge-Case-Training operationalisiert, Modal Labs holt 355 Millionen für Agent-Workloads, und im Personalbereich beginnt die Realwirtschaft, sich auf das neue Niveau einzustellen — Standard Chartered streicht Tausende Stellen, Meta verschiebt 7000 Mitarbeiter in AI-Teams.
       </p>
     </header>
 
     <div class="briefing-body">
 
       <section>
-        <h3><span class="num">01</span>Berners-Lee zum Agentic Web — der Erfinder fordert dezentrale Identität</h3>
-        <p>Sir Tim Berners-Lee hat heute Vormittag in New York beim IAB Tech Lab <em>Agentic Web Summit</em> einen seiner seltenen öffentlichen Auftritte zur AI-Frage gegeben. Die Botschaft war bewusst nicht produkt-getrieben, sondern protokoll-getrieben: Wenn Browser zu Aktionsschnittstellen für Agenten werden — und das ist das implizite Versprechen von Antigravity 2.0, OpenAI Frontier, Anthropic Managed Agents —, dann reichen die heutigen Web-Standards nicht aus. Es fehlen dezentrale Identitäts-Schichten (Berners-Lee verwies auf seinen langjährigen Solid-Standard), überprüfbare Verträge zwischen Mensch und delegiertem Agent, und Transparenz darüber, welcher Agent für wen handelt. Ohne diese Bausteine, so seine These, läuft das offene Web ein zweites Mal in Plattform-Aggregation hinein — diesmal nicht via Suche und Social, sondern via Agenten-Gateways.</p>
-        <p>Die Beobachtung trifft. In Antigravity beobachten Nutzer Agent-Cohorts, die in ihrem Namen Webseiten besuchen; in Frontier orchestrieren Konzerne Shared-Context-Agents über interne und externe Dienste. Wer hier die Identitäts-Verkettung kontrolliert, kontrolliert den Dataflow — und genau diesen Layer haben die Standards-Gremien IETF und W3C bisher unterspezifiziert gelassen. Berners-Lees Forderung, in Q3/Q4 eine W3C-Working-Group zu „Agent Interaction Standards" aufzusetzen, ist mehr als symbolisch: ohne Industrie-Beteiligung wird sie nicht entstehen, aber wenn sie entsteht, definiert sie das Spielfeld für die nächste Plattform-Generation.</p>
-        <p>Im europäischen Kontext koppelt sich das fast natürlich an die GAIA-X-Diskussion und an die deutsche IDunion-Initiative für dezentrale Identitäten. Das BSI hat in einem nicht-öffentlichen Memo Mitte Mai bereits angedeutet, dass „agent-bound credentials" als eigene C5-Kategorie betrachtet werden müssen. Wer in DACH-Konzernen 2026 Agent-Workloads architektiert, sollte den Identitäts-Layer früh planen — Verisign-/Auth0-/Keycloak-Setups, die heute für menschliche Nutzer entworfen sind, leisten für Agenten nicht das, was sie sollen.</p>
+        <h3><span class="num">01</span>OpenAIs Frontier-Konter zu Anthropic Managed Agents</h3>
+        <p>OpenAI hat in der Nacht <em>Frontier</em> vorgestellt — eine Enterprise-Plattform für Build, Deployment und Management von AI-Agenten, mit geteiltem Kontext über Systeme hinweg und Integration in bestehende Workflows. Die Funktionsliste liest sich wie ein Schaubild der Anthropic-Managed-Agents-Roadmap, mit zwei expliziten Ergänzungen: Frontier liefert ab Tag eins einen <em>Shared-Context-Store</em>, der dieselben Vector- und Memory-Daten für mehrere Agents in einem Konzern verfügbar macht, und es integriert sich nativ in die Microsoft-365-Toolchain (E-Mail, Teams, SharePoint). Beides sind Lücken, an denen Anthropics Managed-Agents-Public-Beta heute noch arbeitet.</p>
+        <p>Die strategische Pointe steckt im Branding. „Frontier" hieß bei OpenAI bisher das interne Codewort für die nächste Modell-Generation; den Begriff jetzt auf eine Enterprise-Plattform zu legen, ist ein klares Signal: das Lab hört auf, sich als Modell-Lieferant zu definieren, und positioniert sich als Plattform-Anbieter mit Modell-Komponente. Im Zusammenspiel mit DeployCo (letzte Woche, Vier-Milliarden-Beratungsarm) entsteht ein Stack, der in Form und Logik an Microsofts Enterprise-Plattform-Architektur erinnert — was nicht zufällig ist. <span data-person="greg-brockman">Greg Brockman</span>s Team hat in den vergangenen Monaten erkennbar Microsoft-Veteranen für die Enterprise-Architektur gewonnen.</p>
+        <p>Für Kunden, die jetzt vor der Stack-Entscheidung stehen: das Wettbewerbsbild hat sich in den letzten zehn Tagen vollständig verschoben. Beide Top-Labs liefern jetzt vergleichbare Plattform-Bausteine (Build-Agent, Deploy-Agent, Manage-Agent, Self-Hosted-Option, MCP-Integration). Die Entscheidung läuft 2026/27 nicht mehr über Feature-Listen, sondern über drei harte Kriterien: Datenflüsse (Anthropic: VPC-Option und Colossus-Verbindung; OpenAI: Microsoft-365-Tiefe), Sales-Velocity (Frontier hat noch keinen DeployCo-Äquivalent in Reichweite — DeployCo-Aufbau dauert mindestens zwei Quartale) und Regulatorik (siehe Section 4).</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Identitäts- und Vertragsschichten für Agenten werden in den nächsten 18 Monaten zum Standard-Streitpunkt. Wer als IT-Architekt heute Agent-Workloads ohne klaren Identitäts-Pfad in Production lässt, schafft technische Schulden, die ab 2027 teuer werden. Empfehlung: Solid-Standard und W3C-Verifiable-Credentials in die Roadmap aufnehmen — auch wenn die Spezifikation noch nicht final ist, ist die Richtung erkennbar.
+          Wer 2026 noch keine Lab-Plattform-Strategie hat, hat verloren. Frontier zwingt selbst Skeptiker zur Entscheidung — denn eine Microsoft-365-tiefe Agent-Plattform ist für IT-Architekten, die ohnehin im MS-Stack leben, schwer zu ignorieren. Empfehlung: jetzt zwei parallele Pilots (Anthropic Managed Agents + OpenAI Frontier) auf identische Use-Cases setzen und in Q3 entscheiden.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">02</span>Claude Code v2.1.152 — die Review-Skill wird zum Editor</h3>
-        <p>Anthropic hat in der Nacht <code>v2.1.152</code> ausgeliefert, und das ist die operativ wichtigste Release seit dem 2.1.147er-Sprung. Drei Funktionen, die das tägliche Coding-Workflow-Bild verschieben. Erstens: <code>/code-review --fix</code> wendet die Findings direkt im Working Tree an — nicht mehr nur Vorschlag mit Erklärung, sondern Edit-Round, die anschließend reviewbar bleibt. Der Skill prüft auf Reuse, Vereinfachung und Effizienz; <code>/simplify</code> ist jetzt ein Alias für <code>/code-review --fix</code>. Das ist eine kleine, aber inhaltsschwere Wende: die Skill ändert ihre Rolle vom Berater zum Editor mit erkennbarem Workflow-Pattern.</p>
-        <p>Zweitens: Skills und Slash-Commands können in der Frontmatter ein <code>disallowed-tools</code>-Feld setzen, das definierte Werkzeuge für die Dauer der Skill-Aktivierung aus dem Modell entfernt. Das ist das Pendant zum bisherigen Whitelisting in <code>permissions.allow</code> — und es macht Skills sicherer für agentische Auto-Modes, weil bestimmte Werkzeuge bewusst unterdrückt werden können. Für das ai-news-dashboard-Setup praktisch: wenn eine Skill (etwa <code>fetch-youtube</code>) keine Netzwerk-Aufrufe jenseits der definierten Quellen machen soll, lässt sich das jetzt sauber deklarieren.</p>
-        <p>Drittens: <code>/reload-skills</code> scant Skill-Verzeichnisse neu, ohne die Session zu beenden. <code>SessionStart</code>-Hooks können zusätzlich <code>reloadSkills: true</code> zurückgeben, sodass plugin-installierte Skills sofort in derselben Session verfügbar werden. Das schließt eine Lücke, an der Plugin-Entwickler bisher hingen — bis 2.1.152 brauchte jedes neu installierte Skill einen Session-Neustart, was bei langlebigen Background-Sessions schmerzhaft war. Mit <code>/reload-skills</code> wird das ai-news-dashboard-Setup einfacher updatebar, ohne den Cron-Job neu aufsetzen zu müssen.</p>
+        <h3><span class="num">02</span>$14B → $30B in 12 Wochen — die Anthropic-Run-Rate-Verdopplung</h3>
+        <p>Die zweite Zahl der Woche steht nicht in einem Pressetext, sondern in der Bloomberg-Hintergrundberichterstattung zur 30-Milliarden-Runde: die Annualized Run Rate von <span data-person="dario-amodei">Anthropic</span> ist von 14 Milliarden Dollar im Februar auf 30 Milliarden Dollar im April gesprungen — eine Verdopplung in zwölf Wochen, die selbst nach Tech-Maßstäben außergewöhnlich ist. Zum Vergleich: ChatGPT brauchte fünf Monate für eine vergleichbare Verdopplung, Salesforce zu seiner Wachstumsphase zwölf bis sechzehn. Wenn die Zahl hält — und Bloomberg zitiert mehrere unabhängige Quellen —, dann ist die 900-Milliarden-Bewertung deutlich weniger spekulativ als der erste Eindruck nahelegt.</p>
+        <p>Die Komposition der Run-Rate ist informativ. Anthropic kommuniziert sie nicht öffentlich; bekannt ist aber: Claude.ai-Subscriptions sind ein Bruchteil des Volumens, der Großteil kommt aus API-Konsum von Enterprise- und Coding-Anwendungen. Claude Code allein soll seit der 2.1.140er-Reihe einen niedrigen einstelligen Milliardenbetrag der ARR ausmachen — wir haben hier eine direkte Bestätigung, dass die Coding-Agent-These trägt. Managed Agents (Public Beta) und der Aufstieg von vertikalen Integratoren tragen den Rest. Wenn die Verdopplung in Q3 nochmal stattfindet, geht Anthropic mit ~60 Milliarden ARR ins Q4 — vor jeder neuen Frontier-Modell-Generation.</p>
+        <p>Für die Wettbewerbsdynamik bedeutet das ein klares Asymmetrie-Bild. OpenAI bleibt der größere Konzern in absoluten Zahlen (geschätzte 50–55 Milliarden ARR Mitte 2026), aber Anthropic wächst auf das Doppelte des Tempos. Wenn diese Trajektorie hält, kreuzen sich die Linien in 2027. Das erklärt, warum OpenAI mit Frontier und DeployCo so aggressiv nachzieht — und warum die Defense-Aktivität bei beiden Labs (siehe gestern: Shield AI, Project Glasswing) so wichtig wird: die margenstarken Vertikalen müssen jetzt gewonnen werden, sonst zementiert sich die Anthropic-Geschwindigkeit als strukturell.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          <code>/code-review --fix</code> ist die Funktion, die viele Teams 2025/26 von externen Lint-/Refactor-Tools (SonarQube, CodeClimate, Codacy) wegmigriert. Wer als CI-Verantwortlicher GitHub-Action-Setups mit <code>/code-review --comment</code> betreibt, sollte für die Q3-Planung den Switch auf <code>--fix</code> evaluieren — der Overhead pro PR sinkt deutlich. Disallowed-tools und /reload-skills sind „kleine" Features mit großer Production-Wirkung.
+          Wer 2024 Anthropic als „das ernsthaftere kleinere Lab" einsortiert hat, muss umlernen. Auf Run-Rate-Basis ist Anthropic kein Nischenanbieter mehr, sondern der schnellstwachsende AI-Konzern weltweit. Für Procurement-Verhandlungen heißt das: Multi-Year-Lock-Ins mit Anthropic werden teurer, je länger man wartet. Für Engineering-Roadmaps: Claude-Code-Plugin-Investitionen verzinsen sich auf einem Markt, der quartalsweise verdoppelt.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">03</span>Anthropic übernimmt Colossus 1 vollständig — und eröffnet Korea</h3>
-        <p>Was vor fünf Tagen als „zweistelliger Prozentsatz der Memphis-Capacity" durchsickerte, ist heute in voller Schärfe bestätigt: <span data-person="dario-amodei">Anthropic</span> übernimmt die gesamte Compute-Kapazität von SpaceX' Colossus-1-Anlage in Tennessee — 300 Megawatt, über 220.000 Nvidia-GPUs, exklusiver Zugriff. xAI rückt mit seinem internen Workload auf das deutlich größere Colossus-2-Areal um, das für Grok-Training reserviert bleibt. Das ist eine andere Größenordnung als „dritte Compute-Quelle": Anthropic gewinnt einen kompletten Hyperscale-Datacenter exklusiv, ohne ihn bauen zu müssen — und SpaceX bekommt einen mehrjährigen Anchor-Vertrag für Colossus 1, der die Anlage in der Bilanz monetarisiert.</p>
-        <p>Strategisch bedeutet das mehrere Verschiebungen. Erstens: Die operative Capacity-Story von Anthropic ist für 2026/27 gelöst — niedrige Token-Preise und ambitionierte Roadmap-Ziele werden glaubwürdig finanzierbar. Zweitens: AWS und Google Cloud verlieren einen Hebel im Verhandlungs-Spiel mit Anthropic. Drittens: Die xAI-Anthropic-Daten-Trennung ist sauberer als zunächst befürchtet — ein eigener Datacenter, der xAI nicht mehr betritt, ist substantieller als jede vertragliche Side-Letter zur Workload-Verschwiegenheit.</p>
-        <p>Parallel hat Anthropic die Ernennung von KiYoung Choi zum Representative Director Korea bekanntgegeben — ein Schritt, dem in den nächsten Wochen die Eröffnung eines Seouler Office folgen soll. Korea ist im AI-Markt eine größere Nummer, als westliche Beobachter wahrnehmen: Samsung, LG, SK Hynix sind nicht nur Lieferanten der Halbleiter-Lieferkette, sondern auch Enterprise-AI-Kunden mit erheblichen Software-Budgets. Mit Korea-Office, Tokyo-Office (seit Q1) und der bekannten Dublin-Präsenz baut Anthropic die internationale Distribution systematisch auf — derselbe Schritt, den OpenAI im April mit der Singapur-/Sydney-Doppel-Eröffnung gemacht hatte.</p>
+        <h3><span class="num">03</span>Waymo World Model: Synthetisches Edge-Case-Training wird Standard</h3>
+        <p>Waymo hat zusammen mit DeepMind das <em>Waymo World Model</em> veröffentlicht — eine Simulations-Pipeline auf Basis von <span data-person="demis-hassabis">DeepMinds</span> Genie 3, die hyper-realistische Driving-Szenarien synthetisiert und dabei synchronisiertes 2D-Video und 3D-Lidar erzeugt. Das adressiert das hart-erfahrungsbasierte Engpass-Problem: Edge-Cases im autonomen Fahren (Wildwechsel-Nacht-Regen-Kombinationen, Notfallfahrzeuge in Baustellenkontext, panische Fußgänger) sind in echter Telemetrie selten, müssen aber für Robustheits-Garantien zuverlässig im Trainings-Set landen. Synthetische Generation auf Foundation-Model-Basis löst das — wenn die Verteilung halbwegs realitätsnah ist.</p>
+        <p>Genie 3 als Substrat zu wählen, ist die strategische Pointe: Genie ist ein generisches Welt-Modell, kein Driving-spezifisches. Das bedeutet, dass die Pipeline trivial auf andere Embodied-Agent-Domänen übertragbar ist — Industrial Robotics, Lagerautomatisierung, Pharma-Lab-Workflows. Boston Dynamics hatte vorletzte Woche bereits Gemini Robotics-ER 1.6 in den Spot integriert; mit Waymo-World-Model als zweitem Stein entsteht eine erkennbare DeepMind-Vertikal-Strategie um Embodied-Agents. <span data-person="jeff-dean">Jeff Deans</span> Infrastruktur-Hand ist in diesem Stack erkennbar — das gemeinsame Substrat über mehrere Embodied-Anwendungen folgt der Pathways-Logik.</p>
+        <p>Für die Wettbewerbsdynamik im autonomen Fahren ist das eine substantielle Verschiebung. Tesla hat seine FSD-Skalierung lange über reine Telemetrie-Sammlung gefahren — das hatte einen Datenmengen-Vorsprung, der jetzt durch synthetische Generation egalisiert wird. Wenn die Waymo-Methode für Wettbewerber lizenzierbar oder nachvollziehbar wird (Genie 3 ist über Google Cloud verfügbar), kann die Daten-Asymmetrie zwischen Tesla und Waymo binnen Monaten kippen. Im europäischen Kontext: Mercedes-Drive-Pilot- und VW-CARIAD-Teams arbeiten an genau diesem Pipeline-Typus — die Frage ist, ob sie es schaffen, ohne Genie-3-Lizenz konkurrenzfähig zu bleiben.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Compute-Souveränität und internationale Distribution sind die zwei Hebel, die Anthropic in der 900-Milliarden-Bewertung verteidigen muss. Die Colossus-1-Komplett-Übernahme klärt ersteres bis Ende 2027, die Korea-Eröffnung beginnt zweiteres. Für DACH-Konzerne mit asiatischer Niederlassungs-Struktur: Anthropic wird ab Q3 lokale Account-Manager auch in Frankfurt anbieten — die Lücke, die zwischen Dublin-EMEA und Tokyo-APAC bleibt, wird geschlossen.
+          World Models sind kein Forschungs-Hype mehr, sondern operative Engineering-Bausteine. Wer in 2026/27 Embodied-Agent-Workloads plant (Robotics, Autonomous Vehicles, Industrial Automation), sollte synthetische Trainings-Pipelines früh in der Architektur einplanen — Genie 3, NVIDIA Cosmos oder Open-Source-Alternativen wie OpenWorldModel werden zur Pflichtkomponente.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">04</span>EU AI Act Article 50 — Transparenz-Pflichten in 60 Tagen</h3>
-        <p>Während die High-Risk-Diskussion von vergangener Woche noch in den Konsultations-Mühlen läuft, rücken die <em>Transparenz-Pflichten</em> nach Artikel 50 EU AI Act auf eine harte Frist heran: ab 2. August 2026 gelten sie verbindlich. Was das konkret bedeutet, hat die EU-Kommission in einer Folge-Mitteilung vom Wochenende präzisiert. Erstens: Bei Interaktionen mit AI-Chatbots oder Voice-Agents muss der Nutzer beim Initiieren der Interaktion explizit darüber informiert werden. Zweitens: AI-generierte Bild-, Video- und Audio-Inhalte müssen technisch markiert sein (Watermark, Metadata) — vollständige Spezifikation der zulässigen Technologien folgt im Juni. Drittens: AI-generierter Text, der öffentlich publiziert wird, muss als solcher gekennzeichnet sein, sofern er nicht „signifikanter menschlicher redaktioneller Bearbeitung" unterzogen wurde — der Bearbeitungs-Begriff ist bewusst weit gefasst und wird in der Marktpraxis interpretierbar bleiben.</p>
-        <p>Für DACH-Anbieter ist die Watermark-Frage operativ am unangenehmsten. Wer 2025 mit DALL·E, Midjourney oder Imagen Marketing-Material generiert hat, muss prüfen, ob die jeweiligen Anbieter die geforderten C2PA-/SynthID-Marker zuverlässig eingebettet haben — und sicherstellen, dass nachgelagerte Bearbeitungs-Pipelines die Marker nicht entfernen. Adobe-Lightroom-Workflows mit Generative-Fill sind hier ein typischer Stolperstein, weil die Export-Pipeline historisch Metadata aggressiv strippt. Empfehlung: bis Anfang Juli einen internen Audit der gesamten Content-Pipeline, mit dokumentierten Fix-Punkten und Verantwortlichen.</p>
-        <p>Strukturell ist Artikel 50 die <em>weniger schmerzhafte</em> AI-Act-Welle — die schwere Compliance liegt in der High-Risk-Klassifizierung (siehe gestriges Briefing). Aber Transparenz-Pflichten haben den höheren Marketing-/Branding-Effekt: Verstöße werden öffentlich sichtbar, weil Nutzer sich an Markierungen orientieren. Reputationsrisiko ist hier höher als Bußgeld-Risiko.</p>
+        <h3><span class="num">04</span>EU schärft die High-Risk-Liste — acht Bereiche werden Compliance-Pflicht</h3>
+        <p>Die Europäische Kommission hat am 22. Mai die Durchführungs-Guidelines zu Artikel 6 EU AI Act veröffentlicht — und damit zum ersten Mal die acht Bereiche konkret benannt, in denen AI-Anwendungen ab August 2026 als „high-risk" einzustufen sind: Biometrie und Emotionserkennung; kritische Infrastruktur (Strom, Wasser, Verkehr); Bildungs- und berufliche Bewertung; Beschäftigung und Workforce-Management; Zugang zu wesentlichen privaten und öffentlichen Diensten; Strafverfolgung; Migration/Asyl/Grenzkontrollen; Justiz und demokratische Prozesse. Das ist eine längere Liste als die Indikationen 2024 vermuten ließen — und sie trifft die produktiven Use-Cases der Mehrheit deutscher Enterprise-AI-Pilotprojekte.</p>
+        <p>Praktisch bedeutet die Einstufung: dokumentierte Risikoanalyse, technische Dokumentation, menschliche Aufsicht über Lifecycle, Bias-Audits, Logging und Transparenz-Pflichten gegenüber betroffenen Personen, CE-Kennzeichnung über benannte Stellen. Im DACH-Markt ist die Workforce-Management-Kategorie besonders sensibel — sie deckt jedes AI-System ab, das in HR-Prozessen Entscheidungen vorbereitet oder trifft (Lebenslauf-Scoring, Beförderungs-Empfehlungen, Performance-Bewertungen, Schichtplanung mit AI). Eine Reihe deutscher Großkonzerne hat solche Systeme 2024/25 ohne Risk-Klassifizierung deployt; die haben jetzt achtzehn Monate Zeit, sich nachträglich zertifizieren zu lassen.</p>
+        <p>Gleichzeitig läuft die US-Bewegung in die Gegenrichtung. Colorados Anti-Discrimination-AI-Gesetz wurde am 14. Mai aufgehoben und durch eine deutlich industrienähere Regelung ersetzt. NIST plant für Spätsommer/Herbst eigene Security-Profile für agentic AI, die explizit als „Empfehlung, keine Regulierung" formuliert sind. Die Schere zwischen EU- und US-Pflichten öffnet sich also weiter — und damit auch der Compliance-Aufwand für transatlantische Anbieter. <span data-person="jonas-andrulis">Jonas Andrulis</span> dürfte das als Differenzierungs-Argument für Aleph Alphas EU-Compliance-by-Design-Positionierung im DACH-Markt nutzen.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          60 Tage Restzeit. Wer im Marketing oder in Kundenkommunikation generative AI nutzt, sollte jetzt einen End-to-End-Audit der Watermark-Kette aufsetzen. Für Chatbots: <em>jeden</em> erstkontakt-Disclaimer prüfen, auch in Bestandsprodukten mit Auto-Reply. Anbieter mit nachweisbarer C2PA-Integration (Adobe, Microsoft, Google) gewinnen relativ; OpenAI muss seinen Watermark-Status für DALL·E 4 öffentlich klären.
+          High-Risk-Liste konkret bedeutet: Compliance-Budgets für 2026 müssen jetzt geplant werden. Wer in einer der acht Kategorien arbeitet, sollte sofort den Risk-Assessment-Prozess starten — die benannten Stellen werden ab Q4 chronisch überlastet sein. Für Lab-Auswahl: Anbieter mit dokumentierten Trainings-Daten und Audit-Logs (Anthropic, Mistral, Aleph Alpha) gewinnen relativ, OpenAI muss seine Audit-Story für EU-Kunden nachschärfen.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">05</span>Coupa kauft Tonkean — Procurement-Agent-Layer konsolidiert sich</h3>
-        <p>Coupa, seit 2023 unter Thoma Bravo, hat die Übernahme von Tonkean bekanntgegeben — ein Enterprise-Workflow-Automation-Startup, das sich auf Procurement-Workflows spezialisiert hat. Coupa nutzt das M&amp;A explizit, um eine AI-Agent-Schicht über den klassischen Spend-Management-Stack zu legen. Konkrete Zahl: Coupa hat heute 20 AI-Agenten produktiv im Einsatz, im Mai 2025 waren es sechs — und die Roadmap zielt auf 65 Agenten bis Januar 2027. Das ist die quantitativ klarste Aussage zum Agent-Velocity-Curve, die ein großes Enterprise-SaaS-Unternehmen in diesem Quartal abgegeben hat.</p>
-        <p>Die Übernahme ist exemplarisch für ein Pattern, das in den nächsten Quartalen häufiger werden wird: etabliertes Enterprise-SaaS schluckt Workflow-Spezialisten, um die Agent-Schicht nicht selbst bauen zu müssen. Im selben Logik-Bogen liegen Salesforce-Agentforce-Akquisitionen der letzten 12 Monate, ServiceNow-Now-Assist-Erweiterungen und SAP-Joule-Erweiterungen. Was bei Coupa neu ist: die Roadmap-Transparenz. „20 heute, 65 bis Januar 2027" macht aus dem Agent-Layer eine messbare Produktkategorie — Analysten werden Coupa ab Q3 nach Agent-Adoption-Rate bewerten.</p>
-        <p>Im Mittelstands-Segment passt das zur Q3-Konsolidierungs-Prognose, die diese Woche von mehreren Banker-Trackern bestätigt wurde: 18–26 strategische AI-Akquisitionen werden für Q3 weltweit erwartet, verteilt auf vier Akquirer-Archetypen — Hyperscaler kaufen Modell-Labs (siehe vorige Woche), Enterprise-SaaS rollt Agent-Workflow-Companies auf (Coupa-Tonkean), Mid-Cap-Public-Unternehmen kaufen Vertical-AI-Capability, PE-backed Roll-ups bauen AI-Service-Schichten. Für jeden, der als Founder in einem dieser vier Felder steht: das Übernahme-Fenster ist offen, aber nicht unbegrenzt.</p>
-        <blockquote class="takeaway">
-          <strong>Was es bedeutet</strong>
-          Procurement, Service-Management, HR-Tech sind die drei Enterprise-SaaS-Bereiche, in denen die Agent-Roll-up-Welle in Q3 am sichtbarsten wird. Wer als IT-Architekt einen dieser Bestands-Stacks betreut, sollte mit dem jeweiligen Account-Manager über Agent-Roadmap und Pricing-Änderungen sprechen — Lock-In-Verträge wandern in die Agent-Lizenzierung, weg von reiner Plattform-Lizenz.
-        </blockquote>
+        <h3><span class="num">05</span>Realwirtschaft sortiert sich neu — und Claude Code bleibt der Hebel</h3>
+        <p>Im Personalbereich sortiert sich die Realwirtschaft auf das neue AI-Niveau ein. Standard Chartered hat in der Wochenend-Telefonkonferenz das Streichen mehrerer Tausend Stellen angekündigt — explizit begründet mit „AI-Substitution in Kunden- und Backoffice-Prozessen". Meta hat 7000 Mitarbeiter aus Werbe- und Plattform-Teams in seine AI-Org verschoben. Das sind die ersten beiden Großkonzern-Ankündigungen, die <em>quantitativ</em> belastbar sind — die Welle der Goldman-/JPMorgan-Anekdoten der letzten Quartale hatte keine harten Zahlen. Wenn diese Beispiele Schule machen — und in Q3/Q4 spätestens eine deutsche Bank nachzieht — wandert die Beschäftigungs-Diskussion vom Feuilleton in die Tarifrunden.</p>
+        <p>Modal Labs hat parallel 355 Millionen Dollar geholt und sich explizit als Agent-Workload-Plattform repositioniert — weg vom generischen Serverless-Compute-Angebot. Das ist ein präzises Marktsignal: zwischen den großen Lab-Plattformen (Anthropic Managed Agents, OpenAI Frontier) und dem klassischen Cloud-Hyperscaler-Layer entsteht eine eigene Schicht spezialisierter Agent-Runtimes, die Latenz, Cold-Start und Token-Budgeting für Agent-Workloads optimieren. Wer eigene Agent-Frontends baut, sollte diese Schicht jetzt in der Architektur einplanen.</p>
+        <p>Bei Claude Code keine neuen Releases seit dem 23. Mai — die <code>v2.1.150</code>-Reihe hält. Die ruhige Update-Kadenz nach dem aggressiven 2.1.147er-Sprung war erwartbar; spannender ist, dass Anthropic in dieser Phase erkennbar an internen Tooling-Schichten arbeitet (v2.1.150 war „internal infrastructure improvements"). Erwarten ist eine Welle um Anfang Juni mit MCP-Tunnel-Support und ersten <code>/sandbox</code>-Befehlen, die die Public-Beta-Sandbox-Funktion in Claude Code zugänglich machen. Für das ai-news-dashboard-Setup heute relevant: <code>/cron list</code> und <code>/loop status</code> sind die Hebel, mit denen sich die Daily-Loop-Mechanik überwachen lässt, ohne den Daemon-Logs zu folgen.</p>
       </section>
 
       <div class="briefing-end">
-        <strong>Was diese Woche zu beobachten ist:</strong> W3C-Reaktion auf Berners-Lees Working-Group-Vorschlag — formell muss das Charter-Pre-Draft binnen 30 Tagen vorliegen, sonst verliert die Initiative Momentum. SpaceX-Colossus-1-Übergabe-Status: tatsächliche Capacity-Verfügbarkeit für Anthropic vs. angekündigter Zeitplan — erste Inference-Latenz-Berichte werden in einer Woche erwartet. EU-Watermark-Spezifikation im Juni: welche C2PA-Profile akzeptiert werden, entscheidet über Adobe- vs. Microsoft- vs. Google-Toolchain-Vorteile. Claude Code: nach dem 2.1.152er Skill-Sprung wird die nächste Welle vermutlich um agent-spezifische Sandbox-Befehle kreisen (siehe Anthropic Managed Agents Sandboxes). Und im Lab-Markt: <span data-person="mira-murati">Mira Muratis</span> Thinking Machines Lab hat den Anfang-Juni-Termin bestätigt — wenn er hält, ist das Lab nach drei Verschiebungen wieder im Glaubwürdigkeits-Fenster.
+        <strong>Was diese Woche zu beobachten ist:</strong> Frontier-Pricing — OpenAI hat heute Nacht nur die Plattform-Architektur, nicht die Tarif-Struktur veröffentlicht. Erwarten ist eine consumption-basierte Staffel mit Volumen-Rabatten, die direkt gegen Anthropic Managed Agents kalibriert ist. Anthropic-Run-Rate-Bestätigung: ob das Lab eine offizielle Zahl in einer der nächsten Mitarbeiter-Townhalls bestätigt — bislang gibt es nur Bloomberg-Hintergrund. EU-High-Risk-Konsultation: die 60-Tage-Frist zur Kommentierung läuft bis Ende Juli; deutsche Wirtschaftsverbände (Bitkom, vbw, VDA) werden zwischen Juni und Juli Stellungnahmen einreichen — Watch-Linie für jeden, der in einer der acht Kategorien arbeitet. Und im Lab-Markt: <span data-person="mira-murati">Mira Muratis</span> Thinking Machines Lab hat nach drei verschobenen Terminen jetzt für Anfang Juni eine Vorabschau angekündigt — Glaubwürdigkeit ist bei diesem nächsten Termin ein Faktor.
       </div>
 
     </div>
@@ -455,52 +448,51 @@
       <article class="card news-card crit">
         <div class="row">
           <span class="pill crit">Major Release</span>
-          <span class="score">Score <b>9.0</b>/10</span>
+          <span class="score">Score <b>9.5</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Berners-Lee zum Agentic Web — Forderung nach dezentraler Identitäts-Schicht</h3>
-        <p>Beim IAB Tech Lab Agentic Web Summit in New York: ohne W3C-Working-Group zu Agent Interaction Standards droht das offene Web erneut Plattform-Aggregation. Empfehlung: Solid-Standard und Verifiable Credentials in Agent-Architekturen einbeziehen.</p>
+        <h3 style="margin-top:10px">OpenAI launcht <em>Frontier</em> — direkter Konter zu Anthropic Managed Agents</h3>
+        <p>Enterprise-Plattform mit Shared-Context-Store und Microsoft-365-Integration ab Tag eins. Bezeichnungs-Pointe: „Frontier" hieß intern die Modell-Generation — jetzt eine Plattform. <span data-person="greg-brockman">Greg Brockman</span>s Team positioniert OpenAI als Plattform mit Modell-Komponente.</p>
         <div class="news-meta">
-          <span>📅 28.05.2026</span><span>·</span><span>🏢 IAB Tech Lab · W3C</span><span>·</span>
-          <a href="https://iabtechlab.com/tech-lab-summit-2026-the-agentic-web/">IAB Tech Lab</a>
+          <span>📅 26.05.2026</span><span>·</span><span>🏢 <span data-person="greg-brockman">OpenAI</span></span><span>·</span>
+          <a href="https://llm-stats.com/llm-updates">LLM Updates</a>
         </div>
       </article>
 
       <article class="card news-card crit">
         <div class="row">
-          <span class="pill crit">Tooling</span>
+          <span class="pill crit">Marktdaten</span>
           <span class="score">Score <b>9.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Claude Code v2.1.152: <code>/code-review --fix</code> macht Edits direkt</h3>
-        <p>Reuse-/Simplification-/Efficiency-Findings werden im Working Tree angewendet. <code>/simplify</code> jetzt Alias. Plus: <code>disallowed-tools</code> in Skill-Frontmatter, <code>/reload-skills</code> ohne Session-Restart. Substitut für SonarQube-/CodeClimate-/Codacy-Setups.</p>
+        <h3 style="margin-top:10px">Anthropic ARR springt von 14 auf 30 Mrd. in 12 Wochen</h3>
+        <p>Bloomberg-Hintergrund zur 30-Mrd.-Runde: Annualized Run Rate hat sich seit Februar verdoppelt. Tempo schneller als ChatGPT-2023. Wenn die Verdopplung in Q3 hält, geht <span data-person="dario-amodei">Anthropic</span> mit ~60 Mrd. ARR ins Q4 — vor jeder neuen Modell-Generation.</p>
         <div class="news-meta">
-          <span>📅 27.05.2026</span><span>·</span><span>🏢 Anthropic · Claude Code</span><span>·</span>
-          <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.152">Release Notes</a>
-        </div>
-      </article>
-
-      <article class="card news-card hot">
-        <div class="row">
-          <span class="pill hot">Major Release</span>
-          <span class="score">Score <b>8.7</b>/10</span>
-        </div>
-        <h3 style="margin-top:10px">Anthropic übernimmt Colossus 1 vollständig — 300 MW, 220k+ GPUs</h3>
-        <p>Faktcheck-Update: Nicht ein „zweistelliger Prozentsatz", sondern die gesamte Memphis-Anlage. xAI rückt auf Colossus 2 um (Grok-Training). Capacity-Story für 2026/27 strukturell gelöst, AWS/GCP verlieren Verhandlungs-Hebel.</p>
-        <div class="news-meta">
-          <span>📅 27.05.2026</span><span>·</span><span>🏢 <span data-person="dario-amodei">Anthropic</span> · SpaceX/xAI</span><span>·</span>
-          <a href="https://www.anthropic.com/news">Anthropic News</a>
+          <span>📅 22.–26.05.2026</span><span>·</span><span>🏢 <span data-person="dario-amodei">Anthropic</span></span><span>·</span>
+          <a href="https://www.bloomberg.com/news/articles/2026-05-22/anthropic-to-close-over-30-billion-round-as-soon-as-next-week">Bloomberg</a>
         </div>
       </article>
 
       <article class="card news-card hot">
         <div class="row">
           <span class="pill hot">Security</span>
-          <span class="score">Score <b>8.3</b>/10</span>
+          <span class="score">Score <b>8.5</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">EU AI Act Article 50 — Transparenz-Pflichten in 60 Tagen scharf</h3>
-        <p>Ab 2. August 2026: Chatbot-Disclaimer, Watermark/Metadata für Bild/Video/Audio, AI-Text-Kennzeichnung. C2PA-Spezifikation folgt im Juni. Marketing- und Customer-Communication-Pipelines brauchen End-to-End-Audit.</p>
+        <h3 style="margin-top:10px">EU AI Act: High-Risk-Guidelines für 8 Bereiche veröffentlicht</h3>
+        <p>Brüssel benennt erstmals konkret: Biometrie, KRITIS, Bildung, HR/Workforce, wesentliche Dienste, Strafverfolgung, Migration, Justiz. Workforce-Kategorie trifft DACH-HR-AI-Deployments direkt. Konsultations-Frist bis Ende Juli.</p>
         <div class="news-meta">
-          <span>📅 27.05.2026</span><span>·</span><span>🏢 EU Commission</span><span>·</span>
-          <a href="https://www.heise.de/news/EU-AI-Act-Was-bis-August-2026-in-Unternehmen-erledigt-sein-muss-11289793.html">heise</a>
+          <span>📅 22.05.2026</span><span>·</span><span>🏢 EU Commission</span><span>·</span>
+          <a href="https://www.boerse-express.com/news/articles/agentic-ai-sicherheitsluecken-regulierung-und-milliardengeschaefte-906347">DACH-Analyse</a>
+        </div>
+      </article>
+
+      <article class="card news-card hot">
+        <div class="row">
+          <span class="pill hot">Forschung</span>
+          <span class="score">Score <b>8.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Waymo World Model auf Genie 3 — synthetisches Edge-Case-Training</h3>
+        <p>Hyper-realistische Driving-Szenarien mit synchronisiertem 2D-Video + 3D-Lidar. Genie als generisches Substrat → trivial auf Robotics, Industrial, Pharma übertragbar. <span data-person="jeff-dean">Jeff Deans</span> Pathways-Logik für Embodied-Agents sichtbar.</p>
+        <div class="news-meta">
+          <span>📅 26.05.2026</span><span>·</span><span>🏢 Waymo · <span data-person="demis-hassabis">Google DeepMind</span></span>
         </div>
       </article>
 
@@ -509,11 +501,10 @@
           <span class="pill warn">Personalie</span>
           <span class="score">Score <b>7.5</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Anthropic eröffnet Korea-Office, KiYoung Choi wird Director</h3>
-        <p>Nach Dublin und Tokyo der nächste APAC-Schritt. Samsung/LG/SK Hynix sind Enterprise-AI-Kunden mit erheblichen Software-Budgets. Bis Q3 lokale Account-Manager auch für Frankfurt erwartet.</p>
+        <h3 style="margin-top:10px">Standard Chartered &amp; Meta — Realwirtschaft sortiert sich neu</h3>
+        <p>Standard Chartered streicht mehrere Tausend Stellen, explizit AI-substitutiv begründet. Meta verschiebt 7000 Mitarbeiter in AI-Teams. Erste quantitativ harten Großkonzern-Ankündigungen — Tarifrunden-Relevanz wandert in Q3/Q4.</p>
         <div class="news-meta">
-          <span>📅 26.05.2026</span><span>·</span><span>🏢 <span data-person="dario-amodei">Anthropic</span></span><span>·</span>
-          <a href="https://www.anthropic.com/news">Anthropic News</a>
+          <span>📅 25.–26.05.2026</span><span>·</span><span>🏢 Standard Chartered · Meta</span>
         </div>
       </article>
 
@@ -522,11 +513,11 @@
           <span class="pill info">M&amp;A</span>
           <span class="score">Score <b>7.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Coupa kauft Tonkean — Procurement-Agent-Layer konsolidiert</h3>
-        <p>Roadmap-Transparenz: 20 AI-Agenten heute → 65 bis Januar 2027. Exemplarisch für Enterprise-SaaS-Roll-up-Pattern (Salesforce/ServiceNow/SAP). Q3-Prognose: 18–26 strategische AI-Akquisitionen weltweit.</p>
+        <h3 style="margin-top:10px">Modal Labs 355 Mio. — Agent-Workload-Plattform positioniert sich</h3>
+        <p>Repositionierung weg von generischem Serverless-Compute hin zu spezialisierter Agent-Runtime: Latenz, Cold-Start, Token-Budgeting optimiert. Eigene Schicht zwischen Lab-Plattformen und Hyperscalern entsteht.</p>
         <div class="news-meta">
-          <span>📅 21.05.2026</span><span>·</span><span>🏢 Coupa · Tonkean</span><span>·</span>
-          <a href="https://www.axios.com/pro/fintech-deals/2026/05/21/coupa-tonkean-ai-procurement-acquisition">Axios</a>
+          <span>📅 24.05.2026</span><span>·</span><span>🏢 Modal Labs</span><span>·</span>
+          <a href="https://aifundingtracker.com/ai-startup-funding-news-today/">Funding Tracker</a>
         </div>
       </article>
 
@@ -547,16 +538,7 @@
 
       <article class="card">
         <h3>Letzte Releases</h3>
-        <p>Aktuelle Version <code>v2.1.152</code>, ~tägliche Patch-Kadenz.</p>
-
-        <div class="release">
-          <div class="ver">v2.1.152</div>
-          <div class="when">27.05.</div>
-          <div class="what">
-            <strong><code>/code-review --fix</code> wendet Findings direkt im Working Tree an</strong> · <code>/simplify</code> jetzt Alias · <code>disallowed-tools</code> in Skill-Frontmatter · <code>/reload-skills</code> + <code>reloadSkills</code>-Return für SessionStart-Hooks
-            <span class="badge feat">FEATURE</span>
-          </div>
-        </div>
+        <p>Aktuelle Version <code>v2.1.150</code>, ~tägliche Patch-Kadenz.</p>
 
         <div class="release">
           <div class="ver">v2.1.150</div>
@@ -608,6 +590,15 @@
           </div>
         </div>
 
+        <div class="release">
+          <div class="ver">v2.1.145</div>
+          <div class="when">19.05.</div>
+          <div class="what">
+            <code>claude agents --json</code> für Scripting · OTEL-Trace-Parenting für Subagent-Spans · GitHub-PR-Info in Statusline-JSON
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
         <p style="margin-top: 14px;">
           <a href="https://github.com/anthropics/claude-code/releases">→ Alle Releases auf GitHub</a><br/>
           <a href="https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md">→ Vollständiger CHANGELOG.md</a>
@@ -637,16 +628,16 @@
   </section>
 
   <footer>
-    <div>Snapshot · <span class="mono" id="generated">28. Mai 2026</span></div>
+    <div>Snapshot · <span class="mono" id="generated">27. Mai 2026</span></div>
     <div>
-      <a href="/sources/">📚 Quellen-Sammlung</a> ·
-      <a href="/">📊 Übersicht</a>
+      <a href="/agentic-info-dashboard/sources/">📚 Quellen-Sammlung</a> ·
+      <a href="/agentic-info-dashboard/">📊 Übersicht</a>
     </div>
   </footer>
 
 </div>
 
-<script src="/_shared/people.js" defer></script>
+<script src="/agentic-info-dashboard/_shared/people.js" defer></script>
 <script>
   // ── Datum im Header lokalisieren ──────────────────────────
   const SNAPSHOT_DATE = document.body.dataset.snapshotDate; // YYYY-MM-DD
@@ -663,7 +654,7 @@
   // ── Timeline aus manifest.json bauen ──────────────────────
   (async () => {
     try {
-      const res = await fetch('/ai-news/archive/manifest.json', { cache: 'no-store' });
+      const res = await fetch('/agentic-info-dashboard/ai-news/archive/manifest.json', { cache: 'no-store' });
       if (!res.ok) throw new Error('manifest not found');
       const data = await res.json();
       const snapshots = (data.snapshots || []).sort((a, b) => b.date.localeCompare(a.date));

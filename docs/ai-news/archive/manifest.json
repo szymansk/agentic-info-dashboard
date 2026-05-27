@@ -2,8 +2,14 @@
   "$schema": "https://example.com/dashboard-archive.schema.json",
   "snapshots": [
     {
-      "date": "2026-05-27",
+      "date": "2026-05-28",
       "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Berners-Lee zum Agentic Web, Claude Code wird zum Editor, Anthropic übernimmt Colossus 1 vollständig",
+      "summary": "IAB Tech Lab Agentic Web Summit mit Berners-Lee · Claude Code v2.1.152: /code-review --fix · Anthropic übernimmt gesamte Colossus-1-Capacity (300 MW) · Korea-Office mit KiYoung Choi · EU AI Act Article 50 in 60 Tagen scharf · Coupa kauft Tonkean"
+    },
+    {
+      "date": "2026-05-27",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-05-27.html",
       "headline": "OpenAIs Frontier-Konter, Anthropics Run-Rate-Verdopplung und EU schärft die High-Risk-Liste",
       "summary": "OpenAI launcht Frontier-Plattform (Konter zu Managed Agents) · Anthropic ARR $14B→$30B in 12 Wochen · EU AI Act High-Risk-Guidelines für 8 Bereiche · Waymo World Model auf Genie 3 · Modal Labs $355M · Standard Chartered/Meta Personal-Reshuffle"
     },

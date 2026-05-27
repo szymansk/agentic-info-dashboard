@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-26T22:37:43+00:00",
+  "last_updated": "2026-05-27T22:37:44+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,6 +116,19 @@
   ],
   "featured": [
     {
+      "video_id": "ovPVaSmDFcw",
+      "title": "Join us for Builders Unscripted Episode 3 on 5/29",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-05-27T16:48:12+00:00",
+      "url": "https://www.youtube.com/shorts/ovPVaSmDFcw",
+      "thumbnail": "https://img.youtube.com/vi/ovPVaSmDFcw/mqdefault.jpg",
+      "description": "“The developer we’re building for has evolved.”\n\nMatias Castillo talks with Romain Huet about the new builder mindset, where ideas can move from thought to working software faster than before.\n\nFull episode drops 5/29.",
+      "why": ""
+    },
+    {
       "video_id": "pm5PBbo6l2k",
       "title": "Gemini for Science is here. 🧬",
       "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
@@ -126,19 +139,6 @@
       "url": "https://www.youtube.com/shorts/pm5PBbo6l2k",
       "thumbnail": "https://img.youtube.com/vi/pm5PBbo6l2k/mqdefault.jpg",
       "description": "",
-      "why": ""
-    },
-    {
-      "video_id": "KHasJMg4zV4",
-      "title": "Sid vs Career | With ChatGPT",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-05-26T06:18:36+00:00",
-      "url": "https://www.youtube.com/watch?v=KHasJMg4zV4",
-      "thumbnail": "https://img.youtube.com/vi/KHasJMg4zV4/mqdefault.jpg",
-      "description": "Expertise at your fingertips with ChatGPT\n\nCredits\nDirector: Abhinav Pratiman\nDOP: Tassaduq Hussain\nProduction House: Early Man Film\nCreative agency: Hue & Why",
       "why": ""
     },
     {
@@ -157,6 +157,54 @@
   ],
   "recent": [
     {
+      "video_id": "ovPVaSmDFcw",
+      "title": "Join us for Builders Unscripted Episode 3 on 5/29",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-05-27T16:48:12+00:00",
+      "url": "https://www.youtube.com/shorts/ovPVaSmDFcw",
+      "thumbnail": "https://img.youtube.com/vi/ovPVaSmDFcw/mqdefault.jpg",
+      "description": "“The developer we’re building for has evolved.”\n\nMatias Castillo talks with Romain Huet about the new builder mindset, where ideas can move from thought to working software faster than before.\n\nFull episode drops 5/29."
+    },
+    {
+      "video_id": "6LwQ8RbU9as",
+      "title": "Finally a good benchmark (DeepSWE)",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-05-27T16:03:45+00:00",
+      "url": "https://www.youtube.com/watch?v=6LwQ8RbU9as",
+      "thumbnail": "https://img.youtube.com/vi/6LwQ8RbU9as/mqdefault.jpg",
+      "description": "Check out HeyGen to create your own free avatar: https://tinyurl.com/6y9b4nkk\nFor HyperFrames, visit: https://hyperframes.heygen.com/quickstart\n\nDownload The 25 OpenClaw Use Cases eBook 👇🏼\nhttps://bit.ly/4aBQwo1\n\nJoin My Newsletter for Regu"
+    },
+    {
+      "video_id": "oYK_MmZW9XI",
+      "title": "Private Markets and The Future of Capital Allocation with Marc Rowan | The a16z Show",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-05-27T14:00:13+00:00",
+      "url": "https://www.youtube.com/watch?v=oYK_MmZW9XI",
+      "thumbnail": "https://img.youtube.com/vi/oYK_MmZW9XI/mqdefault.jpg",
+      "description": "In 1990, Marc Rowan walked out of Drexel with his belongings in a cardboard box. Within a year, Apollo was managing $6 billion.\n\nDavid Haber speaks with Marc Rowan, Cofounder, CEO, and Chair of Apollo Global Management, about building Apoll"
+    },
+    {
+      "video_id": "A_6UOxQSvvY",
+      "title": "How Transformers.js Works: AI Models in JavaScript, Explained",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-05-27T08:26:22+00:00",
+      "url": "https://www.youtube.com/watch?v=A_6UOxQSvvY",
+      "thumbnail": "https://img.youtube.com/vi/A_6UOxQSvvY/mqdefault.jpg",
+      "description": "00:00 Intro\n01:16 Machine Learning\n03:11 ONNX\n04:04 Quantization\n05:15 The core Library\n06:56 Pipeline API\n10:26 Pipe\n13:06 Wrap-up\n\nTransformers.js brings state-of-the-art machine learning to JavaScriprt.\n\nIn this intro, I explain the ment"
+    },
+    {
       "video_id": "qPuzWFvRajk",
       "title": "10 weird OSS projects you need right now...",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -170,7 +218,7 @@
     },
     {
       "video_id": "kIvvzCR5NjA",
-      "title": "Google DeepMind CEO Likes Hard Questions",
+      "title": "Google DeepMind CEO Loves Hard Questions 🙂",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
       "channel_name": "Two Minute Papers",
       "category": "researcher",
@@ -361,18 +409,6 @@
       "description": ""
     },
     {
-      "video_id": "oRsn3pyeXuw",
-      "title": "Cisco Builds AI Defense with Codex",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-05-22T13:59:47+00:00",
-      "url": "https://www.youtube.com/watch?v=oRsn3pyeXuw",
-      "thumbnail": "https://img.youtube.com/vi/oRsn3pyeXuw/mqdefault.jpg",
-      "description": "AI Defense is Cisco's end-to-end AI security solution that protects against safety and security risks introduced by AI. Codex was used by Cisco's team to write the majority of AI Defense and nearly every new feature that Cisco is building. "
-    },
-    {
       "video_id": "LpXhy2iiaQE",
       "title": "DeepSeek’s New AI Is A Game Changer",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -517,18 +553,6 @@
       "description": "Erin Price-Wright speaks with Michael Duffey and Dino Mavrookas about what it will take to rebuild the American defense industrial base for a new era of competition. As production capacity becomes a central constraint, they outline how the "
     },
     {
-      "video_id": "IMHqGNLLoxo",
-      "title": "So Anthropic is just winning now",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-05-18T16:30:38+00:00",
-      "url": "https://www.youtube.com/shorts/IMHqGNLLoxo",
-      "thumbnail": "https://img.youtube.com/vi/IMHqGNLLoxo/mqdefault.jpg",
-      "description": "Follow me ► x.com/matthewberman\nInstagram ► https://www.instagram.com/matthewberman_ai\n\nMedia/Sponsorship Inquiries ► https://bit.ly/44TC45V"
-    },
-    {
       "video_id": "Ie07zcmbnhM",
       "title": "How Founders Can Build for Law Enforcement and First Responders | The a16z Show",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -587,30 +611,6 @@
       "url": "https://www.youtube.com/watch?v=gwTQLZSIlsU",
       "thumbnail": "https://img.youtube.com/vi/gwTQLZSIlsU/mqdefault.jpg",
       "description": "Try Seer Agent for free - https://sentry.io/fireship. It uses all of Sentry's context on your app to investigate production issues for you.\n\nEarlier this week Tanstack was poisoned with a sophisticated supply chain attack . In this video we"
-    },
-    {
-      "video_id": "4wC8hnQawiA",
-      "title": "NVIDIA New AI Is An Efficiency Monster",
-      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
-      "channel_name": "Two Minute Papers",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-05-13T16:07:20+00:00",
-      "url": "https://www.youtube.com/watch?v=4wC8hnQawiA",
-      "thumbnail": "https://img.youtube.com/vi/4wC8hnQawiA/mqdefault.jpg",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The paper is available here:\nhttps://arxiv.org/abs/2604.24954\nhttps://developer.nvidia.com/blog/nvidia-nemotron-3-nano-omni-powers-multimodal-agent-reason"
-    },
-    {
-      "video_id": "FnJaDj5zUhY",
-      "title": "The Founders Who Left Tesla to Rebuild America | a16z",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-05-13T14:39:25+00:00",
-      "url": "https://www.youtube.com/watch?v=FnJaDj5zUhY",
-      "thumbnail": "https://img.youtube.com/vi/FnJaDj5zUhY/mqdefault.jpg",
-      "description": "Erin Price-Wright speaks with Turner Caldwell and Drew Baglino about what it will take to close America's critical minerals gap and modernize the power infrastructure that underpins the AI economy. With the US more than 50 years behind Chin"
     }
   ],
   "stats": {
