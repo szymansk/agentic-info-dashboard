@@ -1,0 +1,25 @@
+# Generierte / volatile Daten
+dashboards/youtube/data.json
+dashboards/ai-news/archive/*.html
+dashboards/ai-news/archive/manifest.json
+
+# Behalte die Archive-Datei-Konvention, aber nicht den Inhalt
+!dashboards/ai-news/archive/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Claude Code lokale State-Dateien (nicht ins Public-Repo)
+.claude/
+
