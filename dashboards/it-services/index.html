@@ -270,6 +270,167 @@
   }
   .event.hidden { display: none; }
 
+  /* Cross-Link zum AI-News-Briefing am Card-Ende */
+  .event .ev-briefing-link {
+    margin-top: 8px; padding-top: 8px;
+    border-top: 1px dashed var(--line);
+    font-size: 11.5px;
+  }
+  .event .ev-briefing-link a {
+    color: var(--accent); font-family: ui-monospace, monospace;
+    font-size: 11.5px; letter-spacing: .02em;
+  }
+  .event .ev-briefing-link a:hover { text-decoration: underline; }
+
+  /* ── „Was zu beobachten" Sektion ─────────────────────── */
+  .watchpoints {
+    background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 22px 24px;
+    margin-bottom: 28px;
+    box-shadow: var(--shadow);
+  }
+  .watchpoints header {
+    display: flex; align-items: baseline; justify-content: space-between;
+    margin-bottom: 14px; gap: 16px;
+  }
+  .watchpoints header h2 {
+    margin: 0; font-size: 16px; font-weight: 800; letter-spacing: .02em;
+    text-transform: uppercase; color: var(--text);
+    display: flex; align-items: center; gap: 10px;
+  }
+  .watchpoints header h2::before {
+    content: "👁"; font-size: 18px;
+  }
+  .watchpoints .label-prognose {
+    font-size: 10px; padding: 2px 8px; border-radius: 999px;
+    background: rgba(224,168,87,.12); color: var(--watch);
+    border: 1px solid rgba(224,168,87,.4);
+    letter-spacing: .06em; text-transform: uppercase; font-weight: 700;
+  }
+  .watchpoints ul {
+    margin: 0; padding: 0; list-style: none;
+    display: grid; gap: 10px;
+  }
+  .watchpoints li {
+    display: grid; grid-template-columns: 110px 1fr; gap: 14px;
+    align-items: baseline; font-size: 13.5px;
+  }
+  .watchpoints li .wp-when {
+    color: var(--accent); font-family: ui-monospace, monospace;
+    font-size: 12px; font-weight: 700; letter-spacing: .02em;
+  }
+  .watchpoints li .wp-text { color: var(--muted); }
+  .watchpoints li .wp-text b { color: var(--text); font-weight: 700; }
+  .watchpoints li .wp-text a {
+    color: var(--accent); font-size: 11.5px;
+    font-family: ui-monospace, monospace;
+  }
+  @media (max-width: 760px) {
+    .watchpoints li { grid-template-columns: 1fr; gap: 4px; }
+  }
+
+  /* ── Sparklines im Col-Head ──────────────────────────── */
+  .col-head .sparkline {
+    display: flex; flex-direction: column; align-items: flex-end;
+    gap: 2px;
+  }
+  .col-head .sparkline svg { display: block; }
+  .col-head .sparkline .spark-label {
+    font-size: 9px; color: var(--dim); font-family: ui-monospace, monospace;
+    letter-spacing: .06em; text-transform: uppercase;
+  }
+
+  /* ── Detail-Modal ────────────────────────────────────── */
+  .event { cursor: pointer; }
+  .event .ev-sources a, .event .ev-briefing-link a { cursor: pointer; }
+  .modal-overlay {
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,.7);
+    backdrop-filter: blur(4px);
+    z-index: 100;
+    display: none;
+    align-items: center; justify-content: center;
+    padding: 24px;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal {
+    background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    max-width: 720px; width: 100%; max-height: 88vh; overflow-y: auto;
+    padding: 28px 28px 24px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.5);
+    position: relative;
+  }
+  .modal-close {
+    position: absolute; top: 14px; right: 16px;
+    background: transparent; border: 1px solid var(--line);
+    color: var(--muted); width: 28px; height: 28px; border-radius: 50%;
+    cursor: pointer; font-size: 14px;
+    display: flex; align-items: center; justify-content: center;
+    transition: all .12s ease;
+  }
+  .modal-close:hover { color: var(--text); border-color: var(--accent); }
+  .modal-head {
+    display: flex; gap: 12px; align-items: center;
+    margin-bottom: 14px; padding-right: 36px;
+  }
+  .modal-head .m-cat {
+    font-size: 10.5px; font-family: ui-monospace, monospace;
+    padding: 2px 8px; border-radius: 4px; border: 1px solid var(--line);
+    color: var(--muted); letter-spacing: .04em; text-transform: uppercase;
+  }
+  .modal-head .m-col-pip {
+    width: 8px; height: 8px; border-radius: 50%;
+  }
+  .modal-head .m-col-pip.threat { background: var(--threat); }
+  .modal-head .m-col-pip.watch  { background: var(--watch); }
+  .modal-head .m-col-pip.chance { background: var(--chance); }
+  .modal-head .m-crit {
+    margin-left: auto; font-family: ui-monospace, monospace; font-size: 12px;
+    color: var(--muted);
+  }
+  .modal-head .m-crit b { color: var(--text); font-size: 14px; }
+  .modal h2 {
+    margin: 0 0 6px; font-size: 22px; font-weight: 800;
+    letter-spacing: -.01em; line-height: 1.25;
+  }
+  .modal .m-date {
+    font-size: 12px; color: var(--dim); font-family: ui-monospace, monospace;
+    margin-bottom: 14px;
+  }
+  .modal .m-section { margin-top: 18px; }
+  .modal .m-section h3 {
+    font-size: 10.5px; color: var(--muted); letter-spacing: .08em;
+    text-transform: uppercase; font-weight: 700;
+    margin: 0 0 8px;
+  }
+  .modal .m-body { color: var(--text); font-size: 14.5px; line-height: 1.6; }
+  .modal .m-take {
+    background: rgba(224,126,90,.06);
+    border-left: 3px solid var(--accent);
+    padding: 12px 14px;
+    border-radius: 0 8px 8px 0;
+    font-size: 14px;
+  }
+  .modal .m-take b { color: var(--accent); font-weight: 700; }
+  .modal .m-sources {
+    display: flex; flex-wrap: wrap; gap: 8px;
+  }
+  .modal .m-sources a {
+    padding: 6px 12px; border-radius: 6px;
+    border: 1px solid var(--line); background: rgba(0,0,0,.18);
+    font-family: ui-monospace, monospace; font-size: 12px;
+    color: var(--muted); text-decoration: none;
+    transition: all .12s ease;
+  }
+  .modal .m-sources a:hover {
+    color: var(--accent); border-color: var(--accent);
+    background: rgba(224,126,90,.08);
+  }
+
   /* ── Quellen / Footer ────────────────────────────────── */
   .quellen {
     margin-top: 40px; padding-top: 22px;
@@ -347,6 +508,64 @@
     </div>
   </div>
 
+  <!-- ─── „Was zu beobachten" ─────────────────────────── -->
+  <section class="watchpoints" aria-label="Watchpoints Q3/Q4 2026">
+    <header>
+      <h2>Was zu beobachten · Q3 / Q4 2026</h2>
+      <span class="label-prognose">Prognose · Datums-Anker öffentlich</span>
+    </header>
+    <ul>
+      <li>
+        <span class="wp-when">23. Juni 2026</span>
+        <span class="wp-text">
+          <b>EU AI Act High-Risk-Konsultation läuft aus.</b> Danach final-
+          isierte Klassifikations-Leitlinien — beste Fenster für Beratungs-
+          Pitches.
+          <a href="https://digital-strategy.ec.europa.eu/en/policies/guidelines-ai-high-risk-systems" target="_blank" rel="noreferrer">ec.europa.eu</a>
+        </span>
+      </li>
+      <li>
+        <span class="wp-when">August 2026</span>
+        <span class="wp-text">
+          <b>Q2-Halbjahresergebnis Fokus-Unternehmen.</b> Klärt, ob das
+          14-%-Umsatzwachstum 2025 in 2026 hält oder Margendruck durchschlägt.
+          <a href="/ai-news/">→ ai-news Briefings</a>
+        </span>
+      </li>
+      <li>
+        <span class="wp-when">Aug — Sept 2026</span>
+        <span class="wp-text">
+          <b>Accenture FY 2026 Abschluss</b> mit Restructuring-Bilanz —
+          Indikator für Branchen-Margen-Realität.
+        </span>
+      </li>
+      <li>
+        <span class="wp-when">Q3 2026</span>
+        <span class="wp-text">
+          <b>Anthropic-Bewertungs- und Anwendungs-Welle.</b> Bei ARR-Tempo
+          14 → 30 Mrd. in 12 Wochen ist nächste Funding-Runde + Enterprise-
+          Tier-Ausbau plausibel.
+        </span>
+      </li>
+      <li>
+        <span class="wp-when">Q3 / Q4 2026</span>
+        <span class="wp-text">
+          <b>SAP Joule + Prior-Labs-Integration.</b> Erste produktive
+          Roll-outs nach Übernahme — wann verschiebt SAP eigenständig
+          Beratungs-Werts vom Channel ins Haus?
+        </span>
+      </li>
+      <li>
+        <span class="wp-when">02. Dez 2027</span>
+        <span class="wp-text">
+          <b>EU AI Act HRAIS Anwendung (Annex III)</b> — verschoben von
+          08.2026. Backlog-Welle landet erst 12–18 Monate später.
+          <a href="https://www.legalnodes.com/article/eu-ai-act-2026-updates-compliance-requirements-and-business-risks" target="_blank" rel="noreferrer">legalnodes</a>
+        </span>
+      </li>
+    </ul>
+  </section>
+
   <!-- ─── Filter ──────────────────────────────────────── -->
   <div class="filterbar" role="region" aria-label="Filter">
     <span class="group-label">Spalte:</span>
@@ -372,7 +591,10 @@
     <div class="column col-threat" data-col="threat">
       <div class="col-head">
         <div class="title"><span class="pip"></span> Bedrohungen</div>
-        <span class="count" data-count></span>
+        <div style="display:flex; align-items:center; gap:14px;">
+          <span class="count" data-count></span>
+          <div class="sparkline" data-sparkline></div>
+        </div>
       </div>
 
       <article class="event" data-cat="Wettbewerb" data-date="2026-04-22" data-crit="9">
@@ -521,7 +743,10 @@
     <div class="column col-watch" data-col="watch">
       <div class="col-head">
         <div class="title"><span class="pip"></span> Watchlist</div>
-        <span class="count" data-count></span>
+        <div style="display:flex; align-items:center; gap:14px;">
+          <span class="count" data-count></span>
+          <div class="sparkline" data-sparkline></div>
+        </div>
       </div>
 
       <article class="event" data-cat="Regulatorik" data-date="2026-05-19" data-crit="8">
@@ -670,7 +895,10 @@
     <div class="column col-chance" data-col="chance">
       <div class="col-head">
         <div class="title"><span class="pip"></span> Chancen</div>
-        <span class="count" data-count></span>
+        <div style="display:flex; align-items:center; gap:14px;">
+          <span class="count" data-count></span>
+          <div class="sparkline" data-sparkline></div>
+        </div>
       </div>
 
       <article class="event" data-cat="Markt" data-date="2026-03-01" data-crit="9">
@@ -821,6 +1049,14 @@
 
   </div><!-- /.columns -->
 
+  <!-- ─── Detail-Modal ─────────────────────────────────── -->
+  <div class="modal-overlay" id="ev-modal" aria-hidden="true" role="presentation">
+    <div class="modal" role="dialog" aria-modal="true">
+      <button class="modal-close" aria-label="Schließen">×</button>
+      <div class="modal-content"></div>
+    </div>
+  </div>
+
   <!-- ─── Quellen ─────────────────────────────────────── -->
   <section class="quellen">
     <h3>Quellen & weiterführend</h3>
@@ -845,7 +1081,7 @@
 
 <script src="/_shared/people.js" defer></script>
 <script>
-  // Filter-Logik: Spalte (col) und Kategorie (cat) lassen sich kombinieren.
+  // ── Filter-Logik (Spalte × Kategorie) ──────────────────
   const state = { col: 'all', cat: 'all' };
 
   function applyFilters() {
@@ -860,9 +1096,9 @@
       const colKey = c.dataset.col;
       const visibleHere = c.querySelectorAll('.event:not(.hidden)').length;
       c.querySelector('[data-count]').textContent = visibleHere + ' / ' + c.querySelectorAll('.event').length;
-      // Spalte ausblenden, wenn col-Filter eine andere Spalte fokussiert
       c.style.display = (state.col === 'all' || state.col === colKey) ? '' : 'none';
     });
+    renderSparklines();
   }
 
   document.querySelectorAll('[data-filter-col]').forEach(btn => {
@@ -882,6 +1118,147 @@
     });
   });
 
+  // ── Cross-Link „→ Mehr Kontext im Tagesbriefing" ──────
+  // Wenn die Card eine Quelle hat, die auf /ai-news/archive/<datum>.html zeigt,
+  // verlinken wir prominent auf das passende Tagesbriefing.
+  function fmtDeDate(iso) {
+    const m = iso.match(/(\d{4})-(\d{2})-(\d{2})/);
+    if (!m) return iso;
+    return `${m[3]}.${m[2]}.${m[1].slice(2)}`;
+  }
+  document.querySelectorAll('.event').forEach(ev => {
+    const link = ev.querySelector('.ev-sources a[href*="/ai-news/archive/"]');
+    if (!link) return;
+    const url  = link.getAttribute('href');
+    const m    = url.match(/(\d{4}-\d{2}-\d{2})/);
+    if (!m) return;
+    const div = document.createElement('div');
+    div.className = 'ev-briefing-link';
+    div.innerHTML = `<a href="${url}">→ Mehr Kontext im Tagesbriefing vom ${fmtDeDate(m[1])}</a>`;
+    ev.appendChild(div);
+  });
+
+  // ── Sparklines pro Spalte (Editorial Coverage Density) ──
+  // Zählt Events pro Monat im 6-Monats-Fenster. ist NICHT ein Markttrend —
+  // sondern wie viele Events wir pro Monat eingetragen haben.
+  function monthBuckets() {
+    // letzte 6 Monate inkl. aktuellem Monat
+    const now = new Date();
+    const out = [];
+    for (let i = 5; i >= 0; i--) {
+      const d = new Date(now.getFullYear(), now.getMonth() - i, 1);
+      out.push({
+        key: `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`,
+        label: d.toLocaleDateString('de-DE', { month: 'short' }),
+        count: 0,
+      });
+    }
+    return out;
+  }
+  function renderSparklines() {
+    document.querySelectorAll('.column').forEach(col => {
+      const slot = col.querySelector('[data-sparkline]');
+      if (!slot) return;
+      const events = col.querySelectorAll('.event:not(.hidden)');
+      const buckets = monthBuckets();
+      events.forEach(ev => {
+        const dKey = (ev.dataset.date || '').slice(0, 7);
+        const b = buckets.find(b => b.key === dKey);
+        if (b) b.count++;
+      });
+      const max = Math.max(1, ...buckets.map(b => b.count));
+      const w = 96, h = 22, pad = 2;
+      const stepX = (w - 2*pad) / (buckets.length - 1);
+      const pts = buckets.map((b, i) => {
+        const x = pad + i * stepX;
+        const y = h - pad - ((b.count / max) * (h - 2*pad));
+        return [x, y];
+      });
+      const path = pts.map((p,i) => (i===0 ? 'M' : 'L') + p[0].toFixed(1) + ',' + p[1].toFixed(1)).join(' ');
+      const area = path + ` L${pts.at(-1)[0].toFixed(1)},${h-pad} L${pts[0][0].toFixed(1)},${h-pad} Z`;
+      const colKey = col.dataset.col;
+      const stroke = colKey === 'threat' ? '#e15a5a' : (colKey === 'watch' ? '#e0a857' : '#6ec38b');
+      const fill   = stroke + '33';
+      const dots = pts.map((p, i) =>
+        `<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="${buckets[i].count > 0 ? 1.8 : 1.2}"
+          fill="${buckets[i].count > 0 ? stroke : '#5d6577'}" />`
+      ).join('');
+      const total = buckets.reduce((s,b)=>s+b.count,0);
+      slot.innerHTML = `
+        <svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" aria-hidden="true">
+          <path d="${area}" fill="${fill}" stroke="none" />
+          <path d="${path}" fill="none" stroke="${stroke}" stroke-width="1.4" stroke-linejoin="round" />
+          ${dots}
+        </svg>
+        <span class="spark-label" title="Events in den letzten 6 Monaten — Editorial Coverage, nicht Marktentwicklung">${total} · ${buckets[0].label}–${buckets.at(-1).label}</span>
+      `;
+    });
+  }
+
+  // ── Detail-Modal ───────────────────────────────────────
+  const modal = document.getElementById('ev-modal');
+  const modalContent = modal.querySelector('.modal-content');
+  function openModal(ev) {
+    const cat   = ev.dataset.cat;
+    const date  = ev.dataset.date;
+    const crit  = ev.dataset.crit;
+    const col   = ev.closest('.column').dataset.col;
+    const title = ev.querySelector('h3').textContent;
+    const desc  = ev.querySelector('p').innerHTML;
+    const take  = ev.querySelector('.ev-take').innerHTML;
+    const sourceLinks = ev.querySelectorAll('.ev-sources a');
+    let sourcesHtml = '';
+    sourceLinks.forEach(a => {
+      sourcesHtml += `<a href="${a.href}" target="_blank" rel="noreferrer">${a.textContent} ↗</a>`;
+    });
+    const briefLink = ev.querySelector('.ev-briefing-link a');
+    const briefHtml = briefLink
+      ? `<div class="m-section"><h3>Verwandtes Tagesbriefing</h3><div class="m-body"><a href="${briefLink.href}" style="color:var(--accent)">${briefLink.textContent}</a></div></div>`
+      : '';
+    const colName = col === 'threat' ? 'Bedrohung' : (col === 'watch' ? 'Watchlist' : 'Chance');
+    modalContent.innerHTML = `
+      <div class="modal-head">
+        <span class="m-col-pip ${col}"></span>
+        <span class="m-cat">${cat} · ${colName}</span>
+        <span class="m-crit">Krit <b>${crit}</b>/10</span>
+      </div>
+      <h2>${title}</h2>
+      <div class="m-date">${date}</div>
+      <div class="m-section">
+        <h3>Worum es geht</h3>
+        <div class="m-body">${desc}</div>
+      </div>
+      <div class="m-section">
+        <h3>Take</h3>
+        <div class="m-take">${take}</div>
+      </div>
+      <div class="m-section">
+        <h3>Quellen (${sourceLinks.length})</h3>
+        <div class="m-sources">${sourcesHtml}</div>
+      </div>
+      ${briefHtml}
+    `;
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal() {
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('.event').forEach(ev => {
+    ev.addEventListener('click', e => {
+      // Klicks auf Quellen-Links nicht abfangen
+      if (e.target.closest('a')) return;
+      openModal(ev);
+    });
+  });
+  modal.querySelector('.modal-close').addEventListener('click', closeModal);
+  modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+  // Initial-Render
   applyFilters();
 </script>
 

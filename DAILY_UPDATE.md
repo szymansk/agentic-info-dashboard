@@ -168,6 +168,23 @@ Pflege inkrementell:
 6. `<body data-snapshot-date="<heute>">` aktualisieren und unten
    `#last-updated` Text setzen.
 
+7. **„Was zu beobachten" (`.watchpoints`):** sechs Bullets mit Datum-Anker
+   + Begründung. Aktualisiere nur, wenn neuer öffentlicher Termin/Anker
+   aufgetaucht ist (z. B. EU-Kommissions-Konsultation, Q-Ergebnis-Datum,
+   Konferenz-Datum). NIE freie Prognosen ohne Datums-Anker einfügen.
+   Halte die Liste bei 5–7 Punkten — älteste/abgelaufene Punkte raus.
+
+8. Sektionen, die du **nicht** anfasst:
+   - `.modal-overlay` + Modal-CSS: pure UI-Mechanik
+   - `.col-head .sparkline` Slots: werden von JS aus `data-date`-Attributen
+     der Cards generiert. Wenn du Cards hinzufügst, aktualisieren sich
+     die Sparklines automatisch.
+   - `.ev-briefing-link` Blocks: werden von JS automatisch eingefügt,
+     wenn eine Card eine Quelle mit `/ai-news/archive/<datum>.html` hat.
+     → Wenn du eine Card baust, die aus einem Tagesbriefing stammt:
+        **immer** eine entsprechende Quelle-Pill setzen, dann taucht der
+        Cross-Link automatisch auf.
+
 Wenn KEINE relevanten IT-Services-News heute: dieses Dashboard NICHT
 anfassen, nur `data-snapshot-date` aktualisieren. Karten-Inhalte sind
 Wahrheits-Datum, nicht Schreib-Datum.
