@@ -122,14 +122,19 @@ Footer, Style-Block, Script-Tags) bleibt **unverändert**.
 
 Das Dashboard `dashboards/it-services/index.html` zeigt einen rollierenden
 6-Monats-Radar zu Bedrohungen / Watchlist / Chancen für deutsche
-IT-Dienstleister (Fokus adesso). Es wird NICHT jeden Tag komplett neu
-geschrieben — du pflegst es **inkrementell**:
+IT-Dienstleister. Inhaltlicher Fokus ist **adesso** (intern, im Editorial-
+Konzept). **WICHTIG**: der Name „adesso" darf NICHT sichtbar im Dashboard
+auftauchen. Take-Text neutral formulieren („Für uns:", „unser Sweet-Spot",
+„unsere Größenklasse", „Fokus-Unternehmen"). adesso-URLs als Belege sind
+OK, aber Pill-Labels und sichtbarer Text immer ohne den Namen.
+
+Pflege inkrementell:
 
 1. Schau dir die heutigen Breaking-News aus Schritt 2 an. Markiere jede
    Meldung, die für IT-Service-Dienstleister relevant ist (Beispiele:
    neuer Lab-Berater-Wettbewerb, Tagessatz-Studien, Layoffs bei
    Capgemini/Accenture/IBM/Cognizant, neue AI-Coding-Tools mit Enterprise-
-   Adoption, regulatorische Schritte EU/BSI/BaFin, adesso-spezifische News).
+   Adoption, regulatorische Schritte EU/BSI/BaFin, Fokus-Unternehmen-News).
 
 2. Pro relevanter Meldung: eine `<article class="event" ...>`-Karte
    im passenden `.col-threat` / `.col-watch` / `.col-chance` einsetzen.
@@ -138,7 +143,7 @@ geschrieben — du pflegst es **inkrementell**:
 3. Felder pro Card: `data-cat` (AI-Tools / Wettbewerb / Regulatorik /
    Talent / Kunden / Markt), `data-date` (ISO), `data-crit` (1–10).
    Krit-Bar-`<span>` Breite = `data-crit * 10%`. Im `.ev-take` einen
-   knappen 2-Satz-Take „Für adesso" formulieren.
+   knappen 2-Satz-Take „Für uns:" formulieren — niemals „Für adesso:".
 
    **Quellen pro Card sind Pflicht.** Jede Card endet mit:
    ```html
