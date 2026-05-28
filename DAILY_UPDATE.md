@@ -140,6 +140,19 @@ geschrieben — du pflegst es **inkrementell**:
    Krit-Bar-`<span>` Breite = `data-crit * 10%`. Im `.ev-take` einen
    knappen 2-Satz-Take „Für adesso" formulieren.
 
+   **Quellen pro Card sind Pflicht.** Jede Card endet mit:
+   ```html
+   <div class="ev-sources">
+     <span class="srcs-label">Quellen</span>
+     <a href="<URL>" target="_blank" rel="noreferrer"><domain></a>
+     <a href="<URL>" target="_blank" rel="noreferrer"><domain></a>
+   </div>
+   ```
+   1–3 Pills pro Card. Label = Domain-Stem (z. B. `cio.de`, `mlq.ai`)
+   für externe Quellen, oder `ai-news <datum>` für interne Refs auf
+   Tagesbriefings (URL `/ai-news/archive/<datum>.html`). Mindestens
+   eine Quelle pro Card — keine Karte ohne Beleg.
+
 4. Wenn die Spalte mehr als 6 Events hat: das älteste Event mit niedrigster
    Kritikalität entfernen — das Dashboard soll fokussiert bleiben.
 
