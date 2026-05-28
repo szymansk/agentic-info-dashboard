@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Regulatorik-Tracker · DACH/EU</title>
+<style>
+  :root {
+    --bg: #0b0d12; --bg-2: #11141c;
+    --panel: #161a24; --panel-2: #1b2030;
+    --line: #232a3a;
+    --text: #e7ecf3; --muted: #8b94a8; --dim: #5d6577;
+    --accent: #4fb3d9;            /* cool cyan-blue — formal */
+    --status-now:    #e15a5a;      /* akut, läuft / Frist nah */
+    --status-soon:   #e0a857;      /* binnen 12 Monaten */
+    --status-future: #9d7cff;      /* >12 Monate */
+    --status-applied:#6ec38b;      /* gilt schon */
+    --radius: 14px;
+    --shadow: 0 10px 30px rgba(0,0,0,.35), 0 1px 0 rgba(255,255,255,.03) inset;
+  }
+  * { box-sizing: border-box; }
+  html, body { background: var(--bg); color: var(--text); }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, Roboto, sans-serif;
+    margin: 0; line-height: 1.55;
+    background:
+      radial-gradient(1100px 700px at 90% -10%, rgba(79,179,217,.08), transparent 60%),
+      radial-gradient(900px 600px at -10% 10%, rgba(157,124,255,.05), transparent 60%),
+      var(--bg);
+    min-height: 100vh;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  .wrap { max-width: 1280px; margin: 0 auto; padding: 36px 28px 80px; }
+
+  /* Nav */
+  .nav {
+    display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+    padding-bottom: 18px; margin-bottom: 28px;
+    border-bottom: 1px solid var(--line); font-size: 13px;
+  }
+  .nav a {
+    color: var(--muted); padding: 6px 12px; border-radius: 999px;
+    border: 1px solid var(--line);
+    transition: color .12s ease, border-color .12s ease, background .12s ease;
+  }
+  .nav a:hover { color: var(--text); border-color: var(--accent); text-decoration: none; }
+  .nav a.active { color: var(--accent); border-color: var(--accent); background: rgba(79,179,217,.08); }
+
+  /* Header */
+  header.main { margin-bottom: 24px; }
+  header.main h1 {
+    margin: 0; font-size: 30px; letter-spacing: -.02em; font-weight: 800;
+    display: flex; align-items: baseline; gap: 14px;
+  }
+  header.main .badge {
+    font-size: 11px; padding: 3px 10px; border-radius: 999px;
+    background: rgba(79,179,217,.12); color: var(--accent);
+    border: 1px solid rgba(79,179,217,.35);
+    letter-spacing: .04em; text-transform: uppercase; font-weight: 700;
+  }
+  header.main .subtitle { color: var(--muted); font-size: 14px; margin-top: 8px; max-width: 760px; }
+
+  /* Status-Boxen */
+  .status-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;
+    margin-bottom: 28px;
+  }
+  @media (max-width: 760px) { .status-grid { grid-template-columns: repeat(2, 1fr); } }
+  .status-box {
+    background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+    border: 1px solid var(--line);
+    border-left-width: 3px;
+    border-radius: var(--radius);
+    padding: 14px 16px;
+    box-shadow: var(--shadow);
+  }
+  .status-box.now     { border-left-color: var(--status-now); }
+  .status-box.soon    { border-left-color: var(--status-soon); }
+  .status-box.future  { border-left-color: var(--status-future); }
+  .status-box.applied { border-left-color: var(--status-applied); }
+  .status-box .label {
+    font-size: 10.5px; color: var(--dim); font-family: ui-monospace, monospace;
+    letter-spacing: .06em; text-transform: uppercase; font-weight: 700;
+  }
+  .status-box .count {
+    font-size: 30px; font-weight: 800; color: var(--text);
+    letter-spacing: -.02em; margin: 2px 0 4px;
+  }
+  .status-box.now     .count { color: var(--status-now); }
+  .status-box.soon    .count { color: var(--status-soon); }
+  .status-box.future  .count { color: var(--status-future); }
+  .status-box.applied .count { color: var(--status-applied); }
+  .status-box .desc { font-size: 12px; color: var(--muted); }
+
+  /* Filter */
+  .filterbar {
+    display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    margin-bottom: 20px;
+  }
+  .filterbar .group-label {
+    font-size: 10.5px; color: var(--dim); letter-spacing: .08em;
+    text-transform: uppercase; padding: 2px 6px 0 0; font-weight: 700;
+  }
+  .chip {
+    border: 1px solid var(--line); background: transparent;
+    color: var(--muted); padding: 5px 11px; border-radius: 999px;
+    font-size: 12px; cursor: pointer; transition: all .12s ease;
+    font-family: inherit;
+  }
+  .chip:hover { color: var(--text); border-color: var(--accent); }
+  .chip.active { color: var(--bg); background: var(--accent); border-color: var(--accent); font-weight: 700; }
+
+  /* Timeline-Liste */
+  .timeline { display: flex; flex-direction: column; gap: 12px; }
+  .item {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 22px;
+    background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+    border: 1px solid var(--line);
+    border-left-width: 3px;
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    box-shadow: var(--shadow);
+  }
+  @media (max-width: 760px) { .item { grid-template-columns: 1fr; gap: 8px; } }
+  .item.s-now     { border-left-color: var(--status-now); }
+  .item.s-soon    { border-left-color: var(--status-soon); }
+  .item.s-future  { border-left-color: var(--status-future); }
+  .item.s-applied { border-left-color: var(--status-applied); }
+
+  .item .left {
+    display: flex; flex-direction: column; gap: 4px;
+    border-right: 1px solid var(--line);
+    padding-right: 18px;
+  }
+  @media (max-width: 760px) { .item .left { border-right: none; padding-right: 0; padding-bottom: 8px; border-bottom: 1px solid var(--line); } }
+  .item .date {
+    font-family: ui-monospace, monospace; font-size: 18px; font-weight: 800;
+    color: var(--text); letter-spacing: -.01em;
+  }
+  .item .status-pill {
+    font-size: 10.5px; padding: 2px 8px; border-radius: 999px;
+    border: 1px solid currentColor; align-self: start;
+    letter-spacing: .04em; text-transform: uppercase; font-weight: 700;
+    width: max-content;
+  }
+  .item.s-now     .status-pill { color: var(--status-now); }
+  .item.s-soon    .status-pill { color: var(--status-soon); }
+  .item.s-future  .status-pill { color: var(--status-future); }
+  .item.s-applied .status-pill { color: var(--status-applied); }
+
+  .item .right h3 {
+    margin: 0 0 6px; font-size: 16px; font-weight: 700; letter-spacing: -.005em;
+    display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px;
+  }
+  .item .reg-pill {
+    font-size: 10.5px; font-family: ui-monospace, monospace;
+    padding: 2px 8px; border-radius: 4px; border: 1px solid currentColor;
+    letter-spacing: .04em; text-transform: uppercase; font-weight: 700;
+  }
+  .item[data-reg="EU-AI-Act"] .reg-pill { color: #9d7cff; }
+  .item[data-reg="NIS-2"]     .reg-pill { color: #e15a5a; }
+  .item[data-reg="DORA"]      .reg-pill { color: #6ec38b; }
+  .item[data-reg="BSI"]       .reg-pill { color: #e0a857; }
+  .item[data-reg="BaFin"]     .reg-pill { color: #4fb3d9; }
+
+  .item .right p { margin: 0 0 10px; color: var(--muted); font-size: 13.5px; }
+  .item .affects {
+    font-size: 11.5px; color: var(--muted);
+    padding-top: 8px; margin-top: 8px;
+    border-top: 1px dashed var(--line);
+  }
+  .item .affects b {
+    color: var(--accent); text-transform: uppercase; letter-spacing: .04em;
+    font-size: 10.5px; font-weight: 700;
+  }
+  .item .sources {
+    display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px;
+    padding-top: 8px; border-top: 1px solid var(--line);
+  }
+  .item .sources .label {
+    font-size: 10.5px; color: var(--dim); font-family: ui-monospace, monospace;
+    letter-spacing: .06em; text-transform: uppercase; margin-right: 2px;
+  }
+  .item .sources a {
+    color: var(--muted); padding: 2px 8px; border-radius: 4px;
+    border: 1px solid var(--line); background: rgba(0,0,0,.18);
+    font-family: ui-monospace, monospace; font-size: 10.5px;
+  }
+  .item .sources a:hover {
+    color: var(--accent); border-color: var(--accent);
+    background: rgba(79,179,217,.06); text-decoration: none;
+  }
+  .item.hidden { display: none; }
+
+  /* Footer */
+  footer.bottom {
+    margin-top: 40px; padding-top: 18px;
+    border-top: 1px solid var(--line);
+    color: var(--dim); font-size: 12px;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+</style>
+</head>
+<body data-snapshot-date="2026-05-28" data-snapshot-mode="live">
+
+<div class="wrap">
+
+  <nav class="nav" aria-label="Dashboards">
+    <a href="/">📊 Übersicht</a>
+    <a href="/ai-news/">📰 AI News</a>
+    <a href="/youtube/">▶ YouTube Hot</a>
+    <a href="/whoiswho/">👥 Who is Who</a>
+    <a href="/sources/">📚 Quellen</a>
+    <a href="/it-services/">🏢 IT-Services-Radar</a>
+    <a href="/regulation/" class="active">⚖ Regulatorik</a>
+    <a href="/coding-tools/">⌘ Coding-Tools</a>
+    <a href="/calendar/">📅 Kalender</a>
+  </nav>
+
+  <header class="main">
+    <h1>⚖ Regulatorik-Tracker <span class="badge">DACH / EU · AI &amp; Cyber</span></h1>
+    <p class="subtitle">
+      EU AI Act, NIS-2, DORA, BSI-Mindeststandards, BaFin-AI-Guidance —
+      Compliance-Deadlines mit Status, betroffenen Branchen und Wirkungs-Schwellen.
+      Quellen pro Eintrag verlinkt.
+    </p>
+  </header>
+
+  <!-- ─── Status-Übersicht ─────────────────────────────── -->
+  <div class="status-grid">
+    <div class="status-box now">
+      <div class="label">akut / läuft jetzt</div>
+      <div class="count" data-count-now>0</div>
+      <div class="desc">nächste 3 Monate</div>
+    </div>
+    <div class="status-box soon">
+      <div class="label">kommend</div>
+      <div class="count" data-count-soon>0</div>
+      <div class="desc">3–12 Monate</div>
+    </div>
+    <div class="status-box future">
+      <div class="label">mittelfristig</div>
+      <div class="count" data-count-future>0</div>
+      <div class="desc">&gt; 12 Monate</div>
+    </div>
+    <div class="status-box applied">
+      <div class="label">in Anwendung</div>
+      <div class="count" data-count-applied>0</div>
+      <div class="desc">bereits geltend</div>
+    </div>
+  </div>
+
+  <!-- ─── Filter nach Regulierung ─────────────────────── -->
+  <div class="filterbar">
+    <span class="group-label">Regelwerk:</span>
+    <button class="chip active" data-filter="all">alle</button>
+    <button class="chip" data-filter="EU-AI-Act">EU AI Act</button>
+    <button class="chip" data-filter="NIS-2">NIS-2</button>
+    <button class="chip" data-filter="DORA">DORA</button>
+    <button class="chip" data-filter="BSI">BSI</button>
+    <button class="chip" data-filter="BaFin">BaFin</button>
+  </div>
+
+  <!-- ─── Timeline / Liste ────────────────────────────── -->
+  <div class="timeline">
+
+    <article class="item s-now" data-reg="NIS-2" data-date="2026-03-06" data-status="now">
+      <div class="left">
+        <span class="date">06.03.2026</span>
+        <span class="status-pill">verstrichen · aktiv</span>
+      </div>
+      <div class="right">
+        <h3><span class="reg-pill">NIS-2</span> BSI-Registrierungsfrist für In-Scope-Entities</h3>
+        <p>
+          NIS-2 Implementation Act gilt in Deutschland seit 06.12.2025 ohne
+          Übergangsfrist. Betroffene Unternehmen mussten sich binnen drei
+          Monaten beim BSI registrieren. Wer's verpasst hat, kommt jetzt in
+          den aktiven Durchsetzungs-Zyklus.
+        </p>
+        <div class="affects">
+          <b>Betroffen:</b> ~29.500 Unternehmen in DE (KRITIS + wichtige/
+          besonders wichtige Einrichtungen). Bußgelder bis €10 Mio oder 2 %
+          des Jahresumsatzes.
+        </div>
+        <div class="sources">
+          <span class="label">Quellen</span>
+          <a href="https://www.privacyworld.blog/2025/12/germany-implements-nis2-registration-portal-will-open-on-january-6-2026/" target="_blank" rel="noreferrer">privacyworld</a>
+          <a href="https://www.reedsmith.com/articles/germany-implements-nis2-immediate-effect-broad-scope-near-term-registration/" target="_blank" rel="noreferrer">reedsmith</a>
+          <a href="https://www.dlapiper.com/en/insights/publications/2026/02/nis-2-directive-transposed-in-germany" target="_blank" rel="noreferrer">dlapiper</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="item s-now" data-reg="EU-AI-Act" data-date="2026-06-23" data-status="now">
+      <div class="left">
+        <span class="date">23.06.2026</span>
+        <span class="status-pill">Konsultation</span>
+      </div>
+      <div class="right">
+        <h3><span class="reg-pill">EU-AI-Act</span> High-Risk-Konsultation läuft aus</h3>
+        <p>
+          EU-Kommission hat am 19.05.2026 Draft Guidelines zur Klassifikation
+          von High-Risk-Systemen (Art. 6) veröffentlicht. Public Consultation
+          läuft bis 23.06. — danach finale Leitlinien. Wer Klassifikations-
+          Beratung anbieten will, hat ein 4-Wochen-Fenster.
+        </p>
+        <div class="affects">
+          <b>Betroffen:</b> Anbieter und Anwender potenziell hochriskanter
+          KI-Systeme (8 priorisierte Branchen — Beschäftigung, kritische
+          Infrastruktur, Kredit-Scoring, Bildung u. a.).
+        </div>
+        <div class="sources">
+          <span class="label">Quellen</span>
+          <a href="https://digital-strategy.ec.europa.eu/en/policies/guidelines-ai-high-risk-systems" target="_blank" rel="noreferrer">ec.europa.eu</a>
+          <a href="https://www.hunton.com/privacy-and-cybersecurity-law-blog/european-commission-releases-draft-guidelines-on-high-risk-ai-under-the-eu-ai-act" target="_blank" rel="noreferrer">hunton</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="item s-applied" data-reg="DORA" data-date="2025-01-17" data-status="applied">
+      <div class="left">
+        <span class="date">17.01.2025</span>
+        <span class="status-pill">gilt</span>
+      </div>
+      <div class="right">
+        <h3><span class="reg-pill">DORA</span> Anwendung der EU-Verordnung 2022/2554</h3>
+        <p>
+          Digital Operational Resilience Act gilt direkt für Finanzinstitute
+          + ICT-Drittanbieter. BaFin führt 2026 aktive Audits durch — Risk-
+          Management, IT-Security, Supply-Chain und Governance werden
+          systematisch geprüft.
+        </p>
+        <div class="affects">
+          <b>Betroffen:</b> Banken, Versicherer, Zahlungsdienstleister,
+          ICT-Drittanbieter (auch außerhalb EU bei Lieferung in den
+          Binnenmarkt). Audit-Welle 2026 verschiebt Beratungs-Schwerpunkt
+          von „einführen" zu „nachweisen".
+        </div>
+        <div class="sources">
+          <span class="label">Quellen</span>
+          <a href="https://www.bafin.de/" target="_blank" rel="noreferrer">bafin.de</a>
+          <a href="https://passwork.pro/blog/spring-2026-eu-cybersecurity-update/" target="_blank" rel="noreferrer">passwork (2026 update)</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="item s-applied" data-reg="EU-AI-Act" data-date="2025-08-02" data-status="applied">
+      <div class="left">
+        <span class="date">02.08.2025</span>
+        <span class="status-pill">gilt</span>
+      </div>
+      <div class="right">
+        <h3><span class="reg-pill">EU-AI-Act</span> General-Purpose-AI-Regeln (Art. 51 ff.)</h3>
+        <p>
+          GPAI-Modell-Anbieter (Anthropic, OpenAI, Google DeepMind, Mistral,
+          Aleph Alpha) müssen seit August 2025 Transparenz-Reports erstellen,
+          Trainings-Daten-Zusammenfassungen veröffentlichen und systemische
+          Risiken bewerten.
+        </p>
+        <div class="affects">
+          <b>Betroffen:</b> primär GPAI-Provider, indirekt alle Enterprise-
+          Nutzer (Audit-Trails, Nutzungs-Logs müssen vorgehalten werden).
+          Eskalation auf „GPAI mit systemischem Risiko" → strengere
+          Pflichten.
+        </div>
+        <div class="sources">
+          <span class="label">Quellen</span>
+          <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank" rel="noreferrer">ec.europa.eu</a>
+          <a href="https://artificialintelligenceact.eu/article/6/" target="_blank" rel="noreferrer">artificialintelligenceact.eu</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="item s-applied" data-reg="EU-AI-Act" data-date="2025-02-02" data-status="applied">
+      <div class="left">
+        <span class="date">02.02.2025</span>
+        <span class="status-pill">gilt</span>
+      </div>
+      <div class="right">
+        <h3><span class="reg-pill">EU-AI-Act</span> Verbotene Praktiken (Art. 5)</h3>
+        <p>
+          Verbot von Social Scoring, manipulativen Systemen, biometrischer
+          Realtime-Identifikation im öffentlichen Raum (mit Ausnahmen) und
+          AI-basierter Emotions-Erkennung am Arbeitsplatz/in Bildung. Direkt
+          anwendbar, keine Übergangsfrist.
+        </p>
+        <div class="affects">
+          <b>Betroffen:</b> alle Anbieter und Anwender im EU-Markt. Boards
+          müssen Use-Case-Inventare auf verbotene Anwendungen prüfen.
+        </div>
+        <div class="sources">
+          <span class="label">Quellen</span>
+          <a href="https://artificialintelligenceact.eu/article/6/" target="_blank" rel="noreferrer">artificialintelligenceact.eu</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="item s-applied" data-reg="NIS-2" data-date="2025-12-06" data-status="applied">
+      <div class="left">
+        <span class="date">06.12.2025</span>
+        <span class="status-pill">gilt</span>
+      </div>
+      <div class="right">
+        <h3><span class="reg-pill">NIS-2</span> Inkrafttreten DE (Implementation Act)</h3>
+        <p>
+          NIS-2 Implementation Act in Deutschland trat ohne Übergangsfrist
+          in Kraft. Cybersecurity-Pflichten (Risk-Management, Incident-
+          Reporting binnen 24 h, Supply-Chain-Security) gelten ab Tag 1.
+        </p>
+        <div class="affects">
+          <b>Betroffen:</b> KRITIS-Sektoren plus „wichtige" und „besonders
+          wichtige" Einrichtungen — Energie, Verkehr, Banken, Gesundheit,
+          digitale Infrastruktur, ÖV, Lebensmittel, Hersteller kritischer
+          Komponenten.
+        </div>
+        <div class="sources">
+          <span class="label">Quellen</span>
+          <a href="https://www.mofo.com/resources/insights/251208-flipping-the-nis2-switch-what-germanys-implementation" target="_blank" rel="noreferrer">mofo</a>
+          <a href="https://nisd2.eu/en/nis2-in-germany" target="_blank" rel="noreferrer">nisd2.eu</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="item s-soon" data-reg="BaFin" data-date="2026-12-31" data-status="soon">
+      <div class="left">
+        <span class="date">laufend 2026</span>
+        <span class="status-pill">Audit-Zyklus</span>
+      </div>
+      <div class="right">
+        <h3><span class="reg-pill">BaFin</span> AI-Modell-Governance + DORA-Audit-Welle</h3>
+        <p>
+          BaFin prüft 2026 Finanzinstitute auf AI-Modell-Governance,
+          Erklärbarkeit, Bias-Tests und DORA-konforme ICT-Drittanbieter-
+          Steuerung. Erste Bußgelder werden bis Q4 2026 erwartet (Industrie-
+          Einschätzung, kein offizielles Statement).
+        </p>
+        <div class="affects">
+          <b>Betroffen:</b> alle BaFin-beaufsichtigten Institute — Banken,
+          Versicherer, Kapitalverwaltungsgesellschaften. ICT-Drittanbieter
+          (Cloud, ML-Plattformen) indirekt über Dienstleister-Verträge.
+        </div>
+        <div class="sources">
+          <span class="label">Quellen</span>
+          <a href="https://www.bafin.de/" target="_blank" rel="noreferrer">bafin.de</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="item s-future" data-reg="EU-AI-Act" data-date="2027-12-02" data-status="future">
+      <div class="left">
+        <span class="date">02.12.2027</span>
+        <span class="status-pill">Anwendung</span>
+      </div>
+      <div class="right">
+        <h3><span class="reg-pill">EU-AI-Act</span> HRAIS Anwendung Annex III (verschoben)</h3>
+        <p>
+          High-Risk-AI-Systeme nach Anwendungs-Liste (Annex III) müssen ab
+          02.12.2027 die vollen Konformitäts-Anforderungen erfüllen. Datum
+          wurde von 02.08.2026 um 16 Monate verschoben — der „Digital
+          Omnibus on AI" bringt zudem operative Erleichterungen.
+        </p>
+        <div class="affects">
+          <b>Betroffen:</b> HR-Systeme (CV-Screening), Bildungs-AI,
+          Bonitätsbewertung, Strafverfolgung, Migrations-/Asyl-AI,
+          biometrische Identifikation, Justiz-AI, demokratische Prozesse.
+        </div>
+        <div class="sources">
+          <span class="label">Quellen</span>
+          <a href="https://www.legalnodes.com/article/eu-ai-act-2026-updates-compliance-requirements-and-business-risks" target="_blank" rel="noreferrer">legalnodes</a>
+          <a href="https://www.insideprivacy.com/artificial-intelligence/eu-ai-act-update-timeline-relief-targeted-simplification-and-new-prohibitions/" target="_blank" rel="noreferrer">insideprivacy</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="item s-future" data-reg="EU-AI-Act" data-date="2028-08-02" data-status="future">
+      <div class="left">
+        <span class="date">02.08.2028</span>
+        <span class="status-pill">Anwendung</span>
+      </div>
+      <div class="right">
+        <h3><span class="reg-pill">EU-AI-Act</span> HRAIS Anwendung Annex I (Produkt-AI)</h3>
+        <p>
+          High-Risk-AI in produkt-regulierten Bereichen (Maschinen, Medizin-
+          produkte, Spielzeug, Aufzüge, Funkanlagen) ab 02.08.2028 — verschoben
+          von 02.08.2027.
+        </p>
+        <div class="affects">
+          <b>Betroffen:</b> Maschinen-/Medizintechnik-Hersteller mit
+          AI-Komponenten. Konformitäts-Bewertung in bestehende Produkt-
+          Zulassungs-Prozesse integrieren.
+        </div>
+        <div class="sources">
+          <span class="label">Quellen</span>
+          <a href="https://www.legalnodes.com/article/eu-ai-act-2026-updates-compliance-requirements-and-business-risks" target="_blank" rel="noreferrer">legalnodes</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="item s-applied" data-reg="EU-AI-Act" data-date="2024-08-02" data-status="applied">
+      <div class="left">
+        <span class="date">02.08.2024</span>
+        <span class="status-pill">in Kraft</span>
+      </div>
+      <div class="right">
+        <h3><span class="reg-pill">EU-AI-Act</span> Inkrafttreten der Verordnung</h3>
+        <p>
+          EU-Verordnung 2024/1689 (AI Act) trat 02.08.2024 in Kraft.
+          Gestaffelte Anwendung: Verbote ab 02.02.2025, GPAI-Pflichten ab
+          02.08.2025, HRAIS-Pflichten 2027/2028 (siehe oben).
+        </p>
+        <div class="affects">
+          <b>Betroffen:</b> alle Anbieter, Anwender, Importeure und Händler
+          im EU-Markt. Extraterritoriale Wirkung: auch Nicht-EU-Anbieter,
+          wenn Output in EU verwendet wird.
+        </div>
+        <div class="sources">
+          <span class="label">Quellen</span>
+          <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank" rel="noreferrer">ec.europa.eu</a>
+          <a href="https://artificialintelligenceact.eu/article/6/" target="_blank" rel="noreferrer">artificialintelligenceact.eu</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="item s-applied" data-reg="BSI" data-date="2024-07-01" data-status="applied">
+      <div class="left">
+        <span class="date">2024 / laufend</span>
+        <span class="status-pill">Standards</span>
+      </div>
+      <div class="right">
+        <h3><span class="reg-pill">BSI</span> Cybersicherheitsstrategie + Mindeststandards</h3>
+        <p>
+          BSI veröffentlicht laufend Mindeststandards (IT-Grundschutz,
+          Cloud-Sicherheit, KI-Sicherheit). KI-spezifische Empfehlungen
+          (BSI-Whitepaper 2024+) ergänzen NIS-2 für KRITIS-Sektoren um
+          technische Detail-Anforderungen.
+        </p>
+        <div class="affects">
+          <b>Betroffen:</b> KRITIS-Betreiber, Bund und Länder, indirekt
+          Auftragnehmer öffentlicher Hand. Empfehlungs-Charakter,
+          praktisch bindend für Beschaffungs-Anforderungen.
+        </div>
+        <div class="sources">
+          <span class="label">Quellen</span>
+          <a href="https://www.bsi.bund.de/" target="_blank" rel="noreferrer">bsi.bund.de</a>
+        </div>
+      </div>
+    </article>
+
+  </div><!-- /.timeline -->
+
+  <footer class="bottom">
+    <div>Letzte Aktualisierung: <code>2026-05-28</code> · pflegt sich inkrementell</div>
+    <div>⚖ <a href="/it-services/">↗ verbundene Branchen-Cards</a> · <a href="/">📊 Übersicht</a></div>
+  </footer>
+
+</div><!-- /.wrap -->
+
+<script>
+  // Filter
+  const chips = document.querySelectorAll('[data-filter]');
+  function apply(filter) {
+    document.querySelectorAll('.item').forEach(it => {
+      it.classList.toggle('hidden', !(filter === 'all' || it.dataset.reg === filter));
+    });
+    countStatuses();
+  }
+  chips.forEach(b => b.addEventListener('click', () => {
+    chips.forEach(c => c.classList.remove('active'));
+    b.classList.add('active');
+    apply(b.dataset.filter);
+  }));
+
+  // Counts per Status auf sichtbare Items
+  function countStatuses() {
+    const buckets = { now:0, soon:0, future:0, applied:0 };
+    document.querySelectorAll('.item:not(.hidden)').forEach(it => {
+      const s = it.dataset.status;
+      if (s in buckets) buckets[s]++;
+    });
+    document.querySelector('[data-count-now]').textContent     = buckets.now;
+    document.querySelector('[data-count-soon]').textContent    = buckets.soon;
+    document.querySelector('[data-count-future]').textContent  = buckets.future;
+    document.querySelector('[data-count-applied]').textContent = buckets.applied;
+  }
+  countStatuses();
+</script>
+
+</body>
+</html>
