@@ -298,7 +298,7 @@
   footer .mono { color: var(--muted); }
 </style>
 </head>
-<body data-snapshot-date="2026-05-28" data-snapshot-mode="live">
+<body data-snapshot-date="2026-05-29" data-snapshot-mode="live">
 <div class="wrap">
 
   <!-- ─── Top Nav ─── -->
@@ -334,8 +334,11 @@
     <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-05-27.html" data-date="2026-05-27">
       <span class="dow">Mi</span><span class="date">27.05.</span>
     </a>
-    <a class="tl-pill active" href="/agentic-info-dashboard/ai-news/" data-date="2026-05-28">
+    <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-05-28.html" data-date="2026-05-28">
       <span class="dow">Do</span><span class="date">28.05.</span>
+    </a>
+    <a class="tl-pill active" href="/agentic-info-dashboard/ai-news/" data-date="2026-05-29">
+      <span class="dow">Fr</span><span class="date">29.05.</span>
     </a>
   </div>
 
@@ -355,7 +358,7 @@
       </div>
     </div>
     <div class="meta">
-      <div class="date" id="today">Donnerstag, 28. Mai 2026</div>
+      <div class="date" id="today">Freitag, 29. Mai 2026</div>
       <div class="tag">Snapshot · KW 22 / 2026</div>
     </div>
   </header>
@@ -367,78 +370,77 @@
 
     <header class="briefing-head">
       <h2 class="kicker">Tagesbriefing · Agentic AI &amp; GenAI</h2>
-      <h1>Berners-Lee zum Agentic Web, Claude Code wird zum Editor, Anthropic übernimmt Colossus 1 vollständig</h1>
+      <h1>Opus 4.8, Mythos öffentlich, Hassabis sagt 2029 zur AGI — der Frontier-Markt beschleunigt</h1>
       <div class="byline">
         <span>✍️ Kuratiert &amp; analysiert</span>
         <span class="dot-sep">·</span>
         <span>~12 Min Lesezeit</span>
         <span class="dot-sep">·</span>
-        <span id="byline-date">28. Mai 2026</span>
+        <span id="byline-date">29. Mai 2026</span>
       </div>
       <p class="lede">
-        Sir Tim Berners-Lee hat heute Vormittag beim IAB Tech Lab <em>Agentic Web Summit</em> in New York erstmals öffentlich Stellung zum agentischen Web bezogen — und seine Botschaft ist eindringlicher als der Konferenzname vermuten lässt: Wenn Browser zu Aktionsschnittstellen für Agenten werden, müssen die Web-Standards dezentrale Identitäten und überprüfbare Verträge zwischen Mensch und Agent dazubekommen, sonst wird das offene Web ein zweites Mal an Plattform-Aggregation verloren gehen. Im Lab-Stack rückt parallel die zweite große Verschiebung der Woche nach: Anthropic übernimmt nicht nur einen Teil, sondern <em>die gesamte</em> Compute-Kapazität von SpaceX' Colossus-1-Anlage in Tennessee — 300 Megawatt und über 220.000 Nvidia-GPUs gehen exklusiv an das Lab, während xAI das größere Colossus 2 für sich behält. Und Claude Code <code>v2.1.152</code> hat in der Nacht das Spiel für Code-Reviews verändert: <code>/code-review --fix</code> setzt Findings direkt im Working Tree um — die Skill macht aus Empfehlung Edit. Dazu: Anthropic eröffnet ein Korea-Office, die EU-Transparenz-Pflichten nach Artikel 50 AI Act rücken auf zwei Monate heran, und Coupa kauft Tonkean für die Procurement-Agent-Schicht.
+        Drei harte Verschiebungen seit gestern Abend. Anthropic hat in der Nacht <em>Opus 4.8</em> als Default für das eigene Stack-Modell ausgerollt — Claude Code <code>v2.1.154</code> macht den Sprung sichtbar — und führt zugleich <em>Dynamic Workflows</em> ein: ein Skill, mit dem ein Background-Lauf zehn bis hundert Agenten orchestriert. Parallel hat das Lab <em>Mythos</em>, das bislang nur unter Cleared-Contractor-Status zugängliche Frontier-Modell, in einer ungewöhnlich knappen Mitteilung dem breiten Developer-Markt geöffnet — <em>Project Glasswing</em> liefert die Vulnerability-Detection-Variante vorerst exklusiv an AWS, Apple, Cisco, Google, JPMorgan Chase und Microsoft. <span data-person="demis-hassabis">Demis Hassabis</span> hat in einem Time-Interview seine AGI-Timeline von „fünf bis zehn Jahren" auf <em>„realistische Möglichkeit bis 2029"</em> verkürzt — gestützt auf AlphaProof Nexus, das neun offene Erdős-Probleme „zum Preis eines Steak-Dinners" gelöst haben soll. Die 5WPR-Studie bestätigt parallel die Run-Rate-Verschiebung: Anthropic ~30 Milliarden ARR im April, OpenAI ~25 Milliarden im Februar — Anthropic ist im Coding-getriebenen Enterprise-Markt jetzt der größere Anbieter. Und im DACH-Spiegel rückt die unbequeme Zahl der Woche nach: 44 Prozent der deutschen Unternehmen melden bereits Sicherheitsvorfälle durch AI-Tools, 52 Prozent der Angestellten nutzen Shadow-AI — höchste Regeltreue, höchste Vorfallsquote weltweit.
       </p>
     </header>
 
     <div class="briefing-body">
 
       <section>
-        <h3><span class="num">01</span>Berners-Lee zum Agentic Web — der Erfinder fordert dezentrale Identität</h3>
-        <p>Sir Tim Berners-Lee hat heute Vormittag in New York beim IAB Tech Lab <em>Agentic Web Summit</em> einen seiner seltenen öffentlichen Auftritte zur AI-Frage gegeben. Die Botschaft war bewusst nicht produkt-getrieben, sondern protokoll-getrieben: Wenn Browser zu Aktionsschnittstellen für Agenten werden — und das ist das implizite Versprechen von Antigravity 2.0, OpenAI Frontier, Anthropic Managed Agents —, dann reichen die heutigen Web-Standards nicht aus. Es fehlen dezentrale Identitäts-Schichten (Berners-Lee verwies auf seinen langjährigen Solid-Standard), überprüfbare Verträge zwischen Mensch und delegiertem Agent, und Transparenz darüber, welcher Agent für wen handelt. Ohne diese Bausteine, so seine These, läuft das offene Web ein zweites Mal in Plattform-Aggregation hinein — diesmal nicht via Suche und Social, sondern via Agenten-Gateways.</p>
-        <p>Die Beobachtung trifft. In Antigravity beobachten Nutzer Agent-Cohorts, die in ihrem Namen Webseiten besuchen; in Frontier orchestrieren Konzerne Shared-Context-Agents über interne und externe Dienste. Wer hier die Identitäts-Verkettung kontrolliert, kontrolliert den Dataflow — und genau diesen Layer haben die Standards-Gremien IETF und W3C bisher unterspezifiziert gelassen. Berners-Lees Forderung, in Q3/Q4 eine W3C-Working-Group zu „Agent Interaction Standards" aufzusetzen, ist mehr als symbolisch: ohne Industrie-Beteiligung wird sie nicht entstehen, aber wenn sie entsteht, definiert sie das Spielfeld für die nächste Plattform-Generation.</p>
-        <p>Im europäischen Kontext koppelt sich das fast natürlich an die GAIA-X-Diskussion und an die deutsche IDunion-Initiative für dezentrale Identitäten. Das BSI hat in einem nicht-öffentlichen Memo Mitte Mai bereits angedeutet, dass „agent-bound credentials" als eigene C5-Kategorie betrachtet werden müssen. Wer in DACH-Konzernen 2026 Agent-Workloads architektiert, sollte den Identitäts-Layer früh planen — Verisign-/Auth0-/Keycloak-Setups, die heute für menschliche Nutzer entworfen sind, leisten für Agenten nicht das, was sie sollen.</p>
+        <h3><span class="num">01</span>Opus 4.8 ist da — und Dynamic Workflows machen Loop-Orchestrierung zur Plattform-Funktion</h3>
+        <p>Anthropic hat <em>Opus 4.8</em> in der Nacht als Default-Modell für die eigene Stack-Plattform live geschaltet — Claude Code <code>v2.1.154</code> macht das sofort im CLI sichtbar, mit <code>/effort xhigh</code> für die härtesten Aufgaben. Wichtiger als die Modell-Sprung-Mechanik ist die zweite Ankündigung: <em>Dynamic Workflows</em>, ein Skill, der einem Background-Lauf erlaubt, autonom zehn bis hundert Subagents zu instanziieren, zu orchestrieren und zusammenzuführen. <code>/workflows</code> zeigt aktive Runs, und der Skill wird von Anthropic selbst als Werkzeug für „large-scale background tasks" positioniert. Das ist der Moment, in dem Multi-Agent-Orchestrierung von einer Coding-Demo zur Standard-CLI-Funktion wird.</p>
+        <p>Im Setup vom ai-news-dashboard heißt das konkret: das täglich laufende <code>/loop 24h</code>-Pattern wäre mit Dynamic Workflows nicht mehr eine einzelne Background-Session, sondern ein orchestrierter Lauf aus mehreren spezialisierten Subagents — einer für Releases, einer für News-Curation, einer für DACH-Quellen, einer für Briefing-Generation. Token-Budget wird besser verteilt, Failures isolierbar, Parallelisierung explizit. Das Setup nachzubauen ist im Q3 sinnvoll — die Migration ist nicht trivial, weil die Subagent-Kommunikation neu modelliert werden muss, aber die Wartbarkeit steigt erkennbar.</p>
+        <p>Daneben zwei Zahlen aus dem Release-Text, die für Heavy-User wichtig sind: Fast Mode auf Opus 4.8 läuft mit „2x Standard-Rate für 2.5x Geschwindigkeit" — eine bessere Cost-of-Compute-Effizienz als bei Opus 4.7-Fast (3x für 3x). Und der Lean System Prompt ist jetzt Default für alle Modelle außer Haiku, Sonnet und den älteren Opus-Generationen — das spart in Multi-Turn-Sessions spürbar Token-Budget. Wer also Opus 4.6/4.7 noch in Pipelines hat, sollte den Upgrade-Pfad jetzt einplanen.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Identitäts- und Vertragsschichten für Agenten werden in den nächsten 18 Monaten zum Standard-Streitpunkt. Wer als IT-Architekt heute Agent-Workloads ohne klaren Identitäts-Pfad in Production lässt, schafft technische Schulden, die ab 2027 teuer werden. Empfehlung: Solid-Standard und W3C-Verifiable-Credentials in die Roadmap aufnehmen — auch wenn die Spezifikation noch nicht final ist, ist die Richtung erkennbar.
+          Dynamic Workflows verändern die Mechanik dessen, was „Background-Agent" bedeutet — von Single-Session-Loop zu orchestriertem Multi-Agent-Run. Wer 2026 Background-Pipelines baut (Daily-Updates, CI-Cycles, Data-Refreshes, Monitoring-Loops), sollte den Migrations-Pfad zu Workflows in Q3 evaluieren. Und Opus 4.8 macht den Modell-Vorsprung von Anthropic im Coding-Vertical messbar — Wettbewerber müssen jetzt Pricing oder Latency nachschärfen, um relevant zu bleiben.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">02</span>Claude Code v2.1.152 — die Review-Skill wird zum Editor</h3>
-        <p>Anthropic hat in der Nacht <code>v2.1.152</code> ausgeliefert, und das ist die operativ wichtigste Release seit dem 2.1.147er-Sprung. Drei Funktionen, die das tägliche Coding-Workflow-Bild verschieben. Erstens: <code>/code-review --fix</code> wendet die Findings direkt im Working Tree an — nicht mehr nur Vorschlag mit Erklärung, sondern Edit-Round, die anschließend reviewbar bleibt. Der Skill prüft auf Reuse, Vereinfachung und Effizienz; <code>/simplify</code> ist jetzt ein Alias für <code>/code-review --fix</code>. Das ist eine kleine, aber inhaltsschwere Wende: die Skill ändert ihre Rolle vom Berater zum Editor mit erkennbarem Workflow-Pattern.</p>
-        <p>Zweitens: Skills und Slash-Commands können in der Frontmatter ein <code>disallowed-tools</code>-Feld setzen, das definierte Werkzeuge für die Dauer der Skill-Aktivierung aus dem Modell entfernt. Das ist das Pendant zum bisherigen Whitelisting in <code>permissions.allow</code> — und es macht Skills sicherer für agentische Auto-Modes, weil bestimmte Werkzeuge bewusst unterdrückt werden können. Für das ai-news-dashboard-Setup praktisch: wenn eine Skill (etwa <code>fetch-youtube</code>) keine Netzwerk-Aufrufe jenseits der definierten Quellen machen soll, lässt sich das jetzt sauber deklarieren.</p>
-        <p>Drittens: <code>/reload-skills</code> scant Skill-Verzeichnisse neu, ohne die Session zu beenden. <code>SessionStart</code>-Hooks können zusätzlich <code>reloadSkills: true</code> zurückgeben, sodass plugin-installierte Skills sofort in derselben Session verfügbar werden. Das schließt eine Lücke, an der Plugin-Entwickler bisher hingen — bis 2.1.152 brauchte jedes neu installierte Skill einen Session-Neustart, was bei langlebigen Background-Sessions schmerzhaft war. Mit <code>/reload-skills</code> wird das ai-news-dashboard-Setup einfacher updatebar, ohne den Cron-Job neu aufsetzen zu müssen.</p>
+        <h3><span class="num">02</span>Mythos öffentlich — und Project Glasswing wird zur Defense-Allianz</h3>
+        <p>Was vor zwei Wochen als „Mythos Preview unter Cleared-Contractor-Status" begann, ist heute publiziert: <span data-person="dario-amodei">Anthropic</span> hat das Frontier-Modell in einer einzigen knappen Mitteilung dem allgemeinen Developer-Markt geöffnet — kein Token-Throttling, kein US-Person-Restriction, sondern reguläre API-Verfügbarkeit. Die Formulierung in der Pressemitteilung — „collapsing the wall between cleared-contractor frontier AI and developer-grade frontier AI" — ist die operative Pointe: das Lab signalisiert, dass die zweistufige Frontier-Verfügbarkeit (Defense-only vs. Konsumenten-Markt) für den eigenen Stack vorbei ist. OpenAI und Google werden binnen Wochen reagieren müssen.</p>
+        <p>Parallel ist <em>Project Glasswing</em> aus dem Schatten getreten. Die Vulnerability-Detection-Variante von Mythos läuft jetzt in einer initiierten Allianz mit AWS, Apple, Cisco, Google, JPMorgan Chase und Microsoft — sechs Konzerne, die zusammen vermutlich die größte Source-Code-Base der Welt halten. Das ist eine ungewöhnliche Konstellation: Google ist Anthropic-Wettbewerber im Modell-Markt, Microsoft ist OpenAI-Hauptinvestor, und alle sechs sind selbst potenzielle Defense-Auftrag-Empfänger. Dass sie sich auf gemeinsamen Mythos-Zugriff einlassen, deutet auf eine harte CISO-Logik: kein Konzern kann es sich leisten, gegen einen Wettbewerber im Cyber-Range zurückzubleiben, dem das Modell schon zur Verfügung steht.</p>
+        <p>Strategisch markiert das den Moment, in dem Frontier-AI als Security-Infrastruktur eingestuft wird — vergleichbar mit der Position von Endpoint-Protection-Suiten in den 2010er-Jahren. Was bedeutet das für DACH-Konzerne? Glasswing-Zugang läuft noch über US-Defense-Filter und kommt nicht über Nacht in Frankfurt an. Aber das Pricing-Signal an die Verteidigungs-Industrie ist klar: Mythos-Capacity wird Quartalsweise verknappt sein, und wer in Q3 erste Verträge sucht, sollte den Procurement-Prozess jetzt anstoßen, nicht im Herbst.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          <code>/code-review --fix</code> ist die Funktion, die viele Teams 2025/26 von externen Lint-/Refactor-Tools (SonarQube, CodeClimate, Codacy) wegmigriert. Wer als CI-Verantwortlicher GitHub-Action-Setups mit <code>/code-review --comment</code> betreibt, sollte für die Q3-Planung den Switch auf <code>--fix</code> evaluieren — der Overhead pro PR sinkt deutlich. Disallowed-tools und /reload-skills sind „kleine" Features mit großer Production-Wirkung.
+          Frontier-Modelle wandern in die Sicherheits-Infrastruktur-Schicht. CISOs in DACH-Großkonzernen sollten Mythos/Glasswing als ernste Procurement-Option in der nächsten Investment-Planung führen, parallel zu klassischer Endpoint- und Network-Protection. Microsoft Defender und CrowdStrike werden in den nächsten Quartalen nachziehen müssen — wer auf der Detection-Seite zu lange wartet, kauft 2027 dieselbe Funktion zum Drei- bis Fünffachen ein.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">03</span>Anthropic übernimmt Colossus 1 vollständig — und eröffnet Korea</h3>
-        <p>Was vor fünf Tagen als „zweistelliger Prozentsatz der Memphis-Capacity" durchsickerte, ist heute in voller Schärfe bestätigt: <span data-person="dario-amodei">Anthropic</span> übernimmt die gesamte Compute-Kapazität von SpaceX' Colossus-1-Anlage in Tennessee — 300 Megawatt, über 220.000 Nvidia-GPUs, exklusiver Zugriff. xAI rückt mit seinem internen Workload auf das deutlich größere Colossus-2-Areal um, das für Grok-Training reserviert bleibt. Das ist eine andere Größenordnung als „dritte Compute-Quelle": Anthropic gewinnt einen kompletten Hyperscale-Datacenter exklusiv, ohne ihn bauen zu müssen — und SpaceX bekommt einen mehrjährigen Anchor-Vertrag für Colossus 1, der die Anlage in der Bilanz monetarisiert.</p>
-        <p>Strategisch bedeutet das mehrere Verschiebungen. Erstens: Die operative Capacity-Story von Anthropic ist für 2026/27 gelöst — niedrige Token-Preise und ambitionierte Roadmap-Ziele werden glaubwürdig finanzierbar. Zweitens: AWS und Google Cloud verlieren einen Hebel im Verhandlungs-Spiel mit Anthropic. Drittens: Die xAI-Anthropic-Daten-Trennung ist sauberer als zunächst befürchtet — ein eigener Datacenter, der xAI nicht mehr betritt, ist substantieller als jede vertragliche Side-Letter zur Workload-Verschwiegenheit.</p>
-        <p>Parallel hat Anthropic die Ernennung von KiYoung Choi zum Representative Director Korea bekanntgegeben — ein Schritt, dem in den nächsten Wochen die Eröffnung eines Seouler Office folgen soll. Korea ist im AI-Markt eine größere Nummer, als westliche Beobachter wahrnehmen: Samsung, LG, SK Hynix sind nicht nur Lieferanten der Halbleiter-Lieferkette, sondern auch Enterprise-AI-Kunden mit erheblichen Software-Budgets. Mit Korea-Office, Tokyo-Office (seit Q1) und der bekannten Dublin-Präsenz baut Anthropic die internationale Distribution systematisch auf — derselbe Schritt, den OpenAI im April mit der Singapur-/Sydney-Doppel-Eröffnung gemacht hatte.</p>
+        <h3><span class="num">03</span>Hassabis verkürzt die AGI-Timeline auf 2029</h3>
+        <p><span data-person="demis-hassabis">Demis Hassabis</span> hat in einem Time-Interview, das gestern Abend publiziert wurde, seine AGI-Erwartung deutlich nach vorne gezogen — von „fünf bis zehn Jahren" auf „realistische Möglichkeit bis 2029". Die Begründung war ungewöhnlich konkret: AlphaProof Nexus hat im April neun bislang offene Erdős-Probleme gelöst, und zwar — Hassabis' Formulierung — „zum Preis eines Steak-Dinners" in Compute. Wenn das stimmt, hat DeepMind im Mathematik-Beweis-Bereich die Skalierungs-Effizienz auf eine Stufe gehoben, die in der Forschungs-Community noch nicht ankommt.</p>
+        <p>Hassabis ist im Vergleich zu anderen Lab-Chefs vorsichtig in AGI-Aussagen — er hat in der Vergangenheit explizit gegen die OpenAI-/Anthropic-Timeline-Vorhersagen Distanz gehalten. Dass er jetzt zu 2029 schwenkt, ist mehr als rhetorische Akklimatisation: es ist eine Aussage über die Trajektorie von AlphaProof, AlphaGeometry und AlphaEvolve, die für Außenstehende kaum messbar war. Wenn DeepMind-interne Roadmap-Daten zeigen, dass Erdős-Level-Probleme zu Trivial-Kosten kollabieren, dann ist die nächste Skalierungs-Stufe (offene Conjectures aus Algebra, Topology, Number Theory) absehbar — und damit ein wesentlicher Baustein für ein Modell, das mathematisch-konsistent über lange Reasoning-Ketten arbeitet.</p>
+        <p>Für die Wettbewerbsdynamik bedeutet das ein klares Signal: Wenn DeepMind 2029 als realistisches AGI-Fenster nennt, müssen OpenAI und Anthropic nachziehen, oder sie verlieren die narrative Definition des Begriffs. Beobachter rechnen mit korrespondierenden Statements aus San Francisco binnen sechs Wochen. Für die regulatorische Diskussion in Brüssel ist das ungemütlich: der AI Act ist nicht für ein 2029-AGI-Szenario konstruiert, sondern für die generative-AI-Welt von 2024/25. Wenn die nächste Skalierungs-Stufe schneller kommt, wird Brüssel hektisch nachregulieren — und der „Digital Omnibus 2026" könnte zum ersten Schauplatz dieser Anpassung werden.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Compute-Souveränität und internationale Distribution sind die zwei Hebel, die Anthropic in der 900-Milliarden-Bewertung verteidigen muss. Die Colossus-1-Komplett-Übernahme klärt ersteres bis Ende 2027, die Korea-Eröffnung beginnt zweiteres. Für DACH-Konzerne mit asiatischer Niederlassungs-Struktur: Anthropic wird ab Q3 lokale Account-Manager auch in Frankfurt anbieten — die Lücke, die zwischen Dublin-EMEA und Tokyo-APAC bleibt, wird geschlossen.
+          AGI-Timing-Diskussionen wandern aus dem Spekulations-Raum in die Procurement- und Compliance-Planung. Wer als CIO 2026/27 mehrjährige AI-Verträge unterschreibt, sollte einen 2029-AGI-Pfad als realistisches Szenario einkalkulieren — und Klauseln für Vertrags-Anpassung bei „Capability-Sprüngen" einbauen. Versicherer beginnen ab Q3 2026, AI-Capability-bezogene Exclusion-Klauseln in Cyber-Policen zu schreiben — auch das gehört auf die nächste Compliance-Review-Agenda.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">04</span>EU AI Act Article 50 — Transparenz-Pflichten in 60 Tagen</h3>
-        <p>Während die High-Risk-Diskussion von vergangener Woche noch in den Konsultations-Mühlen läuft, rücken die <em>Transparenz-Pflichten</em> nach Artikel 50 EU AI Act auf eine harte Frist heran: ab 2. August 2026 gelten sie verbindlich. Was das konkret bedeutet, hat die EU-Kommission in einer Folge-Mitteilung vom Wochenende präzisiert. Erstens: Bei Interaktionen mit AI-Chatbots oder Voice-Agents muss der Nutzer beim Initiieren der Interaktion explizit darüber informiert werden. Zweitens: AI-generierte Bild-, Video- und Audio-Inhalte müssen technisch markiert sein (Watermark, Metadata) — vollständige Spezifikation der zulässigen Technologien folgt im Juni. Drittens: AI-generierter Text, der öffentlich publiziert wird, muss als solcher gekennzeichnet sein, sofern er nicht „signifikanter menschlicher redaktioneller Bearbeitung" unterzogen wurde — der Bearbeitungs-Begriff ist bewusst weit gefasst und wird in der Marktpraxis interpretierbar bleiben.</p>
-        <p>Für DACH-Anbieter ist die Watermark-Frage operativ am unangenehmsten. Wer 2025 mit DALL·E, Midjourney oder Imagen Marketing-Material generiert hat, muss prüfen, ob die jeweiligen Anbieter die geforderten C2PA-/SynthID-Marker zuverlässig eingebettet haben — und sicherstellen, dass nachgelagerte Bearbeitungs-Pipelines die Marker nicht entfernen. Adobe-Lightroom-Workflows mit Generative-Fill sind hier ein typischer Stolperstein, weil die Export-Pipeline historisch Metadata aggressiv strippt. Empfehlung: bis Anfang Juli einen internen Audit der gesamten Content-Pipeline, mit dokumentierten Fix-Punkten und Verantwortlichen.</p>
-        <p>Strukturell ist Artikel 50 die <em>weniger schmerzhafte</em> AI-Act-Welle — die schwere Compliance liegt in der High-Risk-Klassifizierung (siehe gestriges Briefing). Aber Transparenz-Pflichten haben den höheren Marketing-/Branding-Effekt: Verstöße werden öffentlich sichtbar, weil Nutzer sich an Markierungen orientieren. Reputationsrisiko ist hier höher als Bußgeld-Risiko.</p>
+        <h3><span class="num">04</span>5WPR-Studie bestätigt: Anthropic schlägt OpenAI im ARR</h3>
+        <p>Die gestern publizierte 5WPR-Studie <em>The AI Company Comms Study 2026</em> liefert die erste extern bestätigte Zahl zum bislang nur via Bloomberg berichteten Run-Rate-Bild: Anthropic ~30 Milliarden Dollar Annualized Revenue im April, OpenAI ~25 Milliarden Dollar im Februar. Die Verschiebung ist substantiell — Anthropic, das 2024 noch als „das ernsthaftere kleinere Lab" eingeordnet wurde, ist im Q2 2026 der größere Enterprise-Anbieter. Die Coding-Vertical (Claude Code, Managed Agents, MCP-Ökosystem) ist der primäre Treiber; die Studie nennt die Coding-Workloads als „dominant revenue line" für Anthropic.</p>
+        <p>Die Studie ist nicht nur Zahlenwerk, sondern Kommunikations-Audit der 15 führenden AI-Konzerne. Ein interessantes Detail: Anthropic kommuniziert Implementation, Disclosure und Adoption deutlich strukturierter als OpenAI — was der Studie zufolge ein Schlüsselfaktor für die Enterprise-Sales-Velocity ist. CIOs vertrauen einem Lab, das saubere Audit-Trails und Modell-Karten liefert, mehr als einem, das produktorientiert kommuniziert. Wer in DACH-Procurement-Prozessen die Lab-Auswahl moderiert, sollte das Studien-Material als Vergleichs-Grundlage heranziehen — es ist die erste systematische Aufbereitung dieser Frage.</p>
+        <p>Im Investment-Kontext bestätigt die Studie die 900-Milliarden-Bewertungs-Logik. ARR-Multiple für Anthropic = ~30x; das ist hoch, aber bei verdoppelnder Run-Rate alle 12 Wochen mathematisch verteidigbar. Zum Vergleich: OpenAI im Tender-Markt zu ~600 Milliarden Bewertung bei ~25 Milliarden ARR = ~24x. Die beiden Top-Labs liegen damit im selben Multiple-Korridor, was investorenseitig konsistent ist — und die Mythos-Publikation heute (Section 2) verstärkt die These zusätzlich, weil sie das Wachstum in den Defense-/Security-Vertikalen sichtbar macht.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          60 Tage Restzeit. Wer im Marketing oder in Kundenkommunikation generative AI nutzt, sollte jetzt einen End-to-End-Audit der Watermark-Kette aufsetzen. Für Chatbots: <em>jeden</em> erstkontakt-Disclaimer prüfen, auch in Bestandsprodukten mit Auto-Reply. Anbieter mit nachweisbarer C2PA-Integration (Adobe, Microsoft, Google) gewinnen relativ; OpenAI muss seinen Watermark-Status für DALL·E 4 öffentlich klären.
+          Wer 2024–25 noch OpenAI-First-Strategien in Procurement-Prozessen verteidigte, hat die Datenlage gegen sich. Empfehlung: Anthropic-Stack als Default-Option in den nächsten zwei Quartalen pilotieren, mit OpenAI als Zweit-Stack für spezifische Use-Cases (Konsumenten-UX, Microsoft-365-Tiefe). Die Multiple-Konvergenz signalisiert: aus Investoren-Sicht sind beide Labs jetzt austauschbare Wetten auf denselben Markt.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">05</span>Coupa kauft Tonkean — Procurement-Agent-Layer konsolidiert sich</h3>
-        <p>Coupa, seit 2023 unter Thoma Bravo, hat die Übernahme von Tonkean bekanntgegeben — ein Enterprise-Workflow-Automation-Startup, das sich auf Procurement-Workflows spezialisiert hat. Coupa nutzt das M&amp;A explizit, um eine AI-Agent-Schicht über den klassischen Spend-Management-Stack zu legen. Konkrete Zahl: Coupa hat heute 20 AI-Agenten produktiv im Einsatz, im Mai 2025 waren es sechs — und die Roadmap zielt auf 65 Agenten bis Januar 2027. Das ist die quantitativ klarste Aussage zum Agent-Velocity-Curve, die ein großes Enterprise-SaaS-Unternehmen in diesem Quartal abgegeben hat.</p>
-        <p>Die Übernahme ist exemplarisch für ein Pattern, das in den nächsten Quartalen häufiger werden wird: etabliertes Enterprise-SaaS schluckt Workflow-Spezialisten, um die Agent-Schicht nicht selbst bauen zu müssen. Im selben Logik-Bogen liegen Salesforce-Agentforce-Akquisitionen der letzten 12 Monate, ServiceNow-Now-Assist-Erweiterungen und SAP-Joule-Erweiterungen. Was bei Coupa neu ist: die Roadmap-Transparenz. „20 heute, 65 bis Januar 2027" macht aus dem Agent-Layer eine messbare Produktkategorie — Analysten werden Coupa ab Q3 nach Agent-Adoption-Rate bewerten.</p>
-        <p>Im Mittelstands-Segment passt das zur Q3-Konsolidierungs-Prognose, die diese Woche von mehreren Banker-Trackern bestätigt wurde: 18–26 strategische AI-Akquisitionen werden für Q3 weltweit erwartet, verteilt auf vier Akquirer-Archetypen — Hyperscaler kaufen Modell-Labs (siehe vorige Woche), Enterprise-SaaS rollt Agent-Workflow-Companies auf (Coupa-Tonkean), Mid-Cap-Public-Unternehmen kaufen Vertical-AI-Capability, PE-backed Roll-ups bauen AI-Service-Schichten. Für jeden, der als Founder in einem dieser vier Felder steht: das Übernahme-Fenster ist offen, aber nicht unbegrenzt.</p>
+        <h3><span class="num">05</span>DACH-Realitäts-Check — höchste Regeltreue, höchste Vorfallsquote</h3>
+        <p>Während Brüssel an Artikel-50-Watermark-Spezifikationen feilt und das BSI an C5-Erweiterungen für agentische AI arbeitet, liefert eine gestern Abend veröffentlichte Studie ein unbequemes Bild der Praxis. 44 Prozent der deutschen Unternehmen melden bereits Sicherheitsvorfälle durch AI-Tools — das ist im internationalen Vergleich der Spitzenwert. 90 Prozent der Führungskräfte vertrauen der Transparenz ihrer AI-Infrastruktur; 52 Prozent der Angestellten nutzen Shadow-AI-Anwendungen, die in keinem Sicherheits- oder Compliance-Verzeichnis stehen. Das ist die Paradoxie der „höchsten Regeltreue mit höchster Vorfallsquote".</p>
+        <p>Die Ursachen-Analyse ist nicht überraschend, aber wichtig. Erstens: Deutsche Unternehmen dokumentieren konsequenter, was sie erlauben — und melden deshalb Vorfälle, die andere Märkte unter den Radar fallen lassen. Die Vorfallsquote ist also teilweise eine Reporting-Quote. Zweitens: Die strikte interne Freigabe-Politik treibt Mitarbeiter in Shadow-AI-Nutzung (ChatGPT-Konsumenten-Account, Claude.ai-Privatzugang, Perplexity-Public-Tier). Das ist genau der Mechanismus, vor dem die OWASP-Top-10-für-Agentic-AI warnt — Tool Poisoning und Cross-Agent Privilege Escalation entstehen oft genau über solche Shadow-Pfade.</p>
+        <p>Praktisch heißt das: Strenge Freigabe-Politik allein löst das Problem nicht — sie verschiebt es. Was DACH-Konzerne in den nächsten sechs Monaten brauchen: eine <em>kuratierte Liste von freigegebenen Lab-Optionen</em> (Anthropic Managed Agents, Aleph Alpha, Mistral La Plateforme, OpenAI Enterprise), eindeutig kommuniziert mit Use-Case-Mapping, und ein <em>Monitoring-Layer</em> für Shadow-AI-Nutzung. Identity-Provider wie Okta und Microsoft Entra haben in den letzten drei Quartalen Detection-Module für ungenehmigte AI-Endpoints ausgerollt — wer noch keine entsprechende Policy hat, sollte die jetzt aufsetzen. Sonst eskaliert das 44-Prozent-Problem im Sommer 2026 mit der Artikel-50-Verschärfung zu einem Compliance-Vorfall mit Reputationswirkung.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Procurement, Service-Management, HR-Tech sind die drei Enterprise-SaaS-Bereiche, in denen die Agent-Roll-up-Welle in Q3 am sichtbarsten wird. Wer als IT-Architekt einen dieser Bestands-Stacks betreut, sollte mit dem jeweiligen Account-Manager über Agent-Roadmap und Pricing-Änderungen sprechen — Lock-In-Verträge wandern in die Agent-Lizenzierung, weg von reiner Plattform-Lizenz.
+          Shadow-AI ist 2026 der wichtigste Single-Risk-Faktor in DACH-Konzern-AI-Compliance. Empfehlung: kombinierter Maßnahmenplan aus (1) kuratierter Lab-Whitelist mit Use-Case-Mapping, (2) Monitoring-Layer im Identity-Provider, (3) konzernweiter Transparenz-Schulung bis Q3. Wer das nicht in Bewegung setzt, wird im Herbst 2026 mit dem ersten medienwirksamen AI-Compliance-Vorfall zu tun haben — und die Reputations-Wirkung wird die Kosten der Vorbereitung um Größenordnungen übersteigen.
         </blockquote>
       </section>
-
       <div class="briefing-end">
-        <strong>Was diese Woche zu beobachten ist:</strong> W3C-Reaktion auf Berners-Lees Working-Group-Vorschlag — formell muss das Charter-Pre-Draft binnen 30 Tagen vorliegen, sonst verliert die Initiative Momentum. SpaceX-Colossus-1-Übergabe-Status: tatsächliche Capacity-Verfügbarkeit für Anthropic vs. angekündigter Zeitplan — erste Inference-Latenz-Berichte werden in einer Woche erwartet. EU-Watermark-Spezifikation im Juni: welche C2PA-Profile akzeptiert werden, entscheidet über Adobe- vs. Microsoft- vs. Google-Toolchain-Vorteile. Claude Code: nach dem 2.1.152er Skill-Sprung wird die nächste Welle vermutlich um agent-spezifische Sandbox-Befehle kreisen (siehe Anthropic Managed Agents Sandboxes). Und im Lab-Markt: <span data-person="mira-murati">Mira Muratis</span> Thinking Machines Lab hat den Anfang-Juni-Termin bestätigt — wenn er hält, ist das Lab nach drei Verschiebungen wieder im Glaubwürdigkeits-Fenster.
+        <strong>Was am Wochenende zu beobachten ist:</strong> Erste unabhängige Reviews von Opus 4.8 auf coding-spezifischen Benchmarks (SWE-Bench-Verified, HumanEval-Pro) werden Samstag/Sonntag erwartet — die <code>--effort xhigh</code>-Variante ist der spannende Marker. OpenAI-Reaktion auf Mythos-Publikation: GPT-5.5-Cyber-Pricing-Anpassung oder ein eigenes Frontier-für-Defense-Programm sind die plausibelsten Schritte; eine Stellungnahme noch diese Woche ist möglich. Hassabis-Folge-Statements von Sam Altman und <span data-person="dario-amodei">Dario Amodei</span>: die AGI-Timeline-Frage ist jetzt offen, und beide werden öffentlich nachziehen müssen. EU-Watermark-Spezifikation im Juni: das ist die nächste harte Deadline auf Compliance-Seite. Im Lab-Markt: <span data-person="mira-murati">Mira Muratis</span> Thinking Machines Lab hat den Anfang-Juni-Termin bestätigt — wenn er hält, ist die Stealth-Phase vorbei. Und im DACH-Spiegel: Bitkom-Stellungnahme zur 44-Prozent-Sicherheitsvorfalls-Quote, die offen Hand-in-Hand-Reaktion der großen DAX-CISOs in der ersten Juni-Hälfte erwarten lässt.
       </div>
 
     </div>
@@ -460,78 +462,77 @@
       <article class="card news-card crit">
         <div class="row">
           <span class="pill crit">Major Release</span>
-          <span class="score">Score <b>9.0</b>/10</span>
+          <span class="score">Score <b>9.5</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Berners-Lee zum Agentic Web — Forderung nach dezentraler Identitäts-Schicht</h3>
-        <p>Beim IAB Tech Lab Agentic Web Summit in New York: ohne W3C-Working-Group zu Agent Interaction Standards droht das offene Web erneut Plattform-Aggregation. Empfehlung: Solid-Standard und Verifiable Credentials in Agent-Architekturen einbeziehen.</p>
+        <h3 style="margin-top:10px">Opus 4.8 ist da — Claude Code v2.1.154 mit Dynamic Workflows</h3>
+        <p>Opus 4.8 default mit <code>/effort xhigh</code> für härteste Tasks · Dynamic Workflows orchestriert 10–100 Subagents im Background, <code>/workflows</code> für Run-Übersicht · Fast Mode 2x Rate / 2.5x Speed · Lean System Prompt jetzt Default.</p>
         <div class="news-meta">
-          <span>📅 28.05.2026</span><span>·</span><span>🏢 IAB Tech Lab · W3C</span><span>·</span>
-          <a href="https://iabtechlab.com/tech-lab-summit-2026-the-agentic-web/">IAB Tech Lab</a>
+          <span>📅 28.05.2026</span><span>·</span><span>🏢 <span data-person="dario-amodei">Anthropic</span> · Claude Code</span><span>·</span>
+          <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.154">Release Notes</a>
         </div>
       </article>
 
       <article class="card news-card crit">
         <div class="row">
-          <span class="pill crit">Tooling</span>
+          <span class="pill crit">Major Release</span>
+          <span class="score">Score <b>9.3</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Mythos öffentlich + Project Glasswing mit 6-Konzern-Allianz</h3>
+        <p><span data-person="dario-amodei">Anthropic</span> hebt die Cleared-Contractor-Mauer auf: Mythos ist über reguläre API verfügbar. Glasswing für Vulnerability-Detection läuft exklusiv mit AWS, Apple, Cisco, Google, JPMorgan, Microsoft.</p>
+        <div class="news-meta">
+          <span>📅 28.05.2026</span><span>·</span><span>🏢 <span data-person="dario-amodei">Anthropic</span></span><span>·</span>
+          <a href="https://www.anthropic.com/news">Anthropic News</a>
+        </div>
+      </article>
+
+      <article class="card news-card crit">
+        <div class="row">
+          <span class="pill crit">Forschung</span>
           <span class="score">Score <b>9.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Claude Code v2.1.152: <code>/code-review --fix</code> macht Edits direkt</h3>
-        <p>Reuse-/Simplification-/Efficiency-Findings werden im Working Tree angewendet. <code>/simplify</code> jetzt Alias. Plus: <code>disallowed-tools</code> in Skill-Frontmatter, <code>/reload-skills</code> ohne Session-Restart. Substitut für SonarQube-/CodeClimate-/Codacy-Setups.</p>
+        <h3 style="margin-top:10px">Hassabis verkürzt AGI-Timeline: „realistisch bis 2029"</h3>
+        <p>Time-Interview: von „fünf bis zehn Jahren" auf 2029. Begründung: AlphaProof Nexus löste neun offene Erdős-Probleme „zum Preis eines Steak-Dinners". <span data-person="demis-hassabis">Demis Hassabis</span> war bisher der zurückhaltendste Lab-Chef im AGI-Timing.</p>
         <div class="news-meta">
-          <span>📅 27.05.2026</span><span>·</span><span>🏢 Anthropic · Claude Code</span><span>·</span>
-          <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.152">Release Notes</a>
+          <span>📅 28.05.2026</span><span>·</span><span>🏢 <span data-person="demis-hassabis">Google DeepMind</span></span>
         </div>
       </article>
 
       <article class="card news-card hot">
         <div class="row">
-          <span class="pill hot">Major Release</span>
-          <span class="score">Score <b>8.7</b>/10</span>
+          <span class="pill hot">Marktdaten</span>
+          <span class="score">Score <b>8.5</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Anthropic übernimmt Colossus 1 vollständig — 300 MW, 220k+ GPUs</h3>
-        <p>Faktcheck-Update: Nicht ein „zweistelliger Prozentsatz", sondern die gesamte Memphis-Anlage. xAI rückt auf Colossus 2 um (Grok-Training). Capacity-Story für 2026/27 strukturell gelöst, AWS/GCP verlieren Verhandlungs-Hebel.</p>
+        <h3 style="margin-top:10px">5WPR-Studie bestätigt: Anthropic ARR > OpenAI ARR</h3>
+        <p>Anthropic ~30 Mrd. (April) vs. OpenAI ~25 Mrd. (Februar). Coding-Vertical ist dominant revenue line. Erste extern bestätigte Run-Rate-Daten. ARR-Multiple beider Top-Labs konvergieren bei ~25–30x.</p>
         <div class="news-meta">
-          <span>📅 27.05.2026</span><span>·</span><span>🏢 <span data-person="dario-amodei">Anthropic</span> · SpaceX/xAI</span><span>·</span>
-          <a href="https://www.anthropic.com/news">Anthropic News</a>
+          <span>📅 28.05.2026</span><span>·</span><span>🏢 5WPR</span><span>·</span>
+          <a href="https://www.prnewswire.com/news-releases/openai-and-anthropic-dominate-ai-revenue--and-communicate-very-differently-302776605.html">PRN</a>
         </div>
       </article>
 
       <article class="card news-card hot">
         <div class="row">
           <span class="pill hot">Security</span>
-          <span class="score">Score <b>8.3</b>/10</span>
+          <span class="score">Score <b>8.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">EU AI Act Article 50 — Transparenz-Pflichten in 60 Tagen scharf</h3>
-        <p>Ab 2. August 2026: Chatbot-Disclaimer, Watermark/Metadata für Bild/Video/Audio, AI-Text-Kennzeichnung. C2PA-Spezifikation folgt im Juni. Marketing- und Customer-Communication-Pipelines brauchen End-to-End-Audit.</p>
+        <h3 style="margin-top:10px">DACH-Paradox: 44 % Sicherheitsvorfälle, 52 % Shadow-AI-Nutzung</h3>
+        <p>Deutschland: weltweit höchste Regeltreue, weltweit meiste AI-Sicherheitsvorfälle. Strikte Freigabe-Politik treibt Mitarbeiter in Konsumenten-AI-Accounts. Kuratierte Whitelist + Identity-Provider-Monitoring jetzt Pflicht.</p>
         <div class="news-meta">
-          <span>📅 27.05.2026</span><span>·</span><span>🏢 EU Commission</span><span>·</span>
-          <a href="https://www.heise.de/news/EU-AI-Act-Was-bis-August-2026-in-Unternehmen-erledigt-sein-muss-11289793.html">heise</a>
+          <span>📅 28.05.2026</span><span>·</span><span>🏢 Netzpalaver / Bitkom</span><span>·</span>
+          <a href="https://netzpalaver.de/2026/05/28/truegerische-ki-sicherheit-in-deutschland-hoechste-regeltreue-aber-weltweit-die-meisten-sicherheitsvorfaelle/">Bericht</a>
         </div>
       </article>
 
       <article class="card news-card warn">
         <div class="row">
-          <span class="pill warn">Personalie</span>
+          <span class="pill warn">M&amp;A</span>
           <span class="score">Score <b>7.5</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Anthropic eröffnet Korea-Office, KiYoung Choi wird Director</h3>
-        <p>Nach Dublin und Tokyo der nächste APAC-Schritt. Samsung/LG/SK Hynix sind Enterprise-AI-Kunden mit erheblichen Software-Budgets. Bis Q3 lokale Account-Manager auch für Frankfurt erwartet.</p>
+        <h3 style="margin-top:10px">Agent-Startup-Runden verdoppeln sich: $82M → $155M Durchschnitt</h3>
+        <p>15 agentische AI-Startups Q4-2025/Anfang-2026: Average Round $155M, fast Verdopplung gegenüber H1-2025. Sierra $950M ($15B+ post), CopilotKit $27M Series A mit Deutsche Telekom, Docusign, Cisco, S&amp;P Global.</p>
         <div class="news-meta">
-          <span>📅 26.05.2026</span><span>·</span><span>🏢 <span data-person="dario-amodei">Anthropic</span></span><span>·</span>
-          <a href="https://www.anthropic.com/news">Anthropic News</a>
-        </div>
-      </article>
-
-      <article class="card news-card info">
-        <div class="row">
-          <span class="pill info">M&amp;A</span>
-          <span class="score">Score <b>7.0</b>/10</span>
-        </div>
-        <h3 style="margin-top:10px">Coupa kauft Tonkean — Procurement-Agent-Layer konsolidiert</h3>
-        <p>Roadmap-Transparenz: 20 AI-Agenten heute → 65 bis Januar 2027. Exemplarisch für Enterprise-SaaS-Roll-up-Pattern (Salesforce/ServiceNow/SAP). Q3-Prognose: 18–26 strategische AI-Akquisitionen weltweit.</p>
-        <div class="news-meta">
-          <span>📅 21.05.2026</span><span>·</span><span>🏢 Coupa · Tonkean</span><span>·</span>
-          <a href="https://www.axios.com/pro/fintech-deals/2026/05/21/coupa-tonkean-ai-procurement-acquisition">Axios</a>
+          <span>📅 25.05.2026</span><span>·</span><span>🏢 Sierra · CopilotKit</span><span>·</span>
+          <a href="https://techcrunch.com/2026/05/05/copilotkit-raises-27m-to-help-devs-deploy-app-native-ai-agents/">TechCrunch</a>
         </div>
       </article>
 
@@ -552,13 +553,31 @@
 
       <article class="card">
         <h3>Letzte Releases</h3>
-        <p>Aktuelle Version <code>v2.1.152</code>, ~tägliche Patch-Kadenz.</p>
+        <p>Aktuelle Version <code>v2.1.154</code> — Opus 4.8 ist hier.</p>
+
+        <div class="release">
+          <div class="ver">v2.1.154</div>
+          <div class="when">28.05.</div>
+          <div class="what">
+            <strong>Opus 4.8 default mit <code>/effort xhigh</code></strong> · <strong>Dynamic Workflows</strong> orchestriert 10–100 Subagents im Background (<code>/workflows</code>) · Fast Mode 2x/2.5x · Lean System Prompt jetzt Default
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.153</div>
+          <div class="when">28.05.</div>
+          <div class="what">
+            <code>skipLfs</code> für github/git Plugin-Marketplaces · One-time-Notice wenn npm global install nicht auto-updaten kann (<code>/doctor</code> listet Fixes) · Statusline-Scripts bekommen <code>COLUMNS</code>/<code>LINES</code> Env · <code>claude agents</code>-Autocomplete für native Slash-Commands
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
 
         <div class="release">
           <div class="ver">v2.1.152</div>
           <div class="when">27.05.</div>
           <div class="what">
-            <strong><code>/code-review --fix</code> wendet Findings direkt im Working Tree an</strong> · <code>/simplify</code> jetzt Alias · <code>disallowed-tools</code> in Skill-Frontmatter · <code>/reload-skills</code> + <code>reloadSkills</code>-Return für SessionStart-Hooks
+            <strong><code>/code-review --fix</code></strong> wendet Findings im Working Tree an · <code>/simplify</code> jetzt Alias · <code>disallowed-tools</code> in Skill-Frontmatter · <code>/reload-skills</code>
             <span class="badge feat">FEATURE</span>
           </div>
         </div>
@@ -569,7 +588,6 @@
           <div class="what">
             <strong>Interne Infrastruktur-Verbesserungen</strong>
             <span class="badge fix">INTERNAL</span>
-            <br><em>Keine User-facing Änderungen — Plumbing-Patch.</em>
           </div>
         </div>
 
@@ -577,9 +595,9 @@
           <div class="ver">v2.1.149</div>
           <div class="when">22.05.</div>
           <div class="what">
-            <strong><code>/usage</code> mit Category-Breakdown</strong> (Skills, Subagents, Plugins, MCP-Server) · <code>/diff</code> Keyboard-Scroll · GFM-Checkboxes · Enterprise-Setting <code>allowAllClaudeAiMcps</code>
+            <strong><code>/usage</code> mit Category-Breakdown</strong> · <code>/diff</code> Keyboard-Scroll · GFM-Checkboxes · Enterprise <code>allowAllClaudeAiMcps</code>
             <span class="badge feat">FEATURE</span>
-            <br><em>PowerShell-Permission-Bypass für built-in <code>cd</code>-Varianten gefixt.</em>
+            <br><em>PowerShell-Permission-Bypass für <code>cd</code>-Varianten gefixt.</em>
             <span class="badge sec">SECURITY</span>
           </div>
         </div>
@@ -588,27 +606,7 @@
           <div class="ver">v2.1.148</div>
           <div class="when">22.05.</div>
           <div class="what">
-            <strong>Bash-Tool Exit-Code-127-Regression gefixt</strong> (eingeführt mit 2.1.147 für manche Setups)
-            <span class="badge fix">FIX</span>
-          </div>
-        </div>
-
-        <div class="release">
-          <div class="ver">v2.1.147</div>
-          <div class="when">21.05.</div>
-          <div class="what">
-            <strong>Pinned Background Sessions</strong> (Ctrl+T) bleiben im Idle aktiv und werden in-place geupdatet · <code>/simplify</code> → <code>/code-review</code> mit <code>--comment</code> für GitHub-PR-Kommentare
-            <span class="badge feat">FEATURE</span>
-            <br><em>Auto-Updater retried Netzwerk-Fehler, meldet OS-Codes auf Fehler.</em>
-            <span class="badge fix">FIX</span>
-          </div>
-        </div>
-
-        <div class="release">
-          <div class="ver">v2.1.146</div>
-          <div class="when">21.05.</div>
-          <div class="what">
-            <strong>MCP <code>resources/list</code>-Paginierung</strong> gefixt (silent data loss) · AskUserQuestion-Auto-Mode-Unterdrückung gefixt
+            <strong>Bash-Tool Exit-Code-127-Regression gefixt</strong>
             <span class="badge fix">FIX</span>
           </div>
         </div>
@@ -642,7 +640,7 @@
   </section>
 
   <footer>
-    <div>Snapshot · <span class="mono" id="generated">28. Mai 2026</span></div>
+    <div>Snapshot · <span class="mono" id="generated">29. Mai 2026</span></div>
     <div>
       <a href="/agentic-info-dashboard/sources/">📚 Quellen-Sammlung</a> ·
       <a href="/agentic-info-dashboard/">📊 Übersicht</a>

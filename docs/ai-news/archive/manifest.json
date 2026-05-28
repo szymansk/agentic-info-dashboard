@@ -2,8 +2,14 @@
   "$schema": "https://example.com/dashboard-archive.schema.json",
   "snapshots": [
     {
-      "date": "2026-05-28",
+      "date": "2026-05-29",
       "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Opus 4.8, Mythos öffentlich, Hassabis sagt 2029 zur AGI — der Frontier-Markt beschleunigt",
+      "summary": "Claude Code v2.1.154 mit Opus 4.8 + Dynamic Workflows · Mythos öffentlich + Project Glasswing für AWS/Apple/Cisco/Google/JPMorgan/Microsoft · Hassabis verkürzt AGI-Timeline auf 2029 · 5WPR: Anthropic ARR > OpenAI ARR · DACH-Paradox: 44 % Sicherheitsvorfälle"
+    },
+    {
+      "date": "2026-05-28",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-05-28.html",
       "headline": "Berners-Lee zum Agentic Web, Claude Code wird zum Editor, Anthropic übernimmt Colossus 1 vollständig",
       "summary": "IAB Tech Lab Agentic Web Summit mit Berners-Lee · Claude Code v2.1.152: /code-review --fix · Anthropic übernimmt gesamte Colossus-1-Capacity (300 MW) · Korea-Office mit KiYoung Choi · EU AI Act Article 50 in 60 Tagen scharf · Coupa kauft Tonkean"
     },
