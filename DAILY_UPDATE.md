@@ -118,6 +118,44 @@ Footer, Style-Block, Script-Tags) bleibt **unverändert**.
 
 ---
 
+## 5.5. IT-Services-Radar aktualisieren
+
+Das Dashboard `dashboards/it-services/index.html` zeigt einen rollierenden
+6-Monats-Radar zu Bedrohungen / Watchlist / Chancen für deutsche
+IT-Dienstleister (Fokus adesso). Es wird NICHT jeden Tag komplett neu
+geschrieben — du pflegst es **inkrementell**:
+
+1. Schau dir die heutigen Breaking-News aus Schritt 2 an. Markiere jede
+   Meldung, die für IT-Service-Dienstleister relevant ist (Beispiele:
+   neuer Lab-Berater-Wettbewerb, Tagessatz-Studien, Layoffs bei
+   Capgemini/Accenture/IBM/Cognizant, neue AI-Coding-Tools mit Enterprise-
+   Adoption, regulatorische Schritte EU/BSI/BaFin, adesso-spezifische News).
+
+2. Pro relevanter Meldung: eine `<article class="event" ...>`-Karte
+   im passenden `.col-threat` / `.col-watch` / `.col-chance` einsetzen.
+   Karten sortiert nach `data-crit` absteigend innerhalb der Spalte.
+
+3. Felder pro Card: `data-cat` (AI-Tools / Wettbewerb / Regulatorik /
+   Talent / Kunden / Markt), `data-date` (ISO), `data-crit` (1–10).
+   Krit-Bar-`<span>` Breite = `data-crit * 10%`. Im `.ev-take` einen
+   knappen 2-Satz-Take „Für adesso" formulieren.
+
+4. Wenn die Spalte mehr als 6 Events hat: das älteste Event mit niedrigster
+   Kritikalität entfernen — das Dashboard soll fokussiert bleiben.
+
+5. Wenn signifikante Verschiebung in der Branche (z. B. drei Bedrohungen ≥ 9
+   neu, oder Marktwachstum massiv revidiert): das Klima-Element oben
+   (`.klima .status`) anpassen — Icon, Status-Wort, Trend-Text.
+
+6. `<body data-snapshot-date="<heute>">` aktualisieren und unten
+   `#last-updated` Text setzen.
+
+Wenn KEINE relevanten IT-Services-News heute: dieses Dashboard NICHT
+anfassen, nur `data-snapshot-date` aktualisieren. Karten-Inhalte sind
+Wahrheits-Datum, nicht Schreib-Datum.
+
+---
+
 ## 6. Verifikation
 
 Nach allen Änderungen:
