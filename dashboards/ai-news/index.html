@@ -298,7 +298,7 @@
   footer .mono { color: var(--muted); }
 </style>
 </head>
-<body data-snapshot-date="2026-05-29" data-snapshot-mode="live">
+<body data-snapshot-date="2026-05-30" data-snapshot-mode="live">
 <div class="wrap">
 
   <!-- ─── Top Nav ─── -->
@@ -337,8 +337,11 @@
     <a class="tl-pill" href="/ai-news/archive/2026-05-28.html" data-date="2026-05-28">
       <span class="dow">Do</span><span class="date">28.05.</span>
     </a>
-    <a class="tl-pill active" href="/ai-news/" data-date="2026-05-29">
+    <a class="tl-pill" href="/ai-news/archive/2026-05-29.html" data-date="2026-05-29">
       <span class="dow">Fr</span><span class="date">29.05.</span>
+    </a>
+    <a class="tl-pill active" href="/ai-news/" data-date="2026-05-30">
+      <span class="dow">Sa</span><span class="date">30.05.</span>
     </a>
   </div>
 
@@ -358,7 +361,7 @@
       </div>
     </div>
     <div class="meta">
-      <div class="date" id="today">Freitag, 29. Mai 2026</div>
+      <div class="date" id="today">Samstag, 30. Mai 2026</div>
       <div class="tag">Snapshot · KW 22 / 2026</div>
     </div>
   </header>
@@ -370,77 +373,77 @@
 
     <header class="briefing-head">
       <h2 class="kicker">Tagesbriefing · Agentic AI &amp; GenAI</h2>
-      <h1>Opus 4.8, Mythos öffentlich, Hassabis sagt 2029 zur AGI — der Frontier-Markt beschleunigt</h1>
+      <h1>KPMG-Claude-Allianz für 276 000 Profis, Bundesnetzagentur wird AI-Aufsicht, Plugin-Stack öffnet sich</h1>
       <div class="byline">
         <span>✍️ Kuratiert &amp; analysiert</span>
         <span class="dot-sep">·</span>
         <span>~12 Min Lesezeit</span>
         <span class="dot-sep">·</span>
-        <span id="byline-date">29. Mai 2026</span>
+        <span id="byline-date">30. Mai 2026</span>
       </div>
       <p class="lede">
-        Drei harte Verschiebungen seit gestern Abend. Anthropic hat in der Nacht <em>Opus 4.8</em> als Default für das eigene Stack-Modell ausgerollt — Claude Code <code>v2.1.154</code> macht den Sprung sichtbar — und führt zugleich <em>Dynamic Workflows</em> ein: ein Skill, mit dem ein Background-Lauf zehn bis hundert Agenten orchestriert. Parallel hat das Lab <em>Mythos</em>, das bislang nur unter Cleared-Contractor-Status zugängliche Frontier-Modell, in einer ungewöhnlich knappen Mitteilung dem breiten Developer-Markt geöffnet — <em>Project Glasswing</em> liefert die Vulnerability-Detection-Variante vorerst exklusiv an AWS, Apple, Cisco, Google, JPMorgan Chase und Microsoft. <span data-person="demis-hassabis">Demis Hassabis</span> hat in einem Time-Interview seine AGI-Timeline von „fünf bis zehn Jahren" auf <em>„realistische Möglichkeit bis 2029"</em> verkürzt — gestützt auf AlphaProof Nexus, das neun offene Erdős-Probleme „zum Preis eines Steak-Dinners" gelöst haben soll. Die 5WPR-Studie bestätigt parallel die Run-Rate-Verschiebung: Anthropic ~30 Milliarden ARR im April, OpenAI ~25 Milliarden im Februar — Anthropic ist im Coding-getriebenen Enterprise-Markt jetzt der größere Anbieter. Und im DACH-Spiegel rückt die unbequeme Zahl der Woche nach: 44 Prozent der deutschen Unternehmen melden bereits Sicherheitsvorfälle durch AI-Tools, 52 Prozent der Angestellten nutzen Shadow-AI — höchste Regeltreue, höchste Vorfallsquote weltweit.
+        Zwei Distributions-Anker und ein operatives Geschenk. KPMG hat den größten bekannten Anthropic-Enterprise-Deal angekündigt: das <em>KPMG Digital Gateway Powered by Claude</em> wird in die Kern-Liefer-Plattform integriert, mit voller Implementierung auf Microsoft Azure bis September — adressiert sind 276 000 Professionals in 138 Ländern. In Deutschland nimmt die regulatorische Schiene Form an: Die Bundesnetzagentur wird formell zur nationalen AI-Aufsichtsbehörde, mit einem Jahresbudget von 49 Millionen Euro und der Doppel-Konsultation zu Artikel 50 (Transparenz, seit 8. Mai) und Artikel 6 (High-Risk, seit 19. Mai) im EU-Kontext. Und Anthropic legt in der Nacht den nächsten Claude-Code-Schritt nach: <code>v2.1.157</code> macht das Plugin-Verzeichnis <code>.claude/skills</code> zur Auto-Loading-Quelle, bringt <code>claude plugin init</code> als Scaffolder und lässt <code>EnterWorktree</code> zwischen Claude-managed Worktrees mid-session wechseln — Plus: <code>v2.1.156</code> hat einen ärgerlichen Opus-4.8-Thinking-Block-Bug gefixt. Im Funding-Umfeld holt sich <em>Parallel</em> 230 Millionen Dollar bei 2 Milliarden Bewertung für agent-spezifische Web-Search-Infrastruktur, und Google macht AI Studio in einer iOS-App ab 1. Juli zum Konsumenten-Produkt.
       </p>
     </header>
 
     <div class="briefing-body">
 
       <section>
-        <h3><span class="num">01</span>Opus 4.8 ist da — und Dynamic Workflows machen Loop-Orchestrierung zur Plattform-Funktion</h3>
-        <p>Anthropic hat <em>Opus 4.8</em> in der Nacht als Default-Modell für die eigene Stack-Plattform live geschaltet — Claude Code <code>v2.1.154</code> macht das sofort im CLI sichtbar, mit <code>/effort xhigh</code> für die härtesten Aufgaben. Wichtiger als die Modell-Sprung-Mechanik ist die zweite Ankündigung: <em>Dynamic Workflows</em>, ein Skill, der einem Background-Lauf erlaubt, autonom zehn bis hundert Subagents zu instanziieren, zu orchestrieren und zusammenzuführen. <code>/workflows</code> zeigt aktive Runs, und der Skill wird von Anthropic selbst als Werkzeug für „large-scale background tasks" positioniert. Das ist der Moment, in dem Multi-Agent-Orchestrierung von einer Coding-Demo zur Standard-CLI-Funktion wird.</p>
-        <p>Im Setup vom ai-news-dashboard heißt das konkret: das täglich laufende <code>/loop 24h</code>-Pattern wäre mit Dynamic Workflows nicht mehr eine einzelne Background-Session, sondern ein orchestrierter Lauf aus mehreren spezialisierten Subagents — einer für Releases, einer für News-Curation, einer für DACH-Quellen, einer für Briefing-Generation. Token-Budget wird besser verteilt, Failures isolierbar, Parallelisierung explizit. Das Setup nachzubauen ist im Q3 sinnvoll — die Migration ist nicht trivial, weil die Subagent-Kommunikation neu modelliert werden muss, aber die Wartbarkeit steigt erkennbar.</p>
-        <p>Daneben zwei Zahlen aus dem Release-Text, die für Heavy-User wichtig sind: Fast Mode auf Opus 4.8 läuft mit „2x Standard-Rate für 2.5x Geschwindigkeit" — eine bessere Cost-of-Compute-Effizienz als bei Opus 4.7-Fast (3x für 3x). Und der Lean System Prompt ist jetzt Default für alle Modelle außer Haiku, Sonnet und den älteren Opus-Generationen — das spart in Multi-Turn-Sessions spürbar Token-Budget. Wer also Opus 4.6/4.7 noch in Pipelines hat, sollte den Upgrade-Pfad jetzt einplanen.</p>
+        <h3><span class="num">01</span>KPMG-Anthropic-Allianz — 276 000 Professionals als ein Distributions-Pakt</h3>
+        <p>Die operativ wichtigste Ankündigung der Woche ist nicht modell-, sondern vertriebs-getrieben. KPMG und <span data-person="dario-amodei">Anthropic</span> haben das <em>KPMG Digital Gateway Powered by Claude</em> vorgestellt — und der Maßstab ist ungewöhnlich klar: das gesamte Beratungsnetzwerk mit 276 000 Professionals in 138 Ländern bekommt Claude als integrale Bestandteile der internen Liefer-Plattform, mit voller Implementierung auf Microsoft Azure bis September 2026. Das ist kein Pilot, sondern eine konzernweite Tools-Migration mit Roll-out-Plan. Vergleichbares hat OpenAI in diesem Quartal mit keinem der Big-Four geliefert; Accenture-AI-Refinanzierungen sind in ähnlicher Größenordnung, aber breiter über mehrere Lab-Anbieter verteilt.</p>
+        <p>Das strategische Signal ist klar: Anthropic gewinnt mit Beratungs-Häusern denselben Hebel, den Microsoft 2017–19 in der Cloud-Migration hatte. Wenn ein Big-Four-Konzern seine Lieferkette auf einen Lab-Anbieter migriert, folgen die Kundendaten auf demselben Pfad — KPMG-Kunden werden in den nächsten 12 Monaten Claude-basierte Reports, Modell-gestützte Audit-Workflows und KPMG-internen Skill-Stack zu sehen bekommen. Für die DACH-Praxis heißt das: KPMG-Deutschland-Engagements ab Q4 2026 werden faktisch zu Claude-Distributions-Sessions. Die Frage, ob der Kunde Anthropic auch direkt einkauft, ist nach diesen Engagements eher rhetorisch.</p>
+        <p>Im Vergleichsfeld bleibt OpenAI im Beratungs-Layer mit DeployCo (gegründet vorletzte Woche, vier Milliarden Anschub) und einer Reihe bilateraler Accenture-Partnerschaften präsent — aber DeployCo ist eine Aufbau-Organisation, KPMG hat 276 000 Köpfe und ein integriertes Lieferportfolio. Wer DeployCo-Wachstum gegen KPMG-Claude-Integration plausibilisieren will, sollte 18 bis 24 Monate Aufholzeit einplanen. Im selben Zeitfenster werden Deloitte, PwC und EY ihre eigenen Lab-Entscheidungen treffen müssen — und sie haben einen klaren Anreiz, sich auf Anthropic oder OpenAI zu commitieren, nicht beides parallel zu fahren.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Dynamic Workflows verändern die Mechanik dessen, was „Background-Agent" bedeutet — von Single-Session-Loop zu orchestriertem Multi-Agent-Run. Wer 2026 Background-Pipelines baut (Daily-Updates, CI-Cycles, Data-Refreshes, Monitoring-Loops), sollte den Migrations-Pfad zu Workflows in Q3 evaluieren. Und Opus 4.8 macht den Modell-Vorsprung von Anthropic im Coding-Vertical messbar — Wettbewerber müssen jetzt Pricing oder Latency nachschärfen, um relevant zu bleiben.
+          Big-Four-Beratungs-Konzerne sind die größte Distributionsschicht des Enterprise-AI-Markts. Anthropic hat einen davon und damit das Tempo der Konkurrenz-Entscheidungen bei Deloitte/PwC/EY hochgesetzt. Für DACH-Kunden: KPMG-Engagement-Roadmap 2026/27 wird zur Indikator-Linie für die eigene Lab-Wahl. Wer mit Anthropic verhandelt, sollte KPMG-Referenzen einfordern — sie sind frisch und vermutlich verfügbar.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">02</span>Mythos öffentlich — und Project Glasswing wird zur Defense-Allianz</h3>
-        <p>Was vor zwei Wochen als „Mythos Preview unter Cleared-Contractor-Status" begann, ist heute publiziert: <span data-person="dario-amodei">Anthropic</span> hat das Frontier-Modell in einer einzigen knappen Mitteilung dem allgemeinen Developer-Markt geöffnet — kein Token-Throttling, kein US-Person-Restriction, sondern reguläre API-Verfügbarkeit. Die Formulierung in der Pressemitteilung — „collapsing the wall between cleared-contractor frontier AI and developer-grade frontier AI" — ist die operative Pointe: das Lab signalisiert, dass die zweistufige Frontier-Verfügbarkeit (Defense-only vs. Konsumenten-Markt) für den eigenen Stack vorbei ist. OpenAI und Google werden binnen Wochen reagieren müssen.</p>
-        <p>Parallel ist <em>Project Glasswing</em> aus dem Schatten getreten. Die Vulnerability-Detection-Variante von Mythos läuft jetzt in einer initiierten Allianz mit AWS, Apple, Cisco, Google, JPMorgan Chase und Microsoft — sechs Konzerne, die zusammen vermutlich die größte Source-Code-Base der Welt halten. Das ist eine ungewöhnliche Konstellation: Google ist Anthropic-Wettbewerber im Modell-Markt, Microsoft ist OpenAI-Hauptinvestor, und alle sechs sind selbst potenzielle Defense-Auftrag-Empfänger. Dass sie sich auf gemeinsamen Mythos-Zugriff einlassen, deutet auf eine harte CISO-Logik: kein Konzern kann es sich leisten, gegen einen Wettbewerber im Cyber-Range zurückzubleiben, dem das Modell schon zur Verfügung steht.</p>
-        <p>Strategisch markiert das den Moment, in dem Frontier-AI als Security-Infrastruktur eingestuft wird — vergleichbar mit der Position von Endpoint-Protection-Suiten in den 2010er-Jahren. Was bedeutet das für DACH-Konzerne? Glasswing-Zugang läuft noch über US-Defense-Filter und kommt nicht über Nacht in Frankfurt an. Aber das Pricing-Signal an die Verteidigungs-Industrie ist klar: Mythos-Capacity wird Quartalsweise verknappt sein, und wer in Q3 erste Verträge sucht, sollte den Procurement-Prozess jetzt anstoßen, nicht im Herbst.</p>
+        <h3><span class="num">02</span>Bundesnetzagentur wird AI-Aufsicht — und Brüssel öffnet zwei Konsultationen</h3>
+        <p>Die regulatorische Schiene in Deutschland hat in dieser Woche substantiell Form angenommen. Das KI-Marktüberwachungs- und Innovationsförderungs-Gesetz (KIMoG) ist im Bundestag in dritter Lesung verabschiedet worden; die Bundesnetzagentur wird damit zur formellen nationalen AI-Aufsichtsbehörde, mit 49 Millionen Euro Jahresbudget und Beschwerdestelle für AI-betroffene Bürger. Das ist eine andere Hausnummer als die bisherige BSI-/Datenschutz-Behörden-Schnittstelle: BNetzA bekommt eigene Sanktions- und Marktzugangs-Befugnisse, was in der Praxis bedeutet, dass Konzerne mit AI-Compliance-Fragen ab Q4 nicht mehr Brüssel direkt, sondern Bonn als Erst-Kontakt haben.</p>
+        <p>Parallel laufen in Brüssel zwei öffentliche Konsultationen, die das Jahr 2026 strukturieren werden: die Artikel-50-Transparenz-Konsultation seit 8. Mai (Watermark-Pflichten, Chatbot-Disclaimer, Text-Kennzeichnung — Frist Ende Juli) und die Artikel-6-High-Risk-Konsultation seit 19. Mai (acht Risiko-Bereiche, vom Workforce-Management bis Migration — Frist Mitte Juli). Wer in einem dieser Bereiche arbeitet — und das umfasst praktisch jeden ernsthaften Enterprise-AI-Use-Case — sollte parallel Bitkom-/vbw-/Branchen-Verbands-Eingaben verfolgen und gegebenenfalls eigene Eingaben aufsetzen. Diese Konsultations-Phase ist die letzte realistische Einflussmöglichkeit auf die Auslegungs-Praxis vor dem 2. August.</p>
+        <p>Strukturell verzahnt sich das mit dem NIS2-Regime und der BSI-AIC4-Kataloglinie: Agenten in kritischen Infrastrukturen werden als „security components" eingestuft und damit zwingend in die menschliche Aufsichts- und Logging-Pflicht gehoben. Die heise-Analyse vom Mittwoch macht deutlich, dass die BSI in den nächsten Wochen einen Praxis-Leitfaden zu „Agentic AIOps in KRITIS" publizieren wird — wer Stromnetz, Wasserversorgung oder Verkehr in der Liefer-/Service-Architektur hat, muss diesen Leitfaden zur Pflicht-Lektüre machen. Die Bußgeld-Logik im DACH-Raum verbindet ab Q3 NIS2- und AI-Act-Verstöße additiv, nicht alternativ — das macht die Compliance-Rechnung schmerzhafter, als sie auf den ersten Blick scheint.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Frontier-Modelle wandern in die Sicherheits-Infrastruktur-Schicht. CISOs in DACH-Großkonzernen sollten Mythos/Glasswing als ernste Procurement-Option in der nächsten Investment-Planung führen, parallel zu klassischer Endpoint- und Network-Protection. Microsoft Defender und CrowdStrike werden in den nächsten Quartalen nachziehen müssen — wer auf der Detection-Seite zu lange wartet, kauft 2027 dieselbe Funktion zum Drei- bis Fünffachen ein.
+          Wer 2026/27 AI-Compliance in DACH-Konzernen verantwortet, hat zwei neue Hauptanlaufstellen: BNetzA in Bonn (national) und die Brüsseler Konsultations-Prozesse (EU). Empfehlung: jetzt eine Compliance-Stakeholder-Map erstellen, BNetzA-Erst-Kontakt in der Rechtsabteilung definieren, Branchen-Eingaben zur 50-/6-Konsultation in der ersten Juli-Woche einreichen. Wer wartet, lässt die Auslegung von Wettbewerbern bestimmen.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">03</span>Hassabis verkürzt die AGI-Timeline auf 2029</h3>
-        <p><span data-person="demis-hassabis">Demis Hassabis</span> hat in einem Time-Interview, das gestern Abend publiziert wurde, seine AGI-Erwartung deutlich nach vorne gezogen — von „fünf bis zehn Jahren" auf „realistische Möglichkeit bis 2029". Die Begründung war ungewöhnlich konkret: AlphaProof Nexus hat im April neun bislang offene Erdős-Probleme gelöst, und zwar — Hassabis' Formulierung — „zum Preis eines Steak-Dinners" in Compute. Wenn das stimmt, hat DeepMind im Mathematik-Beweis-Bereich die Skalierungs-Effizienz auf eine Stufe gehoben, die in der Forschungs-Community noch nicht ankommt.</p>
-        <p>Hassabis ist im Vergleich zu anderen Lab-Chefs vorsichtig in AGI-Aussagen — er hat in der Vergangenheit explizit gegen die OpenAI-/Anthropic-Timeline-Vorhersagen Distanz gehalten. Dass er jetzt zu 2029 schwenkt, ist mehr als rhetorische Akklimatisation: es ist eine Aussage über die Trajektorie von AlphaProof, AlphaGeometry und AlphaEvolve, die für Außenstehende kaum messbar war. Wenn DeepMind-interne Roadmap-Daten zeigen, dass Erdős-Level-Probleme zu Trivial-Kosten kollabieren, dann ist die nächste Skalierungs-Stufe (offene Conjectures aus Algebra, Topology, Number Theory) absehbar — und damit ein wesentlicher Baustein für ein Modell, das mathematisch-konsistent über lange Reasoning-Ketten arbeitet.</p>
-        <p>Für die Wettbewerbsdynamik bedeutet das ein klares Signal: Wenn DeepMind 2029 als realistisches AGI-Fenster nennt, müssen OpenAI und Anthropic nachziehen, oder sie verlieren die narrative Definition des Begriffs. Beobachter rechnen mit korrespondierenden Statements aus San Francisco binnen sechs Wochen. Für die regulatorische Diskussion in Brüssel ist das ungemütlich: der AI Act ist nicht für ein 2029-AGI-Szenario konstruiert, sondern für die generative-AI-Welt von 2024/25. Wenn die nächste Skalierungs-Stufe schneller kommt, wird Brüssel hektisch nachregulieren — und der „Digital Omnibus 2026" könnte zum ersten Schauplatz dieser Anpassung werden.</p>
+        <h3><span class="num">03</span>Claude Code v2.1.157 — Plugin-Stack öffnet sich, Opus-4.8-Hotfix in v2.1.156</h3>
+        <p>Zwei Releases in 24 Stunden, beide operativ wichtig. <code>v2.1.156</code> ist ein präziser Hotfix: bei Verwendung von Opus 4.8 wurden Thinking-Blocks im Tool-Loop modifiziert, was zu API-Errors führte. Das Update behebt das — wer am Donnerstag oder Freitag auf 2.1.154 aktualisierte und merkwürdige API-Fehler in Multi-Tool-Sessions sah, hat hier die Erklärung. Wichtig auch für Pinned-Background-Sessions: die in-place Restarts (seit 2.1.147) bringen die Patches automatisch ein, ohne dass der Cron-Job angefasst werden muss.</p>
+        <p><code>v2.1.157</code> öffnet den Plugin-Stack in einer Weise, die einige Use-Cases vereinfacht. Erstens: Plugins in <code>.claude/skills</code>-Verzeichnissen werden automatisch geladen — kein Marketplace mehr nötig. Das macht lokale Skill-Entwicklung trivial, und für das ai-news-dashboard-Setup heißt das konkret: eine Custom-Skill wie <code>fetch-dach-sources</code> könnte direkt im Projekt unter <code>.claude/skills/</code> liegen und ohne Marketplace-Push live gehen. Zweitens: <code>claude plugin init &lt;name&gt;</code> scaffolt ein neues Plugin in derselben Struktur — der Einstieg in Plugin-Entwicklung wird damit von einer Konfigurations-Übung zur Boilerplate-Auswahl. Drittens: <code>EnterWorktree</code> kann zwischen Claude-managed Worktrees mid-session wechseln. Das ist ein kleines, aber wirkmächtiges Feature für Multi-Branch-Workflows.</p>
+        <p>Im Telemetrie-Layer hat 2.1.157 die <code>tool_decision</code>-Events um <code>tool_parameters</code> erweitert — Bash-Commands, Edit-Diffs, MCP-Argumente werden jetzt geloggt. Für Enterprise-Audit-Setups ist das ein wichtiger Baustein, weil Compliance-Reviews bislang nur sehen konnten, welches Tool aufgerufen wurde, nicht mit welchen Parametern. Für die operative Nutzung beachten: das Volumen der OTEL-Span-Daten steigt damit nicht trivial; wer Cardinality-Limits in seinem Telemetry-Stack hat, sollte die Konfiguration vor dem Update prüfen.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          AGI-Timing-Diskussionen wandern aus dem Spekulations-Raum in die Procurement- und Compliance-Planung. Wer als CIO 2026/27 mehrjährige AI-Verträge unterschreibt, sollte einen 2029-AGI-Pfad als realistisches Szenario einkalkulieren — und Klauseln für Vertrags-Anpassung bei „Capability-Sprüngen" einbauen. Versicherer beginnen ab Q3 2026, AI-Capability-bezogene Exclusion-Klauseln in Cyber-Policen zu schreiben — auch das gehört auf die nächste Compliance-Review-Agenda.
+          Plugin-Auto-Loading + <code>claude plugin init</code> machen aus Skills die Standard-Erweiterungs-Schicht für Claude Code. Wer 2026 eigene Coding-Workflows als Plugin verpackt und im Team teilt, hat jetzt einen klaren Build-and-Share-Pfad — ohne Marketplace-Gatekeeping. Telemetrie-Erweiterung ist ein Compliance-Asset, kommt aber mit Cardinality-Kosten — Konfigurations-Audit vor dem Rollout empfehlenswert.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">04</span>5WPR-Studie bestätigt: Anthropic schlägt OpenAI im ARR</h3>
-        <p>Die gestern publizierte 5WPR-Studie <em>The AI Company Comms Study 2026</em> liefert die erste extern bestätigte Zahl zum bislang nur via Bloomberg berichteten Run-Rate-Bild: Anthropic ~30 Milliarden Dollar Annualized Revenue im April, OpenAI ~25 Milliarden Dollar im Februar. Die Verschiebung ist substantiell — Anthropic, das 2024 noch als „das ernsthaftere kleinere Lab" eingeordnet wurde, ist im Q2 2026 der größere Enterprise-Anbieter. Die Coding-Vertical (Claude Code, Managed Agents, MCP-Ökosystem) ist der primäre Treiber; die Studie nennt die Coding-Workloads als „dominant revenue line" für Anthropic.</p>
-        <p>Die Studie ist nicht nur Zahlenwerk, sondern Kommunikations-Audit der 15 führenden AI-Konzerne. Ein interessantes Detail: Anthropic kommuniziert Implementation, Disclosure und Adoption deutlich strukturierter als OpenAI — was der Studie zufolge ein Schlüsselfaktor für die Enterprise-Sales-Velocity ist. CIOs vertrauen einem Lab, das saubere Audit-Trails und Modell-Karten liefert, mehr als einem, das produktorientiert kommuniziert. Wer in DACH-Procurement-Prozessen die Lab-Auswahl moderiert, sollte das Studien-Material als Vergleichs-Grundlage heranziehen — es ist die erste systematische Aufbereitung dieser Frage.</p>
-        <p>Im Investment-Kontext bestätigt die Studie die 900-Milliarden-Bewertungs-Logik. ARR-Multiple für Anthropic = ~30x; das ist hoch, aber bei verdoppelnder Run-Rate alle 12 Wochen mathematisch verteidigbar. Zum Vergleich: OpenAI im Tender-Markt zu ~600 Milliarden Bewertung bei ~25 Milliarden ARR = ~24x. Die beiden Top-Labs liegen damit im selben Multiple-Korridor, was investorenseitig konsistent ist — und die Mythos-Publikation heute (Section 2) verstärkt die These zusätzlich, weil sie das Wachstum in den Defense-/Security-Vertikalen sichtbar macht.</p>
+        <h3><span class="num">04</span>Parallel $230M und Sierra $15B — Agent-Infrastruktur konsolidiert sich</h3>
+        <p>Im Funding-Layer zeigt die Woche eine klare Linie. <em>Parallel</em> hat 230 Millionen Dollar bei 2 Milliarden Bewertung geholt — gewidmet einem spezifischen Layer: Web-Search-Infrastruktur, die als Backend für Agent-Workloads konzipiert ist. Das ist ein anderes Produkt als eine konsumentenorientierte Such-Engine: Parallel optimiert auf Retrieval-Qualität, Provenienz-Annotation, Token-Budget-Effizienz und Latenz-SLAs für Agenten, die in Multi-Step-Reasoning Web-Quellen heranziehen. Wer eigene Agent-Pipelines mit Retrieval-Bedarf baut, hat hier eine neue Procurement-Option, die nicht von Google/Bing-API-Limits abhängt.</p>
+        <p>Daneben das in der Vorwoche bereits durchgesickerte Sierra-Closing: 950 Millionen Dollar bei 15 Milliarden Bewertung, mit GV und Tiger Global führend. Sierra-Software ist nach eigenen Angaben bei fast der Hälfte der Fortune-50 produktiv und generiert 150 Millionen Dollar ARR — was die 15-Milliarden-Bewertung in einen 100x-Multiple einrechnet. Das ist sportlich, aber konsistent mit dem 2026er-Bewertungs-Muster für Agent-First-Companies. Im selben Zeitraum CopilotKit mit 27 Millionen Series A — Glilot Capital lead, mit Enterprise-Kunden Deutsche Telekom, Docusign, Cisco und S&amp;P Global als Beleg. Die deutsche Telekom-Erwähnung ist für den DACH-Markt interessant: erstes klares Signal, dass CopilotKit als App-native-Agent-Layer Telekom-relevant ist.</p>
+        <p>Übergeordnet bestätigt sich das Marktbild: das Agent-Software-Segment ist von 5,25 Milliarden Dollar (2024) auf 7,84 Milliarden (2025) gewachsen und wird laut Analysten-Schätzungen 52,62 Milliarden bis 2030 erreichen — eine fast 7x-Multiplikation in fünf Jahren. Das Funding folgt dieser Trajektorie: durchschnittliche Round-Größe für agentische AI-Startups in Q4-2025/Anfang-2026 liegt bei 155 Millionen Dollar, gegenüber 82 Millionen in H1-2025 (Verdopplung). Wer als Founder in Agent-Infrastructure, Agent-Frontend oder Agent-Workflow-Tooling baut, hat den Markt-Wind im Rücken. Wer hingegen ein weiteres Foundation-Model gründet, schwimmt gegen den Strom.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Wer 2024–25 noch OpenAI-First-Strategien in Procurement-Prozessen verteidigte, hat die Datenlage gegen sich. Empfehlung: Anthropic-Stack als Default-Option in den nächsten zwei Quartalen pilotieren, mit OpenAI als Zweit-Stack für spezifische Use-Cases (Konsumenten-UX, Microsoft-365-Tiefe). Die Multiple-Konvergenz signalisiert: aus Investoren-Sicht sind beide Labs jetzt austauschbare Wetten auf denselben Markt.
+          Agent-Infrastruktur-Schichten (Search, Runtime, Workflow, Frontend) sind die Investment-Kategorie 2026 — Foundation-Modelle nicht mehr. Wer als CIO Agent-Workloads architektiert, sollte Parallel, Modal Labs und ähnliche Layer-Anbieter explizit in der Stack-Diskussion führen. Für deutsche Mittelständler: CopilotKit-DACH-Referenz prüfen — der App-native-Agent-Layer könnte im SAP-/Telekom-/Bosch-Stack als Integrations-Beschleuniger fungieren.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">05</span>DACH-Realitäts-Check — höchste Regeltreue, höchste Vorfallsquote</h3>
-        <p>Während Brüssel an Artikel-50-Watermark-Spezifikationen feilt und das BSI an C5-Erweiterungen für agentische AI arbeitet, liefert eine gestern Abend veröffentlichte Studie ein unbequemes Bild der Praxis. 44 Prozent der deutschen Unternehmen melden bereits Sicherheitsvorfälle durch AI-Tools — das ist im internationalen Vergleich der Spitzenwert. 90 Prozent der Führungskräfte vertrauen der Transparenz ihrer AI-Infrastruktur; 52 Prozent der Angestellten nutzen Shadow-AI-Anwendungen, die in keinem Sicherheits- oder Compliance-Verzeichnis stehen. Das ist die Paradoxie der „höchsten Regeltreue mit höchster Vorfallsquote".</p>
-        <p>Die Ursachen-Analyse ist nicht überraschend, aber wichtig. Erstens: Deutsche Unternehmen dokumentieren konsequenter, was sie erlauben — und melden deshalb Vorfälle, die andere Märkte unter den Radar fallen lassen. Die Vorfallsquote ist also teilweise eine Reporting-Quote. Zweitens: Die strikte interne Freigabe-Politik treibt Mitarbeiter in Shadow-AI-Nutzung (ChatGPT-Konsumenten-Account, Claude.ai-Privatzugang, Perplexity-Public-Tier). Das ist genau der Mechanismus, vor dem die OWASP-Top-10-für-Agentic-AI warnt — Tool Poisoning und Cross-Agent Privilege Escalation entstehen oft genau über solche Shadow-Pfade.</p>
-        <p>Praktisch heißt das: Strenge Freigabe-Politik allein löst das Problem nicht — sie verschiebt es. Was DACH-Konzerne in den nächsten sechs Monaten brauchen: eine <em>kuratierte Liste von freigegebenen Lab-Optionen</em> (Anthropic Managed Agents, Aleph Alpha, Mistral La Plateforme, OpenAI Enterprise), eindeutig kommuniziert mit Use-Case-Mapping, und ein <em>Monitoring-Layer</em> für Shadow-AI-Nutzung. Identity-Provider wie Okta und Microsoft Entra haben in den letzten drei Quartalen Detection-Module für ungenehmigte AI-Endpoints ausgerollt — wer noch keine entsprechende Policy hat, sollte die jetzt aufsetzen. Sonst eskaliert das 44-Prozent-Problem im Sommer 2026 mit der Artikel-50-Verschärfung zu einem Compliance-Vorfall mit Reputationswirkung.</p>
+        <h3><span class="num">05</span>Google AI Studio Mobile + Gemini 3.1 Flash-Lite — die Konsumenten-UX zieht nach</h3>
+        <p>Google hat angekündigt, AI Studio als eigenständige iOS-App ab dem 1. Juli auszurollen — die Android-Version „coming soon". Das macht den Modell-Tier von Google von einer Web-/Desktop-Erfahrung zu einem mobilen Konsumenten-Produkt; im Effekt ähnlich, wie ChatGPT-Mobile die OpenAI-Distribution 2023 verdoppelt hat. Strategisch passt das in das Antigravity-2.0-/Spark-Bild der letzten Wochen: Google forciert Konsumenten-Agent-UX systematisch, nicht nur Enterprise-Plattform-Spiele.</p>
+        <p>Auf der Modell-Ebene hat <span data-person="demis-hassabis">DeepMind</span> <em>Gemini 3.1 Flash-Lite</em> veröffentlicht — ein Effizienz-Modell mit 2,5x schnelleren Response-Zeiten und 45 Prozent schnellerer Output-Generation gegenüber dem vorigen Gemini-Schritt. Das ist die Antwort auf Claude-Haiku-Druck im Low-Latency-Tier, und Gemini-3.5-Flash bleibt das stärkere agentische Modell — Flash-Lite ist explizit für Konsumenten-UX-Aufgaben (Mobil-Chat, schnelle Such-Antworten, IoT-Anbindungen) gedacht. Für DACH-Konzerne im IoT- und Mobil-Segment (Bosch-Connected, Siemens-Mobility, VW-CARIAD) ist Flash-Lite ein realistischer Pilot-Kandidat, weil die Latenz-Charakteristik zu Embedded-Anwendungen passt.</p>
+        <p>Im Lab-Vergleich verdichtet sich das Bild der Stärken-/Schwächen-Verteilung: Anthropic dominiert im Coding-/Enterprise-Vertical (siehe Run-Rate-Daten), Google im Konsumenten-Mobile- und Multimedia-Vertical (Search-Integration, Antigravity, Flash-Lite), OpenAI in der ChatGPT-getriebenen Konsumenten-AI-Welt. Mit dem AI-Studio-Mobile-Schritt erweitert Google sein UX-Profil um die Developer-Konsumenten-Schicht — Hobby-Entwickler, die Modell-Calls auf dem iPhone ausprobieren wollen. Das ist kleiner als die Enterprise-/Coding-Diskussion, aber es ist der Boden, auf dem 2027 die nächste Startup-Welle aufbaut.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Shadow-AI ist 2026 der wichtigste Single-Risk-Faktor in DACH-Konzern-AI-Compliance. Empfehlung: kombinierter Maßnahmenplan aus (1) kuratierter Lab-Whitelist mit Use-Case-Mapping, (2) Monitoring-Layer im Identity-Provider, (3) konzernweiter Transparenz-Schulung bis Q3. Wer das nicht in Bewegung setzt, wird im Herbst 2026 mit dem ersten medienwirksamen AI-Compliance-Vorfall zu tun haben — und die Reputations-Wirkung wird die Kosten der Vorbereitung um Größenordnungen übersteigen.
+          Lab-Profile differenzieren sich entlang von Vertikals, nicht entlang von Modell-Performance. Wer als IT-Architekt 2026 Multi-Lab-Strategien implementiert, sollte die Zuordnung Anthropic=Coding/Enterprise, Google=Konsumenten-Mobile/IoT, OpenAI=Konsumenten-Chat/Microsoft-365 als Default-Heuristik nehmen und nur bei spezifischen Use-Cases überprüfen.
         </blockquote>
       </section>
       <div class="briefing-end">
-        <strong>Was am Wochenende zu beobachten ist:</strong> Erste unabhängige Reviews von Opus 4.8 auf coding-spezifischen Benchmarks (SWE-Bench-Verified, HumanEval-Pro) werden Samstag/Sonntag erwartet — die <code>--effort xhigh</code>-Variante ist der spannende Marker. OpenAI-Reaktion auf Mythos-Publikation: GPT-5.5-Cyber-Pricing-Anpassung oder ein eigenes Frontier-für-Defense-Programm sind die plausibelsten Schritte; eine Stellungnahme noch diese Woche ist möglich. Hassabis-Folge-Statements von Sam Altman und <span data-person="dario-amodei">Dario Amodei</span>: die AGI-Timeline-Frage ist jetzt offen, und beide werden öffentlich nachziehen müssen. EU-Watermark-Spezifikation im Juni: das ist die nächste harte Deadline auf Compliance-Seite. Im Lab-Markt: <span data-person="mira-murati">Mira Muratis</span> Thinking Machines Lab hat den Anfang-Juni-Termin bestätigt — wenn er hält, ist die Stealth-Phase vorbei. Und im DACH-Spiegel: Bitkom-Stellungnahme zur 44-Prozent-Sicherheitsvorfalls-Quote, die offen Hand-in-Hand-Reaktion der großen DAX-CISOs in der ersten Juni-Hälfte erwarten lässt.
+        <strong>Was Anfang nächster Woche zu beobachten ist:</strong> KPMG-Folgeeffekt — Deloitte- und PwC-Stellungnahmen zu eigenen Lab-Partnerschaften werden für die erste Juni-Woche erwartet. Das Geschwindigkeits-Risiko, Anthropic-Quasi-Monopol bei den Big-Four zu zementieren, ist für Wettbewerbsbeobachter spürbar. BNetzA-Praxis-Anlauf: die ersten BNetzA-AI-Beschwerdefälle werden ab Q3 in den Verwaltungs-Akten landen — wer als Lab-Anbieter in Deutschland operiert, sollte den eigenen Bonn-Kontakt jetzt nominieren. Claude Code: nach 2.1.157 wird die nächste Welle vermutlich um <code>/workflows</code>-Erweiterungen und Skill-Distribution-Tools kreisen — Plugin-Auto-Loading ist Stufe eins. Auf der Modell-Ebene: <span data-person="mira-murati">Mira Muratis</span> Thinking Machines Lab hat den Anfang-Juni-Termin bestätigt — wenn er hält, ist die Stealth-Phase vorbei. Und im DACH-Spiegel: Datenschutz-Anschärfungen ab Juni (neue Beschwerderechte und erste KI-Verbote unter dem AI Act) lassen die ersten medienwirksamen Fälle in der zweiten Juni-Hälfte erwarten.
       </div>
 
     </div>
@@ -464,75 +467,76 @@
           <span class="pill crit">Major Release</span>
           <span class="score">Score <b>9.5</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Opus 4.8 ist da — Claude Code v2.1.154 mit Dynamic Workflows</h3>
-        <p>Opus 4.8 default mit <code>/effort xhigh</code> für härteste Tasks · Dynamic Workflows orchestriert 10–100 Subagents im Background, <code>/workflows</code> für Run-Übersicht · Fast Mode 2x Rate / 2.5x Speed · Lean System Prompt jetzt Default.</p>
+        <h3 style="margin-top:10px">KPMG-Anthropic-Allianz: 276 000 Profis bekommen Claude als Kern-Stack</h3>
+        <p>KPMG Digital Gateway Powered by Claude: Vollintegration in die Liefer-Plattform aller 138 Länder, Implementierung auf Microsoft Azure bis September. Größter bekannter Anthropic-Enterprise-Deal — strategischer Hebel auf Deloitte/PwC/EY.</p>
         <div class="news-meta">
-          <span>📅 28.05.2026</span><span>·</span><span>🏢 <span data-person="dario-amodei">Anthropic</span> · Claude Code</span><span>·</span>
-          <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.154">Release Notes</a>
-        </div>
-      </article>
-
-      <article class="card news-card crit">
-        <div class="row">
-          <span class="pill crit">Major Release</span>
-          <span class="score">Score <b>9.3</b>/10</span>
-        </div>
-        <h3 style="margin-top:10px">Mythos öffentlich + Project Glasswing mit 6-Konzern-Allianz</h3>
-        <p><span data-person="dario-amodei">Anthropic</span> hebt die Cleared-Contractor-Mauer auf: Mythos ist über reguläre API verfügbar. Glasswing für Vulnerability-Detection läuft exklusiv mit AWS, Apple, Cisco, Google, JPMorgan, Microsoft.</p>
-        <div class="news-meta">
-          <span>📅 28.05.2026</span><span>·</span><span>🏢 <span data-person="dario-amodei">Anthropic</span></span><span>·</span>
+          <span>📅 19.05.2026 (Detail-Roll-out diese Woche)</span><span>·</span><span>🏢 KPMG · <span data-person="dario-amodei">Anthropic</span></span><span>·</span>
           <a href="https://www.anthropic.com/news">Anthropic News</a>
         </div>
       </article>
 
       <article class="card news-card crit">
         <div class="row">
-          <span class="pill crit">Forschung</span>
+          <span class="pill crit">Security</span>
           <span class="score">Score <b>9.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Hassabis verkürzt AGI-Timeline: „realistisch bis 2029"</h3>
-        <p>Time-Interview: von „fünf bis zehn Jahren" auf 2029. Begründung: AlphaProof Nexus löste neun offene Erdős-Probleme „zum Preis eines Steak-Dinners". <span data-person="demis-hassabis">Demis Hassabis</span> war bisher der zurückhaltendste Lab-Chef im AGI-Timing.</p>
+        <h3 style="margin-top:10px">Bundesnetzagentur wird AI-Aufsicht — €49 Mio. Jahresbudget</h3>
+        <p>KIMoG verabschiedet: BNetzA ist nationaler AI-Regulator mit Sanktions- und Beschwerdebefugnis. EU-Konsultationen zu Artikel 50 (seit 8.5.) und Artikel 6 (seit 19.5.) laufen parallel. Erstkontakt für Compliance: Bonn statt Brüssel.</p>
         <div class="news-meta">
-          <span>📅 28.05.2026</span><span>·</span><span>🏢 <span data-person="demis-hassabis">Google DeepMind</span></span>
+          <span>📅 KW21–22 2026</span><span>·</span><span>🏢 Bundestag · BNetzA</span><span>·</span>
+          <a href="https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/start_ki.html">BNetzA KI</a>
+        </div>
+      </article>
+
+      <article class="card news-card crit">
+        <div class="row">
+          <span class="pill crit">Tooling</span>
+          <span class="score">Score <b>8.8</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Claude Code v2.1.157: Plugin-Auto-Loading + EnterWorktree-Switching</h3>
+        <p><code>.claude/skills</code>-Plugins werden automatisch geladen · <code>claude plugin init</code> scaffolt Boilerplate · EnterWorktree wechselt zwischen Claude-Worktrees mid-session · <code>tool_decision</code>-Telemetrie mit <code>tool_parameters</code>. v2.1.156 fixt Opus-4.8-Thinking-Block-Bug.</p>
+        <div class="news-meta">
+          <span>📅 29.05.2026</span><span>·</span><span>🏢 <span data-person="dario-amodei">Anthropic</span> · Claude Code</span><span>·</span>
+          <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.157">Release Notes</a>
         </div>
       </article>
 
       <article class="card news-card hot">
         <div class="row">
-          <span class="pill hot">Marktdaten</span>
-          <span class="score">Score <b>8.5</b>/10</span>
+          <span class="pill hot">M&amp;A</span>
+          <span class="score">Score <b>7.8</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">5WPR-Studie bestätigt: Anthropic ARR > OpenAI ARR</h3>
-        <p>Anthropic ~30 Mrd. (April) vs. OpenAI ~25 Mrd. (Februar). Coding-Vertical ist dominant revenue line. Erste extern bestätigte Run-Rate-Daten. ARR-Multiple beider Top-Labs konvergieren bei ~25–30x.</p>
+        <h3 style="margin-top:10px">Parallel $230M @ $2B — Web-Search-Infra für Agent-Workloads</h3>
+        <p>Eigene Layer-Position zwischen Lab-Plattformen und Hyperscalern: Provenienz-Annotation, Token-Budget-Effizienz, Retrieval-SLAs für Multi-Step-Agenten. Procurement-Alternative zu Google/Bing-API-Limits.</p>
         <div class="news-meta">
-          <span>📅 28.05.2026</span><span>·</span><span>🏢 5WPR</span><span>·</span>
-          <a href="https://www.prnewswire.com/news-releases/openai-and-anthropic-dominate-ai-revenue--and-communicate-very-differently-302776605.html">PRN</a>
+          <span>📅 27.05.2026</span><span>·</span><span>🏢 Parallel</span><span>·</span>
+          <a href="https://aifundingtracker.com/ai-startup-funding-news-today/">Funding Tracker</a>
         </div>
       </article>
 
       <article class="card news-card hot">
         <div class="row">
-          <span class="pill hot">Security</span>
-          <span class="score">Score <b>8.0</b>/10</span>
+          <span class="pill hot">Major Release</span>
+          <span class="score">Score <b>7.5</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">DACH-Paradox: 44 % Sicherheitsvorfälle, 52 % Shadow-AI-Nutzung</h3>
-        <p>Deutschland: weltweit höchste Regeltreue, weltweit meiste AI-Sicherheitsvorfälle. Strikte Freigabe-Politik treibt Mitarbeiter in Konsumenten-AI-Accounts. Kuratierte Whitelist + Identity-Provider-Monitoring jetzt Pflicht.</p>
+        <h3 style="margin-top:10px">Google AI Studio Mobile (iOS) + Gemini 3.1 Flash-Lite</h3>
+        <p>AI Studio kommt als standalone iOS-App am 1. Juli, Android folgt. Flash-Lite mit 2,5x schnelleren Response-Zeiten + 45 % schnellerer Output-Gen. Konsumenten-UX-Spiel von <span data-person="demis-hassabis">DeepMind</span> verdichtet sich.</p>
         <div class="news-meta">
-          <span>📅 28.05.2026</span><span>·</span><span>🏢 Netzpalaver / Bitkom</span><span>·</span>
-          <a href="https://netzpalaver.de/2026/05/28/truegerische-ki-sicherheit-in-deutschland-hoechste-regeltreue-aber-weltweit-die-meisten-sicherheitsvorfaelle/">Bericht</a>
+          <span>📅 29.05.2026</span><span>·</span><span>🏢 <span data-person="demis-hassabis">Google</span></span><span>·</span>
+          <a href="https://blog.google/innovation-and-ai/sundar-pichai-io-2026/">Google Blog</a>
         </div>
       </article>
 
       <article class="card news-card warn">
         <div class="row">
-          <span class="pill warn">M&amp;A</span>
-          <span class="score">Score <b>7.5</b>/10</span>
+          <span class="pill warn">Security</span>
+          <span class="score">Score <b>7.2</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Agent-Startup-Runden verdoppeln sich: $82M → $155M Durchschnitt</h3>
-        <p>15 agentische AI-Startups Q4-2025/Anfang-2026: Average Round $155M, fast Verdopplung gegenüber H1-2025. Sierra $950M ($15B+ post), CopilotKit $27M Series A mit Deutsche Telekom, Docusign, Cisco, S&amp;P Global.</p>
+        <h3 style="margin-top:10px">DSGVO + AI Act: neue Beschwerderechte und KI-Verbote ab Juni</h3>
+        <p>Ab 2. Juni greifen die ersten verbotenen AI-Praktiken (Social Scoring, Manipulation durch Subliminale Techniken) und erweiterte Beschwerderechte für Betroffene. NIS2 + AI-Act-Strafen sind additiv, nicht alternativ.</p>
         <div class="news-meta">
-          <span>📅 25.05.2026</span><span>·</span><span>🏢 Sierra · CopilotKit</span><span>·</span>
-          <a href="https://techcrunch.com/2026/05/05/copilotkit-raises-27m-to-help-devs-deploy-app-native-ai-agents/">TechCrunch</a>
+          <span>📅 29.05.2026</span><span>·</span><span>🏢 EU Commission / BfDI</span><span>·</span>
+          <a href="https://www.boerse-express.com/news/articles/datenschutz-ab-juni-neue-beschwerderechte-und-ki-verbote-greifen-910219">Bericht</a>
         </div>
       </article>
 
@@ -553,13 +557,31 @@
 
       <article class="card">
         <h3>Letzte Releases</h3>
-        <p>Aktuelle Version <code>v2.1.154</code> — Opus 4.8 ist hier.</p>
+        <p>Aktuelle Version <code>v2.1.157</code> · Plugin-Stack öffnet sich.</p>
+
+        <div class="release">
+          <div class="ver">v2.1.157</div>
+          <div class="when">29.05.</div>
+          <div class="what">
+            <strong>Plugin-Auto-Loading aus <code>.claude/skills</code></strong> · <code>claude plugin init &lt;name&gt;</code> Scaffold · <code>/plugin</code>-Autocomplete · <code>EnterWorktree</code> wechselt mid-session · <code>tool_decision</code>-Telemetrie mit <code>tool_parameters</code>
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.156</div>
+          <div class="when">29.05.</div>
+          <div class="what">
+            <strong>Opus-4.8-Thinking-Block-Bug gefixt</strong> (API-Errors bei Tool-Loop)
+            <span class="badge fix">FIX</span>
+          </div>
+        </div>
 
         <div class="release">
           <div class="ver">v2.1.154</div>
           <div class="when">28.05.</div>
           <div class="what">
-            <strong>Opus 4.8 default mit <code>/effort xhigh</code></strong> · <strong>Dynamic Workflows</strong> orchestriert 10–100 Subagents im Background (<code>/workflows</code>) · Fast Mode 2x/2.5x · Lean System Prompt jetzt Default
+            <strong>Opus 4.8 default mit <code>/effort xhigh</code></strong> · <strong>Dynamic Workflows</strong> orchestriert 10–100 Subagents (<code>/workflows</code>) · Fast Mode 2x/2.5x · Lean System Prompt Default
             <span class="badge feat">FEATURE</span>
           </div>
         </div>
@@ -568,7 +590,7 @@
           <div class="ver">v2.1.153</div>
           <div class="when">28.05.</div>
           <div class="what">
-            <code>skipLfs</code> für github/git Plugin-Marketplaces · One-time-Notice wenn npm global install nicht auto-updaten kann (<code>/doctor</code> listet Fixes) · Statusline-Scripts bekommen <code>COLUMNS</code>/<code>LINES</code> Env · <code>claude agents</code>-Autocomplete für native Slash-Commands
+            <code>skipLfs</code> für github/git Marketplaces · <code>/doctor</code> listet npm-Install-Fixes · Statusline mit <code>COLUMNS</code>/<code>LINES</code> Env · <code>claude agents</code>-Autocomplete erweitert
             <span class="badge feat">FEATURE</span>
           </div>
         </div>
@@ -588,26 +610,6 @@
           <div class="what">
             <strong>Interne Infrastruktur-Verbesserungen</strong>
             <span class="badge fix">INTERNAL</span>
-          </div>
-        </div>
-
-        <div class="release">
-          <div class="ver">v2.1.149</div>
-          <div class="when">22.05.</div>
-          <div class="what">
-            <strong><code>/usage</code> mit Category-Breakdown</strong> · <code>/diff</code> Keyboard-Scroll · GFM-Checkboxes · Enterprise <code>allowAllClaudeAiMcps</code>
-            <span class="badge feat">FEATURE</span>
-            <br><em>PowerShell-Permission-Bypass für <code>cd</code>-Varianten gefixt.</em>
-            <span class="badge sec">SECURITY</span>
-          </div>
-        </div>
-
-        <div class="release">
-          <div class="ver">v2.1.148</div>
-          <div class="when">22.05.</div>
-          <div class="what">
-            <strong>Bash-Tool Exit-Code-127-Regression gefixt</strong>
-            <span class="badge fix">FIX</span>
           </div>
         </div>
 
@@ -640,7 +642,7 @@
   </section>
 
   <footer>
-    <div>Snapshot · <span class="mono" id="generated">29. Mai 2026</span></div>
+    <div>Snapshot · <span class="mono" id="generated">30. Mai 2026</span></div>
     <div>
       <a href="/sources/">📚 Quellen-Sammlung</a> ·
       <a href="/">📊 Übersicht</a>

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-28T22:37:42+00:00",
+  "last_updated": "2026-05-29T22:37:36+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,42 @@
   ],
   "featured": [
     {
-      "video_id": "tK32trvj_b4",
-      "title": "Build Hour: Agents SDK",
+      "video_id": "8QKqENa_eQQ",
+      "title": "Builders Unscripted: Ep. 3 - Matias Castello, Product Leader at Alchemy",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-05-28T20:09:34+00:00",
-      "url": "https://www.youtube.com/watch?v=tK32trvj_b4",
-      "thumbnail": "https://img.youtube.com/vi/tK32trvj_b4/mqdefault.jpg",
-      "description": "Build with the next evolution of the Agents SDK. In this Build Hour, you’ll learn how to use the updated Agents SDK to build long-running agents with a model-native harness. Give agents the tools, memory, and execution environment they need",
+      "published": "2026-05-29T20:29:25+00:00",
+      "url": "https://www.youtube.com/watch?v=8QKqENa_eQQ",
+      "thumbnail": "https://img.youtube.com/vi/8QKqENa_eQQ/mqdefault.jpg",
+      "description": "Builders Unscripted spotlights the stories behind real projects and the mindset that makes them possible: you can just build things.\n\nIn this episode, Romain Huet, Head of Developer Experience, chats with Matias Castello, Product Lead at Al",
+      "why": ""
+    },
+    {
+      "video_id": "1M3Vdl6DRkU",
+      "title": "Biggest Mysteries in Physics: Antimatter, Dark Energy & ToE - Don Lincoln | Lex Fridman Podcast #497",
+      "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
+      "channel_name": "Lex Fridman",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-05-29T16:18:31+00:00",
+      "url": "https://www.youtube.com/watch?v=1M3Vdl6DRkU",
+      "thumbnail": "https://img.youtube.com/vi/1M3Vdl6DRkU/mqdefault.jpg",
+      "description": "Don Lincoln is a particle physicist at Fermilab who has spent decades working at the frontiers of high energy physics.\nThank you for listening ❤ Check out our sponsors: https://lexfridman.com/sponsors/ep497-sb\nSee below for timestamps, and ",
+      "why": ""
+    },
+    {
+      "video_id": "aJvP3nXWkwM",
+      "title": "New Claude Opus 4.8: 15 Things You May’ve Missed",
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "channel_name": "AI Explained",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-05-29T15:07:35+00:00",
+      "url": "https://www.youtube.com/watch?v=aJvP3nXWkwM",
+      "thumbnail": "https://img.youtube.com/vi/aJvP3nXWkwM/mqdefault.jpg",
+      "description": "The ‘best’ generally available AI model just dropped, but there is plenty I bet you missed about what it is, how it performs, and what the release tells us. 15 highlights from the 244 page system card, plus private testing, leader interview",
       "why": ""
     },
     {
@@ -140,22 +166,165 @@
       "thumbnail": "https://img.youtube.com/vi/pm5PBbo6l2k/mqdefault.jpg",
       "description": "",
       "why": ""
+    }
+  ],
+  "recent": [
+    {
+      "video_id": "8QKqENa_eQQ",
+      "title": "Builders Unscripted: Ep. 3 - Matias Castello, Product Leader at Alchemy",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-05-29T20:29:25+00:00",
+      "url": "https://www.youtube.com/watch?v=8QKqENa_eQQ",
+      "thumbnail": "https://img.youtube.com/vi/8QKqENa_eQQ/mqdefault.jpg",
+      "description": "Builders Unscripted spotlights the stories behind real projects and the mindset that makes them possible: you can just build things.\n\nIn this episode, Romain Huet, Head of Developer Experience, chats with Matias Castello, Product Lead at Al"
     },
     {
-      "video_id": "o_av1b9rs2g",
-      "title": "Two Rival Bets on AGI: Google I/O Highlights",
+      "video_id": "IYN2jfJHJd4",
+      "title": "Self Improving AI actually solves everything",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-05-29T19:09:21+00:00",
+      "url": "https://www.youtube.com/shorts/IYN2jfJHJd4",
+      "thumbnail": "https://img.youtube.com/vi/IYN2jfJHJd4/mqdefault.jpg",
+      "description": "Try Pioneer for FREE: https://tinyurl.com/24thzrdp\n\nFollow me ► x.com/matthewberman\nInstagram ► https://www.instagram.com/matthewberman_ai\n\nMedia/Sponsorship Inquiries ► https://bit.ly/44TC45V"
+    },
+    {
+      "video_id": "MPIAB-8VmCo",
+      "title": "Windows Computer Use and mobile access for Codex",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-05-29T18:31:52+00:00",
+      "url": "https://www.youtube.com/watch?v=MPIAB-8VmCo",
+      "thumbnail": "https://img.youtube.com/vi/MPIAB-8VmCo/mqdefault.jpg",
+      "description": "Codex on Windows can now use your computer to work across desktop apps, while you step away from your desk. You can also now use your mobile phone to control the Codex running on your Windows machine.\n\nSee how to enable Computer Use in the "
+    },
+    {
+      "video_id": "JA3tmYqCacA",
+      "title": "These Models are Crazy!",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-05-29T17:10:58+00:00",
+      "url": "https://www.youtube.com/shorts/JA3tmYqCacA",
+      "thumbnail": "https://img.youtube.com/vi/JA3tmYqCacA/mqdefault.jpg",
+      "description": "\"It's taking me minutes and hours to do things that took teams weeks and months,\" - Lauren Steinberg, Loblaw Companies Limited.\n\nLauren, Chief Digital Officer at 🇨🇦 Canada’s largest retailer, shared how Codex and ChatGPT Images 2.0 are help"
+    },
+    {
+      "video_id": "JfPWbttemYE",
+      "title": "The forgotten developer who saved JavaScript...",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-05-29T17:06:48+00:00",
+      "url": "https://www.youtube.com/watch?v=JfPWbttemYE",
+      "thumbnail": "https://img.youtube.com/vi/JfPWbttemYE/mqdefault.jpg",
+      "description": "Clerk's new CLI sets up end-to-end auth for your entire app. Try it - https://go.clerk.com/0mR9oMU\n\nJavaScript was terrible... until one man was brave enough to save it.\n\n#coding #programming #javascript \n\nWant more Fireship?\n\n🗞️ Newsletter"
+    },
+    {
+      "video_id": "EYvzpZX2-Ww",
+      "title": "Loblaw Ships Faster with Codex",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-05-29T17:03:52+00:00",
+      "url": "https://www.youtube.com/watch?v=EYvzpZX2-Ww",
+      "thumbnail": "https://img.youtube.com/vi/EYvzpZX2-Ww/mqdefault.jpg",
+      "description": "Lauren, Chief Digital Officer at 🇨🇦 Canada’s largest retailer, shared how Codex and ChatGPT Images 2.0 are helping her team move faster, rethink workflows, and deliver better customer experiences.\n\nBuild with Codex ➡️ https://openai.com/cod"
+    },
+    {
+      "video_id": "HoMvCjnpAJ8",
+      "title": "The Pope is into AI",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-05-29T17:03:37+00:00",
+      "url": "https://www.youtube.com/watch?v=HoMvCjnpAJ8",
+      "thumbnail": "https://img.youtube.com/vi/HoMvCjnpAJ8/mqdefault.jpg",
+      "description": "Get started with Higgsfield Supercomputer: https://tinyurl.com/4tbd99ut\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻"
+    },
+    {
+      "video_id": "1M3Vdl6DRkU",
+      "title": "Biggest Mysteries in Physics: Antimatter, Dark Energy & ToE - Don Lincoln | Lex Fridman Podcast #497",
+      "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
+      "channel_name": "Lex Fridman",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-05-29T16:18:31+00:00",
+      "url": "https://www.youtube.com/watch?v=1M3Vdl6DRkU",
+      "thumbnail": "https://img.youtube.com/vi/1M3Vdl6DRkU/mqdefault.jpg",
+      "description": "Don Lincoln is a particle physicist at Fermilab who has spent decades working at the frontiers of high energy physics.\nThank you for listening ❤ Check out our sponsors: https://lexfridman.com/sponsors/ep497-sb\nSee below for timestamps, and "
+    },
+    {
+      "video_id": "aJvP3nXWkwM",
+      "title": "New Claude Opus 4.8: 15 Things You May’ve Missed",
       "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
       "channel_name": "AI Explained",
       "category": "news",
       "color": "#e0a857",
-      "published": "2026-05-20T16:50:34+00:00",
-      "url": "https://www.youtube.com/watch?v=o_av1b9rs2g",
-      "thumbnail": "https://img.youtube.com/vi/o_av1b9rs2g/mqdefault.jpg",
-      "description": "The biggest Google AI push of the year, but what is the bigger story? Why is Google pursuing a different fork in the road than OpenAI or Anthropic? \n\nhttps://assemblyai.com/aiexplained\n\nWhat does Gemini 3.5 Flash mean for the near-term futu",
-      "why": ""
-    }
-  ],
-  "recent": [
+      "published": "2026-05-29T15:07:35+00:00",
+      "url": "https://www.youtube.com/watch?v=aJvP3nXWkwM",
+      "thumbnail": "https://img.youtube.com/vi/aJvP3nXWkwM/mqdefault.jpg",
+      "description": "The ‘best’ generally available AI model just dropped, but there is plenty I bet you missed about what it is, how it performs, and what the release tells us. 15 highlights from the 244 page system card, plus private testing, leader interview"
+    },
+    {
+      "video_id": "AiM9mZCmVPY",
+      "title": "The Rule for Picking AI Winners | The a16z Show",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-05-29T14:29:06+00:00",
+      "url": "https://www.youtube.com/watch?v=AiM9mZCmVPY",
+      "thumbnail": "https://img.youtube.com/vi/AiM9mZCmVPY/mqdefault.jpg",
+      "description": "David George, General Partner at a16z, and David Clark, CIO at VenCap, discuss how AI is reshaping venture capital and the technology industry itself. They examine why today’s AI companies are scaling faster than any previous generation of "
+    },
+    {
+      "video_id": "A5K8xCut_ks",
+      "title": "Transformers.js in 30 seconds #MachineLearning #AI #WebAI",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-05-29T13:56:32+00:00",
+      "url": "https://www.youtube.com/shorts/A5K8xCut_ks",
+      "thumbnail": "https://img.youtube.com/vi/A5K8xCut_ks/mqdefault.jpg",
+      "description": "Transformers.js lets you run state-of-the-art machine learning directly from JavaScript. In this 30-second breakdown, we look at how it uses ONNX, onnxruntime, model files, caching, tensors, and pipelines to turn your input into model predi"
+    },
+    {
+      "video_id": "SJocPm2E8eQ",
+      "title": "Human Readable Code - Computerphile",
+      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
+      "channel_name": "Computerphile",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-05-29T13:30:12+00:00",
+      "url": "https://www.youtube.com/watch?v=SJocPm2E8eQ",
+      "thumbnail": "https://img.youtube.com/vi/SJocPm2E8eQ/mqdefault.jpg",
+      "description": "Knuth talked about \"Literate Programming\" over forty years ago, but what does it mean to have code that a developer and a client can agree on? Dr Robert Chatley of Imperial College London demonstrates how it might work. \n\nComputerphile is s"
+    },
+    {
+      "video_id": "t3uBGhpii6w",
+      "title": "Anthropic just dropped Opus 4.8... (WOAH)",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-05-29T01:01:34+00:00",
+      "url": "https://www.youtube.com/watch?v=t3uBGhpii6w",
+      "thumbnail": "https://img.youtube.com/vi/t3uBGhpii6w/mqdefault.jpg",
+      "description": "Tell your agents to use this: https://here.now/r/matthewberman\n\nCheck out Jonah's game! https://turbo-muse-r294.here.now/\n\nDownload The 25 OpenClaw Use Cases eBook 👇🏼\nhttps://bit.ly/4aBQwo1\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttp"
+    },
     {
       "video_id": "tK32trvj_b4",
       "title": "Build Hour: Agents SDK",
@@ -179,42 +348,6 @@
       "url": "https://www.youtube.com/watch?v=4n_pxHZfTC8",
       "thumbnail": "https://img.youtube.com/vi/4n_pxHZfTC8/mqdefault.jpg",
       "description": "Download The 25 OpenClaw Use Cases eBook 👇🏼\nhttps://bit.ly/4aBQwo1\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Inst"
-    },
-    {
-      "video_id": "tXBRYPpIvms",
-      "title": "How Abridge uses GPT-5.5 for clinical decision support",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-05-28T18:11:11+00:00",
-      "url": "https://www.youtube.com/watch?v=tXBRYPpIvms",
-      "thumbnail": "https://img.youtube.com/vi/tXBRYPpIvms/mqdefault.jpg",
-      "description": "At the point of care, more context usually means more complexity.\n\nChaitanya Asawa from Abridge shares how GPT-5.5 helps synthesize patient context, live clinical conversations, and medical information through stronger reasoning and tool us"
-    },
-    {
-      "video_id": "DHfZqTWlSc4",
-      "title": "R&D Part 1",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-05-28T16:01:56+00:00",
-      "url": "https://www.youtube.com/watch?v=DHfZqTWlSc4",
-      "thumbnail": "https://img.youtube.com/vi/DHfZqTWlSc4/mqdefault.jpg",
-      "description": ""
-    },
-    {
-      "video_id": "ovPVaSmDFcw",
-      "title": "Join us for Builders Unscripted Episode 3 on 5/29",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-05-27T16:48:12+00:00",
-      "url": "https://www.youtube.com/shorts/ovPVaSmDFcw",
-      "thumbnail": "https://img.youtube.com/vi/ovPVaSmDFcw/mqdefault.jpg",
-      "description": "“The developer we’re building for has evolved.”\n\nMatias Castillo talks with Romain Huet about the new builder mindset, where ideas can move from thought to working software faster than before.\n\nFull episode drops 5/29."
     },
     {
       "video_id": "6LwQ8RbU9as",
@@ -289,18 +422,6 @@
       "description": "Humans can keep a few ideas in working memory at once. Modern AI models can process the equivalent of multiple Harry Potter books in a single conversation.\n\nUnderstanding context windows changes how you prompt, write, research, and work wit"
     },
     {
-      "video_id": "GBISeUYMzoU",
-      "title": "Cursor just beat EVERYONE.",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-05-26T16:40:27+00:00",
-      "url": "https://www.youtube.com/watch?v=GBISeUYMzoU",
-      "thumbnail": "https://img.youtube.com/vi/GBISeUYMzoU/mqdefault.jpg",
-      "description": "If scale is your next challenge check out DigitalOcean: do.co/forwardfutureai \n\nDownload The 25 OpenClaw Use Cases eBook 👇🏼\nhttps://bit.ly/4aBQwo1\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: http"
-    },
-    {
       "video_id": "pm5PBbo6l2k",
       "title": "Gemini for Science is here. 🧬",
       "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
@@ -323,18 +444,6 @@
       "url": "https://www.youtube.com/watch?v=-14t6_yu-7w",
       "thumbnail": "https://img.youtube.com/vi/-14t6_yu-7w/mqdefault.jpg",
       "description": "Long division can be arduous - division in general is something that even computer processors try to avoid with a simple technique. Matt Godbolt demos it and then shows how a simple C program can cause a compiler to employ this trick. \n\nCom"
-    },
-    {
-      "video_id": "KHasJMg4zV4",
-      "title": "Sid vs Career | With ChatGPT",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-05-26T06:18:36+00:00",
-      "url": "https://www.youtube.com/watch?v=KHasJMg4zV4",
-      "thumbnail": "https://img.youtube.com/vi/KHasJMg4zV4/mqdefault.jpg",
-      "description": "Expertise at your fingertips with ChatGPT\n\nCredits\nDirector: Abhinav Pratiman\nDOP: Tassaduq Hussain\nProduction House: Early Man Film\nCreative agency: Hue & Why"
     },
     {
       "video_id": "huAwz_BR8WM",
@@ -445,30 +554,6 @@
       "description": "Recent puzzle solutions on Patreon:\nhttps://members.3blue1brown.com/posts/158885046?pr=true"
     },
     {
-      "video_id": "tk9lt-9x8mE",
-      "title": "Composer 2.5 and I INTERVIEWED THE CEO OF ALPHABET",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-05-21T19:49:20+00:00",
-      "url": "https://www.youtube.com/watch?v=tk9lt-9x8mE",
-      "thumbnail": "https://img.youtube.com/vi/tk9lt-9x8mE/mqdefault.jpg",
-      "description": "Download The 25 OpenClaw Use Cases eBook 👇🏼\nhttps://bit.ly/4aBQwo1\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Inst"
-    },
-    {
-      "video_id": "Td2TaMWNUtA",
-      "title": "This is absolutely CRAZY",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-05-21T19:43:02+00:00",
-      "url": "https://www.youtube.com/watch?v=Td2TaMWNUtA",
-      "thumbnail": "https://img.youtube.com/vi/Td2TaMWNUtA/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https://discord.gg/VhFuFJJs\n👉🏻 Spotify: https://open.sp"
-    },
-    {
       "video_id": "7knwihgj0fU",
       "title": "On the slow death of Scaling (birth of Adaption Labs) | Sara Hooker | HF ML Club India EP2",
       "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
@@ -575,22 +660,10 @@
       "url": "https://www.youtube.com/watch?v=E3hvLz717zM",
       "thumbnail": "https://img.youtube.com/vi/E3hvLz717zM/mqdefault.jpg",
       "description": "Learn more and apply to Jane Street’s WiSE program in New York, London or Hong Kong: https://jane-st.co/Computerphile-WiSE-2026 (episode sponsor)\nProfessor Azalea Raad leads the Veritas Lab at Imperial College London... More information abo"
-    },
-    {
-      "video_id": "3tbB2dffx0s",
-      "title": "I can’t believe this trial is real...",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-05-15T18:51:21+00:00",
-      "url": "https://www.youtube.com/watch?v=3tbB2dffx0s",
-      "thumbnail": "https://img.youtube.com/vi/3tbB2dffx0s/mqdefault.jpg",
-      "description": "Try out Kernel for free - https://www.kernel.sh/ to give your agents blazing fast, open source infra to access the internet.\n\nScam Altman and Elon Muskrat have been battling it out in court over the future of OpenAI. Let's break it down.\n\nW"
     }
   ],
   "stats": {
-    "total_videos": 36,
+    "total_videos": 41,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
