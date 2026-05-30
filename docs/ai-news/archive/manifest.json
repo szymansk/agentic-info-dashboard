@@ -2,8 +2,14 @@
   "$schema": "https://example.com/dashboard-archive.schema.json",
   "snapshots": [
     {
-      "date": "2026-05-30",
+      "date": "2026-05-31",
       "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Japan koppelt Banken an Claude Mythos, Cohere holt 500 Mio. für Sovereign-Enterprise, Auto-Mode geht in die Multi-Cloud",
+      "summary": "JP Finance Ministry kündigt Mythos-Zugang für Mitsubishi UFJ/Sumitomo Mitsui/Mizuho/Nippon Life/Dai-ichi nach Bessent-Treffen · Cohere $500M @ $6,8B für Behind-Firewall-Agents · Claude Code v2.1.158 mit Auto Mode auf Bedrock/Vertex/Foundry · Gemini 3.1 Ultra mit 2M Cross-Modal-Context · EU AI Act: 2./3. Juni harte Daten"
+    },
+    {
+      "date": "2026-05-30",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-05-30.html",
       "headline": "KPMG-Claude-Allianz für 276 000 Profis, Bundesnetzagentur wird AI-Aufsicht, Plugin-Stack öffnet sich",
       "summary": "KPMG Digital Gateway Powered by Claude (276 000 Profis, 138 Länder, Azure-Voll-Roll-out bis Sept) · BNetzA als nationale AI-Aufsicht (€49 Mio.) · EU-Konsultationen Art. 50 + Art. 6 · Claude Code v2.1.157 (Plugin-Auto-Loading, EnterWorktree-Switching) + v2.1.156 (Opus-4.8-Hotfix) · Parallel $230M · Google AI Studio Mobile"
     },

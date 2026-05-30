@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-29T22:37:36+00:00",
+  "last_updated": "2026-05-30T22:37:38+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,16 @@
   ],
   "featured": [
     {
-      "video_id": "8QKqENa_eQQ",
-      "title": "Builders Unscripted: Ep. 3 - Matias Castello, Product Leader at Alchemy",
+      "video_id": "cdflu9ZXZGE",
+      "title": "Terence Tao on How AI Is Changing Mathematics",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-05-29T20:29:25+00:00",
-      "url": "https://www.youtube.com/watch?v=8QKqENa_eQQ",
-      "thumbnail": "https://img.youtube.com/vi/8QKqENa_eQQ/mqdefault.jpg",
-      "description": "Builders Unscripted spotlights the stories behind real projects and the mindset that makes them possible: you can just build things.\n\nIn this episode, Romain Huet, Head of Developer Experience, chats with Matias Castello, Product Lead at Al",
+      "published": "2026-05-30T13:19:23+00:00",
+      "url": "https://www.youtube.com/watch?v=cdflu9ZXZGE",
+      "thumbnail": "https://img.youtube.com/vi/cdflu9ZXZGE/mqdefault.jpg",
+      "description": "Fields Medal recipient Terence Tao explains how AI is changing the way mathematicians work, making it easier to experiment, explore new ideas, and collaborate on difficult problems.\nThe video also features OpenAI Chief Research Officer Mark",
       "why": ""
     },
     {
@@ -170,8 +170,20 @@
   ],
   "recent": [
     {
+      "video_id": "cdflu9ZXZGE",
+      "title": "Terence Tao on How AI Is Changing Mathematics",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-05-30T13:19:23+00:00",
+      "url": "https://www.youtube.com/watch?v=cdflu9ZXZGE",
+      "thumbnail": "https://img.youtube.com/vi/cdflu9ZXZGE/mqdefault.jpg",
+      "description": "Fields Medal recipient Terence Tao explains how AI is changing the way mathematicians work, making it easier to experiment, explore new ideas, and collaborate on difficult problems.\nThe video also features OpenAI Chief Research Officer Mark"
+    },
+    {
       "video_id": "8QKqENa_eQQ",
-      "title": "Builders Unscripted: Ep. 3 - Matias Castello, Product Leader at Alchemy",
+      "title": "Builders Unscripted: Ep. 3 - Matias Castello, Product Lead at Alchemy",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
@@ -279,7 +291,7 @@
     },
     {
       "video_id": "AiM9mZCmVPY",
-      "title": "The Rule for Picking AI Winners | The a16z Show",
+      "title": "The New Rule for Picking AI Winners | The a16z Show",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
       "channel_name": "a16z",
       "category": "industry",
@@ -324,18 +336,6 @@
       "url": "https://www.youtube.com/watch?v=t3uBGhpii6w",
       "thumbnail": "https://img.youtube.com/vi/t3uBGhpii6w/mqdefault.jpg",
       "description": "Tell your agents to use this: https://here.now/r/matthewberman\n\nCheck out Jonah's game! https://turbo-muse-r294.here.now/\n\nDownload The 25 OpenClaw Use Cases eBook 👇🏼\nhttps://bit.ly/4aBQwo1\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttp"
-    },
-    {
-      "video_id": "tK32trvj_b4",
-      "title": "Build Hour: Agents SDK",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-05-28T20:09:34+00:00",
-      "url": "https://www.youtube.com/watch?v=tK32trvj_b4",
-      "thumbnail": "https://img.youtube.com/vi/tK32trvj_b4/mqdefault.jpg",
-      "description": "Build with the next evolution of the Agents SDK. In this Build Hour, you’ll learn how to use the updated Agents SDK to build long-running agents with a model-native harness. Give agents the tools, memory, and execution environment they need"
     },
     {
       "video_id": "4n_pxHZfTC8",
