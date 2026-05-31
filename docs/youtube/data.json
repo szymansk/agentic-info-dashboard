@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-30T22:37:38+00:00",
+  "last_updated": "2026-05-31T22:37:44+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -170,6 +170,18 @@
   ],
   "recent": [
     {
+      "video_id": "TpyS50ifmX4",
+      "title": "When AI Decides You're a Target — Brad Carson",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-05-31T00:14:55+00:00",
+      "url": "https://www.youtube.com/watch?v=TpyS50ifmX4",
+      "thumbnail": "https://img.youtube.com/vi/TpyS50ifmX4/mqdefault.jpg",
+      "description": "Brad Carson was the Army's General Counsel, served two terms in Congress and was Acting Under Secretary of Defense for Personnel and Readiness. He now heads Americans for Responsible Innovation, the AI-policy advocacy group he co-founded. K"
+    },
+    {
       "video_id": "cdflu9ZXZGE",
       "title": "Terence Tao on How AI Is Changing Mathematics",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
@@ -255,7 +267,7 @@
     },
     {
       "video_id": "HoMvCjnpAJ8",
-      "title": "The Pope is into AI",
+      "title": "Breaking Down the Pope's AI Essay",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
       "channel_name": "Matthew Berman",
       "category": "news",
@@ -447,7 +459,7 @@
     },
     {
       "video_id": "huAwz_BR8WM",
-      "title": "DeepMind’s Insane AI Breakthroughs With CEO Demis Hassabis",
+      "title": "Demis Hassabis On What AI Will Do Next",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
       "channel_name": "Two Minute Papers",
       "category": "researcher",
@@ -663,7 +675,7 @@
     }
   ],
   "stats": {
-    "total_videos": 41,
+    "total_videos": 42,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],

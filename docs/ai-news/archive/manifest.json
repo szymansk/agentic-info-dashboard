@@ -2,8 +2,14 @@
   "$schema": "https://example.com/dashboard-archive.schema.json",
   "snapshots": [
     {
-      "date": "2026-05-31",
+      "date": "2026-06-01",
       "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Juni schaltet scharf: EU Art. 5 verbietet, Microsoft koppelt Claude in Copilot Cowork, Ask Advisor macht Werbung agentic",
+      "summary": "EU AI Act Art. 5 morgen scharf (bis 35 Mio. €/7 % Bußgeld) · Microsoft 365 Copilot Wave 3 mit Multi-Model (Claude+GPT) und Copilot Cowork · Google Ask Advisor + agentic advertising · Gemma 4 als DeepMind-Open-Stack-Konter · Anthropic Developer Platform mit Webhooks + Multi-Agent + AWS-Sandboxes · Claude Code v2.1.159"
+    },
+    {
+      "date": "2026-05-31",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-05-31.html",
       "headline": "Japan koppelt Banken an Claude Mythos, Cohere holt 500 Mio. für Sovereign-Enterprise, Auto-Mode geht in die Multi-Cloud",
       "summary": "JP Finance Ministry kündigt Mythos-Zugang für Mitsubishi UFJ/Sumitomo Mitsui/Mizuho/Nippon Life/Dai-ichi nach Bessent-Treffen · Cohere $500M @ $6,8B für Behind-Firewall-Agents · Claude Code v2.1.158 mit Auto Mode auf Bedrock/Vertex/Foundry · Gemini 3.1 Ultra mit 2M Cross-Modal-Context · EU AI Act: 2./3. Juni harte Daten"
     },
