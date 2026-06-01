@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-31T22:37:44+00:00",
+  "last_updated": "2026-06-01T22:37:37+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,16 @@
   ],
   "featured": [
     {
-      "video_id": "cdflu9ZXZGE",
-      "title": "Terence Tao on How AI Is Changing Mathematics",
+      "video_id": "dnzxcYl4xYI",
+      "title": "The Texas Town at the forefront of OpenAI's Stargate Project",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-05-30T13:19:23+00:00",
-      "url": "https://www.youtube.com/watch?v=cdflu9ZXZGE",
-      "thumbnail": "https://img.youtube.com/vi/cdflu9ZXZGE/mqdefault.jpg",
-      "description": "Fields Medal recipient Terence Tao explains how AI is changing the way mathematicians work, making it easier to experiment, explore new ideas, and collaborate on difficult problems.\nThe video also features OpenAI Chief Research Officer Mark",
+      "published": "2026-06-01T19:40:47+00:00",
+      "url": "https://www.youtube.com/watch?v=dnzxcYl4xYI",
+      "thumbnail": "https://img.youtube.com/vi/dnzxcYl4xYI/mqdefault.jpg",
+      "description": "Abilene, Texas wasn't known as a technology hub.\n\nNow it's the first home of Stargate, one of the most ambitious AI infrastructure projects ever built.\n\nLocal leaders share what Stargate means for their community, from new investment and in",
       "why": ""
     },
     {
@@ -170,8 +170,68 @@
   ],
   "recent": [
     {
+      "video_id": "dnzxcYl4xYI",
+      "title": "The Texas Town at the forefront of OpenAI's Stargate Project",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-06-01T19:40:47+00:00",
+      "url": "https://www.youtube.com/watch?v=dnzxcYl4xYI",
+      "thumbnail": "https://img.youtube.com/vi/dnzxcYl4xYI/mqdefault.jpg",
+      "description": "Abilene, Texas wasn't known as a technology hub.\n\nNow it's the first home of Stargate, one of the most ambitious AI infrastructure projects ever built.\n\nLocal leaders share what Stargate means for their community, from new investment and in"
+    },
+    {
+      "video_id": "ZrEc46wUIPU",
+      "title": "Lovable on How GPT-5.5 Unlocks Better Planning for Complex Builds",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-06-01T17:41:51+00:00",
+      "url": "https://www.youtube.com/watch?v=ZrEc46wUIPU",
+      "thumbnail": "https://img.youtube.com/vi/ZrEc46wUIPU/mqdefault.jpg",
+      "description": "“GPT-5.5 is a lot better at planning, which means that for large features, our users are much more likely to succeed in one shot.”\n\nAs Alexandre Pesant from Lovable shares, that planning jump unlocked more reliable complex builds: a 31% inc"
+    },
+    {
+      "video_id": "yz6I23VRbdg",
+      "title": "What Happens After A 1,000,000x AI Compute Leap? | Jeff Dean",
+      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+      "channel_name": "Two Minute Papers",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-06-01T15:41:22+00:00",
+      "url": "https://www.youtube.com/watch?v=yz6I23VRbdg",
+      "thumbnail": "https://img.youtube.com/vi/yz6I23VRbdg/mqdefault.jpg",
+      "description": "Thank you to Google for the invite! 🙏\n\n❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, Benji Rab"
+    },
+    {
+      "video_id": "l2r3aWn96K8",
+      "title": "SWEbench is done.",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-01T15:23:07+00:00",
+      "url": "https://www.youtube.com/shorts/l2r3aWn96K8",
+      "thumbnail": "https://img.youtube.com/vi/l2r3aWn96K8/mqdefault.jpg",
+      "description": "Follow me ► x.com/matthewberman\nInstagram ► https://www.instagram.com/matthewberman_ai\n\nMedia/Sponsorship Inquiries ► https://bit.ly/44TC45V"
+    },
+    {
+      "video_id": "vsKH3oPwss4",
+      "title": "Einstein vs Feynman,  Who Wins? 🧠🤔 #physics #ai #science #feynman #research",
+      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+      "channel_name": "Two Minute Papers",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-06-01T00:16:21+00:00",
+      "url": "https://www.youtube.com/shorts/vsKH3oPwss4",
+      "thumbnail": "https://img.youtube.com/vi/vsKH3oPwss4/mqdefault.jpg",
+      "description": "Check the pinned comment for the link to the full interview. In this quick clip, we explore which legendary scientist ranks higher among the experts. It's a fun debate that leads into an even bigger discussion about AI's role in future scie"
+    },
+    {
       "video_id": "TpyS50ifmX4",
-      "title": "When AI Decides You're a Target — Brad Carson",
+      "title": "The Pentagon Chief on AI's Autonomous Weapons — Brad Carson",
       "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
       "channel_name": "Machine Learning Street Talk",
       "category": "podcast",
@@ -230,18 +290,6 @@
       "description": "Codex on Windows can now use your computer to work across desktop apps, while you step away from your desk. You can also now use your mobile phone to control the Codex running on your Windows machine.\n\nSee how to enable Computer Use in the "
     },
     {
-      "video_id": "JA3tmYqCacA",
-      "title": "These Models are Crazy!",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-05-29T17:10:58+00:00",
-      "url": "https://www.youtube.com/shorts/JA3tmYqCacA",
-      "thumbnail": "https://img.youtube.com/vi/JA3tmYqCacA/mqdefault.jpg",
-      "description": "\"It's taking me minutes and hours to do things that took teams weeks and months,\" - Lauren Steinberg, Loblaw Companies Limited.\n\nLauren, Chief Digital Officer at 🇨🇦 Canada’s largest retailer, shared how Codex and ChatGPT Images 2.0 are help"
-    },
-    {
       "video_id": "JfPWbttemYE",
       "title": "The forgotten developer who saved JavaScript...",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -252,18 +300,6 @@
       "url": "https://www.youtube.com/watch?v=JfPWbttemYE",
       "thumbnail": "https://img.youtube.com/vi/JfPWbttemYE/mqdefault.jpg",
       "description": "Clerk's new CLI sets up end-to-end auth for your entire app. Try it - https://go.clerk.com/0mR9oMU\n\nJavaScript was terrible... until one man was brave enough to save it.\n\n#coding #programming #javascript \n\nWant more Fireship?\n\n🗞️ Newsletter"
-    },
-    {
-      "video_id": "EYvzpZX2-Ww",
-      "title": "Loblaw Ships Faster with Codex",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-05-29T17:03:52+00:00",
-      "url": "https://www.youtube.com/watch?v=EYvzpZX2-Ww",
-      "thumbnail": "https://img.youtube.com/vi/EYvzpZX2-Ww/mqdefault.jpg",
-      "description": "Lauren, Chief Digital Officer at 🇨🇦 Canada’s largest retailer, shared how Codex and ChatGPT Images 2.0 are helping her team move faster, rethink workflows, and deliver better customer experiences.\n\nBuild with Codex ➡️ https://openai.com/cod"
     },
     {
       "video_id": "HoMvCjnpAJ8",
@@ -360,18 +396,6 @@
       "url": "https://www.youtube.com/watch?v=4n_pxHZfTC8",
       "thumbnail": "https://img.youtube.com/vi/4n_pxHZfTC8/mqdefault.jpg",
       "description": "Download The 25 OpenClaw Use Cases eBook 👇🏼\nhttps://bit.ly/4aBQwo1\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Inst"
-    },
-    {
-      "video_id": "6LwQ8RbU9as",
-      "title": "Finally a good benchmark (DeepSWE)",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-05-27T16:03:45+00:00",
-      "url": "https://www.youtube.com/watch?v=6LwQ8RbU9as",
-      "thumbnail": "https://img.youtube.com/vi/6LwQ8RbU9as/mqdefault.jpg",
-      "description": "Check out HeyGen to create your own free avatar: https://tinyurl.com/6y9b4nkk\nFor HyperFrames, visit: https://hyperframes.heygen.com/quickstart\n\nDownload The 25 OpenClaw Use Cases eBook 👇🏼\nhttps://bit.ly/4aBQwo1\n\nJoin My Newsletter for Regu"
     },
     {
       "video_id": "oYK_MmZW9XI",
@@ -648,30 +672,6 @@
       "url": "https://www.youtube.com/watch?v=pddFfZy4nZU",
       "thumbnail": "https://img.youtube.com/vi/pddFfZy4nZU/mqdefault.jpg",
       "description": "Erin Price-Wright speaks with Michael Duffey and Dino Mavrookas about what it will take to rebuild the American defense industrial base for a new era of competition. As production capacity becomes a central constraint, they outline how the "
-    },
-    {
-      "video_id": "Ie07zcmbnhM",
-      "title": "How Founders Can Build for Law Enforcement and First Responders | The a16z Show",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-05-18T14:30:32+00:00",
-      "url": "https://www.youtube.com/watch?v=Ie07zcmbnhM",
-      "thumbnail": "https://img.youtube.com/vi/Ie07zcmbnhM/mqdefault.jpg",
-      "description": "David Ulevitch speaks with Col. Jeffrey Glover and Rahul Sidhu about how AI, drones, and sensor networks are reshaping public safety and what it takes to bring new technology into law enforcement at scale. As departments face staffing short"
-    },
-    {
-      "video_id": "E3hvLz717zM",
-      "title": "Why Multi-Threaded Code Can Sometimes Misbehave (Weak Memory Concurrency) - Computerphile",
-      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
-      "channel_name": "Computerphile",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-05-18T13:30:20+00:00",
-      "url": "https://www.youtube.com/watch?v=E3hvLz717zM",
-      "thumbnail": "https://img.youtube.com/vi/E3hvLz717zM/mqdefault.jpg",
-      "description": "Learn more and apply to Jane Street’s WiSE program in New York, London or Hong Kong: https://jane-st.co/Computerphile-WiSE-2026 (episode sponsor)\nProfessor Azalea Raad leads the Veritas Lab at Imperial College London... More information abo"
     }
   ],
   "stats": {

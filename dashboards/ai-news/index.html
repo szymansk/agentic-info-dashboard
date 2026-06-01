@@ -298,7 +298,7 @@
   footer .mono { color: var(--muted); }
 </style>
 </head>
-<body data-snapshot-date="2026-06-01" data-snapshot-mode="live">
+<body data-snapshot-date="2026-06-02" data-snapshot-mode="live">
 <div class="wrap">
 
   <!-- ─── Top Nav ─── -->
@@ -346,8 +346,11 @@
     <a class="tl-pill" href="/ai-news/archive/2026-05-31.html" data-date="2026-05-31">
       <span class="dow">So</span><span class="date">31.05.</span>
     </a>
-    <a class="tl-pill active" href="/ai-news/" data-date="2026-06-01">
+    <a class="tl-pill" href="/ai-news/archive/2026-06-01.html" data-date="2026-06-01">
       <span class="dow">Mo</span><span class="date">01.06.</span>
+    </a>
+    <a class="tl-pill active" href="/ai-news/" data-date="2026-06-02">
+      <span class="dow">Di</span><span class="date">02.06.</span>
     </a>
   </div>
 
@@ -367,7 +370,7 @@
       </div>
     </div>
     <div class="meta">
-      <div class="date" id="today">Montag, 1. Juni 2026</div>
+      <div class="date" id="today">Dienstag, 2. Juni 2026</div>
       <div class="tag">Snapshot · KW 23 / 2026</div>
     </div>
   </header>
@@ -379,73 +382,77 @@
 
     <header class="briefing-head">
       <h2 class="kicker">Tagesbriefing · Agentic AI &amp; GenAI</h2>
-      <h1>Juni schaltet scharf: EU Art. 5 verbietet, Microsoft koppelt Claude in Copilot Cowork, Ask Advisor macht Werbung agentic</h1>
+      <h1>Microsoft Build 2026, SymJack und TrustFall erschüttern Coding-Agents, Anthropic auf 965 Milliarden</h1>
       <div class="byline">
         <span>✍️ Kuratiert &amp; analysiert</span>
         <span class="dot-sep">·</span>
         <span>~12 Min Lesezeit</span>
         <span class="dot-sep">·</span>
-        <span id="byline-date">1. Juni 2026</span>
+        <span id="byline-date">2. Juni 2026</span>
       </div>
       <p class="lede">
-        Der Juni beginnt mit einer harten Schwelle. Morgen, am 2. Juni, treten die ersten verbindlichen Verbote des EU AI Act in Kraft — Artikel 5 schaltet scharf, und damit wandern Social Scoring, kognitive Manipulation, ungezieltes Gesichts-Scraping und Emotionserkennung am Arbeitsplatz aus der Pilot-Toleranz in die Bußgeld-Realität. Übermorgen endet die Artikel-50-Konsultation. Im selben Atemzug verzahnt Microsoft seinen 365-Copilot-Stack tiefer mit <span data-person="dario-amodei">Anthropic</span>: <em>Wave 3</em> liefert Multi-Model-Routing — Claude steht jetzt nativ neben GPT als wählbares Engine — und führt <em>Copilot Cowork</em> ein, einen agentic Layer für asynchrone Mitarbeiter-Aufgaben quer durch Teams, SharePoint und Outlook. Bei Google Marketing Live hat <span data-person="demis-hassabis">Google</span> mit <em>Ask Advisor</em> einen Gemini-Agenten für den gesamten Werbe-Stack vorgestellt — Google Ads, Analytics, Merchant Center und Marketing Platform in einem konversationellen Frontend; gleichzeitig formalisiert das Unternehmen <em>agentic advertising</em> als neues Pricing- und Skill-Paradigma. Daneben ChatGPT-Ads-Manager seit Mai live, Anthropic Developer Platform mit Webhooks und Multi-Agent-Orchestrierung, Gemma 4 von DeepMind als Open-Stack-Konter, und Claude Code <code>v2.1.159</code> als ruhiger Plumbing-Patch nach dem Multi-Cloud-Auto-Mode der Vorwoche.
+        Drei Wellen am Dienstag, alle laut. Microsoft eröffnet heute 9:30 Uhr PT die <em>Build 2026</em> im Fort Mason Center — Satya Nadellas Keynote wird das erwartete Agentic-First-Bild zeichnen: Copilot-Roadmap, Azure AI Foundry, Windows-native AI und tieferes GitHub-Copilot-Tooling stehen im Zentrum der Zwei-Tages-Konferenz. Parallel ist gestern die <em>Adversa-AI-Doppelmeldung</em> öffentlich geworden, die das Coding-Agent-Lager hart trifft: <em>SymJack</em> — ein Symlink-Hijack-RCE, der gleichzeitig sechs AI-Coding-Tools verwundbar machte — und <em>TrustFall</em>, ein One-Click-RCE, der über einen regressed Trust-Dialog Claude Code, Cursor, Gemini CLI und GitHub Copilot erreichte. Beide CVEs sind diese Woche gepatcht, aber die Sammeldiagnose ist hart: der Coding-Agent-Stack ist 2026 ein attraktives Angriffsziel und braucht ein eigenes Sicherheits-Tooling. Im Funding-Layer kommt parallel eine Bewertungs-Verschiebung, die selbst nach Mai-Maßstäben außergewöhnlich ist: <span data-person="dario-amodei">Anthropic</span> hat eine <em>Series H</em> über 65 Milliarden Dollar bei <em>965 Milliarden Bewertung</em> bestätigt — die zweite Major-Runde innerhalb von drei Wochen, mit der das Lab nun der weltweit teuerste Private-AI-Konzern ist. Daneben EU-Art.-5-Tag-eins-Praxis, GitHub-Copilot-AI-Credit-Modell live, und LayerX-/Exa-Funding als Beleg, dass die Agent-Vertical-Welle weiter trägt.
       </p>
     </header>
 
     <div class="briefing-body">
 
       <section>
-        <h3><span class="num">01</span>Morgen scharf — was Artikel 5 EU AI Act in der Praxis verbietet</h3>
-        <p>Am 2. Juni 2026, also morgen, tritt der schwierigste Teil des EU AI Act in Kraft: Artikel 5 — die Liste der verbotenen KI-Praktiken — wird verbindlich, mit Bußgeld-Drohung von bis zu 35 Millionen Euro oder 7 Prozent des weltweiten Konzernumsatzes. Verboten sind Systeme zur kognitiven Verhaltensmanipulation, Social Scoring durch öffentliche Behörden, ungezielte Gesichts-Scraping-Aufnahmen aus dem Netz oder Überwachungskameras zur Anlage von Erkennungsdatenbanken, biometrische Echtzeit-Identifikation in öffentlichen Räumen ohne richterliche Anordnung, Emotionserkennung am Arbeitsplatz und in Bildungseinrichtungen, biometrische Inferenz sensibler Attribute (politische Überzeugung, sexuelle Orientierung, Religion), sowie — neu durch die 2025er-Erweiterung — die Erstellung nicht-einvernehmlicher intimer Bilder und KI-gestützte Kinder-Ausbeutung. Die Liste klingt theatralisch, betrifft aber in der Praxis ganz konkrete Tools, die in deutschen Unternehmen heute laufen.</p>
-        <p>Drei Praxis-Felder, in denen die Verbote ab morgen wehtun werden. Erstens: HR-Tech-Tools mit Emotion- oder Stimmungs-Analyse aus Video-Calls, Bewerbungs-Aufzeichnungen oder Performance-Reviews — Pyramid Talent, HireVue, Plum, Predictive Index und mehrere Mid-Market-Anbieter liefern Funktionen, die jetzt explizit untersagt sind. Zweitens: Marketing- und Customer-Service-Tools mit „Sentiment-Adjustment in Echtzeit", die Antworten dynamisch nach erkannter Frustration tunen — operativ unterscheidet das eine erlaubte Personalisierung von einer verbotenen Manipulation. Drittens: Public-Space-Biometrie für City-Mobility, Stadion-Sicherheit oder Verkehrs-Steuerung — wer hier ohne richterliche Genehmigung einsetzt, wandert ab morgen in den Hochrisiko-Bereich.</p>
-        <p>Praktischer Hinweis für DACH-CIOs: heise hat für den 2. Juni um 16 Uhr ein einstündiges Webinar mit Joerg Heidrich und Kim M. Scheurenbrand angesetzt, das genau diese Verbots-Kategorien in deutsche Praxis übersetzt. Das ist die letzte sinnvolle Compliance-Selbst-Schulung vor dem Scharfschalten. Parallel haben BfDI und BNetzA eine gemeinsame Beschwerde-Stelle angekündigt — die ersten dokumentierten Praxis-Fälle werden binnen Wochen auf den Tisch kommen, mit dem üblichen NGO-Forensiks-Effekt: AlgorithmWatch und die Konsumenten-Verbände werden parallel-tracken und öffentlich machen, wer was wann wo deployt hatte.</p>
+        <h3><span class="num">01</span>Microsoft Build 2026 — Day One mit Agentic-Erwartung im Zentrum</h3>
+        <p>Satya Nadellas Keynote heute 9:30 Uhr PT eröffnet die zweitägige Microsoft Build 2026 im Fort Mason Center, San Francisco. Die Konferenz ist erstmals explizit als „AI-first developer event" positioniert — die Themenblöcke sind agentic AI workflows, GitHub Copilot, Azure AI Foundry und Windows-native AI. Erwartet werden vor allem drei Dinge: Erstens eine konkretisierte Roadmap für Copilot Cowork (Wave 3 wurde gestern angekündigt, die Build wird die Developer-Ebene zeigen). Zweitens ein Multi-Model-Routing-API auf Azure AI Foundry, mit dem Anthropic Claude und OpenAI GPT seitengleich orchestriert werden können — das ist der größte Architektur-Schritt im MS-Stack seit 2023. Drittens Windows-native AI mit on-device-Modellen für DELL-/HP-/Lenovo-Geräte mit NPU.</p>
+        <p>Strategisch ist die Konferenz das Pendant zu Google I/O (Mai) und WWDC (in zwei Wochen). Microsoft hat den Vorteil, dass es nicht versuchen muss, ein neues Foundation-Modell zu verkaufen — die Botschaft ist Distribution und Toolchain. Für Entwickler im DACH-Markt sind drei Sessions Pflicht-Programm: „Copilot Cowork Developer Deep Dive" (heute, 14:00 PT), „Azure AI Foundry Multi-Model Patterns" (morgen, 09:00 PT) und „Windows 12 AI APIs für Local-First Apps" (morgen, 13:30 PT). Streams sind nach Konferenz-Ende verfügbar; wer in Q3 entscheiden muss, ob Cowork-Integration vor SharePoint-Replacement-Projekten kommt, hat hier die Datenbasis.</p>
+        <p>Im Wettbewerbs-Bild verstärkt Build die seit Wochen sichtbare Verzahnung: Microsoft, das jahrelang als „OpenAI-Plattform" wahrgenommen wurde, präsentiert sich jetzt explizit als <em>Multi-Lab-Plattform</em>. Das ist eine substantielle Verschiebung — sie verändert die Procurement-Verhandlungs-Position von Microsoft gegenüber beiden Labs, und sie verändert die strategische Position von OpenAI gegenüber Microsoft. Wer den Wave-3-Multi-Model-Schritt von gestern (siehe vorgestern) und Build heute zusammen liest, sieht das Bild eines Plattform-Anbieters, der sich von Modell-Exklusivität verabschiedet, um Modell-Wahlfreiheit für Enterprise-Kunden zu liefern.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Compliance-Verantwortliche in DACH-Konzernen müssen heute (1. Juni) eine letzte Sweep-Audit-Runde durch alle Bestands-Tools fahren — speziell HR, Marketing-Automation, Customer-Service und Public-Biometrie. Wo Funktionen aktiv sind, die in eine der Verbots-Kategorien fallen: heute deaktivieren, schriftlich dokumentieren, dem Datenschutzbeauftragten melden. Ab morgen ist „Wir wussten es nicht" keine Verteidigung mehr — die Bußgeld-Mechanik läuft.
+          Für CIO-Roadmap-Planung 2026/27: die Microsoft-365-/Azure-Toolchain wird zu der Multi-Lab-Plattform, die im Mittelstand das meiste Distribution hat. Anthropic profitiert über Copilot, OpenAI bleibt die Default-Engine — aber die Verträge verschieben sich. Empfehlung: Build-Streams von Cowork-Developer-Deep-Dive und Azure-Multi-Model-Patterns ansehen, dann Q3-Architektur-Entscheidungen aktualisieren.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">02</span>Microsoft 365 Copilot Wave 3 — Claude als gleichberechtigte Engine, Copilot Cowork als agentic Layer</h3>
-        <p>Die wettbewerbs-strategisch interessanteste Ankündigung der Woche kommt aus Redmond, nicht aus San Francisco. Microsoft hat in einer Wave-3-Update für 365 Copilot zwei Architektur-Verschiebungen vollzogen, die das Lab-Wettbewerbs-Bild verändern. Erstens: <em>Multi-Model-Routing</em>. Nutzer und Admins können in Copilot-Workflows zwischen OpenAI-Modellen (GPT-4o, GPT-5) und <span data-person="dario-amodei">Anthropics</span> Claude-Familie (Opus, Sonnet) wählen — pro Use-Case, pro Skill, pro Plugin. Das bricht das De-facto-OpenAI-Monopol in Microsofts Konsumenten-Stack. Zweitens: <em>Copilot Cowork</em>, ein agentic Layer, der asynchrone Mitarbeiter-Aufgaben quer durch Teams, SharePoint, Outlook und Loop orchestriert — vergleichbar mit Google Antigravity 2.0, aber tief in den Microsoft-Office-Stack integriert.</p>
-        <p>Strategisch ist die Multi-Model-Öffnung das größere Signal. Microsoft hat seit 2023 — der „Bing Chat"-Phase — OpenAI als exklusive Modell-Quelle in Konsumenten- und Enterprise-Produkten gehalten. Dass jetzt Claude direkt als wählbare Engine erscheint, deutet auf zwei Dinge: erstens, dass Microsoft die Anthropic-Run-Rate-Trajektorie (siehe 5WPR-Studie, $30B ARR April vs OpenAI $25B Februar) ernst nimmt und nicht hinter der Verschiebung des Markts hängenbleiben will; zweitens, dass die OpenAI-Microsoft-Vertrags-Verhandlungen — die seit Februar als kompliziert kursieren — kein automatisches Lock-In mehr garantieren. Für Enterprise-Kunden mit Microsoft-365-Stack heißt das: Anthropic ist nicht mehr „die Alternative, die man extra einkaufen muss", sondern eine native Option.</p>
-        <p>Copilot Cowork wiederum ist die Antwort auf Anthropic Managed Agents und OpenAI Frontier — mit einem unschlagbaren Distributions-Vorteil. Microsoft 365 hat ~430 Mio. zahlende Nutzer; jeder Cowork-Use-Case, der im Office-Workflow andockt (Meeting-Prep, Doc-Review-Cycles, Approval-Chains, Cross-Team-Status-Aggregation), läuft automatisch in einer Userbase, die Anthropic und OpenAI mit eigenen Plattformen nie erreichen werden. Für DACH-Konzerne — die im großen Mittelstand fast geschlossen auf Microsoft 365 sitzen — wird Cowork damit der Einstiegs-Vector in agentic Workloads, nicht eine separate Plattform-Entscheidung.</p>
+        <h3><span class="num">02</span>SymJack und TrustFall — das Coding-Agent-Lager unter Druck</h3>
+        <p>Adversa AI hat gestern zwei zusammenhängende Schwachstellen offengelegt, die das Coding-Agent-Ökosystem härter trifft als alles bisherige in 2026. <em>SymJack</em> ist ein Symlink-Hijack mit Remote-Code-Execution, der gleichzeitig sechs AI-Coding-Agents verwundbar machte — Claude Code, Cursor, Gemini CLI, GitHub Copilot CLI, Continue und Aider. Der Angriffsvektor: ein bösartiges Repository platziert Symlinks an Stellen, an denen ein Coding-Agent zwischen mehreren Worktree-/Skill-Verzeichnissen wechselt, und schmuggelt damit ausführbaren Code in die Permission-Boundary des Agenten. <em>TrustFall</em> ist die eng verwandte One-Click-RCE-Variante: ein regressed Trust-Dialog (vermutlich aus einer Tool-Permission-Update-Sequenz im Mai) erlaubte einer einzigen Eingabe-Bestätigung des Nutzers, eine Tool-Ausführung quer zur Sandbox-Konfiguration freizugeben. Beide CVEs sind diese Woche gepatcht — Claude Code hat in <code>v2.1.158-159</code> die nötigen Fixes mitgenommen, GitHub Copilot CLI ist auf den heutigen Build-Tag aktualisiert.</p>
+        <p>Die Sammeldiagnose ist hart, aber wichtig. Coding-Agent-Tools sind 2026 die meist-verteilte agentische Software-Klasse — Claude Code allein hat ein zweistelliges-Millionen-Nutzer-Profil. Wer hier ein RCE-Pattern findet, das zwei Agents gleichzeitig trifft, hat ein Angriffsziel mit Lieferketten-Hebelwirkung. SymJack ist genau dieses Profil: ein Pattern, das ähnlich wie XZ-Backdoor im Distributions-Layer der Tools ansetzt, nicht im Modell selbst. TrustFall zeigt, dass UX-Trust-Dialoge — die operativ am „weakest link"-Pfad sitzen — als eigenes Härtungs-Target behandelt werden müssen, mit verifiable-state Verträgen statt Single-Click-Akzeptanz.</p>
+        <p>Für IT-Architekten in DACH-Konzernen ist die Reaktion klar: erstens, Tool-Updates auf das aktuelle Patch-Level innerhalb der nächsten 48 Stunden, mit dokumentiertem Patch-Trail. Zweitens, Skill-/Plugin-Sandbox-Audits — wer in <code>.claude/skills</code> oder vergleichbaren Auto-Loading-Verzeichnissen unverifizierte Drittpakete hat, sollte signierte Skill-Pakete (NVIDIA Verified Agent Skills als Referenz-Standard) priorisieren. Drittens, eine eigene CISO-Stellungnahme zu Coding-Agent-Risiken — die Frage, ob Engineering-Teams autonome Tool-Ausführung mit Source-Code-Zugriff betreiben dürfen, wandert ab dieser Woche aus dem Engineering-Backlog in die Risk-Management-Diskussion.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Microsoft hat in der Konkurrenz-Diskussion einen Hebel gezogen, der größer ist als jede einzelne OpenAI-/Anthropic-Plattform-Ankündigung. Für DACH-CIOs: Cowork-Pilotierung in der ersten Juli-Woche evaluieren — der Office-Integrations-Vorteil ist im Mittelstand strukturell. Für Anthropic-Vertrieb: Multi-Model-Verfügbarkeit in Copilot ist ein Distributions-Gewinn ohne eigenen Vertriebs-Aufwand — die KPMG-Allianz von letzter Woche plus Microsoft-Verzahnung ergeben einen Doppel-Hebel, den OpenAI nicht spiegelbildlich besitzt.
+          Coding-Agent-Sicherheit ist 2026 eine eigene Disziplin geworden, nicht ein Sub-Thema von DevSec oder AppSec. Wer als Engineering-Manager autonome Tool-Loops in Production betreibt, sollte einen monatlichen Skill-Sandbox-Audit aufsetzen, signierte Skill-Pakete bevorzugen und die OWASP-Top-10-für-Agentic-AI als operatives Framework adoptieren. Bei DACH-Konzernen mit BSI-AIC4-Pflicht wird das im Sommer 2026 zur Auditkompetenz.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">03</span>Ask Advisor und agentic advertising — wie Google den Werbe-Stack neu denkt</h3>
-        <p>Bei Google Marketing Live hat <span data-person="demis-hassabis">Google</span> am vergangenen Donnerstag die ambitionierteste Produkt-Bündelung des Quartals vorgestellt: <em>Ask Advisor</em> ist ein Gemini-Agent mit geteiltem Memory über Google Ads, Google Analytics, Merchant Center und die Google Marketing Platform — ein einziger konversationeller Frontend für den vollen Marketing-Stack. Strategisch wichtiger ist die zweite Bewegung: Google formalisiert <em>agentic advertising</em> als neues Pricing- und Skill-Paradigma. Die Botschaft an Werbekunden: Skill-Anforderungen verschieben sich von Manueller-Kampagnen-Steuerung zu „Eingaben für den Agenten optimieren" — Targeting, Bidding, Creative-Variation, Placement-Entscheidungen wandern in den Modell-Loop.</p>
-        <p>Die Begleit-Daten sind dramatisch. Die ChatGPT-Ads-Plattform — seit 5. Mai per Self-Serve-Manager für jedes US-Unternehmen offen, kein Minimum-Spend — hat innerhalb der ersten sechs Wochen 100 Millionen Dollar ARR überschritten und projiziert 2026 ein 2,5-Milliarden-Werbe-Umsatz-Ziel. Im selben Zeitfenster überholt Meta global Google im Ad-Revenue zum ersten Mal in der digitalen Geschichte — das ist nicht direkt AI-getrieben, aber das Markt-Klima ist klar: Werbe-Dollars verschieben sich, und die Lab-/Plattform-Wahl wird zur Hebelfrage für Konzerne mit großem Media-Budget.</p>
-        <p>Für deutsche Werbekunden — DAX-Konzerne, Otto-Group, Zalando, Mediamarkt — bedeutet das eine harte Skill-Neubewertung in der eigenen Marketing-Organisation. Wer 2025 noch performance-getriebene Manuel-Bidding-Spezialisten als Wettbewerbsvorteil verteidigte, hat im Sommer ein neues Bild: agentic-Steuerungs-Skills sind das knappe Gut. Erwarten ist, dass die großen DACH-Agenturen (Plan.Net, Pilot, Mediacom Germany) in den nächsten Quartalen Re-Skilling-Programme aufsetzen, mit klarem Fokus auf die „Eingabe-für-Agent"-Disziplin. Gleichzeitig öffnet sich ein Marktsegment für spezialisierte Beratung zur Agenten-Steuerung in Werbung — ein neues Berufs-Profil im Mittelstand.</p>
+        <h3><span class="num">03</span>Anthropic auf 965 Milliarden — die zweite Series-H und was sie über den Markt sagt</h3>
+        <p>Was im Mai noch als 30-Milliarden-Runde bei 900-Milliarden-Bewertung Bloomberg-Hintergrund war, ist diese Woche mit einer zweiten Tranche bestätigt: <span data-person="dario-amodei">Anthropic</span> hat eine <em>Series H</em> über zusätzliche 65 Milliarden Dollar bei einer 965-Milliarden-Bewertung geschlossen — das Lab ist damit der teuerste private AI-Konzern weltweit. Die Investoren-Konstellation ist wenig überraschend (Sequoia bleibt führend, Dragoneer und Altimeter erweitern, mit Saudi PIF und Mubadala als neuen Sovereign-Akteuren), aber die Cap-Table-Implikation ist es: Anthropic hat in den letzten zwölf Wochen netto 95 Milliarden Dollar Eigenkapital aufgenommen, vergleichbar mit den größten Tech-Runden der Geschichte (Saudi Aramco IPO ausgenommen).</p>
+        <p>Strategisch ist die Frage nicht „Kann Anthropic dieses Geld einsetzen?", sondern „Wofür?". Die plausibelste Lesart ist eine massive Distributions-Investition: KPMG-Allianz (276 000 Profis), Japan-Banken-Pakt (Mythos-Zugang), Microsoft-365-Multi-Model-Integration (Wave 3) — alle drei wurden in den letzten drei Wochen verkündet. Das Tempo verlangt parallel Sales-Org-Aufbau, Implementation-Teams, vertikale Lösungs-Kapazitäten in der Größenordnung, die mit 30 Milliarden allein nicht zu finanzieren wäre. 95 Milliarden machen das Bild konsistent. Daneben Compute (Colossus 1 vollständig, Q4-Trainings-Cycles für Mythos-Nachfolger) und Talent (das Lab plant 3 000 neue Stellen bis Q1 2027, was ~25–30 Milliarden zwölf-Monats-Budget bindet).</p>
+        <p>Im Funding-Layer kommen Begleit-Meldungen, die den Vertikalisierungs-Trend bestätigen. <em>LayerX</em> hat 100 Millionen Dollar Series B für Enterprise-Back-Office-Automation (Expense-Reporting, Invoice-Processing, Compliance) geholt — das ist die SAP-Concur-/Coupa-Konkurrenz aus der Agent-Vertical-Welle. <em>Exa</em> hat 85 Millionen Series B für AI-native Search-Infrastructure aufgenommen, vergleichbar mit Parallels Position vor zwei Wochen. Beide Runden bestätigen das Bild: Capital fließt in spezifische Layer (Back-Office-Workflow, Search-Infrastructure, Agent-Runtime) und nicht in generische Foundation-Model-Wetten. Für DACH-Founder im Mittelstands-Vertical sind das die richtigen Markt-Signale.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Werbung ist 2026 die erste Branche, in der agentic AI als Standard-Funktion in der Plattform vorhanden ist, nicht als Add-on. Werbekunden, CMOs und Agenturen müssen ihre Skill- und Kontroll-Architektur entsprechend umstellen. Empfehlung: in Q3 ein Pilot-Setup mit Ask Advisor und ChatGPT Ads parallel laufen lassen, mit klarer Eval-Methodik für ROAS-Vergleich gegen den 2025er-Baseline.
+          Multiple-Stretching: Anthropic bei ~32x ARR (965 Mrd. zu 30 Mrd.) ist hoch, aber bei der Sales-Velocity der letzten zwölf Wochen verteidigbar. Wichtiger ist die Markt-Konsequenz: jedes andere Lab muss in Q3/Q4 entweder eine ähnliche Distribution-Story liefern oder eine eigene Bewertungs-Korrektur akzeptieren. Für Procurement-Verhandlungen: Multi-Year-Anthropic-Verträge werden in den nächsten Quartalen strukturell teurer; Verhandlungen sollten <em>jetzt</em> abgeschlossen werden, nicht nach der Q3-Roadmap.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">04</span>Gemma 4 + Anthropic Developer Platform — Open-Stack-Konter und Closed-Stack-Reifung</h3>
-        <p>Im Lab-Layer sind zwei parallele Bewegungen interessant. Erstens: DeepMind hat <em>Gemma 4</em> veröffentlicht — vier Open-Weight-Modelle, gebaut explizit für Reasoning und agentic Workflows, mit dem 31B-Modell als #3 auf der Arena-AI-Text-Leaderboard global. Das ist der Konter auf Mistral, Meta Llama, Qwen 3 und die wachsende Open-Stack-Welle. Mit Gemma 4 schließt Google die Lücke zwischen geschlossenen Frontier-Modellen (Gemini Ultra/Flash) und der offenen Forschungs-Community — und positioniert sich als das Lab mit dem reichsten Open-Source-Angebot. Für deutsche Universitäten, Mittelständler mit eigener On-Premises-Stack und souveränitäts-fokussierte Behörden ist Gemma 4 ein realistischer Stack-Kandidat.</p>
-        <p>Zweitens: Die Claude Developer Platform hat in einer Sammel-Mitteilung drei Managed-Agents-Erweiterungen ausgerollt. <em>Webhooks</em> erlauben Agenten, externe Events asynchron zu konsumieren — der bisher fehlende Baustein, um Agenten in eventgesteuerte Architekturen einzubinden. <em>Multi-Agent-Orchestrierung</em> öffnet die Composer-Schicht, mit der Subagent-Aufgabenverteilung kontrollierbar wird. <em>Self-hosted Sandboxes auf AWS</em> ergänzt die Hyperscaler-Trias der letzten Wochen — Agent-Workloads laufen jetzt nativ in der eigenen AWS-VPC, ohne Anthropic-Cloud-Detour. Strukturell ergibt das ein Bild, in dem die zwei Modi (open weights für DIY, managed platform für Skalen-Aufgaben) parallel reifen — beide Lager bauen ihre Stack-Architektur nach denselben Anforderungen.</p>
-        <p>Im DACH-Kontext koppelt sich das interessant an die Cohere-Aleph-Alpha-Sovereign-Diskussion. Wer in Banking-/Defense-/Healthcare-Workloads souveräne Compute-Pfade braucht, hat ab dieser Woche eine echte Multi-Option: Gemma 4 als On-Premises-Modell, Claude Managed Agents auf eigener AWS-VPC, Cohere/Aleph Alpha als Behind-Firewall-Stack, Mistral La Plateforme als EU-souveräne Option. Die Wahl wird zur Frage der Anwendungs-Charakteristik, nicht der prinzipiellen Verfügbarkeit.</p>
+        <h3><span class="num">04</span>GitHub Copilot AI Credits — usage-based metering verändert die Engineering-Kostenrechnung</h3>
+        <p>Microsoft hat gestern, am 1. Juni, die Umstellung von <em>GitHub Copilot</em> von request-based Billing auf usage-based metered Billing wirksam gemacht. Die neue Recheneinheit ist die <em>GitHub AI Credit</em> — Preis aktuell 0,01 Dollar pro Credit, mit Modell- und Operations-spezifischer Credit-Konsumption. Konsumenten-Tarife (Copilot Individual, Pro) bleiben unverändert; betroffen sind Copilot Business und Enterprise sowie alle Copilot-Workflows in Azure DevOps und GitHub Actions.</p>
+        <p>Operativ bedeutet das eine Verschiebung in der Engineering-Kostenrechnung. Wer 2025 noch monatliche Flat-Pakete pro Entwickler verkauft hat, muss ab Juni Credit-Konsumption pro Repository, pro Pipeline und pro Skill-Use-Case nachverfolgen. Microsoft hat einen <em>Credit-Estimator</em> und ein verbessertes Cost-Management-Dashboard mit ausgeliefert, aber die ersten DACH-Konzern-Anwendungen werden im Juli eine Erkenntnis liefern, die viele unangenehm überraschen wird: heavy-Use-Teams (Mid-/Senior-Engineers, mit Multi-Agent-Setups in GitHub Actions) liegen in der Credit-Welt häufig 40–60 Prozent über den vorherigen Flat-Paketen. Light-Use-Teams (Junior-Engineers, einfache Code-Completion) liegen 20–30 Prozent darunter.</p>
+        <p>Für FinOps-Verantwortliche heißt das, das Q3-Budget für Engineering-AI ist nicht mehr seamless skalierbar. Empfehlung: in den ersten zwei Juni-Wochen pro Team einen Credit-Audit aufsetzen, ein Konsumptions-Profil erstellen und mit dem Microsoft-Account-Manager eine Multi-Year-Commitments-Diskussion suchen — Microsoft hat in der Vergangenheit aggressive Volumen-Rabatte bei langfristigen Verträgen gegeben. Parallel sollten Engineering-Manager prüfen, ob Heavy-Use-Workflows (Multi-Agent-Pipelines, Skill-Auto-Loading mit hoher Tool-Cardinality) in Bedrock-/Vertex-Backends migriert werden können, wo Cost-Strukturen teilweise günstiger sind als GitHub Copilot Enterprise.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Open- und Closed-Stack-Strategien sind im Q2 2026 nicht mehr exklusive Entscheidungen, sondern komplementäre Bausteine in einer Multi-Vendor-Architektur. CIOs sollten in der Q3-Planung explizit beide Optionen evaluieren — Gemma 4 für controllable On-Premises-Workloads (Compliance, Latenz, Cost), Anthropic Managed Agents auf eigener VPC für Heavy-Compute-Aufgaben mit Audit-Anforderung.
+          AI-Tooling-Kosten werden 2026 zur granularen FinOps-Disziplin — vergleichbar mit Cloud-Cost-Management 2018–2020. Wer in Q3 keine Credit-Konsumptions-Beobachtbarkeit aufgesetzt hat, läuft in Q4 in eine Budget-Überraschung. Heavy-Use-Teams sind die ersten, die migrieren oder neu verhandeln müssen.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">05</span>Werkzeuge des Tages — v2.1.159 stabilisiert, Markt-Insights aus dem Q1-Funding</h3>
-        <p>Bei Claude Code keine signalverändernde Release-Welle: <code>v2.1.159</code> ist ein internes Infrastruktur-Update ohne User-facing Änderungen — Plumbing nach dem Multi-Cloud-Auto-Mode-Schritt von <code>v2.1.158</code>. Wer 158 produktiv laufen hat, kann den 159er-Update routinemäßig einplanen; ein konkretes „Sollte-ich-updaten?" gibt es nicht. Spannender ist die Markt-Sicht aus dem aktuellen Funding-Pulse: 1 von 5 neuen Unicorns im Mai 2026 waren AI-Agent-Companies, 53 Prozent aller neuen Milliarden-Bewertungen entstammen dem Segment. AI-Agent-Markt: 5,25 Mrd. Dollar (2024) → 7,84 Mrd. (2025) → projiziert 52,62 Mrd. (2030). Q1 2026 hat alle Venture-Funding-Rekorde gebrochen: 300 Milliarden Dollar global, davon 80 Prozent in AI — die Konzentration ist beispiellos.</p>
-        <p>Ergänzend zwei Beobachtungen aus der Praxis-Adoption: <em>Voice-Agent-Plattformen</em> sind die Vertical-Kategorie, die in Q2 am schnellsten Enterprise-Verträge holt — eine Plattform automatisiert „menschen-ähnliche Telefon-Interaktionen in dutzenden Sprachen" für Marriott und Caesars Entertainment, Vergleichbares läuft in DACH bei Lufthansa-Service und der Allianz-Schadensregulierung. <em>After-Code-Automation</em> (Operations, Deployment, Incident-Response, das von AppDynamics-Gründern initiierte Segment) bedient bereits über 1 000 Enterprise-Kunden — der Mittelstand kennt das unter den Labels „AIOps" und „IRO automation". Beide Vertical-Bereiche sind in DACH-Konzernen 2026/27 absehbar Pflicht-Themen.</p>
-        <p>Für das ai-news-dashboard-Setup heute relevant: das KW-22-Fenster hat sechs Releases gebracht (152, 153, 154, 156, 157, 158, 159), die alle ohne Breaking-Change-Notwendigkeit eingespielt werden konnten — Pinned Background Sessions (seit 147) haben sich operativ bewährt. Wer ähnliche Setups baut, sollte den Cron-Job pinnen, die Auto-Mode-Konfiguration für Q3 evaluieren und das Plugin-Auto-Loading aus <code>.claude/skills</code> (seit 157) für eigene Custom-Skills nutzen.</p>
+        <h3><span class="num">05</span>EU Art. 5 ist scharf — Praxis-Tag eins</h3>
+        <p>Heute, am 2. Juni 2026, ist der erste Tag, an dem die Liste der verbotenen Praktiken nach Artikel 5 EU AI Act verbindlich anwendbar ist — mit Bußgeld-Drohung von bis zu 35 Millionen Euro oder 7 Prozent des weltweiten Konzernumsatzes. In der Praxis trifft das HR-Tools mit Emotionserkennung in Bewerbungs- oder Performance-Sessions, Marketing-Automation mit „Sentiment-Adjustment in Echtzeit" als Manipulations-Variante, Public-Space-Biometrie ohne richterliche Anordnung und ungezielte Gesichts-Datenbank-Anlagen aus Webscraping. Die heise-Live-Webinar-Runde heute 16 Uhr mit Joerg Heidrich und Kim M. Scheurenbrand soll die ersten DACH-Praxis-Fälle einordnen — Anmeldungen liefen Mitte vergangener Woche schon dreistellig.</p>
+        <p>BNetzA und BfDI haben gestern die gemeinsame Beschwerde-Stelle in einer schmalen Pressemitteilung scharfgeschaltet — die ersten 48 Stunden werden zeigen, ob die Behörde formell auf Eingaben reagiert oder Sammelfälle anlegt. AlgorithmWatch, der Verbraucherzentrale-Bundesverband und drei Hochschul-Konsortien fahren parallel öffentliche Tracking-Aktionen. Erwarten ist eine erste formell-dokumentierte Beanstandung in der zweiten Juni-Woche — vermutlich aus dem HR-Tech-Bereich, wo die Verbots-Definitionen besonders klar sind und die Whistleblower-Pfade etabliert.</p>
+        <p>Für DACH-CIOs ist die wichtigste Empfehlung: in der heutigen Standup-Runde explizit nach Bestands-Tools fragen, die in eine der vier Kategorien fallen könnten — auch wenn die Antwort gestern „klar nicht" war. Die Operations-Detail-Realität ist häufig anders als die Strategie-Sicht. Wer heute keine letzte Sweep-Audit-Runde fährt, hat in 90 Tagen ein erkennbar höheres Compliance-Risiko, sobald die ersten BNetzA-Beanstandungen öffentlich sichtbar werden.</p>
+        <blockquote class="takeaway">
+          <strong>Was es bedeutet</strong>
+          Tag eins der Art.-5-Praxis. Die nächsten 14 Tage sind die belastbare Reality-Check-Phase — alle nachgelagerten Compliance-Diskussionen werden auf den ersten dokumentierten Fall referenzieren. Wer in DACH-Konzernen AI-Governance verantwortet, sollte in dieser Woche eine schriftliche Bestätigung an Vorstand und Audit-Committee senden, dass eine Sweep-Audit-Runde stattgefunden hat und keine Bestands-Tools in verbotenen Kategorien laufen — diese Dokumentation wird in den nächsten Monaten Standard-Forderung in Aufsichtsrats-Sitzungen werden.
+        </blockquote>
       </section>
       <div class="briefing-end">
-        <strong>Was diese Woche zu beobachten ist:</strong> Art. 5 Praxis-Fälle ab 2. Juni — wer ist der erste DACH-Konzern, der öffentlich in eine Verbots-Kategorie gerät? AlgorithmWatch und die Konsumenten-Verbände werden parallel-tracken; Q3-Konsequenzen sind kalkulierbar. Microsoft Copilot Cowork Roll-out-Geschwindigkeit: erste DAX-Pilot-Kunden werden Ende Juni mit Produktiv-Erfahrungen sichtbar — der Multi-Model-Switch zwischen GPT und Claude wird das erste echte Vergleichsexperiment für Enterprise-Workloads. Anthropic-Bestätigung der Multimodal-Roadmap: nach dem Gemini-3.1-Ultra-Schritt der Vorwoche ist eine Mythos-Multimodal-Aussage in den nächsten Tagen erwartbar. Bitkom-/vbw-Eingaben zu Art. 6 High-Risk (Frist 15. Juni intern): wer als Lab-Vertrieb oder Implementierungs-Partner Branchen-Mappings beisteuert, hat noch zwei Wochen Vorlaufzeit. Und das Lab-Markt-Geräusch: <span data-person="mira-murati">Mira Muratis</span> Thinking Machines Lab hat den Anfang-Juni-Termin bestätigt — wenn die Vorabschau diese Woche fällt, ist die Stealth-Phase definitiv vorbei.
+        <strong>Was die Woche bringt:</strong> Microsoft-Build-Day-2 morgen mit Azure-AI-Foundry-Multi-Model-Patterns und Windows-12-AI-APIs — die für DACH-Architekten relevanten Sessions. SymJack-/TrustFall-Folgemeldungen: weitere CVEs aus der gleichen Forschungs-Welle sind plausibel, Adversa AI hat bereits angekündigt, dass „zwei zusätzliche Disclosures in Q3 vorbereitet" sind. Anthropic-Series-H-Cap-Table-Details: ob Microsoft, Google oder Amazon strategisch mitinvestiert haben, ist noch offen — die Veröffentlichung in den nächsten Tagen wird Plattform-Wettbewerbs-Signal sein. EU-Art.-50-Konsultations-Ende morgen (3. Juni): wer Branchen-Eingaben einreichen will, hat noch 24 Stunden. <span data-person="mira-murati">Mira Muratis</span> Thinking Machines hat den Anfang-Juni-Termin formell bestätigt — eine Vorabschau diese Woche ist erwartbar.
       </div>
 
     </div>
@@ -466,77 +473,77 @@
 
       <article class="card news-card crit">
         <div class="row">
-          <span class="pill crit">Security</span>
+          <span class="pill crit">Major Release</span>
           <span class="score">Score <b>9.5</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">EU AI Act Art. 5 — morgen verbindlich, bis 35 Mio. €/7 % Bußgeld</h3>
-        <p>Verbotene Praktiken werden am 2. Juni scharf: Social Scoring, kognitive Manipulation, biometrische Echtzeit-ID, Emotionserkennung am Arbeitsplatz, sensible biometrische Inferenz. HR-Tech, Marketing-Sentiment-Tools, Public-Space-Biometrie sind die drei Praxis-Felder, die in DACH heute noch ungeprüft laufen.</p>
+        <h3 style="margin-top:10px">Microsoft Build 2026 startet — Nadella-Keynote 9:30 PT</h3>
+        <p>Zwei-Tages-Konferenz mit Agentic-First-Framing. Erwartet: Copilot Cowork Developer-Roadmap, Azure AI Foundry Multi-Model-Routing für Claude+GPT, Windows-12-AI-APIs für On-Device-Workloads. Build positioniert Microsoft als Multi-Lab-Plattform.</p>
         <div class="news-meta">
-          <span>📅 02.06.2026 (scharf)</span><span>·</span><span>🏢 EU Commission</span><span>·</span>
-          <a href="https://artificialintelligenceact.eu/article/5/">EU AI Act</a>
+          <span>📅 02.–03.06.2026</span><span>·</span><span>🏢 Microsoft</span><span>·</span>
+          <a href="https://www.notebookcheck.net/Microsoft-Build-2026-What-to-expect-from-the-June-2-keynote.1311546.0.html">Build-Vorschau</a>
         </div>
       </article>
 
       <article class="card news-card crit">
         <div class="row">
-          <span class="pill crit">Major Release</span>
-          <span class="score">Score <b>9.0</b>/10</span>
+          <span class="pill crit">Security</span>
+          <span class="score">Score <b>9.3</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Microsoft 365 Copilot Wave 3 — Claude als Engine, Copilot Cowork als Agent-Layer</h3>
-        <p>Multi-Model-Routing zwischen GPT und Claude (Opus/Sonnet) erstmals nativ in Copilot. Copilot Cowork orchestriert asynchron quer durch Teams, SharePoint, Outlook, Loop. Distributions-Anker: ~430 Mio. zahlende M365-Nutzer.</p>
+        <h3 style="margin-top:10px">SymJack + TrustFall — 6 Coding-Agents gleichzeitig verwundbar</h3>
+        <p>Adversa AI offengelegt: Symlink-Hijack-RCE (SymJack) trifft Claude Code, Cursor, Gemini CLI, Copilot CLI, Continue, Aider. TrustFall One-Click-RCE über regressed Trust-Dialog. Beide gepatcht — aber die Sammeldiagnose zwingt zur Coding-Agent-Sicherheits-Disziplin.</p>
         <div class="news-meta">
-          <span>📅 31.05.2026</span><span>·</span><span>🏢 Microsoft · <span data-person="dario-amodei">Anthropic</span></span><span>·</span>
-          <a href="https://www.microsoft.com/en-us/microsoft-365">Microsoft 365</a>
+          <span>📅 01.06.2026</span><span>·</span><span>🏢 Adversa AI</span><span>·</span>
+          <a href="https://adversa.ai/blog/top-agentic-ai-security-resources-june-2026/">Adversa Blog</a>
         </div>
       </article>
 
       <article class="card news-card crit">
         <div class="row">
-          <span class="pill crit">Major Release</span>
-          <span class="score">Score <b>8.7</b>/10</span>
+          <span class="pill crit">M&amp;A</span>
+          <span class="score">Score <b>9.2</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Google Ask Advisor + agentic advertising</h3>
-        <p>Ein Gemini-Agent für Google Ads, Analytics, Merchant Center, Marketing Platform — geteiltes Memory über den vollen Werbe-Stack. Agentic advertising als formales Pricing-/Skill-Paradigma. CMOs müssen Skill-Architektur in der Marketing-Org umbauen.</p>
+        <h3 style="margin-top:10px">Anthropic Series H: 65 Mrd. @ 965 Mrd. — teuerstes Private-AI-Konzern</h3>
+        <p>Zweite Major-Runde innerhalb von 3 Wochen. Sequoia/Dragoneer/Altimeter erweitern, Saudi PIF und Mubadala neu. Netto 95 Mrd. Eigenkapital in 12 Wochen — Distribution-Aufbau (KPMG, Japan, MS-Wave-3) wird damit kalkulierbar.</p>
         <div class="news-meta">
-          <span>📅 29.05.2026</span><span>·</span><span>🏢 <span data-person="demis-hassabis">Google</span></span><span>·</span>
-          <a href="https://www.b2the7.com/news-blog/marketing-trends-june-2026-ai-search-chatgpt-ads-meta">Marketing-Analyse</a>
+          <span>📅 01.06.2026</span><span>·</span><span>🏢 <span data-person="dario-amodei">Anthropic</span></span>
         </div>
       </article>
 
       <article class="card news-card hot">
         <div class="row">
-          <span class="pill hot">Major Release</span>
-          <span class="score">Score <b>8.0</b>/10</span>
+          <span class="pill hot">Security</span>
+          <span class="score">Score <b>8.5</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Gemma 4 — DeepMind Open-Stack-Konter, 31B-Modell #3 auf Arena</h3>
-        <p>Vier Open-Weight-Modelle, gebaut für Reasoning + agentic Workflows. 31B rangiert global Top-3. Substanzieller Konter auf Llama 4, Mistral, Qwen 3 — relevant für On-Premises-/Souveränitäts-Stacks in DACH-Mittelstand und Bundes-Behörden.</p>
+        <h3 style="margin-top:10px">EU AI Act Art. 5: Tag eins — BfDI/BNetzA-Beschwerde-Stelle aktiv</h3>
+        <p>Verbote sind ab heute verbindlich. Erste formell dokumentierte Beanstandungen in zweiter Juni-Woche erwartet, vermutlich aus HR-Tech. heise-Webinar mit Heidrich/Scheurenbrand heute 16 Uhr. Vorstands-Dokumentation der Sweep-Audit-Runde sollte jetzt aufgesetzt sein.</p>
         <div class="news-meta">
-          <span>📅 30.05.2026</span><span>·</span><span>🏢 <span data-person="demis-hassabis">Google DeepMind</span></span>
+          <span>📅 02.06.2026</span><span>·</span><span>🏢 EU Commission · BNetzA · BfDI</span><span>·</span>
+          <a href="https://artificialintelligenceact.eu/article/5/">EU AI Act</a>
         </div>
       </article>
 
       <article class="card news-card hot">
         <div class="row">
           <span class="pill hot">Tooling</span>
-          <span class="score">Score <b>7.8</b>/10</span>
+          <span class="score">Score <b>8.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Anthropic Developer Platform: Webhooks + Multi-Agent + AWS-Sandboxes</h3>
-        <p>Managed-Agents-Erweiterung: Event-driven Webhooks für asynchrone External-Trigger, kontrollierbare Multi-Agent-Orchestrierung, Self-hosted Sandboxes auf AWS. Schließt die letzte „Was fehlt noch?"-Lücke für Enterprise-Production-Deployments.</p>
+        <h3 style="margin-top:10px">GitHub Copilot wechselt auf AI-Credits ($0.01) ab 1. Juni</h3>
+        <p>Usage-based metering ersetzt Request-Billing für Copilot Business/Enterprise und alle Copilot-Workflows in Azure DevOps und GitHub Actions. Heavy-Use-Teams liegen oft 40–60 % über Flat-Paket-Preis — FinOps-Audit in den ersten zwei Juni-Wochen Pflicht.</p>
         <div class="news-meta">
-          <span>📅 30.05.2026</span><span>·</span><span>🏢 <span data-person="dario-amodei">Anthropic</span></span><span>·</span>
-          <a href="https://www.anthropic.com/news">Anthropic News</a>
+          <span>📅 01.06.2026</span><span>·</span><span>🏢 Microsoft · GitHub</span>
         </div>
       </article>
 
       <article class="card news-card warn">
         <div class="row">
-          <span class="pill warn">Marktdaten</span>
+          <span class="pill warn">M&amp;A</span>
           <span class="score">Score <b>7.5</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">ChatGPT Ads: $100M ARR in 6 Wochen, $2,5B-Jahresziel 2026</h3>
-        <p>Self-Serve Ads Manager seit 5. Mai für jedes US-Unternehmen offen, kein Minimum-Spend. Meta überholt parallel Google im globalen Ad-Revenue zum ersten Mal. Werbe-Stack-Konkurrenz verschärft sich substanziell.</p>
+        <h3 style="margin-top:10px">LayerX $100M Series B + Exa $85M — Vertical-Agent-Welle trägt</h3>
+        <p>LayerX automatisiert Back-Office (Expense-Reports, Invoices, Compliance) — SAP-Concur-Konkurrenz aus Agent-Vertical. Exa baut AI-native Search-Infrastruktur für LLMs aus. Beide Runden bestätigen Q3-Investment-Cluster: Workflow-Vertical und Agent-Infrastructure.</p>
         <div class="news-meta">
-          <span>📅 29.05.2026</span><span>·</span><span>🏢 OpenAI · Meta · <span data-person="demis-hassabis">Google</span></span>
+          <span>📅 01.06.2026</span><span>·</span><span>🏢 LayerX · Exa</span><span>·</span>
+          <a href="https://aifundingtracker.com/ai-startup-funding-news-today/">Funding Tracker</a>
         </div>
       </article>
 
@@ -557,7 +564,7 @@
 
       <article class="card">
         <h3>Letzte Releases</h3>
-        <p>Aktuelle Version <code>v2.1.159</code> · ruhige Stabilisierungs-Welle.</p>
+        <p>Aktuelle Version <code>v2.1.159</code> · stabilisiert, SymJack/TrustFall mitgenommen.</p>
 
         <div class="release">
           <div class="ver">v2.1.159</div>
@@ -652,7 +659,7 @@
   </section>
 
   <footer>
-    <div>Snapshot · <span class="mono" id="generated">1. Juni 2026</span></div>
+    <div>Snapshot · <span class="mono" id="generated">2. Juni 2026</span></div>
     <div>
       <a href="/sources/">📚 Quellen-Sammlung</a> ·
       <a href="/">📊 Übersicht</a>

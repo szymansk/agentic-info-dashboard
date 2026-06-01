@@ -2,8 +2,14 @@
   "$schema": "https://example.com/dashboard-archive.schema.json",
   "snapshots": [
     {
-      "date": "2026-06-01",
+      "date": "2026-06-02",
       "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Microsoft Build 2026, SymJack und TrustFall erschüttern Coding-Agents, Anthropic auf 965 Milliarden",
+      "summary": "Microsoft Build 2026 Day 1 mit Nadella-Keynote · SymJack + TrustFall: 6 Coding-Agents gleichzeitig verwundbar (Adversa AI) · Anthropic Series H 65 Mrd. @ 965 Mrd. Bewertung · EU Art. 5 Tag eins mit BfDI/BNetzA-Beschwerde-Stelle · GitHub Copilot AI Credits ($0.01) seit 1. Juni · LayerX/Exa Vertical-Funding"
+    },
+    {
+      "date": "2026-06-01",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-01.html",
       "headline": "Juni schaltet scharf: EU Art. 5 verbietet, Microsoft koppelt Claude in Copilot Cowork, Ask Advisor macht Werbung agentic",
       "summary": "EU AI Act Art. 5 morgen scharf (bis 35 Mio. €/7 % Bußgeld) · Microsoft 365 Copilot Wave 3 mit Multi-Model (Claude+GPT) und Copilot Cowork · Google Ask Advisor + agentic advertising · Gemma 4 als DeepMind-Open-Stack-Konter · Anthropic Developer Platform mit Webhooks + Multi-Agent + AWS-Sandboxes · Claude Code v2.1.159"
     },
