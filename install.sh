@@ -174,6 +174,37 @@ KillMode=none
 [Install]
 WantedBy=multi-user.target
 EOF
+
+# Healthcheck (oneshot) — heilt die Session, wenn der Supervisor mid-uptime
+# stirbt (Binary-Auto-Upgrade). Wird vom Timer alle 30 Min getriggert.
+cat > "$TMP/ai-news-dashboard-healthcheck.service" <<EOF
+[Unit]
+Description=Heal the Claude daily-loop session if supervisor died (binary auto-upgrade)
+Documentation=file://$PROJECT_DIR/bin/start-daily-loop.sh
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=$RUN_USER
+Group=$RUN_GROUP
+WorkingDirectory=$PROJECT_DIR
+ExecStart=$PROJECT_DIR/bin/start-daily-loop.sh
+EOF
+
+cat > "$TMP/ai-news-dashboard-healthcheck.timer" <<EOF
+[Unit]
+Description=Periodic health check for the Claude daily-loop session
+
+[Timer]
+OnBootSec=10min
+OnUnitActiveSec=30min
+Persistent=true
+Unit=ai-news-dashboard-healthcheck.service
+
+[Install]
+WantedBy=timers.target
+EOF
 fi
 
 echo "  Installiere Units nach /etc/systemd/system/ (sudo)"
@@ -196,6 +227,11 @@ if [ "$SKIP_DAILY_LOOP" != "1" ]; then
   # vermutlich erst interaktiv akzeptiert sein muss
   yellow "ℹ"; echo " daily-loop ist enabled (startet beim nächsten Boot)"
   yellow "  "; echo " Für sofort: ./bin/start-daily-loop.sh   (interaktiv testen)"
+
+  # Healthcheck-Timer: heilt die Session, wenn der Supervisor mid-uptime
+  # stirbt (Binary-Auto-Upgrade killt ihn, er kommt nicht von selbst zurück).
+  sudo systemctl enable --now ai-news-dashboard-healthcheck.timer
+  green "✓"; echo " healthcheck.timer aktiv (prüft alle 30 Min, heilt bei Bedarf)"
 fi
 
 # ─── 5. Firewall ─────────────────────────────────────────────────────

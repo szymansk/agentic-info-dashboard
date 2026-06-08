@@ -25,6 +25,23 @@ if [ ! -f "$PROMPT_FILE" ]; then
   log "❌ DAILY_UPDATE.md fehlt unter $PROMPT_FILE"; exit 1
 fi
 
+# ── Supervisor-Daemon gesund? ───────────────────────────────────────
+# Ein Binary-Auto-Upgrade killt den Supervisor mid-uptime ("binary was
+# deleted — exiting for upgrade"). Er kommt NICHT von selbst zurück.
+# Dann ist die Session ein Zombie: PID lebt, aber control.sock ist tot,
+# keine Cron-Wakeups, kein Auth-Refresh mehr. Wir müssen das erkennen,
+# sonst hält die PID-lebt-Prüfung unten die Session fälschlich für gesund.
+daemon_healthy() {
+  "$CLAUDE_BIN" daemon status 2>&1 | grep -qiE '^pid:|version:|uptime:'
+}
+
+if ! daemon_healthy; then
+  log "⚠ Supervisor-Daemon nicht erreichbar (vermutlich nach Binary-Upgrade)."
+  log "  reape verwaiste Worker via 'claude daemon stop' …"
+  "$CLAUDE_BIN" daemon stop 2>&1 | sed 's/^/    /' || true
+  # Nach dem Reap ist die Session-PID tot → die Prüfung unten erzwingt Neustart.
+fi
+
 # ── Prüfen, ob eine Session mit diesem Namen existiert + lebt ────────
 existing_id=""
 if [ -f "$ROSTER" ]; then

@@ -106,6 +106,34 @@ Die Session legt beim ersten `/loop` einen persistenten **Cron-Job** an (via
 Session-Sleep + Idle-Stops. Auflisten: `claude /cron list` innerhalb einer
 attached Session.
 
+### Failure-Mode: Supervisor stirbt beim Binary-Auto-Upgrade
+
+**Symptom**: Briefing aktualisiert sich tagelang nicht, aber YouTube (systemd-
+Timer) läuft weiter. Ursache: Wenn der `claude`-Binary automatisch aktualisiert
+wird, killt das den Supervisor-Daemon mid-uptime (`daemon.log`: „binary was
+deleted — exiting for upgrade") und er kommt **NICHT von selbst zurück**. Die
+Session wird zum Zombie: PID lebt noch, aber control.sock ist tot → keine
+Cron-Wakeups, kein Auth-Refresh. Die Session produziert noch ein paar Tage aus
+gecachten Credentials, dann stallt sie.
+
+**Warum es nicht selbst heilte (früher)**: `daily-loop.service` lief nur beim
+Boot; die Maschine wurde nicht neu gestartet. `start-daily-loop.sh` prüfte nur
+`os.kill(pid, 0)` — die Zombie-PID lebt, also „alles gut".
+
+**Fix (eingebaut)**:
+- `start-daily-loop.sh` prüft jetzt zuerst `daemon_healthy()` und reapt via
+  `claude daemon stop`, wenn der Supervisor weg ist → erzwingt Neustart.
+- `ai-news-dashboard-healthcheck.timer` läuft alle 30 Min und ruft
+  `start-daily-loop.sh` (heilt mid-uptime, nicht nur beim Boot).
+- `bin/check.sh` zeigt Supervisor-Tod als roten `✗` + „Briefing veraltet".
+
+**Manuelle Recovery** (falls doch mal nötig):
+```bash
+claude daemon stop          # reapt verwaiste Worker
+./bin/start-daily-loop.sh   # startet frische Session (jetzt gehärtet)
+./bin/check.sh              # verifizieren: daemon läuft + Briefing aktuell
+```
+
 ## Was ich (Claude) hier NICHT tun soll
 
 - Browser-Cache-Probleme als Bug behandeln, bevor `bin/check.sh` Pass ist

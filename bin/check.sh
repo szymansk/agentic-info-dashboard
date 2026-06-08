@@ -84,8 +84,27 @@ fi
 
 hdr "background sessions (Claude daily loop)"
 if command -v claude > /dev/null; then
-  daemon_status=$(claude daemon status 2>&1 | head -1)
-  ok "claude daemon: $daemon_status"
+  # Supervisor-Gesundheit: ein Binary-Auto-Upgrade killt den Daemon mid-uptime
+  # und er kommt NICHT von selbst zurück. Dann ist die Session ein Zombie
+  # (PID lebt, aber keine Cron-Wakeups / kein Auth-Refresh mehr).
+  if claude daemon status 2>&1 | grep -qiE '^pid:|version:|uptime:'; then
+    ok "claude daemon: läuft ($(claude daemon status 2>&1 | grep -iE '^version:' | head -1))"
+  else
+    err "claude daemon: NICHT erreichbar — Session ist vermutlich Zombie!"
+    err "  → Fix: ./bin/start-daily-loop.sh   (reapt + startet neu)"
+  fi
+  # Briefing-Frische: wann lief der Daily-Loop zuletzt durch?
+  ai_news="$PROJECT_DIR/dashboards/ai-news/index.html"
+  if [ -f "$ai_news" ]; then
+    bdate=$(grep -oE 'data-snapshot-date="[0-9-]+"' "$ai_news" | head -1 | sed 's/.*"\(.*\)"/\1/')
+    today=$(date -I)
+    if [ "$bdate" = "$today" ]; then
+      ok "Briefing aktuell: $bdate (heute)"
+    else
+      age_days=$(( ( $(date -d "$today" +%s) - $(date -d "$bdate" +%s) ) / 86400 ))
+      warn "Briefing veraltet: $bdate (${age_days} Tage alt) — Loop läuft nicht durch?"
+    fi
+  fi
   if [ -f "$HOME/.claude/daemon/roster.json" ]; then
     python3 - "$HOME/.claude/daemon/roster.json" <<'PY'
 import json, os, sys
