@@ -2,8 +2,14 @@
   "$schema": "https://example.com/dashboard-archive.schema.json",
   "snapshots": [
     {
-      "date": "2026-06-02",
+      "date": "2026-06-08",
       "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Microsoft baut eigene Modelle, Anthropic und OpenAI filen vertraulich für den IPO, vier Lab-CEOs schreiben an den Kongress",
+      "summary": "Microsoft stellt die MAI-Modellfamilie für Azure AI Foundry vor (MAI-Thinking-1, MAI-Code-1-Flash, MAI-Voice-2) · Anthropic + OpenAI reichen vertraulich IPO-Unterlagen ein (Anthropic ~Okt @ 965 Mrd., ARR >44 Mrd.; OpenAI ~Sept @ ~730 Mrd.) · Vier Lab-CEOs fordern Bio-Screening-Pflicht vom US-Kongress · Anthropic warnt vor rekursiver Selbstverbesserung (80 % Claude-Code) · OpenAI GPT-5.5-Cyber für EU-Behörden · Funding-Welle: Supabase 500M, Flourish 500M (Bezos), Suno 400M · Claude Code v2.1.168"
+    },
+    {
+      "date": "2026-06-02",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-02.html",
       "headline": "Microsoft Build 2026, SymJack und TrustFall erschüttern Coding-Agents, Anthropic auf 965 Milliarden",
       "summary": "Microsoft Build 2026 Day 1 mit Nadella-Keynote · SymJack + TrustFall: 6 Coding-Agents gleichzeitig verwundbar (Adversa AI) · Anthropic Series H 65 Mrd. @ 965 Mrd. Bewertung · EU Art. 5 Tag eins mit BfDI/BNetzA-Beschwerde-Stelle · GitHub Copilot AI Credits ($0.01) seit 1. Juni · LayerX/Exa Vertical-Funding"
     },
