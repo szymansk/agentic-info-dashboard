@@ -2,8 +2,14 @@
   "$schema": "https://example.com/dashboard-archive.schema.json",
   "snapshots": [
     {
-      "date": "2026-06-08",
+      "date": "2026-06-09",
       "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "SpaceX/xAI peilt 1,77-Billionen-IPO an, Googles agentische Ära auf der I/O, Agenten verlassen den Demo-Modus",
+      "summary": "SpaceX/xAI startet die größte Börsengeschichte aller Zeiten: 135 $/Aktie, 1,77 Bio. Bewertung, 75 Mrd. Erlös, Nasdaq-Debüt 12. Juni (Morningstar skeptisch: 780 Mrd.) · Google I/O 2026: Gemini 3.5 Flash + Spark + Omni + Antigravity 2.0 (Agent-Cohort-Desktop) · OpenAI Realtime-Audio/Translation-Modelle + GPT-5.5 GA in Foundry · Anthropic Opus 4.8 zurück auf #1 Coding-Benchmark, Mythos via Glasswing bei 200+ Orgs · OpenAI acqui-hired Hiro Finance · Claude Code v2.1.169"
+    },
+    {
+      "date": "2026-06-08",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-08.html",
       "headline": "Microsoft baut eigene Modelle, Anthropic und OpenAI filen vertraulich für den IPO, vier Lab-CEOs schreiben an den Kongress",
       "summary": "Microsoft stellt die MAI-Modellfamilie für Azure AI Foundry vor (MAI-Thinking-1, MAI-Code-1-Flash, MAI-Voice-2) · Anthropic + OpenAI reichen vertraulich IPO-Unterlagen ein (Anthropic ~Okt @ 965 Mrd., ARR >44 Mrd.; OpenAI ~Sept @ ~730 Mrd.) · Vier Lab-CEOs fordern Bio-Screening-Pflicht vom US-Kongress · Anthropic warnt vor rekursiver Selbstverbesserung (80 % Claude-Code) · OpenAI GPT-5.5-Cyber für EU-Behörden · Funding-Welle: Supabase 500M, Flourish 500M (Bezos), Suno 400M · Claude Code v2.1.168"
     },
