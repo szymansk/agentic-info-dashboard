@@ -2,8 +2,14 @@
   "$schema": "https://example.com/dashboard-archive.schema.json",
   "snapshots": [
     {
-      "date": "2026-06-11",
+      "date": "2026-06-12",
       "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "SpaceX startet an der Nasdaq, Anthropic kontert im Compute-Krieg mit Google und Broadcom",
+      "summary": "SpaceX (SPCX) beginnt den Handel an der Nasdaq — größter IPO der Geschichte (135 $, 75 Mrd. Erlös, ~1,77 Bio.); Gesamt-Nachfrage >250 Mrd., Retail allein >100 Mrd., 3,5–4x überzeichnet · Anthropic erweitert mit Google und Broadcom auf mehrere Gigawatt nächster TPU-Generation ab 2027 (größte Compute-Zusage bisher), getrieben von Run-Rate >30 Mrd. (von ~9 Mrd. Ende 2025), 1000+ Kunden à 1 Mio.+ · Google Gemini 3.5 Pro landet · Claude Code v2.1.174/175: enforceAvailableModels, /model-Picker-Fixes, Fable-5-Credit-Banner, GovCloud-Fix"
+    },
+    {
+      "date": "2026-06-11",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-11.html",
       "headline": "SpaceX bepreist den größten IPO der Geschichte und wird zum Compute-Vermieter — Google zahlt 920 Mio./Monat",
       "summary": "SpaceX bepreist IPO zu 135 $/Aktie (Handelsstart 12. Juni, SPCX), ~1,75–1,77 Bio. Bewertung, 2× überzeichnet (>10 Mrd.), MSCI-Frühaufnahme · Google zahlt SpaceX 920 Mio. $/Monat für ~110.000 NVIDIA-GPUs (Okt 2026–Juni 2029) — paralleler Pakt mit Anthropic: SpaceX wird Compute-Vermieter konkurrierender Labs · OpenAI reicht vertraulichen S-1 ein (10. Juni) + Modelle/Codex via Oracle · Claude Code v2.1.172/173: Sub-Agents spawnen Sub-Agents (5 Ebenen), Fable 5 mit 1M-Kontext default · DeepSeek schnellst-wachsender Business-Software-Anbieter (Ramp)"
     },

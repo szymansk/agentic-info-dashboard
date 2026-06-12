@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-08T05:40:21+00:00",
+  "last_updated": "2026-06-12T05:42:34+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,42 @@
   ],
   "featured": [
     {
-      "video_id": "RwzRm-qCXwA",
-      "title": "OpenAI Investor Innovation Day",
+      "video_id": "bhgYFRZLyKI",
+      "title": "Debug web apps with browser use in Codex",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-06-06T23:50:54+00:00",
-      "url": "https://www.youtube.com/watch?v=RwzRm-qCXwA",
-      "thumbnail": "https://img.youtube.com/vi/RwzRm-qCXwA/mqdefault.jpg",
-      "description": "We brought together a curated group of senior leaders for a hands-on experience focused on how AI is transforming financial services.\n\nFor the latest on Codex ➡️\n\nhttps://lnkd.in/eKvcD4Va",
+      "published": "2026-06-12T00:15:38+00:00",
+      "url": "https://www.youtube.com/watch?v=bhgYFRZLyKI",
+      "thumbnail": "https://img.youtube.com/vi/bhgYFRZLyKI/mqdefault.jpg",
+      "description": "Codex can now use the Chrome DevTools Protocol (CDP) in Browser Use to inspect console logs, runtime errors, local storage, applied styling, network traffic, and performance profiles while working on web applications.\n\nIn this demo, Codex i",
+      "why": ""
+    },
+    {
+      "video_id": "haK1KoQWm18",
+      "title": "Claude Fable 5 - Full 319 page Breakdown",
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "channel_name": "AI Explained",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-10T18:43:12+00:00",
+      "url": "https://www.youtube.com/watch?v=haK1KoQWm18",
+      "thumbnail": "https://img.youtube.com/vi/haK1KoQWm18/mqdefault.jpg",
+      "description": "Fable 5 is out - and it’s good, very good. But beyond the splashy demos, I want to bring you the 20+ nuggets from the 319 page system card, which I read in full, all day, plus benchmarks you may not have noticed. \n\nhttps://assemblyai.com/ai",
+      "why": ""
+    },
+    {
+      "video_id": "Y9Wz2PV404E",
+      "title": "Introducing Claude Fable 5",
+      "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+      "channel_name": "Anthropic",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-06-09T17:00:05+00:00",
+      "url": "https://www.youtube.com/watch?v=Y9Wz2PV404E",
+      "thumbnail": "https://img.youtube.com/vi/Y9Wz2PV404E/mqdefault.jpg",
+      "description": "Claude Fable 5 is our most capable model yet, now generally available. It’s a Mythos-class model with safeguards that let us share it broadly without compromising on safety.\n\nIt can stay with complex tasks and hard problems for days, handli",
       "why": ""
     },
     {
@@ -140,38 +166,252 @@
       "thumbnail": "https://img.youtube.com/vi/1M3Vdl6DRkU/mqdefault.jpg",
       "description": "Don Lincoln is a particle physicist at Fermilab who has spent decades working at the frontiers of high energy physics.\nThank you for listening ❤ Check out our sponsors: https://lexfridman.com/sponsors/ep497-sb\nSee below for timestamps, tran",
       "why": ""
-    },
-    {
-      "video_id": "aJvP3nXWkwM",
-      "title": "New Claude Opus 4.8: 15 Things You May’ve Missed",
-      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
-      "channel_name": "AI Explained",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-05-29T15:07:35+00:00",
-      "url": "https://www.youtube.com/watch?v=aJvP3nXWkwM",
-      "thumbnail": "https://img.youtube.com/vi/aJvP3nXWkwM/mqdefault.jpg",
-      "description": "The ‘best’ generally available AI model just dropped, but there is plenty I bet you missed about what it is, how it performs, and what the release tells us. 15 highlights from the 244 page system card, plus private testing, leader interview",
-      "why": ""
-    },
-    {
-      "video_id": "pm5PBbo6l2k",
-      "title": "Gemini for Science is here. 🧬",
-      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
-      "channel_name": "Google DeepMind",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-05-26T16:17:10+00:00",
-      "url": "https://www.youtube.com/shorts/pm5PBbo6l2k",
-      "thumbnail": "https://img.youtube.com/vi/pm5PBbo6l2k/mqdefault.jpg",
-      "description": "",
-      "why": ""
     }
   ],
   "recent": [
     {
+      "video_id": "bhgYFRZLyKI",
+      "title": "Debug web apps with browser use in Codex",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-06-12T00:15:38+00:00",
+      "url": "https://www.youtube.com/watch?v=bhgYFRZLyKI",
+      "thumbnail": "https://img.youtube.com/vi/bhgYFRZLyKI/mqdefault.jpg",
+      "description": "Codex can now use the Chrome DevTools Protocol (CDP) in Browser Use to inspect console logs, runtime errors, local storage, applied styling, network traffic, and performance profiles while working on web applications.\n\nIn this demo, Codex i"
+    },
+    {
+      "video_id": "K6wxZOqD-HY",
+      "title": "Codex for Creatives: Riff, Design, Ship",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-06-11T21:28:51+00:00",
+      "url": "https://www.youtube.com/watch?v=K6wxZOqD-HY",
+      "thumbnail": "https://img.youtube.com/vi/K6wxZOqD-HY/mqdefault.jpg",
+      "description": "“Codex is an art director or a creative director for me, helping me riff on ideas,” - Chad Nelson, creative specialist at OpenAI.  \n\nDon’t sleep on Codex for creatives. It understands brand books, style guides, fonts, composition and can cr"
+    },
+    {
+      "video_id": "6QoMzZ8FdTA",
+      "title": "Life Near OpenAI's Stargate Project",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-06-11T20:58:53+00:00",
+      "url": "https://www.youtube.com/watch?v=6QoMzZ8FdTA",
+      "thumbnail": "https://img.youtube.com/vi/6QoMzZ8FdTA/mqdefault.jpg",
+      "description": "For more than 40 years, Tom and Lisa Perini have welcomed visitors to their ranch and restaurant in Buffalo Gap, Texas, just outside Abilene.\n\nAs new investment and AI infrastructure arrive in the region, they've seen firsthand how growth c"
+    },
+    {
+      "video_id": "UNJSk90Lz1c",
+      "title": "Customer Ignite Talk: Antonio Bravo Acin (Global Head of AI Transformation, BBVA) & OpenAI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-06-11T19:51:04+00:00",
+      "url": "https://www.youtube.com/watch?v=UNJSk90Lz1c",
+      "thumbnail": "https://img.youtube.com/vi/UNJSk90Lz1c/mqdefault.jpg",
+      "description": ""
+    },
+    {
+      "video_id": "4YkOAYNZVOQ",
+      "title": "Build sales account strategies and outreach with Codex",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-06-11T19:24:28+00:00",
+      "url": "https://www.youtube.com/watch?v=4YkOAYNZVOQ",
+      "thumbnail": "https://img.youtube.com/vi/4YkOAYNZVOQ/mqdefault.jpg",
+      "description": "See how the sales plugin for Codex helps sales teams move from account context to seller-ready work.\n\nIn this demo, Codex prioritizes prospect accounts from Salesforce, creates a prospecting plan, drafts account-specific outreach, and sets "
+    },
+    {
+      "video_id": "1PBRhm5ZnjU",
+      "title": "Anthropic begged the world to stop AI… then shipped this",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-06-11T17:17:48+00:00",
+      "url": "https://www.youtube.com/watch?v=1PBRhm5ZnjU",
+      "thumbnail": "https://img.youtube.com/vi/1PBRhm5ZnjU/mqdefault.jpg",
+      "description": "Render is the easiest place to ship full-stack apps and agents. The first 2,000 people to use the code RENDER-FIRESHIP will get $50 in credits: https://dashboard.render.com/register?utm_source=youtube&utm_medium=organic_video&utm_campaign=2"
+    },
+    {
+      "video_id": "ibnHNoxQOSQ",
+      "title": "I'm making a BITZEE",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-11T13:00:30+00:00",
+      "url": "https://www.youtube.com/shorts/ibnHNoxQOSQ",
+      "thumbnail": "https://img.youtube.com/vi/ibnHNoxQOSQ/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
+    },
+    {
+      "video_id": "B7XvicdImIE",
+      "title": "Build Small with OpenBMB",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-06-11T04:35:56+00:00",
+      "url": "https://www.youtube.com/watch?v=B7XvicdImIE",
+      "thumbnail": "https://img.youtube.com/vi/B7XvicdImIE/mqdefault.jpg",
+      "description": "As part of the Build Small hackathon we are inviting our partners to share their knowledge on how to get the most out of the tiny models available today.\n\nToday we are joined by OpenBMB who will walk us through some of the best real-world u"
+    },
+    {
+      "video_id": "TYIT3nRMXak",
+      "title": "Build Small with Cohere Labs",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-06-11T03:07:26+00:00",
+      "url": "https://www.youtube.com/watch?v=TYIT3nRMXak",
+      "thumbnail": "https://img.youtube.com/vi/TYIT3nRMXak/mqdefault.jpg",
+      "description": "As part of the Build Small hackathon we are inviting our partners to share their knowledge on how to get the most out of the tiny models available today.\n\nToday we are joined by Cohere Labs who will walk us through their Tiny Aya and Transc"
+    },
+    {
+      "video_id": "haK1KoQWm18",
+      "title": "Claude Fable 5 - Full 319 page Breakdown",
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "channel_name": "AI Explained",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-10T18:43:12+00:00",
+      "url": "https://www.youtube.com/watch?v=haK1KoQWm18",
+      "thumbnail": "https://img.youtube.com/vi/haK1KoQWm18/mqdefault.jpg",
+      "description": "Fable 5 is out - and it’s good, very good. But beyond the splashy demos, I want to bring you the 20+ nuggets from the 319 page system card, which I read in full, all day, plus benchmarks you may not have noticed. \n\nhttps://assemblyai.com/ai"
+    },
+    {
+      "video_id": "GclDWye2kgk",
+      "title": "Supercomputer is the next level of AI video generation",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-10T17:10:35+00:00",
+      "url": "https://www.youtube.com/shorts/GclDWye2kgk",
+      "thumbnail": "https://img.youtube.com/vi/GclDWye2kgk/mqdefault.jpg",
+      "description": "Try it yourself! Get started with Higgsfield Supercomputer: https://tinyurl.com/54t8nn8f\n\nFollow me ► x.com/matthewberman\nInstagram ► https://www.instagram.com/matthewberman_ai\n\nMedia/Sponsorship Inquiries ► https://bit.ly/44TC45V"
+    },
+    {
+      "video_id": "8Oz64pGwRk4",
+      "title": "Build Small with Modal",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-06-10T16:48:49+00:00",
+      "url": "https://www.youtube.com/watch?v=8Oz64pGwRk4",
+      "thumbnail": "https://img.youtube.com/vi/8Oz64pGwRk4/mqdefault.jpg",
+      "description": "As part of the Build Small hackathon we are inviting our partners to share their knowledge on how to get the most out of their platform.\n\nToday we are joined by Modal who will walk us through some use-case for Modal's cloud compute as well "
+    },
+    {
+      "video_id": "7L_eTem1SQ4",
+      "title": "What's the perfect encoding? How do you know?",
+      "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
+      "channel_name": "3Blue1Brown",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-06-10T13:26:34+00:00",
+      "url": "https://www.youtube.com/shorts/7L_eTem1SQ4",
+      "thumbnail": "https://img.youtube.com/vi/7L_eTem1SQ4/mqdefault.jpg",
+      "description": "Full video: https://youtu.be/l6DKRf-fAAM"
+    },
+    {
+      "video_id": "Ou-0vjl6FZo",
+      "title": "MYTHOS MYTHOS MYTHOS",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-09T23:02:27+00:00",
+      "url": "https://www.youtube.com/watch?v=Ou-0vjl6FZo",
+      "thumbnail": "https://img.youtube.com/vi/Ou-0vjl6FZo/mqdefault.jpg",
+      "description": "Tell your agents to use this: https://here.now/r/matthewberman\nFluid Sim: https://boreal-fresco-pzqa.here.now/\nRubiks Cube: https://quick-sycam-5veg.here.now/\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links "
+    },
+    {
+      "video_id": "naOUMQt-8pU",
+      "title": "Mythos is officially here.",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-09T21:36:19+00:00",
+      "url": "https://www.youtube.com/shorts/naOUMQt-8pU",
+      "thumbnail": "https://img.youtube.com/vi/naOUMQt-8pU/mqdefault.jpg",
+      "description": "Follow me ► x.com/matthewberman\nInstagram ► https://www.instagram.com/matthewberman_ai\n\nMedia/Sponsorship Inquiries ► https://bit.ly/44TC45V"
+    },
+    {
+      "video_id": "e-4xG1U7M70",
+      "title": "MYTHOS is LIVE!!!!",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-09T19:17:39+00:00",
+      "url": "https://www.youtube.com/watch?v=e-4xG1U7M70",
+      "thumbnail": "https://img.youtube.com/vi/e-4xG1U7M70/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
+    },
+    {
+      "video_id": "0pgCBV8CTZY",
+      "title": "Anthropic is starting to panic…",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-06-09T17:32:30+00:00",
+      "url": "https://www.youtube.com/watch?v=0pgCBV8CTZY",
+      "thumbnail": "https://img.youtube.com/vi/0pgCBV8CTZY/mqdefault.jpg",
+      "description": "Get $30 of Pioneer inference credits for only $5 - https://pioneer.ai/?utm_source=youtube&utm_medium=ext_social&utm_campaign=pioneer_launch&utm_content=FS\n\nAnthropic just proposed something insane - the idea that maybe we should wait a seco"
+    },
+    {
+      "video_id": "Y9Wz2PV404E",
+      "title": "Introducing Claude Fable 5",
+      "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
+      "channel_name": "Anthropic",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-06-09T17:00:05+00:00",
+      "url": "https://www.youtube.com/watch?v=Y9Wz2PV404E",
+      "thumbnail": "https://img.youtube.com/vi/Y9Wz2PV404E/mqdefault.jpg",
+      "description": "Claude Fable 5 is our most capable model yet, now generally available. It’s a Mythos-class model with safeguards that let us share it broadly without compromising on safety.\n\nIt can stay with complex tasks and hard problems for days, handli"
+    },
+    {
+      "video_id": "rjDH39fU0gU",
+      "title": "What Is ONNX? (And Why Transformers.js Uses It)",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-06-09T13:16:00+00:00",
+      "url": "https://www.youtube.com/shorts/rjDH39fU0gU",
+      "thumbnail": "https://img.youtube.com/vi/rjDH39fU0gU/mqdefault.jpg",
+      "description": "ONNX stores the model graph and weights in a portable format. ONNX Runtime decides how to execute them. WebGPU, WASM, or beyond. That separation is what lets Transformers.js run the same model across any device with a single JavaScript API."
+    },
+    {
+      "video_id": "ktl8mNiWqMM",
+      "title": "The Economics of AI Usage and What's Next For SaaS | Benedict Evans on a16z",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-06-08T14:30:24+00:00",
+      "url": "https://www.youtube.com/watch?v=ktl8mNiWqMM",
+      "thumbnail": "https://img.youtube.com/vi/ktl8mNiWqMM/mqdefault.jpg",
+      "description": "Erik Torenberg speaks with tech analyst Benedict Evans about the current state of AI, what has changed over the past year, and which questions remain unanswered.\n\nThe conversation covers coding agents, foundation models, AI infrastructure s"
+    },
+    {
       "video_id": "l6DKRf-fAAM",
-      "title": "Reinventing Entropy | Compression & Intelligence Part 1",
+      "title": "Reinventing Entropy | Compression is Intelligence Part 1",
       "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
       "channel_name": "3Blue1Brown",
       "category": "researcher",
@@ -180,30 +420,6 @@
       "url": "https://www.youtube.com/watch?v=l6DKRf-fAAM",
       "thumbnail": "https://img.youtube.com/vi/l6DKRf-fAAM/mqdefault.jpg",
       "description": "What is the fundamental compressibility of language?\nCheck out our virtual career fair: https://3b1b.co/talent\nSee new projects before they go live: https://3b1b.co/support\n\nAnimation credit:\nManim scenes by Aaron Gostein and Grant Sanderso"
-    },
-    {
-      "video_id": "RwzRm-qCXwA",
-      "title": "OpenAI Investor Innovation Day",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-06-06T23:50:54+00:00",
-      "url": "https://www.youtube.com/watch?v=RwzRm-qCXwA",
-      "thumbnail": "https://img.youtube.com/vi/RwzRm-qCXwA/mqdefault.jpg",
-      "description": "We brought together a curated group of senior leaders for a hands-on experience focused on how AI is transforming financial services.\n\nFor the latest on Codex ➡️\n\nhttps://lnkd.in/eKvcD4Va"
-    },
-    {
-      "video_id": "udS9osDCJKo",
-      "title": "Perplexity Just Built an AI That Does Everything",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-06-06T18:03:35+00:00",
-      "url": "https://www.youtube.com/watch?v=udS9osDCJKo",
-      "thumbnail": "https://img.youtube.com/vi/udS9osDCJKo/mqdefault.jpg",
-      "description": "Check out Perplexity Computer: https://www.perplexity.ai/products/computer \n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfutur"
     },
     {
       "video_id": "82m7YqosdgU",
@@ -218,18 +434,6 @@
       "description": "Check the pinned comment for the link to the full interview. Could AI agents eventually become the \"Games Master\" driving your gaming storylines? We explore the concept of AI assisting players or creating dynamic, non-scripted narratives. D"
     },
     {
-      "video_id": "ny6g0zyTuzY",
-      "title": "$1,300,000 in TOKENS",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-06-05T19:52:13+00:00",
-      "url": "https://www.youtube.com/shorts/ny6g0zyTuzY",
-      "thumbnail": "https://img.youtube.com/vi/ny6g0zyTuzY/mqdefault.jpg",
-      "description": "Follow me ► x.com/matthewberman\nInstagram ► https://www.instagram.com/matthewberman_ai\n\nMedia/Sponsorship Inquiries ► https://bit.ly/44TC45V"
-    },
-    {
       "video_id": "7otgeJXailY",
       "title": "Build Small Hackathon",
       "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
@@ -242,18 +446,6 @@
       "description": "The pace of AI over the last year has been anxiety-inducing. Labs release larger and larger models that do more of the things that make us feel human — writing, drawing, speaking, coding. No wonder more than half of us think the risks of AI"
     },
     {
-      "video_id": "VRvC5smyzso",
-      "title": "Introducing Sites in Codex",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-06-05T17:42:23+00:00",
-      "url": "https://www.youtube.com/watch?v=VRvC5smyzso",
-      "thumbnail": "https://img.youtube.com/vi/VRvC5smyzso/mqdefault.jpg",
-      "description": "Sites in Codex lets anyone on your team turn an idea into a secure application and publish it in minutes. Build internal tools, mini apps, and shareable resources with hosting, authentication, storage, and database support included.\n\nSee ho"
-    },
-    {
       "video_id": "Dkqzqw8rxXI",
       "title": "DeepMind’s New AI Found A Strange New Way To Think",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -264,78 +456,6 @@
       "url": "https://www.youtube.com/watch?v=Dkqzqw8rxXI",
       "thumbnail": "https://img.youtube.com/vi/Dkqzqw8rxXI/mqdefault.jpg",
       "description": "❤️ Check out Weights & Biases and sign up for a free demo here: https://wandb.me/papers\n\n📝 The paper is available here:\nhttps://github.com/google-deepmind/alphaproof-nexus-results\nhttps://arxiv.org/html/2605.22763v1\n\n🙏 We would like to than"
-    },
-    {
-      "video_id": "XzUB8_gj6xM",
-      "title": "It’s starting…",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-06-05T13:59:18+00:00",
-      "url": "https://www.youtube.com/watch?v=XzUB8_gj6xM",
-      "thumbnail": "https://img.youtube.com/vi/XzUB8_gj6xM/mqdefault.jpg",
-      "description": "Tired of choosing between complexity and limitations? Check out DigitalOcean: do.co/forwardfutureai\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: ht"
-    },
-    {
-      "video_id": "xZ5J81Lwyk8",
-      "title": "1Password One Shots with Codex",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-06-05T13:01:28+00:00",
-      "url": "https://www.youtube.com/watch?v=xZ5J81Lwyk8",
-      "thumbnail": "https://img.youtube.com/vi/xZ5J81Lwyk8/mqdefault.jpg",
-      "description": "“With Codex, it’s helped us get to feature launches faster,” Nancy Wang. \n\nThe 1Password team is going from idea to prototype in one shot. 💥 \n\n\"What's been eye opening for our engineers is really that shortening of the life cycle between pl"
-    },
-    {
-      "video_id": "RGh9kL8hVgQ",
-      "title": "It's like AI insurance",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-06-04T21:06:16+00:00",
-      "url": "https://www.youtube.com/shorts/RGh9kL8hVgQ",
-      "thumbnail": "https://img.youtube.com/vi/RGh9kL8hVgQ/mqdefault.jpg",
-      "description": "Follow me ► x.com/matthewberman\nInstagram ► https://www.instagram.com/matthewberman_ai\n\nMedia/Sponsorship Inquiries ► https://bit.ly/44TC45V"
-    },
-    {
-      "video_id": "BdBxQz8e-o8",
-      "title": "Codex is your BFF when things are everything, everywhere, all at once 💫",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-06-04T20:27:50+00:00",
-      "url": "https://www.youtube.com/shorts/BdBxQz8e-o8",
-      "thumbnail": "https://img.youtube.com/vi/BdBxQz8e-o8/mqdefault.jpg",
-      "description": "Zapier is a remote first company, so their team is working across multiple tools like Slack, Google Docs and Coda. For Ryan Fitzgerald, Codex is the one piece that pulls it all together. \n\n➡️ https://lnkd.in/dnxrM282"
-    },
-    {
-      "video_id": "DDnGhZ01PqM",
-      "title": "What Codex Unlocks for Zapier",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-06-04T20:25:18+00:00",
-      "url": "https://www.youtube.com/watch?v=DDnGhZ01PqM",
-      "thumbnail": "https://img.youtube.com/vi/DDnGhZ01PqM/mqdefault.jpg",
-      "description": "Zapier is a remote first company, so their team is working across multiple tools like Slack, Google Docs and Coda. For Ryan Fitzgerald, Codex is the one piece that pulls it all together. \n\nThe headline: Codex is your BFF when things are eve"
-    },
-    {
-      "video_id": "a56T6OQtwEg",
-      "title": "Anthopic did a thing...",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-06-04T19:03:39+00:00",
-      "url": "https://www.youtube.com/watch?v=a56T6OQtwEg",
-      "thumbnail": "https://img.youtube.com/vi/a56T6OQtwEg/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
     },
     {
       "video_id": "kaD54VXxGrI",
@@ -374,18 +494,6 @@
       "description": "Learn more: https://bit.ly/3RtV5Lk\n\nIntroducing Fast & Efficient LLM Inference with vLLM, a short course built in partnership with Red Hat and taught by Cedric Clyburn, Senior Developer Advocate at Red Hat.\n\nServing open-source LLMs efficie"
     },
     {
-      "video_id": "VqyKUuW9V1g",
-      "title": "Train AI Robots Without Writing Code! (Introducing LeLab)",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-06-03T14:30:19+00:00",
-      "url": "https://www.youtube.com/watch?v=VqyKUuW9V1g",
-      "thumbnail": "https://img.youtube.com/vi/VqyKUuW9V1g/mqdefault.jpg",
-      "description": "Welcome to LeLab, the official graphical user interface (GUI) for the LeRobot library!\nLeLab Documentation & Install Command: https://huggingface.co/docs/lerobot/main/en/lelab\n\nIn this video, we show you how to take your AI robotics project"
-    },
-    {
       "video_id": "ypL7kUiw_LM",
       "title": "Claude Opus 4.8: Lying Machine No More?",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -410,18 +518,6 @@
       "description": "Earn your certificate here: https://bit.ly/4ejb47H\n\nIf you’ve never written code before, this course is for you. In less than 30 minutes, you’ll learn to describe an idea in words and let AI transform it into an app for you.\n\nYou’ll build a"
     },
     {
-      "video_id": "vB9pHTZKoGQ",
-      "title": "How to Create an LLM Dataset | FineWeb Overview",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-06-02T16:43:34+00:00",
-      "url": "https://www.youtube.com/watch?v=vB9pHTZKoGQ",
-      "thumbnail": "https://img.youtube.com/vi/vB9pHTZKoGQ/mqdefault.jpg",
-      "description": "A deep dive into how Hugging Face created the FineWeb dataset: starting from Common Crawl snapshots, extracting high-quality text from raw web data, filtering noisy content, deduplicating at web scale, and building FineWeb-Edu with model-as"
-    },
-    {
       "video_id": "MOviZKtFeHM",
       "title": "A Second Nobel Prize for AlphaFold? 🧬🏆 #alphafold #deepmind #nobelprize #science #ai",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -432,18 +528,6 @@
       "url": "https://www.youtube.com/shorts/MOviZKtFeHM",
       "thumbnail": "https://img.youtube.com/vi/MOviZKtFeHM/mqdefault.jpg",
       "description": "Check the pinned comment for the link to the full interview. We're discussing whether a \"second order Nobel\" prize is on the horizon for AI-driven science. With over 3 million researchers already using AlphaFold, the real-world impact is al"
-    },
-    {
-      "video_id": "rHsw8wgqdBA",
-      "title": "What Are Tensors?",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-06-02T06:37:35+00:00",
-      "url": "https://www.youtube.com/shorts/rHsw8wgqdBA",
-      "thumbnail": "https://img.youtube.com/vi/rHsw8wgqdBA/mqdefault.jpg",
-      "description": "Scalars, vectors, matrices.Scalars, vectors, matrices... Tensors are just numbers organized by shape. They're the numerical representation of your input that every ML model operates on.\n#TransformersJS #JavaScript #MachineLearning #AI #WebA"
     },
     {
       "video_id": "TpyS50ifmX4",
@@ -506,18 +590,6 @@
       "description": "David George, General Partner at a16z, and David Clark, CIO at VenCap, discuss how AI is reshaping venture capital and the technology industry itself. They examine why today’s AI companies are scaling faster than any previous generation of "
     },
     {
-      "video_id": "A5K8xCut_ks",
-      "title": "Transformers.js in 30 seconds #MachineLearning #AI #WebAI",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-05-29T13:56:32+00:00",
-      "url": "https://www.youtube.com/shorts/A5K8xCut_ks",
-      "thumbnail": "https://img.youtube.com/vi/A5K8xCut_ks/mqdefault.jpg",
-      "description": "Transformers.js lets you run state-of-the-art machine learning directly from JavaScript. In this 30-second breakdown, we look at how it uses ONNX, onnxruntime, model files, caching, tensors, and pipelines to turn your input into model predi"
-    },
-    {
       "video_id": "SJocPm2E8eQ",
       "title": "Human Readable Code - Computerphile",
       "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
@@ -528,70 +600,10 @@
       "url": "https://www.youtube.com/watch?v=SJocPm2E8eQ",
       "thumbnail": "https://img.youtube.com/vi/SJocPm2E8eQ/mqdefault.jpg",
       "description": "Knuth talked about \"Literate Programming\" over forty years ago, but what does it mean to have code that a developer and a client can agree on? Dr Robert Chatley of Imperial College London demonstrates how it might work. \n\nComputerphile is s"
-    },
-    {
-      "video_id": "oYK_MmZW9XI",
-      "title": "Private Markets, Software Repricing and Capital Allocation | Marc Rowan on a16z",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-05-27T14:00:13+00:00",
-      "url": "https://www.youtube.com/watch?v=oYK_MmZW9XI",
-      "thumbnail": "https://img.youtube.com/vi/oYK_MmZW9XI/mqdefault.jpg",
-      "description": "In 1990, Marc Rowan walked out of Drexel with his belongings in a cardboard box. Within a year, Apollo was managing $6 billion.\n\nDavid Haber speaks with Marc Rowan, Cofounder, CEO, and Chair of Apollo Global Management, about building Apoll"
-    },
-    {
-      "video_id": "qPuzWFvRajk",
-      "title": "10 weird OSS projects you need right now...",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-05-26T17:53:11+00:00",
-      "url": "https://www.youtube.com/watch?v=qPuzWFvRajk",
-      "thumbnail": "https://img.youtube.com/vi/qPuzWFvRajk/mqdefault.jpg",
-      "description": "Get $1,000 in Hyperagent inference credits: https://www.hyperagent.com/fireship \n\nApply to the Founding 500 to get $20k for your project: https://www.hyperagent.com\n\nIn today's video, we'll look at 10 new open source projects that are savin"
-    },
-    {
-      "video_id": "v8bdDQ6SM-Q",
-      "title": "How good is AI memory?",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-05-26T17:23:38+00:00",
-      "url": "https://www.youtube.com/shorts/v8bdDQ6SM-Q",
-      "thumbnail": "https://img.youtube.com/vi/v8bdDQ6SM-Q/mqdefault.jpg",
-      "description": "Humans can keep a few ideas in working memory at once. Modern AI models can process the equivalent of multiple Harry Potter books in a single conversation.\n\nUnderstanding context windows changes how you prompt, write, research, and work wit"
-    },
-    {
-      "video_id": "pm5PBbo6l2k",
-      "title": "Gemini for Science is here. 🧬",
-      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
-      "channel_name": "Google DeepMind",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-05-26T16:17:10+00:00",
-      "url": "https://www.youtube.com/shorts/pm5PBbo6l2k",
-      "thumbnail": "https://img.youtube.com/vi/pm5PBbo6l2k/mqdefault.jpg",
-      "description": ""
-    },
-    {
-      "video_id": "-14t6_yu-7w",
-      "title": "The \"Trick\" that Compilers Use for Long Division - Computerphile",
-      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
-      "channel_name": "Computerphile",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-05-26T13:05:22+00:00",
-      "url": "https://www.youtube.com/watch?v=-14t6_yu-7w",
-      "thumbnail": "https://img.youtube.com/vi/-14t6_yu-7w/mqdefault.jpg",
-      "description": "Long division can be arduous - division in general is something that even computer processors try to avoid with a simple technique. Matt Godbolt demos it and then shows how a simple C program can cause a compiler to employ this trick. \n\nCom"
     }
   ],
   "stats": {
-    "total_videos": 35,
+    "total_videos": 36,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
