@@ -2,8 +2,14 @@
   "$schema": "https://example.com/dashboard-archive.schema.json",
   "snapshots": [
     {
-      "date": "2026-06-12",
+      "date": "2026-06-13",
       "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "SpaceX glückt mit +19 % der größte Börsengang der Geschichte — über 2 Billionen, Musk wird Billionär",
+      "summary": "SpaceX (SPCX) schließt den ersten Handelstag bei 160,95 $, +19 % über dem Ausgabepreis (Eröffnung 150 $); Bewertung über 2 Billionen, größter IPO der Geschichte (75 Mrd. Erlös), Musk wird zum ersten Billionär — die AI-Capex-These besteht ihren ersten öffentlichen Test · Anthropic repreist zum 15. Juni: Agent SDK + claude-p CLI raus aus bezahlten Abos, Pro bekommt 20 $ API-Credit · Google Gemma 4 12B offen auf Hugging Face · Claude Code v2.1.176: availableModels-Enforcement gehärtet, Bedrock-Credential-Caching · Modell-Pipeline: Sonnet 4.8 (Gerücht), Grok 5 (verzögert)"
+    },
+    {
+      "date": "2026-06-12",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-12.html",
       "headline": "SpaceX startet an der Nasdaq, Anthropic kontert im Compute-Krieg mit Google und Broadcom",
       "summary": "SpaceX (SPCX) beginnt den Handel an der Nasdaq — größter IPO der Geschichte (135 $, 75 Mrd. Erlös, ~1,77 Bio.); Gesamt-Nachfrage >250 Mrd., Retail allein >100 Mrd., 3,5–4x überzeichnet · Anthropic erweitert mit Google und Broadcom auf mehrere Gigawatt nächster TPU-Generation ab 2027 (größte Compute-Zusage bisher), getrieben von Run-Rate >30 Mrd. (von ~9 Mrd. Ende 2025), 1000+ Kunden à 1 Mio.+ · Google Gemini 3.5 Pro landet · Claude Code v2.1.174/175: enforceAvailableModels, /model-Picker-Fixes, Fable-5-Credit-Banner, GovCloud-Fix"
     },

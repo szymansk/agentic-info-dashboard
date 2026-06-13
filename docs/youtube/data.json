@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-12T05:42:34+00:00",
+  "last_updated": "2026-06-13T05:42:32+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,16 @@
   ],
   "featured": [
     {
-      "video_id": "bhgYFRZLyKI",
-      "title": "Debug web apps with browser use in Codex",
+      "video_id": "Rlju1Z9e110",
+      "title": "Analyze earnings and update your investment thesis with Codex",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-06-12T00:15:38+00:00",
-      "url": "https://www.youtube.com/watch?v=bhgYFRZLyKI",
-      "thumbnail": "https://img.youtube.com/vi/bhgYFRZLyKI/mqdefault.jpg",
-      "description": "Codex can now use the Chrome DevTools Protocol (CDP) in Browser Use to inspect console logs, runtime errors, local storage, applied styling, network traffic, and performance profiles while working on web applications.\n\nIn this demo, Codex i",
+      "published": "2026-06-12T20:36:47+00:00",
+      "url": "https://www.youtube.com/watch?v=Rlju1Z9e110",
+      "thumbnail": "https://img.youtube.com/vi/Rlju1Z9e110/mqdefault.jpg",
+      "description": "See how the public equity investing plugin for Codex turns a company’s latest quarter into a post-earnings analysis. \n\nUsing connected data from sources like Quartr, Daloopa, and S&P Global, Codex evaluates a company’s growth drivers, guida",
       "why": ""
     },
     {
@@ -153,22 +153,93 @@
       "thumbnail": "https://img.youtube.com/vi/Y9Wz2PV404E/mqdefault.jpg",
       "description": "Claude Fable 5 is our most capable model yet, now generally available. It’s a Mythos-class model with safeguards that let us share it broadly without compromising on safety.\n\nIt can stay with complex tasks and hard problems for days, handli",
       "why": ""
-    },
-    {
-      "video_id": "1M3Vdl6DRkU",
-      "title": "Biggest Mysteries in Physics: Antimatter, Dark Energy & ToE - Don Lincoln | Lex Fridman Podcast #497",
-      "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
-      "channel_name": "Lex Fridman",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-05-29T16:18:31+00:00",
-      "url": "https://www.youtube.com/watch?v=1M3Vdl6DRkU",
-      "thumbnail": "https://img.youtube.com/vi/1M3Vdl6DRkU/mqdefault.jpg",
-      "description": "Don Lincoln is a particle physicist at Fermilab who has spent decades working at the frontiers of high energy physics.\nThank you for listening ❤ Check out our sponsors: https://lexfridman.com/sponsors/ep497-sb\nSee below for timestamps, tran",
-      "why": ""
     }
   ],
   "recent": [
+    {
+      "video_id": "zjFE-dBzP_E",
+      "title": "You NEED to try these open-source AI projects RIGHT NOW",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-12T23:47:25+00:00",
+      "url": "https://www.youtube.com/watch?v=zjFE-dBzP_E",
+      "thumbnail": "https://img.youtube.com/vi/zjFE-dBzP_E/mqdefault.jpg",
+      "description": "Try ElevenAgents by ElevenLabs today https://bit.ly/43LT9jZ\nCode FORWARDFUTUREAI for 33% off!\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://"
+    },
+    {
+      "video_id": "Rlju1Z9e110",
+      "title": "Analyze earnings and update your investment thesis with Codex",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-06-12T20:36:47+00:00",
+      "url": "https://www.youtube.com/watch?v=Rlju1Z9e110",
+      "thumbnail": "https://img.youtube.com/vi/Rlju1Z9e110/mqdefault.jpg",
+      "description": "See how the public equity investing plugin for Codex turns a company’s latest quarter into a post-earnings analysis. \n\nUsing connected data from sources like Quartr, Daloopa, and S&P Global, Codex evaluates a company’s growth drivers, guida"
+    },
+    {
+      "video_id": "sV1B2_sFzU8",
+      "title": "So we're doing loops now",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-12T18:14:58+00:00",
+      "url": "https://www.youtube.com/shorts/sV1B2_sFzU8",
+      "thumbnail": "https://img.youtube.com/vi/sV1B2_sFzU8/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
+    },
+    {
+      "video_id": "sU9-u5p-jA0",
+      "title": "From data to decisions: how LSEG is scaling trusted AI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-06-12T16:24:47+00:00",
+      "url": "https://www.youtube.com/watch?v=sU9-u5p-jA0",
+      "thumbnail": "https://img.youtube.com/vi/sU9-u5p-jA0/mqdefault.jpg",
+      "description": "What happens when one of the world's leading financial markets infrastructure and data providers combines trusted market intelligence with AI?\n\nIn this customer story, LSEG shares how it's using ChatGPT Enterprise and OpenAI APIs to acceler"
+    },
+    {
+      "video_id": "-7etvZSBxlk",
+      "title": "Measuring the entropy of English",
+      "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
+      "channel_name": "3Blue1Brown",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-06-12T13:22:02+00:00",
+      "url": "https://www.youtube.com/shorts/-7etvZSBxlk",
+      "thumbnail": "https://img.youtube.com/vi/-7etvZSBxlk/mqdefault.jpg",
+      "description": "Full video: https://youtu.be/l6DKRf-fAAM"
+    },
+    {
+      "video_id": "-Jm-Bf3g9r8",
+      "title": "How Preply combines AI and human tutors to personalize learning",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-06-12T09:53:26+00:00",
+      "url": "https://www.youtube.com/watch?v=-Jm-Bf3g9r8",
+      "thumbnail": "https://img.youtube.com/vi/-Jm-Bf3g9r8/mqdefault.jpg",
+      "description": "What happens when one of the world's largest language-learning platforms combines human expertise with AI?\n\nIn this customer story, Preply shares how it's using OpenAI to create more personalized learning experiences for learners around the"
+    },
+    {
+      "video_id": "8Oz64pGwRk4",
+      "title": "Build Small with Modal",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-06-12T06:09:06+00:00",
+      "url": "https://www.youtube.com/watch?v=8Oz64pGwRk4",
+      "thumbnail": "https://img.youtube.com/vi/8Oz64pGwRk4/mqdefault.jpg",
+      "description": "As part of the Build Small hackathon we are inviting our partners to share their knowledge on how to get the most out of their platform.\n\nToday we are joined by Modal who will walk us through some use-case for Modal's cloud compute as well "
+    },
     {
       "video_id": "bhgYFRZLyKI",
       "title": "Debug web apps with browser use in Codex",
@@ -192,42 +263,6 @@
       "url": "https://www.youtube.com/watch?v=K6wxZOqD-HY",
       "thumbnail": "https://img.youtube.com/vi/K6wxZOqD-HY/mqdefault.jpg",
       "description": "“Codex is an art director or a creative director for me, helping me riff on ideas,” - Chad Nelson, creative specialist at OpenAI.  \n\nDon’t sleep on Codex for creatives. It understands brand books, style guides, fonts, composition and can cr"
-    },
-    {
-      "video_id": "6QoMzZ8FdTA",
-      "title": "Life Near OpenAI's Stargate Project",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-06-11T20:58:53+00:00",
-      "url": "https://www.youtube.com/watch?v=6QoMzZ8FdTA",
-      "thumbnail": "https://img.youtube.com/vi/6QoMzZ8FdTA/mqdefault.jpg",
-      "description": "For more than 40 years, Tom and Lisa Perini have welcomed visitors to their ranch and restaurant in Buffalo Gap, Texas, just outside Abilene.\n\nAs new investment and AI infrastructure arrive in the region, they've seen firsthand how growth c"
-    },
-    {
-      "video_id": "UNJSk90Lz1c",
-      "title": "Customer Ignite Talk: Antonio Bravo Acin (Global Head of AI Transformation, BBVA) & OpenAI",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-06-11T19:51:04+00:00",
-      "url": "https://www.youtube.com/watch?v=UNJSk90Lz1c",
-      "thumbnail": "https://img.youtube.com/vi/UNJSk90Lz1c/mqdefault.jpg",
-      "description": ""
-    },
-    {
-      "video_id": "4YkOAYNZVOQ",
-      "title": "Build sales account strategies and outreach with Codex",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-06-11T19:24:28+00:00",
-      "url": "https://www.youtube.com/watch?v=4YkOAYNZVOQ",
-      "thumbnail": "https://img.youtube.com/vi/4YkOAYNZVOQ/mqdefault.jpg",
-      "description": "See how the sales plugin for Codex helps sales teams move from account context to seller-ready work.\n\nIn this demo, Codex prioritizes prospect accounts from Salesforce, creates a prospecting plan, drafts account-specific outreach, and sets "
     },
     {
       "video_id": "1PBRhm5ZnjU",
@@ -302,18 +337,6 @@
       "description": "Try it yourself! Get started with Higgsfield Supercomputer: https://tinyurl.com/54t8nn8f\n\nFollow me ► x.com/matthewberman\nInstagram ► https://www.instagram.com/matthewberman_ai\n\nMedia/Sponsorship Inquiries ► https://bit.ly/44TC45V"
     },
     {
-      "video_id": "8Oz64pGwRk4",
-      "title": "Build Small with Modal",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-06-10T16:48:49+00:00",
-      "url": "https://www.youtube.com/watch?v=8Oz64pGwRk4",
-      "thumbnail": "https://img.youtube.com/vi/8Oz64pGwRk4/mqdefault.jpg",
-      "description": "As part of the Build Small hackathon we are inviting our partners to share their knowledge on how to get the most out of their platform.\n\nToday we are joined by Modal who will walk us through some use-case for Modal's cloud compute as well "
-    },
-    {
       "video_id": "7L_eTem1SQ4",
       "title": "What's the perfect encoding? How do you know?",
       "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
@@ -336,30 +359,6 @@
       "url": "https://www.youtube.com/watch?v=Ou-0vjl6FZo",
       "thumbnail": "https://img.youtube.com/vi/Ou-0vjl6FZo/mqdefault.jpg",
       "description": "Tell your agents to use this: https://here.now/r/matthewberman\nFluid Sim: https://boreal-fresco-pzqa.here.now/\nRubiks Cube: https://quick-sycam-5veg.here.now/\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links "
-    },
-    {
-      "video_id": "naOUMQt-8pU",
-      "title": "Mythos is officially here.",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-06-09T21:36:19+00:00",
-      "url": "https://www.youtube.com/shorts/naOUMQt-8pU",
-      "thumbnail": "https://img.youtube.com/vi/naOUMQt-8pU/mqdefault.jpg",
-      "description": "Follow me ► x.com/matthewberman\nInstagram ► https://www.instagram.com/matthewberman_ai\n\nMedia/Sponsorship Inquiries ► https://bit.ly/44TC45V"
-    },
-    {
-      "video_id": "e-4xG1U7M70",
-      "title": "MYTHOS is LIVE!!!!",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-06-09T19:17:39+00:00",
-      "url": "https://www.youtube.com/watch?v=e-4xG1U7M70",
-      "thumbnail": "https://img.youtube.com/vi/e-4xG1U7M70/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
     },
     {
       "video_id": "0pgCBV8CTZY",
@@ -540,70 +539,10 @@
       "url": "https://www.youtube.com/watch?v=TpyS50ifmX4",
       "thumbnail": "https://img.youtube.com/vi/TpyS50ifmX4/mqdefault.jpg",
       "description": "Brad Carson was the Army's General Counsel, served two terms in Congress and was Acting Under Secretary of Defense for Personnel and Readiness. He now heads Americans for Responsible Innovation, the AI-policy advocacy group he co-founded. K"
-    },
-    {
-      "video_id": "JfPWbttemYE",
-      "title": "The forgotten developer who saved JavaScript...",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-05-29T17:06:48+00:00",
-      "url": "https://www.youtube.com/watch?v=JfPWbttemYE",
-      "thumbnail": "https://img.youtube.com/vi/JfPWbttemYE/mqdefault.jpg",
-      "description": "Clerk's new CLI sets up end-to-end auth for your entire app. Try it - https://go.clerk.com/0mR9oMU\n\nJavaScript was terrible... until one man was brave enough to save it.\n\n#coding #programming #javascript \n\nWant more Fireship?\n\n🗞️ Newsletter"
-    },
-    {
-      "video_id": "1M3Vdl6DRkU",
-      "title": "Biggest Mysteries in Physics: Antimatter, Dark Energy & ToE - Don Lincoln | Lex Fridman Podcast #497",
-      "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
-      "channel_name": "Lex Fridman",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-05-29T16:18:31+00:00",
-      "url": "https://www.youtube.com/watch?v=1M3Vdl6DRkU",
-      "thumbnail": "https://img.youtube.com/vi/1M3Vdl6DRkU/mqdefault.jpg",
-      "description": "Don Lincoln is a particle physicist at Fermilab who has spent decades working at the frontiers of high energy physics.\nThank you for listening ❤ Check out our sponsors: https://lexfridman.com/sponsors/ep497-sb\nSee below for timestamps, tran"
-    },
-    {
-      "video_id": "aJvP3nXWkwM",
-      "title": "New Claude Opus 4.8: 15 Things You May’ve Missed",
-      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
-      "channel_name": "AI Explained",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-05-29T15:07:35+00:00",
-      "url": "https://www.youtube.com/watch?v=aJvP3nXWkwM",
-      "thumbnail": "https://img.youtube.com/vi/aJvP3nXWkwM/mqdefault.jpg",
-      "description": "The ‘best’ generally available AI model just dropped, but there is plenty I bet you missed about what it is, how it performs, and what the release tells us. 15 highlights from the 244 page system card, plus private testing, leader interview"
-    },
-    {
-      "video_id": "AiM9mZCmVPY",
-      "title": "The New Rule for Picking AI Winners | The a16z Show",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-05-29T14:29:06+00:00",
-      "url": "https://www.youtube.com/watch?v=AiM9mZCmVPY",
-      "thumbnail": "https://img.youtube.com/vi/AiM9mZCmVPY/mqdefault.jpg",
-      "description": "David George, General Partner at a16z, and David Clark, CIO at VenCap, discuss how AI is reshaping venture capital and the technology industry itself. They examine why today’s AI companies are scaling faster than any previous generation of "
-    },
-    {
-      "video_id": "SJocPm2E8eQ",
-      "title": "Human Readable Code - Computerphile",
-      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
-      "channel_name": "Computerphile",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-05-29T13:30:12+00:00",
-      "url": "https://www.youtube.com/watch?v=SJocPm2E8eQ",
-      "thumbnail": "https://img.youtube.com/vi/SJocPm2E8eQ/mqdefault.jpg",
-      "description": "Knuth talked about \"Literate Programming\" over forty years ago, but what does it mean to have code that a developer and a client can agree on? Dr Robert Chatley of Imperial College London demonstrates how it might work. \n\nComputerphile is s"
     }
   ],
   "stats": {
-    "total_videos": 36,
+    "total_videos": 32,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
