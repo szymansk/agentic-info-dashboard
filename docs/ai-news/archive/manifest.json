@@ -2,8 +2,14 @@
   "$schema": "https://example.com/dashboard-archive.schema.json",
   "snapshots": [
     {
-      "date": "2026-06-13",
+      "date": "2026-06-14",
       "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "USA ziehen Fable 5 und Mythos 5 aus dem Verkehr — und das SpaceX-S-1 zeigt Anthropics 1,25-Mrd.-Compute-Rechnung",
+      "summary": "US-Export-Control-Direktive (12. Juni, Commerce Secretary Lutnick) zwingt Anthropic zur weltweiten Sperrung von Claude Fable 5 und Mythos 5 — drei Tage nach einem viralen Jailbreak; Anthropic widerspricht der Schwere (enger, nicht-universeller Jailbreak) und warnt vor einem Präzedenzfall · SpaceX-S-1 enthüllt: Anthropic zahlt 1,25 Mrd. $/Monat (45 Mrd. total) bis Mai 2029 für ganz Colossus 1 (220.000+ GPUs, 300 MW), 90-Tage-Ausstieg · SPCX (+19 % bei 161 $) per MSCI-Frühaufnahme in der Top-10 von MSCI World/ACWI; xAI 2025: 6,36 Mrd. Verlust bei 3,2 Mrd. Umsatz · Moonshot Kimi K2.7-Code (−30 % Reasoning-Tokens)"
+    },
+    {
+      "date": "2026-06-13",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-13.html",
       "headline": "SpaceX glückt mit +19 % der größte Börsengang der Geschichte — über 2 Billionen, Musk wird Billionär",
       "summary": "SpaceX (SPCX) schließt den ersten Handelstag bei 160,95 $, +19 % über dem Ausgabepreis (Eröffnung 150 $); Bewertung über 2 Billionen, größter IPO der Geschichte (75 Mrd. Erlös), Musk wird zum ersten Billionär — die AI-Capex-These besteht ihren ersten öffentlichen Test · Anthropic repreist zum 15. Juni: Agent SDK + claude-p CLI raus aus bezahlten Abos, Pro bekommt 20 $ API-Credit · Google Gemma 4 12B offen auf Hugging Face · Claude Code v2.1.176: availableModels-Enforcement gehärtet, Bedrock-Credential-Caching · Modell-Pipeline: Sonnet 4.8 (Gerücht), Grok 5 (verzögert)"
     },

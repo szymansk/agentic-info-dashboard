@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-13T05:42:32+00:00",
+  "last_updated": "2026-06-14T05:42:34+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -156,6 +156,30 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "xvfz3gXVYNI",
+      "title": "WTF is going on?!",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-13T20:21:41+00:00",
+      "url": "https://www.youtube.com/watch?v=xvfz3gXVYNI",
+      "thumbnail": "https://img.youtube.com/vi/xvfz3gXVYNI/mqdefault.jpg",
+      "description": "Mythos just got BANNED... Anthropic says it's just a misunderstanding. What's really going on here?\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: ht"
+    },
+    {
+      "video_id": "IADOV8UZO34",
+      "title": "TCP a : Ensuring Your Data Gets There & in the Right Order! - Computerphile",
+      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
+      "channel_name": "Computerphile",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-06-13T13:00:35+00:00",
+      "url": "https://www.youtube.com/watch?v=IADOV8UZO34",
+      "thumbnail": "https://img.youtube.com/vi/IADOV8UZO34/mqdefault.jpg",
+      "description": "Continuing the deep dive down the network stack, Richard begins the story of TCP. Richard G Clegg is based at Queen Mary University London. \n\nNext in the playlist: https://youtu.be/nKVML4YaBqs \n\nRFC793 https://datatracker.ietf.org/doc/html/"
+    },
     {
       "video_id": "zjFE-dBzP_E",
       "title": "You NEED to try these open-source AI projects RIGHT NOW",
@@ -349,18 +373,6 @@
       "description": "Full video: https://youtu.be/l6DKRf-fAAM"
     },
     {
-      "video_id": "Ou-0vjl6FZo",
-      "title": "MYTHOS MYTHOS MYTHOS",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-06-09T23:02:27+00:00",
-      "url": "https://www.youtube.com/watch?v=Ou-0vjl6FZo",
-      "thumbnail": "https://img.youtube.com/vi/Ou-0vjl6FZo/mqdefault.jpg",
-      "description": "Tell your agents to use this: https://here.now/r/matthewberman\nFluid Sim: https://boreal-fresco-pzqa.here.now/\nRubiks Cube: https://quick-sycam-5veg.here.now/\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links "
-    },
-    {
       "video_id": "0pgCBV8CTZY",
       "title": "Anthropic is starting to panic…",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -418,7 +430,7 @@
       "published": "2026-06-07T11:49:51+00:00",
       "url": "https://www.youtube.com/watch?v=l6DKRf-fAAM",
       "thumbnail": "https://img.youtube.com/vi/l6DKRf-fAAM/mqdefault.jpg",
-      "description": "What is the fundamental compressibility of language?\nCheck out our virtual career fair: https://3b1b.co/talent\nSee new projects before they go live: https://3b1b.co/support\n\nAnimation credit:\nManim scenes by Aaron Gostein and Grant Sanderso"
+      "description": "How to study the compressibility of language.\nCheck out our virtual career fair: https://3b1b.co/talent\nSee new projects before they go live: https://3b1b.co/support\n\nAnimation credit:\nManim scenes by Aaron Gostein and Grant Sanderson\nShann"
     },
     {
       "video_id": "82m7YqosdgU",
@@ -527,18 +539,6 @@
       "url": "https://www.youtube.com/shorts/MOviZKtFeHM",
       "thumbnail": "https://img.youtube.com/vi/MOviZKtFeHM/mqdefault.jpg",
       "description": "Check the pinned comment for the link to the full interview. We're discussing whether a \"second order Nobel\" prize is on the horizon for AI-driven science. With over 3 million researchers already using AlphaFold, the real-world impact is al"
-    },
-    {
-      "video_id": "TpyS50ifmX4",
-      "title": "The Ex-Pentagon Chief Sounding the Alarm on AI Weapons — Brad Carson",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-05-31T00:14:55+00:00",
-      "url": "https://www.youtube.com/watch?v=TpyS50ifmX4",
-      "thumbnail": "https://img.youtube.com/vi/TpyS50ifmX4/mqdefault.jpg",
-      "description": "Brad Carson was the Army's General Counsel, served two terms in Congress and was Acting Under Secretary of Defense for Personnel and Readiness. He now heads Americans for Responsible Innovation, the AI-policy advocacy group he co-founded. K"
     }
   ],
   "stats": {
