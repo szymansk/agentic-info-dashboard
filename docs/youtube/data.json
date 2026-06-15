@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-14T05:42:34+00:00",
+  "last_updated": "2026-06-15T05:42:39+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,29 +116,29 @@
   ],
   "featured": [
     {
-      "video_id": "Rlju1Z9e110",
-      "title": "Analyze earnings and update your investment thesis with Codex",
+      "video_id": "NxAxwsu6_Zs",
+      "title": "How Payward Ships Faster with Codex",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-06-12T20:36:47+00:00",
-      "url": "https://www.youtube.com/watch?v=Rlju1Z9e110",
-      "thumbnail": "https://img.youtube.com/vi/Rlju1Z9e110/mqdefault.jpg",
-      "description": "See how the public equity investing plugin for Codex turns a company’s latest quarter into a post-earnings analysis. \n\nUsing connected data from sources like Quartr, Daloopa, and S&P Global, Codex evaluates a company’s growth drivers, guida",
+      "published": "2026-06-14T22:44:45+00:00",
+      "url": "https://www.youtube.com/watch?v=NxAxwsu6_Zs",
+      "thumbnail": "https://img.youtube.com/vi/NxAxwsu6_Zs/mqdefault.jpg",
+      "description": "\"Without Codex, we probably would be six months behind where we are today.\" \n\nKamo Asatryan and his team are building the core infrastructure to power inference across all products at Payward. Speed is the #1 value for his team and Codex ha",
       "why": ""
     },
     {
-      "video_id": "haK1KoQWm18",
-      "title": "Claude Fable 5 - Full 319 page Breakdown",
+      "video_id": "Qj71N0tBzRo",
+      "title": "Claude Fable Blocked - 11 Quiet Details on What’s Next",
       "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
       "channel_name": "AI Explained",
       "category": "news",
       "color": "#e0a857",
-      "published": "2026-06-10T18:43:12+00:00",
-      "url": "https://www.youtube.com/watch?v=haK1KoQWm18",
-      "thumbnail": "https://img.youtube.com/vi/haK1KoQWm18/mqdefault.jpg",
-      "description": "Fable 5 is out - and it’s good, very good. But beyond the splashy demos, I want to bring you the 20+ nuggets from the 319 page system card, which I read in full, all day, plus benchmarks you may not have noticed. \n\nhttps://assemblyai.com/ai",
+      "published": "2026-06-14T14:52:27+00:00",
+      "url": "https://www.youtube.com/watch?v=Qj71N0tBzRo",
+      "thumbnail": "https://img.youtube.com/vi/Qj71N0tBzRo/mqdefault.jpg",
+      "description": "Claude Fable 5 banned, but what’s the bigger story. We go through 11 under-reported details, so you have the context to see what’s coming next for your use of AI. From whether the ban will last, what the possible motives are, what the model",
       "why": ""
     },
     {
@@ -156,6 +156,42 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "NxAxwsu6_Zs",
+      "title": "How Payward Ships Faster with Codex",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-06-14T22:44:45+00:00",
+      "url": "https://www.youtube.com/watch?v=NxAxwsu6_Zs",
+      "thumbnail": "https://img.youtube.com/vi/NxAxwsu6_Zs/mqdefault.jpg",
+      "description": "\"Without Codex, we probably would be six months behind where we are today.\" \n\nKamo Asatryan and his team are building the core infrastructure to power inference across all products at Payward. Speed is the #1 value for his team and Codex ha"
+    },
+    {
+      "video_id": "zJvN8PDX1is",
+      "title": "NVIDIA's New Free Al - A Gift To All Of Us",
+      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+      "channel_name": "Two Minute Papers",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-06-14T15:27:17+00:00",
+      "url": "https://www.youtube.com/watch?v=zJvN8PDX1is",
+      "thumbnail": "https://img.youtube.com/vi/zJvN8PDX1is/mqdefault.jpg",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The Nemotron 3 Ultra paper is available here:\nhttps://research.nvidia.com/labs/nemotron/Nemotron-3-Ultra/\n\nFree Rendering course and source code:\nhttps://"
+    },
+    {
+      "video_id": "Qj71N0tBzRo",
+      "title": "Claude Fable Blocked - 11 Quiet Details on What’s Next",
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "channel_name": "AI Explained",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-14T14:52:27+00:00",
+      "url": "https://www.youtube.com/watch?v=Qj71N0tBzRo",
+      "thumbnail": "https://img.youtube.com/vi/Qj71N0tBzRo/mqdefault.jpg",
+      "description": "Claude Fable 5 banned, but what’s the bigger story. We go through 11 under-reported details, so you have the context to see what’s coming next for your use of AI. From whether the ban will last, what the possible motives are, what the model"
+    },
     {
       "video_id": "xvfz3gXVYNI",
       "title": "WTF is going on?!",
@@ -275,18 +311,6 @@
       "url": "https://www.youtube.com/watch?v=bhgYFRZLyKI",
       "thumbnail": "https://img.youtube.com/vi/bhgYFRZLyKI/mqdefault.jpg",
       "description": "Codex can now use the Chrome DevTools Protocol (CDP) in Browser Use to inspect console logs, runtime errors, local storage, applied styling, network traffic, and performance profiles while working on web applications.\n\nIn this demo, Codex i"
-    },
-    {
-      "video_id": "K6wxZOqD-HY",
-      "title": "Codex for Creatives: Riff, Design, Ship",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-06-11T21:28:51+00:00",
-      "url": "https://www.youtube.com/watch?v=K6wxZOqD-HY",
-      "thumbnail": "https://img.youtube.com/vi/K6wxZOqD-HY/mqdefault.jpg",
-      "description": "“Codex is an art director or a creative director for me, helping me riff on ideas,” - Chad Nelson, creative specialist at OpenAI.  \n\nDon’t sleep on Codex for creatives. It understands brand books, style guides, fonts, composition and can cr"
     },
     {
       "video_id": "1PBRhm5ZnjU",
@@ -527,22 +551,10 @@
       "url": "https://www.youtube.com/watch?v=ff3j4olCUig",
       "thumbnail": "https://img.youtube.com/vi/ff3j4olCUig/mqdefault.jpg",
       "description": "Earn your certificate here: https://bit.ly/4ejb47H\n\nIf you’ve never written code before, this course is for you. In less than 30 minutes, you’ll learn to describe an idea in words and let AI transform it into an app for you.\n\nYou’ll build a"
-    },
-    {
-      "video_id": "MOviZKtFeHM",
-      "title": "A Second Nobel Prize for AlphaFold? 🧬🏆 #alphafold #deepmind #nobelprize #science #ai",
-      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
-      "channel_name": "Two Minute Papers",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-06-02T07:13:59+00:00",
-      "url": "https://www.youtube.com/shorts/MOviZKtFeHM",
-      "thumbnail": "https://img.youtube.com/vi/MOviZKtFeHM/mqdefault.jpg",
-      "description": "Check the pinned comment for the link to the full interview. We're discussing whether a \"second order Nobel\" prize is on the horizon for AI-driven science. With over 3 million researchers already using AlphaFold, the real-world impact is al"
     }
   ],
   "stats": {
-    "total_videos": 32,
+    "total_videos": 33,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],

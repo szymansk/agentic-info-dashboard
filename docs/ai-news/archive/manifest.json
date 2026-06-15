@@ -2,8 +2,14 @@
   "$schema": "https://example.com/dashboard-archive.schema.json",
   "snapshots": [
     {
-      "date": "2026-06-14",
+      "date": "2026-06-15",
       "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Zugang öffnet und schließt sich: Apple bringt Claude aufs iPhone, während der Fable-5-Blackout alle Kunden trifft",
+      "summary": "Apple WWDC: iOS-27-Extensions machen Claude, Gemini, Grok und ChatGPT zu wählbaren iPhone-Assistenten — Claude erstmals First-Class auf dem iPhone; neues Siri läuft auf maßgeschneidertem 1,2-Bio.-Parameter-Gemini; Tim Cooks Abschieds-Keynote (Rücktritt 1. Sept., Nachfolger John Ternus) · Fable-5-/Mythos-5-Blackout weitet sich aus: seit 14. Juni für ALLE Kunden gesperrt (auch US, auch AWS), Anthropic entschuldigt sich, kein Restore-Termin · OpenAI Partner Network (150 Mio. $) · Anthropic-Repricing greift heute (Agent SDK + claude-p raus aus Abos) · GPT-5.5-Preise 1,50/9 $"
+    },
+    {
+      "date": "2026-06-14",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-14.html",
       "headline": "USA ziehen Fable 5 und Mythos 5 aus dem Verkehr — und das SpaceX-S-1 zeigt Anthropics 1,25-Mrd.-Compute-Rechnung",
       "summary": "US-Export-Control-Direktive (12. Juni, Commerce Secretary Lutnick) zwingt Anthropic zur weltweiten Sperrung von Claude Fable 5 und Mythos 5 — drei Tage nach einem viralen Jailbreak; Anthropic widerspricht der Schwere (enger, nicht-universeller Jailbreak) und warnt vor einem Präzedenzfall · SpaceX-S-1 enthüllt: Anthropic zahlt 1,25 Mrd. $/Monat (45 Mrd. total) bis Mai 2029 für ganz Colossus 1 (220.000+ GPUs, 300 MW), 90-Tage-Ausstieg · SPCX (+19 % bei 161 $) per MSCI-Frühaufnahme in der Top-10 von MSCI World/ACWI; xAI 2025: 6,36 Mrd. Verlust bei 3,2 Mrd. Umsatz · Moonshot Kimi K2.7-Code (−30 % Reasoning-Tokens)"
     },
