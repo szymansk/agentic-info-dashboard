@@ -2,8 +2,14 @@
   "$schema": "https://example.com/dashboard-archive.schema.json",
   "snapshots": [
     {
-      "date": "2026-06-15",
+      "date": "2026-06-23",
       "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Der Aderlass bei DeepMind: Nobelpreisträger Jumper geht zu Anthropic, Gemini-Chef Shazeer zu OpenAI",
+      "summary": "Talent-Beben bei Google DeepMind: AlphaFold-Nobelpreisträger John Jumper wechselt nach fast 9 Jahren zu Anthropic (20.6.), Gemini-Co-Lead Noam Shazeer (Transformer-Mitautor, 2024 für 2,7 Mrd. $ von Character.AI zurückgeholt) geht zu OpenAI (18.6.) — beide Marquee-Namen binnen 48 h zur Konkurrenz · G7 Évian (17.6.): Amodei + Hassabis fordern US-geführte AI-Koalition mit strukturiertem Frontier-Zugang und China-ausschließendem Chip-Handel, Kanadas Carney stimmt zu, keine bindenden Zusagen · Fable 5 + Mythos 5 seit 12.6. per US-Export-Control gesperrt — trotz „kommende Tage”-Zusage am 23.6. weiter offline · Agenten reifen: Claude Code v2.1.186 blockt destruktive git/IaC-Befehle im Auto-Mode + claude mcp login; Cognizant koppelt ServiceNow-Agenten via MCP · Fivetran-Index: 60 % investieren, nur 15 % datenbereit"
+    },
+    {
+      "date": "2026-06-15",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-15.html",
       "headline": "Zugang öffnet und schließt sich: Apple bringt Claude aufs iPhone, während der Fable-5-Blackout alle Kunden trifft",
       "summary": "Apple WWDC: iOS-27-Extensions machen Claude, Gemini, Grok und ChatGPT zu wählbaren iPhone-Assistenten — Claude erstmals First-Class auf dem iPhone; neues Siri läuft auf maßgeschneidertem 1,2-Bio.-Parameter-Gemini; Tim Cooks Abschieds-Keynote (Rücktritt 1. Sept., Nachfolger John Ternus) · Fable-5-/Mythos-5-Blackout weitet sich aus: seit 14. Juni für ALLE Kunden gesperrt (auch US, auch AWS), Anthropic entschuldigt sich, kein Restore-Termin · OpenAI Partner Network (150 Mio. $) · Anthropic-Repricing greift heute (Agent SDK + claude-p raus aus Abos) · GPT-5.5-Preise 1,50/9 $"
     },
