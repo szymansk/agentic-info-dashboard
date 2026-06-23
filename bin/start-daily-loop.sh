@@ -13,6 +13,11 @@ SESSION_NAME="${SESSION_NAME:-daily-ai-update}"
 PROJECT_DIR="${PROJECT_DIR:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}"
 PROMPT_FILE="$PROJECT_DIR/DAILY_UPDATE.md"
 CLAUDE_BIN="${CLAUDE_BIN:-$(command -v claude || echo /usr/bin/claude)}"
+# Modell für den Loop fest verdrahten — NICHT vom interaktiven Default in
+# ~/.claude/settings.json abhängig machen. Sonst bricht der unbeaufsichtigte
+# Loop lautlos, wenn der Default auf ein (für den Account) nicht verfügbares
+# Modell zeigt (z.B. claude-fable-5 / Mythos-gated). Überschreibbar per Env.
+CLAUDE_MODEL="${CLAUDE_MODEL:-claude-opus-4-8}"
 ROSTER="$HOME/.claude/daemon/roster.json"
 
 log() { printf "  [start-daily-loop] %s\n" "$*"; }
@@ -123,6 +128,7 @@ log "   cwd:         $PROJECT_DIR"
 # darf. Muss einmalig interaktiv akzeptiert worden sein.
 "$CLAUDE_BIN" --bg \
   --name "$SESSION_NAME" \
+  --model "$CLAUDE_MODEL" \
   --dangerously-skip-permissions \
   "$LOOP_PROMPT" 2>&1 | sed 's/^/    /'
 
