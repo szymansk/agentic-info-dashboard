@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-23T04:09:41+00:00",
+  "last_updated": "2026-06-24T04:01:04+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,33 +116,142 @@
   ],
   "featured": [
     {
-      "video_id": "GhCP2eDrKHk",
-      "title": "Meet the ChatGPT Futures, Class of 2026",
+      "video_id": "mVpCDzoNtxA",
+      "title": "ChatGPT Futures, Class of 2026: The Next Generation of AI Leaders",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-06-22T21:06:32+00:00",
-      "url": "https://www.youtube.com/shorts/GhCP2eDrKHk",
-      "thumbnail": "https://img.youtube.com/vi/GhCP2eDrKHk/mqdefault.jpg",
-      "description": "The next generation is already building the future with AI.\n\nThe ChatGPT Futures Class of 2026 came together in San Francisco to share the ideas they're pursuing, the projects they're building, and the experiences that inspired them to star",
+      "published": "2026-06-23T18:45:29+00:00",
+      "url": "https://www.youtube.com/shorts/mVpCDzoNtxA",
+      "thumbnail": "https://img.youtube.com/vi/mVpCDzoNtxA/mqdefault.jpg",
+      "description": "We asked the ChatGPT Futures Class of 2026 what they hope AI helps people do next.\n\nTheir answers came back to access, education, connection, and possibility: AI that helps close gaps instead of widening them, gives more people the tools to",
       "why": ""
     },
     {
-      "video_id": "Y9Wz2PV404E",
-      "title": "Introducing Claude Fable 5",
-      "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
-      "channel_name": "Anthropic",
+      "video_id": "V04bm-3d6EQ",
+      "title": "When millions of AI agents meet",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_name": "Google DeepMind",
       "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-06-09T17:00:05+00:00",
-      "url": "https://www.youtube.com/watch?v=Y9Wz2PV404E",
-      "thumbnail": "https://img.youtube.com/vi/Y9Wz2PV404E/mqdefault.jpg",
-      "description": "Claude Fable 5 is our most capable model yet, now generally available. It’s a Mythos-class model with safeguards that let us share it broadly without compromising on safety.\n\nIt can stay with complex tasks and hard problems for days, handli",
+      "color": "#6ec38b",
+      "published": "2026-06-23T15:48:06+00:00",
+      "url": "https://www.youtube.com/watch?v=V04bm-3d6EQ",
+      "thumbnail": "https://img.youtube.com/vi/V04bm-3d6EQ/mqdefault.jpg",
+      "description": "The conversation of the moment is focused on one topic: AI agents. Unlike traditional language models that simply respond to a prompt, autonomous agents can execute multi-step plans and perform complex tasks on your behalf. But what happens",
+      "why": ""
+    },
+    {
+      "video_id": "Qj71N0tBzRo",
+      "title": "Claude Fable Blocked - 11 Quiet Details on What’s Next",
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "channel_name": "AI Explained",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-14T14:52:27+00:00",
+      "url": "https://www.youtube.com/watch?v=Qj71N0tBzRo",
+      "thumbnail": "https://img.youtube.com/vi/Qj71N0tBzRo/mqdefault.jpg",
+      "description": "Claude Fable 5 banned, but what’s the bigger story. We go through 11 under-reported details, so you have the context to see what’s coming next for your use of AI. From whether the ban will last, what the possible motives are, what the model",
       "why": ""
     }
   ],
   "recent": [
+    {
+      "video_id": "2lmBj_XQq0I",
+      "title": "You NEED to try these 12 open-source AI projects RIGHT NOW",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-24T00:01:49+00:00",
+      "url": "https://www.youtube.com/watch?v=2lmBj_XQq0I",
+      "thumbnail": "https://img.youtube.com/vi/2lmBj_XQq0I/mqdefault.jpg",
+      "description": "Try Merlin AI for only $5/month with discount code MATT5: https://www.getmerlin.in/pricing\n\nLoop Library: https://signals.forwardfuture.ai/loop-library/\nLoop Skill: https://github.com/Forward-Future/loop-library\n\nShout out to here.now for h"
+    },
+    {
+      "video_id": "mVpCDzoNtxA",
+      "title": "ChatGPT Futures, Class of 2026: The Next Generation of AI Leaders",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-06-23T18:45:29+00:00",
+      "url": "https://www.youtube.com/shorts/mVpCDzoNtxA",
+      "thumbnail": "https://img.youtube.com/vi/mVpCDzoNtxA/mqdefault.jpg",
+      "description": "We asked the ChatGPT Futures Class of 2026 what they hope AI helps people do next.\n\nTheir answers came back to access, education, connection, and possibility: AI that helps close gaps instead of widening them, gives more people the tools to"
+    },
+    {
+      "video_id": "a2i9h2ip-nY",
+      "title": "Midjourney wants to delete 30% of all death...",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-06-23T16:46:50+00:00",
+      "url": "https://www.youtube.com/watch?v=a2i9h2ip-nY",
+      "thumbnail": "https://img.youtube.com/vi/a2i9h2ip-nY/mqdefault.jpg",
+      "description": "Try out Retool's new AI app builder to safely connect your apps to your team's data and APIs - https://fandf.co/4e2lDe2\n\nFounder of Midjourney, David Holz, just announced plans to make a new medical imaging device capable of full body scans"
+    },
+    {
+      "video_id": "V04bm-3d6EQ",
+      "title": "When millions of AI agents meet",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_name": "Google DeepMind",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-06-23T15:48:06+00:00",
+      "url": "https://www.youtube.com/watch?v=V04bm-3d6EQ",
+      "thumbnail": "https://img.youtube.com/vi/V04bm-3d6EQ/mqdefault.jpg",
+      "description": "The conversation of the moment is focused on one topic: AI agents. Unlike traditional language models that simply respond to a prompt, autonomous agents can execute multi-step plans and perform complex tasks on your behalf. But what happens"
+    },
+    {
+      "video_id": "qU5-komJ-GE",
+      "title": "How Omio is building the future of conversational travel",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-06-23T11:30:20+00:00",
+      "url": "https://www.youtube.com/watch?v=qU5-komJ-GE",
+      "thumbnail": "https://img.youtube.com/vi/qU5-komJ-GE/mqdefault.jpg",
+      "description": "What happens when one of the world's leading travel platforms combines real-time transportation data with AI?\n\nIn this customer story, Omio shares how it's using ChatGPT, Codex, and the OpenAI API to reimagine how travelers discover and boo"
+    },
+    {
+      "video_id": "wRcByxXkJCQ",
+      "title": "Welcome to Open Source AI: Run Your Own Models Locally",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-06-23T11:11:12+00:00",
+      "url": "https://www.youtube.com/watch?v=wRcByxXkJCQ",
+      "thumbnail": "https://img.youtube.com/vi/wRcByxXkJCQ/mqdefault.jpg",
+      "description": "A livestream for everyone starting out with open models. We walk through the most robust stack for running AI on your own laptop or server, and answer your questions live.\n\nWhat we cover:\n\nMerve Noyan on llama.cpp: what it is and how it run"
+    },
+    {
+      "video_id": "Xe67WF8Hfu8",
+      "title": "How One API Runs 27 ML Tasks",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-06-23T07:50:42+00:00",
+      "url": "https://www.youtube.com/shorts/Xe67WF8Hfu8",
+      "thumbnail": "https://img.youtube.com/vi/Xe67WF8Hfu8/mqdefault.jpg",
+      "description": "One API. 27 different ML tasks. The secret is a simple input/output contract. The task ID defines what goes in and what comes out. Same pattern, every time.\n\n#TransformersJS #JavaScript #MachineLearning #AI #WebAI #Pipeline"
+    },
+    {
+      "video_id": "e3gBwLWAerw",
+      "title": "He won a Nobel here for AlphaFold. Then he left. - John Jumper",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-06-22T22:43:36+00:00",
+      "url": "https://www.youtube.com/watch?v=e3gBwLWAerw",
+      "thumbnail": "https://img.youtube.com/vi/e3gBwLWAerw/mqdefault.jpg",
+      "description": "This episode is sponsored by Notion. Learn more about Notion's Developer Platform today at https://notion.com/mlst\n\nProtein folding stalled biology for fifty years. A sequence of amino acids dictates a three-dimensional shape, but reading t"
+    },
     {
       "video_id": "GhCP2eDrKHk",
       "title": "Meet the ChatGPT Futures, Class of 2026",
@@ -204,6 +313,18 @@
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The paper is available here:\nhttps://arxiv.org/abs/2602.21548\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possibl"
     },
     {
+      "video_id": "yfafpyhB-8E",
+      "title": "Jake Paul on Going From YouTube to Boxing to Investing | a16z ft. Anti Fund",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-06-22T14:35:28+00:00",
+      "url": "https://www.youtube.com/watch?v=yfafpyhB-8E",
+      "thumbnail": "https://img.youtube.com/vi/yfafpyhB-8E/mqdefault.jpg",
+      "description": "Jake Paul and Geoff Woo join the podcast to announce Anti Fund’s new $100 million growth fund and discuss the evolution of their investment strategy.\n\nThe conversation covers the fund’s portfolio, including investments in companies such as "
+    },
+    {
       "video_id": "FLxFBU-Kodk",
       "title": "Can Robotics Hackathon Change Your Life?",
       "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
@@ -228,30 +349,6 @@
       "description": "After introducing Codex, it grew to more than 10,000 active users and became one of the largest internal community in just a few months.\"\n\nWe chatted with Hiroaki Sato, Head of the AI CoE at NTT DATA who gave us insight into all of the new "
     },
     {
-      "video_id": "YPNOjXTDP9c",
-      "title": "Plan with ChatGPT",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-06-19T21:22:26+00:00",
-      "url": "https://www.youtube.com/watch?v=YPNOjXTDP9c",
-      "thumbnail": "https://img.youtube.com/vi/YPNOjXTDP9c/mqdefault.jpg",
-      "description": ""
-    },
-    {
-      "video_id": "5sDfhQq_g8A",
-      "title": "Score with ChatGPT",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-06-19T21:20:04+00:00",
-      "url": "https://www.youtube.com/watch?v=5sDfhQq_g8A",
-      "thumbnail": "https://img.youtube.com/vi/5sDfhQq_g8A/mqdefault.jpg",
-      "description": ""
-    },
-    {
       "video_id": "F4a8aMLb678",
       "title": "7 INSANE loops you need to try right now",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
@@ -274,6 +371,18 @@
       "url": "https://www.youtube.com/watch?v=Sntj4HmuykI",
       "thumbnail": "https://img.youtube.com/vi/Sntj4HmuykI/mqdefault.jpg",
       "description": "Junie is the #1 coding agent on SWE-Rebench and it'll save you a bunch of tokens - https://jb.gg/Fireship-Junie-GA\n\nUse code: FIRESHIP20 to to get 20 free AI credits\n\nSQLite, the world's most trusted code, just got rewritten in Rust and it "
+    },
+    {
+      "video_id": "XROaLetSxg0",
+      "title": "The Media Game Has Changed",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-06-19T14:40:13+00:00",
+      "url": "https://www.youtube.com/watch?v=XROaLetSxg0",
+      "thumbnail": "https://img.youtube.com/vi/XROaLetSxg0/mqdefault.jpg",
+      "description": "Recorded live at the New Media Summit, Marc Andreessen, Ben Horowitz, Erik Torenberg, and Gaby Goldberg discuss how media, communication, and influence are changing in the internet era.\n\nThe conversation explores the shift from legacy media"
     },
     {
       "video_id": "dUmT0OIGoqE",
@@ -310,6 +419,18 @@
       "url": "https://www.youtube.com/watch?v=ML3q7Ok4hJg",
       "thumbnail": "https://img.youtube.com/vi/ML3q7Ok4hJg/mqdefault.jpg",
       "description": "Coder lets you self-host your coding agents with enterprise-grade security - https://fandf.co/4tZvtU5\n\nThese 10 mind-blowing computer science papers made everything in modern computing possible. In today's video, we'll take a look at how th"
+    },
+    {
+      "video_id": "z4gueKVs6Bo",
+      "title": "Voice for AI Agents and Applications",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-06-17T15:00:38+00:00",
+      "url": "https://www.youtube.com/watch?v=z4gueKVs6Bo",
+      "thumbnail": "https://img.youtube.com/vi/z4gueKVs6Bo/mqdefault.jpg",
+      "description": "Learn more: https://bit.ly/4vPQ3HE\n\nVoice is one of the most natural human interfaces, but adding it to AI applications has historically forced a tradeoff: fast voice-to-voice models that sacrifice reliability, or accurate speech-to-text-to"
     },
     {
       "video_id": "n32qq7Kwzh0",
@@ -372,18 +493,6 @@
       "description": "With the UK planning to follow Australia in a ban on social media for under 16s, we ask how it might work? Dr Mike Pound is an Associate Professor at the University of Nottingham.\n\nComputerphile is supported by Jane Street. Learn more about"
     },
     {
-      "video_id": "-s4KGeAE6iQ",
-      "title": "Quantization: The Size vs Quality Trade-Off",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-06-16T13:23:14+00:00",
-      "url": "https://www.youtube.com/shorts/-s4KGeAE6iQ",
-      "thumbnail": "https://img.youtube.com/vi/-s4KGeAE6iQ/mqdefault.jpg",
-      "description": "Models can shrink down to a fraction of their size and still be useful. That's the power of quantization: Trading a bit of precision for massive gains in speed and size. In Transformers.js, you control that trade-off with a single parameter"
-    },
-    {
       "video_id": "ey_GaPdC9zk",
       "title": "One man just liberated Fable... and now it’s illegal",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -394,18 +503,6 @@
       "url": "https://www.youtube.com/watch?v=ey_GaPdC9zk",
       "thumbnail": "https://img.youtube.com/vi/ey_GaPdC9zk/mqdefault.jpg",
       "description": "Take BlueDot's Future of AI course for free - https://bluedot.org/fireship\n\nJust three days after the release of Claude Fable, the US government stepped in and banned it in the name of national security. But why?\n\n#coding #programming #ai\n\n"
-    },
-    {
-      "video_id": "W53XPj4tAyE",
-      "title": "Mythos BANNED (explained)",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-06-15T18:25:41+00:00",
-      "url": "https://www.youtube.com/shorts/W53XPj4tAyE",
-      "thumbnail": "https://img.youtube.com/vi/W53XPj4tAyE/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
     },
     {
       "video_id": "nKVML4YaBqs",
@@ -432,6 +529,18 @@
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The Nemotron 3 Ultra paper is available here:\nhttps://research.nvidia.com/labs/nemotron/Nemotron-3-Ultra/\n\nFree Rendering course and source code:\nhttps://"
     },
     {
+      "video_id": "Qj71N0tBzRo",
+      "title": "Claude Fable Blocked - 11 Quiet Details on What’s Next",
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "channel_name": "AI Explained",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-14T14:52:27+00:00",
+      "url": "https://www.youtube.com/watch?v=Qj71N0tBzRo",
+      "thumbnail": "https://img.youtube.com/vi/Qj71N0tBzRo/mqdefault.jpg",
+      "description": "Claude Fable 5 banned, but what’s the bigger story. We go through 11 under-reported details, so you have the context to see what’s coming next for your use of AI. From whether the ban will last, what the possible motives are, what the model"
+    },
+    {
       "video_id": "IADOV8UZO34",
       "title": "TCP a : Ensuring Your Data Gets There & in the Right Order! - Computerphile",
       "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
@@ -456,18 +565,6 @@
       "description": "Full video: https://youtu.be/l6DKRf-fAAM"
     },
     {
-      "video_id": "8Oz64pGwRk4",
-      "title": "Build Small with Modal",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-06-12T06:09:06+00:00",
-      "url": "https://www.youtube.com/watch?v=8Oz64pGwRk4",
-      "thumbnail": "https://img.youtube.com/vi/8Oz64pGwRk4/mqdefault.jpg",
-      "description": "As part of the Build Small hackathon we are inviting our partners to share their knowledge on how to get the most out of their platform.\n\nToday we are joined by Modal who will walk us through some use-case for Modal's cloud compute as well "
-    },
-    {
       "video_id": "1PBRhm5ZnjU",
       "title": "Anthropic begged the world to stop AI… then shipped this",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -480,6 +577,18 @@
       "description": "Render is the easiest place to ship full-stack apps and agents. The first 2,000 people to use the code RENDER-FIRESHIP will get $50 in credits: https://dashboard.render.com/register?utm_source=youtube&utm_medium=organic_video&utm_campaign=2"
     },
     {
+      "video_id": "haK1KoQWm18",
+      "title": "Claude Fable 5 - Full 319 page Breakdown",
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "channel_name": "AI Explained",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-10T18:43:12+00:00",
+      "url": "https://www.youtube.com/watch?v=haK1KoQWm18",
+      "thumbnail": "https://img.youtube.com/vi/haK1KoQWm18/mqdefault.jpg",
+      "description": "Fable 5 is out - and it’s good, very good. But beyond the splashy demos, I want to bring you the 20+ nuggets from the 319 page system card, which I read in full, all day, plus benchmarks you may not have noticed. \n\nhttps://assemblyai.com/ai"
+    },
+    {
       "video_id": "7L_eTem1SQ4",
       "title": "What's the perfect encoding? How do you know?",
       "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
@@ -490,44 +599,13 @@
       "url": "https://www.youtube.com/shorts/7L_eTem1SQ4",
       "thumbnail": "https://img.youtube.com/vi/7L_eTem1SQ4/mqdefault.jpg",
       "description": "Full video: https://youtu.be/l6DKRf-fAAM"
-    },
-    {
-      "video_id": "0pgCBV8CTZY",
-      "title": "Anthropic is starting to panic…",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-06-09T17:32:30+00:00",
-      "url": "https://www.youtube.com/watch?v=0pgCBV8CTZY",
-      "thumbnail": "https://img.youtube.com/vi/0pgCBV8CTZY/mqdefault.jpg",
-      "description": "Get $30 of Pioneer inference credits for only $5 - https://pioneer.ai/?utm_source=youtube&utm_medium=ext_social&utm_campaign=pioneer_launch&utm_content=FS\n\nAnthropic just proposed something insane - the idea that maybe we should wait a seco"
-    },
-    {
-      "video_id": "Y9Wz2PV404E",
-      "title": "Introducing Claude Fable 5",
-      "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
-      "channel_name": "Anthropic",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-06-09T17:00:05+00:00",
-      "url": "https://www.youtube.com/watch?v=Y9Wz2PV404E",
-      "thumbnail": "https://img.youtube.com/vi/Y9Wz2PV404E/mqdefault.jpg",
-      "description": "Claude Fable 5 is our most capable model yet, now generally available. It’s a Mythos-class model with safeguards that let us share it broadly without compromising on safety.\n\nIt can stay with complex tasks and hard problems for days, handli"
     }
   ],
   "stats": {
-    "total_videos": 31,
+    "total_videos": 37,
     "total_channels": 16,
-    "successful_channels": 10,
-    "failed_channels": [
-      "AI Explained",
-      "Lex Fridman",
-      "Machine Learning Street Talk",
-      "Google DeepMind",
-      "a16z",
-      "DeepLearningAI"
-    ],
+    "successful_channels": 16,
+    "failed_channels": [],
     "window_days": 14
   }
 }

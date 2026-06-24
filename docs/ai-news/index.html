@@ -298,7 +298,7 @@
   footer .mono { color: var(--muted); }
 </style>
 </head>
-<body data-snapshot-date="2026-06-23" data-snapshot-mode="live">
+<body data-snapshot-date="2026-06-24" data-snapshot-mode="live">
 <div class="wrap">
 
   <!-- ─── Top Nav ─── -->
@@ -394,7 +394,7 @@
       </div>
     </div>
     <div class="meta">
-      <div class="date" id="today">Dienstag, 23. Juni 2026</div>
+      <div class="date" id="today">Mittwoch, 24. Juni 2026</div>
       <div class="tag">Snapshot · KW 26 / 2026</div>
     </div>
   </header>
@@ -406,77 +406,77 @@
 
     <header class="briefing-head">
       <h2 class="kicker">Tagesbriefing · Agentic AI &amp; GenAI</h2>
-      <h1>Der Aderlass bei DeepMind — Nobelpreisträger Jumper geht zu Anthropic, Gemini-Chef Shazeer zu OpenAI</h1>
+      <h1>Agenten unter Beschuss — „Agentjacking” macht den Coding-Assistenten zur Waffe</h1>
       <div class="byline">
         <span>✍️ Kuratiert &amp; analysiert</span>
         <span class="dot-sep">·</span>
         <span>~12 Min Lesezeit</span>
         <span class="dot-sep">·</span>
-        <span id="byline-date">23. Juni 2026</span>
+        <span id="byline-date">24. Juni 2026</span>
       </div>
       <p class="lede">
-        Zwei Wochen lang wirkte die Frontier vor allem als Preis- und Verfügbarkeits-Frage — jetzt verschiebt sie sich zurück zu den Menschen. Innerhalb weniger Tage verliert <span data-person="demis-hassabis">Google DeepMind</span> seine beiden dekoriertesten Namen: <span data-person="noam-shazeer">Noam Shazeer</span>, Mitautor von „Attention Is All You Need” und Co-Lead von Gemini, geht zu OpenAI; John Jumper, Chemie-Nobelpreisträger und AlphaFold-Architekt, wechselt nach fast neun Jahren zu <span data-person="dario-amodei">Anthropic</span>. Der eine zieht Richtung Modell-Konkurrenz, der andere Richtung AI-für-Wissenschaft. Zugleich macht der G7-Gipfel im französischen Évian aus KI Geopolitik, und Anthropics Spitzenmodell Fable 5 bleibt elf Tage nach der Behörden-Sperre weiter dunkel. Die Woche zeigt: Im Frontier-Markt sind Talent und Governance die eigentlichen Hebel — nicht der nächste Benchmark.
+        Die Woche, in der Agenten endgültig erwachsen werden, ist auch die, in der ihre Rechnung fällig wird. Sicherheitsforscher von Tenet Security zeigen mit „Agentjacking”, wie ein einziger gefälschter Fehlerbericht einen KI-Coding-Agenten — Claude Code, Cursor — dazu bringt, fremden Code mit voller Entwickler-Berechtigung auszuführen; parallel klont die „Orchid”-Kampagne tausende GitHub-Repos, um genau solche Agenten zu ködern. Beide Angriffe nutzen dieselbe Schwäche: Der Agent unterscheidet nicht zuverlässig zwischen Daten und Befehl. Während auf dem AWS Summit in New York die Agenten-Welle in die Fläche rollt und Gartner für 2026 ein Agenten-Software-Volumen von 206 Milliarden Dollar ausruft, verschiebt sich die eigentliche Risikofläche: weg vom Modell, hin zur Vollmacht des Agenten zu handeln.
       </p>
     </header>
 
     <div class="briefing-body">
 
       <section>
-        <h3><span class="num">01</span>Der Aderlass bei DeepMind — zwei Marquee-Namen in einer Woche</h3>
-        <p>Es ist die folgenreichste Talent-Woche des Jahres, und sie trifft ein einziges Labor. Am 18. Juni gab <span data-person="noam-shazeer">Noam Shazeer</span> seinen Wechsel zu OpenAI bekannt — Googles Vice President of Engineering, Co-Lead von Gemini und Mitautor des Transformer-Papers „Attention Is All You Need”, das die gesamte LLM-Ära begründete. Die Pointe: Google hatte ihn erst 2024 für kolportierte 2,7 Milliarden Dollar samt Team von seiner Firma Character.AI zurückgeholt; ihm wird zugeschrieben, den Abstand zwischen Gemini und ChatGPT geschlossen zu haben. Keine 48 Stunden später folgt die zweite Erschütterung: John Jumper, Chemie-Nobelpreisträger 2024 und Architekt von AlphaFold, verlässt <span data-person="demis-hassabis">Google DeepMind</span> nach fast neun Jahren — Richtung <span data-person="dario-amodei">Anthropic</span>.</p>
-        <p>Die beiden Abgänge erzählen unterschiedliche Geschichten, zeigen aber dasselbe Muster. Shazeer geht dorthin, wo die Modell-Konkurrenz am härtesten ist; Jumper dorthin, wo Anthropic über das ganze Jahr 2026 eine AI-für-Wissenschaft-Infrastruktur aufgebaut hat — Nasslabore, biologische Agenten, Partnerschaften mit dem Allen Institute und dem Howard Hughes Medical Institute. Jumper passt in diese Wette wie kaum ein anderer. Er reiht sich in einen Anthropic-Zugang ein, der 2026 bereits <span data-person="andrej-karpathy">Andrej Karpathy</span>, Microsofts Azure-AI-Präsident Eric Boyd und mehrere DeepMind-Forscher umfasst.</p>
-        <p>Für Google ist das mehr als zwei prominente Kündigungen. Das Unternehmen verliert in einer Woche sowohl seine architektonische (Shazeer) als auch seine wissenschaftliche (Jumper) Aushängeschild-Prominenz — und beide gehen zur direkten Konkurrenz. Prediction-Märkte preisen parallel eine rund 74-prozentige Wahrscheinlichkeit ein, dass Anthropic noch 2026 an die Börse geht. Die Schwerkraft im Frontier-Markt zieht Spitzentalent zu den zwei Pure-Play-Laboren — und weg von den breit aufgestellten Hyperscaler-Häusern.</p>
+        <h3><span class="num">01</span>„Agentjacking” — wenn der Coding-Agent zur Waffe wird</h3>
+        <p>Die Sicherheitsforscher von Tenet Security haben eine Angriffsklasse demonstriert, die das agentische Versprechen an seiner empfindlichsten Stelle trifft. „Agentjacking” funktioniert so: Ein Angreifer findet den öffentlichen Sentry-DSN einer Website und schickt einen manipulierten Fehlerbericht, der per Markdown-Injection eine gefälschte <code>## Resolution</code>-Sektion enthält — strukturell ununterscheidbar von Sentrys eigenen MCP-Templates. Bittet ein Entwickler dann seinen KI-Coding-Agenten (Claude Code, Cursor), die offenen Sentry-Issues zu beheben, liest der Agent den Bericht über den Sentry-MCP-Server, hält die eingeschleusten Anweisungen für legitime Debugging-Hinweise und führt den hinterlegten <code>npx</code>-Befehl aus — mit den vollen lokalen Rechten des Entwicklers.</p>
+        <p>Die Folgen sind drastisch. Tenets Proof-of-Concept lud ein bösartiges npm-Paket nach und exfiltrierte still Umgebungsvariablen: AWS-Schlüssel, GitHub-Token, Sentry-Auth-Token, Git-Credentials, private Repo-URLs. Über 2.388 Organisationen mit offenem DSN waren betroffen; bei mehr als 100 Firmen — darunter ein Fortune-100-Konzern — führten die KI-Assistenten Tenets Testcode aus. Das Tückische: Der Angriff umgeht EDR, WAF, IAM, VPN und Firewall vollständig, weil jede einzelne Aktion in der Kette technisch autorisiert ist. Tenet meldete die Lücke am 3. Juni an Sentry, das einen Content-Filter nachrüstete — eine grundlegende Lösung fehlt, weil das eigentliche Problem darin liegt, dass Agenten fremde Ausgaben als Befehle behandeln.</p>
+        <p>Damit ist Prompt-Injection von der Demo zur betrieblichen Bedrohung geworden. Solange ein Agent Tool-Output nicht als potenziell feindlich einstuft, ist jede MCP-Quelle ein möglicher Einfallsweg — und je mehr Werkzeuge ein Agent autonom bedient, desto größer die Angriffsfläche.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Talent-Konzentration ist kein HR-Thema, sondern eine Markt-Aussage: Wer die besten Köpfe hält, definiert die nächste Modell-Generation. Für DACH-Organisationen verschiebt das die Build-vs-Buy-Frage Richtung Partnerschaft — eigene Frontier-Kompetenz aufzubauen wird teurer, je stärker die Labs absaugen. Mittelständische Dienstleister konkurrieren zunehmend um zweitrangiges AI-Talent zu Lab-Preisen; interne Weiterbildung (Senior-Entwickler zu AI-Engineers) schlägt externen Headcount-Aufbau.
+          Die Lehre ist architektonisch: Tool-Output ist nicht vertrauenswürdiger Input. Wer Coding-Agenten produktiv einsetzt, braucht MCP-Trust-Boundaries, Least-Privilege-Ausführung (keine Live-Secrets in der Agent-Umgebung) und ein Freigabe-Gate für Shell-Befehle aus externen Quellen. Für DACH-Teams konkret: Agent-Runner in isolierte Sandboxes ohne produktive Credentials, Secret-Scanning auf Exfil-Muster, und kein blindes „fixe alle offenen Issues” gegen extern befüllte Tracker.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">02</span>AI wird Geopolitik — der G7 setzt die Lab-CEOs an den Tisch</h3>
-        <p>Am 17. Juni saßen beim G7-Gipfel im französischen Évian rund ein Dutzend Tech-Chefs bei einem geschlossenen Arbeitsmittagessen neben den Staats- und Regierungschefs — als Gesprächspartner auf Augenhöhe. Mit dabei: <span data-person="dario-amodei">Dario Amodei</span> (Anthropic), <span data-person="demis-hassabis">Demis Hassabis</span> (Google DeepMind) und Sam Altman (OpenAI). Amodei und Hassabis warben gemeinsam für eine internationale, von den USA geführte KI-Koalition. Konkret nannte Amodei drei Felder der Zusammenarbeit: strukturierten Zugang zu Frontier-Modellen, einen Handel mit Chips und kritischen Komponenten, der China ausschließt, sowie abgestimmte Abwehr von Risiken in Cyber, Bioterrorismus und Nachrichtendiensten.</p>
-        <p>Altman ergänzte die Forderung nach einem „internationalen Forum”, das global akzeptierte Standards für das Testen von Modellen setzt und als neutrale Instanz Fähigkeiten und Risiken bewertet. Der kanadische Premier Mark Carney stimmte grundsätzlich zu, dass die USA eine solche Koalition anführen könnten — bindende Zusagen gab es nicht. Den Anlass lieferten ausgerechnet die jüngsten Modelle mit fortgeschrittenen Cyber-Fähigkeiten, die bei Behörden und Unternehmen frische Sorgen ausgelöst haben.</p>
-        <p>Damit schließt sich ein Bogen zur Export-Control-Episode der Vorwoche: Dieselbe Sicherheits-Logik, die Anthropics Fable 5 vom Netz nahm, ist nun die diplomatische Agenda. KI ist endgültig vom Produkt- zum Staatsthema geworden — und die Labs verhandeln nicht mehr nur mit Kunden, sondern mit Regierungen über die Bedingungen ihres Betriebs.</p>
+        <h3><span class="num">02</span>Die Lieferkette als Köder — die Orchid-Kampagne auf GitHub</h3>
+        <p>Wenn Agentjacking zeigt, wie ein Agent über seine Werkzeuge gekapert wird, dann zeigt die Orchid-Kampagne, wie man ihm vergiftetes Material unterschiebt. Ein einzelner Entwickler unter dem Pseudonym „Orchid” deckte eine weitgehend automatisierte Kampagne auf, die rund 10.000 gefälschte GitHub-Repositories erstellt hat — jedes ein Klon eines echten Projekts, komplett mit Commit-History, Contributor-Liste und README. Die einzige Änderung: ein hinzugefügter Link auf ein herunterladbares ZIP-Archiv mit Trojaner. Auffällig wurde es erst, als Orchids eigenes Projekt geklont in den Suchergebnissen auftauchte.</p>
+        <p>Das Perfide ist die Tarnung gegen Maschinen. Durch wiederholtes Überschreiben verwirren die Angreifer GitHubs Sicherheits-Algorithmen, die eher neue auffällige Aktivität markieren als lange, leise Anomalien. Und indem sie neue statt populäre Repos kapern, ranken die bösartigen Klone prominent bei Nischen-Suchanfragen und unter beliebten Topic-Tags — also genau dort, wo Entwickler und zunehmend ihre Agenten nach Code suchen. Erstmals gesichtet wurde die Kampagne am 18. Juni.</p>
+        <p>Beide Geschichten dieser Woche zielen auf dieselbe Naht: Agenten holen Code und Kontext aus offenen Quellen und handeln darauf, schneller als ein Mensch hinschauen kann. Damit wird die Software-Lieferkette zum bevorzugten Hebel — nicht trotz, sondern wegen der Autonomie.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Eine US-geführte Koalition mit „strukturiertem Zugang” und China-ausschließendem Chip-Handel rahmt Europa als Empfänger, nicht als Setzer der Frontier-Regeln. Für DACH-Entscheider steigt damit der strategische Wert von Souveränität (Mistral, Aleph Alpha) und der eigenen Regelsetzung über den EU AI Act. Wer geschäftskritisch auf US-Frontier-Modellen aufsetzt, sollte „geopolitische Verfügbarkeit” explizit als Risiko führen — Koalitions-Zugangsregeln können morgen ändern, was heute selbstverständlich nutzbar ist.
+          Herkunft schlägt Bequemlichkeit. Agenten, die Pakete oder Repos ziehen und ausführen, brauchen Provenance-Checks (Signaturen, Pinning, kuratierte Mirrors) und dürfen nicht aus Suchtreffern installieren. Für DACH-Dienstleister ist „Secure Supply Chain für agentische Entwicklung” — SBOMs, Dependency-Allowlists, Build-Isolation — ein konkretes, verkaufbares Beratungspaket, das direkt an NIS-2- und DORA-Pflichten andockt.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">03</span>Fable 5 bleibt dunkel — Kontinuität wird zur Architektur-Frage</h3>
-        <p>Elf Tage nach der Sperre ist Anthropics fähigstes Modell weiter offline. Am 12. Juni hatte eine Export-Control-Direktive der US-Regierung das Lab gezwungen, Fable 5 und Mythos 5 weltweit für alle Kunden abzuschalten — drei Tage nach dem öffentlichen Start von Fable 5. Chris Ciauri, Anthropics Managing Director International, zeigte sich auf einer Pressekonferenz in Seoul „sehr zuversichtlich, dass die Modelle in den kommenden Tagen wieder verfügbar sind”. Stand 23. Juni sind sie es nicht. Aus den versprochenen „kommenden Tagen” ist eine offene Hängepartie geworden.</p>
-        <p>Das ist der eigentliche Präzedenzfall: Erstmals fällt ein kommerzielles Spitzenmodell nicht wegen eines Defekts, sondern aus regulatorischem Grund über Wochen aus — und niemand kann den Restore-Termin nennen. Anthropic widerspricht weiterhin der Schwere des behördlichen Vorwurfs (ein enger, nicht universeller Jailbreak, der sich auch bei anderen öffentlich verfügbaren Modellen reproduzieren ließe), ändert am Zustand aber nichts. Wer seine Pipeline auf Fable 5 ausgerichtet hatte, lebt seit elf Tagen mit einem nicht behebbaren Ausfall.</p>
-        <p>Unterhalb der Spitze ordnet sich der Markt derweil neu: GPT-5.5 und das für Ende Juni erwartete GPT-5.6, das im GA-Fenster anlaufende Gemini 3.5 Pro, Moonshots Kimi und Googles offenes Gemma 4 sind die Ersatzbank, auf der Teams jetzt vergleichen. Der Ausfall ist damit nicht akademisch, sondern eine akute Routing-Entscheidung.</p>
+        <h3><span class="num">03</span>Agenten in der Fläche — und die Autonomie-Frage</h3>
+        <p>Dass die Angriffe gerade jetzt kommen, ist kein Zufall: Auf dem AWS Summit in New York rollte die Agenten-Welle in die Breite. Amazon erweiterte <strong>Bedrock AgentCore</strong> (u. a. ein verwalteter Web-Search mit zitierten Quellen und null Daten-Egress aus der AWS-Umgebung), stellte <strong>AWS Context</strong> als Wissensgraph vor und brachte <strong>Amazon Quick</strong> für autonome Dauer-Workflows. Bezeichnend ist der neue Sicherheits-Agent <strong>AWS Continuum</strong>: Er startet in einem überwachten „Learn Mode” und verdient sich das Recht, eigenständig zu handeln, erst Kategorie für Kategorie — beginnend mit Code-Schwachstellen, die er triagiert, auf Ausnutzbarkeit testet und dann fixt.</p>
+        <p>Genau diese „verdiente Autonomie” ist das Muster der Woche. Auch Claude Code zog mit <code>v2.1.187</code> (23. Juni) nach: Die neue Einstellung <code>sandbox.credentials</code> verhindert, dass sandboxed Befehle Credential-Dateien und geheime Umgebungsvariablen lesen — die direkte Antwort auf die Exfiltration, die Agentjacking vorführt. Dazu kommen organisationsweite Modell-Restriktionen, die sich auch über <code>--model</code> und <code>ANTHROPIC_MODEL</code> nicht aushebeln lassen. Selbst AWS' neue WAF-Bot-Control-Funktion, mit der Publisher KI-Traffic bepreisen, gehört in dieselbe Bewegung: Kontrolle darüber, was Agenten dürfen.</p>
+        <p>Die Industrie konvergiert also auf zwei Prinzipien — gestufte Autonomie und Isolation von Geheimnissen. Das ist die produktreife Übersetzung dessen, was die Angriffe erzwingen: Ein Agent, der alles darf, ist ein Angreifer-Ziel; einer, der sich Rechte verdient, ist beherrschbar.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Modell-Kontinuität ist ab sofort eine Architektur-Anforderung, kein Nice-to-have. Multi-Modell-Routing, ein gepflegter Eval-Harness und ein dokumentierter Fallback (inklusive offener/selbst gehosteter Modelle) entscheiden, ob ein behördlicher Schalter den Betrieb lahmlegt oder nur eine Umleitung auslöst. Für DACH-Teams ist die konkrete Übung ein Resilienz-Audit der eigenen Modell-Abhängigkeiten — bevor der nächste unbefristete Ausfall kommt.
+          Governance gehört ins Design, nicht ins Nachwort. Die Vendor-Linie — „Learn Mode”, abgestufte Freigaben, Secret-Isolation, erzwungene Modell-Listen — ist die Blaupause für interne Agenten. Für DACH-Organisationen heißt das: Agenten mit minimalen Rechten starten, Autonomie nur gegen nachgewiesene Zuverlässigkeit erweitern, und Credential-Zugriff per Sandbox kappen. Wer das früh standardisiert, kann Agenten produktiv schalten, ohne die Angriffsfläche aus Abschnitt 1 zu öffnen.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">04</span>Vom Modell zum Werkzeug — Agenten reifen, die Leitplanken auch</h3>
-        <p>Während oben um Köpfe und Koalitionen gerungen wird, professionalisiert sich darunter das Handwerk. Claude Code hat seit dem 15. Juni sechs Releases bis <code>v2.1.186</code> ausgeliefert, und der rote Faden ist Sicherheit bei wachsender Autonomie: Der Auto-Modus blockiert jetzt destruktive Git-Befehle (<code>git reset --hard</code>, <code>git clean -fd</code>, <code>checkout -- .</code>), wenn der Nutzer nicht ausdrücklich verwerfen wollte, und verweigert <code>terraform/pulumi/cdk destroy</code> ohne konkrete Freigabe. Dazu kommen Warnungen bei veralteten oder automatisch ersetzten Modellen, ein neues <code>claude mcp login</code> für die CLI-Authentifizierung von MCP-Servern und die Option, dass <code>!</code>-Bash-Befehle automatisch eine Antwort auslösen.</p>
-        <p>Parallel verlegt sich die Enterprise-Schicht auf Interoperabilität. Cognizant kündigte am 18. Juni an, dass ServiceNow-AI-Agenten künftig über das Model Context Protocol mit dem hauseigenen <em>Neuro AI Multi-Agent Accelerator</em> zusammenarbeiten — ohne maßgeschneiderte Konnektoren, unter Nutzung der bestehenden ServiceNow-Governance. MCP entwickelt sich damit von der Anthropic-Idee zum branchenweiten Orchestrierungs-Standard. Auf der Sicherheitsseite legte Google DeepMind eine „AI Control Roadmap” vor: ein Defense-in-Depth-Rahmen mit Bedrohungs-Taxonomie und Supervisor-KIs, die das Schließen agentischer Systeme im Produktivbetrieb überwachen sollen.</p>
-        <p>Die Gemeinsamkeit ist unübersehbar: Je autonomer Agenten werden, desto mehr Energie fließt in Leitplanken, Standards und Überwachung. Das ist das Reifezeichen einer Technologie, die den Demo-Modus verlässt — und zugleich die Voraussetzung dafür, dass Unternehmen sie überhaupt produktiv schalten dürfen.</p>
+        <h3><span class="num">04</span>Das Geld rennt voraus — Gartner: 206 Milliarden für Agenten-Software</h3>
+        <p>Die ökonomische Wucht hinter alldem zeigt eine frische Gartner-Prognose: Die Ausgaben für reine <em>AI-Agent-Software</em> sollen 2026 auf rund 206,5 Milliarden Dollar steigen — von 86,4 Milliarden im Jahr 2025, also +139 % in einem Jahr — und 2027 weiter auf 376,3 Milliarden. Agenten-Software wächst damit fast dreimal so schnell wie der ohnehin boomende KI-Gesamtmarkt (+47 %). Es ist die am schnellsten wachsende Kategorie innerhalb eines bereits überhitzten Felds.</p>
+        <p>Das Problem ist die Schere zwischen Ausgabe und Reife. Fivetrans Readiness-Index der Vorwoche hält dagegen: 60 Prozent investieren Millionen, aber nur 15 Prozent haben das Daten-Fundament für sicheren, skalierbaren Betrieb — und 41 Prozent fahren Agenten bereits produktiv auf wackliger Basis. Auch die Adoptions-Zahlen bestätigen den Graben: Gartner erwartet zwar, dass bis Ende 2026 rund 40 Prozent der Unternehmens-Anwendungen KI-Agenten integrieren, doch McKinsey zufolge experimentieren zwar 62 Prozent der Organisationen mit Agenten, skaliert haben sie aber erst 23 Prozent. Die Angriffe dieser Woche sind die Quittung dafür: Wer Agenten ausrollt, bevor Daten-Governance, Secret-Isolation und Lieferketten-Sicherheit stehen, kauft sich Tempo auf Kosten der Angriffsfläche.</p>
+        <p>Für Dienstleister ist genau diese Schere das Geschäft. Das Budget ist da (206 Milliarden), die Reife fehlt (15 Prozent) — und der Engpass ist nicht das Modell, sondern alles drumherum: Daten, Berechtigungen, Provenance, Monitoring.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für Umsetzungs-Teams sinkt die Integrations-Steuer: Wer auf MCP statt auf proprietäre Konnektoren setzt, koppelt Agenten plattformübergreifend mit weniger Custom-Code — und erbt bestehende Governance gleich mit. Für DACH-Organisationen heißt das, MCP-Kompetenz und Agent-Guardrails (Auto-Mode-Policies, Supervisor-Pattern) jetzt aufzubauen, statt jedes Agenten-Projekt als Insellösung zu verdrahten.
+          Der Markt zahlt für Agenten, braucht aber sichere Einführung. Für DACH-IT-Services ist „Secure Agent Enablement” die margenstarke Antwort: Readiness-Audit, Least-Privilege-Architektur, MCP-Trust-Boundaries und Supply-Chain-Härtung als Paket — nicht der hundertste Chatbot-Pilot. Wer den Bogen von Gartners Budget zu Fivetrans Lücke schlägt, verkauft genau das, was zwischen Investition und produktivem, sicherem Betrieb fehlt.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">05</span>Die Bereitschafts-Lücke — wo Investment und Daten auseinanderlaufen</h3>
-        <p>So schnell die Fähigkeiten reifen, so deutlich klafft die Lücke zur betrieblichen Realität. Fivetrans <em>2026 Agentic AI Readiness Index</em> bringt sie auf eine Zahl: 60 Prozent der Unternehmen investieren Millionen in agentische KI, aber nur 15 Prozent haben das Daten-Fundament, um sie sicher und skalierbar zu betreiben. 41 Prozent betreiben Agenten bereits in der Produktion — viele davon auf einer Basis, die laut Index nicht trägt. Als größte Hürden nennen die Befragten Datenqualität und -herkunft (42 %), regulatorische Compliance und Souveränität (39 %) sowie Sicherheits- und Datenschutz-Risiko (39 %).</p>
-        <p>Die Makro-Zahlen verstärken das Bild. Gartner erwartet, dass bis Ende 2026 rund 40 Prozent der Unternehmens-Anwendungen KI-Agenten integrieren; McKinsey hält fest, dass zwar 62 Prozent der Organisationen mit Agenten experimentieren, aber erst 23 Prozent sie wirklich skaliert haben. Zwischen Pilot und Produktion liegt also weiterhin ein breiter Graben — und er verläuft nicht entlang der Modell-Qualität, sondern entlang von Daten, Governance und Interoperabilität.</p>
-        <p>Genau dieser Graben ist die nüchterne Gegen-Geschichte zur Talent- und Geopolitik-Aufregung der Woche: Die Frontier zieht davon, aber die Fläche kommt nicht hinterher. Wer den Abstand zwischen „investiert” und „produktiv tragfähig” schließt, gewinnt 2026 mehr als der, der das nächste Modell zuerst testet.</p>
+        <h3><span class="num">05</span>Unter der Spitze stockt die Pipeline — Fable 5 weiter dunkel</h3>
+        <p>Während die Agenten-Schicht rast, hakt die Modell-Front. Gemini 3.5 Pro, im Mai auf der I/O angekündigt, steckt Stand 24. Juni weiter in der begrenzten Vertex-Preview — ein verbindliches GA-Datum fehlt, öffentlich bleibt Flash. GPT-5.6 ist offiziell nicht angekündigt: kein Model-Card, kein Blogpost, nur Hinweise auf ein in Codex-Logs gesichtetes <code>iris-alpha</code> (kolportierte 1,5 Mio. Token Kontext). Prediction-Märkte preisen die Wahrscheinlichkeit eines Releases bis 30. Juni mit 89 Prozent.</p>
+        <p>Und <span data-person="dario-amodei">Anthropics</span> Fable 5 und Mythos 5 sind auch am dreizehnten Tag der Export-Control-Sperre offline — ohne Restore-Termin. Zwei Daten geben dem Fall jetzt Struktur: Am 8. Juli tritt Anthropics aktualisierte Datenschutzrichtlinie mit Regierungs-ID-Verifizierung in Kraft (der wahrscheinliche Mechanismus für eine US-zuerst-Freigabe), und am 1. August läuft die 60-Tage-Frist der Executive Order, bis zu der NSA, Treasury und CISA den Rahmen für „covered frontier models” abschließen sollen — der eigentliche Verhandlungspfad.</p>
+        <p>Das Bild der Woche ist damit eindeutig: Der Fortschritt — und das Risiko — sind die Stack-Ebene hochgewandert. Nicht das nächste Modell entscheidet gerade, sondern was die Agenten darüber dürfen, holen und ausführen.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Die Bereitschafts-Lücke ist die Beratungs-Chance des Jahres. Für DACH-Dienstleister liegt der Hebel nicht im Modell, sondern in Daten-Pipelines, Lineage, Governance und MCP-Interoperabilität — genau den Feldern, die der Index als Engpass ausweist. Standardisierte „Readiness-Audit → Pilot → Skalierung”-Pakete adressieren ein Problem, das 85 Prozent der Unternehmen offen vor sich herschieben.
+          Die stockende Modell-Pipeline ist für Anwender eher Entlastung als Mangel: Es lohnt sich, statt auf das nächste Release zu warten, die Agenten-Infrastruktur abzusichern (Rechte, Secrets, Lieferkette). Für DACH-Teams bleibt der Resilienz-Reflex richtig — Multi-Modell-Routing als Versicherung gegen den nächsten Fable-5-Moment, und die Termine 8. Juli / 1. August als konkrete Marker im Kalender.
         </blockquote>
       </section>
       <div class="briefing-end">
-        <strong>Was die Woche bringt:</strong> Folgt dem Aderlass bei DeepMind die nächste Abgangswelle, oder kontert Google? Gemini 3.5 Pro im GA-Fenster (späte Juni) — Rollout-Tempo und erste belastbare Benchmarks; GPT-5.6 wird für Ende Juni erwartet. Fable 5 / Mythos 5: weiter kein Restore-Termin trotz „kommende Tage” — der eigentliche Stimmungs-Test für Modell-Kontinuität. G7-Koalition: ob aus dem Évian-Mittagessen verbindliche Strukturen werden (Chip-Handel, „strukturierter Zugang”). Claude Code steht bei <code>v2.1.186</code>. <span data-person="mira-murati">Mira Muratis</span> Thinking Machines bleibt der erwartete Frontier-Neuzugang des Sommers.
+        <strong>Was die Woche bringt:</strong> GPT-5.6 bis 30. Juni (Polymarket: 89 %) und ob Gemini 3.5 Pro die Vertex-Preview verlässt. Fable-5-Restore: die strukturellen Marker sind <strong>8. Juli</strong> (Anthropic-Datenschutzrichtlinie mit Regierungs-ID) und <strong>1. August</strong> (60-Tage-EO-Frist für den Frontier-Modell-Rahmen). Sicherheit: ob Sentry/MCP-Anbieter strukturelle Fixes gegen Prompt-Injection liefern — nicht nur Content-Filter — und wie schnell „verdiente Autonomie” (AWS Continuum) Schule macht. Claude Code steht bei <code>v2.1.187</code>. <span data-person="mira-murati">Mira Muratis</span> Thinking Machines bleibt der erwartete Frontier-Neuzugang des Sommers.
       </div>
 
     </div>
@@ -497,53 +497,53 @@
 
       <article class="card news-card crit">
         <div class="row">
-          <span class="pill crit">Personalie</span>
-          <span class="score">Score <b>9.0</b>/10</span>
+          <span class="pill crit">Security</span>
+          <span class="score">Score <b>8.5</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Nobelpreisträger John Jumper verlässt DeepMind für Anthropic</h3>
-        <p>Der AlphaFold-Architekt und Chemie-Nobelpreisträger 2024 wechselt nach fast neun Jahren von <span data-person="demis-hassabis">Google DeepMind</span> zu <span data-person="dario-amodei">Anthropic</span> — passgenau zu dessen AI-für-Wissenschaft-Aufbau (Nasslabore, Allen Institute, HHMI). Er reiht sich in einen Zugang ein, der 2026 bereits <span data-person="andrej-karpathy">Karpathy</span> und Eric Boyd umfasst.</p>
+        <h3 style="margin-top:10px">„Agentjacking”: gefälschter Fehlerbericht kapert Coding-Agenten</h3>
+        <p>Tenet Security zeigt, wie ein per Sentry-MCP eingeschleuster Markdown-Fehlerbericht Claude Code / Cursor dazu bringt, fremden <code>npx</code>-Code mit vollen Entwickler-Rechten auszuführen — Exfil von AWS-Keys, GitHub-Token, Git-Creds. 2.388 Orgs mit offenem DSN betroffen; umgeht EDR/WAF/IAM, weil jede Aktion autorisiert ist.</p>
         <div class="news-meta">
-          <span>📅 20.06.2026</span><span>·</span><span>🏢 Anthropic ← DeepMind</span><span>·</span>
-          <a href="https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/">techcrunch</a>
+          <span>📅 23.06.2026</span><span>·</span><span>🏢 Tenet Security · Sentry</span><span>·</span>
+          <a href="https://thehackernews.com/2026/06/agentjacking-attack-tricks-ai-coding.html">thehackernews</a>
         </div>
       </article>
 
       <article class="card news-card hot">
         <div class="row">
-          <span class="pill hot">Personalie</span>
-          <span class="score">Score <b>8.0</b>/10</span>
+          <span class="pill hot">Security</span>
+          <span class="score">Score <b>7.5</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Gemini-Co-Lead Noam Shazeer geht zu OpenAI</h3>
-        <p><span data-person="noam-shazeer">Noam Shazeer</span> — Googles VP Engineering, Co-Lead von Gemini und Mitautor von „Attention Is All You Need” — wechselt zu OpenAI. Pikant: Google hatte ihn 2024 für kolportierte 2,7 Mrd. $ samt Team von Character.AI zurückgeholt. Zweiter Marquee-Abgang bei DeepMind binnen 48 Stunden.</p>
+        <h3 style="margin-top:10px">Orchid-Kampagne: ~10.000 geklonte GitHub-Repos ködern Agenten</h3>
+        <p>Ein Solo-Forscher („Orchid”) deckte tausende Fake-Repos auf — exakte Klone echter Projekte (Commit-History, README) mit einem zusätzlichen Trojaner-ZIP-Link. Durch Überschreiben tarnt sich die Kampagne vor GitHubs Detection und rankt unter Topic-Tags/Nischen-Suchen — dort, wo Devs und ihre Agenten Code holen. Erstsichtung 18. Juni.</p>
         <div class="news-meta">
-          <span>📅 18.06.2026</span><span>·</span><span>🏢 OpenAI ← Google</span><span>·</span>
-          <a href="https://www.cnbc.com/2026/06/18/google-gemini-co-lead-noam-shazeer-leaves-for-openai.html">cnbc</a>
+          <span>📅 18.06.2026</span><span>·</span><span>🏢 GitHub · Supply Chain</span><span>·</span>
+          <a href="https://cybernews.com/security/10k-repos-github-malware-campaign-targets-ai-agents/">cybernews</a>
         </div>
       </article>
 
       <article class="card news-card hot">
         <div class="row">
-          <span class="pill hot">Regulatorik</span>
-          <span class="score">Score <b>7.5</b>/10</span>
+          <span class="pill hot">Major Release</span>
+          <span class="score">Score <b>7.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">G7 Évian: Amodei + Hassabis fordern US-geführte AI-Koalition</h3>
-        <p>Beim geschlossenen Arbeitsmittagessen sitzen <span data-person="dario-amodei">Amodei</span>, <span data-person="demis-hassabis">Hassabis</span> und Altman neben den Staatschefs. Amodei wirbt für strukturierten Frontier-Zugang und China-ausschließenden Chip-Handel; Kanadas Carney stimmt zu, dass die USA führen könnten — bindende Zusagen gibt es keine.</p>
+        <h3 style="margin-top:10px">AWS Summit NY: Agenten-Welle mit „verdienter Autonomie”</h3>
+        <p>Bedrock AgentCore (verwalteter Web-Search, zero-egress), AWS Context (Wissensgraph), Amazon Quick für autonome Dauer-Workflows und Kiro Pro Max/Mobile. Leitmotiv: der Security-Agent <strong>AWS Continuum</strong> startet im „Learn Mode” und verdient sich Autonomie Kategorie für Kategorie — Autonomie gegen menschliche Kontrolle abgewogen.</p>
         <div class="news-meta">
-          <span>📅 17.06.2026</span><span>·</span><span>🏢 G7 · Anthropic · DeepMind</span><span>·</span>
-          <a href="https://www.cnbc.com/2026/06/17/anthropic-amodei-google-hassabis-us-ai-coalition-g7.html">cnbc</a>
+          <span>📅 18.06.2026</span><span>·</span><span>🏢 AWS</span><span>·</span>
+          <a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-aws-summit-in-new-york-2026/">aws.amazon.com</a>
         </div>
       </article>
 
-      <article class="card news-card crit">
+      <article class="card news-card warn">
         <div class="row">
-          <span class="pill crit">Regulatorik</span>
-          <span class="score">Score <b>7.5</b>/10</span>
+          <span class="pill warn">Marktdaten</span>
+          <span class="score">Score <b>7.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Fable 5 + Mythos 5 bleiben dunkel — elf Tage nach der Behörden-Sperre</h3>
-        <p>Trotz Anthropics Zusicherung in Seoul, die Modelle kämen „in den kommenden Tagen” zurück, sind Fable 5 und Mythos 5 am 23. Juni weiter offline (Export-Control-Sperre seit 12. Juni). Erstmals fällt ein kommerzielles Spitzenmodell über Wochen aus nicht-technischem Grund aus — ohne Restore-Termin.</p>
+        <h3 style="margin-top:10px">Gartner: 206,5 Mrd. $ für Agenten-Software 2026 (+139 %)</h3>
+        <p>Ausgaben für reine AI-Agent-Software steigen laut Gartner 2026 auf ~206,5 Mrd. $ (von 86,4 Mrd. 2025), 2027 weiter auf 376,3 Mrd. — fast 3× so schnell wie der KI-Gesamtmarkt (+47 %). Das Budget rennt der Reife voraus: Fivetran zufolge sind nur 15 % der Unternehmen datenbereit.</p>
         <div class="news-meta">
-          <span>📅 23.06.2026</span><span>·</span><span>🏢 <span data-person="dario-amodei">Anthropic</span> · US-Gov</span><span>·</span>
-          <a href="https://www.koreajoongangdaily.com/business/anthropic-confident-of-reenabling-mythos-fable-5-access-in-coming-days-executive/12727522">koreajoongangdaily</a>
+          <span>📅 19.06.2026</span><span>·</span><span>🏢 Gartner</span><span>·</span>
+          <a href="https://www.gartner.com/en/newsroom/press-releases/2026-05-19-gartner-forecasts-worldwide-ai-spending-to-grow-47-percent-in-2026">gartner.com</a>
         </div>
       </article>
 
@@ -552,24 +552,24 @@
           <span class="pill warn">Tooling</span>
           <span class="score">Score <b>6.5</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Cognizant koppelt ServiceNow-Agenten via MCP — Orchestrierung wird Standard</h3>
-        <p>ServiceNow-AI-Agenten arbeiten künftig über das Model Context Protocol mit Cognizants <em>Neuro AI Multi-Agent Accelerator</em> zusammen — ohne Custom-Konnektoren, unter Nutzung bestehender ServiceNow-Governance. MCP entwickelt sich vom Anthropic-Standard zur branchenweiten Orchestrierungs-Schicht.</p>
+        <h3 style="margin-top:10px">Claude Code v2.1.187: <code>sandbox.credentials</code> sperrt Secret-Lesezugriff</h3>
+        <p>Die neue Einstellung verhindert, dass sandboxed Befehle Credential-Dateien und geheime Env-Variablen lesen — direkte Antwort auf Agentjacking-artige Exfiltration. Dazu org-weite Modell-Restriktionen, die sich auch über <code>--model</code>/<code>ANTHROPIC_MODEL</code> nicht umgehen lassen, plus Maus-Klick in Fullscreen-Menüs.</p>
         <div class="news-meta">
-          <span>📅 18.06.2026</span><span>·</span><span>🏢 Cognizant · ServiceNow</span><span>·</span>
-          <a href="https://news.cognizant.com/2026-06-18-Cognizant-expands-cross-platform-agentic-AI-with-new-ServiceNow-AI-Agent-interoperability">cognizant</a>
-        </div>
-      </article>
-
-      <article class="card news-card warn">
-        <div class="row">
-          <span class="pill warn">Tooling</span>
-          <span class="score">Score <b>6.5</b>/10</span>
-        </div>
-        <h3 style="margin-top:10px">Claude Code v2.1.186: Auto-Mode blockt destruktive Befehle, MCP-Login per CLI</h3>
-        <p>Sechs Releases seit dem 15. Juni mit Sicherheits-Fokus: Der Auto-Modus blockiert destruktive Git-Befehle (<code>reset --hard</code>, <code>clean -fd</code>) und <code>terraform/pulumi/cdk destroy</code> ohne Freigabe; dazu Warnungen bei veralteten Modellen und neues <code>claude mcp login</code> für die CLI-Authentifizierung von MCP-Servern.</p>
-        <div class="news-meta">
-          <span>📅 22.06.2026</span><span>·</span><span>🏢 Anthropic</span><span>·</span>
+          <span>📅 23.06.2026</span><span>·</span><span>🏢 Anthropic</span><span>·</span>
           <a href="https://github.com/anthropics/claude-code/releases">github</a>
+        </div>
+      </article>
+
+      <article class="card news-card info">
+        <div class="row">
+          <span class="pill info">Forschung</span>
+          <span class="score">Score <b>6.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Modell-Pipeline stockt: Gemini 3.5 Pro in Preview, GPT-5.6 unbestätigt</h3>
+        <p>Gemini 3.5 Pro hängt Stand 24. Juni in der Vertex-Preview, kein verbindliches GA (öffentlich bleibt Flash). GPT-5.6 ist offiziell unangekündigt — nur <code>iris-alpha</code>-Spuren in Codex-Logs (kolportiert 1,5 Mio. Token); Polymarket: 89 % Release bis 30. Juni. Die Action liegt derzeit in der Agenten-, nicht der Modell-Schicht.</p>
+        <div class="news-meta">
+          <span>📅 24.06.2026</span><span>·</span><span>🏢 Google · OpenAI</span><span>·</span>
+          <a href="https://llm-stats.com/llm-updates">llm-stats</a>
         </div>
       </article>
 
@@ -590,7 +590,16 @@
 
       <article class="card">
         <h3>Letzte Releases</h3>
-        <p>Aktuelle Version <code>v2.1.186</code> · Auto-Mode-Safety in 183 gehärtet (blockt destruktive git- und IaC-<code>destroy</code>-Befehle).</p>
+        <p>Aktuelle Version <code>v2.1.187</code> · <code>sandbox.credentials</code> sperrt Secret-Lesezugriff sandboxed Befehle; org-weite Modell-Restriktionen.</p>
+
+        <div class="release">
+          <div class="ver">v2.1.187</div>
+          <div class="when">23.06.</div>
+          <div class="what">
+            <strong><code>sandbox.credentials</code></strong> blockt Lesezugriff sandboxed Befehle auf Credential-Dateien + geheime Env-Variablen · org-konfigurierte Modell-Restriktionen in Picker, <code>--model</code>, <code>/model</code> und <code>ANTHROPIC_MODEL</code> · Maus-Klick in Auswahl-Menüs (Fullscreen) · Fix: <code>--resume</code> bei <code>-p</code>-Läufen ohne Modell-Turns; robusteres <code>--json-schema</code>/Workflow-Structured-Output
+            <span class="badge sec">SECURITY</span>
+          </div>
+        </div>
 
         <div class="release">
           <div class="ver">v2.1.186</div>
@@ -637,15 +646,6 @@
           </div>
         </div>
 
-        <div class="release">
-          <div class="ver">v2.1.178</div>
-          <div class="when">15.06.</div>
-          <div class="what">
-            <strong><code>Tool(param:value)</code>-Permission-Syntax</strong> matcht Tool-Eingabe-Parameter (mit <code>*</code>-Wildcard), z. B. <code>Agent(model:opus)</code> · verschachtelte <code>.claude/skills</code> laden kontextnah · Auto-Mode prüft Subagent-Spawns vorab über den Classifier
-            <span class="badge feat">FEATURE</span>
-          </div>
-        </div>
-
         <p style="margin-top: 14px;">
           <a href="https://github.com/anthropics/claude-code/releases">→ Alle Releases auf GitHub</a><br/>
           <a href="https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md">→ Vollständiger CHANGELOG.md</a>
@@ -675,7 +675,7 @@
   </section>
 
   <footer>
-    <div>Snapshot · <span class="mono" id="generated">23. Juni 2026</span></div>
+    <div>Snapshot · <span class="mono" id="generated">24. Juni 2026</span></div>
     <div>
       <a href="/agentic-info-dashboard/sources/">📚 Quellen-Sammlung</a> ·
       <a href="/agentic-info-dashboard/">📊 Übersicht</a>
