@@ -2,8 +2,14 @@
   "$schema": "https://example.com/dashboard-archive.schema.json",
   "snapshots": [
     {
-      "date": "2026-06-24",
+      "date": "2026-06-25",
       "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Der Frontier-Markt fragmentiert: GPT-5.6 vor dem Start, ChatGPT erstmals unter 50 %, KI-Chemiker glückt im Labor",
+      "summary": "OpenAI bereitet GPT-5.6 vor (erwartet bis Ende Juni, Polymarket ~90 % für 22.–28.6., offiziell unbestätigt) — ~1,5 Mio. Token Kontext, kolportiert ~5× günstiger als das export-gesperrte Fable 5, Fokus agentisches Coding · ChatGPT fällt erstmals unter 50 % Assistenten-Marktanteil (46,4 % Ende Mai; Gemini 27,7 %, Claude 10,3 %) — der DoD-Vertrag löste eine Deinstallations-Welle aus · OpenAI + Molecule.one: erster fast autonomer KI-Chemiker (GPT-5.4 + „Maria”) verbessert im Nasslabor über 10.080 Reaktionen die Chan-Lam-Ausbeute von 16,6 auf 25,2 % · EU AI Act Art. 50: Transparenzpflicht für Chatbots/Agenten ab 2. August · Claude Code v2.1.191 (/rewind, Background-Agent-Stop-Fix) · Fable 5/Mythos 5 weiter offline (Marker 8. Juli, 1. Aug.)"
+    },
+    {
+      "date": "2026-06-24",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-24.html",
       "headline": "Agenten unter Beschuss: „Agentjacking” kapert Coding-Assistenten, Orchid-Kampagne ködert mit 10.000 Fake-Repos",
       "summary": "Agent-Sicherheit wird real: Tenet Security demonstriert „Agentjacking” — ein per Sentry-MCP eingeschleuster Markdown-Fehlerbericht bringt Claude Code/Cursor dazu, fremden Code mit voller Entwickler-Berechtigung auszuführen und Secrets (AWS-Keys, GitHub-Token) zu exfiltrieren; 2.388 Orgs betroffen, umgeht EDR/WAF/IAM · Orchid-Kampagne: ~10.000 geklonte GitHub-Repos mit Trojaner-ZIP ködern Agenten über Suchtreffer (Erstsichtung 18.6.) · AWS Summit NY: Agenten-Welle mit „verdienter Autonomie” (AgentCore, Continuum Learn-Mode, Amazon Quick) · Claude Code v2.1.187 sperrt Secret-Lesezugriff (sandbox.credentials) · Gartner: 206,5 Mrd. $ für Agenten-Software 2026 (+139 %), aber nur 15 % datenbereit · Fable 5/Mythos 5 Tag 13 weiter offline (Marker: 8. Juli, 1. Aug.)"
     },

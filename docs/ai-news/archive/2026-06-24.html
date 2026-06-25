@@ -298,7 +298,7 @@
   footer .mono { color: var(--muted); }
 </style>
 </head>
-<body data-snapshot-date="2026-06-25" data-snapshot-mode="live">
+<body data-snapshot-date="2026-06-24" data-snapshot-mode="archive">
 <div class="wrap">
 
   <!-- ─── Top Nav ─── -->
@@ -394,7 +394,7 @@
       </div>
     </div>
     <div class="meta">
-      <div class="date" id="today">Donnerstag, 25. Juni 2026</div>
+      <div class="date" id="today">Mittwoch, 24. Juni 2026</div>
       <div class="tag">Snapshot · KW 26 / 2026</div>
     </div>
   </header>
@@ -406,77 +406,77 @@
 
     <header class="briefing-head">
       <h2 class="kicker">Tagesbriefing · Agentic AI &amp; GenAI</h2>
-      <h1>Der Frontier-Markt fragmentiert — GPT-5.6 vor dem Start, ChatGPT unter 50 Prozent</h1>
+      <h1>Agenten unter Beschuss — „Agentjacking” macht den Coding-Assistenten zur Waffe</h1>
       <div class="byline">
         <span>✍️ Kuratiert &amp; analysiert</span>
         <span class="dot-sep">·</span>
         <span>~12 Min Lesezeit</span>
         <span class="dot-sep">·</span>
-        <span id="byline-date">25. Juni 2026</span>
+        <span id="byline-date">24. Juni 2026</span>
       </div>
       <p class="lede">
-        Lange war die Frage, wer die Frontier anführt. Diese Woche lautet die Antwort: niemand allein mehr. OpenAI bereitet GPT-5.6 vor — erwartet im Fenster bis Ende Juni, kolportiert rund fünfmal günstiger als <span data-person="dario-amodei">Anthropics</span> Fable 5 und mit 1,5 Millionen Token Kontext — und zielt damit präzise auf die Lücke, die der export-gesperrte Anthropic-Spitzenreiter offenlässt. Zugleich rutscht ChatGPTs Anteil am Assistenten-Markt erstmals unter 50 Prozent. Und während sich die Modelle umsortieren, liefert die agentische KI ihren bislang härtesten Reifebeweis: Ein fast autonomer KI-Chemiker von OpenAI und Molecule.one verbesserte im Labor eine Reaktion, an der Medizinalchemiker seit Jahrzehnten scheitern. Der Markt fragmentiert und reift zugleich.
+        Die Woche, in der Agenten endgültig erwachsen werden, ist auch die, in der ihre Rechnung fällig wird. Sicherheitsforscher von Tenet Security zeigen mit „Agentjacking”, wie ein einziger gefälschter Fehlerbericht einen KI-Coding-Agenten — Claude Code, Cursor — dazu bringt, fremden Code mit voller Entwickler-Berechtigung auszuführen; parallel klont die „Orchid”-Kampagne tausende GitHub-Repos, um genau solche Agenten zu ködern. Beide Angriffe nutzen dieselbe Schwäche: Der Agent unterscheidet nicht zuverlässig zwischen Daten und Befehl. Während auf dem AWS Summit in New York die Agenten-Welle in die Fläche rollt und Gartner für 2026 ein Agenten-Software-Volumen von 206 Milliarden Dollar ausruft, verschiebt sich die eigentliche Risikofläche: weg vom Modell, hin zur Vollmacht des Agenten zu handeln.
       </p>
     </header>
 
     <div class="briefing-body">
 
       <section>
-        <h3><span class="num">01</span>GPT-5.6 vor dem Start — OpenAI zielt auf die Fable-5-Lücke</h3>
-        <p>Es ist das am meisten erwartete Release des Monats, und es steht unmittelbar bevor — auch wenn OpenAI offiziell schweigt. GPT-5.6 wird im Fenster bis Ende Juni erwartet; Prediction-Märkte preisen rund 90 Prozent für einen Start zwischen dem 22. und 28. Juni, der 25. kursiert als konkretes Datum. Bestätigt ist nichts davon. Aus Leaks und Tests zeichnet sich ab: ein Kontextfenster von rund 1,5 Millionen Token (gegenüber ~1,05 Mio. bei GPT-5.5), Wissensstand Dezember 2025, tiefere Tool-Integration (Playwright, Browser), dazu Mini- und Pro-Varianten und ein überarbeiteter Voice-Mode. OpenAIs Chefwissenschaftler beschrieb das Modell intern als „bedeutenden Sprung”.</p>
-        <p>Strategisch ist das Timing kein Zufall. Während <span data-person="dario-amodei">Anthropics</span> Fable 5 seit knapp zwei Wochen export-gesperrt offline ist und <span data-person="demis-hassabis">Googles</span> Gemini 3.5 Pro die Vertex-Preview nicht verlässt, kann OpenAI in eine Lücke stoßen, in der das fähigste Anthropic-Modell für niemanden nutzbar ist. Kolportiert wird zudem ein aggressiver Preis — rund fünfmal günstiger als Fable 5 — bei explizitem Fokus auf agentisches Coding. Das ist weniger ein Modell-Sprung als ein Markt-Manöver.</p>
-        <p>Für Anwender zählt die Richtung mehr als der genaue Tag: länger, billiger, agentischer. Gerade der kolportierte Preissturz trifft den wunden Punkt agentischer Workloads, die Token im großen Stil verbrauchen — fällt der Preis pro Million Token um den Faktor fünf, rechnet sich plötzlich Automatisierung, die gestern noch zu teuer war. Selbst wenn GPT-5.6 erst nächste Woche landet, verschiebt schon die Ankündigung das Preis-Leistungs-Gefüge — und setzt die noch dunkle Anthropic-Spitze und das zögernde Gemini-GA unter Zugzwang.</p>
+        <h3><span class="num">01</span>„Agentjacking” — wenn der Coding-Agent zur Waffe wird</h3>
+        <p>Die Sicherheitsforscher von Tenet Security haben eine Angriffsklasse demonstriert, die das agentische Versprechen an seiner empfindlichsten Stelle trifft. „Agentjacking” funktioniert so: Ein Angreifer findet den öffentlichen Sentry-DSN einer Website und schickt einen manipulierten Fehlerbericht, der per Markdown-Injection eine gefälschte <code>## Resolution</code>-Sektion enthält — strukturell ununterscheidbar von Sentrys eigenen MCP-Templates. Bittet ein Entwickler dann seinen KI-Coding-Agenten (Claude Code, Cursor), die offenen Sentry-Issues zu beheben, liest der Agent den Bericht über den Sentry-MCP-Server, hält die eingeschleusten Anweisungen für legitime Debugging-Hinweise und führt den hinterlegten <code>npx</code>-Befehl aus — mit den vollen lokalen Rechten des Entwicklers.</p>
+        <p>Die Folgen sind drastisch. Tenets Proof-of-Concept lud ein bösartiges npm-Paket nach und exfiltrierte still Umgebungsvariablen: AWS-Schlüssel, GitHub-Token, Sentry-Auth-Token, Git-Credentials, private Repo-URLs. Über 2.388 Organisationen mit offenem DSN waren betroffen; bei mehr als 100 Firmen — darunter ein Fortune-100-Konzern — führten die KI-Assistenten Tenets Testcode aus. Das Tückische: Der Angriff umgeht EDR, WAF, IAM, VPN und Firewall vollständig, weil jede einzelne Aktion in der Kette technisch autorisiert ist. Tenet meldete die Lücke am 3. Juni an Sentry, das einen Content-Filter nachrüstete — eine grundlegende Lösung fehlt, weil das eigentliche Problem darin liegt, dass Agenten fremde Ausgaben als Befehle behandeln.</p>
+        <p>Damit ist Prompt-Injection von der Demo zur betrieblichen Bedrohung geworden. Solange ein Agent Tool-Output nicht als potenziell feindlich einstuft, ist jede MCP-Quelle ein möglicher Einfallsweg — und je mehr Werkzeuge ein Agent autonom bedient, desto größer die Angriffsfläche.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Modell-Auswahl bleibt ein bewegliches Ziel — das günstigste leistungsfähige Frontier-Modell wandert im Wochentakt. Wer einen Routing-Layer mit Eval-Harness pflegt, kann ein GPT-5.6 am Tag des Erscheinens gegen die jeweils verfügbare Claude-/Gemini-Variante testen, statt sich vertraglich festzulegen. Für DACH-Teams gilt: kein Lock-in auf ein Modell, bevor Preis und Verfügbarkeit der ganzen Welle feststehen.
+          Die Lehre ist architektonisch: Tool-Output ist nicht vertrauenswürdiger Input. Wer Coding-Agenten produktiv einsetzt, braucht MCP-Trust-Boundaries, Least-Privilege-Ausführung (keine Live-Secrets in der Agent-Umgebung) und ein Freigabe-Gate für Shell-Befehle aus externen Quellen. Für DACH-Teams konkret: Agent-Runner in isolierte Sandboxes ohne produktive Credentials, Secret-Scanning auf Exfil-Muster, und kein blindes „fixe alle offenen Issues” gegen extern befüllte Tracker.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">02</span>Vom Chat zur Laborbank — der erste (fast) autonome KI-Chemiker</h3>
-        <p>Der eigentlich tiefere Reifebeweis kam diese Woche nicht aus einem Modell-Release, sondern aus einem Labor. OpenAI und das polnische Chemie-Startup Molecule.one veröffentlichten am 17. Juni das Ergebnis einer dreimonatigen Zusammenarbeit: die erste öffentlich dokumentierte Instanz, in der ein Frontier-Modell als fast autonomer Agent in einem echten Nasslabor-Workflow eine validierte, unabhängig bestätigte Verbesserung an einer Reaktion erzielte, an der sich Medizinalchemiker seit Jahrzehnten die Zähne ausbeißen.</p>
-        <p>Der Aufbau koppelte OpenAIs GPT-5.4 mit Maria, Molecule.ones agentischer Chemie-KI, und einem automatisierten Hochdurchsatz-Labor. GPT-5.4 erzeugte und sortierte Tausende Forschungs-Vorschläge; menschliche Chemiker prüften die höchstbewerteten und wählten vier für den Labortest aus; Maria übersetzte sie in konkrete Experimente und führte die Reaktionen aus, analysierte die Ergebnisse und schlug Folge-Experimente vor. Ziel war eine primäre Sulfonamid-Chan-Lam-Kupplung; über 10.080 Reaktionen stieg die mittlere Ausbeute von 16,6 auf 25,2 Prozent, der Anteil der Reaktionen über 30 Prozent von 15,6 auf 37,5 Prozent.</p>
-        <p>Wichtig ist die Einordnung: Es entstand kein neues Medikament, und das Programm war nicht voll autonom — Menschen wählten die Vorschläge, korrigierten Versuchspläne und validierten unabhängig. Bemerkenswert ist zudem, dass dafür GPT-5.4 genügte — nicht einmal OpenAIs neuestes Modell —, was den Engpass weniger bei der rohen Modell-Fähigkeit als bei Integration und Labor-Anbindung verortet. Und weil das Ergebnis unabhängig bestätigt wurde, hebt es sich vom üblichen Demo-Hype ab. Genau diese Schleife — KI schlägt im großen Maßstab vor und priorisiert, Mensch entscheidet am Gate, automatisiertes Labor validiert — ist die Blaupause, die agentische KI aus dem Chatfenster in die Wertschöpfung trägt.</p>
+        <h3><span class="num">02</span>Die Lieferkette als Köder — die Orchid-Kampagne auf GitHub</h3>
+        <p>Wenn Agentjacking zeigt, wie ein Agent über seine Werkzeuge gekapert wird, dann zeigt die Orchid-Kampagne, wie man ihm vergiftetes Material unterschiebt. Ein einzelner Entwickler unter dem Pseudonym „Orchid” deckte eine weitgehend automatisierte Kampagne auf, die rund 10.000 gefälschte GitHub-Repositories erstellt hat — jedes ein Klon eines echten Projekts, komplett mit Commit-History, Contributor-Liste und README. Die einzige Änderung: ein hinzugefügter Link auf ein herunterladbares ZIP-Archiv mit Trojaner. Auffällig wurde es erst, als Orchids eigenes Projekt geklont in den Suchergebnissen auftauchte.</p>
+        <p>Das Perfide ist die Tarnung gegen Maschinen. Durch wiederholtes Überschreiben verwirren die Angreifer GitHubs Sicherheits-Algorithmen, die eher neue auffällige Aktivität markieren als lange, leise Anomalien. Und indem sie neue statt populäre Repos kapern, ranken die bösartigen Klone prominent bei Nischen-Suchanfragen und unter beliebten Topic-Tags — also genau dort, wo Entwickler und zunehmend ihre Agenten nach Code suchen. Erstmals gesichtet wurde die Kampagne am 18. Juni.</p>
+        <p>Beide Geschichten dieser Woche zielen auf dieselbe Naht: Agenten holen Code und Kontext aus offenen Quellen und handeln darauf, schneller als ein Mensch hinschauen kann. Damit wird die Software-Lieferkette zum bevorzugten Hebel — nicht trotz, sondern wegen der Autonomie.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für DACH-Industrie — Pharma, Chemie, Werkstoffe, Engineering — ist das der relevantere Vorgang als jeder Benchmark: Agentische KI liefert verifizierbare Resultate, wo Vorschlag, menschliches Gate und automatisierte Validierung zusammenspielen. Der Wettbewerbsvorteil liegt nicht im Modell, sondern in der Integration von Labor, Daten und Domänen-Expertise. Wer diese Schleife früh baut, hebt einen Vorsprung, den ein Modell allein nicht liefert.
+          Herkunft schlägt Bequemlichkeit. Agenten, die Pakete oder Repos ziehen und ausführen, brauchen Provenance-Checks (Signaturen, Pinning, kuratierte Mirrors) und dürfen nicht aus Suchtreffern installieren. Für DACH-Dienstleister ist „Secure Supply Chain für agentische Entwicklung” — SBOMs, Dependency-Allowlists, Build-Isolation — ein konkretes, verkaufbares Beratungspaket, das direkt an NIS-2- und DORA-Pflichten andockt.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">03</span>Das Ende der Selbstverständlichkeit — ChatGPT unter 50 Prozent</h3>
-        <p>Zum ersten Mal seit dem Start im November 2022 hält ChatGPT weniger als die Hälfte des Assistenten-Markts. Nach Sensor-Tower-Daten fiel der Anteil an den globalen KI-Assistenten-Nutzern bis Ende Mai 2026 auf 46,4 Prozent — von 65,3 Prozent im Dezember 2024 und 52,8 Prozent im Dezember 2025, ein Rückgang um fast 19 Punkte in 17 Monaten. Die Marke unter 50 Prozent wurde bereits im März gerissen. <span data-person="demis-hassabis">Googles</span> Gemini hält inzwischen 27,7 Prozent, Claude 10,3 Prozent. Zugleich knackte ChatGPT 1,1 Milliarden Nutzer — die schnellste App zur Milliarde überhaupt.</p>
-        <p>Der Rückgang ist also kein Kollaps, sondern Normalisierung: Nutzer wandern zwischen Assistenten, statt einem allein treu zu bleiben. Bemerkenswert ist ein Detail — OpenAIs Vertrag mit dem US-Verteidigungsministerium im Februar löste einen messbaren Anstieg der Deinstallationen aus. Vertrauen und Werte, nicht nur Features, treiben den Wechsel. Zusammen mit der Preis-Offensive von GPT-5.6 ergibt sich ein Bild: Der Markt wird zum Portfolio, nicht zum Default.</p>
-        <p>Kein einzelner Assistent „besitzt” den Nutzer mehr. Das verschiebt Macht zurück zu denen, die wählen — Unternehmen wie Endanwender —, und macht Wechselkosten, Datenhoheit und Werte-Fit zu echten Entscheidungskriterien.</p>
+        <h3><span class="num">03</span>Agenten in der Fläche — und die Autonomie-Frage</h3>
+        <p>Dass die Angriffe gerade jetzt kommen, ist kein Zufall: Auf dem AWS Summit in New York rollte die Agenten-Welle in die Breite. Amazon erweiterte <strong>Bedrock AgentCore</strong> (u. a. ein verwalteter Web-Search mit zitierten Quellen und null Daten-Egress aus der AWS-Umgebung), stellte <strong>AWS Context</strong> als Wissensgraph vor und brachte <strong>Amazon Quick</strong> für autonome Dauer-Workflows. Bezeichnend ist der neue Sicherheits-Agent <strong>AWS Continuum</strong>: Er startet in einem überwachten „Learn Mode” und verdient sich das Recht, eigenständig zu handeln, erst Kategorie für Kategorie — beginnend mit Code-Schwachstellen, die er triagiert, auf Ausnutzbarkeit testet und dann fixt.</p>
+        <p>Genau diese „verdiente Autonomie” ist das Muster der Woche. Auch Claude Code zog mit <code>v2.1.187</code> (23. Juni) nach: Die neue Einstellung <code>sandbox.credentials</code> verhindert, dass sandboxed Befehle Credential-Dateien und geheime Umgebungsvariablen lesen — die direkte Antwort auf die Exfiltration, die Agentjacking vorführt. Dazu kommen organisationsweite Modell-Restriktionen, die sich auch über <code>--model</code> und <code>ANTHROPIC_MODEL</code> nicht aushebeln lassen. Selbst AWS' neue WAF-Bot-Control-Funktion, mit der Publisher KI-Traffic bepreisen, gehört in dieselbe Bewegung: Kontrolle darüber, was Agenten dürfen.</p>
+        <p>Die Industrie konvergiert also auf zwei Prinzipien — gestufte Autonomie und Isolation von Geheimnissen. Das ist die produktreife Übersetzung dessen, was die Angriffe erzwingen: Ein Agent, der alles darf, ist ein Angreifer-Ziel; einer, der sich Rechte verdient, ist beherrschbar.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Multi-Assistent ist die Marktrealität, kein Hedge. Für DACH-Beschaffung heißt das: Mitarbeiter an genau einen Assistenten zu binden, ignoriert, wo die Nutzung real hinwandert. Und der DoD-Deinstallations-Effekt zeigt, dass Werte und Datenhoheit messbar verkaufen — ein Argument für souveräne und auswählbare Optionen statt eines verordneten Single-Vendor-Defaults.
+          Governance gehört ins Design, nicht ins Nachwort. Die Vendor-Linie — „Learn Mode”, abgestufte Freigaben, Secret-Isolation, erzwungene Modell-Listen — ist die Blaupause für interne Agenten. Für DACH-Organisationen heißt das: Agenten mit minimalen Rechten starten, Autonomie nur gegen nachgewiesene Zuverlässigkeit erweitern, und Credential-Zugriff per Sandbox kappen. Wer das früh standardisiert, kann Agenten produktiv schalten, ohne die Angriffsfläche aus Abschnitt 1 zu öffnen.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">04</span>Die Regulierungs-Uhr — EU AI Act Artikel 50 ab 2. August</h3>
-        <p>Während sich der Markt umsortiert, rückt eine harte Frist näher. Ab dem 2. August 2026 greifen die Transparenzpflichten nach Artikel 50 des EU AI Act: Wer Chatbots einsetzt oder KI-generierte Inhalte ausspielt, muss offenlegen, dass KI im Spiel ist. Entscheidend für die agentische Welle ist die Auslegung der Kommission — die Offenlegungspflicht erstreckt sich ausdrücklich auf „agentische” Systeme, die im Auftrag eines Nutzers handeln, und zwar zum Zeitpunkt des Kontakts, nicht versteckt in den AGB. Den Rahmen liefert ein im Juni 2026 veröffentlichter Code of Practice zur Kennzeichnung KI-generierter Inhalte.</p>
-        <p>Eingebettet ist das in den größeren Zeitplan: Nach der politischen Einigung zum „Digital Omnibus” am 7. Mai gelten die Hochrisiko-Regeln für Annex-III-Bereiche (Biometrie, kritische Infrastruktur, Bildung, Beschäftigung) erst ab dem 2. Dezember 2027. Die Artikel-50-Transparenz ist damit die nächste konkrete Pflicht — und sie trifft genau die kundenseitigen Chatbots und Agenten, die Unternehmen gerade ausrollen.</p>
-        <p>Für Agenten-Betreiber ist „Offenlegung im Moment des Kontakts” mehr als ein Hinweis im Kleingedruckten: Kundenseitige agentische Systeme brauchen die Kennzeichnung als eingebautes UX-Element — jetzt, nicht erst kurz vor der Frist.</p>
+        <h3><span class="num">04</span>Das Geld rennt voraus — Gartner: 206 Milliarden für Agenten-Software</h3>
+        <p>Die ökonomische Wucht hinter alldem zeigt eine frische Gartner-Prognose: Die Ausgaben für reine <em>AI-Agent-Software</em> sollen 2026 auf rund 206,5 Milliarden Dollar steigen — von 86,4 Milliarden im Jahr 2025, also +139 % in einem Jahr — und 2027 weiter auf 376,3 Milliarden. Agenten-Software wächst damit fast dreimal so schnell wie der ohnehin boomende KI-Gesamtmarkt (+47 %). Es ist die am schnellsten wachsende Kategorie innerhalb eines bereits überhitzten Felds.</p>
+        <p>Das Problem ist die Schere zwischen Ausgabe und Reife. Fivetrans Readiness-Index der Vorwoche hält dagegen: 60 Prozent investieren Millionen, aber nur 15 Prozent haben das Daten-Fundament für sicheren, skalierbaren Betrieb — und 41 Prozent fahren Agenten bereits produktiv auf wackliger Basis. Auch die Adoptions-Zahlen bestätigen den Graben: Gartner erwartet zwar, dass bis Ende 2026 rund 40 Prozent der Unternehmens-Anwendungen KI-Agenten integrieren, doch McKinsey zufolge experimentieren zwar 62 Prozent der Organisationen mit Agenten, skaliert haben sie aber erst 23 Prozent. Die Angriffe dieser Woche sind die Quittung dafür: Wer Agenten ausrollt, bevor Daten-Governance, Secret-Isolation und Lieferketten-Sicherheit stehen, kauft sich Tempo auf Kosten der Angriffsfläche.</p>
+        <p>Für Dienstleister ist genau diese Schere das Geschäft. Das Budget ist da (206 Milliarden), die Reife fehlt (15 Prozent) — und der Engpass ist nicht das Modell, sondern alles drumherum: Daten, Berechtigungen, Provenance, Monitoring.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Konkrete DACH-Hausaufgabe vor dem 2. August: Chatbot- und Agenten-Offenlegung plus Kennzeichnung KI-generierter Inhalte. Für IT-Dienstleister ist das ein sauber terminierter Beratungs-Anlass — Transparenz-Audit, Disclosure-UX und Content-Labelling als Paket, andockend an die laufende Agenten-Einführung. Wer die Kennzeichnung gleich in die Agent-Architektur baut, vermeidet teure Nachrüstung.
+          Der Markt zahlt für Agenten, braucht aber sichere Einführung. Für DACH-IT-Services ist „Secure Agent Enablement” die margenstarke Antwort: Readiness-Audit, Least-Privilege-Architektur, MCP-Trust-Boundaries und Supply-Chain-Härtung als Paket — nicht der hundertste Chatbot-Pilot. Wer den Bogen von Gartners Budget zu Fivetrans Lücke schlägt, verkauft genau das, was zwischen Investition und produktivem, sicherem Betrieb fehlt.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">05</span>Werkzeuge reifen, das Flaggschiff bleibt dunkel</h3>
-        <p>Unter der Modell-Aufregung härtet die Werkzeug-Schicht ruhig weiter. Claude Code lieferte am 24. Juni <code>v2.1.190</code> und <code>v2.1.191</code>: Neu ist <code>/rewind</code>, das eine Konversation aus der Zeit vor einem <code>/clear</code> wiederherstellt; ein Fix sorgt dafür, dass gestoppte Background-Agenten endgültig gestoppt bleiben und nicht wieder auferstehen; dazu ein Scroll-Fix beim Zurücklesen während eines Streams und eine klarere Meldung, wenn <code>/voice</code> per Org-Policy deaktiviert ist. Kleinteilig, aber genau die Verlässlichkeit, die längere Agenten-Läufe brauchen.</p>
-        <p>Das Flaggschiff der Konkurrenz bleibt derweil aus: <span data-person="dario-amodei">Anthropics</span> Fable 5 und Mythos 5 sind auch in Woche zwei der Export-Control-Sperre offline, ohne Restore-Termin. Die strukturellen Marker bleiben der 8. Juli (aktualisierte Datenschutzrichtlinie mit Regierungs-ID-Verifizierung, möglicher Mechanismus für eine US-zuerst-Freigabe) und der 1. August (60-Tage-Frist der Executive Order für den „covered frontier models”-Rahmen). Mythos 1 soll laut Anthropic „in den kommenden Wochen” für alle Kunden kommen.</p>
-        <p>Der rote Faden der Woche: Die Modell-Schicht sortiert sich neu — GPT-5.6 vor dem Start, Marktanteile splitten, Fable dunkel —, während die Agenten- und Werkzeug-Schicht stetig stabiler wird. Der Wert wandert zu denen, die über ein fragmentierendes Modellfeld hinweg routen und Agenten sicher betreiben können.</p>
+        <h3><span class="num">05</span>Unter der Spitze stockt die Pipeline — Fable 5 weiter dunkel</h3>
+        <p>Während die Agenten-Schicht rast, hakt die Modell-Front. Gemini 3.5 Pro, im Mai auf der I/O angekündigt, steckt Stand 24. Juni weiter in der begrenzten Vertex-Preview — ein verbindliches GA-Datum fehlt, öffentlich bleibt Flash. GPT-5.6 ist offiziell nicht angekündigt: kein Model-Card, kein Blogpost, nur Hinweise auf ein in Codex-Logs gesichtetes <code>iris-alpha</code> (kolportierte 1,5 Mio. Token Kontext). Prediction-Märkte preisen die Wahrscheinlichkeit eines Releases bis 30. Juni mit 89 Prozent.</p>
+        <p>Und <span data-person="dario-amodei">Anthropics</span> Fable 5 und Mythos 5 sind auch am dreizehnten Tag der Export-Control-Sperre offline — ohne Restore-Termin. Zwei Daten geben dem Fall jetzt Struktur: Am 8. Juli tritt Anthropics aktualisierte Datenschutzrichtlinie mit Regierungs-ID-Verifizierung in Kraft (der wahrscheinliche Mechanismus für eine US-zuerst-Freigabe), und am 1. August läuft die 60-Tage-Frist der Executive Order, bis zu der NSA, Treasury und CISA den Rahmen für „covered frontier models” abschließen sollen — der eigentliche Verhandlungspfad.</p>
+        <p>Das Bild der Woche ist damit eindeutig: Der Fortschritt — und das Risiko — sind die Stack-Ebene hochgewandert. Nicht das nächste Modell entscheidet gerade, sondern was die Agenten darüber dürfen, holen und ausführen.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Der Resilienz-Reflex bleibt richtig: Multi-Modell-Routing plus Eval als Versicherung gegen den nächsten Fable-5-Moment, und die Termine 8. Juli / 1. August als Kalender-Marker. Für DACH-Teams ist die ruhige Wette nicht das nächste Modell, sondern robuste Agenten-Infrastruktur — Routing, Rechte, Secrets, Provenance —, die jeden Neuzugang im Modellfeld sofort nutzbar macht.
+          Die stockende Modell-Pipeline ist für Anwender eher Entlastung als Mangel: Es lohnt sich, statt auf das nächste Release zu warten, die Agenten-Infrastruktur abzusichern (Rechte, Secrets, Lieferkette). Für DACH-Teams bleibt der Resilienz-Reflex richtig — Multi-Modell-Routing als Versicherung gegen den nächsten Fable-5-Moment, und die Termine 8. Juli / 1. August als konkrete Marker im Kalender.
         </blockquote>
       </section>
       <div class="briefing-end">
-        <strong>Was die Woche bringt:</strong> GPT-5.6 — offizieller Launch samt Specs und Preisen (untergräbt es Fable 5 wirklich um ~5×?), Fenster bis 30. Juni (Polymarket: ~90 %); und ob Gemini 3.5 Pro die Vertex-Preview verlässt. Fable-5-Restore: Marker <strong>8. Juli</strong> (Datenschutzrichtlinie mit Regierungs-ID) und <strong>1. August</strong> (60-Tage-EO-Frist). EU AI Act: Artikel-50-Transparenz ab <strong>2. August</strong> — Disclosure-Readiness jetzt. Und ob weitere „agentische KI im Labor”-Resultate dem Molecule.one-Fall folgen. Claude Code steht bei <code>v2.1.191</code>. <span data-person="mira-murati">Mira Muratis</span> Thinking Machines bleibt der erwartete Frontier-Neuzugang des Sommers.
+        <strong>Was die Woche bringt:</strong> GPT-5.6 bis 30. Juni (Polymarket: 89 %) und ob Gemini 3.5 Pro die Vertex-Preview verlässt. Fable-5-Restore: die strukturellen Marker sind <strong>8. Juli</strong> (Anthropic-Datenschutzrichtlinie mit Regierungs-ID) und <strong>1. August</strong> (60-Tage-EO-Frist für den Frontier-Modell-Rahmen). Sicherheit: ob Sentry/MCP-Anbieter strukturelle Fixes gegen Prompt-Injection liefern — nicht nur Content-Filter — und wie schnell „verdiente Autonomie” (AWS Continuum) Schule macht. Claude Code steht bei <code>v2.1.187</code>. <span data-person="mira-murati">Mira Muratis</span> Thinking Machines bleibt der erwartete Frontier-Neuzugang des Sommers.
       </div>
 
     </div>
@@ -495,55 +495,55 @@
 
     <div class="grid cols-3">
 
+      <article class="card news-card crit">
+        <div class="row">
+          <span class="pill crit">Security</span>
+          <span class="score">Score <b>8.5</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">„Agentjacking”: gefälschter Fehlerbericht kapert Coding-Agenten</h3>
+        <p>Tenet Security zeigt, wie ein per Sentry-MCP eingeschleuster Markdown-Fehlerbericht Claude Code / Cursor dazu bringt, fremden <code>npx</code>-Code mit vollen Entwickler-Rechten auszuführen — Exfil von AWS-Keys, GitHub-Token, Git-Creds. 2.388 Orgs mit offenem DSN betroffen; umgeht EDR/WAF/IAM, weil jede Aktion autorisiert ist.</p>
+        <div class="news-meta">
+          <span>📅 23.06.2026</span><span>·</span><span>🏢 Tenet Security · Sentry</span><span>·</span>
+          <a href="https://thehackernews.com/2026/06/agentjacking-attack-tricks-ai-coding.html">thehackernews</a>
+        </div>
+      </article>
+
+      <article class="card news-card hot">
+        <div class="row">
+          <span class="pill hot">Security</span>
+          <span class="score">Score <b>7.5</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Orchid-Kampagne: ~10.000 geklonte GitHub-Repos ködern Agenten</h3>
+        <p>Ein Solo-Forscher („Orchid”) deckte tausende Fake-Repos auf — exakte Klone echter Projekte (Commit-History, README) mit einem zusätzlichen Trojaner-ZIP-Link. Durch Überschreiben tarnt sich die Kampagne vor GitHubs Detection und rankt unter Topic-Tags/Nischen-Suchen — dort, wo Devs und ihre Agenten Code holen. Erstsichtung 18. Juni.</p>
+        <div class="news-meta">
+          <span>📅 18.06.2026</span><span>·</span><span>🏢 GitHub · Supply Chain</span><span>·</span>
+          <a href="https://cybernews.com/security/10k-repos-github-malware-campaign-targets-ai-agents/">cybernews</a>
+        </div>
+      </article>
+
       <article class="card news-card hot">
         <div class="row">
           <span class="pill hot">Major Release</span>
           <span class="score">Score <b>7.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">GPT-5.6 vor dem Start — erwartet bis Ende Juni, ~5× günstiger als Fable 5</h3>
-        <p>OpenAI bereitet GPT-5.6 (Mini/Pro) vor — Polymarket: ~90 % Launch 22.–28. Juni, der 25. kursiert, offiziell unbestätigt. Geleakt: ~1,5 Mio. Token Kontext, Cutoff Dez 2025, Playwright/Browser-Tools, Fokus agentisches Coding. Zielt auf die Lücke, die das export-gesperrte Fable 5 offenlässt.</p>
+        <h3 style="margin-top:10px">AWS Summit NY: Agenten-Welle mit „verdienter Autonomie”</h3>
+        <p>Bedrock AgentCore (verwalteter Web-Search, zero-egress), AWS Context (Wissensgraph), Amazon Quick für autonome Dauer-Workflows und Kiro Pro Max/Mobile. Leitmotiv: der Security-Agent <strong>AWS Continuum</strong> startet im „Learn Mode” und verdient sich Autonomie Kategorie für Kategorie — Autonomie gegen menschliche Kontrolle abgewogen.</p>
         <div class="news-meta">
-          <span>📅 25.06.2026</span><span>·</span><span>🏢 OpenAI</span><span>·</span>
-          <a href="https://www.testingcatalog.com/openai-prepares-gpt-5-6-models-for-the-upcoming-release/">testingcatalog</a>
-        </div>
-      </article>
-
-      <article class="card news-card crit">
-        <div class="row">
-          <span class="pill crit">Forschung</span>
-          <span class="score">Score <b>7.5</b>/10</span>
-        </div>
-        <h3 style="margin-top:10px">Erster (fast) autonomer KI-Chemiker verbessert Reaktion im Nasslabor</h3>
-        <p>OpenAI + Molecule.one: GPT-5.4 plus die agentische Chemie-KI „Maria” schlugen Reaktionen vor, Menschen wählten, ein Hochdurchsatz-Labor validierte. Über 10.080 Reaktionen stieg die Ausbeute der Chan-Lam-Kupplung von 16,6 auf 25,2 %. Erste validierte, unabhängig bestätigte KI-Verbesserung an einem jahrzehntealten Chemie-Problem.</p>
-        <div class="news-meta">
-          <span>📅 17.06.2026</span><span>·</span><span>🏢 OpenAI · Molecule.one</span><span>·</span>
-          <a href="https://www.rdworldonline.com/openai-and-molecule-one-report-a-near-autonomous-ai-chemist-that-improved-a-stubborn-coupling-reaction/">rdworldonline</a>
-        </div>
-      </article>
-
-      <article class="card news-card hot">
-        <div class="row">
-          <span class="pill hot">Marktdaten</span>
-          <span class="score">Score <b>7.0</b>/10</span>
-        </div>
-        <h3 style="margin-top:10px">ChatGPT erstmals unter 50 % Marktanteil bei KI-Assistenten</h3>
-        <p>Laut Sensor Tower fiel ChatGPT bis Ende Mai auf 46,4 % der globalen Assistenten-Nutzer (von 65,3 % Dez 2024) — Gemini 27,7 %, Claude 10,3 %. Trotz 1,1 Mrd. Nutzern. Der DoD-Vertrag im Februar löste eine messbare Deinstallations-Welle aus: Werte und Vertrauen treiben den Wechsel.</p>
-        <div class="news-meta">
-          <span>📅 16.06.2026</span><span>·</span><span>🏢 OpenAI · Sensor Tower</span><span>·</span>
-          <a href="https://techcrunch.com/2026/06/16/chatgpts-market-share-slips-below-50-for-first-time/">techcrunch</a>
+          <span>📅 18.06.2026</span><span>·</span><span>🏢 AWS</span><span>·</span>
+          <a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-aws-summit-in-new-york-2026/">aws.amazon.com</a>
         </div>
       </article>
 
       <article class="card news-card warn">
         <div class="row">
-          <span class="pill warn">Regulatorik</span>
-          <span class="score">Score <b>6.5</b>/10</span>
+          <span class="pill warn">Marktdaten</span>
+          <span class="score">Score <b>7.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">EU AI Act: Transparenzpflicht (Art. 50) ab 2. August 2026</h3>
-        <p>Ab 2. August müssen Chatbots und KI-generierte Inhalte als KI gekennzeichnet werden. Die Kommission dehnt die Pflicht ausdrücklich auf „agentische” Systeme aus — Offenlegung im Moment des Kontakts, nicht in den AGB. Code of Practice zur Kennzeichnung im Juni 2026 veröffentlicht; Hochrisiko-Annex erst ab Dez 2027.</p>
+        <h3 style="margin-top:10px">Gartner: 206,5 Mrd. $ für Agenten-Software 2026 (+139 %)</h3>
+        <p>Ausgaben für reine AI-Agent-Software steigen laut Gartner 2026 auf ~206,5 Mrd. $ (von 86,4 Mrd. 2025), 2027 weiter auf 376,3 Mrd. — fast 3× so schnell wie der KI-Gesamtmarkt (+47 %). Das Budget rennt der Reife voraus: Fivetran zufolge sind nur 15 % der Unternehmen datenbereit.</p>
         <div class="news-meta">
-          <span>📅 2026-06 · gilt ab 02.08.</span><span>·</span><span>🏢 EU-Kommission</span><span>·</span>
-          <a href="https://www.heise.de/news/EU-AI-Act-Was-bis-August-2026-in-Unternehmen-erledigt-sein-muss-11289793.html">heise.de</a>
+          <span>📅 19.06.2026</span><span>·</span><span>🏢 Gartner</span><span>·</span>
+          <a href="https://www.gartner.com/en/newsroom/press-releases/2026-05-19-gartner-forecasts-worldwide-ai-spending-to-grow-47-percent-in-2026">gartner.com</a>
         </div>
       </article>
 
@@ -552,24 +552,24 @@
           <span class="pill warn">Tooling</span>
           <span class="score">Score <b>6.5</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Claude Code v2.1.191: <code>/rewind</code> vor <code>/clear</code>, Background-Agent-Stop-Fix</h3>
-        <p>Neu: <code>/rewind</code> stellt eine Konversation aus der Zeit vor einem <code>/clear</code> wieder her. Gestoppte Background-Agenten bleiben jetzt endgültig gestoppt (keine Wiederauferstehung), dazu ein Scroll-Fix beim Zurücklesen im Stream und eine klarere Meldung, wenn <code>/voice</code> per Org-Policy deaktiviert ist.</p>
+        <h3 style="margin-top:10px">Claude Code v2.1.187: <code>sandbox.credentials</code> sperrt Secret-Lesezugriff</h3>
+        <p>Die neue Einstellung verhindert, dass sandboxed Befehle Credential-Dateien und geheime Env-Variablen lesen — direkte Antwort auf Agentjacking-artige Exfiltration. Dazu org-weite Modell-Restriktionen, die sich auch über <code>--model</code>/<code>ANTHROPIC_MODEL</code> nicht umgehen lassen, plus Maus-Klick in Fullscreen-Menüs.</p>
         <div class="news-meta">
-          <span>📅 24.06.2026</span><span>·</span><span>🏢 Anthropic</span><span>·</span>
+          <span>📅 23.06.2026</span><span>·</span><span>🏢 Anthropic</span><span>·</span>
           <a href="https://github.com/anthropics/claude-code/releases">github</a>
         </div>
       </article>
 
       <article class="card news-card info">
         <div class="row">
-          <span class="pill info">Regulatorik</span>
+          <span class="pill info">Forschung</span>
           <span class="score">Score <b>6.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Fable 5 / Mythos 5: zweite Woche der Export-Sperre, kein Restore-Termin</h3>
-        <p>Anthropics Spitzenmodelle bleiben weltweit offline. Strukturelle Marker: 8. Juli (Datenschutzrichtlinie mit Regierungs-ID-Verifizierung — möglicher US-zuerst-Mechanismus) und 1. August (60-Tage-EO-Frist für den „covered frontier models”-Rahmen). Mythos 1 soll „in den kommenden Wochen” für alle Kunden kommen.</p>
+        <h3 style="margin-top:10px">Modell-Pipeline stockt: Gemini 3.5 Pro in Preview, GPT-5.6 unbestätigt</h3>
+        <p>Gemini 3.5 Pro hängt Stand 24. Juni in der Vertex-Preview, kein verbindliches GA (öffentlich bleibt Flash). GPT-5.6 ist offiziell unangekündigt — nur <code>iris-alpha</code>-Spuren in Codex-Logs (kolportiert 1,5 Mio. Token); Polymarket: 89 % Release bis 30. Juni. Die Action liegt derzeit in der Agenten-, nicht der Modell-Schicht.</p>
         <div class="news-meta">
-          <span>📅 25.06.2026</span><span>·</span><span>🏢 <span data-person="dario-amodei">Anthropic</span> · US-Gov</span><span>·</span>
-          <a href="https://www.koreajoongangdaily.com/business/anthropic-confident-of-reenabling-mythos-fable-5-access-in-coming-days-executive/12727522">koreajoongangdaily</a>
+          <span>📅 24.06.2026</span><span>·</span><span>🏢 Google · OpenAI</span><span>·</span>
+          <a href="https://llm-stats.com/llm-updates">llm-stats</a>
         </div>
       </article>
 
@@ -590,25 +590,7 @@
 
       <article class="card">
         <h3>Letzte Releases</h3>
-        <p>Aktuelle Version <code>v2.1.191</code> · <code>/rewind</code> stellt Konversationen vor einem <code>/clear</code> wieder her; gestoppte Background-Agenten bleiben gestoppt.</p>
-
-        <div class="release">
-          <div class="ver">v2.1.191</div>
-          <div class="when">24.06.</div>
-          <div class="what">
-            <strong><code>/rewind</code> vor <code>/clear</code></strong>: Konversation aus der Zeit vor einem <code>/clear</code> fortsetzen · Fix: gestoppte Background-Agenten werden im Tasks-Panel endgültig beendet (keine Wiederauferstehung) · Scroll-Position springt beim Zurücklesen nicht mehr ans Ende · <code>/voice</code> erklärt Org-Policy-Sperre statt generischer Meldung
-            <span class="badge feat">FEATURE</span>
-          </div>
-        </div>
-
-        <div class="release">
-          <div class="ver">v2.1.190</div>
-          <div class="when">24.06.</div>
-          <div class="what">
-            Bugfixes und Zuverlässigkeits-Verbesserungen
-            <span class="badge fix">FIX</span>
-          </div>
-        </div>
+        <p>Aktuelle Version <code>v2.1.187</code> · <code>sandbox.credentials</code> sperrt Secret-Lesezugriff sandboxed Befehle; org-weite Modell-Restriktionen.</p>
 
         <div class="release">
           <div class="ver">v2.1.187</div>
@@ -646,6 +628,24 @@
           </div>
         </div>
 
+        <div class="release">
+          <div class="ver">v2.1.181</div>
+          <div class="when">17.06.</div>
+          <div class="what">
+            <strong><code>/config key=value</code></strong> setzt jede Einstellung aus dem Prompt (interaktiv, <code>-p</code>, Remote) · <code>CLAUDE_CLIENT_PRESENCE_FILE</code> unterdrückt Mobil-Push, solange du an der Maschine bist · Bun-Runtime auf 1.4 · Auto-Retry bei Verbindungsabbruch mitten im Denken
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.179</div>
+          <div class="when">16.06.</div>
+          <div class="what">
+            Mid-Stream-Verbindungsabbrüche: Teil-Antworten bleiben erhalten statt Roh-Fehler · Maus-Rad-Scroll in WSL2 unter Windows Terminal/VS Code gefixt · Sandbox-<code>denyRead</code>-Glob über großen Baum machte die Bash-Tool-Description riesig — behoben
+            <span class="badge fix">FIX</span>
+          </div>
+        </div>
+
         <p style="margin-top: 14px;">
           <a href="https://github.com/anthropics/claude-code/releases">→ Alle Releases auf GitHub</a><br/>
           <a href="https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md">→ Vollständiger CHANGELOG.md</a>
@@ -675,7 +675,7 @@
   </section>
 
   <footer>
-    <div>Snapshot · <span class="mono" id="generated">25. Juni 2026</span></div>
+    <div>Snapshot · <span class="mono" id="generated">24. Juni 2026</span></div>
     <div>
       <a href="/agentic-info-dashboard/sources/">📚 Quellen-Sammlung</a> ·
       <a href="/agentic-info-dashboard/">📊 Übersicht</a>
