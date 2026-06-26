@@ -2,8 +2,14 @@
   "$schema": "https://example.com/dashboard-archive.schema.json",
   "snapshots": [
     {
-      "date": "2026-06-25",
+      "date": "2026-06-26",
       "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Die Schlacht wandert ins Silizium: Qualcomm kauft Modular für 3,9 Mrd., OpenAI baut „Jalapeño”-Chip",
+      "summary": "Während die Modell-Front pausiert (GPT-5.6 rutscht in den Juli — Launch-Odds für 22.–28.6. fielen von ~83 auf ~18 %; Fable 5 weiter export-gesperrt), wandert die Schlacht in die Inferenz-Schicht: Qualcomm übernimmt Chris Lattners Modular (Mojo + MAX, hardware-agnostischer Stack) für ~3,9 Mrd. $ — Angriff auf Nvidias CUDA-Bindung · OpenAI enthüllt mit Broadcom „Jalapeño”, seinen ersten eigenen Inferenz-Chip (Entwurf bis Tape-out in 9 Monaten, Start Ende 2026) · Funding folgt der Produktion: Assort Health 120 Mio., Taktile 110 Mio. $ Series C für Decisioning-/Vertical-Agenten · Claude Code v2.1.193 (autoMode.classifyAllShell; OTEL loggt jetzt Modell-Antworten — Upgrade-Default beachten) · EU AI Act Art. 50 ab 2. August"
+    },
+    {
+      "date": "2026-06-25",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-25.html",
       "headline": "Der Frontier-Markt fragmentiert: GPT-5.6 vor dem Start, ChatGPT erstmals unter 50 %, KI-Chemiker glückt im Labor",
       "summary": "OpenAI bereitet GPT-5.6 vor (erwartet bis Ende Juni, Polymarket ~90 % für 22.–28.6., offiziell unbestätigt) — ~1,5 Mio. Token Kontext, kolportiert ~5× günstiger als das export-gesperrte Fable 5, Fokus agentisches Coding · ChatGPT fällt erstmals unter 50 % Assistenten-Marktanteil (46,4 % Ende Mai; Gemini 27,7 %, Claude 10,3 %) — der DoD-Vertrag löste eine Deinstallations-Welle aus · OpenAI + Molecule.one: erster fast autonomer KI-Chemiker (GPT-5.4 + „Maria”) verbessert im Nasslabor über 10.080 Reaktionen die Chan-Lam-Ausbeute von 16,6 auf 25,2 % · EU AI Act Art. 50: Transparenzpflicht für Chatbots/Agenten ab 2. August · Claude Code v2.1.191 (/rewind, Background-Agent-Stop-Fix) · Fable 5/Mythos 5 weiter offline (Marker 8. Juli, 1. Aug.)"
     },

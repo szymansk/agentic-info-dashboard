@@ -134,6 +134,35 @@ claude daemon stop          # reapt verwaiste Worker
 ./bin/check.sh              # verifizieren: daemon läuft + Briefing aktuell
 ```
 
+### Failure-Mode: Briefing steht, Server läuft — zwei weitere Ursachen
+
+Das Symptom „Briefing veraltet, aber YouTube/Server frisch" ist **nicht immer**
+der Upgrade-Kill oben. Am 2026-06-23 stand das Briefing 8 Tage (seit 15.06.) —
+zwei gestapelte Ursachen, die der Upgrade-Pfad nicht abdeckt:
+
+1. **Idle-Exit statt Upgrade-Kill**: `daemon.log` zeigte
+   `idle 5s with no clients — exiting` (KEIN „binary was deleted"). Der
+   Supervisor beendete sich nach dem Tagesjob sauber, niemand startete neu.
+   Der Selbstheiler `ai-news-dashboard-healthcheck.timer` war als Datei da,
+   aber **`disabled` + `inactive`** — nie `systemctl enable --now`'d.
+   → Timer-Aktiv-Status mitprüfen:
+   `systemctl is-active ai-news-dashboard-healthcheck.timer`.
+
+2. **Default-Modell unverfügbar**: Die neu gestartete Session erbte den
+   interaktiven Default aus `~/.claude/settings.json` (`claude-fable-5`,
+   Mythos-gated) und hing mit „Fable 5 is currently unavailable", statt zu
+   arbeiten. Ein unbeaufsichtigter Loop darf NICHT vom interaktiven Default
+   abhängen. → `start-daily-loop.sh` pinnt das Modell jetzt fest
+   (`CLAUDE_MODEL="${CLAUDE_MODEL:-claude-opus-4-8}"` + `--model`).
+
+**Diagnose-Reihenfolge** bei „Briefing veraltet, YouTube frisch":
+```bash
+claude daemon status                                    # Daemon tot?
+systemctl is-active ai-news-dashboard-healthcheck.timer # Selbstheiler scharf?
+./bin/loop.sh log | grep -iE "unavailable|fable|opus"   # Modell-Fehler?
+```
+Erst danach Upgrade-Kill annehmen — nicht zuerst.
+
 ## Was ich (Claude) hier NICHT tun soll
 
 - Browser-Cache-Probleme als Bug behandeln, bevor `bin/check.sh` Pass ist

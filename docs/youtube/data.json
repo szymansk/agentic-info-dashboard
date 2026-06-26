@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-25T04:08:42+00:00",
+  "last_updated": "2026-06-26T04:00:45+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,6 +116,19 @@
   ],
   "featured": [
     {
+      "video_id": "q_diWy3xdrw",
+      "title": "What if plants could talk?",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-06-25T17:19:53+00:00",
+      "url": "https://www.youtube.com/watch?v=q_diWy3xdrw",
+      "thumbnail": "https://img.youtube.com/vi/q_diWy3xdrw/mqdefault.jpg",
+      "description": "Now our plants won't shut up. \n\nGive your plants a voice: https://github.com/openai/planttalk",
+      "why": ""
+    },
+    {
       "video_id": "V04bm-3d6EQ",
       "title": "When millions of AI agents meet",
       "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
@@ -144,6 +157,78 @@
   ],
   "recent": [
     {
+      "video_id": "oQ_aqiSTLQc",
+      "title": "GPT 5.6 is officially BANNED",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-26T02:24:09+00:00",
+      "url": "https://www.youtube.com/shorts/oQ_aqiSTLQc",
+      "thumbnail": "https://img.youtube.com/vi/oQ_aqiSTLQc/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
+    },
+    {
+      "video_id": "IwKuv4LrCVk",
+      "title": "Anthropic is coming for EVERYTHING",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-25T23:33:11+00:00",
+      "url": "https://www.youtube.com/watch?v=IwKuv4LrCVk",
+      "thumbnail": "https://img.youtube.com/vi/IwKuv4LrCVk/mqdefault.jpg",
+      "description": "Try Recall for free or use code MB25 for 25% off Premium. Turn your knowledge into your edge: https://www.recall.it/?t=mb Code valid until August 1st, 2026.\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n"
+    },
+    {
+      "video_id": "_gtQJTnWA4E",
+      "title": "AI companies are trying to take over",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-25T19:25:14+00:00",
+      "url": "https://www.youtube.com/shorts/_gtQJTnWA4E",
+      "thumbnail": "https://img.youtube.com/vi/_gtQJTnWA4E/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
+    },
+    {
+      "video_id": "q_diWy3xdrw",
+      "title": "What if plants could talk?",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-06-25T17:19:53+00:00",
+      "url": "https://www.youtube.com/watch?v=q_diWy3xdrw",
+      "thumbnail": "https://img.youtube.com/vi/q_diWy3xdrw/mqdefault.jpg",
+      "description": "Now our plants won't shut up. \n\nGive your plants a voice: https://github.com/openai/planttalk"
+    },
+    {
+      "video_id": "wRcByxXkJCQ",
+      "title": "Welcome to Open Source AI: Run Your Own Models Locally",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-06-25T16:49:36+00:00",
+      "url": "https://www.youtube.com/watch?v=wRcByxXkJCQ",
+      "thumbnail": "https://img.youtube.com/vi/wRcByxXkJCQ/mqdefault.jpg",
+      "description": "A livestream for everyone starting out with open models. We walk through the most robust stack for running AI on your own laptop or server, and answer your questions live.\n\nWhat we cover:\n\nMerve Noyan on llama.cpp: what it is and how it run"
+    },
+    {
+      "video_id": "0GQ2RP-25gM",
+      "title": "Why AI is like a (Clever Hans) Horse - Computerphile",
+      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
+      "channel_name": "Computerphile",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-06-25T14:45:11+00:00",
+      "url": "https://www.youtube.com/watch?v=0GQ2RP-25gM",
+      "thumbnail": "https://img.youtube.com/vi/0GQ2RP-25gM/mqdefault.jpg",
+      "description": "Clever Hans was a horse that could do maths, or was it using some other trick? Is AI music classification working like a 'Clever Hans?'\n\nDavid Kelly is based at Kings College London. His paper is in preprint here: https://arxiv.org/pdf/2601"
+    },
+    {
       "video_id": "EtxdB7gpFqY",
       "title": "AI can run for days on its own now",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
@@ -154,6 +239,18 @@
       "url": "https://www.youtube.com/shorts/EtxdB7gpFqY",
       "thumbnail": "https://img.youtube.com/vi/EtxdB7gpFqY/mqdefault.jpg",
       "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
+    },
+    {
+      "video_id": "gKboAPejVM8",
+      "title": "Against all odds. Congratulations Elon Musk and SpaceX.",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-06-24T20:03:43+00:00",
+      "url": "https://www.youtube.com/shorts/gKboAPejVM8",
+      "thumbnail": "https://img.youtube.com/vi/gKboAPejVM8/mqdefault.jpg",
+      "description": "This material is solely for educational purposes and is not investment advice or an offer of investment advisory services. This material should not be used as the basis for an investment decision. a16z is an investor in SpaceX and Cursor th"
     },
     {
       "video_id": "7D3w87YqfA8",
@@ -180,6 +277,18 @@
       "description": "Try Merlin AI for only $5/month with discount code MATT5: https://www.getmerlin.in/pricing\n\nLoop Library: https://signals.forwardfuture.ai/loop-library/\nLoop Skill: https://github.com/Forward-Future/loop-library\n\nShout out to here.now for h"
     },
     {
+      "video_id": "mVpCDzoNtxA",
+      "title": "ChatGPT Futures, Class of 2026: The Next Generation of AI Leaders",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-06-23T18:45:29+00:00",
+      "url": "https://www.youtube.com/shorts/mVpCDzoNtxA",
+      "thumbnail": "https://img.youtube.com/vi/mVpCDzoNtxA/mqdefault.jpg",
+      "description": "We asked the ChatGPT Futures Class of 2026 what they hope AI helps people do next.\n\nTheir answers came back to access, education, connection, and possibility: AI that helps close gaps instead of widening them, gives more people the tools to"
+    },
+    {
       "video_id": "a2i9h2ip-nY",
       "title": "Midjourney wants to delete 30% of all death...",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -204,16 +313,76 @@
       "description": "The conversation of the moment is focused on one topic: AI agents. Unlike traditional language models that simply respond to a prompt, autonomous agents can execute multi-step plans and perform complex tasks on your behalf. But what happens"
     },
     {
-      "video_id": "xyJtjk-WZcA",
-      "title": "Use LOOPS for everything",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-06-22T20:58:12+00:00",
-      "url": "https://www.youtube.com/shorts/xyJtjk-WZcA",
-      "thumbnail": "https://img.youtube.com/vi/xyJtjk-WZcA/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
+      "video_id": "qU5-komJ-GE",
+      "title": "How Omio is building the future of conversational travel",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-06-23T11:30:20+00:00",
+      "url": "https://www.youtube.com/watch?v=qU5-komJ-GE",
+      "thumbnail": "https://img.youtube.com/vi/qU5-komJ-GE/mqdefault.jpg",
+      "description": "What happens when one of the world's leading travel platforms combines real-time transportation data with AI?\n\nIn this customer story, Omio shares how it's using ChatGPT, Codex, and the OpenAI API to reimagine how travelers discover and boo"
+    },
+    {
+      "video_id": "Xe67WF8Hfu8",
+      "title": "How One API Runs 27 ML Tasks",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-06-23T07:50:42+00:00",
+      "url": "https://www.youtube.com/shorts/Xe67WF8Hfu8",
+      "thumbnail": "https://img.youtube.com/vi/Xe67WF8Hfu8/mqdefault.jpg",
+      "description": "One API. 27 different ML tasks. The secret is a simple input/output contract. The task ID defines what goes in and what comes out. Same pattern, every time.\n\n#TransformersJS #JavaScript #MachineLearning #AI #WebAI #Pipeline"
+    },
+    {
+      "video_id": "e3gBwLWAerw",
+      "title": "He won a Nobel here for AlphaFold. Then he left. - John Jumper",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-06-22T22:43:36+00:00",
+      "url": "https://www.youtube.com/watch?v=e3gBwLWAerw",
+      "thumbnail": "https://img.youtube.com/vi/e3gBwLWAerw/mqdefault.jpg",
+      "description": "This episode is sponsored by Notion. Learn more about Notion's Developer Platform today at https://notion.com/mlst\n\nProtein folding stalled biology for fifty years. A sequence of amino acids dictates a three-dimensional shape, but reading t"
+    },
+    {
+      "video_id": "GhCP2eDrKHk",
+      "title": "Meet the ChatGPT Futures, Class of 2026",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-06-22T21:06:32+00:00",
+      "url": "https://www.youtube.com/shorts/GhCP2eDrKHk",
+      "thumbnail": "https://img.youtube.com/vi/GhCP2eDrKHk/mqdefault.jpg",
+      "description": "The next generation is already building the future with AI.\n\nThe ChatGPT Futures Class of 2026 came together in San Francisco to share the ideas they're pursuing, the projects they're building, and the experiences that inspired them to star"
+    },
+    {
+      "video_id": "rNgUoH7Wbv8",
+      "title": "Training Agents: Live tutorial on how to fine-tune a coding agent for continual learning",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-06-22T19:13:46+00:00",
+      "url": "https://www.youtube.com/watch?v=rNgUoH7Wbv8",
+      "thumbnail": "https://img.youtube.com/vi/rNgUoH7Wbv8/mqdefault.jpg",
+      "description": "Training Agents, Session 1: from raw agent traces to a supervised fine-tuning baseline.\n\nIn this live session, I’ll set up the first rung of an agentic post-training workflow: SFT. We’ll take public coding-agent traces, turn them into promp"
+    },
+    {
+      "video_id": "27-GjDIWGo0",
+      "title": "How Zendesk CEO Tom Eggemeier goes from Idea to Action",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-06-22T17:45:36+00:00",
+      "url": "https://www.youtube.com/watch?v=27-GjDIWGo0",
+      "thumbnail": "https://img.youtube.com/vi/27-GjDIWGo0/mqdefault.jpg",
+      "description": "We’re excited to launch our new Monday Morning series, a leadership first take on going from idea to action in the AI era. First up is Tom Eggemeier, CEO at Zendesk who shares the one question that every CEO should ask of their board, and t"
     },
     {
       "video_id": "mG4SmhWyeFA",
@@ -228,16 +397,28 @@
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The paper is available here:\nhttps://arxiv.org/abs/2602.21548\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possibl"
     },
     {
-      "video_id": "F4a8aMLb678",
-      "title": "7 INSANE loops you need to try right now",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-06-19T17:43:19+00:00",
-      "url": "https://www.youtube.com/watch?v=F4a8aMLb678",
-      "thumbnail": "https://img.youtube.com/vi/F4a8aMLb678/mqdefault.jpg",
-      "description": "Deploy your AI easily - Check out DigitalOcean: https://do.co/forwardfutureai\n\nLoop Library: https://signals.forwardfuture.ai/loop-library/\nLoop Skill: https://github.com/Forward-Future/loop-library\n\nShout out to here.now for hosting the Lo"
+      "video_id": "yfafpyhB-8E",
+      "title": "Why Attention is Becoming a Competitive Advantage | a16z",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-06-22T14:35:28+00:00",
+      "url": "https://www.youtube.com/watch?v=yfafpyhB-8E",
+      "thumbnail": "https://img.youtube.com/vi/yfafpyhB-8E/mqdefault.jpg",
+      "description": "Jake Paul and Geoff Woo join the podcast to announce Anti Fund’s new $100 million growth fund and discuss the evolution of their investment strategy.\n\nThe conversation covers the fund’s portfolio, including investments in companies such as "
+    },
+    {
+      "video_id": "FLxFBU-Kodk",
+      "title": "What can you build during 48h Robotics Hackathon?",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-06-22T13:00:28+00:00",
+      "url": "https://www.youtube.com/watch?v=FLxFBU-Kodk",
+      "thumbnail": "https://img.youtube.com/vi/FLxFBU-Kodk/mqdefault.jpg",
+      "description": "One year ago thousands of people worked for 48h to build something cool with LeRobot library: https://huggingface.co/lerobot\n\nLeRobot Worldwide Hackathon was a global AI robotics challenge that took place June 14-15, 2025. Discover how one "
     },
     {
       "video_id": "Sntj4HmuykI",
@@ -252,6 +433,18 @@
       "description": "Junie is the #1 coding agent on SWE-Rebench and it'll save you a bunch of tokens - https://jb.gg/Fireship-Junie-GA\n\nUse code: FIRESHIP20 to to get 20 free AI credits\n\nSQLite, the world's most trusted code, just got rewritten in Rust and it "
     },
     {
+      "video_id": "XROaLetSxg0",
+      "title": "The Media Game Has Changed",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-06-19T14:40:13+00:00",
+      "url": "https://www.youtube.com/watch?v=XROaLetSxg0",
+      "thumbnail": "https://img.youtube.com/vi/XROaLetSxg0/mqdefault.jpg",
+      "description": "Recorded live at the New Media Summit, Marc Andreessen, Ben Horowitz, Erik Torenberg, and Gaby Goldberg discuss how media, communication, and influence are changing in the internet era.\n\nThe conversation explores the shift from legacy media"
+    },
+    {
       "video_id": "dUmT0OIGoqE",
       "title": "Scientists Found A Better Language For AI Agents",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -262,18 +455,6 @@
       "url": "https://www.youtube.com/watch?v=dUmT0OIGoqE",
       "thumbnail": "https://img.youtube.com/vi/dUmT0OIGoqE/mqdefault.jpg",
       "description": "❤️ Check out Weights & Biases and sign up for a free demo here: https://wandb.me/papers\n\n📝 The paper  is available here:\nhttps://recursivemas.github.io/\nhttps://github.com/RecursiveMAS/RecursiveMAS\n\nBrain reading video: https://www.youtube."
-    },
-    {
-      "video_id": "wwfJlSF34n8",
-      "title": "I figured out the best way to vibe code",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-06-18T17:44:06+00:00",
-      "url": "https://www.youtube.com/watch?v=wwfJlSF34n8",
-      "thumbnail": "https://img.youtube.com/vi/wwfJlSF34n8/mqdefault.jpg",
-      "description": "Try Greptile Free for 14 days https://www.greptile.com/go/berman\n\nLoop Library: https://signals.forwardfuture.ai/loop-library/\nLoop Skill: https://github.com/Forward-Future/loop-library\n\nShout out to here.now for hosting the Loop Library. \n"
     },
     {
       "video_id": "ML3q7Ok4hJg",
@@ -298,6 +479,18 @@
       "url": "https://www.youtube.com/watch?v=z4gueKVs6Bo",
       "thumbnail": "https://img.youtube.com/vi/z4gueKVs6Bo/mqdefault.jpg",
       "description": "Learn more: https://bit.ly/4vPQ3HE\n\nVoice is one of the most natural human interfaces, but adding it to AI applications has historically forced a tradeoff: fast voice-to-voice models that sacrifice reliability, or accurate speech-to-text-to"
+    },
+    {
+      "video_id": "n32qq7Kwzh0",
+      "title": "Hermes Architecture EXPLAINED: Memory, Context & Gateways",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-06-17T06:05:39+00:00",
+      "url": "https://www.youtube.com/watch?v=n32qq7Kwzh0",
+      "thumbnail": "https://img.youtube.com/vi/n32qq7Kwzh0/mqdefault.jpg",
+      "description": "Hermes is an always-on AI agent with a simple but useful architecture: an agent loop, memory, context construction, gateway integrations, and scheduled cron jobs. In this video, I walk through how Hermes builds context, talks to external se"
     },
     {
       "video_id": "wGffBCfrAsE",
@@ -406,31 +599,13 @@
       "url": "https://www.youtube.com/shorts/-7etvZSBxlk",
       "thumbnail": "https://img.youtube.com/vi/-7etvZSBxlk/mqdefault.jpg",
       "description": "Full video: https://youtu.be/l6DKRf-fAAM"
-    },
-    {
-      "video_id": "1PBRhm5ZnjU",
-      "title": "Anthropic begged the world to stop AI… then shipped this",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-06-11T17:17:48+00:00",
-      "url": "https://www.youtube.com/watch?v=1PBRhm5ZnjU",
-      "thumbnail": "https://img.youtube.com/vi/1PBRhm5ZnjU/mqdefault.jpg",
-      "description": "Render is the easiest place to ship full-stack apps and agents. The first 2,000 people to use the code RENDER-FIRESHIP will get $50 in credits: https://dashboard.render.com/register?utm_source=youtube&utm_medium=organic_video&utm_campaign=2"
     }
   ],
   "stats": {
-    "total_videos": 23,
+    "total_videos": 37,
     "total_channels": 16,
-    "successful_channels": 11,
-    "failed_channels": [
-      "Andrej Karpathy",
-      "Machine Learning Street Talk",
-      "OpenAI",
-      "Hugging Face",
-      "a16z"
-    ],
+    "successful_channels": 16,
+    "failed_channels": [],
     "window_days": 14
   }
 }
