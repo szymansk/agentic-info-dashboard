@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26T04:00:45+00:00",
+  "last_updated": "2026-06-27T04:02:37+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,16 @@
   ],
   "featured": [
     {
-      "video_id": "q_diWy3xdrw",
-      "title": "What if plants could talk?",
+      "video_id": "SPC_yCe1cUw",
+      "title": "Builders Unscripted: Ep. 4 - Pietro Schirano",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-06-25T17:19:53+00:00",
-      "url": "https://www.youtube.com/watch?v=q_diWy3xdrw",
-      "thumbnail": "https://img.youtube.com/vi/q_diWy3xdrw/mqdefault.jpg",
-      "description": "Now our plants won't shut up. \n\nGive your plants a voice: https://github.com/openai/planttalk",
+      "published": "2026-06-26T19:40:00+00:00",
+      "url": "https://www.youtube.com/watch?v=SPC_yCe1cUw",
+      "thumbnail": "https://img.youtube.com/vi/SPC_yCe1cUw/mqdefault.jpg",
+      "description": "Pietro Schirano, Founder & CEO of MagicPath sits down with Romain Huet to talk about pushing the creative edges of GPT-5.5 and using Codex to turn ideas into software.\n\n03:45 Images into sound\n07:57 Multi-agent Codex workflows\n14:34 Revivin",
       "why": ""
     },
     {
@@ -157,6 +157,90 @@
   ],
   "recent": [
     {
+      "video_id": "eEdOqSmkZy0",
+      "title": "I can't believe this happened...",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-26T21:26:32+00:00",
+      "url": "https://www.youtube.com/watch?v=eEdOqSmkZy0",
+      "thumbnail": "https://img.youtube.com/vi/eEdOqSmkZy0/mqdefault.jpg",
+      "description": "This is really disappointing...\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/ma"
+    },
+    {
+      "video_id": "iG3lW8GslXs",
+      "title": "I AM SO MAD",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-26T20:04:33+00:00",
+      "url": "https://www.youtube.com/shorts/iG3lW8GslXs",
+      "thumbnail": "https://img.youtube.com/vi/iG3lW8GslXs/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
+    },
+    {
+      "video_id": "JNu6c4G6q5M",
+      "title": "This is New Media",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-06-26T19:58:27+00:00",
+      "url": "https://www.youtube.com/watch?v=JNu6c4G6q5M",
+      "thumbnail": "https://img.youtube.com/vi/JNu6c4G6q5M/mqdefault.jpg",
+      "description": ""
+    },
+    {
+      "video_id": "SPC_yCe1cUw",
+      "title": "Builders Unscripted: Ep. 4 - Pietro Schirano",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-06-26T19:40:00+00:00",
+      "url": "https://www.youtube.com/watch?v=SPC_yCe1cUw",
+      "thumbnail": "https://img.youtube.com/vi/SPC_yCe1cUw/mqdefault.jpg",
+      "description": "Pietro Schirano, Founder & CEO of MagicPath sits down with Romain Huet to talk about pushing the creative edges of GPT-5.5 and using Codex to turn ideas into software.\n\n03:45 Images into sound\n07:57 Multi-agent Codex workflows\n14:34 Revivin"
+    },
+    {
+      "video_id": "rg9oHMXzLl0",
+      "title": "GPT 5.6 is officially NOT BANNED (even worse)",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-26T19:06:59+00:00",
+      "url": "https://www.youtube.com/shorts/rg9oHMXzLl0",
+      "thumbnail": "https://img.youtube.com/vi/rg9oHMXzLl0/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
+    },
+    {
+      "video_id": "DOfwOVDKSSk",
+      "title": "Claude got attacked",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-26T14:18:02+00:00",
+      "url": "https://www.youtube.com/shorts/DOfwOVDKSSk",
+      "thumbnail": "https://img.youtube.com/vi/DOfwOVDKSSk/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
+    },
+    {
+      "video_id": "mFwWax5pLTs",
+      "title": "Verso, l'entreprise qui ne dort jamais",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-06-26T11:00:22+00:00",
+      "url": "https://www.youtube.com/watch?v=mFwWax5pLTs",
+      "thumbnail": "https://img.youtube.com/vi/mFwWax5pLTs/mqdefault.jpg",
+      "description": "Découvrez comment Verso développe une entreprise véritablement AI-native. Lors de cette session enregistrée lors de l'événement OpenAI France en juin 2026, Lydia Bellahouel, cofondatrice et CEO de Verso, partage la manière dont son équipe s"
+    },
+    {
       "video_id": "oQ_aqiSTLQc",
       "title": "GPT 5.6 is officially BANNED",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
@@ -166,30 +250,6 @@
       "published": "2026-06-26T02:24:09+00:00",
       "url": "https://www.youtube.com/shorts/oQ_aqiSTLQc",
       "thumbnail": "https://img.youtube.com/vi/oQ_aqiSTLQc/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
-    },
-    {
-      "video_id": "IwKuv4LrCVk",
-      "title": "Anthropic is coming for EVERYTHING",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-06-25T23:33:11+00:00",
-      "url": "https://www.youtube.com/watch?v=IwKuv4LrCVk",
-      "thumbnail": "https://img.youtube.com/vi/IwKuv4LrCVk/mqdefault.jpg",
-      "description": "Try Recall for free or use code MB25 for 25% off Premium. Turn your knowledge into your edge: https://www.recall.it/?t=mb Code valid until August 1st, 2026.\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n"
-    },
-    {
-      "video_id": "_gtQJTnWA4E",
-      "title": "AI companies are trying to take over",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-06-25T19:25:14+00:00",
-      "url": "https://www.youtube.com/shorts/_gtQJTnWA4E",
-      "thumbnail": "https://img.youtube.com/vi/_gtQJTnWA4E/mqdefault.jpg",
       "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
     },
     {
@@ -229,18 +289,6 @@
       "description": "Clever Hans was a horse that could do maths, or was it using some other trick? Is AI music classification working like a 'Clever Hans?'\n\nDavid Kelly is based at Kings College London. His paper is in preprint here: https://arxiv.org/pdf/2601"
     },
     {
-      "video_id": "EtxdB7gpFqY",
-      "title": "AI can run for days on its own now",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-06-24T20:40:01+00:00",
-      "url": "https://www.youtube.com/shorts/EtxdB7gpFqY",
-      "thumbnail": "https://img.youtube.com/vi/EtxdB7gpFqY/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
-    },
-    {
       "video_id": "gKboAPejVM8",
       "title": "Against all odds. Congratulations Elon Musk and SpaceX.",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -265,18 +313,6 @@
       "description": "Don’t miss a night out because you’re watching your terminal. Have your coding agent call you instead!\n\nJoin the 7-Day Voice AI Builder Challenge here: https://hubs.la/Q04mvXBZ0\n\nHurry—challenge ends June 30!"
     },
     {
-      "video_id": "2lmBj_XQq0I",
-      "title": "You NEED to try these 12 open-source AI projects RIGHT NOW",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-06-24T00:01:49+00:00",
-      "url": "https://www.youtube.com/watch?v=2lmBj_XQq0I",
-      "thumbnail": "https://img.youtube.com/vi/2lmBj_XQq0I/mqdefault.jpg",
-      "description": "Try Merlin AI for only $5/month with discount code MATT5: https://www.getmerlin.in/pricing\n\nLoop Library: https://signals.forwardfuture.ai/loop-library/\nLoop Skill: https://github.com/Forward-Future/loop-library\n\nShout out to here.now for h"
-    },
-    {
       "video_id": "mVpCDzoNtxA",
       "title": "ChatGPT Futures, Class of 2026: The Next Generation of AI Leaders",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
@@ -290,7 +326,7 @@
     },
     {
       "video_id": "a2i9h2ip-nY",
-      "title": "Midjourney wants to delete 30% of all death...",
+      "title": "Midjourney has a new side quest... death",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
       "channel_name": "Fireship",
       "category": "practitioner",
@@ -349,18 +385,6 @@
       "description": "This episode is sponsored by Notion. Learn more about Notion's Developer Platform today at https://notion.com/mlst\n\nProtein folding stalled biology for fifty years. A sequence of amino acids dictates a three-dimensional shape, but reading t"
     },
     {
-      "video_id": "GhCP2eDrKHk",
-      "title": "Meet the ChatGPT Futures, Class of 2026",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-06-22T21:06:32+00:00",
-      "url": "https://www.youtube.com/shorts/GhCP2eDrKHk",
-      "thumbnail": "https://img.youtube.com/vi/GhCP2eDrKHk/mqdefault.jpg",
-      "description": "The next generation is already building the future with AI.\n\nThe ChatGPT Futures Class of 2026 came together in San Francisco to share the ideas they're pursuing, the projects they're building, and the experiences that inspired them to star"
-    },
-    {
       "video_id": "rNgUoH7Wbv8",
       "title": "Training Agents: Live tutorial on how to fine-tune a coding agent for continual learning",
       "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
@@ -371,18 +395,6 @@
       "url": "https://www.youtube.com/watch?v=rNgUoH7Wbv8",
       "thumbnail": "https://img.youtube.com/vi/rNgUoH7Wbv8/mqdefault.jpg",
       "description": "Training Agents, Session 1: from raw agent traces to a supervised fine-tuning baseline.\n\nIn this live session, I’ll set up the first rung of an agentic post-training workflow: SFT. We’ll take public coding-agent traces, turn them into promp"
-    },
-    {
-      "video_id": "27-GjDIWGo0",
-      "title": "How Zendesk CEO Tom Eggemeier goes from Idea to Action",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-06-22T17:45:36+00:00",
-      "url": "https://www.youtube.com/watch?v=27-GjDIWGo0",
-      "thumbnail": "https://img.youtube.com/vi/27-GjDIWGo0/mqdefault.jpg",
-      "description": "We’re excited to launch our new Monday Morning series, a leadership first take on going from idea to action in the AI era. First up is Tom Eggemeier, CEO at Zendesk who shares the one question that every CEO should ask of their board, and t"
     },
     {
       "video_id": "mG4SmhWyeFA",
@@ -587,18 +599,6 @@
       "url": "https://www.youtube.com/watch?v=IADOV8UZO34",
       "thumbnail": "https://img.youtube.com/vi/IADOV8UZO34/mqdefault.jpg",
       "description": "Continuing the deep dive down the network stack, Richard begins the story of TCP. Richard G Clegg is based at Queen Mary University London. \n\nNext in the playlist: https://youtu.be/nKVML4YaBqs \n\nRFC793 https://datatracker.ietf.org/doc/html/"
-    },
-    {
-      "video_id": "-7etvZSBxlk",
-      "title": "Measuring the entropy of English",
-      "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
-      "channel_name": "3Blue1Brown",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-06-12T13:22:02+00:00",
-      "url": "https://www.youtube.com/shorts/-7etvZSBxlk",
-      "thumbnail": "https://img.youtube.com/vi/-7etvZSBxlk/mqdefault.jpg",
-      "description": "Full video: https://youtu.be/l6DKRf-fAAM"
     }
   ],
   "stats": {

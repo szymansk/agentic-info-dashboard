@@ -2,8 +2,14 @@
   "$schema": "https://example.com/dashboard-archive.schema.json",
   "snapshots": [
     {
-      "date": "2026-06-26",
+      "date": "2026-06-27",
       "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "GPT-5.6 startet gated — und der Agenten-Stack bekommt einen Standard (ARD) und einen deutschen Aufseher (KI-MIG)",
+      "summary": "OpenAI öffnet GPT-5.6 als limitierte Vorschau (Sol/Terra/Luna) für ~20 geprüfte Orgs über API/Codex — erst nachdem es die Modelle und Release-Pläne mit der US-Regierung teilte (Lehre aus dem Fable-5-Debakel); Sol = stärkstes Modell (agentisch in Coding/Bio/Cyber, „ultra”-Sub-Agent-Modus), Preise 5/30, 2,50/15, 1/6 $ je Mio. Token, GA „in Wochen” · Google + Microsoft stellen Agentic Resource Discovery (ARD) vor — offener Standard (Apache 2.0) dafür, wie Agenten zur Laufzeit Tools/MCP-Server/andere Agenten finden, prüfen, verbinden (ai-catalog.json + föderierte Registry); Backer u.a. Cisco, Databricks, GitHub, Nvidia, Salesforce, Snowflake · Deutschland: Bundestag verabschiedet KI-MIG (11.6.), Bundesnetzagentur wird nationale KI-Aufsicht — eng vor der Art.-50-Frist 2.8. · Talent: Adler + Pritzel (Gemini) zu Anthropic · Claude Code v2.1.195 (Wartung)"
+    },
+    {
+      "date": "2026-06-26",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-26.html",
       "headline": "Die Schlacht wandert ins Silizium: Qualcomm kauft Modular für 3,9 Mrd., OpenAI baut „Jalapeño”-Chip",
       "summary": "Während die Modell-Front pausiert (GPT-5.6 rutscht in den Juli — Launch-Odds für 22.–28.6. fielen von ~83 auf ~18 %; Fable 5 weiter export-gesperrt), wandert die Schlacht in die Inferenz-Schicht: Qualcomm übernimmt Chris Lattners Modular (Mojo + MAX, hardware-agnostischer Stack) für ~3,9 Mrd. $ — Angriff auf Nvidias CUDA-Bindung · OpenAI enthüllt mit Broadcom „Jalapeño”, seinen ersten eigenen Inferenz-Chip (Entwurf bis Tape-out in 9 Monaten, Start Ende 2026) · Funding folgt der Produktion: Assort Health 120 Mio., Taktile 110 Mio. $ Series C für Decisioning-/Vertical-Agenten · Claude Code v2.1.193 (autoMode.classifyAllShell; OTEL loggt jetzt Modell-Antworten — Upgrade-Default beachten) · EU AI Act Art. 50 ab 2. August"
     },
