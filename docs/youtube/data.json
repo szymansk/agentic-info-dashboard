@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-28T04:02:38+00:00",
+  "last_updated": "2026-06-29T04:04:46+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -140,22 +140,33 @@
       "thumbnail": "https://img.youtube.com/vi/V04bm-3d6EQ/mqdefault.jpg",
       "description": "The conversation of the moment is focused on one topic: AI agents. Unlike traditional language models that simply respond to a prompt, autonomous agents can execute multi-step plans and perform complex tasks on your behalf. But what happens",
       "why": ""
-    },
-    {
-      "video_id": "Qj71N0tBzRo",
-      "title": "Claude Fable Blocked - 11 Quiet Details on What’s Next",
-      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
-      "channel_name": "AI Explained",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-06-14T14:52:27+00:00",
-      "url": "https://www.youtube.com/watch?v=Qj71N0tBzRo",
-      "thumbnail": "https://img.youtube.com/vi/Qj71N0tBzRo/mqdefault.jpg",
-      "description": "Claude Fable 5 banned, but what’s the bigger story. We go through 11 under-reported details, so you have the context to see what’s coming next for your use of AI. From whether the ban will last, what the possible motives are, what the model",
-      "why": ""
     }
   ],
   "recent": [
+    {
+      "video_id": "5pieVHmlbyk",
+      "title": "The Thermodynamic AI Chip · Thomas Ahle",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-06-28T23:38:07+00:00",
+      "url": "https://www.youtube.com/watch?v=5pieVHmlbyk",
+      "thumbnail": "https://img.youtube.com/vi/5pieVHmlbyk/mqdefault.jpg",
+      "description": "Thomas Ahle wants Normal Computing to be the Lovable for chip design: type your intent, and a swarm of agents carries it from design through optimisation, formalisation and verification to tape-out. To get there, his team at wrote their own"
+    },
+    {
+      "video_id": "TML-0HmxWCE",
+      "title": "\"The best thing since OpenClaw\" (Hermes Tutorial)",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-28T14:00:35+00:00",
+      "url": "https://www.youtube.com/watch?v=TML-0HmxWCE",
+      "thumbnail": "https://img.youtube.com/vi/TML-0HmxWCE/mqdefault.jpg",
+      "description": "Go to http://hostinger.com/matthewhermes and use code MATTHEWB for 10% off\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture"
+    },
     {
       "video_id": "fvXWEqut82c",
       "title": "Apple just raised prices...",
@@ -226,18 +237,6 @@
       "published": "2026-06-26T19:06:59+00:00",
       "url": "https://www.youtube.com/shorts/rg9oHMXzLl0",
       "thumbnail": "https://img.youtube.com/vi/rg9oHMXzLl0/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
-    },
-    {
-      "video_id": "DOfwOVDKSSk",
-      "title": "Claude got attacked",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-06-26T14:18:02+00:00",
-      "url": "https://www.youtube.com/shorts/DOfwOVDKSSk",
-      "thumbnail": "https://img.youtube.com/vi/DOfwOVDKSSk/mqdefault.jpg",
       "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
     },
     {
@@ -563,34 +562,10 @@
       "url": "https://www.youtube.com/watch?v=nKVML4YaBqs",
       "thumbnail": "https://img.youtube.com/vi/nKVML4YaBqs/mqdefault.jpg",
       "description": "Network Basics story continues with the second part of the TCP segment. Richard G Clegg is based at Queen Mary University London.\n\nRichard's Code: https://github.com/richardclegg/computerphile_demos/\nRFC 5681 https://datatracker.ietf.org/do"
-    },
-    {
-      "video_id": "zJvN8PDX1is",
-      "title": "NVIDIA's New Free AI - A Gift To Humanity",
-      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
-      "channel_name": "Two Minute Papers",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-06-14T15:27:17+00:00",
-      "url": "https://www.youtube.com/watch?v=zJvN8PDX1is",
-      "thumbnail": "https://img.youtube.com/vi/zJvN8PDX1is/mqdefault.jpg",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The Nemotron 3 Ultra paper is available here:\nhttps://research.nvidia.com/labs/nemotron/Nemotron-3-Ultra/\n\nFree Rendering course and source code:\nhttps://"
-    },
-    {
-      "video_id": "Qj71N0tBzRo",
-      "title": "Claude Fable Blocked - 11 Quiet Details on What’s Next",
-      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
-      "channel_name": "AI Explained",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-06-14T14:52:27+00:00",
-      "url": "https://www.youtube.com/watch?v=Qj71N0tBzRo",
-      "thumbnail": "https://img.youtube.com/vi/Qj71N0tBzRo/mqdefault.jpg",
-      "description": "Claude Fable 5 banned, but what’s the bigger story. We go through 11 under-reported details, so you have the context to see what’s coming next for your use of AI. From whether the ban will last, what the possible motives are, what the model"
     }
   ],
   "stats": {
-    "total_videos": 36,
+    "total_videos": 35,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
