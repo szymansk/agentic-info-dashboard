@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-29T04:04:46+00:00",
+  "last_updated": "2026-06-30T04:09:36+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,104 +116,31 @@
   ],
   "featured": [
     {
-      "video_id": "SPC_yCe1cUw",
-      "title": "Builders Unscripted: Ep. 4 - Pietro Schirano",
+      "video_id": "f-HiB82Tl94",
+      "title": "Advent Accelerates Deals with ChatGPT + Codex",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-06-26T19:40:00+00:00",
-      "url": "https://www.youtube.com/watch?v=SPC_yCe1cUw",
-      "thumbnail": "https://img.youtube.com/vi/SPC_yCe1cUw/mqdefault.jpg",
-      "description": "Pietro Schirano, Founder & CEO of MagicPath sits down with Romain Huet to talk about pushing the creative edges of GPT-5.5 and using Codex to turn ideas into software.\n\n03:45 Images into sound\n07:57 Multi-agent Codex workflows\n14:34 Revivin",
-      "why": ""
-    },
-    {
-      "video_id": "V04bm-3d6EQ",
-      "title": "When millions of AI agents meet",
-      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
-      "channel_name": "Google DeepMind",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-06-23T15:48:06+00:00",
-      "url": "https://www.youtube.com/watch?v=V04bm-3d6EQ",
-      "thumbnail": "https://img.youtube.com/vi/V04bm-3d6EQ/mqdefault.jpg",
-      "description": "The conversation of the moment is focused on one topic: AI agents. Unlike traditional language models that simply respond to a prompt, autonomous agents can execute multi-step plans and perform complex tasks on your behalf. But what happens",
+      "published": "2026-06-29T14:30:09+00:00",
+      "url": "https://www.youtube.com/watch?v=f-HiB82Tl94",
+      "thumbnail": "https://img.youtube.com/vi/f-HiB82Tl94/mqdefault.jpg",
+      "description": "ChatGPT + Codex are a one-two punch for investment firms. \n\n\"Having the ability to connect your deal folder with all of the context, and then be able to ask ChatGPT and Codex real time questions has been really impactful to our workflows,\" ",
       "why": ""
     }
   ],
   "recent": [
     {
-      "video_id": "5pieVHmlbyk",
-      "title": "The Thermodynamic AI Chip · Thomas Ahle",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-06-28T23:38:07+00:00",
-      "url": "https://www.youtube.com/watch?v=5pieVHmlbyk",
-      "thumbnail": "https://img.youtube.com/vi/5pieVHmlbyk/mqdefault.jpg",
-      "description": "Thomas Ahle wants Normal Computing to be the Lovable for chip design: type your intent, and a swarm of agents carries it from design through optimisation, formalisation and verification to tape-out. To get there, his team at wrote their own"
-    },
-    {
-      "video_id": "TML-0HmxWCE",
-      "title": "\"The best thing since OpenClaw\" (Hermes Tutorial)",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-06-28T14:00:35+00:00",
-      "url": "https://www.youtube.com/watch?v=TML-0HmxWCE",
-      "thumbnail": "https://img.youtube.com/vi/TML-0HmxWCE/mqdefault.jpg",
-      "description": "Go to http://hostinger.com/matthewhermes and use code MATTHEWB for 10% off\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture"
-    },
-    {
-      "video_id": "fvXWEqut82c",
-      "title": "Apple just raised prices...",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-06-27T15:00:20+00:00",
-      "url": "https://www.youtube.com/shorts/fvXWEqut82c",
-      "thumbnail": "https://img.youtube.com/vi/fvXWEqut82c/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
-    },
-    {
-      "video_id": "eEdOqSmkZy0",
-      "title": "I can't believe this happened...",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-06-26T21:26:32+00:00",
-      "url": "https://www.youtube.com/watch?v=eEdOqSmkZy0",
-      "thumbnail": "https://img.youtube.com/vi/eEdOqSmkZy0/mqdefault.jpg",
-      "description": "This is really disappointing...\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/ma"
-    },
-    {
-      "video_id": "iG3lW8GslXs",
-      "title": "I AM SO MAD",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-06-26T20:04:33+00:00",
-      "url": "https://www.youtube.com/shorts/iG3lW8GslXs",
-      "thumbnail": "https://img.youtube.com/vi/iG3lW8GslXs/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
-    },
-    {
-      "video_id": "JNu6c4G6q5M",
-      "title": "This is New Media",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-06-26T19:58:27+00:00",
-      "url": "https://www.youtube.com/watch?v=JNu6c4G6q5M",
-      "thumbnail": "https://img.youtube.com/vi/JNu6c4G6q5M/mqdefault.jpg",
-      "description": ""
+      "video_id": "f-HiB82Tl94",
+      "title": "Advent Accelerates Deals with ChatGPT + Codex",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-06-29T14:30:09+00:00",
+      "url": "https://www.youtube.com/watch?v=f-HiB82Tl94",
+      "thumbnail": "https://img.youtube.com/vi/f-HiB82Tl94/mqdefault.jpg",
+      "description": "ChatGPT + Codex are a one-two punch for investment firms. \n\n\"Having the ability to connect your deal folder with all of the context, and then be able to ask ChatGPT and Codex real time questions has been really impactful to our workflows,\" "
     },
     {
       "video_id": "SPC_yCe1cUw",
@@ -226,18 +153,6 @@
       "url": "https://www.youtube.com/watch?v=SPC_yCe1cUw",
       "thumbnail": "https://img.youtube.com/vi/SPC_yCe1cUw/mqdefault.jpg",
       "description": "Pietro Schirano, Founder & CEO of MagicPath sits down with Romain Huet to talk about pushing the creative edges of GPT-5.5 and using Codex to turn ideas into software.\n\n03:45 Images into sound\n07:57 Multi-agent Codex workflows\n14:34 Revivin"
-    },
-    {
-      "video_id": "rg9oHMXzLl0",
-      "title": "GPT 5.6 is officially NOT BANNED (even worse)",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-06-26T19:06:59+00:00",
-      "url": "https://www.youtube.com/shorts/rg9oHMXzLl0",
-      "thumbnail": "https://img.youtube.com/vi/rg9oHMXzLl0/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
     },
     {
       "video_id": "mFwWax5pLTs",
@@ -264,18 +179,6 @@
       "description": "Now our plants won't shut up. \n\nGive your plants a voice: https://github.com/openai/planttalk"
     },
     {
-      "video_id": "wRcByxXkJCQ",
-      "title": "Welcome to Open Source AI: Run Your Own Models Locally",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-06-25T16:49:36+00:00",
-      "url": "https://www.youtube.com/watch?v=wRcByxXkJCQ",
-      "thumbnail": "https://img.youtube.com/vi/wRcByxXkJCQ/mqdefault.jpg",
-      "description": "A livestream for everyone starting out with open models. We walk through the most robust stack for running AI on your own laptop or server, and answer your questions live.\n\nWhat we cover:\n\nMerve Noyan on llama.cpp: what it is and how it run"
-    },
-    {
       "video_id": "0GQ2RP-25gM",
       "title": "Why AI is like a (Clever Hans) Horse - Computerphile",
       "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
@@ -286,30 +189,6 @@
       "url": "https://www.youtube.com/watch?v=0GQ2RP-25gM",
       "thumbnail": "https://img.youtube.com/vi/0GQ2RP-25gM/mqdefault.jpg",
       "description": "Clever Hans was a horse that could do maths, or was it using some other trick? Is AI music classification working like a 'Clever Hans?'\n\nDavid Kelly is based at Kings College London. His paper is in preprint here: https://arxiv.org/pdf/2601"
-    },
-    {
-      "video_id": "gKboAPejVM8",
-      "title": "Against all odds. Congratulations Elon Musk and SpaceX.",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-06-24T20:03:43+00:00",
-      "url": "https://www.youtube.com/shorts/gKboAPejVM8",
-      "thumbnail": "https://img.youtube.com/vi/gKboAPejVM8/mqdefault.jpg",
-      "description": "This material is solely for educational purposes and is not investment advice or an offer of investment advisory services. This material should not be used as the basis for an investment decision. a16z is an investor in SpaceX and Cursor th"
-    },
-    {
-      "video_id": "7D3w87YqfA8",
-      "title": "7-day Voice AI Build Challenge",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-06-24T17:11:15+00:00",
-      "url": "https://www.youtube.com/shorts/7D3w87YqfA8",
-      "thumbnail": "https://img.youtube.com/vi/7D3w87YqfA8/mqdefault.jpg",
-      "description": "Don’t miss a night out because you’re watching your terminal. Have your coding agent call you instead!\n\nJoin the 7-Day Voice AI Builder Challenge here: https://hubs.la/Q04mvXBZ0\n\nHurry—challenge ends June 30!"
     },
     {
       "video_id": "mVpCDzoNtxA",
@@ -336,66 +215,6 @@
       "description": "Try out Retool's new AI app builder to safely connect your apps to your team's data and APIs - https://fandf.co/4e2lDe2\n\nFounder of Midjourney, David Holz, just announced plans to make a new medical imaging device capable of full body scans"
     },
     {
-      "video_id": "V04bm-3d6EQ",
-      "title": "When millions of AI agents meet",
-      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
-      "channel_name": "Google DeepMind",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-06-23T15:48:06+00:00",
-      "url": "https://www.youtube.com/watch?v=V04bm-3d6EQ",
-      "thumbnail": "https://img.youtube.com/vi/V04bm-3d6EQ/mqdefault.jpg",
-      "description": "The conversation of the moment is focused on one topic: AI agents. Unlike traditional language models that simply respond to a prompt, autonomous agents can execute multi-step plans and perform complex tasks on your behalf. But what happens"
-    },
-    {
-      "video_id": "qU5-komJ-GE",
-      "title": "How Omio is building the future of conversational travel",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-06-23T11:30:20+00:00",
-      "url": "https://www.youtube.com/watch?v=qU5-komJ-GE",
-      "thumbnail": "https://img.youtube.com/vi/qU5-komJ-GE/mqdefault.jpg",
-      "description": "What happens when one of the world's leading travel platforms combines real-time transportation data with AI?\n\nIn this customer story, Omio shares how it's using ChatGPT, Codex, and the OpenAI API to reimagine how travelers discover and boo"
-    },
-    {
-      "video_id": "Xe67WF8Hfu8",
-      "title": "How One API Runs 27 ML Tasks",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-06-23T07:50:42+00:00",
-      "url": "https://www.youtube.com/shorts/Xe67WF8Hfu8",
-      "thumbnail": "https://img.youtube.com/vi/Xe67WF8Hfu8/mqdefault.jpg",
-      "description": "One API. 27 different ML tasks. The secret is a simple input/output contract. The task ID defines what goes in and what comes out. Same pattern, every time.\n\n#TransformersJS #JavaScript #MachineLearning #AI #WebAI #Pipeline"
-    },
-    {
-      "video_id": "e3gBwLWAerw",
-      "title": "He won a Nobel here for AlphaFold. Then he left. - John Jumper",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-06-22T22:43:36+00:00",
-      "url": "https://www.youtube.com/watch?v=e3gBwLWAerw",
-      "thumbnail": "https://img.youtube.com/vi/e3gBwLWAerw/mqdefault.jpg",
-      "description": "This episode is sponsored by Notion. Learn more about Notion's Developer Platform today at https://notion.com/mlst\n\nProtein folding stalled biology for fifty years. A sequence of amino acids dictates a three-dimensional shape, but reading t"
-    },
-    {
-      "video_id": "rNgUoH7Wbv8",
-      "title": "Training Agents: Live tutorial on how to fine-tune a coding agent for continual learning",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-06-22T19:13:46+00:00",
-      "url": "https://www.youtube.com/watch?v=rNgUoH7Wbv8",
-      "thumbnail": "https://img.youtube.com/vi/rNgUoH7Wbv8/mqdefault.jpg",
-      "description": "Training Agents, Session 1: from raw agent traces to a supervised fine-tuning baseline.\n\nIn this live session, I’ll set up the first rung of an agentic post-training workflow: SFT. We’ll take public coding-agent traces, turn them into promp"
-    },
-    {
       "video_id": "mG4SmhWyeFA",
       "title": "DeepSeek Just Solved AI's Billion Dollar Problem",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -408,30 +227,6 @@
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The paper is available here:\nhttps://arxiv.org/abs/2602.21548\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possibl"
     },
     {
-      "video_id": "yfafpyhB-8E",
-      "title": "Why Attention is Becoming a Competitive Advantage | a16z",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-06-22T14:35:28+00:00",
-      "url": "https://www.youtube.com/watch?v=yfafpyhB-8E",
-      "thumbnail": "https://img.youtube.com/vi/yfafpyhB-8E/mqdefault.jpg",
-      "description": "Jake Paul and Geoff Woo join the podcast to announce Anti Fund’s new $100 million growth fund and discuss the evolution of their investment strategy.\n\nThe conversation covers the fund’s portfolio, including investments in companies such as "
-    },
-    {
-      "video_id": "FLxFBU-Kodk",
-      "title": "What can you build during 48h Robotics Hackathon?",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-06-22T13:00:28+00:00",
-      "url": "https://www.youtube.com/watch?v=FLxFBU-Kodk",
-      "thumbnail": "https://img.youtube.com/vi/FLxFBU-Kodk/mqdefault.jpg",
-      "description": "One year ago thousands of people worked for 48h to build something cool with LeRobot library: https://huggingface.co/lerobot\n\nLeRobot Worldwide Hackathon was a global AI robotics challenge that took place June 14-15, 2025. Discover how one "
-    },
-    {
       "video_id": "Sntj4HmuykI",
       "title": "The most trusted code on Earth is being rewritten in Rust",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -442,18 +237,6 @@
       "url": "https://www.youtube.com/watch?v=Sntj4HmuykI",
       "thumbnail": "https://img.youtube.com/vi/Sntj4HmuykI/mqdefault.jpg",
       "description": "Junie is the #1 coding agent on SWE-Rebench and it'll save you a bunch of tokens - https://jb.gg/Fireship-Junie-GA\n\nUse code: FIRESHIP20 to to get 20 free AI credits\n\nSQLite, the world's most trusted code, just got rewritten in Rust and it "
-    },
-    {
-      "video_id": "XROaLetSxg0",
-      "title": "The Media Game Has Changed",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-06-19T14:40:13+00:00",
-      "url": "https://www.youtube.com/watch?v=XROaLetSxg0",
-      "thumbnail": "https://img.youtube.com/vi/XROaLetSxg0/mqdefault.jpg",
-      "description": "Recorded live at the New Media Summit, Marc Andreessen, Ben Horowitz, Erik Torenberg, and Gaby Goldberg discuss how media, communication, and influence are changing in the internet era.\n\nThe conversation explores the shift from legacy media"
     },
     {
       "video_id": "dUmT0OIGoqE",
@@ -478,30 +261,6 @@
       "url": "https://www.youtube.com/watch?v=ML3q7Ok4hJg",
       "thumbnail": "https://img.youtube.com/vi/ML3q7Ok4hJg/mqdefault.jpg",
       "description": "Coder lets you self-host your coding agents with enterprise-grade security - https://fandf.co/4tZvtU5\n\nThese 10 mind-blowing computer science papers made everything in modern computing possible. In today's video, we'll take a look at how th"
-    },
-    {
-      "video_id": "z4gueKVs6Bo",
-      "title": "Voice for AI Agents and Applications",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-06-17T15:00:38+00:00",
-      "url": "https://www.youtube.com/watch?v=z4gueKVs6Bo",
-      "thumbnail": "https://img.youtube.com/vi/z4gueKVs6Bo/mqdefault.jpg",
-      "description": "Learn more: https://bit.ly/4vPQ3HE\n\nVoice is one of the most natural human interfaces, but adding it to AI applications has historically forced a tradeoff: fast voice-to-voice models that sacrifice reliability, or accurate speech-to-text-to"
-    },
-    {
-      "video_id": "n32qq7Kwzh0",
-      "title": "Hermes Architecture EXPLAINED: Memory, Context & Gateways",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-06-17T06:05:39+00:00",
-      "url": "https://www.youtube.com/watch?v=n32qq7Kwzh0",
-      "thumbnail": "https://img.youtube.com/vi/n32qq7Kwzh0/mqdefault.jpg",
-      "description": "Hermes is an always-on AI agent with a simple but useful architecture: an agent loop, memory, context construction, gateway integrations, and scheduled cron jobs. In this video, I walk through how Hermes builds context, talks to external se"
     },
     {
       "video_id": "wGffBCfrAsE",
@@ -538,37 +297,21 @@
       "url": "https://www.youtube.com/watch?v=2jJeSgO_MGo",
       "thumbnail": "https://img.youtube.com/vi/2jJeSgO_MGo/mqdefault.jpg",
       "description": "With the UK planning to follow Australia in a ban on social media for under 16s, we ask how it might work? Dr Mike Pound is an Associate Professor at the University of Nottingham.\n\nComputerphile is supported by Jane Street. Learn more about"
-    },
-    {
-      "video_id": "ey_GaPdC9zk",
-      "title": "One man just liberated Fable... and now it’s illegal",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-06-15T18:35:58+00:00",
-      "url": "https://www.youtube.com/watch?v=ey_GaPdC9zk",
-      "thumbnail": "https://img.youtube.com/vi/ey_GaPdC9zk/mqdefault.jpg",
-      "description": "Take BlueDot's Future of AI course for free - https://bluedot.org/fireship\n\nJust three days after the release of Claude Fable, the US government stepped in and banned it in the name of national security. But why?\n\n#coding #programming #ai\n\n"
-    },
-    {
-      "video_id": "nKVML4YaBqs",
-      "title": "TCP b : Additive Increase Multiplicative Decrease & 'Slow Start' - Computerphile",
-      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
-      "channel_name": "Computerphile",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-06-15T14:33:58+00:00",
-      "url": "https://www.youtube.com/watch?v=nKVML4YaBqs",
-      "thumbnail": "https://img.youtube.com/vi/nKVML4YaBqs/mqdefault.jpg",
-      "description": "Network Basics story continues with the second part of the TCP segment. Richard G Clegg is based at Queen Mary University London.\n\nRichard's Code: https://github.com/richardclegg/computerphile_demos/\nRFC 5681 https://datatracker.ietf.org/do"
     }
   ],
   "stats": {
-    "total_videos": 35,
+    "total_videos": 14,
     "total_channels": 16,
-    "successful_channels": 16,
-    "failed_channels": [],
+    "successful_channels": 9,
+    "failed_channels": [
+      "Andrej Karpathy",
+      "Matthew Berman",
+      "Machine Learning Street Talk",
+      "Google DeepMind",
+      "Hugging Face",
+      "a16z",
+      "DeepLearningAI"
+    ],
     "window_days": 14
   }
 }

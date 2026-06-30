@@ -2,8 +2,14 @@
   "$schema": "https://example.com/dashboard-archive.schema.json",
   "snapshots": [
     {
-      "date": "2026-06-29",
+      "date": "2026-06-30",
       "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Die Rechnung kommt: GitHubs Token-Billing lässt Agenten-Kosten explodieren, BCG sieht 200-Mrd.-Chance",
+      "summary": "Der agentische Boom trifft das Budget: GitHub Copilot (seit 1.6. nutzungsbasiert) lässt zum ersten vollen Monatsende die Token-Bills landen — Entwickler berichten von 29→750 $ und 50→3.000 $ (10–50×), am heftigsten in agentischen Workflows; CFOs straffen KI-Budgets · Treiber ist die Fähigkeit: GPT-5.6 Sol knackt als erstes Modell 50 % auf „Agent's Last Exam” (~50,9 %), indem es länger und token-hungriger arbeitet · Die Antwort ist FinOps für Agenten (Metering, Routing, Caps); Anthropic vereinfacht die Dev-Tarife, Claude Code v2.1.196 bringt Org-Default-Modelle · Die Gegenrechnung: BCG beziffert 200 Mrd. $ neue Dienstleister-Nachfrage, Agenten in Legacy-Systeme (ERP/CRM/HR) zu integrieren — 75 % der Unternehmen wollen Partner · EU AI Act Art. 50 ab 2.8. durchsetzbar (Bußgelder bis 15 Mio. € / 3 %) · Fazit: Die Pragmatismus-Wende des Jahres landet auf der P&L"
+    },
+    {
+      "date": "2026-06-29",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-29.html",
       "headline": "Der erste Tau: US-Regierung gibt Mythos 5 für Infrastruktur-Verteidiger frei, während Agenten die Arbeit erobern",
       "summary": "Erstes Auftauen der Export-Sperre: Das US-Handelsministerium (Minister Lutnick) autorisiert Anthropic, sein stärkstes Cyber-Modell Mythos 5 an 100+ geprüfte US-Organisationen (Fortune 500 + Behörden, kritische Infrastruktur, Project Glasswing) auszuliefern — zweckgebunden, kein Ban-Lift; das öffentliche Fable 5 bleibt gesperrt · OpenAI-Report „How agents are transforming work”: Codex über 3 Mio. Wochen-Nutzer, Nicht-Entwickler-Nutzung +137×, in Recht/Finanzen/Recruiting primäres KI-Tool, 85 % der Output-Token (selbst berichtet) · Google strauchelt: Gemini 3.5 Pro rutscht in den Juli, vier weitere Gemini-Forscher zu Anthropic · Anthropic festigt die Spitze (965 Mrd. Bewertung, ~47 Mrd. Run-Rate, 8 der Fortune 10) — und der Staat wählte Mythos für die Infrastruktur-Verteidigung · Fazit: Frontier-Zugang wird zunehmend staatlich rationiert"
     },
