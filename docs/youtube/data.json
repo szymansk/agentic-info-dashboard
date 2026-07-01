@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-30T04:09:36+00:00",
+  "last_updated": "2026-07-01T05:10:15+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,6 +116,19 @@
   ],
   "featured": [
     {
+      "video_id": "pv1TUJSEM2k",
+      "title": "The Rise and Fall of the Roman Empire and the Byzantine Empire | Lex Fridman Podcast #498",
+      "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
+      "channel_name": "Lex Fridman",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-06-30T21:16:13+00:00",
+      "url": "https://www.youtube.com/watch?v=pv1TUJSEM2k",
+      "thumbnail": "https://img.youtube.com/vi/pv1TUJSEM2k/mqdefault.jpg",
+      "description": "Anthony Kaldellis is a historian of the Roman Empire and author of \"The New Roman Empire\", a comprehensive history of the Byzantine Empire (Eastern Roman Empire).\nThank you for listening ❤ Check out our sponsors: https://lexfridman.com/spon",
+      "why": ""
+    },
+    {
       "video_id": "f-HiB82Tl94",
       "title": "Advent Accelerates Deals with ChatGPT + Codex",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
@@ -127,9 +140,46 @@
       "thumbnail": "https://img.youtube.com/vi/f-HiB82Tl94/mqdefault.jpg",
       "description": "ChatGPT + Codex are a one-two punch for investment firms. \n\n\"Having the ability to connect your deal folder with all of the context, and then be able to ask ChatGPT and Codex real time questions has been really impactful to our workflows,\" ",
       "why": ""
+    },
+    {
+      "video_id": "V04bm-3d6EQ",
+      "title": "When millions of AI agents meet",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_name": "Google DeepMind",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-06-23T15:48:06+00:00",
+      "url": "https://www.youtube.com/watch?v=V04bm-3d6EQ",
+      "thumbnail": "https://img.youtube.com/vi/V04bm-3d6EQ/mqdefault.jpg",
+      "description": "The conversation of the moment is focused on one topic: AI agents. Unlike traditional language models that simply respond to a prompt, autonomous agents can execute multi-step plans and perform complex tasks on your behalf. But what happens",
+      "why": ""
     }
   ],
   "recent": [
+    {
+      "video_id": "pv1TUJSEM2k",
+      "title": "The Rise and Fall of the Roman Empire and the Byzantine Empire | Lex Fridman Podcast #498",
+      "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
+      "channel_name": "Lex Fridman",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-06-30T21:16:13+00:00",
+      "url": "https://www.youtube.com/watch?v=pv1TUJSEM2k",
+      "thumbnail": "https://img.youtube.com/vi/pv1TUJSEM2k/mqdefault.jpg",
+      "description": "Anthony Kaldellis is a historian of the Roman Empire and author of \"The New Roman Empire\", a comprehensive history of the Byzantine Empire (Eastern Roman Empire).\nThank you for listening ❤ Check out our sponsors: https://lexfridman.com/spon"
+    },
+    {
+      "video_id": "H0QHtVxH5BM",
+      "title": "Telling my chickens that Dario won",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-30T19:11:57+00:00",
+      "url": "https://www.youtube.com/shorts/H0QHtVxH5BM",
+      "thumbnail": "https://img.youtube.com/vi/H0QHtVxH5BM/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
+    },
     {
       "video_id": "f-HiB82Tl94",
       "title": "Advent Accelerates Deals with ChatGPT + Codex",
@@ -141,6 +191,66 @@
       "url": "https://www.youtube.com/watch?v=f-HiB82Tl94",
       "thumbnail": "https://img.youtube.com/vi/f-HiB82Tl94/mqdefault.jpg",
       "description": "ChatGPT + Codex are a one-two punch for investment firms. \n\n\"Having the ability to connect your deal folder with all of the context, and then be able to ask ChatGPT and Codex real time questions has been really impactful to our workflows,\" "
+    },
+    {
+      "video_id": "5pieVHmlbyk",
+      "title": "The Thermodynamic AI Chip · Thomas Ahle",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-06-28T23:38:07+00:00",
+      "url": "https://www.youtube.com/watch?v=5pieVHmlbyk",
+      "thumbnail": "https://img.youtube.com/vi/5pieVHmlbyk/mqdefault.jpg",
+      "description": "Thomas Ahle wants Normal Computing to be the Lovable for chip design: type your intent, and a swarm of agents carries it from design through optimisation, formalisation and verification to tape-out. To get there, his team at wrote their own"
+    },
+    {
+      "video_id": "TML-0HmxWCE",
+      "title": "\"The best thing since OpenClaw\" (Hermes Tutorial)",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-28T14:00:35+00:00",
+      "url": "https://www.youtube.com/watch?v=TML-0HmxWCE",
+      "thumbnail": "https://img.youtube.com/vi/TML-0HmxWCE/mqdefault.jpg",
+      "description": "Go to http://hostinger.com/matthewhermes and use code MATTHEWB for 10% off\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture"
+    },
+    {
+      "video_id": "fvXWEqut82c",
+      "title": "Apple just raised prices...",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-27T15:00:20+00:00",
+      "url": "https://www.youtube.com/shorts/fvXWEqut82c",
+      "thumbnail": "https://img.youtube.com/vi/fvXWEqut82c/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
+    },
+    {
+      "video_id": "eEdOqSmkZy0",
+      "title": "I can't believe this happened...",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-26T21:26:32+00:00",
+      "url": "https://www.youtube.com/watch?v=eEdOqSmkZy0",
+      "thumbnail": "https://img.youtube.com/vi/eEdOqSmkZy0/mqdefault.jpg",
+      "description": "This is really disappointing...\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/ma"
+    },
+    {
+      "video_id": "iG3lW8GslXs",
+      "title": "I AM SO MAD",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-06-26T20:04:33+00:00",
+      "url": "https://www.youtube.com/shorts/iG3lW8GslXs",
+      "thumbnail": "https://img.youtube.com/vi/iG3lW8GslXs/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
     },
     {
       "video_id": "SPC_yCe1cUw",
@@ -191,6 +301,18 @@
       "description": "Clever Hans was a horse that could do maths, or was it using some other trick? Is AI music classification working like a 'Clever Hans?'\n\nDavid Kelly is based at Kings College London. His paper is in preprint here: https://arxiv.org/pdf/2601"
     },
     {
+      "video_id": "7D3w87YqfA8",
+      "title": "7-day Voice AI Build Challenge",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-06-24T17:11:15+00:00",
+      "url": "https://www.youtube.com/shorts/7D3w87YqfA8",
+      "thumbnail": "https://img.youtube.com/vi/7D3w87YqfA8/mqdefault.jpg",
+      "description": "Don’t miss a night out because you’re watching your terminal. Have your coding agent call you instead!\n\nJoin the 7-Day Voice AI Builder Challenge here: https://hubs.la/Q04mvXBZ0\n\nHurry—challenge ends June 30!"
+    },
+    {
       "video_id": "mVpCDzoNtxA",
       "title": "ChatGPT Futures, Class of 2026: The Next Generation of AI Leaders",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
@@ -213,6 +335,30 @@
       "url": "https://www.youtube.com/watch?v=a2i9h2ip-nY",
       "thumbnail": "https://img.youtube.com/vi/a2i9h2ip-nY/mqdefault.jpg",
       "description": "Try out Retool's new AI app builder to safely connect your apps to your team's data and APIs - https://fandf.co/4e2lDe2\n\nFounder of Midjourney, David Holz, just announced plans to make a new medical imaging device capable of full body scans"
+    },
+    {
+      "video_id": "V04bm-3d6EQ",
+      "title": "When millions of AI agents meet",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_name": "Google DeepMind",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-06-23T15:48:06+00:00",
+      "url": "https://www.youtube.com/watch?v=V04bm-3d6EQ",
+      "thumbnail": "https://img.youtube.com/vi/V04bm-3d6EQ/mqdefault.jpg",
+      "description": "The conversation of the moment is focused on one topic: AI agents. Unlike traditional language models that simply respond to a prompt, autonomous agents can execute multi-step plans and perform complex tasks on your behalf. But what happens"
+    },
+    {
+      "video_id": "e3gBwLWAerw",
+      "title": "He won a Nobel here for AlphaFold. Then he left. - John Jumper",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-06-22T22:43:36+00:00",
+      "url": "https://www.youtube.com/watch?v=e3gBwLWAerw",
+      "thumbnail": "https://img.youtube.com/vi/e3gBwLWAerw/mqdefault.jpg",
+      "description": "This episode is sponsored by Notion. Learn more about Notion's Developer Platform today at https://notion.com/mlst\n\nProtein folding stalled biology for fifty years. A sequence of amino acids dictates a three-dimensional shape, but reading t"
     },
     {
       "video_id": "mG4SmhWyeFA",
@@ -263,54 +409,25 @@
       "description": "Coder lets you self-host your coding agents with enterprise-grade security - https://fandf.co/4tZvtU5\n\nThese 10 mind-blowing computer science papers made everything in modern computing possible. In today's video, we'll take a look at how th"
     },
     {
-      "video_id": "wGffBCfrAsE",
-      "title": "100 random chords, how many intersections?",
-      "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
-      "channel_name": "3Blue1Brown",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-06-16T18:04:05+00:00",
-      "url": "https://www.youtube.com/shorts/wGffBCfrAsE",
-      "thumbnail": "https://img.youtube.com/vi/wGffBCfrAsE/mqdefault.jpg",
-      "description": "Part of a series of monthly puzzles done in collaboration with MoMath."
-    },
-    {
-      "video_id": "l72ufA-4SzE",
-      "title": "They Looked Inside Claude’s AI's Mind. It Got Weird",
-      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
-      "channel_name": "Two Minute Papers",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-06-16T15:53:17+00:00",
-      "url": "https://www.youtube.com/watch?v=l72ufA-4SzE",
-      "thumbnail": "https://img.youtube.com/vi/l72ufA-4SzE/mqdefault.jpg",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The paper is available here:\nhttps://www.anthropic.com/research/natural-language-autoencoders\nhttps://transformer-circuits.pub/2026/nla/index.html\n\n🙏 We w"
-    },
-    {
-      "video_id": "2jJeSgO_MGo",
-      "title": "Is it Possible to Block Childrens' Access to Social Media? - Computerphile",
-      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
-      "channel_name": "Computerphile",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-06-16T14:30:04+00:00",
-      "url": "https://www.youtube.com/watch?v=2jJeSgO_MGo",
-      "thumbnail": "https://img.youtube.com/vi/2jJeSgO_MGo/mqdefault.jpg",
-      "description": "With the UK planning to follow Australia in a ban on social media for under 16s, we ask how it might work? Dr Mike Pound is an Associate Professor at the University of Nottingham.\n\nComputerphile is supported by Jane Street. Learn more about"
+      "video_id": "z4gueKVs6Bo",
+      "title": "Voice for AI Agents and Applications",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-06-17T15:00:38+00:00",
+      "url": "https://www.youtube.com/watch?v=z4gueKVs6Bo",
+      "thumbnail": "https://img.youtube.com/vi/z4gueKVs6Bo/mqdefault.jpg",
+      "description": "Learn more: https://bit.ly/4vPQ3HE\n\nVoice is one of the most natural human interfaces, but adding it to AI applications has historically forced a tradeoff: fast voice-to-voice models that sacrifice reliability, or accurate speech-to-text-to"
     }
   ],
   "stats": {
-    "total_videos": 14,
+    "total_videos": 22,
     "total_channels": 16,
-    "successful_channels": 9,
+    "successful_channels": 14,
     "failed_channels": [
-      "Andrej Karpathy",
-      "Matthew Berman",
-      "Machine Learning Street Talk",
-      "Google DeepMind",
       "Hugging Face",
-      "a16z",
-      "DeepLearningAI"
+      "a16z"
     ],
     "window_days": 14
   }

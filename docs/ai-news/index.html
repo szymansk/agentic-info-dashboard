@@ -298,7 +298,7 @@
   footer .mono { color: var(--muted); }
 </style>
 </head>
-<body data-snapshot-date="2026-06-30" data-snapshot-mode="live">
+<body data-snapshot-date="2026-07-01" data-snapshot-mode="live">
 <div class="wrap">
 
   <!-- ─── Top Nav ─── -->
@@ -394,7 +394,7 @@
       </div>
     </div>
     <div class="meta">
-      <div class="date" id="today">Dienstag, 30. Juni 2026</div>
+      <div class="date" id="today">Mittwoch, 1. Juli 2026</div>
       <div class="tag">Snapshot · KW 27 / 2026</div>
     </div>
   </header>
@@ -406,77 +406,77 @@
 
     <header class="briefing-head">
       <h2 class="kicker">Tagesbriefing · Agentic AI &amp; GenAI</h2>
-      <h1>Die Rechnung kommt — agentische KI trifft das Budget</h1>
+      <h1>Der Konter — Claude Sonnet 5 antwortet auf den Kosten-Schock</h1>
       <div class="byline">
         <span>✍️ Kuratiert &amp; analysiert</span>
         <span class="dot-sep">·</span>
         <span>~13 Min Lesezeit</span>
         <span class="dot-sep">·</span>
-        <span id="byline-date">30. Juni 2026</span>
+        <span id="byline-date">1. Juli 2026</span>
       </div>
       <p class="lede">
-        Einen Monat lang feierte die Branche, dass Agenten die Arbeit erobern. Jetzt kommt die Rechnung. GitHubs Copilot, seit dem 1. Juni nach Verbrauch abgerechnet, lässt zum Ende des ersten vollen Monats die Token-Bills landen — Entwickler berichten von Sprüngen von 29 auf 750 und von 50 auf 3.000 Dollar im Monat, am heftigsten dort, wo agentische Workflows laufen. CFOs ziehen die KI-Budgets an. Der Treiber ist die Fähigkeit selbst: OpenAIs GPT-5.6 Sol knackt als erstes Modell 50 Prozent auf „Agent's Last Exam” — indem es länger und token-hungriger arbeitet. So landet die Pragmatismus-Wende des Jahres auf der Gewinn- und Verlustrechnung. Die Gegenrechnung liefert BCG: 200 Milliarden Dollar an neuer Nachfrage nach Dienstleistern, die Agenten überhaupt erst in die Systeme bringen.
+        Einen Tag nach der agentischen Kosten-Abrechnung antwortet die Modell-Schicht. <span data-person="dario-amodei">Anthropic</span> hat Claude Sonnet 5 gestartet — den bislang agentischsten Sonnet, mit 1-Million-Token-Kontext und einer Qualität nahe an Opus 4.8 — zum Einführungspreis von 2 Dollar Input und 10 Dollar Output je Million Token, ab sofort Standard-Modell in Claude Code, auf claude.ai, in Cursor, VS Code und GitHub Copilot. Es ist die direkte Antwort auf den FinOps-Druck: für rund ein Drittel des Flaggschiff-Preises die Arbeit erledigen, die zu 90 Prozent ohnehin „gut genug” läuft. Der Preiskrieg der Frontier, letzte Woche mit GPT-5.6s Sol/Terra/Luna-Staffelung eröffnet, eskaliert. Und während die Fähigkeit weiter klettert, zeigt OpenAIs neuer GeneBench-Pro zugleich ihre Decke: Selbst das beste Modell scheitert an rund 70 Prozent echter Biologie-Probleme.
       </p>
     </header>
 
     <div class="briefing-body">
 
       <section>
-        <h3><span class="num">01</span>Die Rechnung kommt — GitHub Copilots Token-Billing</h3>
-        <p>Zum 1. Juni stellte GitHub Copilot von der Flatrate auf nutzungsbasierte Abrechnung um: Jeder Plan enthält jetzt ein monatliches Kontingent an „AI Credits”, darüber hinaus zahlen kostenpflichtige Pläne Token-Verbrauch zu den gelisteten API-Raten (Input, Output, Cache). Die Grund-Sitze blieben gleich (Pro 10 $, Pro+ 39 $, Business 19 $/Nutzer, Enterprise 39 $/Nutzer) — doch intensive Nutzung wird nun gemessen. Mit dem Monatsende landet der erste volle Abrechnungszyklus.</p>
-        <p>Die Zahlen schockierten die Entwickler. Ein Nutzer berichtete von einem Anstieg von rund 29 auf fast 750 Dollar im Monat, ein anderer von etwa 50 auf rund 3.000; die Runde machten Berichte über das 10- bis 50-Fache und „25× über Nacht”. Der gemeinsame Nenner: Agentische Workflows — wo ein Agent lange, mehrstufige, token-hungrige Aufgaben fährt — sind am teuersten. Genau die Fähigkeit, die alle gefeiert haben (stundenlange Arbeit an Agenten delegieren), zählt jetzt der Zähler.</p>
-        <p>Es ist der strukturelle Wechsel von „unbegrenzt” zu „gemessen”. Flatrate-Sitze verbargen die Grenzkosten jeder Anfrage; Verbrauchs-Abrechnung legt sie offen — und agentische Arbeit verbraucht konstruktionsbedingt weit mehr Token als ein Chat. GitHub ist kein Ausreißer, sondern die Speerspitze einer Neubepreisung, die <span data-person="dario-amodei">Anthropic</span> (Agent-SDK raus aus den Abos im Juni) und OpenAI (GPT-5.6 mit gestuften Preisen) parallel fahren. Die Ära „so viel KI, wie du willst, zum Pauschalpreis” geht zu Ende.</p>
+        <h3><span class="num">01</span>Claude Sonnet 5 — der Wert-Tier ist da</h3>
+        <p>Am 30. Juni startete <span data-person="dario-amodei">Anthropic</span> Claude Sonnet 5, den nach eigener Aussage agentischsten Sonnet bisher. Das Modell bringt ein natives 1-Million-Token-Kontextfenster (max. 128k Output, per Batch-Beta bis 300k) und landet qualitativ nah an Opus 4.8 — für deutlich weniger Geld. Es ist ab sofort das Standard-Modell in Claude Code sowie für Free- und Pro-Nutzer auf claude.ai und läuft in der Claude-API, Cursor, VS Code und GitHub Copilot.</p>
+        <p>Die Benchmarks zeichnen ein klares Bild eines Mid-Tier-Modells, das an die Spitze reicht: Auf agentischem Coding (SWE-bench Pro) erreicht Sonnet 5 63,2 Prozent (Sonnet 4.6: 58,1; Opus 4.8 führt mit 69,2). Bei Computer-Use (OSWorld-Verified) sind es 81,2 Prozent, auf Terminal-Bench 2.1 80,4 (von 67,0). Bemerkenswert: Auf dem Wissensarbeits-Benchmark GDPval-AA v2 zieht Sonnet 5 mit 1.618 sogar knapp an Opus 4.8 (1.615) vorbei.</p>
+        <p>Der eigentliche Hebel ist der Preis. Sonnet 5 kostet einführungsweise 2 Dollar je Million Input- und 10 Dollar je Million Output-Token bis zum 31. August, danach 3 / 15 Dollar — dazu bis zu 90 Prozent Ersparnis mit Prompt-Caching und 50 Prozent per Batch. Zum Vergleich: OpenAIs GPT-5.6 Sol liegt bei 5 / 30 Dollar. Nahe-Opus-Qualität zu einem Drittel des Flaggschiff-Preises — und als Standard-Modell direkt dort, wo die agentische Arbeit anfällt.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Agentische Kosten sind jetzt eine variable, keine fixe Größe — wie Cloud-Ausgaben budgetieren und steuern. Für DACH jetzt Agent-FinOps aufsetzen: Token-Metering pro Team/Aufgabe, Routing auf günstigere Stufen (Terra/Luna, offene Modelle) für Routine, Caps und Alerts. Wer Token wie ein gemessenes Versorgungsgut behandelt, fährt Agenten skaliert; wer nicht, bekommt die Monatsend-Überraschung.
+          Sonnet 5 ist die Modell-Antwort auf den Kosten-Schock der Vorwoche: Für den Großteil agentischer Arbeit reicht jetzt ein Modell zu einem Bruchteil der Flaggschiff-Kosten. Für DACH-Teams lohnt sofort ein Re-Benchmark der eigenen Aufgaben gegen Sonnet 5 — und, da es überall zum Default wird, ein bewusster Blick, welches Modell wo läuft (Org-Default-Steuerung). Der Einführungspreis bis 31. August ist ein Fenster, kein Dauerzustand.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">02</span>Warum es teuer wird — GPT-5.6 Sol und die token-hungrige Agentik</h3>
-        <p>Warum ist agentische Arbeit so teuer? Weil Fähigkeit mit Token bezahlt wird. OpenAI verankerte den GPT-5.6-Start an einer einzigen Zahl: Sol ist das erste Modell, das 50 Prozent auf „Agent's Last Exam” knackt — einem Benchmark über 55 Berufsdomänen langlaufender Arbeit —, mit rund 50,9 Prozent im Code-Modus, während die meisten Frontier-Modelle in den 40ern liegen. Den Weg dorthin geht es über lange, mehrstufige agentische Läufe — genau die Arbeit, die Token verbrennt.</p>
-        <p>OpenAIs Gegen-Behauptung ist Effizienz: Sol erreiche die 50 Prozent „mit weniger Token als frühere Architekturen”. Beides kann stimmen — pro Schritt sparsamer, in Summe aber weit mehr Token, weil es längere, schwerere Aufgaben überhaupt versucht, die ein schwächeres Modell abbräche. Die Grenze der Fähigkeit ist die Grenze des Token-Verbrauchs: Ein Agent, der eine 8-Stunden-Aufgabe schafft, ist ein Agent, der für acht Stunden Denken abrechnet.</p>
-        <p>Das rückt die GPT-5.6-Staffelung (Sol/Terra/Luna aus der Vorwoche) in ein neues Licht — als Kosten-Management-Funktion, nicht nur als Produktlinie. Terra zum halben GPT-5.5-Preis und das noch günstigere Luna existieren gerade deshalb, damit Teams kein Flaggschiff auf Routine-Arbeit laufen lassen. Die Modellbauer liefern die Preis-Staffelung, die der Kosten-Schock verlangt.</p>
+        <h3><span class="num">02</span>Der Preiskrieg eskaliert — die Mitte wird zum Schlachtfeld</h3>
+        <p>Sonnet 5 ist kein isolierter Release, sondern der nächste Zug in einem eskalierenden Preiskrieg. Vor einer Woche staffelte OpenAI GPT-5.6 in Sol (5/30 $), Terra (2,50/15 $) und Luna (1/6 $) — genau, damit Teams kein Flaggschiff auf Routine laufen lassen. Anthropic kontert nun mit einem einzelnen Modell, das nahe an die Opus-Spitze reicht und dabei zwischen Terra und Luna preist. Der Kampf verlagert sich von der Frontier-Spitze in die Mitte, wo das Volumen liegt.</p>
+        <p>Die Ökonomie dahinter ist „gut genug”. Die meiste agentische Arbeit — Code-Fixes, Datenaufbereitung, Recherche, Routine-Automatisierung — braucht kein Spitzenmodell; sie braucht ein verlässliches, das billig genug ist, um es stundenlang laufen zu lassen. Ein Modell mit Nahe-Opus-Qualität zu einem Drittel des Sol-Preises verschiebt die Rechnung für die 80 Prozent Alltagsaufgaben dramatisch. Wer bisher aus Kostengründen zögerte, Agenten breit einzusetzen, bekommt gerade ein neues Preisschild.</p>
+        <p>Das eigentliche Schlachtfeld ist der Default. Indem Sonnet 5 sofort zum Standard in Claude Code, auf claude.ai und in den großen Coding-Tools wird, gewinnt Anthropic das, was zählt: das Modell, das läuft, wenn niemand aktiv wählt. Genau deshalb wurden Org-Default-Modelle (Claude Code v2.1.196) diese Woche zum Feature — die Voreinstellung ist der Markt.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Modell an Aufgabe anpassen — das Flaggschiff nur dort, wo die harte, langhorizontige Arbeit die Rechnung rechtfertigt; günstigere Stufen (und offene Modelle) für die Routine-80-Prozent. Für DACH ist eine Eval-und-Routing-Schicht, die das billigste bestehende Modell pro Aufgabe wählt, keine Optimierung, sondern Kostenkontrolle — und sie passt direkt zur Multi-Modell-Resilienz der Vorwochen.
+          Der Preiskrieg ist die beste Nachricht für Anwender seit Monaten — aber er verlangt Beweglichkeit, um ihn zu nutzen. Modell an Aufgabe anpassen, das Flaggschiff nur für die harte Spitze, günstige Stufen für die Routine-80-Prozent. Für DACH ist eine Eval-und-Routing-Schicht, die pro Aufgabe das billigste ausreichende Modell wählt, keine Optimierung, sondern Kostenkontrolle — und wer die Defaults nicht bewusst setzt, überlässt die Kosten dem Zufall.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">03</span>CFOs ziehen die Zügel an — FinOps für Agenten</h3>
-        <p>Die Käuferseite reagiert. Berichte verweisen auf CFOs, die ihre KI-Budgets straffen, während agentische Plattformen und Hardware-Deals die Unternehmens-Ausgaben umordnen — die Honeymoon-Phase des „frei experimentieren” trifft auf die Disziplin des „zeig mir den ROI pro Token”. Nach einem Jahr Land-Grab-Adoption verlangt die Finanzabteilung vom agentischen Boom, seinen Posten zu rechtfertigen.</p>
-        <p>Die Anbieter reagieren auf denselben Druck von der Angebotsseite. <span data-person="dario-amodei">Anthropic</span> vereinfachte am 27. Juni seine Developer-Platform-Tarife — Bündelung in Start/Build/Scale, höhere Rate-Limits, sodass Sonnet und Haiku auf jeder Stufe mit Opus gleichziehen — und macht den Verbrauch planbarer. Und Claude Code brachte mit <code>v2.1.196</code> (29. Juni) organisationsweite Default-Modelle: Admins können Teams per Voreinstellung auf ein freigegebenes (und kosten-angemessenes) Modell lenken — dazu ein Sicherheits-Fix, damit committete <code>.mcp.json</code>-Server nicht automatisch freigegeben werden. Governance und Kostenkontrolle werden zu Produkt-Features.</p>
-        <p>Die Form der Disziplin ist FinOps für Agenten: Messen, Zuordnen, Budgetieren, Routen — dasselbe Playbook, das das Cloud-Kostenmanagement vor einem Jahrzehnt aufbaute, jetzt auf Token angewandt. Der Unterschied ist die Volatilität: Die Kosten eines Agenten hängen davon ab, wie schwer die Aufgabe sich herausstellt — schwerer vorherzusagen als der Stundensatz einer VM. Agentische Ausgaben zu prognostizieren ist eine neue Kompetenz. Wer Cloud-FinOps schon beherrscht — viele DACH-Dienstleister tun das —, hat hier einen Startvorteil: Das Werkzeug ist vertraut, nur die Maßeinheit ist neu.</p>
+        <h3><span class="num">03</span>Die Fähigkeit trifft ihre Decke — GeneBench-Pro</h3>
+        <p>Damit im Preiskrieg die Fähigkeit nicht als selbstverständlich durchgeht, lieferte OpenAI am 30. Juni einen nüchternen Gegenpunkt: GeneBench-Pro, einen Forschungs-Benchmark für KI-Agenten in der Computer-Biologie. Er stellt 129 synthetische Probleme aus Genomik, quantitativer Biologie und translationaler Medizin, jeweils mit realistisch verrauschten Daten und einer Zielgröße, die an eine echte Entscheidung gekoppelt ist. Geprüft wird nicht Faktenwissen, sondern das, was OpenAI „research taste” nennt — die Kette von Urteilen, welche Frage ein Datensatz überhaupt trägt, wann Diagnostik das Modell ändern sollte und wann ein Ergebnis entscheidungsreif ist.</p>
+        <p>Das Ergebnis ist ein Realitäts-Check. Selbst OpenAIs stärkstes Modell, GPT-5.6 Sol, löst nur 28,7 Prozent der Probleme auf höchster Reasoning-Stufe, 31,5 Prozent im Pro-Modus — gegenüber unter 5 Prozent für GPT-5, als der ursprüngliche GeneBench gebaut wurde. Der Fortschritt ist enorm, die absolute Zahl ernüchternd: An rund 70 Prozent echter Biologie-Aufgaben scheitert das beste Modell noch.</p>
+        <p>Das ist die gesunde Kehrseite zur Sonnet-5-Euphorie und zu Sols Rekord auf „Agent's Last Exam”. Fähigkeit steigt steil — aber in den anspruchsvollen, mehrdeutigen Domänen, wo Urteil zählt, ist die Decke noch niedrig. Ein Modell billiger und breiter verfügbar zu machen, ändert nichts daran, dass es die schwersten Probleme (noch) nicht löst.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Den Kostenkontroll-Stack vor der Rechnung bauen, nicht danach — Token-Budgets pro Team, Modell-Routing, Caps/Alerts und Org-Default-Modelle (jetzt ein Claude-Code-Feature). Für DACH-IT ist „Agent-FinOps” eine konkrete, verkaufbare Service-Linie: Kunden helfen, Token-Ausgaben zu messen, zuzuordnen und zu steuern — wie die Cloud-Kosten-Beratung im letzten Plattform-Wechsel.
+          Günstiger heißt nicht allmächtig. Wer Sonnet 5 oder Sol in anspruchsvolle Fach-Domänen (Bio, Pharma, komplexe Analytik) setzt, braucht menschliche Gates und Validierung — der Molecule.one-Erfolg lief genau so. Für DACH-Industrie ist die Lehre, agentische KI dort produktiv zu schalten, wo Vorschlag + menschliches Urteil + Validierung zusammenspielen, und bei „research taste”-Aufgaben Benchmark-Zahlen skeptisch zu lesen.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">04</span>Die andere Seite der Rechnung — BCGs 200-Milliarden-Chance</h3>
-        <p>Der Kosten-Schock hat ein Spiegelbild: die Chance. BCG beziffert bis zu 200 Milliarden Dollar an neuer Technologie-Dienstleistungs-Nachfrage, die agentische KI schafft — konkret die Arbeit, Agenten in bestehende Unternehmenssysteme zu integrieren (ERP, CRM, Finanzen, HR, SaaS). Die Lücke entsteht, weil die Plattform-Anbieter — OpenAI, Anthropic, Google — Agenten-Fähigkeiten liefern, aber nicht die Integration, die diese Agenten im realen Geschäft erst nützlich macht.</p>
-        <p>Die Nachfrage kommt von der Vorstandsetage und will ausdrücklich Partner: Rund 75 Prozent der Unternehmen sagen, sie wollen mit Dienstleistern zusammenarbeiten, um autonome Systeme zu entwerfen, auszurollen und zu betreiben; über 40 Prozent der Großunternehmen skalieren bereits agentische KI. Der Engpass — Datenreife, Integration, Governance, Kostenkontrolle — ist genau die Dienstleistungs-Arbeit, nicht das Modell. Der Kosten-Schock aus Abschnitt 1 verstärkt diese Nachfrage sogar: Wer gerade eine vervielfachte Token-Rechnung erhalten hat, sucht erst recht einen Partner, der die Ausgaben in den Griff bekommt.</p>
-        <p>Für Dienstleister ist das Disruption und Wachstum zugleich. Dieselben Agenten, die im Commodity-Coding abrechenbare Stunden komprimieren, schaffen neue, höherwertige Nachfrage in Integration, Governance und Kosten-Engineering. Die Gewinner richten Portfolios auf agentische Lieferung aus; die Nachzügler sehen Margen erodieren, ohne die neue Nachfrage zu fassen. Rechnung und Chance sind zwei Seiten desselben Hauptbuchs.</p>
+        <h3><span class="num">04</span>Warum der Preiskrieg zählt — es gibt echtes Geld zu gewinnen</h3>
+        <p>Anbieter führen keinen Preiskrieg um einen kleinen Markt. Der Grund für das aggressive Pricing ist, dass agentische KI längst reale Umsätze dreht. Salesforce meldete für sein Ende Februar abgeschlossenes Q4 bereits 800 Millionen Dollar Agentforce-ARR — plus 169 Prozent im Jahresvergleich; Agentforce und Data 360 zusammen überschritten 2,9 Milliarden ARR (über 200 Prozent Wachstum). Das ist kein Pilot-Budget, sondern eine schnell wachsende Erlös-Linie.</p>
+        <p>Die Makro-Zahlen stützen es: Gartner erwartet 2026 rund 206 Milliarden Dollar Ausgaben allein für Agenten-Software (+139 Prozent), BCG sieht bis zu 200 Milliarden neuer Dienstleistungs-Nachfrage rund um die Integration von Agenten in Bestandssysteme. Wenn der Markt so groß und so schnell wächst, ist ein Modell zum Drittel-Preis, das zum Default in den großen Tools wird, kein Rabatt — es ist ein Landgrab um die Workloads von morgen.</p>
+        <p>Genau hier schließt sich der Kreis zum Kosten-Schock der Vorwoche. Billigere, fähige Modelle wie Sonnet 5 senken die Grenzkosten agentischer Arbeit — und machen damit mehr Anwendungsfälle rentabel. Die günstigere Rechnung vergrößert den Markt, den es zu gewinnen gilt. Wer die Agenten am billigsten und verlässlichsten laufen lässt, gewinnt die Nachfrage, die Gartner und BCG beziffern.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für DACH-IT-Services sind die 200 Milliarden das strategische Argument, im Stack nach oben zu rücken — von „wir schreiben den Code” zu „wir machen Agenten in euren Systemen sicher, integriert, governt und bezahlbar”. Konkret: Agenten-Integration in ERP/CRM, Datenreife und Governance (die Fivetran-Lücke) und nun Agent-FinOps. Die Unternehmen wollen einen Partner; die Frage ist, ob man dafür gebaut ist.
+          Für DACH-IT-Services ist die Kombination aus fallenden Modell-Kosten und wachsendem Budget das strategische Argument, im Stack nach oben zu rücken: Agenten-Integration in ERP/CRM, Datenreife/Governance und Agent-FinOps. Sinkende Token-Preise senken die Einstiegshürde für Kunden — mehr Projekte werden rentabel, und die Nachfrage nach Partnern, die sie sicher und bezahlbar betreiben, steigt mit.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">05</span>Die Pragmatismus-Wende landet auf der P&amp;L</h3>
-        <p>Tritt man zurück, laufen die Fäden des Monats an einem Ort zusammen: der Gewinn- und Verlustrechnung. Die Fähigkeit steigt (GPT-5.6 Sol), die Adoption explodiert (Codex), der Zugang wird rationiert (Mythos-Tau) — und nun landen die Kosten (Copilot). Die „Pragmatismus-Wende”, die das Jahr versprach, kommt nicht als Slogan, sondern als Budget-Zeile: Agenten, die echte Arbeit tun, kosten echtes Geld und unterliegen echten Regeln.</p>
-        <p>Denn auch die Regeln gehören zur Rechnung. Ab dem 2. August werden die Transparenzpflichten nach Artikel 50 des EU AI Act durchsetzbar — nationale Behörden können Verstöße sanktionieren, mit Bußgeldern bis zu 15 Millionen Euro oder 3 Prozent des weltweiten Jahresumsatzes, je nachdem, was höher ist. Eine Compliance-Kostenschicht über der Token-Kosten-Schicht. Fähigkeit, Zugang, Geld und Recht sind jetzt eine einzige Kalkulation, keine vier getrennten Geschichten.</p>
-        <p>Das ist die eigentliche Reife: Agentische KI zeigt sich nicht mehr als Demo, sondern als Posten — Fähigkeit pro Euro, governt und konform. Das Quartal endet mit einer Kostenabrechnung, die den Ton für das zweite Halbjahr setzt. Die Frage ist nicht mehr, was ein Agent kann, sondern was er kostet, wem er dienen darf und wie man beides beweist.</p>
+        <h3><span class="num">05</span>Halbjahr 2 beginnt mit einem reiferen Markt</h3>
+        <p>Der Monats- und Halbjahreswechsel bündelt, was sich das ganze Quartal aufgebaut hat, zu einem Bild: Der Markt reift. Die Modelle werden fähiger <em>und</em> billiger zugleich (Sonnet 5); die Fähigkeit trifft an den Rändern ihre ehrliche Decke (GeneBench-Pro); die Nachfrage ist real und zahlt (Agentforce, Gartner, BCG); der Zugang bleibt teils staatlich rationiert (Mythos-Tau, Fable dunkel). Die Euphorie weicht der Betriebswirtschaft.</p>
+        <p>Und die Regeln rücken näher. Ab dem 2. August werden die Transparenzpflichten nach Artikel 50 des EU AI Act durchsetzbar — nationale Behörden können sanktionieren, Bußgelder bis 15 Millionen Euro oder 3 Prozent des Welt-Umsatzes. Für das zweite Halbjahr heißt das: Der Preiskrieg senkt die Kosten, die Regulierung setzt die Leitplanken, und beides zusammen entscheidet, welche agentischen Projekte tatsächlich in Produktion gehen — nicht mehr die Demo, sondern der Business-Case.</p>
+        <p>Die eigentliche Reife zeigt sich darin, dass keine einzelne Zahl mehr die Geschichte trägt. Fähigkeit, Preis, Nachfrage, Zugang und Recht sind zu einer einzigen Kalkulation verschmolzen. Wer im zweiten Halbjahr gewinnt, optimiert nicht einen Faktor, sondern die ganze Gleichung — und behält die Beweglichkeit, wenn sich einer der Faktoren über Nacht ändert.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für DACH-Teams ist die Konvergenz ein Vorteil: Dieselbe Architektur, die Kosten steuert (Routing, Metering), Kontinuität sichert (Multi-Modell, souveräne Fallbacks) und Compliance beweist (Artikel 50, KI-MIG), ist <em>eine</em> Architektur. Einmal bauen, dreifach zahlt sie sich aus — auf der Kosten-, der Resilienz- und der Regulierungs-Seite.
+          Für DACH-Teams ist die Konvergenz ein Vorteil: Dieselbe Architektur, die Kosten steuert (Routing, Metering), Kontinuität sichert (Multi-Modell, souveräne Fallbacks) und Compliance beweist (Artikel 50, KI-MIG), ist <em>eine</em> Architektur. Sonnet 5 ist jetzt ein starker, günstiger Baustein darin — aber die Wette bleibt die Beweglichkeit, nicht das einzelne Modell.
         </blockquote>
       </section>
       <div class="briefing-end">
-        <strong>Was Halbjahr 2 bringt:</strong> Die Kosten-Abrechnung setzt den Ton — Reaktionen auf Copilots Verbrauchs-Billing, ob GPT-5.6s Effizienz-Versprechen die Rechnungen dämpft, und die Preis-Manöver von Anthropic/OpenAI. Modelle: GPT-5.6-GA „in Wochen”, Gemini 3.5 Pro im Juli. Zugang: Fable-5-Rückkehr (Marker <strong>8. Juli</strong> / <strong>1. August</strong>). Regulierung: EU AI Act Artikel 50 durchsetzbar ab <strong>2. August</strong> (Bußgelder bis 15 Mio. € / 3 %). Anthropic-IPO-Signale (Herbst). Claude Code steht bei <code>v2.1.196</code>. <span data-person="mira-murati">Mira Muratis</span> Thinking Machines bleibt der erwartete Frontier-Neuzugang des Sommers.
+        <strong>Was Halbjahr 2 bringt:</strong> Preiskrieg — wie OpenAI/Google auf Sonnet 5 reagieren und ob der Einführungspreis (bis 31. August) hält. Modelle: GPT-5.6-GA „in Wochen”, Gemini 3.5 Pro im Juli. Zugang: Fable-5-Rückkehr (Marker <strong>8. Juli</strong> / <strong>1. August</strong>). Regulierung: EU AI Act Artikel 50 durchsetzbar ab <strong>2. August</strong> (Bußgelder bis 15 Mio. € / 3 %). Fähigkeit: ob die GeneBench-Pro-Decke in schweren Domänen fällt. Anthropic-IPO-Signale (Herbst). Claude Code steht bei <code>v2.1.197</code> (Sonnet 5 als Default). <span data-person="mira-murati">Mira Muratis</span> Thinking Machines bleibt der erwartete Frontier-Neuzugang des Sommers.
       </div>
 
     </div>
@@ -497,40 +497,40 @@
 
       <article class="card news-card crit">
         <div class="row">
-          <span class="pill crit">Marktdaten</span>
-          <span class="score">Score <b>8.0</b>/10</span>
+          <span class="pill crit">Major Release</span>
+          <span class="score">Score <b>9.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">GitHub Copilot: Token-Billing lässt Rechnungen explodieren</h3>
-        <p>Seit 1. Juni rechnet Copilot nach Verbrauch ab; zum ersten vollen Monatsende landen die Bills. Entwickler berichten von 29 → 750 $ und 50 → 3.000 $ im Monat (10–50×), am heftigsten in agentischen Workflows. Das Ende der Flatrate — und der Beginn von FinOps für Agenten.</p>
+        <h3 style="margin-top:10px">Claude Sonnet 5: Nahe-Opus-Qualität, 1M Kontext, 2/10 $ je Mtok</h3>
+        <p><span data-person="dario-amodei">Anthropic</span> startet den agentischsten Sonnet: 1M-Token-Kontext, nah an Opus 4.8 (SWE-bench Pro 63,2 %; GDPval knapp vor Opus). Einführungspreis 2/10 $ je Mtok bis 31.8. (dann 3/15) — ein Drittel von GPT-5.6 Sol. Ab sofort Default in Claude Code, claude.ai, Cursor, VS Code, Copilot.</p>
         <div class="news-meta">
-          <span>📅 30.06.2026</span><span>·</span><span>🏢 GitHub</span><span>·</span>
-          <a href="https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs/">techcrunch</a>
+          <span>📅 30.06.2026</span><span>·</span><span>🏢 <span data-person="dario-amodei">Anthropic</span></span><span>·</span>
+          <a href="https://www.anthropic.com/news/claude-sonnet-5">anthropic.com</a>
+        </div>
+      </article>
+
+      <article class="card news-card hot">
+        <div class="row">
+          <span class="pill hot">Marktdaten</span>
+          <span class="score">Score <b>7.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Preiskrieg eskaliert — die Mitte wird zum Schlachtfeld</h3>
+        <p>Sonnet 5 (2/10 $) kontert GPT-5.6s Staffelung Sol (5/30), Terra (2,50/15), Luna (1/6). Der Kampf verlagert sich von der Spitze in die Mitte, wo das Volumen liegt: nahe-Opus-Qualität zum Bruchteil des Flaggschiff-Preises. Das eigentliche Schlachtfeld ist der Default — das Modell, das läuft, wenn niemand aktiv wählt.</p>
+        <div class="news-meta">
+          <span>📅 01.07.2026</span><span>·</span><span>🏢 Anthropic · OpenAI</span><span>·</span>
+          <a href="https://www.marktechpost.com/2026/06/30/anthropic-claude-sonnet-5-vs-sonnet-4-6-vs-opus-4-8-agentic-coding-benchmarks-api-pricing-and-cost-performance-tradeoffs-compared/">marktechpost</a>
         </div>
       </article>
 
       <article class="card news-card hot">
         <div class="row">
           <span class="pill hot">Forschung</span>
-          <span class="score">Score <b>7.0</b>/10</span>
-        </div>
-        <h3 style="margin-top:10px">GPT-5.6 Sol erstes Modell über 50 % auf „Agent's Last Exam”</h3>
-        <p>Auf dem Benchmark über 55 Berufsdomänen langlaufender Arbeit knackt Sol als erstes Modell die 50 %-Marke (~50,9 % im Code-Modus); die meisten Frontier-Modelle liegen in den 40ern. OpenAI betont Effizienz („weniger Token”) — doch längere, schwerere Aufgaben treiben den Gesamt-Verbrauch und damit die Kosten.</p>
-        <div class="news-meta">
-          <span>📅 26.06.2026</span><span>·</span><span>🏢 OpenAI</span><span>·</span>
-          <a href="https://venturebeat.com/technology/openai-unveils-gpt-5-6-sol-terra-and-luna-models-but-only-accessible-to-limited-preview-partners-for-now-per-us-gov">venturebeat</a>
-        </div>
-      </article>
-
-      <article class="card news-card hot">
-        <div class="row">
-          <span class="pill hot">Tooling</span>
           <span class="score">Score <b>6.5</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Claude Code v2.1.196: Org-Default-Modelle + MCP-Self-Approval-Fix</h3>
-        <p>Admins setzen jetzt ein organisationsweites Default-Modell (in <code>/model</code> als „Org default”) — ein Hebel für Kosten-Steuerung. Security-Fix: <code>claude mcp list/get</code> startet keine <code>.mcp.json</code>-Server mehr, die ein Repo per committetem <code>.claude/settings.json</code> selbst freigegeben hat; untrusted Workspaces zeigen „⏸ Pending approval”.</p>
+        <h3 style="margin-top:10px">GeneBench-Pro: Selbst Top-KI scheitert an ~70 % echter Biologie</h3>
+        <p>OpenAIs neuer Benchmark (129 Aufgaben aus Genomik/Biologie/Medizin) prüft „research taste” — Urteil unter Rauschen, Bias, QC-Fehlern. Bestes Modell GPT-5.6 Sol löst nur 28,7 % (Pro: 31,5 %), von unter 5 % für GPT-5. Enormer Fortschritt, ernüchternde Decke: die schweren Domänen bleiben ungelöst.</p>
         <div class="news-meta">
-          <span>📅 29.06.2026</span><span>·</span><span>🏢 Anthropic</span><span>·</span>
-          <a href="https://github.com/anthropics/claude-code/releases">github</a>
+          <span>📅 30.06.2026</span><span>·</span><span>🏢 OpenAI</span><span>·</span>
+          <a href="https://openai.com/index/introducing-genebench-pro/">openai.com</a>
         </div>
       </article>
 
@@ -539,11 +539,11 @@
           <span class="pill warn">Marktdaten</span>
           <span class="score">Score <b>6.5</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">CFOs straffen KI-Budgets — der ROI pro Token zählt</h3>
-        <p>Während agentische Plattformen und Hardware-Deals die Enterprise-Ausgaben umordnen, ziehen Finanzchefs die KI-Budgets an. Nach einem Jahr Land-Grab-Adoption verlangt die Finanzabteilung Rechenschaft pro Token — Treiber für Agent-FinOps: Metering, Attribution, Modell-Routing und Caps.</p>
+        <h3 style="margin-top:10px">Warum der Preiskrieg zählt: Agentforce bei 800 Mio. $ ARR (+169 %)</h3>
+        <p>Agentische KI dreht reale Umsätze: Salesforce meldete für sein Q4 (Ende Feb) 800 Mio. $ Agentforce-ARR, +169 % im Jahr; Agentforce + Data 360 zusammen über 2,9 Mrd. (+200 %). Kein Pilot-Budget — ein Markt, um den sich billigere Modelle wie Sonnet 5 jetzt schlagen.</p>
         <div class="news-meta">
-          <span>📅 2026-06</span><span>·</span><span>🏢 Enterprise · CFO</span><span>·</span>
-          <a href="https://www.marketscale.com/industries/software-and-technology/cfos-tighten-ai-budgets-as-agentic-platforms-and-hardware-deals-reshape-enterprise-ai-in-2026">marketscale</a>
+          <span>📅 Q4 FY26 (Feb)</span><span>·</span><span>🏢 Salesforce</span><span>·</span>
+          <a href="https://finance.biggo.com/news/US_CRM_2026-02-25">biggo</a>
         </div>
       </article>
 
@@ -568,7 +568,7 @@
         <h3 style="margin-top:10px">Zugangs-Status: Mythos teil-frei (US-Infrastruktur), Fable bleibt dunkel</h3>
         <p>Das Tauwetter vom 27.6. gilt nur Mythos 5 für geprüfte Verteidiger; das öffentliche Fable 5 bleibt gesperrt, während <span data-person="dario-amodei">Anthropic</span> verhandelt. Marker: 8. Juli (Datenschutzrichtlinie mit Regierungs-ID) und 1. August (60-Tage-EO-Frist). Für die meisten Entwickler ändert sich vorerst nichts.</p>
         <div class="news-meta">
-          <span>📅 30.06.2026</span><span>·</span><span>🏢 <span data-person="dario-amodei">Anthropic</span> · US-Gov</span><span>·</span>
+          <span>📅 01.07.2026</span><span>·</span><span>🏢 <span data-person="dario-amodei">Anthropic</span> · US-Gov</span><span>·</span>
           <a href="https://explainx.ai/blog/is-fable-5-back-2026">explainx</a>
         </div>
       </article>
@@ -590,7 +590,16 @@
 
       <article class="card">
         <h3>Letzte Releases</h3>
-        <p>Aktuelle Version <code>v2.1.196</code> · Organisations-Default-Modelle (admin-gesetzt) + Security-Fix gegen self-approved <code>.mcp.json</code>-Server.</p>
+        <p>Aktuelle Version <code>v2.1.197</code> · Claude Sonnet 5 wird neues Default-Modell (1M-Kontext, 2/10 $ je Mtok Einführungspreis bis 31.8.).</p>
+
+        <div class="release">
+          <div class="ver">v2.1.197</div>
+          <div class="when">30.06.</div>
+          <div class="what">
+            <strong>Claude Sonnet 5 als neues Default-Modell</strong> in Claude Code — natives 1-Million-Token-Kontextfenster, Einführungspreis 2/10 $ je Mtok bis 31. August
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
 
         <div class="release">
           <div class="ver">v2.1.196</div>
@@ -637,15 +646,6 @@
           </div>
         </div>
 
-        <div class="release">
-          <div class="ver">v2.1.187</div>
-          <div class="when">23.06.</div>
-          <div class="what">
-            <strong><code>sandbox.credentials</code></strong> blockt Lesezugriff sandboxed Befehle auf Credential-Dateien + geheime Env-Variablen · org-konfigurierte Modell-Restriktionen in Picker, <code>--model</code>, <code>/model</code> und <code>ANTHROPIC_MODEL</code> · Maus-Klick in Auswahl-Menüs (Fullscreen) · Fix: <code>--resume</code> bei <code>-p</code>-Läufen ohne Modell-Turns; robusteres <code>--json-schema</code>/Workflow-Structured-Output
-            <span class="badge sec">SECURITY</span>
-          </div>
-        </div>
-
         <p style="margin-top: 14px;">
           <a href="https://github.com/anthropics/claude-code/releases">→ Alle Releases auf GitHub</a><br/>
           <a href="https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md">→ Vollständiger CHANGELOG.md</a>
@@ -675,7 +675,7 @@
   </section>
 
   <footer>
-    <div>Snapshot · <span class="mono" id="generated">30. Juni 2026</span></div>
+    <div>Snapshot · <span class="mono" id="generated">1. Juli 2026</span></div>
     <div>
       <a href="/agentic-info-dashboard/sources/">📚 Quellen-Sammlung</a> ·
       <a href="/agentic-info-dashboard/">📊 Übersicht</a>

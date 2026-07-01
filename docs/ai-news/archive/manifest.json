@@ -2,8 +2,14 @@
   "$schema": "https://example.com/dashboard-archive.schema.json",
   "snapshots": [
     {
-      "date": "2026-06-30",
+      "date": "2026-07-01",
       "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Der Konter: Claude Sonnet 5 antwortet auf den Kosten-Schock — Nahe-Opus-Qualität zum Drittel-Preis",
+      "summary": "Einen Tag nach der agentischen Kosten-Abrechnung kontert die Modell-Schicht: Anthropic startet Claude Sonnet 5 — 1M-Token-Kontext, Qualität nahe Opus 4.8 (SWE-bench Pro 63,2 %; GDPval knapp vor Opus), Einführungspreis 2/10 $ je Mtok bis 31.8. (ein Drittel von GPT-5.6 Sol), ab sofort Default in Claude Code, claude.ai, Cursor, VS Code und Copilot · Der Preiskrieg verlagert sich von der Frontier-Spitze in die Mitte, wo das Volumen liegt — das Schlachtfeld ist der Default · Gegenpunkt zur Euphorie: OpenAIs GeneBench-Pro zeigt, dass selbst GPT-5.6 Sol nur ~29 % echter Biologie-Aufgaben löst (Decke bei ~70 % Fehlern) · Warum der Preiskrieg zählt: agentische KI dreht reale Umsätze (Salesforce Agentforce 800 Mio. $ ARR +169 %; Gartner 206 Mrd., BCG 200 Mrd.) · EU AI Act Art. 50 ab 2.8. durchsetzbar · Fazit: Halbjahr 2 beginnt mit einem reiferen Markt"
+    },
+    {
+      "date": "2026-06-30",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-30.html",
       "headline": "Die Rechnung kommt: GitHubs Token-Billing lässt Agenten-Kosten explodieren, BCG sieht 200-Mrd.-Chance",
       "summary": "Der agentische Boom trifft das Budget: GitHub Copilot (seit 1.6. nutzungsbasiert) lässt zum ersten vollen Monatsende die Token-Bills landen — Entwickler berichten von 29→750 $ und 50→3.000 $ (10–50×), am heftigsten in agentischen Workflows; CFOs straffen KI-Budgets · Treiber ist die Fähigkeit: GPT-5.6 Sol knackt als erstes Modell 50 % auf „Agent's Last Exam” (~50,9 %), indem es länger und token-hungriger arbeitet · Die Antwort ist FinOps für Agenten (Metering, Routing, Caps); Anthropic vereinfacht die Dev-Tarife, Claude Code v2.1.196 bringt Org-Default-Modelle · Die Gegenrechnung: BCG beziffert 200 Mrd. $ neue Dienstleister-Nachfrage, Agenten in Legacy-Systeme (ERP/CRM/HR) zu integrieren — 75 % der Unternehmen wollen Partner · EU AI Act Art. 50 ab 2.8. durchsetzbar (Bußgelder bis 15 Mio. € / 3 %) · Fazit: Die Pragmatismus-Wende des Jahres landet auf der P&L"
     },
