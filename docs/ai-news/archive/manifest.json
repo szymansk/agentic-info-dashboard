@@ -2,8 +2,14 @@
   "$schema": "https://example.com/dashboard-archive.schema.json",
   "snapshots": [
     {
-      "date": "2026-07-01",
+      "date": "2026-07-07",
       "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Das Tor wird zur Institution: Washington formalisiert den Frontier-Zugang, während China auf OpenRouter die 45 % knackt",
+      "summary": "Der Start ins zweite Halbjahr definiert zwei Kräfte: Am oberen Ende formalisiert das Weiße Haus seinen freiwilligen Frontier-Rahmen (EO 14409) — 30-Tage-Vorabzugang, klassifizierte Cyber-Benchmarks, „covered frontier model”-Schwelle; GPT-5.6 bleibt auf ~20 geprüfte Orgs beschränkt, und heute schließt sich Fable 5s Gratis-Fenster (Nutzungspreis 10/50 $ ab 8.7.) · Am unteren Ende wandert der Default nach Osten: chinesische Open-Weight-Modelle überschreiten 45 % des OpenRouter-Traffics (von <2 % vor einem Jahr), Xiaomis MiMo-V2-Pro führt mit 21,1 % Wochen-Token vor OpenAIs 7,5 % — 3–10× günstiger, mit Daten-Jurisdiktions-Risiko · Google zwischen den Mühlsteinen: Gemini 3.5 Pro rutscht erneut (token-hungrig, Coding-Lücken) und könnte selbst unter die Frontier-Schwelle fallen · Die Leitplanken nahen: Five-Eyes-Agenten-Sicherheitsleitfaden (fünf Risikoklassen), EU AI Act Art. 50 ab 2.8. durchsetzbar · Fazit: Der Zugang zur Spitze wird staatlich rationiert, der Boden von China gewonnen — die Mitte bleibt umkämpft"
+    },
+    {
+      "date": "2026-07-01",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-07-01.html",
       "headline": "Der Konter: Claude Sonnet 5 antwortet auf den Kosten-Schock — Nahe-Opus-Qualität zum Drittel-Preis",
       "summary": "Einen Tag nach der agentischen Kosten-Abrechnung kontert die Modell-Schicht: Anthropic startet Claude Sonnet 5 — 1M-Token-Kontext, Qualität nahe Opus 4.8 (SWE-bench Pro 63,2 %; GDPval knapp vor Opus), Einführungspreis 2/10 $ je Mtok bis 31.8. (ein Drittel von GPT-5.6 Sol), ab sofort Default in Claude Code, claude.ai, Cursor, VS Code und Copilot · Der Preiskrieg verlagert sich von der Frontier-Spitze in die Mitte, wo das Volumen liegt — das Schlachtfeld ist der Default · Gegenpunkt zur Euphorie: OpenAIs GeneBench-Pro zeigt, dass selbst GPT-5.6 Sol nur ~29 % echter Biologie-Aufgaben löst (Decke bei ~70 % Fehlern) · Warum der Preiskrieg zählt: agentische KI dreht reale Umsätze (Salesforce Agentforce 800 Mio. $ ARR +169 %; Gartner 206 Mrd., BCG 200 Mrd.) · EU AI Act Art. 50 ab 2.8. durchsetzbar · Fazit: Halbjahr 2 beginnt mit einem reiferen Markt"
     },
