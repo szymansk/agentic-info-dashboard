@@ -15,6 +15,16 @@ set -euo pipefail
 PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$PROJECT_DIR"
 
+# SELinux-Insurance: der Launcher muss von systemd (init_t) ausführbar bleiben.
+# Ein Git-Rewrite/Checkout kann sein SELinux-Label auf user_home_t zurücksetzen
+# → der systemd-Selbstheiler scheitert dann still mit 203/EXEC "Permission
+# denied", das Briefing steht beim nächsten Idle-Exit. restorecon setzt das
+# einmalig via `sudo semanage fcontext -a -t bin_t …` hinterlegte bin_t-Label
+# wieder. No-op auf Nicht-SELinux-Systemen; nie fatal.
+if command -v restorecon >/dev/null 2>&1; then
+  restorecon "$PROJECT_DIR/bin/start-daily-loop.sh" 2>/dev/null || true
+fi
+
 MSG="${1:-auto: rebuild $(date -I)}"
 
 # 1. Build static site → docs/

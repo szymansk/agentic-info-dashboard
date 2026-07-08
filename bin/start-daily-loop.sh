@@ -12,7 +12,21 @@ set -euo pipefail
 SESSION_NAME="${SESSION_NAME:-daily-ai-update}"
 PROJECT_DIR="${PROJECT_DIR:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}"
 PROMPT_FILE="$PROJECT_DIR/DAILY_UPDATE.md"
-CLAUDE_BIN="${CLAUDE_BIN:-$(command -v claude || echo /usr/bin/claude)}"
+# claude-Binary robust auflösen: unter systemd ist ~/.local/bin NICHT im PATH
+# (die Units setzen kein Environment=PATH), deshalb reicht `command -v claude`
+# allein nicht — sonst greift der /usr/bin/claude-Fallback, existiert nicht,
+# und der Launcher bricht mit Exit 1 ab (203/EXEC-Fix legt genau das frei).
+# Kandidaten der Reihe nach prüfen; erster ausführbarer gewinnt.
+if [ -z "${CLAUDE_BIN:-}" ]; then
+  for _cand in \
+    "$(command -v claude 2>/dev/null || true)" \
+    "$HOME/.local/bin/claude" \
+    "/usr/local/bin/claude" \
+    "/usr/bin/claude"; do
+    if [ -n "$_cand" ] && [ -x "$_cand" ]; then CLAUDE_BIN="$_cand"; break; fi
+  done
+fi
+CLAUDE_BIN="${CLAUDE_BIN:-/usr/bin/claude}"
 # Modell für den Loop fest verdrahten — NICHT vom interaktiven Default in
 # ~/.claude/settings.json abhängig machen. Sonst bricht der unbeaufsichtigte
 # Loop lautlos, wenn der Default auf ein (für den Account) nicht verfügbares

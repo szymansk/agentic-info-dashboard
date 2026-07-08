@@ -2,8 +2,14 @@
   "$schema": "https://example.com/dashboard-archive.schema.json",
   "snapshots": [
     {
-      "date": "2026-07-07",
+      "date": "2026-07-08",
       "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Der Staat wird Aktionär: OpenAI bietet Washington 5 %, Google baut Gemini 3.5 Pro komplett neu",
+      "summary": "Die Zugangs-Frage eskaliert von Gatekeeping zu Eigentum: OpenAI bietet der US-Regierung einen 5-%-Anteil (~42,6 Mrd. $ bei 852-Mrd.-Bewertung) an und skizziert einen Staatsfonds à la Alaska Permanent Fund, an dem sich auch Anthropic, Google und Meta beteiligen sollen — während GPT-5.6 auf ~20 geprüfte Orgs beschränkt bleibt und der freiwillige Frontier-Rahmen des Weißen Hauses „in Tagen” erwartet wird · Googles Frontier-Krise vertieft sich: Gemini 3.5 Pro rutscht auf den 17. Juli, Google verwirft die 2.5-Pro-Architektur für einen kompletten Rebuild (neues Pre-Training; ~225 Mrd. $ von Alphabet abgeschrieben) · Reality-Check für die Schnäppchen-Mitte: Sonnet 5s neuer Tokenizer bläht die Token-Zahl um bis zu 35–41 % auf, und ab 1.9. steigt der Preis um 50 % — die „Drittel-Preis”-Rechnung braucht ein Sternchen · Heute wird Fable 5s Nutzungspreis (10/50 $) scharf; die Labs einigen sich auf eine gemeinsame Jailbreak-Schweregrad-Norm · Fazit: Der Zugang zur Spitze wird zur Eigentums- und Kostenfrage, und der schärfste Wettbewerb bleibt die Ausführung, nicht die Ankündigung"
+    },
+    {
+      "date": "2026-07-07",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-07-07.html",
       "headline": "Das Tor wird zur Institution: Washington formalisiert den Frontier-Zugang, während China auf OpenRouter die 45 % knackt",
       "summary": "Der Start ins zweite Halbjahr definiert zwei Kräfte: Am oberen Ende formalisiert das Weiße Haus seinen freiwilligen Frontier-Rahmen (EO 14409) — 30-Tage-Vorabzugang, klassifizierte Cyber-Benchmarks, „covered frontier model”-Schwelle; GPT-5.6 bleibt auf ~20 geprüfte Orgs beschränkt, und heute schließt sich Fable 5s Gratis-Fenster (Nutzungspreis 10/50 $ ab 8.7.) · Am unteren Ende wandert der Default nach Osten: chinesische Open-Weight-Modelle überschreiten 45 % des OpenRouter-Traffics (von <2 % vor einem Jahr), Xiaomis MiMo-V2-Pro führt mit 21,1 % Wochen-Token vor OpenAIs 7,5 % — 3–10× günstiger, mit Daten-Jurisdiktions-Risiko · Google zwischen den Mühlsteinen: Gemini 3.5 Pro rutscht erneut (token-hungrig, Coding-Lücken) und könnte selbst unter die Frontier-Schwelle fallen · Die Leitplanken nahen: Five-Eyes-Agenten-Sicherheitsleitfaden (fünf Risikoklassen), EU AI Act Art. 50 ab 2.8. durchsetzbar · Fazit: Der Zugang zur Spitze wird staatlich rationiert, der Boden von China gewonnen — die Mitte bleibt umkämpft"
     },
