@@ -158,10 +158,54 @@ zwei gestapelte Ursachen, die der Upgrade-Pfad nicht abdeckt:
 **Diagnose-Reihenfolge** bei „Briefing veraltet, YouTube frisch":
 ```bash
 claude daemon status                                    # Daemon tot?
-systemctl is-active ai-news-dashboard-healthcheck.timer # Selbstheiler scharf?
+systemctl is-active ai-news-dashboard-healthcheck.timer # Timer feuert?
+systemctl show ai-news-dashboard-healthcheck.service \
+  -p Result -p ExecMainStatus                           # ABER: heilt er auch?
 ./bin/loop.sh log | grep -iE "unavailable|fable|opus"   # Modell-Fehler?
 ```
-Erst danach Upgrade-Kill annehmen — nicht zuerst.
+Erst danach Upgrade-Kill annehmen — nicht zuerst. **Achtung**: `is-active` am
+Timer sagt nur, dass er *feuert* — NICHT, dass `start-daily-loop.sh` *durchläuft*.
+`ExecMainStatus=203` (SELinux) oder `=1` (Script-Fehler intern) heißt: Timer
+feuert, Selbstheiler scheitert still. Siehe nächste Failure-Mode.
+
+### Failure-Mode: Selbstheiler scheitert still an SELinux + PATH (203/EXEC → Exit 1)
+
+Am 2026-07-07 stand das Briefing 6 Tage (seit 01.07.), YouTube/Server frisch.
+Diesmal war `healthcheck.timer` **enabled + active** (der 06-23-Fix war da) — und
+heilte trotzdem 6 Tage lang nichts. Zwei gestapelte Ursachen, die der Timer-
+Aktiv-Check nicht sieht:
+
+1. **SELinux blockt den Launcher-Exec** (`203/EXEC`): `bin/start-daily-loop.sh`
+   liegt unter `/home` → SELinux-Kontext `user_home_t`. Unter Enforcing darf
+   systemd (`init_t`) KEINE `user_home_t`-Datei ausführen. Also scheitern BEIDE
+   Auto-Restart-Pfade (Boot-`daily-loop.service` UND `healthcheck.service`) still
+   mit `status=203/EXEC "Permission denied"`. Der Timer feuert alle 30 Min und
+   scheitert jedes Mal. Beweis: `journalctl -t audit | grep start-daily-loop`
+   zeigt `avc: denied { execute } ... scontext=…init_t tcontext=…user_home_t`.
+
+2. **PATH ohne `~/.local/bin`** (Exit 1, erst sichtbar NACHDEM Layer 1 gefixt
+   ist — Defense-in-Depth): Die Units setzen kein `Environment=PATH`. systemds
+   Default-PATH enthält `~/.local/bin` nicht, wo `claude` liegt →
+   `command -v claude` scheitert → alter `/usr/bin/claude`-Fallback existiert
+   nicht → Launcher bricht mit Exit 1 ab.
+
+**Fix (eingebaut)**:
+- SELinux: `bin/fix-selinux-launcher.sh` (self-elevating) vergibt dem Launcher
+  persistent `bin_t` via `semanage fcontext` + `restorecon`. `init_t` DARF
+  `bin_t` ausführen. Einmalig laufen lassen.
+- `deploy.sh` macht bei jedem Deploy `restorecon bin/start-daily-loop.sh` →
+  heilt das Label nach Git-Rewrites/Checkouts (die es auf `user_home_t`
+  zurücksetzen). `restorecon` braucht KEIN root, läuft als User — verifiziert.
+- `start-daily-loop.sh` löst `claude` jetzt PATH-unabhängig auf (Kandidatenliste
+  inkl. `$HOME/.local/bin/claude`), statt sich auf `command -v` zu verlassen.
+
+**Verifizieren**: `./bin/verify-daily-loop.sh` → erwartet `Result=success
+ExecMainStatus=0` + `✓ PASS`.
+
+**Wichtig**: JEDER Rewrite von `start-daily-loop.sh` (Hand-Edit, `git checkout`)
+setzt das SELinux-Label auf `user_home_t` zurück → danach `restorecon
+bin/start-daily-loop.sh` (kein sudo nötig), sonst scheitert der Selbstheiler
+wieder mit `203`. `deploy.sh` fängt das automatisch beim nächsten Deploy.
 
 ## Was ich (Claude) hier NICHT tun soll
 
