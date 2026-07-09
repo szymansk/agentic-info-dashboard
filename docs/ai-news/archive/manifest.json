@@ -2,8 +2,14 @@
   "$schema": "https://example.com/dashboard-archive.schema.json",
   "snapshots": [
     {
-      "date": "2026-07-08",
+      "date": "2026-07-09",
       "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Die Frontier kehrt zurück: GPT-5.6 wird öffentlich, doch niemand will es genehmigt haben",
+      "summary": "Der Zugang öffnet sich wieder: OpenAI schaltet GPT-5.6 (Sol/Terra/Luna) heute breit öffentlich, nachdem das Commerce-eigene CAISI die Modelle getestet hat — der erste Live-Test des freiwilligen Frontier-Rahmens · Doch die Autorität ist umstritten: Das Weiße Haus dementiert, einen „grünen Haken” gegeben zu haben („Entscheidungen liegen allein bei den Unternehmen”), während OpenAI die Freigabe „auf Bitten der Regierung” begrenzt und Partner-Identitäten geteilt hatte — Freiwilligkeit als deniable Grauzone (im Hintergrund das 5-%-Staatsanteil-Angebot) · Europa kontert mit eigenem Rahmen: Der EU-Aktionsplan Cybersecurity + KI (7.7.) baut über ENISA/JRC eine sichere Test-Plattform für Modelle mit fortgeschrittenen Cyber-Fähigkeiten (Q4) und eine eigene Modell-Evaluations-Kapazität · Die Wert-Stufe bewährt sich (Sonnet 5: Nahe-Opus-Verhalten im Praxis-Test, mit Tokenizer-Sternchen); souveränes Geld steigt ein (Together AI 800 Mio. $, angeführt von Aramco Ventures, 8,3 Mrd. Bewertung) · Fazit: Der Zugang zur Spitze ist wieder offen, aber die Regeln dahinter sind jetzt zwei rivalisierende, halb-formelle Regime — ein US-amerikanisches deniables und ein europäisches dokumentiertes"
+    },
+    {
+      "date": "2026-07-08",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-07-08.html",
       "headline": "Der Staat wird Aktionär: OpenAI bietet Washington 5 %, Google baut Gemini 3.5 Pro komplett neu",
       "summary": "Die Zugangs-Frage eskaliert von Gatekeeping zu Eigentum: OpenAI bietet der US-Regierung einen 5-%-Anteil (~42,6 Mrd. $ bei 852-Mrd.-Bewertung) an und skizziert einen Staatsfonds à la Alaska Permanent Fund, an dem sich auch Anthropic, Google und Meta beteiligen sollen — während GPT-5.6 auf ~20 geprüfte Orgs beschränkt bleibt und der freiwillige Frontier-Rahmen des Weißen Hauses „in Tagen” erwartet wird · Googles Frontier-Krise vertieft sich: Gemini 3.5 Pro rutscht auf den 17. Juli, Google verwirft die 2.5-Pro-Architektur für einen kompletten Rebuild (neues Pre-Training; ~225 Mrd. $ von Alphabet abgeschrieben) · Reality-Check für die Schnäppchen-Mitte: Sonnet 5s neuer Tokenizer bläht die Token-Zahl um bis zu 35–41 % auf, und ab 1.9. steigt der Preis um 50 % — die „Drittel-Preis”-Rechnung braucht ein Sternchen · Heute wird Fable 5s Nutzungspreis (10/50 $) scharf; die Labs einigen sich auf eine gemeinsame Jailbreak-Schweregrad-Norm · Fazit: Der Zugang zur Spitze wird zur Eigentums- und Kostenfrage, und der schärfste Wettbewerb bleibt die Ausführung, nicht die Ankündigung"
     },
