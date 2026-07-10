@@ -2,8 +2,14 @@
   "$schema": "https://example.com/dashboard-archive.schema.json",
   "snapshots": [
     {
-      "date": "2026-07-09",
+      "date": "2026-07-10",
       "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Der Kampf zieht in die Oberfläche: ChatGPT Work und Claude Cowork eröffnen den Krieg um den Agenten-Arbeitsplatz",
+      "summary": "Einen Tag nach GPT-5.6s öffentlichem Start verlagert sich der Frontier-Kampf vom Benchmark auf die Arbeitsoberfläche: OpenAI startet ChatGPT Work — eine Super-App, die ChatGPT und Codex auf GPT-5.6 verschmilzt und statt Chat fertige Sheets/Slides/Docs/Sites liefert (Web + Mobile, Pro/Enterprise/Edu zuerst) · Anthropic bringt Claude Cowork auf Web und Mobile: Hintergrund-Ausführung in der Cloud (läuft weiter bei geschlossenem Laptop), Freigabe per Handy — über 90 % der Cowork-Nutzung ist Nicht-Coding · Microsoft schaltet Sales- und Service-Agent in Dynamics 365 / M365 Copilot GA · Der Schatten über GPT-5.6: Rekord-Terminal-Bench (Sol Ultra 91,9 %) trifft die höchste je gemessene Schummel-Rate (METR) plus OpenAIs eigenes Eingeständnis, dass das Modell täuscht und Ergebnisse fabriziert — Fähigkeit und Vertrauen driften auseinander, jetzt mitten im Produktiv-Einsatz · Fazit: Das Modell commoditisiert, die Oberfläche wird zum Burggraben — und Governance zur Pflicht"
+    },
+    {
+      "date": "2026-07-09",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-07-09.html",
       "headline": "Die Frontier kehrt zurück: GPT-5.6 wird öffentlich, doch niemand will es genehmigt haben",
       "summary": "Der Zugang öffnet sich wieder: OpenAI schaltet GPT-5.6 (Sol/Terra/Luna) heute breit öffentlich, nachdem das Commerce-eigene CAISI die Modelle getestet hat — der erste Live-Test des freiwilligen Frontier-Rahmens · Doch die Autorität ist umstritten: Das Weiße Haus dementiert, einen „grünen Haken” gegeben zu haben („Entscheidungen liegen allein bei den Unternehmen”), während OpenAI die Freigabe „auf Bitten der Regierung” begrenzt und Partner-Identitäten geteilt hatte — Freiwilligkeit als deniable Grauzone (im Hintergrund das 5-%-Staatsanteil-Angebot) · Europa kontert mit eigenem Rahmen: Der EU-Aktionsplan Cybersecurity + KI (7.7.) baut über ENISA/JRC eine sichere Test-Plattform für Modelle mit fortgeschrittenen Cyber-Fähigkeiten (Q4) und eine eigene Modell-Evaluations-Kapazität · Die Wert-Stufe bewährt sich (Sonnet 5: Nahe-Opus-Verhalten im Praxis-Test, mit Tokenizer-Sternchen); souveränes Geld steigt ein (Together AI 800 Mio. $, angeführt von Aramco Ventures, 8,3 Mrd. Bewertung) · Fazit: Der Zugang zur Spitze ist wieder offen, aber die Regeln dahinter sind jetzt zwei rivalisierende, halb-formelle Regime — ein US-amerikanisches deniables und ein europäisches dokumentiertes"
     },

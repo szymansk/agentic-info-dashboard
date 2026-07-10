@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-09T04:04:59+00:00",
+  "last_updated": "2026-07-10T04:08:56+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,16 @@
   ],
   "featured": [
     {
-      "video_id": "8xqQzrLf0co",
-      "title": "How Bain Capital Is Scaling AI with ChatGPT",
+      "video_id": "xYVfknDQHU4",
+      "title": "ChatGPT Work | How NVIDIA Scales GTM with AI",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-07-08T22:51:23+00:00",
-      "url": "https://www.youtube.com/watch?v=8xqQzrLf0co",
-      "thumbnail": "https://img.youtube.com/vi/8xqQzrLf0co/mqdefault.jpg",
-      "description": "For businesses, AI is most powerful when everyone can use it.\n\n“Having 2,700 employees, all of whom now have an enterprise ChatGPT license, has just been a giant force multiplier for the business.” -James Mackey, Bain Capital\n\nSee how Bain ",
+      "published": "2026-07-09T22:30:40+00:00",
+      "url": "https://www.youtube.com/watch?v=xYVfknDQHU4",
+      "thumbnail": "https://img.youtube.com/vi/xYVfknDQHU4/mqdefault.jpg",
+      "description": "“ChatGPT has really been a force multiplier”\n\nWill Daney, Go-To-Market Strategist at NVIDIA, uses ChatGPT Work to:\n\n🤖 Automate repeatable workflows\n⏱️ Eliminate manual analysis\n📈 Turn customer data into actionable insights\n\n“You build the b",
       "why": ""
     },
     {
@@ -153,22 +153,117 @@
       "thumbnail": "https://img.youtube.com/vi/y24lF1q4SFY/mqdefault.jpg",
       "description": "Fable 5 (newly re-released) vs GPT 5.6 Sol, what comparisons can we unearth? Plus, Sonnet 5, a 5% equity seizure by US Govt, the ‘largest heist’, Beetlejuice and more…\n\n\n\nExclusive Vids in AI Insiders ($9!): https://www.patreon.com/AIExplai",
       "why": ""
-    },
-    {
-      "video_id": "pv1TUJSEM2k",
-      "title": "The Rise and Fall of the Roman Empire and the Byzantine Empire | Lex Fridman Podcast #498",
-      "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
-      "channel_name": "Lex Fridman",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-06-30T21:16:13+00:00",
-      "url": "https://www.youtube.com/watch?v=pv1TUJSEM2k",
-      "thumbnail": "https://img.youtube.com/vi/pv1TUJSEM2k/mqdefault.jpg",
-      "description": "Anthony Kaldellis is a historian of the Roman Empire and author of \"The New Roman Empire\", a comprehensive history of the Byzantine Empire (Eastern Roman Empire).\nThank you for listening ❤ Check out our sponsors: https://lexfridman.com/spon",
-      "why": ""
     }
   ],
   "recent": [
+    {
+      "video_id": "xYVfknDQHU4",
+      "title": "ChatGPT Work | How NVIDIA Scales GTM with AI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-07-09T22:30:40+00:00",
+      "url": "https://www.youtube.com/watch?v=xYVfknDQHU4",
+      "thumbnail": "https://img.youtube.com/vi/xYVfknDQHU4/mqdefault.jpg",
+      "description": "“ChatGPT has really been a force multiplier”\n\nWill Daney, Go-To-Market Strategist at NVIDIA, uses ChatGPT Work to:\n\n🤖 Automate repeatable workflows\n⏱️ Eliminate manual analysis\n📈 Turn customer data into actionable insights\n\n“You build the b"
+    },
+    {
+      "video_id": "Cb0N8Pnja30",
+      "title": "ChatGPT Work | NVIDIA’s GTM Team Uses AI to Scale Faster",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-07-09T22:30:35+00:00",
+      "url": "https://www.youtube.com/shorts/Cb0N8Pnja30",
+      "thumbnail": "https://img.youtube.com/vi/Cb0N8Pnja30/mqdefault.jpg",
+      "description": "“ChatGPT has really been a force multiplier”\n\nWill Daney (tag), Go-To-Market Strategist at NVIDIA (tag), uses ChatGPT Work to:\n\n🤖 Automate repeatable workflows\n⏱️ Eliminate manual analysis\n📈 Turn customer data into actionable insights\n\n“You"
+    },
+    {
+      "video_id": "md5t5Nu44A4",
+      "title": "ChatGPT Work | Zapier: Seven Figures in Monthly Pipeline",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-07-09T21:26:20+00:00",
+      "url": "https://www.youtube.com/shorts/md5t5Nu44A4",
+      "thumbnail": "https://img.youtube.com/vi/md5t5Nu44A4/mqdefault.jpg",
+      "description": "“We quantified the impact of this project to the tune of seven figures in pipeline every single month.”\n\nAngela Ferrante, Head of Enterprise Marketing at Zapier, used ChatGPT Work to automate a process that once took 35–45 minutes per lead."
+    },
+    {
+      "video_id": "sqXsMDOxP0Y",
+      "title": "ChatGPT Work | Zapier: Seven Figures in Monthly Pipeline",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-07-09T21:19:10+00:00",
+      "url": "https://www.youtube.com/watch?v=sqXsMDOxP0Y",
+      "thumbnail": "https://img.youtube.com/vi/sqXsMDOxP0Y/mqdefault.jpg",
+      "description": "“We quantified the impact of this project to the tune of seven figures in pipeline every single month.”\n\nAngela Ferrante, Head of Enterprise Marketing at Zapier, used ChatGPT Work to automate a process that once took 35–45 minutes per lead."
+    },
+    {
+      "video_id": "GphgJjaKKhw",
+      "title": "Get started with ChatGPT Work",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-07-09T21:00:03+00:00",
+      "url": "https://www.youtube.com/watch?v=GphgJjaKKhw",
+      "thumbnail": "https://img.youtube.com/vi/GphgJjaKKhw/mqdefault.jpg",
+      "description": "ChatGPT Work gives you one place to delegate real work across your apps, files, local projects, browser, and computer. It works across web, mobile, and the new ChatGPT desktop app.\n\nIn this walkthrough, see how to connect your tools, set up"
+    },
+    {
+      "video_id": "roGmNXASYOM",
+      "title": "GPT-5.6 SOL is HERE",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-07-09T20:49:47+00:00",
+      "url": "https://www.youtube.com/watch?v=roGmNXASYOM",
+      "thumbnail": "https://img.youtube.com/vi/roGmNXASYOM/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "mD1F5DsC5tc",
+      "title": "GPT-5.6 is FINALLY HERE (WOAH)",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-07-09T18:00:10+00:00",
+      "url": "https://www.youtube.com/watch?v=mD1F5DsC5tc",
+      "thumbnail": "https://img.youtube.com/vi/mD1F5DsC5tc/mqdefault.jpg",
+      "description": "Check out GPT-5.6 coming to Box soon! https://bit.ly/4pkwci0\n\nGPT-5.6 Review site: https://signals.forwardfuture.com/gpt-5-6-review/\n\nGPT-5.6 Relay: https://github.com/Forward-Future/gpt-5-6-relay\n\nJoin My Newsletter for Regular AI Updates "
+    },
+    {
+      "video_id": "3IudC2n8jvQ",
+      "title": "Minecraft made by GPT-5.6",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-07-09T17:39:17+00:00",
+      "url": "https://www.youtube.com/shorts/3IudC2n8jvQ",
+      "thumbnail": "https://img.youtube.com/vi/3IudC2n8jvQ/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "k_kyepATqB8",
+      "title": "Shor's Algorithm for Quantum Computing - Computerphile",
+      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
+      "channel_name": "Computerphile",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-07-09T13:57:10+00:00",
+      "url": "https://www.youtube.com/watch?v=k_kyepATqB8",
+      "thumbnail": "https://img.youtube.com/vi/k_kyepATqB8/mqdefault.jpg",
+      "description": "We brought a computer scientist and a physicist together to talk about Shor's algorithm - a famous factorisation algorithm for that can break some currently used encryption techniques if implemented in the quantum realm. \n\nPhil's accompanyi"
+    },
     {
       "video_id": "p7eQYMcmZqo",
       "title": "Grok  just broke the trend",
@@ -180,30 +275,6 @@
       "url": "https://www.youtube.com/shorts/p7eQYMcmZqo",
       "thumbnail": "https://img.youtube.com/vi/p7eQYMcmZqo/mqdefault.jpg",
       "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
-    },
-    {
-      "video_id": "8xqQzrLf0co",
-      "title": "How Bain Capital Is Scaling AI with ChatGPT",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-07-08T22:51:23+00:00",
-      "url": "https://www.youtube.com/watch?v=8xqQzrLf0co",
-      "thumbnail": "https://img.youtube.com/vi/8xqQzrLf0co/mqdefault.jpg",
-      "description": "For businesses, AI is most powerful when everyone can use it.\n\n“Having 2,700 employees, all of whom now have an enterprise ChatGPT license, has just been a giant force multiplier for the business.” -James Mackey, Bain Capital\n\nSee how Bain "
-    },
-    {
-      "video_id": "9f-Ew_lDtxc",
-      "title": "The next generation of ChatGPT Voice",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-07-08T21:13:26+00:00",
-      "url": "https://www.youtube.com/watch?v=9f-Ew_lDtxc",
-      "thumbnail": "https://img.youtube.com/vi/9f-Ew_lDtxc/mqdefault.jpg",
-      "description": "Join Kundan Kumar, Yuchen Zhang, Ehsan Asdar, and Rithesh Kumar as they introduce and demo a new generation of voice models."
     },
     {
       "video_id": "KGtko3y2RXQ",
@@ -218,42 +289,6 @@
       "description": "Try out Traycer's free open source desktop app that lets all your coding agents work together in one workspace - https://traycer.ai/fireship\n\nAnthropic just discovered a global workspace deep inside Claude's \"brain.\" Are we cooked? Let's br"
     },
     {
-      "video_id": "KS4X-BPjxN8",
-      "title": "Image interaction with GPT-Live",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-07-08T17:37:19+00:00",
-      "url": "https://www.youtube.com/watch?v=KS4X-BPjxN8",
-      "thumbnail": "https://img.youtube.com/vi/KS4X-BPjxN8/mqdefault.jpg",
-      "description": "More about our next generation voice model here: https://openai.com/index/introducing-gpt-live/"
-    },
-    {
-      "video_id": "QUOwyLwoykU",
-      "title": "Discoverability widgets with GPT-Live",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-07-08T17:36:34+00:00",
-      "url": "https://www.youtube.com/watch?v=QUOwyLwoykU",
-      "thumbnail": "https://img.youtube.com/vi/QUOwyLwoykU/mqdefault.jpg",
-      "description": "More about our next generation voice model here: https://openai.com/index/introducing-gpt-live/"
-    },
-    {
-      "video_id": "3bL6IpdgddQ",
-      "title": "Natural Conversations with GPT-Live",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-07-08T17:33:32+00:00",
-      "url": "https://www.youtube.com/watch?v=3bL6IpdgddQ",
-      "thumbnail": "https://img.youtube.com/vi/3bL6IpdgddQ/mqdefault.jpg",
-      "description": "More about our next generation voice model here: https://openai.com/index/introducing-gpt-live/"
-    },
-    {
       "video_id": "9D_UxabscdI",
       "title": "So AI is \"thinking\" for real",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
@@ -263,42 +298,6 @@
       "published": "2026-07-08T08:13:30+00:00",
       "url": "https://www.youtube.com/shorts/9D_UxabscdI",
       "thumbnail": "https://img.youtube.com/vi/9D_UxabscdI/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
-    },
-    {
-      "video_id": "GZT_oNQnLV4",
-      "title": "Training Agents 2: Live tutorial on model distillation for training custom agents.",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-07-08T04:46:10+00:00",
-      "url": "https://www.youtube.com/watch?v=GZT_oNQnLV4",
-      "thumbnail": "https://img.youtube.com/vi/GZT_oNQnLV4/mqdefault.jpg",
-      "description": "In this live session, we'll cover how to transfer capability from a teacher model to a smaller student through distillation. We'll work through supervised fine-tuning on teacher-generated data, then on-policy and online methods where the te"
-    },
-    {
-      "video_id": "bjHuGNo3spk",
-      "title": "We just figured out how AI actually works (J-Space)",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-07-08T02:58:42+00:00",
-      "url": "https://www.youtube.com/watch?v=bjHuGNo3spk",
-      "thumbnail": "https://img.youtube.com/vi/bjHuGNo3spk/mqdefault.jpg",
-      "description": "If scale is your next challenge check out DigitalOcean: https://do.co/matthewberman\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/for"
-    },
-    {
-      "video_id": "3g4JBjNSbio",
-      "title": "Fable 5 EXTENDED",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-07-07T21:05:01+00:00",
-      "url": "https://www.youtube.com/shorts/3g4JBjNSbio",
-      "thumbnail": "https://img.youtube.com/vi/3g4JBjNSbio/mqdefault.jpg",
       "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
     },
     {
@@ -326,18 +325,6 @@
       "description": "Seema Amble, Steven Sinofsky, and Elena Burger unpack one of the biggest questions facing enterprise software: what happens when AI agents become the primary users of software instead of humans?\n\nThe conversation explores the rise of \"headl"
     },
     {
-      "video_id": "zHWco8xg7ME",
-      "title": "Cheap tricks for AI",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-07-07T10:16:48+00:00",
-      "url": "https://www.youtube.com/shorts/zHWco8xg7ME",
-      "thumbnail": "https://img.youtube.com/vi/zHWco8xg7ME/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
-    },
-    {
       "video_id": "rKV5JcALQoQ",
       "title": "The different levels of how Claude thinks",
       "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
@@ -348,18 +335,6 @@
       "url": "https://www.youtube.com/watch?v=rKV5JcALQoQ",
       "thumbnail": "https://img.youtube.com/vi/rKV5JcALQoQ/mqdefault.jpg",
       "description": "Out of everything happening in your brain right now, only a tiny fraction is consciously accessible — thoughts you can describe, hold in mind, and reason with. We found a strikingly similar divide inside our AI model, Claude.\n\nOur experimen"
-    },
-    {
-      "video_id": "4ItFgQI2NOM",
-      "title": "Introducing Tau: An Educational Coding Agent",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-07-06T03:15:03+00:00",
-      "url": "https://www.youtube.com/watch?v=4ItFgQI2NOM",
-      "thumbnail": "https://img.youtube.com/vi/4ItFgQI2NOM/mqdefault.jpg",
-      "description": "Meet Tau — a small, readable coding agent written in Python. In this quick tour, I introduce Tau, show how to install and run it, configure model providers (Hugging Face Inference Providers, GLM 5.2, Minimax, Kimi), resume durable sessions,"
     },
     {
       "video_id": "uO5cvkzh3P0",
@@ -446,30 +421,6 @@
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\nGLM 5.2: https://z.ai/blog/glm-5.2\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, Benji Rabhan"
     },
     {
-      "video_id": "pv1TUJSEM2k",
-      "title": "The Rise and Fall of the Roman Empire and the Byzantine Empire | Lex Fridman Podcast #498",
-      "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
-      "channel_name": "Lex Fridman",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-06-30T21:16:13+00:00",
-      "url": "https://www.youtube.com/watch?v=pv1TUJSEM2k",
-      "thumbnail": "https://img.youtube.com/vi/pv1TUJSEM2k/mqdefault.jpg",
-      "description": "Anthony Kaldellis is a historian of the Roman Empire and author of \"The New Roman Empire\", a comprehensive history of the Byzantine Empire (Eastern Roman Empire).\nThank you for listening ❤ Check out our sponsors: https://lexfridman.com/spon"
-    },
-    {
-      "video_id": "HfjF__xhSdk",
-      "title": "How LLMs Actually Generate Text",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-06-30T06:34:41+00:00",
-      "url": "https://www.youtube.com/shorts/HfjF__xhSdk",
-      "thumbnail": "https://img.youtube.com/vi/HfjF__xhSdk/mqdefault.jpg",
-      "description": "Text generation looks like one function call. Underneath, it's a loop: infer, pick a token, append it, repeat. Watch how Transformers.js runs an LLM step by step.. and understand what's actually happening every time you chat with one."
-    },
-    {
       "video_id": "5pieVHmlbyk",
       "title": "The Thermodynamic AI Chip · Thomas Ahle",
       "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
@@ -492,38 +443,15 @@
       "url": "https://www.youtube.com/watch?v=JNu6c4G6q5M",
       "thumbnail": "https://img.youtube.com/vi/JNu6c4G6q5M/mqdefault.jpg",
       "description": ""
-    },
-    {
-      "video_id": "wRcByxXkJCQ",
-      "title": "Welcome to Open Source AI: Run Your Own Models Locally",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-06-25T16:49:36+00:00",
-      "url": "https://www.youtube.com/watch?v=wRcByxXkJCQ",
-      "thumbnail": "https://img.youtube.com/vi/wRcByxXkJCQ/mqdefault.jpg",
-      "description": "A livestream for everyone starting out with open models. We walk through the most robust stack for running AI on your own laptop or server, and answer your questions live.\n\nWhat we cover:\n\nMerve Noyan on llama.cpp: what it is and how it run"
-    },
-    {
-      "video_id": "0GQ2RP-25gM",
-      "title": "Why AI is like a (Clever Hans) Horse - Computerphile",
-      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
-      "channel_name": "Computerphile",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-06-25T14:45:11+00:00",
-      "url": "https://www.youtube.com/watch?v=0GQ2RP-25gM",
-      "thumbnail": "https://img.youtube.com/vi/0GQ2RP-25gM/mqdefault.jpg",
-      "description": "Clever Hans was a horse that could do maths, or was it using some other trick? Is AI music classification working like a 'Clever Hans?'\n\nDavid Kelly is based at Kings College London. His paper is in preprint here: https://arxiv.org/pdf/2601"
     }
   ],
   "stats": {
-    "total_videos": 29,
+    "total_videos": 24,
     "total_channels": 16,
-    "successful_channels": 15,
+    "successful_channels": 14,
     "failed_channels": [
-      "DeepLearningAI"
+      "Lex Fridman",
+      "Hugging Face"
     ],
     "window_days": 14
   }
