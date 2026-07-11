@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-10T04:08:56+00:00",
+  "last_updated": "2026-07-11T05:41:27+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,42 @@
   ],
   "featured": [
     {
-      "video_id": "xYVfknDQHU4",
-      "title": "ChatGPT Work | How NVIDIA Scales GTM with AI",
+      "video_id": "MdTqoR-7oHg",
+      "title": "RingCentral Scales Customer Programs with ChatGPT Work",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-07-09T22:30:40+00:00",
-      "url": "https://www.youtube.com/watch?v=xYVfknDQHU4",
-      "thumbnail": "https://img.youtube.com/vi/xYVfknDQHU4/mqdefault.jpg",
-      "description": "“ChatGPT has really been a force multiplier”\n\nWill Daney, Go-To-Market Strategist at NVIDIA, uses ChatGPT Work to:\n\n🤖 Automate repeatable workflows\n⏱️ Eliminate manual analysis\n📈 Turn customer data into actionable insights\n\n“You build the b",
+      "published": "2026-07-10T21:21:13+00:00",
+      "url": "https://www.youtube.com/shorts/MdTqoR-7oHg",
+      "thumbnail": "https://img.youtube.com/vi/MdTqoR-7oHg/mqdefault.jpg",
+      "description": "“ChatGPT Work helped me scale from six customers that I was tracking in the pilot phase to about 80.”\n\nVaneet Seth, R&D Efficiency Manager at RingCentral, uses ChatGPT Work to bring together information across siloed teams, turn scattered k",
+      "why": ""
+    },
+    {
+      "video_id": "1DtMiRKg-cs",
+      "title": "Understanding the inner thoughts of AI",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_name": "Google DeepMind",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-07-10T15:50:55+00:00",
+      "url": "https://www.youtube.com/watch?v=1DtMiRKg-cs",
+      "thumbnail": "https://img.youtube.com/vi/1DtMiRKg-cs/mqdefault.jpg",
+      "description": "What if you were to peer inside the ‘mind’ of AI? You wouldn't find fully formed thoughts, just vast arrays of numbers. In this episode, Professor Hannah Fry is joined by Neel Nanda, to shine a light on an ongoing open area of research, int",
+      "why": ""
+    },
+    {
+      "video_id": "mWlCituW7wo",
+      "title": "A Model Explosion: GPT 5.6 Sol, Grok 4.5 and Meta Muse Rewrite the Rules",
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "channel_name": "AI Explained",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-07-10T12:40:15+00:00",
+      "url": "https://www.youtube.com/watch?v=mWlCituW7wo",
+      "thumbnail": "https://img.youtube.com/vi/mWlCituW7wo/mqdefault.jpg",
+      "description": "What a week in AI, for real. GPT 5.6 may actually beat Claude Fable, in what you get for your money, while the new Grok 4.5 and Meta Muse Spark 1.1 make the choice even harder. Uncovering a dozen nuggets of gold you may have missed from all",
       "why": ""
     },
     {
@@ -142,79 +168,127 @@
       "why": ""
     },
     {
-      "video_id": "y24lF1q4SFY",
-      "title": "Fable 5 vs GPT 5.6 Sol: The Early Results",
-      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
-      "channel_name": "AI Explained",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-07-02T16:27:26+00:00",
-      "url": "https://www.youtube.com/watch?v=y24lF1q4SFY",
-      "thumbnail": "https://img.youtube.com/vi/y24lF1q4SFY/mqdefault.jpg",
-      "description": "Fable 5 (newly re-released) vs GPT 5.6 Sol, what comparisons can we unearth? Plus, Sonnet 5, a 5% equity seizure by US Govt, the ‘largest heist’, Beetlejuice and more…\n\n\n\nExclusive Vids in AI Insiders ($9!): https://www.patreon.com/AIExplai",
+      "video_id": "pv1TUJSEM2k",
+      "title": "The Rise and Fall of the Roman Empire and the Byzantine Empire | Lex Fridman Podcast #498",
+      "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
+      "channel_name": "Lex Fridman",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-06-30T21:16:13+00:00",
+      "url": "https://www.youtube.com/watch?v=pv1TUJSEM2k",
+      "thumbnail": "https://img.youtube.com/vi/pv1TUJSEM2k/mqdefault.jpg",
+      "description": "Anthony Kaldellis is a historian of the Roman Empire and author of \"The New Roman Empire\", a comprehensive history of the Byzantine Empire (Eastern Roman Empire).\nThank you for listening ❤ Check out our sponsors: https://lexfridman.com/spon",
       "why": ""
     }
   ],
   "recent": [
     {
-      "video_id": "xYVfknDQHU4",
-      "title": "ChatGPT Work | How NVIDIA Scales GTM with AI",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
+      "video_id": "tYU7erNVfA0",
+      "title": "Build Small Winners Reveal",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
       "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-07-09T22:30:40+00:00",
-      "url": "https://www.youtube.com/watch?v=xYVfknDQHU4",
-      "thumbnail": "https://img.youtube.com/vi/xYVfknDQHU4/mqdefault.jpg",
-      "description": "“ChatGPT has really been a force multiplier”\n\nWill Daney, Go-To-Market Strategist at NVIDIA, uses ChatGPT Work to:\n\n🤖 Automate repeatable workflows\n⏱️ Eliminate manual analysis\n📈 Turn customer data into actionable insights\n\n“You build the b"
+      "color": "#c39a4a",
+      "published": "2026-07-10T22:14:59+00:00",
+      "url": "https://www.youtube.com/watch?v=tYU7erNVfA0",
+      "thumbnail": "https://img.youtube.com/vi/tYU7erNVfA0/mqdefault.jpg",
+      "description": "After reviewing hundreds of creative projects from builders around the world, it's finally time to announce the Build Small Hackathon winners 🎉\n\nCongratulations to all our winners, and thank you to everyone who joined us and built something"
     },
     {
-      "video_id": "Cb0N8Pnja30",
-      "title": "ChatGPT Work | NVIDIA’s GTM Team Uses AI to Scale Faster",
+      "video_id": "MdTqoR-7oHg",
+      "title": "RingCentral Scales Customer Programs with ChatGPT Work",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-07-09T22:30:35+00:00",
-      "url": "https://www.youtube.com/shorts/Cb0N8Pnja30",
-      "thumbnail": "https://img.youtube.com/vi/Cb0N8Pnja30/mqdefault.jpg",
-      "description": "“ChatGPT has really been a force multiplier”\n\nWill Daney (tag), Go-To-Market Strategist at NVIDIA (tag), uses ChatGPT Work to:\n\n🤖 Automate repeatable workflows\n⏱️ Eliminate manual analysis\n📈 Turn customer data into actionable insights\n\n“You"
+      "published": "2026-07-10T21:21:13+00:00",
+      "url": "https://www.youtube.com/shorts/MdTqoR-7oHg",
+      "thumbnail": "https://img.youtube.com/vi/MdTqoR-7oHg/mqdefault.jpg",
+      "description": "“ChatGPT Work helped me scale from six customers that I was tracking in the pilot phase to about 80.”\n\nVaneet Seth, R&D Efficiency Manager at RingCentral, uses ChatGPT Work to bring together information across siloed teams, turn scattered k"
     },
     {
-      "video_id": "md5t5Nu44A4",
-      "title": "ChatGPT Work | Zapier: Seven Figures in Monthly Pipeline",
+      "video_id": "eD5lc1mZDZk",
+      "title": "Stampli scales product marketing with ChatGPT Work",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-07-09T21:26:20+00:00",
-      "url": "https://www.youtube.com/shorts/md5t5Nu44A4",
-      "thumbnail": "https://img.youtube.com/vi/md5t5Nu44A4/mqdefault.jpg",
-      "description": "“We quantified the impact of this project to the tune of seven figures in pipeline every single month.”\n\nAngela Ferrante, Head of Enterprise Marketing at Zapier, used ChatGPT Work to automate a process that once took 35–45 minutes per lead."
+      "published": "2026-07-10T21:17:12+00:00",
+      "url": "https://www.youtube.com/shorts/eD5lc1mZDZk",
+      "thumbnail": "https://img.youtube.com/vi/eD5lc1mZDZk/mqdefault.jpg",
+      "description": "“It’s allowed basically a one-person team to do the work of a team of four or five.”\n\nMelad Zahedi, Director of Product Marketing at Stampli, uses ChatGPT Work to pull product context from Jira, GitHub, and meeting notes, then automatically"
     },
     {
-      "video_id": "sqXsMDOxP0Y",
-      "title": "ChatGPT Work | Zapier: Seven Figures in Monthly Pipeline",
+      "video_id": "yATno77Uo6A",
+      "title": "Stampli scales product marketing with ChatGPT Work",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-07-09T21:19:10+00:00",
-      "url": "https://www.youtube.com/watch?v=sqXsMDOxP0Y",
-      "thumbnail": "https://img.youtube.com/vi/sqXsMDOxP0Y/mqdefault.jpg",
-      "description": "“We quantified the impact of this project to the tune of seven figures in pipeline every single month.”\n\nAngela Ferrante, Head of Enterprise Marketing at Zapier, used ChatGPT Work to automate a process that once took 35–45 minutes per lead."
+      "published": "2026-07-10T21:11:41+00:00",
+      "url": "https://www.youtube.com/watch?v=yATno77Uo6A",
+      "thumbnail": "https://img.youtube.com/vi/yATno77Uo6A/mqdefault.jpg",
+      "description": "“It’s allowed basically a one-person team to do the work of a team of four or five.”\n\nMelad Zahedi, Director of Product Marketing at Stampli, uses ChatGPT Work to pull product context from Jira, GitHub, and meeting notes, then automatically"
     },
     {
-      "video_id": "GphgJjaKKhw",
-      "title": "Get started with ChatGPT Work",
+      "video_id": "IYYTI73J7Rg",
+      "title": "ChatGPT Computer Use: Now faster with Live Picture-in-Picture",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-07-09T21:00:03+00:00",
-      "url": "https://www.youtube.com/watch?v=GphgJjaKKhw",
-      "thumbnail": "https://img.youtube.com/vi/GphgJjaKKhw/mqdefault.jpg",
-      "description": "ChatGPT Work gives you one place to delegate real work across your apps, files, local projects, browser, and computer. It works across web, mobile, and the new ChatGPT desktop app.\n\nIn this walkthrough, see how to connect your tools, set up"
+      "published": "2026-07-10T19:45:02+00:00",
+      "url": "https://www.youtube.com/watch?v=IYYTI73J7Rg",
+      "thumbnail": "https://img.youtube.com/vi/IYYTI73J7Rg/mqdefault.jpg",
+      "description": "Computer Use is getting an upgrade as part of ChatGPT Work. It's faster and more accurate with GPT-5.6, and Live Picture-in-Picture lets you keep an eye on its progress. You can also send the live PiP to your Pet while you multitask -- or s"
+    },
+    {
+      "video_id": "URKml8lgw8Y",
+      "title": "OpenAI is so back... GPT 5.6 Sol first look",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-07-10T17:25:44+00:00",
+      "url": "https://www.youtube.com/watch?v=URKml8lgw8Y",
+      "thumbnail": "https://img.youtube.com/vi/URKml8lgw8Y/mqdefault.jpg",
+      "description": "Try Blacksmith for free to run your GitHub Actions 2x faster - https://www.blacksmith.sh/\n\nOpenAI just released GPT-5.6, which includes their new Sol model that appears to outsmart Claude Fable. But why is it releasing now? And can it live "
+    },
+    {
+      "video_id": "nep5byxmr_M",
+      "title": "RingCentral Scales Customer Programs with ChatGPT Work",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-07-10T16:02:41+00:00",
+      "url": "https://www.youtube.com/watch?v=nep5byxmr_M",
+      "thumbnail": "https://img.youtube.com/vi/nep5byxmr_M/mqdefault.jpg",
+      "description": "“ChatGPT Work helped me scale from six customers that I was tracking in the pilot phase to about 80.”\n\nVaneet Seth, R&D Efficiency Manager at RingCentral, uses ChatGPT Work to bring together information across siloed teams, turn scattered k"
+    },
+    {
+      "video_id": "1DtMiRKg-cs",
+      "title": "Understanding the inner thoughts of AI",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_name": "Google DeepMind",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-07-10T15:50:55+00:00",
+      "url": "https://www.youtube.com/watch?v=1DtMiRKg-cs",
+      "thumbnail": "https://img.youtube.com/vi/1DtMiRKg-cs/mqdefault.jpg",
+      "description": "What if you were to peer inside the ‘mind’ of AI? You wouldn't find fully formed thoughts, just vast arrays of numbers. In this episode, Professor Hannah Fry is joined by Neel Nanda, to shine a light on an ongoing open area of research, int"
+    },
+    {
+      "video_id": "mWlCituW7wo",
+      "title": "A Model Explosion: GPT 5.6 Sol, Grok 4.5 and Meta Muse Rewrite the Rules",
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "channel_name": "AI Explained",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-07-10T12:40:15+00:00",
+      "url": "https://www.youtube.com/watch?v=mWlCituW7wo",
+      "thumbnail": "https://img.youtube.com/vi/mWlCituW7wo/mqdefault.jpg",
+      "description": "What a week in AI, for real. GPT 5.6 may actually beat Claude Fable, in what you get for your money, while the new Grok 4.5 and Meta Muse Spark 1.1 make the choice even harder. Uncovering a dozen nuggets of gold you may have missed from all"
     },
     {
       "video_id": "roGmNXASYOM",
@@ -301,8 +375,20 @@
       "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.ai\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https:"
     },
     {
+      "video_id": "GZT_oNQnLV4",
+      "title": "Training Agents 2: Live tutorial on model distillation for training custom agents.",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-07-08T04:46:10+00:00",
+      "url": "https://www.youtube.com/watch?v=GZT_oNQnLV4",
+      "thumbnail": "https://img.youtube.com/vi/GZT_oNQnLV4/mqdefault.jpg",
+      "description": "In this live session, we'll cover how to transfer capability from a teacher model to a smaller student through distillation. We'll work through supervised fine-tuning on teacher-generated data, then on-policy and online methods where the te"
+    },
+    {
       "video_id": "1yBU41auQhw",
-      "title": "DeepSeek's New AI Speed Hack Is Amazing",
+      "title": "DeepSeek's Absolutely Insane AI Speed Hack",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
       "channel_name": "Two Minute Papers",
       "category": "researcher",
@@ -335,6 +421,18 @@
       "url": "https://www.youtube.com/watch?v=rKV5JcALQoQ",
       "thumbnail": "https://img.youtube.com/vi/rKV5JcALQoQ/mqdefault.jpg",
       "description": "Out of everything happening in your brain right now, only a tiny fraction is consciously accessible — thoughts you can describe, hold in mind, and reason with. We found a strikingly similar divide inside our AI model, Claude.\n\nOur experimen"
+    },
+    {
+      "video_id": "4ItFgQI2NOM",
+      "title": "Introducing Tau: An Educational Coding Agent",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-07-06T03:15:03+00:00",
+      "url": "https://www.youtube.com/watch?v=4ItFgQI2NOM",
+      "thumbnail": "https://img.youtube.com/vi/4ItFgQI2NOM/mqdefault.jpg",
+      "description": "Meet Tau — a small, readable coding agent written in Python. In this quick tour, I introduce Tau, show how to install and run it, configure model providers (Hugging Face Inference Providers, GLM 5.2, Minimax, Kimi), resume durable sessions,"
     },
     {
       "video_id": "uO5cvkzh3P0",
@@ -421,6 +519,30 @@
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\nGLM 5.2: https://z.ai/blog/glm-5.2\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, Benji Rabhan"
     },
     {
+      "video_id": "pv1TUJSEM2k",
+      "title": "The Rise and Fall of the Roman Empire and the Byzantine Empire | Lex Fridman Podcast #498",
+      "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
+      "channel_name": "Lex Fridman",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-06-30T21:16:13+00:00",
+      "url": "https://www.youtube.com/watch?v=pv1TUJSEM2k",
+      "thumbnail": "https://img.youtube.com/vi/pv1TUJSEM2k/mqdefault.jpg",
+      "description": "Anthony Kaldellis is a historian of the Roman Empire and author of \"The New Roman Empire\", a comprehensive history of the Byzantine Empire (Eastern Roman Empire).\nThank you for listening ❤ Check out our sponsors: https://lexfridman.com/spon"
+    },
+    {
+      "video_id": "HfjF__xhSdk",
+      "title": "How LLMs Actually Generate Text",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-06-30T06:34:41+00:00",
+      "url": "https://www.youtube.com/shorts/HfjF__xhSdk",
+      "thumbnail": "https://img.youtube.com/vi/HfjF__xhSdk/mqdefault.jpg",
+      "description": "Text generation looks like one function call. Underneath, it's a loop: infer, pick a token, append it, repeat. Watch how Transformers.js runs an LLM step by step.. and understand what's actually happening every time you chat with one."
+    },
+    {
       "video_id": "5pieVHmlbyk",
       "title": "The Thermodynamic AI Chip · Thomas Ahle",
       "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
@@ -431,28 +553,13 @@
       "url": "https://www.youtube.com/watch?v=5pieVHmlbyk",
       "thumbnail": "https://img.youtube.com/vi/5pieVHmlbyk/mqdefault.jpg",
       "description": "Thomas Ahle wants Normal Computing to be the Lovable for chip design: type your intent, and a swarm of agents carries it from design through optimisation, formalisation and verification to tape-out. To get there, his team at wrote their own"
-    },
-    {
-      "video_id": "JNu6c4G6q5M",
-      "title": "This is New Media",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-06-26T19:58:27+00:00",
-      "url": "https://www.youtube.com/watch?v=JNu6c4G6q5M",
-      "thumbnail": "https://img.youtube.com/vi/JNu6c4G6q5M/mqdefault.jpg",
-      "description": ""
     }
   ],
   "stats": {
-    "total_videos": 24,
+    "total_videos": 31,
     "total_channels": 16,
-    "successful_channels": 14,
-    "failed_channels": [
-      "Lex Fridman",
-      "Hugging Face"
-    ],
+    "successful_channels": 16,
+    "failed_channels": [],
     "window_days": 14
   }
 }
