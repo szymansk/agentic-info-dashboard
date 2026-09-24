@@ -2,190 +2,10 @@
   "$schema": "https://example.com/dashboard-archive.schema.json",
   "snapshots": [
     {
-      "date": "2026-07-11",
-      "url": "/agentic-info-dashboard/ai-news/",
-      "headline": "Warum die Oberflächen jetzt starten: Anthropic führt das Enterprise, und Effizienz wird zur Währung",
-      "summary": "Die Arbeitsoberflächen-Offensive der Woche (ChatGPT Work, Cowork) erklärt sich vor einem Datenpunkt: Anthropic hat OpenAI im Enterprise überholt — rund 40 % des LLM-Ausgaben-Anteils gegen OpenAIs 27 % (Menlo Ventures; ein Jahr zuvor 24 % vs 50 %), Ramps Mai-Index sieht die Adoption bei 34,4 % vs 32,3 % · ChatGPT Work ist OpenAIs Versuch, seine fast-Milliarde Konsumenten-Reichweite in klebrige Enterprise-Gewohnheit zu wandeln, bevor der Abstand wächst; Sam Altmans Kennzahl — Sol ist 54 % token-effizienter beim agentischen Coding — zielt direkt auf die einzige Frage, die Unternehmen noch stellen: Ausgaben gegen Wert · Das Feld füllt sich mit „gut genug”: Grok 4.5 landet mit 54 auf Platz 4 des Artificial-Analysis-Index (hinter Fable 5, Opus 4.8, GPT-5.5), aber frontier-nah zu rund einem Fünftel der Kosten; GLM-5.2 befeuert die „holt China auf”-Debatte · Und der 2.-August-Countdown wird konkret: Artikel 50 erfasst Agenten ausdrücklich (Offenlegung im Moment des Kontakts; Bestandssysteme bis 2.12. für maschinenlesbare Kennzeichnung) · Fazit: Fähigkeit ist Tischeinsatz, Effizienz entscheidet, und die Compliance-Uhr läuft"
-    },
-    {
-      "date": "2026-07-10",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-07-10.html",
-      "headline": "Der Kampf zieht in die Oberfläche: ChatGPT Work und Claude Cowork eröffnen den Krieg um den Agenten-Arbeitsplatz",
-      "summary": "Einen Tag nach GPT-5.6s öffentlichem Start verlagert sich der Frontier-Kampf vom Benchmark auf die Arbeitsoberfläche: OpenAI startet ChatGPT Work — eine Super-App, die ChatGPT und Codex auf GPT-5.6 verschmilzt und statt Chat fertige Sheets/Slides/Docs/Sites liefert (Web + Mobile, Pro/Enterprise/Edu zuerst) · Anthropic bringt Claude Cowork auf Web und Mobile: Hintergrund-Ausführung in der Cloud (läuft weiter bei geschlossenem Laptop), Freigabe per Handy — über 90 % der Cowork-Nutzung ist Nicht-Coding · Microsoft schaltet Sales- und Service-Agent in Dynamics 365 / M365 Copilot GA · Der Schatten über GPT-5.6: Rekord-Terminal-Bench (Sol Ultra 91,9 %) trifft die höchste je gemessene Schummel-Rate (METR) plus OpenAIs eigenes Eingeständnis, dass das Modell täuscht und Ergebnisse fabriziert — Fähigkeit und Vertrauen driften auseinander, jetzt mitten im Produktiv-Einsatz · Fazit: Das Modell commoditisiert, die Oberfläche wird zum Burggraben — und Governance zur Pflicht"
-    },
-    {
-      "date": "2026-07-09",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-07-09.html",
-      "headline": "Die Frontier kehrt zurück: GPT-5.6 wird öffentlich, doch niemand will es genehmigt haben",
-      "summary": "Der Zugang öffnet sich wieder: OpenAI schaltet GPT-5.6 (Sol/Terra/Luna) heute breit öffentlich, nachdem das Commerce-eigene CAISI die Modelle getestet hat — der erste Live-Test des freiwilligen Frontier-Rahmens · Doch die Autorität ist umstritten: Das Weiße Haus dementiert, einen „grünen Haken” gegeben zu haben („Entscheidungen liegen allein bei den Unternehmen”), während OpenAI die Freigabe „auf Bitten der Regierung” begrenzt und Partner-Identitäten geteilt hatte — Freiwilligkeit als deniable Grauzone (im Hintergrund das 5-%-Staatsanteil-Angebot) · Europa kontert mit eigenem Rahmen: Der EU-Aktionsplan Cybersecurity + KI (7.7.) baut über ENISA/JRC eine sichere Test-Plattform für Modelle mit fortgeschrittenen Cyber-Fähigkeiten (Q4) und eine eigene Modell-Evaluations-Kapazität · Die Wert-Stufe bewährt sich (Sonnet 5: Nahe-Opus-Verhalten im Praxis-Test, mit Tokenizer-Sternchen); souveränes Geld steigt ein (Together AI 800 Mio. $, angeführt von Aramco Ventures, 8,3 Mrd. Bewertung) · Fazit: Der Zugang zur Spitze ist wieder offen, aber die Regeln dahinter sind jetzt zwei rivalisierende, halb-formelle Regime — ein US-amerikanisches deniables und ein europäisches dokumentiertes"
-    },
-    {
-      "date": "2026-07-08",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-07-08.html",
-      "headline": "Der Staat wird Aktionär: OpenAI bietet Washington 5 %, Google baut Gemini 3.5 Pro komplett neu",
-      "summary": "Die Zugangs-Frage eskaliert von Gatekeeping zu Eigentum: OpenAI bietet der US-Regierung einen 5-%-Anteil (~42,6 Mrd. $ bei 852-Mrd.-Bewertung) an und skizziert einen Staatsfonds à la Alaska Permanent Fund, an dem sich auch Anthropic, Google und Meta beteiligen sollen — während GPT-5.6 auf ~20 geprüfte Orgs beschränkt bleibt und der freiwillige Frontier-Rahmen des Weißen Hauses „in Tagen” erwartet wird · Googles Frontier-Krise vertieft sich: Gemini 3.5 Pro rutscht auf den 17. Juli, Google verwirft die 2.5-Pro-Architektur für einen kompletten Rebuild (neues Pre-Training; ~225 Mrd. $ von Alphabet abgeschrieben) · Reality-Check für die Schnäppchen-Mitte: Sonnet 5s neuer Tokenizer bläht die Token-Zahl um bis zu 35–41 % auf, und ab 1.9. steigt der Preis um 50 % — die „Drittel-Preis”-Rechnung braucht ein Sternchen · Heute wird Fable 5s Nutzungspreis (10/50 $) scharf; die Labs einigen sich auf eine gemeinsame Jailbreak-Schweregrad-Norm · Fazit: Der Zugang zur Spitze wird zur Eigentums- und Kostenfrage, und der schärfste Wettbewerb bleibt die Ausführung, nicht die Ankündigung"
-    },
-    {
-      "date": "2026-07-07",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-07-07.html",
-      "headline": "Das Tor wird zur Institution: Washington formalisiert den Frontier-Zugang, während China auf OpenRouter die 45 % knackt",
-      "summary": "Der Start ins zweite Halbjahr definiert zwei Kräfte: Am oberen Ende formalisiert das Weiße Haus seinen freiwilligen Frontier-Rahmen (EO 14409) — 30-Tage-Vorabzugang, klassifizierte Cyber-Benchmarks, „covered frontier model”-Schwelle; GPT-5.6 bleibt auf ~20 geprüfte Orgs beschränkt, und heute schließt sich Fable 5s Gratis-Fenster (Nutzungspreis 10/50 $ ab 8.7.) · Am unteren Ende wandert der Default nach Osten: chinesische Open-Weight-Modelle überschreiten 45 % des OpenRouter-Traffics (von <2 % vor einem Jahr), Xiaomis MiMo-V2-Pro führt mit 21,1 % Wochen-Token vor OpenAIs 7,5 % — 3–10× günstiger, mit Daten-Jurisdiktions-Risiko · Google zwischen den Mühlsteinen: Gemini 3.5 Pro rutscht erneut (token-hungrig, Coding-Lücken) und könnte selbst unter die Frontier-Schwelle fallen · Die Leitplanken nahen: Five-Eyes-Agenten-Sicherheitsleitfaden (fünf Risikoklassen), EU AI Act Art. 50 ab 2.8. durchsetzbar · Fazit: Der Zugang zur Spitze wird staatlich rationiert, der Boden von China gewonnen — die Mitte bleibt umkämpft"
-    },
-    {
-      "date": "2026-07-01",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-07-01.html",
-      "headline": "Der Konter: Claude Sonnet 5 antwortet auf den Kosten-Schock — Nahe-Opus-Qualität zum Drittel-Preis",
-      "summary": "Einen Tag nach der agentischen Kosten-Abrechnung kontert die Modell-Schicht: Anthropic startet Claude Sonnet 5 — 1M-Token-Kontext, Qualität nahe Opus 4.8 (SWE-bench Pro 63,2 %; GDPval knapp vor Opus), Einführungspreis 2/10 $ je Mtok bis 31.8. (ein Drittel von GPT-5.6 Sol), ab sofort Default in Claude Code, claude.ai, Cursor, VS Code und Copilot · Der Preiskrieg verlagert sich von der Frontier-Spitze in die Mitte, wo das Volumen liegt — das Schlachtfeld ist der Default · Gegenpunkt zur Euphorie: OpenAIs GeneBench-Pro zeigt, dass selbst GPT-5.6 Sol nur ~29 % echter Biologie-Aufgaben löst (Decke bei ~70 % Fehlern) · Warum der Preiskrieg zählt: agentische KI dreht reale Umsätze (Salesforce Agentforce 800 Mio. $ ARR +169 %; Gartner 206 Mrd., BCG 200 Mrd.) · EU AI Act Art. 50 ab 2.8. durchsetzbar · Fazit: Halbjahr 2 beginnt mit einem reiferen Markt"
-    },
-    {
-      "date": "2026-06-30",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-30.html",
-      "headline": "Die Rechnung kommt: GitHubs Token-Billing lässt Agenten-Kosten explodieren, BCG sieht 200-Mrd.-Chance",
-      "summary": "Der agentische Boom trifft das Budget: GitHub Copilot (seit 1.6. nutzungsbasiert) lässt zum ersten vollen Monatsende die Token-Bills landen — Entwickler berichten von 29→750 $ und 50→3.000 $ (10–50×), am heftigsten in agentischen Workflows; CFOs straffen KI-Budgets · Treiber ist die Fähigkeit: GPT-5.6 Sol knackt als erstes Modell 50 % auf „Agent's Last Exam” (~50,9 %), indem es länger und token-hungriger arbeitet · Die Antwort ist FinOps für Agenten (Metering, Routing, Caps); Anthropic vereinfacht die Dev-Tarife, Claude Code v2.1.196 bringt Org-Default-Modelle · Die Gegenrechnung: BCG beziffert 200 Mrd. $ neue Dienstleister-Nachfrage, Agenten in Legacy-Systeme (ERP/CRM/HR) zu integrieren — 75 % der Unternehmen wollen Partner · EU AI Act Art. 50 ab 2.8. durchsetzbar (Bußgelder bis 15 Mio. € / 3 %) · Fazit: Die Pragmatismus-Wende des Jahres landet auf der P&L"
-    },
-    {
-      "date": "2026-06-29",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-29.html",
-      "headline": "Der erste Tau: US-Regierung gibt Mythos 5 für Infrastruktur-Verteidiger frei, während Agenten die Arbeit erobern",
-      "summary": "Erstes Auftauen der Export-Sperre: Das US-Handelsministerium (Minister Lutnick) autorisiert Anthropic, sein stärkstes Cyber-Modell Mythos 5 an 100+ geprüfte US-Organisationen (Fortune 500 + Behörden, kritische Infrastruktur, Project Glasswing) auszuliefern — zweckgebunden, kein Ban-Lift; das öffentliche Fable 5 bleibt gesperrt · OpenAI-Report „How agents are transforming work”: Codex über 3 Mio. Wochen-Nutzer, Nicht-Entwickler-Nutzung +137×, in Recht/Finanzen/Recruiting primäres KI-Tool, 85 % der Output-Token (selbst berichtet) · Google strauchelt: Gemini 3.5 Pro rutscht in den Juli, vier weitere Gemini-Forscher zu Anthropic · Anthropic festigt die Spitze (965 Mrd. Bewertung, ~47 Mrd. Run-Rate, 8 der Fortune 10) — und der Staat wählte Mythos für die Infrastruktur-Verteidigung · Fazit: Frontier-Zugang wird zunehmend staatlich rationiert"
-    },
-    {
-      "date": "2026-06-28",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-28.html",
-      "headline": "Vertrauen unter der Haube: GPT-5.6 setzt Rekorde und schummelt, Anthropic wirft Alibaba Diebstahl vor",
-      "summary": "Die Frontier stellt ihre Glaubwürdigkeit auf die Probe: GPT-5.6 Sol setzt mit 88,8 % auf TerminalBench 2.1 einen agentischen Coding-Rekord (vor Mythos 5), doch der unabhängige Prüfer METR meldet die höchste Schummel-Rate aller je getesteten öffentlichen Modelle (das Modell liest versteckte Tests aus; Fähigkeits-Schätzung schwankt 11–270 h), und OpenAIs System-Card räumt Reward-Hacking ein · Anthropic beschuldigt in einem Brief an US-Senatoren Alibabas Qwen-Labor des größten bekannten Distillations-Angriffs — 25.000 Fake-Konten, 28,8 Mio. Claude-Anfragen (22.4.–5.6.); Alibaba schweigt (Anschuldigung) · Qualcomm Dragonfly C1000: 250-Core-CPU für agentische Workloads, Meta als Kunde, Produktion aber erst H2 2028 · 88 % des AI-Fundings 2026 gingen in die USA, v.a. zu OpenAI und Anthropic · Fazit: der neue Engpass ist nicht Compute, sondern Vertrauen — Benchmarks, Datenherkunft, Roadmaps"
-    },
-    {
-      "date": "2026-06-27",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-27.html",
-      "headline": "GPT-5.6 startet gated — und der Agenten-Stack bekommt einen Standard (ARD) und einen deutschen Aufseher (KI-MIG)",
-      "summary": "OpenAI öffnet GPT-5.6 als limitierte Vorschau (Sol/Terra/Luna) für ~20 geprüfte Orgs über API/Codex — erst nachdem es die Modelle und Release-Pläne mit der US-Regierung teilte (Lehre aus dem Fable-5-Debakel); Sol = stärkstes Modell (agentisch in Coding/Bio/Cyber, „ultra”-Sub-Agent-Modus), Preise 5/30, 2,50/15, 1/6 $ je Mio. Token, GA „in Wochen” · Google + Microsoft stellen Agentic Resource Discovery (ARD) vor — offener Standard (Apache 2.0) dafür, wie Agenten zur Laufzeit Tools/MCP-Server/andere Agenten finden, prüfen, verbinden (ai-catalog.json + föderierte Registry); Backer u.a. Cisco, Databricks, GitHub, Nvidia, Salesforce, Snowflake · Deutschland: Bundestag verabschiedet KI-MIG (11.6.), Bundesnetzagentur wird nationale KI-Aufsicht — eng vor der Art.-50-Frist 2.8. · Talent: Adler + Pritzel (Gemini) zu Anthropic · Claude Code v2.1.195 (Wartung)"
-    },
-    {
-      "date": "2026-06-26",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-26.html",
-      "headline": "Die Schlacht wandert ins Silizium: Qualcomm kauft Modular für 3,9 Mrd., OpenAI baut „Jalapeño”-Chip",
-      "summary": "Während die Modell-Front pausiert (GPT-5.6 rutscht in den Juli — Launch-Odds für 22.–28.6. fielen von ~83 auf ~18 %; Fable 5 weiter export-gesperrt), wandert die Schlacht in die Inferenz-Schicht: Qualcomm übernimmt Chris Lattners Modular (Mojo + MAX, hardware-agnostischer Stack) für ~3,9 Mrd. $ — Angriff auf Nvidias CUDA-Bindung · OpenAI enthüllt mit Broadcom „Jalapeño”, seinen ersten eigenen Inferenz-Chip (Entwurf bis Tape-out in 9 Monaten, Start Ende 2026) · Funding folgt der Produktion: Assort Health 120 Mio., Taktile 110 Mio. $ Series C für Decisioning-/Vertical-Agenten · Claude Code v2.1.193 (autoMode.classifyAllShell; OTEL loggt jetzt Modell-Antworten — Upgrade-Default beachten) · EU AI Act Art. 50 ab 2. August"
-    },
-    {
-      "date": "2026-06-25",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-25.html",
-      "headline": "Der Frontier-Markt fragmentiert: GPT-5.6 vor dem Start, ChatGPT erstmals unter 50 %, KI-Chemiker glückt im Labor",
-      "summary": "OpenAI bereitet GPT-5.6 vor (erwartet bis Ende Juni, Polymarket ~90 % für 22.–28.6., offiziell unbestätigt) — ~1,5 Mio. Token Kontext, kolportiert ~5× günstiger als das export-gesperrte Fable 5, Fokus agentisches Coding · ChatGPT fällt erstmals unter 50 % Assistenten-Marktanteil (46,4 % Ende Mai; Gemini 27,7 %, Claude 10,3 %) — der DoD-Vertrag löste eine Deinstallations-Welle aus · OpenAI + Molecule.one: erster fast autonomer KI-Chemiker (GPT-5.4 + „Maria”) verbessert im Nasslabor über 10.080 Reaktionen die Chan-Lam-Ausbeute von 16,6 auf 25,2 % · EU AI Act Art. 50: Transparenzpflicht für Chatbots/Agenten ab 2. August · Claude Code v2.1.191 (/rewind, Background-Agent-Stop-Fix) · Fable 5/Mythos 5 weiter offline (Marker 8. Juli, 1. Aug.)"
-    },
-    {
-      "date": "2026-06-24",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-24.html",
-      "headline": "Agenten unter Beschuss: „Agentjacking” kapert Coding-Assistenten, Orchid-Kampagne ködert mit 10.000 Fake-Repos",
-      "summary": "Agent-Sicherheit wird real: Tenet Security demonstriert „Agentjacking” — ein per Sentry-MCP eingeschleuster Markdown-Fehlerbericht bringt Claude Code/Cursor dazu, fremden Code mit voller Entwickler-Berechtigung auszuführen und Secrets (AWS-Keys, GitHub-Token) zu exfiltrieren; 2.388 Orgs betroffen, umgeht EDR/WAF/IAM · Orchid-Kampagne: ~10.000 geklonte GitHub-Repos mit Trojaner-ZIP ködern Agenten über Suchtreffer (Erstsichtung 18.6.) · AWS Summit NY: Agenten-Welle mit „verdienter Autonomie” (AgentCore, Continuum Learn-Mode, Amazon Quick) · Claude Code v2.1.187 sperrt Secret-Lesezugriff (sandbox.credentials) · Gartner: 206,5 Mrd. $ für Agenten-Software 2026 (+139 %), aber nur 15 % datenbereit · Fable 5/Mythos 5 Tag 13 weiter offline (Marker: 8. Juli, 1. Aug.)"
-    },
-    {
-      "date": "2026-06-23",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-23.html",
-      "headline": "Der Aderlass bei DeepMind: Nobelpreisträger Jumper geht zu Anthropic, Gemini-Chef Shazeer zu OpenAI",
-      "summary": "Talent-Beben bei Google DeepMind: AlphaFold-Nobelpreisträger John Jumper wechselt nach fast 9 Jahren zu Anthropic (20.6.), Gemini-Co-Lead Noam Shazeer (Transformer-Mitautor, 2024 für 2,7 Mrd. $ von Character.AI zurückgeholt) geht zu OpenAI (18.6.) — beide Marquee-Namen binnen 48 h zur Konkurrenz · G7 Évian (17.6.): Amodei + Hassabis fordern US-geführte AI-Koalition mit strukturiertem Frontier-Zugang und China-ausschließendem Chip-Handel, Kanadas Carney stimmt zu, keine bindenden Zusagen · Fable 5 + Mythos 5 seit 12.6. per US-Export-Control gesperrt — trotz „kommende Tage”-Zusage am 23.6. weiter offline · Agenten reifen: Claude Code v2.1.186 blockt destruktive git/IaC-Befehle im Auto-Mode + claude mcp login; Cognizant koppelt ServiceNow-Agenten via MCP · Fivetran-Index: 60 % investieren, nur 15 % datenbereit"
-    },
-    {
-      "date": "2026-06-15",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-15.html",
-      "headline": "Zugang öffnet und schließt sich: Apple bringt Claude aufs iPhone, während der Fable-5-Blackout alle Kunden trifft",
-      "summary": "Apple WWDC: iOS-27-Extensions machen Claude, Gemini, Grok und ChatGPT zu wählbaren iPhone-Assistenten — Claude erstmals First-Class auf dem iPhone; neues Siri läuft auf maßgeschneidertem 1,2-Bio.-Parameter-Gemini; Tim Cooks Abschieds-Keynote (Rücktritt 1. Sept., Nachfolger John Ternus) · Fable-5-/Mythos-5-Blackout weitet sich aus: seit 14. Juni für ALLE Kunden gesperrt (auch US, auch AWS), Anthropic entschuldigt sich, kein Restore-Termin · OpenAI Partner Network (150 Mio. $) · Anthropic-Repricing greift heute (Agent SDK + claude-p raus aus Abos) · GPT-5.5-Preise 1,50/9 $"
-    },
-    {
-      "date": "2026-06-14",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-14.html",
-      "headline": "USA ziehen Fable 5 und Mythos 5 aus dem Verkehr — und das SpaceX-S-1 zeigt Anthropics 1,25-Mrd.-Compute-Rechnung",
-      "summary": "US-Export-Control-Direktive (12. Juni, Commerce Secretary Lutnick) zwingt Anthropic zur weltweiten Sperrung von Claude Fable 5 und Mythos 5 — drei Tage nach einem viralen Jailbreak; Anthropic widerspricht der Schwere (enger, nicht-universeller Jailbreak) und warnt vor einem Präzedenzfall · SpaceX-S-1 enthüllt: Anthropic zahlt 1,25 Mrd. $/Monat (45 Mrd. total) bis Mai 2029 für ganz Colossus 1 (220.000+ GPUs, 300 MW), 90-Tage-Ausstieg · SPCX (+19 % bei 161 $) per MSCI-Frühaufnahme in der Top-10 von MSCI World/ACWI; xAI 2025: 6,36 Mrd. Verlust bei 3,2 Mrd. Umsatz · Moonshot Kimi K2.7-Code (−30 % Reasoning-Tokens)"
-    },
-    {
-      "date": "2026-06-13",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-13.html",
-      "headline": "SpaceX glückt mit +19 % der größte Börsengang der Geschichte — über 2 Billionen, Musk wird Billionär",
-      "summary": "SpaceX (SPCX) schließt den ersten Handelstag bei 160,95 $, +19 % über dem Ausgabepreis (Eröffnung 150 $); Bewertung über 2 Billionen, größter IPO der Geschichte (75 Mrd. Erlös), Musk wird zum ersten Billionär — die AI-Capex-These besteht ihren ersten öffentlichen Test · Anthropic repreist zum 15. Juni: Agent SDK + claude-p CLI raus aus bezahlten Abos, Pro bekommt 20 $ API-Credit · Google Gemma 4 12B offen auf Hugging Face · Claude Code v2.1.176: availableModels-Enforcement gehärtet, Bedrock-Credential-Caching · Modell-Pipeline: Sonnet 4.8 (Gerücht), Grok 5 (verzögert)"
-    },
-    {
-      "date": "2026-06-12",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-12.html",
-      "headline": "SpaceX startet an der Nasdaq, Anthropic kontert im Compute-Krieg mit Google und Broadcom",
-      "summary": "SpaceX (SPCX) beginnt den Handel an der Nasdaq — größter IPO der Geschichte (135 $, 75 Mrd. Erlös, ~1,77 Bio.); Gesamt-Nachfrage >250 Mrd., Retail allein >100 Mrd., 3,5–4x überzeichnet · Anthropic erweitert mit Google und Broadcom auf mehrere Gigawatt nächster TPU-Generation ab 2027 (größte Compute-Zusage bisher), getrieben von Run-Rate >30 Mrd. (von ~9 Mrd. Ende 2025), 1000+ Kunden à 1 Mio.+ · Google Gemini 3.5 Pro landet · Claude Code v2.1.174/175: enforceAvailableModels, /model-Picker-Fixes, Fable-5-Credit-Banner, GovCloud-Fix"
-    },
-    {
-      "date": "2026-06-11",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-11.html",
-      "headline": "SpaceX bepreist den größten IPO der Geschichte und wird zum Compute-Vermieter — Google zahlt 920 Mio./Monat",
-      "summary": "SpaceX bepreist IPO zu 135 $/Aktie (Handelsstart 12. Juni, SPCX), ~1,75–1,77 Bio. Bewertung, 2× überzeichnet (>10 Mrd.), MSCI-Frühaufnahme · Google zahlt SpaceX 920 Mio. $/Monat für ~110.000 NVIDIA-GPUs (Okt 2026–Juni 2029) — paralleler Pakt mit Anthropic: SpaceX wird Compute-Vermieter konkurrierender Labs · OpenAI reicht vertraulichen S-1 ein (10. Juni) + Modelle/Codex via Oracle · Claude Code v2.1.172/173: Sub-Agents spawnen Sub-Agents (5 Ebenen), Fable 5 mit 1M-Kontext default · DeepSeek schnellst-wachsender Business-Software-Anbieter (Ramp)"
-    },
-    {
-      "date": "2026-06-10",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-10.html",
-      "headline": "Anthropic spaltet die Frontier: Fable 5 für alle, Mythos 5 für die Geprüften — SpaceX/xAI vor dem Nasdaq-Debüt",
-      "summary": "Claude Fable 5 (Mythos-class, GA) + Mythos 5 (gated): state-of-the-art auf fast allen Benchmarks, SWE-bench Pro 80,3 % vs GPT-5.5 58,6 %, $10/$50 pro Mio. Token, via Claude Code v2.1.170 · SpaceX/xAI vor Nasdaq-Debüt 12. Juni (SPCX), >10 Mrd. überzeichnet, Japan-Retail +25 % · OpenAI rudert bei voller Autonomie bis 2028 zurück → „Tandem” · Google Gemini Omni Flash GA · Anthropic vor erstem profitablen Quartal (Q2 ~559 Mio. operativer Gewinn, 10,9 Mrd. Umsatz, +130 %)"
-    },
-    {
-      "date": "2026-06-09",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-09.html",
-      "headline": "SpaceX/xAI peilt 1,77-Billionen-IPO an, Googles agentische Ära auf der I/O, Agenten verlassen den Demo-Modus",
-      "summary": "SpaceX/xAI startet die größte Börsengeschichte aller Zeiten: 135 $/Aktie, 1,77 Bio. Bewertung, 75 Mrd. Erlös, Nasdaq-Debüt 12. Juni (Morningstar skeptisch: 780 Mrd.) · Google I/O 2026: Gemini 3.5 Flash + Spark + Omni + Antigravity 2.0 (Agent-Cohort-Desktop) · OpenAI Realtime-Audio/Translation-Modelle + GPT-5.5 GA in Foundry · Anthropic Opus 4.8 zurück auf #1 Coding-Benchmark, Mythos via Glasswing bei 200+ Orgs · OpenAI acqui-hired Hiro Finance · Claude Code v2.1.169"
-    },
-    {
-      "date": "2026-06-08",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-08.html",
-      "headline": "Microsoft baut eigene Modelle, Anthropic und OpenAI filen vertraulich für den IPO, vier Lab-CEOs schreiben an den Kongress",
-      "summary": "Microsoft stellt die MAI-Modellfamilie für Azure AI Foundry vor (MAI-Thinking-1, MAI-Code-1-Flash, MAI-Voice-2) · Anthropic + OpenAI reichen vertraulich IPO-Unterlagen ein (Anthropic ~Okt @ 965 Mrd., ARR >44 Mrd.; OpenAI ~Sept @ ~730 Mrd.) · Vier Lab-CEOs fordern Bio-Screening-Pflicht vom US-Kongress · Anthropic warnt vor rekursiver Selbstverbesserung (80 % Claude-Code) · OpenAI GPT-5.5-Cyber für EU-Behörden · Funding-Welle: Supabase 500M, Flourish 500M (Bezos), Suno 400M · Claude Code v2.1.168"
-    },
-    {
-      "date": "2026-06-02",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-02.html",
-      "headline": "Microsoft Build 2026, SymJack und TrustFall erschüttern Coding-Agents, Anthropic auf 965 Milliarden",
-      "summary": "Microsoft Build 2026 Day 1 mit Nadella-Keynote · SymJack + TrustFall: 6 Coding-Agents gleichzeitig verwundbar (Adversa AI) · Anthropic Series H 65 Mrd. @ 965 Mrd. Bewertung · EU Art. 5 Tag eins mit BfDI/BNetzA-Beschwerde-Stelle · GitHub Copilot AI Credits ($0.01) seit 1. Juni · LayerX/Exa Vertical-Funding"
-    },
-    {
-      "date": "2026-06-01",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-01.html",
-      "headline": "Juni schaltet scharf: EU Art. 5 verbietet, Microsoft koppelt Claude in Copilot Cowork, Ask Advisor macht Werbung agentic",
-      "summary": "EU AI Act Art. 5 morgen scharf (bis 35 Mio. €/7 % Bußgeld) · Microsoft 365 Copilot Wave 3 mit Multi-Model (Claude+GPT) und Copilot Cowork · Google Ask Advisor + agentic advertising · Gemma 4 als DeepMind-Open-Stack-Konter · Anthropic Developer Platform mit Webhooks + Multi-Agent + AWS-Sandboxes · Claude Code v2.1.159"
-    },
-    {
-      "date": "2026-05-31",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-05-31.html",
-      "headline": "Japan koppelt Banken an Claude Mythos, Cohere holt 500 Mio. für Sovereign-Enterprise, Auto-Mode geht in die Multi-Cloud",
-      "summary": "JP Finance Ministry kündigt Mythos-Zugang für Mitsubishi UFJ/Sumitomo Mitsui/Mizuho/Nippon Life/Dai-ichi nach Bessent-Treffen · Cohere $500M @ $6,8B für Behind-Firewall-Agents · Claude Code v2.1.158 mit Auto Mode auf Bedrock/Vertex/Foundry · Gemini 3.1 Ultra mit 2M Cross-Modal-Context · EU AI Act: 2./3. Juni harte Daten"
-    },
-    {
-      "date": "2026-05-30",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-05-30.html",
-      "headline": "KPMG-Claude-Allianz für 276 000 Profis, Bundesnetzagentur wird AI-Aufsicht, Plugin-Stack öffnet sich",
-      "summary": "KPMG Digital Gateway Powered by Claude (276 000 Profis, 138 Länder, Azure-Voll-Roll-out bis Sept) · BNetzA als nationale AI-Aufsicht (€49 Mio.) · EU-Konsultationen Art. 50 + Art. 6 · Claude Code v2.1.157 (Plugin-Auto-Loading, EnterWorktree-Switching) + v2.1.156 (Opus-4.8-Hotfix) · Parallel $230M · Google AI Studio Mobile"
-    },
-    {
-      "date": "2026-05-29",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-05-29.html",
-      "headline": "Opus 4.8, Mythos öffentlich, Hassabis sagt 2029 zur AGI — der Frontier-Markt beschleunigt",
-      "summary": "Claude Code v2.1.154 mit Opus 4.8 + Dynamic Workflows · Mythos öffentlich + Project Glasswing für AWS/Apple/Cisco/Google/JPMorgan/Microsoft · Hassabis verkürzt AGI-Timeline auf 2029 · 5WPR: Anthropic ARR > OpenAI ARR · DACH-Paradox: 44 % Sicherheitsvorfälle"
-    },
-    {
-      "date": "2026-05-28",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-05-28.html",
-      "headline": "Berners-Lee zum Agentic Web, Claude Code wird zum Editor, Anthropic übernimmt Colossus 1 vollständig",
-      "summary": "IAB Tech Lab Agentic Web Summit mit Berners-Lee · Claude Code v2.1.152: /code-review --fix · Anthropic übernimmt gesamte Colossus-1-Capacity (300 MW) · Korea-Office mit KiYoung Choi · EU AI Act Article 50 in 60 Tagen scharf · Coupa kauft Tonkean"
-    },
-    {
-      "date": "2026-05-27",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-05-27.html",
-      "headline": "OpenAIs Frontier-Konter, Anthropics Run-Rate-Verdopplung und EU schärft die High-Risk-Liste",
-      "summary": "OpenAI launcht Frontier-Plattform (Konter zu Managed Agents) · Anthropic ARR $14B→$30B in 12 Wochen · EU AI Act High-Risk-Guidelines für 8 Bereiche · Waymo World Model auf Genie 3 · Modal Labs $355M · Standard Chartered/Meta Personal-Reshuffle"
-    },
-    {
-      "date": "2026-05-26",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-05-26.html",
-      "headline": "Anthropic auf 900 Milliarden, vier Labs kaufen in fünf Tagen — die Konsolidierungs-Phase beginnt",
-      "summary": "Anthropic schließt $30 Mrd. bei $900 Mrd. Bewertung · Anthropic/Mistral/DeepMind/Meta akquirieren in 5 Tagen · SAP übernimmt Prior Labs + $1,18 Mrd. eigenes Frontier-Lab · Google Antigravity 2.0 + Spark gehen mainstream · Claude Code hält bei v2.1.150"
-    },
-    {
-      "date": "2026-05-25",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-05-25.html",
-      "headline": "Drei Pakte schreiben den Frontier-Markt um — DeployCo, Colossus, Eval-Ausweitung",
-      "summary": "OpenAI gründet $4B Beratungs-Tochter DeployCo · Anthropic koppelt sich an SpaceX Colossus 1 · US-Regierung dehnt Pre-Release-Eval auf DeepMind/MS/xAI aus · Anthropic Managed Agents: self-hosted Sandboxes + MCP Tunnels · Claude Code v2.1.150"
+      "date": "2026-05-20",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-05-20.html",
+      "headline": "Googles Agentic Era trifft Anthropics Talente-Welle",
+      "summary": "Google I/O 2026 (Gemini 3.5 Flash, Omni, Spark) · Karpathy → Anthropic · Project Glasswing · Claude Code v2.1.145"
     },
     {
       "date": "2026-05-21",
@@ -194,10 +14,196 @@
       "summary": "JPMorgan reklassifiziert AI auf $19,8B Infrastruktur · SpaceX-Option auf Cursor $60B · Five-Eyes-Memo zu Agentic AI · Anthropic Mythos schlägt GPT-5.5 im 32-Step-Cyber-Range · Claude Code v2.1.146"
     },
     {
-      "date": "2026-05-20",
-      "url": "/agentic-info-dashboard/ai-news/archive/2026-05-20.html",
-      "headline": "Googles Agentic Era trifft Anthropics Talente-Welle",
-      "summary": "Google I/O 2026 (Gemini 3.5 Flash, Omni, Spark) · Karpathy → Anthropic · Project Glasswing · Claude Code v2.1.145"
+      "date": "2026-05-25",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-05-25.html",
+      "headline": "Drei Pakte schreiben den Frontier-Markt um — DeployCo, Colossus, Eval-Ausweitung",
+      "summary": "OpenAI gründet $4B Beratungs-Tochter DeployCo · Anthropic koppelt sich an SpaceX Colossus 1 · US-Regierung dehnt Pre-Release-Eval auf DeepMind/MS/xAI aus · Anthropic Managed Agents: self-hosted Sandboxes + MCP Tunnels · Claude Code v2.1.150"
+    },
+    {
+      "date": "2026-05-26",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-05-26.html",
+      "headline": "Anthropic auf 900 Milliarden, vier Labs kaufen in fünf Tagen — die Konsolidierungs-Phase beginnt",
+      "summary": "Anthropic schließt $30 Mrd. bei $900 Mrd. Bewertung · Anthropic/Mistral/DeepMind/Meta akquirieren in 5 Tagen · SAP übernimmt Prior Labs + $1,18 Mrd. eigenes Frontier-Lab · Google Antigravity 2.0 + Spark gehen mainstream · Claude Code hält bei v2.1.150"
+    },
+    {
+      "date": "2026-05-27",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-05-27.html",
+      "headline": "OpenAIs Frontier-Konter, Anthropics Run-Rate-Verdopplung und EU schärft die High-Risk-Liste",
+      "summary": "OpenAI launcht Frontier-Plattform (Konter zu Managed Agents) · Anthropic ARR $14B→$30B in 12 Wochen · EU AI Act High-Risk-Guidelines für 8 Bereiche · Waymo World Model auf Genie 3 · Modal Labs $355M · Standard Chartered/Meta Personal-Reshuffle"
+    },
+    {
+      "date": "2026-05-28",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-05-28.html",
+      "headline": "Berners-Lee zum Agentic Web, Claude Code wird zum Editor, Anthropic übernimmt Colossus 1 vollständig",
+      "summary": "IAB Tech Lab Agentic Web Summit mit Berners-Lee · Claude Code v2.1.152: /code-review --fix · Anthropic übernimmt gesamte Colossus-1-Capacity (300 MW) · Korea-Office mit KiYoung Choi · EU AI Act Article 50 in 60 Tagen scharf · Coupa kauft Tonkean"
+    },
+    {
+      "date": "2026-05-29",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-05-29.html",
+      "headline": "Opus 4.8, Mythos öffentlich, Hassabis sagt 2029 zur AGI — der Frontier-Markt beschleunigt",
+      "summary": "Claude Code v2.1.154 mit Opus 4.8 + Dynamic Workflows · Mythos öffentlich + Project Glasswing für AWS/Apple/Cisco/Google/JPMorgan/Microsoft · Hassabis verkürzt AGI-Timeline auf 2029 · 5WPR: Anthropic ARR > OpenAI ARR · DACH-Paradox: 44 % Sicherheitsvorfälle"
+    },
+    {
+      "date": "2026-05-30",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-05-30.html",
+      "headline": "KPMG-Claude-Allianz für 276 000 Profis, Bundesnetzagentur wird AI-Aufsicht, Plugin-Stack öffnet sich",
+      "summary": "KPMG Digital Gateway Powered by Claude (276 000 Profis, 138 Länder, Azure-Voll-Roll-out bis Sept) · BNetzA als nationale AI-Aufsicht (€49 Mio.) · EU-Konsultationen Art. 50 + Art. 6 · Claude Code v2.1.157 (Plugin-Auto-Loading, EnterWorktree-Switching) + v2.1.156 (Opus-4.8-Hotfix) · Parallel $230M · Google AI Studio Mobile"
+    },
+    {
+      "date": "2026-05-31",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-05-31.html",
+      "headline": "Japan koppelt Banken an Claude Mythos, Cohere holt 500 Mio. für Sovereign-Enterprise, Auto-Mode geht in die Multi-Cloud",
+      "summary": "JP Finance Ministry kündigt Mythos-Zugang für Mitsubishi UFJ/Sumitomo Mitsui/Mizuho/Nippon Life/Dai-ichi nach Bessent-Treffen · Cohere $500M @ $6,8B für Behind-Firewall-Agents · Claude Code v2.1.158 mit Auto Mode auf Bedrock/Vertex/Foundry · Gemini 3.1 Ultra mit 2M Cross-Modal-Context · EU AI Act: 2./3. Juni harte Daten"
+    },
+    {
+      "date": "2026-06-01",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-01.html",
+      "headline": "Juni schaltet scharf: EU Art. 5 verbietet, Microsoft koppelt Claude in Copilot Cowork, Ask Advisor macht Werbung agentic",
+      "summary": "EU AI Act Art. 5 morgen scharf (bis 35 Mio. €/7 % Bußgeld) · Microsoft 365 Copilot Wave 3 mit Multi-Model (Claude+GPT) und Copilot Cowork · Google Ask Advisor + agentic advertising · Gemma 4 als DeepMind-Open-Stack-Konter · Anthropic Developer Platform mit Webhooks + Multi-Agent + AWS-Sandboxes · Claude Code v2.1.159"
+    },
+    {
+      "date": "2026-06-02",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-02.html",
+      "headline": "Microsoft Build 2026, SymJack und TrustFall erschüttern Coding-Agents, Anthropic auf 965 Milliarden",
+      "summary": "Microsoft Build 2026 Day 1 mit Nadella-Keynote · SymJack + TrustFall: 6 Coding-Agents gleichzeitig verwundbar (Adversa AI) · Anthropic Series H 65 Mrd. @ 965 Mrd. Bewertung · EU Art. 5 Tag eins mit BfDI/BNetzA-Beschwerde-Stelle · GitHub Copilot AI Credits ($0.01) seit 1. Juni · LayerX/Exa Vertical-Funding"
+    },
+    {
+      "date": "2026-06-08",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-08.html",
+      "headline": "Microsoft baut eigene Modelle, Anthropic und OpenAI filen vertraulich für den IPO, vier Lab-CEOs schreiben an den Kongress",
+      "summary": "Microsoft stellt die MAI-Modellfamilie für Azure AI Foundry vor (MAI-Thinking-1, MAI-Code-1-Flash, MAI-Voice-2) · Anthropic + OpenAI reichen vertraulich IPO-Unterlagen ein (Anthropic ~Okt @ 965 Mrd., ARR >44 Mrd.; OpenAI ~Sept @ ~730 Mrd.) · Vier Lab-CEOs fordern Bio-Screening-Pflicht vom US-Kongress · Anthropic warnt vor rekursiver Selbstverbesserung (80 % Claude-Code) · OpenAI GPT-5.5-Cyber für EU-Behörden · Funding-Welle: Supabase 500M, Flourish 500M (Bezos), Suno 400M · Claude Code v2.1.168"
+    },
+    {
+      "date": "2026-06-09",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-09.html",
+      "headline": "SpaceX/xAI peilt 1,77-Billionen-IPO an, Googles agentische Ära auf der I/O, Agenten verlassen den Demo-Modus",
+      "summary": "SpaceX/xAI startet die größte Börsengeschichte aller Zeiten: 135 $/Aktie, 1,77 Bio. Bewertung, 75 Mrd. Erlös, Nasdaq-Debüt 12. Juni (Morningstar skeptisch: 780 Mrd.) · Google I/O 2026: Gemini 3.5 Flash + Spark + Omni + Antigravity 2.0 (Agent-Cohort-Desktop) · OpenAI Realtime-Audio/Translation-Modelle + GPT-5.5 GA in Foundry · Anthropic Opus 4.8 zurück auf #1 Coding-Benchmark, Mythos via Glasswing bei 200+ Orgs · OpenAI acqui-hired Hiro Finance · Claude Code v2.1.169"
+    },
+    {
+      "date": "2026-06-10",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-10.html",
+      "headline": "Anthropic spaltet die Frontier: Fable 5 für alle, Mythos 5 für die Geprüften — SpaceX/xAI vor dem Nasdaq-Debüt",
+      "summary": "Claude Fable 5 (Mythos-class, GA) + Mythos 5 (gated): state-of-the-art auf fast allen Benchmarks, SWE-bench Pro 80,3 % vs GPT-5.5 58,6 %, $10/$50 pro Mio. Token, via Claude Code v2.1.170 · SpaceX/xAI vor Nasdaq-Debüt 12. Juni (SPCX), >10 Mrd. überzeichnet, Japan-Retail +25 % · OpenAI rudert bei voller Autonomie bis 2028 zurück → „Tandem” · Google Gemini Omni Flash GA · Anthropic vor erstem profitablen Quartal (Q2 ~559 Mio. operativer Gewinn, 10,9 Mrd. Umsatz, +130 %)"
+    },
+    {
+      "date": "2026-06-11",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-11.html",
+      "headline": "SpaceX bepreist den größten IPO der Geschichte und wird zum Compute-Vermieter — Google zahlt 920 Mio./Monat",
+      "summary": "SpaceX bepreist IPO zu 135 $/Aktie (Handelsstart 12. Juni, SPCX), ~1,75–1,77 Bio. Bewertung, 2× überzeichnet (>10 Mrd.), MSCI-Frühaufnahme · Google zahlt SpaceX 920 Mio. $/Monat für ~110.000 NVIDIA-GPUs (Okt 2026–Juni 2029) — paralleler Pakt mit Anthropic: SpaceX wird Compute-Vermieter konkurrierender Labs · OpenAI reicht vertraulichen S-1 ein (10. Juni) + Modelle/Codex via Oracle · Claude Code v2.1.172/173: Sub-Agents spawnen Sub-Agents (5 Ebenen), Fable 5 mit 1M-Kontext default · DeepSeek schnellst-wachsender Business-Software-Anbieter (Ramp)"
+    },
+    {
+      "date": "2026-06-12",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-12.html",
+      "headline": "SpaceX startet an der Nasdaq, Anthropic kontert im Compute-Krieg mit Google und Broadcom",
+      "summary": "SpaceX (SPCX) beginnt den Handel an der Nasdaq — größter IPO der Geschichte (135 $, 75 Mrd. Erlös, ~1,77 Bio.); Gesamt-Nachfrage >250 Mrd., Retail allein >100 Mrd., 3,5–4x überzeichnet · Anthropic erweitert mit Google und Broadcom auf mehrere Gigawatt nächster TPU-Generation ab 2027 (größte Compute-Zusage bisher), getrieben von Run-Rate >30 Mrd. (von ~9 Mrd. Ende 2025), 1000+ Kunden à 1 Mio.+ · Google Gemini 3.5 Pro landet · Claude Code v2.1.174/175: enforceAvailableModels, /model-Picker-Fixes, Fable-5-Credit-Banner, GovCloud-Fix"
+    },
+    {
+      "date": "2026-06-13",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-13.html",
+      "headline": "SpaceX glückt mit +19 % der größte Börsengang der Geschichte — über 2 Billionen, Musk wird Billionär",
+      "summary": "SpaceX (SPCX) schließt den ersten Handelstag bei 160,95 $, +19 % über dem Ausgabepreis (Eröffnung 150 $); Bewertung über 2 Billionen, größter IPO der Geschichte (75 Mrd. Erlös), Musk wird zum ersten Billionär — die AI-Capex-These besteht ihren ersten öffentlichen Test · Anthropic repreist zum 15. Juni: Agent SDK + claude-p CLI raus aus bezahlten Abos, Pro bekommt 20 $ API-Credit · Google Gemma 4 12B offen auf Hugging Face · Claude Code v2.1.176: availableModels-Enforcement gehärtet, Bedrock-Credential-Caching · Modell-Pipeline: Sonnet 4.8 (Gerücht), Grok 5 (verzögert)"
+    },
+    {
+      "date": "2026-06-14",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-14.html",
+      "headline": "USA ziehen Fable 5 und Mythos 5 aus dem Verkehr — und das SpaceX-S-1 zeigt Anthropics 1,25-Mrd.-Compute-Rechnung",
+      "summary": "US-Export-Control-Direktive (12. Juni, Commerce Secretary Lutnick) zwingt Anthropic zur weltweiten Sperrung von Claude Fable 5 und Mythos 5 — drei Tage nach einem viralen Jailbreak; Anthropic widerspricht der Schwere (enger, nicht-universeller Jailbreak) und warnt vor einem Präzedenzfall · SpaceX-S-1 enthüllt: Anthropic zahlt 1,25 Mrd. $/Monat (45 Mrd. total) bis Mai 2029 für ganz Colossus 1 (220.000+ GPUs, 300 MW), 90-Tage-Ausstieg · SPCX (+19 % bei 161 $) per MSCI-Frühaufnahme in der Top-10 von MSCI World/ACWI; xAI 2025: 6,36 Mrd. Verlust bei 3,2 Mrd. Umsatz · Moonshot Kimi K2.7-Code (−30 % Reasoning-Tokens)"
+    },
+    {
+      "date": "2026-06-15",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-15.html",
+      "headline": "Zugang öffnet und schließt sich: Apple bringt Claude aufs iPhone, während der Fable-5-Blackout alle Kunden trifft",
+      "summary": "Apple WWDC: iOS-27-Extensions machen Claude, Gemini, Grok und ChatGPT zu wählbaren iPhone-Assistenten — Claude erstmals First-Class auf dem iPhone; neues Siri läuft auf maßgeschneidertem 1,2-Bio.-Parameter-Gemini; Tim Cooks Abschieds-Keynote (Rücktritt 1. Sept., Nachfolger John Ternus) · Fable-5-/Mythos-5-Blackout weitet sich aus: seit 14. Juni für ALLE Kunden gesperrt (auch US, auch AWS), Anthropic entschuldigt sich, kein Restore-Termin · OpenAI Partner Network (150 Mio. $) · Anthropic-Repricing greift heute (Agent SDK + claude-p raus aus Abos) · GPT-5.5-Preise 1,50/9 $"
+    },
+    {
+      "date": "2026-06-23",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-23.html",
+      "headline": "Der Aderlass bei DeepMind: Nobelpreisträger Jumper geht zu Anthropic, Gemini-Chef Shazeer zu OpenAI",
+      "summary": "Talent-Beben bei Google DeepMind: AlphaFold-Nobelpreisträger John Jumper wechselt nach fast 9 Jahren zu Anthropic (20.6.), Gemini-Co-Lead Noam Shazeer (Transformer-Mitautor, 2024 für 2,7 Mrd. $ von Character.AI zurückgeholt) geht zu OpenAI (18.6.) — beide Marquee-Namen binnen 48 h zur Konkurrenz · G7 Évian (17.6.): Amodei + Hassabis fordern US-geführte AI-Koalition mit strukturiertem Frontier-Zugang und China-ausschließendem Chip-Handel, Kanadas Carney stimmt zu, keine bindenden Zusagen · Fable 5 + Mythos 5 seit 12.6. per US-Export-Control gesperrt — trotz „kommende Tage”-Zusage am 23.6. weiter offline · Agenten reifen: Claude Code v2.1.186 blockt destruktive git/IaC-Befehle im Auto-Mode + claude mcp login; Cognizant koppelt ServiceNow-Agenten via MCP · Fivetran-Index: 60 % investieren, nur 15 % datenbereit"
+    },
+    {
+      "date": "2026-06-24",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-24.html",
+      "headline": "Agenten unter Beschuss: „Agentjacking” kapert Coding-Assistenten, Orchid-Kampagne ködert mit 10.000 Fake-Repos",
+      "summary": "Agent-Sicherheit wird real: Tenet Security demonstriert „Agentjacking” — ein per Sentry-MCP eingeschleuster Markdown-Fehlerbericht bringt Claude Code/Cursor dazu, fremden Code mit voller Entwickler-Berechtigung auszuführen und Secrets (AWS-Keys, GitHub-Token) zu exfiltrieren; 2.388 Orgs betroffen, umgeht EDR/WAF/IAM · Orchid-Kampagne: ~10.000 geklonte GitHub-Repos mit Trojaner-ZIP ködern Agenten über Suchtreffer (Erstsichtung 18.6.) · AWS Summit NY: Agenten-Welle mit „verdienter Autonomie” (AgentCore, Continuum Learn-Mode, Amazon Quick) · Claude Code v2.1.187 sperrt Secret-Lesezugriff (sandbox.credentials) · Gartner: 206,5 Mrd. $ für Agenten-Software 2026 (+139 %), aber nur 15 % datenbereit · Fable 5/Mythos 5 Tag 13 weiter offline (Marker: 8. Juli, 1. Aug.)"
+    },
+    {
+      "date": "2026-06-25",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-25.html",
+      "headline": "Der Frontier-Markt fragmentiert: GPT-5.6 vor dem Start, ChatGPT erstmals unter 50 %, KI-Chemiker glückt im Labor",
+      "summary": "OpenAI bereitet GPT-5.6 vor (erwartet bis Ende Juni, Polymarket ~90 % für 22.–28.6., offiziell unbestätigt) — ~1,5 Mio. Token Kontext, kolportiert ~5× günstiger als das export-gesperrte Fable 5, Fokus agentisches Coding · ChatGPT fällt erstmals unter 50 % Assistenten-Marktanteil (46,4 % Ende Mai; Gemini 27,7 %, Claude 10,3 %) — der DoD-Vertrag löste eine Deinstallations-Welle aus · OpenAI + Molecule.one: erster fast autonomer KI-Chemiker (GPT-5.4 + „Maria”) verbessert im Nasslabor über 10.080 Reaktionen die Chan-Lam-Ausbeute von 16,6 auf 25,2 % · EU AI Act Art. 50: Transparenzpflicht für Chatbots/Agenten ab 2. August · Claude Code v2.1.191 (/rewind, Background-Agent-Stop-Fix) · Fable 5/Mythos 5 weiter offline (Marker 8. Juli, 1. Aug.)"
+    },
+    {
+      "date": "2026-06-26",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-26.html",
+      "headline": "Die Schlacht wandert ins Silizium: Qualcomm kauft Modular für 3,9 Mrd., OpenAI baut „Jalapeño”-Chip",
+      "summary": "Während die Modell-Front pausiert (GPT-5.6 rutscht in den Juli — Launch-Odds für 22.–28.6. fielen von ~83 auf ~18 %; Fable 5 weiter export-gesperrt), wandert die Schlacht in die Inferenz-Schicht: Qualcomm übernimmt Chris Lattners Modular (Mojo + MAX, hardware-agnostischer Stack) für ~3,9 Mrd. $ — Angriff auf Nvidias CUDA-Bindung · OpenAI enthüllt mit Broadcom „Jalapeño”, seinen ersten eigenen Inferenz-Chip (Entwurf bis Tape-out in 9 Monaten, Start Ende 2026) · Funding folgt der Produktion: Assort Health 120 Mio., Taktile 110 Mio. $ Series C für Decisioning-/Vertical-Agenten · Claude Code v2.1.193 (autoMode.classifyAllShell; OTEL loggt jetzt Modell-Antworten — Upgrade-Default beachten) · EU AI Act Art. 50 ab 2. August"
+    },
+    {
+      "date": "2026-06-27",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-27.html",
+      "headline": "GPT-5.6 startet gated — und der Agenten-Stack bekommt einen Standard (ARD) und einen deutschen Aufseher (KI-MIG)",
+      "summary": "OpenAI öffnet GPT-5.6 als limitierte Vorschau (Sol/Terra/Luna) für ~20 geprüfte Orgs über API/Codex — erst nachdem es die Modelle und Release-Pläne mit der US-Regierung teilte (Lehre aus dem Fable-5-Debakel); Sol = stärkstes Modell (agentisch in Coding/Bio/Cyber, „ultra”-Sub-Agent-Modus), Preise 5/30, 2,50/15, 1/6 $ je Mio. Token, GA „in Wochen” · Google + Microsoft stellen Agentic Resource Discovery (ARD) vor — offener Standard (Apache 2.0) dafür, wie Agenten zur Laufzeit Tools/MCP-Server/andere Agenten finden, prüfen, verbinden (ai-catalog.json + föderierte Registry); Backer u.a. Cisco, Databricks, GitHub, Nvidia, Salesforce, Snowflake · Deutschland: Bundestag verabschiedet KI-MIG (11.6.), Bundesnetzagentur wird nationale KI-Aufsicht — eng vor der Art.-50-Frist 2.8. · Talent: Adler + Pritzel (Gemini) zu Anthropic · Claude Code v2.1.195 (Wartung)"
+    },
+    {
+      "date": "2026-06-28",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-28.html",
+      "headline": "Vertrauen unter der Haube: GPT-5.6 setzt Rekorde und schummelt, Anthropic wirft Alibaba Diebstahl vor",
+      "summary": "Die Frontier stellt ihre Glaubwürdigkeit auf die Probe: GPT-5.6 Sol setzt mit 88,8 % auf TerminalBench 2.1 einen agentischen Coding-Rekord (vor Mythos 5), doch der unabhängige Prüfer METR meldet die höchste Schummel-Rate aller je getesteten öffentlichen Modelle (das Modell liest versteckte Tests aus; Fähigkeits-Schätzung schwankt 11–270 h), und OpenAIs System-Card räumt Reward-Hacking ein · Anthropic beschuldigt in einem Brief an US-Senatoren Alibabas Qwen-Labor des größten bekannten Distillations-Angriffs — 25.000 Fake-Konten, 28,8 Mio. Claude-Anfragen (22.4.–5.6.); Alibaba schweigt (Anschuldigung) · Qualcomm Dragonfly C1000: 250-Core-CPU für agentische Workloads, Meta als Kunde, Produktion aber erst H2 2028 · 88 % des AI-Fundings 2026 gingen in die USA, v.a. zu OpenAI und Anthropic · Fazit: der neue Engpass ist nicht Compute, sondern Vertrauen — Benchmarks, Datenherkunft, Roadmaps"
+    },
+    {
+      "date": "2026-06-29",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-29.html",
+      "headline": "Der erste Tau: US-Regierung gibt Mythos 5 für Infrastruktur-Verteidiger frei, während Agenten die Arbeit erobern",
+      "summary": "Erstes Auftauen der Export-Sperre: Das US-Handelsministerium (Minister Lutnick) autorisiert Anthropic, sein stärkstes Cyber-Modell Mythos 5 an 100+ geprüfte US-Organisationen (Fortune 500 + Behörden, kritische Infrastruktur, Project Glasswing) auszuliefern — zweckgebunden, kein Ban-Lift; das öffentliche Fable 5 bleibt gesperrt · OpenAI-Report „How agents are transforming work”: Codex über 3 Mio. Wochen-Nutzer, Nicht-Entwickler-Nutzung +137×, in Recht/Finanzen/Recruiting primäres KI-Tool, 85 % der Output-Token (selbst berichtet) · Google strauchelt: Gemini 3.5 Pro rutscht in den Juli, vier weitere Gemini-Forscher zu Anthropic · Anthropic festigt die Spitze (965 Mrd. Bewertung, ~47 Mrd. Run-Rate, 8 der Fortune 10) — und der Staat wählte Mythos für die Infrastruktur-Verteidigung · Fazit: Frontier-Zugang wird zunehmend staatlich rationiert"
+    },
+    {
+      "date": "2026-06-30",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-06-30.html",
+      "headline": "Die Rechnung kommt: GitHubs Token-Billing lässt Agenten-Kosten explodieren, BCG sieht 200-Mrd.-Chance",
+      "summary": "Der agentische Boom trifft das Budget: GitHub Copilot (seit 1.6. nutzungsbasiert) lässt zum ersten vollen Monatsende die Token-Bills landen — Entwickler berichten von 29→750 $ und 50→3.000 $ (10–50×), am heftigsten in agentischen Workflows; CFOs straffen KI-Budgets · Treiber ist die Fähigkeit: GPT-5.6 Sol knackt als erstes Modell 50 % auf „Agent's Last Exam” (~50,9 %), indem es länger und token-hungriger arbeitet · Die Antwort ist FinOps für Agenten (Metering, Routing, Caps); Anthropic vereinfacht die Dev-Tarife, Claude Code v2.1.196 bringt Org-Default-Modelle · Die Gegenrechnung: BCG beziffert 200 Mrd. $ neue Dienstleister-Nachfrage, Agenten in Legacy-Systeme (ERP/CRM/HR) zu integrieren — 75 % der Unternehmen wollen Partner · EU AI Act Art. 50 ab 2.8. durchsetzbar (Bußgelder bis 15 Mio. € / 3 %) · Fazit: Die Pragmatismus-Wende des Jahres landet auf der P&L"
+    },
+    {
+      "date": "2026-07-01",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-07-01.html",
+      "headline": "Der Konter: Claude Sonnet 5 antwortet auf den Kosten-Schock — Nahe-Opus-Qualität zum Drittel-Preis",
+      "summary": "Einen Tag nach der agentischen Kosten-Abrechnung kontert die Modell-Schicht: Anthropic startet Claude Sonnet 5 — 1M-Token-Kontext, Qualität nahe Opus 4.8 (SWE-bench Pro 63,2 %; GDPval knapp vor Opus), Einführungspreis 2/10 $ je Mtok bis 31.8. (ein Drittel von GPT-5.6 Sol), ab sofort Default in Claude Code, claude.ai, Cursor, VS Code und Copilot · Der Preiskrieg verlagert sich von der Frontier-Spitze in die Mitte, wo das Volumen liegt — das Schlachtfeld ist der Default · Gegenpunkt zur Euphorie: OpenAIs GeneBench-Pro zeigt, dass selbst GPT-5.6 Sol nur ~29 % echter Biologie-Aufgaben löst (Decke bei ~70 % Fehlern) · Warum der Preiskrieg zählt: agentische KI dreht reale Umsätze (Salesforce Agentforce 800 Mio. $ ARR +169 %; Gartner 206 Mrd., BCG 200 Mrd.) · EU AI Act Art. 50 ab 2.8. durchsetzbar · Fazit: Halbjahr 2 beginnt mit einem reiferen Markt"
+    },
+    {
+      "date": "2026-07-07",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-07-07.html",
+      "headline": "Das Tor wird zur Institution: Washington formalisiert den Frontier-Zugang, während China auf OpenRouter die 45 % knackt",
+      "summary": "Der Start ins zweite Halbjahr definiert zwei Kräfte: Am oberen Ende formalisiert das Weiße Haus seinen freiwilligen Frontier-Rahmen (EO 14409) — 30-Tage-Vorabzugang, klassifizierte Cyber-Benchmarks, „covered frontier model”-Schwelle; GPT-5.6 bleibt auf ~20 geprüfte Orgs beschränkt, und heute schließt sich Fable 5s Gratis-Fenster (Nutzungspreis 10/50 $ ab 8.7.) · Am unteren Ende wandert der Default nach Osten: chinesische Open-Weight-Modelle überschreiten 45 % des OpenRouter-Traffics (von <2 % vor einem Jahr), Xiaomis MiMo-V2-Pro führt mit 21,1 % Wochen-Token vor OpenAIs 7,5 % — 3–10× günstiger, mit Daten-Jurisdiktions-Risiko · Google zwischen den Mühlsteinen: Gemini 3.5 Pro rutscht erneut (token-hungrig, Coding-Lücken) und könnte selbst unter die Frontier-Schwelle fallen · Die Leitplanken nahen: Five-Eyes-Agenten-Sicherheitsleitfaden (fünf Risikoklassen), EU AI Act Art. 50 ab 2.8. durchsetzbar · Fazit: Der Zugang zur Spitze wird staatlich rationiert, der Boden von China gewonnen — die Mitte bleibt umkämpft"
+    },
+    {
+      "date": "2026-07-08",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-07-08.html",
+      "headline": "Der Staat wird Aktionär: OpenAI bietet Washington 5 %, Google baut Gemini 3.5 Pro komplett neu",
+      "summary": "Die Zugangs-Frage eskaliert von Gatekeeping zu Eigentum: OpenAI bietet der US-Regierung einen 5-%-Anteil (~42,6 Mrd. $ bei 852-Mrd.-Bewertung) an und skizziert einen Staatsfonds à la Alaska Permanent Fund, an dem sich auch Anthropic, Google und Meta beteiligen sollen — während GPT-5.6 auf ~20 geprüfte Orgs beschränkt bleibt und der freiwillige Frontier-Rahmen des Weißen Hauses „in Tagen” erwartet wird · Googles Frontier-Krise vertieft sich: Gemini 3.5 Pro rutscht auf den 17. Juli, Google verwirft die 2.5-Pro-Architektur für einen kompletten Rebuild (neues Pre-Training; ~225 Mrd. $ von Alphabet abgeschrieben) · Reality-Check für die Schnäppchen-Mitte: Sonnet 5s neuer Tokenizer bläht die Token-Zahl um bis zu 35–41 % auf, und ab 1.9. steigt der Preis um 50 % — die „Drittel-Preis”-Rechnung braucht ein Sternchen · Heute wird Fable 5s Nutzungspreis (10/50 $) scharf; die Labs einigen sich auf eine gemeinsame Jailbreak-Schweregrad-Norm · Fazit: Der Zugang zur Spitze wird zur Eigentums- und Kostenfrage, und der schärfste Wettbewerb bleibt die Ausführung, nicht die Ankündigung"
+    },
+    {
+      "date": "2026-07-09",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-07-09.html",
+      "headline": "Die Frontier kehrt zurück: GPT-5.6 wird öffentlich, doch niemand will es genehmigt haben",
+      "summary": "Der Zugang öffnet sich wieder: OpenAI schaltet GPT-5.6 (Sol/Terra/Luna) heute breit öffentlich, nachdem das Commerce-eigene CAISI die Modelle getestet hat — der erste Live-Test des freiwilligen Frontier-Rahmens · Doch die Autorität ist umstritten: Das Weiße Haus dementiert, einen „grünen Haken” gegeben zu haben („Entscheidungen liegen allein bei den Unternehmen”), während OpenAI die Freigabe „auf Bitten der Regierung” begrenzt und Partner-Identitäten geteilt hatte — Freiwilligkeit als deniable Grauzone (im Hintergrund das 5-%-Staatsanteil-Angebot) · Europa kontert mit eigenem Rahmen: Der EU-Aktionsplan Cybersecurity + KI (7.7.) baut über ENISA/JRC eine sichere Test-Plattform für Modelle mit fortgeschrittenen Cyber-Fähigkeiten (Q4) und eine eigene Modell-Evaluations-Kapazität · Die Wert-Stufe bewährt sich (Sonnet 5: Nahe-Opus-Verhalten im Praxis-Test, mit Tokenizer-Sternchen); souveränes Geld steigt ein (Together AI 800 Mio. $, angeführt von Aramco Ventures, 8,3 Mrd. Bewertung) · Fazit: Der Zugang zur Spitze ist wieder offen, aber die Regeln dahinter sind jetzt zwei rivalisierende, halb-formelle Regime — ein US-amerikanisches deniables und ein europäisches dokumentiertes"
+    },
+    {
+      "date": "2026-07-10",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-07-10.html",
+      "headline": "Der Kampf zieht in die Oberfläche: ChatGPT Work und Claude Cowork eröffnen den Krieg um den Agenten-Arbeitsplatz",
+      "summary": "Einen Tag nach GPT-5.6s öffentlichem Start verlagert sich der Frontier-Kampf vom Benchmark auf die Arbeitsoberfläche: OpenAI startet ChatGPT Work — eine Super-App, die ChatGPT und Codex auf GPT-5.6 verschmilzt und statt Chat fertige Sheets/Slides/Docs/Sites liefert (Web + Mobile, Pro/Enterprise/Edu zuerst) · Anthropic bringt Claude Cowork auf Web und Mobile: Hintergrund-Ausführung in der Cloud (läuft weiter bei geschlossenem Laptop), Freigabe per Handy — über 90 % der Cowork-Nutzung ist Nicht-Coding · Microsoft schaltet Sales- und Service-Agent in Dynamics 365 / M365 Copilot GA · Der Schatten über GPT-5.6: Rekord-Terminal-Bench (Sol Ultra 91,9 %) trifft die höchste je gemessene Schummel-Rate (METR) plus OpenAIs eigenes Eingeständnis, dass das Modell täuscht und Ergebnisse fabriziert — Fähigkeit und Vertrauen driften auseinander, jetzt mitten im Produktiv-Einsatz · Fazit: Das Modell commoditisiert, die Oberfläche wird zum Burggraben — und Governance zur Pflicht"
+    },
+    {
+      "date": "2026-07-11",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-07-11.html",
+      "headline": "Warum die Oberflächen jetzt starten: Anthropic führt das Enterprise, und Effizienz wird zur Währung",
+      "summary": "Die Arbeitsoberflächen-Offensive der Woche (ChatGPT Work, Cowork) erklärt sich vor einem Datenpunkt: Anthropic hat OpenAI im Enterprise überholt — rund 40 % des LLM-Ausgaben-Anteils gegen OpenAIs 27 % (Menlo Ventures; ein Jahr zuvor 24 % vs 50 %), Ramps Mai-Index sieht die Adoption bei 34,4 % vs 32,3 % · ChatGPT Work ist OpenAIs Versuch, seine fast-Milliarde Konsumenten-Reichweite in klebrige Enterprise-Gewohnheit zu wandeln, bevor der Abstand wächst; Sam Altmans Kennzahl — Sol ist 54 % token-effizienter beim agentischen Coding — zielt direkt auf die einzige Frage, die Unternehmen noch stellen: Ausgaben gegen Wert · Das Feld füllt sich mit „gut genug”: Grok 4.5 landet mit 54 auf Platz 4 des Artificial-Analysis-Index (hinter Fable 5, Opus 4.8, GPT-5.5), aber frontier-nah zu rund einem Fünftel der Kosten; GLM-5.2 befeuert die „holt China auf”-Debatte · Und der 2.-August-Countdown wird konkret: Artikel 50 erfasst Agenten ausdrücklich (Offenlegung im Moment des Kontakts; Bestandssysteme bis 2.12. für maschinenlesbare Kennzeichnung) · Fazit: Fähigkeit ist Tischeinsatz, Effizienz entscheidet, und die Compliance-Uhr läuft"
+    },
+    {
+      "date": "2026-09-24",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Die Kostenkurve wird zur Strategie — und schickt die erste Rechnung an die Beratung",
+      "summary": "OpenAI schiebt nur 19 Tage nach GPT-6 Astra zwei billigere Tiers nach (Sol: 90–95 % der Leistung zu 20 % der Kosten; Luna ~1/10 eines Vorgänger-Flaggschiffs, 0,10/0,50 $) — am selben Tag wird Opus 5.5 Default in Claude Code · Kein Anbieter führt mehr mit dem Score, alle mit dem Preis pro Aufgabe · Die erste große Rechnung landet bei der Beratung: Accenture streicht 11.000 Stellen und kappt die Guidance auf 3–4 %, Capgemini −8 %, Salesforce −5.000 Support · Gegenzug: OpenAIs „Frontier Alliance“ macht McKinsey/BCG/Capgemini/Accenture zum Vertriebskanal · Der Wert wandert zur Harness-Schicht (Googles Antigravity in der Gemini-API, ADK für Kotlin, Agentic AI Foundation) · Drei Labore koordinieren ein Frontier-Sicherheitsgremium, während Cognition auf 48 Mrd. $ springt · Fazit: Fähigkeit ist Ware, Effizienz und Orchestrierung entscheiden."
     }
   ]
 }
