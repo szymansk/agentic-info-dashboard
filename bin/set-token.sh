@@ -13,7 +13,7 @@ LOG_TAG=set-token
 . "$(dirname "${BASH_SOURCE[0]}")/lib-daily.sh"
 
 token="$(head -1 | tr -d '[:space:]')"
-if ! [[ "$token" =~ ^sk-ant-oat01-[A-Za-z0-9_-]{3,}$ ]]; then
+if ! [[ "$token" =~ ^sk-ant-oat01-[A-Za-z0-9_-]{20,}$ ]]; then
   warn "kein gültiger Setup-Token (erwartet sk-ant-oat01-…)"; exit 2
 fi
 mkdir -p "$(dirname "$DAILY_ENV")"; chmod 700 "$(dirname "$DAILY_ENV")" 2>/dev/null || true
