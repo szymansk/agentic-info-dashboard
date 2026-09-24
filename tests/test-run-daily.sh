@@ -155,6 +155,14 @@ mk_repo; : > "$DAILY_ENV"; assert_eq "3" "$(run --dry-run)" "dry-run ohne Token 
 printf 'CLAUDE_CODE_OAUTH_TOKEN=sk-ant-oat01-test\n' > "$DAILY_ENV"; : > "$STUB_BIN/claude.log"
 assert_eq "0" "$(run --dry-run)" "dry-run → 0"; assert_contains "würde claude -p starten" "$(last_out)" "dry-run Text"
 assert_eq "" "$(cat "$STUB_BIN/claude.log")" "dry-run ohne claude"
+# dry-run auf bereits gepushtem Briefing (Idempotenz-Kurzschluss, wie Fall 3)
+# darf last-alert NICHT löschen (Fix-Runde 2, Item 1) — check.sh ruft
+# --dry-run bei jedem Aufruf; das wäre sonst ein Nebeneffekt auf den
+# Alarm-State bei einem reinen Preflight-Check.
+mk_repo; CLAUDE_STUB=ok-full "$STUB_BIN/claude" >/dev/null 2>&1
+printf 'AUTH\n2020-01-01T00:00:00+0000\nalt\n' > "$STATE_DIR/last-alert"
+assert_eq "0" "$(run --dry-run)" "dry-run auf gepushtem Briefing → 0"
+assert_eq "AUTH" "$(sed -n 1p "$STATE_DIR/last-alert" 2>/dev/null)" "last-alert bei dry-run nicht geräumt"
 
 # 11. Lock belegt → 0 ohne Alarm
 mk_repo; ( exec 9>"$STATE_DIR/run.lock"; flock 9; sleep 3 ) & sleep 0.3

@@ -38,13 +38,16 @@ ping_hc() {  # ping_hc start|fail|"" — nur wenn HEALTHCHECKS_URL gesetzt
   curl -fsS -m 10 "$HEALTHCHECKS_URL${1:+/$1}" >/dev/null 2>&1 9>&- || true
 }
 
-existing_own_paths() {  # füllt EXISTING_OWN_PATHS mit den OWN_DIRT_PATHS-Einträgen,
-  # die tatsächlich existieren — eine fehlende Pfadspezifikation lässt
-  # `git stash push -- <pfade>` sonst komplett fatal scheitern (Spec 5.2).
+existing_own_paths() {  # füllt EXISTING_OWN_PATHS mit den OWN_DIRT_PATHS-
+  # Einträgen, zu denen `git status` etwas zu sagen hat — NICHT `[ -e ]`:
+  # das schlösse eine komplett gelöschte Datei aus (Verzeichnis existiert
+  # dann nicht mehr, die Löschung müsste aber gestasht werden) und schlösse
+  # leere/unveränderte Verzeichnisse ein, an denen `git stash push --
+  # <pfade>` sonst mit "pathspec did not match" fatal scheitert (Spec 5.2).
   EXISTING_OWN_PATHS=()
   local p
   for p in "${OWN_DIRT_PATHS[@]}"; do
-    [ -e "$p" ] && EXISTING_OWN_PATHS+=("$p")
+    [ -n "$(git status --porcelain --untracked-files=all -- "$p" 2>/dev/null)" ] && EXISTING_OWN_PATHS+=("$p")
   done
 }
 
@@ -225,7 +228,10 @@ main() {
   if [ "$cur" = "$RUN_DATE" ] && [ "$(git status --porcelain --untracked-files=all | classify_dirt)" = clean ]; then
     if [ "$ahead" = 0 ]; then
       log "Briefing vom $RUN_DATE ist gepusht — nichts zu tun"
-      rm -f "$STATE_DIR/attempts.$RUN_DATE" "$STATE_DIR/last-failure.daily" "$STATE_DIR/last-alert"
+      # Nur im echten Lauf räumen — --dry-run (u.a. von check.sh bei jedem
+      # Aufruf) darf last-alert/last-failure.daily nicht als Nebeneffekt
+      # eines reinen Preflight-Checks löschen.
+      [ "$DRY" = 1 ] || rm -f "$STATE_DIR/attempts.$RUN_DATE" "$STATE_DIR/last-failure.daily" "$STATE_DIR/last-alert"
       exit 0
     fi
     log "Briefing vom $RUN_DATE committet, $ahead Commit(s) nicht gepusht → push-only"
