@@ -55,7 +55,7 @@ fi
 
 if [ -z "$CLAUDE" ] && [ "$SKIP_DAILY" != "1" ]; then
   yellow "⚠"; echo " claude binary nicht gefunden"
-  echo "    → Daily-Loop wird übersprungen (setze SKIP_DAILY=1 um die Warnung zu unterdrücken)"
+  echo "    → Daily-Oneshot wird übersprungen (setze SKIP_DAILY=1 um die Warnung zu unterdrücken)"
   SKIP_DAILY=1
 fi
 [ -n "$CLAUDE" ] && { green "✓"; echo " claude → $CLAUDE ($($CLAUDE --version 2>&1 | head -1))"; }
@@ -74,7 +74,6 @@ if [ "$SKIP_DAILY" != "1" ]; then
   done
   grep -q '^CLAUDE_CODE_OAUTH_TOKEN=sk-ant-oat01-' "$CONF_DIR/daily.env" || { red "✗"; echo " kein Setup-Token in daily.env — bin/set-token.sh"; exit 1; }
   green "✓"; echo " daily.env + alert.env vorhanden und gültig"
-  sudo -v   # ein Passwort-Prompt, Timestamp für alle folgenden sudo-Aufrufe
 fi
 
 # ─── 2. Übersicht ────────────────────────────────────────────────────
@@ -84,11 +83,12 @@ cat <<EOF
   Run as User:     $RUN_USER:$RUN_GROUP
   Webserver-Port:  $PORT
   Firewall öffnen: $([ "$SKIP_FIREWALL" = "1" ] && echo "nein (SKIP_FIREWALL=1)" || echo "ja, wenn firewalld läuft")
-  Daily-Loop:      $([ "$SKIP_DAILY" = "1" ] && echo "nein (übersprungen)" || echo "ja, via claude --bg")
+  Daily-Oneshot:   $([ "$SKIP_DAILY" = "1" ] && echo "nein (übersprungen)" || echo "ja, Timer 07:15 → claude -p")
 
 EOF
 read -rp "Weitermachen? [Y/n] " ans
 [[ "${ans:-Y}" =~ ^[Yy]?$ ]] || { echo "abgebrochen"; exit 0; }
+sudo -v   # ein Passwort-Prompt jetzt, Timestamp für alle folgenden sudo-Aufrufe
 
 # ─── 3. systemd Unit-Files rendern + installieren ────────────────────
 hdr "3. systemd-Units rendern und installieren"
@@ -150,7 +150,7 @@ PrivateTmp=true
 ProtectSystem=strict
 ProtectHome=read-only
 ReadWritePaths=$PROJECT_DIR
-ReadWritePaths=$HOME/.config/gh
+ReadWritePaths=-$HOME/.config/gh
 ProtectKernelTunables=true
 ProtectKernelModules=true
 ProtectControlGroups=true
@@ -257,13 +257,13 @@ WantedBy=timers.target
 EOF
 fi
 
+echo "  Alte Session-Units entfernen (unabhängig von SKIP_DAILY — gehören zum abgelösten Mechanismus)"
+for u in ai-news-dashboard-daily-loop.service ai-news-dashboard-healthcheck.timer ai-news-dashboard-healthcheck.service; do
+  sudo systemctl disable --now "$u" 2>/dev/null || true
+  sudo systemctl reset-failed "$u" 2>/dev/null || true
+  sudo rm -f "/etc/systemd/system/$u"
+done
 if [ "$SKIP_DAILY" != "1" ]; then
-  echo "  Alte Session-Units entfernen"
-  for u in ai-news-dashboard-daily-loop.service ai-news-dashboard-healthcheck.timer ai-news-dashboard-healthcheck.service; do
-    sudo systemctl disable --now "$u" 2>/dev/null || true
-    sudo systemctl reset-failed "$u" 2>/dev/null || true
-    sudo rm -f "/etc/systemd/system/$u"
-  done
   echo "  SELinux: bin/ als bin_t (Defense-in-Depth)"
   if command -v semanage >/dev/null 2>&1; then
     sudo semanage fcontext -a -t bin_t "$PROJECT_DIR/bin(/.*)?" 2>/dev/null \
@@ -272,7 +272,12 @@ if [ "$SKIP_DAILY" != "1" ]; then
   fi
 fi
 echo "  Units prüfen (systemd-analyze verify)"
-systemd-analyze verify "$TMP"/*.service "$TMP"/*.timer 2>&1 | grep -v "KillMode=none" || true
+VERIFY_OUT="$(systemd-analyze verify "$TMP"/*.service "$TMP"/*.timer 2>&1 | grep -v "KillMode=none" || true)"
+if [ -n "$VERIFY_OUT" ]; then
+  red "✗"; echo " systemd-analyze verify meldet Fehler — Installation abgebrochen:"
+  echo "$VERIFY_OUT"
+  exit 1
+fi
 echo "  Installiere Units nach /etc/systemd/system/ (sudo)"
 sudo install -m 644 "$TMP"/*.service "$TMP"/*.timer /etc/systemd/system/
 sudo systemctl daemon-reload
@@ -336,4 +341,6 @@ cat <<EOF
     journalctl -u ai-news-dashboard-youtube-fetch -n 20
     ./bin/check.sh
 $([ "$SKIP_DAILY" != "1" ] && echo "    ./bin/verify-daily.sh        # Oneshot + Watchdog einmal per systemd auslösen")
+$([ "$SKIP_DAILY" != "1" ] && echo "    Vor dem ersten 07:15-Lauf: alte Background-Session stoppen —")
+$([ "$SKIP_DAILY" != "1" ] && echo "      ./bin/loop.sh attach → /cron list → Eintrag löschen → ./bin/loop.sh stop")
 EOF
