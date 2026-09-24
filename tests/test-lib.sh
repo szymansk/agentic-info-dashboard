@@ -17,6 +17,12 @@ printf 'A=$(x)\n' > "$T_ROOT/bad4.env"
 assert_rc 1 "\$-Expansion im Wert ungültig" -- env_file_valid "$T_ROOT/bad4.env"
 printf 'A=`x`\n' > "$T_ROOT/bad5.env"
 assert_rc 1 "Backtick-Expansion im Wert ungültig" -- env_file_valid "$T_ROOT/bad5.env"
+printf 'A=1;id\n' > "$T_ROOT/bad6.env"
+assert_rc 1 "Command-Chaining ; im Wert ungültig (G1)" -- env_file_valid "$T_ROOT/bad6.env"
+printf 'A=x|y\n' > "$T_ROOT/bad7.env"
+assert_rc 1 "Pipe | im Wert ungültig (G1)" -- env_file_valid "$T_ROOT/bad7.env"
+printf 'HEALTHCHECKS_URL=https://hc-ping.com/abc-123\n' > "$T_ROOT/ok2.env"
+assert_rc 0 "HEALTHCHECKS_URL weiterhin gültig (G1)" -- env_file_valid "$T_ROOT/ok2.env"
 
 # load_env
 assert_rc 1 "load_env fehlend" -- load_env "$T_ROOT/nein.env"
