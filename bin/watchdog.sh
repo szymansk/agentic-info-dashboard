@@ -66,9 +66,15 @@ log "daily.service: $U_ActiveState/${U_SubState:-?} (Result=${U_Result:-?})"
 # 3. Briefing lokal
 CUR="$(snapshot_date "$PROJECT_DIR/dashboards/ai-news/index.html")"
 AGE=999; [ -n "$CUR" ] && AGE="$(days_between "$CUR" "$T")"
-LAST_RUN="$(python3 -c 'import json,sys
-try: d=json.load(open(sys.argv[1])); print(f"{d.get(\"finished\",\"?\")} exit {d.get(\"exit\",\"?\")} {d.get(\"kind\",\"\")}: {str(d.get(\"text\",\"\"))[:80]}")
-except Exception: print("kein last-run.json")' "$STATE_DIR/last-run.json" 2>/dev/null)"
+LAST_RUN="$(python3 - "$STATE_DIR/last-run.json" 2>/dev/null <<'PY'
+import json, sys
+try:
+    d = json.load(open(sys.argv[1]))
+    print(f"{d.get('finished','?')} exit {d.get('exit','?')} {d.get('kind','')}: {str(d.get('text',''))[:80]}")
+except Exception:
+    print("kein last-run.json")
+PY
+)"
 log "Briefing vom ${CUR:-?} ($AGE Tage) · letzter Lauf: $LAST_RUN"
 if [ "$RUNNING" = 1 ]; then
   log "Lauf aktiv — STALE-Prüfung ausgesetzt"
@@ -96,8 +102,12 @@ else
 fi
 
 # 6. Unit failed (Sicherheitsnetz, falls OnFailure nicht griff)
-if [ "$U_ActiveState" = failed ] && [ -n "$U_InvocationID" ] && once_per failed-invocation "$U_InvocationID"; then
-  unit_alert_recent 43200 || raise FAILED "daily.service ist failed (Result=${U_Result:-?}). journalctl -u $UNIT -n 30"
+# Stempel erst NACH dem tatsächlichen Alarm setzen — sonst verstummt eine
+# neue InvocationID für immer, wenn ein frischer Unit-Alarm sie gerade unterdrückt.
+if [ "$U_ActiveState" = failed ] && [ -n "$U_InvocationID" ] \
+   && [ "$(state_read wd.failed-invocation)" != "$U_InvocationID" ] && ! unit_alert_recent 43200; then
+  raise FAILED "daily.service ist failed (Result=${U_Result:-?}). journalctl -u $UNIT -n 30"
+  [ "$DRY" = 1 ] || state_write wd.failed-invocation "$U_InvocationID"
 fi
 
 # 7. GitHub-Auth
@@ -106,9 +116,13 @@ if ! gh auth status >/dev/null 2>&1; then
 fi
 
 # 8. Sonntag: Live-Check + Lebenszeichen
+# Stempel erst NACH dem tatsächlichen Check setzen (Erfolg wie Fehlschlag) —
+# sonst blockiert ein nicht auffindbares Binary den nächsten Versuch eine
+# ganze Woche lang, ohne dass je ein Alarm ging.
 LIVE="nicht geprüft"
-if [ "$DOW" = 7 ] && once_per token-live "$WEEK"; then
-  if [ "$DRY" = 1 ]; then LIVE="[dry-run] Live-Check übersprungen"
+if [ "$DOW" = 7 ] && [ "$(state_read wd.token-live)" != "$WEEK" ]; then
+  if [ "$DRY" = 1 ]; then
+    LIVE="[dry-run] Live-Check übersprungen"
   elif CLAUDE_BIN="$(resolve_claude)"; then
     TMPD="$(mktemp -d)"
     if ( cd "$TMPD" && DISABLE_AUTOUPDATER=1 timeout 120 "$CLAUDE_BIN" -p 'Antworte nur mit OK' \
@@ -117,6 +131,11 @@ if [ "$DOW" = 7 ] && once_per token-live "$WEEK"; then
         | grep -q '"is_error": *false' ); then LIVE="ok"
     else LIVE="FEHLER"; raise TOKEN_LIVE "Wöchentlicher Live-Check mit dem Setup-Token schlug fehl. Token/Modell prüfen: bin/run-daily.sh --dry-run"; fi
     rm -rf "$TMPD"
+    state_write wd.token-live "$WEEK"
+  else
+    LIVE="FEHLER"
+    raise TOKEN_LIVE "claude-Binary nicht gefunden — Live-Check unmöglich"
+    state_write wd.token-live "$WEEK"
   fi
 fi
 if [ "$DOW" = 7 ] && [ "${HEARTBEAT:-1}" = 1 ] && once_per heartbeat "$WEEK"; then

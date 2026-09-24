@@ -26,6 +26,7 @@ setup() {  # setup <briefing-datum> <token-created> [youtube-age-h]
 }
 kinds() { cut -f2 "$STATE_DIR/alerts.log" 2>/dev/null | sort -u | tr '\n' ' '; }
 run() { local rc=0; out="$("$BIN/watchdog.sh" "$@" 2>&1)" || rc=$?; echo "$rc"; }
+wd_stamp() { [ -f "$STATE_DIR/wd.$1" ] && cat "$STATE_DIR/wd.$1" || true; }
 
 # 1. alles frisch → kein Alarm, dry-run 0
 setup "$D1" "$D1"; export WD_NOW_HOUR=10 WD_NOW_DOW=2 WD_NOW_WEEK=2026-39
@@ -34,9 +35,14 @@ assert_eq "0" "$(run --dry-run)" "dry-run gesund → 0"
 
 # 2. gestern + 15 Uhr → STALE; 10 Uhr → nicht
 setup "$D0" "$D1"; WD_NOW_HOUR=15 run >/dev/null; assert_contains "STALE" "$(kinds)" "STALE ab 14 Uhr"
+assert_contains "exit 0" "$(cut -f3 "$STATE_DIR/alerts.log" | tail -1)" "STALE-Text enthält letzten Lauf (LAST_RUN)"
 setup "$D0" "$D1"; WD_NOW_HOUR=10 run >/dev/null; assert_eq "" "$(kinds)" "vor 14 Uhr kein STALE"
 setup "$D3" "$D1"; WD_NOW_HOUR=8 run >/dev/null; assert_contains "STALE" "$(kinds)" "3 Tage → STALE immer"
 setup "$D3" "$D1"; assert_eq "1" "$(WD_NOW_HOUR=8 run --dry-run)" "dry-run mit Alarm → 1"
+
+# 2b. last-run.json fehlt → LAST_RUN zeigt "kein last-run.json" (statt Python-Syntaxfehler still zu schlucken)
+setup "$D1" "$D1"; rm -f "$STATE_DIR/last-run.json"; run --dry-run >/dev/null
+assert_contains "kein last-run.json" "$out" "LAST_RUN ohne Datei"
 
 # 3. STALE unterdrückt, wenn Lauf aktiv oder Unit-Alarm < 24 h
 setup "$D3" "$D1"; UNIT_ACTIVE=activating WD_NOW_HOUR=15 run >/dev/null; assert_eq "" "$(kinds)" "kein STALE während Lauf"
@@ -48,6 +54,11 @@ setup "$D1" "$(date -I -d "$D1 - 355 day")"; run >/dev/null; assert_contains "TO
 n1=$(wc -l < "$STATE_DIR/alerts.log"); run >/dev/null; assert_eq "$n1" "$(wc -l < "$STATE_DIR/alerts.log")" "TOKEN nur einmal pro Tag"
 setup "$D1" "$(date -I -d "$D1 - 300 day")"; run >/dev/null; assert_eq "" "$(kinds | grep -o TOKEN)" "kein TOKEN bei 65 Tagen Rest"
 
+# 4b. TOKEN_CREATED fehlt trotz vorhandenem Token → TOKEN, einmal pro Tag
+setup "$D1" "$D1"; printf 'CLAUDE_CODE_OAUTH_TOKEN=sk-ant-oat01-x\nCLAUDE_MODEL=m\n' > "$DAILY_ENV"
+run >/dev/null; assert_contains "TOKEN" "$(kinds)" "TOKEN ohne TOKEN_CREATED"
+n1=$(wc -l < "$STATE_DIR/alerts.log"); run >/dev/null; assert_eq "$n1" "$(wc -l < "$STATE_DIR/alerts.log")" "TOKEN ohne TOKEN_CREATED nur einmal pro Tag"
+
 # 5. YouTube > 30 h
 setup "$D1" "$D1" 40; run >/dev/null; assert_contains "YOUTUBE" "$(kinds)" "YOUTUBE alt"
 
@@ -56,6 +67,16 @@ setup "$D1" "$D1"; UNIT_ACTIVE=failed UNIT_RESULT=exit-code UNIT_INV=inv1 run >/
 assert_contains "FAILED" "$(kinds)" "FAILED"; n1=$(wc -l < "$STATE_DIR/alerts.log")
 UNIT_ACTIVE=failed UNIT_RESULT=exit-code UNIT_INV=inv1 run >/dev/null; assert_eq "$n1" "$(wc -l < "$STATE_DIR/alerts.log")" "FAILED nicht doppelt"
 UNIT_ACTIVE=failed UNIT_RESULT=exit-code UNIT_INV=inv2 run >/dev/null; assert_eq "$((n1+1))" "$(wc -l < "$STATE_DIR/alerts.log")" "neue InvocationID → erneut"
+
+# 6b. Stempel erst NACH dem Alarm — ein frischer Fremd-Alarm darf die InvocationID nicht für immer verbrennen
+setup "$D1" "$D1"; printf 'AUTH\n%s\nx\n' "$(date -Is)" > "$STATE_DIR/last-alert"
+UNIT_ACTIVE=failed UNIT_RESULT=exit-code UNIT_INV=inv9 run >/dev/null
+assert_eq "" "$(kinds)" "kein FAILED bei frischem Fremd-Alarm"
+assert_eq "" "$(wd_stamp failed-invocation)" "kein Stempel vor tatsächlichem Alarm"
+touch -d "-13 hours" "$STATE_DIR/last-alert"
+UNIT_ACTIVE=failed UNIT_RESULT=exit-code UNIT_INV=inv9 run >/dev/null
+assert_contains "FAILED" "$(kinds)" "FAILED nach Ablauf des Fremd-Alarms"
+assert_eq "inv9" "$(wd_stamp failed-invocation)" "Stempel erst nach dem Alarm gesetzt"
 
 # 7. PUBLIC_STALE: Pages zeigt altes Datum, letzter Lauf > 60 min her
 setup "$D1" "$D1"; PAGES_DATE="$D0" run >/dev/null; assert_contains "PUBLIC_STALE" "$(kinds)" "PUBLIC_STALE"
@@ -70,4 +91,12 @@ assert_contains "HEARTBEAT" "$(kinds)" "Heartbeat"; assert_contains "--max-turns
 n1=$(wc -l < "$STATE_DIR/alerts.log"); WD_NOW_DOW=7 run >/dev/null; assert_eq "$n1" "$(wc -l < "$STATE_DIR/alerts.log")" "Heartbeat nur einmal pro Woche"
 setup "$D1" "$D1"; CLAUDE_LIVE_ERR=true WD_NOW_DOW=7 run >/dev/null; assert_contains "TOKEN_LIVE" "$(kinds)" "Live-Check-Fehler → TOKEN_LIVE"
 setup "$D1" "$D1"; WD_NOW_DOW=7 run --dry-run >/dev/null; assert_eq "" "$(cat "$STUB_BIN/claude.log")" "dry-run ohne Live-Check"
+
+# 9b. claude-Binary nicht auffindbar → TOKEN_LIVE (Stempel erst nach dem Versuch, nicht davor)
+setup "$D1" "$D1"; chmod -x "$STUB_BIN/claude"
+OLD_HOME="$HOME"; export HOME="$T_ROOT/fakehome"; export CLAUDE_BIN=/nonexistent/claude
+WD_NOW_DOW=7 run >/dev/null
+export HOME="$OLD_HOME"; export CLAUDE_BIN="$STUB_BIN/claude"; chmod +x "$STUB_BIN/claude"
+assert_contains "TOKEN_LIVE" "$(kinds)" "TOKEN_LIVE ohne claude-Binary"
+assert_eq "2026-39" "$(wd_stamp token-live)" "Stempel nach dem Fehlschlag gesetzt"
 test_summary
