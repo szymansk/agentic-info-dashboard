@@ -19,7 +19,10 @@
 #   3. Session   Roster + PID → lebt?
 #   4. ERGEBNIS  Briefing-Datum in dashboards/ai-news/index.html. Älter als
 #                MAX_BRIEFING_AGE_DAYS und Session idle → Zombie → Neustart
-#                (mit Cooldown + Tageslimit; danach ALARM, Exit 2). Das ist
+#                (mit Cooldown + Tageslimit; danach ALARM, Exit 2). Eine
+#                beschäftigte Session wird erst ersetzt, wenn das Briefing
+#                ≥ HARD_STALE_DAYS alt ist UND sie länger als ein Cooldown
+#                läuft (hatte also ihre Chance). Das ist
 #                die einzige Prüfung, die alle bisherigen Ausfallarten fängt:
 #                sie misst das Ergebnis, nicht den Mechanismus.
 #
@@ -181,15 +184,15 @@ reap_daemon() {
 }
 
 # ── 3. Session im Roster ─────────────────────────────────────────────
-find_session() {  # druckt: "<sid> <pid> <alive:1|0>" oder "- - 0"
-  [ -f "$ROSTER" ] || { echo "- - 0"; return; }
+find_session() {  # druckt: "<sid> <pid> <alive:1|0> <startedAt-epoch>" oder "- - 0 0"
+  [ -f "$ROSTER" ] || { echo "- - 0 0"; return; }
   python3 - "$ROSTER" "$SESSION_NAME" <<'PY'
 import json, os, sys
 roster_path, name = sys.argv[1], sys.argv[2]
 try:
     data = json.load(open(roster_path))
 except Exception:
-    print("- - 0"); sys.exit(0)
+    print("- - 0 0"); sys.exit(0)
 raw = data.get('workers', data.get('sessions', [])) if isinstance(data, dict) else data
 entries = list(raw.values()) if isinstance(raw, dict) else (raw or [])
 found = None
@@ -207,10 +210,11 @@ for e in entries:
         except (OSError, ProcessLookupError):
             pass
     sid = e.get('sessionId') or e.get('id') or '-'
-    found = (sid, pid, alive)
+    started = int((e.get('startedAt') or 0) / 1000)
+    found = (sid, pid, alive, started)
     if alive:
         break
-print(f"{found[0]} {found[1]} {found[2]}" if found else "- - 0")
+print(f"{found[0]} {found[1]} {found[2]} {found[3]}" if found else "- - 0 0")
 PY
 }
 
@@ -357,8 +361,10 @@ main() {
   fi
 
   # 3. Session
-  local sid pid alive
-  read -r sid pid alive <<<"$(find_session)"
+  local sid pid alive started session_age
+  read -r sid pid alive started <<<"$(find_session)"
+  session_age=999999
+  [ "${started:-0}" -gt 0 ] && session_age=$(( $(date +%s) - started ))
 
   # 4. Ergebnis
   if [ "$alive" = 1 ]; then
@@ -368,8 +374,12 @@ main() {
       exit 0
     fi
     warn "Briefing veraltet: $BRIEFING_DATE (${age} Tage), obwohl Session pid=$pid lebt"
-    if session_busy "$sid" && [ "$age" -lt "$HARD_STALE_DAYS" ]; then
-      log "Session hat vor $(( ( $(date +%s) - LAST_ACTIVITY ) / 60 )) Min gearbeitet — warte auf Abschluss"
+    # Beschäftigte Session → warten. Ausnahme: Briefing ist seit HARD_STALE_DAYS
+    # alt UND die Session läuft schon länger als ein Cooldown — dann hatte sie
+    # ihre Chance und wird trotzdem ersetzt (fängt Sessions, deren Transcript
+    # zwar wächst, die aber nie liefern).
+    if session_busy "$sid" && { [ "$age" -lt "$HARD_STALE_DAYS" ] || [ "$session_age" -lt "$RESTART_COOLDOWN_SEC" ]; }; then
+      log "Session (seit $(( session_age / 60 )) Min aktiv) hat vor $(( ( $(date +%s) - LAST_ACTIVITY ) / 60 )) Min gearbeitet — warte auf Abschluss"
       exit 1
     fi
     if ! restart_allowed; then

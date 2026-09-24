@@ -241,8 +241,10 @@ Am 2026-09-24 stand das Briefing **75 Tage** (seit 11.07.), YouTube/Server frisc
   `control.sock:`-Zeile muss `reachable` sein; Reap via `claude daemon stop --any`
 - **Ergebnis-Check**: Briefing-Datum ≥ 2 Tage alt + Session idle
   (Transcript-mtime > 45 Min) → Zombie → Session stoppen + neu starten.
-  Cooldown 6 h, max. 3/Tag, danach ALARM `STUCK` + Exit 2. Ab 5 Tagen wird auch
-  eine „beschäftigte" Session ersetzt.
+  Cooldown 6 h, max. 3/Tag, danach ALARM `STUCK` + Exit 2. Eine beschäftigte
+  Session wird erst ersetzt, wenn das Briefing ≥ 5 Tage alt ist UND die Session
+  länger als 6 h läuft (sonst würde ein frisch gestarteter Ersatz sofort wieder
+  als „stuck" gelten — genau das passierte beim ersten Scharfschalten).
 - **Alarme**: `journalctl -t ai-news-watchdog`,
   `~/.local/state/ai-news-dashboard/alerts.log` + `last-alert` (zeigt
   `check.sh`), optional ntfy über `~/.config/ai-news-dashboard/watchdog.env`
