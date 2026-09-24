@@ -85,8 +85,10 @@ Die Claude-Background-Session läuft `/loop 24h` und arbeitet die
 `DAILY_UPDATE.md` täglich ab. Sie wird beim Reboot **NICHT** automatisch
 fortgeführt (Background-Sessions überleben Shutdown nicht — siehe
 [Docs](https://code.claude.com/docs/en/agent-view#how-background-sessions-are-hosted)).
-Stattdessen läuft `bin/start-daily-loop.sh` beim Boot via systemd und
-startet die Session bei Bedarf neu (idempotent).
+Stattdessen läuft `bin/start-daily-loop.sh` beim Boot und alle 30 Min via
+systemd als **Watchdog**: prüft Auth → Daemon → Session → Briefing-Frische und
+ersetzt eine Session, die kein Ergebnis mehr liefert (idempotent; `--dry-run`
+zeigt nur die Entscheidung).
 
 State-Dateien der Background-Session liegen unter:
 - `~/.claude/daemon/roster.json` — Liste der Sessions
@@ -207,9 +209,68 @@ setzt das SELinux-Label auf `user_home_t` zurück → danach `restorecon
 bin/start-daily-loop.sh` (kein sudo nötig), sonst scheitert der Selbstheiler
 wieder mit `203`. `deploy.sh` fängt das automatisch beim nächsten Deploy.
 
+### Failure-Mode: Login weg — Selbstheiler war blind UND kaputt (2026-09-24)
+
+Am 2026-09-24 stand das Briefing **75 Tage** (seit 11.07.), YouTube/Server frisch,
+`healthcheck.timer` aktiv, `ExecMainStatus=0`. Drei gestapelte Ursachen:
+
+1. **OAuth-Refresh gescheitert** (Primärursache, 11.07. 13:04 UTC). `daemon.log`:
+   `auth: proactive refresh failed, signalling re-auth required` → `headless daemon
+   cannot complete OAuth — run 'claude auth login'` → `no token found, will
+   re-check keychain every 30s`. Die Cron-Ticks der Session (12./13./14.07.)
+   scheiterten mit `Not logged in · Please run /login` (`./bin/loop.sh log`),
+   danach gab der Session-Cron auf — kein Transcript-Eintrag mehr. Der
+   Refresh-Token hat **28 Tage** Laufzeit ab interaktivem Login
+   (`refreshTokenExpiresAt` in `~/.claude/.credentials.json`); headless kann
+   NICHT re-authentifizieren. Niemand wurde alarmiert.
+2. **Selbstheiler blind**: prüfte nur Mechanik (Daemon erreichbar, PID lebt),
+   nie Auth, nie das Ergebnis (Briefing-Datum). Auch nach dem `/login` am 24.09.
+   hätte er die tot-in-place-Session nie ersetzt.
+3. **Selbstheiler kaputt seit 25.08.** (CLI 2.1.243 machte `daemon status`
+   länger): `claude daemon status | grep -qiE …` unter `set -o pipefail` →
+   `grep -q` schließt die Pipe früh, claude bekommt EPIPE, exit≠0 → Fehlalarm
+   „Daemon nicht erreichbar" alle 30 Min. Der Reap `claude daemon stop`
+   **verweigert transiente Daemons** („Run `claude daemon stop --any`"),
+   `|| true` schluckte es, der PID-Check sagte „bereits aktiv", Exit 0.
+
+**Fix (eingebaut)** — `bin/start-daily-loop.sh` ist jetzt ein Watchdog:
+- prüft **Auth zuerst** (`claude auth status` → `loggedIn`), warnt ab 5 Tagen
+  vor Refresh-Token-Ablauf; ohne Login: ALARM `AUTH` + Exit 2 (Neustart wäre
+  sinnlos)
+- Daemon-Status wird **gecaptured** (kein `grep -q` auf der Pipe), die
+  `control.sock:`-Zeile muss `reachable` sein; Reap via `claude daemon stop --any`
+- **Ergebnis-Check**: Briefing-Datum ≥ 2 Tage alt + Session idle
+  (Transcript-mtime > 45 Min) → Zombie → Session stoppen + neu starten.
+  Cooldown 6 h, max. 3/Tag, danach ALARM `STUCK` + Exit 2. Ab 5 Tagen wird auch
+  eine „beschäftigte" Session ersetzt.
+- **Alarme**: `journalctl -t ai-news-watchdog`,
+  `~/.local/state/ai-news-dashboard/alerts.log` + `last-alert` (zeigt
+  `check.sh`), optional ntfy über `~/.config/ai-news-dashboard/watchdog.env`
+  (`NTFY_TOPIC=…`). Exit≠0 lässt die Unit `failed` → `systemctl --failed` und
+  `check.sh` werden rot.
+- `./bin/start-daily-loop.sh --dry-run` zeigt die Entscheidung ohne
+  Nebenwirkung; `check.sh` ruft genau das auf.
+- Das Live-Briefing zeigt clientseitig ein Banner, sobald es ≥ 2 Tage alt ist
+  (Inline-Script in `dashboards/ai-news/index.html`; bleibt beim Tageslauf
+  unverändert, weil Script-Tags laut `DAILY_UPDATE.md` nicht angefasst werden).
+
+**Was der Watchdog NICHT kann**: sich selbst einloggen. Bei ALARM `AUTH`/`TOKEN`:
+auf dieser Maschine `claude` starten, `/login`, fertig — der Watchdog ersetzt die
+Session beim nächsten Lauf (≤ 30 Min) von selbst. Dauerhafter: `claude setup-token`
+(1 Jahr gültig) → `CLAUDE_CODE_OAUTH_TOKEN=…` in `watchdog.env` (chmod 600).
+Ob der Token bei der bg-Session ankommt, nach dem Start prüfen:
+`tr '\0' '\n' < /proc/<session-pid>/environ | grep -c CLAUDE_CODE_OAUTH_TOKEN`
+— das ist NICHT verifiziert.
+
+**Diagnose** bei „Briefing veraltet, YouTube frisch": zuerst `./bin/check.sh`
+(Sektion „background sessions") — sie zeigt Auth, Daemon, Session, Frische und
+den letzten Alarm. Erst danach in `daemon.log` / `loop.sh log` graben.
+
 ## Was ich (Claude) hier NICHT tun soll
 
 - Browser-Cache-Probleme als Bug behandeln, bevor `bin/check.sh` Pass ist
+- `claude …`-Output mit `grep -q` unter `set -o pipefail` prüfen — Output erst
+  in eine Variable capturen, dann grep (sonst EPIPE → Fehlalarm)
 - `dashboards/_shared/people.js` ändern, ohne nach dem Schreiben
   `python3 -c "import ast; ..."` für sane-Check der Quoting laufen zu lassen
   (siehe Memory)
@@ -230,3 +291,4 @@ wieder mit `203`. `deploy.sh` fängt das automatisch beim nächsten Deploy.
 - **Quellen-Liste**: `dashboards/sources/index.html`
 - **Logs**: `journalctl -u ai-news-dashboard*`
 - **Health**: `./bin/check.sh`
+- **Watchdog-Alarme**: `journalctl -t ai-news-watchdog`, `~/.local/state/ai-news-dashboard/`

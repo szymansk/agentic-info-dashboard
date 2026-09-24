@@ -39,6 +39,13 @@ for unit in \
         err "$unit  ($state, $enabled)"
       fi
       ;;
+    failed)
+      if [[ "$unit" == *daily-loop.service ]]; then
+        err "$unit  (failed seit letztem Boot — Boot-Start scheiterte damals; der Healthcheck-Timer heilt unabhängig davon. Aufräumen: sudo systemctl reset-failed $unit)"
+      else
+        err "$unit  ($state, $enabled)"
+      fi
+      ;;
     *) err "$unit  ($state, $enabled)" ;;
   esac
 done
@@ -78,35 +85,57 @@ if [ -f "$ai_news" ]; then
   if [ "$snap_date" = "$today" ]; then
     ok "ai-news snapshot-date  $snap_date (heute)"
   else
-    warn "ai-news snapshot-date  $snap_date (heute = $today)"
+    age_days=$(( ( $(date -d "$today" +%s) - $(date -d "$snap_date" +%s) ) / 86400 ))
+    if [ "$age_days" -le 1 ]; then
+      ok "ai-news snapshot-date  $snap_date (gestern — Tageslauf steht noch aus)"
+    else
+      warn "ai-news snapshot-date  $snap_date (${age_days} Tage alt, heute = $today)"
+    fi
   fi
 fi
 
 hdr "background sessions (Claude daily loop)"
-if command -v claude > /dev/null; then
-  # Supervisor-Gesundheit: ein Binary-Auto-Upgrade killt den Daemon mid-uptime
-  # und er kommt NICHT von selbst zurück. Dann ist die Session ein Zombie
-  # (PID lebt, aber keine Cron-Wakeups / kein Auth-Refresh mehr).
-  if claude daemon status 2>&1 | grep -qiE '^pid:|version:|uptime:'; then
-    ok "claude daemon: läuft ($(claude daemon status 2>&1 | grep -iE '^version:' | head -1))"
-  else
-    err "claude daemon: NICHT erreichbar — Session ist vermutlich Zombie!"
-    err "  → Fix: ./bin/start-daily-loop.sh   (reapt + startet neu)"
-  fi
-  # Briefing-Frische: wann lief der Daily-Loop zuletzt durch?
-  ai_news="$PROJECT_DIR/dashboards/ai-news/index.html"
-  if [ -f "$ai_news" ]; then
-    bdate=$(grep -oE 'data-snapshot-date="[0-9-]+"' "$ai_news" | head -1 | sed 's/.*"\(.*\)"/\1/')
-    today=$(date -I)
-    if [ "$bdate" = "$today" ]; then
-      ok "Briefing aktuell: $bdate (heute)"
-    else
-      age_days=$(( ( $(date -d "$today" +%s) - $(date -d "$bdate" +%s) ) / 86400 ))
-      warn "Briefing veraltet: $bdate (${age_days} Tage alt) — Loop läuft nicht durch?"
-    fi
-  fi
-  if [ -f "$HOME/.claude/daemon/roster.json" ]; then
-    python3 - "$HOME/.claude/daemon/roster.json" <<'PY'
+LAUNCHER="$PROJECT_DIR/bin/start-daily-loop.sh"
+STATE_DIR="${STATE_DIR:-$HOME/.local/state/ai-news-dashboard}"
+if [ -x "$LAUNCHER" ]; then
+  # Der Watchdog-Launcher ist die einzige Wahrheit: Auth, Daemon, Session,
+  # Briefing-Frische. --dry-run prüft nur. Exit 0 = gesund, 1 = würde heilen
+  # (macht der nächste Timer-Lauf), 2 = braucht einen Menschen.
+  wd_out="$("$LAUNCHER" --dry-run 2>&1)"; wd_rc=$?
+  printf '%s\n' "$wd_out" | grep -v 'dry-run: nur prüfen' | sed 's/^  \[start-daily-loop\] /    /'
+  case "$wd_rc" in
+    0) ok "Watchdog: gesund" ;;
+    1) warn "Watchdog: würde heilen — passiert beim nächsten Timer-Lauf (≤ 30 Min) oder sofort via ./bin/start-daily-loop.sh" ;;
+    *) err "Watchdog: braucht dich (exit $wd_rc) — siehe ALARM oben" ;;
+  esac
+else
+  err "Watchdog-Launcher fehlt oder ist nicht ausführbar: $LAUNCHER"
+fi
+
+# Selbstheiler-Unit: feuert der Timer UND läuft der Launcher durch?
+# (is-active am Timer allein sagt nur, dass er feuert — nicht, dass er heilt.)
+hc_active="$(systemctl is-active ai-news-dashboard-healthcheck.timer 2>&1)"
+hc_result="$(systemctl show ai-news-dashboard-healthcheck.service -p Result --value 2>/dev/null)"
+hc_code="$(systemctl show ai-news-dashboard-healthcheck.service -p ExecMainStatus --value 2>/dev/null)"
+hc_last="$(systemctl show ai-news-dashboard-healthcheck.service -p ExecMainExitTimestamp --value 2>/dev/null)"
+if [ "$hc_active" != "active" ]; then
+  err "healthcheck.timer ist $hc_active — Selbstheiler feuert nicht: sudo systemctl enable --now ai-news-dashboard-healthcheck.timer"
+elif [ "$hc_result" = "success" ] && [ "$hc_code" = "0" ]; then
+  ok "healthcheck.timer aktiv, letzter Lauf ok (${hc_last:-noch keiner})"
+elif [ "$hc_code" = "1" ]; then
+  warn "healthcheck.timer aktiv, letzter Lauf wartet/heilt (ExecMainStatus=1, ${hc_last:-?}) — journalctl -u ai-news-dashboard-healthcheck.service -n 20"
+else
+  err "healthcheck.timer aktiv, aber letzter Lauf: Result=$hc_result ExecMainStatus=$hc_code (${hc_last:-?}) — journalctl -u ai-news-dashboard-healthcheck.service -n 20"
+fi
+
+# Letzter Watchdog-Alarm (wird bei einem gesunden Lauf gelöscht)
+if [ -f "$STATE_DIR/last-alert" ]; then
+  err "letzter Watchdog-Alarm [$(sed -n 1p "$STATE_DIR/last-alert")] $(sed -n 2p "$STATE_DIR/last-alert"): $(sed -n 3p "$STATE_DIR/last-alert")"
+fi
+
+# Roster-Übersicht (informativ)
+if [ -f "$HOME/.claude/daemon/roster.json" ]; then
+  python3 - "$HOME/.claude/daemon/roster.json" <<'PY2'
 import json, os, sys
 try:
     data = json.load(open(sys.argv[1]))
@@ -125,17 +154,14 @@ try:
             alive = '?'
             if pid:
                 try: os.kill(pid, 0); alive = 'alive'
-                except: alive = 'dead'
+                except Exception: alive = 'dead'
             short = (e.get('sessionId') or '')[:8]
-            print(f"  · {name:30} pid={pid} ({alive}) sid={short}")
+            print(f"  · {name:30} pid={pid} ({alive}) sid={short} cli=v{e.get('cliVersion', '?')}")
 except Exception as ex:
     print(f"  ⚠ roster lesen fehlgeschlagen: {ex}")
-PY
-  else
-    warn "kein roster.json — keine Background-Session bekannt"
-  fi
+PY2
 else
-  warn "claude binary nicht im PATH"
+  warn "kein roster.json — keine Background-Session bekannt"
 fi
 
 hdr "summary"

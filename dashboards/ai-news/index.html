@@ -724,6 +724,20 @@
   if (document.body.dataset.snapshotMode === 'archive') {
     document.getElementById('snap-banner').classList.add('show');
   }
+
+  // ── Stale-Banner (nur Live-Version) ───────────────────────
+  // Briefing ≥ 2 Tage alt heißt: der tägliche Update-Loop steht. Rein
+  // clientseitig, damit die Warnung auch dann erscheint, wenn genau der
+  // Loop ausgefallen ist, der sonst neu deployen würde.
+  if (document.body.dataset.snapshotMode === 'live' && SNAPSHOT_DATE) {
+    const ageDays = Math.floor((Date.now() - new Date(SNAPSHOT_DATE + 'T12:00:00')) / 86400000);
+    if (ageDays >= 2) {
+      const b = document.getElementById('snap-banner');
+      b.innerHTML = '<span>⚠️ Dieses Briefing ist vom ' + fmtLong.format(new Date(SNAPSHOT_DATE)) +
+        ' — ' + ageDays + ' Tage alt. Der tägliche Update-Loop läuft gerade nicht.</span>';
+      b.classList.add('show');
+    }
+  }
 </script>
 </body>
 </html>
