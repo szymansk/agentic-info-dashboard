@@ -45,7 +45,7 @@ die Session-Mechanik. Dieses Design ersetzt sie.
 ## 4. Architektur
 
 ```
-06:00   youtube-fetch.timer → youtube-fetch.service (TimeoutStartSec=10min, OnFailure→alert)
+06:00   youtube-fetch.timer → youtube-fetch.service (TimeoutStartSec=10min, kein OnFailure)
           → fetch-youtube.py → ExecStartPost: deploy.sh
 07:15   daily.timer (Persistent) → daily.service (oneshot, After=youtube-fetch)
           └─ bin/run-daily.sh
@@ -151,20 +151,22 @@ Semantik (systemd 259, per `systemd-analyze verify` und Man-Pages geprüft):
 
 **`ai-news-dashboard-alert@.service`** (Template; Instanz `%i` = Präfix der
 gescheiterten Unit, z. B. `ai-news-dashboard-daily`): `Type=oneshot`,
-`StandardInput=null`, `TimeoutStartSec=2min`, `ExecStart=/usr/bin/bash bin/alert.sh unit-failed %i`.
+`StandardInput=null`, `TimeoutStartSec=2min`, `WorkingDirectory=$PROJECT_DIR`,
+`ExecStart=/usr/bin/bash $PROJECT_DIR/bin/alert.sh unit-failed %i` (alle Exec-Pfade absolut; `install.sh` rendert `$PROJECT_DIR`).
 
 **`ai-news-dashboard-watchdog.timer/.service`**: `OnCalendar=*-*-* *:00/30:00`
 (feste Raster statt `OnUnitActiveSec`, damit Wochenfenster nicht driften),
 `TimeoutStartSec=5min` (ein hängender Live-Check darf den Watchdog nicht dauerhaft
 in `activating` halten), `Environment=DISABLE_AUTOUPDATER=1`,
-`ExecStart=/usr/bin/bash bin/watchdog.sh`, `OnFailure=ai-news-dashboard-alert@%p.service`.
+`WorkingDirectory=$PROJECT_DIR`, `ExecStart=/usr/bin/bash $PROJECT_DIR/bin/watchdog.sh`,
+`OnFailure=ai-news-dashboard-alert@%p.service`.
 Ersetzt `healthcheck.timer/.service`.
 
 **`ai-news-dashboard-youtube-fetch.service`** (neu gerendert): `ReadWritePaths=$PROJECT_DIR`
 (installiert ist derzeit nur `dashboards/youtube`, womit ein Deploy an `docs/` und
 `.git/` scheitern würde), `TimeoutStartSec=10min` (der Fetch hängt laut Memory
 gelegentlich; Oneshot-Default ist unendlich; das Timeout deckt `ExecStart` und
-`ExecStartPost` gemeinsam ab), `ExecStartPost=/usr/bin/bash bin/deploy.sh`,
+`ExecStartPost` gemeinsam ab), `ExecStartPost=/usr/bin/bash $PROJECT_DIR/bin/deploy.sh`,
 `Environment=GIT_TERMINAL_PROMPT=0 GH_NO_UPDATE_NOTIFIER=1`. **Kein `OnFailure`**:
 der bekannte Fetch-Hänger würde sonst um 06:10 WhatsApp auslösen, obwohl der
 Tageslauf YouTube in Schritt 1 selbst nachholt; der Watchdog meldet YOUTUBE erst
@@ -196,13 +198,13 @@ Manifest separat gesichert. Ändert sich `.gitignore`, muss diese Tabelle nachzi
 |---|---|---|
 | Binary | `~/.local/bin/claude` zuerst, dann PATH; fehlt → | 5 |
 | Env | `daily.env` + `alert.env` sourcen; `CLAUDE_CODE_OAUTH_TOKEN` leer → | 3 |
-| Lock | `flock -w 300` auf `$STATE_DIR/run.lock`; nach 5 min weiter belegt (paralleler Handlauf) → Journal-Hinweis, kein Alarm | 0 |
+| Lock | `flock -w 300` auf `$STATE_DIR/run.lock`; nach 5 min weiter belegt (paralleler Handlauf) → Journal-Hinweis, kein Alarm; dieser Exit 0 schreibt **kein** `last-run.json` und löscht **keinen** Zähler | 0 |
 | Zähler | `$STATE_DIR/attempts.<datum>`: Zahl der Fehlschläge heute. Ist sie ≥ 2, wird dieser Lauf der dritte; endet er wiederholbar (5/6/7), wird daraus | 11 |
 | Dirt | `git status --porcelain --untracked-files=all`, Pfade klassifizieren. Eigener Dirt (`dashboards/ai-news/`, `dashboards/it-services/`, `docs/`) = Reste eines abgebrochenen Laufs oder YouTube-Deploys → `git stash push -u -m "daily-leftover <ts>"` + Journal-Warnung, weiter. Fremder Dirt (alles andere) → | 4 |
 | Repo | Erst **nach** dem Stash (sonst liefe der Lauf auf veralteter Basis und der Push würde non-fast-forward): verwaistes `.git/index.lock` (älter als 1 h) entfernen; `git fetch origin` (Netz weg → 5; „Authentication failed" = GitHub-Token widerrufen → 9); `git merge --ff-only origin/main`; divergiert → | 9 |
 | Idempotenz | `data-snapshot-date` == heute: gepusht (`git status -sb` ohne „ahead") → 0 ohne Lauf. Nur ahead → **push-only**: `git push`; Erfolg → 0, Netz/5xx → 6, non-fast-forward → 9. Kein Modell-Lauf. | 0/6/9 |
 | Sicherung | `HEAD` merken; `manifest.json` nach `$STATE_DIR/manifest.bak`; Liste der Archivdateien; healthchecks `/start`-Ping (falls konfiguriert). | |
-| Lauf | `rc=0; claude -p --output-format json --model "$CLAUDE_MODEL" [--fallback-model "$FALLBACK_MODEL"] --dangerously-skip-permissions --strict-mcp-config --disallowedTools AskUserQuestion --max-budget-usd "$MAX_BUDGET_USD" "$PROMPT" >"$OUT" </dev/null \|\| rc=$?`. stderr → Journal. `trap` auf TERM/INT: Cleanup, `last-failure=TIMEOUT`, Exit 5. | |
+| Lauf | `rc=0; claude -p --output-format json --model "$CLAUDE_MODEL" [--fallback-model "$FALLBACK_MODEL"] --dangerously-skip-permissions --strict-mcp-config --disallowedTools AskUserQuestion --max-budget-usd "$MAX_BUDGET_USD" "$PROMPT" >"$OUT" </dev/null \|\| rc=$?`. stderr → Journal. `trap` auf TERM/INT: Cleanup, `last-failure=TIMEOUT`, dann derselbe Zählerpfad wie jeder wiederholbare Fehler (Exit 5, beim dritten Fehlschlag des Tages Exit 11; systemd prüft `RestartPreventExitStatus` auch bei Result `timeout` gegen den Exit-Status des Hauptprozesses). | |
 | Klassifikation | JSON parsen (kein JSON → 5). Felder: `is_error`, `terminal_reason`, `api_error_status`, optional `result`, `permission_denials`, `total_cost_usd`, `session_id`. `api_error_status` 401/403 → 3 · 400/404 oder `terminal_reason=budget_exhausted` → 8 · `result` enthält Zeile `BLOCKED:` → 7 · sonstiger `is_error` (429, 5xx, Netz) → 5. `permission_denials` nicht leer → Journal-Warnung. | 3/5/7/8 |
 | Ergebnis | `bin/verify-briefing.sh --full` (5.3). Nicht deployt (Datum alt, dirty, ahead) → 6. Deployt, aber inhaltlich mangelhaft → Grund nach `last-failure.daily`, Exit 10; der Alarm läuft **nur** über `OnFailure` → `alert.sh unit-failed` (ein Pfad, eine Nachricht). | 6/10 |
 | Abschluss | Pages-URL bis 10 min auf heutiges Datum pollen (nur Warnung; der Watchdog übernimmt `PUBLIC_STALE`). `last-run.json`: Zeit, Dauer, Exit, `total_cost_usd`, `num_turns`, `session_id`, `claude --version`, `STATUS:`-Zeile. Zähler löschen. healthchecks-Ping `/` bei 0; `/fail` nur bei nicht-wiederholbaren Codes (3/4/8/9/10/11); bei 5/6/7 kein Ping (Grace 30 h reicht, sonst mailt healthchecks bei jedem transienten Fehler). | 0 |
@@ -219,7 +221,7 @@ Exit-Codes und Retry:
 | 6 | OUTCOME: kein frisches, gepushtes Briefing (auch push-only mit Netzfehler) | ja |
 | 7 | BLOCKED: Lauf meldet Blockade | ja |
 | 8 | API: nicht-transient (Modell unbekannt 400/404, Budget erschöpft) | nein |
-| 9 | REPO: Lock belegt, divergiert, non-fast-forward | nein |
+| 9 | REPO: divergiert, non-fast-forward, GitHub-Auth beim Fetch | nein |
 | 10 | QUALITY: deployt, aber Prüfung mangelhaft | nein |
 | 11 | GIVEUP: dritter wiederholbarer Fehlschlag des Tages (Grund des letzten Fehlers in `last-failure.daily`) | nein |
 | sonstige (1, 64, …) | unklassifiziert, z. B. Skriptfehler | ja (systemd-Default) |
@@ -366,15 +368,20 @@ Units mit `$PROJECT_DIR`/`$HOME` des Run-Users rendern; `systemd-analyze verify`
 
 ### 5.11 `.github/workflows/stale-check.yml` (externer Wächter)
 
-Läuft täglich 16:00 UTC per `schedule` auf GitHub, ohne Secrets: holt
-`https://szymansk.github.io/agentic-info-dashboard/ai-news/`, liest
-`data-snapshot-date`, schlägt fehl, wenn das Datum älter als der Vortag ist. Ein
-fehlgeschlagener Workflow-Lauf löst die Standard-E-Mail an den Repo-Owner aus. Das
-deckt genau die Fälle, in denen die Maschine, der Timer oder der Watchdog selbst
-tot sind. GitHub deaktiviert `schedule`-Workflows nach 60 Tagen ohne Commit; die
-täglichen Briefing-Commits halten ihn aktiv, und der Watchdog-Heartbeat nennt das
-Datum des letzten Workflow-Laufs (`gh run list`), damit ein deaktivierter Workflow
-auffällt.
+Läuft täglich per `schedule: '17 16 * * *'` (krumme Minute, weil GitHub Läufe zur
+vollen Stunde oft verzögert oder überspringt; 16:17 UTC = 18:17 CEST, das
+Briefingdatum ist dann sicher „heute") auf GitHub, ohne Secrets: holt
+`https://szymansk.github.io/agentic-info-dashboard/ai-news/` mit
+`Cache-Control: no-cache`, liest `data-snapshot-date`, schlägt fehl, wenn das Datum
+älter als der Vortag ist; `workflow_dispatch` mit Eingabe `force_fail` für den Test.
+Die Fehler-Mail geht an den **Actor** des Schedule-Laufs, das ist der letzte Committer
+der Workflow-Datei (bei uns Marc, solange niemand anderes sie ändert) und setzt in
+seinen GitHub-Notification-Einstellungen „Actions: failed workflows only" per E-Mail
+voraus; beides wird in Phase 3f Ende-zu-Ende geprüft. Das deckt genau die Fälle, in
+denen die Maschine, der Timer oder der Watchdog selbst tot sind. GitHub deaktiviert
+`schedule`-Workflows nach 60 Tagen ohne Commit; bis dahin wären 59 Fehl-Mails
+gelaufen, und der Watchdog-Heartbeat nennt das Datum des letzten Workflow-Laufs
+(`gh run list`), damit ein deaktivierter Workflow auffällt.
 
 ## 6. Sicherheit
 
@@ -435,7 +442,8 @@ auffällt.
 ## 10. Änderungen nach Review (Version 2)
 
 Zwei unabhängige Reviews (technisch mit Man-Pages und Probeläufen; adversarial auf
-Ausfallarten). Übernommen:
+Ausfallarten). Übernommen in v2 (Stand v2; wo v2.1 unten abweicht, gilt v2.1 —
+betrifft Startlimit-Fenster, YouTube-`OnFailure`, healthchecks als Empfehlung):
 
 - **Retry war wirkungslos**: Jeder Fehler nach dem ersten Edit hinterließ einen dirty
   Tree → Exit 4 ohne Retry. Jetzt: eigener Dirt wird gestasht, fremder alarmiert;
