@@ -175,6 +175,9 @@ nach 30 h.
 Push nach `~/.config/gh` schreiben will, klärt die Generalprobe (dann `ReadWritePaths`
 ergänzen).
 
+Der YouTube-Timer behält `RandomizedDelaySec=300`; dass die Nachholstarts nach Boot
+trotzdem serialisiert laufen (siehe `After=` oben), wird in Phase 3 verifiziert.
+
 **Entfernt**: `ai-news-dashboard-daily-loop.service`, `ai-news-dashboard-healthcheck.timer/.service`.
 
 **SELinux**: Verzeichnisregel `semanage fcontext -a -t bin_t "$PROJECT_DIR/bin(/.*)?"`
@@ -267,7 +270,7 @@ Schnittstelle: `alert.sh <ART> <Text…>`, `alert.sh unit-failed <unit>` (liest
 
 1. Journal: `logger -p user.err -t ai-news-alert "[ART] Text"`.
 2. Statusdateien: `alerts.log` (Historie), `last-alert` (für `check.sh`; wird vom nächsten Exit-0-Lauf gelöscht).
-3. Drosselung **pro Vorfall** (Hash aus ART + erste 80 Zeichen Text), 12 h. FAILED aus dem Watchdog nur, wenn kein Unit-Alarm < 12 h; STALE nur, wenn kein Unit-Alarm < 24 h.
+3. Drosselung **pro Vorfall** (Hash aus ART + erste 80 Zeichen Text), 12 h. FAILED nur für InvocationIDs, für die kein OnFailure-Alarm lief (`alert.sh unit-failed` stempelt `wd.failed-invocation`); STALE nur, wenn kein Unit-Alarm < 24 h.
 4. CallMeBot: `curl -fsS -m 20 -G https://api.callmebot.com/whatsapp.php --data-urlencode phone=… --data-urlencode apikey=… --data-urlencode text=…`. Antwort muss „queued" enthalten.
 5. ntfy (falls `NTFY_TOPIC`/`NTFY_URL` gesetzt): `curl -d`.
 6. Zustellung wird **pro Kanal** geführt; der Drossel-Stempel eines Kanals wird nur bei dessen Erfolg gesetzt. Nicht zugestellte Vorfälle landen in `pending/<vorfall-hash>` (ein Eintrag pro Vorfall, Überschreiben statt Anhängen); der Watchdog sendet alle 30 min nach, höchstens 6 Versuche, danach eine Sammelnachricht und Abbruch. `last-failure` ist pro Unit (`last-failure.<unit>`), damit ein YouTube-Fehlschlag nicht den letzten Daily-Grund als Text bekommt.
@@ -286,13 +289,13 @@ Alle 30 min, nur Prüfung und Alarm, keine Reparatur. `--dry-run` zeigt alle Wer
 |---|---|
 | `pending-alerts` vorhanden | `alert.sh --resend` |
 | `TOKEN_CREATED` + 365 d − heute ≤ 14 d | TOKEN, täglich |
-| Sonntag (ISO-Wochenstempel): Live-Check `timeout 120 claude -p 'OK' --model "$CLAUDE_MODEL" --max-turns 1 --strict-mcp-config --setting-sources project` in einem leeren Temp-Verzeichnis (lädt sonst CLAUDE.md und User-Hooks) mit dem Unit-Token | TOKEN_LIVE bei Fehler |
-| Lokales Briefing: Alter ≥ 1 Tag **und** Uhrzeit ≥ 14:00, oder Alter ≥ 2; **unterdrückt**, solange `daily.service` `active`/`activating` ist (Nachhollauf) oder ein Unit-Alarm < 24 h alt ist | STALE, 12 h |
+| So ab 09:00 (ISO-Wochenstempel): Live-Check `timeout 120 claude -p 'OK' --model "$CLAUDE_MODEL" --max-turns 1 --strict-mcp-config --setting-sources project` in einem leeren Temp-Verzeichnis (lädt sonst CLAUDE.md und User-Hooks) mit dem Unit-Token | TOKEN_LIVE bei Fehler |
+| Lokales Briefing: Alter ≥ 1 Tag **und** Uhrzeit ≥ 14:00, oder Alter ≥ 2; **unterdrückt**, solange `daily.service` `active`/`activating` ist (Nachhollauf) oder ein Unit-Alarm < 24 h alt ist (liest `last-unit-alert`) | STALE, 12 h |
 | Pages-URL: `data-snapshot-date` ≠ lokal, länger als 60 min nach `last-run.json` | PUBLIC_STALE, 12 h |
 | `dashboards/youtube/data.json` älter als 30 h | YOUTUBE, 12 h |
 | `daily.service` `failed` mit InvocationID ≠ zuletzt alarmierter | FAILED (Sicherheitsnetz) |
 | `gh auth status` schlägt fehl | GH_AUTH, täglich |
-| Sonntag, `HEARTBEAT=1`, Wochenstempel | „✅ ai-news lebt. Briefing <Datum>, letzter Lauf <Zeit>, Token live ok, noch <n> Tage" |
+| So ab 09:00, `HEARTBEAT=1`, Wochenstempel | „✅ ai-news lebt. Briefing <Datum>, letzter Lauf <Zeit>, Token live ok, noch <n> Tage" |
 
 ### 5.6 Env-Dateien (`~/.config/ai-news-dashboard/`, Verzeichnis 700, Dateien 600, nie im Repo)
 
@@ -373,7 +376,10 @@ vollen Stunde oft verzögert oder überspringt; 16:17 UTC = 18:17 CEST, das
 Briefingdatum ist dann sicher „heute") auf GitHub, ohne Secrets: holt
 `https://szymansk.github.io/agentic-info-dashboard/ai-news/` mit
 `Cache-Control: no-cache`, liest `data-snapshot-date`, schlägt fehl, wenn das Datum
-älter als der Vortag ist; `workflow_dispatch` mit Eingabe `force_fail` für den Test.
+älter als der Lauftag (UTC) ist; `workflow_dispatch` mit Eingabe `force_fail` für den
+Test. 16:17 UTC (18:17 CEST) liegt sicher nach dem Worst-Case-Laufende (~15:45
+Lokalzeit bei drei 90-min-Timeouts, siehe §4) — der Tageslauf ist zu diesem
+Zeitpunkt immer schon fertig oder gescheitert.
 Die Fehler-Mail geht an den **Actor** des Schedule-Laufs, das ist der letzte Committer
 der Workflow-Datei (bei uns Marc, solange niemand anderes sie ändert) und setzt in
 seinen GitHub-Notification-Einstellungen „Actions: failed workflows only" per E-Mail
