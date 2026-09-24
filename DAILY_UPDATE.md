@@ -237,7 +237,7 @@ Nach erfolgreicher Verifikation pushst du den aktuellen Stand live:
 Das Skript:
 1. baut `docs/` neu via `scripts/build-pages.py` (kopiert dashboards/ und
    schreibt absolute Pfade auf `/agentic-info-dashboard/...` um)
-2. staged alle Änderungen
+2. staged nur `dashboards/` und `docs/`
 3. commitet nur falls etwas neu ist
 4. pusht nach `origin/main` — Pages rendert in ~30s neu
 

@@ -4,7 +4,7 @@
 #
 # Aufgerufen von:
 #   - systemd youtube-fetch.service (nach Skript-Lauf)
-#   - DAILY_UPDATE.md Step 6 (Claude background session, nach Briefing-Update)
+#   - DAILY_UPDATE.md Schritt 7 (täglicher claude -p-Oneshot, nach Briefing-Update)
 #   - Manuell wenn man eine Änderung sofort live haben will
 #
 # Idempotent: läuft den Build, committed nur wenn sich was geändert hat,

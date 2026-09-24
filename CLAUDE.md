@@ -101,10 +101,12 @@ nur in dieser Prozessumgebung). Design und Begründung: `specs/2026-09-24-daily-
 - Lauf von Hand: `sudo systemctl start ai-news-dashboard-daily.service` (idempotent: steht das
   heutige Briefing schon, Exit 0). Danach `sudo systemctl reset-failed …` + `bin/run-daily.sh --reset-attempts`,
   sonst zählen Handstarts als Versuche.
+- `CLAUDE_SETTING_SOURCES=project` in `daily.env` lässt den Lauf ohne User-Plugins/Hooks laufen
+  (wird in Phase 3c getestet).
 - Alarm `AUTH`/`TOKEN`/`TOKEN_LIVE`: `claude setup-token` im Browser → `bin/set-token.sh` (Token per stdin).
 - Alarm `DIRTY`: fremde Änderungen im Working Tree committen oder stashen; der Lauf fasst nur
   `dashboards/ai-news`, `dashboards/it-services`, `docs` an.
-- Alarm `GIVEUP`/`STUCK`-artige Fälle: Grund steht in der Nachricht und in `last-failure.daily`;
+- Alarm `GIVEUP`: Grund steht in der Nachricht und in `last-failure.daily`;
   Transcript des Laufs: `~/.claude/projects/<slug>/<session_id>.jsonl` (`session_id` in `last-run.json`).
 - Alarm `REPO`: `git status -sb`, `git log --oneline -3 origin/main` — von Hand rebasen/pushen.
 - Alarm `QUALITY`: Briefing ist deployt, aber dünn/kaputt (Grund in der Nachricht); Schwellen in
