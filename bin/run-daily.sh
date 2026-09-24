@@ -184,9 +184,41 @@ main() {
   cd "$PROJECT_DIR" || fail 5 RUN "PROJECT_DIR fehlt: $PROJECT_DIR"
   [ -f "$PROMPT_FILE" ] || fail 5 RUN "DAILY_UPDATE.md fehlt"
 
-  # 1. Lock (paralleler Handlauf ist kein Alarm)
+  # 0b. Übergangs-Warnung (Migration Phase 2): alte Background-Session könnte noch laufen
+  roster="$HOME/.claude/daemon/roster.json"
+  if [ -f "$roster" ]; then
+    old_pid="$(python3 - "$roster" <<'PY'
+import json, sys
+try:
+    d = json.load(open(sys.argv[1]))
+except Exception:
+    d = None
+items = []
+if isinstance(d, list): items = d
+elif isinstance(d, dict): items = d.get("workers") or d.get("sessions") or list(d.values())
+if not isinstance(items, list): items = []
+for w in items:
+    if not isinstance(w, dict): continue
+    name = w.get("name") or ((w.get("dispatch") or {}).get("seed") or {}).get("name")
+    if name == "daily-ai-update":
+        pid = w.get("pid") or (w.get("dispatch") or {}).get("pid")
+        if pid: print(pid)
+        break
+PY
+)"
+    if [ -n "$old_pid" ] && kill -0 "$old_pid" 2>/dev/null; then
+      warn "alte Background-Session 'daily-ai-update' läuft noch (pid $old_pid) — vor dem ersten Timer-Lauf stoppen: ./bin/loop.sh stop"
+    fi
+  fi
+
+  # 1. Lock (paralleler Handlauf ist kein Alarm); --dry-run wartet nicht darauf
+  #    (Spec 5.2/Invariante: ein reiner Preflight-Check darf nie 5 min blockieren)
   exec 9>"$STATE_DIR/run.lock"
-  if ! flock -w "$LOCK_WAIT_SEC" 9; then
+  if [ "$DRY" = 1 ]; then
+    if ! flock -n 9; then
+      log "Lauf aktiv (Lock gehalten) — dry-run beendet"; exit 0
+    fi
+  elif ! flock -w "$LOCK_WAIT_SEC" 9; then
     log "anderer Lauf hält das Lock seit > $LOCK_WAIT_SEC s — beende ohne Alarm"; exit 0
   fi
 
@@ -228,10 +260,13 @@ main() {
   if [ "$cur" = "$RUN_DATE" ] && [ "$(git status --porcelain --untracked-files=all | classify_dirt)" = clean ]; then
     if [ "$ahead" = 0 ]; then
       log "Briefing vom $RUN_DATE ist gepusht — nichts zu tun"
-      # Nur im echten Lauf räumen — --dry-run (u.a. von check.sh bei jedem
-      # Aufruf) darf last-alert/last-failure.daily nicht als Nebeneffekt
-      # eines reinen Preflight-Checks löschen.
-      [ "$DRY" = 1 ] || rm -f "$STATE_DIR/attempts.$RUN_DATE" "$STATE_DIR/last-failure.daily" "$STATE_DIR/last-alert"
+      # --dry-run (u.a. von check.sh bei jedem Aufruf) darf last-alert/
+      # last-failure.daily nicht als Nebeneffekt eines reinen Preflight-Checks
+      # löschen und keinen State schreiben. Der echte Lauf verifiziert auch im
+      # "nichts zu tun"-Fall (z.B. korrumpiertes Manifest eines Vortages) statt
+      # blind Exit 0 zu melden, und räumt/protokolliert wie jeder Erfolg.
+      [ "$DRY" = 1 ] && exit 0
+      verify_and_finish
       exit 0
     fi
     log "Briefing vom $RUN_DATE committet, $ahead Commit(s) nicht gepusht → push-only"

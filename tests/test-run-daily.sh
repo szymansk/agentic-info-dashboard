@@ -54,6 +54,9 @@ case "$CLAUDE_STUB" in
   ok-full) write_today; cp dashboards/ai-news/index.html docs/ai-news/index.html; cp dashboards/ai-news/archive/manifest.json docs/ai-news/archive/manifest.json
            git add dashboards docs; git commit -qm "daily: briefing $D1"; git push -q origin main; cat "$FIX/result-ok.json" ;;
   ok-nothing) cat "$FIX/result-ok.json" ;;
+  commit-no-push) write_today; cp dashboards/ai-news/index.html docs/ai-news/index.html; cp dashboards/ai-news/archive/manifest.json docs/ai-news/archive/manifest.json
+           git add dashboards docs; git commit -qm "daily: briefing $D1"; cat "$FIX/result-ok.json" ;;
+  sleep) sleep 30; cat "$FIX/result-ok.json" ;;
   half-then-529) page "$D1" live 10 1 halb > dashboards/ai-news/index.html; echo "{}" > dashboards/ai-news/archive/manifest.json
            printf "{\"is_error\":true,\"api_error_status\":529,\"terminal_reason\":\"api_error\",\"result\":\"overloaded\"}"; exit 1 ;;
   /*) cat "$CLAUDE_STUB"; exit 1 ;;
@@ -83,7 +86,7 @@ printf 'CLAUDE_CODE_OAUTH_TOKEN=sk-ant-oat01-test\nCLAUDE_MODEL=test-model\nMAX_
 mk_repo; echo x > "$R/notiz.txt"
 assert_eq "4" "$(run)" "fremder Dirt → 4"; assert_contains "notiz.txt" "$(last_out)" "Pfad im Text"
 
-# 3. idempotent: heute schon gepusht → 0, claude nicht aufgerufen, Alt-State geräumt
+# 3. idempotent: heute schon gepusht → 0, verify_and_finish läuft (last-run.json), Alt-State geräumt
 mk_repo; CLAUDE_STUB=ok-full "$STUB_BIN/claude" >/dev/null 2>&1; : > "$STUB_BIN/claude.log"
 # Reste eines früheren Fehlschlags simulieren — die Idempotenz-Kurzschluss-
 # Zeile muss sie räumen (Fix-Runde 1, Item 6), sonst bleibt der Vorfall im
@@ -91,10 +94,26 @@ mk_repo; CLAUDE_STUB=ok-full "$STUB_BIN/claude" >/dev/null 2>&1; : > "$STUB_BIN/
 echo 1 > "$STATE_DIR/attempts.$D1"
 printf 'AUTH\nalter Fehlschlag\n' > "$STATE_DIR/last-failure.daily"
 printf 'AUTH\n2020-01-01T00:00:00+0000\nalt\n' > "$STATE_DIR/last-alert"
-assert_eq "0" "$(run)" "schon erledigt → 0"; assert_eq "" "$(cat "$STUB_BIN/claude.log")" "claude nicht aufgerufen"
+assert_eq "0" "$(run)" "schon erledigt → 0"
+# write_last_run() fragt "$CLAUDE_BIN" --version ab (last-run.json-CLI-Version,
+# harmlos) — nur ein echter claude -p-Lauf zählt als "claude aufgerufen" (A2).
+assert_eq "" "$(grep -v '^--version$' "$STUB_BIN/claude.log" 2>/dev/null)" "claude nicht aufgerufen (nur --version)"
 assert_eq "" "$(cat "$STATE_DIR/attempts.$D1" 2>/dev/null)" "Zähler bei Idempotenz geräumt"
 assert_eq "" "$(cat "$STATE_DIR/last-failure.daily" 2>/dev/null)" "last-failure bei Idempotenz geräumt"
 assert_eq "" "$(cat "$STATE_DIR/last-alert" 2>/dev/null)" "last-alert bei Idempotenz geräumt"
+assert_eq "0" "$(python3 -c 'import json,sys;print(json.load(open(sys.argv[1]))["exit"])' "$STATE_DIR/last-run.json")" "Idempotenz ruft verify_and_finish (last-run.json exit 0)"
+
+# 3b. idempotent, aber Manifest kaputt (committet+gepusht) → 10 QUALITY über den Idempotenz-Pfad (A2)
+mk_repo
+( cd "$R" && . "$T_ROOT/gen.sh" && page "$D1" live 80 3 neu > dashboards/ai-news/index.html \
+  && page "$D0" archive 80 3 alt > "dashboards/ai-news/archive/$D0.html" \
+  && echo '{}' > dashboards/ai-news/archive/manifest.json \
+  && cp dashboards/ai-news/index.html docs/ai-news/index.html \
+  && cp dashboards/ai-news/archive/manifest.json docs/ai-news/archive/manifest.json \
+  && git add -A && git commit -qm heute && git push -q origin main )
+: > "$STUB_BIN/claude.log"
+assert_eq "10" "$(run)" "idempotent, Manifest kaputt → 10 QUALITY"
+assert_contains "QUALITY" "$(cat "$STATE_DIR/last-failure.daily" 2>/dev/null)" "last-failure QUALITY (idempotenter Pfad)"
 
 # 4. push-only: committet, nicht gepusht → pusht, 0, claude nicht aufgerufen
 mk_repo; ( cd "$R" && . "$T_ROOT/gen.sh" && page "$D1" live 80 3 neu > dashboards/ai-news/index.html && page "$D0" archive 80 3 alt > "dashboards/ai-news/archive/$D0.html" \
@@ -167,4 +186,70 @@ assert_eq "AUTH" "$(sed -n 1p "$STATE_DIR/last-alert" 2>/dev/null)" "last-alert 
 # 11. Lock belegt → 0 ohne Alarm
 mk_repo; ( exec 9>"$STATE_DIR/run.lock"; flock 9; sleep 3 ) & sleep 0.3
 assert_eq "0" "$(run)" "Lock belegt → 0"; assert_contains "Lock" "$(last_out)" "Lock-Hinweis"; wait
+
+# 12. dry-run wartet NICHT auf das Lock (A1) — auch nicht bei großem LOCK_WAIT_SEC.
+# LOCK_WAIT_SEC=1 ist oben schon exportiert (macht auch den Nicht-dry-Fall in
+# Test 11 schnell); hier testen wir explizit mit einem großen Wert, damit ein
+# Regress auf "dry-run wartet wie der echte Lauf" nicht durch den kleinen
+# Test-Default verdeckt wird.
+mk_repo; ( exec 9>"$STATE_DIR/run.lock"; flock 9; sleep 3 ) & sleep 0.3
+t0="$(date +%s)"
+assert_eq "0" "$(LOCK_WAIT_SEC=30 run --dry-run)" "dry-run mit gehaltenem Lock (LOCK_WAIT_SEC=30) → 0"
+t1="$(date +%s)"
+assert_contains "Lauf aktiv" "$(last_out)" "dry-run Lock-Hinweis"
+if [ "$((t1 - t0))" -le 2 ]; then fast=ja; else fast=nein; fi
+assert_eq "ja" "$fast" "dry-run kehrt sofort zurück, wartet nicht bis LOCK_WAIT_SEC=30"
+wait
+
+# 13. commit-then-fail: Lauf committet, pusht aber nicht (Stub bricht danach ab) →
+# 6 OUTCOME; HEAD bewegt sich; kein Stash (Cleanup fasst nach einem Commit nichts
+# mehr an); Quell-Manifest behält den heutigen Live-Eintrag (kein Restore aus
+# manifest.bak) — Spec-Invariante v2.1 "Cleanup nach Commit" (A3).
+mk_repo; export CLAUDE_STUB=commit-no-push
+head_before="$(git -C "$R" rev-parse HEAD)"
+assert_eq "6" "$(run)" "commit ohne push → 6 OUTCOME"
+assert_contains "OUTCOME" "$(cat "$STATE_DIR/last-failure.daily" 2>/dev/null)" "last-failure OUTCOME"
+head_after="$(git -C "$R" rev-parse HEAD)"
+if [ "$head_before" != "$head_after" ]; then moved=ja; else moved=nein; fi
+assert_eq "ja" "$moved" "HEAD hat sich bewegt (Lauf hat committet)"
+assert_eq "0" "$(git -C "$R" stash list | wc -l)" "kein Stash nach Commit (kein Cleanup nach Commit)"
+assert_contains "\"url\":\"/ai-news/\"" "$(cat "$R/dashboards/ai-news/archive/manifest.json")" "Quell-Manifest behält heutigen Live-Eintrag (kein Restore)"
+
+# 14. non-fast-forward push: nach dem ungepushten Commit aus Test 13 (derselbe
+# Repo-Zustand, mk_repo NICHT erneut aufgerufen) pusht ein zweiter Klon einen
+# abweichenden Commit auf origin/main → der nächste Lauf sieht beim
+# ff-only-Merge eine Divergenz → 9 REPO, noch vor jedem claude-Aufruf.
+rm -rf "$T_ROOT/clone2"
+git clone -q "$T_ROOT/origin.git" "$T_ROOT/clone2"
+git -C "$T_ROOT/clone2" config user.email t2@t; git -C "$T_ROOT/clone2" config user.name t2
+echo fremd > "$T_ROOT/clone2/fremd.txt"
+git -C "$T_ROOT/clone2" add fremd.txt; git -C "$T_ROOT/clone2" commit -qm fremd
+git -C "$T_ROOT/clone2" push -q origin main
+: > "$STUB_BIN/claude.log"
+assert_eq "9" "$(run)" "non-fast-forward push → 9 REPO"
+assert_eq "REPO" "$(sed -n 1p "$STATE_DIR/last-failure.daily" 2>/dev/null)" "last-failure REPO (Zeile 1)"
+assert_eq "" "$(grep -v '^--version$' "$STUB_BIN/claude.log" 2>/dev/null)" "claude -p beim REPO-Abbruch nicht aufgerufen (Schritt 4 bricht vor Schritt 7 ab)"
+unset CLAUDE_STUB
+
+# 15. trap: SIGTERM während claude -p (Stub-Modus "sleep") → 5 TIMEOUT. bash führt
+# den Trap erst nach Ende des Kindprozesses aus (Spec 5.2/5.1) — deshalb muss
+# auch der claude-Stub das Signal bekommen, sonst hängt der Test bis zu 30 s.
+# run-daily.sh läuft per setsid als eigener Session-/Gruppen-Leader (pgid ==
+# seine eigene PID, mangels --fork exec'd setsid direkt hinein); das Signal
+# geht an die ganze Gruppe (kill -TERM -- -<pgid>) und trifft damit run-daily.sh
+# UND den claude-Stub gleichzeitig — nicht aber diesen Testprozess (andere
+# Gruppe). Kein Wrapper-Skript nötig: run-daily.sh selbst ist "$bgpid", `wait`
+# liefert direkt seinen echten Exit-Code (nicht den eines Zwischenprozesses,
+# der vom selben Signal miterschlagen werden könnte).
+mk_repo; export CLAUDE_STUB=sleep
+setsid "$R/bin/run-daily.sh" </dev/null >"$T_ROOT/trap-out" 2>&1 &
+bgpid=$!
+sleep 1.3   # Preflight + claude-Start abwarten, bevor wir TERMen
+kill -TERM -- "-$bgpid" 2>/dev/null
+rc=0; wait "$bgpid" 2>/dev/null || rc=$?
+assert_eq "5" "$rc" "SIGTERM während claude -p → 5 TIMEOUT"
+assert_eq "TIMEOUT" "$(sed -n 1p "$STATE_DIR/last-failure.daily" 2>/dev/null)" "last-failure TIMEOUT"
+assert_eq "1" "$(cat "$STATE_DIR/attempts.$D1" 2>/dev/null)" "attempts=1 nach Timeout"
+unset CLAUDE_STUB
+
 test_summary
