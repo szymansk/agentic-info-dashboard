@@ -22,5 +22,6 @@ assert_eq "own" "$(printf ' M dashboards/ai-news/index.html\n?? docs/ai-news/arc
 assert_eq "foreign" "$(printf ' M dashboards/ai-news/index.html\n M bin/check.sh\n' | classify_dirt)" "foreign (bin)"
 assert_eq "foreign" "$(printf '?? notizen.txt\n' | classify_dirt)" "foreign (untracked root)"
 assert_eq "own" "$(printf 'R  docs/a.html -> docs/b.html\n' | classify_dirt)" "rename → Zielpfad"
+assert_eq "own" "$(printf ' M "dashboards/ai-news/x y.html"\n' | classify_dirt)" "quoted own path → own"
 assert_eq "foreign" "$(printf ' M "dashboards/ai-news/x y.html"\n M DAILY_UPDATE.md\n' | classify_dirt)" "quoted + foreign"
 test_summary
