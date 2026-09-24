@@ -27,13 +27,16 @@ done
 
 cd "$PROJECT_DIR" || exit 64
 
-# Vorheriger Live-Snapshot: erster HEAD-Stand von index.html, dessen Datum < aktuellem Datum
+# Vorheriger Live-Snapshot: erster Commit-Stand von index.html (aus der
+# Datei-Historie, nicht HEAD~N — dazwischenliegende Infra-Commits, die
+# index.html nicht anfassen, dürfen die Suche nicht verkürzen), dessen
+# Datum < aktuellem Datum ist.
 CUR_DATE="$(snapshot_date dashboards/ai-news/index.html)"
 if [ -z "$PREV" ]; then
-  for rev in HEAD HEAD~1 HEAD~2 HEAD~3; do
+  while IFS= read -r rev; do
     d="$(git show "$rev:dashboards/ai-news/index.html" 2>/dev/null | grep -oE 'data-snapshot-date="[0-9-]{10}"' | head -1 | grep -oE '[0-9-]{10}' || true)"
     if [ -n "$d" ] && [[ "$d" < "$CUR_DATE" ]]; then PREV="$d"; PREV_REV="$rev"; break; fi
-  done
+  done < <(git log -n 20 --format=%H -- dashboards/ai-news/index.html 2>/dev/null)
 fi
 PREV_TEXT_FILE=""
 if [ -n "$PREV" ]; then

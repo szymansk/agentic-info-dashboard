@@ -93,5 +93,24 @@ assert_eq "6" "$(run --full --date "$D1")" "ahead → not-deployed"
 # Nachhollauf über Mitternacht: --date gestern, Briefing heute → ok
 mk_repo; good_today
 assert_eq "0" "$(run --pre-deploy --date "$D0")" "Datum ≥ Startdatum ok"
+
+# Zwischen-Commits ohne index.html-Touch dürfen die PREV-Suche nicht
+# verkürzen (Fix Runde 1): index.html erst committen, dann mehrere
+# themenfremde Commits (notes/*.txt), die den "heute"-Commit weiter als
+# HEAD~3 zurückschieben. Nur so unterscheidet der Test alte (HEAD..HEAD~3)
+# von neuer (Datei-Historie über "git log -- <pfad>") PREV-Suche — mit
+# unverändertem index.html bliebe der Inhalt über beliebig viele
+# Zwischen-Commits identisch und selbst die alte Suche fände ihn sofort.
+mk_repo; good_today
+git -C "$R" add dashboards/ai-news/index.html; git -C "$R" commit -qm heute-index
+mkdir -p "$R/notes"
+for f in a b c d; do
+  printf '%s\n' "$f" > "$R/notes/$f.txt"
+  git -C "$R" add "notes/$f.txt"; git -C "$R" commit -qm "infra $f"
+done
+assert_eq "0" "$(run --pre-deploy --date "$D1")" "PREV trotz >3 themenfremden Zwischen-Commits gefunden (happy path)"
+rm "$R/dashboards/ai-news/archive/$D0.html"
+assert_eq "10" "$(run --pre-deploy --date "$D1")" "Archiv-Check feuert trotz >3 themenfremden Zwischen-Commits"
+
 assert_rc 64 "usage" -- "$V"
 test_summary
