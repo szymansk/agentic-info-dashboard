@@ -3,7 +3,8 @@
 Du bist in `agentic-info-dashboard` — einem Multi-Dashboard für AI/Agentic-AI-
 Themen. Lokal via `serve.py`, öffentlich via GitHub Pages
 (**https://szymansk.github.io/agentic-info-dashboard/**). Inhalte werden teils
-manuell, teils automatisch über eine Background-Claude-Session aktualisiert.
+manuell, teils automatisch über einen täglichen systemd-Oneshot (`claude -p`,
+siehe „Tageslauf-Mechanik”) aktualisiert.
 
 ## Architektur in 30 Sekunden
 
@@ -95,7 +96,7 @@ mit `DAILY_UPDATE.md` ausführt (Token aus `~/.config/ai-news-dashboard/daily.en
 nur in dieser Prozessumgebung). Design und Begründung: `specs/2026-09-24-daily-run-oneshot-design.md`.
 
 **Runbook**
-- Zustand: `./bin/check.sh` (Sektion „daily run"), `journalctl -u ai-news-dashboard-daily -n 40`,
+- Zustand: `./bin/check.sh` (Sektion „daily run”), `journalctl -u ai-news-dashboard-daily -n 40`,
   `journalctl -t ai-news-alert`, `~/.local/state/ai-news-dashboard/last-run.json`
 - Lauf von Hand: `sudo systemctl start ai-news-dashboard-daily.service` (idempotent: steht das
   heutige Briefing schon, Exit 0). Danach `sudo systemctl reset-failed …` + `bin/run-daily.sh --reset-attempts`,
