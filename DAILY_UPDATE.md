@@ -241,8 +241,11 @@ Das Skript:
 3. commitet nur falls etwas neu ist
 4. pusht nach `origin/main` — Pages rendert in ~30s neu
 
-Wenn `deploy.sh` mit Exit-Code ≠ 0 endet: STOP, halte an, logge die
-Fehlermeldung. NICHT erzwingen.
+Wenn `deploy.sh` mit Exit-Code ≠ 0 endet: NICHT erzwingen (kein `--force`, kein
+Reset). Einmal `git fetch origin` und die Fehlermeldung lesen; ist es ein
+non-fast-forward ohne Konflikte, `git rebase origin/main` und `deploy.sh` erneut.
+Scheitert es danach weiter: als letzte Ausgabezeile
+`BLOCKED: Deploy fehlgeschlagen — <erste Zeile der Fehlermeldung>` ausgeben und aufhören.
 
 ---
 
@@ -274,12 +277,13 @@ sie ins Journal und nach `~/.local/state/ai-news-dashboard/last-run.json`;
 
 ## Wenn etwas schiefgeht
 
-- API rate limit (GitHub) → einmal warten, nochmal probieren, dann
-  pausieren und User informieren
+- API rate limit (GitHub, WebSearch) → 60 s warten und einmal wiederholen; scheitert
+  es erneut, mit den bereits vorhandenen Quellen weitermachen (weniger Items sind
+  ok). Nur wenn gar keine Daten möglich sind: `BLOCKED: <Grund>` und aufhören.
 - WebSearch liefert dünne Treffer → ggf. weniger Breaking News (3 statt 6)
   ist OK, kein erzwungener Füll-Content
-- Snapshot-Konflikt (Archiv-Datei für heute existiert schon) → Idempotenz
-  greift schon in Schritt 0, normalerweise unmöglich
+- Briefing trägt schon das heutige Datum → Schritt 0 hat den Lauf bereits mit
+  `STATUS: Heute bereits aktualisiert` beendet; kein Sonderfall mehr.
 
 ## Wenn du fertig bist
 
