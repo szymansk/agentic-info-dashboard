@@ -16,7 +16,9 @@
 #                die Ausgabe mehr als einen write() lang ist; seit CLI 2.1.243).
 #                Tot? → `claude daemon stop --any` (transiente Daemons
 #                brauchen --any, ohne wird nichts gestoppt).
-#   3. Session   Roster + PID → lebt?
+#   3. Session   Roster + PID → lebt? Wartet sie auf eine unbeantwortete
+#                Rückfrage (AskUserQuestion im Transcript)? → ALARM BLOCKED,
+#                kein Neustart (die Frage würde sich nur wiederholen).
 #   4. ERGEBNIS  Briefing-Datum in dashboards/ai-news/index.html. Älter als
 #                MAX_BRIEFING_AGE_DAYS und Session idle → Zombie → Neustart
 #                (mit Cooldown + Tageslimit; danach ALARM, Exit 2). Eine
@@ -259,6 +261,31 @@ session_busy() {  # $1=sid → 0 wenn Transcript/Timeline in den letzten BUSY_WI
   [ "$newest" -gt 0 ] && [ $(( $(date +%s) - newest )) -lt "$BUSY_WINDOW_SEC" ]
 }
 
+session_blocked_question() {  # $1=sid → druckt die offene Frage, wenn die Session auf AskUserQuestion wartet
+  local f="$HOME/.claude/projects/$SLUG/$1.jsonl"
+  [ -f "$f" ] || return 0
+  python3 - "$f" <<'PY'
+import json, sys
+pending = {}
+for line in open(sys.argv[1]):
+    try: d = json.loads(line)
+    except Exception: continue
+    content = (d.get('message') or {}).get('content')
+    if not isinstance(content, list): continue
+    for c in content:
+        if not isinstance(c, dict): continue
+        if c.get('type') == 'tool_use':
+            pending = {}
+            if c.get('name') == 'AskUserQuestion':
+                qs = (c.get('input') or {}).get('questions') or [{}]
+                pending[c.get('id')] = qs[0].get('question', '?')
+        elif c.get('type') == 'tool_result':
+            pending.pop(c.get('tool_use_id'), None)
+q = next(iter(pending.values()), None)
+if q: print(q.replace('\n', ' ')[:300])
+PY
+}
+
 # ── 4. Ergebnis: Briefing-Frische ────────────────────────────────────
 read_briefing_age() {  # setzt BRIEFING_DATE + BRIEFING_AGE (Tage); keine Subshell!
   local html="$PROJECT_DIR/dashboards/ai-news/index.html" d
@@ -312,6 +339,9 @@ start_session() {
   local prompt
   prompt="/loop 24h Lies $PROMPT_FILE und führe den dort beschriebenen Daily-Update-Workflow für das ai-news-dashboard aus. Working directory ist $PROJECT_DIR. Halte an mit konkreter Frage, falls etwas blockiert. Am Ende eine einzeilige Status-Bilanz ausgeben."
   cd "$PROJECT_DIR"
+  if [ -n "$(git status --porcelain 2>/dev/null)" ]; then
+    warn "Working Tree ist nicht clean — die Session könnte deshalb eine Rückfrage stellen (deploy.sh macht git add -A). Vorher committen ist sicherer."
+  fi
   log "→ starte neue Background-Session '$SESSION_NAME' (model=$CLAUDE_MODEL)"
   log "   prompt-file: $PROMPT_FILE"
   # --dangerously-skip-permissions: der Loop arbeitet ohne Interaktion
@@ -373,6 +403,15 @@ main() {
 
   # 4. Ergebnis
   if [ "$alive" = 1 ]; then
+    # Session wartet auf eine Antwort, die niemand gibt? Das ist der stille Stopp
+    # Nr. 1 im unbeaufsichtigten Betrieb. Nicht neu starten (--force via
+    # loop.sh restart macht das bewusst), sondern sichtbar machen.
+    local question
+    question="$(session_blocked_question "$sid")"
+    if [ -n "$question" ] && [ "$FORCE" != 1 ]; then
+      alert BLOCKED "Session ${sid%%-*} wartet auf eine Antwort: „${question}” → antworten mit ./bin/loop.sh attach, oder ./bin/loop.sh restart (bei sauberem Working Tree fragt sie meist nicht erneut)."
+      exit 2
+    fi
     if [ "$age" -lt "$MAX_BRIEFING_AGE_DAYS" ]; then
       log "✓ Session '$SESSION_NAME' aktiv (id=${sid%%-*}, pid=$pid), Briefing vom $BRIEFING_DATE (${age} Tage) — nichts zu tun"
       clear_alert

@@ -245,6 +245,12 @@ Am 2026-09-24 stand das Briefing **75 Tage** (seit 11.07.), YouTube/Server frisc
   Session wird erst ersetzt, wenn das Briefing ≥ 5 Tage alt ist UND die Session
   länger als 6 h läuft (sonst würde ein frisch gestarteter Ersatz sofort wieder
   als „stuck" gelten — genau das passierte beim ersten Scharfschalten).
+- **Blockierte Session**: wartet die Session auf eine unbeantwortete Rückfrage
+  (`AskUserQuestion` ohne Antwort im Transcript), gibt es ALARM `BLOCKED` mit dem
+  Fragetext, keinen Neustart. Antworten: `./bin/loop.sh attach`; oder
+  `./bin/loop.sh restart` (bei sauberem Working Tree fragt sie meist nicht
+  erneut — ein unsauberer Tree ist der häufigste Auslöser, weil `deploy.sh`
+  `git add -A` macht). Beim ersten Scharfschalten am 24.09. passierte genau das.
 - **Alarme**: `journalctl -t ai-news-watchdog`,
   `~/.local/state/ai-news-dashboard/alerts.log` + `last-alert` (zeigt
   `check.sh`), optional ntfy über `~/.config/ai-news-dashboard/watchdog.env`
