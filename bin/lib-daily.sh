@@ -58,3 +58,51 @@ days_between() {  # <früher> <später> → ganze Tage
 
 state_write() { mkdir -p "$STATE_DIR"; printf '%s\n' "$2" > "$STATE_DIR/$1"; }
 state_read()  { [ -f "$STATE_DIR/$1" ] && cat "$STATE_DIR/$1" || true; }
+
+# ── Klassifikation (Spec 5.2) ─────────────────────────────────────────
+# classify_result <json-datei> → "<code> <ART> <text>"
+#   0 OK · 3 AUTH (401/403) · 8 API (400/404, Budget) · 7 BLOCKED · 5 RUN (Rest, kein JSON)
+classify_result() {
+  python3 - "$1" <<'PY'
+import json, sys
+try:
+    d = json.load(open(sys.argv[1], encoding="utf-8"))
+    assert isinstance(d, dict)
+except Exception as e:
+    print("5 RUN keine auswertbare JSON-Ausgabe (%s)" % type(e).__name__); sys.exit(0)
+st = d.get("api_error_status"); tr = d.get("terminal_reason")
+res = d.get("result") or ""
+short = res.replace("\n", " ")[:160] or str(d.get("errors") or "")[:160]
+if d.get("is_error") or tr not in (None, "completed"):
+    if st in (401, 403): print(f"3 AUTH api {st}: {short}")
+    elif st in (400, 404) or tr == "budget_exhausted": print(f"8 API {tr or st}: {short}")
+    else: print(f"5 RUN {tr or st}: {short}")
+    sys.exit(0)
+blocked = [l.strip() for l in res.splitlines() if l.strip().startswith("BLOCKED:")]
+if blocked: print("7 BLOCKED " + blocked[0][8:].strip()[:160]); sys.exit(0)
+print("0 OK")
+PY
+}
+
+# Eigener Dirt = generierte Pfade; alles andere ist fremd (Spec 5.2).
+OWN_DIRT_PATHS=(dashboards/ai-news dashboards/it-services docs)
+
+# classify_dirt: liest `git status --porcelain --untracked-files=all` von stdin
+# → clean | own | foreign
+classify_dirt() {
+  local line path own=0 foreign=0 p match
+  while IFS= read -r line; do
+    [ -n "$line" ] || continue
+    path="${line:3}"
+    path="${path##* -> }"                 # Rename: Zielpfad
+    path="${path#\"}"; path="${path%\"}"  # Quoting bei Sonderzeichen
+    match=0
+    for p in "${OWN_DIRT_PATHS[@]}"; do
+      [[ "$path" == "$p/"* ]] && match=1
+    done
+    if [ "$match" = 1 ]; then own=1; else foreign=1; fi
+  done
+  if [ "$foreign" = 1 ]; then echo foreign
+  elif [ "$own" = 1 ]; then echo own
+  else echo clean; fi
+}
