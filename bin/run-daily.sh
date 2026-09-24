@@ -193,9 +193,16 @@ try:
     d = json.load(open(sys.argv[1]))
 except Exception:
     d = None
-items = []
-if isinstance(d, list): items = d
-elif isinstance(d, dict): items = d.get("workers") or d.get("sessions") or list(d.values())
+items = None
+if isinstance(d, list):
+    items = d
+elif isinstance(d, dict):
+    items = d.get("workers")
+    if items is None: items = d.get("sessions")
+    if items is None: items = list(d.values())
+# "workers"/"sessions" ist in der echten roster.json ein dict, keyed by ID
+# (Fix F1) — nicht nur die Top-Ebene kann ein dict sein.
+if isinstance(items, dict): items = list(items.values())
 if not isinstance(items, list): items = []
 for w in items:
     if not isinstance(w, dict): continue

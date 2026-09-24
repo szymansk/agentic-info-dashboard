@@ -55,7 +55,13 @@ case "$CLAUDE_STUB" in
            git add dashboards docs; git commit -qm "daily: briefing $D1"; git push -q origin main; cat "$FIX/result-ok.json" ;;
   ok-nothing) cat "$FIX/result-ok.json" ;;
   commit-no-push) write_today; cp dashboards/ai-news/index.html docs/ai-news/index.html; cp dashboards/ai-news/archive/manifest.json docs/ai-news/archive/manifest.json
-           git add dashboards docs; git commit -qm "daily: briefing $D1"; cat "$FIX/result-ok.json" ;;
+           git add dashboards docs; git commit -qm "daily: briefing $D1"
+           # Dirt NACH dem Commit hinterlassen (Fix F2): stellt sicher, dass der
+           # HEAD-Guard in cleanup_leftovers() greift, nicht bloß zufällig ein
+           # sauberer Tree vorlag. Own-Dirt-Pfad (dashboards/ai-news), damit ein
+           # regressiver Guard ihn stashen WÜRDE, wenn er nicht früh zurückkehrt.
+           echo "<!-- dirty nach Commit (F2) -->" >> dashboards/ai-news/index.html
+           cat "$FIX/result-ok.json" ;;
   sleep) sleep 30; cat "$FIX/result-ok.json" ;;
   half-then-529) page "$D1" live 10 1 halb > dashboards/ai-news/index.html; echo "{}" > dashboards/ai-news/archive/manifest.json
            printf "{\"is_error\":true,\"api_error_status\":529,\"terminal_reason\":\"api_error\",\"result\":\"overloaded\"}"; exit 1 ;;
@@ -201,24 +207,39 @@ if [ "$((t1 - t0))" -le 2 ]; then fast=ja; else fast=nein; fi
 assert_eq "ja" "$fast" "dry-run kehrt sofort zurück, wartet nicht bis LOCK_WAIT_SEC=30"
 wait
 
-# 13. commit-then-fail: Lauf committet, pusht aber nicht (Stub bricht danach ab) →
-# 6 OUTCOME; HEAD bewegt sich; kein Stash (Cleanup fasst nach einem Commit nichts
-# mehr an); Quell-Manifest behält den heutigen Live-Eintrag (kein Restore aus
-# manifest.bak) — Spec-Invariante v2.1 "Cleanup nach Commit" (A3).
+# 13. commit-then-fail: Lauf committet, pusht aber nicht (Stub bricht danach ab)
+# UND hinterlässt zusätzlich Dirt in einer eigenen Datei (F2: der commit-no-push-
+# Stub hängt nach dem Commit eine Zeile an index.html an) → 6 OUTCOME; HEAD bewegt
+# sich; kein Stash (Cleanup fasst nach einem Commit NICHTS mehr an, auch nicht die
+# zusätzliche Dirt — das ist genau die Guard-Invariante, die dieser Test prüft);
+# die dirty Änderung bleibt im Working Tree stehen (nicht gestasht); Quell-Manifest
+# behält den heutigen Live-Eintrag (kein Restore aus manifest.bak) — Spec-Invariante
+# v2.1 "Cleanup nach Commit" (A3/F2).
 mk_repo; export CLAUDE_STUB=commit-no-push
 head_before="$(git -C "$R" rev-parse HEAD)"
-assert_eq "6" "$(run)" "commit ohne push → 6 OUTCOME"
+assert_eq "6" "$(run)" "commit ohne push (+Dirt danach) → 6 OUTCOME"
 assert_contains "OUTCOME" "$(cat "$STATE_DIR/last-failure.daily" 2>/dev/null)" "last-failure OUTCOME"
 head_after="$(git -C "$R" rev-parse HEAD)"
 if [ "$head_before" != "$head_after" ]; then moved=ja; else moved=nein; fi
 assert_eq "ja" "$moved" "HEAD hat sich bewegt (Lauf hat committet)"
-assert_eq "0" "$(git -C "$R" stash list | wc -l)" "kein Stash nach Commit (kein Cleanup nach Commit)"
+assert_eq "0" "$(git -C "$R" stash list | wc -l)" "kein Stash nach Commit (HEAD-Guard verhindert Cleanup, F2)"
+assert_contains "dirty nach Commit" "$(cat "$R/dashboards/ai-news/index.html")" "dirty Änderung bleibt im Tree stehen (nicht gestasht, F2)"
 assert_contains "\"url\":\"/ai-news/\"" "$(cat "$R/dashboards/ai-news/archive/manifest.json")" "Quell-Manifest behält heutigen Live-Eintrag (kein Restore)"
+assert_contains "\"date\":\"$D1\"" "$(cat "$R/dashboards/ai-news/archive/manifest.json")" "Quell-Manifest enthält den heutigen Eintrag (F2)"
+unset CLAUDE_STUB
 
-# 14. non-fast-forward push: nach dem ungepushten Commit aus Test 13 (derselbe
-# Repo-Zustand, mk_repo NICHT erneut aufgerufen) pusht ein zweiter Klon einen
-# abweichenden Commit auf origin/main → der nächste Lauf sieht beim
-# ff-only-Merge eine Divergenz → 9 REPO, noch vor jedem claude-Aufruf.
+# 14. ff-only Divergenz → 9: committet+gepusht (sauberer Ausgangszustand, WIE der
+# push-only-Test — bewusst NICHT der commit-no-push-Stub, der seit F2 absichtlich
+# Dirt hinterlässt), dann pusht ein zweiter Klon einen abweichenden Commit auf
+# origin/main → der nächste Lauf legt lokal denselben committeten-aber-ungepushten
+# Stand an (push-only-Pfad würde greifen), sieht beim ff-only-Merge aber zuerst
+# eine Divergenz → 9 REPO, noch vor jedem claude-Aufruf.
+mk_repo
+( cd "$R" && . "$T_ROOT/gen.sh" && page "$D1" live 80 3 neu > dashboards/ai-news/index.html \
+  && page "$D0" archive 80 3 alt > "dashboards/ai-news/archive/$D0.html" \
+  && manifest "$(entry "$D0" "/ai-news/archive/$D0.html"),$(entry "$D1" /ai-news/)" > dashboards/ai-news/archive/manifest.json \
+  && cp dashboards/ai-news/index.html docs/ai-news/index.html && cp dashboards/ai-news/archive/manifest.json docs/ai-news/archive/manifest.json \
+  && git add -A && git commit -qm heute )
 rm -rf "$T_ROOT/clone2"
 git clone -q "$T_ROOT/origin.git" "$T_ROOT/clone2"
 git -C "$T_ROOT/clone2" config user.email t2@t; git -C "$T_ROOT/clone2" config user.name t2
@@ -226,10 +247,28 @@ echo fremd > "$T_ROOT/clone2/fremd.txt"
 git -C "$T_ROOT/clone2" add fremd.txt; git -C "$T_ROOT/clone2" commit -qm fremd
 git -C "$T_ROOT/clone2" push -q origin main
 : > "$STUB_BIN/claude.log"
-assert_eq "9" "$(run)" "non-fast-forward push → 9 REPO"
+assert_eq "9" "$(run)" "ff-only Divergenz → 9"
 assert_eq "REPO" "$(sed -n 1p "$STATE_DIR/last-failure.daily" 2>/dev/null)" "last-failure REPO (Zeile 1)"
 assert_eq "" "$(grep -v '^--version$' "$STUB_BIN/claude.log" 2>/dev/null)" "claude -p beim REPO-Abbruch nicht aufgerufen (Schritt 4 bricht vor Schritt 7 ab)"
-unset CLAUDE_STUB
+
+# 14b. push_only: echter Push-Reject via pre-receive-Hook im Bare-Origin (F3) →
+# 9 REPO, last-failure.daily Zeile 2 enthält "push abgelehnt". Startzustand:
+# committet, ahead, heute-datiert, Tree clean — wie Test 14/der bestehende
+# push-only-Test (Fall 4), NICHT der commit-no-push-Stub (der ist seit F2 dirty).
+mk_repo
+( cd "$R" && . "$T_ROOT/gen.sh" && page "$D1" live 80 3 neu > dashboards/ai-news/index.html \
+  && page "$D0" archive 80 3 alt > "dashboards/ai-news/archive/$D0.html" \
+  && manifest "$(entry "$D0" "/ai-news/archive/$D0.html"),$(entry "$D1" /ai-news/)" > dashboards/ai-news/archive/manifest.json \
+  && cp dashboards/ai-news/index.html docs/ai-news/index.html && cp dashboards/ai-news/archive/manifest.json docs/ai-news/archive/manifest.json \
+  && git add -A && git commit -qm heute )
+mkdir -p "$T_ROOT/origin.git/hooks"
+printf '#!/usr/bin/env bash\necho "rejected by hook" >&2\nexit 1\n' > "$T_ROOT/origin.git/hooks/pre-receive"
+chmod +x "$T_ROOT/origin.git/hooks/pre-receive"
+: > "$STUB_BIN/claude.log"
+assert_eq "9" "$(run)" "push_only: pre-receive-Hook lehnt ab → 9 REPO"
+assert_eq "REPO" "$(sed -n 1p "$STATE_DIR/last-failure.daily" 2>/dev/null)" "last-failure REPO (Hook-Reject, Zeile 1)"
+assert_contains "push abgelehnt" "$(sed -n 2p "$STATE_DIR/last-failure.daily" 2>/dev/null)" "last-failure Zeile 2 nennt Push-Ablehnung"
+rm -f "$T_ROOT/origin.git/hooks/pre-receive"
 
 # 15. trap: SIGTERM während claude -p (Stub-Modus "sleep") → 5 TIMEOUT. bash führt
 # den Trap erst nach Ende des Kindprozesses aus (Spec 5.2/5.1) — deshalb muss
@@ -251,5 +290,27 @@ assert_eq "5" "$rc" "SIGTERM während claude -p → 5 TIMEOUT"
 assert_eq "TIMEOUT" "$(sed -n 1p "$STATE_DIR/last-failure.daily" 2>/dev/null)" "last-failure TIMEOUT"
 assert_eq "1" "$(cat "$STATE_DIR/attempts.$D1" 2>/dev/null)" "attempts=1 nach Timeout"
 unset CLAUDE_STUB
+
+# 16. Übergangs-Warnung (A4/F1): roster.json in echter Form — "workers" ist ein
+# dict, keyed by ID (nicht die Top-Ebene). Sandboxed HOME, damit run-daily.sh
+# $HOME/.claude/daemon/roster.json unter unserer Kontrolle liest.
+mk_repo
+mkdir -p "$T_ROOT/home/.claude/daemon"
+sleep 60 & live_pid=$!
+python3 -c 'import json,sys
+json.dump({"workers":{"abc":{"pid":int(sys.argv[1]),"dispatch":{"seed":{"name":"daily-ai-update"}}}}}, open(sys.argv[2],"w"))' \
+  "$live_pid" "$T_ROOT/home/.claude/daemon/roster.json"
+out16="$(cd "$R" && HOME="$T_ROOT/home" CLAUDE_BIN="$CLAUDE_BIN" "$R/bin/run-daily.sh" --dry-run 2>&1 </dev/null)"
+assert_contains "alte Background-Session" "$out16" "F1: Warnung bei dict-workers + lebendem PID"
+kill "$live_pid" 2>/dev/null; wait "$live_pid" 2>/dev/null
+
+# toter PID (bereits beendet + eingesammelt) → keine Warnung
+( : ) & dead_pid=$!
+wait "$dead_pid" 2>/dev/null
+python3 -c 'import json,sys
+json.dump({"workers":{"abc":{"pid":int(sys.argv[1]),"dispatch":{"seed":{"name":"daily-ai-update"}}}}}, open(sys.argv[2],"w"))' \
+  "$dead_pid" "$T_ROOT/home/.claude/daemon/roster.json"
+out16b="$(cd "$R" && HOME="$T_ROOT/home" CLAUDE_BIN="$CLAUDE_BIN" "$R/bin/run-daily.sh" --dry-run 2>&1 </dev/null)"
+assert_eq "" "$(grep -o 'alte Background-Session' <<<"$out16b")" "F1: keine Warnung bei totem PID"
 
 test_summary
