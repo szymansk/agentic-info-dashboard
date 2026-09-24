@@ -1,0 +1,73 @@
+#!/usr/bin/env bash
+set -uo pipefail
+cd "$(dirname "${BASH_SOURCE[0]}")/.." || exit 1
+. tests/lib-test.sh; test_sandbox
+BIN="$PWD/bin"
+export DAILY_ENV="$CONF_DIR/daily.env" ALERT_ENV="$CONF_DIR/alert.env" ALERT_CURL="$STUB_BIN/curl"
+D1="$(date -I)"; D0="$(date -I -d "$D1 - 1 day")"; D3="$(date -I -d "$D1 - 3 day")"
+stub logger 'exit 0'
+stub curl 'echo "$@" >> "$STUB_BIN/curl.log"
+case "$*" in *callmebot*) echo "Message queued";; *) printf "<body data-snapshot-date=\"%s\">" "${PAGES_DATE:-$(date -I)}";; esac'
+stub systemctl 'printf "ActiveState=%s\nSubState=%s\nResult=%s\nInvocationID=%s\n" "${UNIT_ACTIVE:-inactive}" dead "${UNIT_RESULT:-success}" "${UNIT_INV:-aaa}"'
+stub gh 'case "$1" in auth) exit "${GH_AUTH_RC:-0}";; run) echo "success 2026-09-24T16:17:00Z";; esac'
+stub claude 'echo "$@" >> "$STUB_BIN/claude.log"; echo "{\"is_error\":${CLAUDE_LIVE_ERR:-false},\"result\":\"OK\"}"'
+export CLAUDE_BIN="$STUB_BIN/claude"
+stub timeout 'shift; exec "$@"'
+export PROJECT_DIR="$T_ROOT/proj"; mkdir -p "$PROJECT_DIR/dashboards/ai-news" "$PROJECT_DIR/dashboards/youtube"
+
+setup() {  # setup <briefing-datum> <token-created> [youtube-age-h]
+  rm -rf "$STATE_DIR"; mkdir -p "$STATE_DIR"; : > "$STUB_BIN/curl.log"; : > "$STUB_BIN/claude.log"
+  printf '<body data-snapshot-date="%s" data-snapshot-mode="live">' "$1" > "$PROJECT_DIR/dashboards/ai-news/index.html"
+  printf 'CLAUDE_CODE_OAUTH_TOKEN=sk-ant-oat01-x\nTOKEN_CREATED=%s\nCLAUDE_MODEL=m\n' "$2" > "$DAILY_ENV"
+  printf 'CALLMEBOT_PHONE=1\nCALLMEBOT_APIKEY=k\nHEARTBEAT=1\n' > "$ALERT_ENV"
+  echo '{}' > "$PROJECT_DIR/dashboards/youtube/data.json"; touch -d "-${3:-1} hours" "$PROJECT_DIR/dashboards/youtube/data.json"
+  printf '{"date":"%s","finished":"%sT08:00:00+0200","exit":0,"kind":"OK"}' "$1" "$1" > "$STATE_DIR/last-run.json"
+  touch -d "-3 hours" "$STATE_DIR/last-run.json"
+}
+kinds() { cut -f2 "$STATE_DIR/alerts.log" 2>/dev/null | sort -u | tr '\n' ' '; }
+run() { local rc=0; out="$("$BIN/watchdog.sh" "$@" 2>&1)" || rc=$?; echo "$rc"; }
+
+# 1. alles frisch → kein Alarm, dry-run 0
+setup "$D1" "$D1"; export WD_NOW_HOUR=10 WD_NOW_DOW=2 WD_NOW_WEEK=2026-39
+assert_eq "0" "$(run)" "gesund → 0"; assert_eq "" "$(kinds)" "keine Alarme"
+assert_eq "0" "$(run --dry-run)" "dry-run gesund → 0"
+
+# 2. gestern + 15 Uhr → STALE; 10 Uhr → nicht
+setup "$D0" "$D1"; WD_NOW_HOUR=15 run >/dev/null; assert_contains "STALE" "$(kinds)" "STALE ab 14 Uhr"
+setup "$D0" "$D1"; WD_NOW_HOUR=10 run >/dev/null; assert_eq "" "$(kinds)" "vor 14 Uhr kein STALE"
+setup "$D3" "$D1"; WD_NOW_HOUR=8 run >/dev/null; assert_contains "STALE" "$(kinds)" "3 Tage → STALE immer"
+setup "$D3" "$D1"; assert_eq "1" "$(WD_NOW_HOUR=8 run --dry-run)" "dry-run mit Alarm → 1"
+
+# 3. STALE unterdrückt, wenn Lauf aktiv oder Unit-Alarm < 24 h
+setup "$D3" "$D1"; UNIT_ACTIVE=activating WD_NOW_HOUR=15 run >/dev/null; assert_eq "" "$(kinds)" "kein STALE während Lauf"
+setup "$D3" "$D1"; printf 'GIVEUP\n%s\nx\n' "$(date -Is)" > "$STATE_DIR/last-alert"
+WD_NOW_HOUR=15 run >/dev/null; assert_eq "" "$(kinds | grep -o STALE)" "kein STALE nach Unit-Alarm"
+
+# 4. Token-Warnung ab 14 Tagen, einmal pro Tag
+setup "$D1" "$(date -I -d "$D1 - 355 day")"; run >/dev/null; assert_contains "TOKEN" "$(kinds)" "TOKEN-Warnung"
+n1=$(wc -l < "$STATE_DIR/alerts.log"); run >/dev/null; assert_eq "$n1" "$(wc -l < "$STATE_DIR/alerts.log")" "TOKEN nur einmal pro Tag"
+setup "$D1" "$(date -I -d "$D1 - 300 day")"; run >/dev/null; assert_eq "" "$(kinds | grep -o TOKEN)" "kein TOKEN bei 65 Tagen Rest"
+
+# 5. YouTube > 30 h
+setup "$D1" "$D1" 40; run >/dev/null; assert_contains "YOUTUBE" "$(kinds)" "YOUTUBE alt"
+
+# 6. Unit failed → FAILED einmal pro InvocationID
+setup "$D1" "$D1"; UNIT_ACTIVE=failed UNIT_RESULT=exit-code UNIT_INV=inv1 run >/dev/null
+assert_contains "FAILED" "$(kinds)" "FAILED"; n1=$(wc -l < "$STATE_DIR/alerts.log")
+UNIT_ACTIVE=failed UNIT_RESULT=exit-code UNIT_INV=inv1 run >/dev/null; assert_eq "$n1" "$(wc -l < "$STATE_DIR/alerts.log")" "FAILED nicht doppelt"
+UNIT_ACTIVE=failed UNIT_RESULT=exit-code UNIT_INV=inv2 run >/dev/null; assert_eq "$((n1+1))" "$(wc -l < "$STATE_DIR/alerts.log")" "neue InvocationID → erneut"
+
+# 7. PUBLIC_STALE: Pages zeigt altes Datum, letzter Lauf > 60 min her
+setup "$D1" "$D1"; PAGES_DATE="$D0" run >/dev/null; assert_contains "PUBLIC_STALE" "$(kinds)" "PUBLIC_STALE"
+setup "$D1" "$D1"; touch "$STATE_DIR/last-run.json"; PAGES_DATE="$D0" run >/dev/null; assert_eq "" "$(kinds | grep -o PUBLIC)" "keine PUBLIC_STALE in der Gnadenfrist"
+
+# 8. gh auth kaputt → GH_AUTH einmal pro Tag
+setup "$D1" "$D1"; GH_AUTH_RC=1 run >/dev/null; assert_contains "GH_AUTH" "$(kinds)" "GH_AUTH"
+
+# 9. Sonntag: Live-Check + Heartbeat einmal pro Woche; --resend wird aufgerufen
+setup "$D1" "$D1"; WD_NOW_DOW=7 run >/dev/null
+assert_contains "HEARTBEAT" "$(kinds)" "Heartbeat"; assert_contains "--max-turns" "$(cat "$STUB_BIN/claude.log")" "Live-Check lief"
+n1=$(wc -l < "$STATE_DIR/alerts.log"); WD_NOW_DOW=7 run >/dev/null; assert_eq "$n1" "$(wc -l < "$STATE_DIR/alerts.log")" "Heartbeat nur einmal pro Woche"
+setup "$D1" "$D1"; CLAUDE_LIVE_ERR=true WD_NOW_DOW=7 run >/dev/null; assert_contains "TOKEN_LIVE" "$(kinds)" "Live-Check-Fehler → TOKEN_LIVE"
+setup "$D1" "$D1"; WD_NOW_DOW=7 run --dry-run >/dev/null; assert_eq "" "$(cat "$STUB_BIN/claude.log")" "dry-run ohne Live-Check"
+test_summary
