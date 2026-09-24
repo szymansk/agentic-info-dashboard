@@ -127,7 +127,7 @@ resend() {
 }
 
 unit_failed() {  # <unit-präfix>, z.B. ai-news-dashboard-daily
-  local unit="$1" short="${1#ai-news-dashboard-}" f kind text inv
+  local unit="$1" short="${1#ai-news-dashboard-}" f kind text inv rc=0
   f="$STATE_DIR/last-failure.$short"
   if [ -f "$f" ] && [ $(( $(date +%s) - $(stat -c %Y "$f") )) -lt 7200 ]; then
     kind="$(sed -n 1p "$f")"; text="$(sed -n '2,$p' "$f" | tr '\n' ' ')"
@@ -135,15 +135,19 @@ unit_failed() {  # <unit-präfix>, z.B. ai-news-dashboard-daily
     kind="FAILED"
     text="$(journalctl -u "$unit.service" -n 5 --no-pager -o cat 2>/dev/null | tail -3 | tr '\n' ' ')"
   fi
-  raise "${kind:-FAILED}" "${short}: ${text:-ohne Grund in State/Journal} · journalctl -u $unit.service"
-  # Watchdog-Sicherheitsnetz (5.5) soll für diese InvocationID kein FAILED mehr
-  # nachlegen — sie ist über OnFailure schon alarmiert (Fix B1). Separater
-  # Stempel last-unit-alert (statt last-alert): der enthält nur ECHTE
-  # OnFailure-Alarme, watchdog.sh braucht dafür keine Ausschlussliste von
-  # ARTen mehr.
-  inv="$(systemctl show "$unit.service" -p InvocationID --value 2>/dev/null)"
-  [ -n "$inv" ] && state_write wd.failed-invocation "$inv"
-  [ -f "$STATE_DIR/last-alert" ] && cp "$STATE_DIR/last-alert" "$STATE_DIR/last-unit-alert"
+  raise "${kind:-FAILED}" "${short}: ${text:-ohne Grund in State/Journal} · journalctl -u $unit.service" || rc=$?
+  # Watchdog-Sicherheitsnetz (5.5) soll für die daily-InvocationID kein FAILED
+  # mehr nachlegen — sie ist über OnFailure schon alarmiert (Fix B1). NUR für
+  # die daily-Unit stempeln (Fix E1, Regression aus Runde 1): watchdog.service
+  # hat selbst OnFailure=alert@%p; würde ein Ausfall DIESER Unit denselben
+  # Stempel setzen, überschriebe er den daily-Stempel und unterdrückte STALE
+  # 24 h lang fälschlich, obwohl der Tageslauf selbst nie alarmiert wurde.
+  if [ "$short" = daily ]; then
+    inv="$(systemctl show "$unit.service" -p InvocationID --value 2>/dev/null)"
+    [ -n "$inv" ] && state_write wd.failed-invocation "$inv"
+    [ -f "$STATE_DIR/last-alert" ] && cp "$STATE_DIR/last-alert" "$STATE_DIR/last-unit-alert"
+  fi
+  return "$rc"
 }
 
 case "${1:-}" in

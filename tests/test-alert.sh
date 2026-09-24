@@ -5,6 +5,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")/.." || exit 1
 export ALERT_ENV="$CONF_DIR/alert.env"
 printf 'CALLMEBOT_PHONE=491234\nCALLMEBOT_APIKEY=key\n' > "$ALERT_ENV"
 stub logger 'exit 0'
+stub journalctl 'exit 0'
 # systemctl-Stub für unit_failed()s InvocationID-Abfrage (Fix B1)
 stub systemctl 'case "$*" in *"-p InvocationID --value"*) echo inv-42 ;; *) exit 0 ;; esac'
 # curl-Stub: protokolliert Aufrufe, antwortet je nach CURL_MODE
@@ -62,6 +63,23 @@ assert_contains "GIVEUP" "$(cat "$STUB_BIN/curl.log")" "unit-failed nutzt ART au
 assert_contains "529" "$(cat "$STUB_BIN/curl.log")" "unit-failed nutzt Text"
 assert_eq "inv-42" "$(cat "$STATE_DIR/wd.failed-invocation" 2>/dev/null)" "InvocationID gestempelt (B1)"
 assert_eq "GIVEUP" "$(sed -n 1p "$STATE_DIR/last-unit-alert" 2>/dev/null)" "last-unit-alert ART == last-alert ART (B1)"
+
+# 8b. unit-failed für eine ANDERE Unit (watchdog.service, hat selbst
+# OnFailure=alert@%p) darf die daily-Stempel nicht anfassen (Fix E1 —
+# Regression aus Runde 1: vorher stempelte JEDE Unit wd.failed-invocation/
+# last-unit-alert, ein Watchdog-Ausfall hätte den daily-Stempel überschrieben
+# und STALE 24h lang fälschlich unterdrückt)
+echo "vorher" > "$STATE_DIR/wd.failed-invocation"
+printf 'STALE\n%s\nalt\n' "$(date -Is)" > "$STATE_DIR/last-unit-alert"
+: > "$STUB_BIN/curl.log"; bin/alert.sh unit-failed ai-news-dashboard-watchdog >/dev/null 2>&1
+assert_eq "vorher" "$(cat "$STATE_DIR/wd.failed-invocation" 2>/dev/null)" "wd.failed-invocation unverändert bei watchdog-Ausfall (E1)"
+assert_eq "STALE" "$(sed -n 1p "$STATE_DIR/last-unit-alert" 2>/dev/null)" "last-unit-alert unverändert bei watchdog-Ausfall (E1)"
+
+# 8c. unit-failed gibt den Exit-Code von raise() weiter (Fix E2), nicht immer 0.
+# --force umgeht die Drosselung, damit dieser Test unabhängig von Test 8s
+# bereits zugestelltem GIVEUP-Vorfall wirklich bei CURL_MODE=down landet.
+CURL_MODE=down bin/alert.sh --force unit-failed ai-news-dashboard-daily >/dev/null 2>&1; rc=$?
+assert_eq "1" "$rc" "unit-failed exit == raise()-Ergebnis (pending, E2)"
 
 # 9. fehlende alert.env → nur Journal, exit 0, kein curl
 rm "$ALERT_ENV"; : > "$STUB_BIN/curl.log"

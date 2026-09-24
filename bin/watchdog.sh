@@ -34,9 +34,11 @@ once_per() {  # <stempel> <schlüssel> → 0 wenn für diesen Schlüssel noch ni
   [ "$DRY" = 1 ] || state_write "wd.$1" "$2"
   return 0
 }
-unit_alert_recent() {  # <sekunden> → 0 wenn last-unit-alert (echter OnFailure-Alarm, von
-  # alert.sh unit-failed geschrieben) jünger ist. Kein Ausschluss von ARTen mehr nötig
-  # (Fix B1): last-unit-alert enthält nie einen Watchdog-eigenen Alarm.
+unit_alert_recent() {  # <sekunden> → 0 wenn last-unit-alert jünger ist. Geschrieben
+  # NUR von `alert.sh unit-failed` für die daily-Unit (Fix E1) — watchdog.service
+  # hat selbst OnFailure=alert@%p, stempelt hier aber bewusst NICHT mit, sonst
+  # überschriebe ein Watchdog-eigener Ausfall den daily-Stempel und unterdrückte
+  # STALE 24 h lang fälschlich. Kein Ausschluss von ARTen mehr nötig (Fix B1).
   [ -f "$STATE_DIR/last-unit-alert" ] || return 1
   [ $(( NOW - $(stat -c %Y "$STATE_DIR/last-unit-alert") )) -lt "$1" ] || return 1
   return 0
