@@ -13,6 +13,10 @@ printf 'A = 1\n' > "$T_ROOT/bad2.env"
 assert_rc 1 "Leerzeichen um = ungültig" -- env_file_valid "$T_ROOT/bad2.env"
 printf 'export A=1\n' > "$T_ROOT/bad3.env"
 assert_rc 1 "export ungültig" -- env_file_valid "$T_ROOT/bad3.env"
+printf 'A=$(x)\n' > "$T_ROOT/bad4.env"
+assert_rc 1 "\$-Expansion im Wert ungültig" -- env_file_valid "$T_ROOT/bad4.env"
+printf 'A=`x`\n' > "$T_ROOT/bad5.env"
+assert_rc 1 "Backtick-Expansion im Wert ungültig" -- env_file_valid "$T_ROOT/bad5.env"
 
 # load_env
 assert_rc 1 "load_env fehlend" -- load_env "$T_ROOT/nein.env"

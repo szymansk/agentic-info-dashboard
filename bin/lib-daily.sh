@@ -20,7 +20,9 @@ today() { date -I; }
 # keine Leerzeichen um '=', kein '#' im Wert (wäre für bash Teil des Werts).
 env_file_valid() {
   [ -f "$1" ] || return 1
-  if grep -vE '^[[:space:]]*(#|$)' "$1" | grep -qvE '^[A-Z_][A-Z0-9_]*=[^[:space:]#]*$'; then
+  # Werte dürfen kein '$' und kein Backtick enthalten (Spec 5.6: keine
+  # Expansion) — sonst könnte bash beim Sourcen beliebigen Code ausführen.
+  if grep -vE '^[[:space:]]*(#|$)' "$1" | grep -qvE '^[A-Z_][A-Z0-9_]*=[^[:space:]#$`]*$'; then
     return 1
   fi
   return 0

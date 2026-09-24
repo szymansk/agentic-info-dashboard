@@ -34,10 +34,11 @@ once_per() {  # <stempel> <schlüssel> → 0 wenn für diesen Schlüssel noch ni
   [ "$DRY" = 1 ] || state_write "wd.$1" "$2"
   return 0
 }
-unit_alert_recent() {  # <sekunden> → 0 wenn last-alert jünger und keine Watchdog-Art
-  [ -f "$STATE_DIR/last-alert" ] || return 1
-  [ $(( NOW - $(stat -c %Y "$STATE_DIR/last-alert") )) -lt "$1" ] || return 1
-  case "$(sed -n 1p "$STATE_DIR/last-alert")" in STALE|PUBLIC_STALE|YOUTUBE|TOKEN*|FAILED|GH_AUTH|HEARTBEAT|TEST) return 1 ;; esac
+unit_alert_recent() {  # <sekunden> → 0 wenn last-unit-alert (echter OnFailure-Alarm, von
+  # alert.sh unit-failed geschrieben) jünger ist. Kein Ausschluss von ARTen mehr nötig
+  # (Fix B1): last-unit-alert enthält nie einen Watchdog-eigenen Alarm.
+  [ -f "$STATE_DIR/last-unit-alert" ] || return 1
+  [ $(( NOW - $(stat -c %Y "$STATE_DIR/last-unit-alert") )) -lt "$1" ] || return 1
   return 0
 }
 
@@ -87,9 +88,11 @@ fi
 # 4. Briefing öffentlich (Pages)
 PUB="$(curl -fsS -m 15 -H 'Cache-Control: no-cache' "$PAGES_URL" 2>/dev/null | grep -oE 'data-snapshot-date="[0-9-]{10}"' | head -1 | grep -oE '[0-9-]{10}' || true)"
 log "Pages zeigt ${PUB:-nichts}"
-if [ -n "$CUR" ] && [[ "${PUB:-}" < "$CUR" ]] && [ -f "$STATE_DIR/last-run.json" ] \
+# Ein fehlgeschlagener curl (PUB leer) ist kein Beleg für ein veraltetes Pages —
+# nur ein tatsächlich gelesenes, älteres Datum alarmiert (Fix B3).
+if [ -n "$CUR" ] && [ -n "$PUB" ] && [[ "$PUB" < "$CUR" ]] && [ -f "$STATE_DIR/last-run.json" ] \
    && [ $(( NOW - $(stat -c %Y "$STATE_DIR/last-run.json") )) -gt $(( PUBLIC_GRACE_MIN * 60 )) ]; then
-  raise PUBLIC_STALE "Pages zeigt ${PUB:-nichts}, lokal $CUR. Pages-Build/Push prüfen: gh run list, git status -sb"
+  raise PUBLIC_STALE "Pages zeigt $PUB, lokal $CUR. Pages-Build/Push prüfen: gh run list, git status -sb"
 fi
 
 # 5. YouTube
@@ -120,7 +123,7 @@ fi
 # sonst blockiert ein nicht auffindbares Binary den nächsten Versuch eine
 # ganze Woche lang, ohne dass je ein Alarm ging.
 LIVE="nicht geprüft"
-if [ "$DOW" = 7 ] && [ "$(state_read wd.token-live)" != "$WEEK" ]; then
+if [ "$DOW" = 7 ] && [ "$HOUR" -ge 9 ] && [ "$(state_read wd.token-live)" != "$WEEK" ]; then
   if [ "$DRY" = 1 ]; then
     LIVE="[dry-run] Live-Check übersprungen"
   elif CLAUDE_BIN="$(resolve_claude)"; then
@@ -138,7 +141,7 @@ if [ "$DOW" = 7 ] && [ "$(state_read wd.token-live)" != "$WEEK" ]; then
     state_write wd.token-live "$WEEK"
   fi
 fi
-if [ "$DOW" = 7 ] && [ "${HEARTBEAT:-1}" = 1 ] && once_per heartbeat "$WEEK"; then
+if [ "$DOW" = 7 ] && [ "$HOUR" -ge 9 ] && [ "${HEARTBEAT:-1}" = 1 ] && once_per heartbeat "$WEEK"; then
   WF="$(gh run list --workflow stale-check.yml --limit 1 --json conclusion,createdAt -q '.[0] | "\(.conclusion) \(.createdAt)"' 2>/dev/null || echo "unbekannt")"
   raise HEARTBEAT "lebt. Briefing $CUR, letzter Lauf: $LAST_RUN, Token noch ${TOKEN_DAYS:-?} Tage, Live-Check: $LIVE, GitHub-Wächter: $WF" --force
 fi
