@@ -1,7 +1,7 @@
 # Design: Tageslauf als systemd-Oneshot (`claude -p`) statt Background-Session
 
-Datum: 2026-09-24 · Version 2 (nach zwei unabhängigen Reviews) · Status: zur
-Bestätigung durch die Reviewer, dann Implementierungsplan
+Datum: 2026-09-24 · Version 2.1 (nach zwei unabhängigen Reviews plus Bestätigungsrunde) ·
+Status: abgenommen, nächster Schritt Implementierungsplan
 
 ## 1. Ziel
 
@@ -50,34 +50,46 @@ die Session-Mechanik. Dieses Design ersetzt sie.
 07:15   daily.timer (Persistent) → daily.service (oneshot, After=youtube-fetch)
           └─ bin/run-daily.sh
                0. Binary + Env laden (daily.env, alert.env)      Token fehlt → 3
-               1. Lock (flock)                                    belegt → 9
-               2. git fetch + ff-only                             diverged → 9, Netz → 5
+               1. Lock (flock -w 300)                             weiter belegt → 0 mit Journal-Hinweis
+               2. Versuchszähler pro Datum                        3. Fehlschlag heute → 11 GIVEUP
                3. Dirt klassifizieren                             eigener Dirt → stash+weiter · fremder → 4
-               4. Idempotenz: Briefing heute?                     gepusht → 0 · nur ahead → push-only
-               5. Manifest sichern, healthchecks /start
-               6. claude -p --output-format json … (rc capturen)  trap TERM → cleanup, 5
-               7. JSON klassifizieren                             401/403→3 · 400/404/Budget→8 · BLOCKED→7 · sonst→5
-               8. verify-briefing.sh (Inhalt, Archiv, Manifest, docs/, gepusht)   → 6 (nicht deployt) · 10 (deployt, aber mangelhaft)
-               9. Pages-URL bis 10 min pollen (nur Warnung), last-run.json, healthchecks Ping
-        Fehler → systemd: Restart=on-failure, RestartSec=2h, StartLimitBurst=3 (Fenster 8 h)
-        4. Start abgelehnt ODER RestartPreventExitStatus → failed → OnFailure → alert@ai-news-dashboard-daily.service
-*:00/30 watchdog.timer → watchdog.service (OnFailure→alert) → bin/watchdog.sh
-          pending-Alarme nachsenden · Token-Restlaufzeit · STALE (lokal + Pages-URL) · YouTube-Alter
-          · daily.service failed (neue InvocationID) · gh auth · So: Token-Live-Check + Lebenszeichen
-extern  healthchecks.io: erwartet täglich einen Ping, Grace 30 h → E-Mail/Telegram, unabhängig von der Maschine
+               4. git fetch + ff-only                             diverged → 9, GitHub-Auth → 9, Netz → 5
+               5. Idempotenz: Briefing heute?                     gepusht → 0 · nur ahead → push-only
+               6. Manifest sichern, HEAD merken, healthchecks /start
+               7. claude -p --output-format json … (rc capturen)  trap TERM → cleanup, 5
+               8. JSON klassifizieren                             401/403→3 · 400/404/Budget→8 · BLOCKED→7 · sonst→5
+               9. verify-briefing.sh (Inhalt, Archiv, Manifest, docs/, gepusht)   → 6 (nicht deployt) · 10 (deployt, aber mangelhaft)
+              10. Pages-URL bis 10 min pollen (nur Warnung), last-run.json, healthchecks Ping
+        Fehler → systemd: Restart=on-failure, RestartSec=2h; Fenster 12 h / Burst 3 als Backstop
+        RestartPreventExitStatus (3 4 8 9 10 11) → sofort failed → OnFailure → alert@ai-news-dashboard-daily.service
+*:00/30 watchdog.timer → watchdog.service (TimeoutStartSec=5min, OnFailure→alert) → bin/watchdog.sh
+          pending-Alarme nachsenden · Token-Restlaufzeit · STALE (lokal + Pages-URL, nicht während ein Lauf aktiv ist)
+          · YouTube-Alter · daily.service failed (neue InvocationID) · gh auth · So: Token-Live-Check + Lebenszeichen
+extern  GitHub-Actions-Workflow (schedule 16:00 UTC): prüft data-snapshot-date der Pages gegen heute,
+        schlägt bei Alter ≥ 1 fehl → GitHub mailt den Repo-Owner. Kein Konto, keine Secrets, unabhängig von der Maschine.
+        Optional zusätzlich healthchecks.io (Ping bei Exit 0, /fail nur bei nicht-wiederholbaren Codes).
 ```
 
 Jeder Lauf ist ein eigener Prozess mit Journal-Log (`journalctl -u ai-news-dashboard-daily`)
-und eigener Transcript-Datei (`claude -p --resume <session_id>` zum Nachlesen).
+und eigener Transcript-Datei unter `~/.claude/projects/<slug>/<session_id>.jsonl`
+(zum Nachlesen die Datei öffnen oder interaktiv `claude --resume <session_id>`; ein
+`claude -p --resume` würde die Session fortsetzen und kosten).
 
 ## 5. Komponenten
 
 ### 5.1 systemd-Units (Vorlagen in `install.sh`, installiert nach `/etc/systemd/system/`)
 
-Kein `EnvironmentFile`: Die Skripte laden ihre Env-Dateien selbst (bash `source`,
-wie heute `start-daily-loop.sh`). Damit gibt es nur ein Dateiformat, systemd (PID 1)
-muss nichts unter `/home` lesen, und eine fehlende Datei lässt die Alert-Unit nicht
-mitsterben, sondern degradiert `alert.sh` auf Journal.
+Kein `EnvironmentFile`: Die Skripte laden ihre Env-Dateien selbst (bash `source`
+mit `set -a`, wie heute `start-daily-loop.sh`). Damit gibt es nur ein Dateiformat,
+systemd (PID 1) muss nichts unter `/home` lesen, und eine fehlende Datei lässt die
+Alert-Unit nicht mitsterben, sondern degradiert `alert.sh` auf Journal.
+
+Alle `ExecStart`/`ExecStartPost` rufen `/usr/bin/bash <skript>` statt das Skript
+direkt. `init_t` führt `/usr/bin/bash` (`bin_t`) aus, der Übergang nach
+`unconfined_service_t` passiert vor dem Lesen des Skripts; genau so liest die
+YouTube-Unit heute täglich `/usr/bin/python3 …/fetch-youtube.py` (`user_home_t`)
+unter Enforcing. Damit hängt kein Pfad mehr am SELinux-Label der Skripte. Die
+Verzeichnisregel (unten) bleibt als zweite Sicherung.
 
 **`ai-news-dashboard-daily.timer`**: `OnCalendar=*-*-* 07:15:00`, `Persistent=true`.
 
@@ -89,7 +101,7 @@ Description=Daily AI news briefing (claude -p oneshot)
 After=network-online.target ai-news-dashboard-youtube-fetch.service
 Wants=network-online.target
 OnFailure=ai-news-dashboard-alert@%p.service
-StartLimitIntervalSec=8h
+StartLimitIntervalSec=12h
 StartLimitBurst=3
 
 [Service]
@@ -99,27 +111,36 @@ Group=szymansk
 WorkingDirectory=/home/szymansk/Projects/agentic_info_dashboard
 Environment=DISABLE_AUTOUPDATER=1 GIT_TERMINAL_PROMPT=0 GH_NO_UPDATE_NOTIFIER=1
 StandardInput=null
-ExecStart=/home/szymansk/Projects/agentic_info_dashboard/bin/run-daily.sh
+ExecStart=/usr/bin/bash /home/szymansk/Projects/agentic_info_dashboard/bin/run-daily.sh
 TimeoutStartSec=90min
+TimeoutStopSec=3min
 Restart=on-failure
 RestartSec=2h
-RestartPreventExitStatus=3 4 8 9 10
+RestartPreventExitStatus=3 4 8 9 10 11
 InaccessiblePaths=-/home/szymansk/.ssh
 ```
 
 Semantik (systemd 259, per `systemd-analyze verify` und Man-Pages geprüft):
 
 - Oneshot mit `Restart=on-failure` ist erlaubt; `TimeoutStartSec` begrenzt die
-  Laufzeit; bei Ablauf SIGTERM → das Skript fängt es (trap) und räumt auf.
-- Die Unit betritt `failed` (und löst `OnFailure` aus) **bei Ablehnung des vierten
-  Starts** durch das Startlimit, nicht nach dem dritten Fehler. Bei Fehlern um
-  07:15, 09:15, 11:15 kommt der Alarm also gegen 13:15 (Worst Case mit drei
-  90-min-Timeouts: 17:45). Nicht-wiederholbare Exit-Codes führen sofort zu `failed`.
+  Laufzeit; bei Ablauf SIGTERM → das Skript fängt es (trap) und räumt auf. bash
+  führt den Trap erst nach Ende des Kindprozesses `claude` aus (kein Race mit dessen
+  Git-Operationen); das Cleanup muss innerhalb `TimeoutStopSec=3min` fertig sein
+  (Maschinen-Default 45 s, danach SIGKILL ohne Cleanup; die Dirt-Klassifikation
+  fängt Reste dann beim nächsten Start).
+- **Aufgeben nach drei Fehlschlägen macht das Skript selbst**: Versuchszähler pro
+  Datum in `$STATE_DIR`; der dritte wiederholbare Fehlschlag eines Tages endet mit
+  Exit 11 `GIVEUP`, der in `RestartPreventExitStatus` steht → sofort `failed` →
+  `OnFailure`. Der Alarm kommt damit direkt nach dem dritten Fehler (bei Fehlern um
+  07:15, 09:15, 11:15 also ~11:20; Worst Case mit drei 90-min-Timeouts ~15:45),
+  nicht erst bei Ablehnung eines vierten Starts. Das systemd-Startlimit (12 h / 3)
+  ist nur Backstop: mit 8 h hätte der Timeout-Worst-Case (Starts 07:15, 10:45,
+  14:15, 17:45 = 10,5 h) das Fenster verlassen und eine Endlosschleife erzeugt.
 - `After=youtube-fetch` bleibt: es serialisiert die beiden `Persistent`-Nachholstarts
   nach einem Boot (sonst zwei parallele Git-Commits). Dafür bekommt die YouTube-Unit
   ein Timeout (unten), damit ein hängender Fetch den Tageslauf nicht unbegrenzt blockiert.
-- `StartLimitIntervalSec=8h` statt 18 h: Ein manueller Start am Vorabend zählt sonst
-  ins Fenster und kostet einen Versuch. Nach Tests: `systemctl reset-failed`.
+- Manuelle Starts zählen ins Startlimit-Fenster und in den Tageszähler; nach Tests
+  `systemctl reset-failed` und `run-daily.sh --reset-attempts`.
 - `DISABLE_AUTOUPDATER=1`: kein Binary-Wechsel mitten im Lauf (Upgrades kommen laut
   `daemon.log` fast täglich zwischen 22:00 und 04:00 UTC).
 - `InaccessiblePaths=-/home/szymansk/.ssh`: der Lauf braucht kein SSH (Remote ist HTTPS,
@@ -130,18 +151,24 @@ Semantik (systemd 259, per `systemd-analyze verify` und Man-Pages geprüft):
 
 **`ai-news-dashboard-alert@.service`** (Template; Instanz `%i` = Präfix der
 gescheiterten Unit, z. B. `ai-news-dashboard-daily`): `Type=oneshot`,
-`StandardInput=null`, `ExecStart=bin/alert.sh unit-failed %i`.
+`StandardInput=null`, `TimeoutStartSec=2min`, `ExecStart=/usr/bin/bash bin/alert.sh unit-failed %i`.
 
 **`ai-news-dashboard-watchdog.timer/.service`**: `OnCalendar=*-*-* *:00/30:00`
 (feste Raster statt `OnUnitActiveSec`, damit Wochenfenster nicht driften),
-`ExecStart=bin/watchdog.sh`, `OnFailure=ai-news-dashboard-alert@%p.service`.
+`TimeoutStartSec=5min` (ein hängender Live-Check darf den Watchdog nicht dauerhaft
+in `activating` halten), `Environment=DISABLE_AUTOUPDATER=1`,
+`ExecStart=/usr/bin/bash bin/watchdog.sh`, `OnFailure=ai-news-dashboard-alert@%p.service`.
 Ersetzt `healthcheck.timer/.service`.
 
 **`ai-news-dashboard-youtube-fetch.service`** (neu gerendert): `ReadWritePaths=$PROJECT_DIR`
 (installiert ist derzeit nur `dashboards/youtube`, womit ein Deploy an `docs/` und
 `.git/` scheitern würde), `TimeoutStartSec=10min` (der Fetch hängt laut Memory
-gelegentlich; Oneshot-Default ist unendlich), `ExecStartPost=bin/deploy.sh`,
-`OnFailure=ai-news-dashboard-alert@%p.service`, `Environment=GIT_TERMINAL_PROMPT=0 GH_NO_UPDATE_NOTIFIER=1`.
+gelegentlich; Oneshot-Default ist unendlich; das Timeout deckt `ExecStart` und
+`ExecStartPost` gemeinsam ab), `ExecStartPost=/usr/bin/bash bin/deploy.sh`,
+`Environment=GIT_TERMINAL_PROMPT=0 GH_NO_UPDATE_NOTIFIER=1`. **Kein `OnFailure`**:
+der bekannte Fetch-Hänger würde sonst um 06:10 WhatsApp auslösen, obwohl der
+Tageslauf YouTube in Schritt 1 selbst nachholt; der Watchdog meldet YOUTUBE erst
+nach 30 h.
 `ProtectHome=read-only` bleibt; `gh` liest `~/.config/gh/hosts.yml`. Ob `gh` beim
 Push nach `~/.config/gh` schreiben will, klärt die Generalprobe (dann `ReadWritePaths`
 ergänzen).
@@ -151,30 +178,35 @@ ergänzen).
 **SELinux**: Verzeichnisregel `semanage fcontext -a -t bin_t "$PROJECT_DIR/bin(/.*)?"`
 (idempotent: `-a || -m`), `restorecon -R bin/`. Die alte Datei-Regel für
 `start-daily-loop.sh` wird in Phase 4 mit `-d` entfernt. `deploy.sh` und `install.sh`
-machen `restorecon -R bin/`. Der Exec-Pfad `init_t` → `bin_t` → `unconfined_service_t`
-ist heute bewiesen (Healthcheck läuft so). Verworfen: `ExecStart=/usr/bin/bash <skript>`
-als Umgehung, weil unbelegt, ob `init_t` ein `user_home_t`-Skript lesen darf.
+machen `restorecon -R bin/`. Da alle Exec-Zeilen über `/usr/bin/bash` laufen, ist die
+Regel nur noch Defense-in-Depth (falls jemand ein Skript direkt als `ExecStart` einträgt).
 
 ### 5.2 `bin/run-daily.sh`
 
 Aufruf durch systemd oder von Hand (`</dev/null`, sonst wartet `claude -p` 3 s auf stdin);
-`--dry-run` zeigt Preflight und Entscheidung; `DAILY_ENV=<pfad>` überschreibt die
-Env-Datei (für Fehlerinjektion).
+`--dry-run` zeigt Preflight und Entscheidung; `--reset-attempts` setzt den Tageszähler
+zurück; `DAILY_ENV=<pfad>` überschreibt die Env-Datei (für Fehlerinjektion).
+
+Voraussetzung, auf der die Dirt-Logik beruht: `dashboards/youtube/data.json`,
+`dashboards/ai-news/archive/*.html` und `archive/manifest.json` sind gitignored
+(`.gitignore`, heute so). `git stash -u` fasst Ignoriertes nie an; deshalb wird das
+Manifest separat gesichert. Ändert sich `.gitignore`, muss diese Tabelle nachziehen.
 
 | Schritt | Verhalten | Exit |
 |---|---|---|
 | Binary | `~/.local/bin/claude` zuerst, dann PATH; fehlt → | 5 |
 | Env | `daily.env` + `alert.env` sourcen; `CLAUDE_CODE_OAUTH_TOKEN` leer → | 3 |
-| Lock | `flock -n` auf `$STATE_DIR/run.lock`; belegt (paralleler Hand-/Timerstart) → | 9 |
-| Repo | verwaistes `.git/index.lock` (älter als 1 h) entfernen; `git fetch origin` (Netz weg → 5); `git merge --ff-only origin/main` bei sauberem Tree; divergiert → | 9 |
+| Lock | `flock -w 300` auf `$STATE_DIR/run.lock`; nach 5 min weiter belegt (paralleler Handlauf) → Journal-Hinweis, kein Alarm | 0 |
+| Zähler | `$STATE_DIR/attempts.<datum>`: Zahl der Fehlschläge heute. Ist sie ≥ 2, wird dieser Lauf der dritte; endet er wiederholbar (5/6/7), wird daraus | 11 |
 | Dirt | `git status --porcelain --untracked-files=all`, Pfade klassifizieren. Eigener Dirt (`dashboards/ai-news/`, `dashboards/it-services/`, `docs/`) = Reste eines abgebrochenen Laufs oder YouTube-Deploys → `git stash push -u -m "daily-leftover <ts>"` + Journal-Warnung, weiter. Fremder Dirt (alles andere) → | 4 |
+| Repo | Erst **nach** dem Stash (sonst liefe der Lauf auf veralteter Basis und der Push würde non-fast-forward): verwaistes `.git/index.lock` (älter als 1 h) entfernen; `git fetch origin` (Netz weg → 5; „Authentication failed" = GitHub-Token widerrufen → 9); `git merge --ff-only origin/main`; divergiert → | 9 |
 | Idempotenz | `data-snapshot-date` == heute: gepusht (`git status -sb` ohne „ahead") → 0 ohne Lauf. Nur ahead → **push-only**: `git push`; Erfolg → 0, Netz/5xx → 6, non-fast-forward → 9. Kein Modell-Lauf. | 0/6/9 |
-| Sicherung | `manifest.json` nach `$STATE_DIR/manifest.bak`; Liste der Archivdateien; healthchecks `/start`-Ping (falls konfiguriert). | |
+| Sicherung | `HEAD` merken; `manifest.json` nach `$STATE_DIR/manifest.bak`; Liste der Archivdateien; healthchecks `/start`-Ping (falls konfiguriert). | |
 | Lauf | `rc=0; claude -p --output-format json --model "$CLAUDE_MODEL" [--fallback-model "$FALLBACK_MODEL"] --dangerously-skip-permissions --strict-mcp-config --disallowedTools AskUserQuestion --max-budget-usd "$MAX_BUDGET_USD" "$PROMPT" >"$OUT" </dev/null \|\| rc=$?`. stderr → Journal. `trap` auf TERM/INT: Cleanup, `last-failure=TIMEOUT`, Exit 5. | |
 | Klassifikation | JSON parsen (kein JSON → 5). Felder: `is_error`, `terminal_reason`, `api_error_status`, optional `result`, `permission_denials`, `total_cost_usd`, `session_id`. `api_error_status` 401/403 → 3 · 400/404 oder `terminal_reason=budget_exhausted` → 8 · `result` enthält Zeile `BLOCKED:` → 7 · sonstiger `is_error` (429, 5xx, Netz) → 5. `permission_denials` nicht leer → Journal-Warnung. | 3/5/7/8 |
-| Ergebnis | `bin/verify-briefing.sh` (5.3). Nicht deployt (Datum alt, dirty, ahead) → 6. Deployt, aber inhaltlich mangelhaft → Alarm `QUALITY` direkt aus dem Skript + | 6/10 |
-| Abschluss | Pages-URL bis 10 min auf heutiges Datum pollen (nur Warnung; der Watchdog übernimmt `PUBLIC_STALE`). `last-run.json`: Zeit, Dauer, Exit, `total_cost_usd`, `num_turns`, `session_id`, `claude --version`, `STATUS:`-Zeile. healthchecks-Ping `/` bzw. `/fail`. | 0 |
-| Cleanup bei Exit ≠ 0 | Reste des Laufs sichern: `git stash push -u -m "daily-fail <ts> exit <n>"` für `dashboards/ai-news dashboards/it-services docs`; `manifest.json` aus Sicherung zurück; neue Archivdateien bleiben (harmlos, Schritt 4 im Prompt ist idempotent). | |
+| Ergebnis | `bin/verify-briefing.sh --full` (5.3). Nicht deployt (Datum alt, dirty, ahead) → 6. Deployt, aber inhaltlich mangelhaft → Grund nach `last-failure.daily`, Exit 10; der Alarm läuft **nur** über `OnFailure` → `alert.sh unit-failed` (ein Pfad, eine Nachricht). | 6/10 |
+| Abschluss | Pages-URL bis 10 min auf heutiges Datum pollen (nur Warnung; der Watchdog übernimmt `PUBLIC_STALE`). `last-run.json`: Zeit, Dauer, Exit, `total_cost_usd`, `num_turns`, `session_id`, `claude --version`, `STATUS:`-Zeile. Zähler löschen. healthchecks-Ping `/` bei 0; `/fail` nur bei nicht-wiederholbaren Codes (3/4/8/9/10/11); bei 5/6/7 kein Ping (Grace 30 h reicht, sonst mailt healthchecks bei jedem transienten Fehler). | 0 |
+| Cleanup bei Exit ≠ 0 | **Nur wenn `HEAD` noch dem gemerkten Stand entspricht** (also kein Commit des Laufs existiert): `git stash push -u -m "daily-fail <ts> exit <n>"` für `dashboards/ai-news dashboards/it-services docs`; `manifest.json` aus Sicherung zurück. Hat der Lauf schon committet (Exit 6 „ahead", Exit 10), wird nichts angefasst, sonst liefe das gitignorte Quell-Manifest hinter `docs/` her und die Timeline würde still korrumpiert. Neue Archivdateien bleiben (Schritt 4 im Prompt ist idempotent). Zähler erhöhen; `last-failure.daily` schreiben. | |
 
 Exit-Codes und Retry:
 
@@ -188,7 +220,9 @@ Exit-Codes und Retry:
 | 7 | BLOCKED: Lauf meldet Blockade | ja |
 | 8 | API: nicht-transient (Modell unbekannt 400/404, Budget erschöpft) | nein |
 | 9 | REPO: Lock belegt, divergiert, non-fast-forward | nein |
-| 10 | QUALITY: deployt, aber Prüfung mangelhaft (Alarm direkt aus dem Skript) | nein |
+| 10 | QUALITY: deployt, aber Prüfung mangelhaft | nein |
+| 11 | GIVEUP: dritter wiederholbarer Fehlschlag des Tages (Grund des letzten Fehlers in `last-failure.daily`) | nein |
+| sonstige (1, 64, …) | unklassifiziert, z. B. Skriptfehler | ja (systemd-Default) |
 
 Gemessen (CLI 2.1.281): `claude -p` liefert bei Fehlern **Exit 1** und ein JSON auf
 stdout (`is_error:true`, `terminal_reason:"api_error"`, `api_error_status:401`); bei
@@ -201,17 +235,26 @@ OAuth-Credentials).
 
 ### 5.3 `bin/verify-briefing.sh`
 
-Gemeinsame Ergebnisprüfung für den Wrapper und Schritt 6 in `DAILY_UPDATE.md`.
-Argument `--date <YYYY-MM-DD>` (Default heute; der Wrapper übergibt das Startdatum
-des Laufs, damit ein Nachhollauf über Mitternacht nicht scheitert).
+Gemeinsame Ergebnisprüfung in zwei Modi: `--pre-deploy` für Schritt 6 in
+`DAILY_UPDATE.md` (vor Build und Push: nur Inhalt, Archiv, Quell-Manifest) und
+`--full` für den Wrapper (zusätzlich `docs/`, Tree, Push). Argument `--date`
+(Default heute; der Wrapper übergibt das Startdatum des Laufs, damit ein Nachhollauf
+über Mitternacht nicht scheitert).
 
-| Prüfung | Fehlerklasse |
-|---|---|
-| `data-snapshot-date` in `dashboards/ai-news/index.html` und `docs/ai-news/index.html` ≥ Startdatum | nicht deployt |
-| Tree clean, nichts ahead (nach `git fetch`) | nicht deployt |
-| `.briefing-wrap` ≥ 800 Wörter; ≥ 3 Breaking-Cards mit externen Links auf ≥ 2 Domains; Briefing-Text nicht identisch mit dem vorherigen Snapshot | mangelhaft |
-| Vorheriger Live-Snapshot existiert jetzt unter `archive/<datum>.html` mit `data-snapshot-mode="archive"` | mangelhaft |
-| `manifest.json` valides JSON; genau ein Eintrag mit `url: /ai-news/` und heutigem Datum; keine doppelten Daten; nur Felder `date/url/headline/summary` | mangelhaft |
+| Prüfung | Modus | Fehlerklasse |
+|---|---|---|
+| `data-snapshot-date` in `dashboards/ai-news/index.html` ≥ Startdatum | beide | nicht deployt |
+| `.briefing-wrap` ≥ `MIN_WORDS` Wörter; ≥ 2 Breaking-Cards; Briefing-Text nicht identisch mit dem vorherigen Snapshot | beide | mangelhaft |
+| Vorheriger Live-Snapshot existiert jetzt unter `archive/<datum>.html` mit `data-snapshot-mode="archive"` | beide | mangelhaft |
+| `manifest.json` valides JSON; genau ein Eintrag mit `url: /ai-news/` und Datum ≥ Startdatum; keine doppelten Daten; nur Felder `date/url/headline/summary` | beide | mangelhaft |
+| `docs/ai-news/index.html` gleiches Datum; `docs/…/manifest.json` und Quell-Manifest stimmen in `date`/`url` überein | full | nicht deployt / mangelhaft |
+| Tree clean, nichts ahead (nach `git fetch`) | full | nicht deployt |
+
+Keine Link-Pflicht: der Prompt macht Links in Breaking-Cards optional und das heutige
+Briefing hat keine externen Links in den Karten; eine Link-Regel hätte am ersten Tag
+einen QUALITY-Fehlalarm erzeugt. Alle Schwellen (`MIN_WORDS`, Kartenzahl) werden in
+Phase 1 am aktuellen `index.html` kalibriert (Messwert × 0,5) und in `daily.env`
+überschreibbar gemacht.
 
 ### 5.4 `bin/alert.sh`
 
@@ -225,7 +268,7 @@ Schnittstelle: `alert.sh <ART> <Text…>`, `alert.sh unit-failed <unit>` (liest
 3. Drosselung **pro Vorfall** (Hash aus ART + erste 80 Zeichen Text), 12 h. FAILED aus dem Watchdog nur, wenn kein Unit-Alarm < 12 h; STALE nur, wenn kein Unit-Alarm < 24 h.
 4. CallMeBot: `curl -fsS -m 20 -G https://api.callmebot.com/whatsapp.php --data-urlencode phone=… --data-urlencode apikey=… --data-urlencode text=…`. Antwort muss „queued" enthalten.
 5. ntfy (falls `NTFY_TOPIC`/`NTFY_URL` gesetzt): `curl -d`.
-6. Stempel für die Drosselung **nur bei erfolgreicher Zustellung** auf mindestens einem Kanal. Sonst `pending-alerts` schreiben; der Watchdog sendet alle 30 min nach.
+6. Zustellung wird **pro Kanal** geführt; der Drossel-Stempel eines Kanals wird nur bei dessen Erfolg gesetzt. Nicht zugestellte Vorfälle landen in `pending/<vorfall-hash>` (ein Eintrag pro Vorfall, Überschreiben statt Anhängen); der Watchdog sendet alle 30 min nach, höchstens 6 Versuche, danach eine Sammelnachricht und Abbruch. `last-failure` ist pro Unit (`last-failure.<unit>`), damit ein YouTube-Fehlschlag nicht den letzten Daily-Grund als Text bekommt.
 
 Nachrichten sind kurz, mit Grund und nächstem Schritt:
 `⛔ ai-news: Token ungültig (401). Fix: bin/set-token.sh nach claude setup-token` ·
@@ -241,8 +284,8 @@ Alle 30 min, nur Prüfung und Alarm, keine Reparatur. `--dry-run` zeigt alle Wer
 |---|---|
 | `pending-alerts` vorhanden | `alert.sh --resend` |
 | `TOKEN_CREATED` + 365 d − heute ≤ 14 d | TOKEN, täglich |
-| Sonntag (ISO-Wochenstempel): Live-Check `claude -p 'OK' --model claude-haiku-4-5-20251001 --max-turns 1` mit dem Unit-Token | TOKEN_LIVE bei Fehler |
-| Lokales Briefing: Alter ≥ 1 Tag **und** Uhrzeit ≥ 14:00, oder Alter ≥ 2 | STALE, 12 h |
+| Sonntag (ISO-Wochenstempel): Live-Check `timeout 120 claude -p 'OK' --model "$CLAUDE_MODEL" --max-turns 1 --strict-mcp-config --setting-sources project` in einem leeren Temp-Verzeichnis (lädt sonst CLAUDE.md und User-Hooks) mit dem Unit-Token | TOKEN_LIVE bei Fehler |
+| Lokales Briefing: Alter ≥ 1 Tag **und** Uhrzeit ≥ 14:00, oder Alter ≥ 2; **unterdrückt**, solange `daily.service` `active`/`activating` ist (Nachhollauf) oder ein Unit-Alarm < 24 h alt ist | STALE, 12 h |
 | Pages-URL: `data-snapshot-date` ≠ lokal, länger als 60 min nach `last-run.json` | PUBLIC_STALE, 12 h |
 | `dashboards/youtube/data.json` älter als 30 h | YOUTUBE, 12 h |
 | `daily.service` `failed` mit InvocationID ≠ zuletzt alarmierter | FAILED (Sicherheitsnetz) |
@@ -274,6 +317,9 @@ NTFY_TOPIC=
 HEALTHCHECKS_URL=
 HEARTBEAT=1
 ```
+
+`HEALTHCHECKS_URL` ist optional, weil der maschinenunabhängige Wächter der
+GitHub-Actions-Workflow (5.11) ist; `check.sh` zeigt gelb, wenn beides fehlt.
 
 `bin/set-token.sh` schreibt Token und `TOKEN_CREATED` gemeinsam (liest den Token von
 stdin, nie als Argument). Der Token ist bewusst nicht in `~/.claude/settings.json`:
@@ -318,6 +364,18 @@ formatgültig, Token gesetzt (sonst Abbruch mit Anleitung); alte Units `disable 
 Units mit `$PROJECT_DIR`/`$HOME` des Run-Users rendern; `systemd-analyze verify`;
 `install` + `daemon-reload`; Timer `enable --now`. Alles unter einem `sudo`-Timestamp.
 
+### 5.11 `.github/workflows/stale-check.yml` (externer Wächter)
+
+Läuft täglich 16:00 UTC per `schedule` auf GitHub, ohne Secrets: holt
+`https://szymansk.github.io/agentic-info-dashboard/ai-news/`, liest
+`data-snapshot-date`, schlägt fehl, wenn das Datum älter als der Vortag ist. Ein
+fehlgeschlagener Workflow-Lauf löst die Standard-E-Mail an den Repo-Owner aus. Das
+deckt genau die Fälle, in denen die Maschine, der Timer oder der Watchdog selbst
+tot sind. GitHub deaktiviert `schedule`-Workflows nach 60 Tagen ohne Commit; die
+täglichen Briefing-Commits halten ihn aktiv, und der Watchdog-Heartbeat nennt das
+Datum des letzten Workflow-Laufs (`gh run list`), damit ein deaktivierter Workflow
+auffällt.
+
 ## 6. Sicherheit
 
 - Secrets nur in `~/.config/ai-news-dashboard/*.env` (600) und in der Prozessumgebung
@@ -344,7 +402,7 @@ Units mit `$PROJECT_DIR`/`$HOME` des Run-Users rendern; `systemd-analyze verify`
 | 0 Vorbereitung | Marc | `claude setup-token` im Browser → `bin/set-token.sh`; optional healthchecks.io-Check anlegen (Grace 30 h, E-Mail) und URL in `alert.env` | Auth für Oneshot vorhanden |
 | 1 Bauen | Claude | `run-daily.sh`, `verify-briefing.sh`, `alert.sh`, `watchdog.sh`, `set-token.sh`, Unit-Vorlagen, `install.sh`, `deploy.sh`, `DAILY_UPDATE.md`, `check.sh`, Tests, Doku | Alles committet; alte Session läuft weiter |
 | 2 Umschalten | Marc + Claude | `sudo ./install.sh`; `alert.sh --test`; dann alte Session beenden: `./bin/loop.sh attach` → `/cron list` → Eintrag löschen → `claude stop <sid>`. Alte Skripte bleiben als manueller Notfallweg. | Neue Units aktiv, kein Doppelbetrieb am ersten Echtlauf |
-| 3 Generalprobe | beide | a) `sudo systemctl start ai-news-dashboard-daily.service` an einem Tag mit fertigem Briefing → Exit 0 idempotent; danach `reset-failed`. b) Fehlerinjektion: `DAILY_ENV=test.env bin/run-daily.sh </dev/null` mit ungültigem Token → Exit 3, `alert.sh` direkt → WhatsApp „401" kommt an (transiente Units haben kein `OnFailure`). c) Erster Echtlauf am Folgetag 07:15 beobachten (`journalctl -f`). d) YouTube-Deploy um 06:00 aus der gehärteten Unit prüfen (Push, `gh`-Schreibzugriff). e) `--setting-sources project` testen; falls `-p` ohne User-Settings sauber läuft, übernehmen. | Kanal, Retry, Deploy verifiziert |
+| 3 Generalprobe | beide | a) `sudo systemctl start ai-news-dashboard-daily.service` an einem Tag mit fertigem Briefing → Exit 0 idempotent; danach `reset-failed`. b) **Ende-zu-Ende-Alarmtest über die echte Kette**: `sudo systemctl edit --runtime ai-news-dashboard-daily.service` mit `Environment=DAILY_ENV=…/test.env` (ungültiger Token), `systemctl start` → Exit 3 → `failed` → `OnFailure` → `alert@` → WhatsApp „401" muss ankommen; Drop-in entfernen, `reset-failed`, `--reset-attempts`. c) `--setting-sources project` **vor** dem ersten Echtlauf testen (`-p` mit `--dangerously-skip-permissions` ohne User-Settings, Trivialprompt), sonst erbt der Lauf superpowers-Hooks. d) Erster Echtlauf am Folgetag 07:15 beobachten (`journalctl -f`). e) YouTube-Deploy um 06:00 aus der gehärteten Unit prüfen (Push, `gh`-Schreibzugriff). f) GitHub-Workflow einmal manuell auslösen (`workflow_dispatch`) und einmal mit absichtlich altem Datum fehlschlagen lassen, damit die E-Mail-Zustellung belegt ist. | Kanal, Retry, Deploy, externer Wächter verifiziert |
 | 4 Rückbau | Claude | `start-daily-loop.sh`, `loop.sh`, `verify-daily-loop.sh`, `fix-selinux-launcher.sh` löschen; `semanage fcontext -d` für die alte Datei-Regel; CLAUDE.md: Session-Abschnitte durch Runbook ersetzen, alte Failure-Modes als „Historie"; Memory; in frischer interaktiver Session `/cron list` prüfen (projektgebundene Scheduler-Lock `.claude/scheduled_tasks.lock`) | Kein Session-Code mehr |
 | 5 Optional | Marc + Claude | WhatsApp-Channel-Plugin (Allowlist, Test); Fine-grained-PAT per `LoadCredential`; `InaccessiblePaths` für Credentials | Statusabfragen vom Handy, engere Rechte |
 
@@ -371,7 +429,8 @@ Units mit `$PROJECT_DIR`/`$HOME` des Run-Users rendern; `systemd-analyze verify`
 | Claude-Code-Push im `-p`-Modus ungeprüft | Testpunkt in Phase 3; kein Pflichtkanal |
 | `gh` unter `ProtectHome=read-only` beim Push | Phase 3d; ggf. `ReadWritePaths` um `~/.config/gh` |
 | Modell `claude-opus-4-8` bleibt verfügbar; Kosten pro Lauf unbekannt | `CLAUDE_MODEL`/`FALLBACK_MODEL` per Env; Kosten ab dem ersten Lauf in `last-run.json`; 400/404 alarmieren sofort |
-| Alarm frühestens ~13:15 bei drei wiederholbaren Fehlern | akzeptiert („am selben Tag"); STALE-Regel ≥ 14:00 als Netz |
+| Alarm nach drei wiederholbaren Fehlern frühestens ~11:20, Worst Case ~15:45 | akzeptiert („am selben Tag"); STALE-Regel ≥ 14:00 und GitHub-Workflow 16:00 UTC als Netz |
+| GitHub-`schedule`-Workflows werden nach 60 Tagen Inaktivität deaktiviert | tägliche Commits; Heartbeat nennt letzten Workflow-Lauf |
 
 ## 10. Änderungen nach Review (Version 2)
 
@@ -402,14 +461,38 @@ Ausfallarten). Übernommen:
   `STATUS:`-Marker, `StandardInput=null`, `set-token.sh`, `git add` mit Pathspec,
   `install.sh`-Reihenfolge, `semanage -a || -m`, OnFailure-Zeitpunkt dokumentiert.
 
+Version 2.1 (Bestätigungsrunde beider Reviewer):
+
+- **Endlosschleife bei Timeouts**: Mit Fenster 8 h hätte der Worst Case (3 × 90 min +
+  2 h) das Startlimit nie erreicht. Jetzt zählt das Skript die Fehlschläge pro Tag
+  selbst (Exit 11 `GIVEUP`, sofort `OnFailure`); systemd-Fenster 12 h nur als Backstop.
+- **Cleanup nach Commit**: Manifest-Restore nur, wenn der Lauf noch nichts committet
+  hat; sonst korrumpierte er still die Timeline. `verify` vergleicht Quell- und
+  `docs/`-Manifest.
+- **Verifikation im Prompt**: `--pre-deploy`-Modus, sonst scheiterte Schritt 6 zwingend
+  (docs/ noch nicht gebaut, nichts gepusht). Link-Pflicht gestrichen, Schwellen werden
+  kalibriert (heutiges Briefing hätte QUALITY ausgelöst).
+- **QUALITY ein Pfad** (nur `OnFailure`), `last-failure` pro Unit, pending pro Vorfall
+  mit Obergrenze, `/fail` nur bei nicht-wiederholbaren Codes, YouTube-Unit ohne
+  `OnFailure`, STALE nicht während eines laufenden Nachhollaufs, Lock wartet statt
+  zu alarmieren, `TimeoutStopSec=3min`, Watchdog-Live-Check mit Timeout und Temp-Dir,
+  Stash vor `fetch`/`ff-only`, GitHub-Auth-Fehler beim Fetch als REPO.
+- **Externer Wächter ohne Konto**: GitHub-Actions-`schedule`-Workflow prüft das
+  Pages-Datum und mailt bei Fehlschlag; healthchecks.io bleibt optional.
+- **Ende-zu-Ende-Alarmtest** über die echte `OnFailure`-Kette in Phase 3b;
+  `--setting-sources project` vor dem ersten Echtlauf.
+- Alle Exec-Zeilen über `/usr/bin/bash`, Verzeichnisregel nur noch Defense-in-Depth.
+
 Verworfen mit Begründung:
 
-- `ExecStart=/usr/bin/bash <skript>` zur SELinux-Umgehung: unbelegt, ob `init_t` das
-  Skript lesen darf; die Verzeichnisregel ist der bewiesene Pfad.
 - `After=youtube-fetch` streichen: serialisiert die Nachholstarts nach Boot; das
   Timeout an der YouTube-Unit löst das eigentliche Problem.
 - Env-Datei nach `/etc` (root): unnötig, sobald die Skripte selbst sourcen; Bearbeitung
-  ohne sudo bleibt möglich.
+  ohne sudo bleibt möglich; das Prozess-Environ des Laufs enthält den Token ohnehin.
+- healthchecks.io als Pflicht: ersetzt durch den kontofreien GitHub-Workflow; bleibt
+  optional als zweiter externer Kanal.
+- Korrigiert gegenüber v2: `ExecStart=/usr/bin/bash <skript>` ist keine unbelegte
+  Umgehung, sondern der Pfad, den die YouTube-Unit täglich nutzt; jetzt übernommen.
 
 ## 11. Quellen
 
