@@ -37,9 +37,11 @@ load_env() {
   return 0
 }
 
-# claude-Binary: ~/.local/bin zuerst (unter systemd nicht im PATH), dann PATH.
+# claude-Binary: CLAUDE_BIN-Override zuerst (Tests/Fehlerinjektion), dann
+# ~/.local/bin (unter systemd nicht im PATH), dann PATH.
 resolve_claude() {
   local c
+  if [ -n "${CLAUDE_BIN:-}" ] && [ -x "$CLAUDE_BIN" ]; then printf '%s\n' "$CLAUDE_BIN"; return 0; fi
   for c in "$HOME/.local/bin/claude" "$(command -v claude 2>/dev/null || true)" \
            /usr/local/bin/claude /usr/bin/claude; do
     if [ -n "$c" ] && [ -x "$c" ]; then printf '%s\n' "$c"; return 0; fi

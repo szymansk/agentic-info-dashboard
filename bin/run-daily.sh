@@ -30,12 +30,22 @@ esac
 RUN_DATE="$(today)"
 START_TS="$(date +%s)"
 HEAD0=""
-CLAUDE_BIN=""
+CLAUDE_BIN="${CLAUDE_BIN:-}"  # evtl. schon von außen gesetzter Override bleibt für resolve_claude() erhalten
 attempts="$(state_read "attempts.$RUN_DATE")"; attempts="${attempts:-0}"
 
 ping_hc() {  # ping_hc start|fail|"" — nur wenn HEALTHCHECKS_URL gesetzt
   [ -n "${HEALTHCHECKS_URL:-}" ] || return 0
-  curl -fsS -m 10 "$HEALTHCHECKS_URL${1:+/$1}" >/dev/null 2>&1 || true
+  curl -fsS -m 10 "$HEALTHCHECKS_URL${1:+/$1}" >/dev/null 2>&1 9>&- || true
+}
+
+existing_own_paths() {  # füllt EXISTING_OWN_PATHS mit den OWN_DIRT_PATHS-Einträgen,
+  # die tatsächlich existieren — eine fehlende Pfadspezifikation lässt
+  # `git stash push -- <pfade>` sonst komplett fatal scheitern (Spec 5.2).
+  EXISTING_OWN_PATHS=()
+  local p
+  for p in "${OWN_DIRT_PATHS[@]}"; do
+    [ -e "$p" ] && EXISTING_OWN_PATHS+=("$p")
+  done
 }
 
 write_last_run() {  # <exit> <ART> <text>
@@ -64,7 +74,9 @@ cleanup_leftovers() {  # <exit> — nur, wenn der Lauf noch nichts committet hat
     log "Lauf hat bereits committet — keine Aufräumung (Timeline bleibt konsistent)"; return 0
   fi
   if [ "$(git status --porcelain --untracked-files=all | classify_dirt)" != clean ]; then
-    if git stash push -u -q -m "daily-fail $(date -Is) exit $1" -- "${OWN_DIRT_PATHS[@]}"; then
+    existing_own_paths
+    if [ "${#EXISTING_OWN_PATHS[@]}" -gt 0 ] \
+       && git stash push -u -q -m "daily-fail $(date -Is) exit $1" -- "${EXISTING_OWN_PATHS[@]}" 9>&-; then
       log "Reste des Laufs gestasht (git stash list)"
     else
       warn "git stash der Reste fehlgeschlagen — Dirt-Klassifikation räumt beim nächsten Start"
@@ -103,7 +115,7 @@ trap on_term TERM INT
 poll_pages() {  # bis 10 min auf das neue Datum warten; nur Warnung
   local i d=""
   for i in 1 2 3 4 5 6 7 8 9 10; do
-    d="$(curl -fsS -m 15 -H 'Cache-Control: no-cache' "$PAGES_URL" 2>/dev/null \
+    d="$(curl -fsS -m 15 -H 'Cache-Control: no-cache' "$PAGES_URL" 2>/dev/null 9>&- \
           | grep -oE 'data-snapshot-date="[0-9-]{10}"' | head -1 | grep -oE '[0-9-]{10}' || true)"
     if [ -n "$d" ] && [[ ! "$d" < "$RUN_DATE" ]]; then log "Pages zeigt $d"; return 0; fi
     [ "$i" -lt 10 ] && sleep 60
@@ -112,8 +124,14 @@ poll_pages() {  # bis 10 min auf das neue Datum warten; nur Warnung
 }
 
 verify_and_finish() {
-  local vout vrc=0 reason prev status
-  prev="$(state_read prev-snapshot)"
+  local vout vrc=0 reason prev="" status
+  # prev-snapshot nur verwenden, wenn DIESER Lauf es geschrieben hat (Schritt
+  # 6) — im push-only-Pfad (kein Schritt 6) wäre die Datei ein Rest eines
+  # früheren Laufs; verify-briefing.sh ermittelt PREV dann selbst aus der
+  # Historie statt mit einem veralteten Datum zu scheitern.
+  if [ -f "$STATE_DIR/prev-snapshot" ] && [ "$(stat -c %Y "$STATE_DIR/prev-snapshot")" -ge "$START_TS" ]; then
+    prev="$(state_read prev-snapshot)"
+  fi
   vout="$("$BIN/verify-briefing.sh" --full --date "$RUN_DATE" ${prev:+--prev "$prev"} 2>&1)" || vrc=$?
   printf '%s\n' "$vout" | sed 's/^/    /'
   reason="$(printf '%s\n' "$vout" | grep '^RESULT:' | tail -1)"; reason="${reason#RESULT: }"
@@ -133,13 +151,14 @@ print(l[-1] if l else "")' "$STATE_DIR/last-run.out.json" 2>/dev/null || true)"
   write_last_run 0 OK "${status:-ok}"
   rm -f "$STATE_DIR/attempts.$RUN_DATE" "$STATE_DIR/last-failure.daily" "$STATE_DIR/last-alert"
   ping_hc ""
+  trap - TERM INT  # Erfolg ist verbucht — ein spätes Signal darf last-run.json/attempts nicht mehr zu fail() umbiegen
   poll_pages
   return 0
 }
 
 push_only() {
   local out
-  if out="$(git push origin main 2>&1)"; then
+  if out="$(git push origin main 2>&1 9>&-)"; then
     log "push ok"; verify_and_finish; return 0
   fi
   if grep -qiE "non-fast-forward|rejected|fetch first" <<<"$out"; then
@@ -177,29 +196,38 @@ main() {
     foreign) fail 4 DIRTY "fremde Änderungen im Working Tree: $(git status --porcelain --untracked-files=all | head -5 | tr '\n' ';') — committen oder stashen" ;;
     own)
       warn "Reste eines früheren Laufs/Deploys im Tree"
-      if [ "$DRY" = 1 ]; then log "[dry-run] würde die Reste stashen"
-      else git stash push -u -q -m "daily-leftover $(date -Is)" -- "${OWN_DIRT_PATHS[@]}" || fail 5 RUN "git stash der Reste fehlgeschlagen"; fi ;;
+      if [ "$DRY" = 1 ]; then
+        log "[dry-run] würde die Reste stashen"
+      else
+        existing_own_paths
+        [ "${#EXISTING_OWN_PATHS[@]}" -gt 0 ] || fail 5 RUN "own-Dirt erkannt, aber keiner der OWN_DIRT_PATHS existiert auf der Platte"
+        git stash push -u -q -m "daily-leftover $(date -Is)" -- "${EXISTING_OWN_PATHS[@]}" 9>&- || fail 5 RUN "git stash der Reste fehlgeschlagen"
+      fi ;;
   esac
 
   # 4. Repo (nach dem Stash, sonst liefe der Lauf auf veralteter Basis)
   if [ -f .git/index.lock ] && [ $(( $(date +%s) - $(stat -c %Y .git/index.lock) )) -gt 3600 ]; then
     rm -f .git/index.lock; warn "verwaistes .git/index.lock entfernt"
   fi
-  if ! fetch_out="$(git fetch origin 2>&1)"; then
+  if ! fetch_out="$(git fetch origin 2>&1 9>&-)"; then
     if grep -qiE "authentication failed|could not read username|403" <<<"$fetch_out"; then
       fail 9 REPO "GitHub-Auth beim Fetch fehlgeschlagen — 'gh auth status' prüfen"
     fi
     fail 5 RUN "git fetch fehlgeschlagen: ${fetch_out:0:120}"
   fi
   if [ "$DRY" != 1 ]; then
-    git merge --ff-only -q origin/main 2>/dev/null || fail 9 REPO "lokal und origin/main divergieren — von Hand rebasen"
+    git merge --ff-only -q origin/main 2>/dev/null 9>&- || fail 9 REPO "lokal und origin/main divergieren — von Hand rebasen"
   fi
 
   # 5. Idempotenz / push-only
   cur="$(snapshot_date dashboards/ai-news/index.html)"
   ahead="$(git rev-list --count origin/main..HEAD 2>/dev/null || echo 0)"
   if [ "$cur" = "$RUN_DATE" ] && [ "$(git status --porcelain --untracked-files=all | classify_dirt)" = clean ]; then
-    if [ "$ahead" = 0 ]; then log "Briefing vom $RUN_DATE ist gepusht — nichts zu tun"; exit 0; fi
+    if [ "$ahead" = 0 ]; then
+      log "Briefing vom $RUN_DATE ist gepusht — nichts zu tun"
+      rm -f "$STATE_DIR/attempts.$RUN_DATE" "$STATE_DIR/last-failure.daily" "$STATE_DIR/last-alert"
+      exit 0
+    fi
     log "Briefing vom $RUN_DATE committet, $ahead Commit(s) nicht gepusht → push-only"
     [ "$DRY" = 1 ] && { log "[dry-run] würde nur pushen"; exit 0; }
     push_only; exit 0
@@ -222,11 +250,12 @@ main() {
       ${FALLBACK_MODEL:+--fallback-model "$FALLBACK_MODEL"} \
       ${CLAUDE_SETTING_SOURCES:+--setting-sources "$CLAUDE_SETTING_SOURCES"} \
       --dangerously-skip-permissions --strict-mcp-config --disallowedTools AskUserQuestion \
-      --max-budget-usd "$MAX_BUDGET_USD" "$prompt" >"$out" </dev/null || rc=$?
+      --max-budget-usd "$MAX_BUDGET_USD" "$prompt" >"$out" </dev/null 9>&- || rc=$?
   log "claude -p beendet mit rc=$rc nach $(( $(date +%s) - START_TS )) s"
 
   # 8. Klassifikation
   cls="$(classify_result "$out")"
+  [ -n "$cls" ] || cls="5 RUN Klassifikation lieferte nichts"
   code="${cls%% *}"; kind="$(cut -d' ' -f2 <<<"$cls")"; text="$(cut -d' ' -f3- <<<"$cls")"
   [ "$code" = 0 ] || fail "$code" "$kind" "$text"
   grep -q '"permission_denials": *\[[^]]' "$out" 2>/dev/null && warn "permission_denials nicht leer — der Lauf konnte nicht alles ausführen"

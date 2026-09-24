@@ -35,4 +35,5 @@ assert_eq "" "$(state_read gibtsnicht)" "state_read fehlend → leer"
 
 # resolve_claude mit Stub
 stub claude 'echo stub'; assert_eq "$STUB_BIN/claude" "$(HOME=/nonexistent resolve_claude)" "resolve_claude via PATH"
+assert_eq "$STUB_BIN/claude" "$(CLAUDE_BIN="$STUB_BIN/claude" resolve_claude)" "resolve_claude via CLAUDE_BIN-Override"
 test_summary
