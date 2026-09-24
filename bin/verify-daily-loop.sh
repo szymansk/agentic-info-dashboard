@@ -28,7 +28,14 @@ for unit in $UNITS; do
   result="$(systemctl show "$unit" -p Result --value)"
   code="$(systemctl show "$unit" -p ExecMainStatus --value)"
   printf "  %-42s Result=%s ExecMainStatus=%s\n" "$unit" "$result" "$code"
-  [ "$result" = "success" ] && [ "$code" = "0" ] || fail=1
+  # Watchdog-Exit-Codes: 0 gesund/geheilt, 1 wartet (Session arbeitet/Cooldown),
+  # 2 braucht Mensch (Auth/stuck). Alle drei heißen: systemd KONNTE den Launcher
+  # ausführen — nur das prüft dieses Script. 203 = SELinux, 126/127 = PATH/exec.
+  case "$code" in
+    0|1|2) ;;
+    *) fail=1 ;;
+  esac
+  [ "$code" = "2" ] && journalctl -u "$unit" -n 5 --no-pager -o cat | sed 's/^/      /'
 done
 
 echo
@@ -37,10 +44,11 @@ echo "== 3. Background-Session lebt? =="
 
 echo
 if [ "$fail" -eq 0 ]; then
-  echo "✓ PASS — systemd kann den Launcher fehlerfrei ausführen. Selbstheiler ist scharf."
+  echo "✓ PASS — systemd kann den Launcher ausführen. Watchdog ist scharf."
+  echo "    (ExecMainStatus 1 = wartet, 2 = braucht dich — Details: ./bin/check.sh)"
 else
-  echo "✗ FAIL — mind. eine Unit hat Result!=success / ExecMainStatus!=0"
-  echo "    203 = SELinux exec-denied (Label prüfen, Schritt 1)"
-  echo "    1   = Script lief, brach selbst ab → journalctl -u <unit> -n 20"
+  echo "✗ FAIL — mind. eine Unit hat ExecMainStatus außerhalb 0/1/2"
+  echo "    203     = SELinux exec-denied (Label prüfen, Schritt 1)"
+  echo "    126/127 = Binary/PATH → journalctl -u <unit> -n 20"
   exit 1
 fi

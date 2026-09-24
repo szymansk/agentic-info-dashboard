@@ -28,6 +28,8 @@
 #
 # Optionen:  --dry-run | --status   nur prüfen + Entscheidung loggen, nichts
 #                                   ändern (nutzt check.sh)
+#            --force                Cooldown/Tageslimit ignorieren (manueller
+#                                   Neustart, nutzt loop.sh restart)
 # Exit:      0 = gesund oder geheilt · 1 = wartet (Cooldown/Session arbeitet)
 #            2 = braucht einen Menschen (Auth weg / Neustarts erschöpft)
 #
@@ -71,9 +73,11 @@ TOKEN_WARN_DAYS="${TOKEN_WARN_DAYS:-5}"               # Vorwarnung vor Refresh-T
 ALERT_REPEAT_SEC="${ALERT_REPEAT_SEC:-43200}"         # externe Alarme je Art max. alle 12 h
 
 DRY_RUN=0
+FORCE=0
 for arg in "$@"; do
   case "$arg" in
     --dry-run|--status) DRY_RUN=1 ;;
+    --force) FORCE=1 ;;
     -h|--help) sed -n '2,45p' "$0" | sed 's/^# \{0,1\}//'; exit 0 ;;
     *) echo "unbekannte Option: $arg" >&2; exit 64 ;;
   esac
@@ -269,6 +273,7 @@ read_briefing_age() {  # setzt BRIEFING_DATE + BRIEFING_AGE (Tage); keine Subshe
 restart_allowed() {
   local f="$STATE_DIR/restarts.log" now last n_day
   now="$(date +%s)"
+  [ "$FORCE" = 1 ] && { log "(--force: Cooldown/Tageslimit ignoriert)"; return 0; }
   [ -f "$f" ] || return 0
   last="$(tail -1 "$f" | cut -f1)"
   if [ -n "$last" ] && [ $(( now - last )) -lt "$RESTART_COOLDOWN_SEC" ]; then
@@ -378,7 +383,7 @@ main() {
     # alt UND die Session läuft schon länger als ein Cooldown — dann hatte sie
     # ihre Chance und wird trotzdem ersetzt (fängt Sessions, deren Transcript
     # zwar wächst, die aber nie liefern).
-    if session_busy "$sid" && { [ "$age" -lt "$HARD_STALE_DAYS" ] || [ "$session_age" -lt "$RESTART_COOLDOWN_SEC" ]; }; then
+    if [ "$FORCE" != 1 ] && session_busy "$sid" && { [ "$age" -lt "$HARD_STALE_DAYS" ] || [ "$session_age" -lt "$RESTART_COOLDOWN_SEC" ]; }; then
       log "Session (seit $(( session_age / 60 )) Min aktiv) hat vor $(( ( $(date +%s) - LAST_ACTIVITY ) / 60 )) Min gearbeitet — warte auf Abschluss"
       exit 1
     fi

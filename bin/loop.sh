@@ -10,7 +10,7 @@
 #   raw-log   Holt logs ungefiltert (für Debug der TUI-Streams)
 #   attach    Attached an die Session (`claude attach`)
 #   stop      Stoppt die Session
-#   restart   Stoppt und startet neu via start-daily-loop.sh
+#   restart   Stoppt und startet neu via start-daily-loop.sh --force
 #
 # Beispiele:
 #   ./bin/loop.sh log
@@ -163,7 +163,8 @@ sys.stdout.write(text)
       sleep 1
     fi
     echo "Starting fresh session …"
-    exec "$SCRIPT_DIR/start-daily-loop.sh"
+    # --force: manueller Neustart soll nicht am Watchdog-Cooldown scheitern
+    exec "$SCRIPT_DIR/start-daily-loop.sh" --force
     ;;
 
   *)
