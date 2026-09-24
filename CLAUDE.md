@@ -11,10 +11,17 @@ manuell, teils automatisch über eine Background-Claude-Session aktualisiert.
 .
 ├── serve.py                    # stdlib-Webserver für lokale Entwicklung
 ├── install.sh                  # Setup auf frischem System (systemd + firewall)
-├── DAILY_UPDATE.md             # Orchestrator-Prompt für die Background-Session
+├── DAILY_UPDATE.md             # Prompt für den täglichen claude -p-Oneshot
+├── specs/                      # Design-Specs
+├── plans/                      # Implementierungspläne
+├── .github/workflows/stale-check.yml # externer Wächter (Pages-Datum)
 ├── bin/
-│   ├── start-daily-loop.sh     # idempotenter Launcher (von systemd aufgerufen)
-│   ├── loop.sh                 # Wrapper: status/log/attach/stop/restart
+│   ├── run-daily.sh            # Tageslauf: claude -p + Klassifikation + Verify + Cleanup
+│   ├── verify-briefing.sh      # Ergebnisprüfung (--pre-deploy im Prompt, --full im Wrapper)
+│   ├── alert.sh                # einziger Alarmweg (CallMeBot/ntfy/Journal)
+│   ├── watchdog.sh             # alle 30 min: Frische, Token, Pages, YouTube
+│   ├── set-token.sh            # Setup-Token nach ~/.config/ai-news-dashboard/daily.env
+│   ├── verify-daily.sh         # Units einmal per systemd auslösen
 │   ├── deploy.sh               # build-pages → git commit → push
 │   └── check.sh                # Health-Check
 ├── scripts/
@@ -38,14 +45,14 @@ folder. `bin/deploy.sh` automatisiert den Zyklus build → commit → push.
 
 Aufrufe von `deploy.sh`:
 - nach `fetch-youtube.py` (via systemd ExecStartPost)
-- am Ende von `DAILY_UPDATE.md` Step 7 (Background-Session)
+- am Ende von `DAILY_UPDATE.md` Step 7 (täglicher `claude -p`-Oneshot, s. Tageslauf-Mechanik)
 - manuell wenn du sofort live haben willst
 
 ## Update-Verantwortlichkeiten
 
 | Dashboard | Update-Quelle | Frequenz |
 |---|---|---|
-| `/ai-news/` | Claude Background-Session via `DAILY_UPDATE.md` | täglich (`/loop 24h`) |
+| `/ai-news/` | systemd-Timer 07:15 → `bin/run-daily.sh` → `claude -p` (`DAILY_UPDATE.md`) | täglich |
 | `/ai-news/` Snapshots | dieselbe Session, archiviert gestern beim heutigen Lauf | täglich |
 | `/youtube/` | `scripts/fetch-youtube.py` via systemd-Timer | täglich 06:00 |
 | `/whoiswho/` | manuell, editiere `dashboards/_shared/people.js` | bei Bedarf |
@@ -77,202 +84,40 @@ Aufrufe von `deploy.sh`:
 | `ai-news-dashboard.service` | simple | beim Boot, hält den Server am Leben |
 | `ai-news-dashboard-youtube-fetch.service` | oneshot | vom Timer aufgerufen |
 | `ai-news-dashboard-youtube-fetch.timer` | timer | täglich 06:00 |
-| `ai-news-dashboard-daily-loop.service` | oneshot+RemainAfterExit | beim Boot, sichert Background-Session |
+| `ai-news-dashboard-daily.timer/.service` | timer → oneshot | täglich 07:15, Retry 2 h, max. 3/Tag |
+| `ai-news-dashboard-alert@.service` | oneshot (Template) | von `OnFailure` der Units |
+| `ai-news-dashboard-watchdog.timer/.service` | timer → oneshot | alle 30 min, nur Alarme |
 
-## Background-Session-Mechanik
+## Tageslauf-Mechanik (seit 2026-09, systemd-Oneshot)
 
-Die Claude-Background-Session läuft `/loop 24h` und arbeitet die
-`DAILY_UPDATE.md` täglich ab. Sie wird beim Reboot **NICHT** automatisch
-fortgeführt (Background-Sessions überleben Shutdown nicht — siehe
-[Docs](https://code.claude.com/docs/en/agent-view#how-background-sessions-are-hosted)).
-Stattdessen läuft `bin/start-daily-loop.sh` beim Boot und alle 30 Min via
-systemd als **Watchdog**: prüft Auth → Daemon → Session → Briefing-Frische und
-ersetzt eine Session, die kein Ergebnis mehr liefert (idempotent; `--dry-run`
-zeigt nur die Entscheidung).
+`ai-news-dashboard-daily.timer` startet 07:15 `bin/run-daily.sh`, das `claude -p`
+mit `DAILY_UPDATE.md` ausführt (Token aus `~/.config/ai-news-dashboard/daily.env`,
+nur in dieser Prozessumgebung). Design und Begründung: `specs/2026-09-24-daily-run-oneshot-design.md`.
 
-State-Dateien der Background-Session liegen unter:
-- `~/.claude/daemon/roster.json` — Liste der Sessions
-- `~/.claude/jobs/<id>/state.json` — pro-Session-State
-- `~/.claude/daemon.log` — Supervisor-Log
+**Runbook**
+- Zustand: `./bin/check.sh` (Sektion „daily run"), `journalctl -u ai-news-dashboard-daily -n 40`,
+  `journalctl -t ai-news-alert`, `~/.local/state/ai-news-dashboard/last-run.json`
+- Lauf von Hand: `sudo systemctl start ai-news-dashboard-daily.service` (idempotent: steht das
+  heutige Briefing schon, Exit 0). Danach `sudo systemctl reset-failed …` + `bin/run-daily.sh --reset-attempts`,
+  sonst zählen Handstarts als Versuche.
+- Alarm `AUTH`/`TOKEN`/`TOKEN_LIVE`: `claude setup-token` im Browser → `bin/set-token.sh` (Token per stdin).
+- Alarm `DIRTY`: fremde Änderungen im Working Tree committen oder stashen; der Lauf fasst nur
+  `dashboards/ai-news`, `dashboards/it-services`, `docs` an.
+- Alarm `GIVEUP`/`STUCK`-artige Fälle: Grund steht in der Nachricht und in `last-failure.daily`;
+  Transcript des Laufs: `~/.claude/projects/<slug>/<session_id>.jsonl` (`session_id` in `last-run.json`).
+- Alarm `REPO`: `git status -sb`, `git log --oneline -3 origin/main` — von Hand rebasen/pushen.
+- Alarm `QUALITY`: Briefing ist deployt, aber dünn/kaputt (Grund in der Nachricht); Schwellen in
+  `daily.env` (`MIN_WORDS`, `MIN_CARDS`), Prüfung selbst: `bin/verify-briefing.sh --full`.
+- Alarm `PUBLIC_STALE`: Pages hinkt — `gh run list`, GitHub-Pages-Status; lokal ist alles ok.
+- Kein Alarm, aber Briefing alt: GitHub-Workflow `stale-check` mailt spätestens 18:17 CEST;
+  `gh run list --workflow stale-check.yml`.
+- Testkette (nach Änderungen an Units/Skripten): `bash tests/run-all.sh`, `./bin/verify-daily.sh`,
+  `bin/alert.sh --test`.
 
-Inspect:
-- `./bin/loop.sh status` — Name, ID, PID, Alter (Convenience-Wrapper)
-- `./bin/loop.sh log` — Logs ANSI-gestrippt + lesbar
-- `./bin/loop.sh attach` — in die Session wechseln (← detachen)
-- `claude daemon status` — Supervisor-State
-- `claude agents` — interaktive Übersicht
-- `claude logs <short-id>` — direkter Zugriff (Name funktioniert NICHT, nur ID)
-
-Die Session legt beim ersten `/loop` einen persistenten **Cron-Job** an (via
-`CronCreate`-Tool), der täglich triggert. Der Cron-Job überlebt
-Session-Sleep + Idle-Stops. Auflisten: `claude /cron list` innerhalb einer
-attached Session.
-
-### Failure-Mode: Supervisor stirbt beim Binary-Auto-Upgrade
-
-**Symptom**: Briefing aktualisiert sich tagelang nicht, aber YouTube (systemd-
-Timer) läuft weiter. Ursache: Wenn der `claude`-Binary automatisch aktualisiert
-wird, killt das den Supervisor-Daemon mid-uptime (`daemon.log`: „binary was
-deleted — exiting for upgrade") und er kommt **NICHT von selbst zurück**. Die
-Session wird zum Zombie: PID lebt noch, aber control.sock ist tot → keine
-Cron-Wakeups, kein Auth-Refresh. Die Session produziert noch ein paar Tage aus
-gecachten Credentials, dann stallt sie.
-
-**Warum es nicht selbst heilte (früher)**: `daily-loop.service` lief nur beim
-Boot; die Maschine wurde nicht neu gestartet. `start-daily-loop.sh` prüfte nur
-`os.kill(pid, 0)` — die Zombie-PID lebt, also „alles gut".
-
-**Fix (eingebaut)**:
-- `start-daily-loop.sh` prüft jetzt zuerst `daemon_healthy()` und reapt via
-  `claude daemon stop`, wenn der Supervisor weg ist → erzwingt Neustart.
-- `ai-news-dashboard-healthcheck.timer` läuft alle 30 Min und ruft
-  `start-daily-loop.sh` (heilt mid-uptime, nicht nur beim Boot).
-- `bin/check.sh` zeigt Supervisor-Tod als roten `✗` + „Briefing veraltet".
-
-**Manuelle Recovery** (falls doch mal nötig):
-```bash
-claude daemon stop          # reapt verwaiste Worker
-./bin/start-daily-loop.sh   # startet frische Session (jetzt gehärtet)
-./bin/check.sh              # verifizieren: daemon läuft + Briefing aktuell
-```
-
-### Failure-Mode: Briefing steht, Server läuft — zwei weitere Ursachen
-
-Das Symptom „Briefing veraltet, aber YouTube/Server frisch" ist **nicht immer**
-der Upgrade-Kill oben. Am 2026-06-23 stand das Briefing 8 Tage (seit 15.06.) —
-zwei gestapelte Ursachen, die der Upgrade-Pfad nicht abdeckt:
-
-1. **Idle-Exit statt Upgrade-Kill**: `daemon.log` zeigte
-   `idle 5s with no clients — exiting` (KEIN „binary was deleted"). Der
-   Supervisor beendete sich nach dem Tagesjob sauber, niemand startete neu.
-   Der Selbstheiler `ai-news-dashboard-healthcheck.timer` war als Datei da,
-   aber **`disabled` + `inactive`** — nie `systemctl enable --now`'d.
-   → Timer-Aktiv-Status mitprüfen:
-   `systemctl is-active ai-news-dashboard-healthcheck.timer`.
-
-2. **Default-Modell unverfügbar**: Die neu gestartete Session erbte den
-   interaktiven Default aus `~/.claude/settings.json` (`claude-fable-5`,
-   Mythos-gated) und hing mit „Fable 5 is currently unavailable", statt zu
-   arbeiten. Ein unbeaufsichtigter Loop darf NICHT vom interaktiven Default
-   abhängen. → `start-daily-loop.sh` pinnt das Modell jetzt fest
-   (`CLAUDE_MODEL="${CLAUDE_MODEL:-claude-opus-4-8}"` + `--model`).
-
-**Diagnose-Reihenfolge** bei „Briefing veraltet, YouTube frisch":
-```bash
-claude daemon status                                    # Daemon tot?
-systemctl is-active ai-news-dashboard-healthcheck.timer # Timer feuert?
-systemctl show ai-news-dashboard-healthcheck.service \
-  -p Result -p ExecMainStatus                           # ABER: heilt er auch?
-./bin/loop.sh log | grep -iE "unavailable|fable|opus"   # Modell-Fehler?
-```
-Erst danach Upgrade-Kill annehmen — nicht zuerst. **Achtung**: `is-active` am
-Timer sagt nur, dass er *feuert* — NICHT, dass `start-daily-loop.sh` *durchläuft*.
-`ExecMainStatus=203` (SELinux) oder `=1` (Script-Fehler intern) heißt: Timer
-feuert, Selbstheiler scheitert still. Siehe nächste Failure-Mode.
-
-### Failure-Mode: Selbstheiler scheitert still an SELinux + PATH (203/EXEC → Exit 1)
-
-Am 2026-07-07 stand das Briefing 6 Tage (seit 01.07.), YouTube/Server frisch.
-Diesmal war `healthcheck.timer` **enabled + active** (der 06-23-Fix war da) — und
-heilte trotzdem 6 Tage lang nichts. Zwei gestapelte Ursachen, die der Timer-
-Aktiv-Check nicht sieht:
-
-1. **SELinux blockt den Launcher-Exec** (`203/EXEC`): `bin/start-daily-loop.sh`
-   liegt unter `/home` → SELinux-Kontext `user_home_t`. Unter Enforcing darf
-   systemd (`init_t`) KEINE `user_home_t`-Datei ausführen. Also scheitern BEIDE
-   Auto-Restart-Pfade (Boot-`daily-loop.service` UND `healthcheck.service`) still
-   mit `status=203/EXEC "Permission denied"`. Der Timer feuert alle 30 Min und
-   scheitert jedes Mal. Beweis: `journalctl -t audit | grep start-daily-loop`
-   zeigt `avc: denied { execute } ... scontext=…init_t tcontext=…user_home_t`.
-
-2. **PATH ohne `~/.local/bin`** (Exit 1, erst sichtbar NACHDEM Layer 1 gefixt
-   ist — Defense-in-Depth): Die Units setzen kein `Environment=PATH`. systemds
-   Default-PATH enthält `~/.local/bin` nicht, wo `claude` liegt →
-   `command -v claude` scheitert → alter `/usr/bin/claude`-Fallback existiert
-   nicht → Launcher bricht mit Exit 1 ab.
-
-**Fix (eingebaut)**:
-- SELinux: `bin/fix-selinux-launcher.sh` (self-elevating) vergibt dem Launcher
-  persistent `bin_t` via `semanage fcontext` + `restorecon`. `init_t` DARF
-  `bin_t` ausführen. Einmalig laufen lassen.
-- `deploy.sh` macht bei jedem Deploy `restorecon bin/start-daily-loop.sh` →
-  heilt das Label nach Git-Rewrites/Checkouts (die es auf `user_home_t`
-  zurücksetzen). `restorecon` braucht KEIN root, läuft als User — verifiziert.
-- `start-daily-loop.sh` löst `claude` jetzt PATH-unabhängig auf (Kandidatenliste
-  inkl. `$HOME/.local/bin/claude`), statt sich auf `command -v` zu verlassen.
-
-**Verifizieren**: `./bin/verify-daily-loop.sh` → erwartet `Result=success
-ExecMainStatus=0` + `✓ PASS`.
-
-**Wichtig**: JEDER Rewrite von `start-daily-loop.sh` (Hand-Edit, `git checkout`)
-setzt das SELinux-Label auf `user_home_t` zurück → danach `restorecon
-bin/start-daily-loop.sh` (kein sudo nötig), sonst scheitert der Selbstheiler
-wieder mit `203`. `deploy.sh` fängt das automatisch beim nächsten Deploy.
-
-### Failure-Mode: Login weg — Selbstheiler war blind UND kaputt (2026-09-24)
-
-Am 2026-09-24 stand das Briefing **75 Tage** (seit 11.07.), YouTube/Server frisch,
-`healthcheck.timer` aktiv, `ExecMainStatus=0`. Drei gestapelte Ursachen:
-
-1. **OAuth-Refresh gescheitert** (Primärursache, 11.07. 13:04 UTC). `daemon.log`:
-   `auth: proactive refresh failed, signalling re-auth required` → `headless daemon
-   cannot complete OAuth — run 'claude auth login'` → `no token found, will
-   re-check keychain every 30s`. Die Cron-Ticks der Session (12./13./14.07.)
-   scheiterten mit `Not logged in · Please run /login` (`./bin/loop.sh log`),
-   danach gab der Session-Cron auf — kein Transcript-Eintrag mehr. Der
-   Refresh-Token hat **28 Tage** Laufzeit ab interaktivem Login
-   (`refreshTokenExpiresAt` in `~/.claude/.credentials.json`); headless kann
-   NICHT re-authentifizieren. Niemand wurde alarmiert.
-2. **Selbstheiler blind**: prüfte nur Mechanik (Daemon erreichbar, PID lebt),
-   nie Auth, nie das Ergebnis (Briefing-Datum). Auch nach dem `/login` am 24.09.
-   hätte er die tot-in-place-Session nie ersetzt.
-3. **Selbstheiler kaputt seit 25.08.** (CLI 2.1.243 machte `daemon status`
-   länger): `claude daemon status | grep -qiE …` unter `set -o pipefail` →
-   `grep -q` schließt die Pipe früh, claude bekommt EPIPE, exit≠0 → Fehlalarm
-   „Daemon nicht erreichbar" alle 30 Min. Der Reap `claude daemon stop`
-   **verweigert transiente Daemons** („Run `claude daemon stop --any`"),
-   `|| true` schluckte es, der PID-Check sagte „bereits aktiv", Exit 0.
-
-**Fix (eingebaut)** — `bin/start-daily-loop.sh` ist jetzt ein Watchdog:
-- prüft **Auth zuerst** (`claude auth status` → `loggedIn`), warnt ab 5 Tagen
-  vor Refresh-Token-Ablauf; ohne Login: ALARM `AUTH` + Exit 2 (Neustart wäre
-  sinnlos)
-- Daemon-Status wird **gecaptured** (kein `grep -q` auf der Pipe), die
-  `control.sock:`-Zeile muss `reachable` sein; Reap via `claude daemon stop --any`
-- **Ergebnis-Check**: Briefing-Datum ≥ 2 Tage alt + Session idle
-  (Transcript-mtime > 45 Min) → Zombie → Session stoppen + neu starten.
-  Cooldown 6 h, max. 3/Tag, danach ALARM `STUCK` + Exit 2. Eine beschäftigte
-  Session wird erst ersetzt, wenn das Briefing ≥ 5 Tage alt ist UND die Session
-  länger als 6 h läuft (sonst würde ein frisch gestarteter Ersatz sofort wieder
-  als „stuck" gelten — genau das passierte beim ersten Scharfschalten).
-- **Blockierte Session**: wartet die Session auf eine unbeantwortete Rückfrage
-  (`AskUserQuestion` ohne Antwort im Transcript), gibt es ALARM `BLOCKED` mit dem
-  Fragetext, keinen Neustart. Antworten: `./bin/loop.sh attach`; oder
-  `./bin/loop.sh restart` (bei sauberem Working Tree fragt sie meist nicht
-  erneut — ein unsauberer Tree ist der häufigste Auslöser, weil `deploy.sh`
-  `git add -A` macht). Beim ersten Scharfschalten am 24.09. passierte genau das.
-- **Alarme**: `journalctl -t ai-news-watchdog`,
-  `~/.local/state/ai-news-dashboard/alerts.log` + `last-alert` (zeigt
-  `check.sh`), optional ntfy über `~/.config/ai-news-dashboard/watchdog.env`
-  (`NTFY_TOPIC=…`). Exit≠0 lässt die Unit `failed` → `systemctl --failed` und
-  `check.sh` werden rot.
-- `./bin/start-daily-loop.sh --dry-run` zeigt die Entscheidung ohne
-  Nebenwirkung; `check.sh` ruft genau das auf.
-- Das Live-Briefing zeigt clientseitig ein Banner, sobald es ≥ 2 Tage alt ist
-  (Inline-Script in `dashboards/ai-news/index.html`; bleibt beim Tageslauf
-  unverändert, weil Script-Tags laut `DAILY_UPDATE.md` nicht angefasst werden).
-
-**Was der Watchdog NICHT kann**: sich selbst einloggen. Bei ALARM `AUTH`/`TOKEN`:
-auf dieser Maschine `claude` starten, `/login`, fertig — der Watchdog ersetzt die
-Session beim nächsten Lauf (≤ 30 Min) von selbst. Dauerhafter: `claude setup-token`
-(1 Jahr gültig) → `CLAUDE_CODE_OAUTH_TOKEN=…` in `watchdog.env` (chmod 600).
-Ob der Token bei der bg-Session ankommt, nach dem Start prüfen:
-`tr '\0' '\n' < /proc/<session-pid>/environ | grep -c CLAUDE_CODE_OAUTH_TOKEN`
-— das ist NICHT verifiziert.
-
-**Diagnose** bei „Briefing veraltet, YouTube frisch": zuerst `./bin/check.sh`
-(Sektion „background sessions") — sie zeigt Auth, Daemon, Session, Frische und
-den letzten Alarm. Erst danach in `daemon.log` / `loop.sh log` graben.
+**Historie (Background-Session, Mai–September 2026)**: Vier stille Ausfälle (Upgrade-Kill
+29.05., Idle-Exit + Modell 15.06., SELinux + PATH 01.07., Auth-Ablauf + blinder Selbstheiler
+11.07.–24.09.) führten zur Ablösung. Details und Lehren: Spec Abschnitt 2 und
+`git log -- bin/start-daily-loop.sh`.
 
 ## Was ich (Claude) hier NICHT tun soll
 
@@ -288,6 +133,8 @@ den letzten Alarm. Erst danach in `daemon.log` / `loop.sh log` graben.
 - `docs/` von Hand editieren — das ist Build-Output, immer via `build-pages.py`
 - absolute Pfade `/foo` in Edits durch transformierte Pfade ersetzen —
   Source-HTMLs nutzen IMMER `/foo`, build-pages.py macht das Rewriting
+- `~/.config/ai-news-dashboard/*.env` ins Repo oder in Logs bringen (Secrets)
+- `ai-news-dashboard-daily.service` von Hand starten, ohne danach `reset-failed` + `--reset-attempts`
 
 ## Wo finde ich was
 
@@ -299,4 +146,5 @@ den letzten Alarm. Erst danach in `daemon.log` / `loop.sh log` graben.
 - **Quellen-Liste**: `dashboards/sources/index.html`
 - **Logs**: `journalctl -u ai-news-dashboard*`
 - **Health**: `./bin/check.sh`
-- **Watchdog-Alarme**: `journalctl -t ai-news-watchdog`, `~/.local/state/ai-news-dashboard/`
+- **Watchdog-Alarme**: `journalctl -t ai-news-alert`, `~/.local/state/ai-news-dashboard/{alerts.log,last-alert,last-run.json}`
+- **Tageslauf-Transcript**: `~/.claude/projects/-home-szymansk-Projects-agentic-info-dashboard/<session_id>.jsonl`
