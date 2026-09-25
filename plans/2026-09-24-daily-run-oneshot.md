@@ -2372,7 +2372,7 @@ Expected: letzte Zeile `Briefing vom <heute> ist gepusht — nichts zu tun` oder
 - [ ] **Phase 2 (Marc + Claude): Umschalten**
 
 ```bash
-sudo ./install.sh                       # ein Passwort-Prompt; entfernt alte Units, installiert neue, aktiviert Timer
+./install.sh                            # OHNE sudo (fragt selbst); ein Passwort-Prompt; entfernt alte Units, installiert neue, aktiviert Timer
 bin/alert.sh --test                     # WhatsApp muss ankommen
 ./bin/loop.sh attach                    # alte Session: /cron list → Cron-Eintrag löschen → ← zum Detachen
 ./bin/loop.sh stop                      # alte Session beenden (der alte Selbstheiler ist mit install.sh weg)

@@ -20,14 +20,32 @@
 set -euo pipefail
 
 PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-RUN_USER="${USER:-$(id -un)}"
-RUN_GROUP="$(id -gn)"
+# Der Installer läuft als normaler User und ruft sudo selbst. Wird er trotzdem
+# per `sudo ./install.sh` gestartet, wäre $USER=root, $HOME=/root und `claude`
+# unauffindbar → Units mit User=root, Daily-Teil still übersprungen (passiert am
+# 25.09.2026). Deshalb: auf den aufrufenden User zurückfallen, reines root ablehnen.
+if [ "$(id -u)" -eq 0 ]; then
+  if [ -n "${SUDO_USER:-}" ] && [ "$SUDO_USER" != root ]; then
+    echo "→ läuft unter sudo — verwende Benutzer $SUDO_USER (bitte künftig ./install.sh OHNE sudo starten)"
+    RUN_USER="$SUDO_USER"
+  else
+    echo "✗ nicht als root starten — ./install.sh als normaler Benutzer ausführen (sudo wird intern gerufen)"
+    exit 1
+  fi
+else
+  RUN_USER="${USER:-$(id -un)}"
+fi
+RUN_GROUP="$(id -gn "$RUN_USER")"
+RUN_HOME="$(getent passwd "$RUN_USER" | cut -d: -f6)"
+[ -n "$RUN_HOME" ] || { echo "✗ Home-Verzeichnis von $RUN_USER nicht ermittelbar"; exit 1; }
 PORT="${PORT:-8000}"
 SKIP_FIREWALL="${SKIP_FIREWALL:-0}"
 SKIP_DAILY="${SKIP_DAILY:-0}"
 
 PY="$(command -v python3 || true)"
+[ -x /usr/bin/python3 ] && PY=/usr/bin/python3
 CLAUDE="$(command -v claude || true)"
+[ -z "$CLAUDE" ] && [ -x "$RUN_HOME/.local/bin/claude" ] && CLAUDE="$RUN_HOME/.local/bin/claude"
 
 # ─── Output ──────────────────────────────────────────────────────────
 red()    { printf "\033[31m%s\033[0m" "$*"; }
@@ -61,7 +79,7 @@ fi
 [ -n "$CLAUDE" ] && { green "✓"; echo " claude → $CLAUDE ($($CLAUDE --version 2>&1 | head -1))"; }
 
 # Env-Dateien (Secrets) müssen VOR der Installation existieren und gültig sein
-CONF_DIR="$HOME/.config/ai-news-dashboard"
+CONF_DIR="$RUN_HOME/.config/ai-news-dashboard"
 if [ "$SKIP_DAILY" != "1" ]; then
   # shellcheck source=bin/lib-daily.sh
   . "$PROJECT_DIR/bin/lib-daily.sh"
@@ -142,7 +160,9 @@ Group=$RUN_GROUP
 WorkingDirectory=$PROJECT_DIR
 ExecStart=$PY $PROJECT_DIR/scripts/fetch-youtube.py
 ExecStartPost=/usr/bin/bash $PROJECT_DIR/bin/deploy.sh
-TimeoutStartSec=10min
+# fetch-youtube.py wartet je fehlschlagendem Kanal 30 s + 60 s; bei einer
+# YouTube-RSS-Störung (25.09.2026: 8 Kanäle 404) reichen 10 min nicht.
+TimeoutStartSec=25min
 Environment=GIT_TERMINAL_PROMPT=0 GH_NO_UPDATE_NOTIFIER=1
 
 NoNewPrivileges=true
@@ -150,7 +170,7 @@ PrivateTmp=true
 ProtectSystem=strict
 ProtectHome=read-only
 ReadWritePaths=$PROJECT_DIR
-ReadWritePaths=-$HOME/.config/gh
+ReadWritePaths=-$RUN_HOME/.config/gh
 ProtectKernelTunables=true
 ProtectKernelModules=true
 ProtectControlGroups=true
@@ -198,7 +218,7 @@ TimeoutStopSec=3min
 Restart=on-failure
 RestartSec=2h
 RestartPreventExitStatus=3 4 8 9 10 11
-InaccessiblePaths=-$HOME/.ssh
+InaccessiblePaths=-$RUN_HOME/.ssh
 EOF
 
 cat > "$TMP/ai-news-dashboard-daily.timer" <<EOF
