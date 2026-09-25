@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-25T04:08:35+00:00",
+  "last_updated": "2026-09-25T07:01:02+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,6 +116,19 @@
   ],
   "featured": [
     {
+      "video_id": "R9momwXV9w4",
+      "title": "Opus 5.5: How Close Are We to Automated AI Research?",
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "channel_name": "AI Explained",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-09-24T22:51:54+00:00",
+      "url": "https://www.youtube.com/watch?v=R9momwXV9w4",
+      "thumbnail": "https://img.youtube.com/vi/R9momwXV9w4/mqdefault.jpg",
+      "description": "Not only is Opus 5.5 out, pushing the frontier of AI, it also tells us much about what is going on inside the labs, as they both warn about, and promise, Recursive Self Improvement, aka automated AI research. I cover the model (digging into",
+      "why": ""
+    },
+    {
       "video_id": "rmDu2sSBIrw",
       "title": "Today’s forecast? Nothing but 80s, baby.",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
@@ -169,6 +182,18 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "R9momwXV9w4",
+      "title": "Opus 5.5: How Close Are We to Automated AI Research?",
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "channel_name": "AI Explained",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-09-24T22:51:54+00:00",
+      "url": "https://www.youtube.com/watch?v=R9momwXV9w4",
+      "thumbnail": "https://img.youtube.com/vi/R9momwXV9w4/mqdefault.jpg",
+      "description": "Not only is Opus 5.5 out, pushing the frontier of AI, it also tells us much about what is going on inside the labs, as they both warn about, and promise, Recursive Self Improvement, aka automated AI research. I cover the model (digging into"
+    },
     {
       "video_id": "jGD_UR4wMJc",
       "title": "8 Jev Use Cases That Feel Like Cheating",
@@ -494,6 +519,18 @@
       "description": "Ben Horowitz and Erik Torenberg sit down with Nas, Grandmaster Caz, and Steve Stoute for a conversation about the Paid in Full Foundation and its mission to recognize and support the pioneers who built hip-hop.\n\nBen, Nas, and Steve share ho"
     },
     {
+      "video_id": "3V9CPisNs1g",
+      "title": "Structured Output in the browser with Transformers.js 4.3",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-09-20T05:04:32+00:00",
+      "url": "https://www.youtube.com/shorts/3V9CPisNs1g",
+      "thumbnail": "https://img.youtube.com/vi/3V9CPisNs1g/mqdefault.jpg",
+      "description": "Structured output is here. The new @huggingface/transformers-structured-output package hooks into token generation and makes sure every token follows your JSON Schema or regex.\n\nFull walkthrough in the linked video.\n\nnpm: https://www.npmjs."
+    },
+    {
       "video_id": "GzEtpAKYRvE",
       "title": "Why Would AI Companies Want to Slow Down?",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -554,6 +591,18 @@
       "description": "Run GitHub Actions 2x faster and build with Codesmith at https://www.blacksmith.sh/\n\nGoogle DeepMind just published Dream-RSI, a technique that turns an AI's old discovery logs into a simulator so it can test thousands of exploration strate"
     },
     {
+      "video_id": "1jq7sC6IjMk",
+      "title": "Predict next week's weather yourself",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-09-17T11:12:05+00:00",
+      "url": "https://www.youtube.com/watch?v=1jq7sC6IjMk",
+      "thumbnail": "https://img.youtube.com/vi/1jq7sC6IjMk/mqdefault.jpg",
+      "description": "Weather forecasting is very important, and people are moving towards using neural network models to do it. We at Hugging Face are interested in the tooling around the research and want to make it better. In this video Emma and Aritra talk a"
+    },
+    {
       "video_id": "s7d2d8FhevU",
       "title": "Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud & Jung | Lex Fridman Podcast #502",
       "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
@@ -564,6 +613,42 @@
       "url": "https://www.youtube.com/watch?v=s7d2d8FhevU",
       "thumbnail": "https://img.youtube.com/vi/s7d2d8FhevU/mqdefault.jpg",
       "description": "Andrew Scull is a historian of psychiatry.\nThank you for listening ❤ Check out our sponsors: https://lexfridman.com/sponsors/ep502-sb\nSee below for timestamps, transcript, and to give feedback, submit questions, contact Lex, etc.\n\n*Transcri"
+    },
+    {
+      "video_id": "J3ljHm57yU0",
+      "title": "What AI Researchers Saw, Before Their Demand to ‘Pace’ AI",
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "channel_name": "AI Explained",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-09-16T20:51:40+00:00",
+      "url": "https://www.youtube.com/watch?v=J3ljHm57yU0",
+      "thumbnail": "https://img.youtube.com/vi/J3ljHm57yU0/mqdefault.jpg",
+      "description": "Why has it been the last few days that the calls to come to pace the frontier AI have come so loudly? The safety warnings, and lab leader messages? Let’s explore the six axes that the researchers are looking at, the incidence reports and tr"
+    },
+    {
+      "video_id": "InnVG6pOPpM",
+      "title": "Transformers.js v4.3: Structured Output in the browser",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-09-16T07:49:24+00:00",
+      "url": "https://www.youtube.com/watch?v=InnVG6pOPpM",
+      "thumbnail": "https://img.youtube.com/vi/InnVG6pOPpM/mqdefault.jpg",
+      "description": "Transformers.js v4.3 is out, and the big one is structured output.\n\nWith the new @huggingface/transformers-structured-output package you can force a model to follow an exact JSON Schema or regex, directly in the browser. No more parsing mar"
+    },
+    {
+      "video_id": "hXQZ6lyRCsI",
+      "title": "Flow matching for Beginners | @ariG23498",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-09-15T20:37:58+00:00",
+      "url": "https://www.youtube.com/watch?v=hXQZ6lyRCsI",
+      "thumbnail": "https://img.youtube.com/vi/hXQZ6lyRCsI/mqdefault.jpg",
+      "description": "Understand flow matching from ground up with more visualization and less math.\n\nBlog: https://huggingface.co/spaces/ariG23498/flow-matching\n\nTimestamps:\n00:00 - Introduction\n00:50 - Noise to Image\n06:23 - What to train\n13:23 - Train velocit"
     },
     {
       "video_id": "7r4ikZHm9AI",
@@ -615,13 +700,10 @@
     }
   ],
   "stats": {
-    "total_videos": 37,
+    "total_videos": 43,
     "total_channels": 16,
-    "successful_channels": 14,
-    "failed_channels": [
-      "AI Explained",
-      "Hugging Face"
-    ],
+    "successful_channels": 16,
+    "failed_channels": [],
     "window_days": 14
   }
 }
