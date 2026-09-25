@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-24T08:39:23+00:00",
+  "last_updated": "2026-09-25T04:08:35+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -166,22 +166,33 @@
       "thumbnail": "https://img.youtube.com/vi/s7d2d8FhevU/mqdefault.jpg",
       "description": "Andrew Scull is a historian of psychiatry.\nThank you for listening ❤ Check out our sponsors: https://lexfridman.com/sponsors/ep502-sb\nSee below for timestamps, transcript, and to give feedback, submit questions, contact Lex, etc.\n\n*Transcri",
       "why": ""
-    },
-    {
-      "video_id": "J3ljHm57yU0",
-      "title": "What AI Researchers Saw, Before Their Demand to ‘Pace’ AI",
-      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
-      "channel_name": "AI Explained",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-09-16T20:51:40+00:00",
-      "url": "https://www.youtube.com/watch?v=J3ljHm57yU0",
-      "thumbnail": "https://img.youtube.com/vi/J3ljHm57yU0/mqdefault.jpg",
-      "description": "Why has it been the last few days that the calls to come to pace the frontier AI have come so loudly? The safety warnings, and lab leader messages? Let’s explore the six axes that the researchers are looking at, the incidence reports and tr",
-      "why": ""
     }
   ],
   "recent": [
+    {
+      "video_id": "jGD_UR4wMJc",
+      "title": "8 Jev Use Cases That Feel Like Cheating",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-09-24T18:37:13+00:00",
+      "url": "https://www.youtube.com/watch?v=jGD_UR4wMJc",
+      "thumbnail": "https://img.youtube.com/vi/jGD_UR4wMJc/mqdefault.jpg",
+      "description": "Check out Zapier: https://bit.ly/4jlEapW\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instag"
+    },
+    {
+      "video_id": "SA9kdAX2Zj0",
+      "title": "Claude Opus 5.5 AI: An Incredible Leap Forward",
+      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+      "channel_name": "Two Minute Papers",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-09-24T08:40:55+00:00",
+      "url": "https://www.youtube.com/watch?v=SA9kdAX2Zj0",
+      "thumbnail": "https://img.youtube.com/vi/SA9kdAX2Zj0/mqdefault.jpg",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\nNote: in the walking creatures experiment, Astra used a simplified model and was unable to implement the correct one. Things did not improve after simulatin"
+    },
     {
       "video_id": "Ima_AVPyQ9E",
       "title": "GPT-6 Sol and Luna Are HERE!",
@@ -411,18 +422,6 @@
       "description": "Alexander Mattick (Fraunhofer IIS, UTN): a perfect world model of chess still will not beat Magnus Carlsen, because predicting the future and choosing the right action are different problems. It is why humanoid robots do backflips on camera"
     },
     {
-      "video_id": "MJllZbpvrAc",
-      "title": "Did Elon catch up? (Grok 4.7 is here)",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-09-22T00:13:35+00:00",
-      "url": "https://www.youtube.com/watch?v=MJllZbpvrAc",
-      "thumbnail": "https://img.youtube.com/vi/MJllZbpvrAc/mqdefault.jpg",
-      "description": "Check out Zapier! https://bit.ly/3TLc4tQ\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instag"
-    },
-    {
       "video_id": "rRm3Vnb7UPY",
       "title": "Figma Gave GPT-6 Astra a Moonshot. Here's what happened.",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
@@ -495,18 +494,6 @@
       "description": "Ben Horowitz and Erik Torenberg sit down with Nas, Grandmaster Caz, and Steve Stoute for a conversation about the Paid in Full Foundation and its mission to recognize and support the pioneers who built hip-hop.\n\nBen, Nas, and Steve share ho"
     },
     {
-      "video_id": "3V9CPisNs1g",
-      "title": "Structured Output in the browser with Transformers.js 4.3",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-09-20T05:04:32+00:00",
-      "url": "https://www.youtube.com/shorts/3V9CPisNs1g",
-      "thumbnail": "https://img.youtube.com/vi/3V9CPisNs1g/mqdefault.jpg",
-      "description": "Structured output is here. The new @huggingface/transformers-structured-output package hooks into token generation and makes sure every token follows your JSON Schema or regex.\n\nFull walkthrough in the linked video.\n\nnpm: https://www.npmjs."
-    },
-    {
       "video_id": "GzEtpAKYRvE",
       "title": "Why Would AI Companies Want to Slow Down?",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -567,18 +554,6 @@
       "description": "Run GitHub Actions 2x faster and build with Codesmith at https://www.blacksmith.sh/\n\nGoogle DeepMind just published Dream-RSI, a technique that turns an AI's old discovery logs into a simulator so it can test thousands of exploration strate"
     },
     {
-      "video_id": "1jq7sC6IjMk",
-      "title": "Predict next week's weather yourself",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-09-17T11:12:05+00:00",
-      "url": "https://www.youtube.com/watch?v=1jq7sC6IjMk",
-      "thumbnail": "https://img.youtube.com/vi/1jq7sC6IjMk/mqdefault.jpg",
-      "description": "Weather forecasting is very important, and people are moving towards using neural network models to do it. We at Hugging Face are interested in the tooling around the research and want to make it better. In this video Emma and Aritra talk a"
-    },
-    {
       "video_id": "s7d2d8FhevU",
       "title": "Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud & Jung | Lex Fridman Podcast #502",
       "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
@@ -589,42 +564,6 @@
       "url": "https://www.youtube.com/watch?v=s7d2d8FhevU",
       "thumbnail": "https://img.youtube.com/vi/s7d2d8FhevU/mqdefault.jpg",
       "description": "Andrew Scull is a historian of psychiatry.\nThank you for listening ❤ Check out our sponsors: https://lexfridman.com/sponsors/ep502-sb\nSee below for timestamps, transcript, and to give feedback, submit questions, contact Lex, etc.\n\n*Transcri"
-    },
-    {
-      "video_id": "J3ljHm57yU0",
-      "title": "What AI Researchers Saw, Before Their Demand to ‘Pace’ AI",
-      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
-      "channel_name": "AI Explained",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-09-16T20:51:40+00:00",
-      "url": "https://www.youtube.com/watch?v=J3ljHm57yU0",
-      "thumbnail": "https://img.youtube.com/vi/J3ljHm57yU0/mqdefault.jpg",
-      "description": "Why has it been the last few days that the calls to come to pace the frontier AI have come so loudly? The safety warnings, and lab leader messages? Let’s explore the six axes that the researchers are looking at, the incidence reports and tr"
-    },
-    {
-      "video_id": "InnVG6pOPpM",
-      "title": "Transformers.js v4.3: Structured Output in the browser",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-09-16T07:49:24+00:00",
-      "url": "https://www.youtube.com/watch?v=InnVG6pOPpM",
-      "thumbnail": "https://img.youtube.com/vi/InnVG6pOPpM/mqdefault.jpg",
-      "description": "Transformers.js v4.3 is out, and the big one is structured output.\n\nWith the new @huggingface/transformers-structured-output package you can force a model to follow an exact JSON Schema or regex, directly in the browser. No more parsing mar"
-    },
-    {
-      "video_id": "hXQZ6lyRCsI",
-      "title": "Flow matching for Beginners | @ariG23498",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-09-15T20:37:58+00:00",
-      "url": "https://www.youtube.com/watch?v=hXQZ6lyRCsI",
-      "thumbnail": "https://img.youtube.com/vi/hXQZ6lyRCsI/mqdefault.jpg",
-      "description": "Understand flow matching from ground up with more visualization and less math.\n\nBlog: https://huggingface.co/spaces/ariG23498/flow-matching\n\nTimestamps:\n00:00 - Introduction\n00:50 - Noise to Image\n06:23 - What to train\n13:23 - Train velocit"
     },
     {
       "video_id": "7r4ikZHm9AI",
@@ -673,49 +612,16 @@
       "url": "https://www.youtube.com/watch?v=aspmNhKAFMc",
       "thumbnail": "https://img.youtube.com/vi/aspmNhKAFMc/mqdefault.jpg",
       "description": "Railway is the smoothest way to deploy software: https://railway.com/?referralCode=fireship\n\nOpenAI claims it cracked a 90 year old math problem, but one NYU professor isn't happy about it. Let's dive in. \n\n#coding #programming\n\nWant more F"
-    },
-    {
-      "video_id": "nJV3yUuz6DU",
-      "title": "Training Agents 4: From reward functions to environments.",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-09-11T04:27:25+00:00",
-      "url": "https://www.youtube.com/watch?v=nJV3yUuz6DU",
-      "thumbnail": "https://img.youtube.com/vi/nJV3yUuz6DU/mqdefault.jpg",
-      "description": "Training Agents, Session 4: from reward functions to environments. \n\nIn this live session, the reward stops being a function and becomes a place the agent acts in. In Session 3 the model answered once and a Python function scored it. Today "
-    },
-    {
-      "video_id": "iuHddnIzKRA",
-      "title": "The AI Language We Can't Read: Neuralese ft. Rob Miles - Computerphile",
-      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
-      "channel_name": "Computerphile",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-09-10T12:56:17+00:00",
-      "url": "https://www.youtube.com/watch?v=iuHddnIzKRA",
-      "thumbnail": "https://img.youtube.com/vi/iuHddnIzKRA/mqdefault.jpg",
-      "description": "So far, 'Chain of Thought' has allowed us a glimpse at the processes by which Large Language Models work their way through problems. What if these LLMs begin to talk in a language only they understand?\n\nRob Miles is a passionate AI Safety a"
-    },
-    {
-      "video_id": "mOvtumfyjCs",
-      "title": "I Never Thought I’d See This Happen",
-      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
-      "channel_name": "Two Minute Papers",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-09-10T08:47:23+00:00",
-      "url": "https://www.youtube.com/watch?v=mOvtumfyjCs",
-      "thumbnail": "https://img.youtube.com/vi/mOvtumfyjCs/mqdefault.jpg",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The Navier-Stokes solution paper is available here:\nhttps://openai.com/index/navier-stokes-solution/\n\nMy fluid simulations and papers:\nhttps://users.cg.tu"
     }
   ],
   "stats": {
-    "total_videos": 44,
+    "total_videos": 37,
     "total_channels": 16,
-    "successful_channels": 16,
-    "failed_channels": [],
+    "successful_channels": 14,
+    "failed_channels": [
+      "AI Explained",
+      "Hugging Face"
+    ],
     "window_days": 14
   }
 }

@@ -201,9 +201,15 @@
     },
     {
       "date": "2026-09-24",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-09-24.html",
       "headline": "Die Kostenkurve wird zur Strategie — und schickt die erste Rechnung an die Beratung",
       "summary": "OpenAI schiebt nur 19 Tage nach GPT-6 Astra zwei billigere Tiers nach (Sol: 90–95 % der Leistung zu 20 % der Kosten; Luna ~1/10 eines Vorgänger-Flaggschiffs, 0,10/0,50 $) — am selben Tag wird Opus 5.5 Default in Claude Code · Kein Anbieter führt mehr mit dem Score, alle mit dem Preis pro Aufgabe · Die erste große Rechnung landet bei der Beratung: Accenture streicht 11.000 Stellen und kappt die Guidance auf 3–4 %, Capgemini −8 %, Salesforce −5.000 Support · Gegenzug: OpenAIs „Frontier Alliance“ macht McKinsey/BCG/Capgemini/Accenture zum Vertriebskanal · Der Wert wandert zur Harness-Schicht (Googles Antigravity in der Gemini-API, ADK für Kotlin, Agentic AI Foundation) · Drei Labore koordinieren ein Frontier-Sicherheitsgremium, während Cognition auf 48 Mrd. $ springt · Fazit: Fähigkeit ist Ware, Effizienz und Orchestrierung entscheiden."
+    },
+    {
+      "date": "2026-09-25",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Nach dem Preiskampf die Landnahme — Anthropic geht in die Biologie, Google in den Orbit",
+      "summary": "Nachdem sich der Modell-Preiskampf entschieden hat, pflanzen die Frontier-Labore Fahnen in neuem Terrain · Anthropic gründet eine Life-Sciences-Gruppe und lässt Claude in 21 Stunden 200.000 DNA-Sequenzen durchsuchen — 950 Agent-Sessions finden ein neuartiges, CRISPR-ähnliches Enzymsystem; CRISPR-Pionier Feng Zhang nennt es „genuinely intriguing“ · Der Drei-Labor-Sicherheitspakt härtet zur benannten Frontier AI Standards Agency (Sriram Krishnan als CEO-Kandidat, freiwillig, ohne Staatsaufsicht) · Google schießt mit Project Suncatcher vier TPUs am 1. Oktober in den Orbit · Alibaba (AgentCore), Salesforce (AIforce) und Meta (Muse Realtime Avatar) besetzen die Ebene über dem Modell · Kapital fließt weiter: Snorkel 350 Mio. $ @ 3,5 Mrd., Nvidia kauft Hugging Face für 12,9 Mrd. · Fazit: Fähigkeit ist Ware — der Wettbewerb verlagert sich auf Domänen, die die Ware nicht erreicht."
     }
   ]
 }
