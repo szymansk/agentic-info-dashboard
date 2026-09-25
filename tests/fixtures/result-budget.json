@@ -1,0 +1,1 @@
+{"type":"result","subtype":"error_max_budget_usd","is_error":true,"terminal_reason":"budget_exhausted","num_turns":3,"total_cost_usd":30.02,"errors":["max budget exceeded"]}

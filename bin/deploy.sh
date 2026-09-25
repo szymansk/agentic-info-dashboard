@@ -4,7 +4,7 @@
 #
 # Aufgerufen von:
 #   - systemd youtube-fetch.service (nach Skript-Lauf)
-#   - DAILY_UPDATE.md Step 6 (Claude background session, nach Briefing-Update)
+#   - DAILY_UPDATE.md Schritt 7 (täglicher claude -p-Oneshot, nach Briefing-Update)
 #   - Manuell wenn man eine Änderung sofort live haben will
 #
 # Idempotent: läuft den Build, committed nur wenn sich was geändert hat,
@@ -21,8 +21,10 @@ cd "$PROJECT_DIR"
 # denied", das Briefing steht beim nächsten Idle-Exit. restorecon setzt das
 # einmalig via `sudo semanage fcontext -a -t bin_t …` hinterlegte bin_t-Label
 # wieder. No-op auf Nicht-SELinux-Systemen; nie fatal.
+# Alle bin/-Skripte tragen per semanage-Verzeichnisregel bin_t (Defense-in-Depth;
+# die Units rufen /usr/bin/bash <skript>, sind also nicht auf das Label angewiesen).
 if command -v restorecon >/dev/null 2>&1; then
-  restorecon "$PROJECT_DIR/bin/start-daily-loop.sh" 2>/dev/null || true
+  restorecon -R "$PROJECT_DIR/bin" 2>/dev/null || true
 fi
 
 MSG="${1:-auto: rebuild $(date -I)}"
@@ -30,8 +32,10 @@ MSG="${1:-auto: rebuild $(date -I)}"
 # 1. Build static site → docs/
 python3 scripts/build-pages.py
 
-# 2. Stage everything (docs/ + any source changes)
-git add -A
+# 2. Nur generierte Inhalte stagen. Infra-Änderungen (bin/, scripts/, *.md)
+#    werden bewusst nicht mitgenommen: sie gehören in eigene Commits, und ein
+#    manipulierter Lauf soll nichts Beliebiges ins öffentliche Repo schieben.
+git add dashboards docs
 
 # 3. Commit only if there's something to commit
 if git diff --cached --quiet; then

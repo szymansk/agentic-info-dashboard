@@ -21,7 +21,8 @@ for unit in \
   ai-news-dashboard.service \
   ai-news-dashboard-youtube-fetch.timer \
   ai-news-dashboard-youtube-fetch.service \
-  ai-news-dashboard-daily-loop.service \
+  ai-news-dashboard-daily.timer \
+  ai-news-dashboard-watchdog.timer \
 ; do
   state="$(systemctl is-active "$unit" 2>&1)"
   enabled="$(systemctl is-enabled "$unit" 2>&1)"
@@ -31,20 +32,12 @@ for unit in \
       # oneshot/timer Services dürfen inactive sein, das ist ihr Normalzustand
       if [[ "$unit" == *.timer || "$unit" == *youtube-fetch.service ]]; then
         ok "$unit  ($state, $enabled — oneshot/timer, OK)"
-      elif [[ "$unit" == *daily-loop.service ]]; then
-        # daily-loop ist oneshot — der wichtige State ist, ob die Background-Session lebt
-        # Das prüfen wir unten in "background sessions"
-        ok "$unit  ($state, $enabled — oneshot, Session-Status siehe unten)"
       else
         err "$unit  ($state, $enabled)"
       fi
       ;;
     failed)
-      if [[ "$unit" == *daily-loop.service ]]; then
-        err "$unit  (failed seit letztem Boot — Boot-Start scheiterte damals; der Healthcheck-Timer heilt unabhängig davon. Aufräumen: sudo systemctl reset-failed $unit)"
-      else
-        err "$unit  ($state, $enabled)"
-      fi
+      err "$unit  ($state, $enabled)"
       ;;
     *) err "$unit  ($state, $enabled)" ;;
   esac
@@ -94,74 +87,46 @@ if [ -f "$ai_news" ]; then
   fi
 fi
 
-hdr "background sessions (Claude daily loop)"
-LAUNCHER="$PROJECT_DIR/bin/start-daily-loop.sh"
+hdr "daily run (claude -p oneshot)"
 STATE_DIR="${STATE_DIR:-$HOME/.local/state/ai-news-dashboard}"
-if [ -x "$LAUNCHER" ]; then
-  # Der Watchdog-Launcher ist die einzige Wahrheit: Auth, Daemon, Session,
-  # Briefing-Frische. --dry-run prüft nur. Exit 0 = gesund, 1 = würde heilen
-  # (macht der nächste Timer-Lauf), 2 = braucht einen Menschen.
-  wd_out="$("$LAUNCHER" --dry-run 2>&1)"; wd_rc=$?
-  printf '%s\n' "$wd_out" | grep -v 'dry-run: nur prüfen' | sed 's/^  \[start-daily-loop\] /    /'
-  case "$wd_rc" in
-    0) ok "Watchdog: gesund" ;;
-    1) warn "Watchdog: würde heilen — passiert beim nächsten Timer-Lauf (≤ 30 Min) oder sofort via ./bin/start-daily-loop.sh" ;;
-    *) err "Watchdog: braucht dich (exit $wd_rc) — siehe ALARM oben" ;;
-  esac
+if [ -f "$STATE_DIR/last-run.json" ]; then
+  python3 - "$STATE_DIR/last-run.json" <<'PY'
+import json, sys
+d = json.load(open(sys.argv[1]))
+print(f"  · letzter Lauf: {d.get('finished','?')} · Exit {d.get('exit','?')} ({d.get('kind','')}) · {d.get('duration_s','?')} s · {d.get('total_cost_usd') or '?'} USD · {d.get('num_turns') or '?'} Turns · CLI {d.get('claude_version','?')}")
+print(f"  · {d.get('status') or d.get('text','')}")
+PY
+  [ "$(python3 -c 'import json,sys;print(json.load(open(sys.argv[1]))["exit"])' "$STATE_DIR/last-run.json")" = 0 ] \
+    && ok "letzter Lauf erfolgreich" || err "letzter Lauf gescheitert — journalctl -u ai-news-dashboard-daily -n 40"
 else
-  err "Watchdog-Launcher fehlt oder ist nicht ausführbar: $LAUNCHER"
+  warn "noch kein last-run.json (kein Oneshot-Lauf bisher)"
 fi
+d_state="$(systemctl show ai-news-dashboard-daily.service -p ActiveState -p SubState --value 2>/dev/null | tr '\n' '/')"
+d_next="$(systemctl show ai-news-dashboard-daily.timer -p NextElapseUSecRealtime --value 2>/dev/null)"
+case "$d_state" in
+  activating/auto-restart/) warn "daily.service wartet auf Retry (auto-restart) · nächster Timer: ${d_next:-?}" ;;
+  active/*|activating/start/) ok "daily.service läuft gerade" ;;
+  failed/*) err "daily.service failed — Alarm sollte gekommen sein; journalctl -u ai-news-dashboard-daily -n 40" ;;
+  *) ok "daily.service ${d_state:-unbekannt} · nächster Timer: ${d_next:-?}" ;;
+esac
+w_res="$(systemctl show ai-news-dashboard-watchdog.service -p Result -p ExecMainStatus --value 2>/dev/null | tr '\n' ' ')"
+[ "${w_res% }" = "success 0" ] && ok "watchdog.service letzter Lauf ok" || warn "watchdog.service: ${w_res:-nie gelaufen} — journalctl -u ai-news-dashboard-watchdog -n 20"
 
-# Selbstheiler-Unit: feuert der Timer UND läuft der Launcher durch?
-# (is-active am Timer allein sagt nur, dass er feuert — nicht, dass er heilt.)
-hc_active="$(systemctl is-active ai-news-dashboard-healthcheck.timer 2>&1)"
-hc_result="$(systemctl show ai-news-dashboard-healthcheck.service -p Result --value 2>/dev/null)"
-hc_code="$(systemctl show ai-news-dashboard-healthcheck.service -p ExecMainStatus --value 2>/dev/null)"
-hc_last="$(systemctl show ai-news-dashboard-healthcheck.service -p ExecMainExitTimestamp --value 2>/dev/null)"
-if [ "$hc_active" != "active" ]; then
-  err "healthcheck.timer ist $hc_active — Selbstheiler feuert nicht: sudo systemctl enable --now ai-news-dashboard-healthcheck.timer"
-elif [ "$hc_result" = "success" ] && [ "$hc_code" = "0" ]; then
-  ok "healthcheck.timer aktiv, letzter Lauf ok (${hc_last:-noch keiner})"
-elif [ "$hc_code" = "1" ]; then
-  warn "healthcheck.timer aktiv, letzter Lauf wartet/heilt (ExecMainStatus=1, ${hc_last:-?}) — journalctl -u ai-news-dashboard-healthcheck.service -n 20"
-else
-  err "healthcheck.timer aktiv, aber letzter Lauf: Result=$hc_result ExecMainStatus=$hc_code (${hc_last:-?}) — journalctl -u ai-news-dashboard-healthcheck.service -n 20"
-fi
-
-# Letzter Watchdog-Alarm (wird bei einem gesunden Lauf gelöscht)
+# Preflight des Tageslaufs (Token, Tree, Repo) und Watchdog-Sicht — beides ohne Nebenwirkung
+pre="$("$PROJECT_DIR/bin/run-daily.sh" --dry-run 2>&1 </dev/null)"; pre_rc=$?
+printf '%s\n' "$pre" | sed 's/^  \[daily\] /    /'
+case "$pre_rc" in 0) ok "Preflight ok" ;; *) err "Preflight scheitert (Exit $pre_rc) — siehe oben" ;; esac
+wd="$("$PROJECT_DIR/bin/watchdog.sh" --dry-run 2>&1)"; wd_rc=$?
+printf '%s\n' "$wd" | sed 's/^  \[watchdog\] /    /'
+case "$wd_rc" in 0) ok "Watchdog: nichts zu melden" ;; *) warn "Watchdog würde alarmieren — siehe oben" ;; esac
 if [ -f "$STATE_DIR/last-alert" ]; then
-  err "letzter Watchdog-Alarm [$(sed -n 1p "$STATE_DIR/last-alert")] $(sed -n 2p "$STATE_DIR/last-alert"): $(sed -n 3p "$STATE_DIR/last-alert")"
+  err "letzter Alarm [$(sed -n 1p "$STATE_DIR/last-alert")] $(sed -n 2p "$STATE_DIR/last-alert"): $(sed -n 3p "$STATE_DIR/last-alert")"
 fi
-
-# Roster-Übersicht (informativ)
-if [ -f "$HOME/.claude/daemon/roster.json" ]; then
-  python3 - "$HOME/.claude/daemon/roster.json" <<'PY2'
-import json, os, sys
-try:
-    data = json.load(open(sys.argv[1]))
-    raw = data.get('workers', data.get('sessions', [])) if isinstance(data, dict) else data
-    entries = list(raw.values()) if isinstance(raw, dict) else (raw or [])
-    if not entries:
-        print("  (keine Sessions im roster)")
-    else:
-        for e in entries:
-            if not isinstance(e, dict):
-                continue
-            name = (e.get('name')
-                    or e.get('dispatch', {}).get('seed', {}).get('name')
-                    or '(no name)')
-            pid = e.get('pid')
-            alive = '?'
-            if pid:
-                try: os.kill(pid, 0); alive = 'alive'
-                except Exception: alive = 'dead'
-            short = (e.get('sessionId') or '')[:8]
-            print(f"  · {name:30} pid={pid} ({alive}) sid={short} cli=v{e.get('cliVersion', '?')}")
-except Exception as ex:
-    print(f"  ⚠ roster lesen fehlgeschlagen: {ex}")
-PY2
-else
-  warn "kein roster.json — keine Background-Session bekannt"
+if [ -d "$STATE_DIR/pending" ] && [ -n "$(ls -A "$STATE_DIR/pending" 2>/dev/null)" ]; then
+  warn "unzugestellte Alarme in $STATE_DIR/pending"
+fi
+if ! grep -qs '^HEALTHCHECKS_URL=.\+' "$HOME/.config/ai-news-dashboard/alert.env" 2>/dev/null; then
+  warn "kein healthchecks.io konfiguriert — externer Wächter ist nur der GitHub-Workflow (gh run list --workflow stale-check.yml)"
 fi
 
 hdr "summary"

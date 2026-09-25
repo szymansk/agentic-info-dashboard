@@ -1,8 +1,19 @@
 # Daily Update Workflow · ai-news-dashboard
 
-Dieses Dokument ist die Orchestrator-Anweisung für die Background-Session
-`daily-ai-update`. Sie wird einmal täglich via `/loop 24h` ausgeführt und
-durchläuft die Schritte unten.
+Dieses Dokument ist die Orchestrator-Anweisung für den täglichen Lauf des
+ai-news-dashboards. Er wird von systemd um 07:15 als `claude -p`-Oneshot
+gestartet (`bin/run-daily.sh`) und durchläuft die Schritte unten.
+
+## Betriebsmodus: unbeaufsichtigt
+
+- Es gibt niemanden, der Rückfragen beantwortet. Stelle keine Fragen und warte
+  auf nichts; `AskUserQuestion` ist gesperrt.
+- Entscheide konservativ selbst: lieber 3 statt 6 Breaking-News-Items, lieber ein
+  kürzeres Briefing als Füllcontent, lieber eine Quelle weglassen als raten.
+- Bei einer echten Blockade (z. B. `git push` wird abgelehnt, alle Quellen liefern
+  dauerhaft Fehler): gib als **letzte Ausgabezeile** `BLOCKED: <Grund in einem
+  Satz>` aus und höre auf. Der Wrapper wiederholt den Lauf später.
+- Deine letzte Ausgabezeile im Erfolgsfall ist die `STATUS:`-Zeile aus Schritt 8.
 
 **Du bist Claude und führst diesen Workflow eigenständig aus.**
 
@@ -13,9 +24,12 @@ durchläuft die Schritte unten.
 - Working directory: `/home/szymansk/Projects/agentic_info_dashboard`
 - Heutiges Datum: ermittle es jetzt frisch mit `date -I` (Format: `YYYY-MM-DD`)
 - Wochentag (DE) für die Header-Anzeige: `date +%A`
-- **Idempotenz**: Prüfe `dashboards/ai-news/archive/<heute>.html`. Existiert
-  die Datei bereits, wurde der Workflow heute schon ausgeführt — dann
-  STOP und logge „Heute bereits aktualisiert" als Ergebnis.
+- **Idempotenz**: Lies `data-snapshot-date` aus dem `<body>`-Tag von
+  `dashboards/ai-news/index.html`. Ist es bereits `<heute>`, wurde der Workflow
+  heute schon ausgeführt — dann STOP mit der Ausgabe
+  `STATUS: Heute bereits aktualisiert (<heute>)`. (Die frühere Prüfung auf
+  `archive/<heute>.html` greift am selben Tag nie, weil heute erst morgen
+  archiviert wird.)
 
 ---
 
@@ -97,6 +111,10 @@ ist via CSS schon eingerichtet.
      `headline` und `summary` aus dem heutigen Briefing
 6. Manifest mit aufsteigender (oder absteigender — sortiert wird in JS)
    Datums-Ordnung speichern
+7. **Idempotenz**: Existiert `archive/<gestern>.html` schon und hat das Manifest
+   bereits einen Eintrag mit `url: /ai-news/archive/<gestern>.html`, überspringe
+   die Punkte 3–5 für diesen Eintrag. Es darf nie zwei Manifest-Einträge mit
+   demselben Datum und nie zwei Einträge mit `url: /ai-news/` geben.
 
 ---
 
@@ -193,22 +211,18 @@ Wahrheits-Datum, nicht Schreib-Datum.
 
 ## 6. Verifikation
 
-Nach allen Änderungen:
+Nach allen Änderungen, vor dem Deploy:
 
 ```bash
-# 1. HTML syntaktisch valide?
-python3 -c "from html.parser import HTMLParser; HTMLParser().feed(open('dashboards/ai-news/index.html').read()); print('HTML OK')"
-
-# 2. JSON valide?
-python3 -m json.tool dashboards/ai-news/archive/manifest.json > /dev/null && echo 'manifest OK'
-
-# 3. Server live-test
-curl -s -o /dev/null -w "HTTP %{http_code} · %{size_download}b\n" http://localhost:8000/ai-news/
-curl -s -o /dev/null -w "HTTP %{http_code} · %{size_download}b\n" http://localhost:8000/ai-news/archive/<gestern>.html
+bin/verify-briefing.sh --pre-deploy
 ```
 
-Wenn irgendwas fehlschlägt: STOP, halte an, warte auf User-Input
-(die Background-Session zeigt das als „needs input").
+Das Skript prüft Datum, Wortzahl, Breaking-Cards, Archiv des Vortags und das
+Manifest und endet mit `RESULT: ok`. Bei `RESULT: quality: …` behebe den
+genannten Punkt (z. B. Archivdatei nachziehen, Manifest-Duplikat entfernen) und
+prüfe erneut. Bei `RESULT: not-deployed: …` stimmt das Snapshot-Datum nicht —
+Schritt 5 wiederholen. Lässt sich ein Punkt nicht beheben: `BLOCKED: <Grund>`
+ausgeben und aufhören.
 
 ---
 
@@ -223,12 +237,15 @@ Nach erfolgreicher Verifikation pushst du den aktuellen Stand live:
 Das Skript:
 1. baut `docs/` neu via `scripts/build-pages.py` (kopiert dashboards/ und
    schreibt absolute Pfade auf `/agentic-info-dashboard/...` um)
-2. staged alle Änderungen
+2. staged nur `dashboards/` und `docs/`
 3. commitet nur falls etwas neu ist
 4. pusht nach `origin/main` — Pages rendert in ~30s neu
 
-Wenn `deploy.sh` mit Exit-Code ≠ 0 endet: STOP, halte an, logge die
-Fehlermeldung. NICHT erzwingen.
+Wenn `deploy.sh` mit Exit-Code ≠ 0 endet: NICHT erzwingen (kein `--force`, kein
+Reset). Einmal `git fetch origin` und die Fehlermeldung lesen; ist es ein
+non-fast-forward ohne Konflikte, `git rebase origin/main` und `deploy.sh` erneut.
+Scheitert es danach weiter: als letzte Ausgabezeile
+`BLOCKED: Deploy fehlgeschlagen — <erste Zeile der Fehlermeldung>` ausgeben und aufhören.
 
 ---
 
@@ -237,13 +254,15 @@ Fehlermeldung. NICHT erzwingen.
 Am Ende des erfolgreichen Laufs, eine knappe Bilanz ausgeben:
 
 ```
-Lauf vom <heute>: <N> Breaking-News-Items, <M> Wörter Briefing, gestern
+STATUS: Lauf vom <heute>: <N> Breaking-News-Items, <M> Wörter Briefing, gestern
 archiviert als <gestern>.html. YouTube refresh: <K> Videos. Claude Code:
-v<latest> aktuell. Deploy: ✓
+v<latest> aktuell. Deploy: ✓ (<commit-hash>)
 ```
 
-Diese Zeile wird im `claude logs daily-ai-update` sichtbar — die ist der
-einzige „Heartbeat", den der User von außen sieht.
+Diese Zeile muss mit `STATUS:` beginnen und die **letzte Ausgabezeile** sein
+(ein Personen-Vorschlag aus Schritt 3 kommt davor). `bin/run-daily.sh` schreibt
+sie ins Journal und nach `~/.local/state/ai-news-dashboard/last-run.json`;
+`check.sh` zeigt sie an.
 
 ---
 
@@ -258,13 +277,16 @@ einzige „Heartbeat", den der User von außen sieht.
 
 ## Wenn etwas schiefgeht
 
-- API rate limit (GitHub) → einmal warten, nochmal probieren, dann
-  pausieren und User informieren
+- API rate limit (GitHub, WebSearch) → 60 s warten und einmal wiederholen; scheitert
+  es erneut, mit den bereits vorhandenen Quellen weitermachen (weniger Items sind
+  ok). Nur wenn gar keine Daten möglich sind: `BLOCKED: <Grund>` und aufhören.
 - WebSearch liefert dünne Treffer → ggf. weniger Breaking News (3 statt 6)
   ist OK, kein erzwungener Füll-Content
-- Snapshot-Konflikt (Archiv-Datei für heute existiert schon) → Idempotenz
-  greift schon in Schritt 0, normalerweise unmöglich
+- Briefing trägt schon das heutige Datum → Schritt 0 hat den Lauf bereits mit
+  `STATUS: Heute bereits aktualisiert` beendet; kein Sonderfall mehr.
 
 ## Wenn du fertig bist
 
-`/loop` schläft automatisch für 24h. Du machst nichts weiter.
+Gib die `STATUS:`-Zeile aus und beende den Lauf. Der nächste Lauf startet
+morgen 07:15 über den systemd-Timer; du planst nichts selbst (kein `/loop`,
+kein Cron).

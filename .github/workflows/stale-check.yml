@@ -1,0 +1,36 @@
+name: stale-check
+# Externer Wächter (Spec 5.11): läuft unabhängig von der Maschine. Schlägt fehl,
+# wenn das öffentliche Briefing älter als der Lauftag (UTC) ist → GitHub mailt den
+# Actor (letzter Committer dieser Datei). Kein Secret, kein Schreibzugriff.
+on:
+  schedule:
+    - cron: '17 16 * * *'   # krumme Minute: volle Stunden werden von GitHub oft verzögert/übersprungen
+  workflow_dispatch:
+    inputs:
+      force_fail:
+        description: 'Zum Test absichtlich fehlschlagen (true/false)'
+        default: 'false'
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Briefing-Datum auf GitHub Pages prüfen
+        env:
+          URL: https://szymansk.github.io/agentic-info-dashboard/ai-news/
+          FORCE_FAIL: ${{ github.event.inputs.force_fail }}
+        run: |
+          set -euo pipefail
+          html="$(curl -fsSL -H 'Cache-Control: no-cache' --max-time 30 "$URL")"
+          date="$(grep -oE 'data-snapshot-date="[0-9]{4}-[0-9]{2}-[0-9]{2}"' <<<"$html" | head -1 | grep -oE '[0-9-]{10}' || true)"
+          today="$(date -u +%F)"
+          echo "Pages: ${date:-kein Datum gefunden} · heute (UTC): $today"
+          if [ "$FORCE_FAIL" = "true" ]; then echo "::error::Testlauf: absichtlicher Fehlschlag"; exit 1; fi
+          if [ -z "$date" ]; then echo "::error::kein data-snapshot-date auf $URL"; exit 1; fi
+          if [[ "$date" < "$today" ]]; then
+            echo "::error::Briefing ist vom $date — älter als heute ($today). Der Tageslauf auf der Maschine steht."
+            exit 1
+          fi
+          echo "ok — Briefing vom $date"
