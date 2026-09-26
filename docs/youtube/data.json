@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-25T07:01:02+00:00",
+  "last_updated": "2026-09-26T04:18:24+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -183,6 +183,42 @@
   ],
   "recent": [
     {
+      "video_id": "rgO5v8MFtFg",
+      "title": "What People Are Building With Opus 5.5",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-09-26T01:30:30+00:00",
+      "url": "https://www.youtube.com/shorts/rgO5v8MFtFg",
+      "thumbnail": "https://img.youtube.com/vi/rgO5v8MFtFg/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "zICv3IJaAfQ",
+      "title": "DeepSeek is CRAZY",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-09-25T21:05:41+00:00",
+      "url": "https://www.youtube.com/shorts/zICv3IJaAfQ",
+      "thumbnail": "https://img.youtube.com/vi/zICv3IJaAfQ/mqdefault.jpg",
+      "description": "Explore DigitalOcean's model catalog: https://do.co/matthewberman #ad\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 "
+    },
+    {
+      "video_id": "ausLKMojXaY",
+      "title": "The Phone Number puzzle",
+      "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
+      "channel_name": "3Blue1Brown",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-09-25T13:35:02+00:00",
+      "url": "https://www.youtube.com/shorts/ausLKMojXaY",
+      "thumbnail": "https://img.youtube.com/vi/ausLKMojXaY/mqdefault.jpg",
+      "description": "Part of a monthly series of puzzles: https://momath.org/mindbenders/"
+    },
+    {
       "video_id": "R9momwXV9w4",
       "title": "Opus 5.5: How Close Are We to Automated AI Research?",
       "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
@@ -231,18 +267,6 @@
       "description": "Tell your agents to use this: https://here.now/r/matthewberman\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagr"
     },
     {
-      "video_id": "N42VxP0D49Q",
-      "title": "Who The Academy is made for",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-09-23T19:00:17+00:00",
-      "url": "https://www.youtube.com/shorts/N42VxP0D49Q",
-      "thumbnail": "https://img.youtube.com/vi/N42VxP0D49Q/mqdefault.jpg",
-      "description": "The internet made it possible to know anything. AI makes it possible to do anything.\n\nThis is built for the people who want to do exactly that.\n\nApplications for the founding class are now open."
-    },
-    {
       "video_id": "rmDu2sSBIrw",
       "title": "Today’s forecast? Nothing but 80s, baby.",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
@@ -255,30 +279,6 @@
       "description": "Create your own with ChatGPT Images."
     },
     {
-      "video_id": "emTe0M9Yw24",
-      "title": "A perfect model can still get causality backwards",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-09-23T18:09:12+00:00",
-      "url": "https://www.youtube.com/shorts/emTe0M9Yw24",
-      "thumbnail": "https://img.youtube.com/vi/emTe0M9Yw24/mqdefault.jpg",
-      "description": "Frank Hutter, co-founder and CEO of Prior Labs, on why a model that predicts perfectly can still point you to the wrong decision. If patients who get a medicine tend to have a disease, stopping the medicine will not cure it. Observing is no"
-    },
-    {
-      "video_id": "72Im-Mm5JKs",
-      "title": "The AI That Replaces Hours of Model Tuning - Frank Hutter",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-09-23T18:06:15+00:00",
-      "url": "https://www.youtube.com/watch?v=72Im-Mm5JKs",
-      "thumbnail": "https://img.youtube.com/vi/72Im-Mm5JKs/mqdefault.jpg",
-      "description": "Frank Hutter, co-founder of Prior Labs, talks about TabPFN, a tabular foundation model that makes predictions in a single forward pass, and the research behind it.\n\nTabPFN is pre-trained on synthetic datasets drawn from a prior over structu"
-    },
-    {
       "video_id": "DdCEmlAydcw",
       "title": "Inside Anthropic's molecular biology lab",
       "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
@@ -289,18 +289,6 @@
       "url": "https://www.youtube.com/watch?v=DdCEmlAydcw",
       "thumbnail": "https://img.youtube.com/vi/DdCEmlAydcw/mqdefault.jpg",
       "description": "Some of the biggest discoveries in biology started with someone noticing something strange in one of the many molecular machines found in nature. We’re introducing a new molecular biology research group and lab at Anthropic to see if Claude"
-    },
-    {
-      "video_id": "ylO0DQeVEBQ",
-      "title": "The most expensive 33 hours in WordPress history...",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-09-23T17:17:22+00:00",
-      "url": "https://www.youtube.com/watch?v=ylO0DQeVEBQ",
-      "thumbnail": "https://img.youtube.com/vi/ylO0DQeVEBQ/mqdefault.jpg",
-      "description": "Greptile is the only AI code reviewer that actually runs your code. Try it for free: http://greptile.com/go/fireship\n\nAutomattic's board fired WordPress co-founder Matt Mullenweg while he was at Burning Man... 33 hours later, he replaced th"
     },
     {
       "video_id": "96ogPwN9ykM",
@@ -327,30 +315,6 @@
       "description": "Design entirely new vocal personas from scratch for gaming, immersive audiobooks, or dual-speaker podcasts using natural language prompts - directing every performance line by line with nuanced acting cues, pacing, back channeling, and dial"
     },
     {
-      "video_id": "Q8yFrGwIftE",
-      "title": "Replit CEO Amjad Masad on What Young People Should Learn in the AI Era",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-09-23T14:30:06+00:00",
-      "url": "https://www.youtube.com/watch?v=Q8yFrGwIftE",
-      "thumbnail": "https://img.youtube.com/vi/Q8yFrGwIftE/mqdefault.jpg",
-      "description": "Erik Torenberg sits down with Replit founder and CEO Amjad Masad and Horowitz and Andreessen Academy co-founder and CEO Gagan Biyani to ask what education should look like for a generation growing up with AI.\n\nAmjad argues that one of the m"
-    },
-    {
-      "video_id": "uRGHx-1CqBQ",
-      "title": "Building AI Assistants with On-Device Memory",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-09-23T13:30:05+00:00",
-      "url": "https://www.youtube.com/watch?v=uRGHx-1CqBQ",
-      "thumbnail": "https://img.youtube.com/vi/uRGHx-1CqBQ/mqdefault.jpg",
-      "description": "Learn More: https://bit.ly/4AlVW2n\n\nA cloud-based assistant can remember what it sees, hears, and is told, but only by staying connected and sending that data to a remote server.\n\nIn our new short course, Building AI Assistants with On-Devi"
-    },
-    {
       "video_id": "giTmBaNGaHw",
       "title": "What the Labs Kept Secret: The German Wiki & RubyGems Hacks - Computerphile",
       "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
@@ -375,54 +339,6 @@
       "description": "Check out all our Opus 5.5 tests: https://forwardfuture.com/opus-5-5-review\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nThanks to Thariq for joining! https://x.com/trq212\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewb"
     },
     {
-      "video_id": "bn4uvtg8ECY",
-      "title": "How I Use Eight Sleep to Improve My Sleep",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-09-22T21:33:00+00:00",
-      "url": "https://www.youtube.com/shorts/bn4uvtg8ECY",
-      "thumbnail": "https://img.youtube.com/vi/bn4uvtg8ECY/mqdefault.jpg",
-      "description": "Use code MATTHEWBERMAN at checkout: https://eightsleep.com/matthewberman\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n"
-    },
-    {
-      "video_id": "hy8UstR2NEg",
-      "title": "Full Course: Spec-Driven Development with Coding Agents",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-09-22T19:32:17+00:00",
-      "url": "https://www.youtube.com/watch?v=hy8UstR2NEg",
-      "thumbnail": "https://img.youtube.com/vi/hy8UstR2NEg/mqdefault.jpg",
-      "description": "Vibe coding is fast, but it often produces code that doesn't match what you asked for. Spec-driven development is the disciplined alternative: write a clear markdown spec defining what to build, and let your coding agent implement it.\n\nEarn"
-    },
-    {
-      "video_id": "5MFORiebZks",
-      "title": "GPT-6 SOL AND LUNA ARE OUT!!!",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-09-22T18:38:33+00:00",
-      "url": "https://www.youtube.com/watch?v=5MFORiebZks",
-      "thumbnail": "https://img.youtube.com/vi/5MFORiebZks/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
-      "video_id": "Z4x71naDx1Q",
-      "title": "Why Education Has to Change",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-09-22T12:04:09+00:00",
-      "url": "https://www.youtube.com/watch?v=Z4x71naDx1Q",
-      "thumbnail": "https://img.youtube.com/vi/Z4x71naDx1Q/mqdefault.jpg",
-      "description": "Ben Horowitz and Erik Torenberg sit down with Gagan Biyani to introduce the Horowitz Andreessen Academy and discuss a bigger question: what should education look like when AI is rapidly changing the skills people need to build, work, and cr"
-    },
-    {
       "video_id": "qBBRRsH0rQc",
       "title": "Yes, Jev Is Insane, But There's A Catch",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -433,18 +349,6 @@
       "url": "https://www.youtube.com/watch?v=qBBRRsH0rQc",
       "thumbnail": "https://img.youtube.com/vi/qBBRRsH0rQc/mqdefault.jpg",
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 Jev:\nhttps://typesafe.ai/blog/introducing-system-one-models-and-jev\n\nFull song: https://www.youtube.com/watch?v=4RtUJkjrKMI\n\nPrevious papers, implementati"
-    },
-    {
-      "video_id": "qAgzA05Q6z0",
-      "title": "A Perfect World Model of Chess Still Won't Beat Magnus Carlsen - Alexander Mattick",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-09-22T08:10:54+00:00",
-      "url": "https://www.youtube.com/shorts/qAgzA05Q6z0",
-      "thumbnail": "https://img.youtube.com/vi/qAgzA05Q6z0/mqdefault.jpg",
-      "description": "Alexander Mattick (Fraunhofer IIS, UTN): a perfect world model of chess still will not beat Magnus Carlsen, because predicting the future and choosing the right action are different problems. It is why humanoid robots do backflips on camera"
     },
     {
       "video_id": "rRm3Vnb7UPY",
@@ -483,66 +387,6 @@
       "description": "Don’t sleep on Astra. Quinn Johnson started working with GPT-6 Astra differently in Codex: he shared the goal, added context, and let it tackle the problem his team had been working on. On a cache-reuse audit, Astra connected patterns the N"
     },
     {
-      "video_id": "TbkUKCm3CHQ",
-      "title": "An ex-OpenAI researcher just deleted language from the LLM...",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-09-21T17:52:29+00:00",
-      "url": "https://www.youtube.com/watch?v=TbkUKCm3CHQ",
-      "thumbnail": "https://img.youtube.com/vi/TbkUKCm3CHQ/mqdefault.jpg",
-      "description": "Mux is the video API that translates audio and answers questions about your video. Get $50 in free credits: https://mux.com/fireship\n\nEx-OpenAI researcher Diogo Almeida spent two years in stealth building Jev, a \"System 1\" AI model that can"
-    },
-    {
-      "video_id": "1S1B4XkFCD8",
-      "title": "Why More Data Cannot Replace Prior Structure - Alexander Mattick",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-09-21T15:09:54+00:00",
-      "url": "https://www.youtube.com/watch?v=1S1B4XkFCD8",
-      "thumbnail": "https://img.youtube.com/vi/1S1B4XkFCD8/mqdefault.jpg",
-      "description": "Alexander Mattick is a researcher at Fraunhofer IIS and a PhD researcher at the University of Technology Nuremberg (UTN), and a regular on Yannic Kilcher's Discord. He first came on MLST in 2022, after helping research the Yann LeCun and Ra"
-    },
-    {
-      "video_id": "ZO6VyDvysxY",
-      "title": "Why the People Who Built Hip-Hop Ended Up With Nothing",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-09-20T14:30:23+00:00",
-      "url": "https://www.youtube.com/watch?v=ZO6VyDvysxY",
-      "thumbnail": "https://img.youtube.com/vi/ZO6VyDvysxY/mqdefault.jpg",
-      "description": "Ben Horowitz and Erik Torenberg sit down with Nas, Grandmaster Caz, and Steve Stoute for a conversation about the Paid in Full Foundation and its mission to recognize and support the pioneers who built hip-hop.\n\nBen, Nas, and Steve share ho"
-    },
-    {
-      "video_id": "3V9CPisNs1g",
-      "title": "Structured Output in the browser with Transformers.js 4.3",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-09-20T05:04:32+00:00",
-      "url": "https://www.youtube.com/shorts/3V9CPisNs1g",
-      "thumbnail": "https://img.youtube.com/vi/3V9CPisNs1g/mqdefault.jpg",
-      "description": "Structured output is here. The new @huggingface/transformers-structured-output package hooks into token generation and makes sure every token follows your JSON Schema or regex.\n\nFull walkthrough in the linked video.\n\nnpm: https://www.npmjs."
-    },
-    {
-      "video_id": "GzEtpAKYRvE",
-      "title": "Why Would AI Companies Want to Slow Down?",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-09-18T19:25:08+00:00",
-      "url": "https://www.youtube.com/watch?v=GzEtpAKYRvE",
-      "thumbnail": "https://img.youtube.com/vi/GzEtpAKYRvE/mqdefault.jpg",
-      "description": "Databricks co-founder and CEO Ali Ghodsi joins a16z General Partners Martin Casado and Sarah Wang for a conversation about AI risk, recursive self-improvement, cybersecurity, and what’s actually holding back enterprise adoption.\n\nAli argues"
-    },
-    {
       "video_id": "bRQEWPA832A",
       "title": "The last IMO problem AI could not solve",
       "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
@@ -579,30 +423,6 @@
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The DeepSeek V4.1 Flash paper is available here:\nhttps://www.deepseek.com/en/news/deepseek-v4-1-flash/\n\nErratum: Opus 5.1 label at 3:23 should have been O"
     },
     {
-      "video_id": "LoLYw--s-5w",
-      "title": "Did Google just kickstart the intelligence explosion?",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-09-17T20:33:55+00:00",
-      "url": "https://www.youtube.com/watch?v=LoLYw--s-5w",
-      "thumbnail": "https://img.youtube.com/vi/LoLYw--s-5w/mqdefault.jpg",
-      "description": "Run GitHub Actions 2x faster and build with Codesmith at https://www.blacksmith.sh/\n\nGoogle DeepMind just published Dream-RSI, a technique that turns an AI's old discovery logs into a simulator so it can test thousands of exploration strate"
-    },
-    {
-      "video_id": "1jq7sC6IjMk",
-      "title": "Predict next week's weather yourself",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-09-17T11:12:05+00:00",
-      "url": "https://www.youtube.com/watch?v=1jq7sC6IjMk",
-      "thumbnail": "https://img.youtube.com/vi/1jq7sC6IjMk/mqdefault.jpg",
-      "description": "Weather forecasting is very important, and people are moving towards using neural network models to do it. We at Hugging Face are interested in the tooling around the research and want to make it better. In this video Emma and Aritra talk a"
-    },
-    {
       "video_id": "s7d2d8FhevU",
       "title": "Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud & Jung | Lex Fridman Podcast #502",
       "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
@@ -627,54 +447,6 @@
       "description": "Why has it been the last few days that the calls to come to pace the frontier AI have come so loudly? The safety warnings, and lab leader messages? Let’s explore the six axes that the researchers are looking at, the incidence reports and tr"
     },
     {
-      "video_id": "InnVG6pOPpM",
-      "title": "Transformers.js v4.3: Structured Output in the browser",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-09-16T07:49:24+00:00",
-      "url": "https://www.youtube.com/watch?v=InnVG6pOPpM",
-      "thumbnail": "https://img.youtube.com/vi/InnVG6pOPpM/mqdefault.jpg",
-      "description": "Transformers.js v4.3 is out, and the big one is structured output.\n\nWith the new @huggingface/transformers-structured-output package you can force a model to follow an exact JSON Schema or regex, directly in the browser. No more parsing mar"
-    },
-    {
-      "video_id": "hXQZ6lyRCsI",
-      "title": "Flow matching for Beginners | @ariG23498",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-09-15T20:37:58+00:00",
-      "url": "https://www.youtube.com/watch?v=hXQZ6lyRCsI",
-      "thumbnail": "https://img.youtube.com/vi/hXQZ6lyRCsI/mqdefault.jpg",
-      "description": "Understand flow matching from ground up with more visualization and less math.\n\nBlog: https://huggingface.co/spaces/ariG23498/flow-matching\n\nTimestamps:\n00:00 - Introduction\n00:50 - Noise to Image\n06:23 - What to train\n13:23 - Train velocit"
-    },
-    {
-      "video_id": "7r4ikZHm9AI",
-      "title": "Anthropic researchers are quitting... and now we know why",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-09-15T17:45:39+00:00",
-      "url": "https://www.youtube.com/watch?v=7r4ikZHm9AI",
-      "thumbnail": "https://img.youtube.com/vi/7r4ikZHm9AI/mqdefault.jpg",
-      "description": "Macroscope can auto-approve your team’s PRs safely. Try it here:\nhttps://macroscope.com/?utm_source=fireship\n\nAnthropic just dropped a 154-page report on how hackers, scientists, and rival AI labs have been abusing Claude. Let's dive in.\n\n#"
-    },
-    {
-      "video_id": "uxH98holfUI",
-      "title": "How a Robot Tests an Action Before It Moves",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-09-15T16:09:49+00:00",
-      "url": "https://www.youtube.com/shorts/uxH98holfUI",
-      "thumbnail": "https://img.youtube.com/vi/uxH98holfUI/mqdefault.jpg",
-      "description": "How can a robot test an action without moving? NVIDIA's Ming-Yu Liu explains how a world model predicts the outcome first.\n\nCosmos 3 learns three abilities together: forward dynamics (what happens after an action), inverse dynamics (which a"
-    },
-    {
       "video_id": "YoEWjZSwoys",
       "title": "Claude Is Now Leaving Invisible Fingerprints In Its Text",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -685,25 +457,20 @@
       "url": "https://www.youtube.com/watch?v=YoEWjZSwoys",
       "thumbnail": "https://img.youtube.com/vi/YoEWjZSwoys/mqdefault.jpg",
       "description": "❤️ Check out Weights & Biases and sign up for a free demo here: https://wandb.me/papers\n\n📝 The papers and sources are available here:\nhttps://proceedings.mlr.press/v202/kirchenbauer23a.html\nhttps://www.nature.com/articles/s41586-024-08025-4"
-    },
-    {
-      "video_id": "aspmNhKAFMc",
-      "title": "OpenAI's biggest math breakthrough is getting ugly...",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-09-11T17:24:40+00:00",
-      "url": "https://www.youtube.com/watch?v=aspmNhKAFMc",
-      "thumbnail": "https://img.youtube.com/vi/aspmNhKAFMc/mqdefault.jpg",
-      "description": "Railway is the smoothest way to deploy software: https://railway.com/?referralCode=fireship\n\nOpenAI claims it cracked a 90 year old math problem, but one NYU professor isn't happy about it. Let's dive in. \n\n#coding #programming\n\nWant more F"
     }
   ],
   "stats": {
-    "total_videos": 43,
+    "total_videos": 23,
     "total_channels": 16,
-    "successful_channels": 16,
-    "failed_channels": [],
+    "successful_channels": 10,
+    "failed_channels": [
+      "Andrej Karpathy",
+      "Machine Learning Street Talk",
+      "Hugging Face",
+      "a16z",
+      "DeepLearningAI",
+      "Fireship"
+    ],
     "window_days": 14
   }
 }
