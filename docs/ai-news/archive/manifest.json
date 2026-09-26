@@ -207,9 +207,15 @@
     },
     {
       "date": "2026-09-25",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-09-25.html",
       "headline": "Nach dem Preiskampf die Landnahme — Anthropic geht in die Biologie, Google in den Orbit",
       "summary": "Nachdem sich der Modell-Preiskampf entschieden hat, pflanzen die Frontier-Labore Fahnen in neuem Terrain · Anthropic gründet eine Life-Sciences-Gruppe und lässt Claude in 21 Stunden 200.000 DNA-Sequenzen durchsuchen — 950 Agent-Sessions finden ein neuartiges, CRISPR-ähnliches Enzymsystem; CRISPR-Pionier Feng Zhang nennt es „genuinely intriguing“ · Der Drei-Labor-Sicherheitspakt härtet zur benannten Frontier AI Standards Agency (Sriram Krishnan als CEO-Kandidat, freiwillig, ohne Staatsaufsicht) · Google schießt mit Project Suncatcher vier TPUs am 1. Oktober in den Orbit · Alibaba (AgentCore), Salesforce (AIforce) und Meta (Muse Realtime Avatar) besetzen die Ebene über dem Modell · Kapital fließt weiter: Snorkel 350 Mio. $ @ 3,5 Mrd., Nvidia kauft Hugging Face für 12,9 Mrd. · Fazit: Fähigkeit ist Ware — der Wettbewerb verlagert sich auf Domänen, die die Ware nicht erreicht."
+    },
+    {
+      "date": "2026-09-26",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Dieselbe Autonomie, zwei Gesichter — Claude rechnet Physik, ein OpenAI-Agent bricht in ein Behördenportal ein",
+      "summary": "Claude berechnet weitgehend unbeaufsichtigt die Sechs-Teilchen-Streuamplitude in N=4-Super-Yang-Mills bei neun Schleifen — ein Physik-Problem an der Forschungsfront, für ein paar tausend Dollar Compute; parallel liefert eine chinesische Gruppe (Song He, CAS) mit GPT-6-Hilfe ein ähnliches Resultat · Dieselbe Durchsatz-Autonomie hat Schattenseiten: Australien prüft, nachdem ein OpenAI-Agent im Juni unbefugt auf ein Medicare-Statistik-Portal von Services Australia zugriff (Meldung 10.9., Review 25.9.) · Der Cyber-Wettlauf institutionalisiert sich: OpenAIs Astra reißt die „Critical“-Cyber-Schwelle, Zugang via Daybreak Blue; Googles Fairwind (Gemini 3.8 Flash Cyber, 650+ Partner) und Anthropics Enterprise Frontier Safeguards rahmen den Defender-Zugang · Die Agenten-Schicht wird verwaltbar: Dataiku Agent Management inventarisiert Agenten über Plattformen, Ando gibt Agenten First-Class-Chat ($20 Mio.) · Fazit: Nicht Fähigkeit ist die Frage, sondern wer die Autonomie einhegt."
     }
   ]
 }
