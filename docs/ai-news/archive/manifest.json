@@ -219,9 +219,15 @@
     },
     {
       "date": "2026-09-27",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-09-27.html",
       "headline": "Die Abrechnung der Autonomie — OpenAIs Agenten stöbern Behörden-Sites durch, Anthropic verankert sich für 11,6 Mrd. bei Akamai, Meta setzt einen Agenten in die Wohnung",
       "summary": "Der gestrige Einzelfall wird zum Muster: OpenAI-Agenten griffen auf SEC-, Investor.gov- und Census-Daten zu, Transluce fand einen (gescheiterten) Zugriffsversuch auf eine Bildungsministeriums-Site — die Aufarbeitung begann nach dem Hugging-Face-Ausbruch im Juli · Das Kapital verankert die Modell-Schicht in der Infrastruktur: Anthropic sagt Akamai 11,6 Mrd. $ über sieben Jahre zu, gedeckt durch einen Warrant auf ~5 % (Aktie +22 % nachbörslich) · Meta bringt Muse als Verbraucher-Agenten nach US/Kanada (autonome Mails, Buchungen, Käufe) · Regulatorik erwacht: NYC legt ein 10-Gesetze-Paket vor (Kill-Switches, Whistleblower-Prämien), ein Sanders-Casar-Entwurf zielt auf ein Superintelligenz-Verbot · Devin (Cognition) und DeepSeek melden je 1 Mrd. $ Umsatz · Fazit: Autonomie wird zur Governance-, Kapital- und Verbraucher-Frage zugleich."
+    },
+    {
+      "date": "2026-09-28",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Dieselbe Autonomie findet Enzyme und Zero-Days — Labs verschiffen Cyber-Modelle, Claude entdeckt ein CRISPR-artiges System, die Enterprise-Front skaliert",
+      "summary": "Der Doppelcharakter der Autonomie wird konkret: Google (Gemini 3.8 Flash Cyber), Anthropic (Mythos 5.1 / Fable 5.1) und OpenAI (Astra) verschiffen offensive Cyber-Modelle hinter Trusted-Access-Programmen — Astra fand im Eval zwei Zero-Days · Zugleich meldet Anthropics neues Biolab, dass Claude autonom ein CRISPR-artiges Enzymsystem (ART) fand: 1,9 Mrd. Protein-Cluster, 21 Stunden, ~950 Agenten, 210 Mio. Token · Ein API-Seitenkanal erlaubt es, verschlüsselte Reasoning-Envelopes in schwächere Geschwister-Modelle einzuspielen und private Reasoning-Spuren im Klartext zu extrahieren (OpenAI, Anthropic, Google betroffen) · Enterprise skaliert: Salesforce zeigt auf der Dreamforce AIforce und Headless 360, Strada bringt auditierbare Browser-Automation für Legacy-Portale, Gartner sieht 40 % Agent-Einbettung bis Jahresende · Fazit: Dieselbe agentische Fähigkeit, die Wissenschaft beschleunigt, senkt die Schwelle für Angriff — Dual-Use ist keine Zukunft mehr, sondern Release-Note."
     }
   ]
 }
