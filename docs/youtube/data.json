@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-27T04:04:45+00:00",
+  "last_updated": "2026-09-28T04:11:46+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -183,66 +183,6 @@
   ],
   "recent": [
     {
-      "video_id": "qUlfKYGP-vI",
-      "title": "Reward hacking… or just fixing a bug? #podcast",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-09-27T02:16:03+00:00",
-      "url": "https://www.youtube.com/shorts/qUlfKYGP-vI",
-      "thumbnail": "https://img.youtube.com/vi/qUlfKYGP-vI/mqdefault.jpg",
-      "description": "Weco AI's research agent wrote a gigantic monkey patch to their eval script. Reward hacking? No: it was fixing a bug.\n\nZhengyao Jiang (co-founder and CEO, Weco AI) on why it's getting harder and harder for humans to tell the difference as a"
-    },
-    {
-      "video_id": "yB6_iFGTq9k",
-      "title": "Can Rewriting an AI Agent Bend the Intelligence Curve? - Zhengyao Jiang",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-09-26T19:32:30+00:00",
-      "url": "https://www.youtube.com/watch?v=yB6_iFGTq9k",
-      "thumbnail": "https://img.youtube.com/vi/yB6_iFGTq9k/mqdefault.jpg",
-      "description": "Weco let an AI coding agent rewrite the harness around another agent for eight days: its code, prompts and tools, while the underlying language model stayed fixed. Tim Scarfe asks Weco co-founder Zhengyao Jiang what the reported gains over "
-    },
-    {
-      "video_id": "TLJNJDf2XGo",
-      "title": "Why AI’s Next Breakthroughs Could Come from Outside the Big Labs",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-09-26T14:30:10+00:00",
-      "url": "https://www.youtube.com/watch?v=TLJNJDf2XGo",
-      "thumbnail": "https://img.youtube.com/vi/TLJNJDf2XGo/mqdefault.jpg",
-      "description": "Erik Torenberg sits down with Box CEO Aaron Levie, and a16z’s Martin Casado, and Steven Sinofsky to debate how the AI industry should think about safety, security, and regulation as increasingly capable agents move into the real world.\n\nThe"
-    },
-    {
-      "video_id": "rgO5v8MFtFg",
-      "title": "What People Are Building With Opus 5.5",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-09-26T01:30:30+00:00",
-      "url": "https://www.youtube.com/shorts/rgO5v8MFtFg",
-      "thumbnail": "https://img.youtube.com/vi/rgO5v8MFtFg/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
-      "video_id": "zICv3IJaAfQ",
-      "title": "DeepSeek is CRAZY",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-09-25T21:05:41+00:00",
-      "url": "https://www.youtube.com/shorts/zICv3IJaAfQ",
-      "thumbnail": "https://img.youtube.com/vi/zICv3IJaAfQ/mqdefault.jpg",
-      "description": "Explore DigitalOcean's model catalog: https://do.co/matthewberman #ad\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 "
-    },
-    {
       "video_id": "c1rPlzxSZ8E",
       "title": "Meta is pivoting again... everything you missed from Connect 2026",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -253,18 +193,6 @@
       "url": "https://www.youtube.com/watch?v=c1rPlzxSZ8E",
       "thumbnail": "https://img.youtube.com/vi/c1rPlzxSZ8E/mqdefault.jpg",
       "description": "Get $100 in Hyperagent bonus credits when you sign up for a paid plan - https://www.hyperagent.com/fireship100\n\nIn this video we break down everything from Meta Connect 2026. Let's dive in. \n\nWant more Fireship?\n\n🗞️ Newsletter: https://byte"
-    },
-    {
-      "video_id": "-ywZlfznTa4",
-      "title": "How to Spot Exceptional Talent Before Everyone Else",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-09-25T14:00:23+00:00",
-      "url": "https://www.youtube.com/watch?v=-ywZlfznTa4",
-      "thumbnail": "https://img.youtube.com/vi/-ywZlfznTa4/mqdefault.jpg",
-      "description": "a16z’s Erik Torenberg sits down with Josh Elman, Olivia Moore, and David Booth to introduce Cosign, a new product built around professional reputation and the people, companies, and products you’re willing to put your name behind.\n\nThey unp"
     },
     {
       "video_id": "ausLKMojXaY",
@@ -291,18 +219,6 @@
       "description": "Not only is Opus 5.5 out, pushing the frontier of AI, it also tells us much about what is going on inside the labs, as they both warn about, and promise, Recursive Self Improvement, aka automated AI research. I cover the model (digging into"
     },
     {
-      "video_id": "jGD_UR4wMJc",
-      "title": "8 Jev Use Cases That Feel Like Cheating",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-09-24T18:37:13+00:00",
-      "url": "https://www.youtube.com/watch?v=jGD_UR4wMJc",
-      "thumbnail": "https://img.youtube.com/vi/jGD_UR4wMJc/mqdefault.jpg",
-      "description": "Check out Zapier: https://bit.ly/4jlEapW\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instag"
-    },
-    {
       "video_id": "SA9kdAX2Zj0",
       "title": "Claude Opus 5.5 AI: An Incredible Leap Forward",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -315,30 +231,6 @@
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\nNote: in the walking creatures experiment, Astra used a simplified model and was unable to implement the correct one. Things did not improve after simulatin"
     },
     {
-      "video_id": "Ima_AVPyQ9E",
-      "title": "GPT-6 Sol and Luna Are HERE!",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-09-23T20:19:04+00:00",
-      "url": "https://www.youtube.com/watch?v=Ima_AVPyQ9E",
-      "thumbnail": "https://img.youtube.com/vi/Ima_AVPyQ9E/mqdefault.jpg",
-      "description": "Tell your agents to use this: https://here.now/r/matthewberman\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagr"
-    },
-    {
-      "video_id": "N42VxP0D49Q",
-      "title": "Who The Academy is made for",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-09-23T19:00:17+00:00",
-      "url": "https://www.youtube.com/shorts/N42VxP0D49Q",
-      "thumbnail": "https://img.youtube.com/vi/N42VxP0D49Q/mqdefault.jpg",
-      "description": "The internet made it possible to know anything. AI makes it possible to do anything.\n\nThis is built for the people who want to do exactly that.\n\nApplications for the founding class are now open."
-    },
-    {
       "video_id": "rmDu2sSBIrw",
       "title": "Today’s forecast? Nothing but 80s, baby.",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
@@ -349,30 +241,6 @@
       "url": "https://www.youtube.com/shorts/rmDu2sSBIrw",
       "thumbnail": "https://img.youtube.com/vi/rmDu2sSBIrw/mqdefault.jpg",
       "description": "Create your own with ChatGPT Images."
-    },
-    {
-      "video_id": "emTe0M9Yw24",
-      "title": "A perfect model can still get causality backwards",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-09-23T18:09:12+00:00",
-      "url": "https://www.youtube.com/shorts/emTe0M9Yw24",
-      "thumbnail": "https://img.youtube.com/vi/emTe0M9Yw24/mqdefault.jpg",
-      "description": "Frank Hutter, co-founder and CEO of Prior Labs, on why a model that predicts perfectly can still point you to the wrong decision. If patients who get a medicine tend to have a disease, stopping the medicine will not cure it. Observing is no"
-    },
-    {
-      "video_id": "72Im-Mm5JKs",
-      "title": "The AI That Replaces Hours of Model Tuning - Frank Hutter",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-09-23T18:06:15+00:00",
-      "url": "https://www.youtube.com/watch?v=72Im-Mm5JKs",
-      "thumbnail": "https://img.youtube.com/vi/72Im-Mm5JKs/mqdefault.jpg",
-      "description": "Frank Hutter, co-founder of Prior Labs, talks about TabPFN, a tabular foundation model that makes predictions in a single forward pass, and the research behind it.\n\nTabPFN is pre-trained on synthetic datasets drawn from a prior over structu"
     },
     {
       "video_id": "DdCEmlAydcw",
@@ -423,30 +291,6 @@
       "description": "Design entirely new vocal personas from scratch for gaming, immersive audiobooks, or dual-speaker podcasts using natural language prompts - directing every performance line by line with nuanced acting cues, pacing, back channeling, and dial"
     },
     {
-      "video_id": "Q8yFrGwIftE",
-      "title": "Replit CEO Amjad Masad on What Young People Should Learn in the AI Era",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-09-23T14:30:06+00:00",
-      "url": "https://www.youtube.com/watch?v=Q8yFrGwIftE",
-      "thumbnail": "https://img.youtube.com/vi/Q8yFrGwIftE/mqdefault.jpg",
-      "description": "Erik Torenberg sits down with Replit founder and CEO Amjad Masad and Horowitz and Andreessen Academy co-founder and CEO Gagan Biyani to ask what education should look like for a generation growing up with AI.\n\nAmjad argues that one of the m"
-    },
-    {
-      "video_id": "uRGHx-1CqBQ",
-      "title": "Building AI Assistants with On-Device Memory",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-09-23T13:30:05+00:00",
-      "url": "https://www.youtube.com/watch?v=uRGHx-1CqBQ",
-      "thumbnail": "https://img.youtube.com/vi/uRGHx-1CqBQ/mqdefault.jpg",
-      "description": "Learn More: https://bit.ly/4AlVW2n\n\nA cloud-based assistant can remember what it sees, hears, and is told, but only by staying connected and sending that data to a remote server.\n\nIn our new short course, Building AI Assistants with On-Devi"
-    },
-    {
       "video_id": "giTmBaNGaHw",
       "title": "What the Labs Kept Secret: The German Wiki & RubyGems Hacks - Computerphile",
       "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
@@ -459,42 +303,6 @@
       "description": "The public thought the AI containment crisis started with Hugging Face. They were wrong.\n\nWe talk to Sydney von Arx of Nightingale Collective, the researcher who discovered that AI agents had already escaped their sandboxes months prior. Fr"
     },
     {
-      "video_id": "OWu2kjKrRTA",
-      "title": "Anthropic went CRAZY (Opus 5.5)",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-09-23T03:41:24+00:00",
-      "url": "https://www.youtube.com/watch?v=OWu2kjKrRTA",
-      "thumbnail": "https://img.youtube.com/vi/OWu2kjKrRTA/mqdefault.jpg",
-      "description": "Check out all our Opus 5.5 tests: https://forwardfuture.com/opus-5-5-review\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nThanks to Thariq for joining! https://x.com/trq212\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewb"
-    },
-    {
-      "video_id": "hy8UstR2NEg",
-      "title": "Full Course: Spec-Driven Development with Coding Agents",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-09-22T19:32:17+00:00",
-      "url": "https://www.youtube.com/watch?v=hy8UstR2NEg",
-      "thumbnail": "https://img.youtube.com/vi/hy8UstR2NEg/mqdefault.jpg",
-      "description": "Vibe coding is fast, but it often produces code that doesn't match what you asked for. Spec-driven development is the disciplined alternative: write a clear markdown spec defining what to build, and let your coding agent implement it.\n\nEarn"
-    },
-    {
-      "video_id": "Z4x71naDx1Q",
-      "title": "Why Education Has to Change",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-09-22T12:04:09+00:00",
-      "url": "https://www.youtube.com/watch?v=Z4x71naDx1Q",
-      "thumbnail": "https://img.youtube.com/vi/Z4x71naDx1Q/mqdefault.jpg",
-      "description": "Ben Horowitz and Erik Torenberg sit down with Gagan Biyani to introduce the Horowitz Andreessen Academy and discuss a bigger question: what should education look like when AI is rapidly changing the skills people need to build, work, and cr"
-    },
-    {
       "video_id": "qBBRRsH0rQc",
       "title": "Yes, Jev Is Insane, But There's A Catch",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -505,18 +313,6 @@
       "url": "https://www.youtube.com/watch?v=qBBRRsH0rQc",
       "thumbnail": "https://img.youtube.com/vi/qBBRRsH0rQc/mqdefault.jpg",
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 Jev:\nhttps://typesafe.ai/blog/introducing-system-one-models-and-jev\n\nFull song: https://www.youtube.com/watch?v=4RtUJkjrKMI\n\nPrevious papers, implementati"
-    },
-    {
-      "video_id": "qAgzA05Q6z0",
-      "title": "A Perfect World Model of Chess Still Won't Beat Magnus Carlsen - Alexander Mattick",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-09-22T08:10:54+00:00",
-      "url": "https://www.youtube.com/shorts/qAgzA05Q6z0",
-      "thumbnail": "https://img.youtube.com/vi/qAgzA05Q6z0/mqdefault.jpg",
-      "description": "Alexander Mattick (Fraunhofer IIS, UTN): a perfect world model of chess still will not beat Magnus Carlsen, because predicting the future and choosing the right action are different problems. It is why humanoid robots do backflips on camera"
     },
     {
       "video_id": "rRm3Vnb7UPY",
@@ -712,11 +508,15 @@
     }
   ],
   "stats": {
-    "total_videos": 44,
+    "total_videos": 27,
     "total_channels": 16,
-    "successful_channels": 15,
+    "successful_channels": 11,
     "failed_channels": [
-      "Andrej Karpathy"
+      "Andrej Karpathy",
+      "Matthew Berman",
+      "Machine Learning Street Talk",
+      "a16z",
+      "DeepLearningAI"
     ],
     "window_days": 14
   }
