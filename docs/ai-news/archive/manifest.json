@@ -225,9 +225,15 @@
     },
     {
       "date": "2026-09-28",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-09-28.html",
       "headline": "Dieselbe Autonomie findet Enzyme und Zero-Days — Labs verschiffen Cyber-Modelle, Claude entdeckt ein CRISPR-artiges System, die Enterprise-Front skaliert",
       "summary": "Der Doppelcharakter der Autonomie wird konkret: Google (Gemini 3.8 Flash Cyber), Anthropic (Mythos 5.1 / Fable 5.1) und OpenAI (Astra) verschiffen offensive Cyber-Modelle hinter Trusted-Access-Programmen — Astra fand im Eval zwei Zero-Days · Zugleich meldet Anthropics neues Biolab, dass Claude autonom ein CRISPR-artiges Enzymsystem (ART) fand: 1,9 Mrd. Protein-Cluster, 21 Stunden, ~950 Agenten, 210 Mio. Token · Ein API-Seitenkanal erlaubt es, verschlüsselte Reasoning-Envelopes in schwächere Geschwister-Modelle einzuspielen und private Reasoning-Spuren im Klartext zu extrahieren (OpenAI, Anthropic, Google betroffen) · Enterprise skaliert: Salesforce zeigt auf der Dreamforce AIforce und Headless 360, Strada bringt auditierbare Browser-Automation für Legacy-Portale, Gartner sieht 40 % Agent-Einbettung bis Jahresende · Fazit: Dieselbe agentische Fähigkeit, die Wissenschaft beschleunigt, senkt die Schwelle für Angriff — Dual-Use ist keine Zukunft mehr, sondern Release-Note."
+    },
+    {
+      "date": "2026-09-29",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "DevDay-Tag: OpenAI macht den Assistenten dauerhaft — „o“ bleibt an, Anthropic schiebt Sonnet 5.5 nach, und die Beratungsbranche baut ihre Junior-Pyramide ab",
+      "summary": "OpenAI startet auf der DevDay den Always-on-Assistenten „o“; Anthropic macht Sonnet 5.5 zum Default-Sonnet; Accenture streicht 11.000 Stellen im KI-Umbau; die Governance-Schicht für Agenten wird zum eigenen Produktmarkt."
     }
   ]
 }

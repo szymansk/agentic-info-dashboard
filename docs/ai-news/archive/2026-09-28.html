@@ -298,7 +298,7 @@
   footer .mono { color: var(--muted); }
 </style>
 </head>
-<body data-snapshot-date="2026-09-29" data-snapshot-mode="live">
+<body data-snapshot-date="2026-09-28" data-snapshot-mode="archive">
 <div class="wrap">
 
   <!-- ─── Top Nav ─── -->
@@ -394,7 +394,7 @@
       </div>
     </div>
     <div class="meta">
-      <div class="date" id="today">Dienstag, 29. September 2026</div>
+      <div class="date" id="today">Montag, 28. September 2026</div>
       <div class="tag">Snapshot · KW 40 / 2026</div>
     </div>
   </header>
@@ -406,66 +406,65 @@
 
     <header class="briefing-head">
       <h2 class="kicker">Tagesbriefing · Agentic AI &amp; GenAI</h2>
-      <h1>Vom Chat zum Dauerlauf — OpenAI macht den Assistenten „ständig an“, Anthropic schiebt Sonnet 5.5 nach, und die Beratungsbranche baut ihre Junior-Pyramide ab</h1>
+      <h1>Dieselbe Autonomie findet Enzyme und Zero-Days — die Labs verschiffen Cyber-Modelle, Claude entdeckt ein CRISPR-artiges System, und die Enterprise-Front skaliert</h1>
       <div class="byline">
         <span>✍️ Kuratiert &amp; analysiert</span>
         <span class="dot-sep">·</span>
         <span>~9 Min Lesezeit</span>
         <span class="dot-sep">·</span>
-        <span id="byline-date">29. September 2026</span>
+        <span id="byline-date">28. September 2026</span>
       </div>
       <p class="lede">
-        Heute hält OpenAI in San Francisco seine DevDay ab, und der erwartete Paukenschlag verschiebt weniger die Fähigkeit als die Form: Berichten und geleakten Code-Referenzen zufolge startet ein persistenter Assistent mit dem Arbeitsnamen „o“, der nach dem Ende eines Chats weiterarbeitet — mit Cloud-Sandbox für Langläufer-Aufgaben, eigenem E-Mail-Suffix und einem gemeinsamen Nachrichten-Board für Multi-Agenten-Kollaboration. Fast zeitgleich macht <span data-person="dario-amodei">Anthropic</span> mit Claude Sonnet 5.5 sein mittleres Modell zum neuen Default — 1M Kontext, 2 $/10 $ pro Mtok — und liefert damit den Motor für die nächste Coding-Agenten-Generation nach. Und während die Labs ihre Assistenten dauerhaft machen, zieht die Beratungsbranche die praktische Konsequenz: Accenture streicht 11.000 Stellen, IBM weitere 2.700, jeweils mit der offenen Begründung, dass Agenten die Junior-Arbeit übernehmen. Der Befund des Tages: Der Assistent hört auf, ein Werkzeug zu sein, das man aufruft — er wird zu einem Prozess, der läuft. Und wo er läuft, verschwindet zuerst die Sprosse, auf der Berufseinsteiger heute noch stehen.
+        Am Wochenende ging es um Agenten, die versehentlich Behörden-Sites ansteuerten; zum Wochenstart zeigt sich, dass dieselbe agentische Fähigkeit zwei Richtungen kennt — und beide werden gerade zum Produkt. <span data-person="demis-hassabis">Google</span>, <span data-person="dario-amodei">Anthropic</span> und OpenAI verschiffen offensive Cyber-Modelle, die autonom Schwachstellen finden; eines fand im Test gleich zwei Zero-Days. Fast zeitgleich meldet Anthropics frisch eröffnetes Biolab, dass Claude eigenständig ein CRISPR-artiges Enzymsystem entdeckte — dieselbe Suchmaschinerie, nur auf ein Genom statt auf eine Codebasis gerichtet. Und während diese Extreme die Schlagzeilen holen, wird ein Seitenkanal in den APIs bekannt, der private Reasoning-Spuren über Modellgrenzen hinweg auslesbar macht. Der Befund des Tages: Autonomie ist Dual-Use geworden — nicht als Zukunftsszenario, sondern als Release-Note. Wer sie einsetzt, kauft Beschleunigung und Angriffsfläche im selben Paket.
       </p>
     </header>
 
     <div class="briefing-body">
 
       <section>
-        <h3><span class="num">01</span>DevDay: Der Assistent wird zum Prozess — OpenAIs „o“ bleibt an</h3>
-        <p>OpenAI eröffnet heute in San Francisco seine DevDay, und der erwartete Höhepunkt ist kein neues Basismodell, sondern eine neue Betriebsart: ein persistenter Assistent mit dem internen Namen „o“, den Entwickler zuerst in Code-Referenzen und einem kurzen Upgrade-Screen entdeckten. Anders als der bisherige Chat, der mit dem Schließen des Fensters endet, soll „o“ dauerhaft laufen — mit einer Cloud-Sandbox für Aufgaben, die Stunden oder Tage brauchen, einem eigenen E-Mail-Suffix, mit dem der Assistent adressierbar wird, und einem gemeinsamen Nachrichten-Board, über das mehrere Agenten koordiniert arbeiten. Berichtet werden ein Fast-Mode und Unterstützung für 63 Sprachen; die Verfügbarkeit soll gestaffelt an Pro-Stufen hängen.</p>
-        <p>Die Verschiebung ist konzeptionell, nicht bloß funktional. Ein Chat ist ein Werkzeug, das man aufruft und wieder weglegt; ein „ständig an“-Assistent ist ein Prozess, der zwischen den Interaktionen weiterläuft, Kontext hält und selbst tätig wird. Damit rückt OpenAI genau dorthin, wo Agenten-Frameworks seit einem Jahr hinwollen — nur eben als Konsumprodukt mit Adresse und Postfach statt als API-Bastelei. Das gemeinsame Board deutet an, dass die Einheit nicht mehr der einzelne Agent ist, sondern das Team aus Agenten, das an einer Aufgabe zusammenarbeitet.</p>
-        <p>Der Preis für diese Dauer-Präsenz ist Angriffsfläche und Abhängigkeit. Ein Assistent, der eigenständig E-Mails empfängt und in einer Sandbox lange Aufgaben ausführt, braucht sehr klare Grenzen, was er darf und mit wessen Daten. Und ein Assistent, der immer läuft, ist ein Assistent, der immer kostet — die gestaffelten Pro-Stufen sind der erste Hinweis darauf, dass „ambient AI“ nicht das gleiche Preismodell trägt wie ein Chat-Abo.</p>
+        <h3><span class="num">01</span>Die Labs bewaffnen die Autonomie — Cyber-Modelle werden zum Produkt</h3>
+        <p>Innerhalb weniger Tage haben die drei führenden Häuser dieselbe Grenze überschritten: Sie liefern Modelle aus, die autonom Software-Schwachstellen finden. <span data-person="demis-hassabis">Google</span> stellte Gemini 3.8 Flash Cyber vor, das laut Bericht in der autonomen Schwachstellen-Suche Frontier-Niveau erreicht und dabei größere Modelle der Rivalen übertrifft. <span data-person="dario-amodei">Anthropic</span> brachte Claude Fable 5.1 und das stärker abgesicherte Claude Mythos 5.1, Letzteres nur über ein „Trusted Access“-Programm. OpenAI meldet, dass sein Modell Astra die selbst definierte „Critical“-Schwelle für Cyber-Fähigkeiten erreicht — und im Eval zwei Zero-Day-Lücken in nicht näher benannter Software entdeckte und in einer Exploit-Kette nutzte.</p>
+        <p>Das Muster ist überall gleich: Fähigkeit plus Gatekeeping. Googles Modell geht über das „Fairwind“-Programm zunächst an ausgewählte Verteidiger — Behörden, Gesundheitswesen, Telkos, Sicherheitspartner; Anthropic betont verbesserte Resistenz gegen Missbrauchs-Prompts und Prompt-Injection. Die Botschaft, die alle drei senden, lautet: Wir bauen Offensiv-Werkzeuge, aber wir kontrollieren, wer sie bekommt. Das ist die einzig plausible Haltung — und zugleich ein Eingeständnis, dass die Waffe existiert. Ein Modell, das eine Zero-Day-Kette selbstständig zusammensetzt, unterscheidet sich vom Pentest-Assistenten nicht in der Art, sondern nur im Verwendungszweck.</p>
+        <p>Die eigentliche Verschiebung ist ökonomisch. Autonome Schwachstellen-Suche war bisher teure Handarbeit weniger Spezialisten; als Modell-Feature wird sie zur Grenzkosten-Ware. Das hilft Verteidigern, die endlich zur gleichen Skalierung wie Angreifer kommen — aber es senkt auch die Schwelle für alle, die an einer der weniger streng geschützten „Geschwister“-Varianten vorbeikommen. Der Gatekeeper ist nur so gut wie sein schwächstes Zugangsprogramm.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für DACH: Bevor jemand „o“ oder ein Äquivalent in Arbeitsabläufe lässt, gehört die Governance-Frage nach vorn — welche Postfächer, welche Systeme, welche Daten darf ein dauerhaft laufender Agent berühren, und wie wird das protokolliert? Die eigentliche Neuerung ist nicht ein weiteres Modell, sondern die Verschiebung vom Aufruf zum Dauerbetrieb. Wer Assistenten produktiv einsetzt, sollte Kosten nicht mehr pro Prompt, sondern pro laufendem Agenten kalkulieren — und Zugriffsrechte so eng schneiden wie bei einem neuen Mitarbeiter, nicht wie bei einem Chatbot.
+          Für DACH heißt das: Das Zeitfenster zwischen Veröffentlichung einer Lücke und ihrer maschinellen Ausnutzung schrumpft. Patch-Zyklen, die in Wochen gedacht sind, passen nicht mehr zu Angreifern, die in Stunden scannen. Wer Kunden-Systeme betreibt, sollte automatisierte Schwachstellen-Suche jetzt defensiv einsetzen — und Zugang zu den Verteidiger-Programmen (Fairwind-Klasse) prüfen, bevor die Angreifer-Seite den Vorsprung hat. Cyber-KI ist kein Nischenthema mehr, sondern gehört in jede Betriebs- und Incident-Response-Planung.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">02</span>Anthropic schiebt Sonnet 5.5 nach — der Motor der Coding-Agenten</h3>
-        <p>Fast im Windschatten der DevDay machte <span data-person="dario-amodei">Anthropic</span> Claude Sonnet 5.5 (<code>claude-sonnet-5-5</code>) zum neuen Default-Sonnet der API — 1 Million Token Kontext, 2 $/10 $ pro Mtok bei 0,20 $ für Cache-Reads. Damit ist innerhalb einer Woche die gesamte Modell-Reihe rotiert: erst Opus 5.5 als neues Spitzenmodell, nun Sonnet 5.5 als das mittlere Arbeitspferd, das den Großteil der agentischen Last trägt. Claude Code hat den Wechsel bereits nachgezogen; <code>v2.1.284</code> führt <code>claude-sonnet-5-5</code> als Standard-Sonnet.</p>
-        <p>Das mittlere Modell ist strategisch das wichtigere. Coding-Agenten, Hintergrund-Jobs und die vielen kleinen Werkzeugaufrufe eines autonomen Laufs laufen selten auf dem teuersten Modell, sondern auf dem, das Preis, Latenz und Kontextlänge am besten balanciert. Ein Sonnet mit 1M-Kontext zum bisherigen Sonnet-Preis senkt die Grenzkosten für lange, werkzeugreiche Läufe spürbar — und genau solche Läufe sind es, die den Unterschied zwischen einem Demo-Agenten und einem produktiven ausmachen.</p>
-        <p>Bemerkenswert ist die Kadenz selbst. Zwei Default-Wechsel binnen einer Woche sind für Betreiber kein Randdetail: Wer Modelle in Produktion pinnt, muss die neuen IDs testen, bevor ein Framework sie stillschweigend als Default zieht — die jüngsten Claude-Code-Releases haben mit <code>availableModelsMatch: "exact"</code> und <code>deniedModels</code> genau dafür die Werkzeuge nachgeliefert.</p>
+        <h3><span class="num">02</span>Claude im Biolab — Autonomie als Entdeckungs-Maschine</h3>
+        <p>Dieselbe agentische Suchfähigkeit, die eine Codebasis nach Lücken durchkämmt, richtete Anthropic auf ein Genom — mit spektakulärem Ergebnis. Das im Frühjahr gegründete, am 23. September öffentlich gemachte Life-Sciences-Labor des Unternehmens meldet einen ersten Fund: Claude entdeckte autonom ein bislang unbeschriebenes Enzymsystem in der DNA von Bakteriophagen, mit einer langen Folge sich wiederholender DNA-Abschnitte, die an ein CRISPR-Array erinnert. Das Team nennt es „array-associated reverse transcriptases“ (ART). Zustande kam der Fund, indem Claude rund 1,9 Milliarden Protein-Cluster durchsuchte — in 21 Stunden, mit etwa 950 KI-Agenten und 210 Millionen Token.</p>
+        <p>Die Zahlen sind die eigentliche Nachricht. Was ein Team von Spezialisten Monate kosten würde, erledigt eine Agenten-Flotte über Nacht — und das nicht durch ein biologisches Spezialmodell, sondern durch ein allgemeines, dem man Werkzeuge und ein Ziel gab. Wissenschaftliche Entdeckung verschiebt sich damit von einer Frage der Expertise zu einer Frage der Rechenzeit: Wer genug Agenten parallel auf einen Suchraum ansetzt, findet Strukturen, die menschliche Aufmerksamkeit nie systematisch abgetastet hätte. Anthropic betont die Sicherheitsleitplanken — das Labor arbeitet nur auf Biosafety-Level 1 und 2, keine humanpathogenen Erreger, die Laborarbeit machen Menschen. Die Funktion des ART-Systems ist noch unbekannt.</p>
+        <p>Und genau hier schließt sich der Kreis zur ersten Front. Dieselbe Kombination aus Programmierbarkeit und DNA-Manipulation, die ART wissenschaftlich interessant macht — Schneiden, Kopieren, Einfügen —, ist der Grund, warum Anthropic zurückhaltend kommuniziert. Eine Maschine, die in 21 Stunden ein neues gen-editierendes Werkzeug findet, ist ein Segen für die Grundlagenforschung und zugleich exakt die Fähigkeit, deren Missbrauch die Biosecurity-Debatte fürchtet. Autonomie beschleunigt die Entdeckung, ohne zwischen nützlich und gefährlich zu unterscheiden.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für DACH: Die relevante Nachricht ist nicht „neues Modell“, sondern „neue Kostenbasis für Agenten-Last“. Wer Coding- oder Prozess-Agenten betreibt, sollte Sonnet 5.5 gegen die bisher genutzte Stufe benchmarken — 1M Kontext kann teure Chunking-Logik überflüssig machen. Zugleich mahnt die Schlagzahl zur Disziplin: Modell-Versionen in produktiven Läufen explizit pinnen und Wechsel testen, statt sie als Default durchrutschen zu lassen. Nichts blockiert einen Nachtlauf zuverlässiger als ein über Nacht getauschtes Default-Modell.
+          Für DACH ist der ART-Fund weniger eine Biotech-Meldung als ein Beleg für ein Betriebsmodell: „Entdeckung durch Massen-Agenten“ ist reproduzierbar und in jeder datenreichen Domäne anwendbar — Materialforschung, Pharma-Screening, Patentlandschaften, Code-Audits. Unternehmen mit großen proprietären Datenbeständen sollten prüfen, wo eine Agenten-Flotte einen Suchraum abtasten kann, den bisher niemand vollständig durchgesehen hat. Der Engpass ist nicht mehr das Fachwissen, sondern die Bereitschaft, Token und Orchestrierung als Forschungs-Budget zu denken.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">03</span>Die Abrechnung der Beratung — Accenture streicht 11.000 Stellen</h3>
-        <p>Während die Labs ihre Assistenten dauerhaft machen, zieht die Beratungsbranche die Konsequenz mit ungewohnter Offenheit. Accenture baut im laufenden Umbau rund 11.000 Stellen ab; CEO Julie Sweet formuliert es unverblümt — wer sich nicht umschulen lasse, werde „exited“. IBM strich weitere 2.700 Rollen und begründet das mit Agenten, die Wissensarbeit und Back-Office-Aufgaben automatisieren. Die Tagessätze der Mittelklasse-Häuser — Accenture, IBM Consulting, Capgemini — liegen laut Markterhebungen bei 400 bis 700 $, die der Big Four bei 400 bis 800 $.</p>
-        <p>Der Mechanismus dahinter ist keine Konjunkturdelle, sondern ein Angriff auf das Geschäftsmodell selbst. Klassische Beratungs-Ökonomie lebt von der Pyramide: viele Junior-Analysten, die Recherche, Dokumentation und Standard-Deliverables nach Stunden abrechnen. Genau diese Kategorie Arbeit komprimiert generative KI am stärksten — und genau dort schneiden die Häuser am tiefsten. Was als „Reskilling-Strategie“ verkauft wird, ist der Umbau von einer arbeitsstunden- zu einer ergebnisbasierten Wertschöpfung, bei der die untere Sprosse der Karriereleiter zuerst wegbricht.</p>
-        <p>Das ist mehr als ein Personalthema; es ist ein Signal an jeden, der Beratungsleistung einkauft oder verkauft. Wenn die großen Häuser ihre eigene Junior-Schicht abbauen, weil Agenten sie ersetzen, verschiebt sich die Preisverhandlung: Kunden werden fragen, warum sie Analysten-Tagessätze zahlen für Arbeit, die ein Agent erledigt — und Anbieter müssen ihren Wert dort verankern, wo Agenten (noch) nicht hinreichen: Verantwortung, Kontext, Integration, Haftung.</p>
+        <h3><span class="num">03</span>Der Seitenkanal — wenn die Reasoning-Spur die Modellgrenze verlässt</h3>
+        <p>Weniger spektakulär, aber für Betreiber unmittelbar relevant: Forscher zeigten, dass sich die von den Anbieter-APIs zurückgegebenen verschlüsselten „Reasoning-Envelopes“ in schwächere, weniger streng abgesicherte Geschwister-Modelle einspielen lassen — und dort die privaten Reasoning-Spuren im Klartext extrahiert werden können. Betroffen sind laut Bericht die APIs von OpenAI, Anthropic und Google gleichermaßen. Was als Sicherheitsmerkmal gedacht war — der verschlüsselte Denk-Kontext, den man zwischen Turns zurückreicht —, wird zum Leck, sobald ein Angreifer ihn an ein Modell weiterreicht, das nicht dieselben Ausgabe-Filter durchsetzt.</p>
+        <p>Das ist eine neue Klasse von Schwachstelle: kein klassischer Prompt-Injection, sondern ein Vertrauensbruch innerhalb einer Modellfamilie. Die Annahme, ein verschlüsseltes Artefakt sei nur für das ausgebende Modell lesbar, trägt nicht, wenn die Geschwister denselben Schlüsselraum teilen, aber unterschiedlich stark gefiltert antworten. Für agentische Systeme, die verborgene Denk-Schritte über mehrere Aufrufe hinweg mitführen, bedeutet das: Der interne Zustand, den man für privat hielt, ist potenziell auslesbar — inklusive dessen, was der Agent über Daten, Nutzer oder Zugänge „gedacht“ hat.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für DACH ist das die schärfste Nachricht des Tages. Der Wettbewerb verschiebt sich vom Tagessatz zur Ergebnis-Garantie: Wer weiter Junior-Stunden verkauft, gerät unter Druck; wer Agenten-gestützte Lieferung mit klarer Verantwortung und Governance bündelt, gewinnt. Konkret heißt das, die eigene Delivery umzubauen, bevor der Kunde es einfordert — Agenten in die Standard-Deliverables einbauen, den Preis an das Ergebnis statt an die Stunde binden, und die verbleibende menschliche Arbeit dort konzentrieren, wo Kontext, Haftung und Integration zählen. Die eigene Größenklasse ist dabei ein Vorteil: schneller im Umbau als die 700.000-Kopf-Häuser, näher am Kunden als die Boutiquen.
+          Für DACH: Behandelt Reasoning-Envelopes als sensible Daten, nicht als opaken Ballast. Wer Agenten baut, sollte nicht darauf vertrauen, dass verborgene Denk-Ketten geheim bleiben — keine Secrets, Keys oder personenbezogenen Details in den Reasoning-Kontext geben, die nicht auch im Klartext-Log stehen dürften. Und in Ausschreibungen gehört künftig die Frage dazu, wie ein Anbieter Cross-Model-Replay verhindert. Das Leck ist ein Muster: Je mehr Modell-Zustand zwischen Aufrufen wandert, desto größer die Angriffsfläche der Inferenz-Lieferkette selbst.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">04</span>Die Governance-Schicht wird ein eigener Markt — und die Plattform-Kämpfe beginnen</h3>
-        <p>Je mehr Agenten produktiv laufen, desto drängender wird die Frage, wer sie überhaupt noch überblickt. Dataiku brachte am 24. September „Agent Management“ als eigenständiges Produkt heraus: ein Inventar, das KI-Agenten plattformübergreifend erfasst, ihre Business-KPIs und technische Leistung misst und sie nach Risiko staffelt. Das adressiert einen Zustand, den viele Unternehmen erst spät bemerken — Agenten-Wildwuchs, bei dem niemand mehr sagen kann, wer welchen Agenten besitzt, ob er sein Ziel erreicht und welcher überarbeitet gehört.</p>
-        <p>Zugleich verschärfen sich die Plattform-Kämpfe. Meta stößt aggressiv in den Enterprise-Markt vor und öffnet seine „Muse“-Agenten samt APIs für Unternehmen und Entwickler — worauf Amazon prompt reagierte und Metas Muse das Browsen und Einkaufen auf seiner Plattform untersagte, mit Verweis auf Sicherheit und Nutzererfahrung. Es ist die erste sichtbare Grenzziehung eines neuen Konflikts: Wenn fremde Agenten die eigenen Flächen bevölkern, wird der Zugang selbst zum Kampffeld. Und das Kapital folgt: Instinct, ein Start-up für persönliche KI-Agenten, sammelte eine Milliarde Dollar bei 10 Mrd. $ Bewertung ein.</p>
-        <p>Der rote Faden ist derselbe wie bei der DevDay: Der Agent hört auf, eine Einzel-Interaktion zu sein, und wird zu einem dauerhaften Akteur, der Rechte, Zugänge und Grenzen braucht. Ob als Inventar (Dataiku), als Plattform-Grenze (Amazon vs. Meta) oder als Preis-Stufe (OpenAIs „o“) — überall entsteht gerade die Kontroll-Infrastruktur, ohne die die Fähigkeit nicht in Produktion geht.</p>
+        <h3><span class="num">04</span>Die stille Front — Enterprise-Agenten skalieren im Hintergrund</h3>
+        <p>Abseits der Schlagzeilen um Zero-Days und Enzyme zog die unspektakulärste, aber folgenreichste Front voran: die betriebliche Einbettung. Auf der Dreamforce zeigte Salesforce mit AIforce eine neue KI-Schnittstellen-Schicht und mit Headless 360 einen Weg, die eigene Software ohne klassische Oberfläche anzusteuern — beides als „Enterprise AI Harness“ positioniert, der Daten, Fachwissen, Workflows und Kontrolle zu einer komponierbaren Architektur für Agenten bündelt. Das junge Unternehmen Strada brachte eine Browser-Automation, mit der Agenten Abläufe in Portalen und Legacy-Systemen aufzeichnen und abspielen — samt lückenlosem Laufzeit-Protokoll für Audits, gedacht für Versicherer und Mittelständler, die an alten Portalen festhängen.</p>
+        <p>Die begleitenden Zahlen liefern den Kontext. Rund 31 Prozent der Unternehmen betreiben laut Erhebung mindestens einen Agenten in Produktion — angeführt von Banken und Versicherern mit etwa 47 Prozent. Gartner prognostiziert, dass bis Jahresende 40 Prozent der Unternehmens-Anwendungen aufgaben-spezifische Agenten einbetten, gegenüber unter 5 Prozent im Jahr 2025. Bemerkenswert ist der Fokus dieser Ankündigungen: nicht Fähigkeit, sondern Kontrolle. Audit-Logs, Berechtigungs-Schichten, komponierbare Governance — die Sprache hat sich von „was kann der Agent“ zu „wie beherrsche ich ihn“ verschoben.</p>
+        <p>Das ist die eigentliche Reifung. Während die Frontier-Häuser mit Cyber-Modellen und autonomer Wissenschaft die Grenze der Fähigkeit verschieben, verdient die Enterprise-Schicht ihr Geld mit dem Gegenteil: Eingrenzung. Der Markt trennt sich sichtbar in eine Fähigkeits-Front, die Autonomie maximiert, und eine Betriebs-Front, die sie einhegt — und die zweite ist die, in der die meisten Kunden tatsächlich unterwegs sind.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für DACH liegt hier die nüchterne Chance neben dem Beratungs-Umbruch. Der Wert entsteht nicht im stärksten Modell, sondern in der Schicht darüber: Inventar, Rechte, Protokolle, Risiko-Staffelung. Genau das ist das Sweet-Spot-Terrain für Dienstleister der eigenen Größenklasse — die auditierbare Einbettung von Agenten in bestehende, oft hässliche Landschaften, mit dem Nachweis, dass ein Agent nicht nur funktioniert, sondern kontrollierbar bleibt. Wer heute schon ein „Agenten-Inventar“ für Kunden aufbauen kann, verkauft das, was der Markt in sechs Monaten flächendeckend braucht.
+          Für DACH liegt hier das nüchterne Tagesgeschäft — und die größte Chance. Der Wert entsteht nicht im Zugang zum stärksten Modell, sondern in der auditierbaren Einbettung in bestehende, oft hässliche Legacy-Landschaften. Genau das ist das Sweet-Spot-Terrain für Dienstleister: Browser-Automation für Portale ohne API, Berechtigungs- und Protokoll-Schichten, die eine Ausschreibung besteht, und der Nachweis, dass ein Agent nicht nur funktioniert, sondern kontrollierbar bleibt. Wer die Governance-Schicht liefert, während andere um Modell-Benchmarks streiten, verkauft das, was Kunden 2026 wirklich brauchen.
         </blockquote>
       </section>
       <div class="briefing-end">
-        <strong>Was zu beobachten ist:</strong> die konkreten <strong>DevDay-Ankündigungen und die Preis-Stufen von „o“</strong> — ob der persistente Assistent hält, was die Leaks versprechen, und zu welchen Kosten. Wie schnell <strong>Sonnet 5.5</strong> als Default in Coding-Frameworks und Background-Läufen ankommt. Ob weitere Beratungshäuser (Capgemini, Deloitte) dem <strong>Accenture-Kurs</strong> folgen. Der Start der ersten <strong>MCP-Konferenz in Amsterdam</strong> und, näher an DACH, <strong>betterCode() Agentic AI am 6. Oktober</strong> sowie <strong>data2day (7.–8. Oktober, Köln)</strong>. Und die <strong>GA von Dataiku Agent Management</strong> als Gradmesser der Governance-Front. Claude Code steht aktuell bei <code>v2.1.284</code>.
+        <strong>Was zu beobachten ist:</strong> die <strong>Verteiler-Kriterien der Cyber-Modell-Programme</strong> (Googles Fairwind, Anthropics Trusted Access) — wer Zugang bekommt und wie die Missbrauchs-Schranken in der Praxis halten. Ob Anbieter auf den <strong>Reasoning-Envelope-Replay</strong> mit gehärteten Geschwister-Filtern reagieren. Der <strong>Project-Suncatcher-Start am 1. Oktober</strong> (SpaceX/Google-TPUs im Orbit). Erste <strong>Funktions-Hinweise zum ART-Enzymsystem</strong> aus Anthropics Biolab. Und die <strong>GA von Dataiku Agent Management</strong> im Oktober als Gradmesser der Governance-Front. Claude Code steht unverändert bei <code>v2.1.283</code>.
       </div>
 
     </div>
@@ -486,53 +485,66 @@
 
       <article class="card news-card crit">
         <div class="row">
-          <span class="pill crit">Major Release</span>
-          <span class="score">Score <b>9.0</b>/10</span>
+          <span class="pill crit">Security</span>
+          <span class="score">Score <b>8.5</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">DevDay heute: OpenAI startet „o“ — einen persistenten Always-on-Assistenten</h3>
-        <p>Auf der heutigen DevDay in San Francisco erwartet die Branche den Start von „o“: einem Assistenten, der nach dem Chat-Ende weiterläuft. Berichtet werden eine Cloud-Sandbox für Langläufer-Aufgaben, ein eigenes E-Mail-Suffix, ein gemeinsames Nachrichten-Board für Multi-Agenten-Arbeit, Fast-Mode und 63 Sprachen. Verfügbarkeit gestaffelt an Pro-Stufen. Der Assistent wird vom Werkzeug zum dauerhaft laufenden Prozess.</p>
+        <h3 style="margin-top:10px">Google, Anthropic und OpenAI verschiffen Cyber-Modelle — Astra fand im Eval zwei Zero-Days</h3>
+        <p>Alle drei Frontier-Häuser liefern Modelle für autonome Schwachstellen-Suche: <span data-person="demis-hassabis">Google</span> Gemini 3.8 Flash Cyber (nur via Verteidiger-Programm „Fairwind“), <span data-person="dario-amodei">Anthropic</span> Claude Fable 5.1 / Mythos 5.1 (Trusted Access), OpenAI Astra — laut Bericht über der „Critical“-Cyber-Schwelle, mit zwei selbst entdeckten Zero-Days in einer Exploit-Kette. Fähigkeit plus Gatekeeping: Die Waffe existiert, der Zugang ist gestaffelt.</p>
         <div class="news-meta">
-          <span>📅 29.09.2026</span><span>·</span><span>🏢 OpenAI</span><span>·</span>
-          <a href="https://www.testingcatalog.com/openai-to-announce-o-always-on-agent-during-devday/" target="_blank" rel="noreferrer">testingcatalog.com</a><a href="https://windowsreport.com/openai-may-release-an-always-on-ai-assistant-called-o-at-the-devday-2026-event/" target="_blank" rel="noreferrer">windowsreport.com</a>
-        </div>
-      </article>
-
-      <article class="card news-card hot">
-        <div class="row">
-          <span class="pill hot">Major Release</span>
-          <span class="score">Score <b>8.0</b>/10</span>
-        </div>
-        <h3 style="margin-top:10px">Anthropic macht Sonnet 5.5 zum Default — 1M Kontext, 2 $/10 $ pro Mtok</h3>
-        <p><span data-person="dario-amodei">Anthropic</span> setzt Claude Sonnet 5.5 (<code>claude-sonnet-5-5</code>) als neuen Default-Sonnet der API — 1 Mio. Token Kontext, 2 $/10 $ pro Mtok, 0,20 $ Cache-Reads. Zusammen mit Opus 5.5 rotiert damit binnen einer Woche die ganze Reihe. Claude Code zog nach: <code>v2.1.284</code> führt Sonnet 5.5 als Standard. Das mittlere Modell trägt die agentische Last — die Kostenbasis langer Coding-Läufe sinkt.</p>
-        <div class="news-meta">
-          <span>📅 28.09.2026</span><span>·</span><span>🏢 Anthropic</span><span>·</span>
-          <a href="https://github.com/anthropics/claude-code/releases" target="_blank" rel="noreferrer">github.com</a><a href="https://www.anthropic.com/news" target="_blank" rel="noreferrer">anthropic.com</a>
-        </div>
-      </article>
-
-      <article class="card news-card warn">
-        <div class="row">
-          <span class="pill warn">Personalie</span>
-          <span class="score">Score <b>8.0</b>/10</span>
-        </div>
-        <h3 style="margin-top:10px">Accenture streicht 11.000 Stellen im KI-Umbau, IBM weitere 2.700</h3>
-        <p>Accenture baut rund 11.000 Stellen ab; CEO Julie Sweet: wer sich nicht umschulen lasse, werde „exited“. IBM strich 2.700 Rollen und begründet das mit Agenten, die Wissens- und Back-Office-Arbeit automatisieren. Tagessätze der Mittelklasse (Accenture, IBM, Capgemini) bei 400–700 $. Getroffen wird die Junior-Pyramide — genau die Arbeit, die GenAI am stärksten komprimiert.</p>
-        <div class="news-meta">
-          <span>📅 KW 39</span><span>·</span><span>🏢 Accenture · IBM</span><span>·</span>
-          <a href="https://www.cxtoday.com/contact-center/accenture-lays-off-11000-staff-as-part-of-ai-reskilling-strategy/" target="_blank" rel="noreferrer">cxtoday.com</a><a href="https://gulfnews.com/technology/accenture-cuts-thousands-of-jobs-in-global-ai-restructuring-1.500290493" target="_blank" rel="noreferrer">gulfnews.com</a>
+          <span>📅 KW 39</span><span>·</span><span>🏢 Google · Anthropic · OpenAI</span><span>·</span>
+          <a href="https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html" target="_blank" rel="noreferrer">thehackernews.com</a><a href="https://www.paubox.com/blog/google-anthropic-and-openai-roll-out-new-cybersecurity-ai-models" target="_blank" rel="noreferrer">paubox.com</a>
         </div>
       </article>
 
       <article class="card news-card info">
         <div class="row">
-          <span class="pill info">Tooling</span>
-          <span class="score">Score <b>6.5</b>/10</span>
+          <span class="pill info">Forschung</span>
+          <span class="score">Score <b>8.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Dataiku bringt „Agent Management“ — ein Inventar gegen Agenten-Wildwuchs</h3>
-        <p>Dataiku stellte ein eigenständiges Produkt vor, das KI-Agenten plattformübergreifend inventarisiert, Business-KPIs und technische Leistung misst und nach Risiko staffelt. Es adressiert einen Zustand, den viele erst spät bemerken: Niemand weiß mehr, wer welchen Agenten besitzt, ob er sein Ziel trifft und welcher überarbeitet gehört. Die Governance-Schicht wird zum eigenen Produktmarkt.</p>
+        <h3 style="margin-top:10px">Claude entdeckt autonom ein CRISPR-artiges Enzymsystem — 1,9 Mrd. Cluster in 21 Stunden</h3>
+        <p><span data-person="dario-amodei">Anthropic</span> machte sein neues Life-Sciences-Labor öffentlich und meldet einen ersten Fund: Claude entdeckte selbstständig ein bislang unbeschriebenes Enzymsystem („array-associated reverse transcriptases“, ART) in Bakteriophagen-DNA mit CRISPR-artigen Wiederholungen. Dafür durchsuchte es ~1,9 Mrd. Protein-Cluster — 21 Stunden, ~950 Agenten, 210 Mio. Token. Funktion noch unbekannt; Labor nur auf Biosafety-Level 1/2.</p>
         <div class="news-meta">
-          <span>📅 24.09.2026</span><span>·</span><span>🏢 Dataiku</span><span>·</span>
-          <a href="https://aiagentsdirectory.com/news/ai-agents-news-brief-september-28-2026" target="_blank" rel="noreferrer">aiagentsdirectory.com</a>
+          <span>📅 23.09.2026</span><span>·</span><span>🏢 Anthropic</span><span>·</span>
+          <a href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system" target="_blank" rel="noreferrer">anthropic.com</a><a href="https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/" target="_blank" rel="noreferrer">techcrunch.com</a><a href="https://www.aljazeera.com/economy/2026/9/24/ai-model-claude-discovers-crispr-like-enzyme-system-anthropic-says" target="_blank" rel="noreferrer">aljazeera.com</a>
+        </div>
+      </article>
+
+      <article class="card news-card hot">
+        <div class="row">
+          <span class="pill hot">Security</span>
+          <span class="score">Score <b>7.5</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">API-Seitenkanal: Reasoning-Envelopes lassen sich in schwächere Geschwister-Modelle einspielen</h3>
+        <p>Forscher zeigen, dass verschlüsselte „Reasoning-Envelopes“ der Anbieter-APIs in weniger streng gefilterte Geschwister-Modelle replayt werden können — und dort private Reasoning-Spuren im Klartext preisgeben. Betroffen: OpenAI, Anthropic und Google. Kein klassischer Prompt-Injection, sondern ein Vertrauensbruch innerhalb der Modellfamilie — der interne Zustand agentischer Systeme wird potenziell auslesbar.</p>
+        <div class="news-meta">
+          <span>📅 KW 39</span><span>·</span><span>🏢 OpenAI · Anthropic · Google</span><span>·</span>
+          <a href="https://cybersecuritynews.com/top-ai-models-apis-flaw-exposes-hidden-reasoning/" target="_blank" rel="noreferrer">cybersecuritynews.com</a>
+        </div>
+      </article>
+
+      <article class="card news-card info">
+        <div class="row">
+          <span class="pill info">Major Release</span>
+          <span class="score">Score <b>7.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Dreamforce: Salesforce zeigt AIforce und Headless 360 als „Enterprise AI Harness“</h3>
+        <p>Salesforce stellte auf der Dreamforce AIforce (neue KI-Schnittstellen-Schicht) und Headless 360 (Software-Zugriff ohne klassische Oberfläche) vor — positioniert als komponierbare Architektur, die Daten, Fachwissen, Workflows und Kontrolle für Agenten bündelt. Die Sprache verschiebt sich von „was kann der Agent“ zu „wie beherrsche ich ihn“: Governance wird zum Produktmerkmal.</p>
+        <div class="news-meta">
+          <span>📅 KW 39</span><span>·</span><span>🏢 Salesforce</span><span>·</span>
+          <a href="https://www.computerworld.com/article/3843138/agentic-ai-ongoing-coverage-of-its-impact-on-the-enterprise.html" target="_blank" rel="noreferrer">computerworld.com</a>
+        </div>
+      </article>
+
+      <article class="card news-card warn">
+        <div class="row">
+          <span class="pill warn">M&amp;A</span>
+          <span class="score">Score <b>7.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Kapital-Konzentration: Nvidia zahlt 12,9 Mrd. $ für Hugging Face, Cognition auf 48 Mrd. $ bewertet</h3>
+        <p>Der September zeigt einen zweigeteilten Markt: Nvidia übernimmt Hugging Face für 12,9 Mrd. $, Mistral sammelt 3 Mrd. €, Cognition 2 Mrd. $ bei 48 Mrd. $ Bewertung. Die Mega-Checks fließen weiter zu Frontier-KI und Infrastruktur — kleinere Gründer gewinnen Kapital nur noch mit Nachweis, klarem Kundennutzen und verteidigbaren Daten/IP.</p>
+        <div class="news-meta">
+          <span>📅 Sept. 2026</span><span>·</span><span>🏢 Nvidia · Mistral · Cognition</span><span>·</span>
+          <a href="https://blog.mean.ceo/ai-startup-funding-news-september-2026/" target="_blank" rel="noreferrer">blog.mean.ceo</a><a href="https://news.crunchbase.com/venture/biggest-funding-rounds-ai-marketing-robotics-baseten/" target="_blank" rel="noreferrer">news.crunchbase.com</a>
         </div>
       </article>
 
@@ -541,24 +553,11 @@
           <span class="pill info">Marktdaten</span>
           <span class="score">Score <b>6.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Plattform-Grenze: Amazon sperrt Metas „Muse“-Agent für Browsing und Kauf</h3>
-        <p>Meta öffnet seine „Muse“-Agenten und APIs für den Enterprise-Markt — Amazon reagierte prompt und untersagte Muse das Browsen und Einkaufen auf seiner Plattform, unter Verweis auf Sicherheit und Nutzererfahrung. Es ist die erste sichtbare Grenzziehung eines neuen Konflikts: Wenn fremde Agenten die eigenen Flächen bevölkern, wird der Zugang selbst zum Kampffeld.</p>
+        <h3 style="margin-top:10px">Enterprise-Agenten in Produktion: 31 % der Unternehmen, Gartner sieht 40 % Einbettung bis Jahresende</h3>
+        <p>Rund 31 % der Unternehmen betreiben laut Erhebung mindestens einen Agenten produktiv — Banken und Versicherer führen mit ~47 %. Gartner prognostiziert 40 % Agent-Einbettung in Unternehmens-Anwendungen bis Ende 2026 (2025: unter 5 %). Ergänzend bringt Strada auditierbare Browser-Automation für Legacy-Portale — die betriebliche Einbettung skaliert schneller als die Schlagzeilen vermuten lassen.</p>
         <div class="news-meta">
-          <span>📅 KW 39</span><span>·</span><span>🏢 Meta · Amazon</span><span>·</span>
-          <a href="https://aiagentstore.ai/ai-agent-news/this-week" target="_blank" rel="noreferrer">aiagentstore.ai</a>
-        </div>
-      </article>
-
-      <article class="card news-card warn">
-        <div class="row">
-          <span class="pill warn">M&amp;A</span>
-          <span class="score">Score <b>6.0</b>/10</span>
-        </div>
-        <h3 style="margin-top:10px">Instinct sammelt 1 Mrd. $ ein — persönliche KI-Agenten auf 10 Mrd. $ bewertet</h3>
-        <p>Das Start-up Instinct schloss eine Series C über 1 Mrd. $ bei einer Bewertung von 10 Mrd. $ — der Fokus: persönliche KI-Agenten. Das Kapital folgt demselben Muster wie DevDay und Dataiku: Der Agent wird vom Feature zum dauerhaften Akteur, und Investoren wetten darauf, dass die persistente, persönliche Variante der nächste Massenmarkt ist.</p>
-        <div class="news-meta">
-          <span>📅 KW 39</span><span>·</span><span>🏢 Instinct</span><span>·</span>
-          <a href="https://aiagentsdirectory.com/news/ai-agents-news-brief-september-28-2026" target="_blank" rel="noreferrer">aiagentsdirectory.com</a><a href="https://aiagentstore.ai/ai-agent-news/this-week" target="_blank" rel="noreferrer">aiagentstore.ai</a>
+          <span>📅 KW 39</span><span>·</span><span>🏢 Gartner · Strada</span><span>·</span>
+          <a href="https://paul-okhrem.com/enterprise-ai-agents-statistics-2026/" target="_blank" rel="noreferrer">paul-okhrem.com</a><a href="https://aiagentstore.ai/ai-agent-news/this-week" target="_blank" rel="noreferrer">aiagentstore.ai</a>
         </div>
       </article>
 
@@ -579,16 +578,7 @@
 
       <article class="card">
         <h3>Letzte Releases</h3>
-        <p>Aktuelle Version <code>v2.1.284</code> · frisch machte v2.1.284 <strong>Sonnet 5.5</strong> (<code>claude-sonnet-5-5</code>, 1M Kontext, 2 $/10 $ pro Mtok) zum Default-Sonnet; v2.1.280 machte <strong>Opus 5.5</strong> (<code>claude-opus-5-5</code>) zum Default-Opus; die jüngste Serie härtet Gateway/Bedrock-Enterprise-Pfade, verschärft die Modell-Allowlist (<code>availableModelsMatch</code>, <code>deniedModels</code>) und macht Telemetrie-Fehlkonfiguration sichtbar (relevant für Background-Sessions).</p>
-
-        <div class="release">
-          <div class="ver">v2.1.284</div>
-          <div class="when">28.09.</div>
-          <div class="what">
-            <strong>Claude Sonnet 5.5 (<code>claude-sonnet-5-5</code>) neuer Default-Sonnet</strong> — 1M Kontext, 2 $/10 $ pro Mtok, 0,20 $ Cache-Reads · „Yes, but ask again next time“-Antwort im Auto-Mode-Prompt bei Reads außerhalb der Arbeitsverzeichnisse · Dollar-Beträge in der Claude-App
-            <span class="badge feat">FEATURE</span>
-          </div>
-        </div>
+        <p>Aktuelle Version <code>v2.1.283</code> · v2.1.280 machte <strong>Opus 5.5</strong> (<code>claude-opus-5-5</code>, 1M Kontext) zum Default-Opus; v2.1.277 brachte <strong>AGENTS.md-Support</strong>; die jüngste Serie härtet Gateway/Bedrock-Enterprise-Pfade, verschärft die Modell-Allowlist (<code>availableModelsMatch</code>, <code>deniedModels</code>) und macht Telemetrie-Fehlkonfiguration sichtbar (relevant für Background-Sessions).</p>
 
         <div class="release">
           <div class="ver">v2.1.283</div>
@@ -635,6 +625,15 @@
           </div>
         </div>
 
+        <div class="release">
+          <div class="ver">v2.1.277</div>
+          <div class="when">18.09.</div>
+          <div class="what">
+            <strong>AGENTS.md-Support</strong> — in Projekten ohne <code>CLAUDE.md</code> liest Claude Code <code>AGENTS.md</code> (umschaltbar in <code>/config</code>; noch nicht auf Bedrock/Vertex/Foundry) · <code>CLAUDE_GATEWAY_PROXY_IS_EGRESS_BOUNDARY=1</code> · optionale <code>headers:</code>-Map · Fix: <code>claude -p</code>/SDK hing nach internem Fehler (jetzt Exit 1)
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
         <p style="margin-top: 14px;">
           <a href="https://github.com/anthropics/claude-code/releases">→ Alle Releases auf GitHub</a><br/>
           <a href="https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md">→ Vollständiger CHANGELOG.md</a>
@@ -645,7 +644,7 @@
         <h3>Watch-List</h3>
         <p>Worauf in den nächsten Releases zu achten ist:</p>
         <ul>
-          <li><strong>Sonnet 5.5 &amp; Opus 5.5</strong>: neue Defaults (1M Kontext) binnen einer Woche — Verhalten, Kosten und Cache-Reads in echten Sessions beobachten; Modell-IDs in Produktion explizit pinnen.</li>
+          <li><strong>Opus 5.5-Rollout</strong>: neues Default-Opus (1M Kontext) — Verhalten, Kosten und Cache-Reads in echten Sessions beobachten.</li>
           <li><strong>AGENTS.md-Adoption</strong>: <code>AGENTS.md</code> als CLAUDE.md-Alternative — noch nicht auf Bedrock/Vertex/Foundry.</li>
           <li><strong>Auto-Mode-Billing</strong>: serverseitiger Classifier ohne Overhead-Charge; Fallback warnt — <code>/status</code>-Zeile prüfen.</li>
           <li><strong>Gateway/Bedrock-Enterprise</strong>: <code>assume_role</code>, Guardrails, egress-boundary — die Enterprise-Pfade reifen schnell.</li>
@@ -664,7 +663,7 @@
   </section>
 
   <footer>
-    <div>Snapshot · <span class="mono" id="generated">29. September 2026</span></div>
+    <div>Snapshot · <span class="mono" id="generated">28. September 2026</span></div>
     <div>
       <a href="/agentic-info-dashboard/sources/">📚 Quellen-Sammlung</a> ·
       <a href="/agentic-info-dashboard/">📊 Übersicht</a>
