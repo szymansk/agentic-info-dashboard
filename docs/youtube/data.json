@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-28T04:11:46+00:00",
+  "last_updated": "2026-09-30T09:39:05+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,6 +116,19 @@
   ],
   "featured": [
     {
+      "video_id": "sKltfHvsDQM",
+      "title": "Build faster with Ultrafast",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-09-29T18:47:34+00:00",
+      "url": "https://www.youtube.com/watch?v=sKltfHvsDQM",
+      "thumbnail": "https://img.youtube.com/vi/sKltfHvsDQM/mqdefault.jpg",
+      "description": "Ultrafast is our fastest way to build with Astra yet: in Codex, it runs up to 8x faster than Astra Standard and 4x faster than Astra Fast.\n\nBring your ideas to life as fast as you can type them.",
+      "why": ""
+    },
+    {
       "video_id": "R9momwXV9w4",
       "title": "Opus 5.5: How Close Are We to Automated AI Research?",
       "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
@@ -126,19 +139,6 @@
       "url": "https://www.youtube.com/watch?v=R9momwXV9w4",
       "thumbnail": "https://img.youtube.com/vi/R9momwXV9w4/mqdefault.jpg",
       "description": "Not only is Opus 5.5 out, pushing the frontier of AI, it also tells us much about what is going on inside the labs, as they both warn about, and promise, Recursive Self Improvement, aka automated AI research. I cover the model (digging into",
-      "why": ""
-    },
-    {
-      "video_id": "rmDu2sSBIrw",
-      "title": "Today’s forecast? Nothing but 80s, baby.",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-09-23T18:48:52+00:00",
-      "url": "https://www.youtube.com/shorts/rmDu2sSBIrw",
-      "thumbnail": "https://img.youtube.com/vi/rmDu2sSBIrw/mqdefault.jpg",
-      "description": "Create your own with ChatGPT Images.",
       "why": ""
     },
     {
@@ -183,6 +183,234 @@
   ],
   "recent": [
     {
+      "video_id": "Xc6ERvZM1NY",
+      "title": "OpenAI COOKED",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-09-30T01:26:37+00:00",
+      "url": "https://www.youtube.com/watch?v=Xc6ERvZM1NY",
+      "thumbnail": "https://img.youtube.com/vi/Xc6ERvZM1NY/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "ZpQFebTK75A",
+      "title": "AI Can Write the Proof. Who Checks It? — Leonardo de Moura",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-09-29T22:38:34+00:00",
+      "url": "https://www.youtube.com/watch?v=ZpQFebTK75A",
+      "thumbnail": "https://img.youtube.com/vi/ZpQFebTK75A/mqdefault.jpg",
+      "description": "Leonardo de Moura created Lean and co-created Z3. \n\n---\nThis episode is sponsored by Parallel.\nParallel, where agents find answers: web search, extraction and deep research APIs built for AI agents.\nStart free with the Parallel MCP server a"
+    },
+    {
+      "video_id": "sKltfHvsDQM",
+      "title": "Build faster with Ultrafast",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-09-29T18:47:34+00:00",
+      "url": "https://www.youtube.com/watch?v=sKltfHvsDQM",
+      "thumbnail": "https://img.youtube.com/vi/sKltfHvsDQM/mqdefault.jpg",
+      "description": "Ultrafast is our fastest way to build with Astra yet: in Codex, it runs up to 8x faster than Astra Standard and 4x faster than Astra Fast.\n\nBring your ideas to life as fast as you can type them."
+    },
+    {
+      "video_id": "Fls_onRviPM",
+      "title": "OpenAI DevDay 2026 Keynote (FULL)",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-09-29T18:42:29+00:00",
+      "url": "https://www.youtube.com/watch?v=Fls_onRviPM",
+      "thumbnail": "https://img.youtube.com/vi/Fls_onRviPM/mqdefault.jpg",
+      "description": "Watch Sam Altman, Romain Huet, Tejal Patwardhan, and Holly Li announce and demo 20+ launches at OpenAI DevDay, including dots, ChatGPT Spaces, GPT-6.1 Sol, Astra Ultrafast, and more."
+    },
+    {
+      "video_id": "7Bv68f5szSU",
+      "title": "Meet the all new Codex Cloud",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-09-29T18:18:13+00:00",
+      "url": "https://www.youtube.com/watch?v=7Bv68f5szSU",
+      "thumbnail": "https://img.youtube.com/vi/7Bv68f5szSU/mqdefault.jpg",
+      "description": "Start a Codex task, close your laptop, and pick it up from your phone. See how to create a reusable cloud environment with your repositories, networking, and secrets, then share it with your team."
+    },
+    {
+      "video_id": "uXspbC2srEQ",
+      "title": "Introducing dots, always-on agents built to handle everything.",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-09-29T18:04:41+00:00",
+      "url": "https://www.youtube.com/watch?v=uXspbC2srEQ",
+      "thumbnail": "https://img.youtube.com/vi/uXspbC2srEQ/mqdefault.jpg",
+      "description": "Dots are frontier intelligence that have your back. Powered by GPT‑6 Astra, they have their own cloud computer, learn from feedback over time, and can work towards your goals 24/7. Through our ecosystem of plugins, they can readily connect "
+    },
+    {
+      "video_id": "m8VkCbkFAKA",
+      "title": "Meet the builders of our time - the Codex Originals.",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-09-29T17:00:15+00:00",
+      "url": "https://www.youtube.com/watch?v=m8VkCbkFAKA",
+      "thumbnail": "https://img.youtube.com/vi/m8VkCbkFAKA/mqdefault.jpg",
+      "description": "These builders aren’t just writing code. They’re rewriting what’s possible."
+    },
+    {
+      "video_id": "3T5sij3spWw",
+      "title": "What Would Make an AI Assistant Worth Paying For?",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-09-29T14:30:02+00:00",
+      "url": "https://www.youtube.com/watch?v=3T5sij3spWw",
+      "thumbnail": "https://img.youtube.com/vi/3T5sij3spWw/mqdefault.jpg",
+      "description": "a16z General Partner Anish Acharya sits down with Assistant Benchmark creator David Pawlan to unpack the sudden explosion of personal AI agents and what it will take for one to become part of everyday life.\n\nDavid has been testing dozens of"
+    },
+    {
+      "video_id": "tQ3nMI-anxU",
+      "title": "Why Deep Learning Failed on Tables for a Decade - Frank Hutter",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-09-29T09:50:26+00:00",
+      "url": "https://www.youtube.com/shorts/tQ3nMI-anxU",
+      "thumbnail": "https://img.youtube.com/vi/tQ3nMI-anxU/mqdefault.jpg",
+      "description": "Frank Hutter, co-founder of Prior Labs, on why deep learning struggled with tabular data for a decade: tables are messy and heterogeneous, hyped models like TabNet did not generalise to new datasets, and there was no ImageNet of tables. The"
+    },
+    {
+      "video_id": "yUyfHQBXSzs",
+      "title": "The Data Engineering Professional Certificate is now on DeepLearning.AI",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-09-29T05:51:45+00:00",
+      "url": "https://www.youtube.com/watch?v=yUyfHQBXSzs",
+      "thumbnail": "https://img.youtube.com/vi/yUyfHQBXSzs/mqdefault.jpg",
+      "description": "Learn More: https://bit.ly/3ViOXHF\n\nData underlies all modern AI systems, and engineers who know how to build the systems that store and serve it are in high demand. Our Data Engineering Professional Certificate, a 4-course program, is now "
+    },
+    {
+      "video_id": "T-E7rmD6rh4",
+      "title": "Sonnet 5.5 Is Here. Look What It Can Build.",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-09-29T05:04:38+00:00",
+      "url": "https://www.youtube.com/watch?v=T-E7rmD6rh4",
+      "thumbnail": "https://img.youtube.com/vi/T-E7rmD6rh4/mqdefault.jpg",
+      "description": "Try CodeRabbit: https://coderabbit.link/matthew-berman-001\nUse code MATTHEWCR for a free CodeRabbit Pro Plus subscription, available to the first 50 first-time users.\n\nSonnet 5.5 projects\nCrownfall: https://saffron-flint-kkcm.here.now/\nBoun"
+    },
+    {
+      "video_id": "0NhtHVPQwt8",
+      "title": "What We Built With Sonnet 5.5",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-09-29T00:01:18+00:00",
+      "url": "https://www.youtube.com/shorts/0NhtHVPQwt8",
+      "thumbnail": "https://img.youtube.com/vi/0NhtHVPQwt8/mqdefault.jpg",
+      "description": "Play Crownfall, the Age of Empires-style game: https://saffron-flint-kkcm.here.now/\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/for"
+    },
+    {
+      "video_id": "OuNKBjuV7A4",
+      "title": "DHH has gone completely off the rails...",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-09-28T19:27:59+00:00",
+      "url": "https://www.youtube.com/watch?v=OuNKBjuV7A4",
+      "thumbnail": "https://img.youtube.com/vi/OuNKBjuV7A4/mqdefault.jpg",
+      "description": "CodeRabbit Triage prioritizes all your team's pull requests for you. Try it free: https://coderabbit.link/fireship-014\n\nDHH told 1,200 Rails developers that writing code by hand is over... so let's find out which programming skills are actu"
+    },
+    {
+      "video_id": "Ut3LOjKNJaE",
+      "title": "How Jev Turns AI Into Software That Gets Things Done",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-09-28T14:30:07+00:00",
+      "url": "https://www.youtube.com/watch?v=Ut3LOjKNJaE",
+      "thumbnail": "https://img.youtube.com/vi/Ut3LOjKNJaE/mqdefault.jpg",
+      "description": "a16z’s Ben Horowitz and Martin Casado sit down with TypeSafe AI founder Diogo Almeida to ask a simple question: AI has become remarkably capable, so where is all the automation?\n\nDiogo argues that coding agents may help us write software fa"
+    },
+    {
+      "video_id": "qUlfKYGP-vI",
+      "title": "Reward hacking… or just fixing a bug? #podcast",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-09-27T02:16:03+00:00",
+      "url": "https://www.youtube.com/shorts/qUlfKYGP-vI",
+      "thumbnail": "https://img.youtube.com/vi/qUlfKYGP-vI/mqdefault.jpg",
+      "description": "Weco AI's research agent wrote a gigantic monkey patch to their eval script. Reward hacking? No: it was fixing a bug.\n\nZhengyao Jiang (co-founder and CEO, Weco AI) on why it's getting harder and harder for humans to tell the difference as a"
+    },
+    {
+      "video_id": "yB6_iFGTq9k",
+      "title": "Can Rewriting an AI Agent Bend the Intelligence Curve? - Zhengyao Jiang",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-09-26T19:32:30+00:00",
+      "url": "https://www.youtube.com/watch?v=yB6_iFGTq9k",
+      "thumbnail": "https://img.youtube.com/vi/yB6_iFGTq9k/mqdefault.jpg",
+      "description": "Weco let an AI coding agent rewrite the harness around another agent for eight days: its code, prompts and tools, while the underlying language model stayed fixed. Tim Scarfe asks Weco co-founder Zhengyao Jiang what the reported gains over "
+    },
+    {
+      "video_id": "TLJNJDf2XGo",
+      "title": "The Next Chapter of AI Is Inside Our Software",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-09-26T14:30:10+00:00",
+      "url": "https://www.youtube.com/watch?v=TLJNJDf2XGo",
+      "thumbnail": "https://img.youtube.com/vi/TLJNJDf2XGo/mqdefault.jpg",
+      "description": "Erik Torenberg sits down with Box CEO Aaron Levie, and a16z’s Martin Casado, and Steven Sinofsky to debate how the AI industry should think about safety, security, and regulation as increasingly capable agents move into the real world.\n\nThe"
+    },
+    {
+      "video_id": "rgO5v8MFtFg",
+      "title": "What People Are Building With Opus 5.5",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-09-26T01:30:30+00:00",
+      "url": "https://www.youtube.com/shorts/rgO5v8MFtFg",
+      "thumbnail": "https://img.youtube.com/vi/rgO5v8MFtFg/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "zICv3IJaAfQ",
+      "title": "DeepSeek is CRAZY",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-09-25T21:05:41+00:00",
+      "url": "https://www.youtube.com/shorts/zICv3IJaAfQ",
+      "thumbnail": "https://img.youtube.com/vi/zICv3IJaAfQ/mqdefault.jpg",
+      "description": "Explore DigitalOcean's model catalog: https://do.co/matthewberman #ad\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 "
+    },
+    {
       "video_id": "c1rPlzxSZ8E",
       "title": "Meta is pivoting again... everything you missed from Connect 2026",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -193,6 +421,18 @@
       "url": "https://www.youtube.com/watch?v=c1rPlzxSZ8E",
       "thumbnail": "https://img.youtube.com/vi/c1rPlzxSZ8E/mqdefault.jpg",
       "description": "Get $100 in Hyperagent bonus credits when you sign up for a paid plan - https://www.hyperagent.com/fireship100\n\nIn this video we break down everything from Meta Connect 2026. Let's dive in. \n\nWant more Fireship?\n\n🗞️ Newsletter: https://byte"
+    },
+    {
+      "video_id": "-ywZlfznTa4",
+      "title": "How to Spot Exceptional Talent Before Everyone Else",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-09-25T14:00:23+00:00",
+      "url": "https://www.youtube.com/watch?v=-ywZlfznTa4",
+      "thumbnail": "https://img.youtube.com/vi/-ywZlfznTa4/mqdefault.jpg",
+      "description": "a16z’s Erik Torenberg sits down with Josh Elman, Olivia Moore, and David Booth to introduce Cosign, a new product built around professional reputation and the people, companies, and products you’re willing to put your name behind.\n\nThey unp"
     },
     {
       "video_id": "ausLKMojXaY",
@@ -231,16 +471,28 @@
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\nNote: in the walking creatures experiment, Astra used a simplified model and was unable to implement the correct one. Things did not improve after simulatin"
     },
     {
-      "video_id": "rmDu2sSBIrw",
-      "title": "Today’s forecast? Nothing but 80s, baby.",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-09-23T18:48:52+00:00",
-      "url": "https://www.youtube.com/shorts/rmDu2sSBIrw",
-      "thumbnail": "https://img.youtube.com/vi/rmDu2sSBIrw/mqdefault.jpg",
-      "description": "Create your own with ChatGPT Images."
+      "video_id": "N42VxP0D49Q",
+      "title": "Who The Academy is made for",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-09-23T19:00:17+00:00",
+      "url": "https://www.youtube.com/shorts/N42VxP0D49Q",
+      "thumbnail": "https://img.youtube.com/vi/N42VxP0D49Q/mqdefault.jpg",
+      "description": "The internet made it possible to know anything. AI makes it possible to do anything.\n\nThis is built for the people who want to do exactly that.\n\nApplications for the founding class are now open."
+    },
+    {
+      "video_id": "emTe0M9Yw24",
+      "title": "A perfect model can still get causality backwards",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-09-23T18:09:12+00:00",
+      "url": "https://www.youtube.com/shorts/emTe0M9Yw24",
+      "thumbnail": "https://img.youtube.com/vi/emTe0M9Yw24/mqdefault.jpg",
+      "description": "Frank Hutter, co-founder and CEO of Prior Labs, on why a model that predicts perfectly can still point you to the wrong decision. If patients who get a medicine tend to have a disease, stopping the medicine will not cure it. Observing is no"
     },
     {
       "video_id": "DdCEmlAydcw",
@@ -267,18 +519,6 @@
       "description": "Greptile is the only AI code reviewer that actually runs your code. Try it for free: http://greptile.com/go/fireship\n\nAutomattic's board fired WordPress co-founder Matt Mullenweg while he was at Burning Man... 33 hours later, he replaced th"
     },
     {
-      "video_id": "96ogPwN9ykM",
-      "title": "Get Stuff Done with ChatGPT Voice",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-09-23T17:11:13+00:00",
-      "url": "https://www.youtube.com/watch?v=96ogPwN9ykM",
-      "thumbnail": "https://img.youtube.com/vi/96ogPwN9ykM/mqdefault.jpg",
-      "description": "We heard you loud and clear. \n\nChatGPT Voice can now:\n- Use plugins like your email, calendar, and Slack.\n\n- Be powered by GPT-6 Astra, Sol, and Luna.\n\n- Be used in ChatGPT Work on web and mobile, so you can create docs, decks, sites, and s"
-    },
-    {
       "video_id": "FL6mI_Br-mc",
       "title": "Create your own voices with Gemini 3.8 text-to-speech",
       "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
@@ -289,6 +529,18 @@
       "url": "https://www.youtube.com/watch?v=FL6mI_Br-mc",
       "thumbnail": "https://img.youtube.com/vi/FL6mI_Br-mc/mqdefault.jpg",
       "description": "Design entirely new vocal personas from scratch for gaming, immersive audiobooks, or dual-speaker podcasts using natural language prompts - directing every performance line by line with nuanced acting cues, pacing, back channeling, and dial"
+    },
+    {
+      "video_id": "uRGHx-1CqBQ",
+      "title": "Building AI Assistants with On-Device Memory",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-09-23T13:30:05+00:00",
+      "url": "https://www.youtube.com/watch?v=uRGHx-1CqBQ",
+      "thumbnail": "https://img.youtube.com/vi/uRGHx-1CqBQ/mqdefault.jpg",
+      "description": "Learn More: https://bit.ly/4AlVW2n\n\nA cloud-based assistant can remember what it sees, hears, and is told, but only by staying connected and sending that data to a remote server.\n\nIn our new short course, Building AI Assistants with On-Devi"
     },
     {
       "video_id": "giTmBaNGaHw",
@@ -303,6 +555,18 @@
       "description": "The public thought the AI containment crisis started with Hugging Face. They were wrong.\n\nWe talk to Sydney von Arx of Nightingale Collective, the researcher who discovered that AI agents had already escaped their sandboxes months prior. Fr"
     },
     {
+      "video_id": "hy8UstR2NEg",
+      "title": "Full Course: Spec-Driven Development with Coding Agents",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-09-22T19:32:17+00:00",
+      "url": "https://www.youtube.com/watch?v=hy8UstR2NEg",
+      "thumbnail": "https://img.youtube.com/vi/hy8UstR2NEg/mqdefault.jpg",
+      "description": "Vibe coding is fast, but it often produces code that doesn't match what you asked for. Spec-driven development is the disciplined alternative: write a clear markdown spec defining what to build, and let your coding agent implement it.\n\nEarn"
+    },
+    {
       "video_id": "qBBRRsH0rQc",
       "title": "Yes, Jev Is Insane, But There's A Catch",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -313,42 +577,6 @@
       "url": "https://www.youtube.com/watch?v=qBBRRsH0rQc",
       "thumbnail": "https://img.youtube.com/vi/qBBRRsH0rQc/mqdefault.jpg",
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 Jev:\nhttps://typesafe.ai/blog/introducing-system-one-models-and-jev\n\nFull song: https://www.youtube.com/watch?v=4RtUJkjrKMI\n\nPrevious papers, implementati"
-    },
-    {
-      "video_id": "rRm3Vnb7UPY",
-      "title": "Figma Gave GPT-6 Astra a Moonshot. Here's what happened.",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-09-21T19:25:46+00:00",
-      "url": "https://www.youtube.com/watch?v=rRm3Vnb7UPY",
-      "thumbnail": "https://img.youtube.com/vi/rRm3Vnb7UPY/mqdefault.jpg",
-      "description": "John gave GPT-6 Astra a moonshot: design the flight-control experience for a new personal aircraft.\n\nThe gap between generating an interface and designing a system is massive, and AI models have always fallen short.\n\nUntil now.\n\nAstra reaso"
-    },
-    {
-      "video_id": "p7TjXroM4ak",
-      "title": "One Prompt. A Feature Built and Tested. | Ramp × GPT-6 Astra",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-09-21T19:22:03+00:00",
-      "url": "https://www.youtube.com/watch?v=p7TjXroM4ak",
-      "thumbnail": "https://img.youtube.com/vi/p7TjXroM4ak/mqdefault.jpg",
-      "description": "Veeral gave GPT-6 Astra a one-line feature request: add routing controls for individual API keys. Astra found the right settings, made the changes, and used computer use to check its own work. It verified the mobile experience without being"
-    },
-    {
-      "video_id": "dtNlpZI86Dk",
-      "title": "“A Staff Engineer Collaborator” | Notion’s First Look at GPT-6 Astra",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-09-21T19:17:35+00:00",
-      "url": "https://www.youtube.com/watch?v=dtNlpZI86Dk",
-      "thumbnail": "https://img.youtube.com/vi/dtNlpZI86Dk/mqdefault.jpg",
-      "description": "Don’t sleep on Astra. Quinn Johnson started working with GPT-6 Astra differently in Codex: he shared the goal, added context, and let it tackle the problem his team had been working on. On a cache-reuse audit, Astra connected patterns the N"
     },
     {
       "video_id": "TbkUKCm3CHQ",
@@ -457,67 +685,13 @@
       "url": "https://www.youtube.com/watch?v=J3ljHm57yU0",
       "thumbnail": "https://img.youtube.com/vi/J3ljHm57yU0/mqdefault.jpg",
       "description": "Why has it been the last few days that the calls to come to pace the frontier AI have come so loudly? The safety warnings, and lab leader messages? Let’s explore the six axes that the researchers are looking at, the incidence reports and tr"
-    },
-    {
-      "video_id": "InnVG6pOPpM",
-      "title": "Transformers.js v4.3: Structured Output in the browser",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-09-16T07:49:24+00:00",
-      "url": "https://www.youtube.com/watch?v=InnVG6pOPpM",
-      "thumbnail": "https://img.youtube.com/vi/InnVG6pOPpM/mqdefault.jpg",
-      "description": "Transformers.js v4.3 is out, and the big one is structured output.\n\nWith the new @huggingface/transformers-structured-output package you can force a model to follow an exact JSON Schema or regex, directly in the browser. No more parsing mar"
-    },
-    {
-      "video_id": "hXQZ6lyRCsI",
-      "title": "Flow matching for Beginners | @ariG23498",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-09-15T20:37:58+00:00",
-      "url": "https://www.youtube.com/watch?v=hXQZ6lyRCsI",
-      "thumbnail": "https://img.youtube.com/vi/hXQZ6lyRCsI/mqdefault.jpg",
-      "description": "Understand flow matching from ground up with more visualization and less math.\n\nBlog: https://huggingface.co/spaces/ariG23498/flow-matching\n\nTimestamps:\n00:00 - Introduction\n00:50 - Noise to Image\n06:23 - What to train\n13:23 - Train velocit"
-    },
-    {
-      "video_id": "7r4ikZHm9AI",
-      "title": "Anthropic researchers are quitting... and now we know why",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-09-15T17:45:39+00:00",
-      "url": "https://www.youtube.com/watch?v=7r4ikZHm9AI",
-      "thumbnail": "https://img.youtube.com/vi/7r4ikZHm9AI/mqdefault.jpg",
-      "description": "Macroscope can auto-approve your team’s PRs safely. Try it here:\nhttps://macroscope.com/?utm_source=fireship\n\nAnthropic just dropped a 154-page report on how hackers, scientists, and rival AI labs have been abusing Claude. Let's dive in.\n\n#"
-    },
-    {
-      "video_id": "YoEWjZSwoys",
-      "title": "Claude Is Now Leaving Invisible Fingerprints In Its Text",
-      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
-      "channel_name": "Two Minute Papers",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-09-15T10:12:34+00:00",
-      "url": "https://www.youtube.com/watch?v=YoEWjZSwoys",
-      "thumbnail": "https://img.youtube.com/vi/YoEWjZSwoys/mqdefault.jpg",
-      "description": "❤️ Check out Weights & Biases and sign up for a free demo here: https://wandb.me/papers\n\n📝 The papers and sources are available here:\nhttps://proceedings.mlr.press/v202/kirchenbauer23a.html\nhttps://www.nature.com/articles/s41586-024-08025-4"
     }
   ],
   "stats": {
-    "total_videos": 27,
+    "total_videos": 42,
     "total_channels": 16,
-    "successful_channels": 11,
-    "failed_channels": [
-      "Andrej Karpathy",
-      "Matthew Berman",
-      "Machine Learning Street Talk",
-      "a16z",
-      "DeepLearningAI"
-    ],
+    "successful_channels": 16,
+    "failed_channels": [],
     "window_days": 14
   }
 }
