@@ -66,6 +66,7 @@ assert_eq "" "$(grep -v '^--version$' "$STUB_BIN/claude.log")" "kein claude -p"
 : > "$STUB_BIN/claude.log"
 assert_eq "0" "$(FORCE_RUN=1 run)" "FORCE_RUN → Lauf"
 assert_contains "-p --output-format json" "$(cat "$STUB_BIN/claude.log")" "claude -p trotz aktuellem Stand"
+assert_contains "erzwungener Nachlauf" "$(cat "$STUB_BIN/claude.log")" "Prompt überspringt Idempotenz"
 
 # 4. nur eine Seite aktuell → Lauf startet (ältestes Datum zählt)
 mk_repo; export CLAUDE_STUB=ok-full

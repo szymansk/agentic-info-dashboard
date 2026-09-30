@@ -330,6 +330,9 @@ PY
 
   # 7. Lauf
   prompt="Du läufst unbeaufsichtigt als Oneshot ohne Rückfragemöglichkeit. Lies $PROMPT_FILE und führe den dort beschriebenen $JOB_LABEL für das ai-news-dashboard vollständig aus. Working directory ist $PROJECT_DIR. Wenn etwas endgültig blockiert, gib als letzte Zeile 'BLOCKED: <Grund>' aus und höre auf."
+  # Der Prompt hat eine eigene Idempotenz-Prüfung (Schritt 0) — ohne diesen Hinweis
+  # stoppt das Modell bei einem erzwungenen Nachlauf sofort mit "bereits aktualisiert".
+  [ "${FORCE_RUN:-0}" = 1 ] && prompt="$prompt Dies ist ein erzwungener Nachlauf: überspringe die Idempotenz-Prüfung in Schritt 0 und führe alle Schritte vollständig aus, auch wenn das Datum schon heute ist."
   log "starte claude -p (model=$CLAUDE_MODEL, budget=$MAX_BUDGET_USD USD)"
   rc=0
   "$CLAUDE_BIN" -p --output-format json --model "$CLAUDE_MODEL" \
