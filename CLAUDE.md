@@ -55,7 +55,7 @@ Aufrufe von `deploy.sh`:
 |---|---|---|
 | `/ai-news/` | systemd-Timer 07:15 → `bin/run-daily.sh` → `claude -p` (`DAILY_UPDATE.md`) | täglich |
 | `/ai-news/` Snapshots | dieselbe Session, archiviert gestern beim heutigen Lauf | täglich |
-| `/youtube/` | `scripts/fetch-youtube.py` via systemd-Timer | täglich 06:00 |
+| `/youtube/` | `scripts/fetch-youtube.py` via systemd-Timer | täglich 06:00, zweiter Versuch 13:00 |
 | `/whoiswho/` | manuell, editiere `dashboards/_shared/people.js` | bei Bedarf |
 | `/sources/` | manuell, editiere `dashboards/sources/index.html` | bei Bedarf |
 
@@ -84,7 +84,7 @@ Aufrufe von `deploy.sh`:
 |---|---|---|
 | `ai-news-dashboard.service` | simple | beim Boot, hält den Server am Leben |
 | `ai-news-dashboard-youtube-fetch.service` | oneshot | vom Timer aufgerufen |
-| `ai-news-dashboard-youtube-fetch.timer` | timer | täglich 06:00 |
+| `ai-news-dashboard-youtube-fetch.timer` | timer | täglich 06:00 + 13:00 (RSS-Störungen am Morgen) |
 | `ai-news-dashboard-daily.timer/.service` | timer → oneshot | täglich 07:15, Retry 2 h, max. 3/Tag |
 | `ai-news-dashboard-alert@.service` | oneshot (Template) | von `OnFailure` der Units |
 | `ai-news-dashboard-watchdog.timer/.service` | timer → oneshot | alle 30 min, nur Alarme |

@@ -89,13 +89,18 @@ if prev:
     elif smode(arch) != "archive": fail("quality", f"archive/{prev}.html hat data-snapshot-mode={smode(arch)!r}, nicht archive")
     else: ok(f"archive/{prev}.html vorhanden, Modus archive")
 
-def check_manifest(path, label):
+PAGES_PREFIX = "/agentic-info-dashboard"   # scripts/build-pages.py schreibt /foo → PREFIX/foo
+
+def check_manifest(path, label, strip_prefix=False):
     raw = read(path)
     if raw is None: fail("quality", f"{label} fehlt"); return None
     try: m = json.loads(raw)
     except Exception as e: fail("quality", f"{label} kein valides JSON: {e}"); return None
     items = m.get("snapshots") if isinstance(m, dict) else None
     if not isinstance(items, list): fail("quality", f"{label}: kein 'snapshots'-Array"); return None
+    if strip_prefix:  # docs/ ist Build-Output: URLs tragen das Pages-Präfix
+        items = [dict(e, url=e["url"][len(PAGES_PREFIX):]) if isinstance(e.get("url"), str)
+                 and e["url"].startswith(PAGES_PREFIX + "/") else e for e in items]
     allowed = {"date", "url", "headline", "summary"}
     bad = [e.get("date") for e in items if set(e) != allowed]
     if bad: fail("quality", f"{label}: Einträge mit falschen Feldern: {bad}")
@@ -116,7 +121,7 @@ if mode == "full":
     doc = read("docs/ai-news/index.html") or ""
     if sdate(doc) == d: ok(f"docs/ai-news/index.html Datum {sdate(doc)}")
     else: fail("not-deployed", f"docs/ai-news/index.html Datum {sdate(doc) or 'fehlt'} ≠ {d}")
-    doc_entries = check_manifest("docs/ai-news/archive/manifest.json", "docs-manifest")
+    doc_entries = check_manifest("docs/ai-news/archive/manifest.json", "docs-manifest", strip_prefix=True)
     if src_entries is not None and doc_entries is not None:
         if sorted(src_entries) == sorted(doc_entries): ok("docs-Manifest == Quell-Manifest")
         else: fail("quality", "docs-Manifest weicht vom Quell-Manifest ab (date/url)")

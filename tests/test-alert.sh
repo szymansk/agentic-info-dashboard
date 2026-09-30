@@ -28,6 +28,11 @@ assert_contains "TEST" "$(sed -n 1p "$STATE_DIR/last-alert")" "last-alert ART"
 : > "$STUB_BIN/curl.log"
 assert_rc 0 "gedrosselt" -- bin/alert.sh TEST "hallo welt"
 assert_eq "" "$(cat "$STUB_BIN/curl.log")" "kein curl bei Drosselung"
+# 2b. gleicher Vorfall, nur andere Zahl im Text (z. B. Stunden-Alter) → ebenfalls gedrosselt
+bin/alert.sh YOUTUBE "youtube/data.json ist 49 h alt" >/dev/null 2>&1
+: > "$STUB_BIN/curl.log"
+bin/alert.sh YOUTUBE "youtube/data.json ist 50 h alt" >/dev/null 2>&1
+assert_eq "" "$(cat "$STUB_BIN/curl.log")" "Zahlenänderung ist kein neuer Vorfall"
 
 # 3. --force → sendet trotzdem
 bin/alert.sh --force TEST "hallo welt" >/dev/null 2>&1

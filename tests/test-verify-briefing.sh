@@ -34,7 +34,9 @@ good_today() {  # heutiges Briefing korrekt geschrieben (vor Build/Push)
 }
 deploy_today() {  # Build (docs/) + commit + push simuliert
   cp "$R/dashboards/ai-news/index.html" "$R/docs/ai-news/index.html"
-  cp "$R/dashboards/ai-news/archive/manifest.json" "$R/docs/ai-news/archive/manifest.json"
+  # wie scripts/build-pages.py: absolute Pfade bekommen das Pages-Präfix
+  sed 's#"/ai-news/#"/agentic-info-dashboard/ai-news/#g' "$R/dashboards/ai-news/archive/manifest.json" \
+    > "$R/docs/ai-news/archive/manifest.json"
   git -C "$R" add -A; git -C "$R" commit -qm heute; git -C "$R" push -q origin main
 }
 # run() wird stets als "$(run …)" aufgerufen → läuft in einer Subshell; eine

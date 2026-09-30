@@ -45,7 +45,7 @@ die Session-Mechanik. Dieses Design ersetzt sie.
 ## 4. Architektur
 
 ```
-06:00   youtube-fetch.timer → youtube-fetch.service (TimeoutStartSec=10min, kein OnFailure)
+06:00+13:00 youtube-fetch.timer → youtube-fetch.service (TimeoutStartSec=25min, kein OnFailure)
           → fetch-youtube.py → ExecStartPost: deploy.sh
 07:15   daily.timer (Persistent) → daily.service (oneshot, After=youtube-fetch)
           └─ bin/run-daily.sh

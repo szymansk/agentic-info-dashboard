@@ -42,7 +42,10 @@ icon() {
     *) echo "⚠" ;;
   esac
 }
-incident_hash() { printf '%s|%s' "$1" "${2:0:80}" | sha256sum | cut -c1-12; }
+# Zahlen (Alter in h/Tagen, Daten, Kosten) machen keinen neuen Vorfall: sonst
+# unterläuft z. B. "49 h alt" → "50 h alt" die 12-h-Drosselung (stündliche
+# YOUTUBE-Alarme am 29./30.09.2026).
+incident_hash() { printf '%s|%s' "$1" "${2:0:80}" | sed 's/[0-9]\+/N/g' | sha256sum | cut -c1-12; }
 
 send_callmebot() {  # <text> → 0 queued · 1 Fehler · 2 nicht konfiguriert
   [ -n "${CALLMEBOT_PHONE:-}" ] && [ -n "${CALLMEBOT_APIKEY:-}" ] || return 2

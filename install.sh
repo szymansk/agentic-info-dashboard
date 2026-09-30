@@ -184,7 +184,11 @@ cat > "$TMP/ai-news-dashboard-youtube-fetch.timer" <<EOF
 Description=Daily YouTube refresh for AI News Dashboard
 
 [Timer]
+# Zweiter Versuch 13:00: YouTubes RSS liefert morgens zeitweise 404/500 für die
+# Mehrheit der Kanäle (29./30.09.2026), mittags wieder normal. 13:00 liegt nach
+# dem spätesten Ende eines Daily-Retries (11:15 + 90 min) → kein paralleler Deploy.
 OnCalendar=*-*-* 06:00:00
+OnCalendar=*-*-* 13:00:00
 Persistent=true
 RandomizedDelaySec=300
 Unit=ai-news-dashboard-youtube-fetch.service
