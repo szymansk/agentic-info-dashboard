@@ -231,9 +231,15 @@
     },
     {
       "date": "2026-09-29",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-09-29.html",
       "headline": "DevDay-Tag: OpenAI macht den Assistenten dauerhaft — „o“ bleibt an, Anthropic schiebt Sonnet 5.5 nach, und die Beratungsbranche baut ihre Junior-Pyramide ab",
       "summary": "OpenAI startet auf der DevDay den Always-on-Assistenten „o“; Anthropic macht Sonnet 5.5 zum Default-Sonnet; Accenture streicht 11.000 Stellen im KI-Umbau; die Governance-Schicht für Agenten wird zum eigenen Produktmarkt."
+    },
+    {
+      "date": "2026-09-30",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Aus „o“ werden „Dots“: DevDay liefert den Always-on-Agenten — plus GPT-6.1 Sol, ein 500-$-Pro-Tier und Apps mitten in ChatGPT",
+      "summary": "OpenAI startet „Dots“ (Always-on-Agenten auf GPT-6 Astra) und ChatGPT Space; GPT-6.1 Sol bringt 300 Token/s Ultrafast zu ~1/5 des Astra-Preises; neues 500-$-Pro-Tier; Apps/Plugins und „Sign in with ChatGPT“ machen ChatGPT zur Plattform; Claude Code v2.1.285 kann WebFetch abschalten."
     }
   ]
 }
