@@ -7,7 +7,8 @@
 #     --pre-deploy  Quellseiten: Datum ≥ D, vollständiges HTML, nicht geschrumpft
 #     --full        zusätzlich docs/-Kopie mit gleichem Datum, Tree clean, nichts ahead
 #                   (Aufrufer hat vorher `git fetch` gemacht)
-#   Schwelle: MIN_SIZE_RATIO (0.5) — neue Seite muss ≥ 50 % der committeten Vorversion haben
+#   Schwellen: MIN_SIZE_RATIO (0.5) — neue Seite muss ≥ 50 % der committeten Vorversion haben;
+#              Kalender: CAL_MIN_MONTHS (10) Monatsblöcke, CAL_MIN_EVENTS (20) Termine
 # Exit: 0 ok · 6 not-deployed · 10 quality · 64 Usage
 #
 set -uo pipefail
@@ -74,6 +75,12 @@ for p in pages:
     except Exception as e: fail("quality", f"{name}: HTML nicht parsebar: {e}"); continue
     if {"/body", "/html"} <= c.tags: ok(f"{name}: HTML vollständig")
     else: fail("quality", f"{name}: HTML unvollständig (kein </body>/</html>)")
+    if name == "calendar":  # 12-Monats-Fenster muss tatsächlich gefüllt sein
+        months = len(re.findall(r"<h2>", src)); events = len(re.findall(r'<article class="event"', src))
+        mm = int(os.environ.get("CAL_MIN_MONTHS", "10")); me = int(os.environ.get("CAL_MIN_EVENTS", "20"))
+        if months < mm or events < me:
+            fail("quality", f"calendar: nur {months} Monatsblöcke / {events} Termine (Minimum {mm} / {me})")
+        else: ok(f"calendar: {months} Monatsblöcke / {events} Termine")
     prev = read(os.path.join(prev_dir, p.replace("/", "_")))
     if prev and len(src) < ratio * len(prev):
         fail("quality", f"{name}: auf {len(src)} Bytes geschrumpft (Vorversion {len(prev)})")

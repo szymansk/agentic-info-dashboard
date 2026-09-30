@@ -52,6 +52,19 @@ assert_eq "10" "$(run --pre-deploy --date "$D1" "${PAGES[@]}")" "stark geschrump
 mk_repo; update_today; git -C "$R" commit -qam nur-quelle; git -C "$R" push -q origin main
 assert_eq "6" "$(run --full --date "$D1" "${PAGES[@]}")" "docs alt → not-deployed"
 
+# Kalender: Mindestabdeckung (Monatsblöcke + Termine), nur für calendar/
+cal() {  # cal <monate> <events-pro-monat>
+  local m e out='<html><head><title>t</title></head><body data-snapshot-date="'"$D1"'" data-snapshot-mode="live">'
+  for ((m=0;m<$1;m++)); do out+="<h2>Monat $m</h2>"; for ((e=0;e<$2;e++)); do out+='<article class="event" data-type="vendor"><p>E</p></article>'; done; done
+  printf '%s</body></html>\n' "$out"
+}
+mk_repo; mkdir -p "$R/dashboards/calendar" "$R/docs/calendar"
+cal 7 2 > "$R/dashboards/calendar/index.html"
+assert_eq "10" "$(run --pre-deploy --date "$D1" dashboards/calendar/index.html)" "Kalender 7 Monate/14 Termine → quality"
+assert_contains "Monatsblöcke" "$(cat "$T_ROOT/out")" "Grund nennt Monatsblöcke"
+cal 12 2 > "$R/dashboards/calendar/index.html"
+assert_eq "0" "$(run --pre-deploy --date "$D1" dashboards/calendar/index.html)" "Kalender 12 Monate/24 Termine → ok"
+
 assert_rc 64 "usage" -- "$V"
 assert_rc 64 "keine Seiten" -- "$V" --full
 test_summary

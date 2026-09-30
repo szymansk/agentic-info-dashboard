@@ -6,6 +6,7 @@
 #   --dry-run          Preflight + Entscheidung, kein Lauf, kein State
 #   --reset-attempts   Tageszähler löschen (nach Tests)
 #   DAILY_ENV=<pfad>   andere daily.env (Fehlerinjektion)
+#   FORCE_RUN=1        Lauf auch dann, wenn der Stand schon von heute ist (Nachlauf)
 #   JOB=daily|weekly   Auftrag (Default daily). weekly = Wochenlauf für die Seiten
 #                      Regulatorik, Coding-Tools, Kalender, Extensions (WEEKLY_UPDATE.md,
 #                      Prüfung bin/verify-pages.sh, State-Dateien mit Suffix -weekly)
@@ -298,7 +299,8 @@ PY
     if [ -z "$cur" ] || [[ "$dt" < "$cur" ]]; then cur="$dt"; fi
   done
   ahead="$(git rev-list --count origin/main..HEAD 2>/dev/null || echo 0)"
-  if [ "$cur" = "$RUN_DATE" ] && [ "$(git status --porcelain --untracked-files=all | classify_dirt)" = clean ]; then
+  # FORCE_RUN=1: Idempotenz überspringen (manueller Nachlauf nach Prompt-Korrektur)
+  if [ "${FORCE_RUN:-0}" != 1 ] && [ "$cur" = "$RUN_DATE" ] && [ "$(git status --porcelain --untracked-files=all | classify_dirt)" = clean ]; then
     if [ "$ahead" = 0 ]; then
       log "Stand vom $RUN_DATE ist gepusht — nichts zu tun ($JOB)"
       # --dry-run (u.a. von check.sh bei jedem Aufruf) darf last-alert/

@@ -85,14 +85,27 @@ mit `h2`, `.price-bracket`, `.summary` und `dl.specs`.
 ## 3. Kalender (`dashboards/calendar/index.html`)
 
 Monatsblöcke mit `<h2>Monat Jahr</h2>` und `<article class="event" data-type="…"
-data-verify="exact|pattern|…">`.
+data-verify="exact|pattern|…">`. Die Seite zeigt **genau die 12 Monate ab dem
+aktuellen Monat** — nicht mehr, nicht weniger.
 
-1. Vergangene Monate und Events entfernen; das Fenster sind die kommenden
-   12 Monate ab heute. Für neu ins Fenster rückende Monate einen Block anlegen.
-2. Events mit `data-verify="pattern"` (geschätzt) prüfen: steht das Datum jetzt
-   offiziell fest, Datum eintragen und auf `exact` setzen.
-3. Neue große Events aufnehmen (Hersteller-Konferenzen, wichtige Fachkonferenzen,
-   regulatorische Stichtage), jeweils mit offizieller Event-Seite als Beleg.
+1. Vergangene Events und Monate entfernen. Monate jenseits des Fensters
+   (aktueller Monat + 11) ebenfalls entfernen.
+2. **Jeder der 12 Monate bekommt einen `<h2>`-Block**, in chronologischer
+   Reihenfolge. Ziel: mindestens 2 Termine je Monat, insgesamt mindestens 24.
+   `bin/verify-pages.sh` bricht unter 10 Monatsblöcken oder 20 Terminen ab.
+3. Wiederkehrende Großereignisse sind die Anker. Prüfe für das Fenster
+   mindestens: CES (Jan), NVIDIA GTC (Mär), Google Cloud Next (Apr), Microsoft
+   Build, Google I/O (Mai), Apple WWDC, Computex, CVPR (Jun), ICML (Jul),
+   KDD (Aug), OpenAI DevDay (Okt), Microsoft Ignite (Nov), AWS re:Invent,
+   NeurIPS (Dez), dazu die Anthropic-, Meta- und Mistral-Events sowie
+   EU-AI-Act-Stichtage. Ist das Datum offiziell bestätigt: `data-verify="exact"`
+   mit Quelle. Ist es nur aus dem Vorjahresmuster abgeleitet:
+   `data-verify="pattern"` und Datum mit „≈" kennzeichnen — keine exakten Tage
+   erfinden.
+4. Bestehende `pattern`-Events prüfen: steht das Datum jetzt offiziell fest,
+   Datum eintragen und auf `exact` setzen.
+5. Die Filterleiste (`data-filter-type`, `data-filter-verify`) nur anpassen,
+   wenn du einen neuen `data-type`-Wert einführst.
 
 ## 4. Extensions (`dashboards/extensions/index.html`)
 

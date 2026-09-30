@@ -3,7 +3,7 @@ set -uo pipefail
 cd "$(dirname "${BASH_SOURCE[0]}")/.." || exit 1
 . tests/lib-test.sh; test_sandbox
 BIN="$PWD/bin"; FIX="$PWD/tests/fixtures"
-export JOB=weekly LOCK_WAIT_SEC=1
+export JOB=weekly LOCK_WAIT_SEC=1 CAL_MIN_MONTHS=0 CAL_MIN_EVENTS=0  # Kalenderinhalt prüft test-verify-pages.sh
 export DAILY_ENV="$CONF_DIR/daily.env" ALERT_ENV="$CONF_DIR/alert.env"
 printf 'CLAUDE_CODE_OAUTH_TOKEN=sk-ant-oat01-test\nCLAUDE_MODEL=test-model\nMAX_BUDGET_USD=1\n' > "$DAILY_ENV"
 : > "$ALERT_ENV"
@@ -61,6 +61,11 @@ assert_contains "regulation" "$(cat "$T_ROOT/last-out")" "Grund nennt die alte S
 mk_repo; CLAUDE_STUB=ok-full "$STUB_BIN/claude" >/dev/null 2>&1; : > "$STUB_BIN/claude.log"
 assert_eq "0" "$(run)" "schon aktuell → 0"
 assert_eq "" "$(grep -v '^--version$' "$STUB_BIN/claude.log")" "kein claude -p"
+
+# 3b. FORCE_RUN=1 startet trotz aktuellem Stand
+: > "$STUB_BIN/claude.log"
+assert_eq "0" "$(FORCE_RUN=1 run)" "FORCE_RUN → Lauf"
+assert_contains "-p --output-format json" "$(cat "$STUB_BIN/claude.log")" "claude -p trotz aktuellem Stand"
 
 # 4. nur eine Seite aktuell → Lauf startet (ältestes Datum zählt)
 mk_repo; export CLAUDE_STUB=ok-full
