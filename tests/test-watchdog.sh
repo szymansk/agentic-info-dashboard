@@ -19,12 +19,15 @@ export CLAUDE_BIN="$STUB_BIN/claude"
 stub timeout 'shift; exec "$@"'
 export PROJECT_DIR="$T_ROOT/proj"; mkdir -p "$PROJECT_DIR/dashboards/ai-news" "$PROJECT_DIR/dashboards/youtube"
 
-setup() {  # setup <briefing-datum> <token-created> [youtube-age-h]
+setup() {  # setup <briefing-datum> <token-created> [youtube-age-h] [wochenseiten-datum]
   rm -rf "$STATE_DIR"; mkdir -p "$STATE_DIR"; : > "$STUB_BIN/curl.log"; : > "$STUB_BIN/claude.log"
   printf '<body data-snapshot-date="%s" data-snapshot-mode="live">' "$1" > "$PROJECT_DIR/dashboards/ai-news/index.html"
   printf 'CLAUDE_CODE_OAUTH_TOKEN=sk-ant-oat01-x\nTOKEN_CREATED=%s\nCLAUDE_MODEL=m\n' "$2" > "$DAILY_ENV"
   printf 'CALLMEBOT_PHONE=1\nCALLMEBOT_APIKEY=k\nHEARTBEAT=1\n' > "$ALERT_ENV"
   echo '{}' > "$PROJECT_DIR/dashboards/youtube/data.json"; touch -d "-${3:-1} hours" "$PROJECT_DIR/dashboards/youtube/data.json"
+  for w in regulation coding-tools calendar extensions; do  # Wochenlauf-Seiten, Stand = Arg 4 (Default heute)
+    mkdir -p "$PROJECT_DIR/dashboards/$w"; printf '<body data-snapshot-date="%s">' "${4:-$(date -I)}" > "$PROJECT_DIR/dashboards/$w/index.html"
+  done
   printf '{"date":"%s","finished":"%sT08:00:00+0200","exit":0,"kind":"OK"}' "$1" "$1" > "$STATE_DIR/last-run.json"
   touch -d "-3 hours" "$STATE_DIR/last-run.json"
 }
@@ -62,6 +65,12 @@ setup "$D1" "$(date -I -d "$D1 - 300 day")"; run >/dev/null; assert_eq "" "$(kin
 setup "$D1" "$D1"; printf 'CLAUDE_CODE_OAUTH_TOKEN=sk-ant-oat01-x\nCLAUDE_MODEL=m\n' > "$DAILY_ENV"
 run >/dev/null; assert_contains "TOKEN" "$(kinds)" "TOKEN ohne TOKEN_CREATED"
 n1=$(wc -l < "$STATE_DIR/alerts.log"); run >/dev/null; assert_eq "$n1" "$(wc -l < "$STATE_DIR/alerts.log")" "TOKEN ohne TOKEN_CREATED nur einmal pro Tag"
+
+# 5b. Wochenseiten: älter als 9 Tage → WEEKLY_STALE; 8 Tage ok; unterdrückt während Wochenlauf aktiv
+setup "$D1" "$D1" 1 "$(date -I -d '-10 day')"; run >/dev/null; assert_contains "WEEKLY_STALE" "$(kinds)" "Wochenseiten 10 Tage → WEEKLY_STALE"
+assert_contains "regulation" "$(cut -f3 "$STATE_DIR/alerts.log")" "Alarm nennt die Seite"
+setup "$D1" "$D1" 1 "$(date -I -d '-8 day')"; run >/dev/null; assert_eq "" "$(kinds | grep -o WEEKLY_STALE)" "8 Tage → kein Alarm"
+setup "$D1" "$D1" 1 "$(date -I -d '-10 day')"; UNIT_ACTIVE=activating run >/dev/null; assert_eq "" "$(kinds | grep -o WEEKLY_STALE)" "kein WEEKLY_STALE während Lauf"
 
 # 5. YouTube > 30 h
 setup "$D1" "$D1" 40; run >/dev/null; assert_contains "YOUTUBE" "$(kinds)" "YOUTUBE alt"

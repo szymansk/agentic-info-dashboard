@@ -6,23 +6,42 @@
 #   --dry-run          Preflight + Entscheidung, kein Lauf, kein State
 #   --reset-attempts   Tageszähler löschen (nach Tests)
 #   DAILY_ENV=<pfad>   andere daily.env (Fehlerinjektion)
+#   JOB=daily|weekly   Auftrag (Default daily). weekly = Wochenlauf für die Seiten
+#                      Regulatorik, Coding-Tools, Kalender, Extensions (WEEKLY_UPDATE.md,
+#                      Prüfung bin/verify-pages.sh, State-Dateien mit Suffix -weekly)
 #
 # Exit: 0 ok · 3 AUTH · 4 DIRTY · 5 RUN · 6 OUTCOME · 7 BLOCKED · 8 API · 9 REPO
 #       · 10 QUALITY · 11 GIVEUP (dritter wiederholbarer Fehlschlag des Tages)
 #
 set -uo pipefail
-LOG_TAG=daily
+JOB="${JOB:-daily}"
+case "$JOB" in daily|weekly) ;; *) echo "JOB muss daily oder weekly sein" >&2; exit 64 ;; esac
+LOG_TAG="$JOB"
 # shellcheck source=bin/lib-daily.sh
 . "$(dirname "${BASH_SOURCE[0]}")/lib-daily.sh"
 BIN="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROMPT_FILE="$PROJECT_DIR/DAILY_UPDATE.md"
+# Auftragsprofil: alles, was am Briefing hängt, steht hier
+if [ "$JOB" = daily ]; then
+  SFX=""                                      # State-Dateien wie bisher (check.sh, watchdog)
+  PROMPT_FILE="$PROJECT_DIR/DAILY_UPDATE.md"
+  JOB_LABEL="Daily-Update-Workflow"
+  JOB_PAGES=(dashboards/ai-news/index.html)
+  POLL_URL="$PAGES_URL"
+else
+  SFX="-weekly"
+  PROMPT_FILE="$PROJECT_DIR/WEEKLY_UPDATE.md"
+  JOB_LABEL="Weekly-Update-Workflow"
+  JOB_PAGES=(dashboards/regulation/index.html dashboards/coding-tools/index.html
+             dashboards/calendar/index.html dashboards/extensions/index.html)
+  POLL_URL="${PAGES_URL%/ai-news/}/regulation/"
+fi
 MAX_ATTEMPTS="${MAX_ATTEMPTS:-3}"
 LOCK_WAIT_SEC="${LOCK_WAIT_SEC:-300}"
 
 DRY=0
 case "${1:-}" in
   --dry-run) DRY=1 ;;
-  --reset-attempts) rm -f "$STATE_DIR"/attempts.*; log "Tageszähler gelöscht"; exit 0 ;;
+  --reset-attempts) rm -f "$STATE_DIR"/attempts.* "$STATE_DIR"/attempts-*; log "Tageszähler gelöscht"; exit 0 ;;
   "") ;;
   *) echo "usage: run-daily.sh [--dry-run|--reset-attempts]" >&2; exit 64 ;;
 esac
@@ -31,10 +50,14 @@ RUN_DATE="$(today)"
 START_TS="$(date +%s)"
 HEAD0=""
 CLAUDE_BIN="${CLAUDE_BIN:-}"  # evtl. schon von außen gesetzter Override bleibt für resolve_claude() erhalten
-attempts="$(state_read "attempts.$RUN_DATE")"; attempts="${attempts:-0}"
+ATTEMPTS_FILE="attempts$SFX.$RUN_DATE"
+LAST_RUN="$STATE_DIR/last-run$SFX.json"
+LAST_OUT="$STATE_DIR/last-run$SFX.out.json"
+LAST_FAIL="$STATE_DIR/last-failure.$JOB"
+attempts="$(state_read "$ATTEMPTS_FILE")"; attempts="${attempts:-0}"
 
-ping_hc() {  # ping_hc start|fail|"" — nur wenn HEALTHCHECKS_URL gesetzt
-  [ -n "${HEALTHCHECKS_URL:-}" ] || return 0
+ping_hc() {  # ping_hc start|fail|"" — nur wenn HEALTHCHECKS_URL gesetzt, nur Tageslauf
+  [ -n "${HEALTHCHECKS_URL:-}" ] && [ "$JOB" = daily ] || return 0
   curl -fsS -m 10 "$HEALTHCHECKS_URL${1:+/$1}" >/dev/null 2>&1 9>&- || true
 }
 
@@ -52,8 +75,8 @@ existing_own_paths() {  # füllt EXISTING_OWN_PATHS mit den OWN_DIRT_PATHS-
 }
 
 write_last_run() {  # <exit> <ART> <text>
-  python3 - "$STATE_DIR/last-run.json" "$1" "$2" "$3" "$RUN_DATE" "$START_TS" \
-            "$STATE_DIR/last-run.out.json" "$("$CLAUDE_BIN" --version 2>/dev/null | head -1 || true)" <<'PY'
+  python3 - "$LAST_RUN" "$1" "$2" "$3" "$RUN_DATE" "$START_TS" \
+            "$LAST_OUT" "$("$CLAUDE_BIN" --version 2>/dev/null | head -1 || true)" <<'PY'
 import json, os, sys, time
 p, code, kind, text, run_date, start, outf, ver = sys.argv[1:9]
 d = {"date": run_date, "finished": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
@@ -79,13 +102,13 @@ cleanup_leftovers() {  # <exit> — nur, wenn der Lauf noch nichts committet hat
   if [ "$(git status --porcelain --untracked-files=all | classify_dirt)" != clean ]; then
     existing_own_paths
     if [ "${#EXISTING_OWN_PATHS[@]}" -gt 0 ] \
-       && git stash push -u -q -m "daily-fail $(date -Is) exit $1" -- "${EXISTING_OWN_PATHS[@]}" 9>&-; then
+       && git stash push -u -q -m "$JOB-fail $(date -Is) exit $1" -- "${EXISTING_OWN_PATHS[@]}" 9>&-; then
       log "Reste des Laufs gestasht (git stash list)"
     else
       warn "git stash der Reste fehlgeschlagen — Dirt-Klassifikation räumt beim nächsten Start"
     fi
   fi
-  if [ -f "$STATE_DIR/manifest.bak" ]; then
+  if [ "$JOB" = daily ] && [ -f "$STATE_DIR/manifest.bak" ]; then
     cp "$STATE_DIR/manifest.bak" dashboards/ai-news/archive/manifest.json && log "manifest.json zurückgesetzt"
   fi
 }
@@ -97,13 +120,13 @@ fail() {  # fail <code> <ART> <text> — State, Zähler, Cleanup, exit
   cleanup_leftovers "$code"
   case "$code" in
     5|6|7)
-      attempts=$((attempts + 1)); state_write "attempts.$RUN_DATE" "$attempts"
+      attempts=$((attempts + 1)); state_write "$ATTEMPTS_FILE" "$attempts"
       if [ "$attempts" -ge "$MAX_ATTEMPTS" ]; then
-        printf 'GIVEUP\n%s. Fehlschlag heute (%s): %s\n' "$attempts" "$kind" "$text" > "$STATE_DIR/last-failure.daily"
+        printf 'GIVEUP\n%s. Fehlschlag heute (%s): %s\n' "$attempts" "$kind" "$text" > "$LAST_FAIL"
         write_last_run 11 GIVEUP "$kind: $text"; ping_hc fail; exit 11
       fi ;;
   esac
-  printf '%s\n%s\n' "$kind" "$text" > "$STATE_DIR/last-failure.daily"
+  printf '%s\n%s\n' "$kind" "$text" > "$LAST_FAIL"
   write_last_run "$code" "$kind" "$text"
   case "$code" in 3|4|8|9|10) ping_hc fail ;; esac
   exit "$code"
@@ -118,7 +141,7 @@ trap on_term TERM INT
 poll_pages() {  # bis 10 min auf das neue Datum warten; nur Warnung
   local i d=""
   for i in 1 2 3 4 5 6 7 8 9 10; do
-    d="$(curl -fsS -m 15 -H 'Cache-Control: no-cache' "$PAGES_URL" 2>/dev/null 9>&- \
+    d="$(curl -fsS -m 15 -H 'Cache-Control: no-cache' "$POLL_URL" 2>/dev/null 9>&- \
           | grep -oE 'data-snapshot-date="[0-9-]{10}"' | head -1 | grep -oE '[0-9-]{10}' || true)"
     if [ -n "$d" ] && [[ ! "$d" < "$RUN_DATE" ]]; then log "Pages zeigt $d"; return 0; fi
     [ "$i" -lt 10 ] && sleep 60
@@ -135,7 +158,11 @@ verify_and_finish() {
   if [ -f "$STATE_DIR/prev-snapshot" ] && [ "$(stat -c %Y "$STATE_DIR/prev-snapshot")" -ge "$START_TS" ]; then
     prev="$(state_read prev-snapshot)"
   fi
-  vout="$("$BIN/verify-briefing.sh" --full --date "$RUN_DATE" ${prev:+--prev "$prev"} 2>&1)" || vrc=$?
+  if [ "$JOB" = daily ]; then
+    vout="$("$BIN/verify-briefing.sh" --full --date "$RUN_DATE" ${prev:+--prev "$prev"} 2>&1)" || vrc=$?
+  else
+    vout="$("$BIN/verify-pages.sh" --full --date "$RUN_DATE" "${JOB_PAGES[@]}" 2>&1)" || vrc=$?
+  fi
   printf '%s\n' "$vout" | sed 's/^/    /'
   reason="$(printf '%s\n' "$vout" | grep '^RESULT:' | tail -1)"; reason="${reason#RESULT: }"
   case "$vrc" in
@@ -144,15 +171,16 @@ verify_and_finish() {
     *) fail 10 QUALITY "$reason" ;;
   esac
   status=""
-  if [ -f "$STATE_DIR/last-run.out.json" ] && [ "$(stat -c %Y "$STATE_DIR/last-run.out.json")" -ge "$START_TS" ]; then
+  if [ -f "$LAST_OUT" ] && [ "$(stat -c %Y "$LAST_OUT")" -ge "$START_TS" ]; then
     status="$(python3 -c 'import json,sys
 r=(json.load(open(sys.argv[1])).get("result") or "")
 l=[x for x in r.splitlines() if x.startswith("STATUS:")]
-print(l[-1] if l else "")' "$STATE_DIR/last-run.out.json" 2>/dev/null || true)"
+print(l[-1] if l else "")' "$LAST_OUT" 2>/dev/null || true)"
   fi
   log "${status:-STATUS: (keine Bilanz-Zeile im Ergebnis)}"
   write_last_run 0 OK "${status:-ok}"
-  rm -f "$STATE_DIR/attempts.$RUN_DATE" "$STATE_DIR/last-failure.daily" "$STATE_DIR/last-alert"
+  rm -f "$STATE_DIR/$ATTEMPTS_FILE" "$LAST_FAIL"
+  [ "$JOB" = daily ] && rm -f "$STATE_DIR/last-alert"   # Wochenlauf räumt keine Tageslauf-Alarme weg
   ping_hc ""
   trap - TERM INT  # Erfolg ist verbucht — ein spätes Signal darf last-run.json/attempts nicht mehr zu fail() umbiegen
   poll_pages
@@ -172,7 +200,7 @@ push_only() {
 
 main() {
   local env_rc dirt fetch_out cur ahead rc cls code kind text prompt
-  local out="$STATE_DIR/last-run.out.json"
+  local out="$LAST_OUT"
 
   # 0. Binary + Env
   CLAUDE_BIN="$(resolve_claude)" || fail 5 RUN "claude-Binary nicht gefunden (~/.local/bin/claude?)"
@@ -182,7 +210,7 @@ main() {
   [ -n "${CLAUDE_CODE_OAUTH_TOKEN:-}" ] || fail 3 AUTH "CLAUDE_CODE_OAUTH_TOKEN fehlt in $DAILY_ENV — 'claude setup-token' und bin/set-token.sh"
   CLAUDE_MODEL="${CLAUDE_MODEL:-claude-opus-4-8}"; MAX_BUDGET_USD="${MAX_BUDGET_USD:-30}"
   cd "$PROJECT_DIR" || fail 5 RUN "PROJECT_DIR fehlt: $PROJECT_DIR"
-  [ -f "$PROMPT_FILE" ] || fail 5 RUN "DAILY_UPDATE.md fehlt"
+  [ -f "$PROMPT_FILE" ] || fail 5 RUN "$(basename "$PROMPT_FILE") fehlt"
 
   # 0b. Übergangs-Warnung (Migration Phase 2): alte Background-Session könnte noch laufen
   roster="$HOME/.claude/daemon/roster.json"
@@ -262,11 +290,17 @@ PY
   fi
 
   # 5. Idempotenz / push-only
-  cur="$(snapshot_date dashboards/ai-news/index.html)"
+  # ältestes Snapshot-Datum aller Seiten des Auftrags (leer → gilt als alt)
+  cur=""; local pg dt
+  for pg in "${JOB_PAGES[@]}"; do
+    dt="$(snapshot_date "$pg")"
+    if [ -z "$dt" ]; then cur="0000-00-00"; break; fi
+    if [ -z "$cur" ] || [[ "$dt" < "$cur" ]]; then cur="$dt"; fi
+  done
   ahead="$(git rev-list --count origin/main..HEAD 2>/dev/null || echo 0)"
   if [ "$cur" = "$RUN_DATE" ] && [ "$(git status --porcelain --untracked-files=all | classify_dirt)" = clean ]; then
     if [ "$ahead" = 0 ]; then
-      log "Briefing vom $RUN_DATE ist gepusht — nichts zu tun"
+      log "Stand vom $RUN_DATE ist gepusht — nichts zu tun ($JOB)"
       # --dry-run (u.a. von check.sh bei jedem Aufruf) darf last-alert/
       # last-failure.daily nicht als Nebeneffekt eines reinen Preflight-Checks
       # löschen und keinen State schreiben. Der echte Lauf verifiziert auch im
@@ -276,22 +310,24 @@ PY
       verify_and_finish
       exit 0
     fi
-    log "Briefing vom $RUN_DATE committet, $ahead Commit(s) nicht gepusht → push-only"
+    log "Stand vom $RUN_DATE committet, $ahead Commit(s) nicht gepusht → push-only ($JOB)"
     [ "$DRY" = 1 ] && { log "[dry-run] würde nur pushen"; exit 0; }
     push_only; exit 0
   fi
   if [ "$DRY" = 1 ]; then
-    log "[dry-run] würde claude -p starten (model=$CLAUDE_MODEL, budget=$MAX_BUDGET_USD USD; Briefing aktuell vom ${cur:-?})"; exit 0
+    log "[dry-run] würde claude -p starten (model=$CLAUDE_MODEL, budget=$MAX_BUDGET_USD USD; $JOB, Stand vom ${cur:-?})"; exit 0
   fi
 
   # 6. Sicherung
   HEAD0="$(git rev-parse HEAD)"
-  cp dashboards/ai-news/archive/manifest.json "$STATE_DIR/manifest.bak" 2>/dev/null || true
-  state_write prev-snapshot "$cur"
+  if [ "$JOB" = daily ]; then
+    cp dashboards/ai-news/archive/manifest.json "$STATE_DIR/manifest.bak" 2>/dev/null || true
+    state_write prev-snapshot "$cur"
+  fi
   ping_hc start
 
   # 7. Lauf
-  prompt="Du läufst unbeaufsichtigt als Oneshot ohne Rückfragemöglichkeit. Lies $PROMPT_FILE und führe den dort beschriebenen Daily-Update-Workflow für das ai-news-dashboard vollständig aus. Working directory ist $PROJECT_DIR. Wenn etwas endgültig blockiert, gib als letzte Zeile 'BLOCKED: <Grund>' aus und höre auf."
+  prompt="Du läufst unbeaufsichtigt als Oneshot ohne Rückfragemöglichkeit. Lies $PROMPT_FILE und führe den dort beschriebenen $JOB_LABEL für das ai-news-dashboard vollständig aus. Working directory ist $PROJECT_DIR. Wenn etwas endgültig blockiert, gib als letzte Zeile 'BLOCKED: <Grund>' aus und höre auf."
   log "starte claude -p (model=$CLAUDE_MODEL, budget=$MAX_BUDGET_USD USD)"
   rc=0
   "$CLAUDE_BIN" -p --output-format json --model "$CLAUDE_MODEL" \

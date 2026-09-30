@@ -90,7 +90,9 @@ PY
 }
 
 # Eigener Dirt = generierte Pfade; alles andere ist fremd (Spec 5.2).
-OWN_DIRT_PATHS=(dashboards/ai-news dashboards/it-services docs)
+# Wochenlauf-Seiten gehören ebenfalls zum generierten Inhalt (JOB=weekly)
+OWN_DIRT_PATHS=(dashboards/ai-news dashboards/it-services docs
+                dashboards/regulation dashboards/coding-tools dashboards/calendar dashboards/extensions)
 
 # classify_dirt: liest `git status --porcelain --untracked-files=all` von stdin
 # → clean | own | foreign

@@ -13,12 +13,14 @@ siehe „Tageslauf-Mechanik”) aktualisiert.
 ├── serve.py                    # stdlib-Webserver für lokale Entwicklung
 ├── install.sh                  # Setup auf frischem System (systemd + firewall)
 ├── DAILY_UPDATE.md             # Prompt für den täglichen claude -p-Oneshot
+├── WEEKLY_UPDATE.md            # Prompt für den Wochenlauf (Regulatorik, Coding-Tools, Kalender, Extensions)
 ├── specs/                      # Design-Specs
 ├── plans/                      # Implementierungspläne
 ├── .github/workflows/stale-check.yml # externer Wächter (Pages-Datum)
 ├── bin/
 │   ├── run-daily.sh            # Tageslauf: claude -p + Klassifikation + Verify + Cleanup
 │   ├── verify-briefing.sh      # Ergebnisprüfung (--pre-deploy im Prompt, --full im Wrapper)
+│   ├── verify-pages.sh         # Ergebnisprüfung Wochenlauf (Datum, HTML, docs/, gepusht)
 │   ├── alert.sh                # einziger Alarmweg (CallMeBot/ntfy/Journal)
 │   ├── watchdog.sh             # alle 30 min: Frische, Token, Pages, YouTube
 │   ├── set-token.sh            # Setup-Token nach ~/.config/ai-news-dashboard/daily.env
@@ -56,6 +58,7 @@ Aufrufe von `deploy.sh`:
 | `/ai-news/` | systemd-Timer 07:15 → `bin/run-daily.sh` → `claude -p` (`DAILY_UPDATE.md`) | täglich |
 | `/ai-news/` Snapshots | dieselbe Session, archiviert gestern beim heutigen Lauf | täglich |
 | `/youtube/` | `scripts/fetch-youtube.py` via systemd-Timer | täglich 06:00, zweiter Versuch 13:00 |
+| `/regulation/`, `/coding-tools/`, `/calendar/`, `/extensions/` | systemd-Timer So 13:30 → `JOB=weekly bin/run-daily.sh` → `claude -p` (`WEEKLY_UPDATE.md`) | wöchentlich |
 | `/whoiswho/` | manuell, editiere `dashboards/_shared/people.js` | bei Bedarf |
 | `/sources/` | manuell, editiere `dashboards/sources/index.html` | bei Bedarf |
 
@@ -86,6 +89,7 @@ Aufrufe von `deploy.sh`:
 | `ai-news-dashboard-youtube-fetch.service` | oneshot | vom Timer aufgerufen |
 | `ai-news-dashboard-youtube-fetch.timer` | timer | täglich 06:00 + 13:00 (RSS-Störungen am Morgen) |
 | `ai-news-dashboard-daily.timer/.service` | timer → oneshot | täglich 07:15, Retry 2 h, max. 3/Tag |
+| `ai-news-dashboard-weekly.timer/.service` | timer → oneshot | So 13:30, `JOB=weekly`, Retry 2 h, max. 3/Tag |
 | `ai-news-dashboard-alert@.service` | oneshot (Template) | von `OnFailure` der Units |
 | `ai-news-dashboard-watchdog.timer/.service` | timer → oneshot | alle 30 min, nur Alarme |
 
@@ -116,6 +120,13 @@ nur in dieser Prozessumgebung). Design und Begründung: `specs/2026-09-24-daily-
   `gh run list --workflow stale-check.yml`.
 - Testkette (nach Änderungen an Units/Skripten): `bash tests/run-all.sh`, `./bin/verify-daily.sh`,
   `bin/alert.sh --test`.
+
+**Wochenlauf**: dasselbe Skript mit `JOB=weekly` (`ai-news-dashboard-weekly.service`,
+So 13:30). Prompt `WEEKLY_UPDATE.md`, Prüfung `bin/verify-pages.sh`, State-Dateien mit Suffix
+`-weekly` (`last-run-weekly.json`, `attempts-weekly.<datum>`, `last-failure.weekly`), gleiche
+Sperre `run.lock` wie der Tageslauf. Von Hand: `JOB=weekly bin/run-daily.sh </dev/null` oder
+`sudo systemctl start ai-news-dashboard-weekly.service`. Alarm `WEEKLY_STALE` (Watchdog): eine der
+vier Seiten ist älter als 9 Tage → `journalctl -u ai-news-dashboard-weekly -n 40`.
 
 **Historie (Background-Session, Mai–September 2026)**: Vier stille Ausfälle (Upgrade-Kill
 29.05., Idle-Exit + Modell 15.06., SELinux + PATH 01.07., Auth-Ablauf + blinder Selbstheiler
@@ -150,4 +161,5 @@ nur in dieser Prozessumgebung). Design und Begründung: `specs/2026-09-24-daily-
 - **Logs**: `journalctl -u ai-news-dashboard*`
 - **Health**: `./bin/check.sh`
 - **Watchdog-Alarme**: `journalctl -t ai-news-alert`, `~/.local/state/ai-news-dashboard/{alerts.log,last-alert,last-run.json}`
+- **Wochenlauf-Seiten**: `dashboards/{regulation,coding-tools,calendar,extensions}/index.html`
 - **Tageslauf-Transcript**: `~/.claude/projects/-home-szymansk-Projects-agentic-info-dashboard/<session_id>.jsonl`

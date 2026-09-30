@@ -238,6 +238,48 @@ Unit=ai-news-dashboard-daily.service
 WantedBy=timers.target
 EOF
 
+# Wochenlauf: Regulatorik, Coding-Tools, Kalender, Extensions (WEEKLY_UPDATE.md)
+cat > "$TMP/ai-news-dashboard-weekly.service" <<EOF
+[Unit]
+Description=Weekly refresh of regulation/coding-tools/calendar/extensions (claude -p oneshot)
+Documentation=file://$PROJECT_DIR/WEEKLY_UPDATE.md
+After=network-online.target ai-news-dashboard-youtube-fetch.service
+Wants=network-online.target
+OnFailure=ai-news-dashboard-alert@%p.service
+StartLimitIntervalSec=12h
+StartLimitBurst=3
+
+[Service]
+Type=oneshot
+User=$RUN_USER
+Group=$RUN_GROUP
+WorkingDirectory=$PROJECT_DIR
+Environment=JOB=weekly DISABLE_AUTOUPDATER=1 GIT_TERMINAL_PROMPT=0 GH_NO_UPDATE_NOTIFIER=1
+StandardInput=null
+ExecStart=/usr/bin/bash $PROJECT_DIR/bin/run-daily.sh
+TimeoutStartSec=120min
+TimeoutStopSec=3min
+Restart=on-failure
+RestartSec=2h
+RestartPreventExitStatus=3 4 8 9 10 11
+InaccessiblePaths=-$RUN_HOME/.ssh
+EOF
+
+# Sonntag 13:30: nach dem spätesten Daily-Retry-Ende (11:15 + 90 min) und dem
+# YouTube-Zweitversuch 13:00 → keine parallelen Deploys (Lock deckt den Rest).
+cat > "$TMP/ai-news-dashboard-weekly.timer" <<EOF
+[Unit]
+Description=Weekly page refresh on Sundays 13:30
+
+[Timer]
+OnCalendar=Sun *-*-* 13:30:00
+Persistent=true
+Unit=ai-news-dashboard-weekly.service
+
+[Install]
+WantedBy=timers.target
+EOF
+
 cat > "$TMP/ai-news-dashboard-alert@.service" <<EOF
 [Unit]
 Description=Alert for failed unit %i (CallMeBot/ntfy/journal)
@@ -319,6 +361,8 @@ green "✓"; echo " ai-news-dashboard-youtube-fetch.timer aktiv"
 if [ "$SKIP_DAILY" != "1" ]; then
   sudo systemctl enable --now ai-news-dashboard-daily.timer
   green "✓"; echo " daily.timer aktiv (07:15, Persistent)"
+  sudo systemctl enable --now ai-news-dashboard-weekly.timer
+  green "✓"; echo " weekly.timer aktiv (So 13:30, Persistent)"
   sudo systemctl enable --now ai-news-dashboard-watchdog.timer
   green "✓"; echo " watchdog.timer aktiv (alle 30 Min)"
   systemctl list-timers ai-news-dashboard-* --no-pager | sed 's/^/    /'

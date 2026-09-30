@@ -2,7 +2,7 @@
 #
 # watchdog.sh — Prüfungen alle 30 min, nur Alarm, keine Reparatur (Spec 5.5).
 #   --dry-run   alle Werte zeigen, nichts senden, keine Stempel; Exit 1 wenn ein Alarm anstünde
-# Alarm-Arten: TOKEN, TOKEN_LIVE, STALE, PUBLIC_STALE, YOUTUBE, FAILED, GH_AUTH, HEARTBEAT
+# Alarm-Arten: TOKEN, TOKEN_LIVE, STALE, PUBLIC_STALE, YOUTUBE, WEEKLY_STALE, FAILED, GH_AUTH, HEARTBEAT
 #
 set -uo pipefail
 LOG_TAG=watchdog
@@ -104,6 +104,22 @@ if [ -f "$YT" ]; then
   [ "$YT_H" -gt "$YOUTUBE_MAX_H" ] && raise YOUTUBE "youtube/data.json ist ${YT_H} h alt. journalctl -u ai-news-dashboard-youtube-fetch"
 else
   raise YOUTUBE "youtube/data.json fehlt"
+fi
+
+# 5b. Wochenlauf-Seiten (JOB=weekly, So 13:30): älter als WEEKLY_MAX_DAYS → WEEKLY_STALE
+WEEKLY_MAX_DAYS="${WEEKLY_MAX_DAYS:-9}"
+W_ACTIVE="$(systemctl show ai-news-dashboard-weekly.service -p ActiveState 2>/dev/null | sed -n "s/^ActiveState=//p" | head -1)"
+W_OLD=""
+for w in regulation coding-tools calendar extensions; do
+  wd="$(snapshot_date "$PROJECT_DIR/dashboards/$w/index.html")"
+  if [ -z "$wd" ] || [ "$(days_between "$wd" "$T")" -gt "$WEEKLY_MAX_DAYS" ]; then W_OLD="$W_OLD $w(${wd:-?})"; fi
+done
+if [ -n "$W_OLD" ]; then
+  log "Wochenseiten älter als $WEEKLY_MAX_DAYS Tage:$W_OLD"
+  case "$W_ACTIVE" in
+    active|activating) log "Wochenlauf aktiv — WEEKLY_STALE ausgesetzt" ;;
+    *) raise WEEKLY_STALE "Wochenseiten veraltet:$W_OLD. journalctl -u ai-news-dashboard-weekly" ;;
+  esac
 fi
 
 # 6. Unit failed (Sicherheitsnetz, falls OnFailure nicht griff)

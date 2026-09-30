@@ -23,6 +23,7 @@ for unit in \
   ai-news-dashboard-youtube-fetch.service \
   ai-news-dashboard-daily.timer \
   ai-news-dashboard-watchdog.timer \
+  ai-news-dashboard-weekly.timer \
 ; do
   state="$(systemctl is-active "$unit" 2>&1)"
   enabled="$(systemctl is-enabled "$unit" 2>&1)"
@@ -128,6 +129,25 @@ fi
 if ! grep -qs '^HEALTHCHECKS_URL=.\+' "$HOME/.config/ai-news-dashboard/alert.env" 2>/dev/null; then
   warn "kein healthchecks.io konfiguriert — externer Wächter ist nur der GitHub-Workflow (gh run list --workflow stale-check.yml)"
 fi
+
+hdr "weekly run (Regulatorik, Coding-Tools, Kalender, Extensions)"
+if [ -f "$STATE_DIR/last-run-weekly.json" ]; then
+  python3 - "$STATE_DIR/last-run-weekly.json" <<'PY'
+import json, sys
+d = json.load(open(sys.argv[1]))
+print(f"  · letzter Wochenlauf: {d.get('finished','?')} · Exit {d.get('exit','?')} ({d.get('kind','')}) · {d.get('duration_s','?')} s · {d.get('total_cost_usd') or '?'} USD")
+print(f"  · {d.get('status') or d.get('text','')}")
+PY
+  [ "$(python3 -c 'import json,sys;print(json.load(open(sys.argv[1]))["exit"])' "$STATE_DIR/last-run-weekly.json")" = 0 ] \
+    && ok "letzter Wochenlauf erfolgreich" || err "letzter Wochenlauf gescheitert — journalctl -u ai-news-dashboard-weekly -n 40"
+else
+  warn "noch kein last-run-weekly.json (kein Wochenlauf bisher)"
+fi
+w_next="$(systemctl show ai-news-dashboard-weekly.timer -p NextElapseUSecRealtime --value 2>/dev/null)"
+for w in regulation coding-tools calendar extensions; do
+  printf '    %-13s Stand %s\n' "$w" "$(grep -oE 'data-snapshot-date="[0-9-]+"' "$PROJECT_DIR/dashboards/$w/index.html" 2>/dev/null | head -1 | grep -oE '[0-9-]{10}')"
+done
+echo "    nächster Wochenlauf: ${w_next:-?}"
 
 hdr "summary"
 if [ "$errors" -eq 0 ]; then
