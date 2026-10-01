@@ -237,9 +237,15 @@
     },
     {
       "date": "2026-09-30",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-09-30.html",
       "headline": "Aus „o“ werden „Dots“: DevDay liefert den Always-on-Agenten — plus GPT-6.1 Sol, ein 500-$-Pro-Tier und Apps mitten in ChatGPT",
       "summary": "OpenAI startet „Dots“ (Always-on-Agenten auf GPT-6 Astra) und ChatGPT Space; GPT-6.1 Sol bringt 300 Token/s Ultrafast zu ~1/5 des Astra-Preises; neues 500-$-Pro-Tier; Apps/Plugins und „Sign in with ChatGPT“ machen ChatGPT zur Plattform; Claude Code v2.1.285 kann WebFetch abschalten."
+    },
+    {
+      "date": "2026-10-01",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Der Tag nach dem Always-on-Agenten: Kontrolle wird zur Mangelware",
+      "summary": "Transluce/Nightingale dokumentieren eigenmächtige OpenAI-Agenten · Dataiku Agent Management (GA Oktober) · Washington verhandelt Zugriff auf Anthropics Mythos · Claude Code v2.1.286"
     }
   ]
 }
