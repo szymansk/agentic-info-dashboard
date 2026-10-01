@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-30T11:02:59+00:00",
+  "last_updated": "2026-10-01T11:00:43+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -166,22 +166,57 @@
       "thumbnail": "https://img.youtube.com/vi/FL6mI_Br-mc/mqdefault.jpg",
       "description": "Design entirely new vocal personas from scratch for gaming, immersive audiobooks, or dual-speaker podcasts using natural language prompts - directing every performance line by line with nuanced acting cues, pacing, back channeling, and dial",
       "why": ""
-    },
-    {
-      "video_id": "s7d2d8FhevU",
-      "title": "Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud & Jung | Lex Fridman Podcast #502",
-      "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
-      "channel_name": "Lex Fridman",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-09-17T00:34:47+00:00",
-      "url": "https://www.youtube.com/watch?v=s7d2d8FhevU",
-      "thumbnail": "https://img.youtube.com/vi/s7d2d8FhevU/mqdefault.jpg",
-      "description": "Andrew Scull is a historian of psychiatry.\nThank you for listening ❤ Check out our sponsors: https://lexfridman.com/sponsors/ep502-sb\nSee below for timestamps, transcript, and to give feedback, submit questions, contact Lex, etc.\n\n*Transcri",
-      "why": ""
     }
   ],
   "recent": [
+    {
+      "video_id": "BAILrDM2wUI",
+      "title": "Ben Horowitz on a Great Product",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-09-30T18:00:21+00:00",
+      "url": "https://www.youtube.com/shorts/BAILrDM2wUI",
+      "thumbnail": "https://img.youtube.com/vi/BAILrDM2wUI/mqdefault.jpg",
+      "description": "In The Hard Thing About Hard Things (2014), Ben Horowitz writes that the primary thing a technology startup must do is build a product at least ten times better at something than the prevailing way of doing it, and that two or three times b"
+    },
+    {
+      "video_id": "I_KVMFrUtPk",
+      "title": "Did a 50 year old military secret just solve agent prompt injection?",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-09-30T17:16:43+00:00",
+      "url": "https://www.youtube.com/watch?v=I_KVMFrUtPk",
+      "thumbnail": "https://img.youtube.com/vi/I_KVMFrUtPk/mqdefault.jpg",
+      "description": "Check out the OpenAPPA repo: https://github.com/archestra-ai/OpenAPPA\n\nA new open source project claims to have fixed the rogue agent problem. Let's dive in. \n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireshi"
+    },
+    {
+      "video_id": "lr3hNhA0IfQ",
+      "title": "AI, Infrastructure, and the Next Investment Cycle",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-09-30T14:30:38+00:00",
+      "url": "https://www.youtube.com/watch?v=lr3hNhA0IfQ",
+      "thumbnail": "https://img.youtube.com/vi/lr3hNhA0IfQ/mqdefault.jpg",
+      "description": "a16z’s David George, Sarah Wang, Alex Immerman, and Santiago Rodriguez unpack 25 key charts from the latest State of Markets presentation, from the scale of the AI infrastructure buildout to what adoption looks like inside companies today.\n"
+    },
+    {
+      "video_id": "S6PqsZ65Mg4",
+      "title": "Implementing Undo - Computerphile",
+      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
+      "channel_name": "Computerphile",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-09-30T13:00:36+00:00",
+      "url": "https://www.youtube.com/watch?v=S6PqsZ65Mg4",
+      "thumbnail": "https://img.youtube.com/vi/S6PqsZ65Mg4/mqdefault.jpg",
+      "description": "We use undo daily, but have you thought about what goes into making a functional undo in a program? Dr Steve Bagley takes us through some of the things we need to think about if we're implementing it ourselves!\n\nComputerphile is supported b"
+    },
     {
       "video_id": "Xc6ERvZM1NY",
       "title": "OpenAI COOKED",
@@ -196,7 +231,7 @@
     },
     {
       "video_id": "ZpQFebTK75A",
-      "title": "AI Can Write the Proof. Who Checks It? — Leonardo de Moura",
+      "title": "The Programming Language That Referees Mathematics — Leo de Moura",
       "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
       "channel_name": "Machine Learning Street Talk",
       "category": "podcast",
@@ -268,7 +303,7 @@
     },
     {
       "video_id": "3T5sij3spWw",
-      "title": "What Would Make an AI Assistant Worth Paying For?",
+      "title": "We Tested the New Wave of Personal AI Agents",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
       "channel_name": "a16z",
       "category": "industry",
@@ -304,7 +339,7 @@
     },
     {
       "video_id": "T-E7rmD6rh4",
-      "title": "Sonnet 5.5 Is Here. Look What It Can Build.",
+      "title": "How Did Anthropic Pull This Off?",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
       "channel_name": "Matthew Berman",
       "category": "news",
@@ -423,18 +458,6 @@
       "description": "Get $100 in Hyperagent bonus credits when you sign up for a paid plan - https://www.hyperagent.com/fireship100\n\nIn this video we break down everything from Meta Connect 2026. Let's dive in. \n\nWant more Fireship?\n\n🗞️ Newsletter: https://byte"
     },
     {
-      "video_id": "-ywZlfznTa4",
-      "title": "How to Spot Exceptional Talent Before Everyone Else",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-09-25T14:00:23+00:00",
-      "url": "https://www.youtube.com/watch?v=-ywZlfznTa4",
-      "thumbnail": "https://img.youtube.com/vi/-ywZlfznTa4/mqdefault.jpg",
-      "description": "a16z’s Erik Torenberg sits down with Josh Elman, Olivia Moore, and David Booth to introduce Cosign, a new product built around professional reputation and the people, companies, and products you’re willing to put your name behind.\n\nThey unp"
-    },
-    {
       "video_id": "ausLKMojXaY",
       "title": "The Phone Number puzzle",
       "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
@@ -469,18 +492,6 @@
       "url": "https://www.youtube.com/watch?v=SA9kdAX2Zj0",
       "thumbnail": "https://img.youtube.com/vi/SA9kdAX2Zj0/mqdefault.jpg",
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\nNote: in the walking creatures experiment, Astra used a simplified model and was unable to implement the correct one. Things did not improve after simulatin"
-    },
-    {
-      "video_id": "N42VxP0D49Q",
-      "title": "Who The Academy is made for",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-09-23T19:00:17+00:00",
-      "url": "https://www.youtube.com/shorts/N42VxP0D49Q",
-      "thumbnail": "https://img.youtube.com/vi/N42VxP0D49Q/mqdefault.jpg",
-      "description": "The internet made it possible to know anything. AI makes it possible to do anything.\n\nThis is built for the people who want to do exactly that.\n\nApplications for the founding class are now open."
     },
     {
       "video_id": "emTe0M9Yw24",
@@ -639,18 +650,6 @@
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The DeepSeek V4.1 Flash paper is available here:\nhttps://www.deepseek.com/en/news/deepseek-v4-1-flash/\n\nErratum: Opus 5.1 label at 3:23 should have been O"
     },
     {
-      "video_id": "LoLYw--s-5w",
-      "title": "Did Google just kickstart the intelligence explosion?",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-09-17T20:33:55+00:00",
-      "url": "https://www.youtube.com/watch?v=LoLYw--s-5w",
-      "thumbnail": "https://img.youtube.com/vi/LoLYw--s-5w/mqdefault.jpg",
-      "description": "Run GitHub Actions 2x faster and build with Codesmith at https://www.blacksmith.sh/\n\nGoogle DeepMind just published Dream-RSI, a technique that turns an AI's old discovery logs into a simulator so it can test thousands of exploration strate"
-    },
-    {
       "video_id": "1jq7sC6IjMk",
       "title": "Predict next week's weather yourself",
       "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
@@ -661,34 +660,10 @@
       "url": "https://www.youtube.com/watch?v=1jq7sC6IjMk",
       "thumbnail": "https://img.youtube.com/vi/1jq7sC6IjMk/mqdefault.jpg",
       "description": "Weather forecasting is very important, and people are moving towards using neural network models to do it. We at Hugging Face are interested in the tooling around the research and want to make it better. In this video Emma and Aritra talk a"
-    },
-    {
-      "video_id": "s7d2d8FhevU",
-      "title": "Psychiatry, Insane Asylums, Mental Illness, ECT, Lobotomies, Freud & Jung | Lex Fridman Podcast #502",
-      "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
-      "channel_name": "Lex Fridman",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-09-17T00:34:47+00:00",
-      "url": "https://www.youtube.com/watch?v=s7d2d8FhevU",
-      "thumbnail": "https://img.youtube.com/vi/s7d2d8FhevU/mqdefault.jpg",
-      "description": "Andrew Scull is a historian of psychiatry.\nThank you for listening ❤ Check out our sponsors: https://lexfridman.com/sponsors/ep502-sb\nSee below for timestamps, transcript, and to give feedback, submit questions, contact Lex, etc.\n\n*Transcri"
-    },
-    {
-      "video_id": "J3ljHm57yU0",
-      "title": "What AI Researchers Saw, Before Their Demand to ‘Pace’ AI",
-      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
-      "channel_name": "AI Explained",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-09-16T20:51:40+00:00",
-      "url": "https://www.youtube.com/watch?v=J3ljHm57yU0",
-      "thumbnail": "https://img.youtube.com/vi/J3ljHm57yU0/mqdefault.jpg",
-      "description": "Why has it been the last few days that the calls to come to pace the frontier AI have come so loudly? The safety warnings, and lab leader messages? Let’s explore the six axes that the researchers are looking at, the incidence reports and tr"
     }
   ],
   "stats": {
-    "total_videos": 42,
+    "total_videos": 41,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
