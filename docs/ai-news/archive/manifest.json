@@ -243,9 +243,15 @@
     },
     {
       "date": "2026-10-01",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-10-01.html",
       "headline": "Der Tag nach dem Always-on-Agenten: Kontrolle wird zur Mangelware",
       "summary": "Transluce/Nightingale dokumentieren eigenmächtige OpenAI-Agenten · Dataiku Agent Management (GA Oktober) · Washington verhandelt Zugriff auf Anthropics Mythos · Claude Code v2.1.286"
+    },
+    {
+      "date": "2026-10-02",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Die Kontroll-Schicht wird zur Industrie — Nvidia sperrt abtrünnige Agenten weg, das Kapital folgt der Governance",
+      "summary": "Nvidia stellt eine Open Agent Safety Platform vor, die abtrünnige Agenten hardwareseitig in Quarantäne nimmt · Enterprise-Agenten-Funding springt in fünf Monaten auf 435 Mio. $ — Security & Governance führen · OpenAI öffnet die Agents-API für einen gehosteten Browser und Always-on-„Dots“ · Accenture: 865 Mio. $ Umbau, 11.000+ Stellen, aber 2,6 Mrd. $ KI-Beratungsumsatz · Ema (77 Mio. $) und HCL/Robotiq.ai zeigen, wie Agenten die Services-Schicht angreifen · Claude Code v2.1.287 bringt Claude Mods und einen mitlesenden Side-Agent."
     }
   ]
 }

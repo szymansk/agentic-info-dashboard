@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-01T11:00:43+00:00",
+  "last_updated": "2026-10-02T05:15:31+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,29 +116,42 @@
   ],
   "featured": [
     {
-      "video_id": "sKltfHvsDQM",
-      "title": "Build faster with Ultrafast",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-09-29T18:47:34+00:00",
-      "url": "https://www.youtube.com/watch?v=sKltfHvsDQM",
-      "thumbnail": "https://img.youtube.com/vi/sKltfHvsDQM/mqdefault.jpg",
-      "description": "Ultrafast is our fastest way to build with Astra yet: in Codex, it runs up to 8x faster than Astra Standard and 4x faster than Astra Fast.\n\nBring your ideas to life as fast as you can type them.",
-      "why": ""
-    },
-    {
-      "video_id": "R9momwXV9w4",
-      "title": "Opus 5.5: How Close Are We to Automated AI Research?",
+      "video_id": "_rtp1XzaP6Q",
+      "title": "OpenAI Security: Controlling Models is Now ‘Hell’",
       "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
       "channel_name": "AI Explained",
       "category": "news",
       "color": "#e0a857",
-      "published": "2026-09-24T22:51:54+00:00",
-      "url": "https://www.youtube.com/watch?v=R9momwXV9w4",
-      "thumbnail": "https://img.youtube.com/vi/R9momwXV9w4/mqdefault.jpg",
-      "description": "Not only is Opus 5.5 out, pushing the frontier of AI, it also tells us much about what is going on inside the labs, as they both warn about, and promise, Recursive Self Improvement, aka automated AI research. I cover the model (digging into",
+      "published": "2026-10-01T21:20:12+00:00",
+      "url": "https://www.youtube.com/watch?v=_rtp1XzaP6Q",
+      "thumbnail": "https://img.youtube.com/vi/_rtp1XzaP6Q/mqdefault.jpg",
+      "description": "This video is hard to summarise. A cracked cipher, an OpenAI security warning, Gemini 4 Argon, RSI paper (co-authored by a who’s who of AI), Lab White House commitments, new hacks emerging, ‘deep personas’, biology Kasparov competitions, an",
+      "why": ""
+    },
+    {
+      "video_id": "fHEIw5CcN5U",
+      "title": "The dots demo, take two | OpenAI DevDay 2026",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-01T17:20:52+00:00",
+      "url": "https://www.youtube.com/watch?v=fHEIw5CcN5U",
+      "thumbnail": "https://img.youtube.com/vi/fHEIw5CcN5U/mqdefault.jpg",
+      "description": "Meet dots, always-on AI agents that get to know what matters to you and take work off your plate.\n\nSee dots in action, from planning a trip to making sense of user feedback and catching up on Slack.\n\nhttps://openai.com/index/introducing-dot",
+      "why": ""
+    },
+    {
+      "video_id": "HIUzrxQxTtw",
+      "title": "From deepfakes to DNA: the science of watermarking AI",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_name": "Google DeepMind",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-01T16:37:46+00:00",
+      "url": "https://www.youtube.com/watch?v=HIUzrxQxTtw",
+      "thumbnail": "https://img.youtube.com/vi/HIUzrxQxTtw/mqdefault.jpg",
+      "description": "How do you know if what you're seeing is real? Professor Hannah Fry sits down with Pushmeet Kohli (VP of Science) and Jeremy Ratcliffe (Research Scientist) to break down SynthID, the watermarking technology expanding from text, images, and ",
       "why": ""
     },
     {
@@ -153,22 +166,117 @@
       "thumbnail": "https://img.youtube.com/vi/DdCEmlAydcw/mqdefault.jpg",
       "description": "Some of the biggest discoveries in biology started with someone noticing something strange in one of the many molecular machines found in nature. We’re introducing a new molecular biology research group and lab at Anthropic to see if Claude",
       "why": ""
+    }
+  ],
+  "recent": [
+    {
+      "video_id": "_rtp1XzaP6Q",
+      "title": "OpenAI Security: Controlling Models is Now ‘Hell’",
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "channel_name": "AI Explained",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-01T21:20:12+00:00",
+      "url": "https://www.youtube.com/watch?v=_rtp1XzaP6Q",
+      "thumbnail": "https://img.youtube.com/vi/_rtp1XzaP6Q/mqdefault.jpg",
+      "description": "This video is hard to summarise. A cracked cipher, an OpenAI security warning, Gemini 4 Argon, RSI paper (co-authored by a who’s who of AI), Lab White House commitments, new hacks emerging, ‘deep personas’, biology Kasparov competitions, an"
     },
     {
-      "video_id": "FL6mI_Br-mc",
-      "title": "Create your own voices with Gemini 3.8 text-to-speech",
+      "video_id": "MVRb03jb6Wg",
+      "title": "The most natural voice agent was a French voice speaking English",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-10-01T20:09:15+00:00",
+      "url": "https://www.youtube.com/shorts/MVRb03jb6Wg",
+      "thumbnail": "https://img.youtube.com/vi/MVRb03jb6Wg/mqdefault.jpg",
+      "description": "Shawn Wen of PolyAI on why voice agents should not sound generic. A regional flavour reads as human, and the most natural early voice agent was a French voice speaking English.\n\nTaken from our full interview with Shawn Wen (PolyAI) on Machi"
+    },
+    {
+      "video_id": "VoAPg8Fj6-c",
+      "title": "How a Voice Agent Learns the Rhythm of Conversation — Shawn Wen",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-10-01T20:00:18+00:00",
+      "url": "https://www.youtube.com/watch?v=VoAPg8Fj6-c",
+      "thumbnail": "https://img.youtube.com/vi/VoAPg8Fj6-c/mqdefault.jpg",
+      "description": "Tsung-Hsien (Shawn) Wen, CTO of PolyAI, tells Tim Scarfe why voice agents are harder than text agents. Voice adds time, and a good conversation depends on adapting to the person on the line, not just on reasoning to the best answer. Shawn d"
+    },
+    {
+      "video_id": "No-JPdFvYWU",
+      "title": "The one OpenAI announcement that can actually make you money...",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-10-01T19:34:14+00:00",
+      "url": "https://www.youtube.com/watch?v=No-JPdFvYWU",
+      "thumbnail": "https://img.youtube.com/vi/No-JPdFvYWU/mqdefault.jpg",
+      "description": "Try the faster, open-weight version of Jev at https://fastino.ai/. Use code: FIRESHIPFIVE to get free credits.\n\nIn this video we'll cover everything you missed at OpenAI Dev Day 2026. Let's dive in.\n\n#coding #programming\n\nWant more Fireship"
+    },
+    {
+      "video_id": "nCjCIR9TRAM",
+      "title": "Good Product, Less Features.",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-01T19:30:31+00:00",
+      "url": "https://www.youtube.com/shorts/nCjCIR9TRAM",
+      "thumbnail": "https://img.youtube.com/vi/nCjCIR9TRAM/mqdefault.jpg",
+      "description": "Tom Preston-Werner co-founded GitHub in 2008, while still working at Powerset, the search startup Microsoft bought that year. \n\nThis is his case against adding features. \n\nSource: Startup School 2012"
+    },
+    {
+      "video_id": "fHEIw5CcN5U",
+      "title": "The dots demo, take two | OpenAI DevDay 2026",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-01T17:20:52+00:00",
+      "url": "https://www.youtube.com/watch?v=fHEIw5CcN5U",
+      "thumbnail": "https://img.youtube.com/vi/fHEIw5CcN5U/mqdefault.jpg",
+      "description": "Meet dots, always-on AI agents that get to know what matters to you and take work off your plate.\n\nSee dots in action, from planning a trip to making sense of user feedback and catching up on Slack.\n\nhttps://openai.com/index/introducing-dot"
+    },
+    {
+      "video_id": "OODvXcQJyVo",
+      "title": "Muse from Meta Can Work Through Your To-Do List",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-01T16:59:24+00:00",
+      "url": "https://www.youtube.com/shorts/OODvXcQJyVo",
+      "thumbnail": "https://img.youtube.com/vi/OODvXcQJyVo/mqdefault.jpg",
+      "description": "Try these four tasks with Muse from Meta.\n\nYou can text Muse like a friend and ask it to do real work for you. Make a personalized birthday card, plan meals around your budget and what’s in your fridge, build a grocery list, or ask Muse to "
+    },
+    {
+      "video_id": "HIUzrxQxTtw",
+      "title": "From deepfakes to DNA: the science of watermarking AI",
       "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
       "channel_name": "Google DeepMind",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-09-23T15:23:38+00:00",
-      "url": "https://www.youtube.com/watch?v=FL6mI_Br-mc",
-      "thumbnail": "https://img.youtube.com/vi/FL6mI_Br-mc/mqdefault.jpg",
-      "description": "Design entirely new vocal personas from scratch for gaming, immersive audiobooks, or dual-speaker podcasts using natural language prompts - directing every performance line by line with nuanced acting cues, pacing, back channeling, and dial",
-      "why": ""
-    }
-  ],
-  "recent": [
+      "published": "2026-10-01T16:37:46+00:00",
+      "url": "https://www.youtube.com/watch?v=HIUzrxQxTtw",
+      "thumbnail": "https://img.youtube.com/vi/HIUzrxQxTtw/mqdefault.jpg",
+      "description": "How do you know if what you're seeing is real? Professor Hannah Fry sits down with Pushmeet Kohli (VP of Science) and Jeremy Ratcliffe (Research Scientist) to break down SynthID, the watermarking technology expanding from text, images, and "
+    },
+    {
+      "video_id": "bmDrbHOh7Bo",
+      "title": "Why One Internet Pioneer Thinks the Original Model Broke",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-01T16:00:34+00:00",
+      "url": "https://www.youtube.com/watch?v=bmDrbHOh7Bo",
+      "thumbnail": "https://img.youtube.com/vi/bmDrbHOh7Bo/mqdefault.jpg",
+      "description": "a16z’s Joel de la Garza sits down with DoxxNet founder Barrett Lyon to discuss what it would take to rebuild the internet around privacy, direct communication, and less dependence on centralized intermediaries.\n\nBarrett explains why he thin"
+    },
     {
       "video_id": "BAILrDM2wUI",
       "title": "Ben Horowitz on a Great Product",
@@ -290,18 +398,6 @@
       "description": "Dots are frontier intelligence that have your back. Powered by GPT‑6 Astra, they have their own cloud computer, learn from feedback over time, and can work towards your goals 24/7. Through our ecosystem of plugins, they can readily connect "
     },
     {
-      "video_id": "m8VkCbkFAKA",
-      "title": "Meet the builders of our time - the Codex Originals.",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-09-29T17:00:15+00:00",
-      "url": "https://www.youtube.com/watch?v=m8VkCbkFAKA",
-      "thumbnail": "https://img.youtube.com/vi/m8VkCbkFAKA/mqdefault.jpg",
-      "description": "These builders aren’t just writing code. They’re rewriting what’s possible."
-    },
-    {
       "video_id": "3T5sij3spWw",
       "title": "We Tested the New Wave of Personal AI Agents",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -374,18 +470,6 @@
       "description": "CodeRabbit Triage prioritizes all your team's pull requests for you. Try it free: https://coderabbit.link/fireship-014\n\nDHH told 1,200 Rails developers that writing code by hand is over... so let's find out which programming skills are actu"
     },
     {
-      "video_id": "Ut3LOjKNJaE",
-      "title": "How Jev Turns AI Into Software That Gets Things Done",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-09-28T14:30:07+00:00",
-      "url": "https://www.youtube.com/watch?v=Ut3LOjKNJaE",
-      "thumbnail": "https://img.youtube.com/vi/Ut3LOjKNJaE/mqdefault.jpg",
-      "description": "a16z’s Ben Horowitz and Martin Casado sit down with TypeSafe AI founder Diogo Almeida to ask a simple question: AI has become remarkably capable, so where is all the automation?\n\nDiogo argues that coding agents may help us write software fa"
-    },
-    {
       "video_id": "qUlfKYGP-vI",
       "title": "Reward hacking… or just fixing a bug? #podcast",
       "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
@@ -398,30 +482,6 @@
       "description": "Weco AI's research agent wrote a gigantic monkey patch to their eval script. Reward hacking? No: it was fixing a bug.\n\nZhengyao Jiang (co-founder and CEO, Weco AI) on why it's getting harder and harder for humans to tell the difference as a"
     },
     {
-      "video_id": "yB6_iFGTq9k",
-      "title": "Can Rewriting an AI Agent Bend the Intelligence Curve? - Zhengyao Jiang",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-09-26T19:32:30+00:00",
-      "url": "https://www.youtube.com/watch?v=yB6_iFGTq9k",
-      "thumbnail": "https://img.youtube.com/vi/yB6_iFGTq9k/mqdefault.jpg",
-      "description": "Weco let an AI coding agent rewrite the harness around another agent for eight days: its code, prompts and tools, while the underlying language model stayed fixed. Tim Scarfe asks Weco co-founder Zhengyao Jiang what the reported gains over "
-    },
-    {
-      "video_id": "TLJNJDf2XGo",
-      "title": "The Next Chapter of AI Is Inside Our Software",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-09-26T14:30:10+00:00",
-      "url": "https://www.youtube.com/watch?v=TLJNJDf2XGo",
-      "thumbnail": "https://img.youtube.com/vi/TLJNJDf2XGo/mqdefault.jpg",
-      "description": "Erik Torenberg sits down with Box CEO Aaron Levie, and a16z’s Martin Casado, and Steven Sinofsky to debate how the AI industry should think about safety, security, and regulation as increasingly capable agents move into the real world.\n\nThe"
-    },
-    {
       "video_id": "rgO5v8MFtFg",
       "title": "What People Are Building With Opus 5.5",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
@@ -432,18 +492,6 @@
       "url": "https://www.youtube.com/shorts/rgO5v8MFtFg",
       "thumbnail": "https://img.youtube.com/vi/rgO5v8MFtFg/mqdefault.jpg",
       "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
-      "video_id": "zICv3IJaAfQ",
-      "title": "DeepSeek is CRAZY",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-09-25T21:05:41+00:00",
-      "url": "https://www.youtube.com/shorts/zICv3IJaAfQ",
-      "thumbnail": "https://img.youtube.com/vi/zICv3IJaAfQ/mqdefault.jpg",
-      "description": "Explore DigitalOcean's model catalog: https://do.co/matthewberman #ad\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 "
     },
     {
       "video_id": "c1rPlzxSZ8E",
@@ -492,18 +540,6 @@
       "url": "https://www.youtube.com/watch?v=SA9kdAX2Zj0",
       "thumbnail": "https://img.youtube.com/vi/SA9kdAX2Zj0/mqdefault.jpg",
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\nNote: in the walking creatures experiment, Astra used a simplified model and was unable to implement the correct one. Things did not improve after simulatin"
-    },
-    {
-      "video_id": "emTe0M9Yw24",
-      "title": "A perfect model can still get causality backwards",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-09-23T18:09:12+00:00",
-      "url": "https://www.youtube.com/shorts/emTe0M9Yw24",
-      "thumbnail": "https://img.youtube.com/vi/emTe0M9Yw24/mqdefault.jpg",
-      "description": "Frank Hutter, co-founder and CEO of Prior Labs, on why a model that predicts perfectly can still point you to the wrong decision. If patients who get a medicine tend to have a disease, stopping the medicine will not cure it. Observing is no"
     },
     {
       "video_id": "DdCEmlAydcw",
@@ -590,18 +626,6 @@
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 Jev:\nhttps://typesafe.ai/blog/introducing-system-one-models-and-jev\n\nFull song: https://www.youtube.com/watch?v=4RtUJkjrKMI\n\nPrevious papers, implementati"
     },
     {
-      "video_id": "TbkUKCm3CHQ",
-      "title": "An ex-OpenAI researcher just deleted language from the LLM...",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-09-21T17:52:29+00:00",
-      "url": "https://www.youtube.com/watch?v=TbkUKCm3CHQ",
-      "thumbnail": "https://img.youtube.com/vi/TbkUKCm3CHQ/mqdefault.jpg",
-      "description": "Mux is the video API that translates audio and answers questions about your video. Get $50 in free credits: https://mux.com/fireship\n\nEx-OpenAI researcher Diogo Almeida spent two years in stealth building Jev, a \"System 1\" AI model that can"
-    },
-    {
       "video_id": "3V9CPisNs1g",
       "title": "Structured Output in the browser with Transformers.js 4.3",
       "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
@@ -648,22 +672,10 @@
       "url": "https://www.youtube.com/watch?v=vIHw_2VjSUw",
       "thumbnail": "https://img.youtube.com/vi/vIHw_2VjSUw/mqdefault.jpg",
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The DeepSeek V4.1 Flash paper is available here:\nhttps://www.deepseek.com/en/news/deepseek-v4-1-flash/\n\nErratum: Opus 5.1 label at 3:23 should have been O"
-    },
-    {
-      "video_id": "1jq7sC6IjMk",
-      "title": "Predict next week's weather yourself",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-09-17T11:12:05+00:00",
-      "url": "https://www.youtube.com/watch?v=1jq7sC6IjMk",
-      "thumbnail": "https://img.youtube.com/vi/1jq7sC6IjMk/mqdefault.jpg",
-      "description": "Weather forecasting is very important, and people are moving towards using neural network models to do it. We at Hugging Face are interested in the tooling around the research and want to make it better. In this video Emma and Aritra talk a"
     }
   ],
   "stats": {
-    "total_videos": 41,
+    "total_videos": 42,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
