@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-02T05:15:31+00:00",
+  "last_updated": "2026-10-02T11:04:34+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -169,6 +169,18 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "HU03WDFB_tQ",
+      "title": "Build Your Own Open-Source Dots with Pi and Telegram",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-02T05:47:34+00:00",
+      "url": "https://www.youtube.com/watch?v=HU03WDFB_tQ",
+      "thumbnail": "https://img.youtube.com/vi/HU03WDFB_tQ/mqdefault.jpg",
+      "description": "Build your own dots-style, always-on AI assistants with Pi and pi-gateway, using your choice of models on a VPS or another always-on machine. This tutorial walks through agent workspaces, skills, Google Workspace access, and a Telegram mess"
+    },
     {
       "video_id": "_rtp1XzaP6Q",
       "title": "OpenAI Security: Controlling Models is Now ‘Hell’",
@@ -660,18 +672,6 @@
       "url": "https://www.youtube.com/watch?v=Nbwv5wHQoj0",
       "thumbnail": "https://img.youtube.com/vi/Nbwv5wHQoj0/mqdefault.jpg",
       "description": "A beautiful puzzle that eluded AI, and the intuition it requires.\nCheck out our virtual career fair: https://3b1b.co/talent\nSee new videos early: https://3b1b.co/support\nAn equally valuable form of support is to simply share the videos.\nHom"
-    },
-    {
-      "video_id": "vIHw_2VjSUw",
-      "title": "DeepSeek’s Insane New Architecture",
-      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
-      "channel_name": "Two Minute Papers",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-09-18T07:03:46+00:00",
-      "url": "https://www.youtube.com/watch?v=vIHw_2VjSUw",
-      "thumbnail": "https://img.youtube.com/vi/vIHw_2VjSUw/mqdefault.jpg",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The DeepSeek V4.1 Flash paper is available here:\nhttps://www.deepseek.com/en/news/deepseek-v4-1-flash/\n\nErratum: Opus 5.1 label at 3:23 should have been O"
     }
   ],
   "stats": {
