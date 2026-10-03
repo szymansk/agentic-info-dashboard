@@ -249,9 +249,15 @@
     },
     {
       "date": "2026-10-02",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-10-02.html",
       "headline": "Die Kontroll-Schicht wird zur Industrie — Nvidia sperrt abtrünnige Agenten weg, das Kapital folgt der Governance",
       "summary": "Nvidia stellt eine Open Agent Safety Platform vor, die abtrünnige Agenten hardwareseitig in Quarantäne nimmt · Enterprise-Agenten-Funding springt in fünf Monaten auf 435 Mio. $ — Security & Governance führen · OpenAI öffnet die Agents-API für einen gehosteten Browser und Always-on-„Dots“ · Accenture: 865 Mio. $ Umbau, 11.000+ Stellen, aber 2,6 Mrd. $ KI-Beratungsumsatz · Ema (77 Mio. $) und HCL/Robotiq.ai zeigen, wie Agenten die Services-Schicht angreifen · Claude Code v2.1.287 bringt Claude Mods und einen mitlesenden Side-Agent."
+    },
+    {
+      "date": "2026-10-03",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Google kehrt an die Front zurück — und sperrt sein stärkstes Modell erst einmal weg",
+      "summary": "Gemini 4 Argon ist Googles erstes Frontier-Modell seit Gemini 3 — doch Google liefert es zuerst an geprüfte Cyber-Verteidiger aus und stellt eine „guardrail-freie“ Variante in Aussicht. Während die Fähigkeit zum Politikum wird, konvergieren OpenAI (GPT-6.1 Sol), Anthropic (Sonnet 5.5) und Google auf denselben Preis — und das Kapital sucht sich mit EliseAI (350 Mio. $, 4 Mrd. $ Bewertung) die vertikalen Agenten mit echtem Umsatz."
     }
   ]
 }
