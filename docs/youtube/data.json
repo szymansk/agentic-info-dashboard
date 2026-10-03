@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-02T11:04:34+00:00",
+  "last_updated": "2026-10-03T04:10:30+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -153,33 +153,20 @@
       "thumbnail": "https://img.youtube.com/vi/HIUzrxQxTtw/mqdefault.jpg",
       "description": "How do you know if what you're seeing is real? Professor Hannah Fry sits down with Pushmeet Kohli (VP of Science) and Jeremy Ratcliffe (Research Scientist) to break down SynthID, the watermarking technology expanding from text, images, and ",
       "why": ""
-    },
-    {
-      "video_id": "DdCEmlAydcw",
-      "title": "Inside Anthropic's molecular biology lab",
-      "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
-      "channel_name": "Anthropic",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-09-23T18:01:32+00:00",
-      "url": "https://www.youtube.com/watch?v=DdCEmlAydcw",
-      "thumbnail": "https://img.youtube.com/vi/DdCEmlAydcw/mqdefault.jpg",
-      "description": "Some of the biggest discoveries in biology started with someone noticing something strange in one of the many molecular machines found in nature. We’re introducing a new molecular biology research group and lab at Anthropic to see if Claude",
-      "why": ""
     }
   ],
   "recent": [
     {
-      "video_id": "HU03WDFB_tQ",
-      "title": "Build Your Own Open-Source Dots with Pi and Telegram",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-10-02T05:47:34+00:00",
-      "url": "https://www.youtube.com/watch?v=HU03WDFB_tQ",
-      "thumbnail": "https://img.youtube.com/vi/HU03WDFB_tQ/mqdefault.jpg",
-      "description": "Build your own dots-style, always-on AI assistants with Pi and pi-gateway, using your choice of models on a VPS or another always-on machine. This tutorial walks through agent workspaces, skills, Google Workspace access, and a Telegram mess"
+      "video_id": "OTQ-lFsq7zA",
+      "title": "Why AI Is Reinventing How Businesses Buy Everything",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-02T14:30:40+00:00",
+      "url": "https://www.youtube.com/watch?v=OTQ-lFsq7zA",
+      "thumbnail": "https://img.youtube.com/vi/OTQ-lFsq7zA/mqdefault.jpg",
+      "description": "a16z’s Seema Amble and Elena Burger sit down with Lio co-founder and CEO Vladimir Keil to ask where AI-native startups have an advantage when incumbent software companies already own the customer, the data, and the system of record.\n\nTheir "
     },
     {
       "video_id": "_rtp1XzaP6Q",
@@ -192,30 +179,6 @@
       "url": "https://www.youtube.com/watch?v=_rtp1XzaP6Q",
       "thumbnail": "https://img.youtube.com/vi/_rtp1XzaP6Q/mqdefault.jpg",
       "description": "This video is hard to summarise. A cracked cipher, an OpenAI security warning, Gemini 4 Argon, RSI paper (co-authored by a who’s who of AI), Lab White House commitments, new hacks emerging, ‘deep personas’, biology Kasparov competitions, an"
-    },
-    {
-      "video_id": "MVRb03jb6Wg",
-      "title": "The most natural voice agent was a French voice speaking English",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-10-01T20:09:15+00:00",
-      "url": "https://www.youtube.com/shorts/MVRb03jb6Wg",
-      "thumbnail": "https://img.youtube.com/vi/MVRb03jb6Wg/mqdefault.jpg",
-      "description": "Shawn Wen of PolyAI on why voice agents should not sound generic. A regional flavour reads as human, and the most natural early voice agent was a French voice speaking English.\n\nTaken from our full interview with Shawn Wen (PolyAI) on Machi"
-    },
-    {
-      "video_id": "VoAPg8Fj6-c",
-      "title": "How a Voice Agent Learns the Rhythm of Conversation — Shawn Wen",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-10-01T20:00:18+00:00",
-      "url": "https://www.youtube.com/watch?v=VoAPg8Fj6-c",
-      "thumbnail": "https://img.youtube.com/vi/VoAPg8Fj6-c/mqdefault.jpg",
-      "description": "Tsung-Hsien (Shawn) Wen, CTO of PolyAI, tells Tim Scarfe why voice agents are harder than text agents. Voice adds time, and a good conversation depends on adapting to the person on the line, not just on reasoning to the best answer. Shawn d"
     },
     {
       "video_id": "No-JPdFvYWU",
@@ -350,18 +313,6 @@
       "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
     },
     {
-      "video_id": "ZpQFebTK75A",
-      "title": "The Programming Language That Referees Mathematics — Leo de Moura",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-09-29T22:38:34+00:00",
-      "url": "https://www.youtube.com/watch?v=ZpQFebTK75A",
-      "thumbnail": "https://img.youtube.com/vi/ZpQFebTK75A/mqdefault.jpg",
-      "description": "Leonardo de Moura created Lean and co-created Z3. \n\n---\nThis episode is sponsored by Parallel.\nParallel, where agents find answers: web search, extraction and deep research APIs built for AI agents.\nStart free with the Parallel MCP server a"
-    },
-    {
       "video_id": "sKltfHvsDQM",
       "title": "Build faster with Ultrafast",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
@@ -410,42 +361,6 @@
       "description": "Dots are frontier intelligence that have your back. Powered by GPT‑6 Astra, they have their own cloud computer, learn from feedback over time, and can work towards your goals 24/7. Through our ecosystem of plugins, they can readily connect "
     },
     {
-      "video_id": "3T5sij3spWw",
-      "title": "We Tested the New Wave of Personal AI Agents",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-09-29T14:30:02+00:00",
-      "url": "https://www.youtube.com/watch?v=3T5sij3spWw",
-      "thumbnail": "https://img.youtube.com/vi/3T5sij3spWw/mqdefault.jpg",
-      "description": "a16z General Partner Anish Acharya sits down with Assistant Benchmark creator David Pawlan to unpack the sudden explosion of personal AI agents and what it will take for one to become part of everyday life.\n\nDavid has been testing dozens of"
-    },
-    {
-      "video_id": "tQ3nMI-anxU",
-      "title": "Why Deep Learning Failed on Tables for a Decade - Frank Hutter",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-09-29T09:50:26+00:00",
-      "url": "https://www.youtube.com/shorts/tQ3nMI-anxU",
-      "thumbnail": "https://img.youtube.com/vi/tQ3nMI-anxU/mqdefault.jpg",
-      "description": "Frank Hutter, co-founder of Prior Labs, on why deep learning struggled with tabular data for a decade: tables are messy and heterogeneous, hyped models like TabNet did not generalise to new datasets, and there was no ImageNet of tables. The"
-    },
-    {
-      "video_id": "yUyfHQBXSzs",
-      "title": "The Data Engineering Professional Certificate is now on DeepLearning.AI",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-09-29T05:51:45+00:00",
-      "url": "https://www.youtube.com/watch?v=yUyfHQBXSzs",
-      "thumbnail": "https://img.youtube.com/vi/yUyfHQBXSzs/mqdefault.jpg",
-      "description": "Learn More: https://bit.ly/3ViOXHF\n\nData underlies all modern AI systems, and engineers who know how to build the systems that store and serve it are in high demand. Our Data Engineering Professional Certificate, a 4-course program, is now "
-    },
-    {
       "video_id": "T-E7rmD6rh4",
       "title": "How Did Anthropic Pull This Off?",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
@@ -480,18 +395,6 @@
       "url": "https://www.youtube.com/watch?v=OuNKBjuV7A4",
       "thumbnail": "https://img.youtube.com/vi/OuNKBjuV7A4/mqdefault.jpg",
       "description": "CodeRabbit Triage prioritizes all your team's pull requests for you. Try it free: https://coderabbit.link/fireship-014\n\nDHH told 1,200 Rails developers that writing code by hand is over... so let's find out which programming skills are actu"
-    },
-    {
-      "video_id": "qUlfKYGP-vI",
-      "title": "Reward hacking… or just fixing a bug? #podcast",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-09-27T02:16:03+00:00",
-      "url": "https://www.youtube.com/shorts/qUlfKYGP-vI",
-      "thumbnail": "https://img.youtube.com/vi/qUlfKYGP-vI/mqdefault.jpg",
-      "description": "Weco AI's research agent wrote a gigantic monkey patch to their eval script. Reward hacking? No: it was fixing a bug.\n\nZhengyao Jiang (co-founder and CEO, Weco AI) on why it's getting harder and harder for humans to tell the difference as a"
     },
     {
       "video_id": "rgO5v8MFtFg",
@@ -554,18 +457,6 @@
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\nNote: in the walking creatures experiment, Astra used a simplified model and was unable to implement the correct one. Things did not improve after simulatin"
     },
     {
-      "video_id": "DdCEmlAydcw",
-      "title": "Inside Anthropic's molecular biology lab",
-      "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
-      "channel_name": "Anthropic",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-09-23T18:01:32+00:00",
-      "url": "https://www.youtube.com/watch?v=DdCEmlAydcw",
-      "thumbnail": "https://img.youtube.com/vi/DdCEmlAydcw/mqdefault.jpg",
-      "description": "Some of the biggest discoveries in biology started with someone noticing something strange in one of the many molecular machines found in nature. We’re introducing a new molecular biology research group and lab at Anthropic to see if Claude"
-    },
-    {
       "video_id": "ylO0DQeVEBQ",
       "title": "The most expensive 33 hours in WordPress history...",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -590,18 +481,6 @@
       "description": "Design entirely new vocal personas from scratch for gaming, immersive audiobooks, or dual-speaker podcasts using natural language prompts - directing every performance line by line with nuanced acting cues, pacing, back channeling, and dial"
     },
     {
-      "video_id": "uRGHx-1CqBQ",
-      "title": "Building AI Assistants with On-Device Memory",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-09-23T13:30:05+00:00",
-      "url": "https://www.youtube.com/watch?v=uRGHx-1CqBQ",
-      "thumbnail": "https://img.youtube.com/vi/uRGHx-1CqBQ/mqdefault.jpg",
-      "description": "Learn More: https://bit.ly/4AlVW2n\n\nA cloud-based assistant can remember what it sees, hears, and is told, but only by staying connected and sending that data to a remote server.\n\nIn our new short course, Building AI Assistants with On-Devi"
-    },
-    {
       "video_id": "giTmBaNGaHw",
       "title": "What the Labs Kept Secret: The German Wiki & RubyGems Hacks - Computerphile",
       "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
@@ -614,18 +493,6 @@
       "description": "The public thought the AI containment crisis started with Hugging Face. They were wrong.\n\nWe talk to Sydney von Arx of Nightingale Collective, the researcher who discovered that AI agents had already escaped their sandboxes months prior. Fr"
     },
     {
-      "video_id": "hy8UstR2NEg",
-      "title": "Full Course: Spec-Driven Development with Coding Agents",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-09-22T19:32:17+00:00",
-      "url": "https://www.youtube.com/watch?v=hy8UstR2NEg",
-      "thumbnail": "https://img.youtube.com/vi/hy8UstR2NEg/mqdefault.jpg",
-      "description": "Vibe coding is fast, but it often produces code that doesn't match what you asked for. Spec-driven development is the disciplined alternative: write a clear markdown spec defining what to build, and let your coding agent implement it.\n\nEarn"
-    },
-    {
       "video_id": "qBBRRsH0rQc",
       "title": "Yes, Jev Is Insane, But There's A Catch",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -636,49 +503,18 @@
       "url": "https://www.youtube.com/watch?v=qBBRRsH0rQc",
       "thumbnail": "https://img.youtube.com/vi/qBBRRsH0rQc/mqdefault.jpg",
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 Jev:\nhttps://typesafe.ai/blog/introducing-system-one-models-and-jev\n\nFull song: https://www.youtube.com/watch?v=4RtUJkjrKMI\n\nPrevious papers, implementati"
-    },
-    {
-      "video_id": "3V9CPisNs1g",
-      "title": "Structured Output in the browser with Transformers.js 4.3",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-09-20T05:04:32+00:00",
-      "url": "https://www.youtube.com/shorts/3V9CPisNs1g",
-      "thumbnail": "https://img.youtube.com/vi/3V9CPisNs1g/mqdefault.jpg",
-      "description": "Structured output is here. The new @huggingface/transformers-structured-output package hooks into token generation and makes sure every token follows your JSON Schema or regex.\n\nFull walkthrough in the linked video.\n\nnpm: https://www.npmjs."
-    },
-    {
-      "video_id": "bRQEWPA832A",
-      "title": "The last IMO problem AI could not solve",
-      "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
-      "channel_name": "3Blue1Brown",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-09-18T17:14:08+00:00",
-      "url": "https://www.youtube.com/shorts/bRQEWPA832A",
-      "thumbnail": "https://img.youtube.com/vi/bRQEWPA832A/mqdefault.jpg",
-      "description": "Full video: https://youtu.be/Nbwv5wHQoj0"
-    },
-    {
-      "video_id": "Nbwv5wHQoj0",
-      "title": "The last IMO problem AI could not solve",
-      "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
-      "channel_name": "3Blue1Brown",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-09-18T17:12:53+00:00",
-      "url": "https://www.youtube.com/watch?v=Nbwv5wHQoj0",
-      "thumbnail": "https://img.youtube.com/vi/Nbwv5wHQoj0/mqdefault.jpg",
-      "description": "A beautiful puzzle that eluded AI, and the intuition it requires.\nCheck out our virtual career fair: https://3b1b.co/talent\nSee new videos early: https://3b1b.co/support\nAn equally valuable form of support is to simply share the videos.\nHom"
     }
   ],
   "stats": {
-    "total_videos": 42,
+    "total_videos": 29,
     "total_channels": 16,
-    "successful_channels": 16,
-    "failed_channels": [],
+    "successful_channels": 12,
+    "failed_channels": [
+      "Machine Learning Street Talk",
+      "Anthropic",
+      "Hugging Face",
+      "DeepLearningAI"
+    ],
     "window_days": 14
   }
 }
