@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-03T11:02:08+00:00",
+  "last_updated": "2026-10-04T11:05:03+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -170,6 +170,18 @@
   ],
   "recent": [
     {
+      "video_id": "ekK8urKHPMQ",
+      "title": "Why Specialized AI Could Beat The God Model",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-03T14:30:34+00:00",
+      "url": "https://www.youtube.com/watch?v=ekK8urKHPMQ",
+      "thumbnail": "https://img.youtube.com/vi/ekK8urKHPMQ/mqdefault.jpg",
+      "description": "A16z’s Erik Torenberg sits down with OpenRouter’s Alex Atallah and Replit founder and CEO Amjad Masad to discuss why the future of AI may look less like one all-purpose model and more like an ecosystem of specialized models working together"
+    },
+    {
       "video_id": "OTQ-lFsq7zA",
       "title": "Why AI Is Reinventing How Businesses Buy Everything",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -324,18 +336,6 @@
       "url": "https://www.youtube.com/watch?v=I_KVMFrUtPk",
       "thumbnail": "https://img.youtube.com/vi/I_KVMFrUtPk/mqdefault.jpg",
       "description": "Check out the OpenAPPA repo: https://github.com/archestra-ai/OpenAPPA\n\nA new open source project claims to have fixed the rogue agent problem. Let's dive in. \n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireshi"
-    },
-    {
-      "video_id": "lr3hNhA0IfQ",
-      "title": "AI, Infrastructure, and the Next Investment Cycle",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-09-30T14:30:38+00:00",
-      "url": "https://www.youtube.com/watch?v=lr3hNhA0IfQ",
-      "thumbnail": "https://img.youtube.com/vi/lr3hNhA0IfQ/mqdefault.jpg",
-      "description": "a16z’s David George, Sarah Wang, Alex Immerman, and Santiago Rodriguez unpack 25 key charts from the latest State of Markets presentation, from the scale of the AI infrastructure buildout to what adoption looks like inside companies today.\n"
     },
     {
       "video_id": "S6PqsZ65Mg4",
@@ -636,22 +636,10 @@
       "url": "https://www.youtube.com/watch?v=qBBRRsH0rQc",
       "thumbnail": "https://img.youtube.com/vi/qBBRRsH0rQc/mqdefault.jpg",
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 Jev:\nhttps://typesafe.ai/blog/introducing-system-one-models-and-jev\n\nFull song: https://www.youtube.com/watch?v=4RtUJkjrKMI\n\nPrevious papers, implementati"
-    },
-    {
-      "video_id": "3V9CPisNs1g",
-      "title": "Structured Output in the browser with Transformers.js 4.3",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-09-20T05:04:32+00:00",
-      "url": "https://www.youtube.com/shorts/3V9CPisNs1g",
-      "thumbnail": "https://img.youtube.com/vi/3V9CPisNs1g/mqdefault.jpg",
-      "description": "Structured output is here. The new @huggingface/transformers-structured-output package hooks into token generation and makes sure every token follows your JSON Schema or regex.\n\nFull walkthrough in the linked video.\n\nnpm: https://www.npmjs."
     }
   ],
   "stats": {
-    "total_videos": 40,
+    "total_videos": 39,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
