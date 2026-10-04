@@ -255,9 +255,15 @@
     },
     {
       "date": "2026-10-03",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-10-03.html",
       "headline": "Google kehrt an die Front zurück — und sperrt sein stärkstes Modell erst einmal weg",
       "summary": "Gemini 4 Argon ist Googles erstes Frontier-Modell seit Gemini 3 — doch Google liefert es zuerst an geprüfte Cyber-Verteidiger aus und stellt eine „guardrail-freie“ Variante in Aussicht. Während die Fähigkeit zum Politikum wird, konvergieren OpenAI (GPT-6.1 Sol), Anthropic (Sonnet 5.5) und Google auf denselben Preis — und das Kapital sucht sich mit EliseAI (350 Mio. $, 4 Mrd. $ Bewertung) die vertikalen Agenten mit echtem Umsatz."
+    },
+    {
+      "date": "2026-10-04",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Die agentische Schicht zieht hinter die Firewall — self-hosted, open, governed",
+      "summary": "IBM Bob air-gapped für Banken & Behörden · DigitalOcean Managed Agents (microVM, governed tools) · Amazon Strands Decider 2B & Cloudflare Clef: open-weight Entscheider · Inworld kauft Ultravox · SAP/Capgemini: DACH erwartet viel, nur 4 % bereit · Claude Code v2.1.289"
     }
   ]
 }
