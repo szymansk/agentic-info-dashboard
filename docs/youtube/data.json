@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-04T11:05:03+00:00",
+  "last_updated": "2026-10-05T11:02:08+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -170,6 +170,42 @@
   ],
   "recent": [
     {
+      "video_id": "aCvrzhwUxg0",
+      "title": "The Current State of Consumer AI",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-05T10:55:10+00:00",
+      "url": "https://www.youtube.com/watch?v=aCvrzhwUxg0",
+      "thumbnail": "https://img.youtube.com/vi/aCvrzhwUxg0/mqdefault.jpg",
+      "description": "a16z Editorial Partner Elena Burger sits down with investing partners Olivia Moore and Josh Elman to unpack the seventh edition of a16z’s Top 100 Consumer AI Apps, including a new dimension this time: what consumers are actually paying for."
+    },
+    {
+      "video_id": "ZHVNTTKu9fU",
+      "title": "The Billion Dollar AI Advantage Is Disappearing",
+      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+      "channel_name": "Two Minute Papers",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-10-05T09:53:12+00:00",
+      "url": "https://www.youtube.com/watch?v=ZHVNTTKu9fU",
+      "thumbnail": "https://img.youtube.com/vi/ZHVNTTKu9fU/mqdefault.jpg",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 Sonnet 5.5: \nhttps://www.anthropic.com/claude-sonnet-5-5\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAd"
+    },
+    {
+      "video_id": "jo70OkhryIA",
+      "title": "DeepSeek Painted My Portrait",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-04T20:05:25+00:00",
+      "url": "https://www.youtube.com/shorts/jo70OkhryIA",
+      "thumbnail": "https://img.youtube.com/vi/jo70OkhryIA/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
       "video_id": "ekK8urKHPMQ",
       "title": "Why Specialized AI Could Beat The God Model",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -312,18 +348,6 @@
       "url": "https://www.youtube.com/watch?v=bmDrbHOh7Bo",
       "thumbnail": "https://img.youtube.com/vi/bmDrbHOh7Bo/mqdefault.jpg",
       "description": "a16z’s Joel de la Garza sits down with DoxxNet founder Barrett Lyon to discuss what it would take to rebuild the internet around privacy, direct communication, and less dependence on centralized intermediaries.\n\nBarrett explains why he thin"
-    },
-    {
-      "video_id": "BAILrDM2wUI",
-      "title": "Ben Horowitz on a Great Product",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-09-30T18:00:21+00:00",
-      "url": "https://www.youtube.com/shorts/BAILrDM2wUI",
-      "thumbnail": "https://img.youtube.com/vi/BAILrDM2wUI/mqdefault.jpg",
-      "description": "In The Hard Thing About Hard Things (2014), Ben Horowitz writes that the primary thing a technology startup must do is build a product at least ten times better at something than the prevailing way of doing it, and that two or three times b"
     },
     {
       "video_id": "I_KVMFrUtPk",
@@ -494,18 +518,6 @@
       "description": "Weco AI's research agent wrote a gigantic monkey patch to their eval script. Reward hacking? No: it was fixing a bug.\n\nZhengyao Jiang (co-founder and CEO, Weco AI) on why it's getting harder and harder for humans to tell the difference as a"
     },
     {
-      "video_id": "rgO5v8MFtFg",
-      "title": "What People Are Building With Opus 5.5",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-09-26T01:30:30+00:00",
-      "url": "https://www.youtube.com/shorts/rgO5v8MFtFg",
-      "thumbnail": "https://img.youtube.com/vi/rgO5v8MFtFg/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
       "video_id": "c1rPlzxSZ8E",
       "title": "Meta is pivoting again... everything you missed from Connect 2026",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -639,7 +651,7 @@
     }
   ],
   "stats": {
-    "total_videos": 39,
+    "total_videos": 40,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
