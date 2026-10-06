@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-05T11:02:08+00:00",
+  "last_updated": "2026-10-06T11:03:47+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,6 +116,19 @@
   ],
   "featured": [
     {
+      "video_id": "q0_JXcrx3jk",
+      "title": "Building a custom website to stay on top of business with ChatGPT",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-06T00:36:28+00:00",
+      "url": "https://www.youtube.com/shorts/q0_JXcrx3jk",
+      "thumbnail": "https://img.youtube.com/vi/q0_JXcrx3jk/mqdefault.jpg",
+      "description": "This furniture shop is popular. So popular that it's tough to keep track of all of the inbound requests. ChatGPT can fix that. Victor Nunez Rodriguez visited Philadelphia Table Company in Philly to help him build a tool to stay on top of it",
+      "why": ""
+    },
+    {
       "video_id": "_rtp1XzaP6Q",
       "title": "OpenAI Security: Controlling Models is Now ‘Hell’",
       "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
@@ -126,19 +139,6 @@
       "url": "https://www.youtube.com/watch?v=_rtp1XzaP6Q",
       "thumbnail": "https://img.youtube.com/vi/_rtp1XzaP6Q/mqdefault.jpg",
       "description": "This video is hard to summarise. A cracked cipher, an OpenAI security warning, Gemini 4 Argon, RSI paper (co-authored by a who’s who of AI), Lab White House commitments, new hacks emerging, ‘deep personas’, biology Kasparov competitions, an",
-      "why": ""
-    },
-    {
-      "video_id": "fHEIw5CcN5U",
-      "title": "The dots demo, take two | OpenAI DevDay 2026",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-01T17:20:52+00:00",
-      "url": "https://www.youtube.com/watch?v=fHEIw5CcN5U",
-      "thumbnail": "https://img.youtube.com/vi/fHEIw5CcN5U/mqdefault.jpg",
-      "description": "Meet dots, always-on AI agents that get to know what matters to you and take work off your plate.\n\nSee dots in action, from planning a trip to making sense of user feedback and catching up on Slack.\n\nhttps://openai.com/index/introducing-dot",
       "why": ""
     },
     {
@@ -169,6 +169,54 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "yrn7FqgVOW8",
+      "title": "Video Game Mashups: Minecraft and Mario in Elden Ring",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-06T08:13:55+00:00",
+      "url": "https://www.youtube.com/shorts/yrn7FqgVOW8",
+      "thumbnail": "https://img.youtube.com/vi/yrn7FqgVOW8/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "q0_JXcrx3jk",
+      "title": "Building a custom website to stay on top of business with ChatGPT",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-06T00:36:28+00:00",
+      "url": "https://www.youtube.com/shorts/q0_JXcrx3jk",
+      "thumbnail": "https://img.youtube.com/vi/q0_JXcrx3jk/mqdefault.jpg",
+      "description": "This furniture shop is popular. So popular that it's tough to keep track of all of the inbound requests. ChatGPT can fix that. Victor Nunez Rodriguez visited Philadelphia Table Company in Philly to help him build a tool to stay on top of it"
+    },
+    {
+      "video_id": "_5p1_TNSWqQ",
+      "title": "PewDiePie is setting AI free... and OpenAI is furious",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-10-05T20:34:44+00:00",
+      "url": "https://www.youtube.com/watch?v=_5p1_TNSWqQ",
+      "thumbnail": "https://img.youtube.com/vi/_5p1_TNSWqQ/mqdefault.jpg",
+      "description": "Namespace is actually the fastest way to run your GitHub Actions (and more). Try it for free - https://namespace.so/github-actions\n\nPewDiePie is building Ajax, an uncensored AI model he trained at home after OpenAI banned him twice for dist"
+    },
+    {
+      "video_id": "PUBc2G0Tj5E",
+      "title": "Meet the New Codex CLI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-05T18:29:08+00:00",
+      "url": "https://www.youtube.com/watch?v=PUBc2G0Tj5E",
+      "thumbnail": "https://img.youtube.com/vi/PUBc2G0Tj5E/mqdefault.jpg",
+      "description": "Take a look at the latest Codex CLI updates and the refreshed terminal experience. Follow a walkthrough of the new interface and ways to work with Codex."
+    },
     {
       "video_id": "aCvrzhwUxg0",
       "title": "The Current State of Consumer AI",
@@ -422,30 +470,6 @@
       "description": "Watch Sam Altman, Romain Huet, Tejal Patwardhan, and Holly Li announce and demo 20+ launches at OpenAI DevDay, including dots, ChatGPT Spaces, GPT-6.1 Sol, Astra Ultrafast, and more."
     },
     {
-      "video_id": "7Bv68f5szSU",
-      "title": "Meet the all new Codex Cloud",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-09-29T18:18:13+00:00",
-      "url": "https://www.youtube.com/watch?v=7Bv68f5szSU",
-      "thumbnail": "https://img.youtube.com/vi/7Bv68f5szSU/mqdefault.jpg",
-      "description": "Start a Codex task, close your laptop, and pick it up from your phone. See how to create a reusable cloud environment with your repositories, networking, and secrets, then share it with your team."
-    },
-    {
-      "video_id": "uXspbC2srEQ",
-      "title": "Introducing dots, always-on agents built to handle everything.",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-09-29T18:04:41+00:00",
-      "url": "https://www.youtube.com/watch?v=uXspbC2srEQ",
-      "thumbnail": "https://img.youtube.com/vi/uXspbC2srEQ/mqdefault.jpg",
-      "description": "Dots are frontier intelligence that have your back. Powered by GPT‑6 Astra, they have their own cloud computer, learn from feedback over time, and can work towards your goals 24/7. Through our ecosystem of plugins, they can readily connect "
-    },
-    {
       "video_id": "tQ3nMI-anxU",
       "title": "Why Deep Learning Failed on Tables for a Decade - Frank Hutter",
       "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
@@ -480,18 +504,6 @@
       "url": "https://www.youtube.com/watch?v=T-E7rmD6rh4",
       "thumbnail": "https://img.youtube.com/vi/T-E7rmD6rh4/mqdefault.jpg",
       "description": "Try CodeRabbit: https://coderabbit.link/matthew-berman-001\nUse code MATTHEWCR for a free CodeRabbit Pro Plus subscription, available to the first 50 first-time users.\n\nSonnet 5.5 projects\nCrownfall: https://saffron-flint-kkcm.here.now/\nBoun"
-    },
-    {
-      "video_id": "0NhtHVPQwt8",
-      "title": "What We Built With Sonnet 5.5",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-09-29T00:01:18+00:00",
-      "url": "https://www.youtube.com/shorts/0NhtHVPQwt8",
-      "thumbnail": "https://img.youtube.com/vi/0NhtHVPQwt8/mqdefault.jpg",
-      "description": "Play Crownfall, the Age of Empires-style game: https://saffron-flint-kkcm.here.now/\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/for"
     },
     {
       "video_id": "OuNKBjuV7A4",
@@ -578,18 +590,6 @@
       "description": "Some of the biggest discoveries in biology started with someone noticing something strange in one of the many molecular machines found in nature. We’re introducing a new molecular biology research group and lab at Anthropic to see if Claude"
     },
     {
-      "video_id": "ylO0DQeVEBQ",
-      "title": "The most expensive 33 hours in WordPress history...",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-09-23T17:17:22+00:00",
-      "url": "https://www.youtube.com/watch?v=ylO0DQeVEBQ",
-      "thumbnail": "https://img.youtube.com/vi/ylO0DQeVEBQ/mqdefault.jpg",
-      "description": "Greptile is the only AI code reviewer that actually runs your code. Try it for free: http://greptile.com/go/fireship\n\nAutomattic's board fired WordPress co-founder Matt Mullenweg while he was at Burning Man... 33 hours later, he replaced th"
-    },
-    {
       "video_id": "FL6mI_Br-mc",
       "title": "Create your own voices with Gemini 3.8 text-to-speech",
       "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
@@ -636,22 +636,10 @@
       "url": "https://www.youtube.com/watch?v=hy8UstR2NEg",
       "thumbnail": "https://img.youtube.com/vi/hy8UstR2NEg/mqdefault.jpg",
       "description": "Vibe coding is fast, but it often produces code that doesn't match what you asked for. Spec-driven development is the disciplined alternative: write a clear markdown spec defining what to build, and let your coding agent implement it.\n\nEarn"
-    },
-    {
-      "video_id": "qBBRRsH0rQc",
-      "title": "Yes, Jev Is Insane, But There's A Catch",
-      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
-      "channel_name": "Two Minute Papers",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-09-22T09:32:13+00:00",
-      "url": "https://www.youtube.com/watch?v=qBBRRsH0rQc",
-      "thumbnail": "https://img.youtube.com/vi/qBBRRsH0rQc/mqdefault.jpg",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 Jev:\nhttps://typesafe.ai/blog/introducing-system-one-models-and-jev\n\nFull song: https://www.youtube.com/watch?v=4RtUJkjrKMI\n\nPrevious papers, implementati"
     }
   ],
   "stats": {
-    "total_videos": 40,
+    "total_videos": 39,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
