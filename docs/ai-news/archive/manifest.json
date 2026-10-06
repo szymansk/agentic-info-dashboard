@@ -267,9 +267,15 @@
     },
     {
       "date": "2026-10-05",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-10-05.html",
       "headline": "Google zieht mit Gemini 4 Argon vor — doch der Preiskrieg bei $2/$10 ist die eigentliche Geschichte",
       "summary": "Gemini 4 Argon, GPT-6.1 Sol und Opus 5.5 konvergieren auf $2/$10 pro Mtok; Anthropics IPO-Prospekt legt die brutale Ökonomie offen; Agenten-Governance wird zum Enterprise-Thema."
+    },
+    {
+      "date": "2026-10-06",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Die Rechnung fürs Preis-Dumping: SoftBank schließt die $30-Mrd-Wette, Anthropic ringt ums Silizium",
+      "summary": "SoftBank hält nach dem finalen Tranche nun 13 % an OpenAI ($64,6 Mrd. kumuliert); Anthropic bricht den $7-Mrd-Kauf von MatX ab, treibt eigene Chips aber weiter; BaFin übernimmt die KI-Marktaufsicht unter dem EU AI Act."
     }
   ]
 }
