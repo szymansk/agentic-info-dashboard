@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-06T11:03:47+00:00",
+  "last_updated": "2026-10-07T11:01:17+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,16 @@
   ],
   "featured": [
     {
-      "video_id": "q0_JXcrx3jk",
-      "title": "Building a custom website to stay on top of business with ChatGPT",
+      "video_id": "FB6oCmrIj-Y",
+      "title": "Introducing the Decisions API",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-10-06T00:36:28+00:00",
-      "url": "https://www.youtube.com/shorts/q0_JXcrx3jk",
-      "thumbnail": "https://img.youtube.com/vi/q0_JXcrx3jk/mqdefault.jpg",
-      "description": "This furniture shop is popular. So popular that it's tough to keep track of all of the inbound requests. ChatGPT can fix that. Victor Nunez Rodriguez visited Philadelphia Table Company in Philly to help him build a tool to stay on top of it",
+      "published": "2026-10-06T21:33:36+00:00",
+      "url": "https://www.youtube.com/watch?v=FB6oCmrIj-Y",
+      "thumbnail": "https://img.youtube.com/vi/FB6oCmrIj-Y/mqdefault.jpg",
+      "description": "Introducing the Decisions API: a fast way to turn text and images into actions in your app. Give the model an input, define a question and the possible answers, and use its choice to decide what happens next.\n\nPowered by GPT-6 Luna, the Dec",
       "why": ""
     },
     {
@@ -169,6 +169,54 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "Hu1JOK6aXsI",
+      "title": "Mistral is BACK! (Le Chonk)",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-07T00:12:03+00:00",
+      "url": "https://www.youtube.com/watch?v=Hu1JOK6aXsI",
+      "thumbnail": "https://img.youtube.com/vi/Hu1JOK6aXsI/mqdefault.jpg",
+      "description": "Join the Frontier: https://forwardfuture.com/frontier-pass\nAlready a Member? Join for free: https://forwardfuture.com/frontier-pass/account/sign-in\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: ht"
+    },
+    {
+      "video_id": "FB6oCmrIj-Y",
+      "title": "Introducing the Decisions API",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-06T21:33:36+00:00",
+      "url": "https://www.youtube.com/watch?v=FB6oCmrIj-Y",
+      "thumbnail": "https://img.youtube.com/vi/FB6oCmrIj-Y/mqdefault.jpg",
+      "description": "Introducing the Decisions API: a fast way to turn text and images into actions in your app. Give the model an input, define a question and the possible answers, and use its choice to decide what happens next.\n\nPowered by GPT-6 Luna, the Dec"
+    },
+    {
+      "video_id": "C8eNLnnCmZ0",
+      "title": "The only reason why Instagram worked early on",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-06T20:00:10+00:00",
+      "url": "https://www.youtube.com/shorts/C8eNLnnCmZ0",
+      "thumbnail": "https://img.youtube.com/vi/C8eNLnnCmZ0/mqdefault.jpg",
+      "description": "Instagram turns 16 today. \n\nBefore Instagram, there was Burbn.\n\nSystrom named it after his taste for bourbon. It let you check in somewhere, post your plans, earn points for hanging out with friends, and share a photo.\n\nHe and Mike Krieger "
+    },
+    {
+      "video_id": "cJsHel27Z6M",
+      "title": "Building Cyber Defense for the Agentic Era",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-06T14:30:37+00:00",
+      "url": "https://www.youtube.com/watch?v=cJsHel27Z6M",
+      "thumbnail": "https://img.youtube.com/vi/cJsHel27Z6M/mqdefault.jpg",
+      "description": "a16z General Partner David George sits down with Armadin founder and CEO Kevin Mandia to discuss what happens to cybersecurity when attackers can operate at machine speed.\n\nAfter 30 years in security and building Mandiant, Kevin says AI con"
+    },
     {
       "video_id": "yrn7FqgVOW8",
       "title": "Video Game Mashups: Minecraft and Mario in Elden Ring",
@@ -338,18 +386,6 @@
       "description": "Try the faster, open-weight version of Jev at https://fastino.ai/. Use code: FIRESHIPFIVE to get free credits.\n\nIn this video we'll cover everything you missed at OpenAI Dev Day 2026. Let's dive in.\n\n#coding #programming\n\nWant more Fireship"
     },
     {
-      "video_id": "nCjCIR9TRAM",
-      "title": "Good Product, Less Features.",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-01T19:30:31+00:00",
-      "url": "https://www.youtube.com/shorts/nCjCIR9TRAM",
-      "thumbnail": "https://img.youtube.com/vi/nCjCIR9TRAM/mqdefault.jpg",
-      "description": "Tom Preston-Werner co-founded GitHub in 2008, while still working at Powerset, the search startup Microsoft bought that year. \n\nThis is his case against adding features. \n\nSource: Startup School 2012"
-    },
-    {
       "video_id": "fHEIw5CcN5U",
       "title": "The dots demo, take two | OpenAI DevDay 2026",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
@@ -384,18 +420,6 @@
       "url": "https://www.youtube.com/watch?v=HIUzrxQxTtw",
       "thumbnail": "https://img.youtube.com/vi/HIUzrxQxTtw/mqdefault.jpg",
       "description": "How do you know if what you're seeing is real? Professor Hannah Fry sits down with Pushmeet Kohli (VP of Science) and Jeremy Ratcliffe (Research Scientist) to break down SynthID, the watermarking technology expanding from text, images, and "
-    },
-    {
-      "video_id": "bmDrbHOh7Bo",
-      "title": "Why One Internet Pioneer Thinks the Original Model Broke",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-01T16:00:34+00:00",
-      "url": "https://www.youtube.com/watch?v=bmDrbHOh7Bo",
-      "thumbnail": "https://img.youtube.com/vi/bmDrbHOh7Bo/mqdefault.jpg",
-      "description": "a16z’s Joel de la Garza sits down with DoxxNet founder Barrett Lyon to discuss what it would take to rebuild the internet around privacy, direct communication, and less dependence on centralized intermediaries.\n\nBarrett explains why he thin"
     },
     {
       "video_id": "I_KVMFrUtPk",
@@ -458,18 +482,6 @@
       "description": "Ultrafast is our fastest way to build with Astra yet: in Codex, it runs up to 8x faster than Astra Standard and 4x faster than Astra Fast.\n\nBring your ideas to life as fast as you can type them."
     },
     {
-      "video_id": "Fls_onRviPM",
-      "title": "OpenAI DevDay 2026 Keynote (FULL)",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-09-29T18:42:29+00:00",
-      "url": "https://www.youtube.com/watch?v=Fls_onRviPM",
-      "thumbnail": "https://img.youtube.com/vi/Fls_onRviPM/mqdefault.jpg",
-      "description": "Watch Sam Altman, Romain Huet, Tejal Patwardhan, and Holly Li announce and demo 20+ launches at OpenAI DevDay, including dots, ChatGPT Spaces, GPT-6.1 Sol, Astra Ultrafast, and more."
-    },
-    {
       "video_id": "tQ3nMI-anxU",
       "title": "Why Deep Learning Failed on Tables for a Decade - Frank Hutter",
       "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
@@ -492,18 +504,6 @@
       "url": "https://www.youtube.com/watch?v=yUyfHQBXSzs",
       "thumbnail": "https://img.youtube.com/vi/yUyfHQBXSzs/mqdefault.jpg",
       "description": "Learn More: https://bit.ly/3ViOXHF\n\nData underlies all modern AI systems, and engineers who know how to build the systems that store and serve it are in high demand. Our Data Engineering Professional Certificate, a 4-course program, is now "
-    },
-    {
-      "video_id": "T-E7rmD6rh4",
-      "title": "How Did Anthropic Pull This Off?",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-09-29T05:04:38+00:00",
-      "url": "https://www.youtube.com/watch?v=T-E7rmD6rh4",
-      "thumbnail": "https://img.youtube.com/vi/T-E7rmD6rh4/mqdefault.jpg",
-      "description": "Try CodeRabbit: https://coderabbit.link/matthew-berman-001\nUse code MATTHEWCR for a free CodeRabbit Pro Plus subscription, available to the first 50 first-time users.\n\nSonnet 5.5 projects\nCrownfall: https://saffron-flint-kkcm.here.now/\nBoun"
     },
     {
       "video_id": "OuNKBjuV7A4",
@@ -624,22 +624,10 @@
       "url": "https://www.youtube.com/watch?v=giTmBaNGaHw",
       "thumbnail": "https://img.youtube.com/vi/giTmBaNGaHw/mqdefault.jpg",
       "description": "The public thought the AI containment crisis started with Hugging Face. They were wrong.\n\nWe talk to Sydney von Arx of Nightingale Collective, the researcher who discovered that AI agents had already escaped their sandboxes months prior. Fr"
-    },
-    {
-      "video_id": "hy8UstR2NEg",
-      "title": "Full Course: Spec-Driven Development with Coding Agents",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-09-22T19:32:17+00:00",
-      "url": "https://www.youtube.com/watch?v=hy8UstR2NEg",
-      "thumbnail": "https://img.youtube.com/vi/hy8UstR2NEg/mqdefault.jpg",
-      "description": "Vibe coding is fast, but it often produces code that doesn't match what you asked for. Spec-driven development is the disciplined alternative: write a clear markdown spec defining what to build, and let your coding agent implement it.\n\nEarn"
     }
   ],
   "stats": {
-    "total_videos": 39,
+    "total_videos": 38,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
