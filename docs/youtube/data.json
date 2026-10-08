@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-08T05:16:21+00:00",
+  "last_updated": "2026-10-08T11:03:26+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -156,6 +156,18 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "LfUgsSUdaX8",
+      "title": "Game of Thrones: Turing Edition | Akarsh Kumar on Core War",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-10-08T10:30:08+00:00",
+      "url": "https://www.youtube.com/shorts/LfUgsSUdaX8",
+      "thumbnail": "https://img.youtube.com/vi/LfUgsSUdaX8/mqdefault.jpg",
+      "description": "Akarsh Kumar wanted to see what would happen if you used LLMs to evolve small assembly programs that compete against each other. It's called Core War.\n\nIn his words: \"If you just try to zero-shot this language, it's terrible. But if you do "
+    },
     {
       "video_id": "PynQZyvtIk8",
       "title": "Reachy Mini - Yo It's Your Boy (music video)",
@@ -565,18 +577,6 @@
       "description": "CodeRabbit Triage prioritizes all your team's pull requests for you. Try it free: https://coderabbit.link/fireship-014\n\nDHH told 1,200 Rails developers that writing code by hand is over... so let's find out which programming skills are actu"
     },
     {
-      "video_id": "qUlfKYGP-vI",
-      "title": "Reward hacking… or just fixing a bug? #podcast",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-09-27T02:16:03+00:00",
-      "url": "https://www.youtube.com/shorts/qUlfKYGP-vI",
-      "thumbnail": "https://img.youtube.com/vi/qUlfKYGP-vI/mqdefault.jpg",
-      "description": "Weco AI's research agent wrote a gigantic monkey patch to their eval script. Reward hacking? No: it was fixing a bug.\n\nZhengyao Jiang (co-founder and CEO, Weco AI) on why it's getting harder and harder for humans to tell the difference as a"
-    },
-    {
       "video_id": "ausLKMojXaY",
       "title": "The Phone Number puzzle",
       "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
@@ -599,22 +599,10 @@
       "url": "https://www.youtube.com/watch?v=R9momwXV9w4",
       "thumbnail": "https://img.youtube.com/vi/R9momwXV9w4/mqdefault.jpg",
       "description": "Not only is Opus 5.5 out, pushing the frontier of AI, it also tells us much about what is going on inside the labs, as they both warn about, and promise, Recursive Self Improvement, aka automated AI research. I cover the model (digging into"
-    },
-    {
-      "video_id": "SA9kdAX2Zj0",
-      "title": "Claude Opus 5.5 AI: An Incredible Leap Forward",
-      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
-      "channel_name": "Two Minute Papers",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-09-24T08:40:55+00:00",
-      "url": "https://www.youtube.com/watch?v=SA9kdAX2Zj0",
-      "thumbnail": "https://img.youtube.com/vi/SA9kdAX2Zj0/mqdefault.jpg",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\nNote: in the walking creatures experiment, Astra used a simplified model and was unable to implement the correct one. Things did not improve after simulatin"
     }
   ],
   "stats": {
-    "total_videos": 38,
+    "total_videos": 37,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
