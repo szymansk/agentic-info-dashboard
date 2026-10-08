@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-07T11:01:17+00:00",
+  "last_updated": "2026-10-08T05:16:21+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,16 @@
   ],
   "featured": [
     {
-      "video_id": "FB6oCmrIj-Y",
-      "title": "Introducing the Decisions API",
+      "video_id": "IsL4dVezs18",
+      "title": "Introducing GPT-6 in ChatGPT with Intelligent UI",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-10-06T21:33:36+00:00",
-      "url": "https://www.youtube.com/watch?v=FB6oCmrIj-Y",
-      "thumbnail": "https://img.youtube.com/vi/FB6oCmrIj-Y/mqdefault.jpg",
-      "description": "Introducing the Decisions API: a fast way to turn text and images into actions in your app. Give the model an input, define a question and the possible answers, and use its choice to decide what happens next.\n\nPowered by GPT-6 Luna, the Dec",
+      "published": "2026-10-07T21:55:41+00:00",
+      "url": "https://www.youtube.com/watch?v=IsL4dVezs18",
+      "thumbnail": "https://img.youtube.com/vi/IsL4dVezs18/mqdefault.jpg",
+      "description": "ChatGPT just got a lot more visual—introducing Intelligent UI.\n\nIntelligent UI allows ChatGPT to answer quickly with fully interactive user interfaces that make everyday answers more visual. It makes learning complex topics easier, and it q",
       "why": ""
     },
     {
@@ -153,22 +153,153 @@
       "thumbnail": "https://img.youtube.com/vi/HIUzrxQxTtw/mqdefault.jpg",
       "description": "How do you know if what you're seeing is real? Professor Hannah Fry sits down with Pushmeet Kohli (VP of Science) and Jeremy Ratcliffe (Research Scientist) to break down SynthID, the watermarking technology expanding from text, images, and ",
       "why": ""
-    },
-    {
-      "video_id": "DdCEmlAydcw",
-      "title": "Inside Anthropic's molecular biology lab",
-      "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
-      "channel_name": "Anthropic",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-09-23T18:01:32+00:00",
-      "url": "https://www.youtube.com/watch?v=DdCEmlAydcw",
-      "thumbnail": "https://img.youtube.com/vi/DdCEmlAydcw/mqdefault.jpg",
-      "description": "Some of the biggest discoveries in biology started with someone noticing something strange in one of the many molecular machines found in nature. We’re introducing a new molecular biology research group and lab at Anthropic to see if Claude",
-      "why": ""
     }
   ],
   "recent": [
+    {
+      "video_id": "PynQZyvtIk8",
+      "title": "Reachy Mini - Yo It's Your Boy (music video)",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-08T03:17:14+00:00",
+      "url": "https://www.youtube.com/watch?v=PynQZyvtIk8",
+      "thumbnail": "https://img.youtube.com/vi/PynQZyvtIk8/mqdefault.jpg",
+      "description": "Get a Reachy Mini 🤓\nhttps://pollen-robotics.com/reachy-mini/\n\n---\n\nThe whole film is a web page: play it, scrub it, fork the code: https://huggingface.co/spaces/pollen-robotics/reachy-mini-yo-its-your-boy\n\nIn a world of big scary robots, on"
+    },
+    {
+      "video_id": "BsNHg6cNjZE",
+      "title": "12 Grok Bot Use Cases That Feel Illegal",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-07T23:08:41+00:00",
+      "url": "https://www.youtube.com/watch?v=BsNHg6cNjZE",
+      "thumbnail": "https://img.youtube.com/vi/BsNHg6cNjZE/mqdefault.jpg",
+      "description": "Check out Eight Sleep's Pod 6: https://www.eightsleep.com/matthewberman\nUse code 'MATTHEWBERMAN' for up to $200 off\n\nGrok Bot Templates and Prompts: https://app.box.com/s/6806pjhc3qt67x61ixk95t6385wks7zl \n\nJoin My Newsletter for Regular AI "
+    },
+    {
+      "video_id": "IsL4dVezs18",
+      "title": "Introducing GPT-6 in ChatGPT with Intelligent UI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-07T21:55:41+00:00",
+      "url": "https://www.youtube.com/watch?v=IsL4dVezs18",
+      "thumbnail": "https://img.youtube.com/vi/IsL4dVezs18/mqdefault.jpg",
+      "description": "ChatGPT just got a lot more visual—introducing Intelligent UI.\n\nIntelligent UI allows ChatGPT to answer quickly with fully interactive user interfaces that make everyday answers more visual. It makes learning complex topics easier, and it q"
+    },
+    {
+      "video_id": "LiNhqbetrbU",
+      "title": "Build Plugins for ChatGPT",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-07T21:34:02+00:00",
+      "url": "https://www.youtube.com/watch?v=LiNhqbetrbU",
+      "thumbnail": "https://img.youtube.com/vi/LiNhqbetrbU/mqdefault.jpg",
+      "description": "Explore plugin extensions through Meetings and OpenAI Developers. See how a custom interface can live beside a conversation and bring selected context into your work with ChatGPT."
+    },
+    {
+      "video_id": "_nmlHbSB8kM",
+      "title": "Stop Overpaying for Intelligence | DevDay 2026",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-07T21:10:51+00:00",
+      "url": "https://www.youtube.com/watch?v=_nmlHbSB8kM",
+      "thumbnail": "https://img.youtube.com/vi/_nmlHbSB8kM/mqdefault.jpg",
+      "description": "Cut AI costs while preserving quality. Learn to measure cost per completed task, choose models and reasoning effort, and use prompt caching, Programmatic Tool Calling, and the Batch API."
+    },
+    {
+      "video_id": "3glzJZ-_qB8",
+      "title": "Stack Overflow - From Idea to Product | DevDay 2026",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-07T21:10:48+00:00",
+      "url": "https://www.youtube.com/watch?v=3glzJZ-_qB8",
+      "thumbnail": "https://img.youtube.com/vi/3glzJZ-_qB8/mqdefault.jpg",
+      "description": "See how small teams at Stack Overflow used Codex to build Stack Overflow for Agents and reimagine Stack Internal. Take away lessons for accelerating R&D and bringing new products to market."
+    },
+    {
+      "video_id": "8804JYm81cc",
+      "title": "Higgsfield - Building Agents That Provision Their Own Compute | DevDay 2026",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-07T21:10:48+00:00",
+      "url": "https://www.youtube.com/watch?v=8804JYm81cc",
+      "thumbnail": "https://img.youtube.com/vi/8804JYm81cc/mqdefault.jpg",
+      "description": "Explore how Higgsfield agents choose models and provision their own compute. Learn when to use dedicated GPUs or hosted models, how to deliver predictable throughput, and where the approach can fail."
+    },
+    {
+      "video_id": "WrCjAAl9okA",
+      "title": "A $6.3 billion open-weight model just got embarrassed by the French...",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-10-07T20:24:27+00:00",
+      "url": "https://www.youtube.com/watch?v=WrCjAAl9okA",
+      "thumbnail": "https://img.youtube.com/vi/WrCjAAl9okA/mqdefault.jpg",
+      "description": "KERNEL is the simplest way to let your agents act on any website. Use code: FIRESHIP to get a free upgrade to the Hobbyist tier ($30 value) at https://kernel.sh/fireship\n\nMistral, Reflection AI, and Moonshot all made big moves in the open-w"
+    },
+    {
+      "video_id": "EItxPNgKOX4",
+      "title": "How to Find Nano Banana 2.1 in Google AI Studio",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-07T20:23:22+00:00",
+      "url": "https://www.youtube.com/shorts/EItxPNgKOX4",
+      "thumbnail": "https://img.youtube.com/vi/EItxPNgKOX4/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "dffaE-nftA4",
+      "title": "Building AI Assistants with On-Device Memory #aiagents #deeplearningai",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-07T15:15:01+00:00",
+      "url": "https://www.youtube.com/shorts/dffaE-nftA4",
+      "thumbnail": "https://img.youtube.com/vi/dffaE-nftA4/mqdefault.jpg",
+      "description": "No network connection. No remote server. Build an assistant whose memory never leaves the device in Building AI Assistants with On-Device Memory. Built in partnership with Qdrant and taught by Dylan Couzon.\n\nEnroll for free: https://www.dee"
+    },
+    {
+      "video_id": "Wkaw03p3BrM",
+      "title": "DeepMind's New AI Just Cracked The Code Of Life",
+      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+      "channel_name": "Two Minute Papers",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-10-07T13:29:33+00:00",
+      "url": "https://www.youtube.com/watch?v=Wkaw03p3BrM",
+      "thumbnail": "https://img.youtube.com/vi/Wkaw03p3BrM/mqdefault.jpg",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\nThank you Google DeepMind for the invite.\n\n📝 AlphaGenome Atlas is available here:\nhttps://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-p"
+    },
+    {
+      "video_id": "1E0ZoktFerQ",
+      "title": "HF Buckets: Upload Only What Changed with Xet",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-07T11:07:37+00:00",
+      "url": "https://www.youtube.com/watch?v=1E0ZoktFerQ",
+      "thumbnail": "https://img.youtube.com/vi/1E0ZoktFerQ/mqdefault.jpg",
+      "description": "If you work with large datasets, you're probably re-uploading the same bytes every time the data changes.\n\nIn this video I upload a 191 MB NYC taxi CSV to a Hugging Face Bucket, append 100 rows, and upload it again: Xet, Hugging Face's stor"
+    },
     {
       "video_id": "Hu1JOK6aXsI",
       "title": "Mistral is BACK! (Le Chonk)",
@@ -180,18 +311,6 @@
       "url": "https://www.youtube.com/watch?v=Hu1JOK6aXsI",
       "thumbnail": "https://img.youtube.com/vi/Hu1JOK6aXsI/mqdefault.jpg",
       "description": "Join the Frontier: https://forwardfuture.com/frontier-pass\nAlready a Member? Join for free: https://forwardfuture.com/frontier-pass/account/sign-in\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: ht"
-    },
-    {
-      "video_id": "FB6oCmrIj-Y",
-      "title": "Introducing the Decisions API",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-06T21:33:36+00:00",
-      "url": "https://www.youtube.com/watch?v=FB6oCmrIj-Y",
-      "thumbnail": "https://img.youtube.com/vi/FB6oCmrIj-Y/mqdefault.jpg",
-      "description": "Introducing the Decisions API: a fast way to turn text and images into actions in your app. Give the model an input, define a question and the possible answers, and use its choice to decide what happens next.\n\nPowered by GPT-6 Luna, the Dec"
     },
     {
       "video_id": "C8eNLnnCmZ0",
@@ -230,18 +349,6 @@
       "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
     },
     {
-      "video_id": "q0_JXcrx3jk",
-      "title": "Building a custom website to stay on top of business with ChatGPT",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-06T00:36:28+00:00",
-      "url": "https://www.youtube.com/shorts/q0_JXcrx3jk",
-      "thumbnail": "https://img.youtube.com/vi/q0_JXcrx3jk/mqdefault.jpg",
-      "description": "This furniture shop is popular. So popular that it's tough to keep track of all of the inbound requests. ChatGPT can fix that. Victor Nunez Rodriguez visited Philadelphia Table Company in Philly to help him build a tool to stay on top of it"
-    },
-    {
       "video_id": "_5p1_TNSWqQ",
       "title": "PewDiePie is setting AI free... and OpenAI is furious",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -252,18 +359,6 @@
       "url": "https://www.youtube.com/watch?v=_5p1_TNSWqQ",
       "thumbnail": "https://img.youtube.com/vi/_5p1_TNSWqQ/mqdefault.jpg",
       "description": "Namespace is actually the fastest way to run your GitHub Actions (and more). Try it for free - https://namespace.so/github-actions\n\nPewDiePie is building Ajax, an uncensored AI model he trained at home after OpenAI banned him twice for dist"
-    },
-    {
-      "video_id": "PUBc2G0Tj5E",
-      "title": "Meet the New Codex CLI",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-05T18:29:08+00:00",
-      "url": "https://www.youtube.com/watch?v=PUBc2G0Tj5E",
-      "thumbnail": "https://img.youtube.com/vi/PUBc2G0Tj5E/mqdefault.jpg",
-      "description": "Take a look at the latest Codex CLI updates and the refreshed terminal experience. Follow a walkthrough of the new interface and ways to work with Codex."
     },
     {
       "video_id": "aCvrzhwUxg0",
@@ -315,7 +410,7 @@
     },
     {
       "video_id": "OTQ-lFsq7zA",
-      "title": "Why AI Is Reinventing How Businesses Buy Everything",
+      "title": "Why Enterprise Software Is Being Rebuilt Around AI Agents",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
       "channel_name": "a16z",
       "category": "industry",
@@ -386,30 +481,6 @@
       "description": "Try the faster, open-weight version of Jev at https://fastino.ai/. Use code: FIRESHIPFIVE to get free credits.\n\nIn this video we'll cover everything you missed at OpenAI Dev Day 2026. Let's dive in.\n\n#coding #programming\n\nWant more Fireship"
     },
     {
-      "video_id": "fHEIw5CcN5U",
-      "title": "The dots demo, take two | OpenAI DevDay 2026",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-01T17:20:52+00:00",
-      "url": "https://www.youtube.com/watch?v=fHEIw5CcN5U",
-      "thumbnail": "https://img.youtube.com/vi/fHEIw5CcN5U/mqdefault.jpg",
-      "description": "Meet dots, always-on AI agents that get to know what matters to you and take work off your plate.\n\nSee dots in action, from planning a trip to making sense of user feedback and catching up on Slack.\n\nhttps://openai.com/index/introducing-dot"
-    },
-    {
-      "video_id": "OODvXcQJyVo",
-      "title": "Muse from Meta Can Work Through Your To-Do List",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-01T16:59:24+00:00",
-      "url": "https://www.youtube.com/shorts/OODvXcQJyVo",
-      "thumbnail": "https://img.youtube.com/vi/OODvXcQJyVo/mqdefault.jpg",
-      "description": "Try these four tasks with Muse from Meta.\n\nYou can text Muse like a friend and ask it to do real work for you. Make a personalized birthday card, plan meals around your budget and what’s in your fridge, build a grocery list, or ask Muse to "
-    },
-    {
       "video_id": "HIUzrxQxTtw",
       "title": "From deepfakes to DNA: the science of watermarking AI",
       "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
@@ -446,18 +517,6 @@
       "description": "We use undo daily, but have you thought about what goes into making a functional undo in a program? Dr Steve Bagley takes us through some of the things we need to think about if we're implementing it ourselves!\n\nComputerphile is supported b"
     },
     {
-      "video_id": "Xc6ERvZM1NY",
-      "title": "OpenAI COOKED",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-09-30T01:26:37+00:00",
-      "url": "https://www.youtube.com/watch?v=Xc6ERvZM1NY",
-      "thumbnail": "https://img.youtube.com/vi/Xc6ERvZM1NY/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
       "video_id": "ZpQFebTK75A",
       "title": "The Programming Language That Referees Mathematics — Leo de Moura",
       "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
@@ -468,18 +527,6 @@
       "url": "https://www.youtube.com/watch?v=ZpQFebTK75A",
       "thumbnail": "https://img.youtube.com/vi/ZpQFebTK75A/mqdefault.jpg",
       "description": "Leonardo de Moura created Lean and co-created Z3. \n\n---\nThis episode is sponsored by Parallel.\nParallel, where agents find answers: web search, extraction and deep research APIs built for AI agents.\nStart free with the Parallel MCP server a"
-    },
-    {
-      "video_id": "sKltfHvsDQM",
-      "title": "Build faster with Ultrafast",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-09-29T18:47:34+00:00",
-      "url": "https://www.youtube.com/watch?v=sKltfHvsDQM",
-      "thumbnail": "https://img.youtube.com/vi/sKltfHvsDQM/mqdefault.jpg",
-      "description": "Ultrafast is our fastest way to build with Astra yet: in Codex, it runs up to 8x faster than Astra Standard and 4x faster than Astra Fast.\n\nBring your ideas to life as fast as you can type them."
     },
     {
       "video_id": "tQ3nMI-anxU",
@@ -530,18 +577,6 @@
       "description": "Weco AI's research agent wrote a gigantic monkey patch to their eval script. Reward hacking? No: it was fixing a bug.\n\nZhengyao Jiang (co-founder and CEO, Weco AI) on why it's getting harder and harder for humans to tell the difference as a"
     },
     {
-      "video_id": "c1rPlzxSZ8E",
-      "title": "Meta is pivoting again... everything you missed from Connect 2026",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-09-25T19:22:32+00:00",
-      "url": "https://www.youtube.com/watch?v=c1rPlzxSZ8E",
-      "thumbnail": "https://img.youtube.com/vi/c1rPlzxSZ8E/mqdefault.jpg",
-      "description": "Get $100 in Hyperagent bonus credits when you sign up for a paid plan - https://www.hyperagent.com/fireship100\n\nIn this video we break down everything from Meta Connect 2026. Let's dive in. \n\nWant more Fireship?\n\n🗞️ Newsletter: https://byte"
-    },
-    {
       "video_id": "ausLKMojXaY",
       "title": "The Phone Number puzzle",
       "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
@@ -576,54 +611,6 @@
       "url": "https://www.youtube.com/watch?v=SA9kdAX2Zj0",
       "thumbnail": "https://img.youtube.com/vi/SA9kdAX2Zj0/mqdefault.jpg",
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\nNote: in the walking creatures experiment, Astra used a simplified model and was unable to implement the correct one. Things did not improve after simulatin"
-    },
-    {
-      "video_id": "DdCEmlAydcw",
-      "title": "Inside Anthropic's molecular biology lab",
-      "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
-      "channel_name": "Anthropic",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-09-23T18:01:32+00:00",
-      "url": "https://www.youtube.com/watch?v=DdCEmlAydcw",
-      "thumbnail": "https://img.youtube.com/vi/DdCEmlAydcw/mqdefault.jpg",
-      "description": "Some of the biggest discoveries in biology started with someone noticing something strange in one of the many molecular machines found in nature. We’re introducing a new molecular biology research group and lab at Anthropic to see if Claude"
-    },
-    {
-      "video_id": "FL6mI_Br-mc",
-      "title": "Create your own voices with Gemini 3.8 text-to-speech",
-      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
-      "channel_name": "Google DeepMind",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-09-23T15:23:38+00:00",
-      "url": "https://www.youtube.com/watch?v=FL6mI_Br-mc",
-      "thumbnail": "https://img.youtube.com/vi/FL6mI_Br-mc/mqdefault.jpg",
-      "description": "Design entirely new vocal personas from scratch for gaming, immersive audiobooks, or dual-speaker podcasts using natural language prompts - directing every performance line by line with nuanced acting cues, pacing, back channeling, and dial"
-    },
-    {
-      "video_id": "uRGHx-1CqBQ",
-      "title": "Building AI Assistants with On-Device Memory",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-09-23T13:30:05+00:00",
-      "url": "https://www.youtube.com/watch?v=uRGHx-1CqBQ",
-      "thumbnail": "https://img.youtube.com/vi/uRGHx-1CqBQ/mqdefault.jpg",
-      "description": "Learn More: https://bit.ly/4AlVW2n\n\nA cloud-based assistant can remember what it sees, hears, and is told, but only by staying connected and sending that data to a remote server.\n\nIn our new short course, Building AI Assistants with On-Devi"
-    },
-    {
-      "video_id": "giTmBaNGaHw",
-      "title": "What the Labs Kept Secret: The German Wiki & RubyGems Hacks - Computerphile",
-      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
-      "channel_name": "Computerphile",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-09-23T13:00:20+00:00",
-      "url": "https://www.youtube.com/watch?v=giTmBaNGaHw",
-      "thumbnail": "https://img.youtube.com/vi/giTmBaNGaHw/mqdefault.jpg",
-      "description": "The public thought the AI containment crisis started with Hugging Face. They were wrong.\n\nWe talk to Sydney von Arx of Nightingale Collective, the researcher who discovered that AI agents had already escaped their sandboxes months prior. Fr"
     }
   ],
   "stats": {

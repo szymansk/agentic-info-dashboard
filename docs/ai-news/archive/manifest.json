@@ -273,9 +273,15 @@
     },
     {
       "date": "2026-10-06",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-10-06.html",
       "headline": "Die Rechnung fürs Preis-Dumping: SoftBank schließt die $30-Mrd-Wette, Anthropic ringt ums Silizium",
       "summary": "SoftBank hält nach dem finalen Tranche nun 13 % an OpenAI ($64,6 Mrd. kumuliert); Anthropic bricht den $7-Mrd-Kauf von MatX ab, treibt eigene Chips aber weiter; BaFin übernimmt die KI-Marktaufsicht unter dem EU AI Act."
+    },
+    {
+      "date": "2026-10-08",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Der Boden fällt weiter: Haiku 5.5 macht das Volumen-Tier billig — und OpenAI sagt zum ersten Mal Nein",
+      "summary": "Claude Haiku 5.5 zu 0,10 $/0,50 $ pro Mtok, 1 Mio. Kontext · OpenAI zieht GPT-6.1 Astra nach Safety-Tests zurück (Scope/Authorization) · Instinct 1 Mrd. $ + FieldAI 700 Mio. $ bei je 10 Mrd. $ · Claude Code v2.1.294"
     }
   ]
 }
