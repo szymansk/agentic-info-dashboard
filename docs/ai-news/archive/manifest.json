@@ -279,9 +279,15 @@
     },
     {
       "date": "2026-10-08",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-10-08.html",
       "headline": "Der Boden fällt weiter: Haiku 5.5 macht das Volumen-Tier billig — und OpenAI sagt zum ersten Mal Nein",
       "summary": "Claude Haiku 5.5 zu 0,10 $/0,50 $ pro Mtok, 1 Mio. Kontext · OpenAI zieht GPT-6.1 Astra nach Safety-Tests zurück (Scope/Authorization) · Instinct 1 Mrd. $ + FieldAI 700 Mio. $ bei je 10 Mrd. $ · Claude Code v2.1.294"
+    },
+    {
+      "date": "2026-10-09",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Nach dem Preis die Oberfläche: Claude zieht in Google Workspace ein, während das Vertrauen zur Mangelware wird",
+      "summary": "Claude für Google Workspace (Docs/Sheets/Slides) in Public Beta · OpenAI publiziert 722 Mathe-Manuskripte aus unveröffentlichtem Modell (openai/math) · NYC-Hearing: Labs verweigern Guardrail-Garantie, Ex-OpenAI-Forscher warnen vor Monitoring-Verlust · Sonnet-5.5-Cache-Reads −50 % · Claude Code v2.1.295"
     }
   ]
 }
