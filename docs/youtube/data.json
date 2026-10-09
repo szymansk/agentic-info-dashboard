@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-09T04:11:54+00:00",
+  "last_updated": "2026-10-09T11:03:22+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,29 @@
   ],
   "featured": [
     {
-      "video_id": "RQfg-zo4R-g",
-      "title": "Production Monitoring with Codex: Grafana, Kubernetes, & Security",
+      "video_id": "MUHjyljBPHI",
+      "title": "How Sophos cuts threat response time by 96% with OpenAI Daybreak",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-10-08T21:35:18+00:00",
-      "url": "https://www.youtube.com/watch?v=RQfg-zo4R-g",
-      "thumbnail": "https://img.youtube.com/vi/RQfg-zo4R-g/mqdefault.jpg",
-      "description": "It’s 3 a.m. and checkout errors are climbing. What do you check first?\n\nJoin cohosts Tony Loehr and Anke Hao for three practical production-monitoring demos with Codex. Follow a checkout failure in Grafana, investigate a Kubernetes rollout ",
+      "published": "2026-10-09T08:37:55+00:00",
+      "url": "https://www.youtube.com/watch?v=MUHjyljBPHI",
+      "thumbnail": "https://img.youtube.com/vi/MUHjyljBPHI/mqdefault.jpg",
+      "description": "Sophos CTO John Peterson shares how agents built through OpenAI Daybreak combine AI with Sophos’s cybersecurity expertise to reduce average response time from 38 minutes to 89 seconds for cases using those agents. Hear how Sophos is helping",
+      "why": ""
+    },
+    {
+      "video_id": "_rtp1XzaP6Q",
+      "title": "OpenAI Security: Controlling Models is Now ‘Hell’",
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "channel_name": "AI Explained",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-01T21:20:12+00:00",
+      "url": "https://www.youtube.com/watch?v=_rtp1XzaP6Q",
+      "thumbnail": "https://img.youtube.com/vi/_rtp1XzaP6Q/mqdefault.jpg",
+      "description": "This video is hard to summarise. A cracked cipher, an OpenAI security warning, Gemini 4 Argon, RSI paper (co-authored by a who’s who of AI), Lab White House commitments, new hacks emerging, ‘deep personas’, biology Kasparov competitions, an",
       "why": ""
     },
     {
@@ -144,6 +157,30 @@
   ],
   "recent": [
     {
+      "video_id": "MUHjyljBPHI",
+      "title": "How Sophos cuts threat response time by 96% with OpenAI Daybreak",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-09T08:37:55+00:00",
+      "url": "https://www.youtube.com/watch?v=MUHjyljBPHI",
+      "thumbnail": "https://img.youtube.com/vi/MUHjyljBPHI/mqdefault.jpg",
+      "description": "Sophos CTO John Peterson shares how agents built through OpenAI Daybreak combine AI with Sophos’s cybersecurity expertise to reduce average response time from 38 minutes to 89 seconds for cases using those agents. Hear how Sophos is helping"
+    },
+    {
+      "video_id": "o_gf-LEaOWw",
+      "title": "Tesla Powerwall and Car Backup During an Outage",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-09T04:10:23+00:00",
+      "url": "https://www.youtube.com/shorts/o_gf-LEaOWw",
+      "thumbnail": "https://img.youtube.com/vi/o_gf-LEaOWw/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
       "video_id": "RQfg-zo4R-g",
       "title": "Production Monitoring with Codex: Grafana, Kubernetes, & Security",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
@@ -154,6 +191,18 @@
       "url": "https://www.youtube.com/watch?v=RQfg-zo4R-g",
       "thumbnail": "https://img.youtube.com/vi/RQfg-zo4R-g/mqdefault.jpg",
       "description": "It’s 3 a.m. and checkout errors are climbing. What do you check first?\n\nJoin cohosts Tony Loehr and Anke Hao for three practical production-monitoring demos with Codex. Follow a checkout failure in Grafana, investigate a Kubernetes rollout "
+    },
+    {
+      "video_id": "Mjz8Z2I0w_g",
+      "title": "What is the story of your company?",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-08T19:00:39+00:00",
+      "url": "https://www.youtube.com/shorts/Mjz8Z2I0w_g",
+      "thumbnail": "https://img.youtube.com/vi/Mjz8Z2I0w_g/mqdefault.jpg",
+      "description": "Ben Horowitz, co-founder of Andreessen Horowitz, on why a company's story and its strategy are the same thing.\n\nBefore a16z, he was co-founder and CEO of Loudcloud, later renamed Opsware, which Hewlett-Packard acquired for $1.6 billion in 2"
     },
     {
       "video_id": "OgjMGn4T6Ok",
@@ -192,16 +241,28 @@
       "description": "GPT‑6 in ChatGPT introduces Intelligent UI, a new capability that allows ChatGPT to answer quickly with fully interactive user interfaces that make everyday answers more visual, make learning complex topics easier and that can quickly creat"
     },
     {
-      "video_id": "BHQF1xl2ScU",
-      "title": "Play a game against GPT-6 with Intelligent UI",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-08T17:40:12+00:00",
-      "url": "https://www.youtube.com/shorts/BHQF1xl2ScU",
-      "thumbnail": "https://img.youtube.com/vi/BHQF1xl2ScU/mqdefault.jpg",
-      "description": "GPT‑6 in ChatGPT introduces Intelligent UI, a new capability that allows ChatGPT to answer quickly with fully interactive user interfaces that make everyday answers more visual, make learning complex topics easier and that can quickly creat"
+      "video_id": "QnxXx1FpnF8",
+      "title": "Mistral Large 4 Failed My Rubik's Cube Test",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-08T15:54:52+00:00",
+      "url": "https://www.youtube.com/shorts/QnxXx1FpnF8",
+      "thumbnail": "https://img.youtube.com/vi/QnxXx1FpnF8/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "rn_afJaPldg",
+      "title": "Building the Cloud for AI Agents | AWS CEO Matt Garman",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-08T14:30:17+00:00",
+      "url": "https://www.youtube.com/watch?v=rn_afJaPldg",
+      "thumbnail": "https://img.youtube.com/vi/rn_afJaPldg/mqdefault.jpg",
+      "description": "a16z’s Raghu Raghuram sits down with AWS CEO Matt Garman to discuss how AI is reshaping the cloud, from the needs of AI-native startups to infrastructure increasingly designed for agents.\n\nMatt explains how AWS is adapting as agents write c"
     },
     {
       "video_id": "W0jPTqIo5oE",
@@ -240,6 +301,30 @@
       "description": "Akarsh Kumar wanted to see what would happen if you used LLMs to evolve small assembly programs that compete against each other. It's called Core War.\n\nIn his words: \"If you just try to zero-shot this language, it's terrible. But if you do "
     },
     {
+      "video_id": "PynQZyvtIk8",
+      "title": "Reachy Mini - Yo It's Your Boy (music video)",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-08T03:17:14+00:00",
+      "url": "https://www.youtube.com/watch?v=PynQZyvtIk8",
+      "thumbnail": "https://img.youtube.com/vi/PynQZyvtIk8/mqdefault.jpg",
+      "description": "Get a Reachy Mini 🤓\nhttps://pollen-robotics.com/reachy-mini/\n\n---\n\nThe whole film is a web page: play it, scrub it, fork the code: https://huggingface.co/spaces/pollen-robotics/reachy-mini-yo-its-your-boy\n\nIn a world of big scary robots, on"
+    },
+    {
+      "video_id": "BsNHg6cNjZE",
+      "title": "12 Grok Bot Use Cases That Feel Illegal",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-07T23:08:41+00:00",
+      "url": "https://www.youtube.com/watch?v=BsNHg6cNjZE",
+      "thumbnail": "https://img.youtube.com/vi/BsNHg6cNjZE/mqdefault.jpg",
+      "description": "Check out Eight Sleep's Pod 6: https://www.eightsleep.com/matthewberman\nUse code 'MATTHEWBERMAN' for up to $200 off\n\nGrok Bot Templates and Prompts: https://app.box.com/s/6806pjhc3qt67x61ixk95t6385wks7zl \n\nJoin My Newsletter for Regular AI "
+    },
+    {
       "video_id": "WrCjAAl9okA",
       "title": "A $6.3 billion open-weight model just got embarrassed by the French...",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -250,6 +335,18 @@
       "url": "https://www.youtube.com/watch?v=WrCjAAl9okA",
       "thumbnail": "https://img.youtube.com/vi/WrCjAAl9okA/mqdefault.jpg",
       "description": "KERNEL is the simplest way to let your agents act on any website. Use code: FIRESHIP to get a free upgrade to the Hobbyist tier ($30 value) at https://kernel.sh/fireship\n\nMistral, Reflection AI, and Moonshot all made big moves in the open-w"
+    },
+    {
+      "video_id": "EItxPNgKOX4",
+      "title": "How to Find Nano Banana 2.1 in Google AI Studio",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-07T20:23:22+00:00",
+      "url": "https://www.youtube.com/shorts/EItxPNgKOX4",
+      "thumbnail": "https://img.youtube.com/vi/EItxPNgKOX4/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
     },
     {
       "video_id": "dffaE-nftA4",
@@ -276,6 +373,54 @@
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\nThank you Google DeepMind for the invite.\n\n📝 AlphaGenome Atlas is available here:\nhttps://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-p"
     },
     {
+      "video_id": "1E0ZoktFerQ",
+      "title": "HF Buckets: Upload Only What Changed with Xet",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-07T11:07:37+00:00",
+      "url": "https://www.youtube.com/watch?v=1E0ZoktFerQ",
+      "thumbnail": "https://img.youtube.com/vi/1E0ZoktFerQ/mqdefault.jpg",
+      "description": "If you work with large datasets, you're probably re-uploading the same bytes every time the data changes.\n\nIn this video I upload a 191 MB NYC taxi CSV to a Hugging Face Bucket, append 100 rows, and upload it again: Xet, Hugging Face's stor"
+    },
+    {
+      "video_id": "Hu1JOK6aXsI",
+      "title": "Mistral is BACK! (Le Chonk)",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-07T00:12:03+00:00",
+      "url": "https://www.youtube.com/watch?v=Hu1JOK6aXsI",
+      "thumbnail": "https://img.youtube.com/vi/Hu1JOK6aXsI/mqdefault.jpg",
+      "description": "Join the Frontier: https://forwardfuture.com/frontier-pass\nAlready a Member? Join for free: https://forwardfuture.com/frontier-pass/account/sign-in\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: ht"
+    },
+    {
+      "video_id": "C8eNLnnCmZ0",
+      "title": "The only reason why Instagram worked early on",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-06T20:00:10+00:00",
+      "url": "https://www.youtube.com/shorts/C8eNLnnCmZ0",
+      "thumbnail": "https://img.youtube.com/vi/C8eNLnnCmZ0/mqdefault.jpg",
+      "description": "Instagram turns 16 today. \n\nBefore Instagram, there was Burbn.\n\nSystrom named it after his taste for bourbon. It let you check in somewhere, post your plans, earn points for hanging out with friends, and share a photo.\n\nHe and Mike Krieger "
+    },
+    {
+      "video_id": "cJsHel27Z6M",
+      "title": "The Biggest Shift in Cybersecurity in 30 Years",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-06T14:30:37+00:00",
+      "url": "https://www.youtube.com/watch?v=cJsHel27Z6M",
+      "thumbnail": "https://img.youtube.com/vi/cJsHel27Z6M/mqdefault.jpg",
+      "description": "a16z General Partner David George sits down with Armadin founder and CEO Kevin Mandia to discuss what happens to cybersecurity when attackers can operate at machine speed.\n\nAfter 30 years in security and building Mandiant, Kevin says AI con"
+    },
+    {
       "video_id": "_5p1_TNSWqQ",
       "title": "PewDiePie is setting AI free... and OpenAI is furious",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -288,6 +433,18 @@
       "description": "Namespace is actually the fastest way to run your GitHub Actions (and more). Try it for free - https://namespace.so/github-actions\n\nPewDiePie is building Ajax, an uncensored AI model he trained at home after OpenAI banned him twice for dist"
     },
     {
+      "video_id": "aCvrzhwUxg0",
+      "title": "The Current State of Consumer AI",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-05T10:55:10+00:00",
+      "url": "https://www.youtube.com/watch?v=aCvrzhwUxg0",
+      "thumbnail": "https://img.youtube.com/vi/aCvrzhwUxg0/mqdefault.jpg",
+      "description": "a16z Editorial Partner Elena Burger sits down with investing partners Olivia Moore and Josh Elman to unpack the seventh edition of a16z’s Top 100 Consumer AI Apps, including a new dimension this time: what consumers are actually paying for."
+    },
+    {
       "video_id": "ZHVNTTKu9fU",
       "title": "The Billion Dollar AI Advantage Is Disappearing",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -298,6 +455,30 @@
       "url": "https://www.youtube.com/watch?v=ZHVNTTKu9fU",
       "thumbnail": "https://img.youtube.com/vi/ZHVNTTKu9fU/mqdefault.jpg",
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 Sonnet 5.5: \nhttps://www.anthropic.com/claude-sonnet-5-5\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAd"
+    },
+    {
+      "video_id": "HU03WDFB_tQ",
+      "title": "Build Your Own Open-Source Dots with Pi and Telegram",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-02T05:47:34+00:00",
+      "url": "https://www.youtube.com/watch?v=HU03WDFB_tQ",
+      "thumbnail": "https://img.youtube.com/vi/HU03WDFB_tQ/mqdefault.jpg",
+      "description": "Build your own dots-style, always-on AI assistants with Pi and pi-gateway, using your choice of models on a VPS or another always-on machine. This tutorial walks through agent workspaces, skills, Google Workspace access, and a Telegram mess"
+    },
+    {
+      "video_id": "_rtp1XzaP6Q",
+      "title": "OpenAI Security: Controlling Models is Now ‘Hell’",
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "channel_name": "AI Explained",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-01T21:20:12+00:00",
+      "url": "https://www.youtube.com/watch?v=_rtp1XzaP6Q",
+      "thumbnail": "https://img.youtube.com/vi/_rtp1XzaP6Q/mqdefault.jpg",
+      "description": "This video is hard to summarise. A cracked cipher, an OpenAI security warning, Gemini 4 Argon, RSI paper (co-authored by a who’s who of AI), Lab White House commitments, new hacks emerging, ‘deep personas’, biology Kasparov competitions, an"
     },
     {
       "video_id": "MVRb03jb6Wg",
@@ -406,22 +587,25 @@
       "url": "https://www.youtube.com/watch?v=OuNKBjuV7A4",
       "thumbnail": "https://img.youtube.com/vi/OuNKBjuV7A4/mqdefault.jpg",
       "description": "CodeRabbit Triage prioritizes all your team's pull requests for you. Try it free: https://coderabbit.link/fireship-014\n\nDHH told 1,200 Rails developers that writing code by hand is over... so let's find out which programming skills are actu"
+    },
+    {
+      "video_id": "ausLKMojXaY",
+      "title": "The Phone Number puzzle",
+      "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
+      "channel_name": "3Blue1Brown",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-09-25T13:35:02+00:00",
+      "url": "https://www.youtube.com/shorts/ausLKMojXaY",
+      "thumbnail": "https://img.youtube.com/vi/ausLKMojXaY/mqdefault.jpg",
+      "description": "Part of a monthly series of puzzles: https://momath.org/mindbenders/"
     }
   ],
   "stats": {
-    "total_videos": 22,
+    "total_videos": 37,
     "total_channels": 16,
-    "successful_channels": 8,
-    "failed_channels": [
-      "Andrej Karpathy",
-      "3Blue1Brown",
-      "Yannic Kilcher",
-      "AI Explained",
-      "Matthew Berman",
-      "Lex Fridman",
-      "Hugging Face",
-      "a16z"
-    ],
+    "successful_channels": 16,
+    "failed_channels": [],
     "window_days": 14
   }
 }
