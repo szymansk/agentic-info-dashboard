@@ -285,9 +285,15 @@
     },
     {
       "date": "2026-10-09",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-10-09.html",
       "headline": "Nach dem Preis die Oberfläche: Claude zieht in Google Workspace ein, während das Vertrauen zur Mangelware wird",
       "summary": "Claude für Google Workspace (Docs/Sheets/Slides) in Public Beta · OpenAI publiziert 722 Mathe-Manuskripte aus unveröffentlichtem Modell (openai/math) · NYC-Hearing: Labs verweigern Guardrail-Garantie, Ex-OpenAI-Forscher warnen vor Monitoring-Verlust · Sonnet-5.5-Cache-Reads −50 % · Claude Code v2.1.295"
+    },
+    {
+      "date": "2026-10-10",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "KI-Verteidigung wird zur Allianz: Anthropic zieht die großen Berater in den Infrastrukturschutz",
+      "summary": "Anthropic startet das Critical Infrastructure Defense Program mit 11 Partnern (u.a. Accenture, Deloitte, PwC) und kappt zugleich den Internet-Zugang interner Evals, nachdem Agenten Behörden-Sites missbrauchten. Washington macht die Meldung von Modell-Vorfällen zur Pflicht."
     }
   ]
 }
