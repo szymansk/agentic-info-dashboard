@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-10T04:11:11+00:00",
+  "last_updated": "2026-10-10T11:03:06+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -129,6 +129,19 @@
       "why": ""
     },
     {
+      "video_id": "_rtp1XzaP6Q",
+      "title": "OpenAI Security: Controlling Models is Now ‘Hell’",
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "channel_name": "AI Explained",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-01T21:20:12+00:00",
+      "url": "https://www.youtube.com/watch?v=_rtp1XzaP6Q",
+      "thumbnail": "https://img.youtube.com/vi/_rtp1XzaP6Q/mqdefault.jpg",
+      "description": "This video is hard to summarise. A cracked cipher, an OpenAI security warning, Gemini 4 Argon, RSI paper (co-authored by a who’s who of AI), Lab White House commitments, new hacks emerging, ‘deep personas’, biology Kasparov competitions, an",
+      "why": ""
+    },
+    {
       "video_id": "HIUzrxQxTtw",
       "title": "From deepfakes to DNA: the science of watermarking AI",
       "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
@@ -143,6 +156,18 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "615B5nyMFPk",
+      "title": "What Most People Get Wrong About Evolution | Akarsh Kumar",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-10-10T04:31:57+00:00",
+      "url": "https://www.youtube.com/watch?v=615B5nyMFPk",
+      "thumbnail": "https://img.youtube.com/vi/615B5nyMFPk/mqdefault.jpg",
+      "description": "A lot of people in AI treat evolution as a dumb fallback, basically random search for when you can't take a gradient. Akarsh Kumar thinks that is wrong. Selection hangs on to partial solutions, so mutations only need to be useful about 1% o"
+    },
     {
       "video_id": "TqxHhuOve2Q",
       "title": "AI Is Recreating Photoshop and Other Adobe Apps",
@@ -312,6 +337,18 @@
       "description": "Akarsh Kumar wanted to see what would happen if you used LLMs to evolve small assembly programs that compete against each other. It's called Core War.\n\nIn his words: \"If you just try to zero-shot this language, it's terrible. But if you do "
     },
     {
+      "video_id": "PynQZyvtIk8",
+      "title": "Reachy Mini - Yo It's Your Boy (music video)",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-08T03:17:14+00:00",
+      "url": "https://www.youtube.com/watch?v=PynQZyvtIk8",
+      "thumbnail": "https://img.youtube.com/vi/PynQZyvtIk8/mqdefault.jpg",
+      "description": "Get a Reachy Mini 🤓\nhttps://pollen-robotics.com/reachy-mini/\n\n---\n\nThe whole film is a web page: play it, scrub it, fork the code: https://huggingface.co/spaces/pollen-robotics/reachy-mini-yo-its-your-boy\n\nIn a world of big scary robots, on"
+    },
+    {
       "video_id": "BsNHg6cNjZE",
       "title": "12 Grok Bot Use Cases That Feel Illegal",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
@@ -372,6 +409,18 @@
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\nThank you Google DeepMind for the invite.\n\n📝 AlphaGenome Atlas is available here:\nhttps://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-p"
     },
     {
+      "video_id": "1E0ZoktFerQ",
+      "title": "HF Buckets: Upload Only What Changed with Xet",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-07T11:07:37+00:00",
+      "url": "https://www.youtube.com/watch?v=1E0ZoktFerQ",
+      "thumbnail": "https://img.youtube.com/vi/1E0ZoktFerQ/mqdefault.jpg",
+      "description": "If you work with large datasets, you're probably re-uploading the same bytes every time the data changes.\n\nIn this video I upload a 191 MB NYC taxi CSV to a Hugging Face Bucket, append 100 rows, and upload it again: Xet, Hugging Face's stor"
+    },
+    {
       "video_id": "C8eNLnnCmZ0",
       "title": "The only reason why Instagram worked early on",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -418,6 +467,30 @@
       "url": "https://www.youtube.com/watch?v=ZHVNTTKu9fU",
       "thumbnail": "https://img.youtube.com/vi/ZHVNTTKu9fU/mqdefault.jpg",
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 Sonnet 5.5: \nhttps://www.anthropic.com/claude-sonnet-5-5\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAd"
+    },
+    {
+      "video_id": "HU03WDFB_tQ",
+      "title": "Build Your Own Open-Source Dots with Pi and Telegram",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-02T05:47:34+00:00",
+      "url": "https://www.youtube.com/watch?v=HU03WDFB_tQ",
+      "thumbnail": "https://img.youtube.com/vi/HU03WDFB_tQ/mqdefault.jpg",
+      "description": "Build your own dots-style, always-on AI assistants with Pi and pi-gateway, using your choice of models on a VPS or another always-on machine. This tutorial walks through agent workspaces, skills, Google Workspace access, and a Telegram mess"
+    },
+    {
+      "video_id": "_rtp1XzaP6Q",
+      "title": "OpenAI Security: Controlling Models is Now ‘Hell’",
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "channel_name": "AI Explained",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-01T21:20:12+00:00",
+      "url": "https://www.youtube.com/watch?v=_rtp1XzaP6Q",
+      "thumbnail": "https://img.youtube.com/vi/_rtp1XzaP6Q/mqdefault.jpg",
+      "description": "This video is hard to summarise. A cracked cipher, an OpenAI security warning, Gemini 4 Argon, RSI paper (co-authored by a who’s who of AI), Lab White House commitments, new hacks emerging, ‘deep personas’, biology Kasparov competitions, an"
     },
     {
       "video_id": "MVRb03jb6Wg",
@@ -492,18 +565,6 @@
       "description": "We use undo daily, but have you thought about what goes into making a functional undo in a program? Dr Steve Bagley takes us through some of the things we need to think about if we're implementing it ourselves!\n\nComputerphile is supported b"
     },
     {
-      "video_id": "ZpQFebTK75A",
-      "title": "The Programming Language That Referees Mathematics — Leo de Moura",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-09-29T22:38:34+00:00",
-      "url": "https://www.youtube.com/watch?v=ZpQFebTK75A",
-      "thumbnail": "https://img.youtube.com/vi/ZpQFebTK75A/mqdefault.jpg",
-      "description": "Leonardo de Moura created Lean and co-created Z3. \n\n---\nThis episode is sponsored by Parallel.\nParallel, where agents find answers: web search, extraction and deep research APIs built for AI agents.\nStart free with the Parallel MCP server a"
-    },
-    {
       "video_id": "yUyfHQBXSzs",
       "title": "The Data Engineering Professional Certificate is now on DeepLearning.AI",
       "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
@@ -529,13 +590,10 @@
     }
   ],
   "stats": {
-    "total_videos": 32,
+    "total_videos": 36,
     "total_channels": 16,
-    "successful_channels": 14,
-    "failed_channels": [
-      "AI Explained",
-      "Hugging Face"
-    ],
+    "successful_channels": 16,
+    "failed_channels": [],
     "window_days": 14
   }
 }
