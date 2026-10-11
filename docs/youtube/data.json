@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-10T11:03:06+00:00",
+  "last_updated": "2026-10-11T11:03:41+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,16 @@
   ],
   "featured": [
     {
-      "video_id": "p5KxBTUncoE",
-      "title": "Set up your dot in the ChatGPT mobile app",
+      "video_id": "Ju-JyxDgV7g",
+      "title": "How Oracle Uses Codex to Help Business Users Get Answers",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-10-09T19:13:03+00:00",
-      "url": "https://www.youtube.com/watch?v=p5KxBTUncoE",
-      "thumbnail": "https://img.youtube.com/vi/p5KxBTUncoE/mqdefault.jpg",
-      "description": "You can now create a dot from the ChatGPT mobile app. Set up your dot, edit the name, customize the avatar, and set your dot to be the first conversation you see when you open the ChatGPT app. \n\nLearn more about dots here: https://learn.cha",
+      "published": "2026-10-10T21:40:25+00:00",
+      "url": "https://www.youtube.com/watch?v=Ju-JyxDgV7g",
+      "thumbnail": "https://img.youtube.com/vi/Ju-JyxDgV7g/mqdefault.jpg",
+      "description": "Richard Lam, Group Vice President at Oracle Applications Lab, shares how his team uses Codex to help business users get answers from company data. By describing the outcome they want, users can get an analysis, a report, or an application, ",
       "why": ""
     },
     {
@@ -156,6 +156,42 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "DVRMDoYhVBI",
+      "title": "AI Coding Is a Slot Machine: Loss Disguised as a Win | Jeremy Howard",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-10-11T09:19:59+00:00",
+      "url": "https://www.youtube.com/shorts/DVRMDoYhVBI",
+      "thumbnail": "https://img.youtube.com/vi/DVRMDoYhVBI/mqdefault.jpg",
+      "description": "Jeremy Howard, co-founder of fast.ai, on why AI-assisted coding works like a slot machine: you craft the prompt, pull the lever, and the occasional win feels like control. In his words: \"It's got all these hallmarks of loss disguised as a w"
+    },
+    {
+      "video_id": "Ju-JyxDgV7g",
+      "title": "How Oracle Uses Codex to Help Business Users Get Answers",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-10T21:40:25+00:00",
+      "url": "https://www.youtube.com/watch?v=Ju-JyxDgV7g",
+      "thumbnail": "https://img.youtube.com/vi/Ju-JyxDgV7g/mqdefault.jpg",
+      "description": "Richard Lam, Group Vice President at Oracle Applications Lab, shares how his team uses Codex to help business users get answers from company data. By describing the outcome they want, users can get an analysis, a report, or an application, "
+    },
+    {
+      "video_id": "cX2kD2yQf88",
+      "title": "Everything has been solved",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-10T18:42:01+00:00",
+      "url": "https://www.youtube.com/watch?v=cX2kD2yQf88",
+      "thumbnail": "https://img.youtube.com/vi/cX2kD2yQf88/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
     {
       "video_id": "615B5nyMFPk",
       "title": "What Most People Get Wrong About Evolution | Akarsh Kumar",
@@ -265,18 +301,6 @@
       "description": "Ben Horowitz, co-founder of Andreessen Horowitz, on why a company's story and its strategy are the same thing.\n\nBefore a16z, he was co-founder and CEO of Loudcloud, later renamed Opsware, which Hewlett-Packard acquired for $1.6 billion in 2"
     },
     {
-      "video_id": "OgjMGn4T6Ok",
-      "title": "More visual answers from GPT-6 with Intelligent UI",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-08T17:46:54+00:00",
-      "url": "https://www.youtube.com/shorts/OgjMGn4T6Ok",
-      "thumbnail": "https://img.youtube.com/vi/OgjMGn4T6Ok/mqdefault.jpg",
-      "description": "GPT‑6 in ChatGPT introduces Intelligent UI, a new capability that allows ChatGPT to answer quickly with fully interactive user interfaces that make everyday answers more visual, make learning complex topics easier and that can quickly creat"
-    },
-    {
       "video_id": "QnxXx1FpnF8",
       "title": "Mistral Large 4 Failed My Rubik's Cube Test",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
@@ -371,18 +395,6 @@
       "url": "https://www.youtube.com/watch?v=WrCjAAl9okA",
       "thumbnail": "https://img.youtube.com/vi/WrCjAAl9okA/mqdefault.jpg",
       "description": "KERNEL is the simplest way to let your agents act on any website. Use code: FIRESHIP to get a free upgrade to the Hobbyist tier ($30 value) at https://kernel.sh/fireship\n\nMistral, Reflection AI, and Moonshot all made big moves in the open-w"
-    },
-    {
-      "video_id": "EItxPNgKOX4",
-      "title": "How to Find Nano Banana 2.1 in Google AI Studio",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-07T20:23:22+00:00",
-      "url": "https://www.youtube.com/shorts/EItxPNgKOX4",
-      "thumbnail": "https://img.youtube.com/vi/EItxPNgKOX4/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
     },
     {
       "video_id": "dffaE-nftA4",
@@ -503,18 +515,6 @@
       "url": "https://www.youtube.com/shorts/MVRb03jb6Wg",
       "thumbnail": "https://img.youtube.com/vi/MVRb03jb6Wg/mqdefault.jpg",
       "description": "Shawn Wen of PolyAI on why voice agents should not sound generic. A regional flavour reads as human, and the most natural early voice agent was a French voice speaking English.\n\nTaken from our full interview with Shawn Wen (PolyAI) on Machi"
-    },
-    {
-      "video_id": "VoAPg8Fj6-c",
-      "title": "How a Voice Agent Learns the Rhythm of Conversation — Shawn Wen",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-10-01T20:00:18+00:00",
-      "url": "https://www.youtube.com/watch?v=VoAPg8Fj6-c",
-      "thumbnail": "https://img.youtube.com/vi/VoAPg8Fj6-c/mqdefault.jpg",
-      "description": "Tsung-Hsien (Shawn) Wen, CTO of PolyAI, tells Tim Scarfe why voice agents are harder than text agents. Voice adds time, and a good conversation depends on adapting to the person on the line, not just on reasoning to the best answer. Shawn d"
     },
     {
       "video_id": "No-JPdFvYWU",
