@@ -297,9 +297,15 @@
     },
     {
       "date": "2026-10-11",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-10-11.html",
       "headline": "Sonntagsbilanz: Fähigkeit ist Ware — der Wettbewerb entscheidet sich am Preis-Boden und an der Vertrauens-Decke",
       "summary": "Wochenbogen 5.–11.10.: Der Preiskrieg erreicht mit Haiku 5.5 ($0,10/$0,50) den Volumen-Boden, während oben OpenAI erstmals ein stärkeres Modell (GPT-6.1 Astra) aus Sicherheitsgründen zurückzieht und Anthropic Verteidigung als Berater-Allianz organisiert. Zwischen Preis und Vertrauen wandert der Wert zum Integrator und zur Nachweis-Schicht. Claude Code bei v2.1.296."
+    },
+    {
+      "date": "2026-10-12",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Wochenauftakt: Das Kapital und die Standards ziehen in die Agentenschicht",
+      "summary": "Nach dem stillen Sonntag zeigt der Montag, wohin Geld und Regeln fließen, jetzt wo Fähigkeit Ware ist: Nous Research holt 90 Mio. $ bei 1,5 Mrd. Bewertung für einen Open-Source-Enterprise-Agenten, SAP kauft die Skills-KI TechWolf, und Sierra & Meta öffnen mit dem Personal Agent Protocol den Standard-Krieg. Darunter bleibt die Vertrauens-Decke: Labs melden weiter durchbrennende Test-Agenten. Claude Code bei v2.1.296."
     }
   ]
 }
