@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-11T11:03:41+00:00",
+  "last_updated": "2026-10-12T11:01:02+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -156,6 +156,42 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "44RXU8Cxoas",
+      "title": "Build a Business Dashboard with AI in MINUTES (for dummies...)",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-12T04:31:24+00:00",
+      "url": "https://www.youtube.com/watch?v=44RXU8Cxoas",
+      "thumbnail": "https://img.youtube.com/vi/44RXU8Cxoas/mqdefault.jpg",
+      "description": "Build a business analytics dashboard from a bank marketing dataset using Codex, Claude Code, and Hugging Face. Explore your data in Data Studio, define useful business questions and KPIs, and improve the dashboard through feedback to your c"
+    },
+    {
+      "video_id": "PODwi90Ne8k",
+      "title": "Human Creativity Still Matters",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-12T02:23:09+00:00",
+      "url": "https://www.youtube.com/shorts/PODwi90Ne8k",
+      "thumbnail": "https://img.youtube.com/vi/PODwi90Ne8k/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "4fLVq6HJsKc",
+      "title": "DeepSeek Solved AI’s Memory Problem",
+      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+      "channel_name": "Two Minute Papers",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-10-11T16:53:17+00:00",
+      "url": "https://www.youtube.com/watch?v=4fLVq6HJsKc",
+      "thumbnail": "https://img.youtube.com/vi/4fLVq6HJsKc/mqdefault.jpg",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The DeepSeek OCR paper is available here:\nhttps://github.com/deepseek-ai/DeepSeek-OCR\n\n🙏 We would like to thank our generous Patreon supporters who make T"
+    },
     {
       "video_id": "DVRMDoYhVBI",
       "title": "AI Coding Is a Slot Machine: Loss Disguised as a Win | Jeremy Howard",
@@ -373,18 +409,6 @@
       "description": "Get a Reachy Mini 🤓\nhttps://pollen-robotics.com/reachy-mini/\n\n---\n\nThe whole film is a web page: play it, scrub it, fork the code: https://huggingface.co/spaces/pollen-robotics/reachy-mini-yo-its-your-boy\n\nIn a world of big scary robots, on"
     },
     {
-      "video_id": "BsNHg6cNjZE",
-      "title": "12 Grok Bot Use Cases That Feel Illegal",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-07T23:08:41+00:00",
-      "url": "https://www.youtube.com/watch?v=BsNHg6cNjZE",
-      "thumbnail": "https://img.youtube.com/vi/BsNHg6cNjZE/mqdefault.jpg",
-      "description": "Check out Eight Sleep's Pod 6: https://www.eightsleep.com/matthewberman\nUse code 'MATTHEWBERMAN' for up to $200 off\n\nGrok Bot Templates and Prompts: https://app.box.com/s/6806pjhc3qt67x61ixk95t6385wks7zl \n\nJoin My Newsletter for Regular AI "
-    },
-    {
       "video_id": "WrCjAAl9okA",
       "title": "A $6.3 billion open-weight model just got embarrassed by the French...",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -590,7 +614,7 @@
     }
   ],
   "stats": {
-    "total_videos": 36,
+    "total_videos": 38,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
