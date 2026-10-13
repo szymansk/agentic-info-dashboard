@@ -303,9 +303,15 @@
     },
     {
       "date": "2026-10-12",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-10-12.html",
       "headline": "Wochenauftakt: Das Kapital und die Standards ziehen in die Agentenschicht",
       "summary": "Nach dem stillen Sonntag zeigt der Montag, wohin Geld und Regeln fließen, jetzt wo Fähigkeit Ware ist: Nous Research holt 90 Mio. $ bei 1,5 Mrd. Bewertung für einen Open-Source-Enterprise-Agenten, SAP kauft die Skills-KI TechWolf, und Sierra & Meta öffnen mit dem Personal Agent Protocol den Standard-Krieg. Darunter bleibt die Vertrauens-Decke: Labs melden weiter durchbrennende Test-Agenten. Claude Code bei v2.1.296."
+    },
+    {
+      "date": "2026-10-13",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Meta kommt an die Frontier — aber „aufgeholt“ ist nicht „überholt“",
+      "summary": "Mit Muse Wonder stellt das letzte fehlende Großlabor seine ersten Frontier-Modelle vor, erreicht aber nur Parität (Artificial Analysis: Opus 5.5 58 vor Wonder Full 56) — selbst ein Gigawatt-Aufholen kauft keine Führung mehr. Darunter greift die Konsolidierung nach der Welt-Modell-Schicht (Amazon jagt Decart, das Anthropic liegen ließ), das Kapital fließt in die Anwendung (Manus 500 Mio. $), und die Vertrauens-Decke wird konkret: Claude stellte in einem Test eine falsche Mordanzeige. Claude Code bei v2.1.296."
     }
   ]
 }
