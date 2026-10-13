@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-12T11:01:02+00:00",
+  "last_updated": "2026-10-13T04:13:14+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,29 +116,29 @@
   ],
   "featured": [
     {
-      "video_id": "Ju-JyxDgV7g",
-      "title": "How Oracle Uses Codex to Help Business Users Get Answers",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-10T21:40:25+00:00",
-      "url": "https://www.youtube.com/watch?v=Ju-JyxDgV7g",
-      "thumbnail": "https://img.youtube.com/vi/Ju-JyxDgV7g/mqdefault.jpg",
-      "description": "Richard Lam, Group Vice President at Oracle Applications Lab, shares how his team uses Codex to help business users get answers from company data. By describing the outcome they want, users can get an analysis, a report, or an application, ",
-      "why": ""
-    },
-    {
-      "video_id": "_rtp1XzaP6Q",
-      "title": "OpenAI Security: Controlling Models is Now ‘Hell’",
+      "video_id": "C4Sq3Rot8FU",
+      "title": "AI Labs Warn Race Makes Breach ‘Inevitable’",
       "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
       "channel_name": "AI Explained",
       "category": "news",
       "color": "#e0a857",
-      "published": "2026-10-01T21:20:12+00:00",
-      "url": "https://www.youtube.com/watch?v=_rtp1XzaP6Q",
-      "thumbnail": "https://img.youtube.com/vi/_rtp1XzaP6Q/mqdefault.jpg",
-      "description": "This video is hard to summarise. A cracked cipher, an OpenAI security warning, Gemini 4 Argon, RSI paper (co-authored by a who’s who of AI), Lab White House commitments, new hacks emerging, ‘deep personas’, biology Kasparov competitions, an",
+      "published": "2026-10-12T22:52:31+00:00",
+      "url": "https://www.youtube.com/watch?v=C4Sq3Rot8FU",
+      "thumbnail": "https://img.youtube.com/vi/C4Sq3Rot8FU/mqdefault.jpg",
+      "description": "In the week that software got reverse engineered, Sam Altman warned 6.1 Astra ‘tipped toward [breach risk], and Muse Wonder showed the race isn’t slowing, I try to step back and show where it is all going, on current trends. Agree or disagr",
+      "why": ""
+    },
+    {
+      "video_id": "IZXv6a78NDw",
+      "title": "Code review is no longer the bottleneck",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-12T16:00:08+00:00",
+      "url": "https://www.youtube.com/watch?v=IZXv6a78NDw",
+      "thumbnail": "https://img.youtube.com/vi/IZXv6a78NDw/mqdefault.jpg",
+      "description": "Code review is the new bottleneck. Codex brings pull requests, review feedback, and private conversations about your code into one place.\n\nSee how to find reviews across repositories, understand changes and risks, apply your team’s review g",
       "why": ""
     },
     {
@@ -157,16 +157,76 @@
   ],
   "recent": [
     {
-      "video_id": "44RXU8Cxoas",
-      "title": "Build a Business Dashboard with AI in MINUTES (for dummies...)",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
+      "video_id": "rpLrkJ5NNEI",
+      "title": "Meta just dropped something insane... (Muse Wonder)",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-13T00:47:04+00:00",
+      "url": "https://www.youtube.com/watch?v=rpLrkJ5NNEI",
+      "thumbnail": "https://img.youtube.com/vi/rpLrkJ5NNEI/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "C4Sq3Rot8FU",
+      "title": "AI Labs Warn Race Makes Breach ‘Inevitable’",
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "channel_name": "AI Explained",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-12T22:52:31+00:00",
+      "url": "https://www.youtube.com/watch?v=C4Sq3Rot8FU",
+      "thumbnail": "https://img.youtube.com/vi/C4Sq3Rot8FU/mqdefault.jpg",
+      "description": "In the week that software got reverse engineered, Sam Altman warned 6.1 Astra ‘tipped toward [breach risk], and Muse Wonder showed the race isn’t slowing, I try to step back and show where it is all going, on current trends. Agree or disagr"
+    },
+    {
+      "video_id": "wajoP_5Cpw8",
+      "title": "Every app on Earth is now open source... whether it likes it or not",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-10-12T19:15:23+00:00",
+      "url": "https://www.youtube.com/watch?v=wajoP_5Cpw8",
+      "thumbnail": "https://img.youtube.com/vi/wajoP_5Cpw8/mqdefault.jpg",
+      "description": "Every agent needs proper tools. Apify MCP gives yours thousands of them, ready to run. Use code FIRESHIP25 for $25 in free credits: https://apify.it/4ygURHS\n\nA developer just rewrote seven Adobe apps in Rust and open-sourced them for free. "
+    },
+    {
+      "video_id": "FTaPMTB-LxI",
+      "title": "I'm Rebuilding Super Mario World With AI",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-12T16:21:04+00:00",
+      "url": "https://www.youtube.com/shorts/FTaPMTB-LxI",
+      "thumbnail": "https://img.youtube.com/vi/FTaPMTB-LxI/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "IZXv6a78NDw",
+      "title": "Code review is no longer the bottleneck",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
       "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-10-12T04:31:24+00:00",
-      "url": "https://www.youtube.com/watch?v=44RXU8Cxoas",
-      "thumbnail": "https://img.youtube.com/vi/44RXU8Cxoas/mqdefault.jpg",
-      "description": "Build a business analytics dashboard from a bank marketing dataset using Codex, Claude Code, and Hugging Face. Explore your data in Data Studio, define useful business questions and KPIs, and improve the dashboard through feedback to your c"
+      "color": "#6ec38b",
+      "published": "2026-10-12T16:00:08+00:00",
+      "url": "https://www.youtube.com/watch?v=IZXv6a78NDw",
+      "thumbnail": "https://img.youtube.com/vi/IZXv6a78NDw/mqdefault.jpg",
+      "description": "Code review is the new bottleneck. Codex brings pull requests, review feedback, and private conversations about your code into one place.\n\nSee how to find reviews across repositories, understand changes and risks, apply your team’s review g"
+    },
+    {
+      "video_id": "3Q1mdn5ZGvM",
+      "title": "Recursive Self-Improvement and the Future of AI",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-12T14:30:07+00:00",
+      "url": "https://www.youtube.com/watch?v=3Q1mdn5ZGvM",
+      "thumbnail": "https://img.youtube.com/vi/3Q1mdn5ZGvM/mqdefault.jpg",
+      "description": "a16z General Partner Martin Casado sits down with MakerMaker.AI co-founders Dhaval Adjodah and Owen He to unpack recursive self-improvement, or RSI, and separate the increasingly popular term from what it would actually mean for an AI syste"
     },
     {
       "video_id": "PODwi90Ne8k",
@@ -301,30 +361,6 @@
       "description": "Sophos CTO John Peterson shares how agents built through OpenAI Daybreak combine AI with Sophos’s cybersecurity expertise to reduce average response time from 38 minutes to 89 seconds for cases using those agents. Hear how Sophos is helping"
     },
     {
-      "video_id": "o_gf-LEaOWw",
-      "title": "Tesla Powerwall and Car Backup During an Outage",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-09T04:10:23+00:00",
-      "url": "https://www.youtube.com/shorts/o_gf-LEaOWw",
-      "thumbnail": "https://img.youtube.com/vi/o_gf-LEaOWw/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
-      "video_id": "RQfg-zo4R-g",
-      "title": "Production Monitoring with Codex: Grafana, Kubernetes, & Security",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-08T21:35:18+00:00",
-      "url": "https://www.youtube.com/watch?v=RQfg-zo4R-g",
-      "thumbnail": "https://img.youtube.com/vi/RQfg-zo4R-g/mqdefault.jpg",
-      "description": "It’s 3 a.m. and checkout errors are climbing. What do you check first?\n\nJoin cohosts Tony Loehr and Anke Hao for three practical production-monitoring demos with Codex. Follow a checkout failure in Grafana, investigate a Kubernetes rollout "
-    },
-    {
       "video_id": "Mjz8Z2I0w_g",
       "title": "What is the story of your company?",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -337,18 +373,6 @@
       "description": "Ben Horowitz, co-founder of Andreessen Horowitz, on why a company's story and its strategy are the same thing.\n\nBefore a16z, he was co-founder and CEO of Loudcloud, later renamed Opsware, which Hewlett-Packard acquired for $1.6 billion in 2"
     },
     {
-      "video_id": "QnxXx1FpnF8",
-      "title": "Mistral Large 4 Failed My Rubik's Cube Test",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-08T15:54:52+00:00",
-      "url": "https://www.youtube.com/shorts/QnxXx1FpnF8",
-      "thumbnail": "https://img.youtube.com/vi/QnxXx1FpnF8/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
       "video_id": "rn_afJaPldg",
       "title": "Building the Cloud for AI Agents | AWS CEO Matt Garman",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -359,18 +383,6 @@
       "url": "https://www.youtube.com/watch?v=rn_afJaPldg",
       "thumbnail": "https://img.youtube.com/vi/rn_afJaPldg/mqdefault.jpg",
       "description": "a16z’s Raghu Raghuram sits down with AWS CEO Matt Garman to discuss how AI is reshaping the cloud, from the needs of AI-native startups to infrastructure increasingly designed for agents.\n\nMatt explains how AWS is adapting as agents write c"
-    },
-    {
-      "video_id": "W0jPTqIo5oE",
-      "title": "Race Conditions on a Human Scale - Computerphile",
-      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
-      "channel_name": "Computerphile",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-10-08T13:00:25+00:00",
-      "url": "https://www.youtube.com/watch?v=W0jPTqIo5oE",
-      "thumbnail": "https://img.youtube.com/vi/W0jPTqIo5oE/mqdefault.jpg",
-      "description": "When two threads or processes clash, a race condition can occur. Matt Godbolt demonstrates different kinds of race conditions by equating these to real-life human situations. \n\nFind out more about Matt from his blog: https://bit.ly/C_MGodbo"
     },
     {
       "video_id": "pniLY0I9VJQ",
@@ -397,18 +409,6 @@
       "description": "Akarsh Kumar wanted to see what would happen if you used LLMs to evolve small assembly programs that compete against each other. It's called Core War.\n\nIn his words: \"If you just try to zero-shot this language, it's terrible. But if you do "
     },
     {
-      "video_id": "PynQZyvtIk8",
-      "title": "Reachy Mini - Yo It's Your Boy (music video)",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-10-08T03:17:14+00:00",
-      "url": "https://www.youtube.com/watch?v=PynQZyvtIk8",
-      "thumbnail": "https://img.youtube.com/vi/PynQZyvtIk8/mqdefault.jpg",
-      "description": "Get a Reachy Mini 🤓\nhttps://pollen-robotics.com/reachy-mini/\n\n---\n\nThe whole film is a web page: play it, scrub it, fork the code: https://huggingface.co/spaces/pollen-robotics/reachy-mini-yo-its-your-boy\n\nIn a world of big scary robots, on"
-    },
-    {
       "video_id": "WrCjAAl9okA",
       "title": "A $6.3 billion open-weight model just got embarrassed by the French...",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -419,18 +419,6 @@
       "url": "https://www.youtube.com/watch?v=WrCjAAl9okA",
       "thumbnail": "https://img.youtube.com/vi/WrCjAAl9okA/mqdefault.jpg",
       "description": "KERNEL is the simplest way to let your agents act on any website. Use code: FIRESHIP to get a free upgrade to the Hobbyist tier ($30 value) at https://kernel.sh/fireship\n\nMistral, Reflection AI, and Moonshot all made big moves in the open-w"
-    },
-    {
-      "video_id": "dffaE-nftA4",
-      "title": "Building AI Assistants with On-Device Memory #aiagents #deeplearningai",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-07T15:15:01+00:00",
-      "url": "https://www.youtube.com/shorts/dffaE-nftA4",
-      "thumbnail": "https://img.youtube.com/vi/dffaE-nftA4/mqdefault.jpg",
-      "description": "No network connection. No remote server. Build an assistant whose memory never leaves the device in Building AI Assistants with On-Device Memory. Built in partnership with Qdrant and taught by Dylan Couzon.\n\nEnroll for free: https://www.dee"
     },
     {
       "video_id": "Wkaw03p3BrM",
@@ -445,18 +433,6 @@
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\nThank you Google DeepMind for the invite.\n\n📝 AlphaGenome Atlas is available here:\nhttps://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-p"
     },
     {
-      "video_id": "1E0ZoktFerQ",
-      "title": "HF Buckets: Upload Only What Changed with Xet",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-10-07T11:07:37+00:00",
-      "url": "https://www.youtube.com/watch?v=1E0ZoktFerQ",
-      "thumbnail": "https://img.youtube.com/vi/1E0ZoktFerQ/mqdefault.jpg",
-      "description": "If you work with large datasets, you're probably re-uploading the same bytes every time the data changes.\n\nIn this video I upload a 191 MB NYC taxi CSV to a Hugging Face Bucket, append 100 rows, and upload it again: Xet, Hugging Face's stor"
-    },
-    {
       "video_id": "C8eNLnnCmZ0",
       "title": "The only reason why Instagram worked early on",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -467,18 +443,6 @@
       "url": "https://www.youtube.com/shorts/C8eNLnnCmZ0",
       "thumbnail": "https://img.youtube.com/vi/C8eNLnnCmZ0/mqdefault.jpg",
       "description": "Instagram turns 16 today. \n\nBefore Instagram, there was Burbn.\n\nSystrom named it after his taste for bourbon. It let you check in somewhere, post your plans, earn points for hanging out with friends, and share a photo.\n\nHe and Mike Krieger "
-    },
-    {
-      "video_id": "cJsHel27Z6M",
-      "title": "The Biggest Shift in Cybersecurity in 30 Years",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-06T14:30:37+00:00",
-      "url": "https://www.youtube.com/watch?v=cJsHel27Z6M",
-      "thumbnail": "https://img.youtube.com/vi/cJsHel27Z6M/mqdefault.jpg",
-      "description": "a16z General Partner David George sits down with Armadin founder and CEO Kevin Mandia to discuss what happens to cybersecurity when attackers can operate at machine speed.\n\nAfter 30 years in security and building Mandiant, Kevin says AI con"
     },
     {
       "video_id": "_5p1_TNSWqQ",
@@ -503,18 +467,6 @@
       "url": "https://www.youtube.com/watch?v=ZHVNTTKu9fU",
       "thumbnail": "https://img.youtube.com/vi/ZHVNTTKu9fU/mqdefault.jpg",
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 Sonnet 5.5: \nhttps://www.anthropic.com/claude-sonnet-5-5\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAd"
-    },
-    {
-      "video_id": "HU03WDFB_tQ",
-      "title": "Build Your Own Open-Source Dots with Pi and Telegram",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-10-02T05:47:34+00:00",
-      "url": "https://www.youtube.com/watch?v=HU03WDFB_tQ",
-      "thumbnail": "https://img.youtube.com/vi/HU03WDFB_tQ/mqdefault.jpg",
-      "description": "Build your own dots-style, always-on AI assistants with Pi and pi-gateway, using your choice of models on a VPS or another always-on machine. This tutorial walks through agent workspaces, skills, Google Workspace access, and a Telegram mess"
     },
     {
       "video_id": "_rtp1XzaP6Q",
@@ -575,49 +527,18 @@
       "url": "https://www.youtube.com/watch?v=I_KVMFrUtPk",
       "thumbnail": "https://img.youtube.com/vi/I_KVMFrUtPk/mqdefault.jpg",
       "description": "Check out the OpenAPPA repo: https://github.com/archestra-ai/OpenAPPA\n\nA new open source project claims to have fixed the rogue agent problem. Let's dive in. \n\nWant more Fireship?\n\n🗞️ Newsletter: https://bytes.dev\n🧠 Courses: https://fireshi"
-    },
-    {
-      "video_id": "S6PqsZ65Mg4",
-      "title": "Implementing Undo - Computerphile",
-      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
-      "channel_name": "Computerphile",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-09-30T13:00:36+00:00",
-      "url": "https://www.youtube.com/watch?v=S6PqsZ65Mg4",
-      "thumbnail": "https://img.youtube.com/vi/S6PqsZ65Mg4/mqdefault.jpg",
-      "description": "We use undo daily, but have you thought about what goes into making a functional undo in a program? Dr Steve Bagley takes us through some of the things we need to think about if we're implementing it ourselves!\n\nComputerphile is supported b"
-    },
-    {
-      "video_id": "yUyfHQBXSzs",
-      "title": "The Data Engineering Professional Certificate is now on DeepLearning.AI",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-09-29T05:51:45+00:00",
-      "url": "https://www.youtube.com/watch?v=yUyfHQBXSzs",
-      "thumbnail": "https://img.youtube.com/vi/yUyfHQBXSzs/mqdefault.jpg",
-      "description": "Learn More: https://bit.ly/3ViOXHF\n\nData underlies all modern AI systems, and engineers who know how to build the systems that store and serve it are in high demand. Our Data Engineering Professional Certificate, a 4-course program, is now "
-    },
-    {
-      "video_id": "OuNKBjuV7A4",
-      "title": "DHH has gone completely off the rails...",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-09-28T19:27:59+00:00",
-      "url": "https://www.youtube.com/watch?v=OuNKBjuV7A4",
-      "thumbnail": "https://img.youtube.com/vi/OuNKBjuV7A4/mqdefault.jpg",
-      "description": "CodeRabbit Triage prioritizes all your team's pull requests for you. Try it free: https://coderabbit.link/fireship-014\n\nDHH told 1,200 Rails developers that writing code by hand is over... so let's find out which programming skills are actu"
     }
   ],
   "stats": {
-    "total_videos": 38,
+    "total_videos": 31,
     "total_channels": 16,
-    "successful_channels": 16,
-    "failed_channels": [],
+    "successful_channels": 12,
+    "failed_channels": [
+      "Andrej Karpathy",
+      "Computerphile",
+      "Hugging Face",
+      "DeepLearningAI"
+    ],
     "window_days": 14
   }
 }
