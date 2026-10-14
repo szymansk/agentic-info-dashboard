@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-13T11:05:09+00:00",
+  "last_updated": "2026-10-14T11:02:49+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,6 +116,45 @@
   ],
   "featured": [
     {
+      "video_id": "DTcK95TAZ-k",
+      "title": "How Oracle Uses Codex to Help Business Users Get Answers",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-14T09:35:27+00:00",
+      "url": "https://www.youtube.com/shorts/DTcK95TAZ-k",
+      "thumbnail": "https://img.youtube.com/vi/DTcK95TAZ-k/mqdefault.jpg",
+      "description": "Richard Lam, Group Vice President at Oracle Applications Lab, shares how his team uses Codex to help business users get answers from company data. By describing the outcome they want, users can get an analysis, a report, or an application, ",
+      "why": ""
+    },
+    {
+      "video_id": "FGCP2F_7rQk",
+      "title": "Visiting Taiwan w/ Jensen Huang | Lex Fridman",
+      "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
+      "channel_name": "Lex Fridman",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-10-13T21:26:16+00:00",
+      "url": "https://www.youtube.com/watch?v=FGCP2F_7rQk",
+      "thumbnail": "https://img.youtube.com/vi/FGCP2F_7rQk/mqdefault.jpg",
+      "description": "I've been traveling the world a bit. One of the most incredible experiences was getting to visit Taiwan with Jensen Huang. It was wild 🤯 Huge crowds, insanely good street food at night markets, and of course a lot of good conversations acro",
+      "why": ""
+    },
+    {
+      "video_id": "LVEfFyijQ2c",
+      "title": "Applying Gemini 4 for large-scale codebase maintenance in Chromium",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_name": "Google DeepMind",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-13T16:38:17+00:00",
+      "url": "https://www.youtube.com/watch?v=LVEfFyijQ2c",
+      "thumbnail": "https://img.youtube.com/vi/LVEfFyijQ2c/mqdefault.jpg",
+      "description": "The Chromium codebase is millions of lines long and decades old. In the past, working with it has meant navigating decades of tangled features, where touching one component can unexpectedly affect another. Erik Chen, an engineer at Google, ",
+      "why": ""
+    },
+    {
       "video_id": "C4Sq3Rot8FU",
       "title": "AI Labs Warn Race Makes Breach ‘Inevitable’",
       "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
@@ -127,38 +166,180 @@
       "thumbnail": "https://img.youtube.com/vi/C4Sq3Rot8FU/mqdefault.jpg",
       "description": "In the week that software got reverse engineered, Sam Altman warned 6.1 Astra ‘tipped toward [breach risk], and Muse Wonder showed the race isn’t slowing, I try to step back and show where it is all going, on current trends. Agree or disagr",
       "why": ""
-    },
-    {
-      "video_id": "IZXv6a78NDw",
-      "title": "Code review is no longer the bottleneck",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-12T16:00:08+00:00",
-      "url": "https://www.youtube.com/watch?v=IZXv6a78NDw",
-      "thumbnail": "https://img.youtube.com/vi/IZXv6a78NDw/mqdefault.jpg",
-      "description": "Code review is the new bottleneck. Codex brings pull requests, review feedback, and private conversations about your code into one place.\n\nSee how to find reviews across repositories, understand changes and risks, apply your team’s review g",
-      "why": ""
-    },
-    {
-      "video_id": "HIUzrxQxTtw",
-      "title": "From deepfakes to DNA: the science of watermarking AI",
-      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
-      "channel_name": "Google DeepMind",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-01T16:37:46+00:00",
-      "url": "https://www.youtube.com/watch?v=HIUzrxQxTtw",
-      "thumbnail": "https://img.youtube.com/vi/HIUzrxQxTtw/mqdefault.jpg",
-      "description": "How do you know if what you're seeing is real? Professor Hannah Fry sits down with Pushmeet Kohli (VP of Science) and Jeremy Ratcliffe (Research Scientist) to break down SynthID, the watermarking technology expanding from text, images, and ",
-      "why": ""
     }
   ],
   "recent": [
     {
+      "video_id": "DTcK95TAZ-k",
+      "title": "How Oracle Uses Codex to Help Business Users Get Answers",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-14T09:35:27+00:00",
+      "url": "https://www.youtube.com/shorts/DTcK95TAZ-k",
+      "thumbnail": "https://img.youtube.com/vi/DTcK95TAZ-k/mqdefault.jpg",
+      "description": "Richard Lam, Group Vice President at Oracle Applications Lab, shares how his team uses Codex to help business users get answers from company data. By describing the outcome they want, users can get an analysis, a report, or an application, "
+    },
+    {
+      "video_id": "M8iqahFogtA",
+      "title": "Google just went FRONTIER (Gemini 4 Argon)",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-14T01:33:55+00:00",
+      "url": "https://www.youtube.com/watch?v=M8iqahFogtA",
+      "thumbnail": "https://img.youtube.com/vi/M8iqahFogtA/mqdefault.jpg",
+      "description": "Gemini 4 Argon is live in Box! https://bit.ly/4zu0p1R\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https"
+    },
+    {
+      "video_id": "CIlqLzoJiU8",
+      "title": "OpenAI Employee Arrested Over Recording Device",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-13T21:49:49+00:00",
+      "url": "https://www.youtube.com/shorts/CIlqLzoJiU8",
+      "thumbnail": "https://img.youtube.com/vi/CIlqLzoJiU8/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "FGCP2F_7rQk",
+      "title": "Visiting Taiwan w/ Jensen Huang | Lex Fridman",
+      "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
+      "channel_name": "Lex Fridman",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-10-13T21:26:16+00:00",
+      "url": "https://www.youtube.com/watch?v=FGCP2F_7rQk",
+      "thumbnail": "https://img.youtube.com/vi/FGCP2F_7rQk/mqdefault.jpg",
+      "description": "I've been traveling the world a bit. One of the most incredible experiences was getting to visit Taiwan with Jensen Huang. It was wild 🤯 Huge crowds, insanely good street food at night markets, and of course a lot of good conversations acro"
+    },
+    {
+      "video_id": "G-9Y2xNiDKQ",
+      "title": "Work with your team in ChatGPT Space",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-13T21:01:10+00:00",
+      "url": "https://www.youtube.com/watch?v=G-9Y2xNiDKQ",
+      "thumbnail": "https://img.youtube.com/vi/G-9Y2xNiDKQ/mqdefault.jpg",
+      "description": "Explore a shared place to work with people and ChatGPT. See how Space brings conversations, context and collaborative work together."
+    },
+    {
+      "video_id": "_KhlazpW9d8",
+      "title": "You just have to get started.",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-13T20:00:33+00:00",
+      "url": "https://www.youtube.com/shorts/_KhlazpW9d8",
+      "thumbnail": "https://img.youtube.com/vi/_KhlazpW9d8/mqdefault.jpg",
+      "description": "In 2017, Mark Zuckerberg returned to Harvard, the university he left in 2004 to build Facebook, to deliver the commencement address.\n\nThis is his case against the single eureka moment.\n\nSource: Harvard University"
+    },
+    {
+      "video_id": "9aDuSpVoB-Y",
+      "title": "Block on Finding and Fixing Security Risks with OpenAI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-13T18:02:20+00:00",
+      "url": "https://www.youtube.com/shorts/9aDuSpVoB-Y",
+      "thumbnail": "https://img.youtube.com/vi/9aDuSpVoB-Y/mqdefault.jpg",
+      "description": "“Now you know and now you can take action before someone else knows.”\n\nA weakness in your code can be part of a much bigger attack. Seeing how those weaknesses connect gives defenders a clearer picture of where to act.\n\nBlock’s Chief Inform"
+    },
+    {
+      "video_id": "N6K_pxaAh0w",
+      "title": "Block on Finding and Fixing Security Risks with OpenAI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-13T17:59:33+00:00",
+      "url": "https://www.youtube.com/watch?v=N6K_pxaAh0w",
+      "thumbnail": "https://img.youtube.com/vi/N6K_pxaAh0w/mqdefault.jpg",
+      "description": "“Now you know and now you can take action before someone else knows.”\n\nA weakness in your code can be part of a much bigger attack. Seeing how those weaknesses connect gives defenders a clearer picture of where to act.\n\nBlock’s Chief Inform"
+    },
+    {
+      "video_id": "LVEfFyijQ2c",
+      "title": "Applying Gemini 4 for large-scale codebase maintenance in Chromium",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_name": "Google DeepMind",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-13T16:38:17+00:00",
+      "url": "https://www.youtube.com/watch?v=LVEfFyijQ2c",
+      "thumbnail": "https://img.youtube.com/vi/LVEfFyijQ2c/mqdefault.jpg",
+      "description": "The Chromium codebase is millions of lines long and decades old. In the past, working with it has meant navigating decades of tangled features, where touching one component can unexpectedly affect another. Erik Chen, an engineer at Google, "
+    },
+    {
+      "video_id": "ftkic7Tdpcg",
+      "title": "Using Gemini 4 Argon to protect against Cyber attackers",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_name": "Google DeepMind",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-13T16:38:14+00:00",
+      "url": "https://www.youtube.com/watch?v=ftkic7Tdpcg",
+      "thumbnail": "https://img.youtube.com/vi/ftkic7Tdpcg/mqdefault.jpg",
+      "description": "In shadow A/B testing on real-world systems, Wiz security researchers put Gemini 4 Argon to the test against complex cyber threats. Using its advanced reasoning and long-horizon capabilities, Gemini 4 Argon found over two times more vulnera"
+    },
+    {
+      "video_id": "9PICEmtfpWU",
+      "title": "Teaching a humanoid robot to play cornhole with Gemini 4 Argon",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_name": "Google DeepMind",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-13T15:58:20+00:00",
+      "url": "https://www.youtube.com/watch?v=9PICEmtfpWU",
+      "thumbnail": "https://img.youtube.com/vi/9PICEmtfpWU/mqdefault.jpg",
+      "description": "In an internal test, Google DeepMind robotics researchers instructed Gemini 4 Argon to watch a video of a human playing cornhole. Using its video understanding and advanced reasoning capabilities, Gemini 4 built a virtual simulation in MuJo"
+    },
+    {
+      "video_id": "9jQA7IgPhBE",
+      "title": "Untangling 500-page chemistry patents with Gemini 4",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_name": "Google DeepMind",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-13T15:58:17+00:00",
+      "url": "https://www.youtube.com/watch?v=9jQA7IgPhBE",
+      "thumbnail": "https://img.youtube.com/vi/9jQA7IgPhBE/mqdefault.jpg",
+      "description": "Auditing chemistry literature usually means weeks of manual, error-prone reading, where a molecule’s structure can sit 50 pages away from its experimental readout. At Isomorphic Labs, researchers Brian Bender and Santosh Adhikari are using "
+    },
+    {
+      "video_id": "TD0bImyg_IM",
+      "title": "Ride out this sticker storm in style",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-13T15:47:28+00:00",
+      "url": "https://www.youtube.com/shorts/TD0bImyg_IM",
+      "thumbnail": "https://img.youtube.com/vi/TD0bImyg_IM/mqdefault.jpg",
+      "description": "Make your own sticker packs with ChatGPT Images."
+    },
+    {
+      "video_id": "LNy__Ge8OLQ",
+      "title": "I Turned Structured Output Into a Game 🎮",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-13T13:20:18+00:00",
+      "url": "https://www.youtube.com/shorts/LNy__Ge8OLQ",
+      "thumbnail": "https://img.youtube.com/vi/LNy__Ge8OLQ/mqdefault.jpg",
+      "description": "The model’s top prediction can still break the rules.\n\nI built Token Arcade to make structured output and constrained decoding easier to understand: see the next-token probabilities, pick a card, and find out whether it’s allowed.\n\nWatch a "
+    },
+    {
       "video_id": "z_sXLlLVUls",
-      "title": "OpenAI Just Changed What It Means To Do Math",
+      "title": "OpenAI’s New AI Is Doing Things We Barely Understand",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
       "channel_name": "Two Minute Papers",
       "category": "researcher",
@@ -229,18 +410,6 @@
       "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
     },
     {
-      "video_id": "IZXv6a78NDw",
-      "title": "Code review is no longer the bottleneck",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-12T16:00:08+00:00",
-      "url": "https://www.youtube.com/watch?v=IZXv6a78NDw",
-      "thumbnail": "https://img.youtube.com/vi/IZXv6a78NDw/mqdefault.jpg",
-      "description": "Code review is the new bottleneck. Codex brings pull requests, review feedback, and private conversations about your code into one place.\n\nSee how to find reviews across repositories, understand changes and risks, apply your team’s review g"
-    },
-    {
       "video_id": "3Q1mdn5ZGvM",
       "title": "Recursive Self-Improvement and the Future of AI",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -301,30 +470,6 @@
       "description": "Jeremy Howard, co-founder of fast.ai, on why AI-assisted coding works like a slot machine: you craft the prompt, pull the lever, and the occasional win feels like control. In his words: \"It's got all these hallmarks of loss disguised as a w"
     },
     {
-      "video_id": "Ju-JyxDgV7g",
-      "title": "How Oracle Uses Codex to Help Business Users Get Answers",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-10T21:40:25+00:00",
-      "url": "https://www.youtube.com/watch?v=Ju-JyxDgV7g",
-      "thumbnail": "https://img.youtube.com/vi/Ju-JyxDgV7g/mqdefault.jpg",
-      "description": "Richard Lam, Group Vice President at Oracle Applications Lab, shares how his team uses Codex to help business users get answers from company data. By describing the outcome they want, users can get an analysis, a report, or an application, "
-    },
-    {
-      "video_id": "cX2kD2yQf88",
-      "title": "Everything has been solved",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-10T18:42:01+00:00",
-      "url": "https://www.youtube.com/watch?v=cX2kD2yQf88",
-      "thumbnail": "https://img.youtube.com/vi/cX2kD2yQf88/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
       "video_id": "615B5nyMFPk",
       "title": "What Most People Get Wrong About Evolution | Akarsh Kumar",
       "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
@@ -337,42 +482,6 @@
       "description": "A lot of people in AI treat evolution as a dumb fallback, basically random search for when you can't take a gradient. Akarsh Kumar thinks that is wrong. Selection hangs on to partial solutions, so mutations only need to be useful about 1% o"
     },
     {
-      "video_id": "TqxHhuOve2Q",
-      "title": "AI Is Recreating Photoshop and Other Adobe Apps",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-10T00:41:09+00:00",
-      "url": "https://www.youtube.com/shorts/TqxHhuOve2Q",
-      "thumbnail": "https://img.youtube.com/vi/TqxHhuOve2Q/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
-      "video_id": "p5KxBTUncoE",
-      "title": "Set up your dot in the ChatGPT mobile app",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-09T19:13:03+00:00",
-      "url": "https://www.youtube.com/watch?v=p5KxBTUncoE",
-      "thumbnail": "https://img.youtube.com/vi/p5KxBTUncoE/mqdefault.jpg",
-      "description": "You can now create a dot from the ChatGPT mobile app. Set up your dot, edit the name, customize the avatar, and set your dot to be the first conversation you see when you open the ChatGPT app. \n\nLearn more about dots here: https://learn.cha"
-    },
-    {
-      "video_id": "enPbh_A5F7E",
-      "title": "Building the Codex community",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-09T17:00:34+00:00",
-      "url": "https://www.youtube.com/watch?v=enPbh_A5F7E",
-      "thumbnail": "https://img.youtube.com/vi/enPbh_A5F7E/mqdefault.jpg",
-      "description": "See how the Codex community brings people together to build, learn, and share. Pauline Narvas and VB talk about growing the Codex Ambassador program, their favorite moments from local meetups and Build Week, and what it means to build with "
-    },
-    {
       "video_id": "1Q_7yU7FZ1k",
       "title": "Former Intel CEO: Why This is the Best Time to Build Hardware",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -383,18 +492,6 @@
       "url": "https://www.youtube.com/watch?v=1Q_7yU7FZ1k",
       "thumbnail": "https://img.youtube.com/vi/1Q_7yU7FZ1k/mqdefault.jpg",
       "description": "a16z's Raghu Raghuram and Guido Appenzeller sit down with Playground Global General Partner and former Intel CEO Pat Gelsinger to discuss the next wave of semiconductor innovation and the physical constraints shaping the AI buildout.\n\nDrawi"
-    },
-    {
-      "video_id": "MUHjyljBPHI",
-      "title": "How Sophos cuts threat response time by 96% with OpenAI Daybreak",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-09T08:37:55+00:00",
-      "url": "https://www.youtube.com/watch?v=MUHjyljBPHI",
-      "thumbnail": "https://img.youtube.com/vi/MUHjyljBPHI/mqdefault.jpg",
-      "description": "Sophos CTO John Peterson shares how agents built through OpenAI Daybreak combine AI with Sophos’s cybersecurity expertise to reduce average response time from 38 minutes to 89 seconds for cases using those agents. Hear how Sophos is helping"
     },
     {
       "video_id": "Mjz8Z2I0w_g",
@@ -517,18 +614,6 @@
       "description": "If you work with large datasets, you're probably re-uploading the same bytes every time the data changes.\n\nIn this video I upload a 191 MB NYC taxi CSV to a Hugging Face Bucket, append 100 rows, and upload it again: Xet, Hugging Face's stor"
     },
     {
-      "video_id": "C8eNLnnCmZ0",
-      "title": "The only reason why Instagram worked early on",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-06T20:00:10+00:00",
-      "url": "https://www.youtube.com/shorts/C8eNLnnCmZ0",
-      "thumbnail": "https://img.youtube.com/vi/C8eNLnnCmZ0/mqdefault.jpg",
-      "description": "Instagram turns 16 today. \n\nBefore Instagram, there was Burbn.\n\nSystrom named it after his taste for bourbon. It let you check in somewhere, post your plans, earn points for hanging out with friends, and share a photo.\n\nHe and Mike Krieger "
-    },
-    {
       "video_id": "_5p1_TNSWqQ",
       "title": "PewDiePie is setting AI free... and OpenAI is furious",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -551,18 +636,6 @@
       "url": "https://www.youtube.com/watch?v=ZHVNTTKu9fU",
       "thumbnail": "https://img.youtube.com/vi/ZHVNTTKu9fU/mqdefault.jpg",
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 Sonnet 5.5: \nhttps://www.anthropic.com/claude-sonnet-5-5\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAd"
-    },
-    {
-      "video_id": "HU03WDFB_tQ",
-      "title": "Build Your Own Open-Source Dots with Pi and Telegram",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-10-02T05:47:34+00:00",
-      "url": "https://www.youtube.com/watch?v=HU03WDFB_tQ",
-      "thumbnail": "https://img.youtube.com/vi/HU03WDFB_tQ/mqdefault.jpg",
-      "description": "Build your own dots-style, always-on AI assistants with Pi and pi-gateway, using your choice of models on a VPS or another always-on machine. This tutorial walks through agent workspaces, skills, Google Workspace access, and a Telegram mess"
     },
     {
       "video_id": "_rtp1XzaP6Q",
@@ -638,7 +711,7 @@
     }
   ],
   "stats": {
-    "total_videos": 40,
+    "total_videos": 45,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
