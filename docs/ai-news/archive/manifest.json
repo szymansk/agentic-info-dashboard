@@ -315,9 +315,15 @@
     },
     {
       "date": "2026-10-14",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-10-14.html",
       "headline": "Google übernimmt die Spitze zurück — Gemini 4 Argon führt, einen Tag nach Metas Parität",
       "summary": "Einen Tag nachdem Meta mit Muse Wonder nur Parität erreichte, setzt sich Googles Gemini 4 Argon mit der GA an die Spitze des unabhängigen Vals-Index (#1/41, 68,9 %) — zum Einführungspreis von 2/10 $ pro Mtok, der zum 1.12. verdoppelt wird. Die These hält: Fähigkeit ist Ware, und selbst die Führung ist gemietet. Daneben verdichtet sich das Kapital in wenige Großrunden, während Gartner nüchtern bleibt: über 40 % der agentischen Projekte sterben bis Ende 2027."
+    },
+    {
+      "date": "2026-10-15",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Die Labore bauen nach innen um — Anthropic ersetzt Git, OpenAI findet eine Wanze, 400 Forscher fordern den Not-Aus",
+      "summary": "Jetzt wo Fähigkeit Ware ist, verlagert sich die Arbeit hinter das Modell: Anthropics eigene Versionsverwaltung Scion löst Git ab, nachdem agentengetriebene Merges in fünf Monaten von 2.500 auf über 30.000 pro Tag stiegen · ein OpenAI-Ingenieur wird nach einer Abhörwanze im Vorstands-Konferenzraum verhaftet · rund 400 Forscher (Hinton, Bengio) fordern eine internationale Aufsichtsbehörde und zunächst air-gapped Frontier-Modelle · derweil rückt Anthropics ~2-Bio.-$-IPO näher und die öffentlichen Märkte beginnen, die Compute-Rechnung zu bepreisen. Claude Code bei v2.1.300."
     }
   ]
 }

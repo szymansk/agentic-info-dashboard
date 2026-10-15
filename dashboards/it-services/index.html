@@ -455,7 +455,7 @@
   .tooltip-target { border-bottom: 1px dotted var(--muted); cursor: help; }
 </style>
 </head>
-<body data-snapshot-date="2026-10-14" data-snapshot-mode="live">
+<body data-snapshot-date="2026-10-15" data-snapshot-mode="live">
 
 <div class="wrap">
 
@@ -1155,7 +1155,7 @@
         </div>
       </article>
 
-      <article class="event" data-cat="AI-Tools" data-date="2026-10-06" data-crit="7">
+      <article class="event" data-cat="AI-Tools" data-date="2026-10-13" data-crit="7">
         <div class="ev-head">
           <span class="ev-cat">AI-Tools</span>
           <span class="ev-crit">
@@ -1163,26 +1163,28 @@
             <span class="crit-num">7</span>
           </span>
         </div>
-        <div class="ev-date">6. Okt 2026 · Anthropic</div>
-        <h3>Claude zieht in Google Workspace ein — der Assistent kommt zum Kunden, nicht umgekehrt</h3>
+        <div class="ev-date">13. Okt 2026 · Anthropic</div>
+        <h3>Agentisches Coding bricht Git — Anthropic baut mit Scion die Dev-Infrastruktur neu</h3>
         <p>
-          Anthropic bringt Claude als Seitenleiste direkt in Google Docs, Sheets und Slides
-          (Public Beta, alle bezahlten Pläne). Claude liest das offene Dokument und bearbeitet
-          es: Umformulierungen über Freigabe-Karten, Formeln und Pivot-Tabellen, Python zur
-          Datenbereinigung, Folien im Theme des Decks. Default ist „Ask before edits“; Connectors
-          schreiben Google-Dateien aus dem Chat — streng entlang der bestehenden Freigaberechte.
+          Anthropic hat sein Monorepo in fünf Monaten von Git auf eine selbstgebaute
+          Versionsverwaltung (Scion) migriert — weil die täglichen Merges von ~2.500 (Mai)
+          auf über 30.000 (September) stiegen, als Agenten und automatisierte Jobs zu den
+          Haupt-Clients wurden. Server als einzige Wahrheitsquelle, sparse checkouts, laut
+          Anthropic 200× weniger CPU/Speicher. Ein Signal: Agenten im Maßstab sprengen zuerst
+          die Werkzeuge, nicht die Modelle.
         </p>
         <div class="ev-take">
           <b>Für uns:</b>
-          <span>Der Wettbewerb wandert von der Modell-Fähigkeit zur Integration in die
-          Werkzeuge, die Kunden ohnehin nutzen — und mit ihr die Fragen nach Datenzugriff,
-          Freigabe-Modus und Audit. Genau an dieser Naht sitzt billbare Arbeit: Assistenten
-          sauber, berechtigungs-bewusst und auditierbar in Workspace/M365 einpassen, statt
-          Modellzugang zu verkaufen. Der Burggraben ist die Oberfläche, nicht das Modell.</span>
+          <span>Sobald Agenten vom Experiment zur Dauerlast werden, kippen dieselben
+          Fundamente, die für menschliche Entwickler gebaut wurden: Versionsverwaltung,
+          CI/CD, Rechte-Modelle, Observability. Genau dieser Umbau ist billbar — Infrastruktur
+          für agentengetriebene Änderungsraten auslegen, Review- und Berechtigungspfade für
+          nicht-menschliche Akteure definieren, Betriebslast messbar machen, bevor sie
+          explodiert.</span>
         </div>
         <div class="ev-sources">
           <span class="srcs-label">Quellen</span>
-          <a href="https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides" target="_blank" rel="noreferrer">claude.com</a><a href="https://9to5google.com/?p=732691" target="_blank" rel="noreferrer">9to5google.com</a><a href="/ai-news/archive/2026-10-09.html" target="_blank" rel="noreferrer">ai-news 09.10.</a>
+          <a href="https://www.anthropic.com/engineering/redesigning-source-control" target="_blank" rel="noreferrer">anthropic.com</a><a href="https://officechai.com/ai/anthropic-builds-in-house-version-of-git-called-scion-after-code-merges-rise-12x-in-4-months/" target="_blank" rel="noreferrer">officechai.com</a><a href="/ai-news/" target="_blank" rel="noreferrer">ai-news 15.10.</a>
         </div>
       </article>
 
@@ -1214,7 +1216,7 @@
   </section>
 
   <footer class="bottom">
-    <div>Letzte Aktualisierung: <code id="last-updated">2026-10-14</code></div>
+    <div>Letzte Aktualisierung: <code id="last-updated">2026-10-15</code></div>
     <div>📊 <a href="/">zur Übersicht</a></div>
   </footer>
 
