@@ -321,9 +321,15 @@
     },
     {
       "date": "2026-10-15",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-10-15.html",
       "headline": "Die Labore bauen nach innen um — Anthropic ersetzt Git, OpenAI findet eine Wanze, 400 Forscher fordern den Not-Aus",
       "summary": "Jetzt wo Fähigkeit Ware ist, verlagert sich die Arbeit hinter das Modell: Anthropics eigene Versionsverwaltung Scion löst Git ab, nachdem agentengetriebene Merges in fünf Monaten von 2.500 auf über 30.000 pro Tag stiegen · ein OpenAI-Ingenieur wird nach einer Abhörwanze im Vorstands-Konferenzraum verhaftet · rund 400 Forscher (Hinton, Bengio) fordern eine internationale Aufsichtsbehörde und zunächst air-gapped Frontier-Modelle · derweil rückt Anthropics ~2-Bio.-$-IPO näher und die öffentlichen Märkte beginnen, die Compute-Rechnung zu bepreisen. Claude Code bei v2.1.300."
+    },
+    {
+      "date": "2026-10-16",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Die Gewichte öffnen sich — Meta macht Muse Spark offen, doch der Coding-Boden gehört China",
+      "summary": "Meta veröffentlicht die Gewichte von Muse Spark Open (816 Mrd. Parameter, 42 Mrd. aktiv, 1 Mio. Kontext) — das stärkste offen gewichtete Modell eines US-Labors, lauffähig auf zwei M5-Ultra-Macs · doch auf Terminal-Bench 2.1 führen weiter chinesische Open-Weights (Kimi K3, GLM 5.3, Qwen3.8) deutlich vor Muse Sparks 76,4 · derweil verdichtet sich das Kapital: Ramp springt drei Monate nach 44 Mrd. auf ~60 Mrd. $ Bewertung (1,85 Mrd. $ Runde) · und Claude Code v2.1.301 härtet den unbeaufsichtigten Retry-Modus an Usage-Limits. Fähigkeit ist Ware — jetzt wird auch die offene Fähigkeit zur Ware, und der Wettbewerb verlagert sich auf Jurisdiktion, Integration und Vertrieb."
     }
   ]
 }

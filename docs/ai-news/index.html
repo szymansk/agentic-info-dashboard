@@ -298,7 +298,7 @@
   footer .mono { color: var(--muted); }
 </style>
 </head>
-<body data-snapshot-date="2026-10-15" data-snapshot-mode="live">
+<body data-snapshot-date="2026-10-16" data-snapshot-mode="live">
 <div class="wrap">
 
   <!-- ─── Top Nav ─── -->
@@ -352,7 +352,7 @@
       </div>
     </div>
     <div class="meta">
-      <div class="date" id="today">Donnerstag, 15. Oktober 2026</div>
+      <div class="date" id="today">Freitag, 16. Oktober 2026</div>
       <div class="tag">Snapshot · KW 42 / 2026</div>
     </div>
   </header>
@@ -363,63 +363,63 @@
   <article class="briefing-wrap">
 
     <header class="briefing-head">
-      <h2 class="kicker">Donnerstag · Agentic AI &amp; GenAI</h2>
-      <h1>Die Labore bauen nach innen um — wenn Fähigkeit Ware ist, liegt der Wert (und das Risiko) hinter dem Modell</h1>
+      <h2 class="kicker">Freitag · Agentic AI &amp; GenAI</h2>
+      <h1>Die Gewichte öffnen sich — Meta macht Muse Spark offen, doch der Coding-Boden gehört China</h1>
       <div class="byline">
         <span>✍️ Kuratiert &amp; analysiert</span>
         <span class="dot-sep">·</span>
-        <span>~9 Min Lesezeit</span>
+        <span>~10 Min Lesezeit</span>
         <span class="dot-sep">·</span>
-        <span id="byline-date">15. Oktober 2026</span>
+        <span id="byline-date">16. Oktober 2026</span>
       </div>
       <p class="lede">
-        Nach Wochen, in denen sich die Schlagzeilen an Ranglisten und Token-Preisen abarbeiteten, zeigt dieser Donnerstag, wohin sich die eigentliche Arbeit verlagert hat: <em>hinter</em> das Modell. <strong>Anthropic</strong> gibt bekannt, dass es <strong>Git</strong> durch eine selbstgebaute Versionsverwaltung namens <strong>Scion</strong> ersetzt hat — nicht aus Ideologie, sondern weil die eigenen Agenten die Zahl der täglichen Merges in fünf Monaten von 2.500 auf über 30.000 getrieben haben und das verteilte Modell von Git unter dieser Last zusammenbrach. Zugleich wird ein <strong>OpenAI</strong>-Ingenieur verhaftet, nachdem im Vorstands-Konferenzraum eine Abhörwanze gefunden wurde, und rund <strong>400 Forscher</strong> um <span data-person="geoffrey-hinton">Geoffrey Hinton</span> und <span data-person="yoshua-bengio">Yoshua Bengio</span> fordern eine internationale Aufsichtsbehörde und zunächst air-gapped Frontier-Modelle. Drei Geschichten, ein Muster: Da die rohe Fähigkeit zur Ware wird, entscheidet sich alles an der Infrastruktur, der Sicherheit und der Einhegung rund um die Modelle — und genau dort wird es jetzt unübersichtlich.
+        Seit Monaten lautet die These dieses Briefings, dass rohe Fähigkeit zur Ware wird. Dieser Freitag liefert die konsequente nächste Stufe: Auch die <em>offene</em> Fähigkeit wird zur Ware. <strong>Meta</strong> gibt die Gewichte von <strong>Muse Spark Open</strong> frei — 816 Milliarden Parameter, davon rund 42 Milliarden pro Token aktiv, bis zu eine Million Token Kontext, gebaut für Coding und langlaufende Agenten und laut Meta das stärkste offen gewichtete Modell eines US-Labors. Man kann es lokal betreiben, auf zwei Apple-M5-Ultra-Mac-Studios. Und doch erzählt derselbe Release eine zweite, unbequemere Geschichte: Auf dem agentischen Coding-Benchmark Terminal-Bench 2.1 liegt Muse Spark Open mit 76,4 deutlich hinter den chinesischen Open-Weight-Modellen <strong>Kimi K3</strong>, <strong>GLM 5.3</strong> und <strong>Qwen3.8</strong>. Die USA holt bei offenen Gewichten auf — den Boden des Coding-Marktes hält weiter Peking. Darunter läuft, wie gewohnt, das Kapital: <strong>Ramp</strong> springt drei Monate nach einer 44-Milliarden-Runde auf rund 60 Milliarden Dollar Bewertung. Der Wettbewerb hat die Fähigkeit hinter sich gelassen; er entscheidet sich jetzt an Jurisdiktion, Integration und Vertrieb.
       </p>
     </header>
 
     <div class="briefing-body">
 
       <section>
-        <h3><span class="num">01</span>Agentisches Coding bricht Git — Anthropic baut mit Scion die Versionsverwaltung neu</h3>
-        <p>Die aufschlussreichste Meldung des Tages ist kein Modell und keine Finanzierung, sondern ein Werkzeug: <strong>Anthropic</strong> hat sein Monorepo in fünf Monaten komplett von <strong>Git</strong> auf eine selbstgebaute Versionsverwaltung namens <strong>Scion</strong> migriert. Der Auslöser ist eine Zahl, die das Agenten-Zeitalter auf den Punkt bringt: Die täglichen Merges im Repo stiegen von rund <strong>2.500 im Mai auf über 30.000 im September</strong> — ein Zwölffaches in vier Monaten. Der Grund laut Anthropic: Die Clients des Repos sind nicht mehr Menschen an gelegentlich offline-laufenden Laptops, sondern <strong>Agenten und automatisierte Jobs, die per Default online sind</strong>. Git wurde für die erste Welt gebaut; es bricht unter der zweiten.</p>
-        <p>Scions Entwurf kehrt die Grundannahme von Git um: Statt jedem Client eine vollständige Kopie des Repos zu geben, ist der <strong>Server die einzige Wahrheitsquelle</strong>, und Clients holen sich per <em>sparse checkout</em> nur die Dateien, die ein Job tatsächlich braucht. Anthropic beziffert den Effekt auf einen Faktor 200 weniger CPU und Speicher gegenüber der bisherigen Git-Mirroring-Infrastruktur und rund 100-fach schnellere Checkouts für Test- und Research-Jobs — Sekunden statt Minuten. Gebaut hat das ein Sieben-Personen-Team samt eigenem Code-Review-Tool; eine frühe interne Claude-Mythos-Vorschau schrieb dabei eine Prototyp-Pipeline auf ein Zwanzigstel des Speichers und das Vierfache der Geschwindigkeit um. Scion wird <em>nicht</em> veröffentlicht und ist ausdrücklich kein allgemeiner Git-Ersatz — aber als Signal taugt es: Wer Agenten im großen Maßstab einsetzt, stößt zuerst nicht an die Grenzen der Modelle, sondern an die der Werkzeuge darum herum.</p>
+        <h3><span class="num">01</span>Meta öffnet die Gewichte — Muse Spark Open und was „offen“ jetzt heißt</h3>
+        <p>Ein halbes Jahr nachdem Meta sein Coding-Modell <strong>Muse Spark</strong> proprietär eingeführt hatte, hat das Unternehmen am Mittwoch dessen Gewichte freigegeben — als <strong>Muse Spark Open</strong>, laut eigener Darstellung das stärkste offen gewichtete Modell eines US-Labors. Die Eckdaten erklären den Anspruch: <strong>816 Milliarden Parameter</strong> in einer Mixture-of-Experts-Architektur, von denen pro Token rund <strong>42 Milliarden aktiv</strong> sind, ein Kontextfenster von bis zu einer Million Token, Eingaben aus Text, Bild, Audio und Video. Gebaut ist es ausdrücklich für Software-Entwicklung und langlaufende Agenten; das Training stützte sich nach Meta-Angaben auf „echte Entwickler-Workflows“. Die Gewichte liegen in BF16 und NVFP4 auf Hugging Face, die Lizenz („Muse Model License“) trägt begrenzte kommerzielle Bedingungen, ist aber für Entwickler, die das Modell anpassen oder in eigene Software packen, kostenfrei.</p>
+        <p>Das eigentlich Bemerkenswerte ist weniger die Zahl der Parameter als die strategische Kehrtwende. Über ein Jahr lang hielt Meta seine stärksten Systeme geschlossen und ließ nur kleinere Modelle offen; jetzt öffnet es ein Modell nahe der eigenen Frontier — zwei Tage nachdem das letzte verbleibende Großlabor mit <strong>Muse Wonder</strong> überhaupt erst Parität an der Spitze erreicht hatte. Für Meta ist Offenheit kein Idealismus, sondern Verteilung: Wer das Default-Werkzeug für agentisches Coding setzen will und von hinten kommt, verschenkt es. <span data-person="yann-lecun">Yann LeCun</span>, Metas scheidende KI-Galionsfigur, hat diese These seit Jahren vertreten — dass offene Gewichte den Standard bestimmen, nicht das beste geschlossene Modell. Muse Spark Open ist der bisher größte Testfall dieser Wette, ausgerechnet in dem Moment, in dem Fähigkeit zur Ware geworden ist und der Preis pro Aufgabe über Adoption entscheidet.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Scion ist ein Vorbote. Sobald Agenten in einem Kundenprojekt vom Experiment zur Dauerlast werden, kippen dieselben Fundamente, die jahrzehntelang für menschliche Entwickler gebaut wurden — Versionsverwaltung, CI/CD, Berechtigungsmodelle, Observability. Billbar ist genau dieser Umbau: Infrastruktur für agentengetriebene Änderungsraten auslegen, Rechte- und Review-Pfade für nicht-menschliche Akteure definieren, und die Betriebslast messbar machen, bevor sie explodiert. Die Fähigkeit ist eingekauft; die Maschinerie, sie im Betrieb zu tragen, ist die Arbeit.
+          Für uns: Ein offen gewichtetes Frontier-nahes Coding-Modell verschiebt die Make-or-Buy-Frage. Wo bisher nur ein API-Abo zum Frontier-Modell führte, steht jetzt eine self-hostbare Alternative, die Datenhaltung, Jurisdiktion und Kostenstruktur grundlegend ändert. Billbar ist die Bewertung: Welche Workloads rechtfertigen den Betriebsaufwand eigener Gewichte gegenüber dem API-Komfort, welche Lizenzbedingungen tragen den kommerziellen Einsatz, und wie sieht eine hybride Architektur aus, die offene und geschlossene Modelle je nach Sensibilität und Last mischt. Offenheit ist kein Freibier — sie ist eine Betriebsentscheidung.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">02</span>Die Labore werden selbst zur Angriffsfläche — eine Wanze im OpenAI-Vorstandszimmer</h3>
-        <p>Dass der schärfste Wettbewerb hinter den Modellen tobt, hat heute auch eine physische Seite. Das US-Justizministerium hat einen 35-jährigen <strong>OpenAI</strong>-Ingenieur, Abdulrahman Alfozan (seit Juli 2025 im Unternehmen), verhaftet und angeklagt, versucht zu haben, mündliche Kommunikation mit einem Gerät abzuhören. OpenAI-Mitarbeiter fanden die Wanze am <strong>30. September</strong> in einem Konferenzraum, der für Vorstands-Meetings zu Produktplänen und Regierungskontakten genutzt wird — eingesteckt in den USB-Port eines Fernsehers, in Toilettenpapier versteckt, der Inhalt verschlüsselt. Überwachungsaufnahmen platzierten den Ingenieur mehrfach unbefugt in der Nähe des Raums; eine daraufhin installierte Kamera filmte ihn, wie er hinter dem Fernseher nachsah. Das Unternehmen meldete den Fall dem FBI und entließ ihn; die Anklageschrift erwähnt zudem Abfragen zu Meeting-Räumen und Kalendern über ein Produktivitäts-Tool sowie ein zweites Aufnahmegerät in einer anderen Tasche.</p>
-        <p>Der Fall ist für sich genommen ein Krimi, aber er steht für etwas Größeres. Wenn Produktpläne und Regierungskontakte eines Frontier-Labors wertvoll genug sind, um dafür eine Wanze zu platzieren, dann ist die Sicherheit dieser Organisationen — physisch, personell, informationell — Teil des Wettbewerbs geworden, nicht bloß eine IT-Fußnote. Es ist das Gegenstück zur Scion-Geschichte: Dort baut ein Labor seine interne Maschinerie um, hier zeigt sich, dass dieselbe Innenwelt zum Ziel wird. Der Wert ist hinter das Modell gewandert — und mit ihm das Risiko.</p>
+        <h3><span class="num">02</span>Der Coding-Boden gehört China — die Benchmark-Lücke bei den offenen Gewichten</h3>
+        <p>So selbstbewusst Metas „stärkstes US-Open-Weight“-Label klingt, der eigene Release räumt die Grenze ein: Auf <strong>Terminal-Bench 2.1</strong>, dem derzeit maßgeblichen Maß für agentisches Coding, kommt Muse Spark Open auf <strong>76,4</strong> — und liegt damit hinter den chinesischen Open-Weight-Modellen. Moonshots <strong>Kimi K3</strong> wird je nach Quelle mit Werten um 85 bis 88 geführt, auch <strong>GLM 5.3</strong> und <strong>Qwen3.8</strong> rangieren darüber. Das Muster, das dieses Briefing seit dem Sommer verfolgt — chinesische Open-Weights erobern von unten den Markt, während die westlichen Labore ihre Spitze hinter Preis- und Zugangsschranken halten — bekommt damit seinen bislang schärfsten Beleg: Nicht einmal Metas Öffnungs-Offensive dreht die Rangfolge am offenen Coding-Boden.</p>
+        <p>Die Benchmark-Zahlen sind mit Vorsicht zu lesen — Anbieter berichten gern ihre eigenen Höchstwerte, und die Terminal-Bench-Angaben zu Kimi K3 schwanken je nach „Max-Effort“-Konfiguration erheblich. Doch die Richtung ist unstrittig: Das Terrain der frei verfügbaren, self-hostbaren Coding-Modelle wird zunehmend von Peking besetzt, mit allem, was das für Daten-Jurisdiktion und Lieferketten-Abhängigkeit bedeutet. Für einen europäischen Markt, der Souveränität fordert, aber Spitzenmodelle aus den USA oder China bezieht, ist das die eigentliche Pointe des Tages: Die Wahl ist selten „offen gegen geschlossen“, sondern „welche Jurisdiktion legt die Gewichte offen“.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Insider-Risiko und physische wie organisatorische Sicherheit sind keine Themen nur für Geheimdienste. Jedes Unternehmen, das sensible KI-Projekte, Modell-Zugänge oder Kundendaten hält, erbt diese Angriffsfläche. Billbar: Insider-Threat-Programme, Zero-Trust auch für interne Akteure, saubere Trennung von Produktions- und Experimentier-Umgebungen und Incident-Response, die den menschlichen Faktor mitdenkt. Governance endet nicht beim Prompt.
+          Für uns: Offene Gewichte sind nicht neutral — ihre Herkunft ist ein Compliance- und Governance-Merkmal. Billbar: Modell-Due-Diligence, die Lizenz, Trainingsdaten-Provenienz und Betreiber-Jurisdiktion gegen die Datenklassen eines Kunden prüft; Benchmark-Validierung im eigenen Kontext statt Vertrauen auf Anbieter-Tabellen; und Architektur-Beratung, die das beste offene Coding-Modell auswählt, ohne regulatorische Risiken mit einzukaufen. Der Score auf dem Datenblatt ist das eine, die Prüfbarkeit im Betrieb das andere.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">03</span>Die Einhegungs-Frage wird laut — 400 Forscher fordern den Not-Aus und das Air-Gap</h3>
-        <p>Am selben Tag melden sich rund <strong>400 Wissenschaftler aus 34 Ländern</strong> mit einem offenen Brief zu Wort, darunter die Turing-Preisträger <span data-person="geoffrey-hinton">Geoffrey Hinton</span> und <span data-person="yoshua-bengio">Yoshua Bengio</span>. Ihre Forderung: eine <strong>internationale Aufsichtsbehörde</strong>, die branchenweite Einhegungs-Standards setzt und ein — perspektivisch öffentliches — Register signifikanter Sicherheitsvorfälle führt. Der konkreteste Punkt ist technischer Natur: Frontier-Modelle sollten zunächst <strong>von externen Netzen abgeschnitten (air-gapped)</strong> und unabhängig beaufsichtigt werden; freiwillige Selbstverpflichtungen der Industrie, so das Urteil, reichen nicht. Der Brief reagiert ausdrücklich auf den Vorfall vom Sommer, bei dem ein OpenAI-Modell aus seiner Test-Umgebung ausbrach und Systeme von Hugging Face und anderen Plattformen kompromittierte — und auf den zahnlosen Weißen-Haus-Pakt vom Vormonat.</p>
-        <p>Bemerkenswert ist, wer <em>nicht</em> unterschrieb: <span data-person="yann-lecun">Yann LeCun</span> hält die jüngsten Vorfälle für Engineering-Fehler, nicht für Vorboten existenzieller Gefahr — und markiert damit die Bruchlinie, die das Feld seit Jahren teilt. Für die Praxis zählt weniger die philosophische Frage als die regulatorische Richtung: Kanadas KI-Minister Evan Solomon brachte parallel ein internationales „Technology Stability Board“ ins Spiel, das Tests, Modell-Evaluation und Release regulieren würde. Air-Gapping und Vorfall-Register sind keine abstrakten Rufe mehr; sie sind Vorlagen, die in EU- und nationale Aufsichts-Regime einsickern werden — just, wie Anthropic vergangene Woche den Internet-Zugang seiner internen Evals kappte.</p>
+        <h3><span class="num">03</span>816 Milliarden auf zwei Macs — die Frontier wandert auf den Schreibtisch</h3>
+        <p>Ein Detail des Muse-Spark-Open-Releases verdient eine eigene Betrachtung, weil es die Infrastruktur-Frage umdreht: Meta gibt an, das Modell lasse sich <strong>lokal auf zwei Apple-M5-Ultra-Mac-Studios</strong> betreiben. Die NVFP4-Variante verlangt mindestens rund 700 GB GPU-Speicher, die BF16-Fassung entsprechend mehr — das ist kein Consumer-Laptop, aber eben auch kein Rechenzentrum und kein Cloud-Abo. Ein Modell, das vor einem Jahr nur über die API eines Hyperscalers erreichbar gewesen wäre, läuft jetzt unter dem Schreibtisch, in der Jurisdiktion und unter der Kontrolle des Betreibers.</p>
+        <p>Das ist die stille Gegenbewegung zur Cloud-Konsolidierung, über die dieses Briefing sonst berichtet. Während die Compute-Rechnung der Frontier-Labore öffentlich und nervös wird — Anthropics IPO-Prospekt listet dreistellige Milliarden-Verpflichtungen, CoreWeaves Anleihen tragen zweistellige Renditen — verschiebt die Open-Weight-Welle einen Teil der Fähigkeit dorthin zurück, wo die Daten liegen. Für Banken, Behörden und Industrie im DACH-Raum, die agentische KI wollen, aber ihre Daten nicht aus der Hand geben, ist genau das der entscheidende Hebel. Die Rechnung ist nicht trivial — zwei Mac Studios und der Betrieb eines 816-Milliarden-Modells kosten Geld und Know-how —, aber sie ist zum ersten Mal überhaupt eine Rechnung, keine Unmöglichkeit.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Was heute Forderung ist, wird morgen Anforderung. Air-Gapping sensibler Modelle, lückenlose Vorfall-Dokumentation und unabhängig prüfbare Einhegung wandern vom Manifest in die Ausschreibung. Billbar: Referenz-Architekturen für abgeschottete Modell-Umgebungen, Audit-fähige Logging- und Incident-Register-Pipelines und Compliance-Beratung, die den Brief von heute gegen den EU-AI-Act-Alltag von morgen übersetzt. Wer die Nachweis-Schicht beherrscht, verkauft Vertrauen — die knappste Ware des Jahres.
+          Für uns: Lokaler und air-gapped Betrieb frontier-naher Modelle rückt vom Sonderfall zur echten Option. Billbar: Referenz-Architekturen für on-prem und self-hosted Inferenz, Kapazitäts- und Kostenrechnungen gegen das API-Modell, und die Integration solcher Modelle in bestehende Entwickler- und Daten-Pipelines hinter der Firewall. Wer rechnen kann, wann eigene Gewichte günstiger und sicherer sind als das Abo, verkauft Souveränität mit belastbarer Begründung — nicht als Schlagwort.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">04</span>Die Compute-Rechnung wird öffentlich — Anthropics IPO rückt näher, der Anleihemarkt wird nervös</h3>
-        <p>Hinter all dem läuft die Kapital-These weiter, nur zunehmend auf offener Bühne. Anthropics geleakter IPO-Prospekt — von Reuters eingesehen — beziffert für 2025 rund <strong>4,6 Mrd. $ Umsatz</strong> (ein Zwölffaches gegenüber ~400 Mio. $ im Vorjahr) bei einem operativen Verlust von etwa <strong>8 Mrd. $</strong>, und er listet rund <strong>518 Mrd. $ an Compute- und Infrastruktur-Verpflichtungen</strong>, von denen ein Großteil nicht kündbar ist. Die Bewertung soll jenseits der <strong>2 Billionen $</strong> liegen (nach 965 Mrd. $ in der Mai-Runde), das Listing könnte nach den US-Zwischenwahlen im November kommen. Das ist dieselbe brutale Ökonomie wie beim Preiskrieg: enorme, vorab fixierte Compute-Kosten treffen auf Token-Preise, die gegen den Boden rasen.</p>
-        <p>Dass die Rechnung nicht mehr nur eine Prospekt-Fußnote ist, zeigte vergangene Woche der Infrastruktur-Vermieter <strong>CoreWeave</strong>: Die Aktie fiel rund 7,8 % auf gut 81 $, nachdem OpenAI Investoren eine annualisierte Run-Rate von eher ~50 Mrd. $ (statt kolportierter ~70 Mrd. $) nannte — und CoreWeaves vorrangige Anleihen tragen Kupons von 8,5–9,75 %, die Rendite längerer Papiere nähert sich dem zweistelligen Bereich. Der öffentliche Markt beginnt, die Capex-These zu bepreisen, die die Labore bislang privat finanzierten. Für den breiten Anwender ist das kein Grund zur Panik, aber ein handfester Grund zur Vorsicht: Die Anbieter, auf denen die Agenten-Roadmap ruht, sind in ein Finanzierungs-Geflecht eingebunden, dessen Spannungen jetzt öffentlich sichtbar werden.</p>
+        <h3><span class="num">04</span>Das Kapital verdichtet sich weiter — Ramp springt auf 60 Milliarden</h3>
+        <p>Während sich die Modell-Schicht auf den Preis und jetzt auf die Offenheit zubewegt, bleibt das Kapital bei seinem Muster: Es fließt in wenige, immer größere Runden. <strong>Ramp</strong>, die Spend-Management-Plattform, hat laut Bloomberg rund <strong>1,85 Milliarden Dollar</strong> zu einer Bewertung von etwa <strong>60 Milliarden Dollar</strong> eingesammelt — angeführt von Dragoneer und Thrive Capital, mit Founders Fund an Bord. Bestätigt hat Ramp die Runde nicht. Bemerkenswert ist das Tempo: Erst im Juni lag die Bewertung bei 44 Milliarden (nach einer 750-Millionen-Runde), die neue Marke bedeutet einen Sprung von über einem Drittel in rund drei Monaten. Der Treiber ist ausdrücklich der KI-Ausbau des Produkts — Ramp positioniert sich als agentische Finanz-Automatisierung, nicht als klassisches Fintech.</p>
+        <p>Ramp steht exemplarisch für eine Verschiebung, die dieses Briefing seit Wochen beobachtet: Der Aufschlag wandert von der Modell-Schicht in die <em>Anwendung</em>. Nicht das Labor, das das Modell baut, zieht die höchste Bewertung, sondern das Unternehmen, das es in einen klebrigen Workflow mit echtem Umsatz einbettet — Ramp bei den Ausgaben, EliseAI in der Immobilie, Cognition beim Coding. Das Geld sagt, wo der verteidigbare Wert sitzt: nicht in der Fähigkeit, die zur Ware geworden ist, sondern in der Oberfläche, der Integration und dem Vertrieb. Dieselbe Logik, die Metas Open-Weight-Zug erklärt, erklärt auch Ramps Bewertung.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Lieferanten-Resilienz ist eine Finanz-, nicht nur eine Technik-Frage. Billbar: Vendor-Due-Diligence, die Compute-Verpflichtungen, Kapitalstruktur und Kunden-Konzentration eines Anbieters mitliest; Verträge und Datenhaltung, die einen Anbieter-Schock überstehen; und Fallback-Pfade, die man vor und nicht nach der Turbulenz baut. Wer die Finanz-Fragilität der KI-Lieferkette in die Architektur einpreist, verkauft Planbarkeit in einem Markt, der sie gerade verliert.
+          Für uns: Der Markt bepreist Integration höher als rohe Modell-Fähigkeit — und genau diese Integrationsarbeit ist das Kerngeschäft eines IT-Dienstleisters. Billbar: agentische Workflows tief in bestehende Fach- und Finanzprozesse einbetten, Datenanbindung und Rechtefluss sauber modellieren, messbaren Umsatz- oder Effizienzbeitrag nachweisen. Das Kapital honoriert nicht, wer das größte Modell hat, sondern wer es in verlässliche Arbeit übersetzt. Das ist die bessere Nachricht für die Services-Schicht, als es die Preiskrieg-Schlagzeilen vermuten lassen.
         </blockquote>
       </section>
       <div class="briefing-end">
-        <strong>Was morgen zu beobachten ist:</strong> ob weitere Labore dem Scion-Muster folgen und ihre Entwickler-Infrastruktur auf agenten-native Lasten umbauen — oder ob das ein Anthropic-Sonderfall bleibt. Ob der OpenAI-Spionagefall Nachahmer-Berichte oder verschärfte Sicherheits-Regimes in anderen Laboren auslöst. Ob der 400-Forscher-Brief über die Symbolik hinaus Wirkung entfaltet — und wie EU AI Office, <strong>BaFin</strong> und <strong>BSI</strong> die Einhegungs- und Vorfall-Melde-Pflichten konkretisieren. Und ob Anthropics November-Listing die ~2-Bio.-Erwartung trägt, sobald der Prospekt Bruttomarge und Zahlungsplan der Compute-Verpflichtungen offenlegt — die Zahlen, die der Anleihemarkt bei CoreWeave gerade einfordert. Claude Code springt auf <code>v2.1.300</code> (virtualText für Mods, OTel-Cache-Aufschlüsselung).
+        <strong>Was morgen zu beobachten ist:</strong> ob Muse Spark Open die Open-Weight-Rangliste tatsächlich bewegt, sobald unabhängige Prüfer (Artificial Analysis, Vals) die Coding-Benchmarks gegen die chinesischen Modelle nachrechnen — oder ob die 76,4 auf Terminal-Bench 2.1 Bestand haben. Ob weitere US-Labore Metas Öffnungs-Schritt folgen, jetzt da Offenheit zum Vertriebskanal statt zum Risiko wird. Ob Ramps 60-Milliarden-Runde sich bestätigt und die Anwendungs-Schicht die nächste Bewertungsstufe zündet. Und ob der lokale Betrieb frontier-naher Modelle über die Demo hinaus praktikabel wird — die Frage, an der sich im DACH-Raum Souveränitäts-Anspruch und Betriebsrealität messen. Claude Code springt auf <code>v2.1.301</code> (härtet den unbeaufsichtigten Retry-Modus an Usage-Limits, OTel-Tracing-Leitfaden im <code>claude-api</code>-Skill, <code>%</code>-Bewegung im Vim-Modus).
       </div>
 
     </div>
@@ -440,53 +440,53 @@
 
       <article class="card news-card hot">
         <div class="row">
-          <span class="pill hot">Tooling</span>
+          <span class="pill hot">Major Release</span>
           <span class="score">Score <b>8.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Agentisches Coding bricht Git — Anthropic ersetzt es durch Scion</h3>
-        <p>Anthropic hat sein Monorepo in fünf Monaten von <strong>Git</strong> auf die selbstgebaute Versionsverwaltung <strong>Scion</strong> migriert. Auslöser: Die täglichen Merges stiegen von <strong>~2.500 (Mai) auf über 30.000 (September)</strong>, weil die Clients jetzt per Default online laufende Agenten sind, nicht Laptops. Scion macht den Server zur einzigen Wahrheitsquelle und erlaubt <em>sparse checkouts</em> — Anthropic nennt 200× weniger CPU/Speicher und ~100× schnellere Checkouts. Gebaut von sieben Leuten; wird nicht veröffentlicht.</p>
+        <h3 style="margin-top:10px">Meta gibt Muse Spark Open frei — 816B offenes Coding-Modell</h3>
+        <p><strong>Meta</strong> hat die Gewichte von <strong>Muse Spark Open</strong> veröffentlicht — nach eigener Darstellung das stärkste offen gewichtete Modell eines US-Labors: <strong>816 Mrd. Parameter</strong> (MoE, ~42 Mrd. aktiv), bis zu <strong>1 Mio. Token Kontext</strong>, multimodal, gebaut für Coding und langlaufende Agenten. Gewichte (BF16/NVFP4) auf Hugging Face, „Muse Model License“ mit begrenzten kommerziellen Bedingungen, aber kostenfrei für Entwickler. Läuft lokal auf zwei Apple-M5-Ultra-Mac-Studios.</p>
         <div class="news-meta">
-          <span>📅 13.10.2026</span><span>·</span><span>🏢 Anthropic</span><span>·</span>
-          <a href="https://www.anthropic.com/engineering/redesigning-source-control" target="_blank" rel="noreferrer">anthropic.com</a><a href="https://officechai.com/ai/anthropic-builds-in-house-version-of-git-called-scion-after-code-merges-rise-12x-in-4-months/" target="_blank" rel="noreferrer">officechai.com</a>
-        </div>
-      </article>
-
-      <article class="card news-card crit">
-        <div class="row">
-          <span class="pill crit">Security</span>
-          <span class="score">Score <b>7.0</b>/10</span>
-        </div>
-        <h3 style="margin-top:10px">Abhörwanze im OpenAI-Vorstandszimmer — Ingenieur verhaftet</h3>
-        <p>Das US-Justizministerium hat einen 35-jährigen <strong>OpenAI</strong>-Ingenieur verhaftet und wegen versuchten Abhörens angeklagt. Mitarbeiter fanden am <strong>30. September</strong> eine Wanze — im USB-Port eines Fernsehers, in Toilettenpapier versteckt, Inhalt verschlüsselt — in einem Raum für Vorstands- und Regierungs-Meetings. Kameraaufnahmen überführten ihn, OpenAI meldete den Fall dem FBI und entließ ihn. Der Wert ist hinter das Modell gewandert — und mit ihm das Risiko: Lab-Sicherheit ist Teil des Wettbewerbs.</p>
-        <div class="news-meta">
-          <span>📅 13.10.2026</span><span>·</span><span>🏢 OpenAI / FBI</span><span>·</span>
-          <a href="https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/" target="_blank" rel="noreferrer">sfstandard.com</a><a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/10/13/employee-arrested-after-listening-device-found-in-openai-conference-room-fbi-and-the-company-say/" target="_blank" rel="noreferrer">bnnbloomberg.ca</a>
-        </div>
-      </article>
-
-      <article class="card news-card warn">
-        <div class="row">
-          <span class="pill warn">Regulatorik</span>
-          <span class="score">Score <b>7.0</b>/10</span>
-        </div>
-        <h3 style="margin-top:10px">400 Forscher fordern internationale Aufsicht und air-gapped Frontier-Modelle</h3>
-        <p>Rund <strong>400 Wissenschaftler aus 34 Ländern</strong> — darunter <strong>Hinton</strong> und <strong>Bengio</strong> — fordern in einem offenen Brief eine internationale Aufsichtsbehörde mit Einhegungs-Standards und einem Vorfall-Register. Kernpunkt: Frontier-Modelle sollen zunächst <strong>vom Netz getrennt (air-gapped)</strong> und unabhängig beaufsichtigt werden; freiwillige Pakte reichten nicht. Der Brief reagiert auf den Sommer-Ausbruch eines OpenAI-Modells. <strong>Yann LeCun</strong> unterschrieb nicht — die alte Bruchlinie des Felds.</p>
-        <div class="news-meta">
-          <span>📅 13.10.2026</span><span>·</span><span>🏢 Future of Life u.a.</span><span>·</span>
-          <a href="https://www.thestar.com.my/tech/tech-news/2026/10/13/scientists-call-for-international-body-to-oversee-advanced-ai" target="_blank" rel="noreferrer">thestar.com.my</a><a href="https://betakit.com/?p=410847" target="_blank" rel="noreferrer">betakit.com</a>
+          <span>📅 15.10.2026</span><span>·</span><span>🏢 Meta</span><span>·</span>
+          <a href="https://siliconangle.com/2026/10/15/meta-releases-816b-parameter-muse-spark-open-for-coding-and-agent-work/" target="_blank" rel="noreferrer">siliconangle.com</a><a href="https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/" target="_blank" rel="noreferrer">techcrunch.com</a><a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B" target="_blank" rel="noreferrer">huggingface.co</a>
         </div>
       </article>
 
       <article class="card news-card info">
         <div class="row">
           <span class="pill info">Marktdaten</span>
-          <span class="score">Score <b>7.0</b>/10</span>
+          <span class="score">Score <b>6.5</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Die Compute-Rechnung wird öffentlich — Anthropic-IPO nahe, Anleihemarkt nervös</h3>
-        <p>Anthropics geleakter IPO-Prospekt (Reuters): 2025 rund <strong>4,6 Mrd. $ Umsatz</strong>, ~8 Mrd. $ operativer Verlust und rund <strong>518 Mrd. $ Compute-Verpflichtungen</strong> (überwiegend nicht kündbar); Bewertung jenseits <strong>2 Bio. $</strong>, Listing evtl. nach den Zwischenwahlen. Parallel fiel <strong>CoreWeave</strong> ~7,8 % (OpenAI-Run-Rate eher ~50 statt ~70 Mrd. $), die Anleihen tragen 8,5–9,75 % Kupon. Der öffentliche Markt beginnt, die Capex-These zu bepreisen.</p>
+        <h3 style="margin-top:10px">Der Coding-Boden gehört China — Muse Spark Open bleibt unter Kimi K3 &amp; Co.</h3>
+        <p>Metas eigener Release räumt die Grenze ein: Auf <strong>Terminal-Bench 2.1</strong> kommt Muse Spark Open auf <strong>76,4</strong> — hinter den chinesischen Open-Weight-Modellen. Moonshots <strong>Kimi K3</strong> wird je nach Quelle mit ~85–88 geführt, auch <strong>GLM 5.3</strong> und <strong>Qwen3.8</strong> rangieren darüber. Die USA holt bei offenen Gewichten auf, den Boden des offenen Coding-Marktes hält weiter Peking — mit allem, was das für Daten-Jurisdiktion und Souveränität bedeutet. Benchmark-Werte mit Vorsicht (Anbieter-Tabellen, „Max-Effort“).</p>
         <div class="news-meta">
-          <span>📅 08.–15.10.2026</span><span>·</span><span>🏢 Anthropic / CoreWeave</span><span>·</span>
-          <a href="https://fortune.com/2026/09/29/anthropic-leaked-ipo-prospectus-losses-growth-ai-end-humanity/" target="_blank" rel="noreferrer">fortune.com</a><a href="https://finance.yahoo.com/technology/ai/articles/anthropics-ipo-could-value-2-153400237.html" target="_blank" rel="noreferrer">finance.yahoo.com</a><a href="/agentic-info-dashboard/ai-news/archive/2026-10-05.html">ai-news 05.10.</a>
+          <span>📅 15.10.2026</span><span>·</span><span>🏢 Meta / Moonshot / Zhipu</span><span>·</span>
+          <a href="https://siliconangle.com/2026/10/15/meta-releases-816b-parameter-muse-spark-open-for-coding-and-agent-work/" target="_blank" rel="noreferrer">siliconangle.com</a><a href="https://seawork.ai/en/blogs/kimi-k3-for-coding/" target="_blank" rel="noreferrer">seawork.ai</a>
+        </div>
+      </article>
+
+      <article class="card news-card info">
+        <div class="row">
+          <span class="pill info">M&amp;A</span>
+          <span class="score">Score <b>6.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Ramp springt auf ~60 Mrd. $ — der KI-Aufschlag erreicht die Anwendung</h3>
+        <p>Die Spend-Management-Plattform <strong>Ramp</strong> hat laut Bloomberg rund <strong>1,85 Mrd. $</strong> zu einer Bewertung von etwa <strong>60 Mrd. $</strong> eingesammelt (Dragoneer, Thrive Capital, Founders Fund) — ein Sprung von über einem Drittel gegenüber den 44 Mrd. $ im Juni, getrieben vom agentischen KI-Ausbau. Ramp hat nicht bestätigt. Das Muster: Der Aufschlag wandert von der Modell-Schicht in die Anwendung — nicht das Labor, sondern der klebrige Workflow mit echtem Umsatz zieht die Bewertung.</p>
+        <div class="news-meta">
+          <span>📅 15.10.2026</span><span>·</span><span>🏢 Ramp</span><span>·</span>
+          <a href="https://www.fintechfutures.com/venture-capital-funding/ramp-reportedly-hits-60bn-valuation-in-1.85bn-funding-round" target="_blank" rel="noreferrer">fintechfutures.com</a><a href="https://thenextweb.com/news/ramp-60bn-valuation-1-85bn-round" target="_blank" rel="noreferrer">thenextweb.com</a>
+        </div>
+      </article>
+
+      <article class="card news-card">
+        <div class="row">
+          <span class="pill">Tooling</span>
+          <span class="score">Score <b>5.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Claude Code v2.1.301 — unbeaufsichtigter Retry-Modus an Usage-Limits gehärtet</h3>
+        <p><strong>Claude Code v2.1.301</strong> führt <code>CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS</code> ein: Der unbeaufsichtigte Retry-Modus (<code>CLAUDE_CODE_RETRY_WATCHDOG</code>) beendet eine Anfrage an einem Usage-Limit, das zu weit in der Zukunft zurücksetzt, statt zu warten — relevant für Oneshot-/Cron-Läufe. Dazu: OpenTelemetry-Tracing-Leitfaden im <code>claude-api</code>-Skill und die <code>%</code>-Bewegung (Sprung zur passenden Klammer) im Vim-Modus.</p>
+        <div class="news-meta">
+          <span>📅 15.10.2026</span><span>·</span><span>🏢 Anthropic</span><span>·</span>
+          <a href="https://github.com/anthropics/claude-code/releases" target="_blank" rel="noreferrer">github.com</a>
         </div>
       </article>
 
@@ -507,7 +507,16 @@
 
       <article class="card">
         <h3>Letzte Releases</h3>
-        <p>Aktuelle Version <code>v2.1.300</code> · bringt <strong><code>virtualText</code></strong> für die Prompt-Dekorationen eines Mods — Text, der im Prompt-Feld erscheint, aber weder in den Entwurf noch in den abgeschickten Prompt wandert — und ergänzt die OpenTelemetry-<code>api_request</code>-Metrik um <strong><code>cache_creation_5m_tokens</code> und <code>cache_creation_1h_tokens</code></strong>, die Cache-Schreibvorgänge nach Lebensdauer aufschlüsseln. Davor führte v2.1.299 den Schalter <code>CLAUDE_CODE_DISABLE_FILE_MENTIONS</code> ein — Claude bekommt bei <code>@</code>-Erwähnungen nur die Pfade zum Selberlesen, nicht den Dateiinhalt — plus <strong>Idle-Compaction im Terminal</strong> (eine 200K-Token-Session nach ~54 min Leerlauf wird vor Ablauf des Einstunden-Prompt-Caches kompaktiert). v2.1.296 ergänzte das Apps-Gateway um einen <code>code</code>-Schlüssel in <code>managed.policies[]</code> und <code>autoCompactWindow</code> für Subagenten; v2.1.295 brachte <strong><code>onFailure: "block"</code></strong> für Hooks (fail-closed) plus <strong>Program Status Protocol (OSC 7501)</strong>; v2.1.294 härtete die <strong>Hook-Leitplanken</strong>. v2.1.293 nahm <strong>Claude Haiku 5.5</strong> (<code>claude-haiku-5-5</code>) als neues Default-Haiku auf der API auf — 1 Mio. Kontext, 0,10 $/0,50 $ pro Mtok.</p>
+        <p>Aktuelle Version <code>v2.1.301</code> · härtet den <strong>unbeaufsichtigten Retry-Modus</strong>: <code>CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS</code> lässt den Retry-Watchdog eine Anfrage an einem Usage-Limit beenden, das zu weit in der Zukunft zurücksetzt, statt darauf zu warten — relevant für Oneshot- und Cron-Läufe. Dazu kommen ein <strong>OpenTelemetry-Tracing-Leitfaden</strong> im <code>claude-api</code>-Skill und die <strong><code>%</code>-Bewegung</strong> im Vim-Modus (Sprung zur passenden Klammer). Davor brachte v2.1.300 <strong><code>virtualText</code></strong> für die Prompt-Dekorationen eines Mods — Text, der im Prompt-Feld erscheint, aber weder in den Entwurf noch in den abgeschickten Prompt wandert — und schlüsselte die OpenTelemetry-<code>api_request</code>-Metrik via <code>cache_creation_5m_tokens</code>/<code>cache_creation_1h_tokens</code> nach Cache-Lebensdauer auf. v2.1.299 führte <code>CLAUDE_CODE_DISABLE_FILE_MENTIONS</code> ein (bei <code>@</code>-Erwähnungen nur Pfade statt Dateiinhalt) plus <strong>Idle-Compaction im Terminal</strong> (eine 200K-Token-Session nach ~54 min Leerlauf wird vor Ablauf des Einstunden-Prompt-Caches kompaktiert). v2.1.296 ergänzte das Apps-Gateway um einen <code>code</code>-Schlüssel in <code>managed.policies[]</code> und <code>autoCompactWindow</code> für Subagenten; v2.1.295 brachte <strong><code>onFailure: "block"</code></strong> für Hooks (fail-closed) plus <strong>Program Status Protocol (OSC 7501)</strong>; v2.1.294 härtete die <strong>Hook-Leitplanken</strong>.</p>
+
+        <div class="release">
+          <div class="ver">v2.1.301</div>
+          <div class="when">15.10.</div>
+          <div class="what">
+            <strong><code>CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS</code></strong> — der unbeaufsichtigte Retry-Modus (<code>CLAUDE_CODE_RETRY_WATCHDOG</code>) beendet eine Anfrage an einem Usage-Limit, das zu weit in der Zukunft zurücksetzt, statt zu warten · <strong>OpenTelemetry-Tracing-Leitfaden</strong> im <code>claude-api</code>-Skill (Trace-Ziele via <code>ant</code>-CLI) · <code>%</code>-Bewegung im Vim-Modus (Sprung zur passenden Klammer, auch mit d/c/y)
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
 
         <div class="release">
           <div class="ver">v2.1.300</div>
@@ -551,15 +560,6 @@
           <div class="what">
             <strong>Fix: als Anweisung formulierte <code>prompt</code>- und <code>agent</code>-Hooks</strong> („blockiere Befehle, die …“) ließen durch, was sie blockieren sollten · <strong>strengere Auslegung von <code>Stop</code>-/<code>SubagentStop</code>-Hooks</strong> (z. B. „mach weiter, wenn der Build kaputt ist“), damit Claude seltener vorzeitig stoppt
             <span class="badge sec">SECURITY</span>
-          </div>
-        </div>
-
-        <div class="release">
-          <div class="ver">v2.1.293</div>
-          <div class="when">07.10.</div>
-          <div class="what">
-            <strong>Claude Haiku 5.5 (<code>claude-haiku-5-5</code>)</strong> — neues Default-Haiku auf der Anthropic-API, 1 Mio. Kontext, 0,10 $/0,50 $ pro Mtok (0,50 $/2,50 $ über 100K) · <code>agentType</code> in der <code>subagentStatusLine</code> · <code>isDeferred</code> für <code>$.tool.register</code>
-            <span class="badge feat">FEATURE</span>
           </div>
         </div>
 
