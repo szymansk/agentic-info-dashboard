@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tagesbriefing · Agentic AI</title>
+<style>
+  :root {
+    --bg: #0b0d12;
+    --bg-2: #11141c;
+    --panel: #161a24;
+    --panel-2: #1b2030;
+    --line: #232a3a;
+    --text: #e7ecf3;
+    --body: #d8dce6;
+    --muted: #8b94a8;
+    --dim: #5d6577;
+    --accent: #c39a4a;       /* warm gold */
+    --accent-2: #7aa2f7;
+    --good: #6ec38b;
+    --warn: #e0a857;
+    --hot:  #e15a5a;
+    --crit: #b04bd1;
+    --radius: 14px;
+    --shadow: 0 10px 30px rgba(0,0,0,.35), 0 1px 0 rgba(255,255,255,.03) inset;
+  }
+  * { box-sizing: border-box; }
+  html, body { background: var(--bg); color: var(--text); }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, Roboto, 'Helvetica Neue', sans-serif;
+    margin: 0; line-height: 1.55;
+    background:
+      radial-gradient(1100px 700px at 90% -10%, rgba(195,154,74,.08), transparent 60%),
+      radial-gradient(900px 600px at -10% 10%, rgba(122,162,247,.07), transparent 60%),
+      var(--bg);
+    min-height: 100vh;
+  }
+  a { color: var(--accent-2); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+
+  /* ── Layout ──────────────────────────────────────────────── */
+  .wrap { max-width: 1280px; margin: 0 auto; padding: 28px 28px 80px; }
+
+  /* ── Top Nav ─────────────────────────────────────────────── */
+  .topnav {
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+    margin-bottom: 22px;
+    font-size: 13px;
+  }
+  .topnav a {
+    color: var(--muted); padding: 6px 12px; border-radius: 999px;
+    border: 1px solid var(--line);
+    transition: color .12s ease, border-color .12s ease, background .12s ease;
+  }
+  .topnav a:hover { color: var(--text); border-color: var(--accent); text-decoration: none; }
+  .topnav a.active {
+    color: var(--accent); border-color: var(--accent);
+    background: rgba(195,154,74,.08);
+  }
+
+  /* ── Timeline strip ──────────────────────────────────────── */
+  .timeline-bar {
+    display: flex; align-items: center; gap: 8px;
+    padding: 12px 14px; margin-bottom: 24px;
+    background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+    border: 1px solid var(--line); border-radius: var(--radius);
+    overflow-x: auto;
+    scrollbar-width: thin; scrollbar-color: var(--line) transparent;
+  }
+  .timeline-bar::-webkit-scrollbar { height: 6px; }
+  .timeline-bar::-webkit-scrollbar-thumb { background: var(--line); border-radius: 3px; }
+  .timeline-bar .label {
+    color: var(--dim); font-size: 11px; letter-spacing: .08em;
+    text-transform: uppercase; padding-right: 8px; flex-shrink: 0;
+    border-right: 1px solid var(--line); margin-right: 4px;
+  }
+  .tl-pill {
+    display: inline-flex; flex-direction: column; align-items: center;
+    flex-shrink: 0;
+    padding: 6px 12px; border-radius: 10px;
+    border: 1px solid var(--line);
+    background: rgba(255,255,255,.02);
+    color: var(--muted);
+    font-size: 11px; text-decoration: none;
+    transition: all .12s ease;
+    min-width: 64px;
+  }
+  .tl-pill:hover {
+    color: var(--text); border-color: var(--accent);
+    background: rgba(195,154,74,.06); text-decoration: none;
+  }
+  .tl-pill.active {
+    color: var(--bg); background: var(--accent); border-color: var(--accent);
+    font-weight: 700;
+  }
+  .tl-pill .dow { font-size: 10px; opacity: .8; letter-spacing: .04em; text-transform: uppercase; }
+  .tl-pill .date { font-family: ui-monospace, monospace; font-size: 13px; margin-top: 2px; font-weight: 600; }
+  .tl-pill.future { opacity: .4; pointer-events: none; }
+
+  /* ── Header ──────────────────────────────────────────────── */
+  header.main {
+    display: flex; align-items: end; justify-content: space-between;
+    gap: 24px; padding-bottom: 22px; margin-bottom: 28px;
+    border-bottom: 1px solid var(--line);
+  }
+  header.main .title { display: flex; align-items: baseline; gap: 14px; }
+  header.main .title h1 {
+    margin: 0; font-size: 30px; letter-spacing: -.02em; font-weight: 800;
+  }
+  header.main .title .dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: var(--hot); box-shadow: 0 0 0 4px rgba(225,90,90,.18);
+    animation: pulse 2.4s infinite;
+  }
+  @keyframes pulse {
+    0%,100% { box-shadow: 0 0 0 4px rgba(225,90,90,.18); }
+    50%     { box-shadow: 0 0 0 9px rgba(225,90,90,.05); }
+  }
+  header.main .subtitle { color: var(--muted); font-size: 14px; }
+  header.main .meta { text-align: right; font-size: 13px; color: var(--muted); }
+  header.main .meta .date { color: var(--text); font-weight: 600; font-size: 15px; }
+  header.main .meta .tag {
+    display: inline-block; margin-top: 6px; padding: 3px 8px;
+    border: 1px solid var(--line); border-radius: 999px;
+    color: var(--muted); font-size: 11px; letter-spacing: .04em; text-transform: uppercase;
+  }
+
+  /* ── Section heading ─────────────────────────────────────── */
+  section { margin-top: 40px; }
+  .section-head { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+  .section-head h2 {
+    margin: 0; font-size: 18px; font-weight: 700;
+    letter-spacing: .02em; text-transform: uppercase;
+  }
+  .section-head .rule { flex: 1; height: 1px; background: var(--line); }
+  .section-head .hint { color: var(--dim); font-size: 12px; }
+
+  /* ── BRIEFING (editorial) ────────────────────────────────── */
+  .briefing-wrap {
+    max-width: 740px; margin: 0 auto;
+  }
+  .briefing-head {
+    text-align: left; margin-bottom: 28px;
+    padding-bottom: 22px; border-bottom: 1px solid var(--line);
+  }
+  .briefing-head h2.kicker {
+    margin: 0; font-size: 12px; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--accent); font-weight: 700;
+  }
+  .briefing-head h1 {
+    margin: 8px 0 10px; font-size: 32px; line-height: 1.2;
+    letter-spacing: -.02em; font-weight: 800; color: var(--text);
+  }
+  .briefing-head .byline {
+    color: var(--muted); font-size: 13px;
+    display: flex; gap: 12px; flex-wrap: wrap; align-items: center;
+  }
+  .briefing-head .byline .dot-sep { color: var(--dim); }
+  .briefing-head .lede {
+    margin-top: 22px; font-size: 18px; line-height: 1.55;
+    color: var(--text); font-weight: 400;
+  }
+  .briefing-head .lede::first-letter {
+    font-size: 56px; line-height: 1; font-weight: 800;
+    float: left; padding: 4px 10px 0 0; color: var(--accent);
+  }
+
+  .briefing-body { font-size: 16px; line-height: 1.7; color: var(--body); }
+  .briefing-body section { margin-top: 36px; }
+  .briefing-body h3 {
+    margin: 0 0 12px; font-size: 22px; line-height: 1.25;
+    letter-spacing: -.01em; font-weight: 700; color: var(--text);
+  }
+  .briefing-body h3 .num {
+    color: var(--accent); margin-right: 10px; font-family: ui-monospace, monospace;
+    font-size: 18px; font-weight: 600;
+  }
+  .briefing-body p { margin: 0 0 14px; }
+  .briefing-body p strong { color: var(--text); font-weight: 600; }
+  .briefing-body em { color: var(--text); font-style: italic; }
+  .briefing-body ol, .briefing-body ul { margin: 12px 0 16px; padding-left: 20px; }
+  .briefing-body li { margin-bottom: 8px; }
+  .briefing-body blockquote.takeaway {
+    margin: 22px 0; padding: 14px 18px;
+    border-left: 3px solid var(--accent);
+    background: rgba(195,154,74,.06);
+    border-radius: 0 8px 8px 0;
+    color: var(--text); font-size: 15px; line-height: 1.6;
+  }
+  .briefing-body blockquote.takeaway strong { color: var(--accent); letter-spacing: .04em; text-transform: uppercase; font-size: 11px; display: block; margin-bottom: 6px; }
+  .briefing-end {
+    margin-top: 36px; padding-top: 22px;
+    border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 13px; text-align: center;
+  }
+
+  /* ── Grid for cards (Breaking News + Claude Code) ────────── */
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 980px) { .grid.cols-3, .grid.cols-2 { grid-template-columns: 1fr; } }
+
+  .card {
+    background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+    border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 18px 18px 16px; box-shadow: var(--shadow);
+    position: relative; overflow: hidden;
+  }
+  .card h3 { margin: 0 0 6px; font-size: 16px; font-weight: 700; letter-spacing: -.005em; }
+  .card p  { margin: 0 0 10px; color: var(--muted); font-size: 13.5px; }
+  .card .row { display: flex; align-items: center; gap: 8px; }
+  .card ul { margin: 8px 0 0; padding-left: 18px; }
+  .card li { font-size: 13.5px; color: var(--muted); margin-bottom: 4px; }
+
+  /* ── Breaking News ───────────────────────────────────────── */
+  .news-card { padding-left: 18px; }
+  .news-card::before {
+    content: ""; position: absolute; left: 0; top: 0; bottom: 0;
+    width: 4px; background: var(--accent-2);
+  }
+  .news-card.crit::before { background: var(--crit); }
+  .news-card.hot::before  { background: var(--hot); }
+  .news-card.warn::before { background: var(--warn); }
+  .news-card.info::before { background: var(--accent-2); }
+  .news-meta {
+    display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
+    font-size: 12px; color: var(--dim); margin-top: 10px;
+  }
+  .pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 2px 9px; border-radius: 999px;
+    border: 1px solid var(--line); color: var(--muted);
+    font-size: 11px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase;
+  }
+  .pill.crit { color: #f1bdfb; border-color: rgba(176,75,209,.45); background: rgba(176,75,209,.10); }
+  .pill.hot  { color: #ffc4c4; border-color: rgba(225,90,90,.4);  background: rgba(225,90,90,.08); }
+  .pill.warn { color: #ffd99a; border-color: rgba(224,168,87,.4); background: rgba(224,168,87,.08); }
+  .pill.info { color: #cfe0ff; border-color: rgba(122,162,247,.4); background: rgba(122,162,247,.08); }
+  .score {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 2px 9px; border-radius: 999px;
+    background: rgba(255,255,255,.04); border: 1px solid var(--line);
+    font-family: ui-monospace, monospace; font-size: 11px; color: var(--text);
+  }
+  .score b { color: var(--accent); }
+
+  /* ── Claude Code ─────────────────────────────────────────── */
+  .cc-grid { grid-template-columns: 1.2fr .8fr; }
+  @media (max-width: 980px) { .cc-grid { grid-template-columns: 1fr; } }
+  .release {
+    display: flex; align-items: flex-start; gap: 12px; padding: 10px 0;
+    border-bottom: 1px dashed var(--line);
+  }
+  .release:last-child { border-bottom: none; }
+  .release .ver {
+    flex: 0 0 auto; min-width: 76px;
+    font-family: ui-monospace, monospace; font-size: 12.5px;
+    color: var(--accent); font-weight: 600;
+  }
+  .release .when { flex: 0 0 78px; color: var(--dim); font-size: 12px; font-family: ui-monospace, monospace; }
+  .release .what { color: var(--text); font-size: 13.5px; }
+  .release .what em { color: var(--muted); font-style: normal; }
+  .release .what strong { color: var(--text); }
+  .badge { display: inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .04em; }
+  .badge.feat { color: #b9efcb; background: rgba(110,195,139,.12); border: 1px solid rgba(110,195,139,.3); }
+  .badge.sec  { color: #ffc4c4; background: rgba(225,90,90,.12);  border: 1px solid rgba(225,90,90,.35); }
+  .badge.fix  { color: #ffd99a; background: rgba(224,168,87,.12); border: 1px solid rgba(224,168,87,.3); }
+  .src-card .links { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
+  .src-card .links a {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 8px 10px; border-radius: 8px;
+    border: 1px solid var(--line); background: rgba(255,255,255,.02);
+    color: var(--text); font-size: 13.5px;
+    transition: background .12s ease, border-color .12s ease;
+  }
+  .src-card .links a:hover { background: rgba(122,162,247,.06); border-color: rgba(122,162,247,.4); text-decoration: none; }
+  .src-card .links a .arrow { color: var(--dim); font-size: 12px; }
+
+  /* ── Snapshot banner (archive only) ──────────────────────── */
+  .snap-banner {
+    display: none;
+    background: rgba(195,154,74,.10);
+    border: 1px solid rgba(195,154,74,.3);
+    border-radius: 10px; padding: 10px 14px; margin-bottom: 18px;
+    color: var(--accent); font-size: 13px;
+    align-items: center; justify-content: space-between; gap: 12px;
+  }
+  .snap-banner.show { display: flex; }
+
+  /* ── Footer ──────────────────────────────────────────────── */
+  footer {
+    margin-top: 60px; padding-top: 18px;
+    border-top: 1px solid var(--line);
+    color: var(--dim); font-size: 12px;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+  footer .mono { color: var(--muted); }
+</style>
+</head>
+<body data-snapshot-date="2026-10-16" data-snapshot-mode="archive">
+<div class="wrap">
+
+  <!-- ─── Top Nav ─── -->
+  <nav class="topnav">
+    <a href="/agentic-info-dashboard/">📊 Übersicht</a>
+    <a href="/agentic-info-dashboard/ai-news/" class="active">📰 AI News (Tagesbriefing)</a>
+    <a href="/agentic-info-dashboard/youtube/">▶ YouTube Hot</a>
+    <a href="/agentic-info-dashboard/whoiswho/">👥 Who is Who</a>
+    <a href="/agentic-info-dashboard/sources/">📚 Quellen</a>
+    <a href="/agentic-info-dashboard/it-services/">🏢 IT-Services-Radar</a>
+    <a href="/agentic-info-dashboard/regulation/">⚖ Regulatorik</a>
+    <a href="/agentic-info-dashboard/coding-tools/">⌘ Coding-Tools</a>
+    <a href="/agentic-info-dashboard/calendar/">📅 Kalender</a>
+    <a href="/agentic-info-dashboard/extensions/">🧩 Extensions</a>
+  </nav>
+
+  <!-- ─── Timeline strip ─── -->
+  <div class="timeline-bar" id="timeline">
+    <span class="label">Zeitstrahl</span>
+    <!-- JS füllt aus archive/manifest.json. Fallback statisch: -->
+    <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-10-11.html" data-date="2026-10-11">
+      <span class="dow">So</span><span class="date">11.10.</span>
+    </a>
+    <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-10-12.html" data-date="2026-10-12">
+      <span class="dow">Mo</span><span class="date">12.10.</span>
+    </a>
+    <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-10-13.html" data-date="2026-10-13">
+      <span class="dow">Di</span><span class="date">13.10.</span>
+    </a>
+    <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-10-14.html" data-date="2026-10-14">
+      <span class="dow">Mi</span><span class="date">14.10.</span>
+    </a>
+    <a class="tl-pill active" href="/agentic-info-dashboard/ai-news/" data-date="2026-10-15">
+      <span class="dow">Do</span><span class="date">15.10.</span>
+    </a>
+  </div>
+
+  <!-- ─── Snapshot Banner (nur in Archiv-Versionen) ─── -->
+  <div class="snap-banner" id="snap-banner">
+    <span>📌 Du siehst einen archivierten Snapshot.</span>
+    <a href="/agentic-info-dashboard/ai-news/">← Zurück zum heutigen Briefing</a>
+  </div>
+
+  <!-- ─── Header ─── -->
+  <header class="main">
+    <div class="title">
+      <span class="dot" title="Live"></span>
+      <div>
+        <h1>Agentic AI · Tagesbriefing</h1>
+        <div class="subtitle">Was heute zählt — in 10 Minuten Lesezeit auf den Punkt.</div>
+      </div>
+    </div>
+    <div class="meta">
+      <div class="date" id="today">Freitag, 16. Oktober 2026</div>
+      <div class="tag">Snapshot · KW 42 / 2026</div>
+    </div>
+  </header>
+
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <!-- ════════════════ TAGESBRIEFING (Editorial) ═══════════════ -->
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <article class="briefing-wrap">
+
+    <header class="briefing-head">
+      <h2 class="kicker">Freitag · Agentic AI &amp; GenAI</h2>
+      <h1>Die Gewichte öffnen sich — Meta macht Muse Spark offen, doch der Coding-Boden gehört China</h1>
+      <div class="byline">
+        <span>✍️ Kuratiert &amp; analysiert</span>
+        <span class="dot-sep">·</span>
+        <span>~10 Min Lesezeit</span>
+        <span class="dot-sep">·</span>
+        <span id="byline-date">16. Oktober 2026</span>
+      </div>
+      <p class="lede">
+        Seit Monaten lautet die These dieses Briefings, dass rohe Fähigkeit zur Ware wird. Dieser Freitag liefert die konsequente nächste Stufe: Auch die <em>offene</em> Fähigkeit wird zur Ware. <strong>Meta</strong> gibt die Gewichte von <strong>Muse Spark Open</strong> frei — 816 Milliarden Parameter, davon rund 42 Milliarden pro Token aktiv, bis zu eine Million Token Kontext, gebaut für Coding und langlaufende Agenten und laut Meta das stärkste offen gewichtete Modell eines US-Labors. Man kann es lokal betreiben, auf zwei Apple-M5-Ultra-Mac-Studios. Und doch erzählt derselbe Release eine zweite, unbequemere Geschichte: Auf dem agentischen Coding-Benchmark Terminal-Bench 2.1 liegt Muse Spark Open mit 76,4 deutlich hinter den chinesischen Open-Weight-Modellen <strong>Kimi K3</strong>, <strong>GLM 5.3</strong> und <strong>Qwen3.8</strong>. Die USA holt bei offenen Gewichten auf — den Boden des Coding-Marktes hält weiter Peking. Darunter läuft, wie gewohnt, das Kapital: <strong>Ramp</strong> springt drei Monate nach einer 44-Milliarden-Runde auf rund 60 Milliarden Dollar Bewertung. Der Wettbewerb hat die Fähigkeit hinter sich gelassen; er entscheidet sich jetzt an Jurisdiktion, Integration und Vertrieb.
+      </p>
+    </header>
+
+    <div class="briefing-body">
+
+      <section>
+        <h3><span class="num">01</span>Meta öffnet die Gewichte — Muse Spark Open und was „offen“ jetzt heißt</h3>
+        <p>Ein halbes Jahr nachdem Meta sein Coding-Modell <strong>Muse Spark</strong> proprietär eingeführt hatte, hat das Unternehmen am Mittwoch dessen Gewichte freigegeben — als <strong>Muse Spark Open</strong>, laut eigener Darstellung das stärkste offen gewichtete Modell eines US-Labors. Die Eckdaten erklären den Anspruch: <strong>816 Milliarden Parameter</strong> in einer Mixture-of-Experts-Architektur, von denen pro Token rund <strong>42 Milliarden aktiv</strong> sind, ein Kontextfenster von bis zu einer Million Token, Eingaben aus Text, Bild, Audio und Video. Gebaut ist es ausdrücklich für Software-Entwicklung und langlaufende Agenten; das Training stützte sich nach Meta-Angaben auf „echte Entwickler-Workflows“. Die Gewichte liegen in BF16 und NVFP4 auf Hugging Face, die Lizenz („Muse Model License“) trägt begrenzte kommerzielle Bedingungen, ist aber für Entwickler, die das Modell anpassen oder in eigene Software packen, kostenfrei.</p>
+        <p>Das eigentlich Bemerkenswerte ist weniger die Zahl der Parameter als die strategische Kehrtwende. Über ein Jahr lang hielt Meta seine stärksten Systeme geschlossen und ließ nur kleinere Modelle offen; jetzt öffnet es ein Modell nahe der eigenen Frontier — zwei Tage nachdem das letzte verbleibende Großlabor mit <strong>Muse Wonder</strong> überhaupt erst Parität an der Spitze erreicht hatte. Für Meta ist Offenheit kein Idealismus, sondern Verteilung: Wer das Default-Werkzeug für agentisches Coding setzen will und von hinten kommt, verschenkt es. <span data-person="yann-lecun">Yann LeCun</span>, Metas scheidende KI-Galionsfigur, hat diese These seit Jahren vertreten — dass offene Gewichte den Standard bestimmen, nicht das beste geschlossene Modell. Muse Spark Open ist der bisher größte Testfall dieser Wette, ausgerechnet in dem Moment, in dem Fähigkeit zur Ware geworden ist und der Preis pro Aufgabe über Adoption entscheidet.</p>
+        <blockquote class="takeaway">
+          <strong>Was es bedeutet</strong>
+          Für uns: Ein offen gewichtetes Frontier-nahes Coding-Modell verschiebt die Make-or-Buy-Frage. Wo bisher nur ein API-Abo zum Frontier-Modell führte, steht jetzt eine self-hostbare Alternative, die Datenhaltung, Jurisdiktion und Kostenstruktur grundlegend ändert. Billbar ist die Bewertung: Welche Workloads rechtfertigen den Betriebsaufwand eigener Gewichte gegenüber dem API-Komfort, welche Lizenzbedingungen tragen den kommerziellen Einsatz, und wie sieht eine hybride Architektur aus, die offene und geschlossene Modelle je nach Sensibilität und Last mischt. Offenheit ist kein Freibier — sie ist eine Betriebsentscheidung.
+        </blockquote>
+      </section>
+
+      <section>
+        <h3><span class="num">02</span>Der Coding-Boden gehört China — die Benchmark-Lücke bei den offenen Gewichten</h3>
+        <p>So selbstbewusst Metas „stärkstes US-Open-Weight“-Label klingt, der eigene Release räumt die Grenze ein: Auf <strong>Terminal-Bench 2.1</strong>, dem derzeit maßgeblichen Maß für agentisches Coding, kommt Muse Spark Open auf <strong>76,4</strong> — und liegt damit hinter den chinesischen Open-Weight-Modellen. Moonshots <strong>Kimi K3</strong> wird je nach Quelle mit Werten um 85 bis 88 geführt, auch <strong>GLM 5.3</strong> und <strong>Qwen3.8</strong> rangieren darüber. Das Muster, das dieses Briefing seit dem Sommer verfolgt — chinesische Open-Weights erobern von unten den Markt, während die westlichen Labore ihre Spitze hinter Preis- und Zugangsschranken halten — bekommt damit seinen bislang schärfsten Beleg: Nicht einmal Metas Öffnungs-Offensive dreht die Rangfolge am offenen Coding-Boden.</p>
+        <p>Die Benchmark-Zahlen sind mit Vorsicht zu lesen — Anbieter berichten gern ihre eigenen Höchstwerte, und die Terminal-Bench-Angaben zu Kimi K3 schwanken je nach „Max-Effort“-Konfiguration erheblich. Doch die Richtung ist unstrittig: Das Terrain der frei verfügbaren, self-hostbaren Coding-Modelle wird zunehmend von Peking besetzt, mit allem, was das für Daten-Jurisdiktion und Lieferketten-Abhängigkeit bedeutet. Für einen europäischen Markt, der Souveränität fordert, aber Spitzenmodelle aus den USA oder China bezieht, ist das die eigentliche Pointe des Tages: Die Wahl ist selten „offen gegen geschlossen“, sondern „welche Jurisdiktion legt die Gewichte offen“.</p>
+        <blockquote class="takeaway">
+          <strong>Was es bedeutet</strong>
+          Für uns: Offene Gewichte sind nicht neutral — ihre Herkunft ist ein Compliance- und Governance-Merkmal. Billbar: Modell-Due-Diligence, die Lizenz, Trainingsdaten-Provenienz und Betreiber-Jurisdiktion gegen die Datenklassen eines Kunden prüft; Benchmark-Validierung im eigenen Kontext statt Vertrauen auf Anbieter-Tabellen; und Architektur-Beratung, die das beste offene Coding-Modell auswählt, ohne regulatorische Risiken mit einzukaufen. Der Score auf dem Datenblatt ist das eine, die Prüfbarkeit im Betrieb das andere.
+        </blockquote>
+      </section>
+
+      <section>
+        <h3><span class="num">03</span>816 Milliarden auf zwei Macs — die Frontier wandert auf den Schreibtisch</h3>
+        <p>Ein Detail des Muse-Spark-Open-Releases verdient eine eigene Betrachtung, weil es die Infrastruktur-Frage umdreht: Meta gibt an, das Modell lasse sich <strong>lokal auf zwei Apple-M5-Ultra-Mac-Studios</strong> betreiben. Die NVFP4-Variante verlangt mindestens rund 700 GB GPU-Speicher, die BF16-Fassung entsprechend mehr — das ist kein Consumer-Laptop, aber eben auch kein Rechenzentrum und kein Cloud-Abo. Ein Modell, das vor einem Jahr nur über die API eines Hyperscalers erreichbar gewesen wäre, läuft jetzt unter dem Schreibtisch, in der Jurisdiktion und unter der Kontrolle des Betreibers.</p>
+        <p>Das ist die stille Gegenbewegung zur Cloud-Konsolidierung, über die dieses Briefing sonst berichtet. Während die Compute-Rechnung der Frontier-Labore öffentlich und nervös wird — Anthropics IPO-Prospekt listet dreistellige Milliarden-Verpflichtungen, CoreWeaves Anleihen tragen zweistellige Renditen — verschiebt die Open-Weight-Welle einen Teil der Fähigkeit dorthin zurück, wo die Daten liegen. Für Banken, Behörden und Industrie im DACH-Raum, die agentische KI wollen, aber ihre Daten nicht aus der Hand geben, ist genau das der entscheidende Hebel. Die Rechnung ist nicht trivial — zwei Mac Studios und der Betrieb eines 816-Milliarden-Modells kosten Geld und Know-how —, aber sie ist zum ersten Mal überhaupt eine Rechnung, keine Unmöglichkeit.</p>
+        <blockquote class="takeaway">
+          <strong>Was es bedeutet</strong>
+          Für uns: Lokaler und air-gapped Betrieb frontier-naher Modelle rückt vom Sonderfall zur echten Option. Billbar: Referenz-Architekturen für on-prem und self-hosted Inferenz, Kapazitäts- und Kostenrechnungen gegen das API-Modell, und die Integration solcher Modelle in bestehende Entwickler- und Daten-Pipelines hinter der Firewall. Wer rechnen kann, wann eigene Gewichte günstiger und sicherer sind als das Abo, verkauft Souveränität mit belastbarer Begründung — nicht als Schlagwort.
+        </blockquote>
+      </section>
+
+      <section>
+        <h3><span class="num">04</span>Das Kapital verdichtet sich weiter — Ramp springt auf 60 Milliarden</h3>
+        <p>Während sich die Modell-Schicht auf den Preis und jetzt auf die Offenheit zubewegt, bleibt das Kapital bei seinem Muster: Es fließt in wenige, immer größere Runden. <strong>Ramp</strong>, die Spend-Management-Plattform, hat laut Bloomberg rund <strong>1,85 Milliarden Dollar</strong> zu einer Bewertung von etwa <strong>60 Milliarden Dollar</strong> eingesammelt — angeführt von Dragoneer und Thrive Capital, mit Founders Fund an Bord. Bestätigt hat Ramp die Runde nicht. Bemerkenswert ist das Tempo: Erst im Juni lag die Bewertung bei 44 Milliarden (nach einer 750-Millionen-Runde), die neue Marke bedeutet einen Sprung von über einem Drittel in rund drei Monaten. Der Treiber ist ausdrücklich der KI-Ausbau des Produkts — Ramp positioniert sich als agentische Finanz-Automatisierung, nicht als klassisches Fintech.</p>
+        <p>Ramp steht exemplarisch für eine Verschiebung, die dieses Briefing seit Wochen beobachtet: Der Aufschlag wandert von der Modell-Schicht in die <em>Anwendung</em>. Nicht das Labor, das das Modell baut, zieht die höchste Bewertung, sondern das Unternehmen, das es in einen klebrigen Workflow mit echtem Umsatz einbettet — Ramp bei den Ausgaben, EliseAI in der Immobilie, Cognition beim Coding. Das Geld sagt, wo der verteidigbare Wert sitzt: nicht in der Fähigkeit, die zur Ware geworden ist, sondern in der Oberfläche, der Integration und dem Vertrieb. Dieselbe Logik, die Metas Open-Weight-Zug erklärt, erklärt auch Ramps Bewertung.</p>
+        <blockquote class="takeaway">
+          <strong>Was es bedeutet</strong>
+          Für uns: Der Markt bepreist Integration höher als rohe Modell-Fähigkeit — und genau diese Integrationsarbeit ist das Kerngeschäft eines IT-Dienstleisters. Billbar: agentische Workflows tief in bestehende Fach- und Finanzprozesse einbetten, Datenanbindung und Rechtefluss sauber modellieren, messbaren Umsatz- oder Effizienzbeitrag nachweisen. Das Kapital honoriert nicht, wer das größte Modell hat, sondern wer es in verlässliche Arbeit übersetzt. Das ist die bessere Nachricht für die Services-Schicht, als es die Preiskrieg-Schlagzeilen vermuten lassen.
+        </blockquote>
+      </section>
+      <div class="briefing-end">
+        <strong>Was morgen zu beobachten ist:</strong> ob Muse Spark Open die Open-Weight-Rangliste tatsächlich bewegt, sobald unabhängige Prüfer (Artificial Analysis, Vals) die Coding-Benchmarks gegen die chinesischen Modelle nachrechnen — oder ob die 76,4 auf Terminal-Bench 2.1 Bestand haben. Ob weitere US-Labore Metas Öffnungs-Schritt folgen, jetzt da Offenheit zum Vertriebskanal statt zum Risiko wird. Ob Ramps 60-Milliarden-Runde sich bestätigt und die Anwendungs-Schicht die nächste Bewertungsstufe zündet. Und ob der lokale Betrieb frontier-naher Modelle über die Demo hinaus praktikabel wird — die Frage, an der sich im DACH-Raum Souveränitäts-Anspruch und Betriebsrealität messen. Claude Code springt auf <code>v2.1.301</code> (härtet den unbeaufsichtigten Retry-Modus an Usage-Limits, OTel-Tracing-Leitfaden im <code>claude-api</code>-Skill, <code>%</code>-Bewegung im Vim-Modus).
+      </div>
+
+    </div>
+
+  </article>
+
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <!-- ════════════════════ BREAKING NEWS ═══════════════════════ -->
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <section>
+    <div class="section-head">
+      <h2>⚡ Breaking News</h2>
+      <div class="rule"></div>
+      <div class="hint">LLM-Score 1–10 · letzte 7 Tage</div>
+    </div>
+
+    <div class="grid cols-3">
+
+      <article class="card news-card hot">
+        <div class="row">
+          <span class="pill hot">Major Release</span>
+          <span class="score">Score <b>8.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Meta gibt Muse Spark Open frei — 816B offenes Coding-Modell</h3>
+        <p><strong>Meta</strong> hat die Gewichte von <strong>Muse Spark Open</strong> veröffentlicht — nach eigener Darstellung das stärkste offen gewichtete Modell eines US-Labors: <strong>816 Mrd. Parameter</strong> (MoE, ~42 Mrd. aktiv), bis zu <strong>1 Mio. Token Kontext</strong>, multimodal, gebaut für Coding und langlaufende Agenten. Gewichte (BF16/NVFP4) auf Hugging Face, „Muse Model License“ mit begrenzten kommerziellen Bedingungen, aber kostenfrei für Entwickler. Läuft lokal auf zwei Apple-M5-Ultra-Mac-Studios.</p>
+        <div class="news-meta">
+          <span>📅 15.10.2026</span><span>·</span><span>🏢 Meta</span><span>·</span>
+          <a href="https://siliconangle.com/2026/10/15/meta-releases-816b-parameter-muse-spark-open-for-coding-and-agent-work/" target="_blank" rel="noreferrer">siliconangle.com</a><a href="https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/" target="_blank" rel="noreferrer">techcrunch.com</a><a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B" target="_blank" rel="noreferrer">huggingface.co</a>
+        </div>
+      </article>
+
+      <article class="card news-card info">
+        <div class="row">
+          <span class="pill info">Marktdaten</span>
+          <span class="score">Score <b>6.5</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Der Coding-Boden gehört China — Muse Spark Open bleibt unter Kimi K3 &amp; Co.</h3>
+        <p>Metas eigener Release räumt die Grenze ein: Auf <strong>Terminal-Bench 2.1</strong> kommt Muse Spark Open auf <strong>76,4</strong> — hinter den chinesischen Open-Weight-Modellen. Moonshots <strong>Kimi K3</strong> wird je nach Quelle mit ~85–88 geführt, auch <strong>GLM 5.3</strong> und <strong>Qwen3.8</strong> rangieren darüber. Die USA holt bei offenen Gewichten auf, den Boden des offenen Coding-Marktes hält weiter Peking — mit allem, was das für Daten-Jurisdiktion und Souveränität bedeutet. Benchmark-Werte mit Vorsicht (Anbieter-Tabellen, „Max-Effort“).</p>
+        <div class="news-meta">
+          <span>📅 15.10.2026</span><span>·</span><span>🏢 Meta / Moonshot / Zhipu</span><span>·</span>
+          <a href="https://siliconangle.com/2026/10/15/meta-releases-816b-parameter-muse-spark-open-for-coding-and-agent-work/" target="_blank" rel="noreferrer">siliconangle.com</a><a href="https://seawork.ai/en/blogs/kimi-k3-for-coding/" target="_blank" rel="noreferrer">seawork.ai</a>
+        </div>
+      </article>
+
+      <article class="card news-card info">
+        <div class="row">
+          <span class="pill info">M&amp;A</span>
+          <span class="score">Score <b>6.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Ramp springt auf ~60 Mrd. $ — der KI-Aufschlag erreicht die Anwendung</h3>
+        <p>Die Spend-Management-Plattform <strong>Ramp</strong> hat laut Bloomberg rund <strong>1,85 Mrd. $</strong> zu einer Bewertung von etwa <strong>60 Mrd. $</strong> eingesammelt (Dragoneer, Thrive Capital, Founders Fund) — ein Sprung von über einem Drittel gegenüber den 44 Mrd. $ im Juni, getrieben vom agentischen KI-Ausbau. Ramp hat nicht bestätigt. Das Muster: Der Aufschlag wandert von der Modell-Schicht in die Anwendung — nicht das Labor, sondern der klebrige Workflow mit echtem Umsatz zieht die Bewertung.</p>
+        <div class="news-meta">
+          <span>📅 15.10.2026</span><span>·</span><span>🏢 Ramp</span><span>·</span>
+          <a href="https://www.fintechfutures.com/venture-capital-funding/ramp-reportedly-hits-60bn-valuation-in-1.85bn-funding-round" target="_blank" rel="noreferrer">fintechfutures.com</a><a href="https://thenextweb.com/news/ramp-60bn-valuation-1-85bn-round" target="_blank" rel="noreferrer">thenextweb.com</a>
+        </div>
+      </article>
+
+      <article class="card news-card">
+        <div class="row">
+          <span class="pill">Tooling</span>
+          <span class="score">Score <b>5.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Claude Code v2.1.301 — unbeaufsichtigter Retry-Modus an Usage-Limits gehärtet</h3>
+        <p><strong>Claude Code v2.1.301</strong> führt <code>CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS</code> ein: Der unbeaufsichtigte Retry-Modus (<code>CLAUDE_CODE_RETRY_WATCHDOG</code>) beendet eine Anfrage an einem Usage-Limit, das zu weit in der Zukunft zurücksetzt, statt zu warten — relevant für Oneshot-/Cron-Läufe. Dazu: OpenTelemetry-Tracing-Leitfaden im <code>claude-api</code>-Skill und die <code>%</code>-Bewegung (Sprung zur passenden Klammer) im Vim-Modus.</p>
+        <div class="news-meta">
+          <span>📅 15.10.2026</span><span>·</span><span>🏢 Anthropic</span><span>·</span>
+          <a href="https://github.com/anthropics/claude-code/releases" target="_blank" rel="noreferrer">github.com</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <!-- ═════════════════════ CLAUDE CODE ═══════════════════════ -->
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <section>
+    <div class="section-head">
+      <h2>🛠 Claude Code · Releases &amp; Watch</h2>
+      <div class="rule"></div>
+      <div class="hint">Quelle: anthropics/claude-code · GitHub Releases</div>
+    </div>
+
+    <div class="grid cc-grid">
+
+      <article class="card">
+        <h3>Letzte Releases</h3>
+        <p>Aktuelle Version <code>v2.1.301</code> · härtet den <strong>unbeaufsichtigten Retry-Modus</strong>: <code>CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS</code> lässt den Retry-Watchdog eine Anfrage an einem Usage-Limit beenden, das zu weit in der Zukunft zurücksetzt, statt darauf zu warten — relevant für Oneshot- und Cron-Läufe. Dazu kommen ein <strong>OpenTelemetry-Tracing-Leitfaden</strong> im <code>claude-api</code>-Skill und die <strong><code>%</code>-Bewegung</strong> im Vim-Modus (Sprung zur passenden Klammer). Davor brachte v2.1.300 <strong><code>virtualText</code></strong> für die Prompt-Dekorationen eines Mods — Text, der im Prompt-Feld erscheint, aber weder in den Entwurf noch in den abgeschickten Prompt wandert — und schlüsselte die OpenTelemetry-<code>api_request</code>-Metrik via <code>cache_creation_5m_tokens</code>/<code>cache_creation_1h_tokens</code> nach Cache-Lebensdauer auf. v2.1.299 führte <code>CLAUDE_CODE_DISABLE_FILE_MENTIONS</code> ein (bei <code>@</code>-Erwähnungen nur Pfade statt Dateiinhalt) plus <strong>Idle-Compaction im Terminal</strong> (eine 200K-Token-Session nach ~54 min Leerlauf wird vor Ablauf des Einstunden-Prompt-Caches kompaktiert). v2.1.296 ergänzte das Apps-Gateway um einen <code>code</code>-Schlüssel in <code>managed.policies[]</code> und <code>autoCompactWindow</code> für Subagenten; v2.1.295 brachte <strong><code>onFailure: "block"</code></strong> für Hooks (fail-closed) plus <strong>Program Status Protocol (OSC 7501)</strong>; v2.1.294 härtete die <strong>Hook-Leitplanken</strong>.</p>
+
+        <div class="release">
+          <div class="ver">v2.1.301</div>
+          <div class="when">15.10.</div>
+          <div class="what">
+            <strong><code>CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS</code></strong> — der unbeaufsichtigte Retry-Modus (<code>CLAUDE_CODE_RETRY_WATCHDOG</code>) beendet eine Anfrage an einem Usage-Limit, das zu weit in der Zukunft zurücksetzt, statt zu warten · <strong>OpenTelemetry-Tracing-Leitfaden</strong> im <code>claude-api</code>-Skill (Trace-Ziele via <code>ant</code>-CLI) · <code>%</code>-Bewegung im Vim-Modus (Sprung zur passenden Klammer, auch mit d/c/y)
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.300</div>
+          <div class="when">14.10.</div>
+          <div class="what">
+            <strong><code>virtualText</code> in den Prompt-Dekorationen eines Mods</strong> — Text, der im Prompt-Feld gezeichnet wird, aber nie in den Entwurf oder den abgeschickten Prompt gelangt · <strong><code>cache_creation_5m_tokens</code> / <code>cache_creation_1h_tokens</code></strong> im OTel-<code>api_request</code>-Event schlüsseln Cache-Schreibvorgänge nach Lebensdauer (5 min / 1 h) auf
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.299</div>
+          <div class="when">14.10.</div>
+          <div class="what">
+            <strong><code>CLAUDE_CODE_DISABLE_FILE_MENTIONS</code></strong> — bei <code>@</code>-Erwähnungen erhält Claude die Pfade zum Selberlesen mit seinen Datei-Tools, nicht den Inhalt · <strong>Idle-Compaction im Terminal</strong>: eine 200K-Token-Session nach ~54 min Leerlauf wird vor Ablauf des Einstunden-Prompt-Caches kompaktiert, damit die nächste Nachricht nicht alles neu verarbeitet
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.296</div>
+          <div class="when">09.10.</div>
+          <div class="what">
+            <strong><code>code</code>-Schlüssel in den Gateway-<code>managed.policies[]</code></strong> — dieselben Einstellungen wie <code>cli</code>, zusätzlich im Code-Tab von Claude Desktop angewandt; schaltet neben <code>desktop</code> den Gateway-Modus von Claude Desktop frei · <strong><code>autoCompactWindow</code></strong> in Subagent-Frontmatter und <code>--agents</code>: ein Subagent kann früher auto-kompaktieren als das Fenster der Hauptsession
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.295</div>
+          <div class="when">08.10.</div>
+          <div class="what">
+            <strong><code>onFailure: "block"</code> für Command- und HTTP-Hooks</strong> — ein Hook, der nicht startet, in ein Timeout läuft oder mit unerwartetem Exit-Code endet, blockiert die Aktion, statt sie durchzulassen · <strong>Program Status Protocol (OSC 7501)</strong>: Terminals, die es umsetzen, zeigen an, ob Claude arbeitet · zitierter Text im <code>/copy</code>-Picker
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.294</div>
+          <div class="when">08.10.</div>
+          <div class="what">
+            <strong>Fix: als Anweisung formulierte <code>prompt</code>- und <code>agent</code>-Hooks</strong> („blockiere Befehle, die …“) ließen durch, was sie blockieren sollten · <strong>strengere Auslegung von <code>Stop</code>-/<code>SubagentStop</code>-Hooks</strong> (z. B. „mach weiter, wenn der Build kaputt ist“), damit Claude seltener vorzeitig stoppt
+            <span class="badge sec">SECURITY</span>
+          </div>
+        </div>
+
+        <p style="margin-top: 14px;">
+          <a href="https://github.com/anthropics/claude-code/releases">→ Alle Releases auf GitHub</a><br/>
+          <a href="https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md">→ Vollständiger CHANGELOG.md</a>
+        </p>
+      </article>
+
+      <article class="card src-card">
+        <h3>Watch-List</h3>
+        <p>Worauf in den nächsten Releases zu achten ist:</p>
+        <ul>
+          <li><strong>Gateway-Policies für Claude Desktop</strong>: der neue <code>code</code>-Schlüssel bringt CLI-Kontrollen in den Desktop-Code-Tab — Enterprise-Policy-Pfade reifen schnell, Rollout beobachten.</li>
+          <li><strong><code>autoCompactWindow</code> für Subagenten</strong>: feinere Kontrolle über Kontext-Budgets in Multi-Agenten-Setups — Verhalten in langen Läufen prüfen.</li>
+          <li><strong>Haiku 5.5 als Default-Haiku</strong>: <code>claude-haiku-5-5</code> (1M Kontext, 0,10 $/0,50 $) — Kosten und Verhalten in echten Sessions beobachten; Modell-IDs in Produktion explizit pinnen.</li>
+          <li><strong>Fail-closed-Hooks</strong>: <code>onFailure: "block"</code> ändert das Ausfallverhalten — bestehende Hook-Ketten auf das neue Default prüfen.</li>
+          <li><strong>claude.ai-Sync</strong>: Skills/Plugins vom Account in Terminal-Sessions — Konsistenz über Geräte.</li>
+        </ul>
+        <p style="margin-top:12px"><strong>Empfohlene Watch-Quellen:</strong></p>
+        <div class="links">
+          <a href="https://github.com/anthropics/claude-code/releases.atom"><span>📡 RSS · GitHub Releases</span><span class="arrow">→</span></a>
+          <a href="https://github.com/anthropics/claude-code/commits/main.atom"><span>📡 RSS · main-Branch Commits</span><span class="arrow">→</span></a>
+          <a href="https://docs.claude.com/en/docs/claude-code/overview"><span>📘 Offizielle Docs</span><span class="arrow">→</span></a>
+          <a href="https://www.anthropic.com/news"><span>📰 Anthropic News</span><span class="arrow">→</span></a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <footer>
+    <div>Snapshot · <span class="mono" id="generated">15. Oktober 2026</span></div>
+    <div>
+      <a href="/agentic-info-dashboard/sources/">📚 Quellen-Sammlung</a> ·
+      <a href="/agentic-info-dashboard/">📊 Übersicht</a>
+    </div>
+  </footer>
+
+</div>
+
+<script src="/agentic-info-dashboard/_shared/people.js" defer></script>
+<script>
+  // ── Datum im Header lokalisieren ──────────────────────────
+  const SNAPSHOT_DATE = document.body.dataset.snapshotDate; // YYYY-MM-DD
+  const fmtLong = new Intl.DateTimeFormat('de-DE', {
+    weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'
+  });
+  if (SNAPSHOT_DATE) {
+    const d = new Date(SNAPSHOT_DATE);
+    document.getElementById('today').textContent = fmtLong.format(d);
+    document.getElementById('byline-date').textContent = fmtLong.format(d);
+    document.getElementById('generated').textContent = fmtLong.format(d);
+  }
+
+  // ── Timeline aus manifest.json bauen ──────────────────────
+  (async () => {
+    try {
+      const res = await fetch('/agentic-info-dashboard/ai-news/archive/manifest.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error('manifest not found');
+      const data = await res.json();
+      const snapshots = (data.snapshots || []).sort((a, b) => b.date.localeCompare(a.date));
+      if (!snapshots.length) return;
+
+      const bar = document.getElementById('timeline');
+      // Bestehende Pills (Fallback) entfernen, label behalten
+      bar.querySelectorAll('.tl-pill').forEach(p => p.remove());
+
+      const fmtPill = new Intl.DateTimeFormat('de-DE', { weekday: 'short' });
+      for (const s of snapshots) {
+        const d = new Date(s.date);
+        const dow = fmtPill.format(d).replace('.', '');
+        const dd = String(d.getDate()).padStart(2, '0');
+        const mm = String(d.getMonth() + 1).padStart(2, '0');
+        const a = document.createElement('a');
+        a.className = 'tl-pill';
+        a.dataset.date = s.date;
+        a.href = s.url;
+        a.title = s.summary || '';
+        a.innerHTML = `<span class="dow">${dow}</span><span class="date">${dd}.${mm}.</span>`;
+        if (s.date === SNAPSHOT_DATE) a.classList.add('active');
+        bar.appendChild(a);
+      }
+    } catch (e) {
+      // Manifest fehlt oder Fehler — der Fallback im HTML bleibt sichtbar.
+    }
+  })();
+
+  // ── Snapshot-Banner bei Archiv-Versionen ──────────────────
+  if (document.body.dataset.snapshotMode === 'archive') {
+    document.getElementById('snap-banner').classList.add('show');
+  }
+
+  // ── Stale-Banner (nur Live-Version) ───────────────────────
+  // Briefing ≥ 2 Tage alt heißt: der tägliche Update-Loop steht. Rein
+  // clientseitig, damit die Warnung auch dann erscheint, wenn genau der
+  // Loop ausgefallen ist, der sonst neu deployen würde.
+  if (document.body.dataset.snapshotMode === 'live' && SNAPSHOT_DATE) {
+    const ageDays = Math.floor((Date.now() - new Date(SNAPSHOT_DATE + 'T12:00:00')) / 86400000);
+    if (ageDays >= 2) {
+      const b = document.getElementById('snap-banner');
+      b.innerHTML = '<span>⚠️ Dieses Briefing ist vom ' + fmtLong.format(new Date(SNAPSHOT_DATE)) +
+        ' — ' + ageDays + ' Tage alt. Der tägliche Update-Loop läuft gerade nicht.</span>';
+      b.classList.add('show');
+    }
+  }
+</script>
+</body>
+</html>

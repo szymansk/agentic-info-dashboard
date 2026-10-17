@@ -327,9 +327,15 @@
     },
     {
       "date": "2026-10-16",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-10-16.html",
       "headline": "Die Gewichte öffnen sich — Meta macht Muse Spark offen, doch der Coding-Boden gehört China",
       "summary": "Meta veröffentlicht die Gewichte von Muse Spark Open (816 Mrd. Parameter, 42 Mrd. aktiv, 1 Mio. Kontext) — das stärkste offen gewichtete Modell eines US-Labors, lauffähig auf zwei M5-Ultra-Macs · doch auf Terminal-Bench 2.1 führen weiter chinesische Open-Weights (Kimi K3, GLM 5.3, Qwen3.8) deutlich vor Muse Sparks 76,4 · derweil verdichtet sich das Kapital: Ramp springt drei Monate nach 44 Mrd. auf ~60 Mrd. $ Bewertung (1,85 Mrd. $ Runde) · und Claude Code v2.1.301 härtet den unbeaufsichtigten Retry-Modus an Usage-Limits. Fähigkeit ist Ware — jetzt wird auch die offene Fähigkeit zur Ware, und der Wettbewerb verlagert sich auf Jurisdiktion, Integration und Vertrieb."
+    },
+    {
+      "date": "2026-10-17",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Agenten bekommen eine Identität — Google gibt KI-Kollegen ein Postfach, Amex verlangt Kaufbeweise",
+      "summary": "Die Woche brachte weiter Modelle (Gemini 4 Argon global, Meta Muse Wonder, GPT-6 als Default in ChatGPT), doch der eigentliche Umbau war infrastrukturell: Google gibt „Coworker-Agenten\" bei Gemini at Work ein eigenes Workspace-Konto, Mailadresse, Kalender und Verzeichnis-Eintrag — plus ein Agent-Gateway als KI-Netzwerk-Firewall · American Express publiziert mit „Intent Intelligence\" ein Framework, das Agenten einen Proof-of-Intent-Token vorlegen lässt, bevor sie zahlen · und Umfragedaten (Kore.ai) zeigen, warum: 79 % der Unternehmen mussten eine Agenten-Aktion schon zurücknehmen, 70 % sahen nicht nachvollziehbare Fehler. Fähigkeit ist entschieden — jetzt wird Rechenschaft gebaut: Identität, Zahlungs-Scoping, Audit-Trails."
     }
   ]
 }

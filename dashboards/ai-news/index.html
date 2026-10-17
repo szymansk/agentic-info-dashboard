@@ -298,7 +298,7 @@
   footer .mono { color: var(--muted); }
 </style>
 </head>
-<body data-snapshot-date="2026-10-16" data-snapshot-mode="live">
+<body data-snapshot-date="2026-10-17" data-snapshot-mode="live">
 <div class="wrap">
 
   <!-- ─── Top Nav ─── -->
@@ -319,20 +319,20 @@
   <div class="timeline-bar" id="timeline">
     <span class="label">Zeitstrahl</span>
     <!-- JS füllt aus archive/manifest.json. Fallback statisch: -->
-    <a class="tl-pill" href="/ai-news/archive/2026-10-11.html" data-date="2026-10-11">
-      <span class="dow">So</span><span class="date">11.10.</span>
-    </a>
-    <a class="tl-pill" href="/ai-news/archive/2026-10-12.html" data-date="2026-10-12">
-      <span class="dow">Mo</span><span class="date">12.10.</span>
-    </a>
     <a class="tl-pill" href="/ai-news/archive/2026-10-13.html" data-date="2026-10-13">
       <span class="dow">Di</span><span class="date">13.10.</span>
     </a>
     <a class="tl-pill" href="/ai-news/archive/2026-10-14.html" data-date="2026-10-14">
       <span class="dow">Mi</span><span class="date">14.10.</span>
     </a>
-    <a class="tl-pill active" href="/ai-news/" data-date="2026-10-15">
+    <a class="tl-pill" href="/ai-news/archive/2026-10-15.html" data-date="2026-10-15">
       <span class="dow">Do</span><span class="date">15.10.</span>
+    </a>
+    <a class="tl-pill" href="/ai-news/archive/2026-10-16.html" data-date="2026-10-16">
+      <span class="dow">Fr</span><span class="date">16.10.</span>
+    </a>
+    <a class="tl-pill active" href="/ai-news/" data-date="2026-10-17">
+      <span class="dow">Sa</span><span class="date">17.10.</span>
     </a>
   </div>
 
@@ -352,7 +352,7 @@
       </div>
     </div>
     <div class="meta">
-      <div class="date" id="today">Freitag, 16. Oktober 2026</div>
+      <div class="date" id="today">Samstag, 17. Oktober 2026</div>
       <div class="tag">Snapshot · KW 42 / 2026</div>
     </div>
   </header>
@@ -363,63 +363,63 @@
   <article class="briefing-wrap">
 
     <header class="briefing-head">
-      <h2 class="kicker">Freitag · Agentic AI &amp; GenAI</h2>
-      <h1>Die Gewichte öffnen sich — Meta macht Muse Spark offen, doch der Coding-Boden gehört China</h1>
+      <h2 class="kicker">Samstag · Agentic AI &amp; GenAI</h2>
+      <h1>Agenten bekommen eine Identität — Google gibt KI-Kollegen ein Postfach, Amex verlangt Kaufbeweise</h1>
       <div class="byline">
         <span>✍️ Kuratiert &amp; analysiert</span>
         <span class="dot-sep">·</span>
-        <span>~10 Min Lesezeit</span>
+        <span>~11 Min Lesezeit</span>
         <span class="dot-sep">·</span>
-        <span id="byline-date">16. Oktober 2026</span>
+        <span id="byline-date">17. Oktober 2026</span>
       </div>
       <p class="lede">
-        Seit Monaten lautet die These dieses Briefings, dass rohe Fähigkeit zur Ware wird. Dieser Freitag liefert die konsequente nächste Stufe: Auch die <em>offene</em> Fähigkeit wird zur Ware. <strong>Meta</strong> gibt die Gewichte von <strong>Muse Spark Open</strong> frei — 816 Milliarden Parameter, davon rund 42 Milliarden pro Token aktiv, bis zu eine Million Token Kontext, gebaut für Coding und langlaufende Agenten und laut Meta das stärkste offen gewichtete Modell eines US-Labors. Man kann es lokal betreiben, auf zwei Apple-M5-Ultra-Mac-Studios. Und doch erzählt derselbe Release eine zweite, unbequemere Geschichte: Auf dem agentischen Coding-Benchmark Terminal-Bench 2.1 liegt Muse Spark Open mit 76,4 deutlich hinter den chinesischen Open-Weight-Modellen <strong>Kimi K3</strong>, <strong>GLM 5.3</strong> und <strong>Qwen3.8</strong>. Die USA holt bei offenen Gewichten auf — den Boden des Coding-Marktes hält weiter Peking. Darunter läuft, wie gewohnt, das Kapital: <strong>Ramp</strong> springt drei Monate nach einer 44-Milliarden-Runde auf rund 60 Milliarden Dollar Bewertung. Der Wettbewerb hat die Fähigkeit hinter sich gelassen; er entscheidet sich jetzt an Jurisdiktion, Integration und Vertrieb.
+        Die Modelle hörten diese Woche nicht auf zu kommen: <strong>Google</strong> schaltet Gemini 4 Argon global frei, <strong>Meta</strong> schiebt Muse Wonder nach, <strong>OpenAI</strong> macht GPT-6 zum Default für jeden ChatGPT-Nutzer. Und doch war die eigentliche Verschiebung keine Fähigkeits-, sondern eine Infrastrukturfrage. Die Branche begann, Agenten wie rechenschaftspflichtige Akteure zu behandeln. Google gibt seinen „Coworker-Agenten“ ein eigenes Workspace-Konto, eine Mailadresse, einen Kalender und einen Platz im Firmenverzeichnis — und eine Firewall, die jeden Agentenverkehr kontrolliert. <strong>American Express</strong> verlangt mit „Intent Intelligence“, dass ein Einkaufsagent beweist, was du erlaubt hast, bevor er zahlt. Und Umfragedaten erklären, warum ausgerechnet jetzt: 79 Prozent der Unternehmen mussten eine Agenten-Aktion schon einmal rückgängig machen. Fähigkeit ist entschieden; die neue Front heißt Rechenschaft.
       </p>
     </header>
 
     <div class="briefing-body">
 
       <section>
-        <h3><span class="num">01</span>Meta öffnet die Gewichte — Muse Spark Open und was „offen“ jetzt heißt</h3>
-        <p>Ein halbes Jahr nachdem Meta sein Coding-Modell <strong>Muse Spark</strong> proprietär eingeführt hatte, hat das Unternehmen am Mittwoch dessen Gewichte freigegeben — als <strong>Muse Spark Open</strong>, laut eigener Darstellung das stärkste offen gewichtete Modell eines US-Labors. Die Eckdaten erklären den Anspruch: <strong>816 Milliarden Parameter</strong> in einer Mixture-of-Experts-Architektur, von denen pro Token rund <strong>42 Milliarden aktiv</strong> sind, ein Kontextfenster von bis zu einer Million Token, Eingaben aus Text, Bild, Audio und Video. Gebaut ist es ausdrücklich für Software-Entwicklung und langlaufende Agenten; das Training stützte sich nach Meta-Angaben auf „echte Entwickler-Workflows“. Die Gewichte liegen in BF16 und NVFP4 auf Hugging Face, die Lizenz („Muse Model License“) trägt begrenzte kommerzielle Bedingungen, ist aber für Entwickler, die das Modell anpassen oder in eigene Software packen, kostenfrei.</p>
-        <p>Das eigentlich Bemerkenswerte ist weniger die Zahl der Parameter als die strategische Kehrtwende. Über ein Jahr lang hielt Meta seine stärksten Systeme geschlossen und ließ nur kleinere Modelle offen; jetzt öffnet es ein Modell nahe der eigenen Frontier — zwei Tage nachdem das letzte verbleibende Großlabor mit <strong>Muse Wonder</strong> überhaupt erst Parität an der Spitze erreicht hatte. Für Meta ist Offenheit kein Idealismus, sondern Verteilung: Wer das Default-Werkzeug für agentisches Coding setzen will und von hinten kommt, verschenkt es. <span data-person="yann-lecun">Yann LeCun</span>, Metas scheidende KI-Galionsfigur, hat diese These seit Jahren vertreten — dass offene Gewichte den Standard bestimmen, nicht das beste geschlossene Modell. Muse Spark Open ist der bisher größte Testfall dieser Wette, ausgerechnet in dem Moment, in dem Fähigkeit zur Ware geworden ist und der Preis pro Aufgabe über Adoption entscheidet.</p>
+        <h3><span class="num">01</span>Google gibt Agenten eine Identität — das Postfach als Governance-Primitive</h3>
+        <p>Auf der <strong>Gemini at Work 2026</strong> hat Google Cloud seine zersplitterte Enterprise-KI in einen einzigen <strong>Gemini-Agenten</strong> gefaltet — und dabei eine Entscheidung getroffen, die über die Produkt-Schlagzeile hinaus zählt: Persistente „Coworker-Agenten“ bekommen ein <strong>eigenes Workspace-Konto</strong>, eine eigene E-Mail-Adresse, einen Kalender, Drive-Speicher und einen Platz im Firmenverzeichnis. Sie handeln, wie Google es formuliert, „unter ihrer eigenen Identität, nicht unter deiner“ — und sehen nur, was man ausdrücklich mit ihnen teilt. Darunter liegt eine Governance-Maschinerie, die erwachsener klingt als die bisherigen Agent-Demos: kryptografisch attestierte Agenten-Identität, über OAuth propagierte Rechte, ein Audit-Trail pro Agent, ein <strong>Agent Sandbox</strong> mit eigener Netzgrenze und ein <strong>Agent Gateway</strong>, das als „KI-Netzwerk-Firewall“ den gesamten ein-, aus- und zwischen-agentischen Verkehr kontrolliert: Policy einmal schreiben, auf jeden Agenten anwenden. Dazu Smart Routing über Googles eigene und <span data-person="dario-amodei">Anthropic</span>s Claude-Modelle sowie Echtzeit-Ausgabenlimits in der Cloud-Billing-Konsole.</p>
+        <p>Das eigentlich Interessante ist die begriffliche Verschiebung: Google stellt den <em>Agenten</em> vor das Modell. Nicht mehr „welches Modell kann die Aufgabe“, sondern „wer ist der Agent, was darf er, und wie weist man das nach“. Ein Agent mit eigenem Postfach und Verzeichnis-Eintrag ist nicht nur ein UX-Gimmick — er ist ein identifizierbarer, adressierbarer, prüfbarer Akteur im selben IAM-Modell wie ein Mensch. Genau das brauchen Compliance-Abteilungen, bevor sie einem autonomen System Zugriff auf Fach- und Finanzsysteme geben. Dass Preis und allgemeine Verfügbarkeit noch offen sind (Branchenversionen für Financial Services und Legal stehen in der Preview), ändert nichts an der Richtung: Die Enterprise-Frage ist nicht mehr Fähigkeit, sondern Identität und Nachweisbarkeit.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Ein offen gewichtetes Frontier-nahes Coding-Modell verschiebt die Make-or-Buy-Frage. Wo bisher nur ein API-Abo zum Frontier-Modell führte, steht jetzt eine self-hostbare Alternative, die Datenhaltung, Jurisdiktion und Kostenstruktur grundlegend ändert. Billbar ist die Bewertung: Welche Workloads rechtfertigen den Betriebsaufwand eigener Gewichte gegenüber dem API-Komfort, welche Lizenzbedingungen tragen den kommerziellen Einsatz, und wie sieht eine hybride Architektur aus, die offene und geschlossene Modelle je nach Sensibilität und Last mischt. Offenheit ist kein Freibier — sie ist eine Betriebsentscheidung.
+          Für uns: Agenten-Identität wird zum eigenen Architektur-Layer — und damit zum Beratungsgegenstand. Billbar: Identity- und Access-Konzepte, die Agenten als first-class Principals in bestehendes IAM, Verzeichnis und Audit einbinden; Policy-Design für ein Agent-Gateway-Modell (wer darf welchen Agenten mit welchen Rechten betreiben); und die Integration solcher Coworker-Agenten in reale Fachprozesse, ohne das Least-Privilege-Prinzip zu verletzen. Wer Agenten wie Mitarbeiter behandelt, braucht Onboarding, Rollen und Offboarding für Agenten — das ist Dienstleistung, keine Lizenz.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">02</span>Der Coding-Boden gehört China — die Benchmark-Lücke bei den offenen Gewichten</h3>
-        <p>So selbstbewusst Metas „stärkstes US-Open-Weight“-Label klingt, der eigene Release räumt die Grenze ein: Auf <strong>Terminal-Bench 2.1</strong>, dem derzeit maßgeblichen Maß für agentisches Coding, kommt Muse Spark Open auf <strong>76,4</strong> — und liegt damit hinter den chinesischen Open-Weight-Modellen. Moonshots <strong>Kimi K3</strong> wird je nach Quelle mit Werten um 85 bis 88 geführt, auch <strong>GLM 5.3</strong> und <strong>Qwen3.8</strong> rangieren darüber. Das Muster, das dieses Briefing seit dem Sommer verfolgt — chinesische Open-Weights erobern von unten den Markt, während die westlichen Labore ihre Spitze hinter Preis- und Zugangsschranken halten — bekommt damit seinen bislang schärfsten Beleg: Nicht einmal Metas Öffnungs-Offensive dreht die Rangfolge am offenen Coding-Boden.</p>
-        <p>Die Benchmark-Zahlen sind mit Vorsicht zu lesen — Anbieter berichten gern ihre eigenen Höchstwerte, und die Terminal-Bench-Angaben zu Kimi K3 schwanken je nach „Max-Effort“-Konfiguration erheblich. Doch die Richtung ist unstrittig: Das Terrain der frei verfügbaren, self-hostbaren Coding-Modelle wird zunehmend von Peking besetzt, mit allem, was das für Daten-Jurisdiktion und Lieferketten-Abhängigkeit bedeutet. Für einen europäischen Markt, der Souveränität fordert, aber Spitzenmodelle aus den USA oder China bezieht, ist das die eigentliche Pointe des Tages: Die Wahl ist selten „offen gegen geschlossen“, sondern „welche Jurisdiktion legt die Gewichte offen“.</p>
+        <h3><span class="num">02</span>Beweis vor Bezahlung — Amex will, dass Agenten zeigen, was du erlaubt hast</h3>
+        <p>Parallel adressiert <strong>American Express</strong> die unbequemste Lücke des agentischen Handels: Was, wenn der Einkaufsagent das Falsche kauft? Mit dem offenen Framework <strong>Intent Intelligence</strong> schiebt Amex einen Nachweis zwischen Absicht und Zahlung. Über eine <strong>Create-Intent-API</strong> werden Kauflimits und Präferenzen festgehalten; der Karteninhaber verifiziert seine Identität und bestätigt die erfasste Absicht. Daraus entstehen eine <strong>Intent ID</strong> und ein <strong>Proof-of-Intent-Token</strong> — laut Berichten ein JSON Web Token. Beim Checkout erhält der Agent nur ein eng gefasstes Zahlungs-Credential statt der echten Kartennummer; später lassen sich Intent ID und Token für Betrugsprävention, Autorisierung und Dispute-Auflösung heranziehen. Das anschauliche Beispiel aus Amex’ eigener Darstellung: Wer weiße Nike-Sneaker in Größe 9 bestellt und dessen Agent stattdessen Adidas kaufen will, dem blockiert das System den Kauf.</p>
+        <p>Das ist weniger ein Produkt als ein Standard-Vorstoß. Amex arbeitet mit <strong>EMVCo</strong> und der <strong>x402 Foundation</strong> an gemeinsamen Spezifikationen und bietet das Framework über ein ACE Developer Kit an — der Versuch, das Schienennetz für agentische Zahlungen zu definieren, bevor es andere tun. Die offene Flanke benennen Kritiker sofort: Wer haftet, wenn der Agent trotz Intent-Token danebengreift? Und Amex’ ACE läuft als geschlossener Kreis, in dem der Konzern Issuer und Netzwerk zugleich ist, ohne offenzulegen, wie die Validierung im Detail arbeitet. Doch die Stoßrichtung passt exakt zu Googles Identitäts-Zug: Bevor ein Agent autonom handeln darf, muss er nachweisbar an eine menschliche Absicht gebunden sein.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Offene Gewichte sind nicht neutral — ihre Herkunft ist ein Compliance- und Governance-Merkmal. Billbar: Modell-Due-Diligence, die Lizenz, Trainingsdaten-Provenienz und Betreiber-Jurisdiktion gegen die Datenklassen eines Kunden prüft; Benchmark-Validierung im eigenen Kontext statt Vertrauen auf Anbieter-Tabellen; und Architektur-Beratung, die das beste offene Coding-Modell auswählt, ohne regulatorische Risiken mit einzukaufen. Der Score auf dem Datenblatt ist das eine, die Prüfbarkeit im Betrieb das andere.
+          Für uns: Agentische Zahlungen brauchen eine verifizierbare Intent-Kette — und die muss jemand in Kundensysteme integrieren. Billbar: Anbindung von Intent-APIs und Token-Validierung an bestehende Commerce-, ERP- und Procurement-Prozesse; Haftungs- und Governance-Modelle, die klären, wer den Intent-Token verantwortet und prüft; und die saubere Trennung von Zahlungs-Credential und echten Kartendaten in der Architektur. Wo Zahlung und Autonomie zusammentreffen, entsteht Audit-Pflicht — und damit Integrationsarbeit.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">03</span>816 Milliarden auf zwei Macs — die Frontier wandert auf den Schreibtisch</h3>
-        <p>Ein Detail des Muse-Spark-Open-Releases verdient eine eigene Betrachtung, weil es die Infrastruktur-Frage umdreht: Meta gibt an, das Modell lasse sich <strong>lokal auf zwei Apple-M5-Ultra-Mac-Studios</strong> betreiben. Die NVFP4-Variante verlangt mindestens rund 700 GB GPU-Speicher, die BF16-Fassung entsprechend mehr — das ist kein Consumer-Laptop, aber eben auch kein Rechenzentrum und kein Cloud-Abo. Ein Modell, das vor einem Jahr nur über die API eines Hyperscalers erreichbar gewesen wäre, läuft jetzt unter dem Schreibtisch, in der Jurisdiktion und unter der Kontrolle des Betreibers.</p>
-        <p>Das ist die stille Gegenbewegung zur Cloud-Konsolidierung, über die dieses Briefing sonst berichtet. Während die Compute-Rechnung der Frontier-Labore öffentlich und nervös wird — Anthropics IPO-Prospekt listet dreistellige Milliarden-Verpflichtungen, CoreWeaves Anleihen tragen zweistellige Renditen — verschiebt die Open-Weight-Welle einen Teil der Fähigkeit dorthin zurück, wo die Daten liegen. Für Banken, Behörden und Industrie im DACH-Raum, die agentische KI wollen, aber ihre Daten nicht aus der Hand geben, ist genau das der entscheidende Hebel. Die Rechnung ist nicht trivial — zwei Mac Studios und der Betrieb eines 816-Milliarden-Modells kosten Geld und Know-how —, aber sie ist zum ersten Mal überhaupt eine Rechnung, keine Unmöglichkeit.</p>
+        <h3><span class="num">03</span>Warum ausgerechnet jetzt — die Governance-Zahlen hinter dem Trend</h3>
+        <p>Dass Identität und Zahlungs-Scoping gerade jetzt zum Thema werden, ist kein Zufall der Produkt-Roadmaps, sondern eine Reaktion auf die Betriebsrealität. Der Agentic-Index von <strong>Kore.ai</strong> liefert die ernüchternden Zahlen: <strong>79 Prozent</strong> der Unternehmen haben die Aktion eines KI-Agenten schon einmal rückgängig machen müssen, <strong>70 Prozent</strong> stießen auf Fehler, die sie nicht zurückverfolgen konnten. Das ist die Kehrseite des Autonomie-Versprechens — ein Agent, der selbstständig handelt, aber dessen Handeln weder nachvollziehbar noch verlässlich korrigierbar ist, ist für ein reguliertes Unternehmen kein Asset, sondern ein Risiko. Nicht zufällig stellte <strong>SailPoint</strong> auf seiner Navigate-2026-Konferenz identitätszentrierte Governance für Agenten vor, inklusive Audit- und Export-Fähigkeiten.</p>
+        <p>Der Kontext ist Gartners oft zitierte Prognose, wonach bis Ende 2027 über <strong>40 Prozent</strong> der agentischen KI-Projekte abgebrochen werden — wegen steigender Kosten, unklaren Geschäftswerts und unzureichender Risikokontrollen. Genau in diese Lücke zielen die Infrastruktur-Ankündigungen der Woche: Nicht noch mehr Fähigkeit, sondern Nachvollziehbarkeit, Rückrollbarkeit und Rechteschranken. Der Markt hat gelernt, dass die Demo, in der ein Agent eine Reise bucht, einfach ist — und dass die Industrialisierung, in der tausend Agenten ohne stille Fehler und ohne Haftungslücken handeln, das eigentliche Problem ist. Die Antwort heißt überall gleich: Identität, Policy, Audit-Trail.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Lokaler und air-gapped Betrieb frontier-naher Modelle rückt vom Sonderfall zur echten Option. Billbar: Referenz-Architekturen für on-prem und self-hosted Inferenz, Kapazitäts- und Kostenrechnungen gegen das API-Modell, und die Integration solcher Modelle in bestehende Entwickler- und Daten-Pipelines hinter der Firewall. Wer rechnen kann, wann eigene Gewichte günstiger und sicherer sind als das Abo, verkauft Souveränität mit belastbarer Begründung — nicht als Schlagwort.
+          Für uns: Die hohen Rücknahme- und Fehlerquoten sind keine schlechte Nachricht, sondern die Beschreibung des Marktes. Billbar: Observability- und Audit-Layer für Agenten-Aktionen, Rollback- und Human-in-the-Loop-Mechanismen an den richtigen Stellen, und ehrliche Readiness-Assessments, die vor dem Produktivgang klären, welche Prozesse autonomiefähig sind und welche nicht. Der Weg vom beeindruckenden Pilot zum prüfbaren Produktivbetrieb ist das Dienstleistungsgeschäft der nächsten zwei Jahre.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">04</span>Das Kapital verdichtet sich weiter — Ramp springt auf 60 Milliarden</h3>
-        <p>Während sich die Modell-Schicht auf den Preis und jetzt auf die Offenheit zubewegt, bleibt das Kapital bei seinem Muster: Es fließt in wenige, immer größere Runden. <strong>Ramp</strong>, die Spend-Management-Plattform, hat laut Bloomberg rund <strong>1,85 Milliarden Dollar</strong> zu einer Bewertung von etwa <strong>60 Milliarden Dollar</strong> eingesammelt — angeführt von Dragoneer und Thrive Capital, mit Founders Fund an Bord. Bestätigt hat Ramp die Runde nicht. Bemerkenswert ist das Tempo: Erst im Juni lag die Bewertung bei 44 Milliarden (nach einer 750-Millionen-Runde), die neue Marke bedeutet einen Sprung von über einem Drittel in rund drei Monaten. Der Treiber ist ausdrücklich der KI-Ausbau des Produkts — Ramp positioniert sich als agentische Finanz-Automatisierung, nicht als klassisches Fintech.</p>
-        <p>Ramp steht exemplarisch für eine Verschiebung, die dieses Briefing seit Wochen beobachtet: Der Aufschlag wandert von der Modell-Schicht in die <em>Anwendung</em>. Nicht das Labor, das das Modell baut, zieht die höchste Bewertung, sondern das Unternehmen, das es in einen klebrigen Workflow mit echtem Umsatz einbettet — Ramp bei den Ausgaben, EliseAI in der Immobilie, Cognition beim Coding. Das Geld sagt, wo der verteidigbare Wert sitzt: nicht in der Fähigkeit, die zur Ware geworden ist, sondern in der Oberfläche, der Integration und dem Vertrieb. Dieselbe Logik, die Metas Open-Weight-Zug erklärt, erklärt auch Ramps Bewertung.</p>
+        <h3><span class="num">04</span>Die Modell-Schicht läuft im Hintergrund weiter — GPT-6, Argon, Muse Wonder</h3>
+        <p>Dass die Fähigkeits-Front diese Woche in den Hintergrund rückt, heißt nicht, dass sie stillstand. <strong>OpenAI</strong> macht <strong>GPT-6</strong> zum Default für alle ChatGPT-Nutzer — bezahlte Pläne auf GPT-6 Sol, Free- und Go-Nutzer einen Tag später auf GPT-6 Luna — und führt eine „Intelligent UI“ ein, die Diagramme, Formulare, Karten und kleine interaktive Werkzeuge direkt in die Antwort rendert; GPT-6 Pro bekommt parallele Sub-Agenten. <strong>Google</strong> schaltet <strong>Gemini 4 Argon</strong> global für Entwickler und Unternehmen frei (laut Anbieter Platz eins im Vals-Index, 1 Mio. Token Kontext), mit Einführungspreisen von 2 bzw. 10 Dollar je Million Token — die bis <strong>30. November</strong> gelten und sich am 1. Dezember verdoppeln. <span data-person="demis-hassabis">Demis Hassabis</span>’ Labor hat damit binnen zwei Wochen von Ankündigung auf breite Verfügbarkeit geschaltet. Und <strong>Meta</strong> schiebt mit <strong>Muse Wonder</strong> und dem größeren Muse Wonder Full Modelle für persönliche Agenten nach — mit persistentem Gedächtnis („Active Memory“) und ausdauernder Zielverfolgung („Active Focus“).</p>
+        <p>Das Muster ist konsistent mit der These dieses Briefings: Rohe Fähigkeit ist zur Ware geworden, der Takt der Spitzen-Releases ist hoch und die Differenzierung wandert nach oben — in Oberfläche (OpenAIs Intelligent UI), in Preis (Argons befristete Einführungskonditionen) und in Betriebs-Primitive (Metas persistentes Agenten-Gedächtnis). Kein einzelnes dieser Modelle verschiebt die Machtbalance; zusammen bestätigen sie, dass die Modell-Ebene zur austauschbaren Infrastruktur wird, über der sich der eigentliche Wettbewerb — Identität, Integration, Rechenschaft — abspielt.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Der Markt bepreist Integration höher als rohe Modell-Fähigkeit — und genau diese Integrationsarbeit ist das Kerngeschäft eines IT-Dienstleisters. Billbar: agentische Workflows tief in bestehende Fach- und Finanzprozesse einbetten, Datenanbindung und Rechtefluss sauber modellieren, messbaren Umsatz- oder Effizienzbeitrag nachweisen. Das Kapital honoriert nicht, wer das größte Modell hat, sondern wer es in verlässliche Arbeit übersetzt. Das ist die bessere Nachricht für die Services-Schicht, als es die Preiskrieg-Schlagzeilen vermuten lassen.
+          Für uns: Dass Modelle austauschbar und preislich volatil werden (Argon verdoppelt am 1.12. den Preis), ist ein Architektur-Argument, kein Nebenschauplatz. Billbar: Modell-agnostische Abstraktions-Schichten, die einen Anbieterwechsel ohne Neubau erlauben; Kostencontrolling gegen befristete Einführungspreise; und die Entscheidung, welche Fähigkeit über API eingekauft und welche self-hosted betrieben wird. Wer auf ein einzelnes Modell baut, kauft dessen Preisrisiko mit.
         </blockquote>
       </section>
       <div class="briefing-end">
-        <strong>Was morgen zu beobachten ist:</strong> ob Muse Spark Open die Open-Weight-Rangliste tatsächlich bewegt, sobald unabhängige Prüfer (Artificial Analysis, Vals) die Coding-Benchmarks gegen die chinesischen Modelle nachrechnen — oder ob die 76,4 auf Terminal-Bench 2.1 Bestand haben. Ob weitere US-Labore Metas Öffnungs-Schritt folgen, jetzt da Offenheit zum Vertriebskanal statt zum Risiko wird. Ob Ramps 60-Milliarden-Runde sich bestätigt und die Anwendungs-Schicht die nächste Bewertungsstufe zündet. Und ob der lokale Betrieb frontier-naher Modelle über die Demo hinaus praktikabel wird — die Frage, an der sich im DACH-Raum Souveränitäts-Anspruch und Betriebsrealität messen. Claude Code springt auf <code>v2.1.301</code> (härtet den unbeaufsichtigten Retry-Modus an Usage-Limits, OTel-Tracing-Leitfaden im <code>claude-api</code>-Skill, <code>%</code>-Bewegung im Vim-Modus).
+        <strong>Was morgen zu beobachten ist:</strong> ob Google für den Gemini-Agenten einen GA-Termin und einen Preis nennt — und ob das Coworker-Identitätsmodell über Workspace hinaus zum Muster wird. Ob Amex’ Intent Intelligence bei EMVCo und der x402 Foundation Zugkraft bekommt oder ein geschlossener Amex-Kreis bleibt — und wer am Ende haftet, wenn der Agent danebenkauft. Ob weitere Anbieter nach SailPoint identitätszentrierte Agenten-Governance nachlegen, jetzt da die Fehlerquoten öffentlich sind. Und der harte Kalenderpunkt: Am <strong>1. Dezember</strong> verdoppelt Gemini 4 Argon seine Einführungspreise — der erste Test, wie preiselastisch die frisch gewonnene Entwickler-Basis wirklich ist. Claude Code springt auf <code>v2.1.302</code> (<code>CLAUDE_CODE_AUTO_MODE_MODEL</code> für den clientseitigen Auto-Mode-Klassifizierer, Idle-Compaction-Schalter in <code>/config</code>, Hinweise in <code>/design-sync</code>).
       </div>
 
     </div>
@@ -443,37 +443,63 @@
           <span class="pill hot">Major Release</span>
           <span class="score">Score <b>8.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Meta gibt Muse Spark Open frei — 816B offenes Coding-Modell</h3>
-        <p><strong>Meta</strong> hat die Gewichte von <strong>Muse Spark Open</strong> veröffentlicht — nach eigener Darstellung das stärkste offen gewichtete Modell eines US-Labors: <strong>816 Mrd. Parameter</strong> (MoE, ~42 Mrd. aktiv), bis zu <strong>1 Mio. Token Kontext</strong>, multimodal, gebaut für Coding und langlaufende Agenten. Gewichte (BF16/NVFP4) auf Hugging Face, „Muse Model License“ mit begrenzten kommerziellen Bedingungen, aber kostenfrei für Entwickler. Läuft lokal auf zwei Apple-M5-Ultra-Mac-Studios.</p>
+        <h3 style="margin-top:10px">Google gibt Agenten eine Identität — eigenes Postfach, Verzeichnis-Eintrag, Agent Gateway</h3>
+        <p>Auf der <strong>Gemini at Work 2026</strong> faltet Google Cloud seine Enterprise-KI in einen einzigen <strong>Gemini-Agenten</strong>. „Coworker-Agenten“ bekommen ein eigenes <strong>Workspace-Konto</strong>, Mailadresse, Kalender und einen Platz im Firmenverzeichnis — und handeln „unter ihrer eigenen Identität, nicht deiner“. Darunter: kryptografisch attestierte Agenten-Identität, OAuth-propagierte Rechte, Audit-Trail pro Agent, Agent Sandbox und ein <strong>Agent Gateway</strong> als KI-Netzwerk-Firewall. Smart Routing über Google- und Claude-Modelle, Echtzeit-Ausgabenlimits. Preis/GA offen, Branchenversionen (Finance, Legal) in Preview.</p>
         <div class="news-meta">
-          <span>📅 15.10.2026</span><span>·</span><span>🏢 Meta</span><span>·</span>
-          <a href="https://siliconangle.com/2026/10/15/meta-releases-816b-parameter-muse-spark-open-for-coding-and-agent-work/" target="_blank" rel="noreferrer">siliconangle.com</a><a href="https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/" target="_blank" rel="noreferrer">techcrunch.com</a><a href="https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B" target="_blank" rel="noreferrer">huggingface.co</a>
+          <span>📅 15.10.2026</span><span>·</span><span>🏢 Google Cloud</span><span>·</span>
+          <a href="https://futurumgroup.com/?p=96545" target="_blank" rel="noreferrer">futurumgroup.com</a><a href="https://www.reworked.co/collaboration-productivity/google-debuts-its-all-purpose-gemini-agent-for-work/" target="_blank" rel="noreferrer">reworked.co</a>
+        </div>
+      </article>
+
+      <article class="card news-card crit">
+        <div class="row">
+          <span class="pill crit">Security</span>
+          <span class="score">Score <b>7.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Amex „Intent Intelligence“ — Agenten müssen beweisen, was du erlaubt hast</h3>
+        <p><strong>American Express</strong> publiziert ein offenes Framework für agentischen Handel: Eine <strong>Create-Intent-API</strong> hält Kauflimits fest, der Kunde bestätigt die Absicht, daraus entstehen eine <strong>Intent ID</strong> und ein <strong>Proof-of-Intent-Token</strong> (JWT). Der Agent erhält beim Checkout nur ein eng gefasstes Zahlungs-Credential statt der Kartennummer. Beispiel: Agent will Adidas statt der bestellten Nike kaufen → blockiert. Amex arbeitet mit <strong>EMVCo</strong> und der <strong>x402 Foundation</strong> an Standards. Offene Frage: Haftung bei Fehlkauf.</p>
+        <div class="news-meta">
+          <span>📅 13.10.2026</span><span>·</span><span>🏢 American Express</span><span>·</span>
+          <a href="https://thepaypers.com/payments/news/american-express-publishes-framework-for-agentic-commerce-intent" target="_blank" rel="noreferrer">thepaypers.com</a><a href="https://fourweekmba.com/ai-amex-wants-ai-shopping-agents-to-prove-what-you-approved/" target="_blank" rel="noreferrer">fourweekmba.com</a>
+        </div>
+      </article>
+
+      <article class="card news-card hot">
+        <div class="row">
+          <span class="pill hot">Major Release</span>
+          <span class="score">Score <b>7.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">GPT-6 wird Default für alle ChatGPT-Nutzer — mit „Intelligent UI“</h3>
+        <p><strong>OpenAI</strong> rollt <strong>GPT-6</strong> an alle ChatGPT-Nutzer aus: bezahlte Pläne (Plus/Pro/Business/Enterprise) auf <strong>GPT-6 Sol</strong>, Free- und Go-Nutzer einen Tag später auf <strong>GPT-6 Luna</strong>. Neu ist eine <strong>Intelligent UI</strong>, die Diagramme, Formulare, Karten und kleine interaktive Werkzeuge direkt in die Antwort rendert; GPT-6 Pro bekommt parallele Sub-Agenten. Die Fähigkeits-Front rückt in den Hintergrund — differenziert wird jetzt über Oberfläche und Integration.</p>
+        <div class="news-meta">
+          <span>📅 16.10.2026</span><span>·</span><span>🏢 OpenAI</span><span>·</span>
+          <a href="https://www.marketingprofs.com/opinions/2026/56192/ai-update-october-16-2026-ai-news-and-views-from-the-past-week" target="_blank" rel="noreferrer">marketingprofs.com</a><a href="https://opendatascience.com/last-week-in-ai-october-5-to-11-2026/" target="_blank" rel="noreferrer">opendatascience.com</a>
         </div>
       </article>
 
       <article class="card news-card info">
         <div class="row">
           <span class="pill info">Marktdaten</span>
-          <span class="score">Score <b>6.5</b>/10</span>
+          <span class="score">Score <b>6.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Der Coding-Boden gehört China — Muse Spark Open bleibt unter Kimi K3 &amp; Co.</h3>
-        <p>Metas eigener Release räumt die Grenze ein: Auf <strong>Terminal-Bench 2.1</strong> kommt Muse Spark Open auf <strong>76,4</strong> — hinter den chinesischen Open-Weight-Modellen. Moonshots <strong>Kimi K3</strong> wird je nach Quelle mit ~85–88 geführt, auch <strong>GLM 5.3</strong> und <strong>Qwen3.8</strong> rangieren darüber. Die USA holt bei offenen Gewichten auf, den Boden des offenen Coding-Marktes hält weiter Peking — mit allem, was das für Daten-Jurisdiktion und Souveränität bedeutet. Benchmark-Werte mit Vorsicht (Anbieter-Tabellen, „Max-Effort“).</p>
+        <h3 style="margin-top:10px">79 % der Unternehmen mussten eine Agenten-Aktion zurücknehmen</h3>
+        <p>Der Agentic-Index von <strong>Kore.ai</strong> beziffert die Governance-Lücke: <strong>79 %</strong> der Unternehmen haben die Aktion eines KI-Agenten schon rückgängig gemacht, <strong>70 %</strong> stießen auf nicht nachvollziehbare Fehler. <strong>SailPoint</strong> stellte auf Navigate 2026 identitätszentrierte Agenten-Governance mit Audit/Export vor. Kontext: Gartner erwartet, dass bis Ende 2027 über <strong>40 %</strong> der agentischen Projekte abgebrochen werden. Genau hier zielen die Identitäts- und Zahlungs-Primitive der Woche hin.</p>
         <div class="news-meta">
-          <span>📅 15.10.2026</span><span>·</span><span>🏢 Meta / Moonshot / Zhipu</span><span>·</span>
-          <a href="https://siliconangle.com/2026/10/15/meta-releases-816b-parameter-muse-spark-open-for-coding-and-agent-work/" target="_blank" rel="noreferrer">siliconangle.com</a><a href="https://seawork.ai/en/blogs/kimi-k3-for-coding/" target="_blank" rel="noreferrer">seawork.ai</a>
+          <span>📅 16.10.2026</span><span>·</span><span>🏢 Kore.ai / SailPoint</span><span>·</span>
+          <a href="https://aiagentsdirectory.com/news/topic/enterprise-ai" target="_blank" rel="noreferrer">aiagentsdirectory.com</a><a href="https://trewknowledge.com/2026/10/16/ai-this-week-agents-get-an-identity/" target="_blank" rel="noreferrer">trewknowledge.com</a>
         </div>
       </article>
 
-      <article class="card news-card info">
+      <article class="card news-card warn">
         <div class="row">
-          <span class="pill info">M&amp;A</span>
+          <span class="pill warn">Marktdaten</span>
           <span class="score">Score <b>6.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Ramp springt auf ~60 Mrd. $ — der KI-Aufschlag erreicht die Anwendung</h3>
-        <p>Die Spend-Management-Plattform <strong>Ramp</strong> hat laut Bloomberg rund <strong>1,85 Mrd. $</strong> zu einer Bewertung von etwa <strong>60 Mrd. $</strong> eingesammelt (Dragoneer, Thrive Capital, Founders Fund) — ein Sprung von über einem Drittel gegenüber den 44 Mrd. $ im Juni, getrieben vom agentischen KI-Ausbau. Ramp hat nicht bestätigt. Das Muster: Der Aufschlag wandert von der Modell-Schicht in die Anwendung — nicht das Labor, sondern der klebrige Workflow mit echtem Umsatz zieht die Bewertung.</p>
+        <h3 style="margin-top:10px">Gemini 4 Argon global verfügbar — Einführungspreis nur bis 30.11.</h3>
+        <p><strong>Google</strong> schaltet <strong>Gemini 4 Argon</strong> global für Entwickler und Unternehmen frei (Gemini API, AI Studio) — laut Anbieter Platz eins im Vals-Index, 1 Mio. Token Kontext, ausgelegt auf langlaufende Arbeit. Einführungspreise: <strong>2 $ / 10 $</strong> je Mio. Input-/Output-Token — gültig bis <strong>30. November</strong>, danach Verdopplung am 1.12. Von Ankündigung (Ende Sept.) auf breite Verfügbarkeit in rund zwei Wochen.</p>
         <div class="news-meta">
-          <span>📅 15.10.2026</span><span>·</span><span>🏢 Ramp</span><span>·</span>
-          <a href="https://www.fintechfutures.com/venture-capital-funding/ramp-reportedly-hits-60bn-valuation-in-1.85bn-funding-round" target="_blank" rel="noreferrer">fintechfutures.com</a><a href="https://thenextweb.com/news/ramp-60bn-valuation-1-85bn-round" target="_blank" rel="noreferrer">thenextweb.com</a>
+          <span>📅 16.10.2026</span><span>·</span><span>🏢 Google</span><span>·</span>
+          <a href="https://trewknowledge.com/2026/10/16/ai-this-week-agents-get-an-identity/" target="_blank" rel="noreferrer">trewknowledge.com</a><a href="https://www.reworked.co/collaboration-productivity/google-debuts-its-all-purpose-gemini-agent-for-work/" target="_blank" rel="noreferrer">reworked.co</a>
         </div>
       </article>
 
@@ -482,10 +508,10 @@
           <span class="pill">Tooling</span>
           <span class="score">Score <b>5.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Claude Code v2.1.301 — unbeaufsichtigter Retry-Modus an Usage-Limits gehärtet</h3>
-        <p><strong>Claude Code v2.1.301</strong> führt <code>CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS</code> ein: Der unbeaufsichtigte Retry-Modus (<code>CLAUDE_CODE_RETRY_WATCHDOG</code>) beendet eine Anfrage an einem Usage-Limit, das zu weit in der Zukunft zurücksetzt, statt zu warten — relevant für Oneshot-/Cron-Läufe. Dazu: OpenTelemetry-Tracing-Leitfaden im <code>claude-api</code>-Skill und die <code>%</code>-Bewegung (Sprung zur passenden Klammer) im Vim-Modus.</p>
+        <h3 style="margin-top:10px">Claude Code v2.1.302 — Auto-Mode-Modell wählbar, Idle-Compaction-Schalter</h3>
+        <p><strong>Claude Code v2.1.302</strong> führt <code>CLAUDE_CODE_AUTO_MODE_MODEL</code> ein, mit dem sich das Modell des clientseitigen Auto-Mode-Klassifizierers wählen lässt (ändert nicht das serverseitige Auto-Mode-Modell). Dazu kommt eine <strong>Idle-Compaction</strong>-Zeile in <code>/config</code> zum Ab-/Anschalten der Leerlauf-Kompaktierung sowie neue Hinweise in <code>/design-sync</code> und <code>/design-login</code>.</p>
         <div class="news-meta">
-          <span>📅 15.10.2026</span><span>·</span><span>🏢 Anthropic</span><span>·</span>
+          <span>📅 16.10.2026</span><span>·</span><span>🏢 Anthropic</span><span>·</span>
           <a href="https://github.com/anthropics/claude-code/releases" target="_blank" rel="noreferrer">github.com</a>
         </div>
       </article>
@@ -507,7 +533,16 @@
 
       <article class="card">
         <h3>Letzte Releases</h3>
-        <p>Aktuelle Version <code>v2.1.301</code> · härtet den <strong>unbeaufsichtigten Retry-Modus</strong>: <code>CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS</code> lässt den Retry-Watchdog eine Anfrage an einem Usage-Limit beenden, das zu weit in der Zukunft zurücksetzt, statt darauf zu warten — relevant für Oneshot- und Cron-Läufe. Dazu kommen ein <strong>OpenTelemetry-Tracing-Leitfaden</strong> im <code>claude-api</code>-Skill und die <strong><code>%</code>-Bewegung</strong> im Vim-Modus (Sprung zur passenden Klammer). Davor brachte v2.1.300 <strong><code>virtualText</code></strong> für die Prompt-Dekorationen eines Mods — Text, der im Prompt-Feld erscheint, aber weder in den Entwurf noch in den abgeschickten Prompt wandert — und schlüsselte die OpenTelemetry-<code>api_request</code>-Metrik via <code>cache_creation_5m_tokens</code>/<code>cache_creation_1h_tokens</code> nach Cache-Lebensdauer auf. v2.1.299 führte <code>CLAUDE_CODE_DISABLE_FILE_MENTIONS</code> ein (bei <code>@</code>-Erwähnungen nur Pfade statt Dateiinhalt) plus <strong>Idle-Compaction im Terminal</strong> (eine 200K-Token-Session nach ~54 min Leerlauf wird vor Ablauf des Einstunden-Prompt-Caches kompaktiert). v2.1.296 ergänzte das Apps-Gateway um einen <code>code</code>-Schlüssel in <code>managed.policies[]</code> und <code>autoCompactWindow</code> für Subagenten; v2.1.295 brachte <strong><code>onFailure: "block"</code></strong> für Hooks (fail-closed) plus <strong>Program Status Protocol (OSC 7501)</strong>; v2.1.294 härtete die <strong>Hook-Leitplanken</strong>.</p>
+        <p>Aktuelle Version <code>v2.1.302</code> · bringt <strong><code>CLAUDE_CODE_AUTO_MODE_MODEL</code></strong>, mit dem sich das Modell des <strong>clientseitigen Auto-Mode-Klassifizierers</strong> wählen lässt (das serverseitige Auto-Mode-Modell bleibt unberührt), eine <strong>Idle-Compaction-Zeile in <code>/config</code></strong> zum Ab- und Anschalten der Leerlauf-Kompaktierung sowie neue Hinweise in <code>/design-sync</code> und <code>/design-login</code>. Davor härtete v2.1.301 den <strong>unbeaufsichtigten Retry-Modus</strong>: <code>CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS</code> lässt den Retry-Watchdog eine Anfrage an einem Usage-Limit beenden, das zu weit in der Zukunft zurücksetzt, statt darauf zu warten — relevant für Oneshot- und Cron-Läufe —, dazu ein <strong>OpenTelemetry-Tracing-Leitfaden</strong> im <code>claude-api</code>-Skill und die <strong><code>%</code>-Bewegung</strong> im Vim-Modus. v2.1.300 brachte <strong><code>virtualText</code></strong> für die Prompt-Dekorationen eines Mods — Text, der im Prompt-Feld erscheint, aber weder in den Entwurf noch in den abgeschickten Prompt wandert — und schlüsselte die OpenTelemetry-<code>api_request</code>-Metrik via <code>cache_creation_5m_tokens</code>/<code>cache_creation_1h_tokens</code> nach Cache-Lebensdauer auf. v2.1.299 führte <code>CLAUDE_CODE_DISABLE_FILE_MENTIONS</code> ein (bei <code>@</code>-Erwähnungen nur Pfade statt Dateiinhalt) plus <strong>Idle-Compaction im Terminal</strong> (eine 200K-Token-Session nach ~54 min Leerlauf wird vor Ablauf des Einstunden-Prompt-Caches kompaktiert). v2.1.296 ergänzte das Apps-Gateway um einen <code>code</code>-Schlüssel in <code>managed.policies[]</code> und <code>autoCompactWindow</code> für Subagenten; v2.1.295 brachte <strong><code>onFailure: "block"</code></strong> für Hooks (fail-closed) plus <strong>Program Status Protocol (OSC 7501)</strong>.</p>
+
+        <div class="release">
+          <div class="ver">v2.1.302</div>
+          <div class="when">16.10.</div>
+          <div class="what">
+            <strong><code>CLAUDE_CODE_AUTO_MODE_MODEL</code></strong> — wählt das Modell des clientseitigen Auto-Mode-Klassifizierers (ändert nicht das serverseitige Auto-Mode-Modell) · <strong>Idle-Compaction-Zeile in <code>/config</code></strong> zum Ab-/Anschalten der Leerlauf-Kompaktierung · neue Hinweise in <code>/design-sync</code> und <code>/design-login</code>
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
 
         <div class="release">
           <div class="ver">v2.1.301</div>
@@ -554,15 +589,6 @@
           </div>
         </div>
 
-        <div class="release">
-          <div class="ver">v2.1.294</div>
-          <div class="when">08.10.</div>
-          <div class="what">
-            <strong>Fix: als Anweisung formulierte <code>prompt</code>- und <code>agent</code>-Hooks</strong> („blockiere Befehle, die …“) ließen durch, was sie blockieren sollten · <strong>strengere Auslegung von <code>Stop</code>-/<code>SubagentStop</code>-Hooks</strong> (z. B. „mach weiter, wenn der Build kaputt ist“), damit Claude seltener vorzeitig stoppt
-            <span class="badge sec">SECURITY</span>
-          </div>
-        </div>
-
         <p style="margin-top: 14px;">
           <a href="https://github.com/anthropics/claude-code/releases">→ Alle Releases auf GitHub</a><br/>
           <a href="https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md">→ Vollständiger CHANGELOG.md</a>
@@ -592,7 +618,7 @@
   </section>
 
   <footer>
-    <div>Snapshot · <span class="mono" id="generated">15. Oktober 2026</span></div>
+    <div>Snapshot · <span class="mono" id="generated">17. Oktober 2026</span></div>
     <div>
       <a href="/sources/">📚 Quellen-Sammlung</a> ·
       <a href="/">📊 Übersicht</a>
