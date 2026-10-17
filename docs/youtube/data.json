@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-17T04:12:52+00:00",
+  "last_updated": "2026-10-17T11:00:41+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,6 +116,32 @@
   ],
   "featured": [
     {
+      "video_id": "GBOZIRK1ujw",
+      "title": "Put your dot on call",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-16T21:43:48+00:00",
+      "url": "https://www.youtube.com/watch?v=GBOZIRK1ujw",
+      "thumbnail": "https://img.youtube.com/vi/GBOZIRK1ujw/mqdefault.jpg",
+      "description": "Ali, an engineer at OpenAI, used his dot to triage an on-call incident at 3am.\n \nHis dot investigated the issue and started a Codex thread, so he could steer the work from his phone in the ChatGPT app.",
+      "why": ""
+    },
+    {
+      "video_id": "FGCP2F_7rQk",
+      "title": "Visiting Taiwan w/ Jensen Huang | Lex Fridman",
+      "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
+      "channel_name": "Lex Fridman",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-10-13T21:26:16+00:00",
+      "url": "https://www.youtube.com/watch?v=FGCP2F_7rQk",
+      "thumbnail": "https://img.youtube.com/vi/FGCP2F_7rQk/mqdefault.jpg",
+      "description": "I've been traveling the world a bit. One of the most incredible experiences was getting to visit Taiwan with Jensen Huang. It was wild 🤯 Huge crowds, insanely good street food at night markets, and of course a lot of good conversations acro",
+      "why": ""
+    },
+    {
       "video_id": "LVEfFyijQ2c",
       "title": "Applying Gemini 4 for large-scale codebase maintenance in Chromium",
       "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
@@ -144,6 +170,54 @@
   ],
   "recent": [
     {
+      "video_id": "YMulO01LMBE",
+      "title": "Gemini 4 Argon Built an Excel Clone in 20 Minutes",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-17T05:41:17+00:00",
+      "url": "https://www.youtube.com/shorts/YMulO01LMBE",
+      "thumbnail": "https://img.youtube.com/vi/YMulO01LMBE/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "dGhUFqeITbY",
+      "title": "New Model: Reflection Beam is a new Open Weight Model",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-17T03:46:07+00:00",
+      "url": "https://www.youtube.com/watch?v=dGhUFqeITbY",
+      "thumbnail": "https://img.youtube.com/vi/dGhUFqeITbY/mqdefault.jpg",
+      "description": "We'll jam with the team of a brand new open weight model, hear what's it like to train frontiers models, and find out how to win $20k in cash and  hub credits.\n\nCheck out the blog post and join Beam Build to win $10k:  https://huggingface.c"
+    },
+    {
+      "video_id": "GBOZIRK1ujw",
+      "title": "Put your dot on call",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-16T21:43:48+00:00",
+      "url": "https://www.youtube.com/watch?v=GBOZIRK1ujw",
+      "thumbnail": "https://img.youtube.com/vi/GBOZIRK1ujw/mqdefault.jpg",
+      "description": "Ali, an engineer at OpenAI, used his dot to triage an on-call incident at 3am.\n \nHis dot investigated the issue and started a Codex thread, so he could steer the work from his phone in the ChatGPT app."
+    },
+    {
+      "video_id": "OMxEUdIgsQc",
+      "title": "Put ChatGPT to work on shared team tasks",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-16T18:00:49+00:00",
+      "url": "https://www.youtube.com/watch?v=OMxEUdIgsQc",
+      "thumbnail": "https://img.youtube.com/vi/OMxEUdIgsQc/mqdefault.jpg",
+      "description": "Set up recurring work your team can manage together with team tasks in ChatGPT. Follow a legal team's daily intake workflow—from reviewing incoming requests and checking deadlines to refining shared instructions for the next run.\n\nTasks run"
+    },
+    {
       "video_id": "LKrwhjOI8Nc",
       "title": "There's never been a better time to go into math",
       "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
@@ -168,6 +242,42 @@
       "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
     },
     {
+      "video_id": "blkIGLlZePg",
+      "title": "Why AI Can Write Code But Can’t Keep It Running (Yet)",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-16T14:30:19+00:00",
+      "url": "https://www.youtube.com/watch?v=blkIGLlZePg",
+      "thumbnail": "https://img.youtube.com/vi/blkIGLlZePg/mqdefault.jpg",
+      "description": "AI can write production code in minutes. But can it debug and operate that code when something goes wrong? Grepr CEO Jad Naous argues that running real-world systems is a fundamentally harder challenge, with unpredictable workloads, failure"
+    },
+    {
+      "video_id": "jYAwiy14Jl4",
+      "title": "Go back to basics.",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-15T21:36:31+00:00",
+      "url": "https://www.youtube.com/shorts/jYAwiy14Jl4",
+      "thumbnail": "https://img.youtube.com/vi/jYAwiy14Jl4/mqdefault.jpg",
+      "description": "Adam Neumann, co-founder of WeWork and Flow, on thinking big while staying grounded in the work.\n\nSource: The Diary of a CEO with Steven Bartlett, 2026."
+    },
+    {
+      "video_id": "KJ_7KPKlO_Q",
+      "title": "Build more personal sites with Codex",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-15T20:48:59+00:00",
+      "url": "https://www.youtube.com/watch?v=KJ_7KPKlO_Q",
+      "thumbnail": "https://img.youtube.com/vi/KJ_7KPKlO_Q/mqdefault.jpg",
+      "description": "Keep your team's Sites up to date and make them personal to each visitor. Connect scheduled tasks to refresh site data automatically and let your users connect their plugins for a personalized view of your site.\n\nTo try it out, just ask Cod"
+    },
+    {
       "video_id": "6VDjFXM1FbM",
       "title": "From Punch Cards to AI Software Factories",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
@@ -178,6 +288,18 @@
       "url": "https://www.youtube.com/shorts/6VDjFXM1FbM",
       "thumbnail": "https://img.youtube.com/vi/6VDjFXM1FbM/mqdefault.jpg",
       "description": "Apply for a chance to get one free month of Factory’s $200 Max plan: https://factory.com/berman\nFactory is selecting 100 applicants. Applying does not guarantee selection.\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture."
+    },
+    {
+      "video_id": "GyO8Ao7yKJc",
+      "title": "GPT-Live-1.1 has new voices and better accents.",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-15T18:24:44+00:00",
+      "url": "https://www.youtube.com/watch?v=GyO8Ao7yKJc",
+      "thumbnail": "https://img.youtube.com/vi/GyO8Ao7yKJc/mqdefault.jpg",
+      "description": "New voices. Better accents. And less \"checking...\"\n\nGPT-Live-1.1 brings these updates to Voice in ChatGPT, Codex, and dots, with new voices in French, German, Hindi, Mexican Spanish, Korean, and Japanese.\n\nRolling out today to all users. Co"
     },
     {
       "video_id": "l3L_lETiSzc",
@@ -192,6 +314,30 @@
       "description": "Every JetBrains account now comes with a free coding model called Junie Lite. Try it: https://jb.gg/JunieLite\n\nCloudflare just acquired Deno and the creator of Node.js is finally admitting that reimplementing it was a mistake. Let's dive in"
     },
     {
+      "video_id": "3IVo-MNwk2I",
+      "title": "Weeks to Hours: SentinelOne on Cybersecurity Research with OpenAI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-15T14:13:38+00:00",
+      "url": "https://www.youtube.com/shorts/3IVo-MNwk2I",
+      "thumbnail": "https://img.youtube.com/vi/3IVo-MNwk2I/mqdefault.jpg",
+      "description": "Cybersecurity research, moving from weeks to hours.\n\nSentinelOne’s Gregor Stewart describes OpenAI’s cyber capabilities reaching human-level output in about eight hours on reverse-engineering work that would take a top researcher four to si"
+    },
+    {
+      "video_id": "q8cb1XL9sXA",
+      "title": "Agentic Commerce: Why Your Wallet Is About to Change",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-15T13:55:19+00:00",
+      "url": "https://www.youtube.com/watch?v=q8cb1XL9sXA",
+      "thumbnail": "https://img.youtube.com/vi/q8cb1XL9sXA/mqdefault.jpg",
+      "description": "What happens when AI agents start spending your money? VGS' Terry Angelos argues that agentic commerce will need new payment infrastructure that gives AI the ability to transact without sacrificing the protections consumers expect.\n\nTerry j"
+    },
+    {
       "video_id": "WqrwAFs-fq0",
       "title": "Multiplayer Gaming & Flight Simulation - Computerphile",
       "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
@@ -204,6 +350,30 @@
       "description": "Using the example of a flight simulator to discuss the complexities of coding a multi-player game. What data do you send? When do you send it & how often? Dr Julian Onions talks about his experiences of working on a flight simulator.\n\nCompu"
     },
     {
+      "video_id": "qaP4pymNrEc",
+      "title": "RTX 5090 vs M5 Ultra: Which AI Powerhouse Wins?",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-14T19:58:14+00:00",
+      "url": "https://www.youtube.com/watch?v=qaP4pymNrEc",
+      "thumbnail": "https://img.youtube.com/vi/qaP4pymNrEc/mqdefault.jpg",
+      "description": "Apple's M5 Ultra Mac Studio is shipping, so here is how it compares to NVIDIA's RTX 5090 for running AI models locally.\n\nwTopics covered:\n\n- M5 Ultra vs RTX 5090 specs for local LLMs  \n- Qwen3.8-27B benchmark: prompt processing and token ge"
+    },
+    {
+      "video_id": "2IuO_80wB0s",
+      "title": "Give your team AI skills you can trust",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-14T18:05:18+00:00",
+      "url": "https://www.youtube.com/watch?v=2IuO_80wB0s",
+      "thumbnail": "https://img.youtube.com/vi/2IuO_80wB0s/mqdefault.jpg",
+      "description": "Learn more: deeplearning.ai/business\n\nOur enterprise program gives your team AI skills you can trust. \n\nEngineering teams are under pressure to build AI skills. In BCG's 2026 survey, 72% of workers said AI has changed what their jobs requir"
+    },
+    {
       "video_id": "QZVzuq28eFw",
       "title": "OpenAI’s lead engineer was secretly a spy...",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -214,6 +384,30 @@
       "url": "https://www.youtube.com/watch?v=QZVzuq28eFw",
       "thumbnail": "https://img.youtube.com/vi/QZVzuq28eFw/mqdefault.jpg",
       "description": "Run GitHub Actions 2x faster and build with Codesmith at https://www.blacksmith.sh/\n\nAn OpenAI engineer built a wiretap with his wife’s ChatGPT account, hid it in toilet paper behind the executive boardroom TV, and lasted 48 hours before ge"
+    },
+    {
+      "video_id": "BKuK0M6oDTI",
+      "title": "Can Open Models Keep Up With OpenAI and Anthropic? | Nathan Lambert",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-14T14:30:08+00:00",
+      "url": "https://www.youtube.com/watch?v=BKuK0M6oDTI",
+      "thumbnail": "https://img.youtube.com/vi/BKuK0M6oDTI/mqdefault.jpg",
+      "description": "a16z Partner Lisha Li sits down with AI researcher and Trillium founder Nathan Lambert to ask how durable the gap really is between frontier AI labs and open models.\n\nNathan argues that OpenAI and Anthropic have structural advantages in com"
+    },
+    {
+      "video_id": "H4azmWcqO5g",
+      "title": "Local AI 202: Get Massive Speed-ups with Speculative Decoding",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-14T12:37:42+00:00",
+      "url": "https://www.youtube.com/watch?v=H4azmWcqO5g",
+      "thumbnail": "https://img.youtube.com/vi/H4azmWcqO5g/mqdefault.jpg",
+      "description": "Learn about speculative decoding techniques like EAGLE, DFlash, MTP with llama.cpp, transformers and speculators library in this livestream. \nSchedule:\n18.10: Introduction to Speculative Decoding (Merve Noyan, Hugging Face)\n18.30: Getting S"
     },
     {
       "video_id": "M8iqahFogtA",
@@ -238,6 +432,30 @@
       "url": "https://www.youtube.com/shorts/CIlqLzoJiU8",
       "thumbnail": "https://img.youtube.com/vi/CIlqLzoJiU8/mqdefault.jpg",
       "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "FGCP2F_7rQk",
+      "title": "Visiting Taiwan w/ Jensen Huang | Lex Fridman",
+      "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
+      "channel_name": "Lex Fridman",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-10-13T21:26:16+00:00",
+      "url": "https://www.youtube.com/watch?v=FGCP2F_7rQk",
+      "thumbnail": "https://img.youtube.com/vi/FGCP2F_7rQk/mqdefault.jpg",
+      "description": "I've been traveling the world a bit. One of the most incredible experiences was getting to visit Taiwan with Jensen Huang. It was wild 🤯 Huge crowds, insanely good street food at night markets, and of course a lot of good conversations acro"
+    },
+    {
+      "video_id": "_KhlazpW9d8",
+      "title": "You just have to get started.",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-13T20:00:33+00:00",
+      "url": "https://www.youtube.com/shorts/_KhlazpW9d8",
+      "thumbnail": "https://img.youtube.com/vi/_KhlazpW9d8/mqdefault.jpg",
+      "description": "In 2017, Mark Zuckerberg returned to Harvard, the university he left in 2004 to build Facebook, to deliver the commencement address.\n\nThis is his case against the single eureka moment.\n\nSource: Harvard University"
     },
     {
       "video_id": "LVEfFyijQ2c",
@@ -288,6 +506,18 @@
       "description": "Auditing chemistry literature usually means weeks of manual, error-prone reading, where a molecule’s structure can sit 50 pages away from its experimental readout. At Isomorphic Labs, researchers Brian Bender and Santosh Adhikari are using "
     },
     {
+      "video_id": "LNy__Ge8OLQ",
+      "title": "I Turned Structured Output Into a Game 🎮",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-13T13:20:18+00:00",
+      "url": "https://www.youtube.com/shorts/LNy__Ge8OLQ",
+      "thumbnail": "https://img.youtube.com/vi/LNy__Ge8OLQ/mqdefault.jpg",
+      "description": "The model’s top prediction can still break the rules.\n\nI built Token Arcade to make structured output and constrained decoding easier to understand: see the next-token probabilities, pick a card, and find out whether it’s allowed.\n\nWatch a "
+    },
+    {
       "video_id": "z_sXLlLVUls",
       "title": "OpenAI’s New AI Is Doing Things We Barely Understand",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -300,16 +530,16 @@
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The papers are available here:\nhttps://openai.com/index/sharing-ai-progress-in-mathematics/\nhttps://github.com/openai/math\n\n🙏 We would like to thank our g"
     },
     {
-      "video_id": "rpLrkJ5NNEI",
-      "title": "Meta just dropped something insane... (Muse Wonder)",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-13T00:47:04+00:00",
-      "url": "https://www.youtube.com/watch?v=rpLrkJ5NNEI",
-      "thumbnail": "https://img.youtube.com/vi/rpLrkJ5NNEI/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+      "video_id": "EuN8WCWQf7g",
+      "title": "How to Build Your Own AI Agent (Like PewDiePie)",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-13T03:37:35+00:00",
+      "url": "https://www.youtube.com/watch?v=EuN8WCWQf7g",
+      "thumbnail": "https://img.youtube.com/vi/EuN8WCWQf7g/mqdefault.jpg",
+      "description": "PewDiePie is building his own AI assistant, Odysseus, and training a local model, Ajax, to power it. In this video I break down what Odysseus is, how an agent harness works from scratch, what it actually means to run a model locally with ll"
     },
     {
       "video_id": "C4Sq3Rot8FU",
@@ -420,6 +650,18 @@
       "description": "KERNEL is the simplest way to let your agents act on any website. Use code: FIRESHIP to get a free upgrade to the Hobbyist tier ($30 value) at https://kernel.sh/fireship\n\nMistral, Reflection AI, and Moonshot all made big moves in the open-w"
     },
     {
+      "video_id": "dffaE-nftA4",
+      "title": "Building AI Assistants with On-Device Memory #aiagents #deeplearningai",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-07T15:15:01+00:00",
+      "url": "https://www.youtube.com/shorts/dffaE-nftA4",
+      "thumbnail": "https://img.youtube.com/vi/dffaE-nftA4/mqdefault.jpg",
+      "description": "No network connection. No remote server. Build an assistant whose memory never leaves the device in Building AI Assistants with On-Device Memory. Built in partnership with Qdrant and taught by Dylan Couzon.\n\nEnroll for free: https://www.dee"
+    },
+    {
       "video_id": "Wkaw03p3BrM",
       "title": "DeepMind's New AI Just Cracked The Code Of Life",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -457,17 +699,10 @@
     }
   ],
   "stats": {
-    "total_videos": 26,
+    "total_videos": 44,
     "total_channels": 16,
-    "successful_channels": 10,
-    "failed_channels": [
-      "Andrej Karpathy",
-      "Lex Fridman",
-      "OpenAI",
-      "Hugging Face",
-      "a16z",
-      "DeepLearningAI"
-    ],
+    "successful_channels": 16,
+    "failed_channels": [],
     "window_days": 14
   }
 }
