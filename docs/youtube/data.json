@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-18T11:04:14+00:00",
+  "last_updated": "2026-10-19T11:04:18+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,16 @@
   ],
   "featured": [
     {
-      "video_id": "GBOZIRK1ujw",
-      "title": "Put your dot on call",
+      "video_id": "mEulEkuxCnM",
+      "title": "This is the new ChatGPT Voice, powered by GPT Live",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-10-16T21:43:48+00:00",
-      "url": "https://www.youtube.com/watch?v=GBOZIRK1ujw",
-      "thumbnail": "https://img.youtube.com/vi/GBOZIRK1ujw/mqdefault.jpg",
-      "description": "Ali, an engineer at OpenAI, used his dot to triage an on-call incident at 3am.\n \nHis dot investigated the issue and started a Codex thread, so he could steer the work from his phone in the ChatGPT app.",
+      "published": "2026-10-19T05:30:13+00:00",
+      "url": "https://www.youtube.com/watch?v=mEulEkuxCnM",
+      "thumbnail": "https://img.youtube.com/vi/mEulEkuxCnM/mqdefault.jpg",
+      "description": "You’ll want to turn the sound on for this one.\n\nRead more here: https://chatgpt.com/features/voice/",
       "why": ""
     },
     {
@@ -169,6 +169,90 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "LWxX6vvHfrc",
+      "title": "Gemini 4 Argon Really Surprised Me",
+      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+      "channel_name": "Two Minute Papers",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-10-19T08:49:21+00:00",
+      "url": "https://www.youtube.com/watch?v=LWxX6vvHfrc",
+      "thumbnail": "https://img.youtube.com/vi/LWxX6vvHfrc/mqdefault.jpg",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 Gemini 4 Argon + report are available here:\nhttps://deepmind.google/models/model-cards/gemini-4-argon/\nhttps://storage.googleapis.com/deepmind-media/gemin"
+    },
+    {
+      "video_id": "ALbuCR4uH2E",
+      "title": "Mark Zuckerberg's take on risk.",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-19T07:00:08+00:00",
+      "url": "https://www.youtube.com/shorts/ALbuCR4uH2E",
+      "thumbnail": "https://img.youtube.com/vi/ALbuCR4uH2E/mqdefault.jpg",
+      "description": "Mark Zuckerberg, founder and CEO of Meta, on why staying stagnant is the riskiest choice.\n\nSource: How to Build the Future, Y Combinator, 2016."
+    },
+    {
+      "video_id": "mEulEkuxCnM",
+      "title": "This is the new ChatGPT Voice, powered by GPT Live",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-19T05:30:13+00:00",
+      "url": "https://www.youtube.com/watch?v=mEulEkuxCnM",
+      "thumbnail": "https://img.youtube.com/vi/mEulEkuxCnM/mqdefault.jpg",
+      "description": "You’ll want to turn the sound on for this one.\n\nRead more here: https://chatgpt.com/features/voice/"
+    },
+    {
+      "video_id": "xIEzjwReF2s",
+      "title": "This is the new ChatGPT Voice, powered by GPT Live",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-19T04:30:15+00:00",
+      "url": "https://www.youtube.com/watch?v=xIEzjwReF2s",
+      "thumbnail": "https://img.youtube.com/vi/xIEzjwReF2s/mqdefault.jpg",
+      "description": "Ein kleiner Tipp von uns: Ton an, denn das willst du hören.\n\nHier weiterlesen: https://chatgpt.com/de-DE/features/voice/"
+    },
+    {
+      "video_id": "-vpwIHxkDFw",
+      "title": "This is the new ChatGPT Voice, powered by GPT Live",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-19T04:30:12+00:00",
+      "url": "https://www.youtube.com/watch?v=-vpwIHxkDFw",
+      "thumbnail": "https://img.youtube.com/vi/-vpwIHxkDFw/mqdefault.jpg",
+      "description": "Pour cette vidéo, pensez à activez le son pour ne rien manquer.\n\nEn savoir plus: https://chatgpt.com/fr-FR/features/voice/"
+    },
+    {
+      "video_id": "ti3vVYwzW4A",
+      "title": "Pi Durable EXPLAINED: Build Always-On Agents with Local Models",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-19T03:34:17+00:00",
+      "url": "https://www.youtube.com/watch?v=ti3vVYwzW4A",
+      "thumbnail": "https://img.youtube.com/vi/ti3vVYwzW4A/mqdefault.jpg",
+      "description": "Pi Durable is a building block for always-on agent applications, not a new coding-agent CLI. Learn how checkpoints, conversations, and storage support recovery after interruptions, where Durable fits in the Pi ecosystem, and the six steps t"
+    },
+    {
+      "video_id": "RS9vWYlJeH8",
+      "title": "How DeepSeek Uses Less Memory",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-18T23:02:55+00:00",
+      "url": "https://www.youtube.com/shorts/RS9vWYlJeH8",
+      "thumbnail": "https://img.youtube.com/vi/RS9vWYlJeH8/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
     {
       "video_id": "kb74_MmsTFM",
       "title": "Gemini 4 Argon Made a Fall Guys Clone",
@@ -219,7 +303,7 @@
     },
     {
       "video_id": "OMxEUdIgsQc",
-      "title": "Put ChatGPT to work on shared team tasks",
+      "title": "How teams can automate recurring tasks with ChatGPT",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
@@ -278,18 +362,6 @@
       "description": "Adam Neumann, co-founder of WeWork and Flow, on thinking big while staying grounded in the work.\n\nSource: The Diary of a CEO with Steven Bartlett, 2026."
     },
     {
-      "video_id": "KJ_7KPKlO_Q",
-      "title": "Build more personal sites with Codex",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-15T20:48:59+00:00",
-      "url": "https://www.youtube.com/watch?v=KJ_7KPKlO_Q",
-      "thumbnail": "https://img.youtube.com/vi/KJ_7KPKlO_Q/mqdefault.jpg",
-      "description": "Keep your team's Sites up to date and make them personal to each visitor. Connect scheduled tasks to refresh site data automatically and let your users connect their plugins for a personalized view of your site.\n\nTo try it out, just ask Cod"
-    },
-    {
       "video_id": "6VDjFXM1FbM",
       "title": "From Punch Cards to AI Software Factories",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
@@ -302,18 +374,6 @@
       "description": "Apply for a chance to get one free month of Factory’s $200 Max plan: https://factory.com/berman\nFactory is selecting 100 applicants. Applying does not guarantee selection.\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture."
     },
     {
-      "video_id": "GyO8Ao7yKJc",
-      "title": "GPT-Live-1.1 has new voices and better accents.",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-15T18:24:44+00:00",
-      "url": "https://www.youtube.com/watch?v=GyO8Ao7yKJc",
-      "thumbnail": "https://img.youtube.com/vi/GyO8Ao7yKJc/mqdefault.jpg",
-      "description": "New voices. Better accents. And less \"checking...\"\n\nGPT-Live-1.1 brings these updates to Voice in ChatGPT, Codex, and dots, with new voices in French, German, Hindi, Mexican Spanish, Korean, and Japanese.\n\nRolling out today to all users. Co"
-    },
-    {
       "video_id": "l3L_lETiSzc",
       "title": "The runtime wars are over... and Node won",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -324,18 +384,6 @@
       "url": "https://www.youtube.com/watch?v=l3L_lETiSzc",
       "thumbnail": "https://img.youtube.com/vi/l3L_lETiSzc/mqdefault.jpg",
       "description": "Every JetBrains account now comes with a free coding model called Junie Lite. Try it: https://jb.gg/JunieLite\n\nCloudflare just acquired Deno and the creator of Node.js is finally admitting that reimplementing it was a mistake. Let's dive in"
-    },
-    {
-      "video_id": "3IVo-MNwk2I",
-      "title": "Weeks to Hours: SentinelOne on Cybersecurity Research with OpenAI",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-15T14:13:38+00:00",
-      "url": "https://www.youtube.com/shorts/3IVo-MNwk2I",
-      "thumbnail": "https://img.youtube.com/vi/3IVo-MNwk2I/mqdefault.jpg",
-      "description": "Cybersecurity research, moving from weeks to hours.\n\nSentinelOne’s Gregor Stewart describes OpenAI’s cyber capabilities reaching human-level output in about eight hours on reverse-engineering work that would take a top researcher four to si"
     },
     {
       "video_id": "q8cb1XL9sXA",
@@ -422,18 +470,6 @@
       "description": "Learn about speculative decoding techniques like EAGLE, DFlash, MTP with llama.cpp, transformers and speculators library in this livestream. \nSchedule:\n18.10: Introduction to Speculative Decoding (Merve Noyan, Hugging Face)\n18.30: Getting S"
     },
     {
-      "video_id": "M8iqahFogtA",
-      "title": "Google just went FRONTIER (Gemini 4 Argon)",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-14T01:33:55+00:00",
-      "url": "https://www.youtube.com/watch?v=M8iqahFogtA",
-      "thumbnail": "https://img.youtube.com/vi/M8iqahFogtA/mqdefault.jpg",
-      "description": "Gemini 4 Argon is live in Box! https://bit.ly/4zu0p1R\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https"
-    },
-    {
       "video_id": "FGCP2F_7rQk",
       "title": "Visiting Taiwan w/ Jensen Huang | Lex Fridman",
       "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
@@ -444,18 +480,6 @@
       "url": "https://www.youtube.com/watch?v=FGCP2F_7rQk",
       "thumbnail": "https://img.youtube.com/vi/FGCP2F_7rQk/mqdefault.jpg",
       "description": "I've been traveling the world a bit. One of the most incredible experiences was getting to visit Taiwan with Jensen Huang. It was wild 🤯 Huge crowds, insanely good street food at night markets, and of course a lot of good conversations acro"
-    },
-    {
-      "video_id": "_KhlazpW9d8",
-      "title": "You just have to get started.",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-13T20:00:33+00:00",
-      "url": "https://www.youtube.com/shorts/_KhlazpW9d8",
-      "thumbnail": "https://img.youtube.com/vi/_KhlazpW9d8/mqdefault.jpg",
-      "description": "In 2017, Mark Zuckerberg returned to Harvard, the university he left in 2004 to build Facebook, to deliver the commencement address.\n\nThis is his case against the single eureka moment.\n\nSource: Harvard University"
     },
     {
       "video_id": "LVEfFyijQ2c",
@@ -528,18 +552,6 @@
       "url": "https://www.youtube.com/watch?v=z_sXLlLVUls",
       "thumbnail": "https://img.youtube.com/vi/z_sXLlLVUls/mqdefault.jpg",
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The papers are available here:\nhttps://openai.com/index/sharing-ai-progress-in-mathematics/\nhttps://github.com/openai/math\n\n🙏 We would like to thank our g"
-    },
-    {
-      "video_id": "EuN8WCWQf7g",
-      "title": "How to Build Your Own AI Agent (Like PewDiePie)",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-10-13T03:37:35+00:00",
-      "url": "https://www.youtube.com/watch?v=EuN8WCWQf7g",
-      "thumbnail": "https://img.youtube.com/vi/EuN8WCWQf7g/mqdefault.jpg",
-      "description": "PewDiePie is building his own AI assistant, Odysseus, and training a local model, Ajax, to power it. In this video I break down what Odysseus is, how an agent harness works from scratch, what it actually means to run a model locally with ll"
     },
     {
       "video_id": "C4Sq3Rot8FU",
@@ -684,18 +696,6 @@
       "url": "https://www.youtube.com/watch?v=_5p1_TNSWqQ",
       "thumbnail": "https://img.youtube.com/vi/_5p1_TNSWqQ/mqdefault.jpg",
       "description": "Namespace is actually the fastest way to run your GitHub Actions (and more). Try it for free - https://namespace.so/github-actions\n\nPewDiePie is building Ajax, an uncensored AI model he trained at home after OpenAI banned him twice for dist"
-    },
-    {
-      "video_id": "ZHVNTTKu9fU",
-      "title": "The Billion Dollar AI Advantage Is Disappearing",
-      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
-      "channel_name": "Two Minute Papers",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-10-05T09:53:12+00:00",
-      "url": "https://www.youtube.com/watch?v=ZHVNTTKu9fU",
-      "thumbnail": "https://img.youtube.com/vi/ZHVNTTKu9fU/mqdefault.jpg",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 Sonnet 5.5: \nhttps://www.anthropic.com/claude-sonnet-5-5\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAd"
     }
   ],
   "stats": {
