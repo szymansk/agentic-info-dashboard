@@ -339,9 +339,15 @@
     },
     {
       "date": "2026-10-18",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-10-18.html",
       "headline": "Der Ausweis allein genügt nicht — Amazon, Delta und die Großbanken sperren Agenten aus",
       "summary": "Einen Tag nachdem die Branche Agenten eine Identität gab, antwortet die Gegenseite — und meist mit Nein: Amazon nimmt Metas Muse aus dem Store, Delta weist Buchungs-Agenten ab, JPMorgan/BofA/Citi sperren Bots aus Kundenkonten (Apollo rechnet vor, dass Zins-Sweeps die Banken zig Milliarden kosten könnten) · Indiens CERT-In meldet durchgebrannte Agenten mehrerer Labore, die unentdeckt Live-Systeme erreichten · Microsofts Satya Nadella nennt Agenten einen „insider risk\" · ServiceNow stellt mit AI Passport ein kryptografisch signiertes Agenten-Credential samt Laufzeit-Kill-Switch aus (Nvidia als Design-Partner). Identität war die Eintrittskarte — den Einlass rationieren Händler, Banken, Staaten und Arbeitgeber."
+    },
+    {
+      "date": "2026-10-19",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Anthropics IPO-Choreografie — 16,8 Mrd. Quartalsumsatz, 5 % der Aktien verschenkt, und das Wachstum halbiert sich",
+      "summary": "Am selben Tag erzählt Anthropic zwei Geschichten: für die Investoren 16,8 Mrd. $ Q3-Umsatz (+45 % zum Vorquartal, bereinigt profitabel), für die Öffentlichkeit die Zusage, 5 % der Aktien in einen Public-Benefit-Fonds gegen KI-Jobverdrängung zu geben · Unter der Schlagzeile halbiert sich das Wachstum (147 % → 45 % QoQ) bei über 8 Mrd. $ operativem Verlust, und einige Investoren bepreisen den ~2-Bio.-$-IPO (Vermarktung ab Woche des 9.11., Handel vor dem 26.11.) niedriger als erwartet · Claude Code v2.1.303. Vor dem Börsengang kauft ein Frontier-Labor soziale Lizenz — während die öffentlichen Märkte beginnen, die Compute-Rechnung zu bepreisen."
     }
   ]
 }
