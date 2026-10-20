@@ -345,9 +345,15 @@
     },
     {
       "date": "2026-10-19",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-10-19.html",
       "headline": "Anthropics IPO-Choreografie — 16,8 Mrd. Quartalsumsatz, 5 % der Aktien verschenkt, und das Wachstum halbiert sich",
       "summary": "Am selben Tag erzählt Anthropic zwei Geschichten: für die Investoren 16,8 Mrd. $ Q3-Umsatz (+45 % zum Vorquartal, bereinigt profitabel), für die Öffentlichkeit die Zusage, 5 % der Aktien in einen Public-Benefit-Fonds gegen KI-Jobverdrängung zu geben · Unter der Schlagzeile halbiert sich das Wachstum (147 % → 45 % QoQ) bei über 8 Mrd. $ operativem Verlust, und einige Investoren bepreisen den ~2-Bio.-$-IPO (Vermarktung ab Woche des 9.11., Handel vor dem 26.11.) niedriger als erwartet · Claude Code v2.1.303. Vor dem Börsengang kauft ein Frontier-Labor soziale Lizenz — während die öffentlichen Märkte beginnen, die Compute-Rechnung zu bepreisen."
+    },
+    {
+      "date": "2026-10-20",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Der Stack unter den Modellen wird zur Nachricht — PyTorch läuft auf Trainium, das Kapital gießt Silizium",
+      "summary": "Während die Modell-Front commoditisiert, zieht die Schlacht eine Schicht tiefer: Amazon und Meta bringen mit TorchNeuron (Apache 2.0, Beta ab heute) PyTorch mit einem Ein-Zeilen-Wechsel auf AWS Trainium — ein direkter Angriff auf Nvidias CUDA-Bindung · das Kapital folgt dem Silizium (Tenstorrent 1,5 Mrd. $ bei 6,2 Mrd. Bewertung, Metas Gigawatt-Cluster Prometheus) · Inception Labs' Mercury 3 zeigt mit 1.000+ Token/s eine zweite Effizienz-Achse · und die EU liefert mit EN 18286 den ersten harmonisierten AI-Act-Standard, der High-Risk-Anbietern eine prüfbare Konformitätsvermutung gibt. Claude Code v2.1.304."
     }
   ]
 }

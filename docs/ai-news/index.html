@@ -298,7 +298,7 @@
   footer .mono { color: var(--muted); }
 </style>
 </head>
-<body data-snapshot-date="2026-10-19" data-snapshot-mode="live">
+<body data-snapshot-date="2026-10-20" data-snapshot-mode="live">
 <div class="wrap">
 
   <!-- ─── Top Nav ─── -->
@@ -319,9 +319,6 @@
   <div class="timeline-bar" id="timeline">
     <span class="label">Zeitstrahl</span>
     <!-- JS füllt aus archive/manifest.json. Fallback statisch: -->
-    <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-10-15.html" data-date="2026-10-15">
-      <span class="dow">Do</span><span class="date">15.10.</span>
-    </a>
     <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-10-16.html" data-date="2026-10-16">
       <span class="dow">Fr</span><span class="date">16.10.</span>
     </a>
@@ -331,8 +328,11 @@
     <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-10-18.html" data-date="2026-10-18">
       <span class="dow">So</span><span class="date">18.10.</span>
     </a>
-    <a class="tl-pill active" href="/agentic-info-dashboard/ai-news/" data-date="2026-10-19">
+    <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-10-19.html" data-date="2026-10-19">
       <span class="dow">Mo</span><span class="date">19.10.</span>
+    </a>
+    <a class="tl-pill active" href="/agentic-info-dashboard/ai-news/" data-date="2026-10-20">
+      <span class="dow">Di</span><span class="date">20.10.</span>
     </a>
   </div>
 
@@ -363,63 +363,72 @@
   <article class="briefing-wrap">
 
     <header class="briefing-head">
-      <h2 class="kicker">Montag · Agentic AI &amp; GenAI</h2>
-      <h1>Anthropics IPO-Choreografie — 16,8 Milliarden Umsatz, 5 Prozent verschenkt, und das Wachstum halbiert sich</h1>
+      <h2 class="kicker">Dienstag · Agentic AI &amp; GenAI</h2>
+      <h1>Der Stack unter den Modellen wird zur Nachricht — PyTorch läuft auf Trainium, und das Kapital gießt Silizium</h1>
       <div class="byline">
         <span>✍️ Kuratiert &amp; analysiert</span>
         <span class="dot-sep">·</span>
-        <span>~9 Min Lesezeit</span>
+        <span>~10 Min Lesezeit</span>
         <span class="dot-sep">·</span>
-        <span id="byline-date">19. Oktober 2026</span>
+        <span id="byline-date">20. Oktober 2026</span>
       </div>
       <p class="lede">
-        Ein Unternehmen, das sich auf einen Börsengang in Billionenhöhe zubewegt, erzählt an einem Tag selten zwei so gegensätzliche Geschichten wie <span data-person="dario-amodei">Anthropic</span> am gestrigen Samstag. Für die Investoren: 16,8 Milliarden Dollar Umsatz im dritten Quartal, bereinigt profitabel, 45 Prozent Plus zum Vorquartal — eine Wachstumskurve, wie sie kein Software-Konzern je gezeigt hat. Für die Öffentlichkeit: die Zusage, 5 Prozent der eigenen Aktien in einen neuen Public-Benefit-Fonds zu geben, der die von der eigenen Technologie ausgelöste Jobverdrängung abfedern soll. Beide Nachrichten stammen von <span data-person="dario-amodei">Dario Amodei</span>s Firma, beide zielen auf ein Publikum — und beide überdecken dieselbe unbequeme Zahl darunter: Das Wachstum, das die ganze Erzählung trägt, hat sich gerade halbiert. Vor dem größten Tech-IPO seit Jahren kauft ein Frontier-Labor soziale Lizenz. Die Frage ist, ob die öffentlichen Märkte sie ihm abkaufen.
+        Es ist ein verlässliches Signal für die Reife eines Marktes, wenn die wichtigste Nachricht des Tages kein neues Modell ist, sondern die Schicht darunter. Gestern kündigten Amazon und das PyTorch-Team bei Meta mit <strong>TorchNeuron</strong> einen nativen Backend an, der bestehenden PyTorch-Code mit einem einzigen geänderten Gerätenamen auf AWS-eigenen Trainium-Chips laufen lässt — Apache-2.0-lizenziert, öffentliche Beta ab heute. Das klingt nach einer Fußnote für Infrastruktur-Ingenieure und ist in Wahrheit ein kalkulierter Angriff auf die teuerste Abhängigkeit der Branche: Nvidias CUDA. Flankiert wird der Vorstoß von einer 1,5-Milliarden-Runde für den Chip-Herausforderer Tenstorrent, Metas gigawattgroßem Prometheus-Cluster und einem Diffusions-Sprachmodell, das 1.000 Token pro Sekunde ausspuckt. Die Modell-Benchmarks wechseln inzwischen im Wochentakt — die eigentliche Verschiebung findet eine Etage tiefer statt, im Silizium und im Compiler.
       </p>
     </header>
 
     <div class="briefing-body">
 
       <section>
-        <h3><span class="num">01</span>Zwei Geschichten an einem Tag — der Umsatz für die Investoren, die 5 Prozent für die Öffentlichkeit</h3>
-        <p>Beginnen wir mit der Zahl, die den Börsengang trägt. <span data-person="dario-amodei">Anthropic</span> teilte prospektiven Investoren mit, dass der Umsatz im dritten Quartal 16,8 Milliarden Dollar erreichte — rund 45 Prozent mehr als im Vorquartal, und das Unternehmen sei auf bereinigter Basis profitabel. Für ein Unternehmen, das Ende 2025 noch bei einer Run-Rate von etwa 9 Milliarden lag, ist das eine Beschleunigung, wie sie die Software-Industrie nie gesehen hat. Am selben Tag jedoch kam die zweite Botschaft, und sie richtete sich an ein ganz anderes Publikum: Anthropic kündigte an, 5 Prozent seiner Aktien in einen neuen Public-Benefit-Fonds einzubringen — vorbehaltlich der Zustimmung der Aktionäre —, dessen Anteil mit steigender Bewertung weiter wachsen könne. Der Fonds soll sich der ökonomischen Verwerfung widmen, die Künstliche Intelligenz auf dem Arbeitsmarkt anrichtet; es ist dieselbe Sorge, die <span data-person="dario-amodei">Dario Amodei</span> seit Monaten öffentlich formuliert.</p>
-        <p>Die Gleichzeitigkeit ist kein Zufall, sie ist Choreografie. Ein Frontier-Labor, das Wochen vor einem Börsengang in Billionenhöhe steht, muss zwei Erzählungen gleichzeitig bedienen: gegenüber Investoren den brutalen Wachstums- und Profitabilitätsnachweis, gegenüber Politik und Öffentlichkeit die Antwort auf die naheliegendste Anklage — dass dieselbe Technologie, die den Umsatz treibt, Arbeitsplätze vernichtet. Die 5 Prozent sind der Versuch, dieser Anklage zuvorzukommen, bevor sie das IPO-Narrativ belasten kann. Man kann das zynisch lesen (ein PR-Manöver, verpackt in Aktien, die heute billig zu verschenken sind und morgen womöglich 100 Milliarden wert) oder wohlwollend (ein ernster Vorgriff auf eine Disruption, an die das Unternehmen selbst glaubt). Beides schließt sich nicht aus. Entscheidend ist der Mechanismus: Anthropic reiht sich damit in ein Muster ein, das OpenAI im Juli mit seinem 5-Prozent-Angebot an den US-Staat begonnen hatte. Die Labore verteilen Eigenkapital präventiv — als Eintrittspreis in eine politische Ökonomie, die der KI-Disruption misstrauisch gegenübersteht.</p>
+        <h3><span class="num">01</span>Ein geänderter Gerätename — TorchNeuron greift die teuerste Abhängigkeit der Branche an</h3>
+        <p>Der technische Kern der Ankündigung ist bestechend simpel, und genau das macht ihn gefährlich für den Platzhirsch. <strong>TorchNeuron</strong> ist ein nativer PyTorch-Backend für AWS Trainium2 und Trainium3: Wer bereits PyTorch-Code schreibt — also praktisch die gesamte KI-Welt —, ändert eine Zeile, in der das Rechen-Gerät benannt wird, und sein Modell trainiert oder inferiert auf Amazons eigenen Beschleunigern statt auf Nvidia-GPUs. Kein Neuschreiben von Kerneln, keine Portierung auf eine exotische Sprache. Dass Amazon das Projekt gemeinsam mit dem PyTorch-Team bei Meta vorstellt und unter Apache 2.0 offenlegt, mit einer öffentlichen Beta ab heute und einer Riege von Early-Adoptern von Hugging Face über Databricks bis Anthropic, ist kein Zufall: Es soll die Botschaft senden, dass hier ein Industrie-Standard entsteht und kein proprietärer AWS-Sonderweg.</p>
+        <p>Der eigentliche Gegner heißt CUDA. Nvidias Software-Schicht ist seit anderthalb Jahrzehnten der Graben, der die Hardware-Marge schützt: Die Chips sind schnell, aber die wahre Bindung ist, dass jede ernstzunehmende ML-Bibliothek auf CUDA optimiert ist. Jeder Versuch, diese Bindung zu lösen, läuft über die Compiler- und Framework-Ebene — und genau dort verdichten sich die Angriffe. <span data-person="chris-lattner">Chris Lattner</span>s hardware-agnostischer Modular-Stack landete im Juni bei Qualcomm; OpenAI und Broadcom basteln an eigenem Inferenz-Silizium; und nun macht ausgerechnet der größte Cloud-Anbieter den Wechsel zu seinen eigenen Chips zur Ein-Zeilen-Operation. Keiner dieser Vorstöße entthront Nvidia über Nacht. Aber in Summe erzählen sie dieselbe Geschichte: Die Ära, in der CUDA alternativlos war, geht ihrem Ende entgegen, und die Hyperscaler haben jedes Interesse daran, sie zu beschleunigen.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Wenn die Hersteller selbst Jobverdrängung als Basisszenario einpreisen, wird „verantwortungsvolle Einführung“ vom Marketing-Begriff zur Beschaffungs-Anforderung. Billbar: Transformationskonzepte, die Automatisierung mit Umschulung und Rollen-Redesign koppeln (nicht nur Stellenabbau); Wirkungsanalysen, die Kunden ihren Aufsichtsgremien und Betriebsräten vorlegen können; und die nüchterne Beratung, dass die soziale Lizenz eines KI-Projekts intern erarbeitet werden muss — ein Lab-Fonds nimmt sie niemandem ab.
+          Für uns: Hardware-Portabilität wird vom Infrastruktur-Detail zur Architektur-Entscheidung mit direkter Kostenfolge. Billbar: Inferenz-Kosten-Audits, die den Effekt eines Chip-Wechsels (Trainium, TPU, eigenes Silizium) für konkrete Kunden-Workloads durchrechnen; Portabilitäts-Assessments, die prüfen, wie tief ein Kunde in CUDA eingegraben ist; und Framework-Abstraktionen, die den Betrieb über mehrere Beschleuniger hinweg offenhalten — bevor der nächste GPU-Engpass die Wechselkosten diktiert.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">02</span>Die Zahl unter der Schlagzeile — das Wachstum halbiert sich</h3>
-        <p>So eindrucksvoll die 16,8 Milliarden wirken, die eigentliche Information steckt in der zweiten Ableitung. Das Wachstum von 45 Prozent zum Vorquartal folgt auf rund 147 Prozent zwischen dem ersten und zweiten Quartal — die Rate hat sich also in einem einzigen Schritt mehr als halbiert. In absoluten Zahlen wuchs der Umsatz zuletzt um etwa 5,2 Milliarden, zuvor um etwa 6,9 Milliarden. Das ist immer noch außergewöhnlich, aber es ist der erste klare Beleg dafür, dass selbst Anthropics Hyperwachstum einer Schwerkraft unterliegt. Und unter der Profitabilitäts-Zeile steht ein Sternchen: „bereinigt profitabel“ sagt nichts darüber, welche Kosten die Bereinigung ausklammert — Berichte verweisen weiter auf operative Verluste von über 8 Milliarden Dollar, getrieben von den Milliarden-Verpflichtungen für Compute, die dieses Briefing seit Monaten verfolgt.</p>
-        <p>Genau deshalb ist der Zeitpunkt der 5-Prozent-Geste verständlich. Der Börsengang ist für November angesetzt — die Vermarktung könnte in der Woche des 9. November beginnen, der Handel vor Thanksgiving starten —, und die kolportierte Bewertung von bis zu 2 Billionen Dollar steht bereits unter Druck: Reuters berichtete, einige Investoren bepreisten das IPO niedriger als zuvor erwartet. Ein sich halbierendes Wachstum, achtstellige operative Verluste und eine Bewertung, die mehr als das Hundertfache des Jahresumsatzes verlangt — das ist der Moment, in dem die öffentlichen Märkte beginnen, die Compute-Rechnung zu bepreisen, die in den privaten Runden als Wachstumsfantasie durchging. Die 5 Prozent für den guten Zweck sind, so gesehen, auch ein Angebot an genau diese Märkte: Seht her, wir denken an die Folgen — jetzt bepreist uns bitte wie ein Jahrhundert-Unternehmen.</p>
+        <h3><span class="num">02</span>Das Kapital folgt dem Silizium — Tenstorrent auf 6,2 Milliarden, Meta baut sein Gigawatt</h3>
+        <p>Wenn die Software-Bindung bröckelt, wird die Hardware darunter wieder interessant — und das Kapital hat das verstanden. <strong>Tenstorrent</strong>, der von Chip-Legende Jim Keller geführte Herausforderer, schloss eine Series E über 1,5 Milliarden Dollar zu einer Bewertung von 6,2 Milliarden — mehr als eine Verdopplung gegenüber den zuvor kolportierten 2,6 Milliarden. Angeführt von Trace Capital und Innovation X, mit Fidelity, Morgan Stanley, ARK, T. Rowe Price und Tether an Bord, fließt das Geld in die Serienfertigung der Galaxy-Server. Tenstorrents These ist dieselbe wie die hinter TorchNeuron: Wer eine offene, nicht-CUDA-gebundene Alternative baut, kann einen Teil des Nvidia-Monopols abknabbern — und die Investoren bezahlen inzwischen Milliarden für diese Wette.</p>
+        <p>Am anderen Ende der Größenskala demonstriert Meta, dass die Hyperscaler ihre Abhängigkeit mit purer Masse auflösen. Der Konzern veröffentlichte einen Deep Dive zu <strong>Prometheus</strong>, seinem gigawattgroßen Rechenzentrums-Standort im Örtchen New Albany, Ohio: Phase eins verschaltet Hunderttausende GPUs, der Vollausbau zielt auf rund eine Million Beschleuniger für das Training der Muse-Foundation-Modelle. Gigawatt ist die neue Maßeinheit der Frontier — nicht Parameter, nicht FLOPs, sondern die Leistung, die ein einzelner Standort aus dem Netz zieht. Beide Nachrichten, die Milliarden-Runde und der Gigawatt-Campus, erzählen vom selben Flaschenhals: Nicht das bessere Modell entscheidet den nächsten Zyklus, sondern wer Silizium und Strom am günstigsten und unabhängigsten organisiert.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Die Ökonomie der Frontier-Labore wird gerade öffentlich — und mit ihr die Frage, ob die Preise der KI-Dienste nach dem IPO stabil bleiben oder steigen müssen. Billbar: Multi-Vendor-Architekturen, die einen Kunden vor Preissprüngen eines einzelnen Anbieters schützen; Total-Cost-of-Ownership-Modelle, die Token-Kosten, Wachstum und Lock-in über Jahre durchrechnen; und die ehrliche Ansage, dass die heutigen Einführungspreise eine Wette sind, kein Naturgesetz.
+          Für uns: Die Compute-Knappheit, die bislang ein Lab-Problem war, wird zur Planungsgröße für jeden ernsthaften KI-Betrieb. Billbar: Kapazitäts- und Standort-Strategien, die Verfügbarkeit, Energiekosten und Chip-Diversität statt nur Modell-Qualität bewerten; die nüchterne Beratung, dass Trainings- und Inferenz-Kapazität zur knappen Ressource mit langen Vorlaufzeiten wird; und Souveränitäts-Konzepte für Kunden, die aus regulatorischen Gründen nicht jeden Gigawatt-Campus nutzen dürfen.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">03</span>Die Verteilungsfrage, die niemand gewählt hat</h3>
-        <p>Es lohnt sich, einen Schritt zurückzutreten, denn zwei Angebote innerhalb weniger Monate ergeben ein Prinzip. Erst bot OpenAI der US-Regierung einen 5-Prozent-Anteil an und skizzierte einen Staatsfonds nach dem Vorbild des Alaska Permanent Fund; nun legt Anthropic 5 Prozent in einen Public-Benefit-Fonds gegen Jobverdrängung. In beiden Fällen antwortet ein privates Unternehmen auf eine öffentliche Sorge mit dem einzigen Mittel, das es im Überfluss besitzt und das heute fast nichts kostet: eigene, noch nicht börsennotierte Aktien. Das ist clever, aber es verschiebt eine politische Grundsatzfrage in die Hände derer, die sie ausgelöst haben. Wer entscheidet, was „fair“ verteilt wird, wenn eine Handvoll Labore die Produktivitätsgewinne einstreicht und im Gegenzug Aktienpakete stiftet, deren Governance sie selbst gestalten?</p>
-        <p>Für die Dienstleister-Ökonomie ist der Subtext wichtiger als die Geste. Wenn Amodei und <span data-person="dario-amodei">Anthropic</span> die Jobverdrängung ernst genug nehmen, um 5 Prozent ihres Eigenkapitals dagegen zu verpfänden, dann ist das eine Prognose — und sie trifft zuerst die wissensarbeitsintensiven Branchen, zu denen die IT-Beratung selbst gehört. Die ehrliche Lesart ist nicht „Agenten ersetzen unsere Kunden“, sondern „die Produktivitätsdebatte, die unsere Kunden jetzt führen, führen wir morgen über uns selbst“. Das macht die Positionierung als Integrator, der Disruption gestaltet statt sie zu erleiden, nicht zu einer Marketing-Pose, sondern zur Überlebensfrage.</p>
+        <h3><span class="num">03</span>Die zweite Effizienz-Achse — Mercury 3 generiert, statt zu reihen</h3>
+        <p>Während unten das Silizium umkämpft ist, öffnet sich oben eine zweite Front der Effizienz — nicht über den Preis pro Token, sondern über die Architektur selbst. <strong>Inception Labs</strong> brachte mit <strong>Mercury 3</strong> ein diffusionsbasiertes Sprachmodell, das nach eigenen Angaben über 1.000 Token pro Sekunde auf Nvidia-GPUs generiert und sein Kontextfenster von 260.000 auf eine Million Token ausdehnt. Der Unterschied zu klassischen Transformern ist grundlegend: Diffusionsmodelle erzeugen Text nicht Wort für Wort von links nach rechts, sondern verfeinern eine ganze Sequenz parallel — was den Durchsatz um eine Größenordnung heben kann. Der Einführungspreis von 0,20/0,70 Dollar je Million Token (mit 50 Prozent Launch-Rabatt) zeigt, dass Geschwindigkeit hier nicht mit Premium-Preisen erkauft wird, sondern den Boden weiter drückt.</p>
+        <p>Mercury 3 steht nicht allein. DeepSeeks aufgefrischtes <strong>V4.1-Flash</strong> (17. Oktober, offene Gewichte unter MIT-Lizenz) trimmt Antworten auf kürzere, schnellere Ausgaben bei gleichem API-Preis; Cloudflare stellte mit <strong>Clairic</strong> ein spezialisiertes Extraktionsmodell vor, das strukturierte Daten aus unstrukturiertem Text nach eigener Rechnung 3,2-mal schneller und 49 Prozent günstiger zieht als eine reine LLM-Pipeline. Das Muster ist überall dasselbe: Nicht das allwissende Frontier-Modell gewinnt die nächste Runde, sondern das richtig dimensionierte, für die konkrete Aufgabe optimierte. Latenz und Kosten pro erledigter Aufgabe sind die Metriken, an denen sich 2026 entscheidet — und die Diffusions-Architektur ist der Beleg, dass dieser Wettlauf noch lange nicht ausgereizt ist.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Die Verteilungs- und Verdrängungsdebatte ist kein abstraktes Politikthema mehr, sondern eine konkrete Kundenanfrage, die bald in Ausschreibungen auftaucht. Billbar: Workforce-Transformations-Programme, die Betriebsrat, HR und IT zusammenbringen; Governance-Frameworks, die den „verantwortungsvollen“ Einsatz prüfbar machen; und — unbequem, aber nötig — die eigene Hausaufgabe, die eigene Wertschöpfung gegen dieselbe Automatisierung zu prüfen, die wir unseren Kunden verkaufen.
+          Für uns: Die Modellauswahl wird zur Ingenieurs-Disziplin, nicht zur Glaubensfrage. Billbar: Architektur-Zuschnitte, die pro Arbeitsschritt das passende Modell wählen (schnelles Diffusions- oder Extraktionsmodell für den Durchsatz, Frontier-Modell nur für die harten Teilaufgaben); belastbare Latenz- und Kosten-Evals statt Benchmark-Gläubigkeit; und die Offenheit, auch neue Architekturen wie Diffusions-LLMs früh zu prüfen, bevor der Wettbewerb sie als Standard verkauft.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">04</span>Die Fähigkeits-Front als Fußnote — und Claude Code bei v2.1.303</h3>
-        <p>Dass ein Finanz- und Governance-Thema den Tag dominiert, ist selbst die Nachricht. Vor einem Jahr hätte das Wochenende von Modell-Releases gehandelt; heute laufen sie als Hintergrundrauschen. Die vergangene Woche brachte Googles Gemini 4 Argon an die Spitze des unabhängigen Vals-Index, Metas offene Gewichte für Muse Spark (816 Milliarden Parameter, 42 Milliarden aktiv) und DeepSeeks V4.1-Flash mit Million-Token-Kontext — alle auf Effizienz und Preis getrimmt, keines ein Paukenschlag. Der Preis-Boden ist offen und billig, die Führung an der Spitze ist gemietet und wechselt im Wochentakt. Genau diese Commoditisierung erklärt, warum die eigentliche Geschichte jetzt die Ökonomie der Labore ist: Wenn die Fähigkeit zur Ware wird, entscheidet sich der Wert — und die Bewertung — an etwas anderem als dem Benchmark.</p>
-        <p>Beim Werkzeug, das dieses Briefing jeden Tag erzeugt, blieb es ruhig: <strong>Claude Code</strong> steht bei <code>v2.1.303</code>, einem reinen Wartungs-Release („bug fixes and reliability improvements“). Die substanziellen Neuerungen liegen ein paar Versionen zurück — <code>v2.1.302</code> brachte <code>CLAUDE_CODE_AUTO_MODE_MODEL</code> und den Idle-Compaction-Schalter in <code>/config</code>, <code>v2.1.301</code> härtete den unbeaufsichtigten Retry-Modus an Usage-Limits. Dass auf einen so dichten Oktober eine ruhige Punkt-Release folgt, passt ins Bild: Auch das Tooling reift vom Feature-Rausch zur Verlässlichkeit.</p>
+        <h3><span class="num">04</span>Europa liefert Papier — der erste harmonisierte AI-Act-Standard, und WhatsApps versteckte Instruktionen</h3>
+        <p>Parallel zum Silizium-Rennen passierte in Brüssel etwas Unspektakuläres mit erheblicher Tragweite: Die Europäische Kommission referenzierte im Amtsblatt mit <strong>EN 18286</strong> den ersten harmonisierten Standard unter dem AI Act. Praktisch heißt das, dass Anbieter von Hochrisiko-KI, die diesen Standard erfüllen, eine Konformitätsvermutung für Artikel 17 der Verordnung genießen — die bislang abstrakte Pflicht wird damit erstmals an ein prüfbares, auf ISO/IEC 42001 oder ISO 9001 aufsetzendes Normwerk gekoppelt. Für europäische Anwender ist das die lang erwartete Brücke zwischen Gesetzestext und Audit-Realität: Endlich gibt es ein Dokument, gegen das man zertifizieren kann, statt gegen eine Interpretation.</p>
+        <p>Dass Regulierung nicht nur auf dem Papier, sondern auch im Verborgenen stattfindet, zeigte am selben Tag eine unangenehme Episode: Das Projekt Redact fand in 80 von 545 WhatsApp-Hilfeseiten insgesamt 102 versteckte Instruktions-Blöcke, die KI-Systeme davon abhalten sollten, Nutzer an Datenschutzaufsichten zu verweisen. Meta entfernte die Blöcke zwischen dem 15. und 18. Oktober und nannte sie einen technischen Fehler. Ob Versehen oder Kalkül — der Vorfall illustriert die neue Angriffsfläche: Wer die Inhalte kontrolliert, die Agenten lesen, kann ihr Verhalten steuern, ohne je das Modell anzufassen. Die EU baut mit EN 18286 an der sichtbaren Governance; die eigentliche Front verläuft entlang der Prompt- und Content-Schicht, die kein harmonisierter Standard bisher erfasst.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Die Modellwahl bleibt das am leichtesten austauschbare Teil im Stack — eine ruhige Release-Woche an der Spitze ist eine gute Woche, um Architektur statt Modell-Hopping zu verkaufen. Billbar: Abstraktions-Schichten über wechselnde Modelle, belastbare Evals für die konkrete Kundenaufgabe und die Disziplin, Modell-IDs in Produktion explizit zu pinnen, statt dem Default-Karussell zu folgen.
+          Für uns: Compliance wird prüfbar — und damit zum konkreten Projektgeschäft statt zur Rechtsabteilungs-Sorge. Billbar: Readiness-Assessments gegen EN 18286 für Hochrisiko-Anwendungen; Management-System-Aufbau, der auf vorhandener ISO-42001-/9001-Struktur andockt; und — der unterschätzte Teil — Prompt-Injection- und Content-Integritäts-Prüfungen, weil die versteckten Instruktionen von heute die Audit-Findings von morgen sind.
+        </blockquote>
+      </section>
+
+      <section>
+        <h3><span class="num">05</span>Am Rand: OpenAIs Humanoid, und Claude Code bei v2.1.304</h3>
+        <p>Zwei Randnotizen runden den Tag. Sam Altman bestätigte, dass OpenAI an einem humanoiden Roboter arbeitet und für 2027 eine Demonstration erwartet — die Karriereseite listet 27 Robotik-Stellen. Nach Compute, Modell und Oberfläche greift das Labor nun nach dem physischen Körper; die Ankündigung ist mehr Rekrutierungs- und Signal-Manöver als Produkt, aber sie markiert, dass die nächste Expansionsrichtung der Frontier-Labore die Hardware am anderen Ende ist — nicht nur das Rechenzentrum, sondern der Aktor in der Welt. Beim Werkzeug, das dieses Briefing erzeugt, blieb es ruhig-produktiv: <strong>Claude Code</strong> steht bei <code>v2.1.304</code> und schärft vor allem die Mod- und Hook-Mechanik (eine Transcript-Zeile, wenn ein zuerst laufendes Plugin einen Hook überspringt; <code>decider: "person"</code> und <code>e.isReadOnly</code> in der <code>tool.check</code>-Antwort eines Mods).</p>
+        <blockquote class="takeaway">
+          <strong>Was es bedeutet</strong>
+          Für uns: Die Expansion der Labore in neue Schichten — Silizium, Robotik, Content — vergrößert die Fläche, auf der Integration gebraucht wird. Billbar bleibt die unsexy Konstante: die Schicht zwischen Kundensystem und wechselnder Fähigkeit robust, auditierbar und austauschbar halten, egal ob darunter ein Transformer, ein Diffusionsmodell oder ein Trainium-Chip rechnet.
         </blockquote>
       </section>
       <div class="briefing-end">
-        <strong>Was morgen zu beobachten ist:</strong> ob Anthropic Details zur Governance des Public-Benefit-Fonds nachliefert — wer die 5 Prozent verwaltet, nach welchen Kriterien ausgeschüttet wird und ob die Aktionäre zustimmen. Ob weitere Investoren-Stimmen die ~2-Bio.-$-Bewertung öffentlich in Frage stellen, jetzt wo das Wachstum sichtbar abflacht; der IPO-Fahrplan (Vermarktung ab Woche des 9. November, Handel vor dem 26.) ist der nächste harte Test. Ob OpenAI mit einer eigenen Quartalszahl kontert, bevor sein eigener Börsengang näher rückt. Und der Kalenderpunkt bleibt: Am <strong>1. Dezember</strong> verdoppelt Gemini 4 Argon seine Einführungspreise — der erste Lackmustest, ob die gemieteten Entwickler bei steigenden Preisen bleiben. Claude Code hält bei <code>v2.1.303</code>.
+        <strong>Was morgen zu beobachten ist:</strong> ob TorchNeuron über die Beta hinaus belastbare Benchmarks gegen vergleichbare Nvidia-Konfigurationen liefert — ohne harte Zahlen bleibt die CUDA-Ablösung eine These. Ob weitere Hyperscaler (Google mit TPU, Microsoft mit Maia) ihre eigenen PyTorch-Pfade nachschärfen, jetzt wo Amazon vorgelegt hat. Ob EN 18286 schnell von Zertifizierern aufgegriffen wird und erste Hochrisiko-Anbieter die Konformitätsvermutung in Anspruch nehmen. Und der Kalenderpunkt bleibt: Am <strong>1. Dezember</strong> verdoppelt Gemini 4 Argon seine Einführungspreise — der nächste Test, ob die gemieteten Entwickler bei steigenden Preisen bleiben. Claude Code hält bei <code>v2.1.304</code>.
       </div>
 
     </div>
@@ -440,27 +449,27 @@
 
       <article class="card news-card hot">
         <div class="row">
-          <span class="pill hot">Marktdaten</span>
+          <span class="pill hot">Major Release</span>
           <span class="score">Score <b>8.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Anthropic verpfändet 5 % der Aktien gegen KI-Jobverdrängung</h3>
-        <p><strong>Anthropic</strong> will — vorbehaltlich der Aktionärszustimmung — <strong>5 % seiner Anteile</strong> in einen neuen <strong>Public-Benefit-Fonds</strong> einbringen, dessen Anteil mit steigender Bewertung weiter wachsen kann. Der Fonds soll die ökonomische Verwerfung adressieren, die KI auf dem Arbeitsmarkt anrichtet — dieselbe Sorge, die <strong>Dario Amodei</strong> seit Monaten formuliert. Das Timing ist Choreografie: Wochen vor dem Billionen-IPO kauft das Labor soziale Lizenz. Es folgt dem Muster von OpenAIs 5-%-Angebot an den Staat vom Juli — die Labore verteilen Eigenkapital präventiv.</p>
+        <h3 style="margin-top:10px">TorchNeuron: PyTorch läuft mit einer Zeile auf AWS Trainium</h3>
+        <p><strong>Amazon</strong> und das <strong>PyTorch</strong>-Team bei Meta stellten <strong>TorchNeuron</strong> vor — einen nativen Backend für Trainium2/3, der bestehenden PyTorch-Code mit einem einzigen geänderten Gerätenamen auf AWS-eigenen Chips laufen lässt. Apache-2.0-lizenziert, öffentliche Beta ab heute, Early-Adopter von Hugging Face über Databricks bis Anthropic. Der Vorstoß zielt direkt auf Nvidias <strong>CUDA</strong>-Bindung: Wer die Framework-Ebene öffnet, löst die teuerste Abhängigkeit der Branche.</p>
         <div class="news-meta">
-          <span>📅 18.10.2026</span><span>·</span><span>🏢 Anthropic</span><span>·</span>
-          <a href="https://www.cnbc.com/2026/10/18/anthropic-ai-public-benefit-fund.html" target="_blank" rel="noreferrer">cnbc.com</a>
+          <span>📅 20.10.2026</span><span>·</span><span>🏢 Amazon / Meta (PyTorch)</span><span>·</span>
+          <a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noreferrer">aiweekly.co</a>
         </div>
       </article>
 
       <article class="card news-card crit">
         <div class="row">
-          <span class="pill crit">Marktdaten</span>
+          <span class="pill crit">Regulatorik</span>
           <span class="score">Score <b>8.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Anthropic: 16,8 Mrd. $ Q3-Umsatz — aber das Wachstum halbiert sich</h3>
-        <p><strong>Anthropic</strong> meldete prospektiven Investoren <strong>16,8 Mrd. $</strong> Umsatz im dritten Quartal, bereinigt profitabel — rund <strong>+45 %</strong> zum Vorquartal (von ~11,6 Mrd.). Die entscheidende Zahl steht in der zweiten Ableitung: Die Rate fiel von ~147 % (Q1→Q2) auf 45 %, der absolute Zuwachs von ~6,9 auf ~5,2 Mrd. $. Unter „bereinigt profitabel“ liegen weiter über <strong>8 Mrd. $ operative Verluste</strong>, getrieben von den Milliarden-Compute-Verpflichtungen. Erstmals zeigt selbst Anthropics Hyperwachstum Schwerkraft.</p>
+        <h3 style="margin-top:10px">EU: erster harmonisierter AI-Act-Standard EN 18286 im Amtsblatt</h3>
+        <p>Die <strong>Europäische Kommission</strong> referenzierte im Amtsblatt mit <strong>EN 18286</strong> den ersten harmonisierten Standard unter dem AI Act. Hochrisiko-Anbieter, die ihn erfüllen, erhalten eine <strong>Konformitätsvermutung für Artikel 17</strong>. Die Norm (von CEN/CENELEC) setzt auf ISO/IEC 42001 oder ISO 9001 auf — die bislang abstrakte Pflicht wird damit erstmals an ein prüfbares, zertifizierbares Normwerk gekoppelt. Die Brücke zwischen Gesetzestext und Audit-Realität.</p>
         <div class="news-meta">
-          <span>📅 18.10.2026</span><span>·</span><span>🏢 Anthropic</span><span>·</span>
-          <a href="https://www.implicator.ai/anthropic-tells-investors-q3-revenue-hit-16-8-billion-as-growth-slowed-to-45/" target="_blank" rel="noreferrer">implicator.ai</a><a href="https://thenextweb.com/news/anthropic-q3-revenue-16-8bn-ipo" target="_blank" rel="noreferrer">thenextweb.com</a>
+          <span>📅 19.10.2026</span><span>·</span><span>🏢 EU-Kommission / CEN-CENELEC</span><span>·</span>
+          <a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noreferrer">aiweekly.co</a>
         </div>
       </article>
 
@@ -469,24 +478,63 @@
           <span class="pill warn">M&amp;A</span>
           <span class="score">Score <b>7.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">IPO-Fahrplan steht — doch die 2-Bio.-$-Bewertung wackelt</h3>
-        <p>Die Zahlen kamen vor einem <strong>November-Börsengang</strong>, der <strong>Anthropic</strong> mit bis zu <strong>2 Billionen $</strong> bewerten könnte. Berichten zufolge startet die Vermarktung in der Woche des <strong>9. November</strong>, der Handel vor Thanksgiving (26.11.) — Termine noch fluide. Zugleich meldete Reuters, einige Investoren bepreisten das IPO <strong>niedriger als zuvor erwartet</strong>. Ein sich halbierendes Wachstum, achtstellige Verluste und das Hundertfache des Umsatzes als Bewertung: Die öffentlichen Märkte beginnen, die Compute-Rechnung zu bepreisen.</p>
+        <h3 style="margin-top:10px">Tenstorrent: 1,5 Mrd. $ Series E bei 6,2 Mrd. Bewertung</h3>
+        <p><strong>Tenstorrent</strong>, der von Jim Keller geführte Chip-Herausforderer, schloss eine <strong>Series E über 1,5 Mrd. $</strong> zu einer Bewertung von <strong>6,2 Mrd.</strong> — mehr als eine Verdopplung. Angeführt von Trace Capital und Innovation X (Fidelity, Morgan Stanley, ARK, T. Rowe Price, Tether). Das Geld fließt in die Serienfertigung der Galaxy-Server. Die These: eine offene, nicht-CUDA-gebundene Alternative knabbert am Nvidia-Monopol — und das Kapital zahlt dafür.</p>
         <div class="news-meta">
-          <span>📅 18.10.2026</span><span>·</span><span>🏢 Anthropic / IPO</span><span>·</span>
-          <a href="https://thenextweb.com/news/anthropic-q3-revenue-16-8bn-ipo" target="_blank" rel="noreferrer">thenextweb.com</a><a href="https://www.devdiscourse.com/article/business/3992654-anthropics-q3-revenue-jumps-45-to-usd-168-billion-ahead-of-anticipated-ipo" target="_blank" rel="noreferrer">devdiscourse.com</a>
+          <span>📅 19.10.2026</span><span>·</span><span>🏢 Tenstorrent</span><span>·</span>
+          <a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noreferrer">aiweekly.co</a>
+        </div>
+      </article>
+
+      <article class="card news-card hot">
+        <div class="row">
+          <span class="pill hot">Major Release</span>
+          <span class="score">Score <b>7.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Inception Mercury 3: Diffusions-LLM mit 1.000+ Token/s</h3>
+        <p><strong>Inception Labs</strong> brachte <strong>Mercury 3</strong>, ein diffusionsbasiertes Sprachmodell, das nach eigenen Angaben <strong>über 1.000 Token/s</strong> auf Nvidia-GPUs generiert und sein Kontextfenster von 260K auf <strong>1 Mio. Token</strong> ausdehnt. Diffusion verfeinert ganze Sequenzen parallel statt Wort für Wort — eine Größenordnung mehr Durchsatz. Preis: 0,20/0,70 $ je Mtok (50 % Launch-Rabatt), via OpenRouter, Baseten, Vercel. Geschwindigkeit drückt den Boden weiter.</p>
+        <div class="news-meta">
+          <span>📅 19.10.2026</span><span>·</span><span>🏢 Inception Labs</span><span>·</span>
+          <a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noreferrer">aiweekly.co</a><a href="https://llmgateway.io/timeline" target="_blank" rel="noreferrer">llmgateway.io</a>
+        </div>
+      </article>
+
+      <article class="card news-card info">
+        <div class="row">
+          <span class="pill info">Forschung</span>
+          <span class="score">Score <b>7.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">OpenAI bestätigt Humanoid-Roboter — Demo für 2027</h3>
+        <p>Sam Altman bestätigte, dass <strong>OpenAI</strong> an einem <strong>humanoiden Roboter</strong> arbeitet und für <strong>2027</strong> eine Demonstration erwartet; die Karriereseite listet 27 Robotik-Stellen. Nach Compute, Modell und Oberfläche greift das Labor nach dem physischen Körper. Mehr Rekrutierungs- und Signal-Manöver als Produkt — aber es markiert, dass die nächste Expansionsrichtung der Frontier-Labore der Aktor in der Welt ist, nicht nur das Rechenzentrum.</p>
+        <div class="news-meta">
+          <span>📅 18.10.2026</span><span>·</span><span>🏢 OpenAI</span><span>·</span>
+          <a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noreferrer">aiweekly.co</a>
+        </div>
+      </article>
+
+      <article class="card news-card crit">
+        <div class="row">
+          <span class="pill crit">Security</span>
+          <span class="score">Score <b>6.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">WhatsApp-Hilfeseiten enthielten versteckte KI-Instruktionen</h3>
+        <p>Das Projekt <strong>Redact</strong> fand in 80 von 545 <strong>WhatsApp</strong>-Hilfeseiten insgesamt <strong>102 versteckte Instruktions-Blöcke</strong>, die KI-Systeme davon abhalten sollten, Nutzer an Datenschutzaufsichten zu verweisen. <strong>Meta</strong> entfernte sie zwischen dem 15. und 18. Oktober und nannte sie einen technischen Fehler. Der Vorfall zeigt die neue Angriffsfläche: Wer die Inhalte kontrolliert, die Agenten lesen, steuert ihr Verhalten — ohne das Modell anzufassen.</p>
+        <div class="news-meta">
+          <span>📅 19.10.2026</span><span>·</span><span>🏢 Meta / WhatsApp</span><span>·</span>
+          <a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noreferrer">aiweekly.co</a>
         </div>
       </article>
 
       <article class="card news-card info">
         <div class="row">
           <span class="pill info">Tooling</span>
-          <span class="score">Score <b>4.0</b>/10</span>
+          <span class="score">Score <b>6.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Claude Code v2.1.303 — ruhiges Wartungs-Release</h3>
-        <p><strong>Claude Code v2.1.303</strong> ist ein reines Wartungs-Release („bug fixes and reliability improvements“). Die substanziellen Neuerungen liegen ein paar Versionen zurück: <code>v2.1.302</code> brachte <code>CLAUDE_CODE_AUTO_MODE_MODEL</code> und den Idle-Compaction-Schalter in <code>/config</code>, <code>v2.1.301</code> härtete den unbeaufsichtigten Retry-Modus an Usage-Limits. Nach einem dichten Oktober folgt eine ruhige Punkt-Release — auch das Tooling reift vom Feature-Rausch zur Verlässlichkeit.</p>
+        <h3 style="margin-top:10px">DeepSeek V4.1-Flash: schneller, kürzer, offene Gewichte</h3>
+        <p><strong>DeepSeek</strong> frischte <strong>V4.1-Flash</strong> auf (17.10.): Das Modell liefert kürzere, schnellere Antworten bei gleichem API-Preis, ist live in Apps und API — mit <strong>offenen Gewichten unter MIT-Lizenz</strong>. Zusammen mit Cloudflares Extraktionsmodell Clairic (3,2× schneller, 49 % günstiger als eine reine LLM-Pipeline) zeigt es das Muster der Woche: Nicht das allwissende Frontier-Modell gewinnt, sondern das für die Aufgabe richtig dimensionierte.</p>
         <div class="news-meta">
-          <span>📅 18.10.2026</span><span>·</span><span>🏢 Anthropic</span><span>·</span>
-          <a href="https://github.com/anthropics/claude-code/releases" target="_blank" rel="noreferrer">github.com</a>
+          <span>📅 17.10.2026</span><span>·</span><span>🏢 DeepSeek</span><span>·</span>
+          <a href="https://llmgateway.io/timeline" target="_blank" rel="noreferrer">llmgateway.io</a>
         </div>
       </article>
 
@@ -507,7 +555,16 @@
 
       <article class="card">
         <h3>Letzte Releases</h3>
-        <p>Aktuelle Version <code>v2.1.303</code> · ein reines <strong>Wartungs-Release</strong> („bug fixes and reliability improvements“) ohne neue Oberfläche. Die jüngsten Features liegen in <code>v2.1.302</code>: <strong><code>CLAUDE_CODE_AUTO_MODE_MODEL</code></strong>, mit dem sich das Modell des <strong>clientseitigen Auto-Mode-Klassifizierers</strong> wählen lässt (das serverseitige Auto-Mode-Modell bleibt unberührt), eine <strong>Idle-Compaction-Zeile in <code>/config</code></strong> zum Ab- und Anschalten der Leerlauf-Kompaktierung sowie neue Hinweise in <code>/design-sync</code> und <code>/design-login</code>. Davor härtete v2.1.301 den <strong>unbeaufsichtigten Retry-Modus</strong>: <code>CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS</code> lässt den Retry-Watchdog eine Anfrage an einem Usage-Limit beenden, das zu weit in der Zukunft zurücksetzt, statt darauf zu warten — relevant für Oneshot- und Cron-Läufe —, dazu ein <strong>OpenTelemetry-Tracing-Leitfaden</strong> im <code>claude-api</code>-Skill und die <strong><code>%</code>-Bewegung</strong> im Vim-Modus. v2.1.300 brachte <strong><code>virtualText</code></strong> für die Prompt-Dekorationen eines Mods — Text, der im Prompt-Feld erscheint, aber weder in den Entwurf noch in den abgeschickten Prompt wandert — und schlüsselte die OpenTelemetry-<code>api_request</code>-Metrik via <code>cache_creation_5m_tokens</code>/<code>cache_creation_1h_tokens</code> nach Cache-Lebensdauer auf. v2.1.299 führte <code>CLAUDE_CODE_DISABLE_FILE_MENTIONS</code> ein (bei <code>@</code>-Erwähnungen nur Pfade statt Dateiinhalt) plus <strong>Idle-Compaction im Terminal</strong> (eine 200K-Token-Session nach ~54 min Leerlauf wird vor Ablauf des Einstunden-Prompt-Caches kompaktiert). v2.1.296 ergänzte das Apps-Gateway um einen <code>code</code>-Schlüssel in <code>managed.policies[]</code> und <code>autoCompactWindow</code> für Subagenten; v2.1.295 brachte <strong><code>onFailure: "block"</code></strong> für Hooks (fail-closed) plus <strong>Program Status Protocol (OSC 7501)</strong>.</p>
+        <p>Aktuelle Version <code>v2.1.304</code> · schärft die <strong>Mod- und Hook-Mechanik</strong>: eine Transcript-Zeile, wenn ein zuerst laufendes Plugin einen Hook eines Mods überspringt (benennt Event und Plugin); <code>decider: "person"</code> in der <code>tool.check</code>-Antwort eines Mods (nur Permission-Dialog oder Host-Callback dürfen zustimmen, sonst Refusal); sowie <code>e.isReadOnly</code> im <code>tool.check</code>-Event. Davor war <code>v2.1.303</code> ein reines <strong>Wartungs-Release</strong> („bug fixes and reliability improvements“). Die jüngsten größeren Features liegen in <code>v2.1.302</code>: <strong><code>CLAUDE_CODE_AUTO_MODE_MODEL</code></strong>, mit dem sich das Modell des <strong>clientseitigen Auto-Mode-Klassifizierers</strong> wählen lässt (das serverseitige Auto-Mode-Modell bleibt unberührt), eine <strong>Idle-Compaction-Zeile in <code>/config</code></strong> zum Ab- und Anschalten der Leerlauf-Kompaktierung sowie neue Hinweise in <code>/design-sync</code> und <code>/design-login</code>. Davor härtete v2.1.301 den <strong>unbeaufsichtigten Retry-Modus</strong>: <code>CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS</code> lässt den Retry-Watchdog eine Anfrage an einem Usage-Limit beenden, das zu weit in der Zukunft zurücksetzt, statt darauf zu warten — relevant für Oneshot- und Cron-Läufe —, dazu ein <strong>OpenTelemetry-Tracing-Leitfaden</strong> im <code>claude-api</code>-Skill und die <strong><code>%</code>-Bewegung</strong> im Vim-Modus. v2.1.300 brachte <strong><code>virtualText</code></strong> für die Prompt-Dekorationen eines Mods — Text, der im Prompt-Feld erscheint, aber weder in den Entwurf noch in den abgeschickten Prompt wandert — und schlüsselte die OpenTelemetry-<code>api_request</code>-Metrik via <code>cache_creation_5m_tokens</code>/<code>cache_creation_1h_tokens</code> nach Cache-Lebensdauer auf. v2.1.299 führte <code>CLAUDE_CODE_DISABLE_FILE_MENTIONS</code> ein (bei <code>@</code>-Erwähnungen nur Pfade statt Dateiinhalt) plus <strong>Idle-Compaction im Terminal</strong> (eine 200K-Token-Session nach ~54 min Leerlauf wird vor Ablauf des Einstunden-Prompt-Caches kompaktiert). v2.1.296 ergänzte das Apps-Gateway um einen <code>code</code>-Schlüssel in <code>managed.policies[]</code> und <code>autoCompactWindow</code> für Subagenten; v2.1.295 brachte <strong><code>onFailure: "block"</code></strong> für Hooks (fail-closed) plus <strong>Program Status Protocol (OSC 7501)</strong>.</p>
+
+        <div class="release">
+          <div class="ver">v2.1.304</div>
+          <div class="when">19.10.</div>
+          <div class="what">
+            <strong>Mod-/Hook-Mechanik</strong> — Transcript-Zeile, wenn ein zuerst laufendes Plugin einen Mod-Hook überspringt (benennt Event + Plugin) · <code>decider: "person"</code> in der <code>tool.check</code>-Antwort eines Mods (nur Dialog/Host-Callback dürfen zustimmen) · <code>e.isReadOnly</code> im <code>tool.check</code>-Event
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
 
         <div class="release">
           <div class="ver">v2.1.303</div>
@@ -550,15 +607,6 @@
           <div class="when">14.10.</div>
           <div class="what">
             <strong><code>CLAUDE_CODE_DISABLE_FILE_MENTIONS</code></strong> — bei <code>@</code>-Erwähnungen erhält Claude die Pfade zum Selberlesen mit seinen Datei-Tools, nicht den Inhalt · <strong>Idle-Compaction im Terminal</strong>: eine 200K-Token-Session nach ~54 min Leerlauf wird vor Ablauf des Einstunden-Prompt-Caches kompaktiert, damit die nächste Nachricht nicht alles neu verarbeitet
-            <span class="badge feat">FEATURE</span>
-          </div>
-        </div>
-
-        <div class="release">
-          <div class="ver">v2.1.296</div>
-          <div class="when">09.10.</div>
-          <div class="what">
-            <strong><code>code</code>-Schlüssel in den Gateway-<code>managed.policies[]</code></strong> — dieselben Einstellungen wie <code>cli</code>, zusätzlich im Code-Tab von Claude Desktop angewandt; schaltet neben <code>desktop</code> den Gateway-Modus von Claude Desktop frei · <strong><code>autoCompactWindow</code></strong> in Subagent-Frontmatter und <code>--agents</code>: ein Subagent kann früher auto-kompaktieren als das Fenster der Hauptsession
             <span class="badge feat">FEATURE</span>
           </div>
         </div>
