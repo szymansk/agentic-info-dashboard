@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-20T05:15:29+00:00",
+  "last_updated": "2026-10-20T11:04:51+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -129,6 +129,19 @@
       "why": ""
     },
     {
+      "video_id": "FGCP2F_7rQk",
+      "title": "Visiting Taiwan w/ Jensen Huang | Lex Fridman",
+      "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
+      "channel_name": "Lex Fridman",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-10-13T21:26:16+00:00",
+      "url": "https://www.youtube.com/watch?v=FGCP2F_7rQk",
+      "thumbnail": "https://img.youtube.com/vi/FGCP2F_7rQk/mqdefault.jpg",
+      "description": "I've been traveling the world a bit. One of the most incredible experiences was getting to visit Taiwan with Jensen Huang. It was wild 🤯 Huge crowds, insanely good street food at night markets, and of course a lot of good conversations acro",
+      "why": ""
+    },
+    {
       "video_id": "LVEfFyijQ2c",
       "title": "Applying Gemini 4 for large-scale codebase maintenance in Chromium",
       "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
@@ -156,6 +169,18 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "H4azmWcqO5g",
+      "title": "Local AI 202: Get Massive Speed-ups with Speculative Decoding",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-20T05:42:51+00:00",
+      "url": "https://www.youtube.com/watch?v=H4azmWcqO5g",
+      "thumbnail": "https://img.youtube.com/vi/H4azmWcqO5g/mqdefault.jpg",
+      "description": "Learn about speculative decoding techniques like EAGLE, DFlash, MTP with llama.cpp, transformers and speculators library in this livestream. \nSchedule:\n18.10: Introduction to Speculative Decoding (Merve Noyan, Hugging Face)\n18.30: Getting S"
+    },
     {
       "video_id": "DQHtmW9ZlIs",
       "title": "Cooking with Codex: Ep. 1",
@@ -193,6 +218,18 @@
       "description": "Bringing legal expertise and frontier AI together starts with trust.\n\nFor Thomson Reuters’ Camillo Speroni, that means output lawyers can verify, cite and put their name on.\n\nCamillo discusses Thomson Reuters’ work with OpenAI to bring High"
     },
     {
+      "video_id": "3-sSbJKb-fQ",
+      "title": "Pi Durable: AI agents that survive crashes",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-19T14:48:54+00:00",
+      "url": "https://www.youtube.com/shorts/3-sSbJKb-fQ",
+      "thumbnail": "https://img.youtube.com/vi/3-sSbJKb-fQ/mqdefault.jpg",
+      "description": "Your agent sent 4 of 5 emails… then crashed. A regular coding agent leaves you with a half-finished tool call and a \"continue\" prayer. Pi Durable checkpoints every task and tool call (SQLite / JSONL), so when the process restarts, the agent"
+    },
+    {
       "video_id": "o_5f4N6Nq80",
       "title": "Why a $1M Startup Wasn’t Worth Building in the Age of AI",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -206,7 +243,7 @@
     },
     {
       "video_id": "LWxX6vvHfrc",
-      "title": "Gemini 4 Argon Really Surprised Me",
+      "title": "Gemini 4 Argon Is Not What I Expected",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
       "channel_name": "Two Minute Papers",
       "category": "researcher",
@@ -253,6 +290,18 @@
       "description": "Ein kleiner Tipp von uns: Ton an, denn das willst du hören.\n\nHier weiterlesen: https://chatgpt.com/de-DE/features/voice/"
     },
     {
+      "video_id": "ti3vVYwzW4A",
+      "title": "Pi Durable EXPLAINED: Build Always-On Agents with Local Models",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-19T03:34:17+00:00",
+      "url": "https://www.youtube.com/watch?v=ti3vVYwzW4A",
+      "thumbnail": "https://img.youtube.com/vi/ti3vVYwzW4A/mqdefault.jpg",
+      "description": "Pi Durable is a building block for always-on agent applications, not a new coding-agent CLI. Learn how checkpoints, conversations, and storage support recovery after interruptions, where Durable fits in the Pi ecosystem, and the six steps t"
+    },
+    {
       "video_id": "RS9vWYlJeH8",
       "title": "How DeepSeek Uses Less Memory",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
@@ -287,6 +336,18 @@
       "url": "https://www.youtube.com/shorts/YMulO01LMBE",
       "thumbnail": "https://img.youtube.com/vi/YMulO01LMBE/mqdefault.jpg",
       "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "dGhUFqeITbY",
+      "title": "New Model: Reflection Beam is a new Open Weight Model",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-17T03:46:07+00:00",
+      "url": "https://www.youtube.com/watch?v=dGhUFqeITbY",
+      "thumbnail": "https://img.youtube.com/vi/dGhUFqeITbY/mqdefault.jpg",
+      "description": "We'll jam with the team of a brand new open weight model, hear what's it like to train frontiers models, and find out how to win $20k in cash and  hub credits.\n\nCheck out the blog post and join Beam Build to win $10k:  https://huggingface.c"
     },
     {
       "video_id": "LKrwhjOI8Nc",
@@ -385,6 +446,18 @@
       "description": "Using the example of a flight simulator to discuss the complexities of coding a multi-player game. What data do you send? When do you send it & how often? Dr Julian Onions talks about his experiences of working on a flight simulator.\n\nCompu"
     },
     {
+      "video_id": "qaP4pymNrEc",
+      "title": "RTX 5090 vs M5 Ultra: Which AI Powerhouse Wins?",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-14T19:58:14+00:00",
+      "url": "https://www.youtube.com/watch?v=qaP4pymNrEc",
+      "thumbnail": "https://img.youtube.com/vi/qaP4pymNrEc/mqdefault.jpg",
+      "description": "Apple's M5 Ultra Mac Studio is shipping, so here is how it compares to NVIDIA's RTX 5090 for running AI models locally.\n\nwTopics covered:\n\n- M5 Ultra vs RTX 5090 specs for local LLMs  \n- Qwen3.8-27B benchmark: prompt processing and token ge"
+    },
+    {
       "video_id": "2IuO_80wB0s",
       "title": "Give your team AI skills you can trust",
       "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
@@ -407,6 +480,18 @@
       "url": "https://www.youtube.com/watch?v=QZVzuq28eFw",
       "thumbnail": "https://img.youtube.com/vi/QZVzuq28eFw/mqdefault.jpg",
       "description": "Run GitHub Actions 2x faster and build with Codesmith at https://www.blacksmith.sh/\n\nAn OpenAI engineer built a wiretap with his wife’s ChatGPT account, hid it in toilet paper behind the executive boardroom TV, and lasted 48 hours before ge"
+    },
+    {
+      "video_id": "FGCP2F_7rQk",
+      "title": "Visiting Taiwan w/ Jensen Huang | Lex Fridman",
+      "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
+      "channel_name": "Lex Fridman",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-10-13T21:26:16+00:00",
+      "url": "https://www.youtube.com/watch?v=FGCP2F_7rQk",
+      "thumbnail": "https://img.youtube.com/vi/FGCP2F_7rQk/mqdefault.jpg",
+      "description": "I've been traveling the world a bit. One of the most incredible experiences was getting to visit Taiwan with Jensen Huang. It was wild 🤯 Huge crowds, insanely good street food at night markets, and of course a lot of good conversations acro"
     },
     {
       "video_id": "LVEfFyijQ2c",
@@ -505,6 +590,30 @@
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The DeepSeek OCR paper is available here:\nhttps://github.com/deepseek-ai/DeepSeek-OCR\n\n🙏 We would like to thank our generous Patreon supporters who make T"
     },
     {
+      "video_id": "DVRMDoYhVBI",
+      "title": "AI Coding Is a Slot Machine: Loss Disguised as a Win | Jeremy Howard",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-10-11T09:19:59+00:00",
+      "url": "https://www.youtube.com/shorts/DVRMDoYhVBI",
+      "thumbnail": "https://img.youtube.com/vi/DVRMDoYhVBI/mqdefault.jpg",
+      "description": "Jeremy Howard, co-founder of fast.ai, on why AI-assisted coding works like a slot machine: you craft the prompt, pull the lever, and the occasional win feels like control. In his words: \"It's got all these hallmarks of loss disguised as a w"
+    },
+    {
+      "video_id": "615B5nyMFPk",
+      "title": "What Most People Get Wrong About Evolution | Akarsh Kumar",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-10-10T04:31:57+00:00",
+      "url": "https://www.youtube.com/watch?v=615B5nyMFPk",
+      "thumbnail": "https://img.youtube.com/vi/615B5nyMFPk/mqdefault.jpg",
+      "description": "A lot of people in AI treat evolution as a dumb fallback, basically random search for when you can't take a gradient. Akarsh Kumar thinks that is wrong. Selection hangs on to partial solutions, so mutations only need to be useful about 1% o"
+    },
+    {
       "video_id": "W0jPTqIo5oE",
       "title": "Race Conditions on a Human Scale - Computerphile",
       "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
@@ -515,6 +624,30 @@
       "url": "https://www.youtube.com/watch?v=W0jPTqIo5oE",
       "thumbnail": "https://img.youtube.com/vi/W0jPTqIo5oE/mqdefault.jpg",
       "description": "When two threads or processes clash, a race condition can occur. Matt Godbolt demonstrates different kinds of race conditions by equating these to real-life human situations. \n\nFind out more about Matt from his blog: https://bit.ly/C_MGodbo"
+    },
+    {
+      "video_id": "pniLY0I9VJQ",
+      "title": "Life as it could be | Akarsh Kumar on Artificial Life",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-10-08T11:34:31+00:00",
+      "url": "https://www.youtube.com/shorts/pniLY0I9VJQ",
+      "thumbnail": "https://img.youtube.com/vi/pniLY0I9VJQ/mqdefault.jpg",
+      "description": "Akarsh Kumar on searching for artificial life with foundation models. Start from something as simple as Conway's Game of Life: \"From this super, super simple world, you run this, you get insane amounts of complexity.\"\n\nIn his words: \"Instea"
+    },
+    {
+      "video_id": "LfUgsSUdaX8",
+      "title": "Game of Thrones: Turing Edition | Akarsh Kumar on Core War",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-10-08T10:30:08+00:00",
+      "url": "https://www.youtube.com/shorts/LfUgsSUdaX8",
+      "thumbnail": "https://img.youtube.com/vi/LfUgsSUdaX8/mqdefault.jpg",
+      "description": "Akarsh Kumar wanted to see what would happen if you used LLMs to evolve small assembly programs that compete against each other. It's called Core War.\n\nIn his words: \"If you just try to zero-shot this language, it's terrible. But if you do "
     },
     {
       "video_id": "WrCjAAl9okA",
@@ -554,15 +687,10 @@
     }
   ],
   "stats": {
-    "total_videos": 33,
+    "total_videos": 43,
     "total_channels": 16,
-    "successful_channels": 12,
-    "failed_channels": [
-      "Andrej Karpathy",
-      "Lex Fridman",
-      "Machine Learning Street Talk",
-      "Hugging Face"
-    ],
+    "successful_channels": 16,
+    "failed_channels": [],
     "window_days": 14
   }
 }
