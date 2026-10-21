@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-20T11:04:51+00:00",
+  "last_updated": "2026-10-21T11:03:10+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,16 @@
   ],
   "featured": [
     {
-      "video_id": "DQHtmW9ZlIs",
-      "title": "Cooking with Codex: Ep. 1",
+      "video_id": "8n-SXxRIrm8",
+      "title": "Build a Better Shopping Experience with OpenAI | Shopping Agent Demo",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-10-19T22:55:26+00:00",
-      "url": "https://www.youtube.com/watch?v=DQHtmW9ZlIs",
-      "thumbnail": "https://img.youtube.com/vi/DQHtmW9ZlIs/mqdefault.jpg",
-      "description": "In this episode of Cooking with Codex, an OpenAI dot helps plan a ramen recipe and organize prep in ChatGPT Space, with GPT-Live guiding the cooking process.\n\nAlso covered: Codex cloud environments, which keep tasks running after a laptop i",
+      "published": "2026-10-20T22:57:52+00:00",
+      "url": "https://www.youtube.com/watch?v=8n-SXxRIrm8",
+      "thumbnail": "https://img.youtube.com/vi/8n-SXxRIrm8/mqdefault.jpg",
+      "description": "See how an AI shopping agent can turn a room photo into a personalized shopping experience—from finding the right products to updating an order.\n\nIn this demo for fictional home goods retailer Vesper & Alder, a shopper uses voice and images",
       "why": ""
     },
     {
@@ -169,6 +169,66 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "8n-SXxRIrm8",
+      "title": "Build a Better Shopping Experience with OpenAI | Shopping Agent Demo",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-20T22:57:52+00:00",
+      "url": "https://www.youtube.com/watch?v=8n-SXxRIrm8",
+      "thumbnail": "https://img.youtube.com/vi/8n-SXxRIrm8/mqdefault.jpg",
+      "description": "See how an AI shopping agent can turn a room photo into a personalized shopping experience—from finding the right products to updating an order.\n\nIn this demo for fictional home goods retailer Vesper & Alder, a shopper uses voice and images"
+    },
+    {
+      "video_id": "b2tjnxX8IHU",
+      "title": "Did Google just dethrone OpenAI and Anthropic?",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-10-20T16:21:03+00:00",
+      "url": "https://www.youtube.com/watch?v=b2tjnxX8IHU",
+      "thumbnail": "https://img.youtube.com/vi/b2tjnxX8IHU/mqdefault.jpg",
+      "description": "Macroscope can auto-approve your team's PRs safely. Try it here: https://macroscope.com/?utm_source=fireship\n\nGoogle’s new model claims to beat GPT-6 and Opus 5.5, so I took them all for a test drive. Let's dive in.\n\nWant more Fireship?\n\n🗞️"
+    },
+    {
+      "video_id": "CUjHZlvQufk",
+      "title": "Learn to build better AI Agents through better context",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-20T15:16:35+00:00",
+      "url": "https://www.youtube.com/watch?v=CUjHZlvQufk",
+      "thumbnail": "https://img.youtube.com/vi/CUjHZlvQufk/mqdefault.jpg",
+      "description": "Learn More: https://bit.ly/4yy5iWP\n\nThe longer an agent works, the more repeated, contradictory, or stale information builds up in its context. Models perform worse as their context grows, a problem Jeff Huber and his team at Chroma named C"
+    },
+    {
+      "video_id": "9n0MI4D7TCM",
+      "title": "Should You Trust ChatGPT With Your Health?",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-20T14:30:31+00:00",
+      "url": "https://www.youtube.com/watch?v=9n0MI4D7TCM",
+      "thumbnail": "https://img.youtube.com/vi/9n0MI4D7TCM/mqdefault.jpg",
+      "description": "More than 300 million people use ChatGPT for health and wellness questions each week. OpenAI’s Karan Singhal thinks that’s only the beginning: the longer-term goal is AI that can help people navigate their health proactively, while making t"
+    },
+    {
+      "video_id": "v45XAMqH7pE",
+      "title": "You need a better headshot.",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-20T13:00:34+00:00",
+      "url": "https://www.youtube.com/shorts/v45XAMqH7pE",
+      "thumbnail": "https://img.youtube.com/vi/v45XAMqH7pE/mqdefault.jpg",
+      "description": "THIS JUST IN: You need a better headshot. Create yours now on ChatGPT Images."
+    },
     {
       "video_id": "H4azmWcqO5g",
       "title": "Local AI 202: Get Massive Speed-ups with Speculative Decoding",
@@ -264,30 +324,6 @@
       "url": "https://www.youtube.com/shorts/ALbuCR4uH2E",
       "thumbnail": "https://img.youtube.com/vi/ALbuCR4uH2E/mqdefault.jpg",
       "description": "Mark Zuckerberg, founder and CEO of Meta, on why staying stagnant is the riskiest choice.\n\nSource: How to Build the Future, Y Combinator, 2016."
-    },
-    {
-      "video_id": "mEulEkuxCnM",
-      "title": "UK: This is the new ChatGPT Voice, powered by GPT Live",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-19T05:30:13+00:00",
-      "url": "https://www.youtube.com/watch?v=mEulEkuxCnM",
-      "thumbnail": "https://img.youtube.com/vi/mEulEkuxCnM/mqdefault.jpg",
-      "description": "You’ll want to turn the sound on for this one.\n\nRead more here: https://chatgpt.com/features/voice/"
-    },
-    {
-      "video_id": "xIEzjwReF2s",
-      "title": "Germany: This is the new ChatGPT Voice, powered by GPT Live",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-19T04:30:15+00:00",
-      "url": "https://www.youtube.com/watch?v=xIEzjwReF2s",
-      "thumbnail": "https://img.youtube.com/vi/xIEzjwReF2s/mqdefault.jpg",
-      "description": "Ein kleiner Tipp von uns: Ton an, denn das willst du hören.\n\nHier weiterlesen: https://chatgpt.com/de-DE/features/voice/"
     },
     {
       "video_id": "ti3vVYwzW4A",
@@ -420,18 +456,6 @@
       "url": "https://www.youtube.com/watch?v=l3L_lETiSzc",
       "thumbnail": "https://img.youtube.com/vi/l3L_lETiSzc/mqdefault.jpg",
       "description": "Every JetBrains account now comes with a free coding model called Junie Lite. Try it: https://jb.gg/JunieLite\n\nCloudflare just acquired Deno and the creator of Node.js is finally admitting that reimplementing it was a mistake. Let's dive in"
-    },
-    {
-      "video_id": "q8cb1XL9sXA",
-      "title": "Agentic Commerce: Why Your Wallet Is About to Change",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-15T13:55:19+00:00",
-      "url": "https://www.youtube.com/watch?v=q8cb1XL9sXA",
-      "thumbnail": "https://img.youtube.com/vi/q8cb1XL9sXA/mqdefault.jpg",
-      "description": "What happens when AI agents start spending your money? VGS' Terry Angelos argues that agentic commerce will need new payment infrastructure that gives AI the ability to transact without sacrificing the protections consumers expect.\n\nTerry j"
     },
     {
       "video_id": "WqrwAFs-fq0",
@@ -687,7 +711,7 @@
     }
   ],
   "stats": {
-    "total_videos": 43,
+    "total_videos": 45,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
