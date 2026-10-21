@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tagesbriefing · Agentic AI</title>
+<style>
+  :root {
+    --bg: #0b0d12;
+    --bg-2: #11141c;
+    --panel: #161a24;
+    --panel-2: #1b2030;
+    --line: #232a3a;
+    --text: #e7ecf3;
+    --body: #d8dce6;
+    --muted: #8b94a8;
+    --dim: #5d6577;
+    --accent: #c39a4a;       /* warm gold */
+    --accent-2: #7aa2f7;
+    --good: #6ec38b;
+    --warn: #e0a857;
+    --hot:  #e15a5a;
+    --crit: #b04bd1;
+    --radius: 14px;
+    --shadow: 0 10px 30px rgba(0,0,0,.35), 0 1px 0 rgba(255,255,255,.03) inset;
+  }
+  * { box-sizing: border-box; }
+  html, body { background: var(--bg); color: var(--text); }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, Roboto, 'Helvetica Neue', sans-serif;
+    margin: 0; line-height: 1.55;
+    background:
+      radial-gradient(1100px 700px at 90% -10%, rgba(195,154,74,.08), transparent 60%),
+      radial-gradient(900px 600px at -10% 10%, rgba(122,162,247,.07), transparent 60%),
+      var(--bg);
+    min-height: 100vh;
+  }
+  a { color: var(--accent-2); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+
+  /* ── Layout ──────────────────────────────────────────────── */
+  .wrap { max-width: 1280px; margin: 0 auto; padding: 28px 28px 80px; }
+
+  /* ── Top Nav ─────────────────────────────────────────────── */
+  .topnav {
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+    margin-bottom: 22px;
+    font-size: 13px;
+  }
+  .topnav a {
+    color: var(--muted); padding: 6px 12px; border-radius: 999px;
+    border: 1px solid var(--line);
+    transition: color .12s ease, border-color .12s ease, background .12s ease;
+  }
+  .topnav a:hover { color: var(--text); border-color: var(--accent); text-decoration: none; }
+  .topnav a.active {
+    color: var(--accent); border-color: var(--accent);
+    background: rgba(195,154,74,.08);
+  }
+
+  /* ── Timeline strip ──────────────────────────────────────── */
+  .timeline-bar {
+    display: flex; align-items: center; gap: 8px;
+    padding: 12px 14px; margin-bottom: 24px;
+    background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+    border: 1px solid var(--line); border-radius: var(--radius);
+    overflow-x: auto;
+    scrollbar-width: thin; scrollbar-color: var(--line) transparent;
+  }
+  .timeline-bar::-webkit-scrollbar { height: 6px; }
+  .timeline-bar::-webkit-scrollbar-thumb { background: var(--line); border-radius: 3px; }
+  .timeline-bar .label {
+    color: var(--dim); font-size: 11px; letter-spacing: .08em;
+    text-transform: uppercase; padding-right: 8px; flex-shrink: 0;
+    border-right: 1px solid var(--line); margin-right: 4px;
+  }
+  .tl-pill {
+    display: inline-flex; flex-direction: column; align-items: center;
+    flex-shrink: 0;
+    padding: 6px 12px; border-radius: 10px;
+    border: 1px solid var(--line);
+    background: rgba(255,255,255,.02);
+    color: var(--muted);
+    font-size: 11px; text-decoration: none;
+    transition: all .12s ease;
+    min-width: 64px;
+  }
+  .tl-pill:hover {
+    color: var(--text); border-color: var(--accent);
+    background: rgba(195,154,74,.06); text-decoration: none;
+  }
+  .tl-pill.active {
+    color: var(--bg); background: var(--accent); border-color: var(--accent);
+    font-weight: 700;
+  }
+  .tl-pill .dow { font-size: 10px; opacity: .8; letter-spacing: .04em; text-transform: uppercase; }
+  .tl-pill .date { font-family: ui-monospace, monospace; font-size: 13px; margin-top: 2px; font-weight: 600; }
+  .tl-pill.future { opacity: .4; pointer-events: none; }
+
+  /* ── Header ──────────────────────────────────────────────── */
+  header.main {
+    display: flex; align-items: end; justify-content: space-between;
+    gap: 24px; padding-bottom: 22px; margin-bottom: 28px;
+    border-bottom: 1px solid var(--line);
+  }
+  header.main .title { display: flex; align-items: baseline; gap: 14px; }
+  header.main .title h1 {
+    margin: 0; font-size: 30px; letter-spacing: -.02em; font-weight: 800;
+  }
+  header.main .title .dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: var(--hot); box-shadow: 0 0 0 4px rgba(225,90,90,.18);
+    animation: pulse 2.4s infinite;
+  }
+  @keyframes pulse {
+    0%,100% { box-shadow: 0 0 0 4px rgba(225,90,90,.18); }
+    50%     { box-shadow: 0 0 0 9px rgba(225,90,90,.05); }
+  }
+  header.main .subtitle { color: var(--muted); font-size: 14px; }
+  header.main .meta { text-align: right; font-size: 13px; color: var(--muted); }
+  header.main .meta .date { color: var(--text); font-weight: 600; font-size: 15px; }
+  header.main .meta .tag {
+    display: inline-block; margin-top: 6px; padding: 3px 8px;
+    border: 1px solid var(--line); border-radius: 999px;
+    color: var(--muted); font-size: 11px; letter-spacing: .04em; text-transform: uppercase;
+  }
+
+  /* ── Section heading ─────────────────────────────────────── */
+  section { margin-top: 40px; }
+  .section-head { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+  .section-head h2 {
+    margin: 0; font-size: 18px; font-weight: 700;
+    letter-spacing: .02em; text-transform: uppercase;
+  }
+  .section-head .rule { flex: 1; height: 1px; background: var(--line); }
+  .section-head .hint { color: var(--dim); font-size: 12px; }
+
+  /* ── BRIEFING (editorial) ────────────────────────────────── */
+  .briefing-wrap {
+    max-width: 740px; margin: 0 auto;
+  }
+  .briefing-head {
+    text-align: left; margin-bottom: 28px;
+    padding-bottom: 22px; border-bottom: 1px solid var(--line);
+  }
+  .briefing-head h2.kicker {
+    margin: 0; font-size: 12px; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--accent); font-weight: 700;
+  }
+  .briefing-head h1 {
+    margin: 8px 0 10px; font-size: 32px; line-height: 1.2;
+    letter-spacing: -.02em; font-weight: 800; color: var(--text);
+  }
+  .briefing-head .byline {
+    color: var(--muted); font-size: 13px;
+    display: flex; gap: 12px; flex-wrap: wrap; align-items: center;
+  }
+  .briefing-head .byline .dot-sep { color: var(--dim); }
+  .briefing-head .lede {
+    margin-top: 22px; font-size: 18px; line-height: 1.55;
+    color: var(--text); font-weight: 400;
+  }
+  .briefing-head .lede::first-letter {
+    font-size: 56px; line-height: 1; font-weight: 800;
+    float: left; padding: 4px 10px 0 0; color: var(--accent);
+  }
+
+  .briefing-body { font-size: 16px; line-height: 1.7; color: var(--body); }
+  .briefing-body section { margin-top: 36px; }
+  .briefing-body h3 {
+    margin: 0 0 12px; font-size: 22px; line-height: 1.25;
+    letter-spacing: -.01em; font-weight: 700; color: var(--text);
+  }
+  .briefing-body h3 .num {
+    color: var(--accent); margin-right: 10px; font-family: ui-monospace, monospace;
+    font-size: 18px; font-weight: 600;
+  }
+  .briefing-body p { margin: 0 0 14px; }
+  .briefing-body p strong { color: var(--text); font-weight: 600; }
+  .briefing-body em { color: var(--text); font-style: italic; }
+  .briefing-body ol, .briefing-body ul { margin: 12px 0 16px; padding-left: 20px; }
+  .briefing-body li { margin-bottom: 8px; }
+  .briefing-body blockquote.takeaway {
+    margin: 22px 0; padding: 14px 18px;
+    border-left: 3px solid var(--accent);
+    background: rgba(195,154,74,.06);
+    border-radius: 0 8px 8px 0;
+    color: var(--text); font-size: 15px; line-height: 1.6;
+  }
+  .briefing-body blockquote.takeaway strong { color: var(--accent); letter-spacing: .04em; text-transform: uppercase; font-size: 11px; display: block; margin-bottom: 6px; }
+  .briefing-end {
+    margin-top: 36px; padding-top: 22px;
+    border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 13px; text-align: center;
+  }
+
+  /* ── Grid for cards (Breaking News + Claude Code) ────────── */
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 980px) { .grid.cols-3, .grid.cols-2 { grid-template-columns: 1fr; } }
+
+  .card {
+    background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+    border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 18px 18px 16px; box-shadow: var(--shadow);
+    position: relative; overflow: hidden;
+  }
+  .card h3 { margin: 0 0 6px; font-size: 16px; font-weight: 700; letter-spacing: -.005em; }
+  .card p  { margin: 0 0 10px; color: var(--muted); font-size: 13.5px; }
+  .card .row { display: flex; align-items: center; gap: 8px; }
+  .card ul { margin: 8px 0 0; padding-left: 18px; }
+  .card li { font-size: 13.5px; color: var(--muted); margin-bottom: 4px; }
+
+  /* ── Breaking News ───────────────────────────────────────── */
+  .news-card { padding-left: 18px; }
+  .news-card::before {
+    content: ""; position: absolute; left: 0; top: 0; bottom: 0;
+    width: 4px; background: var(--accent-2);
+  }
+  .news-card.crit::before { background: var(--crit); }
+  .news-card.hot::before  { background: var(--hot); }
+  .news-card.warn::before { background: var(--warn); }
+  .news-card.info::before { background: var(--accent-2); }
+  .news-meta {
+    display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
+    font-size: 12px; color: var(--dim); margin-top: 10px;
+  }
+  .pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 2px 9px; border-radius: 999px;
+    border: 1px solid var(--line); color: var(--muted);
+    font-size: 11px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase;
+  }
+  .pill.crit { color: #f1bdfb; border-color: rgba(176,75,209,.45); background: rgba(176,75,209,.10); }
+  .pill.hot  { color: #ffc4c4; border-color: rgba(225,90,90,.4);  background: rgba(225,90,90,.08); }
+  .pill.warn { color: #ffd99a; border-color: rgba(224,168,87,.4); background: rgba(224,168,87,.08); }
+  .pill.info { color: #cfe0ff; border-color: rgba(122,162,247,.4); background: rgba(122,162,247,.08); }
+  .score {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 2px 9px; border-radius: 999px;
+    background: rgba(255,255,255,.04); border: 1px solid var(--line);
+    font-family: ui-monospace, monospace; font-size: 11px; color: var(--text);
+  }
+  .score b { color: var(--accent); }
+
+  /* ── Claude Code ─────────────────────────────────────────── */
+  .cc-grid { grid-template-columns: 1.2fr .8fr; }
+  @media (max-width: 980px) { .cc-grid { grid-template-columns: 1fr; } }
+  .release {
+    display: flex; align-items: flex-start; gap: 12px; padding: 10px 0;
+    border-bottom: 1px dashed var(--line);
+  }
+  .release:last-child { border-bottom: none; }
+  .release .ver {
+    flex: 0 0 auto; min-width: 76px;
+    font-family: ui-monospace, monospace; font-size: 12.5px;
+    color: var(--accent); font-weight: 600;
+  }
+  .release .when { flex: 0 0 78px; color: var(--dim); font-size: 12px; font-family: ui-monospace, monospace; }
+  .release .what { color: var(--text); font-size: 13.5px; }
+  .release .what em { color: var(--muted); font-style: normal; }
+  .release .what strong { color: var(--text); }
+  .badge { display: inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .04em; }
+  .badge.feat { color: #b9efcb; background: rgba(110,195,139,.12); border: 1px solid rgba(110,195,139,.3); }
+  .badge.sec  { color: #ffc4c4; background: rgba(225,90,90,.12);  border: 1px solid rgba(225,90,90,.35); }
+  .badge.fix  { color: #ffd99a; background: rgba(224,168,87,.12); border: 1px solid rgba(224,168,87,.3); }
+  .src-card .links { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
+  .src-card .links a {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 8px 10px; border-radius: 8px;
+    border: 1px solid var(--line); background: rgba(255,255,255,.02);
+    color: var(--text); font-size: 13.5px;
+    transition: background .12s ease, border-color .12s ease;
+  }
+  .src-card .links a:hover { background: rgba(122,162,247,.06); border-color: rgba(122,162,247,.4); text-decoration: none; }
+  .src-card .links a .arrow { color: var(--dim); font-size: 12px; }
+
+  /* ── Snapshot banner (archive only) ──────────────────────── */
+  .snap-banner {
+    display: none;
+    background: rgba(195,154,74,.10);
+    border: 1px solid rgba(195,154,74,.3);
+    border-radius: 10px; padding: 10px 14px; margin-bottom: 18px;
+    color: var(--accent); font-size: 13px;
+    align-items: center; justify-content: space-between; gap: 12px;
+  }
+  .snap-banner.show { display: flex; }
+
+  /* ── Footer ──────────────────────────────────────────────── */
+  footer {
+    margin-top: 60px; padding-top: 18px;
+    border-top: 1px solid var(--line);
+    color: var(--dim); font-size: 12px;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+  footer .mono { color: var(--muted); }
+</style>
+</head>
+<body data-snapshot-date="2026-10-20" data-snapshot-mode="archive">
+<div class="wrap">
+
+  <!-- ─── Top Nav ─── -->
+  <nav class="topnav">
+    <a href="/agentic-info-dashboard/">📊 Übersicht</a>
+    <a href="/agentic-info-dashboard/ai-news/" class="active">📰 AI News (Tagesbriefing)</a>
+    <a href="/agentic-info-dashboard/youtube/">▶ YouTube Hot</a>
+    <a href="/agentic-info-dashboard/whoiswho/">👥 Who is Who</a>
+    <a href="/agentic-info-dashboard/sources/">📚 Quellen</a>
+    <a href="/agentic-info-dashboard/it-services/">🏢 IT-Services-Radar</a>
+    <a href="/agentic-info-dashboard/regulation/">⚖ Regulatorik</a>
+    <a href="/agentic-info-dashboard/coding-tools/">⌘ Coding-Tools</a>
+    <a href="/agentic-info-dashboard/calendar/">📅 Kalender</a>
+    <a href="/agentic-info-dashboard/extensions/">🧩 Extensions</a>
+  </nav>
+
+  <!-- ─── Timeline strip ─── -->
+  <div class="timeline-bar" id="timeline">
+    <span class="label">Zeitstrahl</span>
+    <!-- JS füllt aus archive/manifest.json. Fallback statisch: -->
+    <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-10-16.html" data-date="2026-10-16">
+      <span class="dow">Fr</span><span class="date">16.10.</span>
+    </a>
+    <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-10-17.html" data-date="2026-10-17">
+      <span class="dow">Sa</span><span class="date">17.10.</span>
+    </a>
+    <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-10-18.html" data-date="2026-10-18">
+      <span class="dow">So</span><span class="date">18.10.</span>
+    </a>
+    <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-10-19.html" data-date="2026-10-19">
+      <span class="dow">Mo</span><span class="date">19.10.</span>
+    </a>
+    <a class="tl-pill active" href="/agentic-info-dashboard/ai-news/" data-date="2026-10-20">
+      <span class="dow">Di</span><span class="date">20.10.</span>
+    </a>
+  </div>
+
+  <!-- ─── Snapshot Banner (nur in Archiv-Versionen) ─── -->
+  <div class="snap-banner" id="snap-banner">
+    <span>📌 Du siehst einen archivierten Snapshot.</span>
+    <a href="/agentic-info-dashboard/ai-news/">← Zurück zum heutigen Briefing</a>
+  </div>
+
+  <!-- ─── Header ─── -->
+  <header class="main">
+    <div class="title">
+      <span class="dot" title="Live"></span>
+      <div>
+        <h1>Agentic AI · Tagesbriefing</h1>
+        <div class="subtitle">Was heute zählt — in 10 Minuten Lesezeit auf den Punkt.</div>
+      </div>
+    </div>
+    <div class="meta">
+      <div class="date" id="today">Montag, 19. Oktober 2026</div>
+      <div class="tag">Snapshot · KW 43 / 2026</div>
+    </div>
+  </header>
+
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <!-- ════════════════ TAGESBRIEFING (Editorial) ═══════════════ -->
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <article class="briefing-wrap">
+
+    <header class="briefing-head">
+      <h2 class="kicker">Dienstag · Agentic AI &amp; GenAI</h2>
+      <h1>Der Stack unter den Modellen wird zur Nachricht — PyTorch läuft auf Trainium, und das Kapital gießt Silizium</h1>
+      <div class="byline">
+        <span>✍️ Kuratiert &amp; analysiert</span>
+        <span class="dot-sep">·</span>
+        <span>~10 Min Lesezeit</span>
+        <span class="dot-sep">·</span>
+        <span id="byline-date">20. Oktober 2026</span>
+      </div>
+      <p class="lede">
+        Es ist ein verlässliches Signal für die Reife eines Marktes, wenn die wichtigste Nachricht des Tages kein neues Modell ist, sondern die Schicht darunter. Gestern kündigten Amazon und das PyTorch-Team bei Meta mit <strong>TorchNeuron</strong> einen nativen Backend an, der bestehenden PyTorch-Code mit einem einzigen geänderten Gerätenamen auf AWS-eigenen Trainium-Chips laufen lässt — Apache-2.0-lizenziert, öffentliche Beta ab heute. Das klingt nach einer Fußnote für Infrastruktur-Ingenieure und ist in Wahrheit ein kalkulierter Angriff auf die teuerste Abhängigkeit der Branche: Nvidias CUDA. Flankiert wird der Vorstoß von einer 1,5-Milliarden-Runde für den Chip-Herausforderer Tenstorrent, Metas gigawattgroßem Prometheus-Cluster und einem Diffusions-Sprachmodell, das 1.000 Token pro Sekunde ausspuckt. Die Modell-Benchmarks wechseln inzwischen im Wochentakt — die eigentliche Verschiebung findet eine Etage tiefer statt, im Silizium und im Compiler.
+      </p>
+    </header>
+
+    <div class="briefing-body">
+
+      <section>
+        <h3><span class="num">01</span>Ein geänderter Gerätename — TorchNeuron greift die teuerste Abhängigkeit der Branche an</h3>
+        <p>Der technische Kern der Ankündigung ist bestechend simpel, und genau das macht ihn gefährlich für den Platzhirsch. <strong>TorchNeuron</strong> ist ein nativer PyTorch-Backend für AWS Trainium2 und Trainium3: Wer bereits PyTorch-Code schreibt — also praktisch die gesamte KI-Welt —, ändert eine Zeile, in der das Rechen-Gerät benannt wird, und sein Modell trainiert oder inferiert auf Amazons eigenen Beschleunigern statt auf Nvidia-GPUs. Kein Neuschreiben von Kerneln, keine Portierung auf eine exotische Sprache. Dass Amazon das Projekt gemeinsam mit dem PyTorch-Team bei Meta vorstellt und unter Apache 2.0 offenlegt, mit einer öffentlichen Beta ab heute und einer Riege von Early-Adoptern von Hugging Face über Databricks bis Anthropic, ist kein Zufall: Es soll die Botschaft senden, dass hier ein Industrie-Standard entsteht und kein proprietärer AWS-Sonderweg.</p>
+        <p>Der eigentliche Gegner heißt CUDA. Nvidias Software-Schicht ist seit anderthalb Jahrzehnten der Graben, der die Hardware-Marge schützt: Die Chips sind schnell, aber die wahre Bindung ist, dass jede ernstzunehmende ML-Bibliothek auf CUDA optimiert ist. Jeder Versuch, diese Bindung zu lösen, läuft über die Compiler- und Framework-Ebene — und genau dort verdichten sich die Angriffe. <span data-person="chris-lattner">Chris Lattner</span>s hardware-agnostischer Modular-Stack landete im Juni bei Qualcomm; OpenAI und Broadcom basteln an eigenem Inferenz-Silizium; und nun macht ausgerechnet der größte Cloud-Anbieter den Wechsel zu seinen eigenen Chips zur Ein-Zeilen-Operation. Keiner dieser Vorstöße entthront Nvidia über Nacht. Aber in Summe erzählen sie dieselbe Geschichte: Die Ära, in der CUDA alternativlos war, geht ihrem Ende entgegen, und die Hyperscaler haben jedes Interesse daran, sie zu beschleunigen.</p>
+        <blockquote class="takeaway">
+          <strong>Was es bedeutet</strong>
+          Für uns: Hardware-Portabilität wird vom Infrastruktur-Detail zur Architektur-Entscheidung mit direkter Kostenfolge. Billbar: Inferenz-Kosten-Audits, die den Effekt eines Chip-Wechsels (Trainium, TPU, eigenes Silizium) für konkrete Kunden-Workloads durchrechnen; Portabilitäts-Assessments, die prüfen, wie tief ein Kunde in CUDA eingegraben ist; und Framework-Abstraktionen, die den Betrieb über mehrere Beschleuniger hinweg offenhalten — bevor der nächste GPU-Engpass die Wechselkosten diktiert.
+        </blockquote>
+      </section>
+
+      <section>
+        <h3><span class="num">02</span>Das Kapital folgt dem Silizium — Tenstorrent auf 6,2 Milliarden, Meta baut sein Gigawatt</h3>
+        <p>Wenn die Software-Bindung bröckelt, wird die Hardware darunter wieder interessant — und das Kapital hat das verstanden. <strong>Tenstorrent</strong>, der von Chip-Legende Jim Keller geführte Herausforderer, schloss eine Series E über 1,5 Milliarden Dollar zu einer Bewertung von 6,2 Milliarden — mehr als eine Verdopplung gegenüber den zuvor kolportierten 2,6 Milliarden. Angeführt von Trace Capital und Innovation X, mit Fidelity, Morgan Stanley, ARK, T. Rowe Price und Tether an Bord, fließt das Geld in die Serienfertigung der Galaxy-Server. Tenstorrents These ist dieselbe wie die hinter TorchNeuron: Wer eine offene, nicht-CUDA-gebundene Alternative baut, kann einen Teil des Nvidia-Monopols abknabbern — und die Investoren bezahlen inzwischen Milliarden für diese Wette.</p>
+        <p>Am anderen Ende der Größenskala demonstriert Meta, dass die Hyperscaler ihre Abhängigkeit mit purer Masse auflösen. Der Konzern veröffentlichte einen Deep Dive zu <strong>Prometheus</strong>, seinem gigawattgroßen Rechenzentrums-Standort im Örtchen New Albany, Ohio: Phase eins verschaltet Hunderttausende GPUs, der Vollausbau zielt auf rund eine Million Beschleuniger für das Training der Muse-Foundation-Modelle. Gigawatt ist die neue Maßeinheit der Frontier — nicht Parameter, nicht FLOPs, sondern die Leistung, die ein einzelner Standort aus dem Netz zieht. Beide Nachrichten, die Milliarden-Runde und der Gigawatt-Campus, erzählen vom selben Flaschenhals: Nicht das bessere Modell entscheidet den nächsten Zyklus, sondern wer Silizium und Strom am günstigsten und unabhängigsten organisiert.</p>
+        <blockquote class="takeaway">
+          <strong>Was es bedeutet</strong>
+          Für uns: Die Compute-Knappheit, die bislang ein Lab-Problem war, wird zur Planungsgröße für jeden ernsthaften KI-Betrieb. Billbar: Kapazitäts- und Standort-Strategien, die Verfügbarkeit, Energiekosten und Chip-Diversität statt nur Modell-Qualität bewerten; die nüchterne Beratung, dass Trainings- und Inferenz-Kapazität zur knappen Ressource mit langen Vorlaufzeiten wird; und Souveränitäts-Konzepte für Kunden, die aus regulatorischen Gründen nicht jeden Gigawatt-Campus nutzen dürfen.
+        </blockquote>
+      </section>
+
+      <section>
+        <h3><span class="num">03</span>Die zweite Effizienz-Achse — Mercury 3 generiert, statt zu reihen</h3>
+        <p>Während unten das Silizium umkämpft ist, öffnet sich oben eine zweite Front der Effizienz — nicht über den Preis pro Token, sondern über die Architektur selbst. <strong>Inception Labs</strong> brachte mit <strong>Mercury 3</strong> ein diffusionsbasiertes Sprachmodell, das nach eigenen Angaben über 1.000 Token pro Sekunde auf Nvidia-GPUs generiert und sein Kontextfenster von 260.000 auf eine Million Token ausdehnt. Der Unterschied zu klassischen Transformern ist grundlegend: Diffusionsmodelle erzeugen Text nicht Wort für Wort von links nach rechts, sondern verfeinern eine ganze Sequenz parallel — was den Durchsatz um eine Größenordnung heben kann. Der Einführungspreis von 0,20/0,70 Dollar je Million Token (mit 50 Prozent Launch-Rabatt) zeigt, dass Geschwindigkeit hier nicht mit Premium-Preisen erkauft wird, sondern den Boden weiter drückt.</p>
+        <p>Mercury 3 steht nicht allein. DeepSeeks aufgefrischtes <strong>V4.1-Flash</strong> (17. Oktober, offene Gewichte unter MIT-Lizenz) trimmt Antworten auf kürzere, schnellere Ausgaben bei gleichem API-Preis; Cloudflare stellte mit <strong>Clairic</strong> ein spezialisiertes Extraktionsmodell vor, das strukturierte Daten aus unstrukturiertem Text nach eigener Rechnung 3,2-mal schneller und 49 Prozent günstiger zieht als eine reine LLM-Pipeline. Das Muster ist überall dasselbe: Nicht das allwissende Frontier-Modell gewinnt die nächste Runde, sondern das richtig dimensionierte, für die konkrete Aufgabe optimierte. Latenz und Kosten pro erledigter Aufgabe sind die Metriken, an denen sich 2026 entscheidet — und die Diffusions-Architektur ist der Beleg, dass dieser Wettlauf noch lange nicht ausgereizt ist.</p>
+        <blockquote class="takeaway">
+          <strong>Was es bedeutet</strong>
+          Für uns: Die Modellauswahl wird zur Ingenieurs-Disziplin, nicht zur Glaubensfrage. Billbar: Architektur-Zuschnitte, die pro Arbeitsschritt das passende Modell wählen (schnelles Diffusions- oder Extraktionsmodell für den Durchsatz, Frontier-Modell nur für die harten Teilaufgaben); belastbare Latenz- und Kosten-Evals statt Benchmark-Gläubigkeit; und die Offenheit, auch neue Architekturen wie Diffusions-LLMs früh zu prüfen, bevor der Wettbewerb sie als Standard verkauft.
+        </blockquote>
+      </section>
+
+      <section>
+        <h3><span class="num">04</span>Europa liefert Papier — der erste harmonisierte AI-Act-Standard, und WhatsApps versteckte Instruktionen</h3>
+        <p>Parallel zum Silizium-Rennen passierte in Brüssel etwas Unspektakuläres mit erheblicher Tragweite: Die Europäische Kommission referenzierte im Amtsblatt mit <strong>EN 18286</strong> den ersten harmonisierten Standard unter dem AI Act. Praktisch heißt das, dass Anbieter von Hochrisiko-KI, die diesen Standard erfüllen, eine Konformitätsvermutung für Artikel 17 der Verordnung genießen — die bislang abstrakte Pflicht wird damit erstmals an ein prüfbares, auf ISO/IEC 42001 oder ISO 9001 aufsetzendes Normwerk gekoppelt. Für europäische Anwender ist das die lang erwartete Brücke zwischen Gesetzestext und Audit-Realität: Endlich gibt es ein Dokument, gegen das man zertifizieren kann, statt gegen eine Interpretation.</p>
+        <p>Dass Regulierung nicht nur auf dem Papier, sondern auch im Verborgenen stattfindet, zeigte am selben Tag eine unangenehme Episode: Das Projekt Redact fand in 80 von 545 WhatsApp-Hilfeseiten insgesamt 102 versteckte Instruktions-Blöcke, die KI-Systeme davon abhalten sollten, Nutzer an Datenschutzaufsichten zu verweisen. Meta entfernte die Blöcke zwischen dem 15. und 18. Oktober und nannte sie einen technischen Fehler. Ob Versehen oder Kalkül — der Vorfall illustriert die neue Angriffsfläche: Wer die Inhalte kontrolliert, die Agenten lesen, kann ihr Verhalten steuern, ohne je das Modell anzufassen. Die EU baut mit EN 18286 an der sichtbaren Governance; die eigentliche Front verläuft entlang der Prompt- und Content-Schicht, die kein harmonisierter Standard bisher erfasst.</p>
+        <blockquote class="takeaway">
+          <strong>Was es bedeutet</strong>
+          Für uns: Compliance wird prüfbar — und damit zum konkreten Projektgeschäft statt zur Rechtsabteilungs-Sorge. Billbar: Readiness-Assessments gegen EN 18286 für Hochrisiko-Anwendungen; Management-System-Aufbau, der auf vorhandener ISO-42001-/9001-Struktur andockt; und — der unterschätzte Teil — Prompt-Injection- und Content-Integritäts-Prüfungen, weil die versteckten Instruktionen von heute die Audit-Findings von morgen sind.
+        </blockquote>
+      </section>
+
+      <section>
+        <h3><span class="num">05</span>Am Rand: OpenAIs Humanoid, und Claude Code bei v2.1.304</h3>
+        <p>Zwei Randnotizen runden den Tag. Sam Altman bestätigte, dass OpenAI an einem humanoiden Roboter arbeitet und für 2027 eine Demonstration erwartet — die Karriereseite listet 27 Robotik-Stellen. Nach Compute, Modell und Oberfläche greift das Labor nun nach dem physischen Körper; die Ankündigung ist mehr Rekrutierungs- und Signal-Manöver als Produkt, aber sie markiert, dass die nächste Expansionsrichtung der Frontier-Labore die Hardware am anderen Ende ist — nicht nur das Rechenzentrum, sondern der Aktor in der Welt. Beim Werkzeug, das dieses Briefing erzeugt, blieb es ruhig-produktiv: <strong>Claude Code</strong> steht bei <code>v2.1.304</code> und schärft vor allem die Mod- und Hook-Mechanik (eine Transcript-Zeile, wenn ein zuerst laufendes Plugin einen Hook überspringt; <code>decider: "person"</code> und <code>e.isReadOnly</code> in der <code>tool.check</code>-Antwort eines Mods).</p>
+        <blockquote class="takeaway">
+          <strong>Was es bedeutet</strong>
+          Für uns: Die Expansion der Labore in neue Schichten — Silizium, Robotik, Content — vergrößert die Fläche, auf der Integration gebraucht wird. Billbar bleibt die unsexy Konstante: die Schicht zwischen Kundensystem und wechselnder Fähigkeit robust, auditierbar und austauschbar halten, egal ob darunter ein Transformer, ein Diffusionsmodell oder ein Trainium-Chip rechnet.
+        </blockquote>
+      </section>
+      <div class="briefing-end">
+        <strong>Was morgen zu beobachten ist:</strong> ob TorchNeuron über die Beta hinaus belastbare Benchmarks gegen vergleichbare Nvidia-Konfigurationen liefert — ohne harte Zahlen bleibt die CUDA-Ablösung eine These. Ob weitere Hyperscaler (Google mit TPU, Microsoft mit Maia) ihre eigenen PyTorch-Pfade nachschärfen, jetzt wo Amazon vorgelegt hat. Ob EN 18286 schnell von Zertifizierern aufgegriffen wird und erste Hochrisiko-Anbieter die Konformitätsvermutung in Anspruch nehmen. Und der Kalenderpunkt bleibt: Am <strong>1. Dezember</strong> verdoppelt Gemini 4 Argon seine Einführungspreise — der nächste Test, ob die gemieteten Entwickler bei steigenden Preisen bleiben. Claude Code hält bei <code>v2.1.304</code>.
+      </div>
+
+    </div>
+
+  </article>
+
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <!-- ════════════════════ BREAKING NEWS ═══════════════════════ -->
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <section>
+    <div class="section-head">
+      <h2>⚡ Breaking News</h2>
+      <div class="rule"></div>
+      <div class="hint">LLM-Score 1–10 · letzte 7 Tage</div>
+    </div>
+
+    <div class="grid cols-3">
+
+      <article class="card news-card hot">
+        <div class="row">
+          <span class="pill hot">Major Release</span>
+          <span class="score">Score <b>8.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">TorchNeuron: PyTorch läuft mit einer Zeile auf AWS Trainium</h3>
+        <p><strong>Amazon</strong> und das <strong>PyTorch</strong>-Team bei Meta stellten <strong>TorchNeuron</strong> vor — einen nativen Backend für Trainium2/3, der bestehenden PyTorch-Code mit einem einzigen geänderten Gerätenamen auf AWS-eigenen Chips laufen lässt. Apache-2.0-lizenziert, öffentliche Beta ab heute, Early-Adopter von Hugging Face über Databricks bis Anthropic. Der Vorstoß zielt direkt auf Nvidias <strong>CUDA</strong>-Bindung: Wer die Framework-Ebene öffnet, löst die teuerste Abhängigkeit der Branche.</p>
+        <div class="news-meta">
+          <span>📅 20.10.2026</span><span>·</span><span>🏢 Amazon / Meta (PyTorch)</span><span>·</span>
+          <a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noreferrer">aiweekly.co</a>
+        </div>
+      </article>
+
+      <article class="card news-card crit">
+        <div class="row">
+          <span class="pill crit">Regulatorik</span>
+          <span class="score">Score <b>8.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">EU: erster harmonisierter AI-Act-Standard EN 18286 im Amtsblatt</h3>
+        <p>Die <strong>Europäische Kommission</strong> referenzierte im Amtsblatt mit <strong>EN 18286</strong> den ersten harmonisierten Standard unter dem AI Act. Hochrisiko-Anbieter, die ihn erfüllen, erhalten eine <strong>Konformitätsvermutung für Artikel 17</strong>. Die Norm (von CEN/CENELEC) setzt auf ISO/IEC 42001 oder ISO 9001 auf — die bislang abstrakte Pflicht wird damit erstmals an ein prüfbares, zertifizierbares Normwerk gekoppelt. Die Brücke zwischen Gesetzestext und Audit-Realität.</p>
+        <div class="news-meta">
+          <span>📅 19.10.2026</span><span>·</span><span>🏢 EU-Kommission / CEN-CENELEC</span><span>·</span>
+          <a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noreferrer">aiweekly.co</a>
+        </div>
+      </article>
+
+      <article class="card news-card warn">
+        <div class="row">
+          <span class="pill warn">M&amp;A</span>
+          <span class="score">Score <b>7.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Tenstorrent: 1,5 Mrd. $ Series E bei 6,2 Mrd. Bewertung</h3>
+        <p><strong>Tenstorrent</strong>, der von Jim Keller geführte Chip-Herausforderer, schloss eine <strong>Series E über 1,5 Mrd. $</strong> zu einer Bewertung von <strong>6,2 Mrd.</strong> — mehr als eine Verdopplung. Angeführt von Trace Capital und Innovation X (Fidelity, Morgan Stanley, ARK, T. Rowe Price, Tether). Das Geld fließt in die Serienfertigung der Galaxy-Server. Die These: eine offene, nicht-CUDA-gebundene Alternative knabbert am Nvidia-Monopol — und das Kapital zahlt dafür.</p>
+        <div class="news-meta">
+          <span>📅 19.10.2026</span><span>·</span><span>🏢 Tenstorrent</span><span>·</span>
+          <a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noreferrer">aiweekly.co</a>
+        </div>
+      </article>
+
+      <article class="card news-card hot">
+        <div class="row">
+          <span class="pill hot">Major Release</span>
+          <span class="score">Score <b>7.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Inception Mercury 3: Diffusions-LLM mit 1.000+ Token/s</h3>
+        <p><strong>Inception Labs</strong> brachte <strong>Mercury 3</strong>, ein diffusionsbasiertes Sprachmodell, das nach eigenen Angaben <strong>über 1.000 Token/s</strong> auf Nvidia-GPUs generiert und sein Kontextfenster von 260K auf <strong>1 Mio. Token</strong> ausdehnt. Diffusion verfeinert ganze Sequenzen parallel statt Wort für Wort — eine Größenordnung mehr Durchsatz. Preis: 0,20/0,70 $ je Mtok (50 % Launch-Rabatt), via OpenRouter, Baseten, Vercel. Geschwindigkeit drückt den Boden weiter.</p>
+        <div class="news-meta">
+          <span>📅 19.10.2026</span><span>·</span><span>🏢 Inception Labs</span><span>·</span>
+          <a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noreferrer">aiweekly.co</a><a href="https://llmgateway.io/timeline" target="_blank" rel="noreferrer">llmgateway.io</a>
+        </div>
+      </article>
+
+      <article class="card news-card info">
+        <div class="row">
+          <span class="pill info">Forschung</span>
+          <span class="score">Score <b>7.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">OpenAI bestätigt Humanoid-Roboter — Demo für 2027</h3>
+        <p>Sam Altman bestätigte, dass <strong>OpenAI</strong> an einem <strong>humanoiden Roboter</strong> arbeitet und für <strong>2027</strong> eine Demonstration erwartet; die Karriereseite listet 27 Robotik-Stellen. Nach Compute, Modell und Oberfläche greift das Labor nach dem physischen Körper. Mehr Rekrutierungs- und Signal-Manöver als Produkt — aber es markiert, dass die nächste Expansionsrichtung der Frontier-Labore der Aktor in der Welt ist, nicht nur das Rechenzentrum.</p>
+        <div class="news-meta">
+          <span>📅 18.10.2026</span><span>·</span><span>🏢 OpenAI</span><span>·</span>
+          <a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noreferrer">aiweekly.co</a>
+        </div>
+      </article>
+
+      <article class="card news-card crit">
+        <div class="row">
+          <span class="pill crit">Security</span>
+          <span class="score">Score <b>6.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">WhatsApp-Hilfeseiten enthielten versteckte KI-Instruktionen</h3>
+        <p>Das Projekt <strong>Redact</strong> fand in 80 von 545 <strong>WhatsApp</strong>-Hilfeseiten insgesamt <strong>102 versteckte Instruktions-Blöcke</strong>, die KI-Systeme davon abhalten sollten, Nutzer an Datenschutzaufsichten zu verweisen. <strong>Meta</strong> entfernte sie zwischen dem 15. und 18. Oktober und nannte sie einen technischen Fehler. Der Vorfall zeigt die neue Angriffsfläche: Wer die Inhalte kontrolliert, die Agenten lesen, steuert ihr Verhalten — ohne das Modell anzufassen.</p>
+        <div class="news-meta">
+          <span>📅 19.10.2026</span><span>·</span><span>🏢 Meta / WhatsApp</span><span>·</span>
+          <a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noreferrer">aiweekly.co</a>
+        </div>
+      </article>
+
+      <article class="card news-card info">
+        <div class="row">
+          <span class="pill info">Tooling</span>
+          <span class="score">Score <b>6.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">DeepSeek V4.1-Flash: schneller, kürzer, offene Gewichte</h3>
+        <p><strong>DeepSeek</strong> frischte <strong>V4.1-Flash</strong> auf (17.10.): Das Modell liefert kürzere, schnellere Antworten bei gleichem API-Preis, ist live in Apps und API — mit <strong>offenen Gewichten unter MIT-Lizenz</strong>. Zusammen mit Cloudflares Extraktionsmodell Clairic (3,2× schneller, 49 % günstiger als eine reine LLM-Pipeline) zeigt es das Muster der Woche: Nicht das allwissende Frontier-Modell gewinnt, sondern das für die Aufgabe richtig dimensionierte.</p>
+        <div class="news-meta">
+          <span>📅 17.10.2026</span><span>·</span><span>🏢 DeepSeek</span><span>·</span>
+          <a href="https://llmgateway.io/timeline" target="_blank" rel="noreferrer">llmgateway.io</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <!-- ═════════════════════ CLAUDE CODE ═══════════════════════ -->
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <section>
+    <div class="section-head">
+      <h2>🛠 Claude Code · Releases &amp; Watch</h2>
+      <div class="rule"></div>
+      <div class="hint">Quelle: anthropics/claude-code · GitHub Releases</div>
+    </div>
+
+    <div class="grid cc-grid">
+
+      <article class="card">
+        <h3>Letzte Releases</h3>
+        <p>Aktuelle Version <code>v2.1.304</code> · schärft die <strong>Mod- und Hook-Mechanik</strong>: eine Transcript-Zeile, wenn ein zuerst laufendes Plugin einen Hook eines Mods überspringt (benennt Event und Plugin); <code>decider: "person"</code> in der <code>tool.check</code>-Antwort eines Mods (nur Permission-Dialog oder Host-Callback dürfen zustimmen, sonst Refusal); sowie <code>e.isReadOnly</code> im <code>tool.check</code>-Event. Davor war <code>v2.1.303</code> ein reines <strong>Wartungs-Release</strong> („bug fixes and reliability improvements“). Die jüngsten größeren Features liegen in <code>v2.1.302</code>: <strong><code>CLAUDE_CODE_AUTO_MODE_MODEL</code></strong>, mit dem sich das Modell des <strong>clientseitigen Auto-Mode-Klassifizierers</strong> wählen lässt (das serverseitige Auto-Mode-Modell bleibt unberührt), eine <strong>Idle-Compaction-Zeile in <code>/config</code></strong> zum Ab- und Anschalten der Leerlauf-Kompaktierung sowie neue Hinweise in <code>/design-sync</code> und <code>/design-login</code>. Davor härtete v2.1.301 den <strong>unbeaufsichtigten Retry-Modus</strong>: <code>CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS</code> lässt den Retry-Watchdog eine Anfrage an einem Usage-Limit beenden, das zu weit in der Zukunft zurücksetzt, statt darauf zu warten — relevant für Oneshot- und Cron-Läufe —, dazu ein <strong>OpenTelemetry-Tracing-Leitfaden</strong> im <code>claude-api</code>-Skill und die <strong><code>%</code>-Bewegung</strong> im Vim-Modus. v2.1.300 brachte <strong><code>virtualText</code></strong> für die Prompt-Dekorationen eines Mods — Text, der im Prompt-Feld erscheint, aber weder in den Entwurf noch in den abgeschickten Prompt wandert — und schlüsselte die OpenTelemetry-<code>api_request</code>-Metrik via <code>cache_creation_5m_tokens</code>/<code>cache_creation_1h_tokens</code> nach Cache-Lebensdauer auf. v2.1.299 führte <code>CLAUDE_CODE_DISABLE_FILE_MENTIONS</code> ein (bei <code>@</code>-Erwähnungen nur Pfade statt Dateiinhalt) plus <strong>Idle-Compaction im Terminal</strong> (eine 200K-Token-Session nach ~54 min Leerlauf wird vor Ablauf des Einstunden-Prompt-Caches kompaktiert). v2.1.296 ergänzte das Apps-Gateway um einen <code>code</code>-Schlüssel in <code>managed.policies[]</code> und <code>autoCompactWindow</code> für Subagenten; v2.1.295 brachte <strong><code>onFailure: "block"</code></strong> für Hooks (fail-closed) plus <strong>Program Status Protocol (OSC 7501)</strong>.</p>
+
+        <div class="release">
+          <div class="ver">v2.1.304</div>
+          <div class="when">19.10.</div>
+          <div class="what">
+            <strong>Mod-/Hook-Mechanik</strong> — Transcript-Zeile, wenn ein zuerst laufendes Plugin einen Mod-Hook überspringt (benennt Event + Plugin) · <code>decider: "person"</code> in der <code>tool.check</code>-Antwort eines Mods (nur Dialog/Host-Callback dürfen zustimmen) · <code>e.isReadOnly</code> im <code>tool.check</code>-Event
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.303</div>
+          <div class="when">18.10.</div>
+          <div class="what">
+            <strong>Wartungs-Release</strong> — Bug-Fixes und Zuverlässigkeits-Verbesserungen, keine neue Oberfläche
+            <span class="badge fix">FIX</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.302</div>
+          <div class="when">16.10.</div>
+          <div class="what">
+            <strong><code>CLAUDE_CODE_AUTO_MODE_MODEL</code></strong> — wählt das Modell des clientseitigen Auto-Mode-Klassifizierers (ändert nicht das serverseitige Auto-Mode-Modell) · <strong>Idle-Compaction-Zeile in <code>/config</code></strong> zum Ab-/Anschalten der Leerlauf-Kompaktierung · neue Hinweise in <code>/design-sync</code> und <code>/design-login</code>
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.301</div>
+          <div class="when">15.10.</div>
+          <div class="what">
+            <strong><code>CLAUDE_CODE_RETRY_WATCHDOG_MAX_USAGE_LIMIT_WAIT_MS</code></strong> — der unbeaufsichtigte Retry-Modus (<code>CLAUDE_CODE_RETRY_WATCHDOG</code>) beendet eine Anfrage an einem Usage-Limit, das zu weit in der Zukunft zurücksetzt, statt zu warten · <strong>OpenTelemetry-Tracing-Leitfaden</strong> im <code>claude-api</code>-Skill (Trace-Ziele via <code>ant</code>-CLI) · <code>%</code>-Bewegung im Vim-Modus (Sprung zur passenden Klammer, auch mit d/c/y)
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.300</div>
+          <div class="when">14.10.</div>
+          <div class="what">
+            <strong><code>virtualText</code> in den Prompt-Dekorationen eines Mods</strong> — Text, der im Prompt-Feld gezeichnet wird, aber nie in den Entwurf oder den abgeschickten Prompt gelangt · <strong><code>cache_creation_5m_tokens</code> / <code>cache_creation_1h_tokens</code></strong> im OTel-<code>api_request</code>-Event schlüsseln Cache-Schreibvorgänge nach Lebensdauer (5 min / 1 h) auf
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.299</div>
+          <div class="when">14.10.</div>
+          <div class="what">
+            <strong><code>CLAUDE_CODE_DISABLE_FILE_MENTIONS</code></strong> — bei <code>@</code>-Erwähnungen erhält Claude die Pfade zum Selberlesen mit seinen Datei-Tools, nicht den Inhalt · <strong>Idle-Compaction im Terminal</strong>: eine 200K-Token-Session nach ~54 min Leerlauf wird vor Ablauf des Einstunden-Prompt-Caches kompaktiert, damit die nächste Nachricht nicht alles neu verarbeitet
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <p style="margin-top: 14px;">
+          <a href="https://github.com/anthropics/claude-code/releases">→ Alle Releases auf GitHub</a><br/>
+          <a href="https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md">→ Vollständiger CHANGELOG.md</a>
+        </p>
+      </article>
+
+      <article class="card src-card">
+        <h3>Watch-List</h3>
+        <p>Worauf in den nächsten Releases zu achten ist:</p>
+        <ul>
+          <li><strong>Gateway-Policies für Claude Desktop</strong>: der neue <code>code</code>-Schlüssel bringt CLI-Kontrollen in den Desktop-Code-Tab — Enterprise-Policy-Pfade reifen schnell, Rollout beobachten.</li>
+          <li><strong><code>autoCompactWindow</code> für Subagenten</strong>: feinere Kontrolle über Kontext-Budgets in Multi-Agenten-Setups — Verhalten in langen Läufen prüfen.</li>
+          <li><strong>Haiku 5.5 als Default-Haiku</strong>: <code>claude-haiku-5-5</code> (1M Kontext, 0,10 $/0,50 $) — Kosten und Verhalten in echten Sessions beobachten; Modell-IDs in Produktion explizit pinnen.</li>
+          <li><strong>Fail-closed-Hooks</strong>: <code>onFailure: "block"</code> ändert das Ausfallverhalten — bestehende Hook-Ketten auf das neue Default prüfen.</li>
+          <li><strong>claude.ai-Sync</strong>: Skills/Plugins vom Account in Terminal-Sessions — Konsistenz über Geräte.</li>
+        </ul>
+        <p style="margin-top:12px"><strong>Empfohlene Watch-Quellen:</strong></p>
+        <div class="links">
+          <a href="https://github.com/anthropics/claude-code/releases.atom"><span>📡 RSS · GitHub Releases</span><span class="arrow">→</span></a>
+          <a href="https://github.com/anthropics/claude-code/commits/main.atom"><span>📡 RSS · main-Branch Commits</span><span class="arrow">→</span></a>
+          <a href="https://docs.claude.com/en/docs/claude-code/overview"><span>📘 Offizielle Docs</span><span class="arrow">→</span></a>
+          <a href="https://www.anthropic.com/news"><span>📰 Anthropic News</span><span class="arrow">→</span></a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <footer>
+    <div>Snapshot · <span class="mono" id="generated">19. Oktober 2026</span></div>
+    <div>
+      <a href="/agentic-info-dashboard/sources/">📚 Quellen-Sammlung</a> ·
+      <a href="/agentic-info-dashboard/">📊 Übersicht</a>
+    </div>
+  </footer>
+
+</div>
+
+<script src="/agentic-info-dashboard/_shared/people.js" defer></script>
+<script>
+  // ── Datum im Header lokalisieren ──────────────────────────
+  const SNAPSHOT_DATE = document.body.dataset.snapshotDate; // YYYY-MM-DD
+  const fmtLong = new Intl.DateTimeFormat('de-DE', {
+    weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'
+  });
+  if (SNAPSHOT_DATE) {
+    const d = new Date(SNAPSHOT_DATE);
+    document.getElementById('today').textContent = fmtLong.format(d);
+    document.getElementById('byline-date').textContent = fmtLong.format(d);
+    document.getElementById('generated').textContent = fmtLong.format(d);
+  }
+
+  // ── Timeline aus manifest.json bauen ──────────────────────
+  (async () => {
+    try {
+      const res = await fetch('/agentic-info-dashboard/ai-news/archive/manifest.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error('manifest not found');
+      const data = await res.json();
+      const snapshots = (data.snapshots || []).sort((a, b) => b.date.localeCompare(a.date));
+      if (!snapshots.length) return;
+
+      const bar = document.getElementById('timeline');
+      // Bestehende Pills (Fallback) entfernen, label behalten
+      bar.querySelectorAll('.tl-pill').forEach(p => p.remove());
+
+      const fmtPill = new Intl.DateTimeFormat('de-DE', { weekday: 'short' });
+      for (const s of snapshots) {
+        const d = new Date(s.date);
+        const dow = fmtPill.format(d).replace('.', '');
+        const dd = String(d.getDate()).padStart(2, '0');
+        const mm = String(d.getMonth() + 1).padStart(2, '0');
+        const a = document.createElement('a');
+        a.className = 'tl-pill';
+        a.dataset.date = s.date;
+        a.href = s.url;
+        a.title = s.summary || '';
+        a.innerHTML = `<span class="dow">${dow}</span><span class="date">${dd}.${mm}.</span>`;
+        if (s.date === SNAPSHOT_DATE) a.classList.add('active');
+        bar.appendChild(a);
+      }
+    } catch (e) {
+      // Manifest fehlt oder Fehler — der Fallback im HTML bleibt sichtbar.
+    }
+  })();
+
+  // ── Snapshot-Banner bei Archiv-Versionen ──────────────────
+  if (document.body.dataset.snapshotMode === 'archive') {
+    document.getElementById('snap-banner').classList.add('show');
+  }
+
+  // ── Stale-Banner (nur Live-Version) ───────────────────────
+  // Briefing ≥ 2 Tage alt heißt: der tägliche Update-Loop steht. Rein
+  // clientseitig, damit die Warnung auch dann erscheint, wenn genau der
+  // Loop ausgefallen ist, der sonst neu deployen würde.
+  if (document.body.dataset.snapshotMode === 'live' && SNAPSHOT_DATE) {
+    const ageDays = Math.floor((Date.now() - new Date(SNAPSHOT_DATE + 'T12:00:00')) / 86400000);
+    if (ageDays >= 2) {
+      const b = document.getElementById('snap-banner');
+      b.innerHTML = '<span>⚠️ Dieses Briefing ist vom ' + fmtLong.format(new Date(SNAPSHOT_DATE)) +
+        ' — ' + ageDays + ' Tage alt. Der tägliche Update-Loop läuft gerade nicht.</span>';
+      b.classList.add('show');
+    }
+  }
+</script>
+</body>
+</html>
