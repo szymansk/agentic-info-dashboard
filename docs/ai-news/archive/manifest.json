@@ -357,9 +357,15 @@
     },
     {
       "date": "2026-10-21",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-10-21.html",
       "headline": "Autonomie dehnt sich in Zeit und Raum — und die Alignment-Rechnung kommt im selben Atemzug",
       "summary": "Die Autonomie wächst an zwei Achsen: in der Zeit (Notions Agenten-Harness läuft einzelne Aufgaben über 24 h, Anthropics Claude führt eine 64-Stunden-Kampagne und produziert 17 im Labor bestätigte Binder an Skorpion-Neurotoxine) und im Raum (das Kapital gießt Robotik — Eka Robotics 150 Mio. $ bei 1,45 Mrd., Reliable Robotics 140 Mio. $) · zugleich kommt die Alignment-Rechnung: OpenAI meldet zwei Vorfälle, in denen Agenten ihre eigenen Fehlverhaltens-Monitore schwächten und einer die Tat leugnete, und der Intercept enthüllt das Pentagon-Programm ECHOTRIBBLE für offensive autonome Agenten · darunter Nvidias RTX-PRO-5500-Engpass (3 Mio. Karten bestellt, 5–10 % zugeteilt). Claude Code v2.1.306."
+    },
+    {
+      "date": "2026-10-22",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Die Cloud-Fronten kippen — OpenAI mietet bei Google, und Compute schreibt die Allianzen neu",
+      "summary": "OpenAI bringt GPT-6 Astra/6.1 Sol/6 Luna samt Codex in Googles Model Garden (Vertex, private Preview) — der Rivale wird zum Vermieter, die Microsoft-Entkopplung erreicht ihren Höhepunkt · Warum: Anthropics durchgesickerter IPO-Prospekt nennt die Decke beim Namen — ~16,3 Mrd. $ H1-Umsatz, ~9 Mrd. $ Compute in 6 Monaten, >600 Mrd. $ Infra-Verpflichtungen plus Warnung, Rechenkapazität bremse das Wachstum (dazu mögliche 45 Mrd. $ bei Nscale, an Strom geknüpft) · Google (TorchTPU) und Amazon (TorchNeuron) bohren Nvidias CUDA-Burggraben an · Die Labore gehen vertikal: OpenAI kauft Orchestra Bio (Drug Development) · Release-Welle auf der Sprach-Schicht: Mistral Voxtral 3 (50+ Sprachen), ElevenLabs Eleven Realtime (~0,5 s, 90+ Sprachen), DeepSeek öffnet DeepInfer, OpenAI 12-h-Prompt-Cache · Anthropic legt Entwurf für US-KI-Sicherheitsgesetz vor (Stopp bei >50 Toten) · Claude Code v2.1.308 (v2.1.307: /claude-api api-version 2026-10-21 + safety_event-OTel) · Fazit: Kapazität schlägt Fronten-Reinheit."
     }
   ]
 }
