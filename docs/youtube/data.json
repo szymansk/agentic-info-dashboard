@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-22T04:08:30+00:00",
+  "last_updated": "2026-10-22T11:02:34+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -254,6 +254,30 @@
       "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
     },
     {
+      "video_id": "f9VsJsAIV7E",
+      "title": "LIVE STREAM: Training Agents IRL Seminar",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-21T13:59:53+00:00",
+      "url": "https://www.youtube.com/watch?v=f9VsJsAIV7E",
+      "thumbnail": "https://img.youtube.com/vi/f9VsJsAIV7E/mqdefault.jpg",
+      "description": "​An open-source AI community event on reinforcement learning for agentic systems, hosted by GitHub and Hugging Face.\n\n​Join the open-source community at GitHub in San Francisco for an evening with researchers and builders exploring how AI a"
+    },
+    {
+      "video_id": "KnDMnZYEo2M",
+      "title": "I Turned Structured Output Into a Game 🎮",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-21T13:43:05+00:00",
+      "url": "https://www.youtube.com/shorts/KnDMnZYEo2M",
+      "thumbnail": "https://img.youtube.com/vi/KnDMnZYEo2M/mqdefault.jpg",
+      "description": "The model’s top prediction can still break the rules.\n\nI built Token Arcade to make structured output and constrained decoding easier to understand: see the next-token probabilities, pick a card, and find out whether it’s allowed.\n\nWatch a "
+    },
+    {
       "video_id": "8n-SXxRIrm8",
       "title": "Build a Better Shopping Experience with OpenAI | Shopping Agent Demo",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
@@ -264,6 +288,30 @@
       "url": "https://www.youtube.com/watch?v=8n-SXxRIrm8",
       "thumbnail": "https://img.youtube.com/vi/8n-SXxRIrm8/mqdefault.jpg",
       "description": "See how an AI shopping agent can turn a room photo into a personalized shopping experience—from finding the right products to updating an order.\n\nIn this demo for fictional home goods retailer Vesper & Alder, a shopper uses voice and images"
+    },
+    {
+      "video_id": "b2tjnxX8IHU",
+      "title": "Did Google just dethrone OpenAI and Anthropic?",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-10-20T16:21:03+00:00",
+      "url": "https://www.youtube.com/watch?v=b2tjnxX8IHU",
+      "thumbnail": "https://img.youtube.com/vi/b2tjnxX8IHU/mqdefault.jpg",
+      "description": "Macroscope can auto-approve your team's PRs safely. Try it here: https://macroscope.com/?utm_source=fireship\n\nGoogle’s new model claims to beat GPT-6 and Opus 5.5, so I took them all for a test drive. Let's dive in.\n\nWant more Fireship?\n\n🗞️"
+    },
+    {
+      "video_id": "CUjHZlvQufk",
+      "title": "Learn to build better AI Agents through better context",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-20T15:16:35+00:00",
+      "url": "https://www.youtube.com/watch?v=CUjHZlvQufk",
+      "thumbnail": "https://img.youtube.com/vi/CUjHZlvQufk/mqdefault.jpg",
+      "description": "Learn More: https://bit.ly/4yy5iWP\n\nThe longer an agent works, the more repeated, contradictory, or stale information builds up in its context. Models perform worse as their context grows, a problem Jeff Huber and his team at Chroma named C"
     },
     {
       "video_id": "9n0MI4D7TCM",
@@ -290,6 +338,18 @@
       "description": "THIS JUST IN: You need a better headshot. Create yours now on ChatGPT Images."
     },
     {
+      "video_id": "H4azmWcqO5g",
+      "title": "Local AI 202: Get Massive Speed-ups with Speculative Decoding",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-20T05:42:51+00:00",
+      "url": "https://www.youtube.com/watch?v=H4azmWcqO5g",
+      "thumbnail": "https://img.youtube.com/vi/H4azmWcqO5g/mqdefault.jpg",
+      "description": "Learn about speculative decoding techniques like EAGLE, DFlash, MTP with llama.cpp, transformers and speculators library in this livestream. \nSchedule:\n18.10: Introduction to Speculative Decoding (Merve Noyan, Hugging Face)\n18.30: Getting S"
+    },
+    {
       "video_id": "DQHtmW9ZlIs",
       "title": "Cooking with Codex: Ep. 1",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
@@ -312,6 +372,18 @@
       "url": "https://www.youtube.com/shorts/7lC2N9woZy4",
       "thumbnail": "https://img.youtube.com/vi/7lC2N9woZy4/mqdefault.jpg",
       "description": "Bringing legal expertise and frontier AI together starts with trust.\n\nFor Thomson Reuters’ Camillo Speroni, that means output lawyers can verify, cite and put their name on.\n\nCamillo discusses Thomson Reuters’ work with OpenAI to bring High"
+    },
+    {
+      "video_id": "3-sSbJKb-fQ",
+      "title": "Pi Durable: AI agents that survive crashes",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-19T14:48:54+00:00",
+      "url": "https://www.youtube.com/shorts/3-sSbJKb-fQ",
+      "thumbnail": "https://img.youtube.com/vi/3-sSbJKb-fQ/mqdefault.jpg",
+      "description": "Your agent sent 4 of 5 emails… then crashed. A regular coding agent leaves you with a half-finished tool call and a \"continue\" prayer. Pi Durable checkpoints every task and tool call (SQLite / JSONL), so when the process restarts, the agent"
     },
     {
       "video_id": "o_5f4N6Nq80",
@@ -350,6 +422,18 @@
       "description": "Mark Zuckerberg, founder and CEO of Meta, on why staying stagnant is the riskiest choice.\n\nSource: How to Build the Future, Y Combinator, 2016."
     },
     {
+      "video_id": "ti3vVYwzW4A",
+      "title": "Pi Durable EXPLAINED: Build Always-On Agents with Local Models",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-19T03:34:17+00:00",
+      "url": "https://www.youtube.com/watch?v=ti3vVYwzW4A",
+      "thumbnail": "https://img.youtube.com/vi/ti3vVYwzW4A/mqdefault.jpg",
+      "description": "Pi Durable is a building block for always-on agent applications, not a new coding-agent CLI. Learn how checkpoints, conversations, and storage support recovery after interruptions, where Durable fits in the Pi ecosystem, and the six steps t"
+    },
+    {
       "video_id": "LKrwhjOI8Nc",
       "title": "There's never been a better time to go into math",
       "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
@@ -374,6 +458,18 @@
       "description": "AI can write production code in minutes. But can it debug and operate that code when something goes wrong? Grepr CEO Jad Naous argues that running real-world systems is a fundamentally harder challenge, with unpredictable workloads, failure"
     },
     {
+      "video_id": "l3L_lETiSzc",
+      "title": "The runtime wars are over... and Node won",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-10-15T17:35:15+00:00",
+      "url": "https://www.youtube.com/watch?v=l3L_lETiSzc",
+      "thumbnail": "https://img.youtube.com/vi/l3L_lETiSzc/mqdefault.jpg",
+      "description": "Every JetBrains account now comes with a free coding model called Junie Lite. Try it: https://jb.gg/JunieLite\n\nCloudflare just acquired Deno and the creator of Node.js is finally admitting that reimplementing it was a mistake. Let's dive in"
+    },
+    {
       "video_id": "WqrwAFs-fq0",
       "title": "Multiplayer Gaming & Flight Simulation - Computerphile",
       "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
@@ -384,6 +480,30 @@
       "url": "https://www.youtube.com/watch?v=WqrwAFs-fq0",
       "thumbnail": "https://img.youtube.com/vi/WqrwAFs-fq0/mqdefault.jpg",
       "description": "Using the example of a flight simulator to discuss the complexities of coding a multi-player game. What data do you send? When do you send it & how often? Dr Julian Onions talks about his experiences of working on a flight simulator.\n\nCompu"
+    },
+    {
+      "video_id": "2IuO_80wB0s",
+      "title": "Give your team AI skills you can trust",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-14T18:05:18+00:00",
+      "url": "https://www.youtube.com/watch?v=2IuO_80wB0s",
+      "thumbnail": "https://img.youtube.com/vi/2IuO_80wB0s/mqdefault.jpg",
+      "description": "Learn more: deeplearning.ai/business\n\nOur enterprise program gives your team AI skills you can trust. \n\nEngineering teams are under pressure to build AI skills. In BCG's 2026 survey, 72% of workers said AI has changed what their jobs requir"
+    },
+    {
+      "video_id": "QZVzuq28eFw",
+      "title": "OpenAI’s lead engineer was secretly a spy...",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-10-14T17:48:10+00:00",
+      "url": "https://www.youtube.com/watch?v=QZVzuq28eFw",
+      "thumbnail": "https://img.youtube.com/vi/QZVzuq28eFw/mqdefault.jpg",
+      "description": "Run GitHub Actions 2x faster and build with Codesmith at https://www.blacksmith.sh/\n\nAn OpenAI engineer built a wiretap with his wife’s ChatGPT account, hid it in toilet paper behind the executive boardroom TV, and lasted 48 hours before ge"
     },
     {
       "video_id": "FGCP2F_7rQk",
@@ -470,6 +590,18 @@
       "description": "In the week that software got reverse engineered, Sam Altman warned 6.1 Astra ‘tipped toward [breach risk], and Muse Wonder showed the race isn’t slowing, I try to step back and show where it is all going, on current trends. Agree or disagr"
     },
     {
+      "video_id": "wajoP_5Cpw8",
+      "title": "Every app on Earth is now open source... whether it likes it or not",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-10-12T19:15:23+00:00",
+      "url": "https://www.youtube.com/watch?v=wajoP_5Cpw8",
+      "thumbnail": "https://img.youtube.com/vi/wajoP_5Cpw8/mqdefault.jpg",
+      "description": "Every agent needs proper tools. Apify MCP gives yours thousands of them, ready to run. Use code FIRESHIP25 for $25 in free credits: https://apify.it/4ygURHS\n\nA developer just rewrote seven Adobe apps in Rust and open-sourced them for free. "
+    },
+    {
       "video_id": "4fLVq6HJsKc",
       "title": "DeepSeek Solved AI’s Memory Problem",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -482,6 +614,30 @@
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The DeepSeek OCR paper is available here:\nhttps://github.com/deepseek-ai/DeepSeek-OCR\n\n🙏 We would like to thank our generous Patreon supporters who make T"
     },
     {
+      "video_id": "DVRMDoYhVBI",
+      "title": "AI Coding Is a Slot Machine: Loss Disguised as a Win | Jeremy Howard",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-10-11T09:19:59+00:00",
+      "url": "https://www.youtube.com/shorts/DVRMDoYhVBI",
+      "thumbnail": "https://img.youtube.com/vi/DVRMDoYhVBI/mqdefault.jpg",
+      "description": "Jeremy Howard, co-founder of fast.ai, on why AI-assisted coding works like a slot machine: you craft the prompt, pull the lever, and the occasional win feels like control. In his words: \"It's got all these hallmarks of loss disguised as a w"
+    },
+    {
+      "video_id": "615B5nyMFPk",
+      "title": "What Most People Get Wrong About Evolution | Akarsh Kumar",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-10-10T04:31:57+00:00",
+      "url": "https://www.youtube.com/watch?v=615B5nyMFPk",
+      "thumbnail": "https://img.youtube.com/vi/615B5nyMFPk/mqdefault.jpg",
+      "description": "A lot of people in AI treat evolution as a dumb fallback, basically random search for when you can't take a gradient. Akarsh Kumar thinks that is wrong. Selection hangs on to partial solutions, so mutations only need to be useful about 1% o"
+    },
+    {
       "video_id": "W0jPTqIo5oE",
       "title": "Race Conditions on a Human Scale - Computerphile",
       "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
@@ -492,19 +648,25 @@
       "url": "https://www.youtube.com/watch?v=W0jPTqIo5oE",
       "thumbnail": "https://img.youtube.com/vi/W0jPTqIo5oE/mqdefault.jpg",
       "description": "When two threads or processes clash, a race condition can occur. Matt Godbolt demonstrates different kinds of race conditions by equating these to real-life human situations. \n\nFind out more about Matt from his blog: https://bit.ly/C_MGodbo"
+    },
+    {
+      "video_id": "pniLY0I9VJQ",
+      "title": "Life as it could be | Akarsh Kumar on Artificial Life",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-10-08T11:34:31+00:00",
+      "url": "https://www.youtube.com/shorts/pniLY0I9VJQ",
+      "thumbnail": "https://img.youtube.com/vi/pniLY0I9VJQ/mqdefault.jpg",
+      "description": "Akarsh Kumar on searching for artificial life with foundation models. Start from something as simple as Conway's Game of Life: \"From this super, super simple world, you run this, you get insane amounts of complexity.\"\n\nIn his words: \"Instea"
     }
   ],
   "stats": {
-    "total_videos": 27,
+    "total_videos": 41,
     "total_channels": 16,
-    "successful_channels": 11,
-    "failed_channels": [
-      "Yannic Kilcher",
-      "Machine Learning Street Talk",
-      "Hugging Face",
-      "DeepLearningAI",
-      "Fireship"
-    ],
+    "successful_channels": 16,
+    "failed_channels": [],
     "window_days": 14
   }
 }
