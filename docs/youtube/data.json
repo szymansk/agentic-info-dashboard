@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-22T11:02:34+00:00",
+  "last_updated": "2026-10-23T11:04:02+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,16 @@
   ],
   "featured": [
     {
-      "video_id": "20IRGgQwPkc",
-      "title": "V7 cuts costs 78% while boosting accuracy with GPT‑5.6 Luna",
+      "video_id": "RLQR5_5fJDA",
+      "title": "Messi asks ChatGPT to teach him a chess opening",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-10-21T22:05:10+00:00",
-      "url": "https://www.youtube.com/watch?v=20IRGgQwPkc",
-      "thumbnail": "https://img.youtube.com/vi/20IRGgQwPkc/mqdefault.jpg",
-      "description": "V7 Go organizes company files into a Context Graph that agents can query to screen investment deals and support insurance underwriting. On V7’s hardest graph-query tests across thousands of documents, GPT-6 Astra reached 89% accuracy.\n\nRead",
+      "published": "2026-10-22T21:58:00+00:00",
+      "url": "https://www.youtube.com/shorts/RLQR5_5fJDA",
+      "thumbnail": "https://img.youtube.com/vi/RLQR5_5fJDA/mqdefault.jpg",
+      "description": "Messi asked ChatGPT to teach him a chess opening that matched his style. It suggested Goat Horns. 🐐🤘\n\nTry ChatGPT's Intelligent UI yourself: “Based on what you know about me, teach me something new. Show me step by step.\"",
       "why": ""
     },
     {
@@ -169,6 +169,102 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "w6dSNCg9I5k",
+      "title": "Llama: Local AI on Your Mac",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-23T07:55:07+00:00",
+      "url": "https://www.youtube.com/watch?v=w6dSNCg9I5k",
+      "thumbnail": "https://img.youtube.com/vi/w6dSNCg9I5k/mqdefault.jpg",
+      "description": "Meet Llama: run AI models locally on your Mac, right from the menu bar.\n\nFind models that fit your Mac, download with one click, and start chatting. Your conversations stay on your computer, it works offline, and apps that support the OpenA"
+    },
+    {
+      "video_id": "RLQR5_5fJDA",
+      "title": "Messi asks ChatGPT to teach him a chess opening",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-22T21:58:00+00:00",
+      "url": "https://www.youtube.com/shorts/RLQR5_5fJDA",
+      "thumbnail": "https://img.youtube.com/vi/RLQR5_5fJDA/mqdefault.jpg",
+      "description": "Messi asked ChatGPT to teach him a chess opening that matched his style. It suggested Goat Horns. 🐐🤘\n\nTry ChatGPT's Intelligent UI yourself: “Based on what you know about me, teach me something new. Show me step by step.\""
+    },
+    {
+      "video_id": "9WZpou1faFU",
+      "title": "Sam Altman on AI’s Discovery Era",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-22T20:47:14+00:00",
+      "url": "https://www.youtube.com/shorts/9WZpou1faFU",
+      "thumbnail": "https://img.youtube.com/vi/9WZpou1faFU/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "l16Gw7oVLNQ",
+      "title": "Uber rolls out ChatGPT Work to 30,000+ employees",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-22T18:00:13+00:00",
+      "url": "https://www.youtube.com/watch?v=l16Gw7oVLNQ",
+      "thumbnail": "https://img.youtube.com/vi/l16Gw7oVLNQ/mqdefault.jpg",
+      "description": "Following a 1,000-person pilot, Uber is bringing ChatGPT Work to more than 30,000 employees worldwide in its first company-wide deployment of an agentic platform for knowledge work.\n\nUber CTO Praveen Neppalli Naga and OpenAI co-founder and "
+    },
+    {
+      "video_id": "-9XQMHhpypc",
+      "title": "The Frontier Ideas a16z Wants to Fund Now | Marc Andreessen, Ben Horowitz & Chris Dixon",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-22T16:36:24+00:00",
+      "url": "https://www.youtube.com/watch?v=-9XQMHhpypc",
+      "thumbnail": "https://img.youtube.com/vi/-9XQMHhpypc/mqdefault.jpg",
+      "description": "a16z is expanding a16z crypto into a16z Frontier, a broader mandate to back founders building at the edges of what's possible. Chris Dixon joins Marc Andreessen, Ben Horowitz, and Erik Torenberg to explain why founders should increasingly a"
+    },
+    {
+      "video_id": "zv6B6PQOuHE",
+      "title": "The last real programmers are dying out...",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-10-22T15:09:31+00:00",
+      "url": "https://www.youtube.com/watch?v=zv6B6PQOuHE",
+      "thumbnail": "https://img.youtube.com/vi/zv6B6PQOuHE/mqdefault.jpg",
+      "description": "Get real-time search data from a single API. Fireship viewers get 1,000 free searches: https://serpapi.com/fireship\n\nYes the very foundations of the internet are currently crumbling to pieces, but before we look at that, let's distract ours"
+    },
+    {
+      "video_id": "h6j_ixGnpiY",
+      "title": "How Image Watermarking Works - Computerphile",
+      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
+      "channel_name": "Computerphile",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-10-22T13:00:06+00:00",
+      "url": "https://www.youtube.com/watch?v=h6j_ixGnpiY",
+      "thumbnail": "https://img.youtube.com/vi/h6j_ixGnpiY/mqdefault.jpg",
+      "description": "Image watermarks are a way to embed information into a picture, Dr Mike Pound takes us through Adobe's Trust Mark to explain the idea & covers some of the pros and cons. \n\n00:00 - Introduction: Watermarking Images vs Text\n00:28 - Steganogra"
+    },
+    {
+      "video_id": "UC9PdhD6Yxg",
+      "title": "Automate CSV to Parquet with Buckets, Webhooks & Jobs",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-22T12:56:47+00:00",
+      "url": "https://www.youtube.com/watch?v=UC9PdhD6Yxg",
+      "thumbnail": "https://img.youtube.com/vi/UC9PdhD6Yxg/mqdefault.jpg",
+      "description": "Files keep landing in your Hugging Face Storage Bucket. Here is how to process each one automatically, without downloading anything.\n\nIn this live-coding video we set up a webhook on a bucket that triggers a Hugging Face Job whenever a new "
+    },
     {
       "video_id": "tc92psltcEg",
       "title": "Sam Altman on What Personal AI Still Needs",
@@ -242,30 +338,6 @@
       "description": "Instagram started as Burbn, a location check-in app that Kevin Systrom and Mike Krieger moved on from.\n\nThis is Systrom on what they did differently the second time.\n\nSource: Foundation 16, Kevin Rose"
     },
     {
-      "video_id": "5eJnIYrr8rg",
-      "title": "Actual Robot Bodyguard",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-21T19:52:18+00:00",
-      "url": "https://www.youtube.com/shorts/5eJnIYrr8rg",
-      "thumbnail": "https://img.youtube.com/vi/5eJnIYrr8rg/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
-      "video_id": "f9VsJsAIV7E",
-      "title": "LIVE STREAM: Training Agents IRL Seminar",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-10-21T13:59:53+00:00",
-      "url": "https://www.youtube.com/watch?v=f9VsJsAIV7E",
-      "thumbnail": "https://img.youtube.com/vi/f9VsJsAIV7E/mqdefault.jpg",
-      "description": "​An open-source AI community event on reinforcement learning for agentic systems, hosted by GitHub and Hugging Face.\n\n​Join the open-source community at GitHub in San Francisco for an evening with researchers and builders exploring how AI a"
-    },
-    {
       "video_id": "KnDMnZYEo2M",
       "title": "I Turned Structured Output Into a Game 🎮",
       "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
@@ -315,7 +387,7 @@
     },
     {
       "video_id": "9n0MI4D7TCM",
-      "title": "Should You Trust ChatGPT With Your Health?",
+      "title": "OpenAI’s Head of Health AI on Whether You Should Trust ChatGPT",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
       "channel_name": "a16z",
       "category": "industry",
@@ -348,30 +420,6 @@
       "url": "https://www.youtube.com/watch?v=H4azmWcqO5g",
       "thumbnail": "https://img.youtube.com/vi/H4azmWcqO5g/mqdefault.jpg",
       "description": "Learn about speculative decoding techniques like EAGLE, DFlash, MTP with llama.cpp, transformers and speculators library in this livestream. \nSchedule:\n18.10: Introduction to Speculative Decoding (Merve Noyan, Hugging Face)\n18.30: Getting S"
-    },
-    {
-      "video_id": "DQHtmW9ZlIs",
-      "title": "Cooking with Codex: Ep. 1",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-19T22:55:26+00:00",
-      "url": "https://www.youtube.com/watch?v=DQHtmW9ZlIs",
-      "thumbnail": "https://img.youtube.com/vi/DQHtmW9ZlIs/mqdefault.jpg",
-      "description": "In this episode of Cooking with Codex, an OpenAI dot helps plan a ramen recipe and organize prep in ChatGPT Space, with GPT-Live guiding the cooking process.\n\nAlso covered: Codex cloud environments, which keep tasks running after a laptop i"
-    },
-    {
-      "video_id": "7lC2N9woZy4",
-      "title": "Thomson Reuters on Building Trust in Legal AI | OpenAI",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-19T15:13:45+00:00",
-      "url": "https://www.youtube.com/shorts/7lC2N9woZy4",
-      "thumbnail": "https://img.youtube.com/vi/7lC2N9woZy4/mqdefault.jpg",
-      "description": "Bringing legal expertise and frontier AI together starts with trust.\n\nFor Thomson Reuters’ Camillo Speroni, that means output lawyers can verify, cite and put their name on.\n\nCamillo discusses Thomson Reuters’ work with OpenAI to bring High"
     },
     {
       "video_id": "3-sSbJKb-fQ",
@@ -422,18 +470,6 @@
       "description": "Mark Zuckerberg, founder and CEO of Meta, on why staying stagnant is the riskiest choice.\n\nSource: How to Build the Future, Y Combinator, 2016."
     },
     {
-      "video_id": "ti3vVYwzW4A",
-      "title": "Pi Durable EXPLAINED: Build Always-On Agents with Local Models",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-10-19T03:34:17+00:00",
-      "url": "https://www.youtube.com/watch?v=ti3vVYwzW4A",
-      "thumbnail": "https://img.youtube.com/vi/ti3vVYwzW4A/mqdefault.jpg",
-      "description": "Pi Durable is a building block for always-on agent applications, not a new coding-agent CLI. Learn how checkpoints, conversations, and storage support recovery after interruptions, where Durable fits in the Pi ecosystem, and the six steps t"
-    },
-    {
       "video_id": "LKrwhjOI8Nc",
       "title": "There's never been a better time to go into math",
       "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
@@ -444,18 +480,6 @@
       "url": "https://www.youtube.com/watch?v=LKrwhjOI8Nc",
       "thumbnail": "https://img.youtube.com/vi/LKrwhjOI8Nc/mqdefault.jpg",
       "description": "Sharing a few thoughts on the future of math\nThese videos are funded directly by viewers: https://3b1b.co/support\nAn equally valuable form of support is to simply share the videos.\nHome page: https://www.3blue1brown.com\n\nIf you want a finge"
-    },
-    {
-      "video_id": "blkIGLlZePg",
-      "title": "Why AI Can Write Code But Can’t Keep It Running (Yet)",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-16T14:30:19+00:00",
-      "url": "https://www.youtube.com/watch?v=blkIGLlZePg",
-      "thumbnail": "https://img.youtube.com/vi/blkIGLlZePg/mqdefault.jpg",
-      "description": "AI can write production code in minutes. But can it debug and operate that code when something goes wrong? Grepr CEO Jad Naous argues that running real-world systems is a fundamentally harder challenge, with unpredictable workloads, failure"
     },
     {
       "video_id": "l3L_lETiSzc",
@@ -636,30 +660,6 @@
       "url": "https://www.youtube.com/watch?v=615B5nyMFPk",
       "thumbnail": "https://img.youtube.com/vi/615B5nyMFPk/mqdefault.jpg",
       "description": "A lot of people in AI treat evolution as a dumb fallback, basically random search for when you can't take a gradient. Akarsh Kumar thinks that is wrong. Selection hangs on to partial solutions, so mutations only need to be useful about 1% o"
-    },
-    {
-      "video_id": "W0jPTqIo5oE",
-      "title": "Race Conditions on a Human Scale - Computerphile",
-      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
-      "channel_name": "Computerphile",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-10-08T13:00:25+00:00",
-      "url": "https://www.youtube.com/watch?v=W0jPTqIo5oE",
-      "thumbnail": "https://img.youtube.com/vi/W0jPTqIo5oE/mqdefault.jpg",
-      "description": "When two threads or processes clash, a race condition can occur. Matt Godbolt demonstrates different kinds of race conditions by equating these to real-life human situations. \n\nFind out more about Matt from his blog: https://bit.ly/C_MGodbo"
-    },
-    {
-      "video_id": "pniLY0I9VJQ",
-      "title": "Life as it could be | Akarsh Kumar on Artificial Life",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-10-08T11:34:31+00:00",
-      "url": "https://www.youtube.com/shorts/pniLY0I9VJQ",
-      "thumbnail": "https://img.youtube.com/vi/pniLY0I9VJQ/mqdefault.jpg",
-      "description": "Akarsh Kumar on searching for artificial life with foundation models. Start from something as simple as Conway's Game of Life: \"From this super, super simple world, you run this, you get insane amounts of complexity.\"\n\nIn his words: \"Instea"
     }
   ],
   "stats": {
