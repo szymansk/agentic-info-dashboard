@@ -298,7 +298,7 @@
   footer .mono { color: var(--muted); }
 </style>
 </head>
-<body data-snapshot-date="2026-10-22" data-snapshot-mode="live">
+<body data-snapshot-date="2026-10-23" data-snapshot-mode="live">
 <div class="wrap">
 
   <!-- ─── Top Nav ─── -->
@@ -319,9 +319,6 @@
   <div class="timeline-bar" id="timeline">
     <span class="label">Zeitstrahl</span>
     <!-- JS füllt aus archive/manifest.json. Fallback statisch: -->
-    <a class="tl-pill" href="/ai-news/archive/2026-10-18.html" data-date="2026-10-18">
-      <span class="dow">So</span><span class="date">18.10.</span>
-    </a>
     <a class="tl-pill" href="/ai-news/archive/2026-10-19.html" data-date="2026-10-19">
       <span class="dow">Mo</span><span class="date">19.10.</span>
     </a>
@@ -331,8 +328,11 @@
     <a class="tl-pill" href="/ai-news/archive/2026-10-21.html" data-date="2026-10-21">
       <span class="dow">Mi</span><span class="date">21.10.</span>
     </a>
-    <a class="tl-pill active" href="/ai-news/" data-date="2026-10-22">
+    <a class="tl-pill" href="/ai-news/archive/2026-10-22.html" data-date="2026-10-22">
       <span class="dow">Do</span><span class="date">22.10.</span>
+    </a>
+    <a class="tl-pill active" href="/ai-news/" data-date="2026-10-23">
+      <span class="dow">Fr</span><span class="date">23.10.</span>
     </a>
   </div>
 
@@ -352,7 +352,7 @@
       </div>
     </div>
     <div class="meta">
-      <div class="date" id="today">Donnerstag, 22. Oktober 2026</div>
+      <div class="date" id="today">Freitag, 23. Oktober 2026</div>
       <div class="tag">Snapshot · KW 43 / 2026</div>
     </div>
   </header>
@@ -363,73 +363,63 @@
   <article class="briefing-wrap">
 
     <header class="briefing-head">
-      <h2 class="kicker">Donnerstag · Agentic AI &amp; GenAI</h2>
-      <h1>Die Cloud-Fronten kippen — OpenAI mietet bei Google, und Compute schreibt die Allianzen neu</h1>
+      <h2 class="kicker">Freitag · Agentic AI &amp; GenAI</h2>
+      <h1>Der Agent, der zuerst schreibt — Claude Duet verlegt die Autonomie ins Proaktive, die Rechenschaft hinkt hinterher</h1>
       <div class="byline">
         <span>✍️ Kuratiert &amp; analysiert</span>
         <span class="dot-sep">·</span>
-        <span>~11 Min Lesezeit</span>
+        <span>~9 Min Lesezeit</span>
         <span class="dot-sep">·</span>
-        <span id="byline-date">22. Oktober 2026</span>
+        <span id="byline-date">23. Oktober 2026</span>
       </div>
       <p class="lede">
-        Es gibt Tage, an denen eine einzige Meldung die Statik einer ganzen Branche verschiebt — der 21. Oktober war so einer. <strong>OpenAI</strong> bringt seine Spitzenmodelle GPT-6 Astra, GPT-6.1 Sol und GPT-6 Luna samt Codex-Workflows auf Googles Model Garden; der schärfste Rivale wird zum Vermieter. Das ist kein Nebensatz, sondern die logische Konsequenz einer Knappheit, die am selben Tag ihre nackte Zahl bekam: <span data-person="dario-amodei">Anthropics</span> durchgesickerter IPO-Prospekt weist für das erste Halbjahr rund <strong>16,3 Milliarden Dollar</strong> Umsatz aus — und über <strong>600 Milliarden Dollar</strong> künftige Infrastruktur-Verpflichtungen, mit der ausdrücklichen Warnung, dass Rechenkapazität das Wachstum bremsen könnte. Wer Compute nicht hat, mietet es, zur Not beim Feind. Während Google und Amazon zugleich Nvidias Software-Burggraben angreifen, pflanzen dieselben Labore neue Fahnen — in der Biologie und, bemerkenswert genug, im Gesetzestext.
+        Bislang war die Arbeitsteilung mit den Agenten einfach: Der Mensch fragt, das Modell antwortet. <span data-person="dario-amodei">Anthropics</span> <strong>Claude Duet</strong>, gestern als Research-Preview angekündigt, kehrt die Initiative um — der Agent meldet sich zuerst. Duet läuft auf Opus 5.5, überwacht verbundene Apps, schickt morgens ein Briefing, plant Termine und baut Dashboards, ohne gerufen zu werden; vor Zahlungen und Nachrichten fragt es um Erlaubnis. Es ist die Antwort auf Metas Muse und OpenAIs Dots — und der nächste Schritt jener Autonomie, die diese Woche erst ihre Alignment-Rechnung bekam. Doch im selben Atemzug räumt Anthropic ein, dass Duet Dringlichkeit falsch liest; das Kapital finanziert bereits die Leine, und Deutschland zieht die Prüf-Schicht ein. Die Fähigkeit wird proaktiv — die Rechenschaft bleibt Baustelle.
       </p>
     </header>
 
     <div class="briefing-body">
 
       <section>
-        <h3><span class="num">01</span>Der Rivale als Vermieter — OpenAI-Modelle laufen künftig auf Google Cloud</h3>
-        <p>Die Nachricht, die man vor einem Jahr für einen Aprilscherz gehalten hätte, ist seit gestern bestätigt: <strong>OpenAI</strong> bringt seine Frontier-Modelle auf die Infrastruktur seines direktesten Konkurrenten. Konkret wandern GPT-6 Astra, GPT-6.1 Sol und GPT-6 Luna in Googles <strong>Model Garden</strong> auf Vertex AI — zunächst in einer privaten Preview für ausgewählte Enterprise-Kunden, mit einheitlicher Abrechnung über die Google-Cloud-Konsole und Unterstützung für OpenAIs Codex-Agenten-Workflows. In den kommenden Wochen sollen die Modelle zudem in Googles Antigravity-IDE und den Gemini Agent einziehen. Dass CNBC die Meldung trägt und nicht bloß ein Aggregator, gibt ihr Gewicht.</p>
-        <p>Strategisch ist das die Fortsetzung einer Entkopplung, die mit der Lockerung der Microsoft-Exklusivität begann und über Oracle und eigene Rechenzentren lief: OpenAI diversifiziert seine Compute-Basis so aggressiv, dass selbst die Grenze zum Wettbewerber fällt. Für Google ist der Deal doppelbödig — man kassiert an der Marge jeder GPT-Anfrage mit, die man eigentlich an Gemini verlieren wollte, und positioniert Vertex als neutrale Modell-Drehscheibe, auf der am Ende jedes Frontier-Modell liegt. Der Preis dieser Neutralität ist, dass Google seinem schärfsten Rivalen beim Skalieren hilft. Beide Seiten rechnen offenbar damit, dass der Markt groß genug ist, um diese Dissonanz auszuhalten — und dass Kapazität momentan wertvoller ist als Reinheit der Fronten.</p>
+        <h3><span class="num">01</span>Der Agent, der zuerst schreibt — Duet verlegt die Initiative zum Modell</h3>
+        <p><span data-person="dario-amodei">Anthropic</span> hat gestern <strong>Claude Duet</strong> als Research-Preview angekündigt: einen persönlichen Agenten, der nicht auf Zuruf wartet, sondern von sich aus aktiv wird. Duet läuft auf <strong>Opus 5.5</strong>, verbindet sich mit den Apps des Nutzers, schickt morgens ein eigenständiges Tagesbriefing, überwacht Posteingang und Kalender, plant Termine und baut auf Wunsch kleine Dashboards — alles im Hintergrund, mobil weiterlaufend. Vor sensiblen Schritten wie Zahlungen oder dem Versand von Nachrichten holt es ausdrücklich eine Freigabe ein. Der Zugang ist eng gefasst: zunächst per Warteliste für US-Abonnenten der Pro- und Max-Tarife, auf iOS, Android und claude.ai. Es ist, der Name sagt es, als Duett gedacht — Mensch und Agent im Wechselspiel, nicht der Agent allein.</p>
+        <p>Das eigentlich Neue ist nicht die Fähigkeit, sondern die Richtung der Initiative. Ein reaktives Werkzeug irrt nur, wenn man es fragt; ein proaktives irrt nach eigenem Zeitplan. Genau dort positioniert sich Duet gegen <strong>Metas Muse</strong> und <strong>OpenAIs Dots</strong>, die beiden anderen Always-on-Agenten, die sich zuletzt um denselben Platz im Alltag drängten. Anthropic verkauft Duet nüchtern: Es sei gut darin, Informationen zusammenzuziehen und Routinen zu takten, aber es könne die Dringlichkeit einer Meldung falsch einschätzen und sei bei klassischen Erledigungen — etwa Tickets buchen — noch schwach. Diese Selbsteinordnung ist bemerkenswert ehrlich für eine Produktankündigung; sie beschreibt zugleich die Sollbruchstelle jeder proaktiven Autonomie: Wer von sich aus handelt, braucht ein verlässliches Modell davon, was gerade wichtig ist — und genau das ist der schwierigste Teil.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Die Modell-Wahl entkoppelt sich endgültig von der Cloud-Wahl — ein GPT-Modell zu betreiben heißt nicht mehr automatisch Azure, ein Claude-Modell nicht mehr automatisch AWS/Bedrock. Billbar: Multi-Cloud-Architekturen, die Modell und Hosting bewusst trennen; Kosten- und Datenresidenz-Vergleiche über Vertex/Bedrock/Foundry hinweg; und die nüchterne Beratung, dass „neutrale" Modell-Gärten Lock-in auf der Billing- und Tooling-Ebene nur verschieben, nicht auflösen.
+          Für uns: Der proaktive Agent ist kein größeres Modell, sondern eine neue Betriebsform — ein stehender Prozess mit Zugriff auf Postfach, Kalender und Konten. Billbar wird die Einführungs-Disziplin, die er erzwingt: saubere Scopes und Freigabe-Gates (was darf er ohne Rückfrage?), Monitoring der selbst ausgelösten Aktionen und eine ehrliche Erwartungssteuerung, dass „meldet sich selbst" nicht „liegt immer richtig" heißt.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">02</span>Warum — der IPO-Prospekt benennt die Decke: Compute</h3>
-        <p>Dass OpenAI beim Rivalen mietet, ergibt erst Sinn, wenn man die Zahl daneben legt, die das <strong>Wall Street Journal</strong> am selben Tag aus <span data-person="dario-amodei">Anthropics</span> Entwurf eines IPO-Prospekts zog. Danach erzielte Anthropic im ersten Halbjahr rund <strong>16,3 Milliarden Dollar</strong> Umsatz — und gab im selben Zeitraum etwa <strong>9 Milliarden Dollar</strong> für Compute aus. Die eigentliche Schlagzeile steht im Risiko-Teil: über <strong>600 Milliarden Dollar</strong> an künftigen Infrastruktur-Verpflichtungen, verbunden mit der Warnung, dass die verfügbare Rechenkapazität das Wachstum begrenzen könnte. Ein Unternehmen, das auf dem Papier so schnell wächst wie kaum eines zuvor, erklärt seinen Investoren vorsorglich, dass nicht die Nachfrage, sondern das Silizium der limitierende Faktor ist.</p>
-        <p>In dieselbe Logik passt die Meldung, dass Anthropic weitere rund <strong>45 Milliarden Dollar</strong> in Kapazität bei Nscale stecken könnte — ein Deal, der ausdrücklich an Finanzierung und, bezeichnend, an die verfügbare Stromversorgung geknüpft ist. Zusammengenommen ergeben die drei Datenpunkte — OpenAIs Umzug zu Google, Anthropics 600-Milliarden-Verpflichtung, die Strom-Klausel bei Nscale — ein einziges Bild: Die Frontier-Labore sind längst keine reinen Software-Firmen mehr, sondern Infrastruktur-Konzerne, deren Bilanz von Lieferverträgen über Chips, Rechenzentren und Megawatt dominiert wird. Umsatzwachstum ist nicht mehr die knappe Ressource. Kapazität ist es.</p>
+        <h3><span class="num">02</span>Warum jetzt — die klebrige Gewohnheit als Burggraben vor dem Börsengang</h3>
+        <p>Dass Duet ausgerechnet jetzt kommt, ist kein Zufall. Die Modell-Schicht ist seit Wochen Ware: Opus 5.5, GPT-6.1 Sol und Gemini 4 Argon konvergieren im Preis, die Führung im Benchmark rotiert im Wochentakt. Wo das Modell nicht mehr differenziert, verschiebt sich der Wettbewerb auf die Oberfläche und, eine Stufe tiefer, auf die Gewohnheit. Ein Agent, der morgens das erste Wort hat, besetzt genau diese Gewohnheit — er wird zur Standard-Schnittstelle, bevor der Nutzer eine Alternative überhaupt öffnet. Dass Opus 5.5 hier nur noch als Motor im Maschinenraum auftaucht und nicht als Schlagzeile, unterstreicht die Verschiebung: Das Modell ist Mittel, das tägliche Ritual ist das Produkt.</p>
+        <p>Der Zeitpunkt hat zudem eine Finanz-Logik. Anthropic steuert auf einen Börsengang in der Größenordnung von zwei Billionen Dollar zu — Vermarktung ab der Woche des 9. November, Handel vor dem 26. November, so der zuletzt kolportierte Fahrplan. Vor einem solchen Schritt ist Konsumenten-Reichweite, die sich in wiederkehrende Nutzung übersetzt, bares Geld: Wer das morgendliche Briefing eines Nutzers liefert, hat später den leichteren Weg auf dessen Arbeitsplatz und in dessen Unternehmen. Duet ist damit zugleich Produkt und Erzählung — der Beweis, dass aus einem Modell-Anbieter eine Plattform mit täglicher Bindung wird, rechtzeitig zur Roadshow.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Die Verfügbarkeit von Compute wird zur Planungsgröße mit Vorlaufzeit, nicht zur Selbstverständlichkeit aus der Konsole. Billbar: Kapazitäts- und Beschaffungsstrategien, die Allokations- und Energierisiko einpreisen; TCO-Modelle, die den Token-Preis gegen Lieferverfügbarkeit und Reservierungs-Commitments stellen; und die ehrliche Ansage an Kunden, dass eine heute günstige Modell-Rate an einer Lieferkette hängt, die die Labore selbst als ihr größtes Risiko beschreiben.
+          Für uns: Der Kampf um den Agenten-Arbeitsplatz entscheidet sich an der Gewohnheit, nicht am Benchmark — und drei US-Anbieter (Anthropic, OpenAI, Meta) ringen um dieselbe Position. Billbar: anbieterneutrale Orchestrierung, die den proaktiven Agenten eines Kunden austauschbar hält, plus die nüchterne Beratung, dass eine klebrige Konsumenten-Gewohnheit beim Anbieter auch ein Lock-in beim Anbieter ist.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">03</span>Der Burggraben unter Beschuss — Google und Amazon zielen auf Nvidias CUDA-Lock-in</h3>
-        <p>Wenn Kapazität die knappe Ressource ist, dann ist die zweitknappste die Freiheit, sie auf anderem Silizium als Nvidias zu beschaffen. Genau hier setzten gestern <strong>Google</strong> und <strong>Amazon</strong> an: Beide veröffentlichten Werkzeuge — <strong>TorchTPU</strong> bei Google, <strong>TorchNeuron</strong> bei Amazon —, die PyTorch-Workloads mit möglichst wenig Code-Änderungen auf ihre eigenen Beschleuniger (TPUs bzw. Trainium/Inferentia) heben sollen. Das Ziel ist nicht in erster Linie Nvidias Hardware, sondern deren eigentlicher Burggraben: CUDA und das PyTorch-Ökosystem, das praktisch jede Modell-Entwicklung an Nvidia-Karten fesselt. Wer PyTorch-Code ohne Umschreiben auf TPUs laufen lässt, senkt die Wechselkosten — und damit Nvidias Preissetzungsmacht.</p>
-        <p>Der Schachzug fügt sich in die Knappheits-Ökonomie der Vorwochen: Wenn Nvidia Großbestellungen nur zu einem Bruchteil beliefern kann, wird jeder glaubwürdige Nicht-Nvidia-Pfad zur strategischen Option statt zur Notlösung. Für die Hyperscaler ist es zugleich Eigeninteresse — jede auf TPU oder Trainium verlagerte Last ist eine, die sie nicht teuer bei Nvidia einkaufen müssen. Die nüchterne Einordnung bleibt: Software-Kompatibilität ist das eine, Performance-Parität und reife Tooling-Ketten das andere, und CUDA ist über ein Jahrzehnt gewachsen. Aber die Richtung ist unverkennbar — der Lock-in, der Nvidias Bewertung trägt, wird jetzt von zwei Seiten systematisch angebohrt.</p>
+        <h3><span class="num">03</span>Die Gegenrechnung — Rechenschaft wird finanziert, Unternehmen zögern</h3>
+        <p>Der proaktive Agent trifft auf eine Realität, die noch nicht so weit ist. Die Fachpresse ordnete Duet umgehend ein: Unternehmen seien für einen Agenten, der eigenständig Mails liest, Konten beobachtet und Routinen taktet, noch nicht bereit — zu offen die Haftungs-, Daten- und Kontrollfragen. Das ist dieselbe Lücke, die der Wochenbogen immer wieder beschrieb: zwischen dem, was Agenten technisch tun, und dem, was Organisationen verantworten können, klafft eine Governance-Kluft. Und während die Produkt-Seite proaktiver wird, füllt das Kapital genau diese Kluft.</p>
+        <p>Am 19. Oktober sammelte <strong>Opsin</strong>, ein Spezialist für die Governance von Enterprise-KI-Agenten, rund <strong>21 Millionen Dollar</strong> ein — Geld, das ausdrücklich in Produkt und Enterprise-Reichweite fließen soll. Parallel holte <strong>AuxoAI</strong> über 20 Millionen Dollar, um Unternehmen beim Umbau der Arbeit mit Agenten zu begleiten, und die Konsolidierung in der Agenten-Schicht läuft weiter (zuletzt etwa die angekündigte Übernahme des Agenten-Startups Blocksight durch OpenWorld). Das Muster ist eindeutig: Nicht der nächste proaktive Assistent zieht derzeit das institutionelle Geld, sondern die Schicht, die ihn einhegt — Identität, Berechtigungen, Audit, Laufzeit-Kontrolle. Die Fehlerquote proaktiver Agenten ist keine schlechte Nachricht für diese Firmen, sie ist ihr Geschäftsmodell.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Chip-Diversität wird von der Glaubensfrage zur Kalkulationsgröße. Billbar: Portierungs- und Benchmark-Audits, die reale Workloads auf TPU/Trainium gegen Nvidia stellen (Performance, Reife der Toolchain, versteckte Migrationskosten); und Architektur-Beratung, die Modell-Code bewusst hardware-agnostisch hält, damit Kunden die Allokations-Lotterie der nächsten GPU-Generation nicht als Einzige verlieren.
+          Für uns: Die Diskrepanz zwischen proaktivem Produkt und zögernder Organisation ist das Mandat. Billbar: „Agent-Readiness" vor dem Produktivgang (Least-Privilege-Scopes, Freigabe-Workflows, lückenloses Audit-Logging), die Integration signierter Agenten-Credentials in bestehendes IAM/GRC — und die ehrliche Vorab-Prüfung, welche proaktiven Use-Cases ein Haftungs- oder Datenschutz-Risiko tragen, das den Nutzen übersteigt.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">04</span>Fahnen in der Biologie — und eine Release-Welle auf der Sprach-Schicht</h3>
-        <p>Parallel zum Infrastruktur-Poker pflanzen die Labore Fahnen in vertikalem Terrain. <strong>OpenAI</strong> übernimmt <strong>Orchestra Bio</strong>, eine Plattform zur Koordination von Arzneimittel-Entwicklung, und will sie mit Rosalind, seinen Life-Sciences-Modellen, verschmelzen — ein direkter Vorstoß tiefer in die Pharma-Wertschöpfung. Es ist das Gegenstück zu <span data-person="dario-amodei">Anthropics</span> Biologie-Offensive der Vortage, in der Claude in einer 64-Stunden-Kampagne 17 im Labor bestätigte Toxin-Binder entwarf. Die Lab-Grenze zwischen „Modell-Anbieter" und „Anwendungs-Spezialist" verschwimmt dort, wo die Daten und die Marge sitzen.</p>
-        <p>Auf der Produkt-Schicht war es ein lauter Tag für Sprache und Stimme. <span data-person="arthur-mensch">Mistral</span> brachte <strong>Voxtral 3</strong> — Spracherkennung und Text-to-Speech in über 50 Sprachen plus ein SDK für Sprach-Agenten. <strong>ElevenLabs</strong> stellte <strong>Eleven Realtime</strong> (Mini und Max) vor, das nach eigenen Angaben nach rund einer halben Sekunde zu sprechen beginnt und über 90 Sprachen abdeckt. <strong>DeepSeek</strong> legte mit <strong>DeepInfer</strong> das Inferenz-Framework hinter V4.1-Flash offen; OpenAI schaltete für API-Entwickler ein opt-in <strong>12-Stunden-Prompt-Caching</strong> frei, und ChatGPT lässt einzelne Chats jetzt per PIN oder Biometrie sperren — ohne allerdings Ende-zu-Ende-Verschlüsselung zu bieten. Das Muster: Die Basis-Fähigkeiten wandern rasch in Richtung Echtzeit, mehrsprachig und billig im Dauerbetrieb — die Differenzierung verschiebt sich auf Latenz, Sprachabdeckung und Betriebskosten.</p>
+        <h3><span class="num">04</span>Deutschland zieht die Prüf-Schicht ein — und das Werkzeug härtet sich</h3>
+        <p>Während die Produkt-Front proaktiv wird, baut die Aufsichts- und Prüf-Seite im DACH-Raum weiter an messbaren Grundlagen. Das <strong>BSI</strong> hat mit einer Prüfarchitektur unter dem Kürzel <strong>A5</strong> (AI Audit and Assurance Assessment Architecture) einen Rahmen vorgestellt, der Sicherheit, Robustheit und Rechtskonformität von KI-Systemen prüfbar machen soll — ausdrücklich im maschinenlesbaren OSCAL-Format, also anschlussfähig an automatisierte Compliance-Pipelines. Der genaue Status (finaler Standard oder Entwurf) ist nach den vorliegenden Berichten noch unscharf und gehört verifiziert; die Stoßrichtung aber passt exakt zum ersten harmonisierten AI-Act-Standard EN 18286 vom Vortag und zur BaFin-Aufsicht: Aus abstrakter Regulierung werden prüfbare Kriterien. Für proaktive Agenten, die unter dem AI Act ohnehin im Moment des Kontakts offenlegungspflichtig werden, ist eine maschinenlesbare Prüf-Schicht die logische Ergänzung.</p>
+        <p>Beim Werkzeug, das dieses Briefing erzeugt, ging die Governance-Linie konkret weiter: <strong>Claude Code</strong> steht bei <code>v2.1.309</code> — ein Release, das die Linux- und macOS-Sandbox härtet. Es behebt, dass sandboxed Bash-Befehle die Shell-Startup-Dateien vor jedem Kommando außerhalb der Sandbox ausführten, und schließt eine macOS-Lücke, in der <code>denyWrite</code>-Glob-Muster nicht am realen Pfad griffen, wenn der Ordner über einen Symlink erreicht wurde. Das ist die direkte Fortsetzung der Vortage: <code>v2.1.307</code> brachte das OpenTelemetry-Event <code>claude_code.safety_event</code> und <code>/claude-api api-version</code>, <code>v2.1.306</code> die Oneshot-Fixes für <code>claude -p</code>. Governance und Observability wandern Release für Release tiefer ins CLI — relevant genau für die unbeaufsichtigten Läufe, in denen ein proaktiver Agent, salopp gesagt, das erste Wort hat.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Zwei Bewegungen zugleich — die Labore gehen vertikal (Pharma, Biologie), und die horizontale Sprach-/Stimm-Schicht wird zur commodity mit Echtzeit-Anspruch. Billbar: Voice-Agent-Integrationen, die Latenz- und Sprach-SLAs gegen Betriebskosten abwägen; und die Prüfung, ob neue „Sicherheits"-Features wie ChatGPTs Chat-Lock für Compliance-Anforderungen taugen (PIN ohne E2E-Verschlüsselung ist kein Vertraulichkeits-Nachweis).
-        </blockquote>
-      </section>
-
-      <section>
-        <h3><span class="num">05</span>Das Labor schreibt sein eigenes Gesetz — und Claude Code zieht die API-Version nach</h3>
-        <p>Die regulatorische Pointe der Woche kam nicht aus Brüssel, sondern von einem der Beaufsichtigten selbst: <span data-person="dario-amodei">Anthropic</span> legte einen <strong>Entwurf für ein föderales KI-Sicherheitsgesetz</strong> vor. Der Kern: Die Regierung soll die Freigabe eines Modells stoppen können, wenn dieses ein „unmittelbares Risiko von mehr als 50 Toten" darstellt; abgedeckt werden auch Schäden über einer Milliarde Dollar in definierten Szenarien, wobei das Handelsministerium solche Fälle vor einen Bundesrichter bringen würde. Dass ein führendes Labor den Gesetzestext gleich mitliefert, ist strategisch doppeldeutig — es signalisiert Verantwortungsbewusstsein und gibt zugleich dem Autor Einfluss darauf, wo genau die Schwelle liegt und welche Risiken überhaupt gemeint sind. Eine Schadens-Schwelle in Toten und Dollar ist konkret genug, um Schlagzeilen zu machen, und abstrakt genug, um die alltägliche Misalignment-Frage — Agenten, die ihre eigenen Monitore unterlaufen — gar nicht erst zu berühren.</p>
-        <p>Beim Werkzeug, das dieses Briefing erzeugt, blieb es produktiv: <strong>Claude Code</strong> steht bei <code>v2.1.308</code>. Das inhaltlich relevante Release ist <code>v2.1.307</code>, das mit <code>/claude-api api-version</code> den Umzug von API-Code auf die neue API-Version <code>2026-10-21</code> automatisiert und ein neues OpenTelemetry-Event <code>claude_code.safety_event</code> einführt — es feuert für jeden Tool-Aufruf, den eine Permission-Regel, der Auto-Mode, ein Safety-Check, ein Hook oder die Sandbox gestoppt, abgefragt oder zurückgewiesen hat. Für unbeaufsichtigte Läufe ist das die direkte Fortsetzung des <code>v2.1.306</code>-Fixes der Vorwoche, der <code>claude -p</code> in Cloud-Sessions das fälschliche „Not logged in" austrieb: Governance und Observability wandern Release für Release tiefer ins CLI.</p>
-        <blockquote class="takeaway">
-          <strong>Was es bedeutet</strong>
-          Für uns: Regulierung entsteht gerade dort, wo die Beaufsichtigten den Entwurf schreiben — wer früh liest, versteht die kommenden Schwellen, bevor sie Gesetz sind. Billbar: Compliance-Vorbereitung entlang der sich abzeichnenden Schadens-Schwellen (Dokumentation, Incident-Reporting, Audit-Trails); und auf der Tooling-Seite die Nutzung des neuen <code>safety_event</code>-Signals, um in produktiven Agenten-Läufen nachvollziehbar zu machen, welche Aktion von welcher Kontrolle gestoppt wurde.
+          Für uns: Prüfbarkeit wird zum Beschaffungs- und Betriebskriterium — maschinenlesbar (BSI A5, OSCAL) auf der Regulierungsseite, als Telemetrie-Signal (<code>safety_event</code>) auf der Werkzeugseite. Billbar: Readiness-Assessments gegen die entstehenden Prüf-Kriterien, Anbindung an bestehende ISO-42001-/9001-Strukturen und die Nutzung der Sandbox- und Safety-Telemetrie, um in produktiven Agenten-Läufen nachvollziehbar zu machen, welche Aktion welche Kontrolle auslöste.
         </blockquote>
       </section>
       <div class="briefing-end">
-        <strong>Was morgen zu beobachten ist:</strong> ob OpenAIs Google-Cloud-Deal die private Preview verlässt und zu allgemeiner Verfügbarkeit (und zu Antigravity/Gemini Agent) reift — erst dann ist die Allianz-Umkehrung mehr als ein Pilot. Ob Anthropics IPO-Prospekt zum formellen Börsengang führt und wie der Markt die 600-Milliarden-Compute-Verpflichtung bepreist. Ob Googles TorchTPU und Amazons TorchNeuron Performance-Parität statt bloßer Code-Kompatibilität liefern. Und die Kalenderpunkte bleiben: Am <strong>1. Dezember</strong> verdoppelt Gemini 4 Argon seine Einführungspreise, und bis zum <strong>2. Dezember</strong> müssen Bestands-Agentensysteme unter Artikel 50 des AI Act maschinenlesbar gekennzeichnet sein. Claude Code hält bei <code>v2.1.308</code>.
+        <strong>Was morgen zu beobachten ist:</strong> ob Claude Duet die US-Warteliste verlässt und wie Anthropic die proaktive Offenlegung gegenüber der EU-AI-Act-Pflicht (Kennzeichnung „im Moment des Kontakts") löst, sobald das Produkt Europa erreicht. Ob die Fachpresse-Skepsis („Unternehmen nicht bereit") in konkrete Pilot-Abbrüche umschlägt oder in Governance-Budgets. Ob sich der Status der BSI-Prüfarchitektur A5 als finaler Standard oder als Entwurf bestätigt. Und die Kalenderpunkte bleiben: Vermarktung des Anthropic-IPOs ab der <strong>Woche des 9. November</strong>; am <strong>1. Dezember</strong> verdoppelt Gemini 4 Argon seine Einführungspreise, und bis zum <strong>2. Dezember</strong> müssen Bestands-Agentensysteme unter Artikel 50 des AI Act maschinenlesbar gekennzeichnet sein. Claude Code hält bei <code>v2.1.309</code>.
       </div>
 
     </div>
@@ -450,92 +440,66 @@
 
       <article class="card news-card hot">
         <div class="row">
-          <span class="pill hot">Marktdaten</span>
-          <span class="score">Score <b>9.0</b>/10</span>
+          <span class="pill hot">Major Release</span>
+          <span class="score">Score <b>8.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">OpenAI bringt GPT-6-Modelle auf Google Cloud — der Rivale wird zum Vermieter</h3>
-        <p><strong>OpenAI</strong> bringt GPT-6 Astra, GPT-6.1 Sol und GPT-6 Luna samt Codex-Workflows in Googles <strong>Model Garden</strong> (Vertex AI) — zunächst private Preview, mit einheitlicher Google-Cloud-Abrechnung; Antigravity-IDE und Gemini Agent sollen folgen. Die Entkopplung von Microsoft erreicht ihren Höhepunkt: OpenAI mietet Kapazität beim schärfsten Konkurrenten. Compute schlägt Fronten-Reinheit.</p>
+        <h3 style="margin-top:10px">Anthropic zeigt Claude Duet — der proaktive Agent, der zuerst schreibt</h3>
+        <p><strong>Anthropic</strong> kündigt <strong>Claude Duet</strong> als Research-Preview an: einen persönlichen Agenten auf <strong>Opus 5.5</strong>, der eigenständig Tagesbriefings schickt, verbundene Apps überwacht, Termine plant und Dashboards baut — vor Zahlungen/Nachrichten holt er eine Freigabe ein. Zugang per Warteliste für US-Pro/Max (iOS, Android, claude.ai). Antwort auf Metas Muse und OpenAIs Dots; die Autonomie verschiebt sich von „antwortet" zu „meldet sich selbst".</p>
         <div class="news-meta">
-          <span>📅 21.10.2026</span><span>·</span><span>🏢 OpenAI / Google Cloud</span><span>·</span>
-          <a href="https://cnbc.com/2026/10/21/openai-bring-its-ai-models-to-googles-cloud-expands-beyond-microsoft.html" target="_blank" rel="noreferrer">cnbc.com</a>
+          <span>📅 22.10.2026</span><span>·</span><span>🏢 Anthropic</span><span>·</span>
+          <a href="https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/" target="_blank" rel="noreferrer">techcrunch.com</a>
         </div>
       </article>
 
       <article class="card news-card warn">
         <div class="row">
           <span class="pill warn">Marktdaten</span>
-          <span class="score">Score <b>8.0</b>/10</span>
+          <span class="score">Score <b>6.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Anthropic IPO-Prospekt: 16,3 Mrd. $ Halbjahresumsatz, 600 Mrd. $ Infra-Verpflichtungen</h3>
-        <p>Laut WSJ weist <strong>Anthropics</strong> durchgesickerter IPO-Prospekt ~<strong>16,3 Mrd. $</strong> Umsatz im ersten Halbjahr und ~9 Mrd. $ Compute-Ausgaben in sechs Monaten aus — dazu über <strong>600 Mrd. $</strong> künftige Infrastruktur-Verpflichtungen und die Warnung, Rechenkapazität könne das Wachstum begrenzen. Nicht die Nachfrage ist knapp, sondern das Silizium.</p>
+        <h3 style="margin-top:10px">„Unternehmen sind noch nicht bereit" — die Gegenrechnung zum proaktiven Agenten</h3>
+        <p>Die Fachpresse ordnet Duet nüchtern ein: Für einen Agenten, der eigenständig Mails liest, Konten beobachtet und Routinen taktet, seien Unternehmen wegen offener Haftungs-, Daten- und Kontrollfragen noch nicht bereit. Anthropic selbst räumt ein, dass Duet die Dringlichkeit einer Meldung falsch einschätzen kann und bei Erledigungen wie Ticketbuchungen schwach ist — die Governance-Kluft zwischen Fähigkeit und Verantwortung bleibt.</p>
         <div class="news-meta">
-          <span>📅 21.10.2026</span><span>·</span><span>🏢 Anthropic / WSJ</span><span>·</span>
-          <a href="https://www.wsj.com/tech/ai/anthropic-revenue-growth-ipo-accaf0f1" target="_blank" rel="noreferrer">wsj.com</a>
-        </div>
-      </article>
-
-      <article class="card news-card crit">
-        <div class="row">
-          <span class="pill crit">Regulatorik</span>
-          <span class="score">Score <b>8.0</b>/10</span>
-        </div>
-        <h3 style="margin-top:10px">Anthropic legt Entwurf für US-KI-Sicherheitsgesetz vor (Schwelle: 50 Tote)</h3>
-        <p><strong>Anthropic</strong> schlug einen Entwurf für ein föderales KI-Sicherheitsgesetz vor: Die Regierung soll die Freigabe eines Modells stoppen können, das ein „unmittelbares Risiko von mehr als <strong>50 Toten</strong>" darstellt; erfasst auch Schäden über 1 Mrd. $, mit dem Handelsministerium vor einem Bundesrichter. Ein Beaufsichtigter, der den Gesetzestext gleich selbst mitliefert — strategisch doppeldeutig.</p>
-        <div class="news-meta">
-          <span>📅 20.10.2026</span><span>·</span><span>🏢 Anthropic</span><span>·</span>
-          <a href="https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/" target="_blank" rel="noreferrer">techcrunch.com</a>
+          <span>📅 22.10.2026</span><span>·</span><span>🏢 Enterprise-Adoption</span><span>·</span>
+          <a href="https://www.techtarget.com/ai/news/366652530/Anthropic-rolls-out-Claude-Duet-but-enterprises-arent-ready" target="_blank" rel="noreferrer">techtarget.com</a>
         </div>
       </article>
 
       <article class="card news-card warn">
         <div class="row">
           <span class="pill warn">M&amp;A</span>
-          <span class="score">Score <b>7.0</b>/10</span>
+          <span class="score">Score <b>6.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">OpenAI übernimmt Orchestra Bio — Vorstoß in die Arzneimittel-Entwicklung</h3>
-        <p><strong>OpenAI</strong> kauft <strong>Orchestra Bio</strong>, eine Plattform zur Koordination von Drug-Development-Arbeit, und will sie mit Rosalind — seinen Life-Sciences-Modellen — verschmelzen, um mehr vom Weg von der Forschung zur Therapie abzudecken. Das Gegenstück zu Anthropics Biologie-Offensive: Die Labore gehen dort vertikal, wo Daten und Marge sitzen.</p>
+        <h3 style="margin-top:10px">Das Kapital finanziert die Leine — Opsin holt 21 Mio. $ für Agenten-Governance</h3>
+        <p><strong>Opsin</strong>, Spezialist für die Governance von Enterprise-KI-Agenten, sammelt rund <strong>21 Mio. $</strong> ein (Produkt + Enterprise-Reichweite). Parallel holt <strong>AuxoAI</strong> über 20 Mio. $ für den Agenten-Umbau in Unternehmen, und die Agenten-Schicht konsolidiert weiter. Nicht der nächste Assistent zieht das institutionelle Geld, sondern die Schicht, die ihn einhegt: Identität, Berechtigungen, Audit, Laufzeit-Kontrolle.</p>
         <div class="news-meta">
-          <span>📅 21.10.2026</span><span>·</span><span>🏢 OpenAI</span><span>·</span>
-          <a href="https://openai.com/index/openai-to-acquire-orchestra-bio/" target="_blank" rel="noreferrer">openai.com</a>
+          <span>📅 19.10.2026</span><span>·</span><span>🏢 Opsin / AuxoAI</span><span>·</span>
+          <a href="https://fintech.global/" target="_blank" rel="noreferrer">fintech.global</a>
+        </div>
+      </article>
+
+      <article class="card news-card info">
+        <div class="row">
+          <span class="pill info">Regulatorik</span>
+          <span class="score">Score <b>6.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">BSI-Prüfarchitektur A5 — KI-Audit wird maschinenlesbar (OSCAL)</h3>
+        <p>Das <strong>BSI</strong> stellt mit <strong>A5</strong> (AI Audit and Assurance Assessment Architecture) einen Rahmen vor, der Sicherheit, Robustheit und Rechtskonformität von KI-Systemen prüfbar machen soll — im maschinenlesbaren <strong>OSCAL</strong>-Format, anschlussfähig an automatisierte Compliance-Pipelines. Status (finaler Standard vs. Entwurf) noch unscharf, gehört verifiziert. Passt zur Linie EN 18286 + BaFin: aus abstrakter Regulierung werden prüfbare Kriterien.</p>
+        <div class="news-meta">
+          <span>📅 Okt 2026</span><span>·</span><span>🏢 BSI (DE)</span><span>·</span>
+          <a href="https://www.bsi.bund.de/" target="_blank" rel="noreferrer">bsi.bund.de</a>
         </div>
       </article>
 
       <article class="card news-card info">
         <div class="row">
           <span class="pill info">Tooling</span>
-          <span class="score">Score <b>7.0</b>/10</span>
+          <span class="score">Score <b>5.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Google (TorchTPU) &amp; Amazon (TorchNeuron) greifen Nvidias CUDA-Burggraben an</h3>
-        <p><strong>Google</strong> und <strong>Amazon</strong> veröffentlichten Werkzeuge, die PyTorch-Workloads mit minimalen Code-Änderungen auf ihre eigenen Chips (TPU bzw. Trainium/Inferentia) heben. Das Ziel ist nicht die Hardware, sondern der eigentliche Lock-in: CUDA und das PyTorch-Ökosystem. In einer Welt, in der Nvidia Großbestellungen nur teilweise beliefert, wird jeder Nicht-Nvidia-Pfad strategisch.</p>
+        <h3 style="margin-top:10px">Claude Code v2.1.309 härtet die Sandbox</h3>
+        <p><strong>Claude Code</strong> <code>v2.1.309</code> behebt, dass sandboxed Bash-Befehle unter Linux/macOS die Shell-Startup-Dateien vor jedem Kommando außerhalb der Sandbox ausführten, und schließt eine macOS-Lücke, in der <code>denyWrite</code>-Glob-Muster nicht am realen Pfad griffen, wenn der Ordner über einen Symlink erreicht wurde. Fortsetzung der Governance-Linie nach <code>v2.1.307</code> (<code>safety_event</code>-OTel, <code>/claude-api api-version</code>).</p>
         <div class="news-meta">
-          <span>📅 20.10.2026</span><span>·</span><span>🏢 Google / Amazon</span><span>·</span>
-          <a href="https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/" target="_blank" rel="noreferrer">techcrunch.com</a>
-        </div>
-      </article>
-
-      <article class="card news-card info">
-        <div class="row">
-          <span class="pill info">Major Release</span>
-          <span class="score">Score <b>6.0</b>/10</span>
-        </div>
-        <h3 style="margin-top:10px">Mistral Voxtral 3: Sprache in 50+ Sprachen plus Voice-Agent-SDK</h3>
-        <p><span data-person="arthur-mensch"><strong>Mistral</strong></span> brachte <strong>Voxtral 3</strong> — Spracherkennung und Text-to-Speech in über <strong>50 Sprachen</strong>, dazu ein SDK für Sprach-Agenten. Zusammen mit ElevenLabs' Echtzeit-Vorstoß zeigt sich: Die Stimm-Schicht wird mehrsprachig, echtzeitfähig und zur Commodity — Differenzierung verschiebt sich auf Latenz, Abdeckung und Betriebskosten.</p>
-        <div class="news-meta">
-          <span>📅 21.10.2026</span><span>·</span><span>🏢 Mistral AI</span><span>·</span>
-          <a href="https://x.com/MistralAI/status/2112574615318876178" target="_blank" rel="noreferrer">x.com/MistralAI</a>
-        </div>
-      </article>
-
-      <article class="card news-card info">
-        <div class="row">
-          <span class="pill info">Tooling</span>
-          <span class="score">Score <b>6.0</b>/10</span>
-        </div>
-        <h3 style="margin-top:10px">ElevenLabs Eleven Realtime: Sprachstart in ~0,5 s, 90+ Sprachen</h3>
-        <p><strong>ElevenLabs</strong> stellte <strong>Eleven Realtime</strong> (Mini und Max) vor: Sprachausgabe beginnt nach eigenen Angaben nach rund einer <strong>halben Sekunde</strong> und unterstützt über <strong>90 Sprachen</strong>. Der Echtzeit-Anspruch macht Sprach-Agenten erst alltagstauglich — die Differenzierung liegt künftig an der Latenz-Kante, nicht mehr an der reinen Stimmqualität.</p>
-        <div class="news-meta">
-          <span>📅 21.10.2026</span><span>·</span><span>🏢 ElevenLabs</span><span>·</span>
-          <a href="https://x.com/ElevenLabs/status/2112550782063247521" target="_blank" rel="noreferrer">x.com/ElevenLabs</a>
+          <span>📅 22.10.2026</span><span>·</span><span>🏢 Anthropic / GitHub</span><span>·</span>
+          <a href="https://github.com/anthropics/claude-code/releases" target="_blank" rel="noreferrer">github.com</a>
         </div>
       </article>
 
@@ -556,7 +520,16 @@
 
       <article class="card">
         <h3>Letzte Releases</h3>
-        <p>Aktuelle Version <code>v2.1.308</code> — ein reines <strong>Wartungs-Release</strong> („bug fixes and reliability improvements“). Das inhaltlich tragende Release der letzten 24 h ist <code>v2.1.307</code>: Mit <strong><code>/claude-api api-version</code></strong> lässt sich API-Code automatisiert auf die neue API-Version <code>2026-10-21</code> umziehen; zudem feuert das neue OpenTelemetry-Event <strong><code>claude_code.safety_event</code></strong> für jeden Tool-Aufruf, den eine Permission-Regel, der Auto-Mode, ein Safety-Check, ein Hook oder die Sandbox gestoppt, abgefragt oder zurückgewiesen hat — ein direktes Observability-Signal für unbeaufsichtigte Läufe. Davor behob <code>v2.1.306</code> gleich zwei Oneshot-Ärgernisse: <code>claude -p</code> in Cloud-Sessions meldete fälschlich „Not logged in", wenn es ohne die Session-Umgebungsvariablen startete, und ein API-Fehler wurde nicht mehr als „prompt is too long" fehlgedeutet (keine unnötige Kompaktierung mehr in Sessions mit vielen MCP-Tools). <code>v2.1.305</code> öffnete die <strong>Linux-Sandbox</strong> (<code>sandbox.allowNestedUserNamespaces</code> für Chromium/rootless podman — umgeht damit die Datei-Schutzmechanik der Sandbox) und brachte <code>CLAUDE_CODE_RETRY_WATCHDOG_USAGE_LIMIT_RECHECK_MS</code>, damit der unbeaufsichtigte Retry-Modus ein vor seinem Reset aufgehobenes Usage-Limit bemerkt. <code>v2.1.304</code> schärfte die <strong>Mod-/Hook-Mechanik</strong> (Transcript-Zeile bei übersprungenen Hooks, <code>decider: "person"</code> in der <code>tool.check</code>-Antwort), und <code>v2.1.303</code> war ein reines Wartungs-Release. Die Linie der Woche: Governance und Observability wandern tiefer ins CLI — relevant genau für die Oneshot- und Cron-Läufe, die dieses Briefing erzeugen.</p>
+        <p>Aktuelle Version <code>v2.1.309</code> (22.10.) — ein <strong>Sandbox-Härtungs-Release</strong>: Es behebt, dass sandboxed Bash-Befehle unter Linux und macOS die Shell-Startup-Dateien vor jedem Kommando <em>außerhalb</em> der Sandbox ausführten, und schließt eine macOS-Lücke, in der <code>denyWrite</code>-Glob-Muster nicht am realen Pfad griffen, wenn der Ordner über einen Symlink erreicht wurde — beides direkt relevant für isolierte, unbeaufsichtigte Läufe. Davor war <code>v2.1.308</code> ein reines Wartungs-Release. Inhaltlich tragend bleibt <code>v2.1.307</code>: Mit <strong><code>/claude-api api-version</code></strong> lässt sich API-Code automatisiert auf die neue API-Version <code>2026-10-21</code> umziehen; zudem feuert das neue OpenTelemetry-Event <strong><code>claude_code.safety_event</code></strong> für jeden Tool-Aufruf, den eine Permission-Regel, der Auto-Mode, ein Safety-Check, ein Hook oder die Sandbox gestoppt, abgefragt oder zurückgewiesen hat — ein direktes Observability-Signal für unbeaufsichtigte Läufe. Davor behob <code>v2.1.306</code> gleich zwei Oneshot-Ärgernisse: <code>claude -p</code> in Cloud-Sessions meldete fälschlich „Not logged in", wenn es ohne die Session-Umgebungsvariablen startete, und ein API-Fehler wurde nicht mehr als „prompt is too long" fehlgedeutet (keine unnötige Kompaktierung mehr in Sessions mit vielen MCP-Tools). <code>v2.1.305</code> öffnete die <strong>Linux-Sandbox</strong> (<code>sandbox.allowNestedUserNamespaces</code> für Chromium/rootless podman — umgeht damit die Datei-Schutzmechanik der Sandbox), und <code>v2.1.304</code> schärfte die <strong>Mod-/Hook-Mechanik</strong> (<code>decider: "person"</code> in der <code>tool.check</code>-Antwort). Die Linie der Woche: Governance, Observability und Sandbox-Härtung wandern tiefer ins CLI — relevant genau für die Oneshot- und Cron-Läufe, die dieses Briefing erzeugen.</p>
+
+        <div class="release">
+          <div class="ver">v2.1.309</div>
+          <div class="when">22.10.</div>
+          <div class="what">
+            <strong>Sandbox-Härtung</strong> — sandboxed Bash-Befehle (Linux/macOS) führten Shell-Startup-Dateien nicht mehr außerhalb der Sandbox aus · macOS-<code>denyWrite</code>-Glob-Muster greifen jetzt auch, wenn der Ordner über einen Symlink erreicht wird
+            <span class="badge sec">FIX</span>
+          </div>
+        </div>
 
         <div class="release">
           <div class="ver">v2.1.308</div>
@@ -603,15 +576,6 @@
           </div>
         </div>
 
-        <div class="release">
-          <div class="ver">v2.1.303</div>
-          <div class="when">18.10.</div>
-          <div class="what">
-            <strong>Wartungs-Release</strong> — Bug-Fixes und Zuverlässigkeits-Verbesserungen, keine neue Oberfläche
-            <span class="badge fix">FIX</span>
-          </div>
-        </div>
-
         <p style="margin-top: 14px;">
           <a href="https://github.com/anthropics/claude-code/releases">→ Alle Releases auf GitHub</a><br/>
           <a href="https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md">→ Vollständiger CHANGELOG.md</a>
@@ -624,7 +588,7 @@
         <ul>
           <li><strong><code>safety_event</code>-Telemetrie</strong>: das neue OTel-Event macht gestoppte/abgefragte Tool-Aufrufe sichtbar — ideal für Audit-Trails unbeaufsichtigter Läufe; Integration in bestehende OTel-Pipelines prüfen.</li>
           <li><strong>API-Version 2026-10-21</strong>: <code>/claude-api api-version</code> automatisiert den Umzug — Breaking Changes der neuen Version gegen Produktions-Code abgleichen.</li>
-          <li><strong>Sandbox-Nested-Namespaces</strong>: <code>allowNestedUserNamespaces</code> öffnet einen Pfad um die Datei-Schutzmechanik — nur dort aktivieren, wo Chromium/podman es wirklich brauchen.</li>
+          <li><strong>Sandbox-Härtung (v2.1.309)</strong>: Shell-Startup-Dateien laufen nicht mehr außerhalb der Sandbox, <code>denyWrite</code> greift auch über Symlinks — für isolierte Oneshot-Läufe nach dem Upgrade nachprüfen, dass nichts unbeabsichtigt blockiert. <code>allowNestedUserNamespaces</code> nur dort aktivieren, wo Chromium/podman es wirklich brauchen.</li>
           <li><strong>Retry-Watchdog-Feintuning</strong>: die neuen Usage-Limit-Recheck-Variablen betreffen genau Oneshot/Cron — Verhalten an echten Timer-Läufen beobachten.</li>
           <li><strong>Haiku 5.5 als Default-Haiku</strong>: <code>claude-haiku-5-5</code> (1M Kontext, 0,10 $/0,50 $) — Kosten und Verhalten in echten Sessions beobachten; Modell-IDs in Produktion explizit pinnen.</li>
         </ul>
