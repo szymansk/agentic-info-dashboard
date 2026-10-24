@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-23T11:04:02+00:00",
+  "last_updated": "2026-10-24T11:04:20+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,16 @@
   ],
   "featured": [
     {
-      "video_id": "RLQR5_5fJDA",
-      "title": "Messi asks ChatGPT to teach him a chess opening",
+      "video_id": "6f7ojkd4_Wc",
+      "title": "Hunt bugs with your dot",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-10-22T21:58:00+00:00",
-      "url": "https://www.youtube.com/shorts/RLQR5_5fJDA",
-      "thumbnail": "https://img.youtube.com/vi/RLQR5_5fJDA/mqdefault.jpg",
-      "description": "Messi asked ChatGPT to teach him a chess opening that matched his style. It suggested Goat Horns. 🐐🤘\n\nTry ChatGPT's Intelligent UI yourself: “Based on what you know about me, teach me something new. Show me step by step.\"",
+      "published": "2026-10-23T22:05:37+00:00",
+      "url": "https://www.youtube.com/watch?v=6f7ojkd4_Wc",
+      "thumbnail": "https://img.youtube.com/vi/6f7ojkd4_Wc/mqdefault.jpg",
+      "description": "We’re using dots to build better dots.\n\nRennie Song, an engineer at OpenAI, uses her dot to gather feedback from social media and user reports, update a live tracker in ChatGPT Space, and investigate and fix bugs with Codex.\n\nGet started wi",
       "why": ""
     },
     {
@@ -170,6 +170,138 @@
   ],
   "recent": [
     {
+      "video_id": "5sEVvu4mQ8g",
+      "title": "They actually did it... (Kimi K3.1)",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-24T02:34:15+00:00",
+      "url": "https://www.youtube.com/watch?v=5sEVvu4mQ8g",
+      "thumbnail": "https://img.youtube.com/vi/5sEVvu4mQ8g/mqdefault.jpg",
+      "description": "CodeRabbit is FREE for the first 50 users who use code \"MATTHEWCR\" https://coderabbit.link/matthew-berman-003\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward F"
+    },
+    {
+      "video_id": "6f7ojkd4_Wc",
+      "title": "Hunt bugs with your dot",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-23T22:05:37+00:00",
+      "url": "https://www.youtube.com/watch?v=6f7ojkd4_Wc",
+      "thumbnail": "https://img.youtube.com/vi/6f7ojkd4_Wc/mqdefault.jpg",
+      "description": "We’re using dots to build better dots.\n\nRennie Song, an engineer at OpenAI, uses her dot to gather feedback from social media and user reports, update a live tracker in ChatGPT Space, and investigate and fix bugs with Codex.\n\nGet started wi"
+    },
+    {
+      "video_id": "7Cs5qyBlYQk",
+      "title": "From notes to AI training with ChatGPT Work | Realpage.",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-23T18:42:11+00:00",
+      "url": "https://www.youtube.com/shorts/7Cs5qyBlYQk",
+      "thumbnail": "https://img.youtube.com/vi/7Cs5qyBlYQk/mqdefault.jpg",
+      "description": "Austin Braham at Realpage. uses ChatGPT Work to turn ideas, notes and source materials into complete AI training packages tailored to different teams, roles and skill levels."
+    },
+    {
+      "video_id": "hgX1hgyWD4g",
+      "title": "How Realpage. builds AI training with ChatGPT Work",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-23T18:39:14+00:00",
+      "url": "https://www.youtube.com/watch?v=hgX1hgyWD4g",
+      "thumbnail": "https://img.youtube.com/vi/hgX1hgyWD4g/mqdefault.jpg",
+      "description": "At Realpage., Austin Braham creates AI training for different teams, roles and skill levels. He uses ChatGPT Work to turn ideas, notes and source materials into complete enablement packages tailored to each audience. The result is more rele"
+    },
+    {
+      "video_id": "2lNUGkCg_qc",
+      "title": "AI agents for everyday IT fixes | Shield and OpenAI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-23T18:36:34+00:00",
+      "url": "https://www.youtube.com/shorts/2lNUGkCg_qc",
+      "thumbnail": "https://img.youtube.com/vi/2lNUGkCg_qc/mqdefault.jpg",
+      "description": "Shield’s AI agents use Astra to work directly in business software and handle routine IT fixes, giving technicians more time for harder problems that need their judgment."
+    },
+    {
+      "video_id": "m6MlxaFMmPI",
+      "title": "How Shield uses OpenAI’s Astra to support IT teams",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-23T18:34:39+00:00",
+      "url": "https://www.youtube.com/watch?v=m6MlxaFMmPI",
+      "thumbnail": "https://img.youtube.com/vi/m6MlxaFMmPI/mqdefault.jpg",
+      "description": "When someone can’t log in or get online, their IT team often has to put other work on hold. Shield is building Forge to help IT services teams get their customers back to work faster. Its AI agents use Astra to work directly in business sof"
+    },
+    {
+      "video_id": "SMGg7iisHmc",
+      "title": "The most vulnerable week in internet history...",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-10-23T18:19:58+00:00",
+      "url": "https://www.youtube.com/watch?v=SMGg7iisHmc",
+      "thumbnail": "https://img.youtube.com/vi/SMGg7iisHmc/mqdefault.jpg",
+      "description": "Semgrep Guardian catches the risky code and packages your agent introduces. Try it free for 60 days: https://semgrep.dev/onboarding/guardian?offer=fireship_202610&utm_source=fireship&utm_medium=referral&utm_campaign=2026-10_fireship_guardia"
+    },
+    {
+      "video_id": "7fZ1rFcm1nA",
+      "title": "Team AMA (and Kimi K3.1 Testing!!)",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-23T18:07:47+00:00",
+      "url": "https://www.youtube.com/watch?v=7fZ1rFcm1nA",
+      "thumbnail": "https://img.youtube.com/vi/7fZ1rFcm1nA/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "f8uIINtoJCM",
+      "title": "Sam Altman on Why Your Most Important Advice Should Come From People",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-23T17:03:19+00:00",
+      "url": "https://www.youtube.com/shorts/f8uIINtoJCM",
+      "thumbnail": "https://img.youtube.com/vi/f8uIINtoJCM/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "fHY0sjAejcA",
+      "title": "Who is local AI really for?",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-23T16:36:20+00:00",
+      "url": "https://www.youtube.com/watch?v=fHY0sjAejcA",
+      "thumbnail": "https://img.youtube.com/vi/fHY0sjAejcA/mqdefault.jpg",
+      "description": "Check out Jetbrains Air: https://jb.gg/JetBrains-Air\nJunie Lite is free for a limited time!\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x"
+    },
+    {
+      "video_id": "-YMMRQ1qscI",
+      "title": "Amazon CEO Andy Jassy on the Infrastructure the AI Era Needs",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-23T15:40:03+00:00",
+      "url": "https://www.youtube.com/watch?v=-YMMRQ1qscI",
+      "thumbnail": "https://img.youtube.com/vi/-YMMRQ1qscI/mqdefault.jpg",
+      "description": "Amazon expects to spend roughly $220 billion in CapEx in 2026, yet CEO Andy Jassy says the company is still leaving meaningful AI demand on the table. He believes the buildout could ultimately help make AWS a $1 trillion annual run-rate bus"
+    },
+    {
       "video_id": "w6dSNCg9I5k",
       "title": "Llama: Local AI on Your Mac",
       "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
@@ -182,18 +314,6 @@
       "description": "Meet Llama: run AI models locally on your Mac, right from the menu bar.\n\nFind models that fit your Mac, download with one click, and start chatting. Your conversations stay on your computer, it works offline, and apps that support the OpenA"
     },
     {
-      "video_id": "RLQR5_5fJDA",
-      "title": "Messi asks ChatGPT to teach him a chess opening",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-22T21:58:00+00:00",
-      "url": "https://www.youtube.com/shorts/RLQR5_5fJDA",
-      "thumbnail": "https://img.youtube.com/vi/RLQR5_5fJDA/mqdefault.jpg",
-      "description": "Messi asked ChatGPT to teach him a chess opening that matched his style. It suggested Goat Horns. 🐐🤘\n\nTry ChatGPT's Intelligent UI yourself: “Based on what you know about me, teach me something new. Show me step by step.\""
-    },
-    {
       "video_id": "9WZpou1faFU",
       "title": "Sam Altman on AI’s Discovery Era",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
@@ -204,18 +324,6 @@
       "url": "https://www.youtube.com/shorts/9WZpou1faFU",
       "thumbnail": "https://img.youtube.com/vi/9WZpou1faFU/mqdefault.jpg",
       "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
-      "video_id": "l16Gw7oVLNQ",
-      "title": "Uber rolls out ChatGPT Work to 30,000+ employees",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-22T18:00:13+00:00",
-      "url": "https://www.youtube.com/watch?v=l16Gw7oVLNQ",
-      "thumbnail": "https://img.youtube.com/vi/l16Gw7oVLNQ/mqdefault.jpg",
-      "description": "Following a 1,000-person pilot, Uber is bringing ChatGPT Work to more than 30,000 employees worldwide in its first company-wide deployment of an agentic platform for knowledge work.\n\nUber CTO Praveen Neppalli Naga and OpenAI co-founder and "
     },
     {
       "video_id": "-9XQMHhpypc",
@@ -266,66 +374,6 @@
       "description": "Files keep landing in your Hugging Face Storage Bucket. Here is how to process each one automatically, without downloading anything.\n\nIn this live-coding video we set up a webhook on a bucket that triggers a Hugging Face Job whenever a new "
     },
     {
-      "video_id": "tc92psltcEg",
-      "title": "Sam Altman on What Personal AI Still Needs",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-21T23:13:23+00:00",
-      "url": "https://www.youtube.com/shorts/tc92psltcEg",
-      "thumbnail": "https://img.youtube.com/vi/tc92psltcEg/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
-      "video_id": "20IRGgQwPkc",
-      "title": "V7 cuts costs 78% while boosting accuracy with GPT‑5.6 Luna",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-21T22:05:10+00:00",
-      "url": "https://www.youtube.com/watch?v=20IRGgQwPkc",
-      "thumbnail": "https://img.youtube.com/vi/20IRGgQwPkc/mqdefault.jpg",
-      "description": "V7 Go organizes company files into a Context Graph that agents can query to screen investment deals and support insurance underwriting. On V7’s hardest graph-query tests across thousands of documents, GPT-6 Astra reached 89% accuracy.\n\nRead"
-    },
-    {
-      "video_id": "u6Tf62_5CP0",
-      "title": "Sam Altman on Why AI Needs a New Kind of Hardware",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-21T21:38:30+00:00",
-      "url": "https://www.youtube.com/shorts/u6Tf62_5CP0",
-      "thumbnail": "https://img.youtube.com/vi/u6Tf62_5CP0/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
-      "video_id": "1g9Tqvyt4kU",
-      "title": "Sam Altman on Why Demand for Coders Hasn't Disappeared",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-21T21:09:46+00:00",
-      "url": "https://www.youtube.com/shorts/1g9Tqvyt4kU",
-      "thumbnail": "https://img.youtube.com/vi/1g9Tqvyt4kU/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
-      "video_id": "SU-h1k5IYOI",
-      "title": "Sam Altman on Why AI Hasn't Made Us Less Busy",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-21T20:13:24+00:00",
-      "url": "https://www.youtube.com/shorts/SU-h1k5IYOI",
-      "thumbnail": "https://img.youtube.com/vi/SU-h1k5IYOI/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
       "video_id": "4kpr4_jOmrY",
       "title": "Solve problems people actually have.",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -348,18 +396,6 @@
       "url": "https://www.youtube.com/shorts/KnDMnZYEo2M",
       "thumbnail": "https://img.youtube.com/vi/KnDMnZYEo2M/mqdefault.jpg",
       "description": "The model’s top prediction can still break the rules.\n\nI built Token Arcade to make structured output and constrained decoding easier to understand: see the next-token probabilities, pick a card, and find out whether it’s allowed.\n\nWatch a "
-    },
-    {
-      "video_id": "8n-SXxRIrm8",
-      "title": "Build a Better Shopping Experience with OpenAI | Shopping Agent Demo",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-20T22:57:52+00:00",
-      "url": "https://www.youtube.com/watch?v=8n-SXxRIrm8",
-      "thumbnail": "https://img.youtube.com/vi/8n-SXxRIrm8/mqdefault.jpg",
-      "description": "See how an AI shopping agent can turn a room photo into a personalized shopping experience—from finding the right products to updating an order.\n\nIn this demo for fictional home goods retailer Vesper & Alder, a shopper uses voice and images"
     },
     {
       "video_id": "b2tjnxX8IHU",
@@ -396,18 +432,6 @@
       "url": "https://www.youtube.com/watch?v=9n0MI4D7TCM",
       "thumbnail": "https://img.youtube.com/vi/9n0MI4D7TCM/mqdefault.jpg",
       "description": "More than 300 million people use ChatGPT for health and wellness questions each week. OpenAI’s Karan Singhal thinks that’s only the beginning: the longer-term goal is AI that can help people navigate their health proactively, while making t"
-    },
-    {
-      "video_id": "v45XAMqH7pE",
-      "title": "You need a better headshot.",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-20T13:00:34+00:00",
-      "url": "https://www.youtube.com/shorts/v45XAMqH7pE",
-      "thumbnail": "https://img.youtube.com/vi/v45XAMqH7pE/mqdefault.jpg",
-      "description": "THIS JUST IN: You need a better headshot. Create yours now on ChatGPT Images."
     },
     {
       "video_id": "H4azmWcqO5g",
@@ -456,18 +480,6 @@
       "url": "https://www.youtube.com/watch?v=LWxX6vvHfrc",
       "thumbnail": "https://img.youtube.com/vi/LWxX6vvHfrc/mqdefault.jpg",
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 Gemini 4 Argon + report are available here:\nhttps://deepmind.google/models/model-cards/gemini-4-argon/\nhttps://storage.googleapis.com/deepmind-media/gemin"
-    },
-    {
-      "video_id": "ALbuCR4uH2E",
-      "title": "Mark Zuckerberg's take on risk.",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-19T07:00:08+00:00",
-      "url": "https://www.youtube.com/shorts/ALbuCR4uH2E",
-      "thumbnail": "https://img.youtube.com/vi/ALbuCR4uH2E/mqdefault.jpg",
-      "description": "Mark Zuckerberg, founder and CEO of Meta, on why staying stagnant is the riskiest choice.\n\nSource: How to Build the Future, Y Combinator, 2016."
     },
     {
       "video_id": "LKrwhjOI8Nc",
@@ -614,18 +626,6 @@
       "description": "In the week that software got reverse engineered, Sam Altman warned 6.1 Astra ‘tipped toward [breach risk], and Muse Wonder showed the race isn’t slowing, I try to step back and show where it is all going, on current trends. Agree or disagr"
     },
     {
-      "video_id": "wajoP_5Cpw8",
-      "title": "Every app on Earth is now open source... whether it likes it or not",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-10-12T19:15:23+00:00",
-      "url": "https://www.youtube.com/watch?v=wajoP_5Cpw8",
-      "thumbnail": "https://img.youtube.com/vi/wajoP_5Cpw8/mqdefault.jpg",
-      "description": "Every agent needs proper tools. Apify MCP gives yours thousands of them, ready to run. Use code FIRESHIP25 for $25 in free credits: https://apify.it/4ygURHS\n\nA developer just rewrote seven Adobe apps in Rust and open-sourced them for free. "
-    },
-    {
       "video_id": "4fLVq6HJsKc",
       "title": "DeepSeek Solved AI’s Memory Problem",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -648,22 +648,10 @@
       "url": "https://www.youtube.com/shorts/DVRMDoYhVBI",
       "thumbnail": "https://img.youtube.com/vi/DVRMDoYhVBI/mqdefault.jpg",
       "description": "Jeremy Howard, co-founder of fast.ai, on why AI-assisted coding works like a slot machine: you craft the prompt, pull the lever, and the occasional win feels like control. In his words: \"It's got all these hallmarks of loss disguised as a w"
-    },
-    {
-      "video_id": "615B5nyMFPk",
-      "title": "What Most People Get Wrong About Evolution | Akarsh Kumar",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-10-10T04:31:57+00:00",
-      "url": "https://www.youtube.com/watch?v=615B5nyMFPk",
-      "thumbnail": "https://img.youtube.com/vi/615B5nyMFPk/mqdefault.jpg",
-      "description": "A lot of people in AI treat evolution as a dumb fallback, basically random search for when you can't take a gradient. Akarsh Kumar thinks that is wrong. Selection hangs on to partial solutions, so mutations only need to be useful about 1% o"
     }
   ],
   "stats": {
-    "total_videos": 41,
+    "total_videos": 40,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
