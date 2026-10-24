@@ -369,9 +369,15 @@
     },
     {
       "date": "2026-10-23",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-10-23.html",
       "headline": "Der Agent, der zuerst schreibt — Claude Duet macht Autonomie proaktiv, während die Rechenschaft erst finanziert wird",
       "summary": "Anthropic zeigt Claude Duet, einen proaktiven persönlichen Agenten auf Opus 5.5, der von sich aus Tagesbriefings schickt, verbundene Apps überwacht und Aufgaben wie Terminplanung oder Dashboards erledigt — Research-Preview per Warteliste für US-Pro/Max auf iOS/Android/claude.ai, mit Freigabe-Gate vor sensiblen Aktionen (Zahlungen, Nachrichten) · die Autonomie verschiebt sich von „antwortet auf Zuruf“ zu „meldet sich selbst“ und zielt auf Meta Muse und OpenAI Dots · zugleich die Gegenrechnung: Anthropic räumt selbst ein, dass Duet Dringlichkeit falsch einschätzt und bei Erledigungen schwächelt, und TechTarget hält Unternehmen noch nicht für bereit · das Kapital finanziert die Leine — Opsin sammelt 21 Mio. $ für Enterprise-Agenten-Governance, AuxoAI >20 Mio. $ · Deutschland zieht die Prüf-Schicht ein (BSI-Prüfarchitektur A5 im OSCAL-Format) · Claude Code v2.1.309 härtet die Sandbox (Shell-Startup-Dateien, macOS-denyWrite-Symlinks) · Fazit: Fähigkeit wird proaktiv, Rechenschaft bleibt Baustelle."
+    },
+    {
+      "date": "2026-10-24",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Nach dem Agenten-Theater die Belegschaft und das Silizium — Uber stellt 30.000 Mitarbeiter auf ChatGPT Work, Modal holt 750 Mio. für den Maschinenraum",
+      "summary": "Eine Woche nach dem proaktiven Agenten liefert der Samstag die nüchterne Gegenprobe, wohin die Technik wirklich landet: Uber schaltet ChatGPT Work für alle rund 30.000 Büro-Beschäftigten frei (aus einem 1.000er-Pilot; Ops/Finance/Marketing auf ChatGPT Work, Engineers auf Codex) — sieben Wochen nach 3.300 Stellenstreichungen · und Modal, der Serverless-Unterbau für Agenten-Workloads, sammelt 750 Mio. $ bei 15,75 Mrd. Bewertung (3× in fünf Monaten, >1 Mrd. $ ARR, Sandboxes allein ~300 Mio.) — das Kapital kauft nicht den nächsten Assistenten, sondern die Laufzeit · daneben Nvidia mit neuen Open-Weight-Modellen für Enterprise- und PC-Agenten und Claude Code v2.1.310 mit dem neuen Monitor-Tool · die Wochen-Bilanz: ~2,42 Mrd. $ Primärkapital in 19 Runden, größte Übernahme Rocket Software/Geniez AI (~100 Mio.) · Fazit: Fähigkeit ist Ware — Wert und Geld sitzen in Deployment-at-Scale und im Maschinenraum darunter."
     }
   ]
 }

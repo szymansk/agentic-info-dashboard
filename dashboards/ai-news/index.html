@@ -298,7 +298,7 @@
   footer .mono { color: var(--muted); }
 </style>
 </head>
-<body data-snapshot-date="2026-10-23" data-snapshot-mode="live">
+<body data-snapshot-date="2026-10-24" data-snapshot-mode="live">
 <div class="wrap">
 
   <!-- ─── Top Nav ─── -->
@@ -319,9 +319,6 @@
   <div class="timeline-bar" id="timeline">
     <span class="label">Zeitstrahl</span>
     <!-- JS füllt aus archive/manifest.json. Fallback statisch: -->
-    <a class="tl-pill" href="/ai-news/archive/2026-10-19.html" data-date="2026-10-19">
-      <span class="dow">Mo</span><span class="date">19.10.</span>
-    </a>
     <a class="tl-pill" href="/ai-news/archive/2026-10-20.html" data-date="2026-10-20">
       <span class="dow">Di</span><span class="date">20.10.</span>
     </a>
@@ -331,8 +328,11 @@
     <a class="tl-pill" href="/ai-news/archive/2026-10-22.html" data-date="2026-10-22">
       <span class="dow">Do</span><span class="date">22.10.</span>
     </a>
-    <a class="tl-pill active" href="/ai-news/" data-date="2026-10-23">
+    <a class="tl-pill" href="/ai-news/archive/2026-10-23.html" data-date="2026-10-23">
       <span class="dow">Fr</span><span class="date">23.10.</span>
+    </a>
+    <a class="tl-pill active" href="/ai-news/" data-date="2026-10-24">
+      <span class="dow">Sa</span><span class="date">24.10.</span>
     </a>
   </div>
 
@@ -352,7 +352,7 @@
       </div>
     </div>
     <div class="meta">
-      <div class="date" id="today">Freitag, 23. Oktober 2026</div>
+      <div class="date" id="today">Samstag, 24. Oktober 2026</div>
       <div class="tag">Snapshot · KW 43 / 2026</div>
     </div>
   </header>
@@ -363,63 +363,63 @@
   <article class="briefing-wrap">
 
     <header class="briefing-head">
-      <h2 class="kicker">Freitag · Agentic AI &amp; GenAI</h2>
-      <h1>Der Agent, der zuerst schreibt — Claude Duet verlegt die Autonomie ins Proaktive, die Rechenschaft hinkt hinterher</h1>
+      <h2 class="kicker">Samstag · Agentic AI &amp; GenAI</h2>
+      <h1>Nach dem Agenten-Theater die Belegschaft und das Silizium — wohin die Technik wirklich landet</h1>
       <div class="byline">
         <span>✍️ Kuratiert &amp; analysiert</span>
         <span class="dot-sep">·</span>
-        <span>~9 Min Lesezeit</span>
+        <span>~8 Min Lesezeit</span>
         <span class="dot-sep">·</span>
-        <span id="byline-date">23. Oktober 2026</span>
+        <span id="byline-date">24. Oktober 2026</span>
       </div>
       <p class="lede">
-        Bislang war die Arbeitsteilung mit den Agenten einfach: Der Mensch fragt, das Modell antwortet. <span data-person="dario-amodei">Anthropics</span> <strong>Claude Duet</strong>, gestern als Research-Preview angekündigt, kehrt die Initiative um — der Agent meldet sich zuerst. Duet läuft auf Opus 5.5, überwacht verbundene Apps, schickt morgens ein Briefing, plant Termine und baut Dashboards, ohne gerufen zu werden; vor Zahlungen und Nachrichten fragt es um Erlaubnis. Es ist die Antwort auf Metas Muse und OpenAIs Dots — und der nächste Schritt jener Autonomie, die diese Woche erst ihre Alignment-Rechnung bekam. Doch im selben Atemzug räumt Anthropic ein, dass Duet Dringlichkeit falsch liest; das Kapital finanziert bereits die Leine, und Deutschland zieht die Prüf-Schicht ein. Die Fähigkeit wird proaktiv — die Rechenschaft bleibt Baustelle.
+        Eine Woche lang drehte sich alles um den proaktiven Agenten — <span data-person="dario-amodei">Anthropics</span> Claude Duet, Metas Muse und OpenAIs Dots meldeten sich von selbst. Der Samstag liefert die nüchterne Gegenprobe: Wo landet die Technik wirklich? Nicht im nächsten Assistenten, sondern in zwei unspektakulären Zahlen. Uber schaltet <strong>ChatGPT Work</strong> für alle rund <strong>30.000</strong> Büro-Beschäftigten frei — aus einem Pilot von 1.000 wird die Belegschaft. Und <strong>Modal</strong>, der Serverless-Unterbau, auf dem solche Agenten laufen, sammelt <strong>750 Millionen Dollar</strong> bei 15,75 Milliarden Bewertung ein. Die Schlagzeile macht das Produkt; das Geld und die Adoption machen die Maschinenräume. Fähigkeit ist Ware — der Wert sitzt in der Verdrahtung und in der Belegschaft, die gerade lernt, mit dem Agenten zu arbeiten, sieben Wochen nachdem dieselbe Firma 3.300 Stellen strich.
       </p>
     </header>
 
     <div class="briefing-body">
 
       <section>
-        <h3><span class="num">01</span>Der Agent, der zuerst schreibt — Duet verlegt die Initiative zum Modell</h3>
-        <p><span data-person="dario-amodei">Anthropic</span> hat gestern <strong>Claude Duet</strong> als Research-Preview angekündigt: einen persönlichen Agenten, der nicht auf Zuruf wartet, sondern von sich aus aktiv wird. Duet läuft auf <strong>Opus 5.5</strong>, verbindet sich mit den Apps des Nutzers, schickt morgens ein eigenständiges Tagesbriefing, überwacht Posteingang und Kalender, plant Termine und baut auf Wunsch kleine Dashboards — alles im Hintergrund, mobil weiterlaufend. Vor sensiblen Schritten wie Zahlungen oder dem Versand von Nachrichten holt es ausdrücklich eine Freigabe ein. Der Zugang ist eng gefasst: zunächst per Warteliste für US-Abonnenten der Pro- und Max-Tarife, auf iOS, Android und claude.ai. Es ist, der Name sagt es, als Duett gedacht — Mensch und Agent im Wechselspiel, nicht der Agent allein.</p>
-        <p>Das eigentlich Neue ist nicht die Fähigkeit, sondern die Richtung der Initiative. Ein reaktives Werkzeug irrt nur, wenn man es fragt; ein proaktives irrt nach eigenem Zeitplan. Genau dort positioniert sich Duet gegen <strong>Metas Muse</strong> und <strong>OpenAIs Dots</strong>, die beiden anderen Always-on-Agenten, die sich zuletzt um denselben Platz im Alltag drängten. Anthropic verkauft Duet nüchtern: Es sei gut darin, Informationen zusammenzuziehen und Routinen zu takten, aber es könne die Dringlichkeit einer Meldung falsch einschätzen und sei bei klassischen Erledigungen — etwa Tickets buchen — noch schwach. Diese Selbsteinordnung ist bemerkenswert ehrlich für eine Produktankündigung; sie beschreibt zugleich die Sollbruchstelle jeder proaktiven Autonomie: Wer von sich aus handelt, braucht ein verlässliches Modell davon, was gerade wichtig ist — und genau das ist der schwierigste Teil.</p>
+        <h3><span class="num">01</span>Uber stellt die Belegschaft auf den Agenten — 30.000 statt 1.000</h3>
+        <p>Am 22. Oktober kündigte OpenAI an, dass Uber <strong>ChatGPT Work</strong> für mehr als <strong>30.000 Beschäftigte</strong> seiner globalen Büro-Belegschaft freischaltet — aus einem Pilotprogramm von rund 1.000 Mitarbeitern wird damit über Nacht die gesamte Verwaltung. Die Aufteilung ist aufschlussreich: Operations, Finance, Marketing und Produkt arbeiten künftig mit ChatGPT Work, während die Software-Entwickler bei OpenAIs Coding-Werkzeug Codex bleiben. Uber nennt keine Kosten, kündigt aber an, die Nutzung zu messen. Mehrere Berichte ordnen den Schritt als eine der bislang größten Einzelunternehmens-Ausrollungen eines agentischen Arbeitswerkzeugs ein; die Modell-Basis (kolportiert GPT-6.1 Sol) bestätigten weder Uber noch OpenAI offiziell, weshalb dieser Punkt vorsichtig zu lesen ist.</p>
+        <p>Das Unbequeme steht im Kalender daneben: Uber strich vor rund sieben Wochen etwa 3.300 Stellen — zehn Prozent der Verwaltungsjobs. Keine der beiden Firmen stellt einen Zusammenhang her, und es gibt keinen Beleg, dass die Kürzungen durch ChatGPT Work ausgelöst wurden. Doch die Reihenfolge — erst der Personalabbau, dann das Werkzeug für alle Verbliebenen — ist genau das Muster, das die Branche seit Monaten als „KI-Umbau" beschreibt, und das zuletzt Accenture und Capgemini öffentlich durchbuchstabierten. Die Nachricht ist nicht, dass ein neues Modell erschien; es ist, dass ein gelistetes Nicht-Tech-Unternehmen den Agenten vom Experiment zum Standard-Arbeitsplatz erklärt — mit allen Erwartungen an Produktivität, die eine solche Entscheidung implizit auf die verbliebene Belegschaft legt.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Der proaktive Agent ist kein größeres Modell, sondern eine neue Betriebsform — ein stehender Prozess mit Zugriff auf Postfach, Kalender und Konten. Billbar wird die Einführungs-Disziplin, die er erzwingt: saubere Scopes und Freigabe-Gates (was darf er ohne Rückfrage?), Monitoring der selbst ausgelösten Aktionen und eine ehrliche Erwartungssteuerung, dass „meldet sich selbst" nicht „liegt immer richtig" heißt.
+          Für uns: Deployment-at-Scale, nicht das Modell, ist der Gradmesser. Billbar wird die unspektakuläre Arbeit dahinter: Rollen-/Rechte-Design über Zehntausende Nutzer, Change-Management und Enablement rollenbezogen (Ops ≠ Finance ≠ Marketing), Erfolgsmessung jenseits der Lizenz-Zahl und die ehrliche Trennung von „Werkzeug für alle" und „Stellenabbau" — denn die Belegschaft liest beides als ein Signal, auch wenn das Management es trennt.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">02</span>Warum jetzt — die klebrige Gewohnheit als Burggraben vor dem Börsengang</h3>
-        <p>Dass Duet ausgerechnet jetzt kommt, ist kein Zufall. Die Modell-Schicht ist seit Wochen Ware: Opus 5.5, GPT-6.1 Sol und Gemini 4 Argon konvergieren im Preis, die Führung im Benchmark rotiert im Wochentakt. Wo das Modell nicht mehr differenziert, verschiebt sich der Wettbewerb auf die Oberfläche und, eine Stufe tiefer, auf die Gewohnheit. Ein Agent, der morgens das erste Wort hat, besetzt genau diese Gewohnheit — er wird zur Standard-Schnittstelle, bevor der Nutzer eine Alternative überhaupt öffnet. Dass Opus 5.5 hier nur noch als Motor im Maschinenraum auftaucht und nicht als Schlagzeile, unterstreicht die Verschiebung: Das Modell ist Mittel, das tägliche Ritual ist das Produkt.</p>
-        <p>Der Zeitpunkt hat zudem eine Finanz-Logik. Anthropic steuert auf einen Börsengang in der Größenordnung von zwei Billionen Dollar zu — Vermarktung ab der Woche des 9. November, Handel vor dem 26. November, so der zuletzt kolportierte Fahrplan. Vor einem solchen Schritt ist Konsumenten-Reichweite, die sich in wiederkehrende Nutzung übersetzt, bares Geld: Wer das morgendliche Briefing eines Nutzers liefert, hat später den leichteren Weg auf dessen Arbeitsplatz und in dessen Unternehmen. Duet ist damit zugleich Produkt und Erzählung — der Beweis, dass aus einem Modell-Anbieter eine Plattform mit täglicher Bindung wird, rechtzeitig zur Roadshow.</p>
+        <h3><span class="num">02</span>Das Geld fließt in den Maschinenraum — Modal holt 750 Millionen</h3>
+        <p>Während die Produkt-Schlagzeilen von Assistenten handeln, kauft das Kapital die Laufzeit darunter. <strong>Modal Labs</strong>, Anbieter einer Serverless-Compute-Plattform für KI- und Agenten-Workloads, schloss am 14. Oktober eine <strong>750-Millionen-Dollar-Series-D</strong> bei einer Bewertung von <strong>15,75 Milliarden Dollar</strong> — angeführt von Accel, mit Kleiner Perkins neu an Bord. Das ist mehr als eine Verdreifachung der Bewertung binnen fünf Monaten (Series C: 4,65 Mrd. im Mai). Modal beziffert die annualisierte Run-Rate inzwischen auf über eine Milliarde Dollar — eine Eigenangabe, nicht unabhängig geprüft —, davon allein rund 300 Millionen auf das Sandboxes-Produkt, das isolierte Ausführungsumgebungen für Agenten bereitstellt. Genau dort, in der sicheren Laufzeit für fremden, von Agenten erzeugten Code, liegt die Nachfrage.</p>
+        <p>Modal ist kein Einzelfall, sondern die These der Woche in einer Zahl. Ein Funding-Tracker zählte für die Mitte des Monats (12.–18. Oktober) rund <strong>2,42 Milliarden Dollar</strong> Primärkapital über 19 Runden ab 20 Millionen aufwärts — Modal stellte davon etwa ein Drittel, Nordamerika gut die Hälfte. Die größte Übernahme derselben Woche fiel dagegen klein aus: Rocket Software kaufte das israelische Startup Geniez AI in einem von Calcalist auf bis zu 100 Millionen Dollar geschätzten Deal. Das Verhältnis ist das eigentliche Signal: Große Schecks gehen in die Infrastruktur, die Agenten betreibt, kleine in die Konsolidierung der Anwendungs-Startups. Das Modell differenziert nicht mehr; der Maschinenraum schon.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Der Kampf um den Agenten-Arbeitsplatz entscheidet sich an der Gewohnheit, nicht am Benchmark — und drei US-Anbieter (Anthropic, OpenAI, Meta) ringen um dieselbe Position. Billbar: anbieterneutrale Orchestrierung, die den proaktiven Agenten eines Kunden austauschbar hält, plus die nüchterne Beratung, dass eine klebrige Konsumenten-Gewohnheit beim Anbieter auch ein Lock-in beim Anbieter ist.
+          Für uns: Wo das Smart Money hingeht, folgt die Enterprise-Architektur. Billbar: Beratung zur Agenten-Laufzeit (sichere Sandboxes, Serverless-Execution, Kosten-/Kaltstart-Ökonomie), die Entscheidung Build-vs-Buy für die Ausführungs-Schicht — und die FinOps-Disziplin, die aus nutzungsbasierten Compute-Plattformen folgt, sobald Zehntausende Agenten-Läufe pro Tag abgerechnet werden.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">03</span>Die Gegenrechnung — Rechenschaft wird finanziert, Unternehmen zögern</h3>
-        <p>Der proaktive Agent trifft auf eine Realität, die noch nicht so weit ist. Die Fachpresse ordnete Duet umgehend ein: Unternehmen seien für einen Agenten, der eigenständig Mails liest, Konten beobachtet und Routinen taktet, noch nicht bereit — zu offen die Haftungs-, Daten- und Kontrollfragen. Das ist dieselbe Lücke, die der Wochenbogen immer wieder beschrieb: zwischen dem, was Agenten technisch tun, und dem, was Organisationen verantworten können, klafft eine Governance-Kluft. Und während die Produkt-Seite proaktiver wird, füllt das Kapital genau diese Kluft.</p>
-        <p>Am 19. Oktober sammelte <strong>Opsin</strong>, ein Spezialist für die Governance von Enterprise-KI-Agenten, rund <strong>21 Millionen Dollar</strong> ein — Geld, das ausdrücklich in Produkt und Enterprise-Reichweite fließen soll. Parallel holte <strong>AuxoAI</strong> über 20 Millionen Dollar, um Unternehmen beim Umbau der Arbeit mit Agenten zu begleiten, und die Konsolidierung in der Agenten-Schicht läuft weiter (zuletzt etwa die angekündigte Übernahme des Agenten-Startups Blocksight durch OpenWorld). Das Muster ist eindeutig: Nicht der nächste proaktive Assistent zieht derzeit das institutionelle Geld, sondern die Schicht, die ihn einhegt — Identität, Berechtigungen, Audit, Laufzeit-Kontrolle. Die Fehlerquote proaktiver Agenten ist keine schlechte Nachricht für diese Firmen, sie ist ihr Geschäftsmodell.</p>
+        <h3><span class="num">03</span>Die offene Schicht und das Werkzeug härten weiter</h3>
+        <p>Unterhalb der beiden großen Zahlen bewegte sich der Stack in dieselbe Richtung. <strong>Nvidia</strong> stellte neue offen gewichtete Modelle vor, die Agenten im Unternehmen und direkt auf dem PC betreiben sollen — ein Vorstoß, der die Agenten-Ausführung von der Cloud auch auf lokale und air-gapped Umgebungen ausdehnt und sich in die Linie der Woche einreiht: PyTorch auf Trainium (TorchNeuron), offene Entscheider-Modelle, die Öffnung der Gewichte. Die Rechenschaft über diese Agenten wird damit zur Frage, wo sie laufen — und wer ihre Aktionen sieht. Belastbare Benchmarks und Jurisdiktions-Fragen zu diesen Open-Weights stehen noch aus und gehören abgewartet, bevor man sie produktiv einplant.</p>
+        <p>Beim Werkzeug, das dieses Briefing erzeugt, passt das Release vom Vorabend exakt ins Bild: <strong>Claude Code</strong> steht seit dem 23. Oktober bei <code>v2.1.310</code> und bringt das neue <strong>Monitor-Tool</strong> samt Plugin-Monitoren — verfügbar auf Bedrock, Vertex und Foundry sowie dann, wenn Telemetrie oder nicht-essenzieller Traffic abgeschaltet sind; lange Vordergrund-<code>sleep</code>s werden dort nun blockiert. Dazu zwei Robustheits-Fixes: Anfragen scheiterten hinter manchen Gateways, die den Beta-Wert <code>effort-2025-11-24</code> oder System-Nachrichten mitten im Gespräch zurückwiesen — Claude Code versucht es jetzt ohne sie erneut; und die Hintergrund-Bereinigung löschte unter bestimmten <code>cleanupPeriodDays</code>-Einstellungen zuletzt zu früh auch frische Dateien wie eingefügte Bilder. Das ist die direkte Fortsetzung der Governance- und Observability-Linie nach <code>v2.1.309</code> (Sandbox-Härtung) und <code>v2.1.307</code> (<code>safety_event</code>-OTel) — Werkzeug-Mechanik, die genau für unbeaufsichtigte Läufe wie diesen gebaut wird.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Die Diskrepanz zwischen proaktivem Produkt und zögernder Organisation ist das Mandat. Billbar: „Agent-Readiness" vor dem Produktivgang (Least-Privilege-Scopes, Freigabe-Workflows, lückenloses Audit-Logging), die Integration signierter Agenten-Credentials in bestehendes IAM/GRC — und die ehrliche Vorab-Prüfung, welche proaktiven Use-Cases ein Haftungs- oder Datenschutz-Risiko tragen, das den Nutzen übersteigt.
+          Für uns: Die Agenten-Laufzeit wird beobachtbar und ortsflexibel — offene Modelle für on-prem/PC, ein Monitor-Tool für die Beobachtung laufender Agenten-Prozesse. Billbar: die Beratung, welche Workloads lokal/air-gapped und welche in der Cloud laufen, und die Integration der neuen Observability-Primitive (Monitor, <code>safety_event</code>) in bestehende Betriebs- und Audit-Prozesse — statt Benchmark-Versprechen unverifizierter Open-Weights blind zu übernehmen.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">04</span>Deutschland zieht die Prüf-Schicht ein — und das Werkzeug härtet sich</h3>
-        <p>Während die Produkt-Front proaktiv wird, baut die Aufsichts- und Prüf-Seite im DACH-Raum weiter an messbaren Grundlagen. Das <strong>BSI</strong> hat mit einer Prüfarchitektur unter dem Kürzel <strong>A5</strong> (AI Audit and Assurance Assessment Architecture) einen Rahmen vorgestellt, der Sicherheit, Robustheit und Rechtskonformität von KI-Systemen prüfbar machen soll — ausdrücklich im maschinenlesbaren OSCAL-Format, also anschlussfähig an automatisierte Compliance-Pipelines. Der genaue Status (finaler Standard oder Entwurf) ist nach den vorliegenden Berichten noch unscharf und gehört verifiziert; die Stoßrichtung aber passt exakt zum ersten harmonisierten AI-Act-Standard EN 18286 vom Vortag und zur BaFin-Aufsicht: Aus abstrakter Regulierung werden prüfbare Kriterien. Für proaktive Agenten, die unter dem AI Act ohnehin im Moment des Kontakts offenlegungspflichtig werden, ist eine maschinenlesbare Prüf-Schicht die logische Ergänzung.</p>
-        <p>Beim Werkzeug, das dieses Briefing erzeugt, ging die Governance-Linie konkret weiter: <strong>Claude Code</strong> steht bei <code>v2.1.309</code> — ein Release, das die Linux- und macOS-Sandbox härtet. Es behebt, dass sandboxed Bash-Befehle die Shell-Startup-Dateien vor jedem Kommando außerhalb der Sandbox ausführten, und schließt eine macOS-Lücke, in der <code>denyWrite</code>-Glob-Muster nicht am realen Pfad griffen, wenn der Ordner über einen Symlink erreicht wurde. Das ist die direkte Fortsetzung der Vortage: <code>v2.1.307</code> brachte das OpenTelemetry-Event <code>claude_code.safety_event</code> und <code>/claude-api api-version</code>, <code>v2.1.306</code> die Oneshot-Fixes für <code>claude -p</code>. Governance und Observability wandern Release für Release tiefer ins CLI — relevant genau für die unbeaufsichtigten Läufe, in denen ein proaktiver Agent, salopp gesagt, das erste Wort hat.</p>
+        <h3><span class="num">04</span>Warum beides zusammengehört — der Beweis vor dem Börsengang</h3>
+        <p>Uber und Modal erzählen dieselbe Geschichte von zwei Enden. Oben die Nachfrage-Seite: Ein großes, börsennotiertes Unternehmen setzt den Agenten auf jeden Schreibtisch und wettet damit auf messbare Produktivität statt auf ein Demo. Unten die Angebots-Seite: Das Geld, das diese Wette bedient, fließt nicht in einen weiteren Chatbot, sondern in die Compute- und Ausführungs-Schicht, die ihn überhaupt erst betreibbar und abrechenbar macht. Dazwischen ist das Modell — Opus 5.5, GPT-6.1 Sol, Gemini 4 Argon — zur austauschbaren Zutat geworden, deren Preise konvergieren und deren Benchmark-Führung im Wochentakt rotiert. Die These des Wochenbogens bestätigt sich an einem ruhigen Samstag deutlicher als an jedem Launch-Tag: Fähigkeit ist Ware.</p>
+        <p>Diese Woche hatte einen Fluchtpunkt, und er heißt Kapitalmarkt. Anthropic steuert auf einen Börsengang in der Größenordnung von rund zwei Billionen Dollar zu — Vermarktung ab der Woche des 9. November, Handel vor dem 26. November. Vor einem solchen Schritt zählen genau die zwei Dinge, die der Samstag liefert: ein Nachweis, dass Agenten in realen Belegschaften ankommen (Ubers 30.000), und ein Beleg, dass die Umsätze darunter real und schnell wachsen (Modals >1 Mrd. Run-Rate). Die öffentlichen Märkte werden diese Woche beginnen, die Compute-Rechnung der Branche zu bepreisen. Deployment-at-Scale und ein profitabler Maschinenraum sind die zwei Zahlen, die eine zwei Billionen schwere Erzählung tragen müssen — oder eben nicht.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Prüfbarkeit wird zum Beschaffungs- und Betriebskriterium — maschinenlesbar (BSI A5, OSCAL) auf der Regulierungsseite, als Telemetrie-Signal (<code>safety_event</code>) auf der Werkzeugseite. Billbar: Readiness-Assessments gegen die entstehenden Prüf-Kriterien, Anbindung an bestehende ISO-42001-/9001-Strukturen und die Nutzung der Sandbox- und Safety-Telemetrie, um in produktiven Agenten-Läufen nachvollziehbar zu machen, welche Aktion welche Kontrolle auslöste.
+          Für uns: Der Markt belohnt jetzt Nachweis, nicht Ankündigung. Billbar: Kunden dabei zu helfen, von Pilot auf Belegschaft zu skalieren (Governance, Enablement, Messbarkeit) und die Infrastruktur-Entscheidungen zu treffen, die eine solche Skalierung ökonomisch tragbar machen — genau die Arbeit, für die das Smart Money gerade die Plattformen finanziert.
         </blockquote>
       </section>
       <div class="briefing-end">
-        <strong>Was morgen zu beobachten ist:</strong> ob Claude Duet die US-Warteliste verlässt und wie Anthropic die proaktive Offenlegung gegenüber der EU-AI-Act-Pflicht (Kennzeichnung „im Moment des Kontakts") löst, sobald das Produkt Europa erreicht. Ob die Fachpresse-Skepsis („Unternehmen nicht bereit") in konkrete Pilot-Abbrüche umschlägt oder in Governance-Budgets. Ob sich der Status der BSI-Prüfarchitektur A5 als finaler Standard oder als Entwurf bestätigt. Und die Kalenderpunkte bleiben: Vermarktung des Anthropic-IPOs ab der <strong>Woche des 9. November</strong>; am <strong>1. Dezember</strong> verdoppelt Gemini 4 Argon seine Einführungspreise, und bis zum <strong>2. Dezember</strong> müssen Bestands-Agentensysteme unter Artikel 50 des AI Act maschinenlesbar gekennzeichnet sein. Claude Code hält bei <code>v2.1.309</code>.
+        <strong>Was als Nächstes zu beobachten ist:</strong> ob Uber Produktivitäts- oder Kostenzahlen zur 30.000er-Ausrollung veröffentlicht — der erste harte Datenpunkt für Agenten in einer großen Nicht-Tech-Belegschaft. Ob weitere gelistete Konzerne nachziehen und damit das Muster „Werkzeug für alle" bestätigen. Ob Modals Run-Rate und die Serverless-Compute-These dem Druck standhalten, sobald die öffentlichen Märkte die Compute-Rechnung bepreisen. Und die Kalenderpunkte bleiben: Vermarktung des Anthropic-IPOs ab der <strong>Woche des 9. November</strong>; am <strong>1. Dezember</strong> verdoppelt Gemini 4 Argon seine Einführungspreise, und bis zum <strong>2. Dezember</strong> müssen Bestands-Agentensysteme unter Artikel 50 des AI Act maschinenlesbar gekennzeichnet sein. Claude Code hält bei <code>v2.1.310</code>.
       </div>
 
     </div>
@@ -440,53 +440,40 @@
 
       <article class="card news-card hot">
         <div class="row">
-          <span class="pill hot">Major Release</span>
-          <span class="score">Score <b>8.0</b>/10</span>
-        </div>
-        <h3 style="margin-top:10px">Anthropic zeigt Claude Duet — der proaktive Agent, der zuerst schreibt</h3>
-        <p><strong>Anthropic</strong> kündigt <strong>Claude Duet</strong> als Research-Preview an: einen persönlichen Agenten auf <strong>Opus 5.5</strong>, der eigenständig Tagesbriefings schickt, verbundene Apps überwacht, Termine plant und Dashboards baut — vor Zahlungen/Nachrichten holt er eine Freigabe ein. Zugang per Warteliste für US-Pro/Max (iOS, Android, claude.ai). Antwort auf Metas Muse und OpenAIs Dots; die Autonomie verschiebt sich von „antwortet" zu „meldet sich selbst".</p>
-        <div class="news-meta">
-          <span>📅 22.10.2026</span><span>·</span><span>🏢 Anthropic</span><span>·</span>
-          <a href="https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/" target="_blank" rel="noreferrer">techcrunch.com</a>
-        </div>
-      </article>
-
-      <article class="card news-card warn">
-        <div class="row">
           <span class="pill warn">Marktdaten</span>
-          <span class="score">Score <b>6.0</b>/10</span>
+          <span class="score">Score <b>7.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">„Unternehmen sind noch nicht bereit" — die Gegenrechnung zum proaktiven Agenten</h3>
-        <p>Die Fachpresse ordnet Duet nüchtern ein: Für einen Agenten, der eigenständig Mails liest, Konten beobachtet und Routinen taktet, seien Unternehmen wegen offener Haftungs-, Daten- und Kontrollfragen noch nicht bereit. Anthropic selbst räumt ein, dass Duet die Dringlichkeit einer Meldung falsch einschätzen kann und bei Erledigungen wie Ticketbuchungen schwach ist — die Governance-Kluft zwischen Fähigkeit und Verantwortung bleibt.</p>
+        <h3 style="margin-top:10px">Uber stellt alle 30.000 Büro-Beschäftigten auf ChatGPT Work</h3>
+        <p>OpenAI meldet, dass <strong>Uber ChatGPT Work</strong> für mehr als <strong>30.000 Mitarbeiter</strong> freischaltet — aus einem Pilot von ~1.000 wird die gesamte Verwaltung. Ops/Finance/Marketing/Produkt nutzen ChatGPT Work, Engineers bleiben bei Codex. Kosten ungenannt, Nutzung wird gemessen. Der Schritt gilt als eine der größten Einzelunternehmens-Ausrollungen eines Agenten-Werkzeugs — rund sieben Wochen nach ~3.300 Stellenstreichungen bei Uber (kein von den Firmen bestätigter Zusammenhang).</p>
         <div class="news-meta">
-          <span>📅 22.10.2026</span><span>·</span><span>🏢 Enterprise-Adoption</span><span>·</span>
-          <a href="https://www.techtarget.com/ai/news/366652530/Anthropic-rolls-out-Claude-Duet-but-enterprises-arent-ready" target="_blank" rel="noreferrer">techtarget.com</a>
+          <span>📅 22.10.2026</span><span>·</span><span>🏢 Uber / OpenAI</span><span>·</span>
+          <a href="https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/" target="_blank" rel="noreferrer">techcrunch.com</a>
         </div>
       </article>
 
       <article class="card news-card warn">
         <div class="row">
           <span class="pill warn">M&amp;A</span>
-          <span class="score">Score <b>6.0</b>/10</span>
+          <span class="score">Score <b>7.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Das Kapital finanziert die Leine — Opsin holt 21 Mio. $ für Agenten-Governance</h3>
-        <p><strong>Opsin</strong>, Spezialist für die Governance von Enterprise-KI-Agenten, sammelt rund <strong>21 Mio. $</strong> ein (Produkt + Enterprise-Reichweite). Parallel holt <strong>AuxoAI</strong> über 20 Mio. $ für den Agenten-Umbau in Unternehmen, und die Agenten-Schicht konsolidiert weiter. Nicht der nächste Assistent zieht das institutionelle Geld, sondern die Schicht, die ihn einhegt: Identität, Berechtigungen, Audit, Laufzeit-Kontrolle.</p>
+        <h3 style="margin-top:10px">Modal holt 750 Mio. $ bei 15,75 Mrd. — das Kapital kauft die Agenten-Laufzeit</h3>
+        <p><strong>Modal Labs</strong>, Serverless-Compute für KI-/Agenten-Workloads, schließt eine <strong>750-Mio.-$-Series-D</strong> (Accel; Kleiner Perkins neu) bei <strong>15,75 Mrd. $</strong> Bewertung — mehr als 3× in fünf Monaten. Eigenangabe: >1 Mrd. $ annualisierte Run-Rate, davon ~300 Mio. allein auf Sandboxes (isolierte Ausführung für Agenten-Code). Nicht der nächste Assistent zieht das Großkapital, sondern der Maschinenraum darunter.</p>
         <div class="news-meta">
-          <span>📅 19.10.2026</span><span>·</span><span>🏢 Opsin / AuxoAI</span><span>·</span>
-          <a href="https://fintech.global/" target="_blank" rel="noreferrer">fintech.global</a>
+          <span>📅 14.10.2026</span><span>·</span><span>🏢 Modal Labs</span><span>·</span>
+          <a href="https://aiweekly.co/alerts/modal-closes-750m-series-d-led-by-accel-at-1575b-valuation-crosses-1b-arr" target="_blank" rel="noreferrer">aiweekly.co</a>
         </div>
       </article>
 
-      <article class="card news-card info">
+      <article class="card news-card warn">
         <div class="row">
-          <span class="pill info">Regulatorik</span>
-          <span class="score">Score <b>6.0</b>/10</span>
+          <span class="pill warn">Marktdaten</span>
+          <span class="score">Score <b>5.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">BSI-Prüfarchitektur A5 — KI-Audit wird maschinenlesbar (OSCAL)</h3>
-        <p>Das <strong>BSI</strong> stellt mit <strong>A5</strong> (AI Audit and Assurance Assessment Architecture) einen Rahmen vor, der Sicherheit, Robustheit und Rechtskonformität von KI-Systemen prüfbar machen soll — im maschinenlesbaren <strong>OSCAL</strong>-Format, anschlussfähig an automatisierte Compliance-Pipelines. Status (finaler Standard vs. Entwurf) noch unscharf, gehört verifiziert. Passt zur Linie EN 18286 + BaFin: aus abstrakter Regulierung werden prüfbare Kriterien.</p>
+        <h3 style="margin-top:10px">Funding-Woche: ~2,42 Mrd. $ in 19 Runden, Modal dominiert</h3>
+        <p>Ein Funding-Tracker zählt für den 12.–18. Oktober rund <strong>2,42 Mrd. $</strong> Primärkapital über 19 Runden ab 20 Mio. aufwärts — Modal steuert ~31 % bei, Nordamerika ~53 %. Die größte Übernahme der Woche fiel klein aus: <strong>Rocket Software</strong> kauft das israelische <strong>Geniez AI</strong> (von Calcalist auf bis zu 100 Mio. $ geschätzt). Große Schecks in die Infrastruktur, kleine in die App-Konsolidierung.</p>
         <div class="news-meta">
-          <span>📅 Okt 2026</span><span>·</span><span>🏢 BSI (DE)</span><span>·</span>
-          <a href="https://www.bsi.bund.de/" target="_blank" rel="noreferrer">bsi.bund.de</a>
+          <span>📅 12.–18.10.2026</span><span>·</span><span>🏢 Markt</span><span>·</span>
+          <a href="https://pricepertoken.com/news/funding" target="_blank" rel="noreferrer">pricepertoken.com</a>
         </div>
       </article>
 
@@ -495,10 +482,23 @@
           <span class="pill info">Tooling</span>
           <span class="score">Score <b>5.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Claude Code v2.1.309 härtet die Sandbox</h3>
-        <p><strong>Claude Code</strong> <code>v2.1.309</code> behebt, dass sandboxed Bash-Befehle unter Linux/macOS die Shell-Startup-Dateien vor jedem Kommando außerhalb der Sandbox ausführten, und schließt eine macOS-Lücke, in der <code>denyWrite</code>-Glob-Muster nicht am realen Pfad griffen, wenn der Ordner über einen Symlink erreicht wurde. Fortsetzung der Governance-Linie nach <code>v2.1.307</code> (<code>safety_event</code>-OTel, <code>/claude-api api-version</code>).</p>
+        <h3 style="margin-top:10px">Nvidia bringt offene Modelle für Enterprise- und PC-Agenten</h3>
+        <p><strong>Nvidia</strong> stellt neue offen gewichtete Modelle vor, um Agenten im Unternehmen und direkt auf dem PC zu betreiben — ein Vorstoß, der die Agenten-Ausführung von der Cloud auf lokale und air-gapped Umgebungen ausdehnt. Reiht sich in die Stack-Linie der Woche ein (PyTorch auf Trainium, offene Entscheider-Modelle). Belastbare Benchmarks und Jurisdiktions-Fragen stehen noch aus und gehören vor dem Produktiv-Einsatz abgewartet.</p>
         <div class="news-meta">
-          <span>📅 22.10.2026</span><span>·</span><span>🏢 Anthropic / GitHub</span><span>·</span>
+          <span>📅 19.10.2026</span><span>·</span><span>🏢 Nvidia</span><span>·</span>
+          <a href="https://techcrunch.com/" target="_blank" rel="noreferrer">techcrunch.com</a>
+        </div>
+      </article>
+
+      <article class="card news-card info">
+        <div class="row">
+          <span class="pill info">Tooling</span>
+          <span class="score">Score <b>5.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Claude Code v2.1.310 bringt das Monitor-Tool</h3>
+        <p><strong>Claude Code</strong> <code>v2.1.310</code> ergänzt das neue <strong>Monitor-Tool</strong> und Plugin-Monitore (Bedrock/Vertex/Foundry sowie bei abgeschalteter Telemetrie; lange Vordergrund-<code>sleep</code>s dort nun blockiert). Dazu Fixes: Retry ohne <code>effort-2025-11-24</code>-Beta hinter zickigen Gateways, und die Hintergrund-Bereinigung löscht unter <code>cleanupPeriodDays</code> nicht mehr frische Dateien. Fortsetzung der Observability-Linie nach <code>v2.1.309</code> + <code>v2.1.307</code>.</p>
+        <div class="news-meta">
+          <span>📅 23.10.2026</span><span>·</span><span>🏢 Anthropic / GitHub</span><span>·</span>
           <a href="https://github.com/anthropics/claude-code/releases" target="_blank" rel="noreferrer">github.com</a>
         </div>
       </article>
@@ -520,7 +520,16 @@
 
       <article class="card">
         <h3>Letzte Releases</h3>
-        <p>Aktuelle Version <code>v2.1.309</code> (22.10.) — ein <strong>Sandbox-Härtungs-Release</strong>: Es behebt, dass sandboxed Bash-Befehle unter Linux und macOS die Shell-Startup-Dateien vor jedem Kommando <em>außerhalb</em> der Sandbox ausführten, und schließt eine macOS-Lücke, in der <code>denyWrite</code>-Glob-Muster nicht am realen Pfad griffen, wenn der Ordner über einen Symlink erreicht wurde — beides direkt relevant für isolierte, unbeaufsichtigte Läufe. Davor war <code>v2.1.308</code> ein reines Wartungs-Release. Inhaltlich tragend bleibt <code>v2.1.307</code>: Mit <strong><code>/claude-api api-version</code></strong> lässt sich API-Code automatisiert auf die neue API-Version <code>2026-10-21</code> umziehen; zudem feuert das neue OpenTelemetry-Event <strong><code>claude_code.safety_event</code></strong> für jeden Tool-Aufruf, den eine Permission-Regel, der Auto-Mode, ein Safety-Check, ein Hook oder die Sandbox gestoppt, abgefragt oder zurückgewiesen hat — ein direktes Observability-Signal für unbeaufsichtigte Läufe. Davor behob <code>v2.1.306</code> gleich zwei Oneshot-Ärgernisse: <code>claude -p</code> in Cloud-Sessions meldete fälschlich „Not logged in", wenn es ohne die Session-Umgebungsvariablen startete, und ein API-Fehler wurde nicht mehr als „prompt is too long" fehlgedeutet (keine unnötige Kompaktierung mehr in Sessions mit vielen MCP-Tools). <code>v2.1.305</code> öffnete die <strong>Linux-Sandbox</strong> (<code>sandbox.allowNestedUserNamespaces</code> für Chromium/rootless podman — umgeht damit die Datei-Schutzmechanik der Sandbox), und <code>v2.1.304</code> schärfte die <strong>Mod-/Hook-Mechanik</strong> (<code>decider: "person"</code> in der <code>tool.check</code>-Antwort). Die Linie der Woche: Governance, Observability und Sandbox-Härtung wandern tiefer ins CLI — relevant genau für die Oneshot- und Cron-Läufe, die dieses Briefing erzeugen.</p>
+        <p>Aktuelle Version <code>v2.1.310</code> (23.10.) — bringt das neue <strong>Monitor-Tool</strong> und Plugin-Monitore (auf Bedrock, Vertex und Foundry sowie dann, wenn Telemetrie oder nicht-essenzieller Traffic abgeschaltet sind; lange Vordergrund-<code>sleep</code>s werden dort jetzt blockiert) — plus zwei Robustheits-Fixes: Anfragen scheiterten hinter manchen Gateways, die den Beta-Wert <code>effort-2025-11-24</code> oder System-Nachrichten mitten im Gespräch zurückwiesen (Claude Code versucht es nun ohne sie erneut), und die Hintergrund-Bereinigung löschte unter bestimmten <code>cleanupPeriodDays</code>-Werten zu früh auch frische Dateien wie eingefügte Bilder. Davor härtete <code>v2.1.309</code> (22.10.) die Linux-/macOS-<strong>Sandbox</strong>: sandboxed Bash-Befehle führten Shell-Startup-Dateien nicht mehr <em>außerhalb</em> der Sandbox aus, und macOS-<code>denyWrite</code>-Glob-Muster greifen auch über Symlinks. <code>v2.1.308</code> war reine Wartung. Inhaltlich tragend bleibt <code>v2.1.307</code>: Mit <strong><code>/claude-api api-version</code></strong> lässt sich API-Code automatisiert auf die neue API-Version <code>2026-10-21</code> umziehen; zudem feuert das neue OpenTelemetry-Event <strong><code>claude_code.safety_event</code></strong> für jeden Tool-Aufruf, den eine Permission-Regel, der Auto-Mode, ein Safety-Check, ein Hook oder die Sandbox gestoppt, abgefragt oder zurückgewiesen hat. Davor behob <code>v2.1.306</code> zwei Oneshot-Ärgernisse (<code>claude -p</code>-„Not logged in" in Cloud-Sessions; „prompt is too long"-Fehldeutung), und <code>v2.1.305</code> öffnete die <strong>Linux-Sandbox</strong> (<code>sandbox.allowNestedUserNamespaces</code> für Chromium/rootless podman). Die Linie der Woche: Monitoring, Governance, Observability und Sandbox-Härtung wandern tiefer ins CLI — relevant genau für die Oneshot- und Cron-Läufe, die dieses Briefing erzeugen.</p>
+
+        <div class="release">
+          <div class="ver">v2.1.310</div>
+          <div class="when">23.10.</div>
+          <div class="what">
+            <strong>Monitor-Tool</strong> — neues Monitor-Tool + Plugin-Monitore (Bedrock/Vertex/Foundry sowie bei abgeschalteter Telemetrie; lange Vordergrund-<code>sleep</code>s dort blockiert) · Retry ohne <code>effort-2025-11-24</code>-Beta hinter zickigen Gateways · <code>cleanupPeriodDays</code> löscht keine frischen Dateien mehr
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
 
         <div class="release">
           <div class="ver">v2.1.309</div>
@@ -567,15 +576,6 @@
           </div>
         </div>
 
-        <div class="release">
-          <div class="ver">v2.1.304</div>
-          <div class="when">19.10.</div>
-          <div class="what">
-            <strong>Mod-/Hook-Mechanik</strong> — Transcript-Zeile, wenn ein zuerst laufendes Plugin einen Mod-Hook überspringt (benennt Event + Plugin) · <code>decider: "person"</code> in der <code>tool.check</code>-Antwort eines Mods (nur Dialog/Host-Callback dürfen zustimmen) · <code>e.isReadOnly</code> im <code>tool.check</code>-Event
-            <span class="badge feat">FEATURE</span>
-          </div>
-        </div>
-
         <p style="margin-top: 14px;">
           <a href="https://github.com/anthropics/claude-code/releases">→ Alle Releases auf GitHub</a><br/>
           <a href="https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md">→ Vollständiger CHANGELOG.md</a>
@@ -586,7 +586,8 @@
         <h3>Watch-List</h3>
         <p>Worauf in den nächsten Releases zu achten ist:</p>
         <ul>
-          <li><strong><code>safety_event</code>-Telemetrie</strong>: das neue OTel-Event macht gestoppte/abgefragte Tool-Aufrufe sichtbar — ideal für Audit-Trails unbeaufsichtigter Läufe; Integration in bestehende OTel-Pipelines prüfen.</li>
+          <li><strong>Monitor-Tool (v2.1.310)</strong>: neues Tool + Plugin-Monitore zur Beobachtung laufender Agenten-Prozesse (auch auf Bedrock/Vertex/Foundry) — für unbeaufsichtigte Läufe prüfen, welche Signale es liefert und wie es sich zu <code>safety_event</code> verhält.</li>
+          <li><strong><code>safety_event</code>-Telemetrie</strong>: das OTel-Event macht gestoppte/abgefragte Tool-Aufrufe sichtbar — ideal für Audit-Trails unbeaufsichtigter Läufe; Integration in bestehende OTel-Pipelines prüfen.</li>
           <li><strong>API-Version 2026-10-21</strong>: <code>/claude-api api-version</code> automatisiert den Umzug — Breaking Changes der neuen Version gegen Produktions-Code abgleichen.</li>
           <li><strong>Sandbox-Härtung (v2.1.309)</strong>: Shell-Startup-Dateien laufen nicht mehr außerhalb der Sandbox, <code>denyWrite</code> greift auch über Symlinks — für isolierte Oneshot-Läufe nach dem Upgrade nachprüfen, dass nichts unbeabsichtigt blockiert. <code>allowNestedUserNamespaces</code> nur dort aktivieren, wo Chromium/podman es wirklich brauchen.</li>
           <li><strong>Retry-Watchdog-Feintuning</strong>: die neuen Usage-Limit-Recheck-Variablen betreffen genau Oneshot/Cron — Verhalten an echten Timer-Läufen beobachten.</li>
@@ -605,7 +606,7 @@
   </section>
 
   <footer>
-    <div>Snapshot · <span class="mono" id="generated">22. Oktober 2026</span></div>
+    <div>Snapshot · <span class="mono" id="generated">24. Oktober 2026</span></div>
     <div>
       <a href="/sources/">📚 Quellen-Sammlung</a> ·
       <a href="/">📊 Übersicht</a>
