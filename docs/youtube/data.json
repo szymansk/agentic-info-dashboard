@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-24T11:04:20+00:00",
+  "last_updated": "2026-10-25T12:04:31+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -170,6 +170,30 @@
   ],
   "recent": [
     {
+      "video_id": "eQTOJZ6_NVU",
+      "title": "Sam Altman on What People Still Bring to an AI World",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-25T05:59:23+00:00",
+      "url": "https://www.youtube.com/shorts/eQTOJZ6_NVU",
+      "thumbnail": "https://img.youtube.com/vi/eQTOJZ6_NVU/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "bBqP-w6DHFw",
+      "title": "Kimi K3.1 Invented the Benchmark Scores",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-24T23:22:44+00:00",
+      "url": "https://www.youtube.com/shorts/bBqP-w6DHFw",
+      "thumbnail": "https://img.youtube.com/vi/bBqP-w6DHFw/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
       "video_id": "5sEVvu4mQ8g",
       "title": "They actually did it... (Kimi K3.1)",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
@@ -278,18 +302,6 @@
       "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
     },
     {
-      "video_id": "fHY0sjAejcA",
-      "title": "Who is local AI really for?",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-23T16:36:20+00:00",
-      "url": "https://www.youtube.com/watch?v=fHY0sjAejcA",
-      "thumbnail": "https://img.youtube.com/vi/fHY0sjAejcA/mqdefault.jpg",
-      "description": "Check out Jetbrains Air: https://jb.gg/JetBrains-Air\nJunie Lite is free for a limited time!\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x"
-    },
-    {
       "video_id": "-YMMRQ1qscI",
       "title": "Amazon CEO Andy Jassy on the Infrastructure the AI Era Needs",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -312,18 +324,6 @@
       "url": "https://www.youtube.com/watch?v=w6dSNCg9I5k",
       "thumbnail": "https://img.youtube.com/vi/w6dSNCg9I5k/mqdefault.jpg",
       "description": "Meet Llama: run AI models locally on your Mac, right from the menu bar.\n\nFind models that fit your Mac, download with one click, and start chatting. Your conversations stay on your computer, it works offline, and apps that support the OpenA"
-    },
-    {
-      "video_id": "9WZpou1faFU",
-      "title": "Sam Altman on AI’s Discovery Era",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-22T20:47:14+00:00",
-      "url": "https://www.youtube.com/shorts/9WZpou1faFU",
-      "thumbnail": "https://img.youtube.com/vi/9WZpou1faFU/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
     },
     {
       "video_id": "-9XQMHhpypc",
@@ -636,22 +636,10 @@
       "url": "https://www.youtube.com/watch?v=4fLVq6HJsKc",
       "thumbnail": "https://img.youtube.com/vi/4fLVq6HJsKc/mqdefault.jpg",
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The DeepSeek OCR paper is available here:\nhttps://github.com/deepseek-ai/DeepSeek-OCR\n\n🙏 We would like to thank our generous Patreon supporters who make T"
-    },
-    {
-      "video_id": "DVRMDoYhVBI",
-      "title": "AI Coding Is a Slot Machine: Loss Disguised as a Win | Jeremy Howard",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-10-11T09:19:59+00:00",
-      "url": "https://www.youtube.com/shorts/DVRMDoYhVBI",
-      "thumbnail": "https://img.youtube.com/vi/DVRMDoYhVBI/mqdefault.jpg",
-      "description": "Jeremy Howard, co-founder of fast.ai, on why AI-assisted coding works like a slot machine: you craft the prompt, pull the lever, and the occasional win feels like control. In his words: \"It's got all these hallmarks of loss disguised as a w"
     }
   ],
   "stats": {
-    "total_videos": 40,
+    "total_videos": 39,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
