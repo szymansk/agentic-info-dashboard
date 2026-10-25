@@ -375,9 +375,15 @@
     },
     {
       "date": "2026-10-24",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-10-24.html",
       "headline": "Nach dem Agenten-Theater die Belegschaft und das Silizium — Uber stellt 30.000 Mitarbeiter auf ChatGPT Work, Modal holt 750 Mio. für den Maschinenraum",
       "summary": "Eine Woche nach dem proaktiven Agenten liefert der Samstag die nüchterne Gegenprobe, wohin die Technik wirklich landet: Uber schaltet ChatGPT Work für alle rund 30.000 Büro-Beschäftigten frei (aus einem 1.000er-Pilot; Ops/Finance/Marketing auf ChatGPT Work, Engineers auf Codex) — sieben Wochen nach 3.300 Stellenstreichungen · und Modal, der Serverless-Unterbau für Agenten-Workloads, sammelt 750 Mio. $ bei 15,75 Mrd. Bewertung (3× in fünf Monaten, >1 Mrd. $ ARR, Sandboxes allein ~300 Mio.) — das Kapital kauft nicht den nächsten Assistenten, sondern die Laufzeit · daneben Nvidia mit neuen Open-Weight-Modellen für Enterprise- und PC-Agenten und Claude Code v2.1.310 mit dem neuen Monitor-Tool · die Wochen-Bilanz: ~2,42 Mrd. $ Primärkapital in 19 Runden, größte Übernahme Rocket Software/Geniez AI (~100 Mio.) · Fazit: Fähigkeit ist Ware — Wert und Geld sitzen in Deployment-at-Scale und im Maschinenraum darunter."
+    },
+    {
+      "date": "2026-10-25",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Microsoft erklärt den Agenten zum Insider-Risiko — während die Ausrollung ungebremst beschleunigt",
+      "summary": "Microsoft: „Frontier-Modelle können nicht vertraut werden“ — Guardian Agents + Project Perception, Nadella trennt Intelligenz von Autorität · SAP 1.000 Agenten auf der TechEd · Cognizant/Google Gemini Frontier Group · Modell-Wochenware aus China (Kimi K3.1, Qwen3.6, MiniMax M3.1) · EU AI Act/BaFin/BSI A5 ziehen den Rahmen an · Claude Code hält bei v2.1.310"
     }
   ]
 }
