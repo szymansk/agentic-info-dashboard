@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-25T12:04:31+00:00",
+  "last_updated": "2026-10-26T05:00:57+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -130,7 +130,7 @@
     },
     {
       "video_id": "FGCP2F_7rQk",
-      "title": "Visiting Taiwan w/ Jensen Huang | Lex Fridman",
+      "title": "My First Time in Taiwan w/ Jensen Huang | Lex Fridman",
       "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
       "channel_name": "Lex Fridman",
       "category": "podcast",
@@ -169,6 +169,30 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "L18lkQs4PeM",
+      "title": "Kimi K3.1 Passes the Rubik's Cube Test",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-25T22:29:29+00:00",
+      "url": "https://www.youtube.com/shorts/L18lkQs4PeM",
+      "thumbnail": "https://img.youtube.com/vi/L18lkQs4PeM/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "V_uq3v6xK-4",
+      "title": "Sphere Intersection Puzzle Corrected",
+      "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
+      "channel_name": "3Blue1Brown",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-10-25T14:30:46+00:00",
+      "url": "https://www.youtube.com/shorts/V_uq3v6xK-4",
+      "thumbnail": "https://img.youtube.com/vi/V_uq3v6xK-4/mqdefault.jpg",
+      "description": "Part of a series of monthly puzzles\nEarly view of some other solutions:\nhttps://members.3blue1brown.com/posts/solution-to-10-158885046\nhttps://members.3blue1brown.com/posts/solution-to-sum-156593740"
+    },
     {
       "video_id": "eQTOJZ6_NVU",
       "title": "Sam Altman on What People Still Bring to an AI World",
@@ -290,20 +314,8 @@
       "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
     },
     {
-      "video_id": "f8uIINtoJCM",
-      "title": "Sam Altman on Why Your Most Important Advice Should Come From People",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-23T17:03:19+00:00",
-      "url": "https://www.youtube.com/shorts/f8uIINtoJCM",
-      "thumbnail": "https://img.youtube.com/vi/f8uIINtoJCM/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
       "video_id": "-YMMRQ1qscI",
-      "title": "Amazon CEO Andy Jassy on the Infrastructure the AI Era Needs",
+      "title": "Amazon CEO Andy Jassy on the $220 Billion AI Buildout",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
       "channel_name": "a16z",
       "category": "industry",
@@ -543,7 +555,7 @@
     },
     {
       "video_id": "FGCP2F_7rQk",
-      "title": "Visiting Taiwan w/ Jensen Huang | Lex Fridman",
+      "title": "My First Time in Taiwan w/ Jensen Huang | Lex Fridman",
       "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
       "channel_name": "Lex Fridman",
       "category": "podcast",
@@ -624,18 +636,6 @@
       "url": "https://www.youtube.com/watch?v=C4Sq3Rot8FU",
       "thumbnail": "https://img.youtube.com/vi/C4Sq3Rot8FU/mqdefault.jpg",
       "description": "In the week that software got reverse engineered, Sam Altman warned 6.1 Astra ‘tipped toward [breach risk], and Muse Wonder showed the race isn’t slowing, I try to step back and show where it is all going, on current trends. Agree or disagr"
-    },
-    {
-      "video_id": "4fLVq6HJsKc",
-      "title": "DeepSeek Solved AI’s Memory Problem",
-      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
-      "channel_name": "Two Minute Papers",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-10-11T16:53:17+00:00",
-      "url": "https://www.youtube.com/watch?v=4fLVq6HJsKc",
-      "thumbnail": "https://img.youtube.com/vi/4fLVq6HJsKc/mqdefault.jpg",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The DeepSeek OCR paper is available here:\nhttps://github.com/deepseek-ai/DeepSeek-OCR\n\n🙏 We would like to thank our generous Patreon supporters who make T"
     }
   ],
   "stats": {
