@@ -381,9 +381,15 @@
     },
     {
       "date": "2026-10-25",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-10-25.html",
       "headline": "Microsoft erklärt den Agenten zum Insider-Risiko — während die Ausrollung ungebremst beschleunigt",
       "summary": "Microsoft: „Frontier-Modelle können nicht vertraut werden“ — Guardian Agents + Project Perception, Nadella trennt Intelligenz von Autorität · SAP 1.000 Agenten auf der TechEd · Cognizant/Google Gemini Frontier Group · Modell-Wochenware aus China (Kimi K3.1, Qwen3.6, MiniMax M3.1) · EU AI Act/BaFin/BSI A5 ziehen den Rahmen an · Claude Code hält bei v2.1.310"
+    },
+    {
+      "date": "2026-10-26",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Die Rechnung landet beim Publikum — der Compute-Boom trifft Aktienmarkt, Politik und Vertrauensfrage zugleich",
+      "summary": "Nasdaq mit schwächstem Tag seit Juni (~−2 %), Mag-7 verlieren an einem Tag ~797 Mrd. $, nachdem Alphabet die Capex-Guidance auf bis zu 205 Mrd. $ hebt · Axios: KI-CEOs werden zur parteiübergreifenden politischen Belastung · Welt zerfällt in US- und China-Blöcke, Forsa: ~90 % der Deutschen wollen global gültige KI-Regeln · OpenAIs Astra entschlüsselt versteckte Bildbotschaft von Anthropics Fable, Anthropic berät mit Kanzleien über Verhandlungsregeln für Agenten · Claude Code hält bei v2.1.310"
     }
   ]
 }
