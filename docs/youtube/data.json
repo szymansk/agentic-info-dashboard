@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-27T05:19:46+00:00",
+  "last_updated": "2026-10-27T12:05:07+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -229,6 +229,18 @@
       "description": "Higgsfield is building an AI video and image creation platform that helps creators and small teams produce everything from instructional videos to fashion campaigns.\n\nWith GPT‑6 Astra, the company has gone from creating videos around one mi"
     },
     {
+      "video_id": "CQ_Cfw6QxSk",
+      "title": "7 AI code review best practices #deeplearningai #qodo",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-26T22:00:28+00:00",
+      "url": "https://www.youtube.com/shorts/CQ_Cfw6QxSk",
+      "thumbnail": "https://img.youtube.com/vi/CQ_Cfw6QxSk/mqdefault.jpg",
+      "description": "A pull request can look clean and still miss a requirement or hide a security issue. When AI writes more of your code, there is often too much to check by hand.\n\nAI Code Review, built in collaboration with Qodo and taught by Nnenna Ndukwe, "
+    },
+    {
       "video_id": "crEHJon4iD4",
       "title": "How Sullivan & Cromwell builds legal tools with Codex | OpenAI",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
@@ -239,6 +251,90 @@
       "url": "https://www.youtube.com/watch?v=crEHJon4iD4",
       "thumbnail": "https://img.youtube.com/vi/crEHJon4iD4/mqdefault.jpg",
       "description": "At Sullivan & Cromwell LLP, John Savva uses Codex to build tools around the firm’s legal expertise.\n\nAgreement Analyzer brings together a draft agreement, selected precedents, and playbooks reflecting the firm’s and client’s positions. It i"
+    },
+    {
+      "video_id": "G_em1hHPnXY",
+      "title": "China just dropped a new frontier model... and nobody can explain how",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-10-26T18:55:29+00:00",
+      "url": "https://www.youtube.com/watch?v=G_em1hHPnXY",
+      "thumbnail": "https://img.youtube.com/vi/G_em1hHPnXY/mqdefault.jpg",
+      "description": "Get 20% off Mobbin Pro to help your agent design UIs that actually convert - https://mobbin.com/fireship\n\nKimi K3.1 just dropped as a free 3-trillion-parameter open-weight model that comes within one point of Opus on Terminal Bench. But is "
+    },
+    {
+      "video_id": "c7bH0PVMEZs",
+      "title": "DoorDash's first version of the company",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-26T15:49:04+00:00",
+      "url": "https://www.youtube.com/shorts/c7bH0PVMEZs",
+      "thumbnail": "https://img.youtube.com/vi/c7bH0PVMEZs/mqdefault.jpg",
+      "description": "DoorDash was originally called PaloAltoDelivery.com and grew out of a business school project Xu started at Stanford in 2013. He says the V1 took 45 minutes. Before that, he worked at McKinsey, eBay, and Square."
+    },
+    {
+      "video_id": "VgF5aP0amXA",
+      "title": "Learn from OpenAI, Hugging Face, Andrew Ng and Yann LeCun | AI Dev NYC #aidev #shorts",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-26T15:00:16+00:00",
+      "url": "https://www.youtube.com/shorts/VgF5aP0amXA",
+      "thumbnail": "https://img.youtube.com/vi/VgF5aP0amXA/mqdefault.jpg",
+      "description": "Build your AI engineering skills at AI Dev NYC. Learn from Salil Sethi (OpenAI) on turning new model capabilities into reliable production systems, and Joel Niklaus (Hugging Face) on harness optimization and synthetic data. Andrew Ng opens "
+    },
+    {
+      "video_id": "CKFUx7COIwQ",
+      "title": "Workshop: Training Agents at the frontier of AI Industry",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-26T14:32:20+00:00",
+      "url": "https://www.youtube.com/watch?v=CKFUx7COIwQ",
+      "thumbnail": "https://img.youtube.com/vi/CKFUx7COIwQ/mqdefault.jpg",
+      "description": "Training Agents IRL: four talks and a panel on post-training agents with open models\n\nTraining Agents IRL is the in-person follow-up to the Training Agents livestream series. Speakers from Microsoft, Mercor, RadixArk and BenchFlow cover ent"
+    },
+    {
+      "video_id": "9v42ZOdiBJY",
+      "title": "Why OpenAI Is Racing to Make Computer Use Superhuman",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-26T14:30:19+00:00",
+      "url": "https://www.youtube.com/watch?v=9v42ZOdiBJY",
+      "thumbnail": "https://img.youtube.com/vi/9v42ZOdiBJY/mqdefault.jpg",
+      "description": "AI agents are approaching a point where they can use computers faster than expert humans, turning the user interface itself into a universal way for AI to interact with software. OpenAI’s Ari Weinstein and James Sun argue that computer use "
+    },
+    {
+      "video_id": "IRJDwtAreB4",
+      "title": "Mathematics Just Changed Forever — Kevin Hartnett",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-10-26T14:23:14+00:00",
+      "url": "https://www.youtube.com/watch?v=IRJDwtAreB4",
+      "thumbnail": "https://img.youtube.com/vi/IRJDwtAreB4/mqdefault.jpg",
+      "description": "Kevin Hartnett is the author of *The Proof in the Code*.\n\nSPONSOR:\n---\nCyber Fund built the Monastery to help founders ship products that were impossible a year ago. Applications for Batch 1 are now open.\nApply now: https://cyber.fund\n---\n\n"
+    },
+    {
+      "video_id": "mEtRe_KKYm0",
+      "title": "Hugging Face Journal Club: Score Centering Stabilizes Off-policy Reinforcement Learning",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-26T13:38:50+00:00",
+      "url": "https://www.youtube.com/watch?v=mEtRe_KKYm0",
+      "thumbnail": "https://img.youtube.com/vi/mEtRe_KKYm0/mqdefault.jpg",
+      "description": "Kashif Rasul from the Hugging Face research team gives an in-depth derivation of the mathematics behind the score centering paper, followed by discussion among the team.\n\nPaper link: https://huggingface.co/papers/2609.20807"
     },
     {
       "video_id": "L18lkQs4PeM",
@@ -301,6 +397,66 @@
       "description": "CodeRabbit is FREE for the first 50 users who use code \"MATTHEWCR\" https://coderabbit.link/matthew-berman-003\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward F"
     },
     {
+      "video_id": "SMGg7iisHmc",
+      "title": "The most vulnerable week in internet history...",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-10-23T18:19:58+00:00",
+      "url": "https://www.youtube.com/watch?v=SMGg7iisHmc",
+      "thumbnail": "https://img.youtube.com/vi/SMGg7iisHmc/mqdefault.jpg",
+      "description": "Semgrep Guardian catches the risky code and packages your agent introduces. Try it free for 60 days: https://semgrep.dev/onboarding/guardian?offer=fireship_202610&utm_source=fireship&utm_medium=referral&utm_campaign=2026-10_fireship_guardia"
+    },
+    {
+      "video_id": "-YMMRQ1qscI",
+      "title": "Amazon CEO Andy Jassy on Reinventing Amazon for the AI Era",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-23T15:40:03+00:00",
+      "url": "https://www.youtube.com/watch?v=-YMMRQ1qscI",
+      "thumbnail": "https://img.youtube.com/vi/-YMMRQ1qscI/mqdefault.jpg",
+      "description": "Amazon expects to spend roughly $220 billion in CapEx in 2026, yet CEO Andy Jassy says the company is still leaving meaningful AI demand on the table. He believes the buildout could ultimately help make AWS a $1 trillion annual run-rate bus"
+    },
+    {
+      "video_id": "w6dSNCg9I5k",
+      "title": "Llama: Local AI on Your Mac",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-23T07:55:07+00:00",
+      "url": "https://www.youtube.com/watch?v=w6dSNCg9I5k",
+      "thumbnail": "https://img.youtube.com/vi/w6dSNCg9I5k/mqdefault.jpg",
+      "description": "Meet Llama: run AI models locally on your Mac, right from the menu bar.\n\nFind models that fit your Mac, download with one click, and start chatting. Your conversations stay on your computer, it works offline, and apps that support the OpenA"
+    },
+    {
+      "video_id": "-9XQMHhpypc",
+      "title": "Marc Andreessen: The Biggest Gap I’ve Seen in My Career",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-22T16:36:24+00:00",
+      "url": "https://www.youtube.com/watch?v=-9XQMHhpypc",
+      "thumbnail": "https://img.youtube.com/vi/-9XQMHhpypc/mqdefault.jpg",
+      "description": "a16z is expanding a16z crypto into a16z Frontier, a broader mandate to back founders building at the edges of what's possible. Chris Dixon joins Marc Andreessen, Ben Horowitz, and Erik Torenberg to explain why founders should increasingly a"
+    },
+    {
+      "video_id": "zv6B6PQOuHE",
+      "title": "The last real programmers are dying out...",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-10-22T15:09:31+00:00",
+      "url": "https://www.youtube.com/watch?v=zv6B6PQOuHE",
+      "thumbnail": "https://img.youtube.com/vi/zv6B6PQOuHE/mqdefault.jpg",
+      "description": "Get real-time search data from a single API. Fireship viewers get 1,000 free searches: https://serpapi.com/fireship\n\nYes the very foundations of the internet are currently crumbling to pieces, but before we look at that, let's distract ours"
+    },
+    {
       "video_id": "h6j_ixGnpiY",
       "title": "How Image Watermarking Works - Computerphile",
       "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
@@ -311,6 +467,66 @@
       "url": "https://www.youtube.com/watch?v=h6j_ixGnpiY",
       "thumbnail": "https://img.youtube.com/vi/h6j_ixGnpiY/mqdefault.jpg",
       "description": "Image watermarks are a way to embed information into a picture, Dr Mike Pound takes us through Adobe's Trust Mark to explain the idea & covers some of the pros and cons. \n\n00:00 - Introduction: Watermarking Images vs Text\n00:28 - Steganogra"
+    },
+    {
+      "video_id": "UC9PdhD6Yxg",
+      "title": "Automate CSV to Parquet with Buckets, Webhooks & Jobs",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-22T12:56:47+00:00",
+      "url": "https://www.youtube.com/watch?v=UC9PdhD6Yxg",
+      "thumbnail": "https://img.youtube.com/vi/UC9PdhD6Yxg/mqdefault.jpg",
+      "description": "Files keep landing in your Hugging Face Storage Bucket. Here is how to process each one automatically, without downloading anything.\n\nIn this live-coding video we set up a webhook on a bucket that triggers a Hugging Face Job whenever a new "
+    },
+    {
+      "video_id": "4kpr4_jOmrY",
+      "title": "Solve problems people actually have.",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-21T20:00:30+00:00",
+      "url": "https://www.youtube.com/shorts/4kpr4_jOmrY",
+      "thumbnail": "https://img.youtube.com/vi/4kpr4_jOmrY/mqdefault.jpg",
+      "description": "Instagram started as Burbn, a location check-in app that Kevin Systrom and Mike Krieger moved on from.\n\nThis is Systrom on what they did differently the second time.\n\nSource: Foundation 16, Kevin Rose"
+    },
+    {
+      "video_id": "KnDMnZYEo2M",
+      "title": "I Turned Structured Output Into a Game 🎮",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-21T13:43:05+00:00",
+      "url": "https://www.youtube.com/shorts/KnDMnZYEo2M",
+      "thumbnail": "https://img.youtube.com/vi/KnDMnZYEo2M/mqdefault.jpg",
+      "description": "The model’s top prediction can still break the rules.\n\nI built Token Arcade to make structured output and constrained decoding easier to understand: see the next-token probabilities, pick a card, and find out whether it’s allowed.\n\nWatch a "
+    },
+    {
+      "video_id": "b2tjnxX8IHU",
+      "title": "Did Google just dethrone OpenAI and Anthropic?",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-10-20T16:21:03+00:00",
+      "url": "https://www.youtube.com/watch?v=b2tjnxX8IHU",
+      "thumbnail": "https://img.youtube.com/vi/b2tjnxX8IHU/mqdefault.jpg",
+      "description": "Macroscope can auto-approve your team's PRs safely. Try it here: https://macroscope.com/?utm_source=fireship\n\nGoogle’s new model claims to beat GPT-6 and Opus 5.5, so I took them all for a test drive. Let's dive in.\n\nWant more Fireship?\n\n🗞️"
+    },
+    {
+      "video_id": "CUjHZlvQufk",
+      "title": "Learn to build better AI Agents through better context",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-20T15:16:35+00:00",
+      "url": "https://www.youtube.com/watch?v=CUjHZlvQufk",
+      "thumbnail": "https://img.youtube.com/vi/CUjHZlvQufk/mqdefault.jpg",
+      "description": "Learn More: https://bit.ly/4yy5iWP\n\nThe longer an agent works, the more repeated, contradictory, or stale information builds up in its context. Models perform worse as their context grows, a problem Jeff Huber and his team at Chroma named C"
     },
     {
       "video_id": "LWxX6vvHfrc",
@@ -337,6 +553,18 @@
       "description": "Sharing a few thoughts on the future of math\nThese videos are funded directly by viewers: https://3b1b.co/support\nAn equally valuable form of support is to simply share the videos.\nHome page: https://www.3blue1brown.com\n\nIf you want a finge"
     },
     {
+      "video_id": "l3L_lETiSzc",
+      "title": "The runtime wars are over... and Node won",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-10-15T17:35:15+00:00",
+      "url": "https://www.youtube.com/watch?v=l3L_lETiSzc",
+      "thumbnail": "https://img.youtube.com/vi/l3L_lETiSzc/mqdefault.jpg",
+      "description": "Every JetBrains account now comes with a free coding model called Junie Lite. Try it: https://jb.gg/JunieLite\n\nCloudflare just acquired Deno and the creator of Node.js is finally admitting that reimplementing it was a mistake. Let's dive in"
+    },
+    {
       "video_id": "WqrwAFs-fq0",
       "title": "Multiplayer Gaming & Flight Simulation - Computerphile",
       "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
@@ -349,8 +577,20 @@
       "description": "Using the example of a flight simulator to discuss the complexities of coding a multi-player game. What data do you send? When do you send it & how often? Dr Julian Onions talks about his experiences of working on a flight simulator.\n\nCompu"
     },
     {
+      "video_id": "2IuO_80wB0s",
+      "title": "Give your team AI skills you can trust",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-14T18:05:18+00:00",
+      "url": "https://www.youtube.com/watch?v=2IuO_80wB0s",
+      "thumbnail": "https://img.youtube.com/vi/2IuO_80wB0s/mqdefault.jpg",
+      "description": "Learn more: deeplearning.ai/business\n\nOur enterprise program gives your team AI skills you can trust. \n\nEngineering teams are under pressure to build AI skills. In BCG's 2026 survey, 72% of workers said AI has changed what their jobs requir"
+    },
+    {
       "video_id": "FGCP2F_7rQk",
-      "title": "The FULL Taiwan Experience w/ Jensen Huang | Lex Fridman",
+      "title": "My First Time in Taiwan w/ Jensen Huang | Lex Fridman",
       "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
       "channel_name": "Lex Fridman",
       "category": "podcast",
@@ -407,34 +647,13 @@
       "url": "https://www.youtube.com/watch?v=9jQA7IgPhBE",
       "thumbnail": "https://img.youtube.com/vi/9jQA7IgPhBE/mqdefault.jpg",
       "description": "Auditing chemistry literature usually means weeks of manual, error-prone reading, where a molecule’s structure can sit 50 pages away from its experimental readout. At Isomorphic Labs, researchers Brian Bender and Santosh Adhikari are using "
-    },
-    {
-      "video_id": "z_sXLlLVUls",
-      "title": "OpenAI’s New AI Is Doing Things We Barely Understand",
-      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
-      "channel_name": "Two Minute Papers",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-10-13T08:56:12+00:00",
-      "url": "https://www.youtube.com/watch?v=z_sXLlLVUls",
-      "thumbnail": "https://img.youtube.com/vi/z_sXLlLVUls/mqdefault.jpg",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 The papers are available here:\nhttps://openai.com/index/sharing-ai-progress-in-mathematics/\nhttps://github.com/openai/math\n\n🙏 We would like to thank our g"
     }
   ],
   "stats": {
-    "total_videos": 22,
+    "total_videos": 41,
     "total_channels": 16,
-    "successful_channels": 8,
-    "failed_channels": [
-      "Andrej Karpathy",
-      "Yannic Kilcher",
-      "Machine Learning Street Talk",
-      "Anthropic",
-      "Hugging Face",
-      "a16z",
-      "DeepLearningAI",
-      "Fireship"
-    ],
+    "successful_channels": 16,
+    "failed_channels": [],
     "window_days": 14
   }
 }
