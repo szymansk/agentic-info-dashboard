@@ -387,9 +387,15 @@
     },
     {
       "date": "2026-10-26",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-10-26.html",
       "headline": "Die Rechnung landet beim Publikum — der Compute-Boom trifft Aktienmarkt, Politik und Vertrauensfrage zugleich",
       "summary": "Nasdaq mit schwächstem Tag seit Juni (~−2 %), Mag-7 verlieren an einem Tag ~797 Mrd. $, nachdem Alphabet die Capex-Guidance auf bis zu 205 Mrd. $ hebt · Axios: KI-CEOs werden zur parteiübergreifenden politischen Belastung · Welt zerfällt in US- und China-Blöcke, Forsa: ~90 % der Deutschen wollen global gültige KI-Regeln · OpenAIs Astra entschlüsselt versteckte Bildbotschaft von Anthropics Fable, Anthropic berät mit Kanzleien über Verhandlungsregeln für Agenten · Claude Code hält bei v2.1.310"
+    },
+    {
+      "date": "2026-10-27",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Von der Capex-Panik zur IPO-Euphorie in drei Tagen — der KI-Komplex handelt als ein einziges Sentiment",
+      "summary": "Anthropic reicht öffentlich seinen IPO-Antrag ein und hebt die KI-Aktien — drei Tage nach dem Capex-Ausverkauf feiert dieselbe Börse den nächsten Börsengang · Big-Tech-Quartalswoche (Alphabet/Microsoft/Amazon/Apple, 28.–29.10.) wird zum eigentlichen Capex-Stresstest (Capex-Guidance ~205/220 Mrd. $) · OpenAI launcht GPT-6.1 Terra: billige Computer-Nutzung zum halben Sol-Preis · Zwei auseinanderdriftende Investoren-Klassen: Flapping Airplanes 1 Mrd. $ ohne Produkt, Legora 550 Mio. $ · Claude Code springt auf v2.1.311"
     }
   ]
 }
