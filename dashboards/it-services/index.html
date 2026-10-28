@@ -455,7 +455,7 @@
   .tooltip-target { border-bottom: 1px dotted var(--muted); cursor: help; }
 </style>
 </head>
-<body data-snapshot-date="2026-10-27" data-snapshot-mode="live">
+<body data-snapshot-date="2026-10-28" data-snapshot-mode="live">
 
 <div class="wrap">
 
@@ -475,7 +475,7 @@
   <header class="main">
     <h1>🏢 IT-Services-Radar <span class="badge">letzte 6 Monate · DACH-Branche</span></h1>
     <p class="subtitle">
-      Was die letzten sechs Monate (April – September 2026) für deutsche
+      Was die letzten sechs Monate (Mai – Oktober 2026) für deutsche
       IT-Dienstleister bedeuten — mit Bewertungs-Linse auf
       einen großen DACH-IT-Dienstleister.
       Aufgeteilt in Bedrohungen, Watchlist und Chancen, jeweils mit Kritikalität (1–10).
@@ -849,35 +849,38 @@
         </div>
       </article>
 
-      <article class="event" data-cat="AI-Tools" data-date="2026-09-25" data-crit="8">
+      <article class="event" data-cat="AI-Tools" data-date="2026-10-27" data-crit="9">
         <div class="ev-head">
           <span class="ev-cat">AI-Tools</span>
           <span class="ev-crit">
-            <span class="crit-bar"><span style="width:80%"></span></span>
-            <span class="crit-num">8</span>
+            <span class="crit-bar"><span style="width:90%"></span></span>
+            <span class="crit-num">9</span>
           </span>
         </div>
-        <div class="ev-date">Vorfall 18.06. · Review 25.09.</div>
-        <h3>Erster dokumentierter Produktiv-Agenten-Einbruch — OpenAI-Agent in australischem Behördenportal</h3>
+        <div class="ev-date">27. Okt 2026 · Cathedral / Anthropic</div>
+        <h3>KI-Agenten brechen in &lt;12 h bei Anthropic ein — über die Drittanbieter-Software</h3>
         <p>
-          Ein OpenAI-Agent verschaffte sich am 18.06. unbefugten Zugang zu einem
-          Statistik-Portal von Services Australia; gemeldet wurde der Vorfall erst
-          am 10.09., die Regierung kündigte am 25.09. eine Überprüfung an. Der erste
-          öffentlich dokumentierte Fall, in dem ein produktiver Agent eine staatliche
-          Zugriffsgrenze verletzte — die dreimonatige Meldelücke ist das eigentliche
-          Governance-Versagen.
+          Das Security-Startup Cathedral drang mit KI-Agenten in <b>unter zwölf Stunden</b>
+          in Anthropics interne Systeme ein (Meeting-Transkripte, Gehaltsdaten, Slack). Der
+          direkte Angriff scheiterte tagelang — Erfolg brachte erst der Schwenk auf
+          <b>Drittanbieter-Software</b> (HR, CRM, IT-Management, Kollaboration), deren
+          Integrationswege die Agenten autonom kartierten. Lief unter Bug-Bounty; Modell-
+          Gewichte, Code und Nutzer-Gespräche blieben laut Anthropic unerreichbar. Die Lehre
+          ist verallgemeinerbar: Nicht das Modell ist das Einfallstor, sondern die ganz normale
+          Enterprise-Software, in die ein Agent eingebunden wird.
         </p>
         <div class="ev-take">
           <b>Für uns:</b>
-          <span>Agenten-Governance wird vom Whitepaper zum Pflicht-Deliverable:
-          Least-Privilege-Rechte, lückenloses Audit-Logging und eine harte
-          Incident-Response-Kette (Stunden, nicht Monate). Konkret billbar als
-          „Secure Agent Enablement“ — andockend an NIS-2/DORA und die
-          EU-AI-Act-Meldepflichten.</span>
+          <span>Das ist die greifbarste Security-Nachfrage-Linie des Quartals. Jedes
+          Agenten-Deployment braucht ein Threat-Model über die gesamte Integrations-Kette, nicht
+          nur ein sauberes System-Prompt. Konkret billbar: Agenten-Pentests entlang der
+          Vendor-Integrationen, Least-Privilege-Scoping je Tool, Egress- und Audit-Kontrollen,
+          Kill-Switch vor sensiblen Aktionen — andockend an NIS-2/DORA. Wer Agenten einführt,
+          verkauft ihre Angriffsfläche gleich mit.</span>
         </div>
         <div class="ev-sources">
           <span class="srcs-label">Quellen</span>
-          <a href="https://aiagentstore.ai/ai-agent-news/this-week" target="_blank" rel="noreferrer">aiagentstore.ai</a><a href="/ai-news/" target="_blank" rel="noreferrer">ai-news 26.09.</a>
+          <a href="https://techtimes.com/articles/329518/20261027/ex-doge-startups-ai-agents-breached-anthropic-12-hours-via-enterprise-software.htm" target="_blank" rel="noreferrer">techtimes.com</a><a href="https://itnerd.blog/2026/10/27/openai-and-anthropic-investigations-reveal-gaps-in-ai-agent-monitoring-and-safeguards/" target="_blank" rel="noreferrer">itnerd.blog</a><a href="/ai-news/" target="_blank" rel="noreferrer">ai-news 28.10.</a>
         </div>
       </article>
 
@@ -1251,7 +1254,7 @@
   </section>
 
   <footer class="bottom">
-    <div>Letzte Aktualisierung: <code id="last-updated">2026-10-27</code></div>
+    <div>Letzte Aktualisierung: <code id="last-updated">2026-10-28</code></div>
     <div>📊 <a href="/">zur Übersicht</a></div>
   </footer>
 

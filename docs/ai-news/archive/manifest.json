@@ -393,9 +393,15 @@
     },
     {
       "date": "2026-10-27",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-10-27.html",
       "headline": "Von der Capex-Panik zur IPO-Euphorie in drei Tagen — der KI-Komplex handelt als ein einziges Sentiment",
       "summary": "Anthropic reicht öffentlich seinen IPO-Antrag ein und hebt die KI-Aktien — drei Tage nach dem Capex-Ausverkauf feiert dieselbe Börse den nächsten Börsengang · Big-Tech-Quartalswoche (Alphabet/Microsoft/Amazon/Apple, 28.–29.10.) wird zum eigentlichen Capex-Stresstest (Capex-Guidance ~205/220 Mrd. $) · OpenAI launcht GPT-6.1 Terra: billige Computer-Nutzung zum halben Sol-Preis · Zwei auseinanderdriftende Investoren-Klassen: Flapping Airplanes 1 Mrd. $ ohne Produkt, Legora 550 Mio. $ · Claude Code springt auf v2.1.311"
+    },
+    {
+      "date": "2026-10-28",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Der IPO-Prospekt als Risiko-Protokoll — Agenten-Sicherheit wird zur Chefsache",
+      "summary": "Anthropic-S-1 (Ticker ANT): 16,3 Mrd. $ H1-Umsatz, 80,7 Mrd. $ Verlust (meist noncash) · DOGE-Startup Cathedral bricht via Vendor-Software in <12 h in Anthropics Interna ein · 63 Mrd. $ Broadcom-Compute per SPV · Microsoft bietet 60.000 Buyouts · Salesforce kauft Braze fuer 5,66 Mrd. $ · Big-Tech-Earnings 28./29.10."
     }
   ]
 }
