@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-27T12:05:07+00:00",
+  "last_updated": "2026-10-28T12:04:57+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,29 @@
   ],
   "featured": [
     {
-      "video_id": "Wanw4woz7zc",
-      "title": "How Sullivan & Cromwell builds legal tools with Codex | OpenAI",
+      "video_id": "M2Oa42hF67E",
+      "title": "From legal bottleneck to business partner | Legora’s Emma Kadri Bergström",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-10-26T23:24:00+00:00",
-      "url": "https://www.youtube.com/shorts/Wanw4woz7zc",
-      "thumbnail": "https://img.youtube.com/vi/Wanw4woz7zc/mqdefault.jpg",
-      "description": "At Sullivan & Cromwell LLP, John Savva uses Codex to build tools around the firm’s legal expertise.\n\nAgreement Analyzer brings together a draft agreement, selected precedents, and playbooks reflecting the firm’s and client’s positions. It i",
+      "published": "2026-10-28T09:45:24+00:00",
+      "url": "https://www.youtube.com/watch?v=M2Oa42hF67E",
+      "thumbnail": "https://img.youtube.com/vi/M2Oa42hF67E/mqdefault.jpg",
+      "description": "NDA reviews once took up around 20% of Legora’s legal team’s capacity. Today, that figure is under 1%. General Counsel Emma Kadri Bergström shares how AI is helping her team reclaim time, support a rapidly growing business and take on more ",
+      "why": ""
+    },
+    {
+      "video_id": "sFfPkUJd_Jk",
+      "title": "Genie 4: A new generation of world simulation",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_name": "Google DeepMind",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-27T16:00:41+00:00",
+      "url": "https://www.youtube.com/watch?v=sFfPkUJd_Jk",
+      "thumbnail": "https://img.youtube.com/vi/sFfPkUJd_Jk/mqdefault.jpg",
+      "description": "Meet Genie 4, Google DeepMind’s most realistic and interactive world model yet. Built on our Gemini models, Genie 4 lets you step inside dynamic worlds in real time, steer scenes on the fly with natural language, and watch what happens next",
       "why": ""
     },
     {
@@ -140,25 +153,204 @@
       "thumbnail": "https://img.youtube.com/vi/ZAzWPE9CItg/mqdefault.jpg",
       "description": "Ankur Moitra, Steven Brunton and Alex Kontorovich are three mathematicians who can speak to this incredible moment in the history of mathematics, when AI solved some of its hardest problems: Navier-Stokes, the quasi-Riemann hypothesis, the ",
       "why": ""
-    },
-    {
-      "video_id": "LVEfFyijQ2c",
-      "title": "Applying Gemini 4 for large-scale codebase maintenance in Chromium",
-      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
-      "channel_name": "Google DeepMind",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-13T16:38:17+00:00",
-      "url": "https://www.youtube.com/watch?v=LVEfFyijQ2c",
-      "thumbnail": "https://img.youtube.com/vi/LVEfFyijQ2c/mqdefault.jpg",
-      "description": "The Chromium codebase is millions of lines long and decades old. In the past, working with it has meant navigating decades of tangled features, where touching one component can unexpectedly affect another. Erik Chen, an engineer at Google, ",
-      "why": ""
     }
   ],
   "recent": [
     {
+      "video_id": "Zo2oyjbTEXA",
+      "title": "Agents on longer tasks need more than one loop",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-28T11:30:33+00:00",
+      "url": "https://www.youtube.com/watch?v=Zo2oyjbTEXA",
+      "thumbnail": "https://img.youtube.com/vi/Zo2oyjbTEXA/mqdefault.jpg",
+      "description": "Learn More: https://bit.ly/4BuaMVb\n\nAn agent that calls tools and decides its next step can complete a task. Making that agent reliable over longer, more complex work takes more: loops that check its output, start a new run each time an eve"
+    },
+    {
+      "video_id": "M2Oa42hF67E",
+      "title": "From legal bottleneck to business partner | Legora’s Emma Kadri Bergström",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-28T09:45:24+00:00",
+      "url": "https://www.youtube.com/watch?v=M2Oa42hF67E",
+      "thumbnail": "https://img.youtube.com/vi/M2Oa42hF67E/mqdefault.jpg",
+      "description": "NDA reviews once took up around 20% of Legora’s legal team’s capacity. Today, that figure is under 1%. General Counsel Emma Kadri Bergström shares how AI is helping her team reclaim time, support a rapidly growing business and take on more "
+    },
+    {
+      "video_id": "UOfmD1fY-i8",
+      "title": "Building the future of legal work with AI | Legora CEO Max Junestrand",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-28T09:45:18+00:00",
+      "url": "https://www.youtube.com/watch?v=UOfmD1fY-i8",
+      "thumbnail": "https://img.youtube.com/vi/UOfmD1fY-i8/mqdefault.jpg",
+      "description": "Legora co-founder and CEO Max Junestrand wants to make legal expertise available wherever it’s needed. He shares how OpenAI helped turn that ambition into a platform, why staying AI-native matters as the company grows, and what becomes poss"
+    },
+    {
+      "video_id": "z-WZMjNsg-k",
+      "title": "Faster contract review. Broader legal analysis. | Legora’s Alex Fortescue-Webb",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-28T09:45:16+00:00",
+      "url": "https://www.youtube.com/watch?v=z-WZMjNsg-k",
+      "thumbnail": "https://img.youtube.com/vi/z-WZMjNsg-k/mqdefault.jpg",
+      "description": "When deadlines limit how many contracts lawyers can examine, important risks can go unseen. Alex Fortescue-Webb, Global Head of Legal Engineering at Legora, explains how AI powered by OpenAI models helps teams analyse thousands of contracts"
+    },
+    {
+      "video_id": "yJxZef1Ylok",
+      "title": "How Legora is transforming legal work with OpenAI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-28T09:45:14+00:00",
+      "url": "https://www.youtube.com/watch?v=yJxZef1Ylok",
+      "thumbnail": "https://img.youtube.com/vi/yJxZef1Ylok/mqdefault.jpg",
+      "description": "What can lawyers achieve when time is no longer the limit? Discover how Legora uses OpenAI models, ChatGPT and Codex to help legal teams review contracts faster, broaden their analysis and make more room for work that needs human judgment. "
+    },
+    {
+      "video_id": "IcXN7ysaqrc",
+      "title": "We're the Ones Having the Debate (Jeremy Avigad)",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-10-28T08:26:23+00:00",
+      "url": "https://www.youtube.com/shorts/IcXN7ysaqrc",
+      "thumbnail": "https://img.youtube.com/vi/IcXN7ysaqrc/mqdefault.jpg",
+      "description": "Jeremy Avigad on why the AI debate should stay centred on us. What makes our goals special is that they're ours. AI can have its own discussion on the side about what its goals are; what matters is how we interact with it, what our goals ar"
+    },
+    {
+      "video_id": "_9axenbT-1I",
+      "title": "When It Doesn't Matter That It's Slop (Paul Lessard)",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-10-28T07:51:47+00:00",
+      "url": "https://www.youtube.com/shorts/_9axenbT-1I",
+      "thumbnail": "https://img.youtube.com/vi/_9axenbT-1I/mqdefault.jpg",
+      "description": "Paul Lessard on where AI has already replaced people. Translation was a white-collar job that has essentially disappeared, and whether these systems replace people or simply de-skill them hardly matters to the companies using them. Wherever"
+    },
+    {
+      "video_id": "eeVmSP9fL0c",
+      "title": "Nobody Had Actually Read It (Kevin Buzzard)",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-10-28T05:27:08+00:00",
+      "url": "https://www.youtube.com/shorts/eeVmSP9fL0c",
+      "thumbnail": "https://img.youtube.com/vi/eeVmSP9fL0c/mqdefault.jpg",
+      "description": "Kevin Buzzard (Imperial College London) on the Liquid Tensor Experiment. At the end of 2020 the Fields medallist Peter Scholze asked whether anyone had carefully read the six pages of technical calculations at the heart of his work with Dus"
+    },
+    {
+      "video_id": "DDZ-a6bAn3Y",
+      "title": "Deepseek crushed everyone",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-28T03:47:38+00:00",
+      "url": "https://www.youtube.com/watch?v=DDZ-a6bAn3Y",
+      "thumbnail": "https://img.youtube.com/vi/DDZ-a6bAn3Y/mqdefault.jpg",
+      "description": "Apply for an ARENA pass here: https://coreweave.com/coreweave-arena Test how your AI app holds up under real traffic before your users ever see it. Thanks to CoreWeave for sponsoring this video. #CoreWeavePartner\n\nJoin My Newsletter for Reg"
+    },
+    {
+      "video_id": "Melgii34x-c",
+      "title": "The Annals Published It. It Wasn't True. - Kevin Buzzard",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-10-28T00:47:40+00:00",
+      "url": "https://www.youtube.com/shorts/Melgii34x-c",
+      "thumbnail": "https://img.youtube.com/vi/Melgii34x-c/mqdefault.jpg",
+      "description": "Kevin Buzzard (Imperial College London) on what happened when 50 theorems from the Annals of Mathematics were written down in the Lean proof assistant: theorems by four Fields medallists turned out to be false as stated, because of small mi"
+    },
+    {
+      "video_id": "mMzaL15KFVY",
+      "title": "I Ranked 5 Ways to Wake Up",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-27T18:47:13+00:00",
+      "url": "https://www.youtube.com/shorts/mMzaL15KFVY",
+      "thumbnail": "https://img.youtube.com/vi/mMzaL15KFVY/mqdefault.jpg",
+      "description": "Use code MATTHEWBERMAN for $200 off the Pod: https://www.eightsleep.com/matthewberman\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/f"
+    },
+    {
+      "video_id": "m7jelL7qRWo",
+      "title": "Colour Theory Has Politics - Paul Lessard",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-10-27T17:51:10+00:00",
+      "url": "https://www.youtube.com/shorts/m7jelL7qRWo",
+      "thumbnail": "https://img.youtube.com/vi/m7jelL7qRWo/mqdefault.jpg",
+      "description": "Paul Lessard on why the representations we arrive at don't have to converge. Colour theory looks as if it simply is, but it carries politics and economics. His example is Faith Ringgold, the Black American painter and quilter, and the poste"
+    },
+    {
+      "video_id": "sFfPkUJd_Jk",
+      "title": "Genie 4: A new generation of world simulation",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_name": "Google DeepMind",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-27T16:00:41+00:00",
+      "url": "https://www.youtube.com/watch?v=sFfPkUJd_Jk",
+      "thumbnail": "https://img.youtube.com/vi/sFfPkUJd_Jk/mqdefault.jpg",
+      "description": "Meet Genie 4, Google DeepMind’s most realistic and interactive world model yet. Built on our Gemini models, Genie 4 lets you step inside dynamic worlds in real time, steer scenes on the fly with natural language, and watch what happens next"
+    },
+    {
+      "video_id": "jeUgtyvvkfs",
+      "title": "Anthropic’s IPO: Who Gets the Voting Power?",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-27T15:47:35+00:00",
+      "url": "https://www.youtube.com/shorts/jeUgtyvvkfs",
+      "thumbnail": "https://img.youtube.com/vi/jeUgtyvvkfs/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "Yim7JrVzSkk",
+      "title": "Lawyers Stay in Control | AT&T + OpenAI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-27T15:40:48+00:00",
+      "url": "https://www.youtube.com/shorts/Yim7JrVzSkk",
+      "thumbnail": "https://img.youtube.com/vi/Yim7JrVzSkk/mqdefault.jpg",
+      "description": "AT&T’s David McAtee and Bill Ryan discuss how AI can support legal work while lawyers remain responsible for strategy, judgment and decisions."
+    },
+    {
+      "video_id": "T4u2FoIm3pw",
+      "title": "The AI School Kids Love More Than Vacation | Alpha School's Joe Liemandt",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-27T14:30:18+00:00",
+      "url": "https://www.youtube.com/watch?v=T4u2FoIm3pw",
+      "thumbnail": "https://img.youtube.com/vi/T4u2FoIm3pw/mqdefault.jpg",
+      "description": "What should school look like if AI can help students learn dramatically faster? Alpha School principal Joe Liemandt argues the answer isn’t to fill the extra time with more academics, but to redesign school around the skills traditional cla"
+    },
+    {
       "video_id": "JI3bbZNdyeA",
-      "title": "It's happening...",
+      "title": "This is much more concerning than you think...",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
       "channel_name": "Matthew Berman",
       "category": "news",
@@ -167,18 +359,6 @@
       "url": "https://www.youtube.com/watch?v=JI3bbZNdyeA",
       "thumbnail": "https://img.youtube.com/vi/JI3bbZNdyeA/mqdefault.jpg",
       "description": "Use Code Matt for $100 in Kylon credits: https://kylon.io/matt1\n\nJoin the Frontier: https://forwardfuture.com/frontier-pass\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberma"
-    },
-    {
-      "video_id": "Wanw4woz7zc",
-      "title": "How Sullivan & Cromwell builds legal tools with Codex | OpenAI",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-26T23:24:00+00:00",
-      "url": "https://www.youtube.com/shorts/Wanw4woz7zc",
-      "thumbnail": "https://img.youtube.com/vi/Wanw4woz7zc/mqdefault.jpg",
-      "description": "At Sullivan & Cromwell LLP, John Savva uses Codex to build tools around the firm’s legal expertise.\n\nAgreement Analyzer brings together a draft agreement, selected precedents, and playbooks reflecting the firm’s and client’s positions. It i"
     },
     {
       "video_id": "ZAzWPE9CItg",
@@ -193,42 +373,6 @@
       "description": "Ankur Moitra, Steven Brunton and Alex Kontorovich are three mathematicians who can speak to this incredible moment in the history of mathematics, when AI solved some of its hardest problems: Navier-Stokes, the quasi-Riemann hypothesis, the "
     },
     {
-      "video_id": "zUybw-9ejZ4",
-      "title": "Amp puts AI agents to work beyond code with OpenAI models",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-26T22:03:54+00:00",
-      "url": "https://www.youtube.com/watch?v=zUybw-9ejZ4",
-      "thumbnail": "https://img.youtube.com/vi/zUybw-9ejZ4/mqdefault.jpg",
-      "description": "Amp is building an AI agent that helps developers turn ideas into working software, from deciding what to build to writing code to onboarding customers.\n\nSign in with ChatGPT gives Amp users access to more tokens for larger tasks, while Amp"
-    },
-    {
-      "video_id": "8fp-G14hvUk",
-      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-26T22:03:40+00:00",
-      "url": "https://www.youtube.com/watch?v=8fp-G14hvUk",
-      "thumbnail": "https://img.youtube.com/vi/8fp-G14hvUk/mqdefault.jpg",
-      "description": "Stack Overflow is building a knowledge intelligence platform that turns information scattered across workplace tools into verified knowledge for people and AI agents.\n\nThe company's latest product, Stack Overflow for Agents, was built from "
-    },
-    {
-      "video_id": "inrYeej3Big",
-      "title": "Higgsfield takes AI video from 1 minute to over 10",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-26T22:03:06+00:00",
-      "url": "https://www.youtube.com/watch?v=inrYeej3Big",
-      "thumbnail": "https://img.youtube.com/vi/inrYeej3Big/mqdefault.jpg",
-      "description": "Higgsfield is building an AI video and image creation platform that helps creators and small teams produce everything from instructional videos to fashion campaigns.\n\nWith GPT‑6 Astra, the company has gone from creating videos around one mi"
-    },
-    {
       "video_id": "CQ_Cfw6QxSk",
       "title": "7 AI code review best practices #deeplearningai #qodo",
       "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
@@ -239,18 +383,6 @@
       "url": "https://www.youtube.com/shorts/CQ_Cfw6QxSk",
       "thumbnail": "https://img.youtube.com/vi/CQ_Cfw6QxSk/mqdefault.jpg",
       "description": "A pull request can look clean and still miss a requirement or hide a security issue. When AI writes more of your code, there is often too much to check by hand.\n\nAI Code Review, built in collaboration with Qodo and taught by Nnenna Ndukwe, "
-    },
-    {
-      "video_id": "crEHJon4iD4",
-      "title": "How Sullivan & Cromwell builds legal tools with Codex | OpenAI",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-26T20:06:50+00:00",
-      "url": "https://www.youtube.com/watch?v=crEHJon4iD4",
-      "thumbnail": "https://img.youtube.com/vi/crEHJon4iD4/mqdefault.jpg",
-      "description": "At Sullivan & Cromwell LLP, John Savva uses Codex to build tools around the firm’s legal expertise.\n\nAgreement Analyzer brings together a draft agreement, selected precedents, and playbooks reflecting the firm’s and client’s positions. It i"
     },
     {
       "video_id": "G_em1hHPnXY",
@@ -313,18 +445,6 @@
       "description": "AI agents are approaching a point where they can use computers faster than expert humans, turning the user interface itself into a universal way for AI to interact with software. OpenAI’s Ari Weinstein and James Sun argue that computer use "
     },
     {
-      "video_id": "IRJDwtAreB4",
-      "title": "Mathematics Just Changed Forever — Kevin Hartnett",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-10-26T14:23:14+00:00",
-      "url": "https://www.youtube.com/watch?v=IRJDwtAreB4",
-      "thumbnail": "https://img.youtube.com/vi/IRJDwtAreB4/mqdefault.jpg",
-      "description": "Kevin Hartnett is the author of *The Proof in the Code*.\n\nSPONSOR:\n---\nCyber Fund built the Monastery to help founders ship products that were impossible a year ago. Applications for Batch 1 are now open.\nApply now: https://cyber.fund\n---\n\n"
-    },
-    {
       "video_id": "mEtRe_KKYm0",
       "title": "Hugging Face Journal Club: Score Centering Stabilizes Off-policy Reinforcement Learning",
       "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
@@ -350,7 +470,7 @@
     },
     {
       "video_id": "V_uq3v6xK-4",
-      "title": "Sphere Intersection Puzzle Corrected",
+      "title": "The Sphere Intersection Puzzle",
       "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
       "channel_name": "3Blue1Brown",
       "category": "researcher",
@@ -359,42 +479,6 @@
       "url": "https://www.youtube.com/shorts/V_uq3v6xK-4",
       "thumbnail": "https://img.youtube.com/vi/V_uq3v6xK-4/mqdefault.jpg",
       "description": "Part of a series of monthly puzzles\nEarly view of some other solutions:\nhttps://members.3blue1brown.com/posts/solution-to-10-158885046\nhttps://members.3blue1brown.com/posts/solution-to-sum-156593740"
-    },
-    {
-      "video_id": "eQTOJZ6_NVU",
-      "title": "Sam Altman on What People Still Bring to an AI World",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-25T05:59:23+00:00",
-      "url": "https://www.youtube.com/shorts/eQTOJZ6_NVU",
-      "thumbnail": "https://img.youtube.com/vi/eQTOJZ6_NVU/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
-      "video_id": "bBqP-w6DHFw",
-      "title": "Kimi K3.1 Invented the Benchmark Scores",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-24T23:22:44+00:00",
-      "url": "https://www.youtube.com/shorts/bBqP-w6DHFw",
-      "thumbnail": "https://img.youtube.com/vi/bBqP-w6DHFw/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
-      "video_id": "5sEVvu4mQ8g",
-      "title": "They actually did it... (Kimi K3.1)",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-24T02:34:15+00:00",
-      "url": "https://www.youtube.com/watch?v=5sEVvu4mQ8g",
-      "thumbnail": "https://img.youtube.com/vi/5sEVvu4mQ8g/mqdefault.jpg",
-      "description": "CodeRabbit is FREE for the first 50 users who use code \"MATTHEWCR\" https://coderabbit.link/matthew-berman-003\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward F"
     },
     {
       "video_id": "SMGg7iisHmc",
@@ -479,18 +563,6 @@
       "url": "https://www.youtube.com/watch?v=UC9PdhD6Yxg",
       "thumbnail": "https://img.youtube.com/vi/UC9PdhD6Yxg/mqdefault.jpg",
       "description": "Files keep landing in your Hugging Face Storage Bucket. Here is how to process each one automatically, without downloading anything.\n\nIn this live-coding video we set up a webhook on a bucket that triggers a Hugging Face Job whenever a new "
-    },
-    {
-      "video_id": "4kpr4_jOmrY",
-      "title": "Solve problems people actually have.",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-21T20:00:30+00:00",
-      "url": "https://www.youtube.com/shorts/4kpr4_jOmrY",
-      "thumbnail": "https://img.youtube.com/vi/4kpr4_jOmrY/mqdefault.jpg",
-      "description": "Instagram started as Burbn, a location check-in app that Kevin Systrom and Mike Krieger moved on from.\n\nThis is Systrom on what they did differently the second time.\n\nSource: Foundation 16, Kevin Rose"
     },
     {
       "video_id": "KnDMnZYEo2M",
@@ -587,70 +659,10 @@
       "url": "https://www.youtube.com/watch?v=2IuO_80wB0s",
       "thumbnail": "https://img.youtube.com/vi/2IuO_80wB0s/mqdefault.jpg",
       "description": "Learn more: deeplearning.ai/business\n\nOur enterprise program gives your team AI skills you can trust. \n\nEngineering teams are under pressure to build AI skills. In BCG's 2026 survey, 72% of workers said AI has changed what their jobs requir"
-    },
-    {
-      "video_id": "FGCP2F_7rQk",
-      "title": "My First Time in Taiwan w/ Jensen Huang | Lex Fridman",
-      "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
-      "channel_name": "Lex Fridman",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-10-13T21:26:16+00:00",
-      "url": "https://www.youtube.com/watch?v=FGCP2F_7rQk",
-      "thumbnail": "https://img.youtube.com/vi/FGCP2F_7rQk/mqdefault.jpg",
-      "description": "I've been traveling the world a bit. One of the most incredible experiences was getting to visit Taiwan with Jensen Huang. It was wild 🤯 Huge crowds, insanely good street food at night markets, and of course a lot of good conversations acro"
-    },
-    {
-      "video_id": "LVEfFyijQ2c",
-      "title": "Applying Gemini 4 for large-scale codebase maintenance in Chromium",
-      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
-      "channel_name": "Google DeepMind",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-13T16:38:17+00:00",
-      "url": "https://www.youtube.com/watch?v=LVEfFyijQ2c",
-      "thumbnail": "https://img.youtube.com/vi/LVEfFyijQ2c/mqdefault.jpg",
-      "description": "The Chromium codebase is millions of lines long and decades old. In the past, working with it has meant navigating decades of tangled features, where touching one component can unexpectedly affect another. Erik Chen, an engineer at Google, "
-    },
-    {
-      "video_id": "ftkic7Tdpcg",
-      "title": "Using Gemini 4 Argon to protect against Cyber attackers",
-      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
-      "channel_name": "Google DeepMind",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-13T16:38:14+00:00",
-      "url": "https://www.youtube.com/watch?v=ftkic7Tdpcg",
-      "thumbnail": "https://img.youtube.com/vi/ftkic7Tdpcg/mqdefault.jpg",
-      "description": "In shadow A/B testing on real-world systems, Wiz security researchers put Gemini 4 Argon to the test against complex cyber threats. Using its advanced reasoning and long-horizon capabilities, Gemini 4 Argon found over two times more vulnera"
-    },
-    {
-      "video_id": "9PICEmtfpWU",
-      "title": "Teaching a humanoid robot to play cornhole with Gemini 4 Argon",
-      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
-      "channel_name": "Google DeepMind",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-13T15:58:20+00:00",
-      "url": "https://www.youtube.com/watch?v=9PICEmtfpWU",
-      "thumbnail": "https://img.youtube.com/vi/9PICEmtfpWU/mqdefault.jpg",
-      "description": "In an internal test, Google DeepMind robotics researchers instructed Gemini 4 Argon to watch a video of a human playing cornhole. Using its video understanding and advanced reasoning capabilities, Gemini 4 built a virtual simulation in MuJo"
-    },
-    {
-      "video_id": "9jQA7IgPhBE",
-      "title": "Untangling 500-page chemistry patents with Gemini 4",
-      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
-      "channel_name": "Google DeepMind",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-13T15:58:17+00:00",
-      "url": "https://www.youtube.com/watch?v=9jQA7IgPhBE",
-      "thumbnail": "https://img.youtube.com/vi/9jQA7IgPhBE/mqdefault.jpg",
-      "description": "Auditing chemistry literature usually means weeks of manual, error-prone reading, where a molecule’s structure can sit 50 pages away from its experimental readout. At Isomorphic Labs, researchers Brian Bender and Santosh Adhikari are using "
     }
   ],
   "stats": {
-    "total_videos": 41,
+    "total_videos": 42,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
