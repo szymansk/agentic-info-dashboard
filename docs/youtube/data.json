@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-28T12:04:57+00:00",
+  "last_updated": "2026-10-29T12:00:37+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,16 @@
   ],
   "featured": [
     {
-      "video_id": "M2Oa42hF67E",
-      "title": "From legal bottleneck to business partner | Legora’s Emma Kadri Bergström",
+      "video_id": "ujmyzWSj8IU",
+      "title": "API credits, now in ChatGPT Pro and Business plans",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-10-28T09:45:24+00:00",
-      "url": "https://www.youtube.com/watch?v=M2Oa42hF67E",
-      "thumbnail": "https://img.youtube.com/vi/M2Oa42hF67E/mqdefault.jpg",
-      "description": "NDA reviews once took up around 20% of Legora’s legal team’s capacity. Today, that figure is under 1%. General Counsel Emma Kadri Bergström shares how AI is helping her team reclaim time, support a rapidly growing business and take on more ",
+      "published": "2026-10-28T23:45:26+00:00",
+      "url": "https://www.youtube.com/watch?v=ujmyzWSj8IU",
+      "thumbnail": "https://img.youtube.com/vi/ujmyzWSj8IU/mqdefault.jpg",
+      "description": "Starting today, eligible ChatGPT Pro and Business subscribers can claim up to $500 per month in API credits to build apps and agents.\n\nCredit amounts depend on the plan.  Pro plans get $100, $200 or $500 per month by tier.  Business plans g",
       "why": ""
     },
     {
@@ -156,6 +156,138 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "zhnJo7s91ls",
+      "title": "Google \"Carbon\" just won everything...",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-29T00:29:20+00:00",
+      "url": "https://www.youtube.com/watch?v=zhnJo7s91ls",
+      "thumbnail": "https://img.youtube.com/vi/zhnJo7s91ls/mqdefault.jpg",
+      "description": "Try Factory's $200 Max plan free for one month: https://factory.com/berman\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfutur"
+    },
+    {
+      "video_id": "ujmyzWSj8IU",
+      "title": "API credits, now in ChatGPT Pro and Business plans",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-28T23:45:26+00:00",
+      "url": "https://www.youtube.com/watch?v=ujmyzWSj8IU",
+      "thumbnail": "https://img.youtube.com/vi/ujmyzWSj8IU/mqdefault.jpg",
+      "description": "Starting today, eligible ChatGPT Pro and Business subscribers can claim up to $500 per month in API credits to build apps and agents.\n\nCredit amounts depend on the plan.  Pro plans get $100, $200 or $500 per month by tier.  Business plans g"
+    },
+    {
+      "video_id": "3yZb9rGt-rk",
+      "title": "Google announces Gemini 4 Carbon",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-28T22:20:44+00:00",
+      "url": "https://www.youtube.com/shorts/3yZb9rGt-rk",
+      "thumbnail": "https://img.youtube.com/vi/3yZb9rGt-rk/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "ASEdkRI7YEM",
+      "title": "What happens when you're a serial entrepreneur",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-28T19:00:27+00:00",
+      "url": "https://www.youtube.com/shorts/ASEdkRI7YEM",
+      "thumbnail": "https://img.youtube.com/vi/ASEdkRI7YEM/mqdefault.jpg",
+      "description": "Travis Kalanick, co-founder of Uber, on what changes by a founder's third or fourth company.\n\nBefore Uber, Travis left UCLA in 1998 to help launch the file-sharing startup Scour, then founded Red Swoosh, which he sold to Akamai in 2007. His"
+    },
+    {
+      "video_id": "pryCaGv8wuo",
+      "title": "DeepSeek's New AI Is An Absolute Monster",
+      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+      "channel_name": "Two Minute Papers",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-10-28T17:32:40+00:00",
+      "url": "https://www.youtube.com/watch?v=pryCaGv8wuo",
+      "thumbnail": "https://img.youtube.com/vi/pryCaGv8wuo/mqdefault.jpg",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 DeepSeek v4.1 Flash 1017 is available here:\nhttps://api-docs.deepseek.com/news/news261017/\n\nSources:\nhttps://x.com/marcthecreatorr/status/2111427716142571"
+    },
+    {
+      "video_id": "cI8IquVEyVY",
+      "title": "?PHP Problem? - Computerphile",
+      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
+      "channel_name": "Computerphile",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-10-28T16:23:55+00:00",
+      "url": "https://www.youtube.com/watch?v=cI8IquVEyVY",
+      "thumbnail": "https://img.youtube.com/vi/cI8IquVEyVY/mqdefault.jpg",
+      "description": "Two PHP Exploits hit the news last week. Dr Steve Bagley explains how dangerous they could be. Read about the chip competition on Jane Street’s blog: https://jane-st.co/ASIC-Competition-Computerphile2027 (channel sponsor)\n\nComputerphile is "
+    },
+    {
+      "video_id": "p1jhV6LlbFY",
+      "title": "Join Andrew Ng at AI Dev NYC for two days of technical sessions and workshops.",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-28T15:00:09+00:00",
+      "url": "https://www.youtube.com/watch?v=p1jhV6LlbFY",
+      "thumbnail": "https://img.youtube.com/vi/p1jhV6LlbFY/mqdefault.jpg",
+      "description": "What AI engineering skills will you build next?\nJoin Andrew Ng at AI Dev NYC for two days of technical sessions and workshops on:\n🧠Knowledge graphs: GraphRAG and building graphs from your own data\n💾Agent memory: giving agents memory that pe"
+    },
+    {
+      "video_id": "5UWDUD6qaM4",
+      "title": "Mark Cuban on Why AI Could Turn Solo Founders Into Trillionaires",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-28T14:30:15+00:00",
+      "url": "https://www.youtube.com/watch?v=5UWDUD6qaM4",
+      "thumbnail": "https://img.youtube.com/vi/5UWDUD6qaM4/mqdefault.jpg",
+      "description": "Mark Cuban thinks AI could transform healthcare, but it won’t fix opaque prices and broken incentives on its own. His starting point for employers: run every benefits contract through AI and ask where you’re getting ripped off.\n\nMark joins "
+    },
+    {
+      "video_id": "nEaJMdM1djM",
+      "title": "Did the AI bubble just pop?",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-10-28T13:31:29+00:00",
+      "url": "https://www.youtube.com/watch?v=nEaJMdM1djM",
+      "thumbnail": "https://img.youtube.com/vi/nEaJMdM1djM/mqdefault.jpg",
+      "description": "Try Hyperagent for free, or sign in with ChatGPT to get more usage from your existing plan: https://www.hyperagent.com/login?utm_source=youtube&utm_medium=influencer&utm_campaign=FIRESHIP\n\nAre we cooked chat?\n\nWant more Fireship?\n\n🗞️ Newsle"
+    },
+    {
+      "video_id": "kP26OlW5PBk",
+      "title": "Merge CEO Shensi Ding: AI fluency starts at the top",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-28T11:51:11+00:00",
+      "url": "https://www.youtube.com/shorts/kP26OlW5PBk",
+      "thumbnail": "https://img.youtube.com/vi/kP26OlW5PBk/mqdefault.jpg",
+      "description": "“If you're an executive, you are the ceiling for AI fluency for your organization.”\n\nMerge co-founder and CEO Shensi Ding manages the non-R&D side of the business. She also codes.\n\nUsing Codex, she asked it to help redesign a feature using "
+    },
+    {
+      "video_id": "6ep8Vvm4Bdw",
+      "title": "Why Merge CEO Shensi Ding stays hands-on with Codex",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-28T11:50:26+00:00",
+      "url": "https://www.youtube.com/watch?v=6ep8Vvm4Bdw",
+      "thumbnail": "https://img.youtube.com/vi/6ep8Vvm4Bdw/mqdefault.jpg",
+      "description": "“If you're an executive, you are the ceiling for AI fluency for your organization.”\n\nMerge co-founder and CEO Shensi Ding manages the non-R&D side of the business. She also codes.\n\nWith Codex, she asked for help redesigning a feature withou"
+    },
     {
       "video_id": "Zo2oyjbTEXA",
       "title": "Agents on longer tasks need more than one loop",
@@ -191,30 +323,6 @@
       "url": "https://www.youtube.com/watch?v=UOfmD1fY-i8",
       "thumbnail": "https://img.youtube.com/vi/UOfmD1fY-i8/mqdefault.jpg",
       "description": "Legora co-founder and CEO Max Junestrand wants to make legal expertise available wherever it’s needed. He shares how OpenAI helped turn that ambition into a platform, why staying AI-native matters as the company grows, and what becomes poss"
-    },
-    {
-      "video_id": "z-WZMjNsg-k",
-      "title": "Faster contract review. Broader legal analysis. | Legora’s Alex Fortescue-Webb",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-28T09:45:16+00:00",
-      "url": "https://www.youtube.com/watch?v=z-WZMjNsg-k",
-      "thumbnail": "https://img.youtube.com/vi/z-WZMjNsg-k/mqdefault.jpg",
-      "description": "When deadlines limit how many contracts lawyers can examine, important risks can go unseen. Alex Fortescue-Webb, Global Head of Legal Engineering at Legora, explains how AI powered by OpenAI models helps teams analyse thousands of contracts"
-    },
-    {
-      "video_id": "yJxZef1Ylok",
-      "title": "How Legora is transforming legal work with OpenAI",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-28T09:45:14+00:00",
-      "url": "https://www.youtube.com/watch?v=yJxZef1Ylok",
-      "thumbnail": "https://img.youtube.com/vi/yJxZef1Ylok/mqdefault.jpg",
-      "description": "What can lawyers achieve when time is no longer the limit? Discover how Legora uses OpenAI models, ChatGPT and Codex to help legal teams review contracts faster, broaden their analysis and make more room for work that needs human judgment. "
     },
     {
       "video_id": "IcXN7ysaqrc",
@@ -325,18 +433,6 @@
       "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
     },
     {
-      "video_id": "Yim7JrVzSkk",
-      "title": "Lawyers Stay in Control | AT&T + OpenAI",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-27T15:40:48+00:00",
-      "url": "https://www.youtube.com/shorts/Yim7JrVzSkk",
-      "thumbnail": "https://img.youtube.com/vi/Yim7JrVzSkk/mqdefault.jpg",
-      "description": "AT&T’s David McAtee and Bill Ryan discuss how AI can support legal work while lawyers remain responsible for strategy, judgment and decisions."
-    },
-    {
       "video_id": "T4u2FoIm3pw",
       "title": "The AI School Kids Love More Than Vacation | Alpha School's Joe Liemandt",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -347,18 +443,6 @@
       "url": "https://www.youtube.com/watch?v=T4u2FoIm3pw",
       "thumbnail": "https://img.youtube.com/vi/T4u2FoIm3pw/mqdefault.jpg",
       "description": "What should school look like if AI can help students learn dramatically faster? Alpha School principal Joe Liemandt argues the answer isn’t to fill the extra time with more academics, but to redesign school around the skills traditional cla"
-    },
-    {
-      "video_id": "JI3bbZNdyeA",
-      "title": "This is much more concerning than you think...",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-27T01:58:24+00:00",
-      "url": "https://www.youtube.com/watch?v=JI3bbZNdyeA",
-      "thumbnail": "https://img.youtube.com/vi/JI3bbZNdyeA/mqdefault.jpg",
-      "description": "Use Code Matt for $100 in Kylon credits: https://kylon.io/matt1\n\nJoin the Frontier: https://forwardfuture.com/frontier-pass\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberma"
     },
     {
       "video_id": "ZAzWPE9CItg",
@@ -457,18 +541,6 @@
       "description": "Kashif Rasul from the Hugging Face research team gives an in-depth derivation of the mathematics behind the score centering paper, followed by discussion among the team.\n\nPaper link: https://huggingface.co/papers/2609.20807"
     },
     {
-      "video_id": "L18lkQs4PeM",
-      "title": "Kimi K3.1 Passes the Rubik's Cube Test",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-25T22:29:29+00:00",
-      "url": "https://www.youtube.com/shorts/L18lkQs4PeM",
-      "thumbnail": "https://img.youtube.com/vi/L18lkQs4PeM/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
       "video_id": "V_uq3v6xK-4",
       "title": "The Sphere Intersection Puzzle",
       "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
@@ -493,18 +565,6 @@
       "description": "Semgrep Guardian catches the risky code and packages your agent introduces. Try it free for 60 days: https://semgrep.dev/onboarding/guardian?offer=fireship_202610&utm_source=fireship&utm_medium=referral&utm_campaign=2026-10_fireship_guardia"
     },
     {
-      "video_id": "-YMMRQ1qscI",
-      "title": "Amazon CEO Andy Jassy on Reinventing Amazon for the AI Era",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-23T15:40:03+00:00",
-      "url": "https://www.youtube.com/watch?v=-YMMRQ1qscI",
-      "thumbnail": "https://img.youtube.com/vi/-YMMRQ1qscI/mqdefault.jpg",
-      "description": "Amazon expects to spend roughly $220 billion in CapEx in 2026, yet CEO Andy Jassy says the company is still leaving meaningful AI demand on the table. He believes the buildout could ultimately help make AWS a $1 trillion annual run-rate bus"
-    },
-    {
       "video_id": "w6dSNCg9I5k",
       "title": "Llama: Local AI on Your Mac",
       "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
@@ -515,18 +575,6 @@
       "url": "https://www.youtube.com/watch?v=w6dSNCg9I5k",
       "thumbnail": "https://img.youtube.com/vi/w6dSNCg9I5k/mqdefault.jpg",
       "description": "Meet Llama: run AI models locally on your Mac, right from the menu bar.\n\nFind models that fit your Mac, download with one click, and start chatting. Your conversations stay on your computer, it works offline, and apps that support the OpenA"
-    },
-    {
-      "video_id": "-9XQMHhpypc",
-      "title": "Marc Andreessen: The Biggest Gap I’ve Seen in My Career",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-22T16:36:24+00:00",
-      "url": "https://www.youtube.com/watch?v=-9XQMHhpypc",
-      "thumbnail": "https://img.youtube.com/vi/-9XQMHhpypc/mqdefault.jpg",
-      "description": "a16z is expanding a16z crypto into a16z Frontier, a broader mandate to back founders building at the edges of what's possible. Chris Dixon joins Marc Andreessen, Ben Horowitz, and Erik Torenberg to explain why founders should increasingly a"
     },
     {
       "video_id": "zv6B6PQOuHE",
@@ -625,18 +673,6 @@
       "description": "Sharing a few thoughts on the future of math\nThese videos are funded directly by viewers: https://3b1b.co/support\nAn equally valuable form of support is to simply share the videos.\nHome page: https://www.3blue1brown.com\n\nIf you want a finge"
     },
     {
-      "video_id": "l3L_lETiSzc",
-      "title": "The runtime wars are over... and Node won",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-10-15T17:35:15+00:00",
-      "url": "https://www.youtube.com/watch?v=l3L_lETiSzc",
-      "thumbnail": "https://img.youtube.com/vi/l3L_lETiSzc/mqdefault.jpg",
-      "description": "Every JetBrains account now comes with a free coding model called Junie Lite. Try it: https://jb.gg/JunieLite\n\nCloudflare just acquired Deno and the creator of Node.js is finally admitting that reimplementing it was a mistake. Let's dive in"
-    },
-    {
       "video_id": "WqrwAFs-fq0",
       "title": "Multiplayer Gaming & Flight Simulation - Computerphile",
       "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
@@ -647,22 +683,10 @@
       "url": "https://www.youtube.com/watch?v=WqrwAFs-fq0",
       "thumbnail": "https://img.youtube.com/vi/WqrwAFs-fq0/mqdefault.jpg",
       "description": "Using the example of a flight simulator to discuss the complexities of coding a multi-player game. What data do you send? When do you send it & how often? Dr Julian Onions talks about his experiences of working on a flight simulator.\n\nCompu"
-    },
-    {
-      "video_id": "2IuO_80wB0s",
-      "title": "Give your team AI skills you can trust",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-14T18:05:18+00:00",
-      "url": "https://www.youtube.com/watch?v=2IuO_80wB0s",
-      "thumbnail": "https://img.youtube.com/vi/2IuO_80wB0s/mqdefault.jpg",
-      "description": "Learn more: deeplearning.ai/business\n\nOur enterprise program gives your team AI skills you can trust. \n\nEngineering teams are under pressure to build AI skills. In BCG's 2026 survey, 72% of workers said AI has changed what their jobs requir"
     }
   ],
   "stats": {
-    "total_videos": 42,
+    "total_videos": 44,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
