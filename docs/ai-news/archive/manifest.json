@@ -399,9 +399,15 @@
     },
     {
       "date": "2026-10-28",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-10-28.html",
       "headline": "Der IPO-Prospekt als Risiko-Protokoll — Agenten-Sicherheit wird zur Chefsache",
       "summary": "Anthropic-S-1 (Ticker ANT): 16,3 Mrd. $ H1-Umsatz, 80,7 Mrd. $ Verlust (meist noncash) · DOGE-Startup Cathedral bricht via Vendor-Software in <12 h in Anthropics Interna ein · 63 Mrd. $ Broadcom-Compute per SPV · Microsoft bietet 60.000 Buyouts · Salesforce kauft Braze fuer 5,66 Mrd. $ · Big-Tech-Earnings 28./29.10."
+    },
+    {
+      "date": "2026-10-29",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Der Earnings-Test fällt durchwachsen aus — Alphabets Capex schreckt den Markt",
+      "summary": "Alphabet Q3: Umsatz +25% (127,6 Mrd. $), aber EPS-Verfehlung, Capex 51,4 Mrd. $, Aktie −10% · Microsoft meldet Azure-Stärke · Amazon & Apple berichten heute · OpenAI treibt 30-Mrd.-Runde vor Anthropics IPO · Claude Code v2.1.312"
     }
   ]
 }
