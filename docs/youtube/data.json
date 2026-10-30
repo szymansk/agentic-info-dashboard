@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-30T05:04:52+00:00",
+  "last_updated": "2026-10-30T12:04:46+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -191,6 +191,18 @@
       "url": "https://www.youtube.com/watch?v=L6pzlo1QvoM",
       "thumbnail": "https://img.youtube.com/vi/L6pzlo1QvoM/mqdefault.jpg",
       "description": "“We have about 600 applications that have been built by different people in the company.”\n\nAt Zendesk, teams across sales, marketing, and operations are building applications for their own work. ChatGPT Enterprise is available to every empl"
+    },
+    {
+      "video_id": "FczbSauVvjw",
+      "title": "Science Behind the Open Cyber Frontier with Mistral Large 4",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-29T15:15:17+00:00",
+      "url": "https://www.youtube.com/watch?v=FczbSauVvjw",
+      "thumbnail": "https://img.youtube.com/vi/FczbSauVvjw/mqdefault.jpg",
+      "description": "The Science Behind the Open Cyber Frontier with Mistral Large 4\n\nBen Burtenshaw (Hugging Face) talks with Sagar Vaze and Pierre Stock from Mistral about Mistral Large 4, an open-weight model that is great for frontier cybersecurity work, am"
     },
     {
       "video_id": "cRJ7CfaK1Vc",
@@ -517,6 +529,30 @@
       "description": "Build your AI engineering skills at AI Dev NYC. Learn from Salil Sethi (OpenAI) on turning new model capabilities into reliable production systems, and Joel Niklaus (Hugging Face) on harness optimization and synthetic data. Andrew Ng opens "
     },
     {
+      "video_id": "CKFUx7COIwQ",
+      "title": "Workshop: Training Agents at the frontier of AI Industry",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-26T14:32:20+00:00",
+      "url": "https://www.youtube.com/watch?v=CKFUx7COIwQ",
+      "thumbnail": "https://img.youtube.com/vi/CKFUx7COIwQ/mqdefault.jpg",
+      "description": "Training Agents IRL: four talks and a panel on post-training agents with open models\n\nTraining Agents IRL is the in-person follow-up to the Training Agents livestream series. Speakers from Microsoft, Mercor, RadixArk and BenchFlow cover ent"
+    },
+    {
+      "video_id": "mEtRe_KKYm0",
+      "title": "Hugging Face Journal Club: Score Centering Stabilizes Off-policy Reinforcement Learning",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-26T13:38:50+00:00",
+      "url": "https://www.youtube.com/watch?v=mEtRe_KKYm0",
+      "thumbnail": "https://img.youtube.com/vi/mEtRe_KKYm0/mqdefault.jpg",
+      "description": "Kashif Rasul from the Hugging Face research team gives an in-depth derivation of the mathematics behind the score centering paper, followed by discussion among the team.\n\nPaper link: https://huggingface.co/papers/2609.20807"
+    },
+    {
       "video_id": "V_uq3v6xK-4",
       "title": "The Sphere Intersection Puzzle",
       "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
@@ -541,6 +577,18 @@
       "description": "Semgrep Guardian catches the risky code and packages your agent introduces. Try it free for 60 days: https://semgrep.dev/onboarding/guardian?offer=fireship_202610&utm_source=fireship&utm_medium=referral&utm_campaign=2026-10_fireship_guardia"
     },
     {
+      "video_id": "w6dSNCg9I5k",
+      "title": "Llama: Local AI on Your Mac",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-23T07:55:07+00:00",
+      "url": "https://www.youtube.com/watch?v=w6dSNCg9I5k",
+      "thumbnail": "https://img.youtube.com/vi/w6dSNCg9I5k/mqdefault.jpg",
+      "description": "Meet Llama: run AI models locally on your Mac, right from the menu bar.\n\nFind models that fit your Mac, download with one click, and start chatting. Your conversations stay on your computer, it works offline, and apps that support the OpenA"
+    },
+    {
       "video_id": "zv6B6PQOuHE",
       "title": "The last real programmers are dying out...",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -563,6 +611,18 @@
       "url": "https://www.youtube.com/watch?v=h6j_ixGnpiY",
       "thumbnail": "https://img.youtube.com/vi/h6j_ixGnpiY/mqdefault.jpg",
       "description": "Image watermarks are a way to embed information into a picture, Dr Mike Pound takes us through Adobe's Trust Mark to explain the idea & covers some of the pros and cons. \n\n00:00 - Introduction: Watermarking Images vs Text\n00:28 - Steganogra"
+    },
+    {
+      "video_id": "UC9PdhD6Yxg",
+      "title": "Automate CSV to Parquet with Buckets, Webhooks & Jobs",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-10-22T12:56:47+00:00",
+      "url": "https://www.youtube.com/watch?v=UC9PdhD6Yxg",
+      "thumbnail": "https://img.youtube.com/vi/UC9PdhD6Yxg/mqdefault.jpg",
+      "description": "Files keep landing in your Hugging Face Storage Bucket. Here is how to process each one automatically, without downloading anything.\n\nIn this live-coding video we set up a webhook on a bucket that triggers a Hugging Face Job whenever a new "
     },
     {
       "video_id": "b2tjnxX8IHU",
@@ -614,12 +674,10 @@
     }
   ],
   "stats": {
-    "total_videos": 38,
+    "total_videos": 43,
     "total_channels": 16,
-    "successful_channels": 15,
-    "failed_channels": [
-      "Hugging Face"
-    ],
+    "successful_channels": 16,
+    "failed_channels": [],
     "window_days": 14
   }
 }
