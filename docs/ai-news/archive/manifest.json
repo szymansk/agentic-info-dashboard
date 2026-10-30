@@ -405,9 +405,15 @@
     },
     {
       "date": "2026-10-29",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-10-29.html",
       "headline": "Der Earnings-Test fällt durchwachsen aus — Alphabets Capex schreckt den Markt",
       "summary": "Alphabet Q3: Umsatz +25% (127,6 Mrd. $), aber EPS-Verfehlung, Capex 51,4 Mrd. $, Aktie −10% · Microsoft meldet Azure-Stärke · Amazon & Apple berichten heute · OpenAI treibt 30-Mrd.-Runde vor Anthropics IPO · Claude Code v2.1.312"
+    },
+    {
+      "date": "2026-10-30",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Nach dem Earnings-Stresstest öffnen sich die Open-Weights — Mistral kontert die Billionen-Bewertungen",
+      "summary": "Mistral Large 4 (~1 Bio. Parameter) landet als Open-Weight-Konter zu $0,70/$2,10 · Anthropic-IPO-Vermarktung ab 9.11., Bewertung ~1,5 Bio. $ · DeepSeek wirbt ~16 Mrd. $ vom China-Staatsfonds ein · Meta platziert 95 Mrd. $ Aktien für KI-Capex · DOJ prüft Nvidia/Hugging Face · Claude Code v2.1.314"
     }
   ]
 }
