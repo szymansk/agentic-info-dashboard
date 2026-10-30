@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-29T12:00:37+00:00",
+  "last_updated": "2026-10-30T05:04:52+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,16 @@
   ],
   "featured": [
     {
-      "video_id": "ujmyzWSj8IU",
-      "title": "API credits, now in ChatGPT Pro and Business plans",
+      "video_id": "GNYHDltnwZQ",
+      "title": "ChatGPT Enterprise at Zendesk: Putting Company Data to Work",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-10-28T23:45:26+00:00",
-      "url": "https://www.youtube.com/watch?v=ujmyzWSj8IU",
-      "thumbnail": "https://img.youtube.com/vi/ujmyzWSj8IU/mqdefault.jpg",
-      "description": "Starting today, eligible ChatGPT Pro and Business subscribers can claim up to $500 per month in API credits to build apps and agents.\n\nCredit amounts depend on the plan.  Pro plans get $100, $200 or $500 per month by tier.  Business plans g",
+      "published": "2026-10-29T22:48:11+00:00",
+      "url": "https://www.youtube.com/shorts/GNYHDltnwZQ",
+      "thumbnail": "https://img.youtube.com/vi/GNYHDltnwZQ/mqdefault.jpg",
+      "description": "“We have about 600 applications that have been built by different people in the company.”\n\nAt Zendesk, teams across sales, marketing, and operations are building applications for their own work. ChatGPT Enterprise is available to every empl",
       "why": ""
     },
     {
@@ -156,6 +156,54 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "GNYHDltnwZQ",
+      "title": "ChatGPT Enterprise at Zendesk: Putting Company Data to Work",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-29T22:48:11+00:00",
+      "url": "https://www.youtube.com/shorts/GNYHDltnwZQ",
+      "thumbnail": "https://img.youtube.com/vi/GNYHDltnwZQ/mqdefault.jpg",
+      "description": "“We have about 600 applications that have been built by different people in the company.”\n\nAt Zendesk, teams across sales, marketing, and operations are building applications for their own work. ChatGPT Enterprise is available to every empl"
+    },
+    {
+      "video_id": "IrgQdsxzRa4",
+      "title": "Two AI bots for spam calls and data privacy",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-10-29T19:05:33+00:00",
+      "url": "https://www.youtube.com/shorts/IrgQdsxzRa4",
+      "thumbnail": "https://img.youtube.com/vi/IrgQdsxzRa4/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "L6pzlo1QvoM",
+      "title": "ChatGPT Enterprise at Zendesk: Putting Company Data to Work",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-29T16:23:43+00:00",
+      "url": "https://www.youtube.com/watch?v=L6pzlo1QvoM",
+      "thumbnail": "https://img.youtube.com/vi/L6pzlo1QvoM/mqdefault.jpg",
+      "description": "“We have about 600 applications that have been built by different people in the company.”\n\nAt Zendesk, teams across sales, marketing, and operations are building applications for their own work. ChatGPT Enterprise is available to every empl"
+    },
+    {
+      "video_id": "cRJ7CfaK1Vc",
+      "title": "How to Build the Next SpaceX or Tesla",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-29T13:50:32+00:00",
+      "url": "https://www.youtube.com/watch?v=cRJ7CfaK1Vc",
+      "thumbnail": "https://img.youtube.com/vi/cRJ7CfaK1Vc/mqdefault.jpg",
+      "description": "America’s defense, energy, manufacturing, and robotics booms are increasingly becoming one story: the rebuilding of the country’s industrial base. This year’s AD50 highlights the companies building across that stack, from critical materials"
+    },
     {
       "video_id": "zhnJo7s91ls",
       "title": "Google \"Carbon\" just won everything...",
@@ -301,30 +349,6 @@
       "description": "Learn More: https://bit.ly/4BuaMVb\n\nAn agent that calls tools and decides its next step can complete a task. Making that agent reliable over longer, more complex work takes more: loops that check its output, start a new run each time an eve"
     },
     {
-      "video_id": "M2Oa42hF67E",
-      "title": "From legal bottleneck to business partner | Legora’s Emma Kadri Bergström",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-28T09:45:24+00:00",
-      "url": "https://www.youtube.com/watch?v=M2Oa42hF67E",
-      "thumbnail": "https://img.youtube.com/vi/M2Oa42hF67E/mqdefault.jpg",
-      "description": "NDA reviews once took up around 20% of Legora’s legal team’s capacity. Today, that figure is under 1%. General Counsel Emma Kadri Bergström shares how AI is helping her team reclaim time, support a rapidly growing business and take on more "
-    },
-    {
-      "video_id": "UOfmD1fY-i8",
-      "title": "Building the future of legal work with AI | Legora CEO Max Junestrand",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-28T09:45:18+00:00",
-      "url": "https://www.youtube.com/watch?v=UOfmD1fY-i8",
-      "thumbnail": "https://img.youtube.com/vi/UOfmD1fY-i8/mqdefault.jpg",
-      "description": "Legora co-founder and CEO Max Junestrand wants to make legal expertise available wherever it’s needed. He shares how OpenAI helped turn that ambition into a platform, why staying AI-native matters as the company grows, and what becomes poss"
-    },
-    {
       "video_id": "IcXN7ysaqrc",
       "title": "We're the Ones Having the Debate (Jeremy Avigad)",
       "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
@@ -421,18 +445,6 @@
       "description": "Meet Genie 4, Google DeepMind’s most realistic and interactive world model yet. Built on our Gemini models, Genie 4 lets you step inside dynamic worlds in real time, steer scenes on the fly with natural language, and watch what happens next"
     },
     {
-      "video_id": "jeUgtyvvkfs",
-      "title": "Anthropic’s IPO: Who Gets the Voting Power?",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-27T15:47:35+00:00",
-      "url": "https://www.youtube.com/shorts/jeUgtyvvkfs",
-      "thumbnail": "https://img.youtube.com/vi/jeUgtyvvkfs/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
       "video_id": "T4u2FoIm3pw",
       "title": "The AI School Kids Love More Than Vacation | Alpha School's Joe Liemandt",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -505,42 +517,6 @@
       "description": "Build your AI engineering skills at AI Dev NYC. Learn from Salil Sethi (OpenAI) on turning new model capabilities into reliable production systems, and Joel Niklaus (Hugging Face) on harness optimization and synthetic data. Andrew Ng opens "
     },
     {
-      "video_id": "CKFUx7COIwQ",
-      "title": "Workshop: Training Agents at the frontier of AI Industry",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-10-26T14:32:20+00:00",
-      "url": "https://www.youtube.com/watch?v=CKFUx7COIwQ",
-      "thumbnail": "https://img.youtube.com/vi/CKFUx7COIwQ/mqdefault.jpg",
-      "description": "Training Agents IRL: four talks and a panel on post-training agents with open models\n\nTraining Agents IRL is the in-person follow-up to the Training Agents livestream series. Speakers from Microsoft, Mercor, RadixArk and BenchFlow cover ent"
-    },
-    {
-      "video_id": "9v42ZOdiBJY",
-      "title": "Why OpenAI Is Racing to Make Computer Use Superhuman",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-26T14:30:19+00:00",
-      "url": "https://www.youtube.com/watch?v=9v42ZOdiBJY",
-      "thumbnail": "https://img.youtube.com/vi/9v42ZOdiBJY/mqdefault.jpg",
-      "description": "AI agents are approaching a point where they can use computers faster than expert humans, turning the user interface itself into a universal way for AI to interact with software. OpenAI’s Ari Weinstein and James Sun argue that computer use "
-    },
-    {
-      "video_id": "mEtRe_KKYm0",
-      "title": "Hugging Face Journal Club: Score Centering Stabilizes Off-policy Reinforcement Learning",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-10-26T13:38:50+00:00",
-      "url": "https://www.youtube.com/watch?v=mEtRe_KKYm0",
-      "thumbnail": "https://img.youtube.com/vi/mEtRe_KKYm0/mqdefault.jpg",
-      "description": "Kashif Rasul from the Hugging Face research team gives an in-depth derivation of the mathematics behind the score centering paper, followed by discussion among the team.\n\nPaper link: https://huggingface.co/papers/2609.20807"
-    },
-    {
       "video_id": "V_uq3v6xK-4",
       "title": "The Sphere Intersection Puzzle",
       "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
@@ -565,18 +541,6 @@
       "description": "Semgrep Guardian catches the risky code and packages your agent introduces. Try it free for 60 days: https://semgrep.dev/onboarding/guardian?offer=fireship_202610&utm_source=fireship&utm_medium=referral&utm_campaign=2026-10_fireship_guardia"
     },
     {
-      "video_id": "w6dSNCg9I5k",
-      "title": "Llama: Local AI on Your Mac",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-10-23T07:55:07+00:00",
-      "url": "https://www.youtube.com/watch?v=w6dSNCg9I5k",
-      "thumbnail": "https://img.youtube.com/vi/w6dSNCg9I5k/mqdefault.jpg",
-      "description": "Meet Llama: run AI models locally on your Mac, right from the menu bar.\n\nFind models that fit your Mac, download with one click, and start chatting. Your conversations stay on your computer, it works offline, and apps that support the OpenA"
-    },
-    {
       "video_id": "zv6B6PQOuHE",
       "title": "The last real programmers are dying out...",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -599,30 +563,6 @@
       "url": "https://www.youtube.com/watch?v=h6j_ixGnpiY",
       "thumbnail": "https://img.youtube.com/vi/h6j_ixGnpiY/mqdefault.jpg",
       "description": "Image watermarks are a way to embed information into a picture, Dr Mike Pound takes us through Adobe's Trust Mark to explain the idea & covers some of the pros and cons. \n\n00:00 - Introduction: Watermarking Images vs Text\n00:28 - Steganogra"
-    },
-    {
-      "video_id": "UC9PdhD6Yxg",
-      "title": "Automate CSV to Parquet with Buckets, Webhooks & Jobs",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-10-22T12:56:47+00:00",
-      "url": "https://www.youtube.com/watch?v=UC9PdhD6Yxg",
-      "thumbnail": "https://img.youtube.com/vi/UC9PdhD6Yxg/mqdefault.jpg",
-      "description": "Files keep landing in your Hugging Face Storage Bucket. Here is how to process each one automatically, without downloading anything.\n\nIn this live-coding video we set up a webhook on a bucket that triggers a Hugging Face Job whenever a new "
-    },
-    {
-      "video_id": "KnDMnZYEo2M",
-      "title": "I Turned Structured Output Into a Game 🎮",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-10-21T13:43:05+00:00",
-      "url": "https://www.youtube.com/shorts/KnDMnZYEo2M",
-      "thumbnail": "https://img.youtube.com/vi/KnDMnZYEo2M/mqdefault.jpg",
-      "description": "The model’s top prediction can still break the rules.\n\nI built Token Arcade to make structured output and constrained decoding easier to understand: see the next-token probabilities, pick a card, and find out whether it’s allowed.\n\nWatch a "
     },
     {
       "video_id": "b2tjnxX8IHU",
@@ -671,25 +611,15 @@
       "url": "https://www.youtube.com/watch?v=LKrwhjOI8Nc",
       "thumbnail": "https://img.youtube.com/vi/LKrwhjOI8Nc/mqdefault.jpg",
       "description": "Sharing a few thoughts on the future of math\nThese videos are funded directly by viewers: https://3b1b.co/support\nAn equally valuable form of support is to simply share the videos.\nHome page: https://www.3blue1brown.com\n\nIf you want a finge"
-    },
-    {
-      "video_id": "WqrwAFs-fq0",
-      "title": "Multiplayer Gaming & Flight Simulation - Computerphile",
-      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
-      "channel_name": "Computerphile",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-10-15T13:30:19+00:00",
-      "url": "https://www.youtube.com/watch?v=WqrwAFs-fq0",
-      "thumbnail": "https://img.youtube.com/vi/WqrwAFs-fq0/mqdefault.jpg",
-      "description": "Using the example of a flight simulator to discuss the complexities of coding a multi-player game. What data do you send? When do you send it & how often? Dr Julian Onions talks about his experiences of working on a flight simulator.\n\nCompu"
     }
   ],
   "stats": {
-    "total_videos": 44,
+    "total_videos": 38,
     "total_channels": 16,
-    "successful_channels": 16,
-    "failed_channels": [],
+    "successful_channels": 15,
+    "failed_channels": [
+      "Hugging Face"
+    ],
     "window_days": 14
   }
 }
