@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-30T12:04:46+00:00",
+  "last_updated": "2026-10-31T12:09:06+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,16 @@
   ],
   "featured": [
     {
-      "video_id": "GNYHDltnwZQ",
-      "title": "ChatGPT Enterprise at Zendesk: Putting Company Data to Work",
+      "video_id": "o4D1J1YWjhg",
+      "title": "There are many futures. Which do you want to build?",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-10-29T22:48:11+00:00",
-      "url": "https://www.youtube.com/shorts/GNYHDltnwZQ",
-      "thumbnail": "https://img.youtube.com/vi/GNYHDltnwZQ/mqdefault.jpg",
-      "description": "“We have about 600 applications that have been built by different people in the company.”\n\nAt Zendesk, teams across sales, marketing, and operations are building applications for their own work. ChatGPT Enterprise is available to every empl",
+      "published": "2026-10-30T20:17:12+00:00",
+      "url": "https://www.youtube.com/watch?v=o4D1J1YWjhg",
+      "thumbnail": "https://img.youtube.com/vi/o4D1J1YWjhg/mqdefault.jpg",
+      "description": "",
       "why": ""
     },
     {
@@ -156,6 +156,78 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "o4D1J1YWjhg",
+      "title": "There are many futures. Which do you want to build?",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-30T20:17:12+00:00",
+      "url": "https://www.youtube.com/watch?v=o4D1J1YWjhg",
+      "thumbnail": "https://img.youtube.com/vi/o4D1J1YWjhg/mqdefault.jpg",
+      "description": ""
+    },
+    {
+      "video_id": "CWdTBLsbaQs",
+      "title": "OpenAI Claims It Just Did The Impossible",
+      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+      "channel_name": "Two Minute Papers",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-10-30T15:57:16+00:00",
+      "url": "https://www.youtube.com/watch?v=CWdTBLsbaQs",
+      "thumbnail": "https://img.youtube.com/vi/CWdTBLsbaQs/mqdefault.jpg",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 OpenAI's paper is available here:\nhttps://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf\n\nO"
+    },
+    {
+      "video_id": "NDgS__J1U-M",
+      "title": "The Private Key Mistake! (TLS Key set to \"4\") - Computerphile",
+      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
+      "channel_name": "Computerphile",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-10-30T15:47:25+00:00",
+      "url": "https://www.youtube.com/watch?v=NDgS__J1U-M",
+      "thumbnail": "https://img.youtube.com/vi/NDgS__J1U-M/mqdefault.jpg",
+      "description": "You actually have to work quite hard to set a private key to the number 4! - Dr Tim Muller takes us through the problems with 'randomly' assigning a 120 digit number to the value '4'\n\nComputerphile is supported by Jane Street. Learn more ab"
+    },
+    {
+      "video_id": "7TtGMileCus",
+      "title": "How Gen uses ChatGPT Work to turn data Into decisions | OpenAI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-30T15:24:48+00:00",
+      "url": "https://www.youtube.com/shorts/7TtGMileCus",
+      "thumbnail": "https://img.youtube.com/vi/7TtGMileCus/mqdefault.jpg",
+      "description": "“Before ChatGPT Work, we were walking. Now with ChatGPT Work, we are running.”\n\nFor Gen's Howie Xu, that means understanding how a new product’s onboarding experience is working within two or three hours of release.\n\nFinding answers used to"
+    },
+    {
+      "video_id": "Oi9DHk57KeQ",
+      "title": "How Gen uses ChatGPT Work to turn data Into decisions | OpenAI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-10-30T15:22:47+00:00",
+      "url": "https://www.youtube.com/watch?v=Oi9DHk57KeQ",
+      "thumbnail": "https://img.youtube.com/vi/Oi9DHk57KeQ/mqdefault.jpg",
+      "description": "“Before ChatGPT Work, we were walking. Now with ChatGPT Work, we are running.”\n\nFor Gen's Howie Xu, that means understanding how a new product’s onboarding experience is working within two or three hours of release.\n\nFinding answers used to"
+    },
+    {
+      "video_id": "iRMmPjunm3Q",
+      "title": "Why AI Could Turn Small Law Firms Into Billion-Dollar Businesses",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-30T14:30:33+00:00",
+      "url": "https://www.youtube.com/watch?v=iRMmPjunm3Q",
+      "thumbnail": "https://img.youtube.com/vi/iRMmPjunm3Q/mqdefault.jpg",
+      "description": "What happens when AI makes legal work cheap enough to take cases lawyers couldn't afford to touch before? Eve CEO Jay Madheswaran argues that AI won't just cut costs for law firms. It could expand access to legal representation by making an"
+    },
     {
       "video_id": "GNYHDltnwZQ",
       "title": "ChatGPT Enterprise at Zendesk: Putting Company Data to Work",
@@ -227,18 +299,6 @@
       "url": "https://www.youtube.com/watch?v=zhnJo7s91ls",
       "thumbnail": "https://img.youtube.com/vi/zhnJo7s91ls/mqdefault.jpg",
       "description": "Try Factory's $200 Max plan free for one month: https://factory.com/berman\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfutur"
-    },
-    {
-      "video_id": "ujmyzWSj8IU",
-      "title": "API credits, now in ChatGPT Pro and Business plans",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-28T23:45:26+00:00",
-      "url": "https://www.youtube.com/watch?v=ujmyzWSj8IU",
-      "thumbnail": "https://img.youtube.com/vi/ujmyzWSj8IU/mqdefault.jpg",
-      "description": "Starting today, eligible ChatGPT Pro and Business subscribers can claim up to $500 per month in API credits to build apps and agents.\n\nCredit amounts depend on the plan.  Pro plans get $100, $200 or $500 per month by tier.  Business plans g"
     },
     {
       "video_id": "3yZb9rGt-rk",
@@ -323,30 +383,6 @@
       "url": "https://www.youtube.com/watch?v=nEaJMdM1djM",
       "thumbnail": "https://img.youtube.com/vi/nEaJMdM1djM/mqdefault.jpg",
       "description": "Try Hyperagent for free, or sign in with ChatGPT to get more usage from your existing plan: https://www.hyperagent.com/login?utm_source=youtube&utm_medium=influencer&utm_campaign=FIRESHIP\n\nAre we cooked chat?\n\nWant more Fireship?\n\n🗞️ Newsle"
-    },
-    {
-      "video_id": "kP26OlW5PBk",
-      "title": "Merge CEO Shensi Ding: AI fluency starts at the top",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-28T11:51:11+00:00",
-      "url": "https://www.youtube.com/shorts/kP26OlW5PBk",
-      "thumbnail": "https://img.youtube.com/vi/kP26OlW5PBk/mqdefault.jpg",
-      "description": "“If you're an executive, you are the ceiling for AI fluency for your organization.”\n\nMerge co-founder and CEO Shensi Ding manages the non-R&D side of the business. She also codes.\n\nUsing Codex, she asked it to help redesign a feature using "
-    },
-    {
-      "video_id": "6ep8Vvm4Bdw",
-      "title": "Why Merge CEO Shensi Ding stays hands-on with Codex",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-28T11:50:26+00:00",
-      "url": "https://www.youtube.com/watch?v=6ep8Vvm4Bdw",
-      "thumbnail": "https://img.youtube.com/vi/6ep8Vvm4Bdw/mqdefault.jpg",
-      "description": "“If you're an executive, you are the ceiling for AI fluency for your organization.”\n\nMerge co-founder and CEO Shensi Ding manages the non-R&D side of the business. She also codes.\n\nWith Codex, she asked for help redesigning a feature withou"
     },
     {
       "video_id": "Zo2oyjbTEXA",
@@ -505,18 +541,6 @@
       "description": "Get 20% off Mobbin Pro to help your agent design UIs that actually convert - https://mobbin.com/fireship\n\nKimi K3.1 just dropped as a free 3-trillion-parameter open-weight model that comes within one point of Opus on Terminal Bench. But is "
     },
     {
-      "video_id": "c7bH0PVMEZs",
-      "title": "DoorDash's first version of the company",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-26T15:49:04+00:00",
-      "url": "https://www.youtube.com/shorts/c7bH0PVMEZs",
-      "thumbnail": "https://img.youtube.com/vi/c7bH0PVMEZs/mqdefault.jpg",
-      "description": "DoorDash was originally called PaloAltoDelivery.com and grew out of a business school project Xu started at Stanford in 2013. He says the V1 took 45 minutes. Before that, he worked at McKinsey, eBay, and Square."
-    },
-    {
       "video_id": "VgF5aP0amXA",
       "title": "Learn from OpenAI, Hugging Face, Andrew Ng and Yann LeCun | AI Dev NYC #aidev #shorts",
       "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
@@ -659,22 +683,10 @@
       "url": "https://www.youtube.com/watch?v=LWxX6vvHfrc",
       "thumbnail": "https://img.youtube.com/vi/LWxX6vvHfrc/mqdefault.jpg",
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 Gemini 4 Argon + report are available here:\nhttps://deepmind.google/models/model-cards/gemini-4-argon/\nhttps://storage.googleapis.com/deepmind-media/gemin"
-    },
-    {
-      "video_id": "LKrwhjOI8Nc",
-      "title": "There's never been a better time to go into math",
-      "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
-      "channel_name": "3Blue1Brown",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-10-16T16:15:20+00:00",
-      "url": "https://www.youtube.com/watch?v=LKrwhjOI8Nc",
-      "thumbnail": "https://img.youtube.com/vi/LKrwhjOI8Nc/mqdefault.jpg",
-      "description": "Sharing a few thoughts on the future of math\nThese videos are funded directly by viewers: https://3b1b.co/support\nAn equally valuable form of support is to simply share the videos.\nHome page: https://www.3blue1brown.com\n\nIf you want a finge"
     }
   ],
   "stats": {
-    "total_videos": 43,
+    "total_videos": 44,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
