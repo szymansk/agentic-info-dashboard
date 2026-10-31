@@ -298,7 +298,7 @@
   footer .mono { color: var(--muted); }
 </style>
 </head>
-<body data-snapshot-date="2026-10-30" data-snapshot-mode="live">
+<body data-snapshot-date="2026-10-31" data-snapshot-mode="live">
 <div class="wrap">
 
   <!-- ─── Top Nav ─── -->
@@ -319,9 +319,6 @@
   <div class="timeline-bar" id="timeline">
     <span class="label">Zeitstrahl</span>
     <!-- JS füllt aus archive/manifest.json. Fallback statisch: -->
-    <a class="tl-pill" href="/ai-news/archive/2026-10-26.html" data-date="2026-10-26">
-      <span class="dow">Mo</span><span class="date">26.10.</span>
-    </a>
     <a class="tl-pill" href="/ai-news/archive/2026-10-27.html" data-date="2026-10-27">
       <span class="dow">Di</span><span class="date">27.10.</span>
     </a>
@@ -331,8 +328,11 @@
     <a class="tl-pill" href="/ai-news/archive/2026-10-29.html" data-date="2026-10-29">
       <span class="dow">Do</span><span class="date">29.10.</span>
     </a>
-    <a class="tl-pill active" href="/ai-news/" data-date="2026-10-30">
+    <a class="tl-pill" href="/ai-news/archive/2026-10-30.html" data-date="2026-10-30">
       <span class="dow">Fr</span><span class="date">30.10.</span>
+    </a>
+    <a class="tl-pill active" href="/ai-news/" data-date="2026-10-31">
+      <span class="dow">Sa</span><span class="date">31.10.</span>
     </a>
   </div>
 
@@ -363,63 +363,63 @@
   <article class="briefing-wrap">
 
     <header class="briefing-head">
-      <h2 class="kicker">Freitag · Agentic AI &amp; GenAI</h2>
-      <h1>Nach dem Earnings-Stresstest öffnen sich die Gewichte — Mistral kontert die Billionen-Bewertungen mit einem offenen Modell</h1>
+      <h2 class="kicker">Samstag · Agentic AI &amp; GenAI</h2>
+      <h1>Das S-1 ist lesbar, die Spitzenmodelle sind neu — und zwischen Benchmark und Bilanz klafft die eigentliche Lücke</h1>
       <div class="byline">
         <span>✍️ Kuratiert &amp; analysiert</span>
         <span class="dot-sep">·</span>
-        <span>~11 Min Lesezeit</span>
+        <span>~12 Min Lesezeit</span>
         <span class="dot-sep">·</span>
-        <span id="byline-date">30. Oktober 2026</span>
+        <span id="byline-date">31. Oktober 2026</span>
       </div>
       <p class="lede">
-        Die Woche hat die Beweislast umgekehrt — gestern bestrafte der Markt <strong>Alphabet</strong> trotz 25 Prozent Wachstum für seine Capex-Last, und die Frage „Was bringt die Milliarde zurück?" steht seither im Raum. Heute antwortet die Branche in zwei Richtungen zugleich. Oben verdichtet sich das Kapital weiter: <strong>Anthropic</strong> startet in die aktive IPO-Vermarktung, <strong>DeepSeek</strong> wirbt Milliarden vom chinesischen Staatsfonds ein, <strong>Meta</strong> legt die erste große Aktienplatzierung seit 2013 auf. Unten aber öffnet sich der Zugang: Europas <strong>Mistral</strong> schiebt mit Large 4 ein Modell mit rund einer Billion Parametern als offene Gewichte nach — zu einem Bruchteil der Preise, die die geschlossenen Billionen-Labore aufrufen. Die eigentliche Spannung des Tages liegt zwischen diesen beiden Bewegungen: Kann ein offenes Modell die Ökonomie disziplinieren, auf der die Billionen-Bewertungen ruhen?
+        Zum Wochenschluss ziehen zwei Erzählungen in entgegengesetzte Richtungen. Auf der Produktseite beschleunigt das Frontier-Rennen: <span data-person="demis-hassabis">Google DeepMinds</span> <strong>Gemini 4 Carbon</strong> übernimmt die Spitze der Text-Arena, <strong>OpenAI</strong> kontert binnen Tagen mit <strong>GPT-6.1 Terra</strong>, und mit <strong>Genie 4</strong> öffnet sich eine neue Front der Welt-Modelle. Auf der Finanzseite liegt seit dieser Woche erstmals Anthropics <strong>S-1</strong> offen auf dem Tisch — und die Zahlen erzählen eine nüchternere Geschichte als jeder Benchmark: 16,3 Milliarden Dollar Halbjahresumsatz, aber ein Nettoverlust von 80,7 Milliarden und rund 498 Milliarden an nicht kündbaren Compute-Verpflichtungen. Die Spannung des Tages liegt zwischen diesen beiden Seiten: Wie lange trägt ein Benchmark-Vorsprung eine Bilanz, die drei Viertel ihrer künftigen Ausgaben bereits fest verplant hat?
       </p>
     </header>
 
     <div class="briefing-body">
 
       <section>
-        <h3><span class="num">01</span>Mistral Large 4 — Europas offene Antwort auf die geschlossenen Billionen</h3>
-        <p><span data-person="arthur-mensch">Arthur Menschs</span> <strong>Mistral</strong> hat mit <strong>Large 4</strong> sein bislang größtes Modell vorgestellt: ein multimodales Mixture-of-Experts-Modell mit rund <strong>1,05 Billionen Parametern</strong>, von denen pro Token nur etwa 49 Milliarden aktiv sind. Entscheidend ist die Veröffentlichungsform: Mistral gibt die Gewichte offen frei — unter einer eigenen, modifizierten Lizenz, nicht mehr dem Apache-2.0 der Vorgänger —, und ruft über die API <strong>0,70 Dollar für eine Million Input- und 2,10 Dollar für eine Million Output-Token</strong> auf. Die Vorschau lief seit Anfang Oktober über Mistral Studio; die Gewichte selbst sollen bis zum Monatsende folgen. Damit stellt sich Mistral explizit zwischen zwei Fronten: die geschlossenen US-Labore, deren Spitzenmodelle bei 2 bis 10 Dollar je Million Token liegen, und die chinesischen Open-Weight-Modelle, die den Preisboden in den vergangenen Monaten nach unten getrieben haben.</p>
-        <p>Die Positionierung ist bemerkenswert, weil sie die Logik der Woche durchbricht. Während <span data-person="dario-amodei">Anthropic</span> und OpenAI ihre Bewertungen in den Billionen-Bereich treiben und das Geschäftsmodell auf geschlossene, teuer rationierte Frontier-Modelle gründen, argumentiert Mistral, dass ein offen verfügbares Modell nahe der Spitze für die meisten Unternehmens-Workloads genügt — und den Betreibern die Kontrolle über Daten, Hosting und Kosten zurückgibt. Unabhängige Benchmarks sind noch dünn, und einige der Leistungsangaben bleiben Hersteller-Claims; die eigentliche Nachricht ist aber nicht der Spitzen-Score, sondern die Verfügbarkeit. Ein Modell dieser Größenklasse, das man hinter die eigene Firewall stellen kann, verschiebt die Frage von „Welchen Anbieter wähle ich?" zu „Was betreibe ich selbst?".</p>
+        <h3><span class="num">01</span>Anthropics S-1 unter dem Mikroskop — der Benchmark führt, die Bilanz bremst</h3>
+        <p>Seit dieser Woche liegt vor, was zuvor nur Gegenstand von Berichten war: Das öffentliche <strong>S-1</strong> von <span data-person="dario-amodei">Anthropic</span> ist eingereicht, und die Zahlen sind jetzt nachlesbar statt kolportiert. Die gute Hälfte zuerst — das operative Geschäft wächst rasant: rund <strong>16,3 Milliarden Dollar Umsatz im ersten Halbjahr</strong>, ein Vielfaches des Vorjahres, getragen vom API- und Enterprise-Geschäft. Investoren taxieren das Unternehmen in den Gesprächen zwischen 1,5 und 2 Billionen Dollar, der Nasdaq-Listing-Prozess läuft unter dem Kürzel <strong>ANT</strong>. Soweit die Erzählung, die zu den Benchmark-Erfolgen der Branche passt.</p>
+        <p>Die andere Hälfte steht im Kleingedruckten, und sie ist die eigentliche Nachricht. Das Filing weist einen <strong>Nettoverlust von rund 80,7 Milliarden Dollar</strong> aus — getrieben weniger vom laufenden Betrieb als von den Verpflichtungen, die das Wachstum erst ermöglichen sollen. <em>Fortune</em> nennt es den „498-Milliarden-Dollar-Asterisk": Von den langfristigen Compute- und Infrastruktur-Zusagen sind rund <strong>498 Milliarden Dollar — etwa 76 Prozent — nicht kündbar</strong>. Andere Lesarten des Dokuments kommen auf 518 Milliarden; die genaue Zahl variiert je nach Abgrenzung, die Größenordnung nicht. Das heißt: Drei Viertel der künftigen Großausgaben sind vertraglich fixiert, bevor der entsprechende Umsatz überhaupt existiert. Ein Frontier-Lab ist damit weniger ein Software- als ein hochgradig vorfinanziertes Infrastruktur-Geschäft — und genau diese Struktur macht es verwundbar, sollte die Nachfrage der Benchmark-Führung nicht im erhofften Tempo folgen.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Offene Gewichte dieser Größenordnung sind der stärkste Hebel gegen Anbieter-Lock-in und gegen unkalkulierbare Token-Rechnungen. Für Kunden mit Souveränitäts-, Datenschutz- oder Kostenauflagen — Behörden, Banken, DACH-Industrie — wird das self-hosted, auditierbare Modell zum echten Architektur-Pfad, nicht nur zum Feigenblatt. Konkret heißt das: Open-Weight-Optionen in jede Zielarchitektur als Vergleichsszenario aufnehmen, Total-Cost-of-Ownership von Eigenbetrieb gegen API-Bezug rechnen, und die Lizenz-Feinheiten (hier: keine reine Apache-2.0-Freiheit) vor jedem Produktivversprechen genau lesen.
+          Für uns: Ein offengelegtes S-1 ist das erste belastbare Preisschild für die Ökonomie hinter den Modellen, die wir in Kundenarchitekturen einbauen. Die Lehre ist nicht „Anthropic ist riskant", sondern: Die Anbieter, von denen kritische Workloads abhängen, tragen selbst enorme, fixierte Verpflichtungen — ein Faktor, der Preise und Verfügbarkeit über Jahre bestimmen kann. Konkret: Anbieter-Abhängigkeiten mit einem definierten Exit-Pfad hinterlegen, Preis-Annahmen für langlaufende Verträge konservativ rechnen, und bei jeder Zielarchitektur mindestens eine ausweichfähige Zweitoption einplanen.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">02</span>Oben verdichtet sich das Kapital — IPO, Staatsfonds, Aktienplatzierung an einem Tag</h3>
-        <p>Während unten der Zugang aufgeht, konzentriert sich oben das Geld weiter. <span data-person="dario-amodei">Anthropic</span> geht nach dem öffentlichen S-1 (Nasdaq-Kürzel <strong>ANT</strong>, 16,3 Milliarden Dollar Halbjahresumsatz) in die aktive IPO-Vermarktung, die ab der Woche des 9. November beginnen soll; Investoren taxieren das Unternehmen inzwischen bei rund <strong>1,5 Billionen Dollar</strong>. Parallel wirbt <strong>OpenAI</strong> weiter um seine eigene Privatrunde über rund 30 Milliarden Dollar bei über 1,4 Billionen Bewertung — das Timing beider Prozesse überlagert sich bewusst, weil beide Labore um dieselben Kapitalquellen konkurrieren. Und aus China meldet <em>The Information</em>, dass <strong>DeepSeek</strong> eine zweite Runde über fast <strong>16 Milliarden Dollar</strong> einwirbt, angeführt vom staatlichen „Big Fund"; Tencent und Alibaba sollen bei einer Bewertung über 20 Milliarden mit am Tisch sitzen.</p>
-        <p>Dazu kommt ein Signal von der anderen Seite der Bilanz: <strong>Meta</strong> legt Berichten zufolge eine Aktienplatzierung über rund <strong>95 Milliarden Dollar</strong> auf — die erste große Eigenkapital-Emission des Konzerns seit 2013 —, um die eigene KI-Expansion zu finanzieren. Das ist der eigentliche Beleg für die These der Woche: Selbst die cashstärksten Konzerne finanzieren den Compute-Aufbau nicht mehr nur aus dem laufenden Geschäft. Zusammengenommen entsteht ein geschlossener Kreislauf aus Kapital, Rechenleistung und Umsatzversprechen, in dem Lab, Chip-Hersteller, Cloud-Anbieter, Staatsfonds und Investor zunehmend dieselben Namen sind — und annualisierter Umsatz, Verhandlungs-Bewertung und testierte Zahlen immer schwerer auseinanderzuhalten sind.</p>
+        <h3><span class="num">02</span>Das Frontier-Rennen beschleunigt — Gemini 4 Carbon an der Spitze, GPT-6.1 Terra kontert</h3>
+        <p>Während die Finanzseite zur Nüchternheit mahnt, liefert die Produktseite in dieser Woche gleich doppelt. <span data-person="demis-hassabis">Google DeepMinds</span> <strong>Gemini 4 Carbon</strong> (vom 28. Oktober) setzt sich an die Spitze der <strong>Text-Arena</strong>, rangiert auf Platz 2 der Agent-Arena und Platz 4 bei WebDev — ein breites Spitzen-Ergebnis, das Google nach einer Phase des Aufholens wieder an die Modellführung bringt. Nur Tage zuvor hatte <strong>OpenAI</strong> mit <strong>GPT-6.1 Terra</strong> (26. Oktober) nachgelegt: ausgerollt über API, ChatGPT Work und Codex, mit erklärtem Fokus auf visuelles Schließen, Computer-Use, Faktentreue und Coding. Der Takt, in dem die beiden führenden Labore ihre Spitzenmodelle überbieten, ist inzwischen auf Tage geschrumpft.</p>
+        <p>Für die Praxis ist dabei weniger der Arena-Rang entscheidend als die Richtung der Verbesserungen. Beide Releases betonen <strong>agentische Fähigkeiten</strong> — Computer-Use, Werkzeuggebrauch, längere autonome Ketten — und nicht mehr primär die Chat-Qualität. Das ist die eigentliche Verschiebung: Die Modelle werden daraufhin optimiert, Aufgaben eigenständig abzuarbeiten, nicht nur Antworten zu formulieren. Gleichzeitig gilt die übliche Vorsicht: Arena-Rankings sind Momentaufnahmen, die sich mit jedem Release verschieben, und Hersteller-Benchmarks sind kein Ersatz für die Messung an der eigenen Aufgabe. Wer heute auf „das beste Modell" baut, baut auf eine Position, die in zwei Wochen ein anderer innehat.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Die Billionen-Zahlen gehören in die Risiko-, nicht in die Vertrauens-Spalte. Wenn Staatsfonds, Hyperscaler-Equity und Lab-Runden denselben Boom finanzieren, steigt das Klumpenrisiko für jeden, der seine Architektur an einen einzelnen Anbieter kettet. Die praktische Konsequenz ist dieselbe wie bei den offenen Gewichten: Modell-Agnostik als Designprinzip, einen definierten Exit-Pfad je kritischem Workload, und die Fähigkeit, auf einen zweiten Anbieter oder ein self-hosted Modell umzuschalten, bevor ein Finanzierungs- oder Regulatorik-Schock den ersten verteuert oder sperrt.
+          Für uns: Die Spitze wechselt zu schnell, um Architektur daran festzumachen. Die richtige Konsequenz aus dem Wochentakt ist Modell-Agnostik: eine Abstraktionsschicht, die den Wechsel zwischen Gemini, GPT und offenen Modellen zu einer Konfigurations- statt einer Umbau-Frage macht. Und weil beide Releases auf Agenten-Fähigkeiten zielen, lohnt sich ein eigenes, aufgabennahes Eval-Set mehr als jedes öffentliche Arena-Ranking — gemessen wird am Kunden-Workflow, nicht an der Bestenliste.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">03</span>Der Maschinenraum konsolidiert — und die Kartellwächter schauen hin</h3>
-        <p>Die Verdichtung reicht bis in die Infrastruktur- und Werkzeugschicht. Das US-Justizministerium prüft Berichten zufolge <strong>Nvidias 12,93-Milliarden-Dollar-Übernahme von Hugging Face</strong> auf kartellrechtliche Bedenken — ein bemerkenswerter Schritt, weil Hugging Face die zentrale Verteilstelle gerade für jene offenen Modelle ist, mit denen Mistral heute antritt. Ein Chip-Monopolist, der den wichtigsten Open-Weight-Hub kontrolliert, wirft genau die Frage auf, die eine offene Alternative eigentlich entschärfen sollte: Wem gehört der Weg, über den die Gewichte verteilt werden? Der Abschluss wird für das erste Halbjahr 2027 erwartet.</p>
-        <p>Gleichzeitig zieht sich das Kapital durch die Kette: Nvidia soll in fortgeschrittenen Gesprächen stehen, für eine 460-Megawatt-Phase des West-Virginia-Campus von Nscale Milliarden an Fremdkapital zu garantieren — gekoppelt an einen Compute-Deal mit Anthropic. In der Werkzeugschicht kauft derweil <strong>Deepgram</strong> das Unternehmen <strong>Daily</strong>, den Entwickler des offenen Pipecat-Frameworks für Sprach-Agenten; die Konditionen bleiben offen. Das Muster ist dasselbe wie eine Etage höher: Wer die Modelle baut, sichert sich die Leitungen, die Hardware-Finanzierung und die Bausteine, über die Agenten in die Welt kommen.</p>
+        <h3><span class="num">03</span>Googles Paradox — Genie 4 öffnet eine neue Front, während AI Mode den Kern angreift</h3>
+        <p>Google zeigt in dieser Woche beide Gesichter des Incumbents. Nach vorn öffnet <strong>Genie 4</strong> eine neue Front: ein <strong>Welt-Modell</strong>, das als Research-Preview an ausgewählte Tester geht und interaktive, begehbare Umgebungen generiert. Welt-Modelle sind die Wette darauf, dass die nächste Stufe nicht im besseren Text liegt, sondern in Systemen, die räumliche und physikalische Zusammenhänge simulieren — Grundlage für Robotik, Agenten in virtuellen Umgebungen und Training in synthetischen Welten. Dass Google hier parallel zum Sprachmodell-Rennen investiert, zeigt, wie breit die Front inzwischen ist.</p>
+        <p>Nach innen aber zeigt sich der Preis der eigenen KI-Offensive. Berichten zufolge räumt Google ein, dass der <strong>AI Mode in der Suche die Werbeeinnahmen drückt</strong> — die generierte Antwort oben auf der Seite ersetzt den Klick, der das Anzeigengeschäft trägt. Das ist das klassische Innovator's Dilemma in Reinform: Der KI-Vorsprung in der Suche kannibalisiert genau die Ertragsquelle, aus der Google seine KI-Ambitionen finanziert. Für die Branche ist das ein Lehrstück darüber, dass technische Führung und Geschäftsmodell nicht automatisch im Gleichschritt laufen — und dass selbst der dominante Suchanbieter die Übersetzung von KI-Fähigkeit in Ertrag erst noch beweisen muss.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Die Konsolidierung im Maschinenraum ist das weniger sichtbare, aber folgenreichere Risiko. Wenn Verteil-Hubs, GPU-Finanzierung und Agenten-Frameworks in wenige Hände wandern, hängt die Lieferkette eines Deployments an Entscheidungen, die weit oberhalb des Projekts fallen. Praktisch: Abhängigkeiten von einzelnen Hubs und Frameworks explizit in der Risikoanalyse führen, offene und selbst-hostbare Bausteine bevorzugen, wo es geht, und Kartell-Verfahren wie das gegen Nvidia/Hugging Face als Frühindikator für künftige Preis- und Verfügbarkeitsänderungen beobachten.
+          Für uns: Das Google-Paradox ist die Mahnung in Reinform, dass KI-Fähigkeit und tragfähiges Geschäftsmodell zwei verschiedene Dinge sind. In Kundenprojekten heißt das: nicht die Technik, sondern die Wertschöpfung zum Ausgangspunkt machen — welcher Prozess wird messbar schneller, günstiger oder besser? Welt-Modelle wie Genie 4 sind für die meisten DACH-Kunden noch Forschungshorizont; der nüchterne Blick auf AI-Mode-Kannibalisierung ist dagegen sofort übertragbar auf jede KI-Einführung, die bestehende Erlösmodelle berührt.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">04</span>Der menschliche Nenner — wenn Compute und Kapital sich verdichten, schärft sich die Governance-Frage</h3>
-        <p>Die Verdichtung hat eine Kehrseite, die diese Woche ein Gesicht bekam. Bei <strong>Google DeepMind</strong> kündigte die Forschungs-Ingenieurin Sofia Liguori mit einem offenen Brief unter dem Titel „Stay Human" — aus Protest gegen Googles 1,2-Milliarden-Dollar-Vertrag „Project Nimbus" mit der israelischen Regierung und dem Militär. Rund 200 DeepMind-Beschäftigte haben inzwischen einen Appell unterzeichnet, der den Konzern auffordert, seine Militärverträge zu beenden. Das ist kein isolierter Vorfall, sondern Teil eines Musters: Je mehr sich Rechenleistung, Kapital und damit Einfluss in wenigen Konzernen bündeln, desto stärker treten die Verteilungs-, Macht- und Ethik-Fragen aus dem Maschinenraum heraus — und desto häufiger tragen sie Mitarbeiter und nicht nur Regulatoren nach außen.</p>
-        <p>Für die Branche, die diese Modelle bei Kunden einführt, ist das mehr als eine Randnotiz. Die Governance-Debatte verlagert sich von abstrakter Regulatorik zur konkreten Lieferanten-Frage: Mit wessen Modell, unter welchen Bedingungen und mit welcher Herkunfts-Transparenz baue ich ein Produktivsystem? Der Kontrast des Tages bringt es auf den Punkt — Mistrals offene Gewichte geben Kontrolle zurück, die Billionen-Runden und die Militärverträge zeigen, wie viel Macht sich andernorts bündelt. Wer Agenten verantwortlich betreibt, muss beides einpreisen: die technische Beherrschbarkeit und die Frage, wessen Werkzeug man eigentlich in die eigenen Prozesse lässt.</p>
+        <h3><span class="num">04</span>Unter allem der Compute-Engpass — Tenstorrent und Modal finanzieren die Leitungen</h3>
+        <p>Dass die Frontier-Modelle und die Milliarden-Verpflichtungen überhaupt möglich sind, hängt an der Schicht darunter — und auch dort floss diese Woche Kapital. Der Chip-Entwickler <strong>Tenstorrent</strong> sammelte laut <em>Reuters</em> rund <strong>1,5 Milliarden Dollar</strong> in einer Spätphasen-Runde ein, die das Unternehmen mit <strong>6,2 Milliarden Dollar</strong> bewertet — ein weiterer Versuch, der Nvidia-Dominanz bei KI-Beschleunigern eine Alternative entgegenzustellen. In der Betriebsschicht war <strong>Modal Labs</strong> mit einer <strong>750-Millionen-Dollar-Series-D</strong> die größte Einzelrunde ihrer Woche; Modal verkauft serverloses GPU-Compute, also genau die Infrastruktur, über die kleinere Teams Modelle betreiben, ohne eigene Rechenzentren zu bauen.</p>
+        <p>Das Muster hinter beiden Runden ist aufschlussreich. Das Kapital fließt nicht nur in die sichtbaren Modell-Labore, sondern in die Ebene, die deren Rechenhunger bedient — Chips, die der Marktführer-Marge etwas entgegensetzen, und Plattformen, die Compute kleinteiliger und flexibler verfügbar machen. Für eine Branche, deren größtes Kostenrisiko die Token- und GPU-Rechnung ist, sind das die relevanteren Nachrichten als jeder Benchmark: Mehr Wettbewerb in der Chip- und Betriebsschicht ist der einzige strukturelle Hebel gegen die Preise, die oben aus den nicht kündbaren Verpflichtungen resultieren.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Herkunft und Governance der eingesetzten Modelle werden zur Kundenanforderung, nicht zur Kür. Für öffentliche Auftraggeber und regulierte Branchen ist die Frage „Woher kommt das Modell, wer kontrolliert es, wie transparent ist die Lieferkette?" bereits Teil der Vergabe. Konkret: Modell-Herkunft, Lizenz und Betreiber-Kontrolle als festen Punkt in jedes Architektur-Dossier aufnehmen, offene und auditierbare Optionen als risikoärmere Variante aktiv anbieten — und die eigene Haltung dazu formulieren, bevor ein Kunde sie einfordert.
+          Für uns: Wettbewerb in der Infrastrukturschicht ist unser Freund — jede ernsthafte Nvidia-Alternative und jede flexible Compute-Plattform erhöht langfristig die Verhandlungsmacht auf der Kostenseite. Praktisch lohnt der Blick unter die Modell-Ebene: serverlose GPU-Angebote als Option für Prototypen und schwankende Lasten prüfen, Betriebskosten-Szenarien mit mehreren Beschleuniger-Pfaden rechnen, und die Chip-Wette nicht als Spezialistenthema abtun — sie entscheidet mit darüber, was KI-Betrieb in zwei Jahren kostet.
         </blockquote>
       </section>
       <div class="briefing-end">
-        <strong>Was als Nächstes zu beobachten ist:</strong> ob die <strong>Mistral-Large-4-Gewichte</strong> tatsächlich wie angekündigt bis Monatsende auf Hugging Face erscheinen — und unter welcher Lizenz genau. Der Start der <strong>Anthropic-IPO-Vermarktung ab der Woche des 9. November</strong> als erstes externes Preisschild für das Frontier-Lab-Geschäft. Die <strong>Nvidia-Quartalszahlen am 17. November</strong> (Q3 FY27, Konsens ~108,8 Mrd. $) als nächster Härtetest der Capex-These nach der durchwachsenen Hyperscaler-Woche. Und die kartellrechtliche Prüfung von <strong>Nvidia/Hugging Face</strong> durch das DOJ. Kalenderpunkt: bis zum <strong>2. Dezember</strong> müssen Bestands-Agentensysteme unter Artikel 50 des AI Act maschinenlesbar gekennzeichnet sein. Claude Code springt auf <code>v2.1.314</code>.
+        <strong>Was als Nächstes zu beobachten ist:</strong> die <strong>Anthropic-IPO-Vermarktung ab der Woche des 9. November</strong> — jetzt mit den offengelegten S-1-Zahlen als Basis, inklusive der Frage, wie der Markt den 498-Milliarden-Asterisk bepreist. Ob <strong>Gemini 4 Carbon</strong> die Arena-Spitze länger als bis zum nächsten OpenAI- oder Anthropic-Release hält. Die <strong>Nvidia-Quartalszahlen am 17. November</strong> (Q3 FY27) als nächster Härtetest der Capex-These und als Gradmesser dafür, ob der Tenstorrent-Angriff Spuren hinterlässt. Und die breitere Verfügbarkeit von <strong>Genie 4</strong> über den Trusted-Tester-Kreis hinaus. Kalenderpunkt: bis zum <strong>2. Dezember</strong> müssen Bestands-Agentensysteme unter Artikel 50 des AI Act maschinenlesbar gekennzeichnet sein. Claude Code springt auf <code>v2.1.316</code>.
       </div>
 
     </div>
@@ -440,42 +440,54 @@
 
       <article class="card news-card crit">
         <div class="row">
+          <span class="pill crit">Marktdaten</span>
+          <span class="score">Score <b>9.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Anthropic-S-1 offen: 16,3 Mrd. $ Umsatz — aber 498 Mrd. $ fixe Compute-Zusagen</h3>
+        <p>Das öffentliche <strong>S-1</strong> von <strong>Anthropic</strong> ist da. Positiv: <strong>16,3 Mrd. $</strong> Halbjahresumsatz, Nasdaq-Listing als <strong>ANT</strong>, kolportierte Bewertung 1,5–2 Bio. $. Die Kehrseite im Kleingedruckten: <strong>80,7 Mrd. $ Nettoverlust</strong> und rund <strong>498 Mrd. $ (≈76 %) nicht kündbare</strong> Compute-/Infrastruktur-Verpflichtungen — <em>Fortune</em> nennt es den „498-Milliarden-Asterisk". Drei Viertel der Großausgaben sind fixiert, bevor der Umsatz existiert.</p>
+        <div class="news-meta">
+          <span>📅 26.10.2026</span><span>·</span><span>🏢 Anthropic</span><span>·</span>
+          <a href="https://fortune.com/2026/10/27/anthropic-s1-ipo-filing-financials-profits/" target="_blank" rel="noreferrer">fortune.com</a>
+          <a href="https://builtin.com/articles/anthropic-ipo-filing-s1" target="_blank" rel="noreferrer">builtin.com</a>
+        </div>
+      </article>
+
+      <article class="card news-card crit">
+        <div class="row">
           <span class="pill crit">Major Release</span>
           <span class="score">Score <b>9.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Mistral Large 4: ~1 Bio. Parameter als offene Gewichte, 0,70/2,10 $</h3>
-        <p><strong>Mistral</strong> stellt Large 4 vor — ein multimodales MoE-Modell mit rund <strong>1,05 Bio. Parametern</strong> (~49 Mrd. aktiv/Token), das als <strong>offene Gewichte</strong> unter einer modifizierten Lizenz erscheint. API-Preis: <strong>0,70 $ / 2,10 $</strong> je Mio. Token. Die Vorschau läuft seit Anfang Oktober über Mistral Studio; die Gewichte sollen bis Monatsende folgen. Positionierung explizit zwischen teuren geschlossenen US-Laboren und chinesischen Open-Weight-Modellen.</p>
+        <h3 style="margin-top:10px">Gemini 4 Carbon übernimmt die Spitze der Text-Arena</h3>
+        <p><strong>Google DeepMind</strong> bringt <strong>Gemini 4 Carbon</strong> und setzt sich damit auf <strong>Platz 1 der Text-Arena</strong>, Platz 2 der Agent-Arena und Platz 4 bei WebDev — ein breites Spitzen-Ergebnis, das Google nach einer Aufholphase wieder an die Modellführung bringt. Der Fokus der Verbesserungen liegt erkennbar auf agentischen Fähigkeiten, nicht mehr nur auf Chat-Qualität.</p>
         <div class="news-meta">
-          <span>📅 29.10.2026</span><span>·</span><span>🏢 Mistral</span><span>·</span>
-          <a href="https://thenewstack.io/mistral-large-4-weights/" target="_blank" rel="noreferrer">thenewstack.io</a>
-          <a href="https://betanews.com/article/mistral-large-4-preview-open-weights/" target="_blank" rel="noreferrer">betanews.com</a>
+          <span>📅 28.10.2026</span><span>·</span><span>🏢 Google DeepMind</span><span>·</span>
+          <a href="https://aireleasetracker.com/latest" target="_blank" rel="noreferrer">aireleasetracker.com</a>
         </div>
       </article>
 
       <article class="card news-card hot">
         <div class="row">
-          <span class="pill hot">Marktdaten</span>
+          <span class="pill hot">Major Release</span>
           <span class="score">Score <b>8.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Anthropic-IPO: Vermarktung ab 9. November, Bewertung ~1,5 Bio. $</h3>
-        <p>Nach dem öffentlichen S-1 (Nasdaq-Kürzel <strong>ANT</strong>, 16,3 Mrd. $ Halbjahresumsatz) beginnt die aktive <strong>IPO-Vermarktung ab der Woche des 9. November</strong>. Investoren taxieren <strong>Anthropic</strong> inzwischen bei rund <strong>1,5 Bio. $</strong>. Der Börsengang wird zum ersten externen Preisschild, das der öffentliche Markt dem Frontier-Lab-Geschäft gibt — und zum Referenzpunkt für OpenAIs parallele Privatrunde.</p>
+        <h3 style="margin-top:10px">OpenAI GPT-6.1 Terra — Fokus auf Computer-Use, Vision und Coding</h3>
+        <p><strong>OpenAI</strong> rollt <strong>GPT-6.1 Terra</strong> über API, ChatGPT Work und Codex aus, mit erklärtem Fokus auf <strong>visuelles Schließen, Computer-Use, Faktentreue und Coding</strong>. Nur Tage vor Gemini 4 Carbon veröffentlicht, zeigt es denselben Trend: Die Spitzenmodelle werden daraufhin optimiert, Aufgaben eigenständig abzuarbeiten — der Überbietungstakt der führenden Labore ist auf Tage geschrumpft.</p>
         <div class="news-meta">
-          <span>📅 26.10.2026</span><span>·</span><span>🏢 Anthropic</span><span>·</span>
-          <a href="https://www.trendingtopics.eu/anthropic-confidentially-files-for-ipo-could-crack-the-top-10-most-valuable-companies/" target="_blank" rel="noreferrer">trendingtopics.eu</a>
-          <a href="https://beinsure.com/news/anthropic-ipo-plans-nasdaq-listing/" target="_blank" rel="noreferrer">beinsure.com</a>
+          <span>📅 26.10.2026</span><span>·</span><span>🏢 OpenAI</span><span>·</span>
+          <a href="https://releasebot.io/updates/openai" target="_blank" rel="noreferrer">releasebot.io</a>
         </div>
       </article>
 
       <article class="card news-card hot">
         <div class="row">
-          <span class="pill hot">M&amp;A</span>
-          <span class="score">Score <b>8.0</b>/10</span>
+          <span class="pill hot">Forschung</span>
+          <span class="score">Score <b>7.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">DeepSeek wirbt ~16 Mrd. $ ein — angeführt vom chinesischen Staatsfonds</h3>
-        <p>Laut <em>The Information</em> wirbt <strong>DeepSeek</strong> eine zweite Runde über fast <strong>16 Mrd. $</strong> ein, angeführt vom staatlichen „Big Fund". <strong>Tencent</strong> und <strong>Alibaba</strong> sollen bei einer Bewertung über <strong>20 Mrd. $</strong> in Gesprächen sein. Das Signal: Nach den US-Laboren zieht nun auch Chinas Open-Weight-Champion staatlich gestütztes Mega-Kapital an — der Finanzierungs-Wettlauf wird endgültig geopolitisch.</p>
+        <h3 style="margin-top:10px">Google Genie 4: Welt-Modell als Research-Preview</h3>
+        <p><strong>Google</strong> zeigt mit <strong>Genie 4</strong> ein <strong>Welt-Modell</strong>, das interaktive, begehbare Umgebungen generiert — zunächst als Research-Preview für ausgewählte Tester, breiterer Rollout später. Die Wette: Die nächste Stufe liegt nicht im besseren Text, sondern in Systemen, die räumliche und physikalische Zusammenhänge simulieren — Grundlage für Robotik und Agenten in virtuellen Welten.</p>
         <div class="news-meta">
-          <span>📅 30.10.2026</span><span>·</span><span>🏢 DeepSeek</span><span>·</span>
-          <a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noreferrer">aiweekly.co</a>
+          <span>📅 28.10.2026</span><span>·</span><span>🏢 Google DeepMind</span><span>·</span>
+          <a href="https://aireleasetracker.com/latest" target="_blank" rel="noreferrer">aireleasetracker.com</a>
         </div>
       </article>
 
@@ -484,11 +496,11 @@
           <span class="pill warn">Marktdaten</span>
           <span class="score">Score <b>7.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Meta platziert ~95 Mrd. $ Aktien — erste große Emission seit 2013</h3>
-        <p><strong>Meta</strong> legt Berichten zufolge eine Aktienplatzierung über rund <strong>95 Mrd. $</strong> auf, um die eigene KI-Expansion zu finanzieren — die erste große Eigenkapital-Emission des Konzerns seit <strong>2013</strong>. Der Beleg für die These der Woche: Selbst die cashstärksten Konzerne finanzieren den Compute-Aufbau nicht mehr allein aus dem laufenden Geschäft.</p>
+        <h3 style="margin-top:10px">Google räumt ein: AI Mode drückt die Such-Werbeeinnahmen</h3>
+        <p>Berichten zufolge gesteht <strong>Google</strong> ein, dass der <strong>AI Mode in der Suche die Werbeeinnahmen belastet</strong> — die generierte Antwort oben auf der Seite ersetzt den Klick, der das Anzeigengeschäft trägt. Das Innovator's Dilemma in Reinform: Der KI-Vorsprung kannibalisiert genau die Ertragsquelle, aus der Google seine KI-Ambitionen finanziert. Technische Führung und Geschäftsmodell laufen nicht automatisch im Gleichschritt.</p>
         <div class="news-meta">
-          <span>📅 29.10.2026</span><span>·</span><span>🏢 Meta</span><span>·</span>
-          <a href="https://www.venturedailydigest.com/p/meta-seeks-95b-to-fund-its-ai-expansion" target="_blank" rel="noreferrer">venturedailydigest.com</a>
+          <span>📅 30.10.2026</span><span>·</span><span>🏢 Google / Alphabet</span><span>·</span>
+          <a href="https://latent.space/p/ainews-google-admits-ai-mode-hurts-search-revenue-15-500b-drop-worst-since-2004-ipo-ai-bear-market-c" target="_blank" rel="noreferrer">latent.space</a>
         </div>
       </article>
 
@@ -497,37 +509,24 @@
           <span class="pill warn">M&amp;A</span>
           <span class="score">Score <b>7.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">DOJ prüft Nvidias 12,93-Mrd.-$-Kauf von Hugging Face</h3>
-        <p>Das US-Justizministerium prüft Berichten zufolge <strong>Nvidias 12,93-Mrd.-$-Übernahme von Hugging Face</strong> auf kartellrechtliche Bedenken. Brisant, weil Hugging Face die zentrale Verteilstelle für offene Modelle ist — ein Chip-Monopolist, der den wichtigsten Open-Weight-Hub kontrolliert. Abschluss wird für H1 2027 erwartet.</p>
+        <h3 style="margin-top:10px">Tenstorrent sammelt 1,5 Mrd. $ ein — Bewertung 6,2 Mrd. $</h3>
+        <p>Der Chip-Entwickler <strong>Tenstorrent</strong> sammelt laut <em>Reuters</em> rund <strong>1,5 Mrd. $</strong> in einer Spätphasen-Runde ein, die das Unternehmen mit <strong>6,2 Mrd. $</strong> bewertet. Ein weiterer Versuch, der Nvidia-Dominanz bei KI-Beschleunigern eine Alternative entgegenzustellen — mehr Wettbewerb in der Chip-Schicht ist der strukturelle Hebel gegen die Compute-Preise.</p>
         <div class="news-meta">
-          <span>📅 30.10.2026</span><span>·</span><span>🏢 Nvidia / DOJ</span><span>·</span>
-          <a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noreferrer">aiweekly.co</a>
-        </div>
-      </article>
-
-      <article class="card news-card warn">
-        <div class="row">
-          <span class="pill warn">Personalie</span>
-          <span class="score">Score <b>7.0</b>/10</span>
-        </div>
-        <h3 style="margin-top:10px">DeepMind-Forscherin kündigt „Stay Human" — Protest gegen Project Nimbus</h3>
-        <p>Bei <strong>Google DeepMind</strong> kündigte die Forschungs-Ingenieurin Sofia Liguori mit einem offenen Brief („Stay Human") aus Protest gegen Googles <strong>1,2-Mrd.-$-Vertrag „Project Nimbus"</strong> mit der israelischen Regierung und dem Militär. Rund <strong>200 DeepMind-Beschäftigte</strong> haben einen Appell unterzeichnet, die Militärverträge zu beenden — ein Zeichen, wie die Governance-Frage aus dem Maschinenraum heraustritt.</p>
-        <div class="news-meta">
-          <span>📅 29.10.2026</span><span>·</span><span>🏢 Google DeepMind</span><span>·</span>
-          <a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noreferrer">aiweekly.co</a>
+          <span>📅 28.10.2026</span><span>·</span><span>🏢 Tenstorrent</span><span>·</span>
+          <a href="https://valueaddvc.com/blog/october-2026-ai-funding-rounds-tenstorrent-typesafe-modal" target="_blank" rel="noreferrer">valueaddvc.com</a>
         </div>
       </article>
 
       <article class="card news-card info">
         <div class="row">
-          <span class="pill info">Tooling</span>
+          <span class="pill info">M&amp;A</span>
           <span class="score">Score <b>6.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Deepgram kauft Daily — Heimat des offenen Pipecat-Frameworks</h3>
-        <p><strong>Deepgram</strong> übernimmt <strong>Daily</strong>, den Entwickler des offenen <strong>Pipecat</strong>-Frameworks für Sprach-Agenten; Konditionen offen. Konsolidierung in der Agenten-Werkzeugschicht: Wer Sprach-KI baut, sichert sich die Bausteine, über die Voice-Agenten in Produkte kommen — ein weiterer Baustein der Maschinenraum-Verdichtung dieser Woche.</p>
+        <h3 style="margin-top:10px">Modal Labs: 750 Mio. $ Series D für serverloses GPU-Compute</h3>
+        <p><strong>Modal Labs</strong> schließt eine <strong>750-Mio.-$-Series-D</strong> ab — die größte Einzelrunde ihrer Woche. Modal verkauft serverloses GPU-Compute, also die Infrastruktur, über die kleinere Teams Modelle betreiben, ohne eigene Rechenzentren zu bauen. Das Kapital fließt in die Betriebsschicht, die den Rechenhunger der Modell-Labore bedient — und Compute flexibler verfügbar macht.</p>
         <div class="news-meta">
-          <span>📅 29.10.2026</span><span>·</span><span>🏢 Deepgram</span><span>·</span>
-          <a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noreferrer">aiweekly.co</a>
+          <span>📅 28.10.2026</span><span>·</span><span>🏢 Modal Labs</span><span>·</span>
+          <a href="https://valueaddvc.com/blog/october-2026-ai-funding-rounds-tenstorrent-typesafe-modal" target="_blank" rel="noreferrer">valueaddvc.com</a>
         </div>
       </article>
 
@@ -548,7 +547,16 @@
 
       <article class="card">
         <h3>Letzte Releases</h3>
-        <p>Aktuelle Version <code>v2.1.314</code> (30.10.) führt <strong><code>permissions.blockWritesOutsideWorkingDirectories</code></strong> ein: Write, Edit und NotebookEdit verweigern in <em>jedem</em> Permission-Modus Pfade außerhalb der Arbeitsverzeichnisse — für unbeaufsichtigte Oneshot-Läufe wie diesen genau die richtige Leitplanke, weil ein verirrter Schreibzugriff so gar nicht erst durchkommt. Dazu kommt ein optionales <code>groups</code>-Feld für Claude-Apps-Gateway-Upstreams (nur Entwickler in den gelisteten IdP-Gruppen werden an den Upstream geleitet, auch beim Failover) sowie <code>guardrail_trace</code> für Bedrock-Upstreams. Davor war <code>v2.1.312</code> (27.10.) ein Enterprise-Governance-Release: <strong><code>oidc.user_id_claim</code></strong> identifiziert Personen über einen anderen <code>id_token</code>-Claim als <code>sub</code> (z. B. die <code>oid</code> von Microsoft Entra ID), „click to send" in Fullscreen, und ein Fix lädt Managed Settings und Org-Policy über die gesamte Session. <code>v2.1.311</code> (26.10.) brachte <strong><code>--hold-idle-file</code></strong>/<strong><code>--max-hold-min</code></strong> für den Self-hosted-Runner und — direkt relevant für unbeaufsichtigte Läufe — einen Fix für lange Startup-Freezes bei einer CLAUDE.md mit sehr langem Listenpunkt. <code>v2.1.310</code> (23.10.) ergänzte das <strong>Monitor-Tool</strong> und Plugin-Monitore (Bedrock/Vertex/Foundry sowie bei abgeschalteter Telemetrie; lange Vordergrund-<code>sleep</code>s dort blockiert). <code>v2.1.309</code> (22.10.) härtete die Linux-/macOS-<strong>Sandbox</strong>, <code>v2.1.308</code> war reine Wartung. Die Linie der Woche: Enterprise-Governance und Robustheit für genau die Oneshot- und Cron-Läufe, die dieses Briefing erzeugen.</p>
+        <p>Aktuelle Version <code>v2.1.316</code> (31.10.) ergänzt drei Schalter: <strong><code>CLAUDE_CODE_DISABLE_ULTRATHINK</code></strong> deaktiviert das <code>ultrathink</code>-Keyword, <strong>pooled Group-Budgets</strong> im Claude-Apps-Gateway legen ein gemeinsames Monatsbudget für eine Gruppe über die Einzellimits (<code>pooled_budget</code> in der Spend-Limits-Admin-API), und <code>CLAUDE_CODE_DISABLE_LOOPED_CROSS_CERT_DROP</code> behält System-Cross-Zertifikate. Direkt davor führte <code>v2.1.314</code> (30.10.) <strong><code>permissions.blockWritesOutsideWorkingDirectories</code></strong> ein: Write, Edit und NotebookEdit verweigern in <em>jedem</em> Permission-Modus Pfade außerhalb der Arbeitsverzeichnisse — für unbeaufsichtigte Oneshot-Läufe wie diesen genau die richtige Leitplanke, weil ein verirrter Schreibzugriff so gar nicht erst durchkommt. Dazu ein optionales <code>groups</code>-Feld für Gateway-Upstreams und <code>guardrail_trace</code> für Bedrock. <code>v2.1.312</code> (27.10.) war ein Enterprise-Governance-Release: <strong><code>oidc.user_id_claim</code></strong> identifiziert Personen über einen anderen <code>id_token</code>-Claim als <code>sub</code> (z. B. die <code>oid</code> von Microsoft Entra ID), „click to send" in Fullscreen, und ein Fix lädt Managed Settings und Org-Policy über die gesamte Session. <code>v2.1.311</code> (26.10.) brachte <strong><code>--hold-idle-file</code></strong>/<strong><code>--max-hold-min</code></strong> für den Self-hosted-Runner und — direkt relevant für unbeaufsichtigte Läufe — einen Fix für lange Startup-Freezes bei einer CLAUDE.md mit sehr langem Listenpunkt. <code>v2.1.310</code> (23.10.) ergänzte das <strong>Monitor-Tool</strong> und Plugin-Monitore (Bedrock/Vertex/Foundry sowie bei abgeschalteter Telemetrie; lange Vordergrund-<code>sleep</code>s dort blockiert). <code>v2.1.309</code> (22.10.) härtete die Linux-/macOS-<strong>Sandbox</strong>. Die Linie der Woche: Enterprise-Governance und Robustheit für genau die Oneshot- und Cron-Läufe, die dieses Briefing erzeugen.</p>
+
+        <div class="release">
+          <div class="ver">v2.1.316</div>
+          <div class="when">31.10.</div>
+          <div class="what">
+            <strong>Budget- &amp; Ultrathink-Schalter</strong> — <code>CLAUDE_CODE_DISABLE_ULTRATHINK</code> deaktiviert das <code>ultrathink</code>-Keyword · pooled Group-Budgets im Claude-Apps-Gateway: ein gemeinsames Monatsbudget über den Einzellimits einer Gruppe (<code>pooled_budget</code> in der Spend-Limits-Admin-API) · <code>CLAUDE_CODE_DISABLE_LOOPED_CROSS_CERT_DROP</code> behält System-Cross-Zertifikate
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
 
         <div class="release">
           <div class="ver">v2.1.314</div>
@@ -592,15 +600,6 @@
           <div class="what">
             <strong>Sandbox-Härtung</strong> — sandboxed Bash-Befehle (Linux/macOS) führten Shell-Startup-Dateien nicht mehr außerhalb der Sandbox aus · macOS-<code>denyWrite</code>-Glob-Muster greifen jetzt auch über Symlinks · sandboxed Befehle/Auto-Edits können die übergebene MCP-Config nicht mehr ändern
             <span class="badge sec">FIX</span>
-          </div>
-        </div>
-
-        <div class="release">
-          <div class="ver">v2.1.308</div>
-          <div class="when">22.10.</div>
-          <div class="what">
-            <strong>Wartungs-Release</strong> — Bug-Fixes und Zuverlässigkeits-Verbesserungen, keine neue Oberfläche
-            <span class="badge fix">FIX</span>
           </div>
         </div>
 

@@ -411,9 +411,15 @@
     },
     {
       "date": "2026-10-30",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-10-30.html",
       "headline": "Nach dem Earnings-Stresstest öffnen sich die Open-Weights — Mistral kontert die Billionen-Bewertungen",
       "summary": "Mistral Large 4 (~1 Bio. Parameter) landet als Open-Weight-Konter zu $0,70/$2,10 · Anthropic-IPO-Vermarktung ab 9.11., Bewertung ~1,5 Bio. $ · DeepSeek wirbt ~16 Mrd. $ vom China-Staatsfonds ein · Meta platziert 95 Mrd. $ Aktien für KI-Capex · DOJ prüft Nvidia/Hugging Face · Claude Code v2.1.314"
+    },
+    {
+      "date": "2026-10-31",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Das S-1 ist lesbar, die Spitzenmodelle sind neu — und zwischen Benchmark und Bilanz klafft die eigentliche Lücke",
+      "summary": "Anthropic-S-1 offen: 16,3 Mrd. $ Umsatz, aber 498 Mrd. $ fixe Compute-Zusagen · Gemini 4 Carbon führt die Text-Arena · OpenAI kontert mit GPT-6.1 Terra · Genie 4 als Welt-Modell · Tenstorrent 1,5 Mrd. $ (Bewertung 6,2 Mrd.) · Modal 750 Mio. $ Series D · Claude Code v2.1.316"
     }
   ]
 }
