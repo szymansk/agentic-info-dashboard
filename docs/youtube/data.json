@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-31T12:09:06+00:00",
+  "last_updated": "2026-11-01T12:04:44+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -156,6 +156,18 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "_d83IiEU7_0",
+      "title": "Hip Hop’s Origin Story, Told by the Legends Who Lived It",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-10-31T14:30:17+00:00",
+      "url": "https://www.youtube.com/watch?v=_d83IiEU7_0",
+      "thumbnail": "https://img.youtube.com/vi/_d83IiEU7_0/mqdefault.jpg",
+      "description": "Before hip-hop was a global industry, Kurtis Blow remembers building the culture in a New York where “we had nothing.” In this Paid in Full fireside chat, Nas, Rev Run, and Roxanne Shanté celebrate one of hip-hop’s foundational artists and "
+    },
     {
       "video_id": "o4D1J1YWjhg",
       "title": "There are many futures. Which do you want to build?",
@@ -491,18 +503,6 @@
       "url": "https://www.youtube.com/watch?v=sFfPkUJd_Jk",
       "thumbnail": "https://img.youtube.com/vi/sFfPkUJd_Jk/mqdefault.jpg",
       "description": "Meet Genie 4, Google DeepMind’s most realistic and interactive world model yet. Built on our Gemini models, Genie 4 lets you step inside dynamic worlds in real time, steer scenes on the fly with natural language, and watch what happens next"
-    },
-    {
-      "video_id": "T4u2FoIm3pw",
-      "title": "The AI School Kids Love More Than Vacation | Alpha School's Joe Liemandt",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-27T14:30:18+00:00",
-      "url": "https://www.youtube.com/watch?v=T4u2FoIm3pw",
-      "thumbnail": "https://img.youtube.com/vi/T4u2FoIm3pw/mqdefault.jpg",
-      "description": "What should school look like if AI can help students learn dramatically faster? Alpha School principal Joe Liemandt argues the answer isn’t to fill the extra time with more academics, but to redesign school around the skills traditional cla"
     },
     {
       "video_id": "ZAzWPE9CItg",
