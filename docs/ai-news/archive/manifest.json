@@ -417,9 +417,15 @@
     },
     {
       "date": "2026-10-31",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-10-31.html",
       "headline": "Das S-1 ist lesbar, die Spitzenmodelle sind neu — und zwischen Benchmark und Bilanz klafft die eigentliche Lücke",
       "summary": "Anthropic-S-1 offen: 16,3 Mrd. $ Umsatz, aber 498 Mrd. $ fixe Compute-Zusagen · Gemini 4 Carbon führt die Text-Arena · OpenAI kontert mit GPT-6.1 Terra · Genie 4 als Welt-Modell · Tenstorrent 1,5 Mrd. $ (Bewertung 6,2 Mrd.) · Modal 750 Mio. $ Series D · Claude Code v2.1.316"
+    },
+    {
+      "date": "2026-11-01",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Mistral öffnet die Billion, OpenAI schreibt die Regeln neu — das Wochenende gehört der Kontrollschicht, nicht dem Benchmark",
+      "summary": "Mistral Large 4 als offenes Billion-Parameter-Modell aus Europa · OpenAI überarbeitet Model Spec (fünf Prinzipien) und baut Agenten-Monitoring aus · Anthropic: Selbst-Bewertung gegen Missbrauch + AI for Science auf 20 Organisationen · Reddit meldet Einbruch der Google-Referrals · Amazon blockt Metas Shopping-Agent Muse · Claude Code v2.1.316"
     }
   ]
 }
