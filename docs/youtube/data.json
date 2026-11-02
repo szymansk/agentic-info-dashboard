@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-01T12:04:44+00:00",
+  "last_updated": "2026-11-02T12:00:37+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -156,6 +156,18 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "yW_ngvMFlYs",
+      "title": "Why Consciousness Might Not Be Hard At All (Joscha Bach)",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-02T03:04:11+00:00",
+      "url": "https://www.youtube.com/watch?v=yW_ngvMFlYs",
+      "thumbnail": "https://img.youtube.com/vi/yW_ngvMFlYs/mqdefault.jpg",
+      "description": "Joscha Bach is a cognitive scientist and the founder of the California Institute for Machine Consciousness.\n\nSPONSOR:\n---\nParallel is a single platform for all your agentic research: web search built for AI agents, with Pareto-optimal quali"
+    },
     {
       "video_id": "_d83IiEU7_0",
       "title": "Hip Hop’s Origin Story, Told by the Legends Who Lived It",
@@ -481,18 +493,6 @@
       "description": "Use code MATTHEWBERMAN for $200 off the Pod: https://www.eightsleep.com/matthewberman\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/f"
     },
     {
-      "video_id": "m7jelL7qRWo",
-      "title": "Colour Theory Has Politics - Paul Lessard",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-10-27T17:51:10+00:00",
-      "url": "https://www.youtube.com/shorts/m7jelL7qRWo",
-      "thumbnail": "https://img.youtube.com/vi/m7jelL7qRWo/mqdefault.jpg",
-      "description": "Paul Lessard on why the representations we arrive at don't have to converge. Colour theory looks as if it simply is, but it carries politics and economics. His example is Faith Ringgold, the Black American painter and quilter, and the poste"
-    },
-    {
       "video_id": "sFfPkUJd_Jk",
       "title": "Genie 4: A new generation of world simulation",
       "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
@@ -671,22 +671,10 @@
       "url": "https://www.youtube.com/watch?v=CUjHZlvQufk",
       "thumbnail": "https://img.youtube.com/vi/CUjHZlvQufk/mqdefault.jpg",
       "description": "Learn More: https://bit.ly/4yy5iWP\n\nThe longer an agent works, the more repeated, contradictory, or stale information builds up in its context. Models perform worse as their context grows, a problem Jeff Huber and his team at Chroma named C"
-    },
-    {
-      "video_id": "LWxX6vvHfrc",
-      "title": "Gemini 4 Argon Is Not What I Expected",
-      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
-      "channel_name": "Two Minute Papers",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-10-19T08:49:21+00:00",
-      "url": "https://www.youtube.com/watch?v=LWxX6vvHfrc",
-      "thumbnail": "https://img.youtube.com/vi/LWxX6vvHfrc/mqdefault.jpg",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 Gemini 4 Argon + report are available here:\nhttps://deepmind.google/models/model-cards/gemini-4-argon/\nhttps://storage.googleapis.com/deepmind-media/gemin"
     }
   ],
   "stats": {
-    "total_videos": 44,
+    "total_videos": 43,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
