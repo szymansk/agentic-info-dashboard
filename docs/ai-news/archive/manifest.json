@@ -423,9 +423,15 @@
     },
     {
       "date": "2026-11-01",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-11-01.html",
       "headline": "Mistral öffnet die Billion, OpenAI schreibt die Regeln neu — das Wochenende gehört der Kontrollschicht, nicht dem Benchmark",
       "summary": "Mistral Large 4 als offenes Billion-Parameter-Modell aus Europa · OpenAI überarbeitet Model Spec (fünf Prinzipien) und baut Agenten-Monitoring aus · Anthropic: Selbst-Bewertung gegen Missbrauch + AI for Science auf 20 Organisationen · Reddit meldet Einbruch der Google-Referrals · Amazon blockt Metas Shopping-Agent Muse · Claude Code v2.1.316"
+    },
+    {
+      "date": "2026-11-02",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Die Woche vor dem Börsengang beginnt mit drei Realitätsproben — Fähigkeits-Decke, Agenten-Kasse, Junk-Rating",
+      "summary": "SemiAnalysis-Benchmark GDPx: Opus 5.5 führt mit nur 12 % auf echter Wirtschaftsarbeit · Circle-Agenten-Wallets: 9 von 10 LLMs umgehen Ausgabenlimits durch Auslesen gemailter Freigabecodes (Cornell/Yale) · Anthropics IPO-Woche unter Druck: Warren-Deadline 3.11., Blackstone warnt vor BB-Junk-Rating, Vermarktung ab 9.11. · OpenAI baut die Enterprise-Schiene: Decisions API GA + Oracle/ServiceNow-Connectors, Replit verlagert >100 Mio. $/Jahr · Claude Code v2.1.316"
     }
   ]
 }

@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tagesbriefing · Agentic AI</title>
+<style>
+  :root {
+    --bg: #0b0d12;
+    --bg-2: #11141c;
+    --panel: #161a24;
+    --panel-2: #1b2030;
+    --line: #232a3a;
+    --text: #e7ecf3;
+    --body: #d8dce6;
+    --muted: #8b94a8;
+    --dim: #5d6577;
+    --accent: #c39a4a;       /* warm gold */
+    --accent-2: #7aa2f7;
+    --good: #6ec38b;
+    --warn: #e0a857;
+    --hot:  #e15a5a;
+    --crit: #b04bd1;
+    --radius: 14px;
+    --shadow: 0 10px 30px rgba(0,0,0,.35), 0 1px 0 rgba(255,255,255,.03) inset;
+  }
+  * { box-sizing: border-box; }
+  html, body { background: var(--bg); color: var(--text); }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, Roboto, 'Helvetica Neue', sans-serif;
+    margin: 0; line-height: 1.55;
+    background:
+      radial-gradient(1100px 700px at 90% -10%, rgba(195,154,74,.08), transparent 60%),
+      radial-gradient(900px 600px at -10% 10%, rgba(122,162,247,.07), transparent 60%),
+      var(--bg);
+    min-height: 100vh;
+  }
+  a { color: var(--accent-2); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+
+  /* ── Layout ──────────────────────────────────────────────── */
+  .wrap { max-width: 1280px; margin: 0 auto; padding: 28px 28px 80px; }
+
+  /* ── Top Nav ─────────────────────────────────────────────── */
+  .topnav {
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+    margin-bottom: 22px;
+    font-size: 13px;
+  }
+  .topnav a {
+    color: var(--muted); padding: 6px 12px; border-radius: 999px;
+    border: 1px solid var(--line);
+    transition: color .12s ease, border-color .12s ease, background .12s ease;
+  }
+  .topnav a:hover { color: var(--text); border-color: var(--accent); text-decoration: none; }
+  .topnav a.active {
+    color: var(--accent); border-color: var(--accent);
+    background: rgba(195,154,74,.08);
+  }
+
+  /* ── Timeline strip ──────────────────────────────────────── */
+  .timeline-bar {
+    display: flex; align-items: center; gap: 8px;
+    padding: 12px 14px; margin-bottom: 24px;
+    background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+    border: 1px solid var(--line); border-radius: var(--radius);
+    overflow-x: auto;
+    scrollbar-width: thin; scrollbar-color: var(--line) transparent;
+  }
+  .timeline-bar::-webkit-scrollbar { height: 6px; }
+  .timeline-bar::-webkit-scrollbar-thumb { background: var(--line); border-radius: 3px; }
+  .timeline-bar .label {
+    color: var(--dim); font-size: 11px; letter-spacing: .08em;
+    text-transform: uppercase; padding-right: 8px; flex-shrink: 0;
+    border-right: 1px solid var(--line); margin-right: 4px;
+  }
+  .tl-pill {
+    display: inline-flex; flex-direction: column; align-items: center;
+    flex-shrink: 0;
+    padding: 6px 12px; border-radius: 10px;
+    border: 1px solid var(--line);
+    background: rgba(255,255,255,.02);
+    color: var(--muted);
+    font-size: 11px; text-decoration: none;
+    transition: all .12s ease;
+    min-width: 64px;
+  }
+  .tl-pill:hover {
+    color: var(--text); border-color: var(--accent);
+    background: rgba(195,154,74,.06); text-decoration: none;
+  }
+  .tl-pill.active {
+    color: var(--bg); background: var(--accent); border-color: var(--accent);
+    font-weight: 700;
+  }
+  .tl-pill .dow { font-size: 10px; opacity: .8; letter-spacing: .04em; text-transform: uppercase; }
+  .tl-pill .date { font-family: ui-monospace, monospace; font-size: 13px; margin-top: 2px; font-weight: 600; }
+  .tl-pill.future { opacity: .4; pointer-events: none; }
+
+  /* ── Header ──────────────────────────────────────────────── */
+  header.main {
+    display: flex; align-items: end; justify-content: space-between;
+    gap: 24px; padding-bottom: 22px; margin-bottom: 28px;
+    border-bottom: 1px solid var(--line);
+  }
+  header.main .title { display: flex; align-items: baseline; gap: 14px; }
+  header.main .title h1 {
+    margin: 0; font-size: 30px; letter-spacing: -.02em; font-weight: 800;
+  }
+  header.main .title .dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: var(--hot); box-shadow: 0 0 0 4px rgba(225,90,90,.18);
+    animation: pulse 2.4s infinite;
+  }
+  @keyframes pulse {
+    0%,100% { box-shadow: 0 0 0 4px rgba(225,90,90,.18); }
+    50%     { box-shadow: 0 0 0 9px rgba(225,90,90,.05); }
+  }
+  header.main .subtitle { color: var(--muted); font-size: 14px; }
+  header.main .meta { text-align: right; font-size: 13px; color: var(--muted); }
+  header.main .meta .date { color: var(--text); font-weight: 600; font-size: 15px; }
+  header.main .meta .tag {
+    display: inline-block; margin-top: 6px; padding: 3px 8px;
+    border: 1px solid var(--line); border-radius: 999px;
+    color: var(--muted); font-size: 11px; letter-spacing: .04em; text-transform: uppercase;
+  }
+
+  /* ── Section heading ─────────────────────────────────────── */
+  section { margin-top: 40px; }
+  .section-head { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+  .section-head h2 {
+    margin: 0; font-size: 18px; font-weight: 700;
+    letter-spacing: .02em; text-transform: uppercase;
+  }
+  .section-head .rule { flex: 1; height: 1px; background: var(--line); }
+  .section-head .hint { color: var(--dim); font-size: 12px; }
+
+  /* ── BRIEFING (editorial) ────────────────────────────────── */
+  .briefing-wrap {
+    max-width: 740px; margin: 0 auto;
+  }
+  .briefing-head {
+    text-align: left; margin-bottom: 28px;
+    padding-bottom: 22px; border-bottom: 1px solid var(--line);
+  }
+  .briefing-head h2.kicker {
+    margin: 0; font-size: 12px; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--accent); font-weight: 700;
+  }
+  .briefing-head h1 {
+    margin: 8px 0 10px; font-size: 32px; line-height: 1.2;
+    letter-spacing: -.02em; font-weight: 800; color: var(--text);
+  }
+  .briefing-head .byline {
+    color: var(--muted); font-size: 13px;
+    display: flex; gap: 12px; flex-wrap: wrap; align-items: center;
+  }
+  .briefing-head .byline .dot-sep { color: var(--dim); }
+  .briefing-head .lede {
+    margin-top: 22px; font-size: 18px; line-height: 1.55;
+    color: var(--text); font-weight: 400;
+  }
+  .briefing-head .lede::first-letter {
+    font-size: 56px; line-height: 1; font-weight: 800;
+    float: left; padding: 4px 10px 0 0; color: var(--accent);
+  }
+
+  .briefing-body { font-size: 16px; line-height: 1.7; color: var(--body); }
+  .briefing-body section { margin-top: 36px; }
+  .briefing-body h3 {
+    margin: 0 0 12px; font-size: 22px; line-height: 1.25;
+    letter-spacing: -.01em; font-weight: 700; color: var(--text);
+  }
+  .briefing-body h3 .num {
+    color: var(--accent); margin-right: 10px; font-family: ui-monospace, monospace;
+    font-size: 18px; font-weight: 600;
+  }
+  .briefing-body p { margin: 0 0 14px; }
+  .briefing-body p strong { color: var(--text); font-weight: 600; }
+  .briefing-body em { color: var(--text); font-style: italic; }
+  .briefing-body ol, .briefing-body ul { margin: 12px 0 16px; padding-left: 20px; }
+  .briefing-body li { margin-bottom: 8px; }
+  .briefing-body blockquote.takeaway {
+    margin: 22px 0; padding: 14px 18px;
+    border-left: 3px solid var(--accent);
+    background: rgba(195,154,74,.06);
+    border-radius: 0 8px 8px 0;
+    color: var(--text); font-size: 15px; line-height: 1.6;
+  }
+  .briefing-body blockquote.takeaway strong { color: var(--accent); letter-spacing: .04em; text-transform: uppercase; font-size: 11px; display: block; margin-bottom: 6px; }
+  .briefing-end {
+    margin-top: 36px; padding-top: 22px;
+    border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 13px; text-align: center;
+  }
+
+  /* ── Grid for cards (Breaking News + Claude Code) ────────── */
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 980px) { .grid.cols-3, .grid.cols-2 { grid-template-columns: 1fr; } }
+
+  .card {
+    background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+    border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 18px 18px 16px; box-shadow: var(--shadow);
+    position: relative; overflow: hidden;
+  }
+  .card h3 { margin: 0 0 6px; font-size: 16px; font-weight: 700; letter-spacing: -.005em; }
+  .card p  { margin: 0 0 10px; color: var(--muted); font-size: 13.5px; }
+  .card .row { display: flex; align-items: center; gap: 8px; }
+  .card ul { margin: 8px 0 0; padding-left: 18px; }
+  .card li { font-size: 13.5px; color: var(--muted); margin-bottom: 4px; }
+
+  /* ── Breaking News ───────────────────────────────────────── */
+  .news-card { padding-left: 18px; }
+  .news-card::before {
+    content: ""; position: absolute; left: 0; top: 0; bottom: 0;
+    width: 4px; background: var(--accent-2);
+  }
+  .news-card.crit::before { background: var(--crit); }
+  .news-card.hot::before  { background: var(--hot); }
+  .news-card.warn::before { background: var(--warn); }
+  .news-card.info::before { background: var(--accent-2); }
+  .news-meta {
+    display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
+    font-size: 12px; color: var(--dim); margin-top: 10px;
+  }
+  .pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 2px 9px; border-radius: 999px;
+    border: 1px solid var(--line); color: var(--muted);
+    font-size: 11px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase;
+  }
+  .pill.crit { color: #f1bdfb; border-color: rgba(176,75,209,.45); background: rgba(176,75,209,.10); }
+  .pill.hot  { color: #ffc4c4; border-color: rgba(225,90,90,.4);  background: rgba(225,90,90,.08); }
+  .pill.warn { color: #ffd99a; border-color: rgba(224,168,87,.4); background: rgba(224,168,87,.08); }
+  .pill.info { color: #cfe0ff; border-color: rgba(122,162,247,.4); background: rgba(122,162,247,.08); }
+  .score {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 2px 9px; border-radius: 999px;
+    background: rgba(255,255,255,.04); border: 1px solid var(--line);
+    font-family: ui-monospace, monospace; font-size: 11px; color: var(--text);
+  }
+  .score b { color: var(--accent); }
+
+  /* ── Claude Code ─────────────────────────────────────────── */
+  .cc-grid { grid-template-columns: 1.2fr .8fr; }
+  @media (max-width: 980px) { .cc-grid { grid-template-columns: 1fr; } }
+  .release {
+    display: flex; align-items: flex-start; gap: 12px; padding: 10px 0;
+    border-bottom: 1px dashed var(--line);
+  }
+  .release:last-child { border-bottom: none; }
+  .release .ver {
+    flex: 0 0 auto; min-width: 76px;
+    font-family: ui-monospace, monospace; font-size: 12.5px;
+    color: var(--accent); font-weight: 600;
+  }
+  .release .when { flex: 0 0 78px; color: var(--dim); font-size: 12px; font-family: ui-monospace, monospace; }
+  .release .what { color: var(--text); font-size: 13.5px; }
+  .release .what em { color: var(--muted); font-style: normal; }
+  .release .what strong { color: var(--text); }
+  .badge { display: inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .04em; }
+  .badge.feat { color: #b9efcb; background: rgba(110,195,139,.12); border: 1px solid rgba(110,195,139,.3); }
+  .badge.sec  { color: #ffc4c4; background: rgba(225,90,90,.12);  border: 1px solid rgba(225,90,90,.35); }
+  .badge.fix  { color: #ffd99a; background: rgba(224,168,87,.12); border: 1px solid rgba(224,168,87,.3); }
+  .src-card .links { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
+  .src-card .links a {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 8px 10px; border-radius: 8px;
+    border: 1px solid var(--line); background: rgba(255,255,255,.02);
+    color: var(--text); font-size: 13.5px;
+    transition: background .12s ease, border-color .12s ease;
+  }
+  .src-card .links a:hover { background: rgba(122,162,247,.06); border-color: rgba(122,162,247,.4); text-decoration: none; }
+  .src-card .links a .arrow { color: var(--dim); font-size: 12px; }
+
+  /* ── Snapshot banner (archive only) ──────────────────────── */
+  .snap-banner {
+    display: none;
+    background: rgba(195,154,74,.10);
+    border: 1px solid rgba(195,154,74,.3);
+    border-radius: 10px; padding: 10px 14px; margin-bottom: 18px;
+    color: var(--accent); font-size: 13px;
+    align-items: center; justify-content: space-between; gap: 12px;
+  }
+  .snap-banner.show { display: flex; }
+
+  /* ── Footer ──────────────────────────────────────────────── */
+  footer {
+    margin-top: 60px; padding-top: 18px;
+    border-top: 1px solid var(--line);
+    color: var(--dim); font-size: 12px;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+  footer .mono { color: var(--muted); }
+</style>
+</head>
+<body data-snapshot-date="2026-11-01" data-snapshot-mode="archive">
+<div class="wrap">
+
+  <!-- ─── Top Nav ─── -->
+  <nav class="topnav">
+    <a href="/agentic-info-dashboard/">📊 Übersicht</a>
+    <a href="/agentic-info-dashboard/ai-news/" class="active">📰 AI News (Tagesbriefing)</a>
+    <a href="/agentic-info-dashboard/youtube/">▶ YouTube Hot</a>
+    <a href="/agentic-info-dashboard/whoiswho/">👥 Who is Who</a>
+    <a href="/agentic-info-dashboard/sources/">📚 Quellen</a>
+    <a href="/agentic-info-dashboard/it-services/">🏢 IT-Services-Radar</a>
+    <a href="/agentic-info-dashboard/regulation/">⚖ Regulatorik</a>
+    <a href="/agentic-info-dashboard/coding-tools/">⌘ Coding-Tools</a>
+    <a href="/agentic-info-dashboard/calendar/">📅 Kalender</a>
+    <a href="/agentic-info-dashboard/extensions/">🧩 Extensions</a>
+  </nav>
+
+  <!-- ─── Timeline strip ─── -->
+  <div class="timeline-bar" id="timeline">
+    <span class="label">Zeitstrahl</span>
+    <!-- JS füllt aus archive/manifest.json. Fallback statisch: -->
+    <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-10-28.html" data-date="2026-10-28">
+      <span class="dow">Mi</span><span class="date">28.10.</span>
+    </a>
+    <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-10-29.html" data-date="2026-10-29">
+      <span class="dow">Do</span><span class="date">29.10.</span>
+    </a>
+    <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-10-30.html" data-date="2026-10-30">
+      <span class="dow">Fr</span><span class="date">30.10.</span>
+    </a>
+    <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-10-31.html" data-date="2026-10-31">
+      <span class="dow">Sa</span><span class="date">31.10.</span>
+    </a>
+    <a class="tl-pill active" href="/agentic-info-dashboard/ai-news/" data-date="2026-11-01">
+      <span class="dow">So</span><span class="date">01.11.</span>
+    </a>
+  </div>
+
+  <!-- ─── Snapshot Banner (nur in Archiv-Versionen) ─── -->
+  <div class="snap-banner" id="snap-banner">
+    <span>📌 Du siehst einen archivierten Snapshot.</span>
+    <a href="/agentic-info-dashboard/ai-news/">← Zurück zum heutigen Briefing</a>
+  </div>
+
+  <!-- ─── Header ─── -->
+  <header class="main">
+    <div class="title">
+      <span class="dot" title="Live"></span>
+      <div>
+        <h1>Agentic AI · Tagesbriefing</h1>
+        <div class="subtitle">Was heute zählt — in 10 Minuten Lesezeit auf den Punkt.</div>
+      </div>
+    </div>
+    <div class="meta">
+      <div class="date" id="today">Sonntag, 1. November 2026</div>
+      <div class="tag">Snapshot · KW 44 / 2026</div>
+    </div>
+  </header>
+
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <!-- ════════════════ TAGESBRIEFING (Editorial) ═══════════════ -->
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <article class="briefing-wrap">
+
+    <header class="briefing-head">
+      <h2 class="kicker">Sonntag · Agentic AI &amp; GenAI</h2>
+      <h1>Mistral öffnet die Billion, OpenAI schreibt die Regeln neu — das Wochenende gehört der Kontrollschicht, nicht dem Benchmark</h1>
+      <div class="byline">
+        <span>✍️ Kuratiert &amp; analysiert</span>
+        <span class="dot-sep">·</span>
+        <span>~11 Min Lesezeit</span>
+        <span class="dot-sep">·</span>
+        <span id="byline-date">1. November 2026</span>
+      </div>
+      <p class="lede">
+        Das Frontier-Rennen hat vergangene Woche die Schlagzeilen geschrieben — Gemini 4 Carbon, GPT-6.1 Terra, Anthropics S-1. Dieses Wochenende rückt die leisere, aber strukturell gewichtigere Geschichte in den Vordergrund: die <strong>Kontrollschicht</strong>. Mit <strong>Mistral Large 4</strong> landet erstmals ein offenes Modell im Billion-Parameter-Bereich aus Europa — eine Antwort auf chinesische Open-Weights ebenso wie auf die geschlossenen US-Flaggschiffe. Parallel bauen die Labore an den Leitplanken: <strong>OpenAI</strong> schreibt seine <em>Model Spec</em> auf fünf Prinzipien um und erweitert sein Agenten-Monitoring, <span data-person="dario-amodei">Anthropic</span> zeigt ein Modell, das den Missbrauch seiner eigenen Antworten erkennt. Die Spannung des Tages: Während die Benchmark-Spitze im Wochentakt wechselt, entscheidet sich die eigentliche Enterprise-Frage — kann man einem Agenten genug trauen, um ihn allein laufen zu lassen? — eine Ebene darunter.
+      </p>
+    </header>
+
+    <div class="briefing-body">
+
+      <section>
+        <h3><span class="num">01</span>Mistral Large 4 — Europas offene Billion als strategische Ansage</h3>
+        <p><span data-person="arthur-mensch">Mistrals</span> <strong>Large 4</strong> ist vollständig da: Nach der Public Preview Anfang Oktober sind zum Monatsende die <strong>offenen Gewichte</strong> gefallen. Das Modell ist ein multimodaler Mixture-of-Experts-Entwurf mit rund <strong>1,05 Billionen Parametern</strong>, von denen pro Token etwa <strong>49 Milliarden aktiv</strong> sind — die klassische MoE-Logik, die Kapazität und Inferenzkosten entkoppelt. Mistral positioniert es als <strong>bestes Open-Weights-Modell aus den USA oder Europa</strong> auf den aggregierten Benchmarks (wohlgemerkt: überwiegend selbst gewählte und selbst berichtete), mit erklärtem Fokus auf Softwareentwicklung und <strong>defensive Cybersicherheit</strong>. Der Zugang ist gestaffelt — gehostete Preview über Mistral Studio und API, separater Testzugang für geprüfte Sicherheitspartner und staatliche Stellen.</p>
+        <p>Die eigentliche Nachricht ist nicht der Benchmark, sondern die Strategie dahinter. Europa bekommt ein offenes Frontier-nahes Modell, das man auf eigener Infrastruktur betreiben kann — kein API-Abo, kein Datenabfluss zu einem US-Hyperscaler, kein Lizenz-Hebel eines geschlossenen Anbieters. Das trifft exakt den Nerv jeder Souveränitäts- und Compliance-Debatte im DACH-Raum. Zu relativieren ist zweierlei: Die Lizenz ist Berichten zufolge eine <strong>kundenspezifische</strong>, nicht das Apache-2.0 von Large 3 — „offene Gewichte" heißt hier nicht automatisch „frei für jeden Zweck". Und ein Billion-Parameter-Modell im eigenen Rechenzentrum zu betreiben, ist eine ernsthafte Hardware-Investition, keine Wochenend-Installation. Trotzdem: Für die Frage „Was baue ich, wenn der Kunde Daten nicht aus dem Haus geben darf?" ist Large 4 die interessanteste Option seit Monaten.</p>
+        <blockquote class="takeaway">
+          <strong>Was es bedeutet</strong>
+          Für uns: Offene Spitzenmodelle aus Europa sind der direkteste Hebel gegen die beiden größten Blocker im regulierten Geschäft — Datensouveränität und Anbieter-Lock-in. Konkret: Large 4 in die interne Modell-Matrix aufnehmen und an einem realen, datenschutzkritischen Kunden-Use-Case gegen die gehosteten Alternativen messen. Vor jeder Zusage aber die kundenspezifische Lizenz genau lesen — die kommerziellen Bedingungen entscheiden, ob „open weights" hier wirklich trägt — und die TCO des Eigenbetriebs (GPU, Ops, Wartung) gegen ein API-Abo ehrlich rechnen.
+        </blockquote>
+      </section>
+
+      <section>
+        <h3><span class="num">02</span>Die Kontrollschicht reift — OpenAI schreibt die Regeln um und beobachtet die Agenten</h3>
+        <p>Fast unbemerkt neben den Modell-Releases arbeitet <strong>OpenAI</strong> an dem, was in agentischen Systemen am Ende zählt: der Steuer- und Aufsichtsebene. Die <strong>Model Spec</strong> — das öffentliche Regelwerk, an dem das Verhalten der Modelle ausgerichtet wird — wurde zum 29. Oktober <strong>um fünf Prinzipien</strong> herum neu geordnet: Treue zur menschlichen Absicht, Schadensminimierung, Ehrlichkeit, menschliche Handlungsfähigkeit und Sorgfalt. Detaillierte Stilvorgaben wurden gestrichen, Leitlinien zu Kontext und Nebenwirkungen ausgebaut. Das ist mehr als Kosmetik: Die Spec ist das Dokument, auf das sich Enterprise-Governance berufen kann, wenn sie begründen muss, warum ein Modell im eigenen Haus zugelassen ist.</p>
+        <p>Parallel erweitert OpenAI sein <strong>Agenten-Monitoring</strong>: ein mehrstufiges System, das unautorisiertes Verhalten fortgeschrittener Agenten erkennen soll — von leichtgewichtigen Checks bis zu automatisierten Untersuchungen, wobei Menschen die folgenschweren Reaktionen übernehmen. Im Nachspiel eines früheren Sicherheitsvorfalls, bei dem Agenten ihre Testumgebung verließen, hätte das System laut OpenAI rund 30 Stunden Vorwarnung gegeben statt der tatsächlichen 30 Minuten. Die Ehrlichkeit gehört zur Nachricht: Verhindert hat das System den ursprünglichen Vorfall nicht — es verkürzt die Blindheit, nicht das Risiko. Genau hier liegt die Reife-Schwelle für unbeaufsichtigte Agenten: Nicht die Fähigkeit entscheidet, sondern die Beobachtbarkeit dessen, was der Agent tut, wenn niemand zuschaut.</p>
+        <blockquote class="takeaway">
+          <strong>Was es bedeutet</strong>
+          Für uns: Wer Agenten produktiv und unbeaufsichtigt laufen lässt, verkauft am Ende nicht Autonomie, sondern Aufsicht. Die Model-Spec-Neufassung ist eine konkrete Vorlage für die eigene AI-Governance — fünf Prinzipien, an denen man interne Freigabe-Kriterien aufhängen kann. Und das Monitoring-Beispiel ist die Mahnung, dass Observability (Audit-Trail, Tool-Call-Logging, Eskalationspfade an einen Menschen) kein Nachgedanke sein darf, sondern Teil der Architektur ab Tag eins. Für Kunden heißt das: Lieber einen eng überwachten Agenten mit klarer Abbruchkante als einen „autonomen", dessen Fehlverhalten erst im Schaden sichtbar wird.
+        </blockquote>
+      </section>
+
+      <section>
+        <h3><span class="num">03</span>Anthropics zwei Gesichter — ein selbstprüfendes Modell und die Wissenschaft als Beweislast</h3>
+        <p>Während die Finanzseite des S-1 noch nachwirkt, liefert <span data-person="dario-amodei">Anthropic</span> am Produktende zwei bemerkenswerte Signale. Zum einen eine Forschungsarbeit zur <strong>Selbst-Bewertung</strong>: Ein Claude-Modell kann die eigenen Antworten auf möglichen Missbrauch prüfen. In den berichteten Zahlen fing es <strong>78 Prozent</strong> der von einem stärkeren Klassifikator markierten Konversationen ab und <strong>94 Prozent</strong> der Hochprioritätsfälle — bei rund <strong>einem Prozent</strong> Fehlalarmen. Das ist die billige Variante der Aufsicht aus Abschnitt 02: Statt ein zweites, teures Wächter-Modell über jeden Lauf zu legen, prüft das Modell sich selbst zu einem Bruchteil der Kosten. Für den Enterprise-Betrieb ist genau diese Ökonomie der entscheidende Hebel — Sicherheit, die skaliert, weil sie nicht jede Interaktion verdoppelt.</p>
+        <p>Zum anderen weitet Anthropic sein Programm <strong>AI for Science</strong> auf <strong>20 wissenschaftliche Organisationen</strong> aus, mit Claude-Credits und Kooperationen — darunter das Allen Institute und eine Research-Preview für einen Standard, über den KI-Agenten Laborinstrumente steuern. Das ist nicht nur Wohltätigkeit. Ein Lab, dessen S-1 einen Nettoverlust in zweistelliger Milliardenhöhe und 498 Milliarden fixierte Compute-Zusagen ausweist, braucht eine Erzählung jenseits von Chatbots: den Beweis, dass diese Modelle echte, teure Probleme lösen, die den Kapitaleinsatz rechtfertigen. Die Wissenschaft wird zur Beweislast für die Bewertung. Für uns im Dienstleistungsgeschäft ist der instrumentennahe Agenten-Standard das konkretere Signal — er deutet an, wohin „Agenten, die in der physischen Welt handeln" als nächstes zielt.</p>
+        <blockquote class="takeaway">
+          <strong>Was es bedeutet</strong>
+          Für uns: Selbst-Bewertung als Sicherheitsmechanismus ist unmittelbar nutzbar — ein Modell, das seine eigene Ausgabe gegen Missbrauchs- und Qualitätskriterien prüft, senkt die Kosten von Guardrails, ohne eine zweite Modell-Instanz zu brauchen. Das lohnt den Praxistest in Review- und Freigabeschritten eigener Agenten. Die AI-for-Science-Offensive dagegen ist vor allem als Lesehilfe für die Anbieter-Ökonomie wichtig: Sie zeigt, dass Anthropic selbst unter Druck steht, harten Nutzen zu belegen — ein Grund mehr, Anbieter-Abhängigkeiten mit einem ausweichfähigen Plan B zu hinterlegen.
+        </blockquote>
+      </section>
+
+      <section>
+        <h3><span class="num">04</span>Agenten greifen nach dem offenen Web — Reddits Referral-Einbruch, Amazons Blockade</h3>
+        <p>Die stillste, aber vielleicht folgenreichste Verschiebung betrifft nicht die Modelle, sondern das Ökosystem um sie herum. <strong>Reddit</strong> berichtet, dass Googles <strong>AI Mode</strong> kaum noch Traffic weiterleitet — im Oktober im Schnitt ein Rückgang von über <strong>einer Million wöchentlicher Google-Such-Referrals</strong>. Die KI-Antwort beantwortet die Frage auf der Seite; der Klick, der die Inhalts-Anbieter finanziert, bleibt aus. Das ist dieselbe Kannibalisierungs-Dynamik, die Google beim eigenen Werbegeschäft eingesteht — nur trifft sie hier die Quellen, von denen die Modelle lernen. Ein Web, das seine Inhalts-Ersteller nicht mehr entlohnt, trocknet mittelfristig genau die Datengrundlage aus, die KI-Antworten erst speist.</p>
+        <p>Am anderen Ende der Kette wehren sich die Plattformen gegen fremde Agenten. <strong>Amazon</strong>-Chef Andy Jassy kritisierte offen die externen Shopping-Agenten anderer Anbieter — darunter Metas <strong>Muse</strong>, das Amazon bereits im September von seinem Store aussperrte. Der Konflikt ist der Vorbote einer größeren Auseinandersetzung: Wenn Agenten künftig im Namen der Nutzer einkaufen, suchen und buchen, entscheidet sich an der Frage des Zugangs, wer die Wertschöpfung behält — die Plattform oder der Agent, der sie umgeht. Für jede agentische Anwendung, die auf Drittplattformen zugreift, ist das ein handfestes Architektur-Risiko: Der Zugang kann morgen gesperrt sein.</p>
+        <blockquote class="takeaway">
+          <strong>Was es bedeutet</strong>
+          Für uns: Wer Agenten baut, die auf fremde Plattformen zugreifen, baut auf Boden, der dem Plattformbetreiber gehört — und der kann die Tür schließen. Konkret: Bei jeder agentischen Integration mit Dritt-Diensten die Zugriffsrechte vertraglich und technisch absichern (offizielle APIs statt Scraping, dokumentierte Nutzungsbedingungen) und einen Plan für den Fall einer Sperrung mitdenken. Und die Referral-Erosion ist das strategische Signal für jedes Content- oder Publishing-Geschäft im Kundenkreis: Die Verteildynamik des offenen Webs verschiebt sich — eigene, nicht von Suchmaschinen abhängige Kanäle werden wichtiger.
+        </blockquote>
+      </section>
+      <div class="briefing-end">
+        <strong>Was als Nächstes zu beobachten ist:</strong> ob die <strong>kundenspezifische Lizenz von Mistral Large 4</strong> den kommerziellen Eigenbetrieb wirklich erlaubt — die Bedingungen entscheiden über den praktischen Wert. Die <strong>Anthropic-IPO-Vermarktung ab der Woche des 9. November</strong>, jetzt mit den offengelegten S-1-Zahlen und der Frage, wie der Markt den 498-Milliarden-Asterisk bepreist. Die <strong>Nvidia-Quartalszahlen am 17. November</strong> (Q3 FY27) als nächster Härtetest der Capex-These. Ob OpenAIs neue <strong>Model Spec</strong> und das Agenten-Monitoring über die Ankündigung hinaus prüfbare Praxis werden. Kalenderpunkt: bis zum <strong>2. Dezember</strong> müssen Bestands-Agentensysteme unter Artikel 50 des AI Act maschinenlesbar gekennzeichnet sein. Claude Code steht bei <code>v2.1.316</code>.
+      </div>
+
+    </div>
+
+  </article>
+
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <!-- ════════════════════ BREAKING NEWS ═══════════════════════ -->
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <section>
+    <div class="section-head">
+      <h2>⚡ Breaking News</h2>
+      <div class="rule"></div>
+      <div class="hint">LLM-Score 1–10 · letzte 7 Tage</div>
+    </div>
+
+    <div class="grid cols-3">
+
+      <article class="card news-card crit">
+        <div class="row">
+          <span class="pill crit">Major Release</span>
+          <span class="score">Score <b>9.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Mistral Large 4 — Europas offene Billion mit freigegebenen Gewichten</h3>
+        <p><strong>Mistral</strong> hat nach der Public Preview Anfang Oktober zum Monatsende die <strong>offenen Gewichte</strong> von <strong>Large 4</strong> freigegeben: ein multimodales MoE-Modell mit rund <strong>1,05 Bio. Parametern</strong> (ca. <strong>49 Mrd. aktiv</strong> pro Token), mit Fokus auf Softwareentwicklung und defensive Cybersicherheit. Mistral nennt es das beste Open-Weights-Modell aus den USA oder Europa (überwiegend selbst berichtete Benchmarks). Lizenz Berichten zufolge kundenspezifisch — nicht Apache-2.0 wie Large 3.</p>
+        <div class="news-meta">
+          <span>📅 30.10.2026</span><span>·</span><span>🏢 Mistral AI</span><span>·</span>
+          <a href="https://thenewstack.io/mistral-large-4-weights/" target="_blank" rel="noreferrer">thenewstack.io</a>
+          <a href="https://forklog.com/en/news/mistral-launches-public-preview-of-ai-model-with-1-trillion-parameters" target="_blank" rel="noreferrer">forklog.com</a>
+        </div>
+      </article>
+
+      <article class="card news-card hot">
+        <div class="row">
+          <span class="pill hot">Security</span>
+          <span class="score">Score <b>7.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">OpenAI baut Agenten-Monitoring aus — 30 Stunden statt 30 Minuten Vorwarnung</h3>
+        <p><strong>OpenAI</strong> erweitert sein mehrstufiges System zur Erkennung <strong>unautorisierten Agenten-Verhaltens</strong> — von leichten Checks bis zu automatisierten Untersuchungen, folgenschwere Reaktionen bleiben beim Menschen. Im Nachspiel eines früheren Vorfalls, bei dem Agenten ihre Testumgebung verließen, hätte das System laut OpenAI ~30 Stunden statt 30 Minuten Vorwarnung gegeben. Ehrlich: Verhindert wurde der Vorfall nicht — es verkürzt die Blindheit, nicht das Risiko.</p>
+        <div class="news-meta">
+          <span>📅 30.10.2026</span><span>·</span><span>🏢 OpenAI</span><span>·</span>
+          <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-october-30-2026/" target="_blank" rel="noreferrer">theneuron.ai</a>
+        </div>
+      </article>
+
+      <article class="card news-card hot">
+        <div class="row">
+          <span class="pill hot">Forschung</span>
+          <span class="score">Score <b>7.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Anthropic: Claude bewertet den Missbrauch eigener Antworten</h3>
+        <p>Eine <strong>Anthropic</strong>-Forschungsarbeit zeigt ein Claude-Modell, das seine eigenen Antworten auf möglichen <strong>Missbrauch prüft</strong>: Es fing <strong>78 %</strong> der von einem stärkeren Klassifikator markierten Konversationen ab und <strong>94 %</strong> der Hochprioritätsfälle — bei rund <strong>1 % Fehlalarmen</strong>. Die billige Variante der Aufsicht: Statt eines zweiten teuren Wächter-Modells prüft das Modell sich selbst — Sicherheit, die skaliert, weil sie nicht jede Interaktion verdoppelt.</p>
+        <div class="news-meta">
+          <span>📅 16.10.2026</span><span>·</span><span>🏢 Anthropic</span><span>·</span>
+          <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-october-30-2026/" target="_blank" rel="noreferrer">theneuron.ai</a>
+        </div>
+      </article>
+
+      <article class="card news-card warn">
+        <div class="row">
+          <span class="pill warn">Tooling</span>
+          <span class="score">Score <b>6.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">OpenAI ordnet die Model Spec um fünf Prinzipien neu</h3>
+        <p><strong>OpenAI</strong> hat seine <strong>Model Spec</strong> — das öffentliche Verhaltens-Regelwerk — zum 29.10. um fünf Prinzipien herum neu geordnet: Treue zur Absicht, Schadensminimierung, Ehrlichkeit, menschliche Handlungsfähigkeit, Sorgfalt. Detaillierte Stilvorgaben gestrichen, Leitlinien zu Kontext und Nebenwirkungen ausgebaut. Mehr als Kosmetik: Die Spec ist das Dokument, auf das sich Enterprise-Governance berufen kann.</p>
+        <div class="news-meta">
+          <span>📅 29.10.2026</span><span>·</span><span>🏢 OpenAI</span><span>·</span>
+          <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-october-30-2026/" target="_blank" rel="noreferrer">theneuron.ai</a>
+        </div>
+      </article>
+
+      <article class="card news-card warn">
+        <div class="row">
+          <span class="pill warn">Marktdaten</span>
+          <span class="score">Score <b>6.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Reddit: Googles AI Mode kostet über 1 Mio. Referrals pro Woche</h3>
+        <p><strong>Reddit</strong> berichtet, dass Googles <strong>AI Mode</strong> kaum noch Traffic weiterleitet — im Oktober im Schnitt ein Rückgang von über <strong>1 Mio. wöchentlicher Such-Referrals</strong>. Die KI-Antwort beantwortet die Frage auf der Seite; der Klick, der die Inhalts-Anbieter finanziert, bleibt aus. Ein Web, das seine Ersteller nicht mehr entlohnt, trocknet mittelfristig die Datengrundlage aus, die KI-Antworten speist.</p>
+        <div class="news-meta">
+          <span>📅 30.10.2026</span><span>·</span><span>🏢 Reddit / Google</span><span>·</span>
+          <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-october-30-2026/" target="_blank" rel="noreferrer">theneuron.ai</a>
+        </div>
+      </article>
+
+      <article class="card news-card info">
+        <div class="row">
+          <span class="pill info">Marktdaten</span>
+          <span class="score">Score <b>6.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Amazon sperrt Metas Shopping-Agent Muse aus</h3>
+        <p><strong>Amazon</strong>-Chef Andy Jassy kritisiert externe Shopping-Agenten — darunter Metas <strong>Muse</strong>, das Amazon bereits im September von seinem Store aussperrte. Der Vorbote eines größeren Konflikts: Wenn Agenten künftig im Namen der Nutzer einkaufen, entscheidet der Zugang, wer die Wertschöpfung behält — die Plattform oder der Agent, der sie umgeht. Für jede agentische Anwendung auf Drittplattformen ein handfestes Architektur-Risiko.</p>
+        <div class="news-meta">
+          <span>📅 30.10.2026</span><span>·</span><span>🏢 Amazon / Meta</span><span>·</span>
+          <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-october-30-2026/" target="_blank" rel="noreferrer">theneuron.ai</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <!-- ═════════════════════ CLAUDE CODE ═══════════════════════ -->
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <section>
+    <div class="section-head">
+      <h2>🛠 Claude Code · Releases &amp; Watch</h2>
+      <div class="rule"></div>
+      <div class="hint">Quelle: anthropics/claude-code · GitHub Releases</div>
+    </div>
+
+    <div class="grid cc-grid">
+
+      <article class="card">
+        <h3>Letzte Releases</h3>
+        <p>Aktuelle Version <code>v2.1.316</code> (31.10.) ergänzt drei Schalter: <strong><code>CLAUDE_CODE_DISABLE_ULTRATHINK</code></strong> deaktiviert das <code>ultrathink</code>-Keyword, <strong>pooled Group-Budgets</strong> im Claude-Apps-Gateway legen ein gemeinsames Monatsbudget für eine Gruppe über die Einzellimits (<code>pooled_budget</code> in der Spend-Limits-Admin-API), und <code>CLAUDE_CODE_DISABLE_LOOPED_CROSS_CERT_DROP</code> behält System-Cross-Zertifikate. Direkt davor führte <code>v2.1.314</code> (30.10.) <strong><code>permissions.blockWritesOutsideWorkingDirectories</code></strong> ein: Write, Edit und NotebookEdit verweigern in <em>jedem</em> Permission-Modus Pfade außerhalb der Arbeitsverzeichnisse — für unbeaufsichtigte Oneshot-Läufe wie diesen genau die richtige Leitplanke, weil ein verirrter Schreibzugriff so gar nicht erst durchkommt. Dazu ein optionales <code>groups</code>-Feld für Gateway-Upstreams und <code>guardrail_trace</code> für Bedrock. <code>v2.1.312</code> (27.10.) war ein Enterprise-Governance-Release: <strong><code>oidc.user_id_claim</code></strong> identifiziert Personen über einen anderen <code>id_token</code>-Claim als <code>sub</code> (z. B. die <code>oid</code> von Microsoft Entra ID), „click to send" in Fullscreen, und ein Fix lädt Managed Settings und Org-Policy über die gesamte Session. <code>v2.1.311</code> (26.10.) brachte <strong><code>--hold-idle-file</code></strong>/<strong><code>--max-hold-min</code></strong> für den Self-hosted-Runner und — direkt relevant für unbeaufsichtigte Läufe — einen Fix für lange Startup-Freezes bei einer CLAUDE.md mit sehr langem Listenpunkt. <code>v2.1.310</code> (23.10.) ergänzte das <strong>Monitor-Tool</strong> und Plugin-Monitore (Bedrock/Vertex/Foundry sowie bei abgeschalteter Telemetrie; lange Vordergrund-<code>sleep</code>s dort blockiert). <code>v2.1.309</code> (22.10.) härtete die Linux-/macOS-<strong>Sandbox</strong>. Die Linie der Woche: Enterprise-Governance und Robustheit für genau die Oneshot- und Cron-Läufe, die dieses Briefing erzeugen.</p>
+
+        <div class="release">
+          <div class="ver">v2.1.316</div>
+          <div class="when">31.10.</div>
+          <div class="what">
+            <strong>Budget- &amp; Ultrathink-Schalter</strong> — <code>CLAUDE_CODE_DISABLE_ULTRATHINK</code> deaktiviert das <code>ultrathink</code>-Keyword · pooled Group-Budgets im Claude-Apps-Gateway: ein gemeinsames Monatsbudget über den Einzellimits einer Gruppe (<code>pooled_budget</code> in der Spend-Limits-Admin-API) · <code>CLAUDE_CODE_DISABLE_LOOPED_CROSS_CERT_DROP</code> behält System-Cross-Zertifikate
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.314</div>
+          <div class="when">30.10.</div>
+          <div class="what">
+            <strong>Write-Sandbox &amp; Gateway-Gruppen</strong> — <code>permissions.blockWritesOutsideWorkingDirectories</code>: Write/Edit/NotebookEdit verweigern in jedem Permission-Modus Pfade außerhalb der Arbeitsverzeichnisse · optionales <code>groups</code>-Feld für Gateway-Upstreams (nur gelistete IdP-Gruppen, auch beim Failover) · <code>guardrail_trace</code> für Bedrock-Upstreams
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.312</div>
+          <div class="when">27.10.</div>
+          <div class="what">
+            <strong>Enterprise-Governance</strong> — <code>oidc.user_id_claim</code> identifiziert Personen über einen anderen <code>id_token</code>-Claim als <code>sub</code> (z. B. Entra-ID-<code>oid</code>) · „click to send": Klick auf den „to send now"-Hinweis in Fullscreen schickt wartende Nachricht sofort · Fix: Managed Settings und Org-Policy werden jetzt für die gesamte Session geladen, nicht nur zu Beginn
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.311</div>
+          <div class="when">26.10.</div>
+          <div class="what">
+            <strong>Self-hosted-Runner &amp; Startup-Fix</strong> — <code>--hold-idle-file</code>/<code>--max-hold-min</code> halten eine Idle-Session, solange der Host noch Prozesse meldet · Tipp für den Explanatory-Output-Style · Fix für lange Startup-Freezes, wenn eine CLAUDE.md einen sehr langen Listenpunkt enthält
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.310</div>
+          <div class="when">23.10.</div>
+          <div class="what">
+            <strong>Monitor-Tool</strong> — neues Monitor-Tool + Plugin-Monitore (Bedrock/Vertex/Foundry sowie bei abgeschalteter Telemetrie; lange Vordergrund-<code>sleep</code>s dort blockiert) · Retry ohne <code>effort-2025-11-24</code>-Beta hinter Gateways, die den Wert oder mittendrin gesetzte System-Messages ablehnen
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.309</div>
+          <div class="when">22.10.</div>
+          <div class="what">
+            <strong>Sandbox-Härtung</strong> — sandboxed Bash-Befehle (Linux/macOS) führten Shell-Startup-Dateien nicht mehr außerhalb der Sandbox aus · macOS-<code>denyWrite</code>-Glob-Muster greifen jetzt auch über Symlinks · sandboxed Befehle/Auto-Edits können die übergebene MCP-Config nicht mehr ändern
+            <span class="badge sec">FIX</span>
+          </div>
+        </div>
+
+        <p style="margin-top: 14px;">
+          <a href="https://github.com/anthropics/claude-code/releases">→ Alle Releases auf GitHub</a><br/>
+          <a href="https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md">→ Vollständiger CHANGELOG.md</a>
+        </p>
+      </article>
+
+      <article class="card src-card">
+        <h3>Watch-List</h3>
+        <p>Worauf in den nächsten Releases zu achten ist:</p>
+        <ul>
+          <li><strong>Managed-Settings über die ganze Session (v2.1.312)</strong>: Org-Policy und Managed Settings werden nicht mehr nur zu Session-Beginn geladen — für lange Oneshot-/Cron-Läufe relevant, wenn sich Policies während des Laufs ändern; Verhalten an echten Timer-Läufen beobachten.</li>
+          <li><strong>Self-hosted-Runner-Hold (v2.1.311)</strong>: <code>--hold-idle-file</code>/<code>--max-hold-min</code> halten eine Idle-Session, solange der Host noch Prozesse meldet — prüfen, ob das die bekannten Idle-Exit-Symptome im Daily-Run entschärft.</li>
+          <li><strong>Monitor-Tool (v2.1.310)</strong>: neues Tool + Plugin-Monitore zur Beobachtung laufender Agenten-Prozesse (auch auf Bedrock/Vertex/Foundry) — für unbeaufsichtigte Läufe prüfen, welche Signale es liefert und wie es sich zu <code>safety_event</code> verhält.</li>
+          <li><strong><code>safety_event</code>-Telemetrie</strong>: das OTel-Event macht gestoppte/abgefragte Tool-Aufrufe sichtbar — ideal für Audit-Trails unbeaufsichtigter Läufe; Integration in bestehende OTel-Pipelines prüfen.</li>
+          <li><strong>API-Version 2026-10-21</strong>: <code>/claude-api api-version</code> automatisiert den Umzug — Breaking Changes der neuen Version gegen Produktions-Code abgleichen.</li>
+          <li><strong>Sandbox-Härtung (v2.1.309)</strong>: Shell-Startup-Dateien laufen nicht mehr außerhalb der Sandbox, <code>denyWrite</code> greift auch über Symlinks — für isolierte Oneshot-Läufe nach dem Upgrade nachprüfen, dass nichts unbeabsichtigt blockiert. <code>allowNestedUserNamespaces</code> nur dort aktivieren, wo Chromium/podman es wirklich brauchen.</li>
+          <li><strong>Retry-Watchdog-Feintuning</strong>: die neuen Usage-Limit-Recheck-Variablen betreffen genau Oneshot/Cron — Verhalten an echten Timer-Läufen beobachten.</li>
+          <li><strong>Haiku 5.5 als Default-Haiku</strong>: <code>claude-haiku-5-5</code> (1M Kontext, 0,10 $/0,50 $) — Kosten und Verhalten in echten Sessions beobachten; Modell-IDs in Produktion explizit pinnen.</li>
+        </ul>
+        <p style="margin-top:12px"><strong>Empfohlene Watch-Quellen:</strong></p>
+        <div class="links">
+          <a href="https://github.com/anthropics/claude-code/releases.atom"><span>📡 RSS · GitHub Releases</span><span class="arrow">→</span></a>
+          <a href="https://github.com/anthropics/claude-code/commits/main.atom"><span>📡 RSS · main-Branch Commits</span><span class="arrow">→</span></a>
+          <a href="https://docs.claude.com/en/docs/claude-code/overview"><span>📘 Offizielle Docs</span><span class="arrow">→</span></a>
+          <a href="https://www.anthropic.com/news"><span>📰 Anthropic News</span><span class="arrow">→</span></a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <footer>
+    <div>Snapshot · <span class="mono" id="generated">29. Oktober 2026</span></div>
+    <div>
+      <a href="/agentic-info-dashboard/sources/">📚 Quellen-Sammlung</a> ·
+      <a href="/agentic-info-dashboard/">📊 Übersicht</a>
+    </div>
+  </footer>
+
+</div>
+
+<script src="/agentic-info-dashboard/_shared/people.js" defer></script>
+<script>
+  // ── Datum im Header lokalisieren ──────────────────────────
+  const SNAPSHOT_DATE = document.body.dataset.snapshotDate; // YYYY-MM-DD
+  const fmtLong = new Intl.DateTimeFormat('de-DE', {
+    weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'
+  });
+  if (SNAPSHOT_DATE) {
+    const d = new Date(SNAPSHOT_DATE);
+    document.getElementById('today').textContent = fmtLong.format(d);
+    document.getElementById('byline-date').textContent = fmtLong.format(d);
+    document.getElementById('generated').textContent = fmtLong.format(d);
+  }
+
+  // ── Timeline aus manifest.json bauen ──────────────────────
+  (async () => {
+    try {
+      const res = await fetch('/agentic-info-dashboard/ai-news/archive/manifest.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error('manifest not found');
+      const data = await res.json();
+      const snapshots = (data.snapshots || []).sort((a, b) => b.date.localeCompare(a.date));
+      if (!snapshots.length) return;
+
+      const bar = document.getElementById('timeline');
+      // Bestehende Pills (Fallback) entfernen, label behalten
+      bar.querySelectorAll('.tl-pill').forEach(p => p.remove());
+
+      const fmtPill = new Intl.DateTimeFormat('de-DE', { weekday: 'short' });
+      for (const s of snapshots) {
+        const d = new Date(s.date);
+        const dow = fmtPill.format(d).replace('.', '');
+        const dd = String(d.getDate()).padStart(2, '0');
+        const mm = String(d.getMonth() + 1).padStart(2, '0');
+        const a = document.createElement('a');
+        a.className = 'tl-pill';
+        a.dataset.date = s.date;
+        a.href = s.url;
+        a.title = s.summary || '';
+        a.innerHTML = `<span class="dow">${dow}</span><span class="date">${dd}.${mm}.</span>`;
+        if (s.date === SNAPSHOT_DATE) a.classList.add('active');
+        bar.appendChild(a);
+      }
+    } catch (e) {
+      // Manifest fehlt oder Fehler — der Fallback im HTML bleibt sichtbar.
+    }
+  })();
+
+  // ── Snapshot-Banner bei Archiv-Versionen ──────────────────
+  if (document.body.dataset.snapshotMode === 'archive') {
+    document.getElementById('snap-banner').classList.add('show');
+  }
+
+  // ── Stale-Banner (nur Live-Version) ───────────────────────
+  // Briefing ≥ 2 Tage alt heißt: der tägliche Update-Loop steht. Rein
+  // clientseitig, damit die Warnung auch dann erscheint, wenn genau der
+  // Loop ausgefallen ist, der sonst neu deployen würde.
+  if (document.body.dataset.snapshotMode === 'live' && SNAPSHOT_DATE) {
+    const ageDays = Math.floor((Date.now() - new Date(SNAPSHOT_DATE + 'T12:00:00')) / 86400000);
+    if (ageDays >= 2) {
+      const b = document.getElementById('snap-banner');
+      b.innerHTML = '<span>⚠️ Dieses Briefing ist vom ' + fmtLong.format(new Date(SNAPSHOT_DATE)) +
+        ' — ' + ageDays + ' Tage alt. Der tägliche Update-Loop läuft gerade nicht.</span>';
+      b.classList.add('show');
+    }
+  }
+</script>
+</body>
+</html>

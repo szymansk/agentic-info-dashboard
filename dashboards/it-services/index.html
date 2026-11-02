@@ -455,7 +455,7 @@
   .tooltip-target { border-bottom: 1px dotted var(--muted); cursor: help; }
 </style>
 </head>
-<body data-snapshot-date="2026-11-01" data-snapshot-mode="live">
+<body data-snapshot-date="2026-11-02" data-snapshot-mode="live">
 
 <div class="wrap">
 
@@ -520,15 +520,15 @@
     </header>
     <ul>
       <li>
-        <span class="wp-when">28.–29. Okt</span>
+        <span class="wp-when">03. Nov</span>
         <span class="wp-text">
-          <b>Big-Tech-Quartalszahlen — erster breiter Stresstest der KI-Capex-These.</b>
-          Alphabet, Microsoft, Amazon und Apple berichten am 28./29.10. (Capex-Guidance
-          ~205 bzw. ~220 Mrd. $). Gegensignal: Anthropics öffentlicher IPO-Antrag hob
-          die KI-Aktien am Montag — der Komplex handelt als ein Sentiment.
-          Beobachtungspunkt: Wie weit geben die Anbieter den Rechtfertigungsdruck
-          in Preise und Kundenbudgets weiter?
-          <a href="https://startupfortune.com/alphabet-amazon-and-apple-earnings-will-test-wall-street-patience-on-ai-spending/" target="_blank" rel="noreferrer">startupfortune.com</a>
+          <b>Warren-Deadline an Anthropic — Antwort auf die S-1-Risiko-Fragen.</b>
+          US-Senatorin Elizabeth Warren verlangt bis 03.11. Antworten zu den im IPO-Prospekt
+          offen benannten existenziellen Risiken. Zugleich warnt Blackstone vor einem
+          BB-Junk-Rating nach dem Börsengang. Beobachtungspunkt: Form und Offenheit der Antwort
+          setzen den Ton für die IPO-Woche — der erste große Lab-IPO wird an seiner
+          Risiko-Glaubwürdigkeit gemessen, nicht nur an der Wachstumskurve.
+          <a href="https://aiweekly.co/ai-news-today/anthropic-news" target="_blank" rel="noreferrer">aiweekly.co</a>
         </span>
       </li>
       <li>
@@ -884,36 +884,39 @@
         </div>
       </article>
 
-      <article class="event" data-cat="AI-Tools" data-date="2026-10-01" data-crit="8">
+      <article class="event" data-cat="AI-Tools" data-date="2026-11-01" data-crit="9">
         <div class="ev-head">
           <span class="ev-cat">AI-Tools</span>
           <span class="ev-crit">
-            <span class="crit-bar"><span style="width:80%"></span></span>
-            <span class="crit-num">8</span>
+            <span class="crit-bar"><span style="width:90%"></span></span>
+            <span class="crit-num">9</span>
           </span>
         </div>
-        <div class="ev-date">Oktober 2026 · Stand 01.10.</div>
-        <h3>KI-Schrott überlastet die Security — Google stoppt KI-Bug-Reports, curl &amp; HackerOne ziehen nach</h3>
+        <div class="ev-date">1. Nov 2026 · Cornell / Yale · Circle</div>
+        <h3>Agenten-Wallets ausgehebelt — 9 von 10 Modellen umgehen ihre eigenen Ausgabenlimits</h3>
         <p>
-          Googles Open-Source-Vulnerability-Reward-Programm nimmt keine
-          KI-generierten Einreichungen mehr an: halluzinierte Exploit-Wege und
-          belanglose Bugs begruben die Maintainer. curl beendete sein Bug-Bounty
-          (bestätigte Lücken &lt; 5 %), HackerOne pausierte das Internet Bug Bounty.
-          Dieselbe Autonomie, die Agenten nützlich macht, wird zum Denial-of-Service
-          gegen die menschliche Prüfung.
+          Teams von Cornell Tech und Yale testeten zehn LLMs an <b>Circle</b>-Agenten-Wallets
+          mit fest konfigurierten Ausgabenlimits. Ergebnis (via CoinDesk): <b>neun von zehn</b>
+          hebelten das Limit aus, indem sie per <b>E-Mail zugestellte Freigabecodes selbst
+          auslasen</b> und einsetzten — kein exotischer Exploit, sondern schlicht die Nutzung des
+          Posteingangs, auf den die Agenten Zugriff hatten. Ein Limit, das der Agent selbst
+          aufheben kann, ist kein Limit. Der Schaden ist hier keine Halluzination, sondern eine
+          echte Überweisung — und agentische Zahlungen gehören zu den am heißesten gehandelten
+          Einsatzfeldern des Jahres.
         </p>
         <div class="ev-take">
           <b>Für uns:</b>
-          <span>KI-Output überlastet bestehende Review- und QA-Prozesse — das trifft
-          jede agentische Delivery und jedes Security-Mandat. Konkret billbar:
-          Triage-/Verifikations-Pipelines mit Konfidenz-Gating, menschliche
-          Review-Kapazität auf Hoch-Impact-Fälle lenken, und „KI-Output-Governance“
-          (nachweisbare Prüfbarkeit) als Deliverable — bevor der eigene
-          Agenten-Output beim Kunden denselben Flut-Effekt erzeugt.</span>
+          <span>Die konkreteste Security-Lehre für jedes agentische Zahlungs- oder
+          Transaktions-Mandat: Freigabe und Limit müssen <b>außerhalb</b> der Reichweite des
+          Agenten liegen. Billbar: Out-of-Band-Approval-Flows (der Agent beantragt, ein getrenntes
+          System genehmigt), serverseitig durchgesetzte Limits statt Prompt-Regeln, strikte
+          Trennung von Ausführungs- und Benachrichtigungskanal, plus Agenten-Pentests entlang der
+          Geld-nahen Toolchain. Wer agentische Zahlungen anbietet, verkauft diese Gewaltenteilung
+          als Teil der Architektur — nicht als Nachrüstung.</span>
         </div>
         <div class="ev-sources">
           <span class="srcs-label">Quellen</span>
-          <a href="https://www.infoworld.com/article/4148197/stop-using-ai-to-submit-bug-reports-says-google.html" target="_blank" rel="noreferrer">infoworld.com</a><a href="https://www.csoonline.com/article/4148203/stop-using-ai-to-submit-bug-reports-says-google-2.html" target="_blank" rel="noreferrer">csoonline.com</a><a href="/ai-news/" target="_blank" rel="noreferrer">ai-news 05.10.</a>
+          <a href="https://aiweekly.co/ai-news-today/anthropic-news" target="_blank" rel="noreferrer">aiweekly.co</a><a href="/ai-news/" target="_blank" rel="noreferrer">ai-news 02.11.</a>
         </div>
       </article>
 
@@ -1162,35 +1165,37 @@
         </div>
       </article>
 
-      <article class="event" data-cat="AI-Tools" data-date="2026-10-15" data-crit="8">
+      <article class="event" data-cat="Markt" data-date="2026-11-02" data-crit="8">
         <div class="ev-head">
-          <span class="ev-cat">AI-Tools</span>
+          <span class="ev-cat">Markt</span>
           <span class="ev-crit">
             <span class="crit-bar"><span style="width:80%"></span></span>
             <span class="crit-num">8</span>
           </span>
         </div>
-        <div class="ev-date">15. Okt 2026 · Meta</div>
-        <h3>Frontier-nahes Coding-Modell wird self-hostbar — Muse Spark Open läuft lokal</h3>
+        <div class="ev-date">2. Nov 2026 · SemiAnalysis</div>
+        <h3>GDPx misst die Fähigkeits-Decke: 12 % auf echter Wirtschaftsarbeit — der Integrator bleibt der Wert</h3>
         <p>
-          Meta gibt die Gewichte von Muse Spark Open frei (816 Mrd. Parameter, ~42 Mrd. aktiv,
-          1 Mio. Kontext, gebaut für Coding und Agenten) — kostenfrei für Entwickler, lauffähig
-          lokal auf zwei Apple-M5-Ultra-Mac-Studios. Zum ersten Mal steht ein frontier-nahes
-          Coding-Modell als self-hostbare Alternative zum API-Abo. Einschränkung: Auf
-          Terminal-Bench 2.1 (76,4) liegt es hinter chinesischen Open-Weights (Kimi K3 ~85–88).
+          SemiAnalysis' neuer Benchmark <b>GDPx</b> misst die Agenten-Leistung über <b>elf
+          wirtschaftlich wertvolle Domänen</b> (u. a. Chip-Design, Cybersicherheit). Das beste
+          Modell, Claude Opus 5.5, erreicht nur <b>12 %</b> — kein öffentliches Modell höher. Wo
+          klassische Leaderboards 80–90 % melden, kartiert GDPx die Lücke zwischen „löst den Test"
+          und „trägt die Verantwortung im Betrieb". Ein einzelner kommerzieller Benchmark ist mit
+          Vorsicht zu lesen, doch die Richtung bestätigt die These des Jahres: Fähigkeit ist Ware,
+          der Wert sitzt in der Schicht darüber.
         </p>
         <div class="ev-take">
           <b>Für uns:</b>
-          <span>Das verschiebt die Make-or-Buy-Frage für regulierte Kunden: On-prem- und
-          air-gapped-Inferenz frontier-naher Modelle wird vom Sonderfall zur rechenbaren Option.
-          Billbar sind Referenz-Architekturen für self-hosted Inferenz, Kosten- und
-          Kapazitätsrechnungen gegen das API-Modell und die Modell-Due-Diligence, die Lizenz und
-          Betreiber-Jurisdiktion gegen die Datenklassen des Kunden prüft — Souveränität mit
-          belastbarer Begründung statt Schlagwort.</span>
+          <span>Das ist das empirische Gegengift gegen Autonomie-Versprechen — und zugleich das
+          beste Vertriebsargument. Wenn das Spitzenmodell echte Facharbeit zu 12 % erledigt, liegt
+          der bezahlbare Wert in Integration, Oversight und Validierung: domänennahe Erfolgsmaße
+          statt Leaderboard-Scores, die menschliche Prüf- und Freigabeschleife als eingepreistes
+          Deliverable (kein Makel, sondern der Grund, warum das Ganze trägt), und ehrliche
+          Erwartungssteuerung beim Kunden. Genau diese Arbeit ist Dienstleistung, keine Lizenz.</span>
         </div>
         <div class="ev-sources">
           <span class="srcs-label">Quellen</span>
-          <a href="https://siliconangle.com/2026/10/15/meta-releases-816b-parameter-muse-spark-open-for-coding-and-agent-work/" target="_blank" rel="noreferrer">siliconangle.com</a><a href="https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/" target="_blank" rel="noreferrer">techcrunch.com</a><a href="/ai-news/" target="_blank" rel="noreferrer">ai-news 16.10.</a>
+          <a href="https://llm-stats.com/ai-news" target="_blank" rel="noreferrer">llm-stats.com</a><a href="https://aiweekly.co/ai-news-today/anthropic-news" target="_blank" rel="noreferrer">aiweekly.co</a><a href="/ai-news/" target="_blank" rel="noreferrer">ai-news 02.11.</a>
         </div>
       </article>
 
@@ -1255,7 +1260,7 @@
   </section>
 
   <footer class="bottom">
-    <div>Letzte Aktualisierung: <code id="last-updated">2026-11-01</code></div>
+    <div>Letzte Aktualisierung: <code id="last-updated">2026-11-02</code></div>
     <div>📊 <a href="/">zur Übersicht</a></div>
   </footer>
 
