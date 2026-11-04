@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-03T12:03:05+00:00",
+  "last_updated": "2026-11-04T12:04:17+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,16 @@
   ],
   "featured": [
     {
-      "video_id": "NbDF90z-g6w",
-      "title": "Coinbase on OpenAI Private Intelligence",
+      "video_id": "NCxD-qsQcN0",
+      "title": "TamaGPT",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-11-02T22:44:26+00:00",
-      "url": "https://www.youtube.com/shorts/NbDF90z-g6w",
-      "thumbnail": "https://img.youtube.com/vi/NbDF90z-g6w/mqdefault.jpg",
-      "description": "Coinbase CTO Rob Witoff explains why security, guardrails, and zero data retention matter when using OpenAI.\n\nLearn more about OpenAI Private Intelligence: https://openai.com/business/private-intelligence/",
+      "published": "2026-11-03T18:30:30+00:00",
+      "url": "https://www.youtube.com/watch?v=NCxD-qsQcN0",
+      "thumbnail": "https://img.youtube.com/vi/NCxD-qsQcN0/mqdefault.jpg",
+      "description": "You don't need to be an engineer to make hardware. Want to make something physical? Let GPT-6 Astra help you bring it to life.",
       "why": ""
     },
     {
@@ -170,16 +170,148 @@
   ],
   "recent": [
     {
-      "video_id": "NbDF90z-g6w",
-      "title": "Coinbase on OpenAI Private Intelligence",
+      "video_id": "5__Fm2TnPcU",
+      "title": "Stop guessing how to fix your agent",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-04T11:00:19+00:00",
+      "url": "https://www.youtube.com/watch?v=5__Fm2TnPcU",
+      "thumbnail": "https://img.youtube.com/vi/5__Fm2TnPcU/mqdefault.jpg",
+      "description": "Learn More: https://bit.ly/4ikf9L0\n\nTraditional software tests confirm that your code is working, but fall short when it comes to testing agents. Evals allow you to measure an agent’s decisions and actions when its failures may not be obvio"
+    },
+    {
+      "video_id": "BwE9HfB5Rtw",
+      "title": "The Dream Chocolate That Stopped Being Real (Joscha Bach)",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-04T08:27:06+00:00",
+      "url": "https://www.youtube.com/shorts/BwE9HfB5Rtw",
+      "thumbnail": "https://img.youtube.com/vi/BwE9HfB5Rtw/mqdefault.jpg",
+      "description": "Joscha Bach on a dream he had when he was two or three. He was about to eat a chocolate with a very strong smell, and he woke up just before it reached his mouth. He still knew everything about the chocolate, but it was no longer real. So h"
+    },
+    {
+      "video_id": "TA9-RgnLZrs",
+      "title": "Simulated Water Can't Make You Wet (Joscha Bach)",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-04T04:39:59+00:00",
+      "url": "https://www.youtube.com/shorts/TA9-RgnLZrs",
+      "thumbnail": "https://img.youtube.com/vi/TA9-RgnLZrs/mqdefault.jpg",
+      "description": "Joscha Bach on a joke that turned out to be true. In Minecraft, if you're on fire and jump into water, the fire goes out because you're wet. Someone then trained a neural network on nothing but Minecraft's visuals, so you could play a simul"
+    },
+    {
+      "video_id": "ZhftAOXJACM",
+      "title": "Minecraft Doesn't Know What It's Running On (Joscha Bach)",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-04T02:53:57+00:00",
+      "url": "https://www.youtube.com/shorts/ZhftAOXJACM",
+      "thumbnail": "https://img.youtube.com/vi/ZhftAOXJACM/mqdefault.jpg",
+      "description": "Joscha Bach on why a computer is a \"causal insulator\". Minecraft runs just as well on a Mac as on a PC, and nothing inside the game can tell what it's running on. He argues the brain does the same job for us, which is why we can picture a f"
+    },
+    {
+      "video_id": "k2ruCf_z75I",
+      "title": "The worst week in cybersecurity history... so far",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-11-03T19:47:10+00:00",
+      "url": "https://www.youtube.com/watch?v=k2ruCf_z75I",
+      "thumbnail": "https://img.youtube.com/vi/k2ruCf_z75I/mqdefault.jpg",
+      "description": "Start a free 14-day CodeRabbit Secure trial, no credit card required: https://coderabbit.link/fireship-011\n\nCursor shipped a backdoor, Polymarket got drained, North Korea pulled off the largest theft in human history, and Anthropic showed a"
+    },
+    {
+      "video_id": "NCxD-qsQcN0",
+      "title": "TamaGPT",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-11-02T22:44:26+00:00",
-      "url": "https://www.youtube.com/shorts/NbDF90z-g6w",
-      "thumbnail": "https://img.youtube.com/vi/NbDF90z-g6w/mqdefault.jpg",
-      "description": "Coinbase CTO Rob Witoff explains why security, guardrails, and zero data retention matter when using OpenAI.\n\nLearn more about OpenAI Private Intelligence: https://openai.com/business/private-intelligence/"
+      "published": "2026-11-03T18:30:30+00:00",
+      "url": "https://www.youtube.com/watch?v=NCxD-qsQcN0",
+      "thumbnail": "https://img.youtube.com/vi/NCxD-qsQcN0/mqdefault.jpg",
+      "description": "You don't need to be an engineer to make hardware. Want to make something physical? Let GPT-6 Astra help you bring it to life."
+    },
+    {
+      "video_id": "yC72iQx6rM0",
+      "title": "Qodo brings company context into Codex code review",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-03T18:11:23+00:00",
+      "url": "https://www.youtube.com/watch?v=yC72iQx6rM0",
+      "thumbnail": "https://img.youtube.com/vi/yC72iQx6rM0/mqdefault.jpg",
+      "description": "Qodo’s Codex plugin brings company context, codebase standards, and independent review into the development workflow. It helps developers catch bugs across repositories, where a change can look right in one codebase and break a service in a"
+    },
+    {
+      "video_id": "63pcV4z0DwI",
+      "title": "ChatGPT Voice is now in Finances",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-03T18:04:51+00:00",
+      "url": "https://www.youtube.com/watch?v=63pcV4z0DwI",
+      "thumbnail": "https://img.youtube.com/vi/63pcV4z0DwI/mqdefault.jpg",
+      "description": "ChatGPT Voice 🤝 Finances.\n\nSecurely connect your accounts through Finances, then talk through your finances on topics like what subscriptions you're paying for, discuss which you’d like to keep and what you could save by cancelling. \n\nTry i"
+    },
+    {
+      "video_id": "r0cJOa9MZsE",
+      "title": "They did it...",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-03T16:51:59+00:00",
+      "url": "https://www.youtube.com/watch?v=r0cJOa9MZsE",
+      "thumbnail": "https://img.youtube.com/vi/r0cJOa9MZsE/mqdefault.jpg",
+      "description": "Check out the NVIDIA RTX Spark Laptop: https://nvda.ws/4BmZphI\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nCheck out what I've built: https://github.com/Forward-Future\nhttps://unfold-lantern-465d.here.now/ \n\nMy "
+    },
+    {
+      "video_id": "JR7xBi2kJjY",
+      "title": "Glean on privacy and OpenAI Private Intelligence",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-03T16:51:36+00:00",
+      "url": "https://www.youtube.com/shorts/JR7xBi2kJjY",
+      "thumbnail": "https://img.youtube.com/vi/JR7xBi2kJjY/mqdefault.jpg",
+      "description": "Glean co-founder and CTO T.R. Vishwanath discusses customer control of data and Glean’s work with OpenAI on the Private Safety Processing preview.\n\nLearn more about OpenAI Private Intelligence: https://openai.com/business/private-intelligen"
+    },
+    {
+      "video_id": "2h16j4K_NbA",
+      "title": "Glean on privacy and OpenAI Private Intelligence",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-03T16:46:37+00:00",
+      "url": "https://www.youtube.com/watch?v=2h16j4K_NbA",
+      "thumbnail": "https://img.youtube.com/vi/2h16j4K_NbA/mqdefault.jpg",
+      "description": "Using more capable AI starts with confidence that your data stays under your control. For Glean’s customers, privacy is a priority.\n\nGlean co-founder and CTO Vishwanath T R shares how Glean and OpenAI have worked together to help meet those"
+    },
+    {
+      "video_id": "Ezi-nwe6LlY",
+      "title": "Andrew Huberman on Focus, Energy, and Performing at Your Best",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-03T14:50:35+00:00",
+      "url": "https://www.youtube.com/watch?v=Ezi-nwe6LlY",
+      "thumbnail": "https://img.youtube.com/vi/Ezi-nwe6LlY/mqdefault.jpg",
+      "description": "If you could do only three things for your health, what should they be? Andrew Huberman’s answer is surprisingly straightforward: get bright light shortly after waking, resistance train, and make the sleep you can get as high-quality as pos"
     },
     {
       "video_id": "0Kw6_DTZPrY",
@@ -192,18 +324,6 @@
       "url": "https://www.youtube.com/watch?v=0Kw6_DTZPrY",
       "thumbnail": "https://img.youtube.com/vi/0Kw6_DTZPrY/mqdefault.jpg",
       "description": "You know what, by AI standards, it might not have been the craziest week, but that doesn’t mean several headline-worthy things happened - from Altman and Anthropic implying they would release models they can’t control, with behavior they ca"
-    },
-    {
-      "video_id": "Amm9ySSET4c",
-      "title": "Coinbase on OpenAI Private Intelligence",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-02T16:59:21+00:00",
-      "url": "https://www.youtube.com/watch?v=Amm9ySSET4c",
-      "thumbnail": "https://img.youtube.com/vi/Amm9ySSET4c/mqdefault.jpg",
-      "description": "For Coinbase, putting frontier AI to work starts with control over its data.\n\nEvery employee has access to the latest OpenAI models. In this video, Rob Witoff explains why security, guardrails, and zero data retention are central to that tr"
     },
     {
       "video_id": "lXkjXSul6yg",
@@ -242,18 +362,6 @@
       "description": "Before hip-hop was a global industry, Kurtis Blow remembers building the culture in a New York where “we had nothing.” In this Paid in Full fireside chat, Nas, Rev Run, and Roxanne Shanté celebrate one of hip-hop’s foundational artists and "
     },
     {
-      "video_id": "o4D1J1YWjhg",
-      "title": "There are many futures. Which do you want to build?",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-30T20:17:12+00:00",
-      "url": "https://www.youtube.com/watch?v=o4D1J1YWjhg",
-      "thumbnail": "https://img.youtube.com/vi/o4D1J1YWjhg/mqdefault.jpg",
-      "description": ""
-    },
-    {
       "video_id": "CWdTBLsbaQs",
       "title": "OpenAI Claims It Just Did The Impossible",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -276,30 +384,6 @@
       "url": "https://www.youtube.com/watch?v=NDgS__J1U-M",
       "thumbnail": "https://img.youtube.com/vi/NDgS__J1U-M/mqdefault.jpg",
       "description": "You actually have to work quite hard to set a private key to the number 4! - Dr Tim Muller takes us through the problems with 'randomly' assigning a 120 digit number to the value '4'\n\nComputerphile is supported by Jane Street. Learn more ab"
-    },
-    {
-      "video_id": "7TtGMileCus",
-      "title": "How Gen uses ChatGPT Work to turn data Into decisions | OpenAI",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-30T15:24:48+00:00",
-      "url": "https://www.youtube.com/shorts/7TtGMileCus",
-      "thumbnail": "https://img.youtube.com/vi/7TtGMileCus/mqdefault.jpg",
-      "description": "“Before ChatGPT Work, we were walking. Now with ChatGPT Work, we are running.”\n\nFor Gen's Howie Xu, that means understanding how a new product’s onboarding experience is working within two or three hours of release.\n\nFinding answers used to"
-    },
-    {
-      "video_id": "Oi9DHk57KeQ",
-      "title": "How Gen uses ChatGPT Work to turn data Into decisions | OpenAI",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-30T15:22:47+00:00",
-      "url": "https://www.youtube.com/watch?v=Oi9DHk57KeQ",
-      "thumbnail": "https://img.youtube.com/vi/Oi9DHk57KeQ/mqdefault.jpg",
-      "description": "“Before ChatGPT Work, we were walking. Now with ChatGPT Work, we are running.”\n\nFor Gen's Howie Xu, that means understanding how a new product’s onboarding experience is working within two or three hours of release.\n\nFinding answers used to"
     },
     {
       "video_id": "iRMmPjunm3Q",
@@ -374,18 +458,6 @@
       "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
     },
     {
-      "video_id": "ASEdkRI7YEM",
-      "title": "What happens when you're a serial entrepreneur",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-28T19:00:27+00:00",
-      "url": "https://www.youtube.com/shorts/ASEdkRI7YEM",
-      "thumbnail": "https://img.youtube.com/vi/ASEdkRI7YEM/mqdefault.jpg",
-      "description": "Travis Kalanick, co-founder of Uber, on what changes by a founder's third or fourth company.\n\nBefore Uber, Travis left UCLA in 1998 to help launch the file-sharing startup Scour, then founded Red Swoosh, which he sold to Akamai in 2007. His"
-    },
-    {
       "video_id": "pryCaGv8wuo",
       "title": "DeepSeek's New AI Is An Absolute Monster",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -458,30 +530,6 @@
       "description": "Jeremy Avigad on why the AI debate should stay centred on us. What makes our goals special is that they're ours. AI can have its own discussion on the side about what its goals are; what matters is how we interact with it, what our goals ar"
     },
     {
-      "video_id": "_9axenbT-1I",
-      "title": "When It Doesn't Matter That It's Slop (Paul Lessard)",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-10-28T07:51:47+00:00",
-      "url": "https://www.youtube.com/shorts/_9axenbT-1I",
-      "thumbnail": "https://img.youtube.com/vi/_9axenbT-1I/mqdefault.jpg",
-      "description": "Paul Lessard on where AI has already replaced people. Translation was a white-collar job that has essentially disappeared, and whether these systems replace people or simply de-skill them hardly matters to the companies using them. Wherever"
-    },
-    {
-      "video_id": "eeVmSP9fL0c",
-      "title": "Nobody Had Actually Read It (Kevin Buzzard)",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-10-28T05:27:08+00:00",
-      "url": "https://www.youtube.com/shorts/eeVmSP9fL0c",
-      "thumbnail": "https://img.youtube.com/vi/eeVmSP9fL0c/mqdefault.jpg",
-      "description": "Kevin Buzzard (Imperial College London) on the Liquid Tensor Experiment. At the end of 2020 the Fields medallist Peter Scholze asked whether anyone had carefully read the six pages of technical calculations at the heart of his work with Dus"
-    },
-    {
       "video_id": "DDZ-a6bAn3Y",
       "title": "Deepseek crushed everyone",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
@@ -492,30 +540,6 @@
       "url": "https://www.youtube.com/watch?v=DDZ-a6bAn3Y",
       "thumbnail": "https://img.youtube.com/vi/DDZ-a6bAn3Y/mqdefault.jpg",
       "description": "Apply for an ARENA pass here: https://coreweave.com/coreweave-arena Test how your AI app holds up under real traffic before your users ever see it. Thanks to CoreWeave for sponsoring this video. #CoreWeavePartner\n\nJoin My Newsletter for Reg"
-    },
-    {
-      "video_id": "Melgii34x-c",
-      "title": "The Annals Published It. It Wasn't True. - Kevin Buzzard",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-10-28T00:47:40+00:00",
-      "url": "https://www.youtube.com/shorts/Melgii34x-c",
-      "thumbnail": "https://img.youtube.com/vi/Melgii34x-c/mqdefault.jpg",
-      "description": "Kevin Buzzard (Imperial College London) on what happened when 50 theorems from the Annals of Mathematics were written down in the Lean proof assistant: theorems by four Fields medallists turned out to be false as stated, because of small mi"
-    },
-    {
-      "video_id": "mMzaL15KFVY",
-      "title": "I Ranked 5 Ways to Wake Up",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-27T18:47:13+00:00",
-      "url": "https://www.youtube.com/shorts/mMzaL15KFVY",
-      "thumbnail": "https://img.youtube.com/vi/mMzaL15KFVY/mqdefault.jpg",
-      "description": "Use code MATTHEWBERMAN for $200 off the Pod: https://www.eightsleep.com/matthewberman\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/f"
     },
     {
       "video_id": "sFfPkUJd_Jk",
@@ -672,30 +696,6 @@
       "url": "https://www.youtube.com/watch?v=UC9PdhD6Yxg",
       "thumbnail": "https://img.youtube.com/vi/UC9PdhD6Yxg/mqdefault.jpg",
       "description": "Files keep landing in your Hugging Face Storage Bucket. Here is how to process each one automatically, without downloading anything.\n\nIn this live-coding video we set up a webhook on a bucket that triggers a Hugging Face Job whenever a new "
-    },
-    {
-      "video_id": "b2tjnxX8IHU",
-      "title": "Did Google just dethrone OpenAI and Anthropic?",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-10-20T16:21:03+00:00",
-      "url": "https://www.youtube.com/watch?v=b2tjnxX8IHU",
-      "thumbnail": "https://img.youtube.com/vi/b2tjnxX8IHU/mqdefault.jpg",
-      "description": "Macroscope can auto-approve your team's PRs safely. Try it here: https://macroscope.com/?utm_source=fireship\n\nGoogle’s new model claims to beat GPT-6 and Opus 5.5, so I took them all for a test drive. Let's dive in.\n\nWant more Fireship?\n\n🗞️"
-    },
-    {
-      "video_id": "CUjHZlvQufk",
-      "title": "Learn to build better AI Agents through better context",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-20T15:16:35+00:00",
-      "url": "https://www.youtube.com/watch?v=CUjHZlvQufk",
-      "thumbnail": "https://img.youtube.com/vi/CUjHZlvQufk/mqdefault.jpg",
-      "description": "Learn More: https://bit.ly/4yy5iWP\n\nThe longer an agent works, the more repeated, contradictory, or stale information builds up in its context. Models perform worse as their context grows, a problem Jeff Huber and his team at Chroma named C"
     }
   ],
   "stats": {
