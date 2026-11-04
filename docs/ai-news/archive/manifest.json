@@ -435,9 +435,15 @@
     },
     {
       "date": "2026-11-03",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-11-03.html",
       "headline": "Der Tag der großen Rechnungen: Die S-1 zeigt die wahre Compute-Wette, Marvell kauft für 115 Milliarden, und die KI-Entlassungen erreichen einen Monatsrekord",
       "summary": "Anthropics ergänzte S-1: ~17 Mrd. $ Quartalsumsatz, Milliardenverlust überwiegend nicht zahlungswirksam, bis ~895 Mrd. $ Compute-/Infra-Zusagen · Marvell kauft Lumentum für 115 Mrd. $ — größte börsennotierte Tech-Fusion aller Zeiten · Challenger: 31.039 KI-bedingte US-Stellenstreichungen im Oktober (Rekord) · WorkOS-Breach über „KI-gestütztes Offensiv-Framework”, UK NCSC warnt vor KI-Ransomware auf kritische Infrastruktur bis 2028 · Meituan LongCat-2.5: 1,6-Billionen-Parameter-Agentenmodell · Salesforce kauft Cresta (~2,7 Mrd. $) · Claude Code v2.1.317"
+    },
+    {
+      "date": "2026-11-04",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Governance holt die Agenten ein: CrowdStrikes Kill-Switch, Anthropics Thread-API und ein Daten­center-Votum",
+      "summary": "CrowdStrike AI Kill Switch (Falcon Guardian) · Anthropic Message Threads Beta (~35% schnelleres TTFT) · Claude Chat+Cowork GA für Enterprise · Android Studio Bring-Your-Own-Agent · Rechenzentren als Wahlkampfthema · Claude Code v2.1.318"
     }
   ]
 }
