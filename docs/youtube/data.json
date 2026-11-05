@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-04T12:04:17+00:00",
+  "last_updated": "2026-11-05T12:05:08+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,16 @@
   ],
   "featured": [
     {
-      "video_id": "NCxD-qsQcN0",
-      "title": "TamaGPT",
+      "video_id": "bJldMYfRvMQ",
+      "title": "Introducing ChatGPT Images 2.6",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-11-03T18:30:30+00:00",
-      "url": "https://www.youtube.com/watch?v=NCxD-qsQcN0",
-      "thumbnail": "https://img.youtube.com/vi/NCxD-qsQcN0/mqdefault.jpg",
-      "description": "You don't need to be an engineer to make hardware. Want to make something physical? Let GPT-6 Astra help you bring it to life.",
+      "published": "2026-11-05T02:32:21+00:00",
+      "url": "https://www.youtube.com/watch?v=bJldMYfRvMQ",
+      "thumbnail": "https://img.youtube.com/vi/bJldMYfRvMQ/mqdefault.jpg",
+      "description": "Images, upgraded—introducing ChatGPT Images 2.6.\n\nNow with GIFs and reference images.\n\nPlus, two new models are coming to the API with 50% faster image generation.\n\nImages, upgraded—introducing ChatGPT Images 2.6.\n\nNow with GIFs and referen",
       "why": ""
     },
     {
@@ -169,6 +169,114 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "il0dgxjpoC0",
+      "title": "Local AI 301: Quantization",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-11-05T11:12:56+00:00",
+      "url": "https://www.youtube.com/watch?v=il0dgxjpoC0",
+      "thumbnail": "https://img.youtube.com/vi/il0dgxjpoC0/mqdefault.jpg",
+      "description": "Learn about quantization in this livestream and get started with quantization using llama.cpp and vLLM.\nProgram: \n-  Introduction to Quantization, Merve Noyan, Hugging Face\n- Calibration based quantization, Colin Kealty (aka bartowski), Red"
+    },
+    {
+      "video_id": "bJldMYfRvMQ",
+      "title": "Introducing ChatGPT Images 2.6",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-05T02:32:21+00:00",
+      "url": "https://www.youtube.com/watch?v=bJldMYfRvMQ",
+      "thumbnail": "https://img.youtube.com/vi/bJldMYfRvMQ/mqdefault.jpg",
+      "description": "Images, upgraded—introducing ChatGPT Images 2.6.\n\nNow with GIFs and reference images.\n\nPlus, two new models are coming to the API with 50% faster image generation.\n\nImages, upgraded—introducing ChatGPT Images 2.6.\n\nNow with GIFs and referen"
+    },
+    {
+      "video_id": "t8-RG3ju_Ao",
+      "title": "I built my own PDF reader to replace Adobe Acrobat",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-05T01:33:35+00:00",
+      "url": "https://www.youtube.com/shorts/t8-RG3ju_Ao",
+      "thumbnail": "https://img.youtube.com/vi/t8-RG3ju_Ao/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "9ZxCOHkfn_8",
+      "title": "GPT-Image-2.6: Faster image generation with Flare and Sunburst",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-04T23:42:40+00:00",
+      "url": "https://www.youtube.com/watch?v=9ZxCOHkfn_8",
+      "thumbnail": "https://img.youtube.com/vi/9ZxCOHkfn_8/mqdefault.jpg",
+      "description": "We’re bringing GPT-Image-2.6 to Codex and the API. In the API, the 2.6 versions of Flare and Sunburst generate images 50% faster than before.\n\nUse Flare for a quick first pass on a poster or product shot. At low image quality, it can genera"
+    },
+    {
+      "video_id": "6IttBmI4P9M",
+      "title": "Messi asks ChatGPT to reimagine his room",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-04T19:25:46+00:00",
+      "url": "https://www.youtube.com/shorts/6IttBmI4P9M",
+      "thumbnail": "https://img.youtube.com/vi/6IttBmI4P9M/mqdefault.jpg",
+      "description": "Messi wanted this empty room to feel a little more like him, but wasn’t sure where to start. So he asked ChatGPT for some ideas.\n\nTry it yourself: “Reimagine this room in my style. Surprise me.”"
+    },
+    {
+      "video_id": "0LDs5rvx1EI",
+      "title": "How Figma Is Building Self-Serve Analytics with OpenAI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-04T17:33:11+00:00",
+      "url": "https://www.youtube.com/shorts/0LDs5rvx1EI",
+      "thumbnail": "https://img.youtube.com/vi/0LDs5rvx1EI/mqdefault.jpg",
+      "description": "Marketers shouldn’t have to wait for a new dashboard to understand how a campaign is performing.\n\nIn an early pilot with OpenAI, Figma is building shared context that helps marketers ask how campaigns are landing and whether they’re convert"
+    },
+    {
+      "video_id": "44GBqQGc-v0",
+      "title": "How Figma Is Building Self-Serve Analytics with OpenAI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-04T17:27:07+00:00",
+      "url": "https://www.youtube.com/watch?v=44GBqQGc-v0",
+      "thumbnail": "https://img.youtube.com/vi/44GBqQGc-v0/mqdefault.jpg",
+      "description": "Marketers shouldn’t have to wait for a new dashboard to understand how a campaign is performing.\n\nIn an early pilot with OpenAI, Figma is building shared context that helps marketers ask how campaigns are landing and whether they’re convert"
+    },
+    {
+      "video_id": "j09uV1oAuIo",
+      "title": "The most important paper in AI right now",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-04T17:09:34+00:00",
+      "url": "https://www.youtube.com/watch?v=j09uV1oAuIo",
+      "thumbnail": "https://img.youtube.com/vi/j09uV1oAuIo/mqdefault.jpg",
+      "description": "Use Code 'Matt' for $100 in Kylon credits: https://kylon.io/matt2\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Inst"
+    },
+    {
+      "video_id": "dSiTwPl0t1U",
+      "title": "The New AI Agents That Shop, Plan, and Gossip",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-04T15:30:22+00:00",
+      "url": "https://www.youtube.com/watch?v=dSiTwPl0t1U",
+      "thumbnail": "https://img.youtube.com/vi/dSiTwPl0t1U/mqdefault.jpg",
+      "description": "Will we have one AI assistant that does everything, or an entire network of agents that know different parts of our lives? David Pawlan, creator of Assistant Benchmark, returns with Anish Acharya and Josh Elman to take stock of how quickly "
+    },
     {
       "video_id": "5__Fm2TnPcU",
       "title": "Stop guessing how to fix your agent",
@@ -230,42 +338,6 @@
       "description": "Start a free 14-day CodeRabbit Secure trial, no credit card required: https://coderabbit.link/fireship-011\n\nCursor shipped a backdoor, Polymarket got drained, North Korea pulled off the largest theft in human history, and Anthropic showed a"
     },
     {
-      "video_id": "NCxD-qsQcN0",
-      "title": "TamaGPT",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-03T18:30:30+00:00",
-      "url": "https://www.youtube.com/watch?v=NCxD-qsQcN0",
-      "thumbnail": "https://img.youtube.com/vi/NCxD-qsQcN0/mqdefault.jpg",
-      "description": "You don't need to be an engineer to make hardware. Want to make something physical? Let GPT-6 Astra help you bring it to life."
-    },
-    {
-      "video_id": "yC72iQx6rM0",
-      "title": "Qodo brings company context into Codex code review",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-03T18:11:23+00:00",
-      "url": "https://www.youtube.com/watch?v=yC72iQx6rM0",
-      "thumbnail": "https://img.youtube.com/vi/yC72iQx6rM0/mqdefault.jpg",
-      "description": "Qodo’s Codex plugin brings company context, codebase standards, and independent review into the development workflow. It helps developers catch bugs across repositories, where a change can look right in one codebase and break a service in a"
-    },
-    {
-      "video_id": "63pcV4z0DwI",
-      "title": "ChatGPT Voice is now in Finances",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-03T18:04:51+00:00",
-      "url": "https://www.youtube.com/watch?v=63pcV4z0DwI",
-      "thumbnail": "https://img.youtube.com/vi/63pcV4z0DwI/mqdefault.jpg",
-      "description": "ChatGPT Voice 🤝 Finances.\n\nSecurely connect your accounts through Finances, then talk through your finances on topics like what subscriptions you're paying for, discuss which you’d like to keep and what you could save by cancelling. \n\nTry i"
-    },
-    {
       "video_id": "r0cJOa9MZsE",
       "title": "They did it...",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
@@ -276,30 +348,6 @@
       "url": "https://www.youtube.com/watch?v=r0cJOa9MZsE",
       "thumbnail": "https://img.youtube.com/vi/r0cJOa9MZsE/mqdefault.jpg",
       "description": "Check out the NVIDIA RTX Spark Laptop: https://nvda.ws/4BmZphI\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nCheck out what I've built: https://github.com/Forward-Future\nhttps://unfold-lantern-465d.here.now/ \n\nMy "
-    },
-    {
-      "video_id": "JR7xBi2kJjY",
-      "title": "Glean on privacy and OpenAI Private Intelligence",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-03T16:51:36+00:00",
-      "url": "https://www.youtube.com/shorts/JR7xBi2kJjY",
-      "thumbnail": "https://img.youtube.com/vi/JR7xBi2kJjY/mqdefault.jpg",
-      "description": "Glean co-founder and CTO T.R. Vishwanath discusses customer control of data and Glean’s work with OpenAI on the Private Safety Processing preview.\n\nLearn more about OpenAI Private Intelligence: https://openai.com/business/private-intelligen"
-    },
-    {
-      "video_id": "2h16j4K_NbA",
-      "title": "Glean on privacy and OpenAI Private Intelligence",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-03T16:46:37+00:00",
-      "url": "https://www.youtube.com/watch?v=2h16j4K_NbA",
-      "thumbnail": "https://img.youtube.com/vi/2h16j4K_NbA/mqdefault.jpg",
-      "description": "Using more capable AI starts with confidence that your data stays under your control. For Glean’s customers, privacy is a priority.\n\nGlean co-founder and CTO Vishwanath T R shares how Glean and OpenAI have worked together to help meet those"
     },
     {
       "video_id": "Ezi-nwe6LlY",
@@ -422,18 +470,6 @@
       "description": "The Science Behind the Open Cyber Frontier with Mistral Large 4\n\nBen Burtenshaw (Hugging Face) talks with Sagar Vaze and Pierre Stock from Mistral about Mistral Large 4, an open-weight model that is great for frontier cybersecurity work, am"
     },
     {
-      "video_id": "cRJ7CfaK1Vc",
-      "title": "How to Build the Next SpaceX or Tesla",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-29T13:50:32+00:00",
-      "url": "https://www.youtube.com/watch?v=cRJ7CfaK1Vc",
-      "thumbnail": "https://img.youtube.com/vi/cRJ7CfaK1Vc/mqdefault.jpg",
-      "description": "America’s defense, energy, manufacturing, and robotics booms are increasingly becoming one story: the rebuilding of the country’s industrial base. This year’s AD50 highlights the companies building across that stack, from critical materials"
-    },
-    {
       "video_id": "zhnJo7s91ls",
       "title": "Google \"Carbon\" just won everything...",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
@@ -444,18 +480,6 @@
       "url": "https://www.youtube.com/watch?v=zhnJo7s91ls",
       "thumbnail": "https://img.youtube.com/vi/zhnJo7s91ls/mqdefault.jpg",
       "description": "Try Factory's $200 Max plan free for one month: https://factory.com/berman\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfutur"
-    },
-    {
-      "video_id": "3yZb9rGt-rk",
-      "title": "Google announces Gemini 4 Carbon",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-28T22:20:44+00:00",
-      "url": "https://www.youtube.com/shorts/3yZb9rGt-rk",
-      "thumbnail": "https://img.youtube.com/vi/3yZb9rGt-rk/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
     },
     {
       "video_id": "pryCaGv8wuo",
@@ -528,18 +552,6 @@
       "url": "https://www.youtube.com/shorts/IcXN7ysaqrc",
       "thumbnail": "https://img.youtube.com/vi/IcXN7ysaqrc/mqdefault.jpg",
       "description": "Jeremy Avigad on why the AI debate should stay centred on us. What makes our goals special is that they're ours. AI can have its own discussion on the side about what its goals are; what matters is how we interact with it, what our goals ar"
-    },
-    {
-      "video_id": "DDZ-a6bAn3Y",
-      "title": "Deepseek crushed everyone",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-28T03:47:38+00:00",
-      "url": "https://www.youtube.com/watch?v=DDZ-a6bAn3Y",
-      "thumbnail": "https://img.youtube.com/vi/DDZ-a6bAn3Y/mqdefault.jpg",
-      "description": "Apply for an ARENA pass here: https://coreweave.com/coreweave-arena Test how your AI app holds up under real traffic before your users ever see it. Thanks to CoreWeave for sponsoring this video. #CoreWeavePartner\n\nJoin My Newsletter for Reg"
     },
     {
       "video_id": "sFfPkUJd_Jk",
@@ -684,18 +696,6 @@
       "url": "https://www.youtube.com/watch?v=h6j_ixGnpiY",
       "thumbnail": "https://img.youtube.com/vi/h6j_ixGnpiY/mqdefault.jpg",
       "description": "Image watermarks are a way to embed information into a picture, Dr Mike Pound takes us through Adobe's Trust Mark to explain the idea & covers some of the pros and cons. \n\n00:00 - Introduction: Watermarking Images vs Text\n00:28 - Steganogra"
-    },
-    {
-      "video_id": "UC9PdhD6Yxg",
-      "title": "Automate CSV to Parquet with Buckets, Webhooks & Jobs",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-10-22T12:56:47+00:00",
-      "url": "https://www.youtube.com/watch?v=UC9PdhD6Yxg",
-      "thumbnail": "https://img.youtube.com/vi/UC9PdhD6Yxg/mqdefault.jpg",
-      "description": "Files keep landing in your Hugging Face Storage Bucket. Here is how to process each one automatically, without downloading anything.\n\nIn this live-coding video we set up a webhook on a bucket that triggers a Hugging Face Job whenever a new "
     }
   ],
   "stats": {
