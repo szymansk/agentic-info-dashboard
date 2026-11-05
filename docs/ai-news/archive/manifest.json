@@ -441,9 +441,15 @@
     },
     {
       "date": "2026-11-04",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-11-04.html",
       "headline": "Governance holt die Agenten ein: CrowdStrikes Kill-Switch, Anthropics Thread-API und ein Daten­center-Votum",
       "summary": "CrowdStrike AI Kill Switch (Falcon Guardian) · Anthropic Message Threads Beta (~35% schnelleres TTFT) · Claude Chat+Cowork GA für Enterprise · Android Studio Bring-Your-Own-Agent · Rechenzentren als Wahlkampfthema · Claude Code v2.1.318"
+    },
+    {
+      "date": "2026-11-05",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Der Tag nach den Midterms: Der Infrastruktur-Backlash trifft die Börse, Coding-Agenten werden billiger, Sicherheit wird zum Hauptschauplatz",
+      "summary": "Rechenzentren-Backlash wird real: 14 Ohio-Kommunen stimmen für Beschränkungen, Hut 8 −23%/IREN −11% nach Demokraten-Sieg · Cognition SWE-2 Flash (3× schneller, 1/5 Preis) · OpenAI Images 2.6 + Cyber-Modell findet 948 Linux-Privesc-Bugs für ~1,21 Mio. $ · Palo Alto kauft Clutch Security (~500 Mio. $) · Isomorphic ~5 Mrd. @ ~50 Mrd. $ · Claude Code v2.1.318"
     }
   ]
 }
