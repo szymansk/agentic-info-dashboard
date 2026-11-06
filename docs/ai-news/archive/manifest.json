@@ -447,9 +447,15 @@
     },
     {
       "date": "2026-11-05",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-11-05.html",
       "headline": "Der Tag nach den Midterms: Der Infrastruktur-Backlash trifft die Börse, Coding-Agenten werden billiger, Sicherheit wird zum Hauptschauplatz",
       "summary": "Rechenzentren-Backlash wird real: 14 Ohio-Kommunen stimmen für Beschränkungen, Hut 8 −23%/IREN −11% nach Demokraten-Sieg · Cognition SWE-2 Flash (3× schneller, 1/5 Preis) · OpenAI Images 2.6 + Cyber-Modell findet 948 Linux-Privesc-Bugs für ~1,21 Mio. $ · Palo Alto kauft Clutch Security (~500 Mio. $) · Isomorphic ~5 Mrd. @ ~50 Mrd. $ · Claude Code v2.1.318"
+    },
+    {
+      "date": "2026-11-06",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Die Woche des Börsengangs: Anthropic steuert aufs Pricing zu — und dieselbe KI steht jetzt namentlich in den Entlassungs-Filings",
+      "summary": "Anthropic-IPO wird konkret: WSJ nennt ein Debüt in der Woche des 16.11. bei 1,5–2 Bio. $ Zielbewertung (S-1: 16,3 Mrd. $ Halbjahresumsatz, Verlust überwiegend nicht zahlungswirksam) · KI-Entlassungen verhärten sich zur Aktenlage: 12 Firmen nennen KI in SEC-Filings, Microsoft 60.000 Buyouts (~27 %), Barclays −5.000 · OpenAI treibt ~20-Mrd.-Runde bei ~1,25 Bio. $ · Claude Code v2.1.318"
     }
   ]
 }
