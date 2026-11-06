@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-05T12:05:08+00:00",
+  "last_updated": "2026-11-06T05:12:55+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,29 +116,16 @@
   ],
   "featured": [
     {
-      "video_id": "bJldMYfRvMQ",
-      "title": "Introducing ChatGPT Images 2.6",
+      "video_id": "pXRZyOxbDL4",
+      "title": "How Mozilla strengthens Firefox security with GPT-6 Cyber",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-11-05T02:32:21+00:00",
-      "url": "https://www.youtube.com/watch?v=bJldMYfRvMQ",
-      "thumbnail": "https://img.youtube.com/vi/bJldMYfRvMQ/mqdefault.jpg",
-      "description": "Images, upgraded—introducing ChatGPT Images 2.6.\n\nNow with GIFs and reference images.\n\nPlus, two new models are coming to the API with 50% faster image generation.\n\nImages, upgraded—introducing ChatGPT Images 2.6.\n\nNow with GIFs and referen",
-      "why": ""
-    },
-    {
-      "video_id": "0Kw6_DTZPrY",
-      "title": "‘We may release models we can’t control’: Amodei, Altman … and Gemini Carbon",
-      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
-      "channel_name": "AI Explained",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-02T17:02:16+00:00",
-      "url": "https://www.youtube.com/watch?v=0Kw6_DTZPrY",
-      "thumbnail": "https://img.youtube.com/vi/0Kw6_DTZPrY/mqdefault.jpg",
-      "description": "You know what, by AI standards, it might not have been the craziest week, but that doesn’t mean several headline-worthy things happened - from Altman and Anthropic implying they would release models they can’t control, with behavior they ca",
+      "published": "2026-11-05T17:14:11+00:00",
+      "url": "https://www.youtube.com/watch?v=pXRZyOxbDL4",
+      "thumbnail": "https://img.youtube.com/vi/pXRZyOxbDL4/mqdefault.jpg",
+      "description": "Mozilla used GPT-6 Cyber to uncover previously unknown high-severity vulnerabilities in Firefox and identify architectural improvements. Its team shipped fixes to millions of users, turning findings into protections for the people who depen",
       "why": ""
     },
     {
@@ -170,16 +157,64 @@
   ],
   "recent": [
     {
-      "video_id": "il0dgxjpoC0",
-      "title": "Local AI 301: Quantization",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
+      "video_id": "F4i_-wbmhC8",
+      "title": "AI identified Breakout from 17,253 numbers",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-06T00:32:37+00:00",
+      "url": "https://www.youtube.com/shorts/F4i_-wbmhC8",
+      "thumbnail": "https://img.youtube.com/vi/F4i_-wbmhC8/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "hu1YDJZYGTc",
+      "title": "A 4B AI model that creates 3D game assets",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-05T20:32:08+00:00",
+      "url": "https://www.youtube.com/shorts/hu1YDJZYGTc",
+      "thumbnail": "https://img.youtube.com/vi/hu1YDJZYGTc/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "pXRZyOxbDL4",
+      "title": "How Mozilla strengthens Firefox security with GPT-6 Cyber",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
       "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-11-05T11:12:56+00:00",
-      "url": "https://www.youtube.com/watch?v=il0dgxjpoC0",
-      "thumbnail": "https://img.youtube.com/vi/il0dgxjpoC0/mqdefault.jpg",
-      "description": "Learn about quantization in this livestream and get started with quantization using llama.cpp and vLLM.\nProgram: \n-  Introduction to Quantization, Merve Noyan, Hugging Face\n- Calibration based quantization, Colin Kealty (aka bartowski), Red"
+      "color": "#6ec38b",
+      "published": "2026-11-05T17:14:11+00:00",
+      "url": "https://www.youtube.com/watch?v=pXRZyOxbDL4",
+      "thumbnail": "https://img.youtube.com/vi/pXRZyOxbDL4/mqdefault.jpg",
+      "description": "Mozilla used GPT-6 Cyber to uncover previously unknown high-severity vulnerabilities in Firefox and identify architectural improvements. Its team shipped fixes to millions of users, turning findings into protections for the people who depen"
+    },
+    {
+      "video_id": "-M62vWrZh54",
+      "title": "Kimi K3.1 weights OUT, open source computer use, SOTA image model, science model, Pika H3: AI NEWS",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-05T16:51:09+00:00",
+      "url": "https://www.youtube.com/watch?v=-M62vWrZh54",
+      "thumbnail": "https://img.youtube.com/vi/-M62vWrZh54/mqdefault.jpg",
+      "description": "So much open source!!!\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nAlready a member? Claim your Frontier Pass here: https://forwardfuture.com/frontier-pass\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forwar"
+    },
+    {
+      "video_id": "BmBw827GgFA",
+      "title": "Mutex Explained - Computerphile",
+      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
+      "channel_name": "Computerphile",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-11-05T14:00:16+00:00",
+      "url": "https://www.youtube.com/watch?v=BmBw827GgFA",
+      "thumbnail": "https://img.youtube.com/vi/BmBw827GgFA/mqdefault.jpg",
+      "description": "One of the most useful primitives in programming, but what is a mutual exclusion and how does it work? Matt Godbolt explains!\n\nComputerphile is supported by Jane Street. Learn more about them (and exciting career opportunities) at: https://"
     },
     {
       "video_id": "bJldMYfRvMQ",
@@ -242,18 +277,6 @@
       "description": "Marketers shouldn’t have to wait for a new dashboard to understand how a campaign is performing.\n\nIn an early pilot with OpenAI, Figma is building shared context that helps marketers ask how campaigns are landing and whether they’re convert"
     },
     {
-      "video_id": "44GBqQGc-v0",
-      "title": "How Figma Is Building Self-Serve Analytics with OpenAI",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-04T17:27:07+00:00",
-      "url": "https://www.youtube.com/watch?v=44GBqQGc-v0",
-      "thumbnail": "https://img.youtube.com/vi/44GBqQGc-v0/mqdefault.jpg",
-      "description": "Marketers shouldn’t have to wait for a new dashboard to understand how a campaign is performing.\n\nIn an early pilot with OpenAI, Figma is building shared context that helps marketers ask how campaigns are landing and whether they’re convert"
-    },
-    {
       "video_id": "j09uV1oAuIo",
       "title": "The most important paper in AI right now",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
@@ -266,66 +289,6 @@
       "description": "Use Code 'Matt' for $100 in Kylon credits: https://kylon.io/matt2\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Inst"
     },
     {
-      "video_id": "dSiTwPl0t1U",
-      "title": "The New AI Agents That Shop, Plan, and Gossip",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-04T15:30:22+00:00",
-      "url": "https://www.youtube.com/watch?v=dSiTwPl0t1U",
-      "thumbnail": "https://img.youtube.com/vi/dSiTwPl0t1U/mqdefault.jpg",
-      "description": "Will we have one AI assistant that does everything, or an entire network of agents that know different parts of our lives? David Pawlan, creator of Assistant Benchmark, returns with Anish Acharya and Josh Elman to take stock of how quickly "
-    },
-    {
-      "video_id": "5__Fm2TnPcU",
-      "title": "Stop guessing how to fix your agent",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-04T11:00:19+00:00",
-      "url": "https://www.youtube.com/watch?v=5__Fm2TnPcU",
-      "thumbnail": "https://img.youtube.com/vi/5__Fm2TnPcU/mqdefault.jpg",
-      "description": "Learn More: https://bit.ly/4ikf9L0\n\nTraditional software tests confirm that your code is working, but fall short when it comes to testing agents. Evals allow you to measure an agent’s decisions and actions when its failures may not be obvio"
-    },
-    {
-      "video_id": "BwE9HfB5Rtw",
-      "title": "The Dream Chocolate That Stopped Being Real (Joscha Bach)",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-04T08:27:06+00:00",
-      "url": "https://www.youtube.com/shorts/BwE9HfB5Rtw",
-      "thumbnail": "https://img.youtube.com/vi/BwE9HfB5Rtw/mqdefault.jpg",
-      "description": "Joscha Bach on a dream he had when he was two or three. He was about to eat a chocolate with a very strong smell, and he woke up just before it reached his mouth. He still knew everything about the chocolate, but it was no longer real. So h"
-    },
-    {
-      "video_id": "TA9-RgnLZrs",
-      "title": "Simulated Water Can't Make You Wet (Joscha Bach)",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-04T04:39:59+00:00",
-      "url": "https://www.youtube.com/shorts/TA9-RgnLZrs",
-      "thumbnail": "https://img.youtube.com/vi/TA9-RgnLZrs/mqdefault.jpg",
-      "description": "Joscha Bach on a joke that turned out to be true. In Minecraft, if you're on fire and jump into water, the fire goes out because you're wet. Someone then trained a neural network on nothing but Minecraft's visuals, so you could play a simul"
-    },
-    {
-      "video_id": "ZhftAOXJACM",
-      "title": "Minecraft Doesn't Know What It's Running On (Joscha Bach)",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-04T02:53:57+00:00",
-      "url": "https://www.youtube.com/shorts/ZhftAOXJACM",
-      "thumbnail": "https://img.youtube.com/vi/ZhftAOXJACM/mqdefault.jpg",
-      "description": "Joscha Bach on why a computer is a \"causal insulator\". Minecraft runs just as well on a Mac as on a PC, and nothing inside the game can tell what it's running on. He argues the brain does the same job for us, which is why we can picture a f"
-    },
-    {
       "video_id": "k2ruCf_z75I",
       "title": "The worst week in cybersecurity history... so far",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -336,78 +299,6 @@
       "url": "https://www.youtube.com/watch?v=k2ruCf_z75I",
       "thumbnail": "https://img.youtube.com/vi/k2ruCf_z75I/mqdefault.jpg",
       "description": "Start a free 14-day CodeRabbit Secure trial, no credit card required: https://coderabbit.link/fireship-011\n\nCursor shipped a backdoor, Polymarket got drained, North Korea pulled off the largest theft in human history, and Anthropic showed a"
-    },
-    {
-      "video_id": "r0cJOa9MZsE",
-      "title": "They did it...",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-03T16:51:59+00:00",
-      "url": "https://www.youtube.com/watch?v=r0cJOa9MZsE",
-      "thumbnail": "https://img.youtube.com/vi/r0cJOa9MZsE/mqdefault.jpg",
-      "description": "Check out the NVIDIA RTX Spark Laptop: https://nvda.ws/4BmZphI\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nCheck out what I've built: https://github.com/Forward-Future\nhttps://unfold-lantern-465d.here.now/ \n\nMy "
-    },
-    {
-      "video_id": "Ezi-nwe6LlY",
-      "title": "Andrew Huberman on Focus, Energy, and Performing at Your Best",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-03T14:50:35+00:00",
-      "url": "https://www.youtube.com/watch?v=Ezi-nwe6LlY",
-      "thumbnail": "https://img.youtube.com/vi/Ezi-nwe6LlY/mqdefault.jpg",
-      "description": "If you could do only three things for your health, what should they be? Andrew Huberman’s answer is surprisingly straightforward: get bright light shortly after waking, resistance train, and make the sleep you can get as high-quality as pos"
-    },
-    {
-      "video_id": "0Kw6_DTZPrY",
-      "title": "‘We may release models we can’t control’: Amodei, Altman … and Gemini Carbon",
-      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
-      "channel_name": "AI Explained",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-02T17:02:16+00:00",
-      "url": "https://www.youtube.com/watch?v=0Kw6_DTZPrY",
-      "thumbnail": "https://img.youtube.com/vi/0Kw6_DTZPrY/mqdefault.jpg",
-      "description": "You know what, by AI standards, it might not have been the craziest week, but that doesn’t mean several headline-worthy things happened - from Altman and Anthropic implying they would release models they can’t control, with behavior they ca"
-    },
-    {
-      "video_id": "lXkjXSul6yg",
-      "title": "What iPhone Packaging Reveals About the Robotics Opportunity",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-02T16:05:37+00:00",
-      "url": "https://www.youtube.com/watch?v=lXkjXSul6yg",
-      "thumbnail": "https://img.youtube.com/vi/lXkjXSul6yg/mqdefault.jpg",
-      "description": "What does it take to build robots that can actually work in factories and warehouses? Tutor Intelligence CEO Josh Gruenstein argues robotics is a systems problem spanning AI, hardware, manufacturing, and the work itself.\n\nJosh joins a16z Ge"
-    },
-    {
-      "video_id": "yW_ngvMFlYs",
-      "title": "Why Consciousness Might Not Be Hard At All (Joscha Bach)",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-02T03:04:11+00:00",
-      "url": "https://www.youtube.com/watch?v=yW_ngvMFlYs",
-      "thumbnail": "https://img.youtube.com/vi/yW_ngvMFlYs/mqdefault.jpg",
-      "description": "Joscha Bach is a cognitive scientist and the founder of the California Institute for Machine Consciousness.\n\nSPONSOR:\n---\nParallel is a single platform for all your agentic research: web search built for AI agents, with Pareto-optimal quali"
-    },
-    {
-      "video_id": "_d83IiEU7_0",
-      "title": "Hip Hop’s Origin Story, Told by the Legends Who Lived It",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-31T14:30:17+00:00",
-      "url": "https://www.youtube.com/watch?v=_d83IiEU7_0",
-      "thumbnail": "https://img.youtube.com/vi/_d83IiEU7_0/mqdefault.jpg",
-      "description": "Before hip-hop was a global industry, Kurtis Blow remembers building the culture in a New York where “we had nothing.” In this Paid in Full fireside chat, Nas, Rev Run, and Roxanne Shanté celebrate one of hip-hop’s foundational artists and "
     },
     {
       "video_id": "CWdTBLsbaQs",
@@ -434,54 +325,6 @@
       "description": "You actually have to work quite hard to set a private key to the number 4! - Dr Tim Muller takes us through the problems with 'randomly' assigning a 120 digit number to the value '4'\n\nComputerphile is supported by Jane Street. Learn more ab"
     },
     {
-      "video_id": "iRMmPjunm3Q",
-      "title": "Why AI Could Turn Small Law Firms Into Billion-Dollar Businesses",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-30T14:30:33+00:00",
-      "url": "https://www.youtube.com/watch?v=iRMmPjunm3Q",
-      "thumbnail": "https://img.youtube.com/vi/iRMmPjunm3Q/mqdefault.jpg",
-      "description": "What happens when AI makes legal work cheap enough to take cases lawyers couldn't afford to touch before? Eve CEO Jay Madheswaran argues that AI won't just cut costs for law firms. It could expand access to legal representation by making an"
-    },
-    {
-      "video_id": "IrgQdsxzRa4",
-      "title": "Two AI bots for spam calls and data privacy",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-29T19:05:33+00:00",
-      "url": "https://www.youtube.com/shorts/IrgQdsxzRa4",
-      "thumbnail": "https://img.youtube.com/vi/IrgQdsxzRa4/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
-      "video_id": "FczbSauVvjw",
-      "title": "Science Behind the Open Cyber Frontier with Mistral Large 4",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-10-29T15:15:17+00:00",
-      "url": "https://www.youtube.com/watch?v=FczbSauVvjw",
-      "thumbnail": "https://img.youtube.com/vi/FczbSauVvjw/mqdefault.jpg",
-      "description": "The Science Behind the Open Cyber Frontier with Mistral Large 4\n\nBen Burtenshaw (Hugging Face) talks with Sagar Vaze and Pierre Stock from Mistral about Mistral Large 4, an open-weight model that is great for frontier cybersecurity work, am"
-    },
-    {
-      "video_id": "zhnJo7s91ls",
-      "title": "Google \"Carbon\" just won everything...",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-10-29T00:29:20+00:00",
-      "url": "https://www.youtube.com/watch?v=zhnJo7s91ls",
-      "thumbnail": "https://img.youtube.com/vi/zhnJo7s91ls/mqdefault.jpg",
-      "description": "Try Factory's $200 Max plan free for one month: https://factory.com/berman\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfutur"
-    },
-    {
       "video_id": "pryCaGv8wuo",
       "title": "DeepSeek's New AI Is An Absolute Monster",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -506,18 +349,6 @@
       "description": "Two PHP Exploits hit the news last week. Dr Steve Bagley explains how dangerous they could be. Read about the chip competition on Jane Street’s blog: https://jane-st.co/ASIC-Competition-Computerphile2027 (channel sponsor)\n\nComputerphile is "
     },
     {
-      "video_id": "p1jhV6LlbFY",
-      "title": "Join Andrew Ng at AI Dev NYC for two days of technical sessions and workshops.",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-28T15:00:09+00:00",
-      "url": "https://www.youtube.com/watch?v=p1jhV6LlbFY",
-      "thumbnail": "https://img.youtube.com/vi/p1jhV6LlbFY/mqdefault.jpg",
-      "description": "What AI engineering skills will you build next?\nJoin Andrew Ng at AI Dev NYC for two days of technical sessions and workshops on:\n🧠Knowledge graphs: GraphRAG and building graphs from your own data\n💾Agent memory: giving agents memory that pe"
-    },
-    {
       "video_id": "nEaJMdM1djM",
       "title": "Did the AI bubble just pop?",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -528,30 +359,6 @@
       "url": "https://www.youtube.com/watch?v=nEaJMdM1djM",
       "thumbnail": "https://img.youtube.com/vi/nEaJMdM1djM/mqdefault.jpg",
       "description": "Try Hyperagent for free, or sign in with ChatGPT to get more usage from your existing plan: https://www.hyperagent.com/login?utm_source=youtube&utm_medium=influencer&utm_campaign=FIRESHIP\n\nAre we cooked chat?\n\nWant more Fireship?\n\n🗞️ Newsle"
-    },
-    {
-      "video_id": "Zo2oyjbTEXA",
-      "title": "Agents on longer tasks need more than one loop",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-28T11:30:33+00:00",
-      "url": "https://www.youtube.com/watch?v=Zo2oyjbTEXA",
-      "thumbnail": "https://img.youtube.com/vi/Zo2oyjbTEXA/mqdefault.jpg",
-      "description": "Learn More: https://bit.ly/4BuaMVb\n\nAn agent that calls tools and decides its next step can complete a task. Making that agent reliable over longer, more complex work takes more: loops that check its output, start a new run each time an eve"
-    },
-    {
-      "video_id": "IcXN7ysaqrc",
-      "title": "We're the Ones Having the Debate (Jeremy Avigad)",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-10-28T08:26:23+00:00",
-      "url": "https://www.youtube.com/shorts/IcXN7ysaqrc",
-      "thumbnail": "https://img.youtube.com/vi/IcXN7ysaqrc/mqdefault.jpg",
-      "description": "Jeremy Avigad on why the AI debate should stay centred on us. What makes our goals special is that they're ours. AI can have its own discussion on the side about what its goals are; what matters is how we interact with it, what our goals ar"
     },
     {
       "video_id": "sFfPkUJd_Jk",
@@ -578,18 +385,6 @@
       "description": "Ankur Moitra, Steven Brunton and Alex Kontorovich are three mathematicians who can speak to this incredible moment in the history of mathematics, when AI solved some of its hardest problems: Navier-Stokes, the quasi-Riemann hypothesis, the "
     },
     {
-      "video_id": "CQ_Cfw6QxSk",
-      "title": "7 AI code review best practices #deeplearningai #qodo",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-26T22:00:28+00:00",
-      "url": "https://www.youtube.com/shorts/CQ_Cfw6QxSk",
-      "thumbnail": "https://img.youtube.com/vi/CQ_Cfw6QxSk/mqdefault.jpg",
-      "description": "A pull request can look clean and still miss a requirement or hide a security issue. When AI writes more of your code, there is often too much to check by hand.\n\nAI Code Review, built in collaboration with Qodo and taught by Nnenna Ndukwe, "
-    },
-    {
       "video_id": "G_em1hHPnXY",
       "title": "China just dropped a new frontier model... and nobody can explain how",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -602,54 +397,6 @@
       "description": "Get 20% off Mobbin Pro to help your agent design UIs that actually convert - https://mobbin.com/fireship\n\nKimi K3.1 just dropped as a free 3-trillion-parameter open-weight model that comes within one point of Opus on Terminal Bench. But is "
     },
     {
-      "video_id": "VgF5aP0amXA",
-      "title": "Learn from OpenAI, Hugging Face, Andrew Ng and Yann LeCun | AI Dev NYC #aidev #shorts",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-26T15:00:16+00:00",
-      "url": "https://www.youtube.com/shorts/VgF5aP0amXA",
-      "thumbnail": "https://img.youtube.com/vi/VgF5aP0amXA/mqdefault.jpg",
-      "description": "Build your AI engineering skills at AI Dev NYC. Learn from Salil Sethi (OpenAI) on turning new model capabilities into reliable production systems, and Joel Niklaus (Hugging Face) on harness optimization and synthetic data. Andrew Ng opens "
-    },
-    {
-      "video_id": "CKFUx7COIwQ",
-      "title": "Workshop: Training Agents at the frontier of AI Industry",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-10-26T14:32:20+00:00",
-      "url": "https://www.youtube.com/watch?v=CKFUx7COIwQ",
-      "thumbnail": "https://img.youtube.com/vi/CKFUx7COIwQ/mqdefault.jpg",
-      "description": "Training Agents IRL: four talks and a panel on post-training agents with open models\n\nTraining Agents IRL is the in-person follow-up to the Training Agents livestream series. Speakers from Microsoft, Mercor, RadixArk and BenchFlow cover ent"
-    },
-    {
-      "video_id": "mEtRe_KKYm0",
-      "title": "Hugging Face Journal Club: Score Centering Stabilizes Off-policy Reinforcement Learning",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-10-26T13:38:50+00:00",
-      "url": "https://www.youtube.com/watch?v=mEtRe_KKYm0",
-      "thumbnail": "https://img.youtube.com/vi/mEtRe_KKYm0/mqdefault.jpg",
-      "description": "Kashif Rasul from the Hugging Face research team gives an in-depth derivation of the mathematics behind the score centering paper, followed by discussion among the team.\n\nPaper link: https://huggingface.co/papers/2609.20807"
-    },
-    {
-      "video_id": "V_uq3v6xK-4",
-      "title": "The Sphere Intersection Puzzle",
-      "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
-      "channel_name": "3Blue1Brown",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-10-25T14:30:46+00:00",
-      "url": "https://www.youtube.com/shorts/V_uq3v6xK-4",
-      "thumbnail": "https://img.youtube.com/vi/V_uq3v6xK-4/mqdefault.jpg",
-      "description": "Part of a series of monthly puzzles\nEarly view of some other solutions:\nhttps://members.3blue1brown.com/posts/solution-to-10-158885046\nhttps://members.3blue1brown.com/posts/solution-to-sum-156593740"
-    },
-    {
       "video_id": "SMGg7iisHmc",
       "title": "The most vulnerable week in internet history...",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -660,49 +407,20 @@
       "url": "https://www.youtube.com/watch?v=SMGg7iisHmc",
       "thumbnail": "https://img.youtube.com/vi/SMGg7iisHmc/mqdefault.jpg",
       "description": "Semgrep Guardian catches the risky code and packages your agent introduces. Try it free for 60 days: https://semgrep.dev/onboarding/guardian?offer=fireship_202610&utm_source=fireship&utm_medium=referral&utm_campaign=2026-10_fireship_guardia"
-    },
-    {
-      "video_id": "w6dSNCg9I5k",
-      "title": "Llama: Local AI on Your Mac",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-10-23T07:55:07+00:00",
-      "url": "https://www.youtube.com/watch?v=w6dSNCg9I5k",
-      "thumbnail": "https://img.youtube.com/vi/w6dSNCg9I5k/mqdefault.jpg",
-      "description": "Meet Llama: run AI models locally on your Mac, right from the menu bar.\n\nFind models that fit your Mac, download with one click, and start chatting. Your conversations stay on your computer, it works offline, and apps that support the OpenA"
-    },
-    {
-      "video_id": "zv6B6PQOuHE",
-      "title": "The last real programmers are dying out...",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-10-22T15:09:31+00:00",
-      "url": "https://www.youtube.com/watch?v=zv6B6PQOuHE",
-      "thumbnail": "https://img.youtube.com/vi/zv6B6PQOuHE/mqdefault.jpg",
-      "description": "Get real-time search data from a single API. Fireship viewers get 1,000 free searches: https://serpapi.com/fireship\n\nYes the very foundations of the internet are currently crumbling to pieces, but before we look at that, let's distract ours"
-    },
-    {
-      "video_id": "h6j_ixGnpiY",
-      "title": "How Image Watermarking Works - Computerphile",
-      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
-      "channel_name": "Computerphile",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-10-22T13:00:06+00:00",
-      "url": "https://www.youtube.com/watch?v=h6j_ixGnpiY",
-      "thumbnail": "https://img.youtube.com/vi/h6j_ixGnpiY/mqdefault.jpg",
-      "description": "Image watermarks are a way to embed information into a picture, Dr Mike Pound takes us through Adobe's Trust Mark to explain the idea & covers some of the pros and cons. \n\n00:00 - Introduction: Watermarking Images vs Text\n00:28 - Steganogra"
     }
   ],
   "stats": {
-    "total_videos": 44,
+    "total_videos": 21,
     "total_channels": 16,
-    "successful_channels": 16,
-    "failed_channels": [],
+    "successful_channels": 10,
+    "failed_channels": [
+      "3Blue1Brown",
+      "AI Explained",
+      "Machine Learning Street Talk",
+      "Hugging Face",
+      "a16z",
+      "DeepLearningAI"
+    ],
     "window_days": 14
   }
 }
