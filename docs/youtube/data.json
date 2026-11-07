@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-06T12:02:13+00:00",
+  "last_updated": "2026-11-07T12:00:20+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,16 @@
   ],
   "featured": [
     {
-      "video_id": "pXRZyOxbDL4",
-      "title": "How Mozilla strengthens Firefox security with GPT-6 Cyber",
+      "video_id": "hJOwOkLHRN0",
+      "title": "LifeVal: Measuring AI progress on the tasks that matter in everyday life.",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-11-05T17:14:11+00:00",
-      "url": "https://www.youtube.com/watch?v=pXRZyOxbDL4",
-      "thumbnail": "https://img.youtube.com/vi/pXRZyOxbDL4/mqdefault.jpg",
-      "description": "Mozilla used GPT-6 Cyber to uncover previously unknown high-severity vulnerabilities in Firefox and identify architectural improvements. Its team shipped fixes to millions of users, turning findings into protections for the people who depen",
+      "published": "2026-11-06T21:11:34+00:00",
+      "url": "https://www.youtube.com/watch?v=hJOwOkLHRN0",
+      "thumbnail": "https://img.youtube.com/vi/hJOwOkLHRN0/mqdefault.jpg",
+      "description": "For AGI to benefit all of humanity, it should help people with the everyday tasks that matter most to them. \n\nSo we built LifeVal, a new benchmark shaped by feedback from thousands of ChatGPT users on where they most want help from a person",
       "why": ""
     },
     {
@@ -170,6 +170,42 @@
   ],
   "recent": [
     {
+      "video_id": "hJOwOkLHRN0",
+      "title": "LifeVal: Measuring AI progress on the tasks that matter in everyday life.",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-06T21:11:34+00:00",
+      "url": "https://www.youtube.com/watch?v=hJOwOkLHRN0",
+      "thumbnail": "https://img.youtube.com/vi/hJOwOkLHRN0/mqdefault.jpg",
+      "description": "For AGI to benefit all of humanity, it should help people with the everyday tasks that matter most to them. \n\nSo we built LifeVal, a new benchmark shaped by feedback from thousands of ChatGPT users on where they most want help from a person"
+    },
+    {
+      "video_id": "iw9SZgyahqg",
+      "title": "The one thing holding theoretical CS together just broke... kinda",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-11-06T16:42:38+00:00",
+      "url": "https://www.youtube.com/watch?v=iw9SZgyahqg",
+      "thumbnail": "https://img.youtube.com/vi/iw9SZgyahqg/mqdefault.jpg",
+      "description": "Warp Factories is open infrastructure to build self-improving software factories. Get early access: https://warp.dev/fireship\n\nAn unnamed OpenAI model just wrote an algorithm that solves 3-SAT faster than exponential time, breaking a 27-yea"
+    },
+    {
+      "video_id": "y4BdOtm40SA",
+      "title": "Inside Salesforce’s Acquisition Strategy for the AI Era",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-06T15:30:09+00:00",
+      "url": "https://www.youtube.com/watch?v=y4BdOtm40SA",
+      "thumbnail": "https://img.youtube.com/vi/y4BdOtm40SA/mqdefault.jpg",
+      "description": "What makes a startup worth acquiring when software has never been easier to build? Salesforce’s John Somorjai says the answer goes well beyond technology: the best acquisitions can accelerate a product roadmap, bring in exceptional talent, "
+    },
+    {
       "video_id": "pkXcc6aKyGU",
       "title": "What you missed at Hugging Face Open Together",
       "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
@@ -203,7 +239,7 @@
       "published": "2026-11-06T07:27:02+00:00",
       "url": "https://www.youtube.com/watch?v=XgC1QTs6A2U",
       "thumbnail": "https://img.youtube.com/vi/XgC1QTs6A2U/mqdefault.jpg",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n🙏 We would like to thank our generous Patreon supporters who make Two Minute Papers possible:\nAdam Bridges, B Shang, Carlos Galarza, Christian Ahlin, Eric T"
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\nChapters:\n00:00 Intro\n02:40 Why Robots Are Hard\n08:16 The Perfect Data Diet\n16:05 Intelligence Density\n20:13 Building AI Worlds\n22:10 Learning From Failure\n"
     },
     {
       "video_id": "_CQ2QEI63o8",
@@ -374,18 +410,6 @@
       "description": "Messi wanted this empty room to feel a little more like him, but wasn’t sure where to start. So he asked ChatGPT for some ideas.\n\nTry it yourself: “Reimagine this room in my style. Surprise me.”"
     },
     {
-      "video_id": "0LDs5rvx1EI",
-      "title": "How Figma Is Building Self-Serve Analytics with OpenAI",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-04T17:33:11+00:00",
-      "url": "https://www.youtube.com/shorts/0LDs5rvx1EI",
-      "thumbnail": "https://img.youtube.com/vi/0LDs5rvx1EI/mqdefault.jpg",
-      "description": "Marketers shouldn’t have to wait for a new dashboard to understand how a campaign is performing.\n\nIn an early pilot with OpenAI, Figma is building shared context that helps marketers ask how campaigns are landing and whether they’re convert"
-    },
-    {
       "video_id": "dSiTwPl0t1U",
       "title": "The New AI Agents That Shop, Plan, and Gossip",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -480,18 +504,6 @@
       "url": "https://www.youtube.com/watch?v=0Kw6_DTZPrY",
       "thumbnail": "https://img.youtube.com/vi/0Kw6_DTZPrY/mqdefault.jpg",
       "description": "You know what, by AI standards, it might not have been the craziest week, but that doesn’t mean several headline-worthy things happened - from Altman and Anthropic implying they would release models they can’t control, with behavior they ca"
-    },
-    {
-      "video_id": "lXkjXSul6yg",
-      "title": "What iPhone Packaging Reveals About the Robotics Opportunity",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-02T16:05:37+00:00",
-      "url": "https://www.youtube.com/watch?v=lXkjXSul6yg",
-      "thumbnail": "https://img.youtube.com/vi/lXkjXSul6yg/mqdefault.jpg",
-      "description": "What does it take to build robots that can actually work in factories and warehouses? Tutor Intelligence CEO Josh Gruenstein argues robotics is a systems problem spanning AI, hardware, manufacturing, and the work itself.\n\nJosh joins a16z Ge"
     },
     {
       "video_id": "yW_ngvMFlYs",
@@ -684,18 +696,6 @@
       "url": "https://www.youtube.com/shorts/V_uq3v6xK-4",
       "thumbnail": "https://img.youtube.com/vi/V_uq3v6xK-4/mqdefault.jpg",
       "description": "Part of a series of monthly puzzles\nEarly view of some other solutions:\nhttps://members.3blue1brown.com/posts/solution-to-10-158885046\nhttps://members.3blue1brown.com/posts/solution-to-sum-156593740"
-    },
-    {
-      "video_id": "SMGg7iisHmc",
-      "title": "The most vulnerable week in internet history...",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-10-23T18:19:58+00:00",
-      "url": "https://www.youtube.com/watch?v=SMGg7iisHmc",
-      "thumbnail": "https://img.youtube.com/vi/SMGg7iisHmc/mqdefault.jpg",
-      "description": "Semgrep Guardian catches the risky code and packages your agent introduces. Try it free for 60 days: https://semgrep.dev/onboarding/guardian?offer=fireship_202610&utm_source=fireship&utm_medium=referral&utm_campaign=2026-10_fireship_guardia"
     }
   ],
   "stats": {
