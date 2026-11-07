@@ -453,9 +453,15 @@
     },
     {
       "date": "2026-11-06",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-11-06.html",
       "headline": "Die Woche des Börsengangs: Anthropic steuert aufs Pricing zu — und dieselbe KI steht jetzt namentlich in den Entlassungs-Filings",
       "summary": "Anthropic-IPO wird konkret: WSJ nennt ein Debüt in der Woche des 16.11. bei 1,5–2 Bio. $ Zielbewertung (S-1: 16,3 Mrd. $ Halbjahresumsatz, Verlust überwiegend nicht zahlungswirksam) · KI-Entlassungen verhärten sich zur Aktenlage: 12 Firmen nennen KI in SEC-Filings, Microsoft 60.000 Buyouts (~27 %), Barclays −5.000 · OpenAI treibt ~20-Mrd.-Runde bei ~1,25 Bio. $ · Claude Code v2.1.318"
+    },
+    {
+      "date": "2026-11-07",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Die Labs ziehen ins Portemonnaie und in den Ernstfall — aber ein Benchmark bremst die Agenten-Euphorie",
+      "summary": "Anthropic lässt Claude per Plaid Bankkonten lesen (Personal Finance, read-only, US Pro/Max/Ultra) · OpenAI verschifft GPT-6 Cyber (Daybreak Red) und das günstigere Computer-Use-Modell GPT-6.1 Terra (Cyber „critical“) · DeepMind zeigt Genie 4, ein Echtzeit-Weltmodell mit Audio · The-Decoder-Benchmark: Agenten scheitern an realer Büroarbeit · Bias-Studie + brasilianisches Meta-Trainingsverbot · Claude Code v2.1.319"
     }
   ]
 }
