@@ -459,9 +459,15 @@
     },
     {
       "date": "2026-11-07",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-11-07.html",
       "headline": "Die Labs ziehen ins Portemonnaie und in den Ernstfall — aber ein Benchmark bremst die Agenten-Euphorie",
       "summary": "Anthropic lässt Claude per Plaid Bankkonten lesen (Personal Finance, read-only, US Pro/Max/Ultra) · OpenAI verschifft GPT-6 Cyber (Daybreak Red) und das günstigere Computer-Use-Modell GPT-6.1 Terra (Cyber „critical“) · DeepMind zeigt Genie 4, ein Echtzeit-Weltmodell mit Audio · The-Decoder-Benchmark: Agenten scheitern an realer Büroarbeit · Bias-Studie + brasilianisches Meta-Trainingsverbot · Claude Code v2.1.319"
+    },
+    {
+      "date": "2026-11-08",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Die Agenten greifen nach dem Fundament — DeepMinds KI knackt Alt-Krypto, OpenAIs Cyber-Zahlen bekommen einen Faktencheck, und das Geld sichert die Agenten",
+      "summary": "DeepMind: KI-Agenten verbilligen Angriffe auf Legacy-RSA-1024 theoretisch um das ~1.600-Fache (Signaturfälschung) bzw. ~30× (Batch-Faktorisierung) — RSA-2048 bleibt sicher · OpenAIs GPT-6 Cyber meldet 81 Firefox-Lücken, ein unabhängiger Abgleich findet im öffentlichen Advisory-Register nur 41 · CrowdStrike kauft Fiddler AI (~400 Mio. $) und Dreadnode (~95 Mio. $) · Perplexity Teammates: Always-on-Arbeitsagenten für 200 $/Monat · Claude Code v2.1.319"
     }
   ]
 }
