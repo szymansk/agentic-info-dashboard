@@ -465,9 +465,15 @@
     },
     {
       "date": "2026-11-08",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-11-08.html",
       "headline": "Die Agenten greifen nach dem Fundament — DeepMinds KI knackt Alt-Krypto, OpenAIs Cyber-Zahlen bekommen einen Faktencheck, und das Geld sichert die Agenten",
       "summary": "DeepMind: KI-Agenten verbilligen Angriffe auf Legacy-RSA-1024 theoretisch um das ~1.600-Fache (Signaturfälschung) bzw. ~30× (Batch-Faktorisierung) — RSA-2048 bleibt sicher · OpenAIs GPT-6 Cyber meldet 81 Firefox-Lücken, ein unabhängiger Abgleich findet im öffentlichen Advisory-Register nur 41 · CrowdStrike kauft Fiddler AI (~400 Mio. $) und Dreadnode (~95 Mio. $) · Perplexity Teammates: Always-on-Arbeitsagenten für 200 $/Monat · Claude Code v2.1.319"
+    },
+    {
+      "date": "2026-11-09",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Das Urteil kommt früher als geplant — der Markt bepreist die Capex-These neu",
+      "summary": "AI-Aktien-Rout: Nasdaq Composite verliert an einem Tag 2,5 Bio. $ (groesster Dollar-Tagesverlust seiner Geschichte), Nasdaq-100 -6,3 % · OpenAI schliesst nur 11 Mrd. $ (erste Tranche) bei 1,25 Bio. statt der angepeilten 30 Mrd.+ bei 1,4 Bio. · Anthropics Nasdaq-IPO (Ticker ANT, Woche vor Thanksgiving, bis 100 Mrd.) unter Druck: Investoren wollen von ~1,5 Bio. runter auf 1,2-1,3 Bio., einer Richtung 1 Bio.; Verschiebungs-Risiko · Google baut trotzdem: 17 Mrd. $ Wyoming-Rechenzentrum + Rueckendeckung fuer Anthropics ~19-Mrd.-Lease · Services-Konsolidierung laeuft: Five9 kauft Level AI (325 Mio.), Adobe-Coworker wird interoperabel"
     }
   ]
 }
