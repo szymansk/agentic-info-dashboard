@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-08T12:04:52+00:00",
+  "last_updated": "2026-11-09T12:01:21+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -169,6 +169,18 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "9F9x3MufdMQ",
+      "title": "DeepSeek Harness (DSH) EXPLAINED | Everything Is a Plugin",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-11-09T05:15:35+00:00",
+      "url": "https://www.youtube.com/watch?v=9F9x3MufdMQ",
+      "thumbnail": "https://img.youtube.com/vi/9F9x3MufdMQ/mqdefault.jpg",
+      "description": "In this video we take a deep dive into DeepSeek Harness (DSH), DeepSeek's open-source agent harness, built on the Cordis plugin system around one idea: everything is a plugin, including the agent loop, the tools, and even the system prompt."
+    },
     {
       "video_id": "lVbQqjAJpkE",
       "title": "12 months to the singularity",
@@ -684,34 +696,10 @@
       "url": "https://www.youtube.com/watch?v=G_em1hHPnXY",
       "thumbnail": "https://img.youtube.com/vi/G_em1hHPnXY/mqdefault.jpg",
       "description": "Get 20% off Mobbin Pro to help your agent design UIs that actually convert - https://mobbin.com/fireship\n\nKimi K3.1 just dropped as a free 3-trillion-parameter open-weight model that comes within one point of Opus on Terminal Bench. But is "
-    },
-    {
-      "video_id": "CKFUx7COIwQ",
-      "title": "Workshop: Training Agents at the frontier of AI Industry",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-10-26T14:32:20+00:00",
-      "url": "https://www.youtube.com/watch?v=CKFUx7COIwQ",
-      "thumbnail": "https://img.youtube.com/vi/CKFUx7COIwQ/mqdefault.jpg",
-      "description": "Training Agents IRL: four talks and a panel on post-training agents with open models\n\nTraining Agents IRL is the in-person follow-up to the Training Agents livestream series. Speakers from Microsoft, Mercor, RadixArk and BenchFlow cover ent"
-    },
-    {
-      "video_id": "V_uq3v6xK-4",
-      "title": "The Sphere Intersection Puzzle",
-      "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
-      "channel_name": "3Blue1Brown",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-10-25T14:30:46+00:00",
-      "url": "https://www.youtube.com/shorts/V_uq3v6xK-4",
-      "thumbnail": "https://img.youtube.com/vi/V_uq3v6xK-4/mqdefault.jpg",
-      "description": "Part of a series of monthly puzzles\nEarly view of some other solutions:\nhttps://members.3blue1brown.com/posts/solution-to-10-158885046\nhttps://members.3blue1brown.com/posts/solution-to-sum-156593740"
     }
   ],
   "stats": {
-    "total_videos": 45,
+    "total_videos": 44,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
