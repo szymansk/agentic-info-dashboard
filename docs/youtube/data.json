@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-10T05:05:32+00:00",
+  "last_updated": "2026-11-10T12:01:54+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -156,6 +156,42 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "vug73goPJaM",
+      "title": "Is Software Over?",
+      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+      "channel_name": "Two Minute Papers",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-11-10T10:15:57+00:00",
+      "url": "https://www.youtube.com/watch?v=vug73goPJaM",
+      "thumbnail": "https://img.youtube.com/vi/vug73goPJaM/mqdefault.jpg",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.com/papers\n\n📝 The papers and sources are available here:\nMirrorCode: https://arxiv.org/abs/2606.30182\nREMEND: https://huggingface.co/udiboy1209/REMEND\nWebUI-95: https:"
+    },
+    {
+      "video_id": "N-onb680PEI",
+      "title": "Something Finally Was at Stake (Tom Froese)",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-10T05:33:49+00:00",
+      "url": "https://www.youtube.com/shorts/N-onb680PEI",
+      "thumbnail": "https://img.youtube.com/vi/N-onb680PEI/mqdefault.jpg",
+      "description": "When life began, something finally was at stake. Tom Froese on the origin of life as the moment values entered the universe: things stopped just happening and started doing things, and with doing comes success and failure.\n\nFull conversatio"
+    },
+    {
+      "video_id": "GCGaQj-FAo8",
+      "title": "I Told Taxi Drivers Not to Worry (Tom Froese)",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-10T05:15:00+00:00",
+      "url": "https://www.youtube.com/shorts/GCGaQj-FAo8",
+      "thumbnail": "https://img.youtube.com/vi/GCGaQj-FAo8/mqdefault.jpg",
+      "description": "Tom Froese used to tell taxi drivers not to worry about AI. He didn't see today's systems coming, but one thing he still doesn't see in them is initiative.\n\nFull conversation with Tom Froese: watch it now on our Patreon, https://www.patreon"
+    },
     {
       "video_id": "FNTz0CdqL6g",
       "title": "Kuken Industries searches 70 years of drawings in minutes",
@@ -529,18 +565,6 @@
       "description": "You know what, by AI standards, it might not have been the craziest week, but that doesn’t mean several headline-worthy things happened - from Altman and Anthropic implying they would release models they can’t control, with behavior they ca"
     },
     {
-      "video_id": "yW_ngvMFlYs",
-      "title": "Why Consciousness Might Not Be Hard At All (Joscha Bach)",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-02T03:04:11+00:00",
-      "url": "https://www.youtube.com/watch?v=yW_ngvMFlYs",
-      "thumbnail": "https://img.youtube.com/vi/yW_ngvMFlYs/mqdefault.jpg",
-      "description": "Joscha Bach is a cognitive scientist and the founder of the California Institute for Machine Consciousness.\n\nSPONSOR:\n---\nParallel is a single platform for all your agentic research: web search built for AI agents, with Pareto-optimal quali"
-    },
-    {
       "video_id": "CWdTBLsbaQs",
       "title": "OpenAI Claims It Just Did The Impossible",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -637,18 +661,6 @@
       "description": "Learn More: https://bit.ly/4BuaMVb\n\nAn agent that calls tools and decides its next step can complete a task. Making that agent reliable over longer, more complex work takes more: loops that check its output, start a new run each time an eve"
     },
     {
-      "video_id": "IcXN7ysaqrc",
-      "title": "We're the Ones Having the Debate (Jeremy Avigad)",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-10-28T08:26:23+00:00",
-      "url": "https://www.youtube.com/shorts/IcXN7ysaqrc",
-      "thumbnail": "https://img.youtube.com/vi/IcXN7ysaqrc/mqdefault.jpg",
-      "description": "Jeremy Avigad on why the AI debate should stay centred on us. What makes our goals special is that they're ours. AI can have its own discussion on the side about what its goals are; what matters is how we interact with it, what our goals ar"
-    },
-    {
       "video_id": "sFfPkUJd_Jk",
       "title": "Genie 4: A new generation of world simulation",
       "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
@@ -662,7 +674,7 @@
     }
   ],
   "stats": {
-    "total_videos": 42,
+    "total_videos": 43,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
