@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-09T12:01:21+00:00",
+  "last_updated": "2026-11-10T05:05:32+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,16 @@
   ],
   "featured": [
     {
-      "video_id": "hJOwOkLHRN0",
-      "title": "LifeVal: Measuring AI progress on the tasks that matter in everyday life.",
+      "video_id": "FNTz0CdqL6g",
+      "title": "Kuken Industries searches 70 years of drawings in minutes",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-11-06T21:11:34+00:00",
-      "url": "https://www.youtube.com/watch?v=hJOwOkLHRN0",
-      "thumbnail": "https://img.youtube.com/vi/hJOwOkLHRN0/mqdefault.jpg",
-      "description": "For AGI to benefit all of humanity, it should help people with the everyday tasks that matter most to them. \n\nSo we built LifeVal, a new benchmark shaped by feedback from thousands of ChatGPT users on where they most want help from a person",
+      "published": "2026-11-10T02:41:23+00:00",
+      "url": "https://www.youtube.com/watch?v=FNTz0CdqL6g",
+      "thumbnail": "https://img.youtube.com/vi/FNTz0CdqL6g/mqdefault.jpg",
+      "description": "Kuken Industries is using the OpenAI API to help engineers search 70 years of drawings in minutes. Built with Recursive, a Japanese AI startup and an official OpenAI partner, the system gives teams more time to mentor younger engineers and ",
       "why": ""
     },
     {
@@ -153,22 +153,57 @@
       "thumbnail": "https://img.youtube.com/vi/sFfPkUJd_Jk/mqdefault.jpg",
       "description": "Meet Genie 4, Google DeepMind’s most realistic and interactive world model yet. Built on our Gemini models, Genie 4 lets you step inside dynamic worlds in real time, steer scenes on the fly with natural language, and watch what happens next",
       "why": ""
-    },
-    {
-      "video_id": "ZAzWPE9CItg",
-      "title": "AI Crisis in Math: Navier-Stokes, Riemann Hypothesis & Complexity Theory | Lex Fridman Podcast #503",
-      "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
-      "channel_name": "Lex Fridman",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-10-26T22:51:51+00:00",
-      "url": "https://www.youtube.com/watch?v=ZAzWPE9CItg",
-      "thumbnail": "https://img.youtube.com/vi/ZAzWPE9CItg/mqdefault.jpg",
-      "description": "Ankur Moitra, Steven Brunton and Alex Kontorovich are three mathematicians who can speak to this incredible moment in the history of mathematics, when AI solved some of its hardest problems: Navier-Stokes, the quasi-Riemann hypothesis, the ",
-      "why": ""
     }
   ],
   "recent": [
+    {
+      "video_id": "FNTz0CdqL6g",
+      "title": "Kuken Industries searches 70 years of drawings in minutes",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-10T02:41:23+00:00",
+      "url": "https://www.youtube.com/watch?v=FNTz0CdqL6g",
+      "thumbnail": "https://img.youtube.com/vi/FNTz0CdqL6g/mqdefault.jpg",
+      "description": "Kuken Industries is using the OpenAI API to help engineers search 70 years of drawings in minutes. Built with Recursive, a Japanese AI startup and an official OpenAI partner, the system gives teams more time to mentor younger engineers and "
+    },
+    {
+      "video_id": "oW98tLm7suY",
+      "title": "Fable 5.2 just solved software",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-10T00:56:42+00:00",
+      "url": "https://www.youtube.com/shorts/oW98tLm7suY",
+      "thumbnail": "https://img.youtube.com/vi/oW98tLm7suY/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "pf5tXJZM1Rw",
+      "title": "OpenAI spent $1.2 million hacking Linux... and it was a bargain",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-11-09T21:04:16+00:00",
+      "url": "https://www.youtube.com/watch?v=pf5tXJZM1Rw",
+      "thumbnail": "https://img.youtube.com/vi/pf5tXJZM1Rw/mqdefault.jpg",
+      "description": "Greptile is the only AI code reviewer that actually runs your code. Try it for free: https://greptile.com/go/fireship\n\nA model you're not allowed to use just tore through the Linux kernel and came back with 948 root exploits... let's break "
+    },
+    {
+      "video_id": "0vNyVMDFdkg",
+      "title": "Fable 5.2 is ridiculous",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-09T19:02:56+00:00",
+      "url": "https://www.youtube.com/watch?v=0vNyVMDFdkg",
+      "thumbnail": "https://img.youtube.com/vi/0vNyVMDFdkg/mqdefault.jpg",
+      "description": "Check out Eight Sleep's Pod 6: https://www.eightsleep.com/matthewberman\nUse code 'MATTHEWBERMAN' for up to $200 off\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nCheck out my tests:\nPhoton Image Editor — https://c"
+    },
     {
       "video_id": "9F9x3MufdMQ",
       "title": "DeepSeek Harness (DSH) EXPLAINED | Everything Is a Plugin",
@@ -302,18 +337,6 @@
       "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
     },
     {
-      "video_id": "hu1YDJZYGTc",
-      "title": "A 4B AI model that creates 3D game assets",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-05T20:32:08+00:00",
-      "url": "https://www.youtube.com/shorts/hu1YDJZYGTc",
-      "thumbnail": "https://img.youtube.com/vi/hu1YDJZYGTc/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
       "video_id": "x6wHXZXGruY",
       "title": "Andrew Hubermans Best Advice He Ever Got",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -336,18 +359,6 @@
       "url": "https://www.youtube.com/watch?v=pXRZyOxbDL4",
       "thumbnail": "https://img.youtube.com/vi/pXRZyOxbDL4/mqdefault.jpg",
       "description": "Mozilla used GPT-6 Cyber to uncover previously unknown high-severity vulnerabilities in Firefox and identify architectural improvements. Its team shipped fixes to millions of users, turning findings into protections for the people who depen"
-    },
-    {
-      "video_id": "-M62vWrZh54",
-      "title": "Kimi K3.1 weights OUT, open source computer use, SOTA image model, science model, Pika H3: AI NEWS",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-05T16:51:09+00:00",
-      "url": "https://www.youtube.com/watch?v=-M62vWrZh54",
-      "thumbnail": "https://img.youtube.com/vi/-M62vWrZh54/mqdefault.jpg",
-      "description": "So much open source!!!\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nAlready a member? Claim your Frontier Pass here: https://forwardfuture.com/frontier-pass\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forwar"
     },
     {
       "video_id": "QyXrlveEpxE",
@@ -420,18 +431,6 @@
       "url": "https://www.youtube.com/watch?v=9ZxCOHkfn_8",
       "thumbnail": "https://img.youtube.com/vi/9ZxCOHkfn_8/mqdefault.jpg",
       "description": "We’re bringing GPT-Image-2.6 to Codex and the API. In the API, the 2.6 versions of Flare and Sunburst generate images 50% faster than before.\n\nUse Flare for a quick first pass on a poster or product shot. At low image quality, it can genera"
-    },
-    {
-      "video_id": "6IttBmI4P9M",
-      "title": "Messi asks ChatGPT to reimagine his room",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-04T19:25:46+00:00",
-      "url": "https://www.youtube.com/shorts/6IttBmI4P9M",
-      "thumbnail": "https://img.youtube.com/vi/6IttBmI4P9M/mqdefault.jpg",
-      "description": "Messi wanted this empty room to feel a little more like him, but wasn’t sure where to start. So he asked ChatGPT for some ideas.\n\nTry it yourself: “Reimagine this room in my style. Surprise me.”"
     },
     {
       "video_id": "dSiTwPl0t1U",
@@ -660,46 +659,10 @@
       "url": "https://www.youtube.com/watch?v=sFfPkUJd_Jk",
       "thumbnail": "https://img.youtube.com/vi/sFfPkUJd_Jk/mqdefault.jpg",
       "description": "Meet Genie 4, Google DeepMind’s most realistic and interactive world model yet. Built on our Gemini models, Genie 4 lets you step inside dynamic worlds in real time, steer scenes on the fly with natural language, and watch what happens next"
-    },
-    {
-      "video_id": "ZAzWPE9CItg",
-      "title": "AI Crisis in Math: Navier-Stokes, Riemann Hypothesis & Complexity Theory | Lex Fridman Podcast #503",
-      "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
-      "channel_name": "Lex Fridman",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-10-26T22:51:51+00:00",
-      "url": "https://www.youtube.com/watch?v=ZAzWPE9CItg",
-      "thumbnail": "https://img.youtube.com/vi/ZAzWPE9CItg/mqdefault.jpg",
-      "description": "Ankur Moitra, Steven Brunton and Alex Kontorovich are three mathematicians who can speak to this incredible moment in the history of mathematics, when AI solved some of its hardest problems: Navier-Stokes, the quasi-Riemann hypothesis, the "
-    },
-    {
-      "video_id": "CQ_Cfw6QxSk",
-      "title": "7 AI code review best practices #deeplearningai #qodo",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-26T22:00:28+00:00",
-      "url": "https://www.youtube.com/shorts/CQ_Cfw6QxSk",
-      "thumbnail": "https://img.youtube.com/vi/CQ_Cfw6QxSk/mqdefault.jpg",
-      "description": "A pull request can look clean and still miss a requirement or hide a security issue. When AI writes more of your code, there is often too much to check by hand.\n\nAI Code Review, built in collaboration with Qodo and taught by Nnenna Ndukwe, "
-    },
-    {
-      "video_id": "G_em1hHPnXY",
-      "title": "China just dropped a new frontier model... and nobody can explain how",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-10-26T18:55:29+00:00",
-      "url": "https://www.youtube.com/watch?v=G_em1hHPnXY",
-      "thumbnail": "https://img.youtube.com/vi/G_em1hHPnXY/mqdefault.jpg",
-      "description": "Get 20% off Mobbin Pro to help your agent design UIs that actually convert - https://mobbin.com/fireship\n\nKimi K3.1 just dropped as a free 3-trillion-parameter open-weight model that comes within one point of Opus on Terminal Bench. But is "
     }
   ],
   "stats": {
-    "total_videos": 44,
+    "total_videos": 42,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
