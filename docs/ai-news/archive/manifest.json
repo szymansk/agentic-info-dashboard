@@ -477,9 +477,15 @@
     },
     {
       "date": "2026-11-10",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-11-10.html",
       "headline": "Anthropic shippt in den Sturm — Fable 5.2 und Mythos 5.2 als IPO-Pitch",
       "summary": "Anthropic veroeffentlicht mitten im Aktien-Rout seine staerksten Modelle: Claude Fable 5.2 (GA) + Mythos 5.2 (gated) — 30 % schneller, 20 % guenstiger als 5.1, 8/40 $ pro Mio. Token; erste Frontier-Releases seit Amodeis September-Bremsruf („Pacing, nicht Pausing“) · zugleich startet die IPO-Roadshow: amendiertes Prospekt zeigt 33,24 Mrd. $ Umsatz (9 Monate, +~1200 %), Debuet moeglich ab Woche des 16.11., Zielbewertung auf 1-1,5 Bio. gesenkt (von ~2 Bio.) · Kapital jagt weiter die Inferenz: fal sammelt ~1,65 Mrd. $ (1,3 Mrd. Series F, Bessemer, 16 Mrd. Bewertung, Nvidia dabei) · Produkt-Front laeuft unbeirrt: Google Gemini Omni 1.2 Flash GA, OpenAI ChatGPT Images 2.6 · Claude Code v2.1.322 (Fable 5.2 als Default-Fable in v2.1.321)"
+    },
+    {
+      "date": "2026-11-11",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Der Markt bekommt seinen Zettel — Anthropic bepreist den Billionen-IPO, OpenAI schließt 11 Milliarden",
+      "summary": "Anthropic setzt die IPO-Spanne: 825 Mio. Aktien zu 70-78 $, Nasdaq-Kürzel „ANT“, Bepreisung 18.11., Handelsstart 19.11., bis ~1,4 Bio. $ voll verwässert (Prospekt-Basis knapp über 1 Bio.) · AMD/Broadcom/Google/Micron/Microsoft/Nvidia/TSMC zeichnen 26 Mrd. $ zum IPO-Preis, 20 % für Retail, Orderbuch gedeckt — gegen heißen Inflationsbericht und KI-Aktien-Ausverkauf · parallel schließt OpenAI 11 Mrd. $ bei 1,25 Bio. (erste Tranche von bis zu 20 Mrd., SoftBank + MGX) · Gegenrechnung aus der Fläche: McKinsey Tech Trends 2026 — nur 37 % der Firmen sehen positiven EBIT-Effekt · Agenten-Tooling wird konsolidiert: CrowdStrike/Fiddler (Observability), Five9/Level AI (~325 Mio.), Meta/Conductor (paralleles Coding) · Claude Code v2.1.322"
     }
   ]
 }
