@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-10T12:01:54+00:00",
+  "last_updated": "2026-11-11T05:17:43+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,46 +116,68 @@
   ],
   "featured": [
     {
-      "video_id": "FNTz0CdqL6g",
-      "title": "Kuken Industries searches 70 years of drawings in minutes",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-10T02:41:23+00:00",
-      "url": "https://www.youtube.com/watch?v=FNTz0CdqL6g",
-      "thumbnail": "https://img.youtube.com/vi/FNTz0CdqL6g/mqdefault.jpg",
-      "description": "Kuken Industries is using the OpenAI API to help engineers search 70 years of drawings in minutes. Built with Recursive, a Japanese AI startup and an official OpenAI partner, the system gives teams more time to mentor younger engineers and ",
-      "why": ""
-    },
-    {
-      "video_id": "0Kw6_DTZPrY",
-      "title": "‘We may release models we can’t control’: Amodei, Altman … and Gemini Carbon",
+      "video_id": "583ThJIqQ7k",
+      "title": "Fable 5.2: The Self-Improvement Loop Keeps Loopin’ … (plus Gemini Carbon)",
       "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
       "channel_name": "AI Explained",
       "category": "news",
       "color": "#e0a857",
-      "published": "2026-11-02T17:02:16+00:00",
-      "url": "https://www.youtube.com/watch?v=0Kw6_DTZPrY",
-      "thumbnail": "https://img.youtube.com/vi/0Kw6_DTZPrY/mqdefault.jpg",
-      "description": "You know what, by AI standards, it might not have been the craziest week, but that doesn’t mean several headline-worthy things happened - from Altman and Anthropic implying they would release models they can’t control, with behavior they ca",
-      "why": ""
-    },
-    {
-      "video_id": "sFfPkUJd_Jk",
-      "title": "Genie 4: A new generation of world simulation",
-      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
-      "channel_name": "Google DeepMind",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-27T16:00:41+00:00",
-      "url": "https://www.youtube.com/watch?v=sFfPkUJd_Jk",
-      "thumbnail": "https://img.youtube.com/vi/sFfPkUJd_Jk/mqdefault.jpg",
-      "description": "Meet Genie 4, Google DeepMind’s most realistic and interactive world model yet. Built on our Gemini models, Genie 4 lets you step inside dynamic worlds in real time, steer scenes on the fly with natural language, and watch what happens next",
+      "published": "2026-11-10T23:11:36+00:00",
+      "url": "https://www.youtube.com/watch?v=583ThJIqQ7k",
+      "thumbnail": "https://img.youtube.com/vi/583ThJIqQ7k/mqdefault.jpg",
+      "description": "I’ve read the full Fable 5.2 report at 264 pages, the 30 page METR RSI report, and tested Gemini Carbon and Fable 5.2 hundreds of times. There’s too much to cover in one video, but let’s explore everything from how fast AI is accelerating A",
       "why": ""
     }
   ],
   "recent": [
+    {
+      "video_id": "L2acYRMzig8",
+      "title": "AI made Box features obsolete before launch",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-10T23:57:13+00:00",
+      "url": "https://www.youtube.com/shorts/L2acYRMzig8",
+      "thumbnail": "https://img.youtube.com/vi/L2acYRMzig8/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "583ThJIqQ7k",
+      "title": "Fable 5.2: The Self-Improvement Loop Keeps Loopin’ … (plus Gemini Carbon)",
+      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
+      "channel_name": "AI Explained",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-10T23:11:36+00:00",
+      "url": "https://www.youtube.com/watch?v=583ThJIqQ7k",
+      "thumbnail": "https://img.youtube.com/vi/583ThJIqQ7k/mqdefault.jpg",
+      "description": "I’ve read the full Fable 5.2 report at 264 pages, the 30 page METR RSI report, and tested Gemini Carbon and Fable 5.2 hundreds of times. There’s too much to cover in one video, but let’s explore everything from how fast AI is accelerating A"
+    },
+    {
+      "video_id": "1FurWDiK9A4",
+      "title": "Did Anthropic just save its $1 trillion IPO?",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-11-10T18:19:55+00:00",
+      "url": "https://www.youtube.com/watch?v=1FurWDiK9A4",
+      "thumbnail": "https://img.youtube.com/vi/1FurWDiK9A4/mqdefault.jpg",
+      "description": "Mux is the video API that translates audio and answers questions about your video. Get $50 in free credits: https://mux.com/fireship\n\nAnthropic just dropped Fable and Mythos 5.2 in the middle of a rocky IPO roadshow. Let's dive into what th"
+    },
+    {
+      "video_id": "s4lXP9IuHjk",
+      "title": "Why HubSpot’s Co-Founder Is Betting Against the SaaSpocalypse",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-10T15:30:23+00:00",
+      "url": "https://www.youtube.com/watch?v=s4lXP9IuHjk",
+      "thumbnail": "https://img.youtube.com/vi/s4lXP9IuHjk/mqdefault.jpg",
+      "description": "As frontier AI labs expand into applications, where should startups build? a16z Partner Joe Schmidt joins HubSpot co-founder and CTO Dharmesh Shah to explore why the software opportunity is growing, and how founders can stay off the “Yellow"
+    },
     {
       "video_id": "vug73goPJaM",
       "title": "Is Software Over?",
@@ -167,42 +189,6 @@
       "url": "https://www.youtube.com/watch?v=vug73goPJaM",
       "thumbnail": "https://img.youtube.com/vi/vug73goPJaM/mqdefault.jpg",
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.com/papers\n\n📝 The papers and sources are available here:\nMirrorCode: https://arxiv.org/abs/2606.30182\nREMEND: https://huggingface.co/udiboy1209/REMEND\nWebUI-95: https:"
-    },
-    {
-      "video_id": "N-onb680PEI",
-      "title": "Something Finally Was at Stake (Tom Froese)",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-10T05:33:49+00:00",
-      "url": "https://www.youtube.com/shorts/N-onb680PEI",
-      "thumbnail": "https://img.youtube.com/vi/N-onb680PEI/mqdefault.jpg",
-      "description": "When life began, something finally was at stake. Tom Froese on the origin of life as the moment values entered the universe: things stopped just happening and started doing things, and with doing comes success and failure.\n\nFull conversatio"
-    },
-    {
-      "video_id": "GCGaQj-FAo8",
-      "title": "I Told Taxi Drivers Not to Worry (Tom Froese)",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-10T05:15:00+00:00",
-      "url": "https://www.youtube.com/shorts/GCGaQj-FAo8",
-      "thumbnail": "https://img.youtube.com/vi/GCGaQj-FAo8/mqdefault.jpg",
-      "description": "Tom Froese used to tell taxi drivers not to worry about AI. He didn't see today's systems coming, but one thing he still doesn't see in them is initiative.\n\nFull conversation with Tom Froese: watch it now on our Patreon, https://www.patreon"
-    },
-    {
-      "video_id": "FNTz0CdqL6g",
-      "title": "Kuken Industries searches 70 years of drawings in minutes",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-10T02:41:23+00:00",
-      "url": "https://www.youtube.com/watch?v=FNTz0CdqL6g",
-      "thumbnail": "https://img.youtube.com/vi/FNTz0CdqL6g/mqdefault.jpg",
-      "description": "Kuken Industries is using the OpenAI API to help engineers search 70 years of drawings in minutes. Built with Recursive, a Japanese AI startup and an official OpenAI partner, the system gives teams more time to mentor younger engineers and "
     },
     {
       "video_id": "oW98tLm7suY",
@@ -277,18 +263,6 @@
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.com/papers\n\n📝 The Weight Space Programming work is available here:\nhttps://rikiyat.github.io/blog/weight-space-programming/\n\n🙏 We would like to thank our generous Patr"
     },
     {
-      "video_id": "hJOwOkLHRN0",
-      "title": "LifeVal: Measuring AI progress on the tasks that matter in everyday life.",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-06T21:11:34+00:00",
-      "url": "https://www.youtube.com/watch?v=hJOwOkLHRN0",
-      "thumbnail": "https://img.youtube.com/vi/hJOwOkLHRN0/mqdefault.jpg",
-      "description": "For AGI to benefit all of humanity, it should help people with the everyday tasks that matter most to them. \n\nSo we built LifeVal, a new benchmark shaped by feedback from thousands of ChatGPT users on where they most want help from a person"
-    },
-    {
       "video_id": "iw9SZgyahqg",
       "title": "The one thing holding theoretical CS together just broke... kinda",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -361,18 +335,6 @@
       "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
     },
     {
-      "video_id": "F4i_-wbmhC8",
-      "title": "AI identified Breakout from 17,253 numbers",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-06T00:32:37+00:00",
-      "url": "https://www.youtube.com/shorts/F4i_-wbmhC8",
-      "thumbnail": "https://img.youtube.com/vi/F4i_-wbmhC8/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
       "video_id": "x6wHXZXGruY",
       "title": "Andrew Hubermans Best Advice He Ever Got",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -383,30 +345,6 @@
       "url": "https://www.youtube.com/shorts/x6wHXZXGruY",
       "thumbnail": "https://img.youtube.com/vi/x6wHXZXGruY/mqdefault.jpg",
       "description": ""
-    },
-    {
-      "video_id": "pXRZyOxbDL4",
-      "title": "How Mozilla strengthens Firefox security with GPT-6 Cyber",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-05T17:14:11+00:00",
-      "url": "https://www.youtube.com/watch?v=pXRZyOxbDL4",
-      "thumbnail": "https://img.youtube.com/vi/pXRZyOxbDL4/mqdefault.jpg",
-      "description": "Mozilla used GPT-6 Cyber to uncover previously unknown high-severity vulnerabilities in Firefox and identify architectural improvements. Its team shipped fixes to millions of users, turning findings into protections for the people who depen"
-    },
-    {
-      "video_id": "QyXrlveEpxE",
-      "title": "Andrew Ng on balancing latency and reliability in voice AI. #deeplearningai #aiagents #voiceai",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-05T16:00:22+00:00",
-      "url": "https://www.youtube.com/shorts/QyXrlveEpxE",
-      "thumbnail": "https://img.youtube.com/vi/QyXrlveEpxE/mqdefault.jpg",
-      "description": "How do you build a voice agent that keeps up with a conversation and handles the task reliably?\n\nLearn three ways to add voice to apps and agents with Ashwyn Sharma in Voice for AI Agents and Applications, our course with @VocalBridgeAI .\n\n"
     },
     {
       "video_id": "9iAQdKxyiQc",
@@ -445,30 +383,6 @@
       "description": "Learn about quantization in this livestream and get started with quantization using llama.cpp and vLLM.\nProgram: \n-  Introduction to Quantization, Merve Noyan, Hugging Face\n- Calibration based quantization, Colin Kealty (aka bartowski), Red"
     },
     {
-      "video_id": "bJldMYfRvMQ",
-      "title": "Introducing ChatGPT Images 2.6",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-05T02:32:21+00:00",
-      "url": "https://www.youtube.com/watch?v=bJldMYfRvMQ",
-      "thumbnail": "https://img.youtube.com/vi/bJldMYfRvMQ/mqdefault.jpg",
-      "description": "Images, upgraded—introducing ChatGPT Images 2.6.\n\nNow with GIFs and reference images.\n\nPlus, two new models are coming to the API with 50% faster image generation.\n\nImages, upgraded—introducing ChatGPT Images 2.6.\n\nNow with GIFs and referen"
-    },
-    {
-      "video_id": "9ZxCOHkfn_8",
-      "title": "GPT-Image-2.6: Faster image generation with Flare and Sunburst",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-04T23:42:40+00:00",
-      "url": "https://www.youtube.com/watch?v=9ZxCOHkfn_8",
-      "thumbnail": "https://img.youtube.com/vi/9ZxCOHkfn_8/mqdefault.jpg",
-      "description": "We’re bringing GPT-Image-2.6 to Codex and the API. In the API, the 2.6 versions of Flare and Sunburst generate images 50% faster than before.\n\nUse Flare for a quick first pass on a poster or product shot. At low image quality, it can genera"
-    },
-    {
       "video_id": "dSiTwPl0t1U",
       "title": "The New AI Agents That Shop, Plan, and Gossip",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -481,54 +395,6 @@
       "description": "Will we have one AI assistant that does everything, or an entire network of agents that know different parts of our lives? David Pawlan, creator of Assistant Benchmark, returns with Anish Acharya and Josh Elman to take stock of how quickly "
     },
     {
-      "video_id": "5__Fm2TnPcU",
-      "title": "Stop guessing how to fix your agent",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-04T11:00:19+00:00",
-      "url": "https://www.youtube.com/watch?v=5__Fm2TnPcU",
-      "thumbnail": "https://img.youtube.com/vi/5__Fm2TnPcU/mqdefault.jpg",
-      "description": "Learn More: https://bit.ly/4ikf9L0\n\nTraditional software tests confirm that your code is working, but fall short when it comes to testing agents. Evals allow you to measure an agent’s decisions and actions when its failures may not be obvio"
-    },
-    {
-      "video_id": "BwE9HfB5Rtw",
-      "title": "The Dream Chocolate That Stopped Being Real (Joscha Bach)",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-04T08:27:06+00:00",
-      "url": "https://www.youtube.com/shorts/BwE9HfB5Rtw",
-      "thumbnail": "https://img.youtube.com/vi/BwE9HfB5Rtw/mqdefault.jpg",
-      "description": "Joscha Bach on a dream he had when he was two or three. He was about to eat a chocolate with a very strong smell, and he woke up just before it reached his mouth. He still knew everything about the chocolate, but it was no longer real. So h"
-    },
-    {
-      "video_id": "TA9-RgnLZrs",
-      "title": "Simulated Water Can't Make You Wet (Joscha Bach)",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-04T04:39:59+00:00",
-      "url": "https://www.youtube.com/shorts/TA9-RgnLZrs",
-      "thumbnail": "https://img.youtube.com/vi/TA9-RgnLZrs/mqdefault.jpg",
-      "description": "Joscha Bach on a joke that turned out to be true. In Minecraft, if you're on fire and jump into water, the fire goes out because you're wet. Someone then trained a neural network on nothing but Minecraft's visuals, so you could play a simul"
-    },
-    {
-      "video_id": "ZhftAOXJACM",
-      "title": "Minecraft Doesn't Know What It's Running On (Joscha Bach)",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-04T02:53:57+00:00",
-      "url": "https://www.youtube.com/shorts/ZhftAOXJACM",
-      "thumbnail": "https://img.youtube.com/vi/ZhftAOXJACM/mqdefault.jpg",
-      "description": "Joscha Bach on why a computer is a \"causal insulator\". Minecraft runs just as well on a Mac as on a PC, and nothing inside the game can tell what it's running on. He argues the brain does the same job for us, which is why we can picture a f"
-    },
-    {
       "video_id": "k2ruCf_z75I",
       "title": "The worst week in cybersecurity history... so far",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -539,18 +405,6 @@
       "url": "https://www.youtube.com/watch?v=k2ruCf_z75I",
       "thumbnail": "https://img.youtube.com/vi/k2ruCf_z75I/mqdefault.jpg",
       "description": "Start a free 14-day CodeRabbit Secure trial, no credit card required: https://coderabbit.link/fireship-011\n\nCursor shipped a backdoor, Polymarket got drained, North Korea pulled off the largest theft in human history, and Anthropic showed a"
-    },
-    {
-      "video_id": "Ezi-nwe6LlY",
-      "title": "Andrew Huberman on Focus, Energy, and Performing at Your Best",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-03T14:50:35+00:00",
-      "url": "https://www.youtube.com/watch?v=Ezi-nwe6LlY",
-      "thumbnail": "https://img.youtube.com/vi/Ezi-nwe6LlY/mqdefault.jpg",
-      "description": "If you could do only three things for your health, what should they be? Andrew Huberman’s answer is surprisingly straightforward: get bright light shortly after waking, resistance train, and make the sleep you can get as high-quality as pos"
     },
     {
       "video_id": "0Kw6_DTZPrY",
@@ -625,18 +479,6 @@
       "description": "Two PHP Exploits hit the news last week. Dr Steve Bagley explains how dangerous they could be. Read about the chip competition on Jane Street’s blog: https://jane-st.co/ASIC-Competition-Computerphile2027 (channel sponsor)\n\nComputerphile is "
     },
     {
-      "video_id": "p1jhV6LlbFY",
-      "title": "Join Andrew Ng at AI Dev NYC for two days of technical sessions and workshops.",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-28T15:00:09+00:00",
-      "url": "https://www.youtube.com/watch?v=p1jhV6LlbFY",
-      "thumbnail": "https://img.youtube.com/vi/p1jhV6LlbFY/mqdefault.jpg",
-      "description": "What AI engineering skills will you build next?\nJoin Andrew Ng at AI Dev NYC for two days of technical sessions and workshops on:\n🧠Knowledge graphs: GraphRAG and building graphs from your own data\n💾Agent memory: giving agents memory that pe"
-    },
-    {
       "video_id": "nEaJMdM1djM",
       "title": "Did the AI bubble just pop?",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -647,37 +489,21 @@
       "url": "https://www.youtube.com/watch?v=nEaJMdM1djM",
       "thumbnail": "https://img.youtube.com/vi/nEaJMdM1djM/mqdefault.jpg",
       "description": "Try Hyperagent for free, or sign in with ChatGPT to get more usage from your existing plan: https://www.hyperagent.com/login?utm_source=youtube&utm_medium=influencer&utm_campaign=FIRESHIP\n\nAre we cooked chat?\n\nWant more Fireship?\n\n🗞️ Newsle"
-    },
-    {
-      "video_id": "Zo2oyjbTEXA",
-      "title": "Agents on longer tasks need more than one loop",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-28T11:30:33+00:00",
-      "url": "https://www.youtube.com/watch?v=Zo2oyjbTEXA",
-      "thumbnail": "https://img.youtube.com/vi/Zo2oyjbTEXA/mqdefault.jpg",
-      "description": "Learn More: https://bit.ly/4BuaMVb\n\nAn agent that calls tools and decides its next step can complete a task. Making that agent reliable over longer, more complex work takes more: loops that check its output, start a new run each time an eve"
-    },
-    {
-      "video_id": "sFfPkUJd_Jk",
-      "title": "Genie 4: A new generation of world simulation",
-      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
-      "channel_name": "Google DeepMind",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-10-27T16:00:41+00:00",
-      "url": "https://www.youtube.com/watch?v=sFfPkUJd_Jk",
-      "thumbnail": "https://img.youtube.com/vi/sFfPkUJd_Jk/mqdefault.jpg",
-      "description": "Meet Genie 4, Google DeepMind’s most realistic and interactive world model yet. Built on our Gemini models, Genie 4 lets you step inside dynamic worlds in real time, steer scenes on the fly with natural language, and watch what happens next"
     }
   ],
   "stats": {
-    "total_videos": 43,
+    "total_videos": 30,
     "total_channels": 16,
-    "successful_channels": 16,
-    "failed_channels": [],
+    "successful_channels": 9,
+    "failed_channels": [
+      "Andrej Karpathy",
+      "Yannic Kilcher",
+      "Lex Fridman",
+      "Machine Learning Street Talk",
+      "Anthropic",
+      "OpenAI",
+      "DeepLearningAI"
+    ],
     "window_days": 14
   }
 }
