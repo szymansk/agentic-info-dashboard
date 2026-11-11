@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-11T06:15:27+00:00",
+  "last_updated": "2026-11-11T12:04:56+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -130,7 +130,7 @@
     },
     {
       "video_id": "2hJkprFnzhY",
-      "title": "Russia-Ukraine War: Putin, Zelenskyy, Trump and the Future of Warfare | Lex Fridman Podcast #504",
+      "title": "Ukraine War: Putin, Zelenskyy, Trump, Drones and the Future of Warfare | Lex Fridman Podcast #504",
       "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
       "channel_name": "Lex Fridman",
       "category": "podcast",
@@ -156,6 +156,78 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "FCmLuTENOp0",
+      "title": "Gemini Carbon, NVIDIA CEO AFFAIR, Fable 5.2, Meta Muse Ember, GPT Image 2.6, Minimax H3: AI NEWS",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-11T11:00:25+00:00",
+      "url": "https://www.youtube.com/watch?v=FCmLuTENOp0",
+      "thumbnail": "https://img.youtube.com/vi/FCmLuTENOp0/mqdefault.jpg",
+      "description": "Hire Viktor for your team: https://ref.viktor.com/mberman-yt\nUse code MATTHEWBERMAN100 for $100 in credits\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Futu"
+    },
+    {
+      "video_id": "0NbLVdCZHF0",
+      "title": "Tabular Foundation Models for Data Science Agents",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-11T11:00:19+00:00",
+      "url": "https://www.youtube.com/watch?v=0NbLVdCZHF0",
+      "thumbnail": "https://img.youtube.com/vi/0NbLVdCZHF0/mqdefault.jpg",
+      "description": "Learn More: https://bit.ly/4j2WLq8\n\nTabular foundation models use in-context learning to make predictions on new datasets without training a model from scratch. In this short course, built in partnership with Prior Labs and taught by Frank "
+    },
+    {
+      "video_id": "qD3FrUgkVII",
+      "title": "Claude's \"Clean-Room\" Compiler Copied LLVM's Mistakes (Jeremy Howard)",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-11T08:21:36+00:00",
+      "url": "https://www.youtube.com/shorts/qD3FrUgkVII",
+      "thumbnail": "https://img.youtube.com/vi/qD3FrUgkVII/mqdefault.jpg",
+      "description": "Jeremy Howard, co-founder of fast.ai and Answer.AI, on Anthropic's \"clean-room\" C compiler written by Claude. Chris Lattner's LLVM, the most widely used foundation for compilers, is in the training data many times over, so converting it to "
+    },
+    {
+      "video_id": "WyHxyBrKhaQ",
+      "title": "Random Code Starts Copying Itself (Blaise Agüera y Arcas)",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-11T08:13:17+00:00",
+      "url": "https://www.youtube.com/shorts/WyHxyBrKhaQ",
+      "thumbnail": "https://img.youtube.com/vi/WyHxyBrKhaQ/mqdefault.jpg",
+      "description": "Blaise Agüera y Arcas on the BFF experiment. Start with a soup of 1,024 tapes, each 64 random bytes. Pluck two at random, join them end to end, run them, pull them apart, put them back, and repeat. That's the entire experiment. Out of it co"
+    },
+    {
+      "video_id": "ZBJV-hA-tLM",
+      "title": "What software provides when AI bypasses the interface",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-11T07:33:33+00:00",
+      "url": "https://www.youtube.com/shorts/ZBJV-hA-tLM",
+      "thumbnail": "https://img.youtube.com/vi/ZBJV-hA-tLM/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "il0dgxjpoC0",
+      "title": "Local AI 301: Quantization",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-11-11T06:39:06+00:00",
+      "url": "https://www.youtube.com/watch?v=il0dgxjpoC0",
+      "thumbnail": "https://img.youtube.com/vi/il0dgxjpoC0/mqdefault.jpg",
+      "description": "Learn about quantization in this livestream and get started with quantization using llama.cpp and vLLM.\nProgram: \n-  Introduction to Quantization, Merve Noyan, Hugging Face\n- Calibration based quantization, Colin Kealty (aka bartowski), Red"
+    },
     {
       "video_id": "jDxKzlGLCas",
       "title": "Building with GPT-Live and Image Generation | DevDay 2026",
@@ -230,7 +302,7 @@
     },
     {
       "video_id": "2hJkprFnzhY",
-      "title": "Russia-Ukraine War: Putin, Zelenskyy, Trump and the Future of Warfare | Lex Fridman Podcast #504",
+      "title": "Ukraine War: Putin, Zelenskyy, Trump, Drones and the Future of Warfare | Lex Fridman Podcast #504",
       "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
       "channel_name": "Lex Fridman",
       "category": "podcast",
@@ -361,18 +433,6 @@
       "description": "In this video we take a deep dive into DeepSeek Harness (DSH), DeepSeek's open-source agent harness, built on the Cordis plugin system around one idea: everything is a plugin, including the agent loop, the tools, and even the system prompt."
     },
     {
-      "video_id": "lVbQqjAJpkE",
-      "title": "12 months to the singularity",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-07T17:28:06+00:00",
-      "url": "https://www.youtube.com/watch?v=lVbQqjAJpkE",
-      "thumbnail": "https://img.youtube.com/vi/lVbQqjAJpkE/mqdefault.jpg",
-      "description": "Check out IntelliJ IDEA: https://jb.gg/air_ij_2026\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://"
-    },
-    {
       "video_id": "GJ6PMUm5oTA",
       "title": "OpenAI's Astra Just Opened The Black Box Of AI",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -445,18 +505,6 @@
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\nChapters:\n00:00 Intro\n02:40 Why Robots Are Hard\n08:16 The Perfect Data Diet\n16:05 Intelligence Density\n20:13 Building AI Worlds\n22:10 Learning From Failure\n"
     },
     {
-      "video_id": "_CQ2QEI63o8",
-      "title": "Pika turns images and sound into an editable video",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-06T07:12:53+00:00",
-      "url": "https://www.youtube.com/shorts/_CQ2QEI63o8",
-      "thumbnail": "https://img.youtube.com/vi/_CQ2QEI63o8/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
       "video_id": "x6wHXZXGruY",
       "title": "Andrew Hubermans Best Advice He Ever Got",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -505,18 +553,6 @@
       "description": "One of the most useful primitives in programming, but what is a mutual exclusion and how does it work? Matt Godbolt explains!\n\nComputerphile is supported by Jane Street. Learn more about them (and exciting career opportunities) at: https://"
     },
     {
-      "video_id": "il0dgxjpoC0",
-      "title": "Local AI 301: Quantization",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-11-05T11:12:56+00:00",
-      "url": "https://www.youtube.com/watch?v=il0dgxjpoC0",
-      "thumbnail": "https://img.youtube.com/vi/il0dgxjpoC0/mqdefault.jpg",
-      "description": "Learn about quantization in this livestream and get started with quantization using llama.cpp and vLLM.\nProgram: \n-  Introduction to Quantization, Merve Noyan, Hugging Face\n- Calibration based quantization, Colin Kealty (aka bartowski), Red"
-    },
-    {
       "video_id": "dSiTwPl0t1U",
       "title": "The New AI Agents That Shop, Plan, and Gossip",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -551,30 +587,6 @@
       "url": "https://www.youtube.com/shorts/BwE9HfB5Rtw",
       "thumbnail": "https://img.youtube.com/vi/BwE9HfB5Rtw/mqdefault.jpg",
       "description": "Joscha Bach on a dream he had when he was two or three. He was about to eat a chocolate with a very strong smell, and he woke up just before it reached his mouth. He still knew everything about the chocolate, but it was no longer real. So h"
-    },
-    {
-      "video_id": "TA9-RgnLZrs",
-      "title": "Simulated Water Can't Make You Wet (Joscha Bach)",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-04T04:39:59+00:00",
-      "url": "https://www.youtube.com/shorts/TA9-RgnLZrs",
-      "thumbnail": "https://img.youtube.com/vi/TA9-RgnLZrs/mqdefault.jpg",
-      "description": "Joscha Bach on a joke that turned out to be true. In Minecraft, if you're on fire and jump into water, the fire goes out because you're wet. Someone then trained a neural network on nothing but Minecraft's visuals, so you could play a simul"
-    },
-    {
-      "video_id": "ZhftAOXJACM",
-      "title": "Minecraft Doesn't Know What It's Running On (Joscha Bach)",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-04T02:53:57+00:00",
-      "url": "https://www.youtube.com/shorts/ZhftAOXJACM",
-      "thumbnail": "https://img.youtube.com/vi/ZhftAOXJACM/mqdefault.jpg",
-      "description": "Joscha Bach on why a computer is a \"causal insulator\". Minecraft runs just as well on a Mac as on a PC, and nothing inside the game can tell what it's running on. He argues the brain does the same job for us, which is why we can picture a f"
     },
     {
       "video_id": "k2ruCf_z75I",
@@ -683,18 +695,6 @@
       "url": "https://www.youtube.com/watch?v=nEaJMdM1djM",
       "thumbnail": "https://img.youtube.com/vi/nEaJMdM1djM/mqdefault.jpg",
       "description": "Try Hyperagent for free, or sign in with ChatGPT to get more usage from your existing plan: https://www.hyperagent.com/login?utm_source=youtube&utm_medium=influencer&utm_campaign=FIRESHIP\n\nAre we cooked chat?\n\nWant more Fireship?\n\n🗞️ Newsle"
-    },
-    {
-      "video_id": "Zo2oyjbTEXA",
-      "title": "Agents on longer tasks need more than one loop",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-28T11:30:33+00:00",
-      "url": "https://www.youtube.com/watch?v=Zo2oyjbTEXA",
-      "thumbnail": "https://img.youtube.com/vi/Zo2oyjbTEXA/mqdefault.jpg",
-      "description": "Learn More: https://bit.ly/4BuaMVb\n\nAn agent that calls tools and decides its next step can complete a task. Making that agent reliable over longer, more complex work takes more: loops that check its output, start a new run each time an eve"
     }
   ],
   "stats": {
