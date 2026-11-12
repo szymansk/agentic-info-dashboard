@@ -1,0 +1,702 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tagesbriefing · Agentic AI</title>
+<style>
+  :root {
+    --bg: #0b0d12;
+    --bg-2: #11141c;
+    --panel: #161a24;
+    --panel-2: #1b2030;
+    --line: #232a3a;
+    --text: #e7ecf3;
+    --body: #d8dce6;
+    --muted: #8b94a8;
+    --dim: #5d6577;
+    --accent: #c39a4a;       /* warm gold */
+    --accent-2: #7aa2f7;
+    --good: #6ec38b;
+    --warn: #e0a857;
+    --hot:  #e15a5a;
+    --crit: #b04bd1;
+    --radius: 14px;
+    --shadow: 0 10px 30px rgba(0,0,0,.35), 0 1px 0 rgba(255,255,255,.03) inset;
+  }
+  * { box-sizing: border-box; }
+  html, body { background: var(--bg); color: var(--text); }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, Roboto, 'Helvetica Neue', sans-serif;
+    margin: 0; line-height: 1.55;
+    background:
+      radial-gradient(1100px 700px at 90% -10%, rgba(195,154,74,.08), transparent 60%),
+      radial-gradient(900px 600px at -10% 10%, rgba(122,162,247,.07), transparent 60%),
+      var(--bg);
+    min-height: 100vh;
+  }
+  a { color: var(--accent-2); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+
+  /* ── Layout ──────────────────────────────────────────────── */
+  .wrap { max-width: 1280px; margin: 0 auto; padding: 28px 28px 80px; }
+
+  /* ── Top Nav ─────────────────────────────────────────────── */
+  .topnav {
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+    margin-bottom: 22px;
+    font-size: 13px;
+  }
+  .topnav a {
+    color: var(--muted); padding: 6px 12px; border-radius: 999px;
+    border: 1px solid var(--line);
+    transition: color .12s ease, border-color .12s ease, background .12s ease;
+  }
+  .topnav a:hover { color: var(--text); border-color: var(--accent); text-decoration: none; }
+  .topnav a.active {
+    color: var(--accent); border-color: var(--accent);
+    background: rgba(195,154,74,.08);
+  }
+
+  /* ── Timeline strip ──────────────────────────────────────── */
+  .timeline-bar {
+    display: flex; align-items: center; gap: 8px;
+    padding: 12px 14px; margin-bottom: 24px;
+    background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+    border: 1px solid var(--line); border-radius: var(--radius);
+    overflow-x: auto;
+    scrollbar-width: thin; scrollbar-color: var(--line) transparent;
+  }
+  .timeline-bar::-webkit-scrollbar { height: 6px; }
+  .timeline-bar::-webkit-scrollbar-thumb { background: var(--line); border-radius: 3px; }
+  .timeline-bar .label {
+    color: var(--dim); font-size: 11px; letter-spacing: .08em;
+    text-transform: uppercase; padding-right: 8px; flex-shrink: 0;
+    border-right: 1px solid var(--line); margin-right: 4px;
+  }
+  .tl-pill {
+    display: inline-flex; flex-direction: column; align-items: center;
+    flex-shrink: 0;
+    padding: 6px 12px; border-radius: 10px;
+    border: 1px solid var(--line);
+    background: rgba(255,255,255,.02);
+    color: var(--muted);
+    font-size: 11px; text-decoration: none;
+    transition: all .12s ease;
+    min-width: 64px;
+  }
+  .tl-pill:hover {
+    color: var(--text); border-color: var(--accent);
+    background: rgba(195,154,74,.06); text-decoration: none;
+  }
+  .tl-pill.active {
+    color: var(--bg); background: var(--accent); border-color: var(--accent);
+    font-weight: 700;
+  }
+  .tl-pill .dow { font-size: 10px; opacity: .8; letter-spacing: .04em; text-transform: uppercase; }
+  .tl-pill .date { font-family: ui-monospace, monospace; font-size: 13px; margin-top: 2px; font-weight: 600; }
+  .tl-pill.future { opacity: .4; pointer-events: none; }
+
+  /* ── Header ──────────────────────────────────────────────── */
+  header.main {
+    display: flex; align-items: end; justify-content: space-between;
+    gap: 24px; padding-bottom: 22px; margin-bottom: 28px;
+    border-bottom: 1px solid var(--line);
+  }
+  header.main .title { display: flex; align-items: baseline; gap: 14px; }
+  header.main .title h1 {
+    margin: 0; font-size: 30px; letter-spacing: -.02em; font-weight: 800;
+  }
+  header.main .title .dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: var(--hot); box-shadow: 0 0 0 4px rgba(225,90,90,.18);
+    animation: pulse 2.4s infinite;
+  }
+  @keyframes pulse {
+    0%,100% { box-shadow: 0 0 0 4px rgba(225,90,90,.18); }
+    50%     { box-shadow: 0 0 0 9px rgba(225,90,90,.05); }
+  }
+  header.main .subtitle { color: var(--muted); font-size: 14px; }
+  header.main .meta { text-align: right; font-size: 13px; color: var(--muted); }
+  header.main .meta .date { color: var(--text); font-weight: 600; font-size: 15px; }
+  header.main .meta .tag {
+    display: inline-block; margin-top: 6px; padding: 3px 8px;
+    border: 1px solid var(--line); border-radius: 999px;
+    color: var(--muted); font-size: 11px; letter-spacing: .04em; text-transform: uppercase;
+  }
+
+  /* ── Section heading ─────────────────────────────────────── */
+  section { margin-top: 40px; }
+  .section-head { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+  .section-head h2 {
+    margin: 0; font-size: 18px; font-weight: 700;
+    letter-spacing: .02em; text-transform: uppercase;
+  }
+  .section-head .rule { flex: 1; height: 1px; background: var(--line); }
+  .section-head .hint { color: var(--dim); font-size: 12px; }
+
+  /* ── BRIEFING (editorial) ────────────────────────────────── */
+  .briefing-wrap {
+    max-width: 740px; margin: 0 auto;
+  }
+  .briefing-head {
+    text-align: left; margin-bottom: 28px;
+    padding-bottom: 22px; border-bottom: 1px solid var(--line);
+  }
+  .briefing-head h2.kicker {
+    margin: 0; font-size: 12px; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--accent); font-weight: 700;
+  }
+  .briefing-head h1 {
+    margin: 8px 0 10px; font-size: 32px; line-height: 1.2;
+    letter-spacing: -.02em; font-weight: 800; color: var(--text);
+  }
+  .briefing-head .byline {
+    color: var(--muted); font-size: 13px;
+    display: flex; gap: 12px; flex-wrap: wrap; align-items: center;
+  }
+  .briefing-head .byline .dot-sep { color: var(--dim); }
+  .briefing-head .lede {
+    margin-top: 22px; font-size: 18px; line-height: 1.55;
+    color: var(--text); font-weight: 400;
+  }
+  .briefing-head .lede::first-letter {
+    font-size: 56px; line-height: 1; font-weight: 800;
+    float: left; padding: 4px 10px 0 0; color: var(--accent);
+  }
+
+  .briefing-body { font-size: 16px; line-height: 1.7; color: var(--body); }
+  .briefing-body section { margin-top: 36px; }
+  .briefing-body h3 {
+    margin: 0 0 12px; font-size: 22px; line-height: 1.25;
+    letter-spacing: -.01em; font-weight: 700; color: var(--text);
+  }
+  .briefing-body h3 .num {
+    color: var(--accent); margin-right: 10px; font-family: ui-monospace, monospace;
+    font-size: 18px; font-weight: 600;
+  }
+  .briefing-body p { margin: 0 0 14px; }
+  .briefing-body p strong { color: var(--text); font-weight: 600; }
+  .briefing-body em { color: var(--text); font-style: italic; }
+  .briefing-body ol, .briefing-body ul { margin: 12px 0 16px; padding-left: 20px; }
+  .briefing-body li { margin-bottom: 8px; }
+  .briefing-body blockquote.takeaway {
+    margin: 22px 0; padding: 14px 18px;
+    border-left: 3px solid var(--accent);
+    background: rgba(195,154,74,.06);
+    border-radius: 0 8px 8px 0;
+    color: var(--text); font-size: 15px; line-height: 1.6;
+  }
+  .briefing-body blockquote.takeaway strong { color: var(--accent); letter-spacing: .04em; text-transform: uppercase; font-size: 11px; display: block; margin-bottom: 6px; }
+  .briefing-end {
+    margin-top: 36px; padding-top: 22px;
+    border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 13px; text-align: center;
+  }
+
+  /* ── Grid for cards (Breaking News + Claude Code) ────────── */
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 980px) { .grid.cols-3, .grid.cols-2 { grid-template-columns: 1fr; } }
+
+  .card {
+    background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+    border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 18px 18px 16px; box-shadow: var(--shadow);
+    position: relative; overflow: hidden;
+  }
+  .card h3 { margin: 0 0 6px; font-size: 16px; font-weight: 700; letter-spacing: -.005em; }
+  .card p  { margin: 0 0 10px; color: var(--muted); font-size: 13.5px; }
+  .card .row { display: flex; align-items: center; gap: 8px; }
+  .card ul { margin: 8px 0 0; padding-left: 18px; }
+  .card li { font-size: 13.5px; color: var(--muted); margin-bottom: 4px; }
+
+  /* ── Breaking News ───────────────────────────────────────── */
+  .news-card { padding-left: 18px; }
+  .news-card::before {
+    content: ""; position: absolute; left: 0; top: 0; bottom: 0;
+    width: 4px; background: var(--accent-2);
+  }
+  .news-card.crit::before { background: var(--crit); }
+  .news-card.hot::before  { background: var(--hot); }
+  .news-card.warn::before { background: var(--warn); }
+  .news-card.info::before { background: var(--accent-2); }
+  .news-meta {
+    display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
+    font-size: 12px; color: var(--dim); margin-top: 10px;
+  }
+  .pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 2px 9px; border-radius: 999px;
+    border: 1px solid var(--line); color: var(--muted);
+    font-size: 11px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase;
+  }
+  .pill.crit { color: #f1bdfb; border-color: rgba(176,75,209,.45); background: rgba(176,75,209,.10); }
+  .pill.hot  { color: #ffc4c4; border-color: rgba(225,90,90,.4);  background: rgba(225,90,90,.08); }
+  .pill.warn { color: #ffd99a; border-color: rgba(224,168,87,.4); background: rgba(224,168,87,.08); }
+  .pill.info { color: #cfe0ff; border-color: rgba(122,162,247,.4); background: rgba(122,162,247,.08); }
+  .score {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 2px 9px; border-radius: 999px;
+    background: rgba(255,255,255,.04); border: 1px solid var(--line);
+    font-family: ui-monospace, monospace; font-size: 11px; color: var(--text);
+  }
+  .score b { color: var(--accent); }
+
+  /* ── Claude Code ─────────────────────────────────────────── */
+  .cc-grid { grid-template-columns: 1.2fr .8fr; }
+  @media (max-width: 980px) { .cc-grid { grid-template-columns: 1fr; } }
+  .release {
+    display: flex; align-items: flex-start; gap: 12px; padding: 10px 0;
+    border-bottom: 1px dashed var(--line);
+  }
+  .release:last-child { border-bottom: none; }
+  .release .ver {
+    flex: 0 0 auto; min-width: 76px;
+    font-family: ui-monospace, monospace; font-size: 12.5px;
+    color: var(--accent); font-weight: 600;
+  }
+  .release .when { flex: 0 0 78px; color: var(--dim); font-size: 12px; font-family: ui-monospace, monospace; }
+  .release .what { color: var(--text); font-size: 13.5px; }
+  .release .what em { color: var(--muted); font-style: normal; }
+  .release .what strong { color: var(--text); }
+  .badge { display: inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .04em; }
+  .badge.feat { color: #b9efcb; background: rgba(110,195,139,.12); border: 1px solid rgba(110,195,139,.3); }
+  .badge.sec  { color: #ffc4c4; background: rgba(225,90,90,.12);  border: 1px solid rgba(225,90,90,.35); }
+  .badge.fix  { color: #ffd99a; background: rgba(224,168,87,.12); border: 1px solid rgba(224,168,87,.3); }
+  .src-card .links { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
+  .src-card .links a {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 8px 10px; border-radius: 8px;
+    border: 1px solid var(--line); background: rgba(255,255,255,.02);
+    color: var(--text); font-size: 13.5px;
+    transition: background .12s ease, border-color .12s ease;
+  }
+  .src-card .links a:hover { background: rgba(122,162,247,.06); border-color: rgba(122,162,247,.4); text-decoration: none; }
+  .src-card .links a .arrow { color: var(--dim); font-size: 12px; }
+
+  /* ── Snapshot banner (archive only) ──────────────────────── */
+  .snap-banner {
+    display: none;
+    background: rgba(195,154,74,.10);
+    border: 1px solid rgba(195,154,74,.3);
+    border-radius: 10px; padding: 10px 14px; margin-bottom: 18px;
+    color: var(--accent); font-size: 13px;
+    align-items: center; justify-content: space-between; gap: 12px;
+  }
+  .snap-banner.show { display: flex; }
+
+  /* ── Footer ──────────────────────────────────────────────── */
+  footer {
+    margin-top: 60px; padding-top: 18px;
+    border-top: 1px solid var(--line);
+    color: var(--dim); font-size: 12px;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+  footer .mono { color: var(--muted); }
+</style>
+</head>
+<body data-snapshot-date="2026-11-11" data-snapshot-mode="archive">
+<div class="wrap">
+
+  <!-- ─── Top Nav ─── -->
+  <nav class="topnav">
+    <a href="/agentic-info-dashboard/">📊 Übersicht</a>
+    <a href="/agentic-info-dashboard/ai-news/" class="active">📰 AI News (Tagesbriefing)</a>
+    <a href="/agentic-info-dashboard/youtube/">▶ YouTube Hot</a>
+    <a href="/agentic-info-dashboard/whoiswho/">👥 Who is Who</a>
+    <a href="/agentic-info-dashboard/sources/">📚 Quellen</a>
+    <a href="/agentic-info-dashboard/it-services/">🏢 IT-Services-Radar</a>
+    <a href="/agentic-info-dashboard/regulation/">⚖ Regulatorik</a>
+    <a href="/agentic-info-dashboard/coding-tools/">⌘ Coding-Tools</a>
+    <a href="/agentic-info-dashboard/calendar/">📅 Kalender</a>
+    <a href="/agentic-info-dashboard/extensions/">🧩 Extensions</a>
+  </nav>
+
+  <!-- ─── Timeline strip ─── -->
+  <div class="timeline-bar" id="timeline">
+    <span class="label">Zeitstrahl</span>
+    <!-- JS füllt aus archive/manifest.json. Fallback statisch: -->
+    <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-11-07.html" data-date="2026-11-07">
+      <span class="dow">Sa</span><span class="date">07.11.</span>
+    </a>
+    <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-11-08.html" data-date="2026-11-08">
+      <span class="dow">So</span><span class="date">08.11.</span>
+    </a>
+    <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-11-09.html" data-date="2026-11-09">
+      <span class="dow">Mo</span><span class="date">09.11.</span>
+    </a>
+    <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-11-10.html" data-date="2026-11-10">
+      <span class="dow">Di</span><span class="date">10.11.</span>
+    </a>
+    <a class="tl-pill active" href="/agentic-info-dashboard/ai-news/" data-date="2026-11-11">
+      <span class="dow">Mi</span><span class="date">11.11.</span>
+    </a>
+  </div>
+
+  <!-- ─── Snapshot Banner (nur in Archiv-Versionen) ─── -->
+  <div class="snap-banner" id="snap-banner">
+    <span>📌 Du siehst einen archivierten Snapshot.</span>
+    <a href="/agentic-info-dashboard/ai-news/">← Zurück zum heutigen Briefing</a>
+  </div>
+
+  <!-- ─── Header ─── -->
+  <header class="main">
+    <div class="title">
+      <span class="dot" title="Live"></span>
+      <div>
+        <h1>Agentic AI · Tagesbriefing</h1>
+        <div class="subtitle">Was heute zählt — in 10 Minuten Lesezeit auf den Punkt.</div>
+      </div>
+    </div>
+    <div class="meta">
+      <div class="date" id="today">Sonntag, 1. November 2026</div>
+      <div class="tag">Snapshot · KW 46 / 2026</div>
+    </div>
+  </header>
+
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <!-- ════════════════ TAGESBRIEFING (Editorial) ═══════════════ -->
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <article class="briefing-wrap">
+
+    <header class="briefing-head">
+      <h2 class="kicker">Mittwoch · Agentic AI &amp; GenAI</h2>
+      <h1>Der Markt bekommt seinen Zettel — Anthropic bepreist den Billionen-IPO, OpenAI schließt 11 Milliarden</h1>
+      <div class="byline">
+        <span>✍️ Kuratiert &amp; analysiert</span>
+        <span class="dot-sep">·</span>
+        <span>~10 Min Lesezeit</span>
+        <span class="dot-sep">·</span>
+        <span id="byline-date">11. November 2026</span>
+      </div>
+      <p class="lede">
+        Gestern endete dieses Briefing mit der offenen Wette, ob <span data-person="dario-amodei">Dario Amodeis</span> <strong>Anthropic</strong> sein Nasdaq-Debüt in einen fallenden Markt hinein bepreist. Seit gestern Abend steht die Antwort in Zahlen: <strong>70 bis 78 Dollar je Aktie</strong>, Kürzel <strong>„ANT"</strong>, Handelsstart am <strong>19. November</strong> — bis zu rund <strong>1,4 Billionen Dollar</strong> voll verwässerte Bewertung. Und am selben Markt schloss <strong>OpenAI</strong> still die erste Tranche einer Runde: <strong>11 Milliarden Dollar</strong> bei <strong>1,25 Billionen</strong>. Zwei Labore, zwei Billionen-Preisschilder, vorgelegt einem Markt, der eben erst einen heißen Inflationsdruck und einen KI-Aktien-Ausverkauf verdaut hat. Die Capex-These wird nicht länger in Essays verhandelt — sie wird auf einem Orderbuch bepreist.
+      </p>
+    </header>
+
+    <div class="briefing-body">
+
+      <section>
+        <h3><span class="num">01</span>Anthropic legt die Zahlen hin — 70 bis 78 Dollar, Kürzel ANT, Handelsstart am 19. November</h3>
+        <p>Aus der Roadshow-Ankündigung von gestern ist über Nacht ein konkretes Angebot geworden. Anthropic will <strong>825 Millionen Aktien</strong> zu <strong>70 bis 78 Dollar</strong> platzieren, handelt künftig unter dem Kürzel <strong>„ANT"</strong> an der Nasdaq, <strong>bepreist am 18. November</strong> und <strong>startet den Handel am 19.</strong> Am oberen Ende der Spanne läge der Bruttoerlös bei bis zu rund <strong>64 Milliarden Dollar</strong> — und die Bewertung bei bis zu etwa <strong>1,4 Billionen Dollar voll verwässert</strong> (auf Prospekt-Basis, ohne Optionen und Restricted Stock, eher knapp über eine Billion). Das ist der Rückzug von der einst kolportierten 2-Billionen-Marke, aber immer noch der teuerste Börsengang, den die Branche je versucht hat. Das Orderbuch sei in der angebotenen Spanne bereits gedeckt, berichtet CNBC unter Berufung auf Beteiligte.</p>
+        <p>Das eigentlich Aufschlussreiche steht abseits der Schlagzeile: <strong>AMD, Broadcom, Google, Micron, Microsoft, Nvidia und TSMC</strong> haben zugesagt, zum IPO-Preis Aktien für zusammen <strong>26 Milliarden Dollar</strong> zu zeichnen. Das sind exakt die Lieferanten, an die Anthropic seine mehrjährigen Compute- und Chip-Rechnungen zahlt — der Ring schließt sich sichtbar: Die Zulieferer finanzieren ihren eigenen Großkunden. Zusätzlich reserviert Anthropic rund <strong>20 Prozent</strong> der Aktien für Privatanleger und flankiert die Roadshow mit der üblichen Mission-Rhetorik (Krebs „innerhalb eines Jahrzehnts", 85 Prozent Bruttomarge, 900 Prozent Net Revenue Retention). Der Zeitpunkt ist undankbar: Ein heißer als erwartet ausgefallener Inflationsbericht trieb die Wall Street am selben Tag Richtung einer weiteren Zinsanhebung, und Großinvestoren raunten dem <em>Wall Street Journal</em>, die 1,5-Billionen-Erwartung müsse nach dem KI-Ausverkauf wohl noch sinken.</p>
+        <blockquote class="takeaway">
+          <strong>Was es bedeutet</strong>
+          Für uns: Die 26-Milliarden-Zeichnung durch die Chip- und Cloud-Lieferanten ist kein Beiwerk, sondern das Signal, das man im Kundengespräch lesen sollte — die KI-Infrastruktur finanziert ihre eigene Nachfrage, und das macht die Umsatz- und Bewertungszahlen zirkulärer, als sie wirken. Praktisch heißt das: Das Prospekt ist ein Lieferanten-Risiko-Dokument. Wer Anthropic-Modelle produktiv verbaut, sollte die mehrjährigen Compute-Verpflichtungen und die Abhängigkeit von wenigen Finanziers als Vendor-Risiko führen — und die Architektur zwischen Anbietern umschaltbar halten, egal wie die Erstnotiz am 19. ausgeht.
+        </blockquote>
+      </section>
+
+      <section>
+        <h3><span class="num">02</span>OpenAI zieht parallel — 11 Milliarden bei 1,25 Billionen, erste Tranche von bis zu 20</h3>
+        <p>Dass Anthropic nicht allein an die Kapitalmärkte geht, zeigte eine Meldung vom 6. November: <strong>OpenAI</strong> hat laut Bloomberg <strong>11 Milliarden Dollar</strong> als erste Tranche einer größeren Runde geschlossen, die das Unternehmen mit <strong>1,25 Billionen Dollar</strong> bewertet; die Runde könne auf bis zu <strong>20 Milliarden</strong> wachsen. Als Investoren gelten <strong>SoftBank</strong> und der emiratische Staatsfonds <strong>MGX</strong>. Auch hier ist die Richtung bezeichnend: Ursprünglich soll OpenAI mindestens 30 Milliarden bei rund 1,4 Billionen gesucht haben — gegenüber der 852-Milliarden-Bewertung aus der März-Runde ein Sprung, gegenüber der eigenen Zielmarke aber ein Rückzieher. OpenAI selbst äußert sich nicht.</p>
+        <p>Zwei Labore, zwei Billionen-Preisschilder, dieselbe Woche — das eine öffentlich über die Nasdaq, das andere privat über Staatsfonds, beide erkennbar vom Markt zum Nachjustieren gezwungen. Das ist die Normalisierung, die hinter der Euphorie läuft: Die Kapitalgeber zahlen weiter Rekordsummen, aber sie zahlen sie vorsichtiger und mit gestutzter Erwartung. Beide Häuser bleiben dabei strukturell kapitalhungrig; die Bewertungen hängen weniger am heutigen Umsatz als an der Annahme, dass sich die Compute-Verträge über Jahre bedienen lassen.</p>
+        <blockquote class="takeaway">
+          <strong>Was es bedeutet</strong>
+          Für uns: Wenn beide Frontier-Häuser gleichzeitig und zu gedämpften Konditionen Kapital aufnehmen, ist die praktische Lehre nicht Börsen-Gossip, sondern Beschaffungsstrategie. Die Verhandlungsmacht verschiebt sich: Ein kapitalhungriger Anbieter gibt im Enterprise-Deal eher nach. Mehr-Anbieter-Architektur bleibt die Versicherung — wer Agenten-Stacks zwischen Anthropic, OpenAI, Google und offenen Modellen umschaltbar baut, macht sich von der Frage unabhängig, welche Runde oder welche Erstnotiz glückt, und verhandelt nebenbei bessere Tarife.
+        </blockquote>
+      </section>
+
+      <section>
+        <h3><span class="num">03</span>Die Gegenrechnung aus der Fläche — nur 37 Prozent sehen einen EBIT-Effekt</h3>
+        <p>Während oben in Billionen gerechnet wird, liefert die Unternehmenswirklichkeit die Ernüchterung. Nur <strong>37 Prozent</strong> der Firmen schreiben ihren KI-Programmen einen positiven EBIT-Effekt zu — so die Zahl aus McKinseys <strong>Technology Trends Outlook 2026</strong>, die <strong>computerwoche</strong> aufgreift; agentische KI stecke noch in den Anfängen, der Nutzen werde erst wachsen, wenn die Technik reift und tiefer in die Unternehmenssoftware eingebettet ist. Eine parallele Erhebung, die <strong>t3n</strong> zitiert — die Telekom-AI-Agent-Studie 2026 unter 123 KI-affinen Entscheidern deutscher Firmen (50–2.500 Mitarbeiter) zu 13 Agenten-Use-Cases — dreht sich um genau die Fragen, die den EBIT-Effekt heute bremsen: Worauf dürfen Agenten zugreifen, was dürfen sie eigenständig ausführen, wann muss ein Mensch freigeben.</p>
+        <p>Das ist die eigentliche Spannung des Tages: eine Bewertungswelt, die sich in Billionen bemisst, und eine Betriebswelt, in der fast zwei Drittel der Firmen noch keinen harten Gewinnbeitrag nachweisen. Beides ist zugleich wahr — die Fähigkeit ist real und wächst, aber der Pfad von der Demo zum verbuchten Deckungsbeitrag läuft über Governance, Datenreife und sauber geschnittene Use-Cases, nicht über ein stärkeres Modell.</p>
+        <blockquote class="takeaway">
+          <strong>Was es bedeutet</strong>
+          Für uns: Die 37-Prozent-Lücke ist die Dienstleistungs-Chance in einem Satz. Nicht das nächste Modell schließt sie, sondern die unglamouröse Arbeit davor und danach: Use-Cases mit messbarem Gewinnbeitrag schneiden, Zugriffs- und Freigabe-Pfade definieren, Datenreife herstellen, Ergebnisse auf die P&L zurückrechnen. Wer Agenten-Projekte an einem EBIT-Versprechen aufhängt und es belegen kann, verkauft genau das, was die Studien als Mangelware ausweisen — und steht besser da als jeder, der nur Fähigkeit demonstriert.
+        </blockquote>
+      </section>
+
+      <section>
+        <h3><span class="num">04</span>Die Agenten-Schicht wird aufgekauft — Observability, CX und paralleles Coding wandern zu den Platzhirschen</h3>
+        <p>Unterhalb der großen Finanzgeschichte rollen die Incumbents die junge Agenten-Werkzeugschicht ein. <strong>CrowdStrike</strong> übernimmt <strong>Fiddler</strong> und zieht damit <strong>Observability für KI-Agenten</strong> in seine Falcon-Plattform — Monitoring, das bislang Spezialisten-Terrain war, wird Teil der Sicherheits-Suite. <strong>Five9</strong> kauft die KI-native Customer-Experience-Plattform <strong>Level AI</strong> für rund <strong>325 Millionen Dollar</strong> und verankert Agenten im Contact-Center. Und <strong>Meta</strong> übernimmt <strong>Conductor</strong>, ein Startup, mit dem sich mehrere KI-Coding-Agenten parallel ausführen lassen — ein direkter Griff nach der Orchestrierungs-Ebene des agentischen Programmierens.</p>
+        <p>Das Muster ist deutlicher als jede Einzelmeldung: Die Schicht aus Agenten-Monitoring, -Governance und -Orchestrierung, die vor einem Jahr noch das Revier unabhängiger Startups war, wird jetzt von Plattform-Anbietern konsolidiert. Für Käufer ist das zweischneidig — die Fähigkeiten landen in den großen Suiten (bequem, integriert), aber die Zahl eigenständiger, austauschbarer Werkzeuge schrumpft, und mit ihr der Preisdruck von unten.</p>
+        <blockquote class="takeaway">
+          <strong>Was es bedeutet</strong>
+          Für uns: Das Fenster für unabhängige Agenten-Tooling-Wetten schließt sich — wer heute eine Observability-, CX- oder Orchestrierungs-Komponente in Kundenlösungen einbaut, sollte prüfen, ob der Anbieter das nächste Übernahmeziel ist (Chance: er landet in einer Suite, die der Kunde ohnehin hat; Risiko: Roadmap und Preis ändern sich über Nacht). Die sichere Seite der Wette sind Plattformen, die die Konsolidierung überleben — und die eigene Fähigkeit, Agenten-Betrieb anbieterneutral zu integrieren, statt sich an ein einzelnes Tool zu ketten.
+        </blockquote>
+      </section>
+      <div class="briefing-end">
+        <strong>Was als Nächstes zu beobachten ist:</strong> Ob <strong>Anthropic am 18. November wie geplant bepreist und am 19. unter „ANT" den Handel aufnimmt</strong> — und wo in der 70-bis-78-Dollar-Spanne; das ist der direkte öffentliche Markt-Test der Capex-These. Ob <strong>OpenAIs Runde</strong> über die ersten 11 Milliarden hinaus Richtung 20 wächst und zu welcher finalen Bewertung. Die <strong>Nvidia-Quartalszahlen am 17. November</strong> (Q3 FY27) als harter Nachfrage-Test für die KI-Infrastruktur nach dem Ausverkauf — und als Lackmustest für die 26-Milliarden-Anker-Zeichnung der Lieferanten. Ob die <strong>Agenten-Tooling-M&amp;A</strong> (nach Fiddler, Level AI, Conductor) weitergeht. Und der Kalenderpunkt bleibt: bis zum <strong>2. Dezember</strong> müssen Bestands-Agentensysteme unter Artikel 50 des EU AI Act maschinenlesbar gekennzeichnet sein. Claude Code steht bei <code>v2.1.322</code>.
+      </div>
+
+    </div>
+
+  </article>
+
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <!-- ════════════════════ BREAKING NEWS ═══════════════════════ -->
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <section>
+    <div class="section-head">
+      <h2>⚡ Breaking News</h2>
+      <div class="rule"></div>
+      <div class="hint">LLM-Score 1–10 · letzte 7 Tage</div>
+    </div>
+
+    <div class="grid cols-3">
+
+      <article class="card news-card crit">
+        <div class="row">
+          <span class="pill crit">Marktdaten</span>
+          <span class="score">Score <b>9.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Anthropic bepreist den IPO: 70–78 $, Kürzel „ANT", Handelsstart 19.11., bis ~1,4 Bio. $</h3>
+        <p><strong>Anthropic</strong> setzt (10.11.) die Spanne für seinen Nasdaq-IPO: <strong>825 Mio. Aktien zu 70–78 $</strong>, Kürzel <strong>„ANT"</strong>, Bepreisung <strong>18.11.</strong>, Handelsstart <strong>19.11.</strong> Am oberen Ende bis zu ~<strong>64 Mrd. $</strong> Erlös und ~<strong>1,4 Bio. $</strong> voll verwässerte Bewertung (Prospekt-Basis knapp über 1 Bio.). <strong>AMD, Broadcom, Google, Micron, Microsoft, Nvidia, TSMC</strong> zeichnen für <strong>26 Mrd. $</strong> zum IPO-Preis; 20 % für Retail reserviert. Das Orderbuch sei bereits gedeckt (CNBC). Gegenwind: heißer Inflationsbericht, Zins-Angst, KI-Aktien-Ausverkauf.</p>
+        <div class="news-meta">
+          <span>📅 10.11.2026</span><span>·</span><span>🏢 Anthropic</span><span>·</span>
+          <a href="https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html" target="_blank" rel="noreferrer">cnbc.com</a>
+          <a href="https://www.nbcnews.com/business/corporations/anthropic-sets-modest-1-trillion-ipo-valuation-target-rcna608514" target="_blank" rel="noreferrer">nbcnews.com</a>
+        </div>
+      </article>
+
+      <article class="card news-card crit">
+        <div class="row">
+          <span class="pill crit">Marktdaten</span>
+          <span class="score">Score <b>8.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">OpenAI schließt 11 Mrd. $ bei 1,25 Bio. — erste Tranche von bis zu 20 Mrd.</h3>
+        <p><strong>OpenAI</strong> hat (gemeldet 6.11., Bloomberg) <strong>11 Mrd. $</strong> als erste Tranche einer Runde geschlossen, die das Unternehmen mit <strong>1,25 Bio. $</strong> bewertet; die Runde könne auf bis zu <strong>20 Mrd.</strong> wachsen. Als Investoren gelten <strong>SoftBank</strong> und <strong>MGX</strong>. Ursprünglich soll OpenAI ≥30 Mrd. bei ~1,4 Bio. gesucht haben — ein Sprung gegenüber 852 Mrd. (März), aber ein Rückzug von der eigenen Zielmarke. Beide Frontier-Häuser nehmen dieselbe Woche zu gedämpften Konditionen Kapital auf.</p>
+        <div class="news-meta">
+          <span>📅 06.11.2026</span><span>·</span><span>🏢 OpenAI</span><span>·</span>
+          <a href="https://gvwire.com/2026/11/06/openai-secures-11-billion-funding-at-1-25-trillion-valuation-bloomberg-news-reports/" target="_blank" rel="noreferrer">gvwire.com</a>
+          <a href="https://nairametrics.com/2026/11/07/openai-secures-11-billion-in-fresh-funding-at-1-25-trillion-valuation/" target="_blank" rel="noreferrer">nairametrics.com</a>
+        </div>
+      </article>
+
+      <article class="card news-card hot">
+        <div class="row">
+          <span class="pill hot">Forschung</span>
+          <span class="score">Score <b>6.5</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">McKinsey Tech Trends 2026: nur 37 % der Firmen sehen einen positiven EBIT-Effekt von KI</h3>
+        <p>Die Gegenrechnung zur Billionen-Euphorie: Laut McKinseys <strong>Technology Trends Outlook 2026</strong> (aufgegriffen von <strong>computerwoche</strong>) schreiben nur <strong>37 %</strong> der Firmen ihren KI-Programmen einen positiven EBIT-Effekt zu — agentische KI stecke noch in den Anfängen. Parallel fragt die <strong>Telekom-AI-Agent-Studie 2026</strong> (123 Entscheider dt. Firmen, 13 Use-Cases, via t3n) genau die bremsenden Punkte ab: Zugriff, eigenständige Ausführung, menschliche Freigabe. Der Weg von der Demo zum Deckungsbeitrag läuft über Governance, nicht über ein stärkeres Modell.</p>
+        <div class="news-meta">
+          <span>📅 07.11.2026</span><span>·</span><span>🏢 McKinsey / Telekom</span><span>·</span>
+          <a href="https://www.computerwoche.de/article/4225878/ki-agenten-viel-aufwand-noch-wenig-ertrag.html" target="_blank" rel="noreferrer">computerwoche.de</a>
+        </div>
+      </article>
+
+      <article class="card news-card hot">
+        <div class="row">
+          <span class="pill hot">M&amp;A</span>
+          <span class="score">Score <b>6.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">CrowdStrike kauft Fiddler — Agenten-Observability wandert in die Falcon-Suite</h3>
+        <p><strong>CrowdStrike</strong> übernimmt <strong>Fiddler</strong> und integriert damit <strong>Observability für KI-Agenten</strong> in seine Falcon-Plattform. Monitoring von Agenten-Verhalten, bisher Spezialisten-Terrain, wird Teil der Sicherheits-Suite — Teil eines Musters, in dem Incumbents die junge Agenten-Werkzeugschicht (Monitoring, Governance, Orchestrierung) einrollen. Für Käufer bequem und integriert, aber die Zahl unabhängiger, austauschbarer Tools schrumpft.</p>
+        <div class="news-meta">
+          <span>📅 06.11.2026</span><span>·</span><span>🏢 CrowdStrike</span><span>·</span>
+          <a href="https://aiagentsdirectory.com/news/ai-agents-news-brief-november-6-2026" target="_blank" rel="noreferrer">aiagentsdirectory.com</a>
+        </div>
+      </article>
+
+      <article class="card news-card info">
+        <div class="row">
+          <span class="pill info">M&amp;A</span>
+          <span class="score">Score <b>5.5</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Five9 übernimmt Level AI für ~325 Mio. $ — Agenten ins Contact-Center</h3>
+        <p><strong>Five9</strong> kauft die KI-native Customer-Experience-Plattform <strong>Level AI</strong> für rund <strong>325 Mio. $</strong> in bar und verankert agentische Automation im Contact-Center. Ein weiterer Beleg der Konsolidierung: Die CX-Agenten-Schicht wird von etablierten Plattform-Anbietern aufgekauft, statt sich als eigenständiger Markt zu halten.</p>
+        <div class="news-meta">
+          <span>📅 04.11.2026</span><span>·</span><span>🏢 Five9</span><span>·</span>
+          <a href="https://aiagentstore.ai/ai-agent-news/2026-november" target="_blank" rel="noreferrer">aiagentstore.ai</a>
+        </div>
+      </article>
+
+      <article class="card news-card info">
+        <div class="row">
+          <span class="pill info">Tooling</span>
+          <span class="score">Score <b>5.5</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Meta übernimmt Conductor — paralleles Ausführen mehrerer Coding-Agenten</h3>
+        <p><strong>Meta</strong> kauft <strong>Conductor</strong>, ein Startup, mit dem Entwickler <strong>mehrere KI-Coding-Agenten parallel</strong> laufen lassen — ein Griff nach der Orchestrierungs-Ebene des agentischen Programmierens. Zusammen mit CrowdStrike/Fiddler und Five9/Level AI zeigt sich das Muster der Woche: Die Agenten-Werkzeugschicht wird von den Platzhirschen konsolidiert.</p>
+        <div class="news-meta">
+          <span>📅 05.11.2026</span><span>·</span><span>🏢 Meta</span><span>·</span>
+          <a href="https://aiagentstore.ai/ai-agent-news/2026-november" target="_blank" rel="noreferrer">aiagentstore.ai</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <!-- ═════════════════════ CLAUDE CODE ═══════════════════════ -->
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <section>
+    <div class="section-head">
+      <h2>🛠 Claude Code · Releases &amp; Watch</h2>
+      <div class="rule"></div>
+      <div class="hint">Quelle: anthropics/claude-code · GitHub Releases</div>
+    </div>
+
+    <div class="grid cc-grid">
+
+      <article class="card">
+        <h3>Letzte Releases</h3>
+        <p>Aktuelle Version <code>v2.1.322</code> (10.11.) ergänzt den <strong>Fast-Mode auf Vertex</strong> (global, us, eu — mit Fallback auf Standard-Tempo, falls Vertex ihn verweigert). Das Highlight der Vorwoche steht in <code>v2.1.321</code> (09.11.): Claude Code führt <strong>Claude Fable 5.2</strong> (<code>claude-fable-5-2</code>) als neues <strong>Default-Fable-Modell</strong> ein — 1M Kontext, <strong>8/40 $ pro Mio. Token</strong>, 0,20 $/Mtok Cache-Reads; dazu kommt <code>--settings &lt;file&gt;</code> für <code>claude remote-control</code> (wendet eine Settings-Datei auf jede gestartete Session an) und ein Fix für MCP-OAuth-Requests. Das erklärt, warum die 5.2-Generation unmittelbar im Werkzeug verfügbar war. Davor war <code>v2.1.319</code> (06.11.) das für unbeaufsichtigte Läufe wie diesen wichtigste Release: <code>claude -p</code> im Auto-Modus <strong>beendet jetzt mit Exit 1 statt 0</strong>, wenn Aktionen mangels Safety-Check verweigert wurden (Text- und JSON-Output) — ein stiller Falsch-Erfolg ist damit behoben. Dazu <strong><code>permissions.denyInsteadOfPrompting</code></strong>, eine Auto-Modus-Umstellung ohne Klassifikator-Fallback bei abgeschalteter Telemetrie (<code>CLAUDE_CODE_AUTO_MODE_SERVER=0</code> hält ihn), MCP-Tasks im Terminal und harte <strong>Security-Fixes</strong> (Bash-Permission-Bypass via Environment-Präfix, <code>sed</code>-Check-Skip im Auto-Modus, Sandbox-Escape beim Worktree, <code>/rewind</code>-Symlink-Durchgriff). <code>v2.1.318</code> (04.11.) brachte Mod-Aktivierungs-Protokoll, <code>assume_role</code> auf <code>mantle</code>-Upstreams und eine <code>effort</code>-Option für Mods; <code>v2.1.317</code> (03.11.) ließ einen Check nachfragen, bevor ein Web-/Shell-Tool die Account-E-Mail ins Netz schickt, <code>/schedule</code> vor ungefragten Connectors warnen und <code>onFailure: "block"</code> für Agent-SDK-Hook-Callbacks blockieren; <code>v2.1.316</code> (31.10.) ergänzte <code>CLAUDE_CODE_DISABLE_ULTRATHINK</code>, pooled Group-Budgets und <code>CLAUDE_CODE_DISABLE_LOOPED_CROSS_CERT_DROP</code>. Die Linie bleibt: Modelle schnell verfügbar, dazu Governance, Sicherheit und Robustheit für genau die Oneshot- und Cron-Läufe, die dieses Briefing erzeugen.</p>
+
+        <div class="release">
+          <div class="ver">v2.1.322</div>
+          <div class="when">10.11.</div>
+          <div class="what">
+            <strong>Fast-Mode auf Vertex</strong> — schnellerer Antwort-Modus in den Vertex-Regionen global, us und eu, mit automatischem Fallback auf Standard-Tempo, falls Vertex ihn ablehnt
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.321</div>
+          <div class="when">09.11.</div>
+          <div class="what">
+            <strong>Fable 5.2 wird Default-Fable</strong> — <code>claude-fable-5-2</code> ist jetzt das Standard-Fable-Modell (1M Kontext, 8/40 $ je Mtok, 0,20 $/Mtok Cache-Reads) · <code>--settings &lt;file&gt;</code> für <code>claude remote-control</code> wendet eine Settings-Datei auf jede gestartete Session an (bei Änderung erst nach Neustart) · Fix für MCP-OAuth-Requests
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.319</div>
+          <div class="when">06.11.</div>
+          <div class="what">
+            <strong>Oneshot-Exit-Fix &amp; Security-Härtung</strong> — <code>claude -p</code> im Auto-Modus beendet jetzt mit Exit 1 statt 0, wenn Aktionen mangels Safety-Check verweigert wurden (Text/JSON) · neues <code>permissions.denyInsteadOfPrompting</code> · Auto-Modus ohne Telemetrie/Flags fragt nach oder verweigert statt Klassifikator-Fallback (<code>CLAUDE_CODE_AUTO_MODE_SERVER=0</code> hält ihn) · MCP-Tasks im Terminal · Security-Fixes: Bash-Permission-Bypass via Environment-Präfix, <code>sed</code>-Check-Skip im Auto-Modus, Sandbox-Escape beim Worktree, <code>/rewind</code>-Symlink-Durchgriff
+            <span class="badge sec">SECURITY</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.318</div>
+          <div class="when">04.11.</div>
+          <div class="what">
+            <strong>Mod-Aktivierung &amp; AWS-Rollen</strong> — Claude Code protokolliert jetzt die Antwort, wenn es fragt, ob eine in der Session geschriebene Mod aktiviert werden soll · <code>assume_role</code> auf <code>mantle</code>-Upstreams des Claude-Apps-Gateways (Rolle in einem anderen AWS-Konto, pro-Entwickler-Kostenzuordnung) · neue <code>effort</code>-Option für Mods
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.317</div>
+          <div class="when">03.11.</div>
+          <div class="what">
+            <strong>Privacy- &amp; Hook-Guardrails</strong> — neuer Check fragt nach, bevor ein Web-/Shell-Tool die Account-E-Mail-Adresse ins Netz schickt · <code>/schedule</code> warnt, wenn ein neuer Cloud-Task ungefragt Connectors erhält (inkl. Entfernen-Hinweis) · <code>onFailure: "block"</code> für Agent-SDK-Hook-Callbacks: ein fehlgeschlagener Callback blockiert die Aktion, statt sie durchzulassen
+            <span class="badge sec">SECURITY</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.316</div>
+          <div class="when">31.10.</div>
+          <div class="what">
+            <strong>Budget- &amp; Ultrathink-Schalter</strong> — <code>CLAUDE_CODE_DISABLE_ULTRATHINK</code> deaktiviert das <code>ultrathink</code>-Keyword · pooled Group-Budgets im Claude-Apps-Gateway: ein gemeinsames Monatsbudget über den Einzellimits einer Gruppe (<code>pooled_budget</code> in der Spend-Limits-Admin-API) · <code>CLAUDE_CODE_DISABLE_LOOPED_CROSS_CERT_DROP</code> behält System-Cross-Zertifikate
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <p style="margin-top: 14px;">
+          <a href="https://github.com/anthropics/claude-code/releases">→ Alle Releases auf GitHub</a><br/>
+          <a href="https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md">→ Vollständiger CHANGELOG.md</a>
+        </p>
+      </article>
+
+      <article class="card src-card">
+        <h3>Watch-List</h3>
+        <p>Worauf in den nächsten Releases zu achten ist:</p>
+        <ul>
+          <li><strong>Managed-Settings über die ganze Session (v2.1.312)</strong>: Org-Policy und Managed Settings werden nicht mehr nur zu Session-Beginn geladen — für lange Oneshot-/Cron-Läufe relevant, wenn sich Policies während des Laufs ändern; Verhalten an echten Timer-Läufen beobachten.</li>
+          <li><strong>Self-hosted-Runner-Hold (v2.1.311)</strong>: <code>--hold-idle-file</code>/<code>--max-hold-min</code> halten eine Idle-Session, solange der Host noch Prozesse meldet — prüfen, ob das die bekannten Idle-Exit-Symptome im Daily-Run entschärft.</li>
+          <li><strong>Monitor-Tool (v2.1.310)</strong>: neues Tool + Plugin-Monitore zur Beobachtung laufender Agenten-Prozesse (auch auf Bedrock/Vertex/Foundry) — für unbeaufsichtigte Läufe prüfen, welche Signale es liefert und wie es sich zu <code>safety_event</code> verhält.</li>
+          <li><strong><code>safety_event</code>-Telemetrie</strong>: das OTel-Event macht gestoppte/abgefragte Tool-Aufrufe sichtbar — ideal für Audit-Trails unbeaufsichtigter Läufe; Integration in bestehende OTel-Pipelines prüfen.</li>
+          <li><strong>API-Version 2026-10-21</strong>: <code>/claude-api api-version</code> automatisiert den Umzug — Breaking Changes der neuen Version gegen Produktions-Code abgleichen.</li>
+          <li><strong>Sandbox-Härtung (v2.1.309)</strong>: Shell-Startup-Dateien laufen nicht mehr außerhalb der Sandbox, <code>denyWrite</code> greift auch über Symlinks — für isolierte Oneshot-Läufe nach dem Upgrade nachprüfen, dass nichts unbeabsichtigt blockiert. <code>allowNestedUserNamespaces</code> nur dort aktivieren, wo Chromium/podman es wirklich brauchen.</li>
+          <li><strong>Retry-Watchdog-Feintuning</strong>: die neuen Usage-Limit-Recheck-Variablen betreffen genau Oneshot/Cron — Verhalten an echten Timer-Läufen beobachten.</li>
+          <li><strong>Haiku 5.5 als Default-Haiku</strong>: <code>claude-haiku-5-5</code> (1M Kontext, 0,10 $/0,50 $) — Kosten und Verhalten in echten Sessions beobachten; Modell-IDs in Produktion explizit pinnen.</li>
+        </ul>
+        <p style="margin-top:12px"><strong>Empfohlene Watch-Quellen:</strong></p>
+        <div class="links">
+          <a href="https://github.com/anthropics/claude-code/releases.atom"><span>📡 RSS · GitHub Releases</span><span class="arrow">→</span></a>
+          <a href="https://github.com/anthropics/claude-code/commits/main.atom"><span>📡 RSS · main-Branch Commits</span><span class="arrow">→</span></a>
+          <a href="https://docs.claude.com/en/docs/claude-code/overview"><span>📘 Offizielle Docs</span><span class="arrow">→</span></a>
+          <a href="https://www.anthropic.com/news"><span>📰 Anthropic News</span><span class="arrow">→</span></a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <footer>
+    <div>Snapshot · <span class="mono" id="generated">29. Oktober 2026</span></div>
+    <div>
+      <a href="/agentic-info-dashboard/sources/">📚 Quellen-Sammlung</a> ·
+      <a href="/agentic-info-dashboard/">📊 Übersicht</a>
+    </div>
+  </footer>
+
+</div>
+
+<script src="/agentic-info-dashboard/_shared/people.js" defer></script>
+<script>
+  // ── Datum im Header lokalisieren ──────────────────────────
+  const SNAPSHOT_DATE = document.body.dataset.snapshotDate; // YYYY-MM-DD
+  const fmtLong = new Intl.DateTimeFormat('de-DE', {
+    weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'
+  });
+  if (SNAPSHOT_DATE) {
+    const d = new Date(SNAPSHOT_DATE);
+    document.getElementById('today').textContent = fmtLong.format(d);
+    document.getElementById('byline-date').textContent = fmtLong.format(d);
+    document.getElementById('generated').textContent = fmtLong.format(d);
+  }
+
+  // ── Timeline aus manifest.json bauen ──────────────────────
+  (async () => {
+    try {
+      const res = await fetch('/agentic-info-dashboard/ai-news/archive/manifest.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error('manifest not found');
+      const data = await res.json();
+      const snapshots = (data.snapshots || []).sort((a, b) => b.date.localeCompare(a.date));
+      if (!snapshots.length) return;
+
+      const bar = document.getElementById('timeline');
+      // Bestehende Pills (Fallback) entfernen, label behalten
+      bar.querySelectorAll('.tl-pill').forEach(p => p.remove());
+
+      const fmtPill = new Intl.DateTimeFormat('de-DE', { weekday: 'short' });
+      for (const s of snapshots) {
+        const d = new Date(s.date);
+        const dow = fmtPill.format(d).replace('.', '');
+        const dd = String(d.getDate()).padStart(2, '0');
+        const mm = String(d.getMonth() + 1).padStart(2, '0');
+        const a = document.createElement('a');
+        a.className = 'tl-pill';
+        a.dataset.date = s.date;
+        a.href = s.url;
+        a.title = s.summary || '';
+        a.innerHTML = `<span class="dow">${dow}</span><span class="date">${dd}.${mm}.</span>`;
+        if (s.date === SNAPSHOT_DATE) a.classList.add('active');
+        bar.appendChild(a);
+      }
+    } catch (e) {
+      // Manifest fehlt oder Fehler — der Fallback im HTML bleibt sichtbar.
+    }
+  })();
+
+  // ── Snapshot-Banner bei Archiv-Versionen ──────────────────
+  if (document.body.dataset.snapshotMode === 'archive') {
+    document.getElementById('snap-banner').classList.add('show');
+  }
+
+  // ── Stale-Banner (nur Live-Version) ───────────────────────
+  // Briefing ≥ 2 Tage alt heißt: der tägliche Update-Loop steht. Rein
+  // clientseitig, damit die Warnung auch dann erscheint, wenn genau der
+  // Loop ausgefallen ist, der sonst neu deployen würde.
+  if (document.body.dataset.snapshotMode === 'live' && SNAPSHOT_DATE) {
+    const ageDays = Math.floor((Date.now() - new Date(SNAPSHOT_DATE + 'T12:00:00')) / 86400000);
+    if (ageDays >= 2) {
+      const b = document.getElementById('snap-banner');
+      b.innerHTML = '<span>⚠️ Dieses Briefing ist vom ' + fmtLong.format(new Date(SNAPSHOT_DATE)) +
+        ' — ' + ageDays + ' Tage alt. Der tägliche Update-Loop läuft gerade nicht.</span>';
+      b.classList.add('show');
+    }
+  }
+</script>
+</body>
+</html>

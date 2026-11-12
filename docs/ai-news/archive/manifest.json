@@ -483,9 +483,15 @@
     },
     {
       "date": "2026-11-11",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-11-11.html",
       "headline": "Der Markt bekommt seinen Zettel — Anthropic bepreist den Billionen-IPO, OpenAI schließt 11 Milliarden",
       "summary": "Anthropic setzt die IPO-Spanne: 825 Mio. Aktien zu 70-78 $, Nasdaq-Kürzel „ANT“, Bepreisung 18.11., Handelsstart 19.11., bis ~1,4 Bio. $ voll verwässert (Prospekt-Basis knapp über 1 Bio.) · AMD/Broadcom/Google/Micron/Microsoft/Nvidia/TSMC zeichnen 26 Mrd. $ zum IPO-Preis, 20 % für Retail, Orderbuch gedeckt — gegen heißen Inflationsbericht und KI-Aktien-Ausverkauf · parallel schließt OpenAI 11 Mrd. $ bei 1,25 Bio. (erste Tranche von bis zu 20 Mrd., SoftBank + MGX) · Gegenrechnung aus der Fläche: McKinsey Tech Trends 2026 — nur 37 % der Firmen sehen positiven EBIT-Effekt · Agenten-Tooling wird konsolidiert: CrowdStrike/Fiddler (Observability), Five9/Level AI (~325 Mio.), Meta/Conductor (paralleles Coding) · Claude Code v2.1.322"
+    },
+    {
+      "date": "2026-11-12",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Die Labs verkaufen die Fähigkeit als Arbeitsplatz — Gemini 4 Carbon, Claude greift Office an, Microsoft gibt nach",
+      "summary": "Google shippt Gemini 4 Carbon, sein stärkstes Modell: #1 auf CursorBench 4.0 / WANDR / AutomationBench, Cyber-Führung, /swarm-Multi-Agent-Preview in Antigravity — Einführungspreis 2/10 $ pro Mtok (ab 30.11. 4/20 $), enterprise-first · Anthropic kontert mit Claude Sheets & Whiteboards (Beta) und einem Call-Notetaker — ein Frontalangriff auf Office/Workspace; Microsoft-Aktie −3,5 % · OpenAI öffnet „Businesses in ChatGPT“ (verifizierte Profile, Business-Agents) und kauft Reiseplaner Odessia · Muster des Tages: Mit Bewertungen nach dem Rout unter Druck wandert der Wettbewerb von der Benchmark zur Arbeitsoberfläche und zum Enterprise-Sitz · Claude Code v2.1.322"
     }
   ]
 }
