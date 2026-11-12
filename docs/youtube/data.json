@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-11T12:04:56+00:00",
+  "last_updated": "2026-11-12T12:03:13+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,29 @@
   ],
   "featured": [
     {
-      "video_id": "jDxKzlGLCas",
-      "title": "Building with GPT-Live and Image Generation | DevDay 2026",
+      "video_id": "vu3YlUMkvyg",
+      "title": "What Codex Unlocks for Holiday Extras",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-11-11T01:24:08+00:00",
-      "url": "https://www.youtube.com/watch?v=jDxKzlGLCas",
-      "thumbnail": "https://img.youtube.com/vi/jDxKzlGLCas/mqdefault.jpg",
-      "description": "See GPT-Live brainstorm, play games, and create images while coordinating work in the background. Learn to add voice to agents and design for delegation, latency, interruptions, and changing requests.",
+      "published": "2026-11-12T09:45:17+00:00",
+      "url": "https://www.youtube.com/watch?v=vu3YlUMkvyg",
+      "thumbnail": "https://img.youtube.com/vi/vu3YlUMkvyg/mqdefault.jpg",
+      "description": "What happens when the people who understand your customers can build the software to help them? At Holiday Extras, Codex is helping turn that ambition into reality—from rebuilding its main app in two weeks to responding faster to customer f",
+      "why": ""
+    },
+    {
+      "video_id": "uND6iY2qp_c",
+      "title": "AlphaGenome 2: Teaching AI to read the entire human genome",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_name": "Google DeepMind",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-11T18:00:31+00:00",
+      "url": "https://www.youtube.com/watch?v=uND6iY2qp_c",
+      "thumbnail": "https://img.youtube.com/vi/uND6iY2qp_c/mqdefault.jpg",
+      "description": "98% of human DNA doesn't build proteins—it controls how our cells work, and holds vital clues to why diseases happen and why 90% of new drugs fail in clinical trials. Understanding the genome at the molecular level is the key to deciphering",
       "why": ""
     },
     {
@@ -157,6 +170,186 @@
   ],
   "recent": [
     {
+      "video_id": "inwyawObxL4",
+      "title": "AlexNet Left My Old Book in the Dust (Simon Prince) #Shorts",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-12T11:28:24+00:00",
+      "url": "https://www.youtube.com/shorts/inwyawObxL4",
+      "thumbnail": "https://img.youtube.com/vi/inwyawObxL4/mqdefault.jpg",
+      "description": "In 2010 Simon Prince spent a sabbatical in Toronto writing a book that recast computer vision as probabilistic graphical models, with Alex Krizhevsky in the next room. He released it in 2012, a few months before AlexNet came out.\n\nFull conv"
+    },
+    {
+      "video_id": "10glKhm5LW4",
+      "title": "Lying Only Works Because We're Cooperative (Michael Tomasello)",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-12T11:27:47+00:00",
+      "url": "https://www.youtube.com/shorts/10glKhm5LW4",
+      "thumbnail": "https://img.youtube.com/vi/10glKhm5LW4/mqdefault.jpg",
+      "description": "Lying only works because we're cooperative. \"If I tell you it's raining outside, it would never occur to you that I'm lying about that.\" Michael Tomasello, developmental psychologist at Duke University, on why chimpanzees don't lie to one a"
+    },
+    {
+      "video_id": "vu3YlUMkvyg",
+      "title": "What Codex Unlocks for Holiday Extras",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-12T09:45:17+00:00",
+      "url": "https://www.youtube.com/watch?v=vu3YlUMkvyg",
+      "thumbnail": "https://img.youtube.com/vi/vu3YlUMkvyg/mqdefault.jpg",
+      "description": "What happens when the people who understand your customers can build the software to help them? At Holiday Extras, Codex is helping turn that ambition into reality—from rebuilding its main app in two weeks to responding faster to customer f"
+    },
+    {
+      "video_id": "TzZmDf60hIQ",
+      "title": "Let AI redesign your work",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-12T07:50:40+00:00",
+      "url": "https://www.youtube.com/shorts/TzZmDf60hIQ",
+      "thumbnail": "https://img.youtube.com/vi/TzZmDf60hIQ/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "0w2Crs8RzFE",
+      "title": "How Would You Make a Traffic Light Smart? (Michael Tomasello)",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-12T03:03:27+00:00",
+      "url": "https://www.youtube.com/shorts/0w2Crs8RzFE",
+      "thumbnail": "https://img.youtube.com/vi/0w2Crs8RzFE/mqdefault.jpg",
+      "description": "How would you make a traffic light smart? Michael Tomasello, developmental psychologist at Duke University, on why there's only one solution: perception, a goal, and a decision-making mechanism that acts to make the world conform to that go"
+    },
+    {
+      "video_id": "TiEut-ZUwxs",
+      "title": "Humans Created Languages (Michael Tomasello)",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-12T03:03:17+00:00",
+      "url": "https://www.youtube.com/shorts/TiEut-ZUwxs",
+      "thumbnail": "https://img.youtube.com/vi/TiEut-ZUwxs/mqdefault.jpg",
+      "description": "Humans didn't just learn language, we created it. Michael Tomasello, developmental psychologist at Duke University, on studies where children cut off from talking invent new gestures and turn them into shared conventions, and why large lang"
+    },
+    {
+      "video_id": "wyLcJ5kHu_4",
+      "title": "It Was Fred That Broke the Window (Michael Tomasello)",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-12T03:03:06+00:00",
+      "url": "https://www.youtube.com/shorts/wyLcJ5kHu_4",
+      "thumbnail": "https://img.youtube.com/vi/wyLcJ5kHu_4/mqdefault.jpg",
+      "description": "Why say \"It was Fred that broke the window\" instead of \"Fred broke the window\"? Michael Tomasello, developmental psychologist at Duke University, on how grammatical constructions such as the cleft and the passive are conventions we created "
+    },
+    {
+      "video_id": "LFzBzzHZESE",
+      "title": "AMA with me and the team!",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-11T22:52:54+00:00",
+      "url": "https://www.youtube.com/watch?v=LFzBzzHZESE",
+      "thumbnail": "https://img.youtube.com/vi/LFzBzzHZESE/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "5beqvCwiO_Y",
+      "title": "3 Ways to Improve Cognitive Performance",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-11T21:30:11+00:00",
+      "url": "https://www.youtube.com/shorts/5beqvCwiO_Y",
+      "thumbnail": "https://img.youtube.com/vi/5beqvCwiO_Y/mqdefault.jpg",
+      "description": "Andrew Huberman, Stanford neuroscientist and host of the Huberman Lab podcast, on the first habit he'd give founders for cognitive performance.\n\nHuberman is an associate professor of neurobiology at Stanford School of Medicine and launched "
+    },
+    {
+      "video_id": "NS220dAaRMo",
+      "title": "How to request and enable Daybreak Blue",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-11T21:10:28+00:00",
+      "url": "https://www.youtube.com/watch?v=NS220dAaRMo",
+      "thumbnail": "https://img.youtube.com/vi/NS220dAaRMo/mqdefault.jpg",
+      "description": "Learn how to request access to Daybreak Blue and enable it for your workspace and API organization. This walkthrough covers business verification, workspace permissions, role-based access controls, and confirming access in Codex. You’ll als"
+    },
+    {
+      "video_id": "vdBDMj2UhDg",
+      "title": "How to enable PR security reviews with Codex Security",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-11T21:10:24+00:00",
+      "url": "https://www.youtube.com/watch?v=vdBDMj2UhDg",
+      "thumbnail": "https://img.youtube.com/vi/vdBDMj2UhDg/mqdefault.jpg",
+      "description": "Bring security reviews into your pull request workflow with Codex Security. Learn how to check your GitHub connection, request a review, work through a fix, and review the change again. Then configure automatic reviews for your repository, "
+    },
+    {
+      "video_id": "CrrpfvbNyMw",
+      "title": "ChatGPT Images: Three Ways to Get Started",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-11T21:10:10+00:00",
+      "url": "https://www.youtube.com/watch?v=CrrpfvbNyMw",
+      "thumbnail": "https://img.youtube.com/vi/CrrpfvbNyMw/mqdefault.jpg",
+      "description": "ChatGPT Images lets you create new images and edit existing images directly inside ChatGPT. Turn plain-language prompts into original images, explore different visual directions.\n\nIn this video, learn three ways to get started: creating an "
+    },
+    {
+      "video_id": "hUhr0JiVZZs",
+      "title": "How to run your first Codex Security scan",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-11T21:10:05+00:00",
+      "url": "https://www.youtube.com/watch?v=hUhr0JiVZZs",
+      "thumbnail": "https://img.youtube.com/vi/hUhr0JiVZZs/mqdefault.jpg",
+      "description": "Get started with Codex Security, from installing the plugin to running your first scan. Learn how to select a repository, add context, review findings, and generate a patch. Then follow the fix into GitHub and see how to use the CLI to brin"
+    },
+    {
+      "video_id": "uND6iY2qp_c",
+      "title": "AlphaGenome 2: Teaching AI to read the entire human genome",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_name": "Google DeepMind",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-11T18:00:31+00:00",
+      "url": "https://www.youtube.com/watch?v=uND6iY2qp_c",
+      "thumbnail": "https://img.youtube.com/vi/uND6iY2qp_c/mqdefault.jpg",
+      "description": "98% of human DNA doesn't build proteins—it controls how our cells work, and holds vital clues to why diseases happen and why 90% of new drugs fail in clinical trials. Understanding the genome at the molecular level is the key to deciphering"
+    },
+    {
+      "video_id": "LI3lxzHfRrU",
+      "title": "Mike Volpi on Why AI Infrastructure Will Outlast the Hype Cycle",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-11T15:30:22+00:00",
+      "url": "https://www.youtube.com/watch?v=LI3lxzHfRrU",
+      "thumbnail": "https://img.youtube.com/vi/LI3lxzHfRrU/mqdefault.jpg",
+      "description": "The internet boom built bandwidth. The AI boom is building intelligence. Mike Volpi, who helped shape Cisco’s strategy during the internet buildout, asks what that era can teach us about this one.\n\nMike joins a16z’s Raghu Raghuram and Guido"
+    },
+    {
       "video_id": "FCmLuTENOp0",
       "title": "Gemini Carbon, NVIDIA CEO AFFAIR, Fable 5.2, Meta Muse Ember, GPT Image 2.6, Minimax H3: AI NEWS",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
@@ -181,30 +374,6 @@
       "description": "Learn More: https://bit.ly/4j2WLq8\n\nTabular foundation models use in-context learning to make predictions on new datasets without training a model from scratch. In this short course, built in partnership with Prior Labs and taught by Frank "
     },
     {
-      "video_id": "qD3FrUgkVII",
-      "title": "Claude's \"Clean-Room\" Compiler Copied LLVM's Mistakes (Jeremy Howard)",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-11T08:21:36+00:00",
-      "url": "https://www.youtube.com/shorts/qD3FrUgkVII",
-      "thumbnail": "https://img.youtube.com/vi/qD3FrUgkVII/mqdefault.jpg",
-      "description": "Jeremy Howard, co-founder of fast.ai and Answer.AI, on Anthropic's \"clean-room\" C compiler written by Claude. Chris Lattner's LLVM, the most widely used foundation for compilers, is in the training data many times over, so converting it to "
-    },
-    {
-      "video_id": "WyHxyBrKhaQ",
-      "title": "Random Code Starts Copying Itself (Blaise Agüera y Arcas)",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-11T08:13:17+00:00",
-      "url": "https://www.youtube.com/shorts/WyHxyBrKhaQ",
-      "thumbnail": "https://img.youtube.com/vi/WyHxyBrKhaQ/mqdefault.jpg",
-      "description": "Blaise Agüera y Arcas on the BFF experiment. Start with a soup of 1,024 tapes, each 64 random bytes. Pluck two at random, join them end to end, run them, pull them apart, put them back, and repeat. That's the entire experiment. Out of it co"
-    },
-    {
       "video_id": "ZBJV-hA-tLM",
       "title": "What software provides when AI bypasses the interface",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
@@ -227,66 +396,6 @@
       "url": "https://www.youtube.com/watch?v=il0dgxjpoC0",
       "thumbnail": "https://img.youtube.com/vi/il0dgxjpoC0/mqdefault.jpg",
       "description": "Learn about quantization in this livestream and get started with quantization using llama.cpp and vLLM.\nProgram: \n-  Introduction to Quantization, Merve Noyan, Hugging Face\n- Calibration based quantization, Colin Kealty (aka bartowski), Red"
-    },
-    {
-      "video_id": "jDxKzlGLCas",
-      "title": "Building with GPT-Live and Image Generation | DevDay 2026",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-11T01:24:08+00:00",
-      "url": "https://www.youtube.com/watch?v=jDxKzlGLCas",
-      "thumbnail": "https://img.youtube.com/vi/jDxKzlGLCas/mqdefault.jpg",
-      "description": "See GPT-Live brainstorm, play games, and create images while coordinating work in the background. Learn to add voice to agents and design for delegation, latency, interruptions, and changing requests."
-    },
-    {
-      "video_id": "pIW_8VyvCuQ",
-      "title": "Build What’s Next on the ChatGPT Platform with Plugins | DevDay 2026",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-11T01:24:08+00:00",
-      "url": "https://www.youtube.com/watch?v=pIW_8VyvCuQ",
-      "thumbnail": "https://img.youtube.com/vi/pIW_8VyvCuQ/mqdefault.jpg",
-      "description": "Bring your tools, knowledge, and interfaces into ChatGPT and Codex with plugin extensions. Through live demos, learn how to turn an idea into a useful experience, share it, and reach new users."
-    },
-    {
-      "video_id": "QRm7VNMnurA",
-      "title": "Sites and the Next Generation of Web Apps | DevDay 2026",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-11T01:24:07+00:00",
-      "url": "https://www.youtube.com/watch?v=QRm7VNMnurA",
-      "thumbnail": "https://img.youtube.com/vi/QRm7VNMnurA/mqdefault.jpg",
-      "description": "Turn an idea into an interactive web experience with Astra, ChatGPT Sites, and WebMCP. Learn how to build new kinds of interfaces alongside your colleagues and agents."
-    },
-    {
-      "video_id": "U1IVZy9FhVQ",
-      "title": "What Will You Build With Coding Agents That Don’t Quit? | DevDay 2026",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-11T01:24:07+00:00",
-      "url": "https://www.youtube.com/watch?v=U1IVZy9FhVQ",
-      "thumbnail": "https://img.youtube.com/vi/U1IVZy9FhVQ/mqdefault.jpg",
-      "description": "Learn from a Codex run that spent over 1,000 hours keeping builds and tests passing. Explore how to choose recurring tasks, improve feedback, manage token budgets, and decide when engineers should step in."
-    },
-    {
-      "video_id": "b7l_Dhe1h8M",
-      "title": "Harness-as-a-Service: Building with the Agents API | DevDay 2026",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-11T01:24:07+00:00",
-      "url": "https://www.youtube.com/watch?v=b7l_Dhe1h8M",
-      "thumbnail": "https://img.youtube.com/vi/b7l_Dhe1h8M/mqdefault.jpg",
-      "description": "Build with the Codex harness through the Agents API. Learn how to run agents in your environment, keep long-running tasks going, and understand which infrastructure OpenAI manages."
     },
     {
       "video_id": "L2acYRMzig8",
@@ -361,42 +470,6 @@
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.com/papers\n\n📝 The papers and sources are available here:\nMirrorCode: https://arxiv.org/abs/2606.30182\nREMEND: https://huggingface.co/udiboy1209/REMEND\nWebUI-95: https:"
     },
     {
-      "video_id": "N-onb680PEI",
-      "title": "Something Finally Was at Stake (Tom Froese)",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-10T05:33:49+00:00",
-      "url": "https://www.youtube.com/shorts/N-onb680PEI",
-      "thumbnail": "https://img.youtube.com/vi/N-onb680PEI/mqdefault.jpg",
-      "description": "When life began, something finally was at stake. Tom Froese on the origin of life as the moment values entered the universe: things stopped just happening and started doing things, and with doing comes success and failure.\n\nFull conversatio"
-    },
-    {
-      "video_id": "GCGaQj-FAo8",
-      "title": "I Told Taxi Drivers Not to Worry (Tom Froese)",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-10T05:15:00+00:00",
-      "url": "https://www.youtube.com/shorts/GCGaQj-FAo8",
-      "thumbnail": "https://img.youtube.com/vi/GCGaQj-FAo8/mqdefault.jpg",
-      "description": "Tom Froese used to tell taxi drivers not to worry about AI. He didn't see today's systems coming, but one thing he still doesn't see in them is initiative.\n\nFull conversation with Tom Froese: watch it now on our Patreon, https://www.patreon"
-    },
-    {
-      "video_id": "oW98tLm7suY",
-      "title": "Fable 5.2 just solved software",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-10T00:56:42+00:00",
-      "url": "https://www.youtube.com/shorts/oW98tLm7suY",
-      "thumbnail": "https://img.youtube.com/vi/oW98tLm7suY/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
       "video_id": "pf5tXJZM1Rw",
       "title": "OpenAI spent $1.2 million hacking Linux... and it was a bargain",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -407,18 +480,6 @@
       "url": "https://www.youtube.com/watch?v=pf5tXJZM1Rw",
       "thumbnail": "https://img.youtube.com/vi/pf5tXJZM1Rw/mqdefault.jpg",
       "description": "Greptile is the only AI code reviewer that actually runs your code. Try it for free: https://greptile.com/go/fireship\n\nA model you're not allowed to use just tore through the Linux kernel and came back with 948 root exploits... let's break "
-    },
-    {
-      "video_id": "0vNyVMDFdkg",
-      "title": "Fable 5.2 is ridiculous",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-09T19:02:56+00:00",
-      "url": "https://www.youtube.com/watch?v=0vNyVMDFdkg",
-      "thumbnail": "https://img.youtube.com/vi/0vNyVMDFdkg/mqdefault.jpg",
-      "description": "Check out Eight Sleep's Pod 6: https://www.eightsleep.com/matthewberman\nUse code 'MATTHEWBERMAN' for up to $200 off\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nCheck out my tests:\nPhoton Image Editor — https://c"
     },
     {
       "video_id": "9F9x3MufdMQ",
@@ -529,18 +590,6 @@
       "description": "How do you build a voice agent that keeps up with a conversation and handles the task reliably?\n\nLearn three ways to add voice to apps and agents with Ashwyn Sharma in Voice for AI Agents and Applications, our course with @VocalBridgeAI .\n\n"
     },
     {
-      "video_id": "9iAQdKxyiQc",
-      "title": "How AI Is Turning Figma’s Finance Team Into Builders",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-05T15:30:39+00:00",
-      "url": "https://www.youtube.com/watch?v=9iAQdKxyiQc",
-      "thumbnail": "https://img.youtube.com/vi/9iAQdKxyiQc/mqdefault.jpg",
-      "description": "AI is moving finance from reconciling what happened last month to helping decide what the business should do next. Figma CFO Praveer Melwani argues that the best finance teams are becoming builders themselves, automating repetitive work so "
-    },
-    {
       "video_id": "BmBw827GgFA",
       "title": "Mutex Explained - Computerphile",
       "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
@@ -553,18 +602,6 @@
       "description": "One of the most useful primitives in programming, but what is a mutual exclusion and how does it work? Matt Godbolt explains!\n\nComputerphile is supported by Jane Street. Learn more about them (and exciting career opportunities) at: https://"
     },
     {
-      "video_id": "dSiTwPl0t1U",
-      "title": "The New AI Agents That Shop, Plan, and Gossip",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-04T15:30:22+00:00",
-      "url": "https://www.youtube.com/watch?v=dSiTwPl0t1U",
-      "thumbnail": "https://img.youtube.com/vi/dSiTwPl0t1U/mqdefault.jpg",
-      "description": "Will we have one AI assistant that does everything, or an entire network of agents that know different parts of our lives? David Pawlan, creator of Assistant Benchmark, returns with Anish Acharya and Josh Elman to take stock of how quickly "
-    },
-    {
       "video_id": "5__Fm2TnPcU",
       "title": "Stop guessing how to fix your agent",
       "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
@@ -575,18 +612,6 @@
       "url": "https://www.youtube.com/watch?v=5__Fm2TnPcU",
       "thumbnail": "https://img.youtube.com/vi/5__Fm2TnPcU/mqdefault.jpg",
       "description": "Learn More: https://bit.ly/4ikf9L0\n\nTraditional software tests confirm that your code is working, but fall short when it comes to testing agents. Evals allow you to measure an agent’s decisions and actions when its failures may not be obvio"
-    },
-    {
-      "video_id": "BwE9HfB5Rtw",
-      "title": "The Dream Chocolate That Stopped Being Real (Joscha Bach)",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-04T08:27:06+00:00",
-      "url": "https://www.youtube.com/shorts/BwE9HfB5Rtw",
-      "thumbnail": "https://img.youtube.com/vi/BwE9HfB5Rtw/mqdefault.jpg",
-      "description": "Joscha Bach on a dream he had when he was two or three. He was about to eat a chocolate with a very strong smell, and he woke up just before it reached his mouth. He still knew everything about the chocolate, but it was no longer real. So h"
     },
     {
       "video_id": "k2ruCf_z75I",
@@ -647,58 +672,10 @@
       "url": "https://www.youtube.com/watch?v=FczbSauVvjw",
       "thumbnail": "https://img.youtube.com/vi/FczbSauVvjw/mqdefault.jpg",
       "description": "The Science Behind the Open Cyber Frontier with Mistral Large 4\n\nBen Burtenshaw (Hugging Face) talks with Sagar Vaze and Pierre Stock from Mistral about Mistral Large 4, an open-weight model that is great for frontier cybersecurity work, am"
-    },
-    {
-      "video_id": "pryCaGv8wuo",
-      "title": "DeepSeek's New AI Is An Absolute Monster",
-      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
-      "channel_name": "Two Minute Papers",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-10-28T17:32:40+00:00",
-      "url": "https://www.youtube.com/watch?v=pryCaGv8wuo",
-      "thumbnail": "https://img.youtube.com/vi/pryCaGv8wuo/mqdefault.jpg",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 DeepSeek v4.1 Flash 1017 is available here:\nhttps://api-docs.deepseek.com/news/news261017/\n\nSources:\nhttps://x.com/marcthecreatorr/status/2111427716142571"
-    },
-    {
-      "video_id": "cI8IquVEyVY",
-      "title": "?PHP Problem? - Computerphile",
-      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
-      "channel_name": "Computerphile",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-10-28T16:23:55+00:00",
-      "url": "https://www.youtube.com/watch?v=cI8IquVEyVY",
-      "thumbnail": "https://img.youtube.com/vi/cI8IquVEyVY/mqdefault.jpg",
-      "description": "Two PHP Exploits hit the news last week. Dr Steve Bagley explains how dangerous they could be. Read about the chip competition on Jane Street’s blog: https://jane-st.co/ASIC-Competition-Computerphile2027 (channel sponsor)\n\nComputerphile is "
-    },
-    {
-      "video_id": "p1jhV6LlbFY",
-      "title": "Join Andrew Ng at AI Dev NYC for two days of technical sessions and workshops.",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-10-28T15:00:09+00:00",
-      "url": "https://www.youtube.com/watch?v=p1jhV6LlbFY",
-      "thumbnail": "https://img.youtube.com/vi/p1jhV6LlbFY/mqdefault.jpg",
-      "description": "What AI engineering skills will you build next?\nJoin Andrew Ng at AI Dev NYC for two days of technical sessions and workshops on:\n🧠Knowledge graphs: GraphRAG and building graphs from your own data\n💾Agent memory: giving agents memory that pe"
-    },
-    {
-      "video_id": "nEaJMdM1djM",
-      "title": "Did the AI bubble just pop?",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-10-28T13:31:29+00:00",
-      "url": "https://www.youtube.com/watch?v=nEaJMdM1djM",
-      "thumbnail": "https://img.youtube.com/vi/nEaJMdM1djM/mqdefault.jpg",
-      "description": "Try Hyperagent for free, or sign in with ChatGPT to get more usage from your existing plan: https://www.hyperagent.com/login?utm_source=youtube&utm_medium=influencer&utm_campaign=FIRESHIP\n\nAre we cooked chat?\n\nWant more Fireship?\n\n🗞️ Newsle"
     }
   ],
   "stats": {
-    "total_videos": 45,
+    "total_videos": 42,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
