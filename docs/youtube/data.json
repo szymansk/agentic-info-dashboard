@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-12T12:03:13+00:00",
+  "last_updated": "2026-11-13T12:04:41+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,16 @@
   ],
   "featured": [
     {
-      "video_id": "vu3YlUMkvyg",
-      "title": "What Codex Unlocks for Holiday Extras",
+      "video_id": "YmxpxJZvm4M",
+      "title": "Cyber at the Frontier",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-11-12T09:45:17+00:00",
-      "url": "https://www.youtube.com/watch?v=vu3YlUMkvyg",
-      "thumbnail": "https://img.youtube.com/vi/vu3YlUMkvyg/mqdefault.jpg",
-      "description": "What happens when the people who understand your customers can build the software to help them? At Holiday Extras, Codex is helping turn that ambition into reality—from rebuilding its main app in two weeks to responding faster to customer f",
+      "published": "2026-11-12T22:37:14+00:00",
+      "url": "https://www.youtube.com/watch?v=YmxpxJZvm4M",
+      "thumbnail": "https://img.youtube.com/vi/YmxpxJZvm4M/mqdefault.jpg",
+      "description": "A live keynote featuring OpenAI's latest cyber announcements.",
       "why": ""
     },
     {
@@ -143,7 +143,7 @@
     },
     {
       "video_id": "2hJkprFnzhY",
-      "title": "Ukraine War: Putin, Zelenskyy, Trump, Drones and the Future of Warfare | Lex Fridman Podcast #504",
+      "title": "Russia-Ukraine War: Putin, Zelenskyy, Trump and the Future of Warfare | Lex Fridman Podcast #504",
       "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
       "channel_name": "Lex Fridman",
       "category": "podcast",
@@ -169,6 +169,126 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "yVaVR2Ywfik",
+      "title": "Who controls access to AI?",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-13T02:45:18+00:00",
+      "url": "https://www.youtube.com/shorts/yVaVR2Ywfik",
+      "thumbnail": "https://img.youtube.com/vi/yVaVR2Ywfik/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "YmxpxJZvm4M",
+      "title": "Cyber at the Frontier",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-12T22:37:14+00:00",
+      "url": "https://www.youtube.com/watch?v=YmxpxJZvm4M",
+      "thumbnail": "https://img.youtube.com/vi/YmxpxJZvm4M/mqdefault.jpg",
+      "description": "A live keynote featuring OpenAI's latest cyber announcements."
+    },
+    {
+      "video_id": "Sjdvu4nHfDk",
+      "title": "Anthropic Researcher explains how to train LLMs",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-12T22:09:15+00:00",
+      "url": "https://www.youtube.com/watch?v=Sjdvu4nHfDk",
+      "thumbnail": "https://img.youtube.com/vi/Sjdvu4nHfDk/mqdefault.jpg",
+      "description": "Check out Jeremy on X: https://x.com/jeremyberman\n\nFrontier Pass members saw this video first! https://forwardfuture.com/frontier-pass\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/m"
+    },
+    {
+      "video_id": "SOwUWPtXQ9I",
+      "title": "Jensen Huang just pulled out of Nvidia...",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-11-12T21:17:10+00:00",
+      "url": "https://www.youtube.com/watch?v=SOwUWPtXQ9I",
+      "thumbnail": "https://img.youtube.com/vi/SOwUWPtXQ9I/mqdefault.jpg",
+      "description": "Manufact is the easiest way to build and deploy your MCP. Get $100 in free credits: https://manufact.com/fireship\n\nJensen Huang just resigned as Nvidia’s CEO four days after admitting to an affair with a suspected Chinese spy whose tiny Sin"
+    },
+    {
+      "video_id": "Xk96rASVKh0",
+      "title": "How to find the next billion-dollar game.",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-12T20:00:23+00:00",
+      "url": "https://www.youtube.com/shorts/Xk96rASVKh0",
+      "thumbnail": "https://img.youtube.com/vi/Xk96rASVKh0/mqdefault.jpg",
+      "description": "Jonathan Lai, General Partner at a16z, on why some of the biggest games in the industry started as mods of other games.\n\nThe PUBG example traces back to Brendan Greene, known online as PlayerUnknown. He built a battle royale mod on top of D"
+    },
+    {
+      "video_id": "G11-Vmw7-PQ",
+      "title": "Cheaper AI can lead to more spending",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-12T18:01:24+00:00",
+      "url": "https://www.youtube.com/shorts/G11-Vmw7-PQ",
+      "thumbnail": "https://img.youtube.com/vi/G11-Vmw7-PQ/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "j246dqfIJJg",
+      "title": "What could you build with voice? | Andrew Ng #deeplearningai #aiagents",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-12T16:00:37+00:00",
+      "url": "https://www.youtube.com/shorts/j246dqfIJJg",
+      "thumbnail": "https://img.youtube.com/vi/j246dqfIJJg/mqdefault.jpg",
+      "description": "The mouse brought point-and-click. Touchscreens opened up mobile apps. What can better voice interfaces make possible?\n\nStart building with Voice for AI Agents and Applications, our course with @VocalBridgeAI  taught by Ashwyn Sharma. You'l"
+    },
+    {
+      "video_id": "BHOw09O3ZsI",
+      "title": "Atomic Operations - Computerphile",
+      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
+      "channel_name": "Computerphile",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-11-12T14:59:29+00:00",
+      "url": "https://www.youtube.com/watch?v=BHOw09O3ZsI",
+      "thumbnail": "https://img.youtube.com/vi/BHOw09O3ZsI/mqdefault.jpg",
+      "description": "Operations that complete without interruption, known as 'atomic' operations are extremely useful and allow us to go about our business unimpeded. Matt Godbolt of 'Compiler Explorer' fame explains. \n\nComputerphile is supported by Jane Street"
+    },
+    {
+      "video_id": "HDRy6XmE2RQ",
+      "title": "How AI Could Bring Halo and Other Classic Games Back to Life",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-12T14:50:20+00:00",
+      "url": "https://www.youtube.com/watch?v=HDRy6XmE2RQ",
+      "thumbnail": "https://img.youtube.com/vi/HDRy6XmE2RQ/mqdefault.jpg",
+      "description": "AI is collapsing the distance between an idea and a playable game. What happens when almost anyone can build one?\n\nIn this episode, a16z General Partners Anish Acharya and Jonathan Lai discuss how AI is changing game development, from gener"
+    },
+    {
+      "video_id": "gPNiuyYirfw",
+      "title": "DeepMind’s AI Just Did The Impossible",
+      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+      "channel_name": "Two Minute Papers",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-11-12T13:41:41+00:00",
+      "url": "https://www.youtube.com/watch?v=gPNiuyYirfw",
+      "thumbnail": "https://img.youtube.com/vi/gPNiuyYirfw/mqdefault.jpg",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.com/papers\n\n📝 The DeepMind paper AlphaProof Code is available here:\nhttps://deepmind.google/blog/introducing-alphaproof-code/\nhttps://deepmind.google/documents/36/Form"
+    },
     {
       "video_id": "inwyawObxL4",
       "title": "AlexNet Left My Old Book in the Dust (Simon Prince) #Shorts",
@@ -314,18 +434,6 @@
       "description": "ChatGPT Images lets you create new images and edit existing images directly inside ChatGPT. Turn plain-language prompts into original images, explore different visual directions.\n\nIn this video, learn three ways to get started: creating an "
     },
     {
-      "video_id": "hUhr0JiVZZs",
-      "title": "How to run your first Codex Security scan",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-11T21:10:05+00:00",
-      "url": "https://www.youtube.com/watch?v=hUhr0JiVZZs",
-      "thumbnail": "https://img.youtube.com/vi/hUhr0JiVZZs/mqdefault.jpg",
-      "description": "Get started with Codex Security, from installing the plugin to running your first scan. Learn how to select a repository, add context, review findings, and generate a patch. Then follow the fix into GitHub and see how to use the CLI to brin"
-    },
-    {
       "video_id": "uND6iY2qp_c",
       "title": "AlphaGenome 2: Teaching AI to read the entire human genome",
       "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
@@ -350,18 +458,6 @@
       "description": "The internet boom built bandwidth. The AI boom is building intelligence. Mike Volpi, who helped shape Cisco’s strategy during the internet buildout, asks what that era can teach us about this one.\n\nMike joins a16z’s Raghu Raghuram and Guido"
     },
     {
-      "video_id": "FCmLuTENOp0",
-      "title": "Gemini Carbon, NVIDIA CEO AFFAIR, Fable 5.2, Meta Muse Ember, GPT Image 2.6, Minimax H3: AI NEWS",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-11T11:00:25+00:00",
-      "url": "https://www.youtube.com/watch?v=FCmLuTENOp0",
-      "thumbnail": "https://img.youtube.com/vi/FCmLuTENOp0/mqdefault.jpg",
-      "description": "Hire Viktor for your team: https://ref.viktor.com/mberman-yt\nUse code MATTHEWBERMAN100 for $100 in credits\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Futu"
-    },
-    {
       "video_id": "0NbLVdCZHF0",
       "title": "Tabular Foundation Models for Data Science Agents",
       "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
@@ -372,18 +468,6 @@
       "url": "https://www.youtube.com/watch?v=0NbLVdCZHF0",
       "thumbnail": "https://img.youtube.com/vi/0NbLVdCZHF0/mqdefault.jpg",
       "description": "Learn More: https://bit.ly/4j2WLq8\n\nTabular foundation models use in-context learning to make predictions on new datasets without training a model from scratch. In this short course, built in partnership with Prior Labs and taught by Frank "
-    },
-    {
-      "video_id": "ZBJV-hA-tLM",
-      "title": "What software provides when AI bypasses the interface",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-11T07:33:33+00:00",
-      "url": "https://www.youtube.com/shorts/ZBJV-hA-tLM",
-      "thumbnail": "https://img.youtube.com/vi/ZBJV-hA-tLM/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
     },
     {
       "video_id": "il0dgxjpoC0",
@@ -398,20 +482,8 @@
       "description": "Learn about quantization in this livestream and get started with quantization using llama.cpp and vLLM.\nProgram: \n-  Introduction to Quantization, Merve Noyan, Hugging Face\n- Calibration based quantization, Colin Kealty (aka bartowski), Red"
     },
     {
-      "video_id": "L2acYRMzig8",
-      "title": "AI made Box features obsolete before launch",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-10T23:57:13+00:00",
-      "url": "https://www.youtube.com/shorts/L2acYRMzig8",
-      "thumbnail": "https://img.youtube.com/vi/L2acYRMzig8/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
       "video_id": "2hJkprFnzhY",
-      "title": "Ukraine War: Putin, Zelenskyy, Trump, Drones and the Future of Warfare | Lex Fridman Podcast #504",
+      "title": "Russia-Ukraine War: Putin, Zelenskyy, Trump and the Future of Warfare | Lex Fridman Podcast #504",
       "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
       "channel_name": "Lex Fridman",
       "category": "podcast",
@@ -518,18 +590,6 @@
       "description": "Warp Factories is open infrastructure to build self-improving software factories. Get early access: https://warp.dev/fireship\n\nAn unnamed OpenAI model just wrote an algorithm that solves 3-SAT faster than exponential time, breaking a 27-yea"
     },
     {
-      "video_id": "y4BdOtm40SA",
-      "title": "Inside Salesforce’s Acquisition Strategy for the AI Era",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-06T15:30:09+00:00",
-      "url": "https://www.youtube.com/watch?v=y4BdOtm40SA",
-      "thumbnail": "https://img.youtube.com/vi/y4BdOtm40SA/mqdefault.jpg",
-      "description": "What makes a startup worth acquiring when software has never been easier to build? Salesforce’s John Somorjai says the answer goes well beyond technology: the best acquisitions can accelerate a product roadmap, bring in exceptional talent, "
-    },
-    {
       "video_id": "pkXcc6aKyGU",
       "title": "What you missed at Hugging Face Open Together",
       "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
@@ -564,18 +624,6 @@
       "url": "https://www.youtube.com/watch?v=XgC1QTs6A2U",
       "thumbnail": "https://img.youtube.com/vi/XgC1QTs6A2U/mqdefault.jpg",
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\nChapters:\n00:00 Intro\n02:40 Why Robots Are Hard\n08:16 The Perfect Data Diet\n16:05 Intelligence Density\n20:13 Building AI Worlds\n22:10 Learning From Failure\n"
-    },
-    {
-      "video_id": "x6wHXZXGruY",
-      "title": "Andrew Hubermans Best Advice He Ever Got",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-05T18:16:39+00:00",
-      "url": "https://www.youtube.com/shorts/x6wHXZXGruY",
-      "thumbnail": "https://img.youtube.com/vi/x6wHXZXGruY/mqdefault.jpg",
-      "description": ""
     },
     {
       "video_id": "QyXrlveEpxE",
@@ -660,22 +708,10 @@
       "url": "https://www.youtube.com/watch?v=NDgS__J1U-M",
       "thumbnail": "https://img.youtube.com/vi/NDgS__J1U-M/mqdefault.jpg",
       "description": "You actually have to work quite hard to set a private key to the number 4! - Dr Tim Muller takes us through the problems with 'randomly' assigning a 120 digit number to the value '4'\n\nComputerphile is supported by Jane Street. Learn more ab"
-    },
-    {
-      "video_id": "FczbSauVvjw",
-      "title": "Science Behind the Open Cyber Frontier with Mistral Large 4",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-10-29T15:15:17+00:00",
-      "url": "https://www.youtube.com/watch?v=FczbSauVvjw",
-      "thumbnail": "https://img.youtube.com/vi/FczbSauVvjw/mqdefault.jpg",
-      "description": "The Science Behind the Open Cyber Frontier with Mistral Large 4\n\nBen Burtenshaw (Hugging Face) talks with Sagar Vaze and Pierre Stock from Mistral about Mistral Large 4, an open-weight model that is great for frontier cybersecurity work, am"
     }
   ],
   "stats": {
-    "total_videos": 42,
+    "total_videos": 45,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
