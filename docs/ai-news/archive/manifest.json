@@ -489,9 +489,15 @@
     },
     {
       "date": "2026-11-12",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-11-12.html",
       "headline": "Die Labs verkaufen die Fähigkeit als Arbeitsplatz — Gemini 4 Carbon, Claude greift Office an, Microsoft gibt nach",
       "summary": "Google shippt Gemini 4 Carbon, sein stärkstes Modell: #1 auf CursorBench 4.0 / WANDR / AutomationBench, Cyber-Führung, /swarm-Multi-Agent-Preview in Antigravity — Einführungspreis 2/10 $ pro Mtok (ab 30.11. 4/20 $), enterprise-first · Anthropic kontert mit Claude Sheets & Whiteboards (Beta) und einem Call-Notetaker — ein Frontalangriff auf Office/Workspace; Microsoft-Aktie −3,5 % · OpenAI öffnet „Businesses in ChatGPT“ (verifizierte Profile, Business-Agents) und kauft Reiseplaner Odessia · Muster des Tages: Mit Bewertungen nach dem Rout unter Druck wandert der Wettbewerb von der Benchmark zur Arbeitsoberfläche und zum Enterprise-Sitz · Claude Code v2.1.322"
+    },
+    {
+      "date": "2026-11-13",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Die Klempnerarbeit der Agenten-Ökonomie — Security, Observability und Bezahlrails konsolidieren",
+      "summary": "M&A-Welle um Agenten-Infrastruktur: CrowdStrike kauft Fiddler (Agent-Observability), Meta übernimmt Conductor, Five9 greift nach Level AI, Palo Alto verhandelt Clutch · Visa Intelligent Commerce trennt legitime Shopping-Agenten von Bots · DeepSeek Super-Agent & Vercel agent-desktop · IPO-Woche: Anthropic-Pricing 18.11., Nvidia-Zahlen 17.11."
     }
   ]
 }
