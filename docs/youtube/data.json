@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-13T12:04:41+00:00",
+  "last_updated": "2026-11-14T05:18:16+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,16 @@
   ],
   "featured": [
     {
-      "video_id": "YmxpxJZvm4M",
-      "title": "Cyber at the Frontier",
+      "video_id": "ErOVIC-MGVA",
+      "title": "6 Underrated Ways to Use ChatGPT",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-11-12T22:37:14+00:00",
-      "url": "https://www.youtube.com/watch?v=YmxpxJZvm4M",
-      "thumbnail": "https://img.youtube.com/vi/YmxpxJZvm4M/mqdefault.jpg",
-      "description": "A live keynote featuring OpenAI's latest cyber announcements.",
+      "published": "2026-11-13T18:15:41+00:00",
+      "url": "https://www.youtube.com/shorts/ErOVIC-MGVA",
+      "thumbnail": "https://img.youtube.com/vi/ErOVIC-MGVA/mqdefault.jpg",
+      "description": "We asked 6 people for their most underrated way to use ChatGPT. Their answers covered personal style, everyday logistics, and stopping random subscription charges. What’s yours?",
       "why": ""
     },
     {
@@ -139,19 +139,6 @@
       "url": "https://www.youtube.com/watch?v=uND6iY2qp_c",
       "thumbnail": "https://img.youtube.com/vi/uND6iY2qp_c/mqdefault.jpg",
       "description": "98% of human DNA doesn't build proteins—it controls how our cells work, and holds vital clues to why diseases happen and why 90% of new drugs fail in clinical trials. Understanding the genome at the molecular level is the key to deciphering",
-      "why": ""
-    },
-    {
-      "video_id": "2hJkprFnzhY",
-      "title": "Russia-Ukraine War: Putin, Zelenskyy, Trump and the Future of Warfare | Lex Fridman Podcast #504",
-      "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
-      "channel_name": "Lex Fridman",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-10T23:52:20+00:00",
-      "url": "https://www.youtube.com/watch?v=2hJkprFnzhY",
-      "thumbnail": "https://img.youtube.com/vi/2hJkprFnzhY/mqdefault.jpg",
-      "description": "Preston Stewart is a West Point graduate and Afghanistan veteran who covers the Ukraine war extensively on his YouTube channel, his podcast called War and Conflict, and his newsletter called Defense Tech News. Michael Kofman is a world-clas",
       "why": ""
     },
     {
@@ -170,20 +157,44 @@
   ],
   "recent": [
     {
-      "video_id": "yVaVR2Ywfik",
-      "title": "Who controls access to AI?",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-13T02:45:18+00:00",
-      "url": "https://www.youtube.com/shorts/yVaVR2Ywfik",
-      "thumbnail": "https://img.youtube.com/vi/yVaVR2Ywfik/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+      "video_id": "ErOVIC-MGVA",
+      "title": "6 Underrated Ways to Use ChatGPT",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-13T18:15:41+00:00",
+      "url": "https://www.youtube.com/shorts/ErOVIC-MGVA",
+      "thumbnail": "https://img.youtube.com/vi/ErOVIC-MGVA/mqdefault.jpg",
+      "description": "We asked 6 people for their most underrated way to use ChatGPT. Their answers covered personal style, everyday logistics, and stopping random subscription charges. What’s yours?"
+    },
+    {
+      "video_id": "PkAmyub12K8",
+      "title": "How Mozilla uses GPT-6 Cyber to find and fix Firefox vulnerabilities",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-13T16:56:45+00:00",
+      "url": "https://www.youtube.com/watch?v=PkAmyub12K8",
+      "thumbnail": "https://img.youtube.com/vi/PkAmyub12K8/mqdefault.jpg",
+      "description": "Mozilla is combining decades of security engineering with AI agents to strengthen Firefox’s defenses.\n\nBrian Grinstead joins OpenAI’s Clint Gibler to discuss how the team prioritizes investigations, tests and verifies vulnerabilities, finds"
+    },
+    {
+      "video_id": "pfbfZKxUEDQ",
+      "title": "How Mozilla strengthens Firefox security with GPT-6 Cyber",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-13T16:38:23+00:00",
+      "url": "https://www.youtube.com/shorts/pfbfZKxUEDQ",
+      "thumbnail": "https://img.youtube.com/vi/pfbfZKxUEDQ/mqdefault.jpg",
+      "description": "Mozilla’s Brian Grinstead shares how early testing with GPT-6 Cyber identified new vulnerabilities and opportunities to strengthen Firefox’s defenses, helping the team work toward an ambitious goal: zero bugs.\n\nWatch the full conversation w"
     },
     {
       "video_id": "YmxpxJZvm4M",
-      "title": "Cyber at the Frontier",
+      "title": "Cyber at the Frontier: Introducing Daybreak Red Team & Daybreak Defense Factory",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
@@ -191,67 +202,7 @@
       "published": "2026-11-12T22:37:14+00:00",
       "url": "https://www.youtube.com/watch?v=YmxpxJZvm4M",
       "thumbnail": "https://img.youtube.com/vi/YmxpxJZvm4M/mqdefault.jpg",
-      "description": "A live keynote featuring OpenAI's latest cyber announcements."
-    },
-    {
-      "video_id": "Sjdvu4nHfDk",
-      "title": "Anthropic Researcher explains how to train LLMs",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-12T22:09:15+00:00",
-      "url": "https://www.youtube.com/watch?v=Sjdvu4nHfDk",
-      "thumbnail": "https://img.youtube.com/vi/Sjdvu4nHfDk/mqdefault.jpg",
-      "description": "Check out Jeremy on X: https://x.com/jeremyberman\n\nFrontier Pass members saw this video first! https://forwardfuture.com/frontier-pass\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/m"
-    },
-    {
-      "video_id": "SOwUWPtXQ9I",
-      "title": "Jensen Huang just pulled out of Nvidia...",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-11-12T21:17:10+00:00",
-      "url": "https://www.youtube.com/watch?v=SOwUWPtXQ9I",
-      "thumbnail": "https://img.youtube.com/vi/SOwUWPtXQ9I/mqdefault.jpg",
-      "description": "Manufact is the easiest way to build and deploy your MCP. Get $100 in free credits: https://manufact.com/fireship\n\nJensen Huang just resigned as Nvidia’s CEO four days after admitting to an affair with a suspected Chinese spy whose tiny Sin"
-    },
-    {
-      "video_id": "Xk96rASVKh0",
-      "title": "How to find the next billion-dollar game.",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-12T20:00:23+00:00",
-      "url": "https://www.youtube.com/shorts/Xk96rASVKh0",
-      "thumbnail": "https://img.youtube.com/vi/Xk96rASVKh0/mqdefault.jpg",
-      "description": "Jonathan Lai, General Partner at a16z, on why some of the biggest games in the industry started as mods of other games.\n\nThe PUBG example traces back to Brendan Greene, known online as PlayerUnknown. He built a battle royale mod on top of D"
-    },
-    {
-      "video_id": "G11-Vmw7-PQ",
-      "title": "Cheaper AI can lead to more spending",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-12T18:01:24+00:00",
-      "url": "https://www.youtube.com/shorts/G11-Vmw7-PQ",
-      "thumbnail": "https://img.youtube.com/vi/G11-Vmw7-PQ/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
-      "video_id": "j246dqfIJJg",
-      "title": "What could you build with voice? | Andrew Ng #deeplearningai #aiagents",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-12T16:00:37+00:00",
-      "url": "https://www.youtube.com/shorts/j246dqfIJJg",
-      "thumbnail": "https://img.youtube.com/vi/j246dqfIJJg/mqdefault.jpg",
-      "description": "The mouse brought point-and-click. Touchscreens opened up mobile apps. What can better voice interfaces make possible?\n\nStart building with Voice for AI Agents and Applications, our course with @VocalBridgeAI  taught by Ashwyn Sharma. You'l"
+      "description": "Greg Brockman, Nancy Wang, Fouad Matin, Clint Gibler, Alexander Thiemann, and Matt Boyle took the stage at Cyber at the Frontier, where OpenAI introduced two cybersecurity products under one unified Codex plugin called Daybreak:\n\nDaybreak D"
     },
     {
       "video_id": "BHOw09O3ZsI",
@@ -264,18 +215,6 @@
       "url": "https://www.youtube.com/watch?v=BHOw09O3ZsI",
       "thumbnail": "https://img.youtube.com/vi/BHOw09O3ZsI/mqdefault.jpg",
       "description": "Operations that complete without interruption, known as 'atomic' operations are extremely useful and allow us to go about our business unimpeded. Matt Godbolt of 'Compiler Explorer' fame explains. \n\nComputerphile is supported by Jane Street"
-    },
-    {
-      "video_id": "HDRy6XmE2RQ",
-      "title": "How AI Could Bring Halo and Other Classic Games Back to Life",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-12T14:50:20+00:00",
-      "url": "https://www.youtube.com/watch?v=HDRy6XmE2RQ",
-      "thumbnail": "https://img.youtube.com/vi/HDRy6XmE2RQ/mqdefault.jpg",
-      "description": "AI is collapsing the distance between an idea and a playable game. What happens when almost anyone can build one?\n\nIn this episode, a16z General Partners Anish Acharya and Jonathan Lai discuss how AI is changing game development, from gener"
     },
     {
       "video_id": "gPNiuyYirfw",
@@ -326,18 +265,6 @@
       "description": "What happens when the people who understand your customers can build the software to help them? At Holiday Extras, Codex is helping turn that ambition into reality—from rebuilding its main app in two weeks to responding faster to customer f"
     },
     {
-      "video_id": "TzZmDf60hIQ",
-      "title": "Let AI redesign your work",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-12T07:50:40+00:00",
-      "url": "https://www.youtube.com/shorts/TzZmDf60hIQ",
-      "thumbnail": "https://img.youtube.com/vi/TzZmDf60hIQ/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
       "video_id": "0w2Crs8RzFE",
       "title": "How Would You Make a Traffic Light Smart? (Michael Tomasello)",
       "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
@@ -374,66 +301,6 @@
       "description": "Why say \"It was Fred that broke the window\" instead of \"Fred broke the window\"? Michael Tomasello, developmental psychologist at Duke University, on how grammatical constructions such as the cleft and the passive are conventions we created "
     },
     {
-      "video_id": "LFzBzzHZESE",
-      "title": "AMA with me and the team!",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-11T22:52:54+00:00",
-      "url": "https://www.youtube.com/watch?v=LFzBzzHZESE",
-      "thumbnail": "https://img.youtube.com/vi/LFzBzzHZESE/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
-      "video_id": "5beqvCwiO_Y",
-      "title": "3 Ways to Improve Cognitive Performance",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-11T21:30:11+00:00",
-      "url": "https://www.youtube.com/shorts/5beqvCwiO_Y",
-      "thumbnail": "https://img.youtube.com/vi/5beqvCwiO_Y/mqdefault.jpg",
-      "description": "Andrew Huberman, Stanford neuroscientist and host of the Huberman Lab podcast, on the first habit he'd give founders for cognitive performance.\n\nHuberman is an associate professor of neurobiology at Stanford School of Medicine and launched "
-    },
-    {
-      "video_id": "NS220dAaRMo",
-      "title": "How to request and enable Daybreak Blue",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-11T21:10:28+00:00",
-      "url": "https://www.youtube.com/watch?v=NS220dAaRMo",
-      "thumbnail": "https://img.youtube.com/vi/NS220dAaRMo/mqdefault.jpg",
-      "description": "Learn how to request access to Daybreak Blue and enable it for your workspace and API organization. This walkthrough covers business verification, workspace permissions, role-based access controls, and confirming access in Codex. You’ll als"
-    },
-    {
-      "video_id": "vdBDMj2UhDg",
-      "title": "How to enable PR security reviews with Codex Security",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-11T21:10:24+00:00",
-      "url": "https://www.youtube.com/watch?v=vdBDMj2UhDg",
-      "thumbnail": "https://img.youtube.com/vi/vdBDMj2UhDg/mqdefault.jpg",
-      "description": "Bring security reviews into your pull request workflow with Codex Security. Learn how to check your GitHub connection, request a review, work through a fix, and review the change again. Then configure automatic reviews for your repository, "
-    },
-    {
-      "video_id": "CrrpfvbNyMw",
-      "title": "ChatGPT Images: Three Ways to Get Started",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-11T21:10:10+00:00",
-      "url": "https://www.youtube.com/watch?v=CrrpfvbNyMw",
-      "thumbnail": "https://img.youtube.com/vi/CrrpfvbNyMw/mqdefault.jpg",
-      "description": "ChatGPT Images lets you create new images and edit existing images directly inside ChatGPT. Turn plain-language prompts into original images, explore different visual directions.\n\nIn this video, learn three ways to get started: creating an "
-    },
-    {
       "video_id": "uND6iY2qp_c",
       "title": "AlphaGenome 2: Teaching AI to read the entire human genome",
       "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
@@ -444,54 +311,6 @@
       "url": "https://www.youtube.com/watch?v=uND6iY2qp_c",
       "thumbnail": "https://img.youtube.com/vi/uND6iY2qp_c/mqdefault.jpg",
       "description": "98% of human DNA doesn't build proteins—it controls how our cells work, and holds vital clues to why diseases happen and why 90% of new drugs fail in clinical trials. Understanding the genome at the molecular level is the key to deciphering"
-    },
-    {
-      "video_id": "LI3lxzHfRrU",
-      "title": "Mike Volpi on Why AI Infrastructure Will Outlast the Hype Cycle",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-11T15:30:22+00:00",
-      "url": "https://www.youtube.com/watch?v=LI3lxzHfRrU",
-      "thumbnail": "https://img.youtube.com/vi/LI3lxzHfRrU/mqdefault.jpg",
-      "description": "The internet boom built bandwidth. The AI boom is building intelligence. Mike Volpi, who helped shape Cisco’s strategy during the internet buildout, asks what that era can teach us about this one.\n\nMike joins a16z’s Raghu Raghuram and Guido"
-    },
-    {
-      "video_id": "0NbLVdCZHF0",
-      "title": "Tabular Foundation Models for Data Science Agents",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-11T11:00:19+00:00",
-      "url": "https://www.youtube.com/watch?v=0NbLVdCZHF0",
-      "thumbnail": "https://img.youtube.com/vi/0NbLVdCZHF0/mqdefault.jpg",
-      "description": "Learn More: https://bit.ly/4j2WLq8\n\nTabular foundation models use in-context learning to make predictions on new datasets without training a model from scratch. In this short course, built in partnership with Prior Labs and taught by Frank "
-    },
-    {
-      "video_id": "il0dgxjpoC0",
-      "title": "Local AI 301: Quantization",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-11-11T06:39:06+00:00",
-      "url": "https://www.youtube.com/watch?v=il0dgxjpoC0",
-      "thumbnail": "https://img.youtube.com/vi/il0dgxjpoC0/mqdefault.jpg",
-      "description": "Learn about quantization in this livestream and get started with quantization using llama.cpp and vLLM.\nProgram: \n-  Introduction to Quantization, Merve Noyan, Hugging Face\n- Calibration based quantization, Colin Kealty (aka bartowski), Red"
-    },
-    {
-      "video_id": "2hJkprFnzhY",
-      "title": "Russia-Ukraine War: Putin, Zelenskyy, Trump and the Future of Warfare | Lex Fridman Podcast #504",
-      "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
-      "channel_name": "Lex Fridman",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-10T23:52:20+00:00",
-      "url": "https://www.youtube.com/watch?v=2hJkprFnzhY",
-      "thumbnail": "https://img.youtube.com/vi/2hJkprFnzhY/mqdefault.jpg",
-      "description": "Preston Stewart is a West Point graduate and Afghanistan veteran who covers the Ukraine war extensively on his YouTube channel, his podcast called War and Conflict, and his newsletter called Defense Tech News. Michael Kofman is a world-clas"
     },
     {
       "video_id": "583ThJIqQ7k",
@@ -506,30 +325,6 @@
       "description": "I’ve read the full Fable 5.2 report at 264 pages, the 30 page METR RSI report, and tested Gemini Carbon and Fable 5.2 hundreds of times. There’s too much to cover in one video, but let’s explore everything from how fast AI is accelerating A"
     },
     {
-      "video_id": "1FurWDiK9A4",
-      "title": "Did Anthropic just save its $1 trillion IPO?",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-11-10T18:19:55+00:00",
-      "url": "https://www.youtube.com/watch?v=1FurWDiK9A4",
-      "thumbnail": "https://img.youtube.com/vi/1FurWDiK9A4/mqdefault.jpg",
-      "description": "Mux is the video API that translates audio and answers questions about your video. Get $50 in free credits: https://mux.com/fireship\n\nAnthropic just dropped Fable and Mythos 5.2 in the middle of a rocky IPO roadshow. Let's dive into what th"
-    },
-    {
-      "video_id": "s4lXP9IuHjk",
-      "title": "Why HubSpot’s Co-Founder Is Betting Against the SaaSpocalypse",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-10T15:30:23+00:00",
-      "url": "https://www.youtube.com/watch?v=s4lXP9IuHjk",
-      "thumbnail": "https://img.youtube.com/vi/s4lXP9IuHjk/mqdefault.jpg",
-      "description": "As frontier AI labs expand into applications, where should startups build? a16z Partner Joe Schmidt joins HubSpot co-founder and CTO Dharmesh Shah to explore why the software opportunity is growing, and how founders can stay off the “Yellow"
-    },
-    {
       "video_id": "vug73goPJaM",
       "title": "Is Software Over?",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -540,30 +335,6 @@
       "url": "https://www.youtube.com/watch?v=vug73goPJaM",
       "thumbnail": "https://img.youtube.com/vi/vug73goPJaM/mqdefault.jpg",
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.com/papers\n\n📝 The papers and sources are available here:\nMirrorCode: https://arxiv.org/abs/2606.30182\nREMEND: https://huggingface.co/udiboy1209/REMEND\nWebUI-95: https:"
-    },
-    {
-      "video_id": "pf5tXJZM1Rw",
-      "title": "OpenAI spent $1.2 million hacking Linux... and it was a bargain",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-11-09T21:04:16+00:00",
-      "url": "https://www.youtube.com/watch?v=pf5tXJZM1Rw",
-      "thumbnail": "https://img.youtube.com/vi/pf5tXJZM1Rw/mqdefault.jpg",
-      "description": "Greptile is the only AI code reviewer that actually runs your code. Try it for free: https://greptile.com/go/fireship\n\nA model you're not allowed to use just tore through the Linux kernel and came back with 948 root exploits... let's break "
-    },
-    {
-      "video_id": "9F9x3MufdMQ",
-      "title": "DeepSeek Harness (DSH) EXPLAINED | Everything Is a Plugin",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-11-09T05:15:35+00:00",
-      "url": "https://www.youtube.com/watch?v=9F9x3MufdMQ",
-      "thumbnail": "https://img.youtube.com/vi/9F9x3MufdMQ/mqdefault.jpg",
-      "description": "In this video we take a deep dive into DeepSeek Harness (DSH), DeepSeek's open-source agent harness, built on the Cordis plugin system around one idea: everything is a plugin, including the agent loop, the tools, and even the system prompt."
     },
     {
       "video_id": "GJ6PMUm5oTA",
@@ -578,42 +349,6 @@
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.com/papers\n\n📝 The Weight Space Programming work is available here:\nhttps://rikiyat.github.io/blog/weight-space-programming/\n\n🙏 We would like to thank our generous Patr"
     },
     {
-      "video_id": "iw9SZgyahqg",
-      "title": "The one thing holding theoretical CS together just broke... kinda",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-11-06T16:42:38+00:00",
-      "url": "https://www.youtube.com/watch?v=iw9SZgyahqg",
-      "thumbnail": "https://img.youtube.com/vi/iw9SZgyahqg/mqdefault.jpg",
-      "description": "Warp Factories is open infrastructure to build self-improving software factories. Get early access: https://warp.dev/fireship\n\nAn unnamed OpenAI model just wrote an algorithm that solves 3-SAT faster than exponential time, breaking a 27-yea"
-    },
-    {
-      "video_id": "pkXcc6aKyGU",
-      "title": "What you missed at Hugging Face Open Together",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-11-06T10:41:04+00:00",
-      "url": "https://www.youtube.com/shorts/pkXcc6aKyGU",
-      "thumbnail": "https://img.youtube.com/vi/pkXcc6aKyGU/mqdefault.jpg",
-      "description": ""
-    },
-    {
-      "video_id": "PzzGrl6RW0I",
-      "title": "What You Missed at Hugging Face Open Together",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-11-06T10:30:19+00:00",
-      "url": "https://www.youtube.com/watch?v=PzzGrl6RW0I",
-      "thumbnail": "https://img.youtube.com/vi/PzzGrl6RW0I/mqdefault.jpg",
-      "description": ""
-    },
-    {
       "video_id": "XgC1QTs6A2U",
       "title": "The Future of AI Is Absolutely Incredible (Spencer Huang)",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -624,18 +359,6 @@
       "url": "https://www.youtube.com/watch?v=XgC1QTs6A2U",
       "thumbnail": "https://img.youtube.com/vi/XgC1QTs6A2U/mqdefault.jpg",
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\nChapters:\n00:00 Intro\n02:40 Why Robots Are Hard\n08:16 The Perfect Data Diet\n16:05 Intelligence Density\n20:13 Building AI Worlds\n22:10 Learning From Failure\n"
-    },
-    {
-      "video_id": "QyXrlveEpxE",
-      "title": "Andrew Ng on balancing latency and reliability in voice AI. #deeplearningai #aiagents #voiceai",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-05T16:00:22+00:00",
-      "url": "https://www.youtube.com/shorts/QyXrlveEpxE",
-      "thumbnail": "https://img.youtube.com/vi/QyXrlveEpxE/mqdefault.jpg",
-      "description": "How do you build a voice agent that keeps up with a conversation and handles the task reliably?\n\nLearn three ways to add voice to apps and agents with Ashwyn Sharma in Voice for AI Agents and Applications, our course with @VocalBridgeAI .\n\n"
     },
     {
       "video_id": "BmBw827GgFA",
@@ -650,30 +373,6 @@
       "description": "One of the most useful primitives in programming, but what is a mutual exclusion and how does it work? Matt Godbolt explains!\n\nComputerphile is supported by Jane Street. Learn more about them (and exciting career opportunities) at: https://"
     },
     {
-      "video_id": "5__Fm2TnPcU",
-      "title": "Stop guessing how to fix your agent",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-04T11:00:19+00:00",
-      "url": "https://www.youtube.com/watch?v=5__Fm2TnPcU",
-      "thumbnail": "https://img.youtube.com/vi/5__Fm2TnPcU/mqdefault.jpg",
-      "description": "Learn More: https://bit.ly/4ikf9L0\n\nTraditional software tests confirm that your code is working, but fall short when it comes to testing agents. Evals allow you to measure an agent’s decisions and actions when its failures may not be obvio"
-    },
-    {
-      "video_id": "k2ruCf_z75I",
-      "title": "The worst week in cybersecurity history... so far",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-11-03T19:47:10+00:00",
-      "url": "https://www.youtube.com/watch?v=k2ruCf_z75I",
-      "thumbnail": "https://img.youtube.com/vi/k2ruCf_z75I/mqdefault.jpg",
-      "description": "Start a free 14-day CodeRabbit Secure trial, no credit card required: https://coderabbit.link/fireship-011\n\nCursor shipped a backdoor, Polymarket got drained, North Korea pulled off the largest theft in human history, and Anthropic showed a"
-    },
-    {
       "video_id": "0Kw6_DTZPrY",
       "title": "‘We may release models we can’t control’: Amodei, Altman … and Gemini Carbon",
       "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
@@ -684,37 +383,22 @@
       "url": "https://www.youtube.com/watch?v=0Kw6_DTZPrY",
       "thumbnail": "https://img.youtube.com/vi/0Kw6_DTZPrY/mqdefault.jpg",
       "description": "You know what, by AI standards, it might not have been the craziest week, but that doesn’t mean several headline-worthy things happened - from Altman and Anthropic implying they would release models they can’t control, with behavior they ca"
-    },
-    {
-      "video_id": "CWdTBLsbaQs",
-      "title": "OpenAI Claims It Just Did The Impossible",
-      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
-      "channel_name": "Two Minute Papers",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-10-30T15:57:16+00:00",
-      "url": "https://www.youtube.com/watch?v=CWdTBLsbaQs",
-      "thumbnail": "https://img.youtube.com/vi/CWdTBLsbaQs/mqdefault.jpg",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\n📝 OpenAI's paper is available here:\nhttps://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf\n\nO"
-    },
-    {
-      "video_id": "NDgS__J1U-M",
-      "title": "The Private Key Mistake! (TLS Key set to \"4\") - Computerphile",
-      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
-      "channel_name": "Computerphile",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-10-30T15:47:25+00:00",
-      "url": "https://www.youtube.com/watch?v=NDgS__J1U-M",
-      "thumbnail": "https://img.youtube.com/vi/NDgS__J1U-M/mqdefault.jpg",
-      "description": "You actually have to work quite hard to set a private key to the number 4! - Dr Tim Muller takes us through the problems with 'randomly' assigning a 120 digit number to the value '4'\n\nComputerphile is supported by Jane Street. Learn more ab"
     }
   ],
   "stats": {
-    "total_videos": 45,
+    "total_videos": 19,
     "total_channels": 16,
-    "successful_channels": 16,
-    "failed_channels": [],
+    "successful_channels": 8,
+    "failed_channels": [
+      "Andrej Karpathy",
+      "Yannic Kilcher",
+      "Matthew Berman",
+      "Lex Fridman",
+      "Hugging Face",
+      "a16z",
+      "DeepLearningAI",
+      "Fireship"
+    ],
     "window_days": 14
   }
 }
