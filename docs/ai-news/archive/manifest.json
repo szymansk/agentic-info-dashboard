@@ -495,9 +495,15 @@
     },
     {
       "date": "2026-11-13",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-11-13.html",
       "headline": "Die Klempnerarbeit der Agenten-Ökonomie — Security, Observability und Bezahlrails konsolidieren",
       "summary": "M&A-Welle um Agenten-Infrastruktur: CrowdStrike kauft Fiddler (Agent-Observability), Meta übernimmt Conductor, Five9 greift nach Level AI, Palo Alto verhandelt Clutch · Visa Intelligent Commerce trennt legitime Shopping-Agenten von Bots · DeepSeek Super-Agent & Vercel agent-desktop · IPO-Woche: Anthropic-Pricing 18.11., Nvidia-Zahlen 17.11."
+    },
+    {
+      "date": "2026-11-14",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Jensen Huang tritt ab, während der Preiskrieg eskaliert — Nvidias Führungsschock und Gemini 4 Hydrogen",
+      "summary": "Berichten zufolge tritt Jensen Huang als Nvidia-CEO zurück, CFO Colette Kress übernimmt interimistisch — drei Tage vor den Quartalszahlen (17.11.) und Anthropics IPO-Pricing (18.11.) · Google shippt Gemini 4 Hydrogen: schneller/günstiger für Coding & Agenten, 1,50/7,50 $ pro Mtok, 1M Kontext, Index 51 · Anthropic öffnet Claude Managed Agents (self-hosted, private Beta) · OpenAI Daybreak Red Team & Defense Factory · NGO-Koalition verklagt fünf Labs auf Entwicklungsstopp oberhalb heutiger Modelle · Claude Code v2.1.325"
     }
   ]
 }
