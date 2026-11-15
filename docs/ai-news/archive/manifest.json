@@ -501,9 +501,15 @@
     },
     {
       "date": "2026-11-14",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-11-14.html",
       "headline": "Jensen Huang tritt ab, während der Preiskrieg eskaliert — Nvidias Führungsschock und Gemini 4 Hydrogen",
       "summary": "Berichten zufolge tritt Jensen Huang als Nvidia-CEO zurück, CFO Colette Kress übernimmt interimistisch — drei Tage vor den Quartalszahlen (17.11.) und Anthropics IPO-Pricing (18.11.) · Google shippt Gemini 4 Hydrogen: schneller/günstiger für Coding & Agenten, 1,50/7,50 $ pro Mtok, 1M Kontext, Index 51 · Anthropic öffnet Claude Managed Agents (self-hosted, private Beta) · OpenAI Daybreak Red Team & Defense Factory · NGO-Koalition verklagt fünf Labs auf Entwicklungsstopp oberhalb heutiger Modelle · Claude Code v2.1.325"
+    },
+    {
+      "date": "2026-11-15",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Sonntagsbilanz: Die Börse flüchtet aus KI, das Private-Kapital kauft die Agenten-Schicht — und das Web macht die Tür zu",
+      "summary": "Divergenz der Woche: Nach dem Nasdaq-Rout vom 9.11. fließt privates Kapital unbeirrt in die Agenten-Werkzeugschicht — LangChain ~300 Mio. $ Series C bei ~3 Mrd. (CapitalG), Mercor ~750 Mio. $ bei ~20 Mrd., fal ~1,65 Mrd. $ · Zugleich riegeln Plattformen ab: United Airlines sperrt nicht-autorisierte Personal-Agenten aus Buchung/Reservierung aus — nach dem Medicare-Portal-Vorfall das Muster der „Agent-Access-Kriege“ · ElevenLabs zeigt ElevenAI (Meeting-Agent) · Die Woche entscheidet sich an zwei Terminen: Nvidia-Zahlen und Anthropics IPO-Bepreisung (18.11., Handelsstart 19.11., „ANT“, 70–78 $) · Claude Code v2.1.325"
     }
   ]
 }
