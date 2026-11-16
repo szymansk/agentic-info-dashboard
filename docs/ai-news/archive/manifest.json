@@ -507,9 +507,15 @@
     },
     {
       "date": "2026-11-15",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-11-15.html",
       "headline": "Sonntagsbilanz: Die Börse flüchtet aus KI, das Private-Kapital kauft die Agenten-Schicht — und das Web macht die Tür zu",
       "summary": "Divergenz der Woche: Nach dem Nasdaq-Rout vom 9.11. fließt privates Kapital unbeirrt in die Agenten-Werkzeugschicht — LangChain ~300 Mio. $ Series C bei ~3 Mrd. (CapitalG), Mercor ~750 Mio. $ bei ~20 Mrd., fal ~1,65 Mrd. $ · Zugleich riegeln Plattformen ab: United Airlines sperrt nicht-autorisierte Personal-Agenten aus Buchung/Reservierung aus — nach dem Medicare-Portal-Vorfall das Muster der „Agent-Access-Kriege“ · ElevenLabs zeigt ElevenAI (Meeting-Agent) · Die Woche entscheidet sich an zwei Terminen: Nvidia-Zahlen und Anthropics IPO-Bepreisung (18.11., Handelsstart 19.11., „ANT“, 70–78 $) · Claude Code v2.1.325"
+    },
+    {
+      "date": "2026-11-16",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "China schiebt ein Modell in die Urteilswoche — Qwen4-Max, agentische Bezahl-Rails und das Warten auf Nvidia und Anthropic",
+      "summary": "Zum Auftakt der Entscheidungswoche setzt Alibaba ein Zeichen: Qwen4-Max, agent-first für Coding, 1M-Token-Default, Behauptung von ~58 % weniger Kosten pro Fachaufgabe — Frontier-Fähigkeit wird weiter zur Ware, jetzt mit Souveränitäts-Frage für DACH · Agentische Bezahl-Rails werden konkret: OpenAIs ChatGPT Wallet lässt Agenten im Namen des Nutzers kaufen, direkt nach Visa Intelligent Commerce und dem United-Agenten-Bann — die Frage ist Autorisierung, nicht Fähigkeit · Enterprise-Verankerung: OpenAI-Modelle auf Databricks-Governed-Data, Google Gemini Decision API, Claude Managed Agents self-hosted · Die Woche entscheidet der Public Market: Nvidia-Zahlen 17.11., Anthropic-IPO-Pricing 18.11. (Handelsstart 19.) · Claude Code v2.1.325"
     }
   ]
 }
