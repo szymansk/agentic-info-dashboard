@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-15T12:02:25+00:00",
+  "last_updated": "2026-11-16T12:04:24+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,16 @@
   ],
   "featured": [
     {
-      "video_id": "ErOVIC-MGVA",
-      "title": "6 Underrated Ways to Use ChatGPT",
+      "video_id": "soNLXvgUqNY",
+      "title": "La Cousinade",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-11-13T18:15:41+00:00",
-      "url": "https://www.youtube.com/shorts/ErOVIC-MGVA",
-      "thumbnail": "https://img.youtube.com/vi/ErOVIC-MGVA/mqdefault.jpg",
-      "description": "We asked 6 people for their most underrated way to use ChatGPT. Their answers covered personal style, everyday logistics, and stopping random subscription charges. What’s yours?",
+      "published": "2026-11-16T05:00:26+00:00",
+      "url": "https://www.youtube.com/watch?v=soNLXvgUqNY",
+      "thumbnail": "https://img.youtube.com/vi/soNLXvgUqNY/mqdefault.jpg",
+      "description": "Une cousinade avec 63 cousins. Un site créé avec ChatGPT.",
       "why": ""
     },
     {
@@ -169,6 +169,18 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "soNLXvgUqNY",
+      "title": "La Cousinade",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-16T05:00:26+00:00",
+      "url": "https://www.youtube.com/watch?v=soNLXvgUqNY",
+      "thumbnail": "https://img.youtube.com/vi/soNLXvgUqNY/mqdefault.jpg",
+      "description": "Une cousinade avec 63 cousins. Un site créé avec ChatGPT."
+    },
     {
       "video_id": "x7iwI6WfWS0",
       "title": "AI Can Do Everything…Except This",
@@ -372,18 +384,6 @@
       "url": "https://www.youtube.com/shorts/10glKhm5LW4",
       "thumbnail": "https://img.youtube.com/vi/10glKhm5LW4/mqdefault.jpg",
       "description": "Lying only works because we're cooperative. \"If I tell you it's raining outside, it would never occur to you that I'm lying about that.\" Michael Tomasello, developmental psychologist at Duke University, on why chimpanzees don't lie to one a"
-    },
-    {
-      "video_id": "vu3YlUMkvyg",
-      "title": "What Codex Unlocks for Holiday Extras",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-12T09:45:17+00:00",
-      "url": "https://www.youtube.com/watch?v=vu3YlUMkvyg",
-      "thumbnail": "https://img.youtube.com/vi/vu3YlUMkvyg/mqdefault.jpg",
-      "description": "What happens when the people who understand your customers can build the software to help them? At Holiday Extras, Codex is helping turn that ambition into reality—from rebuilding its main app in two weeks to responding faster to customer f"
     },
     {
       "video_id": "TzZmDf60hIQ",
