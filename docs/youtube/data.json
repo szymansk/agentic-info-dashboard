@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-16T12:04:24+00:00",
+  "last_updated": "2026-11-17T05:04:42+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,16 @@
   ],
   "featured": [
     {
-      "video_id": "soNLXvgUqNY",
-      "title": "La Cousinade",
+      "video_id": "Zbv70lLBHgo",
+      "title": "How Check Point speeds up vulnerability research with Daybreak | OpenAI for Cybersecurity",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-11-16T05:00:26+00:00",
-      "url": "https://www.youtube.com/watch?v=soNLXvgUqNY",
-      "thumbnail": "https://img.youtube.com/vi/soNLXvgUqNY/mqdefault.jpg",
-      "description": "Une cousinade avec 63 cousins. Un site créé avec ChatGPT.",
+      "published": "2026-11-16T20:23:56+00:00",
+      "url": "https://www.youtube.com/shorts/Zbv70lLBHgo",
+      "thumbnail": "https://img.youtube.com/vi/Zbv70lLBHgo/mqdefault.jpg",
+      "description": "Check Point CTO Jonathan Zanger explains how his team uses OpenAI Daybreak to analyze vulnerabilities and turn findings into protections for customers. A vulnerability research workflow that once took hours can now be completed in minutes, ",
       "why": ""
     },
     {
@@ -169,6 +169,90 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "Zbv70lLBHgo",
+      "title": "How Check Point speeds up vulnerability research with Daybreak | OpenAI for Cybersecurity",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-16T20:23:56+00:00",
+      "url": "https://www.youtube.com/shorts/Zbv70lLBHgo",
+      "thumbnail": "https://img.youtube.com/vi/Zbv70lLBHgo/mqdefault.jpg",
+      "description": "Check Point CTO Jonathan Zanger explains how his team uses OpenAI Daybreak to analyze vulnerabilities and turn findings into protections for customers. A vulnerability research workflow that once took hours can now be completed in minutes, "
+    },
+    {
+      "video_id": "ytmawkPTP24",
+      "title": "Why Microsoft couldn’t fix its own servers for 36 hours...",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-11-16T20:18:59+00:00",
+      "url": "https://www.youtube.com/watch?v=ytmawkPTP24",
+      "thumbnail": "https://img.youtube.com/vi/ytmawkPTP24/mqdefault.jpg",
+      "description": "OpenRouter gives you one API for every AI model that routes and governs every request, so your AI is better, faster, and cheaper. Try it free: https://openrouter.ai/?utm_source=fireship&utm_medium=video&utm_campaign=2026-11_dev-sponsorships"
+    },
+    {
+      "video_id": "97SWpLlTgdQ",
+      "title": "The story of Uber.",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-16T20:00:00+00:00",
+      "url": "https://www.youtube.com/shorts/97SWpLlTgdQ",
+      "thumbnail": "https://img.youtube.com/vi/97SWpLlTgdQ/mqdefault.jpg",
+      "description": "Travis Kalanick, founder of Uber & Atoms, on the night in Paris where the idea took hold.\n\nIn late 2008, Kalanick and Garrett Camp, who had sold StumbleUpon to eBay, spent a week in Paris at the LeWeb conference. Camp had already been worki"
+    },
+    {
+      "video_id": "kMdHCyAnNHA",
+      "title": "Box CEO Explains How AI Is Changing Software",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-16T17:42:57+00:00",
+      "url": "https://www.youtube.com/watch?v=kMdHCyAnNHA",
+      "thumbnail": "https://img.youtube.com/vi/kMdHCyAnNHA/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "vVVdxMwPBuA",
+      "title": "How Check Point speeds up vulnerability research with Daybreak | OpenAI for Cybersecurity",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-16T16:55:56+00:00",
+      "url": "https://www.youtube.com/watch?v=vVVdxMwPBuA",
+      "thumbnail": "https://img.youtube.com/vi/vVVdxMwPBuA/mqdefault.jpg",
+      "description": "Check Point CTO Jonathan Zanger explains how his team uses OpenAI Daybreak to analyze vulnerabilities and turn findings into protections for customers. A vulnerability research workflow that once took hours can now be completed in minutes, "
+    },
+    {
+      "video_id": "7Yx_7byZiFU",
+      "title": "Using Hugging Face Jobs to train a NanoGPT model",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-11-16T16:00:20+00:00",
+      "url": "https://www.youtube.com/watch?v=7Yx_7byZiFU",
+      "thumbnail": "https://img.youtube.com/vi/7Yx_7byZiFU/mqdefault.jpg",
+      "description": "How to use 🤗 Jobs to run any kind of training task when your GPU is too small\n\nCode: https://github.com/scienceetonnante/nanogpt-jobs\n\n00:00 Introduction\n01:21 Model and training code\n02:57 Using Jobs\n04:15 The shell script\n05:35 Run and re"
+    },
+    {
+      "video_id": "g_67TmQ8lGY",
+      "title": "What History Tells Us About the AI Revolution | Tyler Cowen & Alex Imas",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-16T15:30:10+00:00",
+      "url": "https://www.youtube.com/watch?v=g_67TmQ8lGY",
+      "thumbnail": "https://img.youtube.com/vi/g_67TmQ8lGY/mqdefault.jpg",
+      "description": "AI capabilities are improving fast. But will the economy move just as quickly?\n\na16z General Partner Erik Torenberg sits down with Google DeepMind economist Alex Imas and economist Tyler Cowen to examine how advances in AI translate into gr"
+    },
     {
       "video_id": "soNLXvgUqNY",
       "title": "La Cousinade",
@@ -218,18 +302,6 @@
       "description": "Mozilla is combining decades of security engineering with AI agents to strengthen Firefox’s defenses.\n\nBrian Grinstead joins OpenAI’s Clint Gibler to discuss how the team prioritizes investigations, tests and verifies vulnerabilities, finds"
     },
     {
-      "video_id": "pfbfZKxUEDQ",
-      "title": "How Mozilla strengthens Firefox security with GPT-6 Cyber",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-13T16:38:23+00:00",
-      "url": "https://www.youtube.com/shorts/pfbfZKxUEDQ",
-      "thumbnail": "https://img.youtube.com/vi/pfbfZKxUEDQ/mqdefault.jpg",
-      "description": "Mozilla’s Brian Grinstead shares how early testing with GPT-6 Cyber identified new vulnerabilities and opportunities to strengthen Firefox’s defenses, helping the team work toward an ambitious goal: zero bugs.\n\nWatch the full conversation w"
-    },
-    {
       "video_id": "PbD9pVXxsYM",
       "title": "Cyberattacks Used to Take Months. AI Can Do It in Minutes.",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -252,18 +324,6 @@
       "url": "https://www.youtube.com/shorts/yVaVR2Ywfik",
       "thumbnail": "https://img.youtube.com/vi/yVaVR2Ywfik/mqdefault.jpg",
       "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
-      "video_id": "YmxpxJZvm4M",
-      "title": "Cyber at the Frontier: Introducing Daybreak Red Team & Daybreak Defense Factory",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-12T22:37:14+00:00",
-      "url": "https://www.youtube.com/watch?v=YmxpxJZvm4M",
-      "thumbnail": "https://img.youtube.com/vi/YmxpxJZvm4M/mqdefault.jpg",
-      "description": "Greg Brockman, Nancy Wang, Fouad Matin, Clint Gibler, Alexander Thiemann, and Matt Boyle took the stage at Cyber at the Frontier, where OpenAI introduced two cybersecurity products under one unified Codex plugin called Daybreak:\n\nDaybreak D"
     },
     {
       "video_id": "Sjdvu4nHfDk",
@@ -434,30 +494,6 @@
       "description": "Why say \"It was Fred that broke the window\" instead of \"Fred broke the window\"? Michael Tomasello, developmental psychologist at Duke University, on how grammatical constructions such as the cleft and the passive are conventions we created "
     },
     {
-      "video_id": "LFzBzzHZESE",
-      "title": "AMA with me and the team!",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-11T22:52:54+00:00",
-      "url": "https://www.youtube.com/watch?v=LFzBzzHZESE",
-      "thumbnail": "https://img.youtube.com/vi/LFzBzzHZESE/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
-      "video_id": "5beqvCwiO_Y",
-      "title": "3 Ways to Improve Cognitive Performance",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-11T21:30:11+00:00",
-      "url": "https://www.youtube.com/shorts/5beqvCwiO_Y",
-      "thumbnail": "https://img.youtube.com/vi/5beqvCwiO_Y/mqdefault.jpg",
-      "description": "Andrew Huberman, Stanford neuroscientist and host of the Huberman Lab podcast, on the first habit he'd give founders for cognitive performance.\n\nHuberman is an associate professor of neurobiology at Stanford School of Medicine and launched "
-    },
-    {
       "video_id": "uND6iY2qp_c",
       "title": "AlphaGenome 2: Teaching AI to read the entire human genome",
       "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
@@ -468,18 +504,6 @@
       "url": "https://www.youtube.com/watch?v=uND6iY2qp_c",
       "thumbnail": "https://img.youtube.com/vi/uND6iY2qp_c/mqdefault.jpg",
       "description": "98% of human DNA doesn't build proteins—it controls how our cells work, and holds vital clues to why diseases happen and why 90% of new drugs fail in clinical trials. Understanding the genome at the molecular level is the key to deciphering"
-    },
-    {
-      "video_id": "LI3lxzHfRrU",
-      "title": "Mike Volpi on Why AI Infrastructure Will Outlast the Hype Cycle",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-11T15:30:22+00:00",
-      "url": "https://www.youtube.com/watch?v=LI3lxzHfRrU",
-      "thumbnail": "https://img.youtube.com/vi/LI3lxzHfRrU/mqdefault.jpg",
-      "description": "The internet boom built bandwidth. The AI boom is building intelligence. Mike Volpi, who helped shape Cisco’s strategy during the internet buildout, asks what that era can teach us about this one.\n\nMike joins a16z’s Raghu Raghuram and Guido"
     },
     {
       "video_id": "0NbLVdCZHF0",
@@ -672,30 +696,6 @@
       "url": "https://www.youtube.com/watch?v=5__Fm2TnPcU",
       "thumbnail": "https://img.youtube.com/vi/5__Fm2TnPcU/mqdefault.jpg",
       "description": "Learn More: https://bit.ly/4ikf9L0\n\nTraditional software tests confirm that your code is working, but fall short when it comes to testing agents. Evals allow you to measure an agent’s decisions and actions when its failures may not be obvio"
-    },
-    {
-      "video_id": "k2ruCf_z75I",
-      "title": "The worst week in cybersecurity history... so far",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-11-03T19:47:10+00:00",
-      "url": "https://www.youtube.com/watch?v=k2ruCf_z75I",
-      "thumbnail": "https://img.youtube.com/vi/k2ruCf_z75I/mqdefault.jpg",
-      "description": "Start a free 14-day CodeRabbit Secure trial, no credit card required: https://coderabbit.link/fireship-011\n\nCursor shipped a backdoor, Polymarket got drained, North Korea pulled off the largest theft in human history, and Anthropic showed a"
-    },
-    {
-      "video_id": "0Kw6_DTZPrY",
-      "title": "‘We may release models we can’t control’: Amodei, Altman … and Gemini Carbon",
-      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
-      "channel_name": "AI Explained",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-02T17:02:16+00:00",
-      "url": "https://www.youtube.com/watch?v=0Kw6_DTZPrY",
-      "thumbnail": "https://img.youtube.com/vi/0Kw6_DTZPrY/mqdefault.jpg",
-      "description": "You know what, by AI standards, it might not have been the craziest week, but that doesn’t mean several headline-worthy things happened - from Altman and Anthropic implying they would release models they can’t control, with behavior they ca"
     }
   ],
   "stats": {
