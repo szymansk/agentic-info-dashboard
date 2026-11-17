@@ -298,7 +298,7 @@
   footer .mono { color: var(--muted); }
 </style>
 </head>
-<body data-snapshot-date="2026-11-16" data-snapshot-mode="live">
+<body data-snapshot-date="2026-11-17" data-snapshot-mode="live">
 <div class="wrap">
 
   <!-- ─── Top Nav ─── -->
@@ -319,20 +319,20 @@
   <div class="timeline-bar" id="timeline">
     <span class="label">Zeitstrahl</span>
     <!-- JS füllt aus archive/manifest.json. Fallback statisch: -->
-    <a class="tl-pill" href="/ai-news/archive/2026-11-11.html" data-date="2026-11-11">
-      <span class="dow">Mi</span><span class="date">11.11.</span>
-    </a>
-    <a class="tl-pill" href="/ai-news/archive/2026-11-12.html" data-date="2026-11-12">
-      <span class="dow">Do</span><span class="date">12.11.</span>
-    </a>
     <a class="tl-pill" href="/ai-news/archive/2026-11-13.html" data-date="2026-11-13">
       <span class="dow">Fr</span><span class="date">13.11.</span>
     </a>
     <a class="tl-pill" href="/ai-news/archive/2026-11-14.html" data-date="2026-11-14">
       <span class="dow">Sa</span><span class="date">14.11.</span>
     </a>
-    <a class="tl-pill active" href="/ai-news/" data-date="2026-11-15">
+    <a class="tl-pill" href="/ai-news/archive/2026-11-15.html" data-date="2026-11-15">
       <span class="dow">So</span><span class="date">15.11.</span>
+    </a>
+    <a class="tl-pill" href="/ai-news/archive/2026-11-16.html" data-date="2026-11-16">
+      <span class="dow">Mo</span><span class="date">16.11.</span>
+    </a>
+    <a class="tl-pill active" href="/ai-news/" data-date="2026-11-17">
+      <span class="dow">Di</span><span class="date">17.11.</span>
     </a>
   </div>
 
@@ -352,8 +352,8 @@
       </div>
     </div>
     <div class="meta">
-      <div class="date" id="today">Sonntag, 1. November 2026</div>
-      <div class="tag">Snapshot · KW 46 / 2026</div>
+      <div class="date" id="today">Dienstag, 17. November 2026</div>
+      <div class="tag">Snapshot · KW 47 / 2026</div>
     </div>
   </header>
 
@@ -363,63 +363,63 @@
   <article class="briefing-wrap">
 
     <header class="briefing-head">
-      <h2 class="kicker">Montag · Agentic AI &amp; GenAI</h2>
-      <h1>China schiebt ein Modell in die Urteilswoche — und die Bezahl-Rails der Agenten werden real</h1>
+      <h2 class="kicker">Dienstag · Agentic AI &amp; GenAI</h2>
+      <h1>Urteilswoche, Teil zwei: Nvidia liefert heute die Zahl, Washington und Kalifornien drehen an der Governance-Schraube</h1>
       <div class="byline">
         <span>✍️ Kuratiert &amp; analysiert</span>
         <span class="dot-sep">·</span>
-        <span>~8 Min Lesezeit</span>
+        <span>~9 Min Lesezeit</span>
         <span class="dot-sep">·</span>
-        <span id="byline-date">16. November 2026</span>
+        <span id="byline-date">17. November 2026</span>
       </div>
       <p class="lede">
-        Die Woche, in der der Public Market über die KI-Capex-These urteilt, beginnt mit einer Erinnerung daran, dass das Rennen um die Modelle längst nicht nur in Kalifornien läuft: <strong>Alibaba</strong> stellt zum Wochenauftakt <strong>Qwen4-Max</strong> vor — ein agent-first ausgelegtes Coding-Modell mit 1-Mio.-Token-Standardfenster und der Behauptung, die Kosten pro Fachaufgabe um rund <strong>58 %</strong> zu senken. Frontier-Fähigkeit wird weiter zur Ware, nur diesmal mit einer Souveränitäts-Frage, die den DACH-Markt direkt angeht. Parallel werden die <strong>Bezahl-Rails der Agenten</strong> konkret: <strong>OpenAIs ChatGPT Wallet</strong> lässt Agenten im Namen des Nutzers einkaufen — unmittelbar nachdem <strong>United Airlines</strong> nicht-autorisierte Agenten aussperrte. Und über allem steht der Terminkalender: <strong>Nvidias Zahlen am Dienstag</strong>, <span data-person="dario-amodei">Dario Amodeis</span> <strong>Anthropic-Bepreisung am Mittwoch</strong>.
+        Der Tag, auf den die Branche seit zwei Wochen zählt, ist da: Nach Börsenschluss legt <strong>Nvidia</strong> seine Quartalszahlen vor — der Lackmustest dafür, ob die gesamte KI-Capex-These noch trägt oder ob der Nasdaq-Rout vom 9. November eine Neubewertung war. Einen Tag später bepreist <span data-person="dario-amodei">Dario Amodeis</span> <strong>Anthropic</strong> seinen Börsengang. Doch während der Public Market über das Geld urteilt, urteilt die Politik über die Regeln: Das <strong>US-Handelsministerium</strong> macht den Re-Export amerikanischer KI-Chips über Rechenzentren in fünf Drittländern lizenzpflichtig, und <strong>Kaliforniens Generalstaatsanwalt</strong> verklagt <strong>OpenAI</strong> wegen angeblich verharmloster Produktsicherheit. Dazu schließt <strong>AMD</strong> die Übernahme von <span data-person="fei-fei-li">Fei-Fei Lis</span> World Labs ab. Kapital, Geopolitik und Haftung treffen in derselben Woche aufeinander.
       </p>
     </header>
 
     <div class="briefing-body">
 
       <section>
-        <h3><span class="num">01</span>Qwen4-Max — die Preis-Deflation kommt jetzt auch aus China</h3>
-        <p>Während die amerikanischen Labore auf das Finanz-Urteil dieser Woche warten, setzt <strong>Alibaba</strong> am Sonntag und Montag ein eigenes Ausrufezeichen: <strong>Qwen4-Max</strong>, das erste Modell der vierten Qwen-Generation, ist jetzt vollständig verfügbar. Alibaba positioniert es <strong>agent-first</strong> — explizit auf Coding und mehrstufige Agenten-Workflows getrimmt — mit einem <strong>1-Mio.-Token-Standardfenster</strong> (clientseitig vorkonfiguriert, der serverseitige Nutzrahmen ist noch nicht offiziell bestätigt) und der Behauptung, komplexe Fachaufgaben in 3D-Modellierung, Spiele-Entwicklung, Fertigung, Finanzen, Recht und Medizin mit <strong>rund 58 % geringeren Kosten</strong> zu erledigen als der Vorgänger Qwen3.8-Max. Belastbare, unabhängige Benchmark-Zahlen fehlen bislang; die Werte stammen aus Alibabas eigener Darstellung.</p>
-        <p>Das Muster ist dasselbe, das sich seit Wochen im Wochentakt wiederholt — nur die Herkunft verschiebt sich. Erst Googles Gemini-4-Serie zum Kampfpreis, jetzt ein chinesisches Flaggschiff, das mit Kosteneffizienz statt mit Spitzenwerten wirbt. Fähigkeit wird zur Ware, und der Preis fällt aus mehreren Himmelsrichtungen zugleich. Neu ist die zweite Dimension, die ein Modell aus Hangzhou mitbringt: die <em>Souveränitäts-Frage</em>. Für einen DACH-Kunden ist ein leistungsfähiges, günstiges Coding-Modell attraktiv — aber Datenresidenz, Audit-Fähigkeit und die regulatorische Einordnung eines außereuropäischen Anbieters sind keine Fußnote, sondern Teil der Entscheidung.</p>
+        <h3><span class="num">01</span>Der Prüfstein fällt heute — Nvidia am Dienstag, Anthropic am Mittwoch</h3>
+        <p>Alles, worüber die Branche seit zwei Wochen spekuliert, wird in den nächsten 48 Stunden zur Zahl. Nach US-Börsenschluss am <strong>heutigen Dienstag</strong> legt <strong>Nvidia</strong> sein Quartalsergebnis vor — der direkteste Test der gesamten Capex-These, die unter der Agenten-Ökonomie liegt. Die Frage ist simpel und brutal: Verkauft das Unternehmen, das die Rechenschicht liefert, weiter alles, was es bauen kann, oder zeigen sich erste Risse in der Nachfrage? Der Nasdaq-Rückschlag vom 9. November hat die Erwartung an diese eine Zahl so hoch geschraubt, dass schon ein solides Ergebnis als Enttäuschung gelesen werden könnte, wenn der Ausblick nicht überzeugt.</p>
+        <p>Nur einen Tag später, am <strong>Mittwoch</strong>, bepreist <span data-person="dario-amodei">Dario Amodeis</span> <strong>Anthropic</strong> seinen Börsengang, mit Handelsstart am Donnerstag. Der Private Market hat sein Urteil längst gefällt — abzulesen an den Milliarden-Runden rund um die Werkzeugschicht und am Anker-Konsortium, das zum Ausgabepreis zeichnet. Jetzt muss der Public Market antworten, und zwar in genau der Woche, in der die Stimmung am dünnsten ist. Fällt Nvidias Zahl überzeugend aus und platziert sich Anthropic am oberen Ende, schließt sich der Riss zwischen privater Überzeugung und öffentlicher Skepsis ein Stück. Enttäuscht eines von beiden, wird aus der Divergenz eine Neubewertung, die bis zu den Werkzeug-Startups durchschlägt, deren Bewertungen auf genau dieser Logik ruhen.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Die Modell-Schicht wird endgültig zur austauschbaren Ware — und jetzt konkurrieren auch chinesische Anbieter offen um das Preis-Leistungs-Segment. Die verkaufbare Leistung ist nicht das Modell, sondern die Fähigkeit, es sauber einzuordnen: eine Zulassungs- und Bewertungsmatrix, die Qwen & Co. an denselben Kriterien misst wie westliche Modelle (Datenresidenz, Compliance, Reproduzierbarkeit der beworbenen Werte), plus eine austauschbare Modell-Schicht, die keinen einzelnen Anbieter zementiert. Für regulierte Kunden ist die Souveränitäts-Prüfung — was darf wohin, mit welchem Beleg — ein eigenes, abrechenbares Mandat, das mit jedem neuen außereuropäischen Flaggschiff an Gewicht gewinnt.
+          Für uns: Diese Woche entscheidet weniger über Technik als über das Finanzierungsklima, in dem KI-Budgets 2027 gesprochen werden. Für Kunden-Gespräche heißt das: nicht auf das Markt-Narrativ wetten, sondern auf messbaren Nutzen. Projekte so zuschneiden, dass sie sich aus hartem ROI rechtfertigen — mit klaren Erfolgskennzahlen und definierten Ausstiegspunkten, nicht aus der Erwartung, dass „KI eben die Zukunft ist". Wer so aufstellt, steht robust da, egal wie die Börse am Mittwoch reagiert — und kann die Verunsicherung sogar nutzen, um überzogene Lizenz-Wetten der Kunden in nüchterne, abrechenbare Nutzen-Piloten umzulenken.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">02</span>Die Bezahl-Rails der Agenten werden real — und die Autorisierungs-Frage wird dringend</h3>
-        <p>Die vielleicht konkreteste Produkt-Bewegung dieser Tage ist der Schritt vom <em>redenden</em> zum <em>zahlenden</em> Agenten. <strong>OpenAI</strong> hat mit <strong>ChatGPT Wallet</strong> eine Bezahlfunktion geöffnet, über die sein Agent im Namen des Nutzers einkaufen kann — ein Agent, der nicht nur recherchiert, sondern die Transaktion auslöst. Das reiht sich ein in eine Infrastruktur, die gerade erst entsteht: <strong>Visa</strong> baut mit Intelligent Commerce eine Schiene, die legitime Shopping-Agenten von Bots trennt; die Zahlungsindustrie beginnt, Agenten als eigene Akteurs-Kategorie zu behandeln. Die Richtung ist klar: Agentisches Bezahlen ist eines der am heißesten gehandelten Einsatzfelder — und es verschiebt den Einsatz von „falsche Antwort" zu „echte Überweisung".</p>
-        <p>Genau deshalb schlägt die Gegenbewegung sofort zurück. Erst in der Vorwoche hatte <strong>United Airlines</strong> erklärt, <strong>nicht-autorisierte Personal-Agenten</strong> aus seinen Buchungssystemen auszusperren — begründet mit geteilten Zugangsdaten, unbeabsichtigten Käufen und Check-in-Vorschriften, die einen Menschen verlangen. Die beiden Nachrichten gehören zusammen: Je mehr Agenten tatsächlich handeln und bezahlen, desto dringender wird die Frage, die das offene Web nie beantworten musste — <em>darf dieser Agent hier handeln, in wessen Namen, mit welcher Berechtigung?</em>. Es kennt Menschen mit Passwörtern und Maschinen mit API-Schlüsseln, aber keine dritte, delegierte Kategorie. Wer diese Lücke mit Agenten-Identität, verifizierbarer Delegation und serverseitig durchgesetzten Limits füllt, besetzt eine Schlüsselposition.</p>
+        <h3><span class="num">02</span>Washington verengt die Chip-Geografie — Re-Export wird lizenzpflichtig</h3>
+        <p>Während die Börse über die Nachfrage urteilt, zieht die Politik an der Angebotsseite. Das <strong>US-Handelsministerium</strong> hat am Montag eine Interim-Regel erlassen, die Rechenzentrums-Betreiber in <strong>Singapur, Malaysia, Thailand, Indonesien und Brasilien</strong> verpflichtet, eine US-Lizenz einzuholen, bevor sie fortgeschrittene KI-Chips von Nvidia und anderen amerikanischen Herstellern an Kunden in diesen Ländern weiterreichen. Das Ziel sind die Umwege: Länder, über die bislang Hardware in Jurisdiktionen sickern konnte, die Washington kontrollieren will. Damit wird nicht mehr nur der direkte Export beschränkt, sondern der <em>Re-Export über Dritt-Rechenzentren</em> — eine deutlich feingliedrigere Kontrolle der physischen Rechenschicht.</p>
+        <p>Für die Modell-Anbieter ist das eine zweischneidige Nachricht. Kurzfristig verknappt jede neue Exportschranke das global verfügbare Compute und verschärft den Standort-Wettlauf. Mittelfristig zementiert sie, was sich seit Monaten abzeichnet: Rechenleistung ist ein geopolitisches Gut, und wo ein Modell läuft, ist keine technische, sondern eine regulatorische Frage. Für europäische Kunden ist der Subtext unbequem — die Verfügbarkeit von Spitzen-Hardware hängt zunehmend an Entscheidungen, die in Washington fallen, nicht in Brüssel. Datenresidenz und Compute-Souveränität rücken damit vom Compliance-Nebenschauplatz ins Zentrum jeder ernsthaften KI-Architektur-Entscheidung.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Sobald Agenten Geld bewegen, wird Autorisierung von der Nebensache zur Kern-Anforderung — und naive „Agent nutzt die Zugangsdaten des Nutzers"-Architekturen scheitern bald an der Technik <em>und</em> an der Compliance. Konkret billbar: Out-of-Band-Freigaben (der Agent beantragt, ein getrenntes System genehmigt), serverseitig erzwungene Limits statt Prompt-Regeln, strikte Trennung von Ausführungs- und Benachrichtigungskanal, dazu Delegation, Scopes und lückenlose Audit-Trails. Für regulierte DACH-Kunden ist das die Voraussetzung dafür, Agenten überhaupt an zahlungsnahe Systeme zu lassen — ein Beratungsfeld, das heute noch kaum jemand besetzt.
+          Für uns: Compute-Souveränität ist kein abstraktes Policy-Thema mehr, sondern ein konkretes Architektur-Risiko, das in jedes größere KI-Vorhaben gehört. Wenn die Verfügbarkeit und der zulässige Standort von Rechenleistung an US-Exportregeln hängen, braucht jeder Kunde mit regulatorischem Profil — Banking, Versicherung, öffentliche Verwaltung — eine belastbare Antwort auf die Frage: Wo läuft unser Modell, unter wessen Jurisdiktion, und was passiert, wenn sich die Exportlage ändert? Konkret billbar: Multi-Cloud- und Multi-Region-Fallback-Architekturen, eine Souveränitäts- und Exit-Bewertung je Workload, dazu die Fähigkeit, Modelle und Compute-Standorte ohne Neu-Implementierung zu wechseln. Lock-in auf einen einzigen Anbieter oder eine einzige Region wird in diesem Umfeld zum Klumpenrisiko.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">03</span>Der Kampf um die Unternehmensdaten — die Labore ziehen hinter die Firmen-Firewall</h3>
-        <p>Parallel zur Preis- und Bezahl-Front läuft eine leisere, aber strategisch gewichtigere Bewegung: Die Labore drängen dorthin, wo die wertvollen, governten Daten der Unternehmen liegen. <strong>OpenAI</strong>-Modelle lassen sich jetzt über <strong>Databricks</strong> direkt auf den governten Unternehmensdaten betreiben — ChatGPT, Codex und GPT-Modelle, angewandt auf den Datenbestand, der den Lakehouse nie verlässt. <strong>Anthropic</strong> öffnete self-hosted <strong>Claude Managed Agents</strong> (Private Beta), damit Unternehmen die Agenten-Infrastruktur — Sandboxes, Session-Speicher, Worker — in der eigenen Cloud oder on-prem betreiben. Und <strong>Google</strong> ergänzt mit einer <strong>Gemini Decision API</strong> ein auf Entscheidungs-Workflows optimiertes Modell. Die Gemeinsamkeit: Nicht mehr die Chat-Oberfläche, sondern die <em>Anbindung an die Daten</em> ist der umkämpfte Ort.</p>
-        <p>Das ist die logische Fortsetzung der Commoditisierung aus Section 01. Wenn das Modell selbst austauschbar und billig wird, verschiebt sich der verteidigbare Wert dorthin, wo er nicht trivial kopierbar ist: in die governte Nähe zu den proprietären Daten des Kunden und in die Kontrolle darüber, wo ein Agent läuft und wer ihn auditiert. Datenresidenz, Nachvollziehbarkeit und Governance sind damit keine Compliance-Last mehr, sondern das eigentliche Produkt-Argument — und genau das Terrain, auf dem sich westliche Anbieter gegen das günstige Flaggschiff aus Hangzhou abgrenzen wollen.</p>
+        <h3><span class="num">03</span>Kalifornien verklagt OpenAI — die Haftungsfront öffnet sich</h3>
+        <p>Der zweite Governance-Schlag der Woche kommt aus Sacramento. Kaliforniens Generalstaatsanwalt <strong>Rob Bonta</strong> hat <strong>OpenAI</strong> verklagt mit dem Vorwurf, das Unternehmen habe gegenüber der Öffentlichkeit verharmlost, wie unsicher seine Produkte sind. Unabhängig davon, wie die Klage ausgeht, ist schon ihre Existenz ein Signal: Die regulatorische Aufmerksamkeit verschiebt sich vom abstrakten „KI-Gesetz der Zukunft" zur konkreten <em>Produkthaftung der Gegenwart</em> — durchgesetzt nicht über neue Verordnungen, sondern über bestehendes Verbraucherschutz- und Täuschungsrecht in der Heimatjurisdiktion des Labors.</p>
+        <p>Das ist eine andere Qualität als die EU-Debatte, die sich um Kennzeichnungspflichten und Risikoklassen dreht. Hier geht es um die Frage, ob ein Anbieter für die realen Auswirkungen seiner Modelle geradestehen muss — und zwar vor einem Gericht, nicht vor einer Aufsichtsbehörde. Für jeden, der KI-Systeme in Kundenkontexten einsetzt, verschiebt das die Risikobilanz: Was ein Modell sagt und tut, kann zum Haftungsfall werden, und die Beweislast, dass man Sicherheit und Grenzen des Systems korrekt kommuniziert und abgesichert hat, wandert nach unten in die Lieferkette. Wer Agenten baut, die im Namen eines Kunden handeln, erbt einen Teil dieser Verantwortung mit.</p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Die Wertschöpfung wandert vom Modell zur governten Datenanbindung — und das ist Integrations-, keine Lizenz-Arbeit. Wenn OpenAI auf Databricks sitzt, Claude self-hosted läuft und Gemini Entscheidungs-APIs anbietet, lautet die Kundenfrage: Wie dockt das an bestehende Daten-, IAM- und GRC-Landschaften an, ohne ein zweites Silo zu schaffen und ohne Datenresidenz zu verletzen? Konkret billbar: souveräne On-Prem-/Lakehouse-Deployments, Datenresidenz- und Audit-Architektur von Tag eins, dazu Pilotszenarien, die Agenten an governte Daten lassen, statt sie zu exportieren. Für unsere Branchenschwerpunkte Banking, Versicherung und ÖV ist genau das der Hebel, den reine Modell-Anbindung nie bietet.
+          Für uns: Haftung wird vom theoretischen Restrisiko zur Gestaltungsanforderung. Wenn selbst der größte Anbieter verklagt wird, weil er Produktsicherheit angeblich zu optimistisch dargestellt hat, dann ist „wir haben nur das Modell integriert" keine belastbare Verteidigungslinie mehr. Konkret billbar: dokumentierte Safety- und Grenzfall-Analysen je Use-Case, nachweisbare Guardrails und Eskalationspfade, ehrliche Fähigkeits-Kommunikation gegenüber dem Endnutzer statt Marketing-Versprechen, dazu Audit-Trails, die im Streitfall zeigen, was das System durfte und was nicht. Für regulierte DACH-Kunden ist diese Nachweisbarkeit ohnehin Pflicht — der kalifornische Fall macht sie zum Verkaufsargument, nicht nur zur Checkliste.
         </blockquote>
       </section>
 
       <section>
-        <h3><span class="num">04</span>Die Woche, die das Urteil spricht — Nvidia am Dienstag, Anthropic am Mittwoch</h3>
-        <p>All das — das günstige Modell aus China, die Bezahl-Rails, der Kampf um die Unternehmensdaten — läuft vor einem Terminkalender ab, der in wenigen Tagen das Finanz-Urteil erzwingt. Am <strong>Dienstag, 17. November</strong>, legt <strong>Nvidia</strong> seine Quartalszahlen vor — der Lackmustest für die gesamte Capex-These: Verkauft das Unternehmen, das die Rechenschicht unter der ganzen Agenten-Ökonomie liefert, weiter alles, was es bauen kann, und das in einer Woche voller Führungsunruhe nach dem berichteten CEO-Wechsel? Nur einen Tag später, am <strong>Mittwoch, 18. November</strong>, bepreist <span data-person="dario-amodei">Dario Amodeis</span> <strong>Anthropic</strong> seinen Börsengang (Nasdaq-Kürzel „ANT", Spanne <strong>70–78 Dollar</strong>, Handelsstart 19., Ziel-Bewertung je nach Rechnung gut 1 bis 1,4 Bio. $) — ein Anker-Konsortium aus AMD, Broadcom, Google, Micron, Microsoft, Nvidia und TSMC hat zugesagt, für rund <strong>26 Mrd.</strong> zum Ausgabepreis zu zeichnen.</p>
-        <p>Das ist der Prüfstein für die gegenläufigen Wetten des Monats: Der Private Market hat längst abgestimmt — mit den Milliarden-Runden rund um die Werkzeugschicht und dem 26-Mrd.-Anker. Jetzt muss der Public Market antworten, und zwar unmittelbar nach dem Nasdaq-Rout vom 9. November. Fällt Nvidias Zahl überzeugend aus und platziert sich Anthropic am oberen Ende, schließt sich der Riss zwischen privater Überzeugung und öffentlicher Skepsis ein Stück. Enttäuscht eines von beiden, wird aus der Divergenz eine Neubewertung, die die gesamte Finanzierungslogik der Branche trifft — bis hinunter zu den Werkzeug-Startups, deren Bewertungen auf genau dieser Logik ruhen.</p>
+        <h3><span class="num">04</span>AMD holt Fei-Fei Li — und die Agenten lernen einkaufen</h3>
+        <p>Zwei Meldungen vom Montag zeigen, wohin sich der Wert verschiebt, während die Modell-Schicht zur Ware wird. Erstens: <strong>AMD</strong> hat die <strong>8,2-Mrd.-Dollar-Übernahme von World Labs abgeschlossen</strong>, dem Spatial-Intelligence-Startup von <span data-person="fei-fei-li">Fei-Fei Li</span>. Die ImageNet-Pionierin wird <strong>Chief Scientist</strong> von AMD und berichtet direkt an CEO Lisa Su. Das ist mehr als ein Talente-Zukauf: Ein Chip-Hersteller holt sich die Modell-Forschung ins Haus, um Hardware und räumliche Weltmodelle gemeinsam zu optimieren — ein weiterer Schritt der Vertikalisierung, bei dem die Grenze zwischen „wer baut den Chip" und „wer baut das Modell" verschwimmt. Im Schatten von Nvidias Dominanz versucht AMD, sich nicht über Taktraten, sondern über eine integrierte KI-Story zu differenzieren.</p>
+        <p>Zweitens, auf der Produktseite: <strong>OpenAI</strong> hat Agenten eine neue <strong>Shopping-Schiene</strong> geöffnet — Agenten, die im Namen des Nutzers nicht nur recherchieren, sondern Transaktionen auslösen. Die Nachricht kommt nur Tage, nachdem <strong>United Airlines</strong> nicht-autorisierte Agenten aus seinen Buchungssystemen ausgesperrt hatte, begründet mit geteilten Zugangsdaten und unbeabsichtigten Käufen. Beide gehören zusammen: Je mehr Agenten tatsächlich handeln und bezahlen, desto dringender wird die Frage, die das offene Web nie beantworten musste — <em>darf dieser Agent hier handeln, in wessen Namen, mit welcher Berechtigung?</em></p>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
-          Für uns: Diese Woche entscheidet weniger über Technik als über das Finanzierungsklima, in dem KI-Projekte 2027 budgetiert werden. Für Kunden-Gespräche heißt das: Nicht auf das Markt-Narrativ wetten, sondern auf messbaren Nutzen. Projekte so zuschneiden, dass sie sich aus hartem ROI rechtfertigen — nicht aus der Erwartung, dass „KI eben die Zukunft ist". Wer jetzt Pilotprojekte mit klaren Erfolgskennzahlen und Ausstiegspunkten aufsetzt, steht robust da, egal wie die Börse reagiert. Und der Compliance-Anker bleibt: bis zum <strong>2. Dezember</strong> müssen Bestands-Agentensysteme unter Artikel 50 des EU AI Act maschinenlesbar gekennzeichnet sein.
+          Für uns: Zwei Hebel, ein Muster — der Wert wandert weg vom reinen Modell, hin zu Integration und Kontrolle. Die AMD-Vertikalisierung bestätigt, dass kein einzelner Anbieter dauerhaft gesetzt ist; eine austauschbare Hardware- und Modell-Schicht bleibt die sichere Wette gegen Lock-in. Und sobald Agenten Geld bewegen, wird Autorisierung von der Nebensache zur Kern-Anforderung: naive „Agent nutzt die Zugangsdaten des Nutzers"-Architekturen scheitern bald an der Technik <em>und</em> an der Compliance. Konkret billbar: Out-of-Band-Freigaben, serverseitig erzwungene Limits statt Prompt-Regeln, verifizierbare Delegation mit Scopes und lückenlose Audit-Trails. Für regulierte DACH-Kunden ist das die Voraussetzung dafür, Agenten überhaupt an zahlungsnahe Systeme zu lassen — ein Beratungsfeld, das heute noch kaum jemand besetzt.
         </blockquote>
       </section>
       <div class="briefing-end">
-        <strong>Was als Nächstes zu beobachten ist:</strong> Zwei Termine entscheiden die Woche, an denen der Public Market auf die private Überzeugung antwortet: <strong>Nvidias Quartalszahlen am Dienstag (17.11.)</strong> — der Lackmustest der Capex-These, zumal nach der Führungsunruhe — und <strong>Anthropics IPO-Bepreisung am Mittwoch (18.11.)</strong> (Kürzel „ANT", Spanne 70–78 $, Handelsstart 19., ~26 Mrd. Anker-Zeichnung). Ob unabhängige Benchmarks Alibabas Kosten- und Fähigkeits-Behauptungen zu <strong>Qwen4-Max</strong> bestätigen — und ob weitere außereuropäische Flaggschiffe den Preisdruck erhöhen. Ob weitere Plattformen dem United-Beispiel folgen und nicht-autorisierte Agenten aussperren, während agentisches Bezahlen (ChatGPT Wallet, Visa) ausrollt — und ob sich daraus ein Standard für Agenten-Identität formt. Und der Compliance-Anker bleibt: bis zum <strong>2. Dezember</strong> müssen Bestands-Agentensysteme unter Artikel 50 des EU AI Act maschinenlesbar gekennzeichnet sein. Claude Code steht bei <code>v2.1.325</code>.
+        <strong>Was als Nächstes zu beobachten ist:</strong> Die Woche steht und fällt mit zwei Terminen: <strong>Nvidias Quartalszahlen heute nach Börsenschluss (17.11.)</strong> — der Lackmustest der Capex-These — und <strong>Anthropics IPO-Bepreisung am Mittwoch (18.11.)</strong> mit Handelsstart am Donnerstag. Auf der Governance-Seite: ob weitere Länder in die US-Re-Export-Lizenzpflicht aufgenommen werden und wie Rechenzentren in Singapur, Malaysia, Thailand, Indonesien und Brasilien reagieren — und ob Kaliforniens Klage gegen <strong>OpenAI</strong> einen Präzedenzfall für KI-Produkthaftung setzt. Produktseitig: ob weitere Plattformen dem United-Beispiel folgen und nicht-autorisierte Agenten aussperren, während agentisches Bezahlen ausrollt — und ob sich daraus ein Standard für Agenten-Identität formt. Und der Compliance-Anker bleibt: bis zum <strong>2. Dezember</strong> müssen Bestands-Agentensysteme unter Artikel 50 des EU AI Act maschinenlesbar gekennzeichnet sein. Claude Code steht bei <code>v2.1.326</code>.
       </div>
 
     </div>
@@ -440,79 +440,79 @@
 
       <article class="card news-card crit">
         <div class="row">
-          <span class="pill warn">Major Release</span>
+          <span class="pill hot">Marktdaten</span>
           <span class="score">Score <b>8.5</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Alibaba stellt Qwen4-Max vor — agent-first fürs Coding, 1M-Token, ~58 % günstiger pro Fachaufgabe</h3>
-        <p><strong>Alibaba</strong> macht zum Wochenauftakt <strong>Qwen4-Max</strong> verfügbar, das erste Modell der vierten Qwen-Generation — <strong>agent-first</strong> auf Coding und mehrstufige Workflows getrimmt, mit 1-Mio.-Token-Standardfenster (clientseitig vorkonfiguriert) und der Behauptung, Fachaufgaben in 3D, Spielen, Fertigung, Finanzen, Recht und Medizin bei <strong>~58 % geringeren Kosten</strong> als Qwen3.8-Max zu lösen. Unabhängige Benchmarks fehlen; die Werte stammen aus Alibabas eigener Darstellung. Die Preis-Deflation kommt jetzt auch aus China — samt Souveränitäts-Frage für DACH.</p>
+        <h3 style="margin-top:10px">Die Urteilswoche: Nvidia-Zahlen heute, Anthropic-IPO-Bepreisung Mittwoch</h3>
+        <p>Der Public Market antwortet diese Woche auf die private KI-Euphorie: <strong>Nvidia</strong> legt am <strong>heutigen Dienstag (17.11.)</strong> nach Börsenschluss Quartalszahlen vor — der Lackmustest der Capex-These nach dem Nasdaq-Rückschlag vom 9.11. Einen Tag später bepreist <span data-person="dario-amodei">Dario Amodeis</span> <strong>Anthropic</strong> am <strong>18.11.</strong> seinen Börsengang (Handelsstart Donnerstag). Enttäuscht eine der beiden Zahlen, droht eine branchenweite Neubewertung — bis hinunter zu den Werkzeug-Startups.</p>
         <div class="news-meta">
-          <span>📅 16.11.2026</span><span>·</span><span>🏢 Alibaba</span><span>·</span>
-          <a href="https://alphasignal.ai/news/alibaba-launches-qwen4-max-with-agent-first-coding-and-1m-token-support" target="_blank" rel="noreferrer">alphasignal.ai</a>
+          <span>📅 17.11.2026</span><span>·</span><span>🏢 Nvidia / Anthropic</span><span>·</span>
+          <a href="https://aljazeera.com/economy/2026/11/10/anthropic-targets-1-4-trillion-valuation-in-massive-stock-market-debut" target="_blank" rel="noreferrer">aljazeera.com</a>
         </div>
       </article>
 
       <article class="card news-card crit">
         <div class="row">
-          <span class="pill hot">Marktdaten</span>
+          <span class="pill crit">Regulatorik</span>
           <span class="score">Score <b>8.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Die Urteilswoche: Nvidia-Zahlen Dienstag, Anthropic-IPO-Bepreisung Mittwoch</h3>
-        <p>Der Public Market antwortet diese Woche auf die private KI-Euphorie: <strong>Nvidia</strong> legt am <strong>17.11.</strong> Quartalszahlen vor (Lackmustest der Capex-These, inmitten Führungsunruhe), einen Tag später bepreist <span data-person="dario-amodei">Dario Amodeis</span> <strong>Anthropic</strong> am <strong>18.11.</strong> seinen Börsengang (Nasdaq „ANT", Spanne 70–78 $, Handelsstart 19., Ziel gut 1–1,4 Bio. $). Ein Anker-Konsortium (AMD, Broadcom, Google, Micron, Microsoft, Nvidia, TSMC) zeichnet ~26 Mrd. zum Ausgabepreis. Enttäuscht eines, droht eine branchenweite Neubewertung.</p>
+        <h3 style="margin-top:10px">USA machen Re-Export von KI-Chips über fünf Drittländer lizenzpflichtig</h3>
+        <p>Das <strong>US-Handelsministerium</strong> hat eine Interim-Regel erlassen, die Rechenzentrums-Betreiber in <strong>Singapur, Malaysia, Thailand, Indonesien und Brasilien</strong> verpflichtet, eine US-Lizenz einzuholen, bevor sie fortgeschrittene KI-Chips von Nvidia u. a. an Kunden in diesen Ländern weiterreichen. Washington schließt damit die Umweg-Routen und macht den Re-Export über Dritt-Rechenzentren kontrollpflichtig — Compute wird endgültig zum geopolitischen Gut.</p>
         <div class="news-meta">
-          <span>📅 16.11.2026</span><span>·</span><span>🏢 Anthropic / Nvidia</span><span>·</span>
-          <a href="https://aljazeera.com/economy/2026/11/10/anthropic-targets-1-4-trillion-valuation-in-massive-stock-market-debut" target="_blank" rel="noreferrer">aljazeera.com</a>
+          <span>📅 16.11.2026</span><span>·</span><span>🏢 US Commerce Dept</span><span>·</span>
+          <a href="https://bloomberg.com/news/articles/2026-11-16/us-moves-to-limit-remote-access-to-advanced-ai-chips" target="_blank" rel="noreferrer">bloomberg.com</a>
         </div>
       </article>
 
       <article class="card news-card hot">
         <div class="row">
-          <span class="pill warn">Major Release</span>
-          <span class="score">Score <b>7.0</b>/10</span>
+          <span class="pill hot">Security</span>
+          <span class="score">Score <b>7.5</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">OpenAI öffnet ChatGPT Wallet — der Agent kauft im Namen des Nutzers</h3>
-        <p><strong>OpenAI</strong> gibt mit <strong>ChatGPT Wallet</strong> eine Bezahlfunktion frei, über die sein Agent im Namen des Nutzers einkaufen kann — der Schritt vom redenden zum zahlenden Agenten. Das reiht sich in die gerade entstehende Infrastruktur ein (Visa Intelligent Commerce), die Agenten als eigene Akteurs-Kategorie behandelt. Agentisches Bezahlen gehört zu den heißesten Einsatzfeldern — und verschiebt den Einsatz von „falsche Antwort" zu „echte Überweisung".</p>
+        <h3 style="margin-top:10px">Kalifornien verklagt OpenAI wegen verharmloster Produktsicherheit</h3>
+        <p>Kaliforniens Generalstaatsanwalt <strong>Rob Bonta</strong> hat <strong>OpenAI</strong> verklagt mit dem Vorwurf, das Unternehmen habe gegenüber der Öffentlichkeit verharmlost, wie unsicher seine Produkte sind. Unabhängig vom Ausgang verschiebt die Klage die regulatorische Front vom abstrakten KI-Gesetz zur konkreten Produkthaftung — durchgesetzt über bestehendes Verbraucherschutzrecht, in der Heimatjurisdiktion des Labors.</p>
         <div class="news-meta">
-          <span>📅 14.11.2026</span><span>·</span><span>🏢 OpenAI</span><span>·</span>
-          <a href="https://aiagentsdirectory.com/news/ai-agents-news-brief-2026-11-14" target="_blank" rel="noreferrer">aiagentsdirectory.com</a>
+          <span>📅 16.11.2026</span><span>·</span><span>🏢 California AG</span><span>·</span>
+          <a href="https://www.npr.org/sections/news/" target="_blank" rel="noreferrer">npr.org</a>
         </div>
       </article>
 
-      <article class="card news-card warn">
+      <article class="card news-card hot">
         <div class="row">
-          <span class="pill warn">Major Release</span>
-          <span class="score">Score <b>6.5</b>/10</span>
+          <span class="pill warn">M&amp;A</span>
+          <span class="score">Score <b>7.5</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Google startet Gemini Decision API — ein Modell für Entscheidungs-Workflows</h3>
-        <p><strong>Google</strong> ergänzt seine Gemini-Linie um eine <strong>Gemini Decision API</strong>, basierend auf einem auf Entscheidungsfindung optimierten Modell. Zusammen mit dem jüngst ausgerollten Gemini 4 Hydrogen (schneller, größeres Kontextfenster, Multi-Modell-Orchestrierung) zielt Google auf agentische Enterprise-Workflows, in denen nicht Text, sondern die begründete Auswahl zwischen Optionen das Produkt ist.</p>
+        <h3 style="margin-top:10px">AMD schließt 8,2-Mrd.-Übernahme von World Labs ab — Fei-Fei Li wird Chief Scientist</h3>
+        <p><strong>AMD</strong> hat die im September angekündigte, rund <strong>8,2 Mrd. $</strong> schwere All-Stock-Übernahme von <strong>World Labs</strong> abgeschlossen, dem Spatial-Intelligence-Startup von <span data-person="fei-fei-li">Fei-Fei Li</span>. Die ImageNet-Pionierin wird <strong>EVP &amp; Chief Scientist</strong> und berichtet direkt an CEO Lisa Su. Ein Chip-Hersteller holt sich die Modell-Forschung ins Haus — ein weiterer Schritt der Vertikalisierung gegen Nvidias Dominanz.</p>
         <div class="news-meta">
-          <span>📅 14.11.2026</span><span>·</span><span>🏢 Google</span><span>·</span>
-          <a href="https://aiagentsdirectory.com/news/ai-agents-news-brief-2026-11-14" target="_blank" rel="noreferrer">aiagentsdirectory.com</a>
+          <span>📅 16.11.2026</span><span>·</span><span>🏢 AMD</span><span>·</span>
+          <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/amd-acquires-ai-legend-fei-fei-lis-world-labs-for-usd8-2-billion-imagenet-pioneer-will-become-amd-chief-scientist-as-the-chipmaker-brings-her-lab-in-house" target="_blank" rel="noreferrer">tomshardware.com</a>
         </div>
       </article>
 
       <article class="card news-card warn">
         <div class="row">
           <span class="pill info">Tooling</span>
-          <span class="score">Score <b>6.5</b>/10</span>
+          <span class="score">Score <b>7.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">OpenAI-Modelle auf governten Daten via Databricks — die Labore ziehen hinter die Firewall</h3>
-        <p>Unternehmen können <strong>ChatGPT, Codex und GPT-Modelle</strong> jetzt über <strong>Databricks</strong> direkt auf ihren <strong>governten Daten</strong> betreiben — der Datenbestand verlässt den Lakehouse nicht. Zusammen mit Anthropics self-hosted Claude Managed Agents verschiebt sich der umkämpfte Ort von der Chat-Oberfläche zur Datenanbindung: Wo das Modell billig und austauschbar wird, wandert der Wert in die governte Nähe zu den proprietären Daten.</p>
+        <h3 style="margin-top:10px">OpenAI öffnet Agenten eine Shopping-Schiene — direkt nach Uniteds Agenten-Bann</h3>
+        <p><strong>OpenAI</strong> gibt Agenten eine neue Möglichkeit, im Namen des Nutzers einzukaufen — der Schritt vom redenden zum zahlenden Agenten. Die Meldung kommt nur Tage, nachdem <strong>United Airlines</strong> nicht-autorisierte Personal-Agenten aus seinen Buchungssystemen ausgesperrt hatte (geteilte Zugangsdaten, unbeabsichtigte Käufe). Beide gehören zusammen: Je mehr Agenten handeln, desto dringender wird die Autorisierungs-Frage.</p>
         <div class="news-meta">
-          <span>📅 14.11.2026</span><span>·</span><span>🏢 OpenAI / Databricks</span><span>·</span>
-          <a href="https://aiagentsdirectory.com/news/ai-agents-news-brief-2026-11-14" target="_blank" rel="noreferrer">aiagentsdirectory.com</a>
+          <span>📅 16.11.2026</span><span>·</span><span>🏢 OpenAI</span><span>·</span>
+          <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-16-2026/" target="_blank" rel="noreferrer">theneuron.ai</a>
         </div>
       </article>
 
       <article class="card news-card info">
         <div class="row">
-          <span class="pill hot">Marktdaten</span>
+          <span class="pill warn">M&amp;A</span>
           <span class="score">Score <b>6.0</b>/10</span>
         </div>
-        <h3 style="margin-top:10px">Koreas Big Tech steigt ins Rennen um persönliche KI-Agenten ein</h3>
-        <p>Nach den Turbulenzen rund um den berichteten Nvidia-CEO-Wechsel treten Koreas Tech-Konzerne ins Rennen um <strong>persönliche KI-Agenten</strong> ein — ein weiteres Signal, dass der Agenten-Wettbewerb regional breiter wird und sich nicht mehr auf die US-Labore beschränkt. Für den Markt heißt das: mehr Anbieter, mehr Preisdruck, mehr Fragmentierung entlang nationaler Plattform-Strategien.</p>
+        <h3 style="margin-top:10px">Cohere übernimmt AISLE — autonome Erkennung und Behebung von Schwachstellen</h3>
+        <p><strong>Cohere</strong> hat die Übernahme von <strong>AISLE</strong> abgeschlossen, das autonome Systeme zum Auffinden und Beheben von Sicherheitslücken baut (keine finanziellen Details). Es ist Coheres vierte strategische M&amp;A dieses Jahr und unterstreicht den Trend, dass agentische Security — Schwachstellen nicht nur finden, sondern selbstständig patchen — zum eigenen Produktfeld wird.</p>
         <div class="news-meta">
-          <span>📅 15.11.2026</span><span>·</span><span>🏢 Samsung / Naver u. a.</span><span>·</span>
-          <a href="https://www.digitaltoday.co.kr/en/view/125850/korean-big-tech-joins-personal-ai-agent-race-jensen-huang-resignation-fallout" target="_blank" rel="noreferrer">digitaltoday.co.kr</a>
+          <span>📅 13.11.2026</span><span>·</span><span>🏢 Cohere</span><span>·</span>
+          <a href="https://aifunding.me/roundups/november-2026" target="_blank" rel="noreferrer">aifunding.me</a>
         </div>
       </article>
 
@@ -533,7 +533,16 @@
 
       <article class="card">
         <h3>Letzte Releases</h3>
-        <p>Aktuelle Version <code>v2.1.325</code> (13.11.) schließt eine <strong>Sicherheitslücke im zstd-Decoding</strong> komprimierter Responses, ergänzt einen Spinner-Hinweis in VS Code zum erneuten Ausführen einer Notebook-Zelle (sobald Claude ein Jupyter-Notebook gelesen oder editiert hat) und eine Zusatzzeile unter der Org-Fehlermeldung. Davor führte <code>v2.1.323</code> (12.11.) <strong>Code Mode</strong> ein — ein experimentelles Opt-in, in dem Claude <strong>JavaScript schreibt, um seine Tools aufzurufen</strong> (org-weit abschaltbar); dazu kommen <code>engines["claude-code"]</code> in <code>plugin.json</code> (Plugins außerhalb ihres angegebenen Versionsbereichs werden nicht installiert/geladen), Type-Checking der TypeScript-Hooks eines Plugins in <code>claude plugin validate</code> und <code>CLAUDE_CODE_AUTO_MODE_MODEL</code> in Managed-Settings für Claude-Desktop-Sessions auf Drittanbietern. Davor ergänzte <code>v2.1.322</code> (10.11.) den <strong>Fast-Mode auf Vertex</strong> (global, us, eu — mit Fallback auf Standard-Tempo, falls Vertex ihn verweigert). Das Highlight der Vorwoche steht in <code>v2.1.321</code> (09.11.): Claude Code führt <strong>Claude Fable 5.2</strong> (<code>claude-fable-5-2</code>) als neues <strong>Default-Fable-Modell</strong> ein — 1M Kontext, <strong>8/40 $ pro Mio. Token</strong>, 0,20 $/Mtok Cache-Reads; dazu kommt <code>--settings &lt;file&gt;</code> für <code>claude remote-control</code> (wendet eine Settings-Datei auf jede gestartete Session an) und ein Fix für MCP-OAuth-Requests. Das erklärt, warum die 5.2-Generation unmittelbar im Werkzeug verfügbar war. Davor war <code>v2.1.319</code> (06.11.) das für unbeaufsichtigte Läufe wie diesen wichtigste Release: <code>claude -p</code> im Auto-Modus <strong>beendet jetzt mit Exit 1 statt 0</strong>, wenn Aktionen mangels Safety-Check verweigert wurden (Text- und JSON-Output) — ein stiller Falsch-Erfolg ist damit behoben. Dazu <strong><code>permissions.denyInsteadOfPrompting</code></strong>, eine Auto-Modus-Umstellung ohne Klassifikator-Fallback bei abgeschalteter Telemetrie (<code>CLAUDE_CODE_AUTO_MODE_SERVER=0</code> hält ihn), MCP-Tasks im Terminal und harte <strong>Security-Fixes</strong> (Bash-Permission-Bypass via Environment-Präfix, <code>sed</code>-Check-Skip im Auto-Modus, Sandbox-Escape beim Worktree, <code>/rewind</code>-Symlink-Durchgriff). <code>v2.1.318</code> (04.11.) brachte Mod-Aktivierungs-Protokoll, <code>assume_role</code> auf <code>mantle</code>-Upstreams und eine <code>effort</code>-Option für Mods; <code>v2.1.317</code> (03.11.) ließ einen Check nachfragen, bevor ein Web-/Shell-Tool die Account-E-Mail ins Netz schickt, <code>/schedule</code> vor ungefragten Connectors warnen und <code>onFailure: "block"</code> für Agent-SDK-Hook-Callbacks blockieren; <code>v2.1.316</code> (31.10.) ergänzte <code>CLAUDE_CODE_DISABLE_ULTRATHINK</code>, pooled Group-Budgets und <code>CLAUDE_CODE_DISABLE_LOOPED_CROSS_CERT_DROP</code>. Die Linie bleibt: Modelle schnell verfügbar, dazu Governance, Sicherheit und Robustheit für genau die Oneshot- und Cron-Läufe, die dieses Briefing erzeugen.</p>
+        <p>Aktuelle Version <code>v2.1.326</code> (16.11.) schaltet <strong>Code Mode</strong> automatisch ein, wenn <strong>Agent-Teams</strong> aktiv sind — Sessions mit eingeschalteten Teams starten jetzt im Code Mode —, warnt beim Start, wenn ein <code>--allowedTools</code>-, <code>--disallowedTools</code>- oder <code>--tools</code>-Wert einen Eintrag enthält, der nicht wie eine vollständige Regel aussieht, und erklärt in einer neuen Meldung, warum MCP-Server nicht mehr geladen werden, sobald ein Administrator Managed Settings setzt. Davor schloss <code>v2.1.325</code> (13.11.) eine <strong>Sicherheitslücke im zstd-Decoding</strong> komprimierter Responses, ergänzte einen Spinner-Hinweis in VS Code zum erneuten Ausführen einer Notebook-Zelle (sobald Claude ein Jupyter-Notebook gelesen oder editiert hat) und eine Zusatzzeile unter der Org-Fehlermeldung. Davor führte <code>v2.1.323</code> (12.11.) <strong>Code Mode</strong> ein — ein experimentelles Opt-in, in dem Claude <strong>JavaScript schreibt, um seine Tools aufzurufen</strong> (org-weit abschaltbar); dazu kommen <code>engines["claude-code"]</code> in <code>plugin.json</code> (Plugins außerhalb ihres angegebenen Versionsbereichs werden nicht installiert/geladen), Type-Checking der TypeScript-Hooks eines Plugins in <code>claude plugin validate</code> und <code>CLAUDE_CODE_AUTO_MODE_MODEL</code> in Managed-Settings für Claude-Desktop-Sessions auf Drittanbietern. Davor ergänzte <code>v2.1.322</code> (10.11.) den <strong>Fast-Mode auf Vertex</strong> (global, us, eu — mit Fallback auf Standard-Tempo, falls Vertex ihn verweigert). Das Highlight der Vorwoche steht in <code>v2.1.321</code> (09.11.): Claude Code führt <strong>Claude Fable 5.2</strong> (<code>claude-fable-5-2</code>) als neues <strong>Default-Fable-Modell</strong> ein — 1M Kontext, <strong>8/40 $ pro Mio. Token</strong>, 0,20 $/Mtok Cache-Reads; dazu kommt <code>--settings &lt;file&gt;</code> für <code>claude remote-control</code> (wendet eine Settings-Datei auf jede gestartete Session an) und ein Fix für MCP-OAuth-Requests. Das erklärt, warum die 5.2-Generation unmittelbar im Werkzeug verfügbar war. Davor war <code>v2.1.319</code> (06.11.) das für unbeaufsichtigte Läufe wie diesen wichtigste Release: <code>claude -p</code> im Auto-Modus <strong>beendet jetzt mit Exit 1 statt 0</strong>, wenn Aktionen mangels Safety-Check verweigert wurden (Text- und JSON-Output) — ein stiller Falsch-Erfolg ist damit behoben. Dazu <strong><code>permissions.denyInsteadOfPrompting</code></strong>, eine Auto-Modus-Umstellung ohne Klassifikator-Fallback bei abgeschalteter Telemetrie (<code>CLAUDE_CODE_AUTO_MODE_SERVER=0</code> hält ihn), MCP-Tasks im Terminal und harte <strong>Security-Fixes</strong> (Bash-Permission-Bypass via Environment-Präfix, <code>sed</code>-Check-Skip im Auto-Modus, Sandbox-Escape beim Worktree, <code>/rewind</code>-Symlink-Durchgriff). <code>v2.1.318</code> (04.11.) brachte Mod-Aktivierungs-Protokoll, <code>assume_role</code> auf <code>mantle</code>-Upstreams und eine <code>effort</code>-Option für Mods; <code>v2.1.317</code> (03.11.) ließ einen Check nachfragen, bevor ein Web-/Shell-Tool die Account-E-Mail ins Netz schickt, <code>/schedule</code> vor ungefragten Connectors warnen und <code>onFailure: "block"</code> für Agent-SDK-Hook-Callbacks blockieren; <code>v2.1.316</code> (31.10.) ergänzte <code>CLAUDE_CODE_DISABLE_ULTRATHINK</code>, pooled Group-Budgets und <code>CLAUDE_CODE_DISABLE_LOOPED_CROSS_CERT_DROP</code>. Die Linie bleibt: Modelle schnell verfügbar, dazu Governance, Sicherheit und Robustheit für genau die Oneshot- und Cron-Läufe, die dieses Briefing erzeugen.</p>
+
+        <div class="release">
+          <div class="ver">v2.1.326</div>
+          <div class="when">16.11.</div>
+          <div class="what">
+            <strong>Code Mode mit Agent-Teams &amp; Tool-Regel-Warnung</strong> — Code Mode lässt sich jetzt einschalten, während <strong>Agent-Teams</strong> aktiv sind; wer es schon an hat, startet Team-Sessions ab sofort im Code Mode · <strong>Startup-Warnung</strong>, wenn ein <code>--allowedTools</code>-, <code>--disallowedTools</code>- oder <code>--tools</code>-Eintrag nicht wie eine vollständige Regel aussieht · neue Meldung, die erklärt, warum MCP-Server nicht mehr laden, sobald ein Administrator Managed Settings setzt
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
 
         <div class="release">
           <div class="ver">v2.1.325</div>
@@ -577,15 +586,6 @@
           <div class="what">
             <strong>Oneshot-Exit-Fix &amp; Security-Härtung</strong> — <code>claude -p</code> im Auto-Modus beendet jetzt mit Exit 1 statt 0, wenn Aktionen mangels Safety-Check verweigert wurden (Text/JSON) · neues <code>permissions.denyInsteadOfPrompting</code> · Auto-Modus ohne Telemetrie/Flags fragt nach oder verweigert statt Klassifikator-Fallback (<code>CLAUDE_CODE_AUTO_MODE_SERVER=0</code> hält ihn) · MCP-Tasks im Terminal · Security-Fixes: Bash-Permission-Bypass via Environment-Präfix, <code>sed</code>-Check-Skip im Auto-Modus, Sandbox-Escape beim Worktree, <code>/rewind</code>-Symlink-Durchgriff
             <span class="badge sec">SECURITY</span>
-          </div>
-        </div>
-
-        <div class="release">
-          <div class="ver">v2.1.318</div>
-          <div class="when">04.11.</div>
-          <div class="what">
-            <strong>Mod-Aktivierung &amp; AWS-Rollen</strong> — Claude Code protokolliert jetzt die Antwort, wenn es fragt, ob eine in der Session geschriebene Mod aktiviert werden soll · <code>assume_role</code> auf <code>mantle</code>-Upstreams des Claude-Apps-Gateways (Rolle in einem anderen AWS-Konto, pro-Entwickler-Kostenzuordnung) · neue <code>effort</code>-Option für Mods
-            <span class="badge feat">FEATURE</span>
           </div>
         </div>
 

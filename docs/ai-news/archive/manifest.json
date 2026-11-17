@@ -513,9 +513,15 @@
     },
     {
       "date": "2026-11-16",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-11-16.html",
       "headline": "China schiebt ein Modell in die Urteilswoche — Qwen4-Max, agentische Bezahl-Rails und das Warten auf Nvidia und Anthropic",
       "summary": "Zum Auftakt der Entscheidungswoche setzt Alibaba ein Zeichen: Qwen4-Max, agent-first für Coding, 1M-Token-Default, Behauptung von ~58 % weniger Kosten pro Fachaufgabe — Frontier-Fähigkeit wird weiter zur Ware, jetzt mit Souveränitäts-Frage für DACH · Agentische Bezahl-Rails werden konkret: OpenAIs ChatGPT Wallet lässt Agenten im Namen des Nutzers kaufen, direkt nach Visa Intelligent Commerce und dem United-Agenten-Bann — die Frage ist Autorisierung, nicht Fähigkeit · Enterprise-Verankerung: OpenAI-Modelle auf Databricks-Governed-Data, Google Gemini Decision API, Claude Managed Agents self-hosted · Die Woche entscheidet der Public Market: Nvidia-Zahlen 17.11., Anthropic-IPO-Pricing 18.11. (Handelsstart 19.) · Claude Code v2.1.325"
+    },
+    {
+      "date": "2026-11-17",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Urteilswoche, Teil zwei: Nvidia liefert heute die Zahl, Washington und Kalifornien drehen an der Governance-Schraube",
+      "summary": "Der Public-Market-Test der Capex-These kommt heute — Nvidia legt am Dienstag Quartalszahlen vor, Anthropics IPO-Bepreisung folgt Mittwoch · Zugleich zieht die Governance an: Das US-Handelsministerium macht den Re-Export von Nvidia-&-Co.-Chips über Rechenzentren in Singapur, Malaysia, Thailand, Indonesien und Brasilien lizenzpflichtig · Kaliforniens Generalstaatsanwalt verklagt OpenAI wegen angeblich verharmloster Produktsicherheit · AMD schließt die 8,2-Mrd.-Übernahme von Fei-Fei Lis World Labs ab, sie wird Chief Scientist · OpenAI öffnet Agenten eine neue Shopping-Schiene, direkt nach Uniteds Agenten-Bann · Claude Code v2.1.326"
     }
   ]
 }
