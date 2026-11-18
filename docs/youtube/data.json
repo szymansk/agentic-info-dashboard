@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-17T12:05:01+00:00",
+  "last_updated": "2026-11-18T05:03:10+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,16 @@
   ],
   "featured": [
     {
-      "video_id": "ZIpm-0RczCk",
-      "title": "How Revolut’s lean teams take on bigger challenges with OpenAI",
+      "video_id": "2pdF52EVlbM",
+      "title": "An underrated way to use ChatGPT: Life admin",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-11-17T09:45:35+00:00",
-      "url": "https://www.youtube.com/watch?v=ZIpm-0RczCk",
-      "thumbnail": "https://img.youtube.com/vi/ZIpm-0RczCk/mqdefault.jpg",
-      "description": "What can one engineer build when a project looks like it needs a whole team? At Revolut, an engineer used Codex to build an internal code review service himself. Its designers used Codex to turn seven years of design documentation into a fo",
+      "published": "2026-11-18T00:06:39+00:00",
+      "url": "https://www.youtube.com/shorts/2pdF52EVlbM",
+      "thumbnail": "https://img.youtube.com/vi/2pdF52EVlbM/mqdefault.jpg",
+      "description": "Even ChatGPT researchers need a little help with life admin.\n\nIsa F. shares an underrated way she uses ChatGPT: keeping track of the details and making time for her next haircut.",
       "why": ""
     },
     {
@@ -170,6 +170,126 @@
   ],
   "recent": [
     {
+      "video_id": "2pdF52EVlbM",
+      "title": "An underrated way to use ChatGPT: Life admin",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-18T00:06:39+00:00",
+      "url": "https://www.youtube.com/shorts/2pdF52EVlbM",
+      "thumbnail": "https://img.youtube.com/vi/2pdF52EVlbM/mqdefault.jpg",
+      "description": "Even ChatGPT researchers need a little help with life admin.\n\nIsa F. shares an underrated way she uses ChatGPT: keeping track of the details and making time for her next haircut."
+    },
+    {
+      "video_id": "pmOJIq7Ah00",
+      "title": "Introducing ChatGPT for Sales",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-17T23:24:04+00:00",
+      "url": "https://www.youtube.com/watch?v=pmOJIq7Ah00",
+      "thumbnail": "https://img.youtube.com/vi/pmOJIq7Ah00/mqdefault.jpg",
+      "description": "Spend less time on busywork and more time selling with ChatGPT for Sales.\n\nThe new Sales plugin and 30+ new and expanded partner plugins bring your customer context and sales tools together in ChatGPT. Prepare for calls, tailor proposals, a"
+    },
+    {
+      "video_id": "OrQX4dH4t40",
+      "title": "did the intern cook?",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-17T20:00:39+00:00",
+      "url": "https://www.youtube.com/shorts/OrQX4dH4t40",
+      "thumbnail": "https://img.youtube.com/vi/OrQX4dH4t40/mqdefault.jpg",
+      "description": ""
+    },
+    {
+      "video_id": "ArJTup6HNRA",
+      "title": "Can AI build AI?",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-17T19:27:29+00:00",
+      "url": "https://www.youtube.com/shorts/ArJTup6HNRA",
+      "thumbnail": "https://img.youtube.com/vi/ArJTup6HNRA/mqdefault.jpg",
+      "description": "In our first episode of Working Theory, a16z General Partner Sarah Wang explores recursive self-improvement with two leading AI researchers: Mark Chen, Chief Research Officer at OpenAI, and John Schulman, co-founder and Chief Scientist of T"
+    },
+    {
+      "video_id": "tKoDPOrLMX0",
+      "title": "Building 3D video sets with GPT-6.2 Astra",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-17T18:41:32+00:00",
+      "url": "https://www.youtube.com/watch?v=tKoDPOrLMX0",
+      "thumbnail": "https://img.youtube.com/vi/tKoDPOrLMX0/mqdefault.jpg",
+      "description": "GPT-6.2 Astra is our new flagship model, delivering a step up in capability with cleaner code, better frontends and 3D models, and more efficient tool use.\n\nRecreate a room from just two video frames with GPT-6.2 Astra in Codex. See how it "
+    },
+    {
+      "video_id": "C1zYX5jwqq4",
+      "title": "GPT-6.2 Astra and GPT-6.2 Sol—Models built for the real world",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-17T17:55:40+00:00",
+      "url": "https://www.youtube.com/watch?v=C1zYX5jwqq4",
+      "thumbnail": "https://img.youtube.com/vi/C1zYX5jwqq4/mqdefault.jpg",
+      "description": "We’re introducing GPT‑6.2 Astra, our new frontier model for your hardest projects, and GPT‑6.2 Sol, our efficient, versatile model for everyday work. Both models deliver better results on demanding tasks with fewer output tokens, so you can"
+    },
+    {
+      "video_id": "h_aA1-R70E8",
+      "title": "OpenAI’s Cofounder & Research Chief Explain Self-Improving AI",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-17T17:41:29+00:00",
+      "url": "https://www.youtube.com/watch?v=h_aA1-R70E8",
+      "thumbnail": "https://img.youtube.com/vi/h_aA1-R70E8/mqdefault.jpg",
+      "description": "For decades, the idea of AI improving itself was just a thought experiment. Today, AI is already helping researchers at frontier labs run experiments, write code and test ideas faster. Mark Chen says OpenAI has built “AI research interns.” "
+    },
+    {
+      "video_id": "qbsb9DpdZ6s",
+      "title": "How to compress text to 1 bit per character | Compression is Intelligence Part 3",
+      "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
+      "channel_name": "3Blue1Brown",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-11-17T16:43:16+00:00",
+      "url": "https://www.youtube.com/watch?v=qbsb9DpdZ6s",
+      "thumbnail": "https://img.youtube.com/vi/qbsb9DpdZ6s/mqdefault.jpg",
+      "description": "Arithmetic codes and how they elucidate this trilogy's title\nChannel career fair: https://3b1b.com/talent\nNew store items! https://3b1b.com/store\nEarly views for supporters: https://3b1b.com/support\n\nOther resources you may enjoy.\n\nOn Arith"
+    },
+    {
+      "video_id": "0IZcjWtWmDA",
+      "title": "Encoding the encyclopedia on a rod",
+      "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
+      "channel_name": "3Blue1Brown",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-11-17T16:43:03+00:00",
+      "url": "https://www.youtube.com/shorts/0IZcjWtWmDA",
+      "thumbnail": "https://img.youtube.com/vi/0IZcjWtWmDA/mqdefault.jpg",
+      "description": "Full video: https://youtu.be/qbsb9DpdZ6s"
+    },
+    {
+      "video_id": "gl2U4fGTr6g",
+      "title": "OpenAI's New Breakthrough Is... Utter Chaos",
+      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+      "channel_name": "Two Minute Papers",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-11-17T12:46:24+00:00",
+      "url": "https://www.youtube.com/watch?v=gl2U4fGTr6g",
+      "thumbnail": "https://img.youtube.com/vi/gl2U4fGTr6g/mqdefault.jpg",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.com/papers\n\n📝 The paper is available here:\nhttps://www.kitp.ucsb.edu/sites/default/files/YM_working_group.pdf\nhttps://openai.com/index/building-scientific-understandin"
+    },
+    {
       "video_id": "ZIpm-0RczCk",
       "title": "How Revolut’s lean teams take on bigger challenges with OpenAI",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
@@ -180,54 +300,6 @@
       "url": "https://www.youtube.com/watch?v=ZIpm-0RczCk",
       "thumbnail": "https://img.youtube.com/vi/ZIpm-0RczCk/mqdefault.jpg",
       "description": "What can one engineer build when a project looks like it needs a whole team? At Revolut, an engineer used Codex to build an internal code review service himself. Its designers used Codex to turn seven years of design documentation into a fo"
-    },
-    {
-      "video_id": "R_sl8zEp9ng",
-      "title": "How one engineer built a code review service with Codex | Revolut’s Dmitry Pitik",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-17T09:45:34+00:00",
-      "url": "https://www.youtube.com/watch?v=R_sl8zEp9ng",
-      "thumbnail": "https://img.youtube.com/vi/R_sl8zEp9ng/mqdefault.jpg",
-      "description": "Dmitry Pitik thought he’d need a team of developers to build Revolut’s internal code review service. In this film, the Senior Platform Engineer explains how he broke the design into tasks, assigned them to Codex agents working in parallel a"
-    },
-    {
-      "video_id": "xkeXefmxArU",
-      "title": "Making marketing feel local across 40 markets | Revolut’s Kim Maniovich",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-17T09:45:31+00:00",
-      "url": "https://www.youtube.com/watch?v=xkeXefmxArU",
-      "thumbnail": "https://img.youtube.com/vi/xkeXefmxArU/mqdefault.jpg",
-      "description": "A campaign that works in one market can need a different approach in the next. Kim Maniovich, Global Head of Business Marketing at Revolut, shares how her team uses AI to understand local differences and tailor campaigns faster. She also ex"
-    },
-    {
-      "video_id": "-O0tMcyH4Wo",
-      "title": "Faster fraud response for safer shopping | Revolut’s David Abitbol",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-17T09:45:26+00:00",
-      "url": "https://www.youtube.com/watch?v=-O0tMcyH4Wo",
-      "thumbnail": "https://img.youtube.com/vi/-O0tMcyH4Wo/mqdefault.jpg",
-      "description": "OpenAI helps Revolut’s financial crime team investigate flagged payments and respond faster to make shopping safer. David Abitbol, AI Lead at Revolut, explains how his team tests AI systems before putting them to work. He also shares how Co"
-    },
-    {
-      "video_id": "hAASMPKkaXA",
-      "title": "Making seven years of design documentation AI-readable in a day | Revolut’s Dmytro Pavlov",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-17T09:45:10+00:00",
-      "url": "https://www.youtube.com/watch?v=hAASMPKkaXA",
-      "thumbnail": "https://img.youtube.com/vi/hAASMPKkaXA/mqdefault.jpg",
-      "description": "Revolut’s designers had spent seven years documenting how their design system works. Senior Designer Dmytro Pavlov shares how his team used Codex to turn that material into a format AI could read in a single day. Along the way, they spotted"
     },
     {
       "video_id": "ytmawkPTP24",
@@ -255,7 +327,7 @@
     },
     {
       "video_id": "kMdHCyAnNHA",
-      "title": "Box CEO Explains How AI Is Changing Software",
+      "title": "Box CEO Explains Why AI Makes Software Features Obsolete",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
       "channel_name": "Matthew Berman",
       "category": "news",
@@ -302,18 +374,6 @@
       "description": "After finishing this song, it took me 3 months to gather the courage to stand in front of the camera to record it. Hope you Fellow Scholars enjoy it! Thank you so much for the amazing musicians for their help!\n- Vocals: Carolina Padrón\n- Dr"
     },
     {
-      "video_id": "PbD9pVXxsYM",
-      "title": "Cyberattacks Used to Take Months. AI Can Do It in Minutes.",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-13T15:30:16+00:00",
-      "url": "https://www.youtube.com/watch?v=PbD9pVXxsYM",
-      "thumbnail": "https://img.youtube.com/vi/PbD9pVXxsYM/mqdefault.jpg",
-      "description": "AI isn’t just helping defenders find vulnerabilities. It’s giving attackers the speed and expertise to exploit them faster than many companies can respond. Wiz co-founder and CTO Ami Luttwak joins a16z General Partners Zane Lackey and Sarah"
-    },
-    {
       "video_id": "yVaVR2Ywfik",
       "title": "Who controls access to AI?",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
@@ -350,18 +410,6 @@
       "description": "Manufact is the easiest way to build and deploy your MCP. Get $100 in free credits: https://manufact.com/fireship\n\nJensen Huang just resigned as Nvidia’s CEO four days after admitting to an affair with a suspected Chinese spy whose tiny Sin"
     },
     {
-      "video_id": "Xk96rASVKh0",
-      "title": "How to find the next billion-dollar game.",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-12T20:00:23+00:00",
-      "url": "https://www.youtube.com/shorts/Xk96rASVKh0",
-      "thumbnail": "https://img.youtube.com/vi/Xk96rASVKh0/mqdefault.jpg",
-      "description": "Jonathan Lai, General Partner at a16z, on why some of the biggest games in the industry started as mods of other games.\n\nThe PUBG example traces back to Brendan Greene, known online as PlayerUnknown. He built a battle royale mod on top of D"
-    },
-    {
       "video_id": "G11-Vmw7-PQ",
       "title": "Cheaper AI can lead to more spending",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
@@ -396,18 +444,6 @@
       "url": "https://www.youtube.com/watch?v=BHOw09O3ZsI",
       "thumbnail": "https://img.youtube.com/vi/BHOw09O3ZsI/mqdefault.jpg",
       "description": "Operations that complete without interruption, known as 'atomic' operations are extremely useful and allow us to go about our business unimpeded. Matt Godbolt of 'Compiler Explorer' fame explains. \n\nComputerphile is supported by Jane Street"
-    },
-    {
-      "video_id": "HDRy6XmE2RQ",
-      "title": "How AI Could Bring Halo and Other Classic Games Back to Life",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-12T14:50:20+00:00",
-      "url": "https://www.youtube.com/watch?v=HDRy6XmE2RQ",
-      "thumbnail": "https://img.youtube.com/vi/HDRy6XmE2RQ/mqdefault.jpg",
-      "description": "AI is collapsing the distance between an idea and a playable game. What happens when almost anyone can build one?\n\nIn this episode, a16z General Partners Anish Acharya and Jonathan Lai discuss how AI is changing game development, from gener"
     },
     {
       "video_id": "gPNiuyYirfw",
@@ -650,18 +686,6 @@
       "description": "The AI revolution will not be centralized. 🤗\n\nGo inside Open Together, Hugging Face’s celebration of the open source AI community at The Midway in San Francisco on October 16, 2026. Thousands of AI Builders showed up to make it the largest "
     },
     {
-      "video_id": "XgC1QTs6A2U",
-      "title": "The Future of AI Is Absolutely Incredible (Spencer Huang)",
-      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
-      "channel_name": "Two Minute Papers",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-11-06T07:27:02+00:00",
-      "url": "https://www.youtube.com/watch?v=XgC1QTs6A2U",
-      "thumbnail": "https://img.youtube.com/vi/XgC1QTs6A2U/mqdefault.jpg",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.ai/papers\n\nChapters:\n00:00 Intro\n02:40 Why Robots Are Hard\n08:16 The Perfect Data Diet\n16:05 Intelligence Density\n20:13 Building AI Worlds\n22:10 Learning From Failure\n"
-    },
-    {
       "video_id": "QyXrlveEpxE",
       "title": "Andrew Ng on balancing latency and reliability in voice AI. #deeplearningai #aiagents #voiceai",
       "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
@@ -699,7 +723,7 @@
     }
   ],
   "stats": {
-    "total_videos": 44,
+    "total_videos": 46,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
