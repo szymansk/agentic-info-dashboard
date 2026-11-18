@@ -519,9 +519,15 @@
     },
     {
       "date": "2026-11-17",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-11-17.html",
       "headline": "Urteilswoche, Teil zwei: Nvidia liefert heute die Zahl, Washington und Kalifornien drehen an der Governance-Schraube",
       "summary": "Der Public-Market-Test der Capex-These kommt heute — Nvidia legt am Dienstag Quartalszahlen vor, Anthropics IPO-Bepreisung folgt Mittwoch · Zugleich zieht die Governance an: Das US-Handelsministerium macht den Re-Export von Nvidia-&-Co.-Chips über Rechenzentren in Singapur, Malaysia, Thailand, Indonesien und Brasilien lizenzpflichtig · Kaliforniens Generalstaatsanwalt verklagt OpenAI wegen angeblich verharmloster Produktsicherheit · AMD schließt die 8,2-Mrd.-Übernahme von Fei-Fei Lis World Labs ab, sie wird Chief Scientist · OpenAI öffnet Agenten eine neue Shopping-Schiene, direkt nach Uniteds Agenten-Bann · Claude Code v2.1.326"
+    },
+    {
+      "date": "2026-11-18",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Das Urteil fällt heute: Anthropic bepreist seinen Börsengang — der Public Market bekommt die KI-These zum Abstimmen",
+      "summary": "Anthropic bepreist heute 825 Mio. Aktien (70–78 $, Ticker ANT, Handelsstart Do) — Prospekt zeigt 33,24 Mrd. $ Umsatz/9M (+1.200 % YoY) gegen 104 Mrd. $ Nettoverlust (fast nur Wandelanleihen-Neubewertung) · Microsoft Ignite: Copilot-Harness in Foundry bündelt 20+ Frontier-Modelle, kommodifiziert die Modell-Schicht · Cohere schließt AISLE ab + startet Cohere Cyber (agentische Security) · Genpact: 79 % setzen Agenten ein, nur 15 % messen den ROI · Rox 100 Mio. $ @ 1,3 Mrd., Mercor 750 Mio. $ · Claude Code v2.1.327"
     }
   ]
 }
