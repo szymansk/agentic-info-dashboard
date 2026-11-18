@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-18T06:15:28+00:00",
+  "last_updated": "2026-11-18T12:04:33+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -708,22 +708,10 @@
       "url": "https://www.youtube.com/watch?v=BmBw827GgFA",
       "thumbnail": "https://img.youtube.com/vi/BmBw827GgFA/mqdefault.jpg",
       "description": "One of the most useful primitives in programming, but what is a mutual exclusion and how does it work? Matt Godbolt explains!\n\nComputerphile is supported by Jane Street. Learn more about them (and exciting career opportunities) at: https://"
-    },
-    {
-      "video_id": "5__Fm2TnPcU",
-      "title": "Stop guessing how to fix your agent",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-04T11:00:19+00:00",
-      "url": "https://www.youtube.com/watch?v=5__Fm2TnPcU",
-      "thumbnail": "https://img.youtube.com/vi/5__Fm2TnPcU/mqdefault.jpg",
-      "description": "Learn More: https://bit.ly/4ikf9L0\n\nTraditional software tests confirm that your code is working, but fall short when it comes to testing agents. Evals allow you to measure an agent’s decisions and actions when its failures may not be obvio"
     }
   ],
   "stats": {
-    "total_videos": 46,
+    "total_videos": 45,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
