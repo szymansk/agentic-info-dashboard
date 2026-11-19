@@ -525,9 +525,15 @@
     },
     {
       "date": "2026-11-18",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-11-18.html",
       "headline": "Das Urteil fällt heute: Anthropic bepreist seinen Börsengang — der Public Market bekommt die KI-These zum Abstimmen",
       "summary": "Anthropic bepreist heute 825 Mio. Aktien (70–78 $, Ticker ANT, Handelsstart Do) — Prospekt zeigt 33,24 Mrd. $ Umsatz/9M (+1.200 % YoY) gegen 104 Mrd. $ Nettoverlust (fast nur Wandelanleihen-Neubewertung) · Microsoft Ignite: Copilot-Harness in Foundry bündelt 20+ Frontier-Modelle, kommodifiziert die Modell-Schicht · Cohere schließt AISLE ab + startet Cohere Cyber (agentische Security) · Genpact: 79 % setzen Agenten ein, nur 15 % messen den ROI · Rox 100 Mio. $ @ 1,3 Mrd., Mercor 750 Mio. $ · Claude Code v2.1.327"
+    },
+    {
+      "date": "2026-11-19",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Der erste Handelstag: Anthropic debütiert an der Nasdaq — und Google kontert mit Gemini 4 Neon und persistenten Agenten",
+      "summary": "Anthropic (ANT) bepreist bei 83 $/Aktie — größter US-IPO der Geschichte, ~81,3 Mrd. $ Erlös, ~1,38 Bio. $ Bewertung, Handelsstart heute · Google launcht Gemini 4 Neon (1M Kontext, 3/15 $) + persistente Gemini-Agenten mit eigenem Gmail/Calendar/Drive · Nvidia stoppt Hopper-Lieferungen nach China · Citi wälzt AI-Agent-Haftung auf Kunden ab · Microsoft Decision 1.1 · Claude Code v2.1.328"
     }
   ]
 }
