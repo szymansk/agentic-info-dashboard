@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-19T06:15:27+00:00",
+  "last_updated": "2026-11-19T12:03:57+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,8 +116,21 @@
   ],
   "featured": [
     {
+      "video_id": "ikNf7eW8CHk",
+      "title": "Meet Brian and Beast, the dots at work at Holiday Extras",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-19T11:38:57+00:00",
+      "url": "https://www.youtube.com/watch?v=ikNf7eW8CHk",
+      "thumbnail": "https://img.youtube.com/vi/ikNf7eW8CHk/mqdefault.jpg",
+      "description": "David Lee, Director of Innovation & Growth at Holiday Extras, calls his dot, Brian, on his morning commute. They talk through the meetings ahead, and Brian can have a report ready by the time David gets to his desk. His colleague Liam Thomp",
+      "why": ""
+    },
+    {
       "video_id": "v1X9Fqs5a14",
-      "title": "GTA 6, Crime, Prison Gangs, Jewel Heists, Miami, Corrupt Cops & Money | Lex Fridman Podcast #505",
+      "title": "GTA 6, Crime, Jewel Heists, Prison, Corrupt Cops, Mafia, Miami & Money | Lex Fridman Podcast #505",
       "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
       "channel_name": "Lex Fridman",
       "category": "podcast",
@@ -126,19 +139,6 @@
       "url": "https://www.youtube.com/watch?v=v1X9Fqs5a14",
       "thumbnail": "https://img.youtube.com/vi/v1X9Fqs5a14/mqdefault.jpg",
       "description": "Larry Lawton is one of the most notorious and prolific jewelry thieves in US history, who was eventually caught by the FBI, spent more than a decade in prison, including a lot of time in the hole, and then he turned his life around to run t",
-      "why": ""
-    },
-    {
-      "video_id": "AhmCKHNqhB8",
-      "title": "Introducing ChatGPT for Accounting",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-18T21:01:26+00:00",
-      "url": "https://www.youtube.com/watch?v=AhmCKHNqhB8",
-      "thumbnail": "https://img.youtube.com/vi/AhmCKHNqhB8/mqdefault.jpg",
-      "description": "ChatGPT for Accounting helps take the busywork out of your month-end close.\n\nWatch how ChatGPT finds completed jobs in your email and drafts QuickBooks invoices for your review, flagging anything unclear along the way.\n\nThe Accounting plugi",
       "why": ""
     },
     {
@@ -170,8 +170,32 @@
   ],
   "recent": [
     {
+      "video_id": "ikNf7eW8CHk",
+      "title": "Meet Brian and Beast, the dots at work at Holiday Extras",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-19T11:38:57+00:00",
+      "url": "https://www.youtube.com/watch?v=ikNf7eW8CHk",
+      "thumbnail": "https://img.youtube.com/vi/ikNf7eW8CHk/mqdefault.jpg",
+      "description": "David Lee, Director of Innovation & Growth at Holiday Extras, calls his dot, Brian, on his morning commute. They talk through the meetings ahead, and Brian can have a report ready by the time David gets to his desk. His colleague Liam Thomp"
+    },
+    {
+      "video_id": "Cy7Wz6Z4TWU",
+      "title": "DeepMind Just Showed Us What AI Is Really For",
+      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+      "channel_name": "Two Minute Papers",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-11-19T09:26:19+00:00",
+      "url": "https://www.youtube.com/watch?v=Cy7Wz6Z4TWU",
+      "thumbnail": "https://img.youtube.com/vi/Cy7Wz6Z4TWU/mqdefault.jpg",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.com/papers\n\n📝 The DeepMind AlphaGenome 2paper is available here:\nhttps://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease"
+    },
+    {
       "video_id": "v1X9Fqs5a14",
-      "title": "GTA 6, Crime, Prison Gangs, Jewel Heists, Miami, Corrupt Cops & Money | Lex Fridman Podcast #505",
+      "title": "GTA 6, Crime, Jewel Heists, Prison, Corrupt Cops, Mafia, Miami & Money | Lex Fridman Podcast #505",
       "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
       "channel_name": "Lex Fridman",
       "category": "podcast",
@@ -324,18 +348,6 @@
       "url": "https://www.youtube.com/watch?v=tKoDPOrLMX0",
       "thumbnail": "https://img.youtube.com/vi/tKoDPOrLMX0/mqdefault.jpg",
       "description": "GPT-6.2 Astra is our new flagship model, delivering a step up in capability with cleaner code, better frontends and 3D models, and more efficient tool use.\n\nRecreate a room from just two video frames with GPT-6.2 Astra in Codex. See how it "
-    },
-    {
-      "video_id": "C1zYX5jwqq4",
-      "title": "GPT-6.2 Astra and GPT-6.2 Sol—Models built for the real world",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-17T17:55:40+00:00",
-      "url": "https://www.youtube.com/watch?v=C1zYX5jwqq4",
-      "thumbnail": "https://img.youtube.com/vi/C1zYX5jwqq4/mqdefault.jpg",
-      "description": "We’re introducing GPT‑6.2 Astra, our new frontier model for your hardest projects, and GPT‑6.2 Sol, our efficient, versatile model for everyday work. Both models deliver better results on demanding tasks with fewer output tokens, so you can"
     },
     {
       "video_id": "qbsb9DpdZ6s",
@@ -684,18 +696,6 @@
       "url": "https://www.youtube.com/watch?v=9F9x3MufdMQ",
       "thumbnail": "https://img.youtube.com/vi/9F9x3MufdMQ/mqdefault.jpg",
       "description": "In this video we take a deep dive into DeepSeek Harness (DSH), DeepSeek's open-source agent harness, built on the Cordis plugin system around one idea: everything is a plugin, including the agent loop, the tools, and even the system prompt."
-    },
-    {
-      "video_id": "GJ6PMUm5oTA",
-      "title": "OpenAI's Astra Just Opened The Black Box Of AI",
-      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
-      "channel_name": "Two Minute Papers",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-11-07T16:24:47+00:00",
-      "url": "https://www.youtube.com/watch?v=GJ6PMUm5oTA",
-      "thumbnail": "https://img.youtube.com/vi/GJ6PMUm5oTA/mqdefault.jpg",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.com/papers\n\n📝 The Weight Space Programming work is available here:\nhttps://rikiyat.github.io/blog/weight-space-programming/\n\n🙏 We would like to thank our generous Patr"
     },
     {
       "video_id": "iw9SZgyahqg",
