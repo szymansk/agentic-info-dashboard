@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-18T12:04:33+00:00",
+  "last_updated": "2026-11-19T05:02:06+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,42 +116,42 @@
   ],
   "featured": [
     {
-      "video_id": "2pdF52EVlbM",
-      "title": "An underrated way to use ChatGPT: Life admin",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-18T00:06:39+00:00",
-      "url": "https://www.youtube.com/shorts/2pdF52EVlbM",
-      "thumbnail": "https://img.youtube.com/vi/2pdF52EVlbM/mqdefault.jpg",
-      "description": "Even ChatGPT researchers need a little help with life admin.\n\nIsa F. shares an underrated way she uses ChatGPT: keeping track of the details and making time for her next haircut.",
-      "why": ""
-    },
-    {
-      "video_id": "uND6iY2qp_c",
-      "title": "AlphaGenome 2: Teaching AI to read the entire human genome",
-      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
-      "channel_name": "Google DeepMind",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-11T18:00:31+00:00",
-      "url": "https://www.youtube.com/watch?v=uND6iY2qp_c",
-      "thumbnail": "https://img.youtube.com/vi/uND6iY2qp_c/mqdefault.jpg",
-      "description": "98% of human DNA doesn't build proteins—it controls how our cells work, and holds vital clues to why diseases happen and why 90% of new drugs fail in clinical trials. Understanding the genome at the molecular level is the key to deciphering",
-      "why": ""
-    },
-    {
-      "video_id": "2hJkprFnzhY",
-      "title": "Russia-Ukraine War: Putin, Zelenskyy, Drones and the Future of Warfare | Lex Fridman Podcast #504",
+      "video_id": "v1X9Fqs5a14",
+      "title": "GTA 6, Crime, Jewel Heists, Mafia, Gangs, Prison, Corrupt Cops & Money | Lex Fridman Podcast #505",
       "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
       "channel_name": "Lex Fridman",
       "category": "podcast",
       "color": "#b04bd1",
-      "published": "2026-11-10T23:52:20+00:00",
-      "url": "https://www.youtube.com/watch?v=2hJkprFnzhY",
-      "thumbnail": "https://img.youtube.com/vi/2hJkprFnzhY/mqdefault.jpg",
-      "description": "Preston Stewart is a West Point graduate and Afghanistan veteran who covers the Ukraine war extensively on his YouTube channel, his podcast called War and Conflict, and his newsletter called Defense Tech News. Michael Kofman is a world-clas",
+      "published": "2026-11-19T03:15:09+00:00",
+      "url": "https://www.youtube.com/watch?v=v1X9Fqs5a14",
+      "thumbnail": "https://img.youtube.com/vi/v1X9Fqs5a14/mqdefault.jpg",
+      "description": "Larry Lawton is one of the most notorious and prolific jewelry thieves in US history, who was eventually caught by the FBI, spent more than a decade in prison, including a lot of time in the hole, and then he turned his life around to run t",
+      "why": ""
+    },
+    {
+      "video_id": "AhmCKHNqhB8",
+      "title": "Introducing ChatGPT for Accounting",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-18T21:01:26+00:00",
+      "url": "https://www.youtube.com/watch?v=AhmCKHNqhB8",
+      "thumbnail": "https://img.youtube.com/vi/AhmCKHNqhB8/mqdefault.jpg",
+      "description": "ChatGPT for Accounting helps take the busywork out of your month-end close.\n\nWatch how ChatGPT finds completed jobs in your email and drafts QuickBooks invoices for your review, flagging anything unclear along the way.\n\nThe Accounting plugi",
+      "why": ""
+    },
+    {
+      "video_id": "pVc6KkjeCfU",
+      "title": "Behind the scenes with Genie 4",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_name": "Google DeepMind",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-18T18:12:24+00:00",
+      "url": "https://www.youtube.com/watch?v=pVc6KkjeCfU",
+      "thumbnail": "https://img.youtube.com/vi/pVc6KkjeCfU/mqdefault.jpg",
+      "description": "Go behind the scenes of our recent Genie 4 film as we explore our most realistic and interactive world model yet. \n\nInstead of generating static video, Genie 4 simulates dynamic worlds in real time. Watch how our team used Genie 4 and Proje",
       "why": ""
     },
     {
@@ -169,6 +169,114 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "v1X9Fqs5a14",
+      "title": "GTA 6, Crime, Jewel Heists, Mafia, Gangs, Prison, Corrupt Cops & Money | Lex Fridman Podcast #505",
+      "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
+      "channel_name": "Lex Fridman",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-19T03:15:09+00:00",
+      "url": "https://www.youtube.com/watch?v=v1X9Fqs5a14",
+      "thumbnail": "https://img.youtube.com/vi/v1X9Fqs5a14/mqdefault.jpg",
+      "description": "Larry Lawton is one of the most notorious and prolific jewelry thieves in US history, who was eventually caught by the FBI, spent more than a decade in prison, including a lot of time in the hole, and then he turned his life around to run t"
+    },
+    {
+      "video_id": "AhmCKHNqhB8",
+      "title": "Introducing ChatGPT for Accounting",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-18T21:01:26+00:00",
+      "url": "https://www.youtube.com/watch?v=AhmCKHNqhB8",
+      "thumbnail": "https://img.youtube.com/vi/AhmCKHNqhB8/mqdefault.jpg",
+      "description": "ChatGPT for Accounting helps take the busywork out of your month-end close.\n\nWatch how ChatGPT finds completed jobs in your email and drafts QuickBooks invoices for your review, flagging anything unclear along the way.\n\nThe Accounting plugi"
+    },
+    {
+      "video_id": "oRmAbrpECkQ",
+      "title": "John Schulman on Getting AI Models to Tell the Truth",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-18T20:30:27+00:00",
+      "url": "https://www.youtube.com/shorts/oRmAbrpECkQ",
+      "thumbnail": "https://img.youtube.com/vi/oRmAbrpECkQ/mqdefault.jpg",
+      "description": "John Schulman, CTO of Thinking Machines Lab and co-founder of OpenAI, on the alignment approach he is most bullish on: training objectives that get models to report what they otherwise wouldn't verbalize.\n\nSchulman was one of OpenAI's found"
+    },
+    {
+      "video_id": "yvUZevBjdXg",
+      "title": "Ben Silbermann on when a product is ready to ship.",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-18T20:00:11+00:00",
+      "url": "https://www.youtube.com/shorts/yvUZevBjdXg",
+      "thumbnail": "https://img.youtube.com/vi/yvUZevBjdXg/mqdefault.jpg",
+      "description": "By January 2010, he and co-founders Paul Sciarra and Evan Sharp were emailing friends and family to try it. Four months in, it had a few hundred users.\n\nSource: Y Combinator Startup School, 2012."
+    },
+    {
+      "video_id": "pVc6KkjeCfU",
+      "title": "Behind the scenes with Genie 4",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_name": "Google DeepMind",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-18T18:12:24+00:00",
+      "url": "https://www.youtube.com/watch?v=pVc6KkjeCfU",
+      "thumbnail": "https://img.youtube.com/vi/pVc6KkjeCfU/mqdefault.jpg",
+      "description": "Go behind the scenes of our recent Genie 4 film as we explore our most realistic and interactive world model yet. \n\nInstead of generating static video, Genie 4 simulates dynamic worlds in real time. Watch how our team used Genie 4 and Proje"
+    },
+    {
+      "video_id": "EDp4IoAUsXY",
+      "title": "Introducing the new Project Genie, powered by Genie 4",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_name": "Google DeepMind",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-18T18:12:21+00:00",
+      "url": "https://www.youtube.com/watch?v=EDp4IoAUsXY",
+      "thumbnail": "https://img.youtube.com/vi/EDp4IoAUsXY/mqdefault.jpg",
+      "description": "Step inside your imagination with Project Genie, now powered by Google DeepMind’s most realistic and interactive world model yet, Genie 4.\n\nProject Genie brings our most advanced world and multimodal models together with Gemini so you can t"
+    },
+    {
+      "video_id": "5OszlMNUZD0",
+      "title": "OpenAI’s Mark Chen: The Future Is Models Aligning Models",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-18T16:30:28+00:00",
+      "url": "https://www.youtube.com/shorts/5OszlMNUZD0",
+      "thumbnail": "https://img.youtube.com/vi/5OszlMNUZD0/mqdefault.jpg",
+      "description": "Mark Chen, Chief Research Officer at OpenAI, on where models fit into the work of aligning other models.\n\nIn July 2025, Chen co-authored Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety, a position paper signed b"
+    },
+    {
+      "video_id": "kBJe4H_WobA",
+      "title": "What It Takes to Build an AI That Actually Knows You",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-18T15:30:09+00:00",
+      "url": "https://www.youtube.com/watch?v=kBJe4H_WobA",
+      "thumbnail": "https://img.youtube.com/vi/kBJe4H_WobA/mqdefault.jpg",
+      "description": "AI agents are getting smarter, but every new agent still has to learn who you are. What if your preferences, priorities, relationships, and digital context could move with you instead?\n\nFirst Person Labs co-founder Ken Liu joins a16z’s Mart"
+    },
+    {
+      "video_id": "yvFC-X0pAZY",
+      "title": "Why agents repeat their mistakes #deeplearningai #aiagents #oracle",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-18T14:16:16+00:00",
+      "url": "https://www.youtube.com/shorts/yvFC-X0pAZY",
+      "thumbnail": "https://img.youtube.com/vi/yvFC-X0pAZY/mqdefault.jpg",
+      "description": "Why do AI agents keep making the same mistakes?\n\nMost carry nothing forward between sessions. A coding agent that spends 10 minutes fixing an error today starts from scratch tomorrow. Adaptive agents remember the fix and skip the mistake ne"
+    },
     {
       "video_id": "2pdF52EVlbM",
       "title": "An underrated way to use ChatGPT: Life admin",
@@ -206,18 +314,6 @@
       "description": ""
     },
     {
-      "video_id": "ArJTup6HNRA",
-      "title": "Can AI build AI?",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-17T19:27:29+00:00",
-      "url": "https://www.youtube.com/shorts/ArJTup6HNRA",
-      "thumbnail": "https://img.youtube.com/vi/ArJTup6HNRA/mqdefault.jpg",
-      "description": "In our first episode of Working Theory, a16z General Partner Sarah Wang explores recursive self-improvement with two leading AI researchers: Mark Chen, Chief Research Officer at OpenAI, and John Schulman, co-founder and Chief Scientist of T"
-    },
-    {
       "video_id": "tKoDPOrLMX0",
       "title": "Building 3D video sets with GPT-6.2 Astra",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
@@ -242,20 +338,8 @@
       "description": "We’re introducing GPT‑6.2 Astra, our new frontier model for your hardest projects, and GPT‑6.2 Sol, our efficient, versatile model for everyday work. Both models deliver better results on demanding tasks with fewer output tokens, so you can"
     },
     {
-      "video_id": "h_aA1-R70E8",
-      "title": "OpenAI’s Cofounder & Research Chief Explain Self-Improving AI",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-17T17:41:29+00:00",
-      "url": "https://www.youtube.com/watch?v=h_aA1-R70E8",
-      "thumbnail": "https://img.youtube.com/vi/h_aA1-R70E8/mqdefault.jpg",
-      "description": "For decades, the idea of AI improving itself was just a thought experiment. Today, AI is already helping researchers at frontier labs run experiments, write code and test ideas faster. Mark Chen says OpenAI has built “AI research interns.” "
-    },
-    {
       "video_id": "qbsb9DpdZ6s",
-      "title": "How to compress text to 1 bit per character | Compression is Intelligence Part 3",
+      "title": "This algorithm changed how I think about compression | Information theory, part 3",
       "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
       "channel_name": "3Blue1Brown",
       "category": "researcher",
@@ -263,7 +347,7 @@
       "published": "2026-11-17T16:43:16+00:00",
       "url": "https://www.youtube.com/watch?v=qbsb9DpdZ6s",
       "thumbnail": "https://img.youtube.com/vi/qbsb9DpdZ6s/mqdefault.jpg",
-      "description": "Arithmetic codes and how they elucidate this trilogy's title\nChannel career fair: https://3b1b.com/talent\nNew store items! https://3b1b.com/store\nEarly views for supporters: https://3b1b.com/support\n\nOther resources you may enjoy.\n\nOn Arith"
+      "description": "Arithmetic codes and what they reflect about compression & intelligence\nChannel career fair: https://3b1b.com/talent\nNew store items! https://3b1b.com/store\nEarly views for supporters: https://3b1b.com/support\n\nOn Arithmetic Codes:\n\nhttps:/"
     },
     {
       "video_id": "0IZcjWtWmDA",
@@ -290,18 +374,6 @@
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.com/papers\n\n📝 The paper is available here:\nhttps://www.kitp.ucsb.edu/sites/default/files/YM_working_group.pdf\nhttps://openai.com/index/building-scientific-understandin"
     },
     {
-      "video_id": "ZIpm-0RczCk",
-      "title": "How Revolut’s lean teams take on bigger challenges with OpenAI",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-17T09:45:35+00:00",
-      "url": "https://www.youtube.com/watch?v=ZIpm-0RczCk",
-      "thumbnail": "https://img.youtube.com/vi/ZIpm-0RczCk/mqdefault.jpg",
-      "description": "What can one engineer build when a project looks like it needs a whole team? At Revolut, an engineer used Codex to build an internal code review service himself. Its designers used Codex to turn seven years of design documentation into a fo"
-    },
-    {
       "video_id": "ytmawkPTP24",
       "title": "Why Microsoft couldn’t fix its own servers for 36 hours...",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -314,18 +386,6 @@
       "description": "OpenRouter gives you one API for every AI model that routes and governs every request, so your AI is better, faster, and cheaper. Try it free: https://openrouter.ai/?utm_source=fireship&utm_medium=video&utm_campaign=2026-11_dev-sponsorships"
     },
     {
-      "video_id": "97SWpLlTgdQ",
-      "title": "The story of Uber.",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-16T20:00:00+00:00",
-      "url": "https://www.youtube.com/shorts/97SWpLlTgdQ",
-      "thumbnail": "https://img.youtube.com/vi/97SWpLlTgdQ/mqdefault.jpg",
-      "description": "Travis Kalanick, founder of Uber & Atoms, on the night in Paris where the idea took hold.\n\nIn late 2008, Kalanick and Garrett Camp, who had sold StumbleUpon to eBay, spent a week in Paris at the LeWeb conference. Camp had already been worki"
-    },
-    {
       "video_id": "kMdHCyAnNHA",
       "title": "Box CEO Explains Why AI Makes Software Features Obsolete",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
@@ -335,7 +395,7 @@
       "published": "2026-11-16T17:42:57+00:00",
       "url": "https://www.youtube.com/watch?v=kMdHCyAnNHA",
       "thumbnail": "https://img.youtube.com/vi/kMdHCyAnNHA/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+      "description": "I sit down with Box CEO Aaron Levie to discuss how AI is changing enterprise software and making features obsolete before they even launch. We explore how AI agents can build entire business workflows and why access to company data and cont"
     },
     {
       "video_id": "7Yx_7byZiFU",
@@ -348,18 +408,6 @@
       "url": "https://www.youtube.com/watch?v=7Yx_7byZiFU",
       "thumbnail": "https://img.youtube.com/vi/7Yx_7byZiFU/mqdefault.jpg",
       "description": "How to use 🤗 Jobs to run any kind of training task when your GPU is too small\n\nCode: https://github.com/scienceetonnante/nanogpt-jobs\n\n00:00 Introduction\n01:21 Model and training code\n02:57 Using Jobs\n04:15 The shell script\n05:35 Run and re"
-    },
-    {
-      "video_id": "g_67TmQ8lGY",
-      "title": "What History Tells Us About the AI Revolution | Tyler Cowen & Alex Imas",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-16T15:30:10+00:00",
-      "url": "https://www.youtube.com/watch?v=g_67TmQ8lGY",
-      "thumbnail": "https://img.youtube.com/vi/g_67TmQ8lGY/mqdefault.jpg",
-      "description": "AI capabilities are improving fast. But will the economy move just as quickly?\n\na16z General Partner Erik Torenberg sits down with Google DeepMind economist Alex Imas and economist Tyler Cowen to examine how advances in AI translate into gr"
     },
     {
       "video_id": "x7iwI6WfWS0",
@@ -387,7 +435,7 @@
     },
     {
       "video_id": "Sjdvu4nHfDk",
-      "title": "Anthropic Researcher explains how to train LLMs",
+      "title": "Anthropic Researcher Explains How LLMs Are Built and Trained",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
       "channel_name": "Matthew Berman",
       "category": "news",
@@ -711,7 +759,7 @@
     }
   ],
   "stats": {
-    "total_videos": 45,
+    "total_videos": 49,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
