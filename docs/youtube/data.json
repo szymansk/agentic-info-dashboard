@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-20T06:15:27+00:00",
+  "last_updated": "2026-11-20T12:02:37+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -805,22 +805,10 @@
       "url": "https://www.youtube.com/watch?v=9F9x3MufdMQ",
       "thumbnail": "https://img.youtube.com/vi/9F9x3MufdMQ/mqdefault.jpg",
       "description": "In this video we take a deep dive into DeepSeek Harness (DSH), DeepSeek's open-source agent harness, built on the Cordis plugin system around one idea: everything is a plugin, including the agent loop, the tools, and even the system prompt."
-    },
-    {
-      "video_id": "pkXcc6aKyGU",
-      "title": "What you missed at Hugging Face Open Together",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-11-06T10:41:04+00:00",
-      "url": "https://www.youtube.com/shorts/pkXcc6aKyGU",
-      "thumbnail": "https://img.youtube.com/vi/pkXcc6aKyGU/mqdefault.jpg",
-      "description": ""
     }
   ],
   "stats": {
-    "total_videos": 53,
+    "total_videos": 52,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
