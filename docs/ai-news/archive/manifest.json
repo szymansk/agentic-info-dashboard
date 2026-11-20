@@ -531,9 +531,15 @@
     },
     {
       "date": "2026-11-19",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-11-19.html",
       "headline": "Der erste Handelstag: Anthropic debütiert an der Nasdaq — und Google kontert mit Gemini 4 Neon und persistenten Agenten",
       "summary": "Anthropic (ANT) bepreist bei 83 $/Aktie — größter US-IPO der Geschichte, ~81,3 Mrd. $ Erlös, ~1,38 Bio. $ Bewertung, Handelsstart heute · Google launcht Gemini 4 Neon (1M Kontext, 3/15 $) + persistente Gemini-Agenten mit eigenem Gmail/Calendar/Drive · Nvidia stoppt Hopper-Lieferungen nach China · Citi wälzt AI-Agent-Haftung auf Kunden ab · Microsoft Decision 1.1 · Claude Code v2.1.328"
+    },
+    {
+      "date": "2026-11-20",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Der Morgen danach: Anthropics ANT-Debüt trifft auf einen nervösen Markt, Nvidia gerät zwischen Washington und Peking",
+      "summary": "Anthropic startet Handel unter Ticker ANT, Nasdaq −2,2% · Kongress-Panel: >879.000 H200-Chips für China genehmigt + Kalifornien subpoeniert Nvidia · DeepMind AlphaProof Code verifiziert Signal-Protokoll formal · ChatGPT Live Dictation für alle Pläne · Claude Code v2.1.329"
     }
   ]
 }

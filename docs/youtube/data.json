@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-20T05:02:48+00:00",
+  "last_updated": "2026-11-20T06:15:27+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,6 +116,19 @@
   ],
   "featured": [
     {
+      "video_id": "OSHSopaYjTw",
+      "title": "Create and Share a Dashboard in ChatGPT",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-20T06:07:50+00:00",
+      "url": "https://www.youtube.com/watch?v=OSHSopaYjTw",
+      "thumbnail": "https://img.youtube.com/vi/OSHSopaYjTw/mqdefault.jpg",
+      "description": "Turn your analysis into a dashboard your team can use. Building on the fictional Acme sales example, this walkthrough brings quarterly metrics and customer follow-ups into one view.\n\nSee how to inspect the data behind a chart, edit its appe",
+      "why": ""
+    },
+    {
       "video_id": "sof3vW4mHTs",
       "title": "The making of Anthropic",
       "channel_id": "UCrDwWp7EBBv4NwvScIpBDOA",
@@ -155,21 +168,8 @@
       "why": ""
     },
     {
-      "video_id": "ikNf7eW8CHk",
-      "title": "Meet Brian and Beast, the dots at work at Holiday Extras",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-19T11:38:57+00:00",
-      "url": "https://www.youtube.com/watch?v=ikNf7eW8CHk",
-      "thumbnail": "https://img.youtube.com/vi/ikNf7eW8CHk/mqdefault.jpg",
-      "description": "David Lee, Director of Innovation & Growth at Holiday Extras, calls his dot, Brian, on his morning commute. They talk through the meetings ahead, and Brian can have a report ready by the time David gets to his desk. His colleague Liam Thomp",
-      "why": ""
-    },
-    {
       "video_id": "v1X9Fqs5a14",
-      "title": "Larry Lawton: The Biggest Jewelry Thief in US History | Lex Fridman Podcast #505",
+      "title": "GTA 6, Crime, Heists, Mafia, Gangs, Prison, Corrupt Cops, Miami & Money | Lex Fridman Podcast #505",
       "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
       "channel_name": "Lex Fridman",
       "category": "podcast",
@@ -182,6 +182,66 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "OSHSopaYjTw",
+      "title": "Create and Share a Dashboard in ChatGPT",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-20T06:07:50+00:00",
+      "url": "https://www.youtube.com/watch?v=OSHSopaYjTw",
+      "thumbnail": "https://img.youtube.com/vi/OSHSopaYjTw/mqdefault.jpg",
+      "description": "Turn your analysis into a dashboard your team can use. Building on the fictional Acme sales example, this walkthrough brings quarterly metrics and customer follow-ups into one view.\n\nSee how to inspect the data behind a chart, edit its appe"
+    },
+    {
+      "video_id": "JEgTn37Sk50",
+      "title": "Ask Questions About Your Data in ChatGPT",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-20T06:05:59+00:00",
+      "url": "https://www.youtube.com/watch?v=JEgTn37Sk50",
+      "thumbnail": "https://img.youtube.com/vi/JEgTn37Sk50/mqdefault.jpg",
+      "description": "Prepare for a sales meeting by asking ChatGPT what changed in your data and which customers need attention. Using sample data from the fictional company Acme, this walkthrough compares quarterly sales, visualizes the segments behind the cha"
+    },
+    {
+      "video_id": "oJIuz3AFfEQ",
+      "title": "Connect Your Team’s Data to ChatGPT",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-20T06:02:57+00:00",
+      "url": "https://www.youtube.com/watch?v=oJIuz3AFfEQ",
+      "thumbnail": "https://img.youtube.com/vi/oJIuz3AFfEQ/mqdefault.jpg",
+      "description": "Connect the data tools your team already uses to ChatGPT. This walkthrough is for workspace admins: enable the Data plugin, choose how teammates can install it, and explore the setup for a Snowflake connection.\n\nYou’ll also see how to add a"
+    },
+    {
+      "video_id": "KrlfehIapEA",
+      "title": "Meet the Data Agent in ChatGPT",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-20T05:35:32+00:00",
+      "url": "https://www.youtube.com/watch?v=KrlfehIapEA",
+      "thumbnail": "https://img.youtube.com/vi/KrlfehIapEA/mqdefault.jpg",
+      "description": "Get started with the Data plugin in ChatGPT. Take a quick tour of how to ask questions about your data, create visualizations, build dashboards, and share reports with your team.\n\nSee where to find Data in the plugin marketplace, how it wor"
+    },
+    {
+      "video_id": "3_fayTbZrW8",
+      "title": "Create and Share a Report in ChatGPT Space",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-20T05:32:52+00:00",
+      "url": "https://www.youtube.com/watch?v=3_fayTbZrW8",
+      "thumbnail": "https://img.youtube.com/vi/3_fayTbZrW8/mqdefault.jpg",
+      "description": "Give your team a report they can read, discuss, and work on together. In this walkthrough, turn the fictional Acme sales analysis into a Page in Space, with the highlights, quarterly comparisons, and charts in one place.\n\nSee how to choose "
+    },
     {
       "video_id": "5eON_8rgKzk",
       "title": "Gemini 4 Neon is ridiculous...",
@@ -363,18 +423,6 @@
       "description": "Michael Tomasello is a developmental psychologist who spent twenty years at the Max Planck Institute in Germany putting children and great apes into the same experiments, and is now back at Duke University. His book The Evolution of Agency "
     },
     {
-      "video_id": "ikNf7eW8CHk",
-      "title": "Meet Brian and Beast, the dots at work at Holiday Extras",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-19T11:38:57+00:00",
-      "url": "https://www.youtube.com/watch?v=ikNf7eW8CHk",
-      "thumbnail": "https://img.youtube.com/vi/ikNf7eW8CHk/mqdefault.jpg",
-      "description": "David Lee, Director of Innovation & Growth at Holiday Extras, calls his dot, Brian, on his morning commute. They talk through the meetings ahead, and Brian can have a report ready by the time David gets to his desk. His colleague Liam Thomp"
-    },
-    {
       "video_id": "Cy7Wz6Z4TWU",
       "title": "DeepMind Just Released The Best Thing AI Ever Did",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -388,7 +436,7 @@
     },
     {
       "video_id": "v1X9Fqs5a14",
-      "title": "Larry Lawton: The Biggest Jewelry Thief in US History | Lex Fridman Podcast #505",
+      "title": "GTA 6, Crime, Heists, Mafia, Gangs, Prison, Corrupt Cops, Miami & Money | Lex Fridman Podcast #505",
       "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
       "channel_name": "Lex Fridman",
       "category": "podcast",
@@ -397,18 +445,6 @@
       "url": "https://www.youtube.com/watch?v=v1X9Fqs5a14",
       "thumbnail": "https://img.youtube.com/vi/v1X9Fqs5a14/mqdefault.jpg",
       "description": "Larry Lawton is one of the most notorious and prolific jewelry thieves in US history, who was eventually caught by the FBI, spent more than a decade in prison, including a lot of time in the hole, and then he turned his life around to run t"
-    },
-    {
-      "video_id": "AhmCKHNqhB8",
-      "title": "Introducing ChatGPT for Accounting",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-18T21:01:26+00:00",
-      "url": "https://www.youtube.com/watch?v=AhmCKHNqhB8",
-      "thumbnail": "https://img.youtube.com/vi/AhmCKHNqhB8/mqdefault.jpg",
-      "description": "ChatGPT for Accounting helps take the busywork out of your month-end close.\n\nWatch how ChatGPT finds completed jobs in your email and drafts QuickBooks invoices for your review, flagging anything unclear along the way.\n\nThe Accounting plugi"
     },
     {
       "video_id": "oRmAbrpECkQ",
@@ -481,42 +517,6 @@
       "url": "https://www.youtube.com/shorts/yvFC-X0pAZY",
       "thumbnail": "https://img.youtube.com/vi/yvFC-X0pAZY/mqdefault.jpg",
       "description": "Why do AI agents keep making the same mistakes?\n\nMost carry nothing forward between sessions. A coding agent that spends 10 minutes fixing an error today starts from scratch tomorrow. Adaptive agents remember the fix and skip the mistake ne"
-    },
-    {
-      "video_id": "2pdF52EVlbM",
-      "title": "An underrated way to use ChatGPT: Life admin",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-18T00:06:39+00:00",
-      "url": "https://www.youtube.com/shorts/2pdF52EVlbM",
-      "thumbnail": "https://img.youtube.com/vi/2pdF52EVlbM/mqdefault.jpg",
-      "description": "Even ChatGPT researchers need a little help with life admin.\n\nIsa F. shares an underrated way she uses ChatGPT: keeping track of the details and making time for her next haircut."
-    },
-    {
-      "video_id": "pmOJIq7Ah00",
-      "title": "Introducing ChatGPT for Sales",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-17T23:24:04+00:00",
-      "url": "https://www.youtube.com/watch?v=pmOJIq7Ah00",
-      "thumbnail": "https://img.youtube.com/vi/pmOJIq7Ah00/mqdefault.jpg",
-      "description": "Spend less time on busywork and more time selling with ChatGPT for Sales.\n\nThe new Sales plugin and 30+ new and expanded partner plugins bring your customer context and sales tools together in ChatGPT. Prepare for calls, tailor proposals, a"
-    },
-    {
-      "video_id": "tKoDPOrLMX0",
-      "title": "Building 3D video sets with GPT-6.2 Astra",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-17T18:41:32+00:00",
-      "url": "https://www.youtube.com/watch?v=tKoDPOrLMX0",
-      "thumbnail": "https://img.youtube.com/vi/tKoDPOrLMX0/mqdefault.jpg",
-      "description": "GPT-6.2 Astra is our new flagship model, delivering a step up in capability with cleaner code, better frontends and 3D models, and more efficient tool use.\n\nRecreate a room from just two video frames with GPT-6.2 Astra in Codex. See how it "
     },
     {
       "video_id": "qbsb9DpdZ6s",
