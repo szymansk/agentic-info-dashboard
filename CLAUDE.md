@@ -1,3 +1,7 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
 # Projekt-Kontext für Claude
 
 Du bist in `agentic-info-dashboard` — einem Multi-Dashboard für AI/Agentic-AI-
@@ -33,11 +37,41 @@ siehe „Tageslauf-Mechanik”) aktualisiert.
 ├── dashboards/                 # Source — lokal über serve.py
 │   ├── _shared/people.js       # einzige Quelle für Personen-Daten + Tooltips
 │   ├── ai-news/                # Tagesbriefing (täglich neu, mit Archive)
+│   ├── it-services/            # IT-Services-Radar (Tageslauf, DAILY_UPDATE.md Step 5.5)
 │   ├── youtube/                # Hot Videos (täglich frisch via Cron)
 │   ├── whoiswho/               # Top 20 Köpfe (manuelle Pflege)
 │   └── sources/                # Quellen-Sammlung (manuelle Pflege)
+├── tests/                      # Bash-Tests für bin/ (Sandbox + Stubs, siehe unten)
 └── docs/                       # Build-Output für GitHub-Pages (eingecheckt)
 ```
+
+`bin/lib-daily.sh` ist die gemeinsame Helfer-Bibliothek (nur sourcen) für `run-daily.sh`,
+`alert.sh`, `watchdog.sh` und `verify-*.sh`: Pfade (`STATE_DIR`, `CONF_DIR`, `DAILY_ENV` — alle per
+Env überschreibbar), `classify_result` (claude-JSON → Exit-Code/Klasse), `classify_dirt`
+(Working Tree clean/own/foreign), Env-Datei-Validierung. Exit-Codes von `run-daily.sh`:
+0 ok · 3 AUTH · 4 DIRTY · 5 RUN · 6 OUTCOME · 7 BLOCKED · 8 API · 9 REPO · 10 QUALITY · 11 GIVEUP.
+
+Altlasten der Background-Session (`bin/start-daily-loop.sh`, `loop.sh`, `verify-daily-loop.sh`,
+`fix-selinux-launcher.sh`) liegen noch im Repo, sind aber abgelöst und für den Rückbau vorgesehen.
+Die `README.md` beschreibt teils noch den alten `/loop`-Betrieb — im Zweifel gilt diese Datei.
+
+## Entwicklung & Tests
+
+- Lokal servieren: `python3 serve.py` → http://localhost:8000/ (nur stdlib, keine Pakete)
+- Pages-Build ohne Push: `python3 scripts/build-pages.py`; mit Commit + Push: `bin/deploy.sh`
+- Alle Tests: `bash tests/run-all.sh`; einzelner Test: `bash tests/test-classify.sh`
+- Tests sourcen `tests/lib-test.sh`: `test_sandbox` legt temporäres `STATE_DIR`/`CONF_DIR` an und
+  stellt ein Stub-`PATH` voran; `stub <name> <body>` fakt `claude`/`curl`/`systemctl`/`gh`.
+  Fixtures (claude-Result-JSONs) in `tests/fixtures/`. Neue Tests: `tests/test-*.sh`, werden
+  automatisch von `run-all.sh` aufgegriffen.
+- Tageslauf ohne Wirkung prüfen: `bin/run-daily.sh --dry-run` (Preflight + Entscheidung, kein State)
+
+## Persistenz-Falle: gitignorierte Daily-Dateien
+
+`dashboards/ai-news/archive/*.html`, `archive/manifest.json` und `dashboards/youtube/data.json`
+sind gitignored. Sie persistieren im Repo **nur** über ihre Kopie in `docs/` (via `deploy.sh`).
+Nach einem Tageslauf zeigt `git status` daher nur die `index.html`-Dateien — das ist korrekt,
+nicht force-adden.
 
 ## Veröffentlichung (GitHub Pages)
 
