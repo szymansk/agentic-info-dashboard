@@ -14,7 +14,7 @@ stub logger 'exit 0'
 cat > "$T_ROOT/gen.sh" <<'GEN'
 words() { local n=$1 s=""; while [ "$n" -gt 0 ]; do s="$s wort$n"; n=$((n-1)); done; echo "$s"; }
 page() { printf '<html><body data-snapshot-date="%s" data-snapshot-mode="%s">\n<div class="grid cols-3">\n' "$1" "$2"
-  local i; for ((i=0;i<$4;i++)); do printf '<article class="card news-card info"><h3>C%s</h3></article>\n' "$i"; done
+  local i; for ((i=0;i<$4;i++)); do printf '<article class="card news-card info"><h3>C%s</h3><div class="news-meta"><a href="https://example.com/c">example.com</a></div></article>\n' "$i"; done
   printf '</div>\n<article class="briefing-wrap"><p>%s %s</p></article>\n</body></html>\n' "$(words "$3")" "$5"; }
 entry() { printf '{"date":"%s","url":"%s","headline":"h %s","summary":"s"}' "$1" "$2" "$1"; }
 manifest() { printf '{"snapshots":[%s]}\n' "$1"; }

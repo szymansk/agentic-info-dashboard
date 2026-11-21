@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # verify-briefing.sh — Ergebnisprüfung des Tageslaufs (Spec 5.3).
-#   --pre-deploy   Inhalt, Archiv, Quell-Manifest (Prompt-Schritt 6, vor Build/Push)
+#   --pre-deploy   Inhalt (inkl. Quellen je Section/Card), Archiv, Quell-Manifest (Prompt-Schritt 6, vor Build/Push)
 #   --full         zusätzlich docs/, Tree clean, nichts ahead (Wrapper; Aufrufer hat gefetcht)
 #   --date D       Startdatum des Laufs (Default heute); Briefing muss ≥ D sein
 #   --prev D       Datum des vorherigen Live-Snapshots (Default: aus HEAD-Historie)
@@ -77,6 +77,24 @@ else: fail("quality", f"Briefing nur {words} Wörter (< {MIN_WORDS})")
 cards = len(re.findall(r'<article class="card news-card', src))
 if cards >= MIN_CARDS: ok(f"{cards} Breaking-Cards (≥ {MIN_CARDS})")
 else: fail("quality", f"nur {cards} Breaking-Cards (< {MIN_CARDS})")
+# Quellen: jede Briefing-Section braucht eine .sec-sources-Zeile mit externem
+# Link, jede Breaking-Card mindestens einen externen Link (DAILY_UPDATE.md §2/§3)
+EXT = re.compile(r'href="https?://')
+bw = re.search(r'<article class="briefing-wrap">(.*?)</article>', src, re.S)
+secs = re.findall(r'<section>(.*?)</section>', bw.group(1), re.S) if bw else []
+bad_secs = []
+for i, sec in enumerate(secs, 1):
+    m = re.search(r'class="sec-sources"(.*?)</div>', sec, re.S)
+    if not (m and EXT.search(m.group(1))):
+        h = re.search(r'<h3>(.*?)</h3>', sec, re.S)
+        bad_secs.append(" ".join(re.sub(r"<[^>]+>", " ", h.group(1)).split()) if h else f"#{i}")
+if bad_secs: fail("quality", f"Briefing-Section(s) ohne Quellen: {bad_secs}")
+else: ok(f"{len(secs)} Briefing-Sections mit Quellen")
+card_html = re.findall(r'<article class="card news-card.*?</article>', src, re.S)
+bad_cards = [i for i, c in enumerate(card_html, 1) if not EXT.search(c)]
+if bad_cards: fail("quality", f"Breaking-Card(s) ohne Quell-Link: Nr. {bad_cards}")
+else: ok(f"{len(card_html)} Breaking-Cards mit Quell-Link")
+
 prev_src = read(prev_file) if prev_file else None
 if prev_src is not None:
     if text and text == briefing_text(prev_src): fail("quality", f"Briefing-Text identisch mit Snapshot {prev}")

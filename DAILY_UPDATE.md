@@ -70,8 +70,22 @@ für heute markierst. Für jedes Item bewertest du selbst (LLM-Score 1–10):
 
 Pro Item brauchst du: `pill-kategorie` (Major Release / Personalie /
 Security / Tooling / M&A / Marktdaten / Forschung), `score`, `titel`,
-`kurze prägnante zusammenfassung` (2–3 Sätze), `datum`, `quelle/firma`,
-optional `link`.
+`kurze prägnante zusammenfassung` (2–3 Sätze), `datum`, `quelle/firma` und
+**mindestens einen Link auf den konkreten Artikel** (Pflicht, siehe „Quellen-Regeln”).
+
+### Quellen-Regeln (gelten für Cards und Briefing)
+
+- **Nur URLs, die du in diesem Lauf tatsächlich in einem Suchergebnis oder
+  Abruf gesehen hast.** Keine URLs raten oder aus Mustern zusammenbauen.
+- **Konkreter Artikel, keine Homepage** (`https://unite.ai` ist kein Beleg).
+- **Primärquelle vor Aggregator**: Zahlen aus Studien/Umfragen → Link auf die
+  Studie bzw. Pressemitteilung des Herausgebers, zusätzlich gern ein
+  Bericht darüber. Bei Börsen-/Preisdaten die Datenquelle.
+- **Studien korrekt benennen**: Herausgeber + exakter Titel + Datum, so wie
+  sie in der Quelle stehen. Findest du die Primärquelle einer Zahl nicht,
+  schreib die Zahl nicht oder kennzeichne sie als unbestätigt.
+- Linktext: `Herausgeber — Kurzbeschreibung (Datum)`, z. B.
+  `Genpact — „Autonomy in Practice” (Studie, 12.11.2026)`.
 
 ---
 
@@ -85,6 +99,9 @@ Du schreibst einen redaktionellen Text auf Niveau eines guten Tech-Journalisten
 - pro Section eine `<blockquote class="takeaway">` mit „Was es bedeutet"
   enthält
 - mit einer **Schlussbemerkung** „Was morgen zu beobachten ist" endet
+- pro Section eine Quellenzeile `<div class="sec-sources">` (Format in
+  Schritt 5) mit 1–4 Links enthält, die **jede Zahl und jede Tatsachen-
+  behauptung der Section** belegen — Quellen-Regeln aus Schritt 2 beachten
 - Personen-Namen aus `dashboards/_shared/people.js` (PEOPLE-Array) mit
   `<span data-person="<slug>">...</span>` umschließt, damit die Tooltips
   greifen. **Wichtig**: nur Personen-Namen, die im PEOPLE-Array existieren.
@@ -126,13 +143,19 @@ Modifiziere `dashboards/ai-news/index.html` so:
   aktualisieren
 - **Tagesbriefing**: kompletten Text aus Schritt 3 in die `.briefing-wrap`
   einsetzen (Lede + Sections + Schluss)
+- **Quellen je Section**: direkt vor der `<blockquote class="takeaway">`:
+  ```html
+  <div class="sec-sources"><span class="lbl">Quellen</span><a href="https://…" target="_blank" rel="noreferrer">Herausgeber — Kurzbeschreibung (Datum)</a>…</div>
+  ```
 - **Breaking News**: Cards aus Schritt 2 in die Breaking-News-Grid einsetzen
   (3-spaltig). Format wie im bestehenden HTML, nur Inhalte ersetzen.
 - **Claude Code Releases**: die 6 neuesten aus Schritt 1 in die Release-Liste
   einsetzen. Format: `<div class="release"><div class="ver">vX.Y.Z</div>...`
 
 Wichtig: das umliegende HTML-Gerüst (Nav, Timeline-Bar, Header-Datum-Skript,
-Footer, Style-Block, Script-Tags) bleibt **unverändert**.
+Footer, Style-Block, Script-Tags) bleibt **unverändert**. Das gilt auch für die
+Sektion `<section id="quellen">` („Quellen dieses Briefings”): sie wird per JS
+aus den `.sec-sources`- und `.news-meta`-Links befüllt — nichts von Hand eintragen.
 
 ---
 
@@ -217,8 +240,9 @@ Nach allen Änderungen, vor dem Deploy:
 bin/verify-briefing.sh --pre-deploy
 ```
 
-Das Skript prüft Datum, Wortzahl, Breaking-Cards, Archiv des Vortags und das
-Manifest und endet mit `RESULT: ok`. Bei `RESULT: quality: …` behebe den
+Das Skript prüft Datum, Wortzahl, Breaking-Cards, Quellen (jede Section eine
+`.sec-sources`-Zeile mit externem Link, jede Card ein externer Link), Archiv des
+Vortags und das Manifest und endet mit `RESULT: ok`. Bei `RESULT: quality: …` behebe den
 genannten Punkt (z. B. Archivdatei nachziehen, Manifest-Duplikat entfernen) und
 prüfe erneut. Bei `RESULT: not-deployed: …` stimmt das Snapshot-Datum nicht —
 Schritt 5 wiederholen. Lässt sich ein Punkt nicht beheben: `BLOCKED: <Grund>`

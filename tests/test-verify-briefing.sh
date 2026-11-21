@@ -8,10 +8,14 @@ V="$PWD/bin/verify-briefing.sh"
 # Synthetisches Repo mit gestern (D0) committet und heute (D1) im Tree
 D1="$(date -I)"; D0="$(date -I -d "$D1 - 1 day")"
 words() { local n=$1 s=""; while [ "$n" -gt 0 ]; do s="$s wort$n"; n=$((n-1)); done; echo "$s"; }
-page() {  # page <datum> <modus> <wörter> <cards> <text-suffix>
+page() {  # page <datum> <modus> <wörter> <cards> <text-suffix> [nosec|nocardsrc]
+  local csrc='<div class="news-meta"><a href="https://example.com/a">example.com</a></div>'
+  local ssrc='<div class="sec-sources"><a href="https://example.com/s">Studie</a></div>'
+  [ "${6:-}" = nocardsrc ] && csrc='<div class="news-meta"><span>Firma</span></div>'
+  [ "${6:-}" = nosec ] && ssrc=''
   printf '<html><body data-snapshot-date="%s" data-snapshot-mode="%s">\n<div class="grid cols-3">\n' "$1" "$2"
-  local i; for ((i=0;i<$4;i++)); do printf '<article class="card news-card info"><h3>Card %s</h3><p>x</p></article>\n' "$i"; done
-  printf '</div>\n<article class="briefing-wrap"><p>%s %s</p></article>\n</body></html>\n' "$(words "$3")" "$5"
+  local i; for ((i=0;i<$4;i++)); do printf '<article class="card news-card info"><h3>Card %s</h3><p>x</p>%s</article>\n' "$i" "$csrc"; done
+  printf '</div>\n<article class="briefing-wrap"><div class="briefing-body"><section><h3>01 Thema</h3><p>%s %s</p>%s</section></div></article>\n</body></html>\n' "$(words "$3")" "$5" "$ssrc"
 }
 manifest() { printf '{"snapshots":[%s]}\n' "$1"; }
 entry() { printf '{"date":"%s","url":"%s","headline":"h %s","summary":"s"}' "$1" "$2" "$1"; }
@@ -63,6 +67,14 @@ mk_repo; good_today; page "$D1" live 20 3 neu > "$R/dashboards/ai-news/index.htm
 assert_eq "10" "$(run --pre-deploy --date "$D1")" "zu wenig Wörter → quality"
 mk_repo; good_today; page "$D1" live 80 1 neu > "$R/dashboards/ai-news/index.html"
 assert_eq "10" "$(run --pre-deploy --date "$D1")" "zu wenig Cards → quality"
+
+# Quellen: Briefing-Section ohne sec-sources / Card ohne externen Link → quality
+mk_repo; good_today; page "$D1" live 80 3 neu nosec > "$R/dashboards/ai-news/index.html"
+assert_eq "10" "$(run --pre-deploy --date "$D1")" "Section ohne Quellen → quality"
+assert_contains "ohne Quellen" "$(last_out)" "Grund Section-Quellen"
+mk_repo; good_today; page "$D1" live 80 3 neu nocardsrc > "$R/dashboards/ai-news/index.html"
+assert_eq "10" "$(run --pre-deploy --date "$D1")" "Card ohne Link → quality"
+assert_contains "ohne Quell-Link" "$(last_out)" "Grund Card-Quellen"
 
 # altes Datum → not-deployed
 mk_repo
