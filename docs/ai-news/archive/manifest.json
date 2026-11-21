@@ -537,9 +537,15 @@
     },
     {
       "date": "2026-11-20",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-11-20.html",
       "headline": "Der Morgen danach: Anthropics ANT-Debüt trifft auf einen nervösen Markt, Nvidia gerät zwischen Washington und Peking",
       "summary": "Anthropic startet Handel unter Ticker ANT, Nasdaq −2,2% · Kongress-Panel: >879.000 H200-Chips für China genehmigt + Kalifornien subpoeniert Nvidia · DeepMind AlphaProof Code verifiziert Signal-Protokoll formal · ChatGPT Live Dictation für alle Pläne · Claude Code v2.1.329"
+    },
+    {
+      "date": "2026-11-21",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Das Urteil beginnt: ANT pendelt um den Ausgabepreis, Gemini 4 Neon trägt den Preiskrieg an die Frontier",
+      "summary": "Anthropics ANT handelt nach dem Debüt volatil eng um den Ausgabepreis — erstmals wird ein Frontier-Labor täglich öffentlich bepreist · Google startet Gemini 4 Neon zu 3 $/15 $ (halber Preis der Rivalen) und reklamiert mit AA-Index 61 die Spitze vor Opus 5.5 (59) und GPT-6.2 Sol (57) · Die Agenten-Schicht konsolidiert: Cohere schließt AISLE-Kauf ab, Cognition bringt Devin Bots, OpenAI killt den Agent Builder (30.11.), Model ML holt 250 Mio. $ · ROI-Graben: 79 % deployen Agenten, nur 15 % messen den Wert · Claude Code v2.1.330"
     }
   ]
 }
