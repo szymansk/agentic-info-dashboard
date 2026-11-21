@@ -189,6 +189,26 @@
     color: var(--text); font-size: 15px; line-height: 1.6;
   }
   .briefing-body blockquote.takeaway strong { color: var(--accent); letter-spacing: .04em; text-transform: uppercase; font-size: 11px; display: block; margin-bottom: 6px; }
+  .sec-sources {
+    display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: center;
+    margin: 4px 0 0; font-size: 12px; line-height: 1.4;
+  }
+  .sec-sources .lbl {
+    color: var(--dim); font-size: 10.5px; font-weight: 700;
+    letter-spacing: .08em; text-transform: uppercase; margin-right: 2px;
+  }
+  .sec-sources a {
+    color: var(--muted); text-decoration: none;
+    padding: 2px 9px; border: 1px solid var(--line); border-radius: 999px;
+  }
+  .sec-sources a:hover { color: var(--text); border-color: var(--accent); }
+  .src-index { margin-top: 0; }
+  .src-index ol { margin: 0; padding-left: 0; list-style: none; columns: 2 380px; column-gap: 28px; }
+  .src-index li { break-inside: avoid; margin: 0 0 14px; font-size: 13px; color: var(--muted); }
+  .src-index li .ctx { display: block; color: var(--dim); font-size: 11px; letter-spacing: .04em; text-transform: uppercase; margin-bottom: 3px; }
+  .src-index li a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--line); word-break: break-word; }
+  .src-index li a:hover { border-color: var(--accent); }
+  .src-index li .host { color: var(--dim); font-size: 12px; margin-left: 6px; }
   .briefing-end {
     margin-top: 36px; padding-top: 22px;
     border-top: 1px solid var(--line);
@@ -383,6 +403,7 @@
         <h3><span class="num">01</span>ANT nach dem Debüt — der Markt beginnt zu urteilen</h3>
         <p>Das historische Listing ist vollzogen, jetzt läuft der Stresstest: <span data-person="dario-amodei">Dario Amodeis</span> <strong>Anthropic</strong> handelt seit dem Debüt unter dem Ticker <strong>ANT</strong> an der Nasdaq, und die ersten vollen Sessions liefern das erste öffentliche Urteil über das größte Listing der US-Börsengeschichte. Es fällt zurückhaltend aus. Statt eines euphorischen Aufschlags bewegte sich die Aktie in volatilen Sitzungen eng um ihren Ausgabepreis, zeitweise darunter — ein Verlauf, der zur Capex-Skepsis passt, die den Gesamtmarkt die ganze Woche über prägte. Einen belastbaren Schlusskurs tragen wir nach, sobald die Quellenlage eindeutig ist; die Aggregatoren widersprechen sich bei den konkreten Zahlen noch, und wir raten keine.</p>
         <p>Entscheidend ist nicht der Tagespunkt, sondern der Wechsel des Maßstabs. Solange Anthropic privat war, wurde sein Wert in Finanzierungsrunden alle paar Monate gesetzt — jetzt wird er jeden Handelstag neu ausgehandelt, von einem Markt, der die zweigeteilte Geschichte des Prospekts live bepreist: rasantes Umsatzwachstum gegen einen bilanziell verzerrten Nettoverlust und eine Bewertung, die fast vollständig auf künftiger, über Plattformen vermittelter Nachfrage ruht. Genau dort liegt das strukturelle Risiko, an das sich die Zurückhaltung festmacht — die am Donnerstag kursierenden Signale, dass Apple an einem hauseigenen, autonom agierenden Assistenten arbeitet, erinnern daran, dass der nächste große Distributions-Kanal die Frontier-Labore umgehen könnte, statt sie einzukaufen.</p>
+        <div class="sec-sources"><span class="lbl">Quellen</span><a href="https://stockanalysis.com/stocks/ant/" target="_blank" rel="noreferrer">stockanalysis.com — ANT-Kursdaten</a><a href="https://9to5mac.com/2026/11/08/apple-working-on-agentic-siri-ai-next-year-report" target="_blank" rel="noreferrer">9to5Mac — Apple arbeitet an agentischer Siri (nach Bloomberg, 08.11.)</a><a href="https://macrumors.com/2026/11/19/apple-ai-agent-development" target="_blank" rel="noreferrer">MacRumors — Apple baut KI-Agenten für Apps und Code (19.11.)</a></div>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
           Für uns: Mit dem Handelsstart hat die Branche erstmals einen Frontier-Anbieter, dessen Viabilität sich an einem täglichen, öffentlichen Kurs ablesen lässt — und dessen größtes Risiko, der Distributions-Kanal, nun laufend neu bepreist wird. Für Kunden-Architekturen heißt das: Anbieter-Abhängigkeit ist eine Design-Entscheidung, keine Glaubensfrage. Konkret billbar: eine Modell-Router-Ebene, die den Frontier-Anbieter austauschbar hält, Vendor-Viability-Checks als festen Baustein jeder KI-Architektur, und die nüchterne Trennung von Narrativ und Cashflow, wenn ein Kunde sein Agenten-Fundament auf ein einzelnes Labor stellen will.
@@ -393,6 +414,7 @@
         <h3><span class="num">02</span>Gemini 4 Neon: Google trägt den Preiskrieg an die Frontier zurück</h3>
         <p>Die wichtigste Produktmeldung der Woche ist kein neuer Spitzen-Score, sondern ein Preis. <strong>Google</strong> hat am Dienstag <strong>Gemini 4 Neon</strong> gestartet — ein Frontier-Modell zu <strong>3 $ / 15 $</strong> pro Million Input-/Output-Token (Cache-Reads bei rund 0,15 $). Zum Vergleich: OpenAI und Anthropic rufen für ihre jeweiligen Spitzenmodelle etwa <strong>8 $</strong> auf der Input-Seite auf. Google positioniert Neon also nicht im billigen Volumen-Tier, sondern an der Spitze — und reklamiert dort zugleich die Führung: Auf dem viel zitierten Artificial-Analysis-Intelligence-Index soll Neon bei maximaler Reasoning-Stufe <strong>61</strong> Punkte erreichen, vor <strong>Claude Opus 5.5</strong> (59) und <strong>GPT-6.2 Sol</strong> (57).</p>
         <p>Die Einordnung verlangt zwei Sternchen. Erstens sind die Spitzenwerte Googles eigene bzw. index-gestützte Angaben; andere Lesarten sortieren Neon im Gesamtbild eher auf Rang drei ein, und der Vorsprung schmilzt bei niedrigeren Reasoning-Stufen deutlich. Zweitens entscheidet im Alltag ohnehin nicht der Leaderboard-Punkt, sondern das Verhältnis aus Nutzen und Kosten pro Aufgabe. Doch genau hier liegt die strategische Pointe: Google führt den Preiskampf, der bislang den Volumen-Boden (Haiku, Luna, MAI) betraf, jetzt an die Frontier-Spitze. Wenn frontier-nahe Fähigkeit zum halben Preis zu haben ist, verschiebt das die Build-vs-Buy-Rechnung für jede anspruchsvolle Agenten-Pipeline.</p>
+        <div class="sec-sources"><span class="lbl">Quellen</span><a href="https://artificialanalysis.ai/models/gemini-4-neon" target="_blank" rel="noreferrer">Artificial Analysis — Gemini 4 Neon (Index, Preise)</a><a href="https://aiweekly.co/alerts/google-launches-gemini-4-neon-at-315-per-million-tokens" target="_blank" rel="noreferrer">AI Weekly — Launch zu 3 $/15 $</a><a href="https://pricepertoken.com/news/model-releases" target="_blank" rel="noreferrer">pricepertoken.com — Preisvergleich Frontier-Modelle</a></div>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
           Für uns: Die These des Jahres — Fähigkeit ist Ware, der Wert liegt in Orchestrierung und Nachweis — bestätigt sich jetzt auch an der Spitze: Selbst dort fällt der Preis. Ein Frontier-Modell zum halben Preis ist für kostenintensive, reasoning-lastige Workloads ein harter Hebel. Konkret billbar: Model-Routing- und FinOps-Konzepte, die Preissenkungen an der Spitze automatisch mitnehmen; eigene, kundennahe Evals statt Hersteller-Benchmarks, um die Lücke zwischen Index-Punkt und Alltagsnutzen messbar zu machen; und eine Architektur, die den Frontier-Slot austauschbar hält, damit ein 3-$-Modell den 8-$-Platz einnehmen kann, sobald es im eigenen Eval besteht.
@@ -403,6 +425,7 @@
         <h3><span class="num">03</span>Die Agenten-Schicht konsolidiert — Sicherheit wird vertikal, Baukästen verschwinden</h3>
         <p>Unterhalb der Modell-Schlagzeilen reift der Agenten-Markt sichtbar, und zwar durch Zukäufe und Bereinigung. <span data-person="aidan-gomez">Aidan Gomez’</span> <strong>Cohere</strong> hat die Übernahme von <strong>AISLE</strong> abgeschlossen — einem Spezialisten für autonome Schwachstellen-Suche; es ist Coheres vierter strategischer Deal dieses Jahr und schiebt das Enterprise-Labor erkennbar in Richtung agentische Sicherheit. Parallel bringt <strong>Cognition</strong> mit <strong>Devin Bots</strong> einen persistenten Software-Entwicklungs-Agenten, der dauerhaft statt sitzungsweise arbeitet. Und <strong>OpenAI</strong> schaltet seinen <strong>Agent Builder</strong> zum <strong>30. November</strong> ab — das visuelle No-Code-Werkzeug weicht der Konsolidierung auf der Plattform.</p>
         <p>Das Muster dahinter: Der erste Hype um frei zusammensteckbare Agenten-Baukästen weicht einer zweiten Phase, in der sich Fähigkeiten in Plattformen und in vertikale Spezialisten bündeln — Sicherheit, Software-Entwicklung, Finanzmodellierung. Dazu passt, dass das Kapital weiter fließt, aber gezielter: <strong>Model ML</strong>, das Agenten für Finanzmodellierung und Due Diligence baut, sammelte rund <strong>250 Mio. $</strong> bei einer Bewertung von etwa <strong>1,5 Mrd. $</strong> ein. Nicht mehr der generische Agent zieht das Geld, sondern der mit nachweisbarem Umsatz in einer klar umrissenen Domäne.</p>
+        <div class="sec-sources"><span class="lbl">Quellen</span><a href="https://pulse2.com/cohere-expands-sovereign-ai-platform-with-aisle-acquisition-and-cubic-team-addition/" target="_blank" rel="noreferrer">Pulse 2.0 — Cohere schließt AISLE-Übernahme ab (13.11.)</a><a href="https://aiagentsdirectory.com/news/ai-agents-news-brief-november-18-2026" target="_blank" rel="noreferrer">AI Agents Directory — Brief 18.11. (Devin Bots, Agent-Builder-Sunset, Model ML)</a></div>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
           Für uns: Die Agenten-Schicht wird erwachsen — und das heißt Konsolidierung. Generische Baukästen verlieren, vertikale Spezialisten und integrierte Plattformen gewinnen. Für Kunden steigt damit das Lock-in- und Abkündigungs-Risiko (der OpenAI-Agent-Builder-Sunset ist die Blaupause). Konkret billbar: Agentische Sicherheit (autonome Schwachstellen- und Angriffsflächen-Analyse) als eigenständiges Beratungsangebot; Migrations- und Exit-Strategien für Kunden auf abgekündigten No-Code-Agenten-Tools; und eine nüchterne Plattform-Due-Diligence, die Staying-Power und Roadmap eines Agenten-Anbieters vor dem Commitment bewertet.
@@ -411,8 +434,9 @@
 
       <section>
         <h3><span class="num">04</span>Der ROI-Graben: 79 % deployen, 15 % messen</h3>
-        <p>Während die Anbieter um Preis und Spitzenplätze ringen, legt die Nachfrageseite einen unbequemen Befund vor. Eine Genpact-Erhebung kommt zu dem Ergebnis, dass <strong>79 %</strong> der Unternehmen inzwischen KI-Agenten im Einsatz haben — aber nur <strong>15 %</strong> ihre KI-Investitionen überhaupt an messbare finanzielle Ergebnisse koppeln. McKinsey liefert im Technology Trends Outlook 2026 die Flankierung: Nur <strong>37 %</strong> der Unternehmen schreiben ihren KI-Programmen eine positive EBIT-Wirkung zu. Zwischen „eingeführt" und „zahlt sich aus" klafft also eine Lücke, die mit der Reife der Technik nicht kleiner, sondern sichtbarer geworden ist.</p>
+        <p>Während die Anbieter um Preis und Spitzenplätze ringen, legt die Nachfrageseite einen unbequemen Befund vor. Genpacts Studie „Autonomy in Practice” (Befragung von über 2.000 Führungskräften, 12. November) kommt zu dem Ergebnis, dass <strong>79 %</strong> der Unternehmen inzwischen KI-Agenten produktiv im Einsatz haben — aber nur <strong>15 %</strong> ihre KI-Investitionen vollständig an P&amp;L-Ergebnisse koppeln. McKinsey liefert mit „The State of AI in 2026” (August) die Flankierung: Nur <strong>37 %</strong> der Befragten sehen überhaupt einen Beitrag von KI zum EBIT — praktisch unverändert gegenüber dem Vorjahr. Zwischen „eingeführt” und „zahlt sich aus” klafft also eine Lücke, die mit der Reife der Technik nicht kleiner, sondern sichtbarer geworden ist.</p>
         <p>Das ist kein Argument gegen Agenten, sondern eines gegen agentenlose Euphorie. Die Deployment-Quote beweist, dass die Werkzeuge in der Breite angekommen sind; die Mess-Quote beweist, dass die wenigsten Organisationen Prozesse, Datengrundlage und Verantwortlichkeiten so aufgestellt haben, dass sich der Beitrag zur P&L überhaupt zeigen ließe. Genau diese Lücke ist die Chance für Integratoren: Der Wert entsteht nicht im Einstöpseln eines weiteren Agenten, sondern im Verbinden von Agent und Ergebnis.</p>
+        <div class="sec-sources"><span class="lbl">Quellen</span><a href="https://www.genpact.com/insight/autonomy-in-practice" target="_blank" rel="noreferrer">Genpact — „Autonomy in Practice” (Studie, 12.11.2026)</a><a href="https://finviz.com/news/421427/79-of-enterprises-report-ai-agents-in-production-but-only-15-have-fully-tied-ai-investment-to-pl-outcomes" target="_blank" rel="noreferrer">Genpact-Pressemitteilung via Finviz (79 % / 15 %)</a><a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="noreferrer">McKinsey — „The State of AI in 2026: On the road to ROI” (37 % EBIT)</a></div>
         <blockquote class="takeaway">
           <strong>Was es bedeutet</strong>
           Für uns: Die lohnendste Arbeit liegt nicht im nächsten Pilot, sondern im Schließen des ROI-Grabens bei bereits deployten Agenten. Wer belegen kann, was ein Agent zur P&L beiträgt, verkauft keine Technik, sondern Gewissheit. Konkret billbar: Outcome-gekoppelte Engagements (Honorar an messbaren Geschäftswert gebunden statt an Lizenz-Rollouts); FinOps- und Value-Measurement-Frameworks, die Token-Kosten, Durchsatz und Geschäftswirkung zusammenführen; und Daten- und Prozess-Readiness-Assessments, die die 85 % adressieren, die heute messen müssten und es nicht tun.
@@ -487,7 +511,7 @@
         <p><span data-person="aidan-gomez">Aidan Gomez’</span> <strong>Cohere</strong> hat die Übernahme von <strong>AISLE</strong> abgeschlossen — einem Spezialisten für <strong>autonome Schwachstellen-Suche</strong>. Es ist Coheres vierter strategischer Deal dieses Jahr (Terms unveröffentlicht) und schiebt das Enterprise-Labor erkennbar Richtung agentische Security. Ein Signal, dass sich die Agenten-Schicht in vertikale Spezialisten bündelt statt in generische Baukästen.</p>
         <div class="news-meta">
           <span>📅 13.11.2026</span><span>·</span><span>🏢 Cohere</span><span>·</span>
-          <a href="https://unite.ai" target="_blank" rel="noreferrer">unite.ai</a>
+          <a href="https://pulse2.com/cohere-expands-sovereign-ai-platform-with-aisle-acquisition-and-cubic-team-addition/" target="_blank" rel="noreferrer">pulse2.com</a>
         </div>
       </article>
 
@@ -518,6 +542,18 @@
       </article>
 
     </div>
+  </section>
+
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <!-- ═══════════════ QUELLEN (Gerüst, JS füllt) ═══════════════ -->
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <section id="quellen">
+    <div class="section-head">
+      <h2>📎 Quellen dieses Briefings</h2>
+      <div class="rule"></div>
+      <div class="hint">aus Briefing-Abschnitten und Breaking News</div>
+    </div>
+    <div class="card src-index"><ol id="src-index-list"><li>Quellen stehen direkt unter jedem Abschnitt und auf jeder Karte.</li></ol></div>
   </section>
 
   <!-- ═════════════════════════════════════════════════════════ -->
@@ -633,6 +669,40 @@
 
 <script src="/agentic-info-dashboard/_shared/people.js" defer></script>
 <script>
+  // ── Quellen-Index: alle externen Links aus Briefing + Breaking News ──
+  (function buildSourceIndex() {
+    const list = document.getElementById('src-index-list');
+    if (!list) return;
+    const clean = el => (el ? el.textContent : '').replace(/\s+/g, ' ').trim();
+    const seen = new Map();
+    const add = (a, ctx) => {
+      const href = a.href;
+      if (!/^https?:/.test(href)) return;
+      if (seen.has(href)) { seen.get(href).ctx.add(ctx); return; }
+      seen.set(href, { label: clean(a), ctx: new Set([ctx]) });
+    };
+    document.querySelectorAll('.briefing-body section').forEach(sec => {
+      const ctx = clean(sec.querySelector('h3'));
+      sec.querySelectorAll('.sec-sources a').forEach(a => add(a, ctx));
+    });
+    document.querySelectorAll('.news-card').forEach(card => {
+      const ctx = 'News: ' + clean(card.querySelector('h3'));
+      card.querySelectorAll('.news-meta a').forEach(a => add(a, ctx));
+    });
+    if (!seen.size) return;
+    list.innerHTML = '';
+    seen.forEach((v, href) => {
+      const li = document.createElement('li');
+      const ctx = document.createElement('span'); ctx.className = 'ctx';
+      ctx.textContent = [...v.ctx].join(' · ');
+      const a = document.createElement('a');
+      a.href = href; a.target = '_blank'; a.rel = 'noreferrer'; a.textContent = v.label;
+      const host = document.createElement('span'); host.className = 'host';
+      host.textContent = new URL(href).hostname.replace(/^www\./, '');
+      li.append(ctx, a, host); list.append(li);
+    });
+  })();
+
   // ── Datum im Header lokalisieren ──────────────────────────
   const SNAPSHOT_DATE = document.body.dataset.snapshotDate; // YYYY-MM-DD
   const fmtLong = new Intl.DateTimeFormat('de-DE', {
