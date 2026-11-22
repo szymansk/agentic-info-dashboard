@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-21T12:01:25+00:00",
+  "last_updated": "2026-11-22T05:00:42+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -169,7 +169,7 @@
     },
     {
       "video_id": "v1X9Fqs5a14",
-      "title": "GTA 6, Money, Gangs, Crime, Prison & Biggest Jewelry Thief in US History | Lex Fridman Podcast #505",
+      "title": "GTA 6, Crime, Jewel Heists, Prison, Corrupt Cops, Mafia, Miami & Money | Lex Fridman Podcast #505",
       "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
       "channel_name": "Lex Fridman",
       "category": "podcast",
@@ -182,6 +182,42 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "zqzk43bSdDI",
+      "title": "Since last year, we asked: “What if AI solved the Riemann Hypothesis?”",
+      "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
+      "channel_name": "3Blue1Brown",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-11-22T02:02:12+00:00",
+      "url": "https://www.youtube.com/watch?v=zqzk43bSdDI",
+      "thumbnail": "https://img.youtube.com/vi/zqzk43bSdDI/mqdefault.jpg",
+      "description": "Hypothetical no more\nAnnouncement by Levent Alpöge: https://alpo.ge/remark.pdf\nAnnouncement by Alessandro Masullo on his (human) proof:\nhttps://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/\n\n-----------------"
+    },
+    {
+      "video_id": "I0Fasi1-teQ",
+      "title": "I’m Crashing Out About Anthropic",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-21T21:23:31+00:00",
+      "url": "https://www.youtube.com/watch?v=I0Fasi1-teQ",
+      "thumbnail": "https://img.youtube.com/vi/I0Fasi1-teQ/mqdefault.jpg",
+      "description": "Try Grok Bot from SpaceXSI, the sponsor of this video: https://tinyurl.com/yc4b4ymz\n\nAnthropic is now a public company. I look at how its warnings about AI risk square with its pitch to Wall Street, why it restricted Claude subscription acc"
+    },
+    {
+      "video_id": "INeNb0wwErg",
+      "title": "Chimps Quit When Paid (Michael Tomasello)",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-21T14:30:43+00:00",
+      "url": "https://www.youtube.com/shorts/INeNb0wwErg",
+      "thumbnail": "https://img.youtube.com/vi/INeNb0wwErg/mqdefault.jpg",
+      "description": "Chimpanzees quit the moment they're paid. Children keep working until their partner gets paid too. Michael Tomasello, developmental psychologist at Duke University, on experiments comparing chimpanzees and human children in collaboration, a"
+    },
     {
       "video_id": "BoBe0tepch4",
       "title": "Six Robots Worked a 24-Hour Shift at a Shanghai Convenience Store",
@@ -244,7 +280,7 @@
     },
     {
       "video_id": "WGvsk0LIveU",
-      "title": "3 ChatGPT Tips to Save Money",
+      "title": "3 Tips to Save Money With ChatGPT",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
@@ -399,18 +435,6 @@
       "description": "Seven years after their last conversation at Google DeepMind’s London office, Professor Hannah Fry reunites with Koray Kavukcuoglu, SVP at Google DeepMind and Chief AI Architect at Google. Back then, DeepMind was focused on specialized brea"
     },
     {
-      "video_id": "FUj0a5B6bVk",
-      "title": "POV: The diff after I asked Claude to fix my app",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-19T19:47:46+00:00",
-      "url": "https://www.youtube.com/shorts/FUj0a5B6bVk",
-      "thumbnail": "https://img.youtube.com/vi/FUj0a5B6bVk/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
       "video_id": "H2tmNDX9FnQ",
       "title": "Full Course: AI Coding Workflows From Cloud to Local",
       "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
@@ -460,7 +484,7 @@
     },
     {
       "video_id": "io7qhEjJoik",
-      "title": "What a Squirrel Knows That Language Models Skip (Michael Tomasello)",
+      "title": "What a Squirrel Does That LLMs Don't (Michael Tomasello)",
       "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
       "channel_name": "Machine Learning Street Talk",
       "category": "podcast",
@@ -484,7 +508,7 @@
     },
     {
       "video_id": "v1X9Fqs5a14",
-      "title": "GTA 6, Money, Gangs, Crime, Prison & Biggest Jewelry Thief in US History | Lex Fridman Podcast #505",
+      "title": "GTA 6, Crime, Jewel Heists, Prison, Corrupt Cops, Mafia, Miami & Money | Lex Fridman Podcast #505",
       "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
       "channel_name": "Lex Fridman",
       "category": "podcast",
@@ -699,18 +723,6 @@
       "description": "How would you make a traffic light smart? Michael Tomasello, developmental psychologist at Duke University, on why there's only one solution: perception, a goal, and a decision-making mechanism that acts to make the world conform to that go"
     },
     {
-      "video_id": "TiEut-ZUwxs",
-      "title": "Humans Created Languages (Michael Tomasello)",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-12T03:03:17+00:00",
-      "url": "https://www.youtube.com/shorts/TiEut-ZUwxs",
-      "thumbnail": "https://img.youtube.com/vi/TiEut-ZUwxs/mqdefault.jpg",
-      "description": "Humans didn't just learn language, we created it. Michael Tomasello, developmental psychologist at Duke University, on studies where children cut off from talking invent new gestures and turn them into shared conventions, and why large lang"
-    },
-    {
       "video_id": "uND6iY2qp_c",
       "title": "AlphaGenome 2: Teaching AI to read the entire human genome",
       "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
@@ -808,7 +820,7 @@
     }
   ],
   "stats": {
-    "total_videos": 52,
+    "total_videos": 53,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
