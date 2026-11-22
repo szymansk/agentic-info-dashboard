@@ -543,9 +543,15 @@
     },
     {
       "date": "2026-11-21",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-11-21.html",
       "headline": "Das Urteil beginnt: ANT pendelt um den Ausgabepreis, Gemini 4 Neon trägt den Preiskrieg an die Frontier",
       "summary": "Anthropics ANT handelt nach dem Debüt volatil eng um den Ausgabepreis — erstmals wird ein Frontier-Labor täglich öffentlich bepreist · Google startet Gemini 4 Neon zu 3 $/15 $ (halber Preis der Rivalen) und reklamiert mit AA-Index 61 die Spitze vor Opus 5.5 (59) und GPT-6.2 Sol (57) · Die Agenten-Schicht konsolidiert: Cohere schließt AISLE-Kauf ab, Cognition bringt Devin Bots, OpenAI killt den Agent Builder (30.11.), Model ML holt 250 Mio. $ · ROI-Graben: 79 % deployen Agenten, nur 15 % messen den Wert · Claude Code v2.1.330"
+    },
+    {
+      "date": "2026-11-22",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Die Woche, in der der Preis fiel: Fünf Labore liefern in sechs Tagen und drücken den Modellpreis",
+      "summary": "Eine synchronisierte Release-Welle verschiebt den Wettbewerb von Spitzen-Scores zu Preis, Coding und Ausführung: OpenAI (GPT-6.2 Astra/Sol), Google (Gemini 4 Neon), Microsoft (MAI Code 2 bei Ignite), Alibaba (Qwen4-Max, 2,4 Bio. Parameter) und Tencent (Hy4 flash) liefern binnen sechs Tagen · Microsoft reklamiert 98 % von GPT-6.1 Sol zu 40 % des Preises und zielt auf GitHub Copilot · China drückt von unten: Qwen4-Max rund 58–60 % günstiger pro Aufgabe, Tencents Hy4 flash zu einem Achtel der Kosten · SAP verdoppelt seine Enterprise-Agenten von 200 auf 400 bis Jahresende — doch 57 % der Firmen haben keine menschliche Aufsicht über ihre Agenten · Claude Code v2.1.330"
     }
   ]
 }

@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tagesbriefing · Agentic AI</title>
+<style>
+  :root {
+    --bg: #0b0d12;
+    --bg-2: #11141c;
+    --panel: #161a24;
+    --panel-2: #1b2030;
+    --line: #232a3a;
+    --text: #e7ecf3;
+    --body: #d8dce6;
+    --muted: #8b94a8;
+    --dim: #5d6577;
+    --accent: #c39a4a;       /* warm gold */
+    --accent-2: #7aa2f7;
+    --good: #6ec38b;
+    --warn: #e0a857;
+    --hot:  #e15a5a;
+    --crit: #b04bd1;
+    --radius: 14px;
+    --shadow: 0 10px 30px rgba(0,0,0,.35), 0 1px 0 rgba(255,255,255,.03) inset;
+  }
+  * { box-sizing: border-box; }
+  html, body { background: var(--bg); color: var(--text); }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, Roboto, 'Helvetica Neue', sans-serif;
+    margin: 0; line-height: 1.55;
+    background:
+      radial-gradient(1100px 700px at 90% -10%, rgba(195,154,74,.08), transparent 60%),
+      radial-gradient(900px 600px at -10% 10%, rgba(122,162,247,.07), transparent 60%),
+      var(--bg);
+    min-height: 100vh;
+  }
+  a { color: var(--accent-2); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+
+  /* ── Layout ──────────────────────────────────────────────── */
+  .wrap { max-width: 1280px; margin: 0 auto; padding: 28px 28px 80px; }
+
+  /* ── Top Nav ─────────────────────────────────────────────── */
+  .topnav {
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+    margin-bottom: 22px;
+    font-size: 13px;
+  }
+  .topnav a {
+    color: var(--muted); padding: 6px 12px; border-radius: 999px;
+    border: 1px solid var(--line);
+    transition: color .12s ease, border-color .12s ease, background .12s ease;
+  }
+  .topnav a:hover { color: var(--text); border-color: var(--accent); text-decoration: none; }
+  .topnav a.active {
+    color: var(--accent); border-color: var(--accent);
+    background: rgba(195,154,74,.08);
+  }
+
+  /* ── Timeline strip ──────────────────────────────────────── */
+  .timeline-bar {
+    display: flex; align-items: center; gap: 8px;
+    padding: 12px 14px; margin-bottom: 24px;
+    background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+    border: 1px solid var(--line); border-radius: var(--radius);
+    overflow-x: auto;
+    scrollbar-width: thin; scrollbar-color: var(--line) transparent;
+  }
+  .timeline-bar::-webkit-scrollbar { height: 6px; }
+  .timeline-bar::-webkit-scrollbar-thumb { background: var(--line); border-radius: 3px; }
+  .timeline-bar .label {
+    color: var(--dim); font-size: 11px; letter-spacing: .08em;
+    text-transform: uppercase; padding-right: 8px; flex-shrink: 0;
+    border-right: 1px solid var(--line); margin-right: 4px;
+  }
+  .tl-pill {
+    display: inline-flex; flex-direction: column; align-items: center;
+    flex-shrink: 0;
+    padding: 6px 12px; border-radius: 10px;
+    border: 1px solid var(--line);
+    background: rgba(255,255,255,.02);
+    color: var(--muted);
+    font-size: 11px; text-decoration: none;
+    transition: all .12s ease;
+    min-width: 64px;
+  }
+  .tl-pill:hover {
+    color: var(--text); border-color: var(--accent);
+    background: rgba(195,154,74,.06); text-decoration: none;
+  }
+  .tl-pill.active {
+    color: var(--bg); background: var(--accent); border-color: var(--accent);
+    font-weight: 700;
+  }
+  .tl-pill .dow { font-size: 10px; opacity: .8; letter-spacing: .04em; text-transform: uppercase; }
+  .tl-pill .date { font-family: ui-monospace, monospace; font-size: 13px; margin-top: 2px; font-weight: 600; }
+  .tl-pill.future { opacity: .4; pointer-events: none; }
+
+  /* ── Header ──────────────────────────────────────────────── */
+  header.main {
+    display: flex; align-items: end; justify-content: space-between;
+    gap: 24px; padding-bottom: 22px; margin-bottom: 28px;
+    border-bottom: 1px solid var(--line);
+  }
+  header.main .title { display: flex; align-items: baseline; gap: 14px; }
+  header.main .title h1 {
+    margin: 0; font-size: 30px; letter-spacing: -.02em; font-weight: 800;
+  }
+  header.main .title .dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: var(--hot); box-shadow: 0 0 0 4px rgba(225,90,90,.18);
+    animation: pulse 2.4s infinite;
+  }
+  @keyframes pulse {
+    0%,100% { box-shadow: 0 0 0 4px rgba(225,90,90,.18); }
+    50%     { box-shadow: 0 0 0 9px rgba(225,90,90,.05); }
+  }
+  header.main .subtitle { color: var(--muted); font-size: 14px; }
+  header.main .meta { text-align: right; font-size: 13px; color: var(--muted); }
+  header.main .meta .date { color: var(--text); font-weight: 600; font-size: 15px; }
+  header.main .meta .tag {
+    display: inline-block; margin-top: 6px; padding: 3px 8px;
+    border: 1px solid var(--line); border-radius: 999px;
+    color: var(--muted); font-size: 11px; letter-spacing: .04em; text-transform: uppercase;
+  }
+
+  /* ── Section heading ─────────────────────────────────────── */
+  section { margin-top: 40px; }
+  .section-head { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+  .section-head h2 {
+    margin: 0; font-size: 18px; font-weight: 700;
+    letter-spacing: .02em; text-transform: uppercase;
+  }
+  .section-head .rule { flex: 1; height: 1px; background: var(--line); }
+  .section-head .hint { color: var(--dim); font-size: 12px; }
+
+  /* ── BRIEFING (editorial) ────────────────────────────────── */
+  .briefing-wrap {
+    max-width: 740px; margin: 0 auto;
+  }
+  .briefing-head {
+    text-align: left; margin-bottom: 28px;
+    padding-bottom: 22px; border-bottom: 1px solid var(--line);
+  }
+  .briefing-head h2.kicker {
+    margin: 0; font-size: 12px; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--accent); font-weight: 700;
+  }
+  .briefing-head h1 {
+    margin: 8px 0 10px; font-size: 32px; line-height: 1.2;
+    letter-spacing: -.02em; font-weight: 800; color: var(--text);
+  }
+  .briefing-head .byline {
+    color: var(--muted); font-size: 13px;
+    display: flex; gap: 12px; flex-wrap: wrap; align-items: center;
+  }
+  .briefing-head .byline .dot-sep { color: var(--dim); }
+  .briefing-head .lede {
+    margin-top: 22px; font-size: 18px; line-height: 1.55;
+    color: var(--text); font-weight: 400;
+  }
+  .briefing-head .lede::first-letter {
+    font-size: 56px; line-height: 1; font-weight: 800;
+    float: left; padding: 4px 10px 0 0; color: var(--accent);
+  }
+
+  .briefing-body { font-size: 16px; line-height: 1.7; color: var(--body); }
+  .briefing-body section { margin-top: 36px; }
+  .briefing-body h3 {
+    margin: 0 0 12px; font-size: 22px; line-height: 1.25;
+    letter-spacing: -.01em; font-weight: 700; color: var(--text);
+  }
+  .briefing-body h3 .num {
+    color: var(--accent); margin-right: 10px; font-family: ui-monospace, monospace;
+    font-size: 18px; font-weight: 600;
+  }
+  .briefing-body p { margin: 0 0 14px; }
+  .briefing-body p strong { color: var(--text); font-weight: 600; }
+  .briefing-body em { color: var(--text); font-style: italic; }
+  .briefing-body ol, .briefing-body ul { margin: 12px 0 16px; padding-left: 20px; }
+  .briefing-body li { margin-bottom: 8px; }
+  .briefing-body blockquote.takeaway {
+    margin: 22px 0; padding: 14px 18px;
+    border-left: 3px solid var(--accent);
+    background: rgba(195,154,74,.06);
+    border-radius: 0 8px 8px 0;
+    color: var(--text); font-size: 15px; line-height: 1.6;
+  }
+  .briefing-body blockquote.takeaway strong { color: var(--accent); letter-spacing: .04em; text-transform: uppercase; font-size: 11px; display: block; margin-bottom: 6px; }
+  .sec-sources {
+    display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: center;
+    margin: 4px 0 0; font-size: 12px; line-height: 1.4;
+  }
+  .sec-sources .lbl {
+    color: var(--dim); font-size: 10.5px; font-weight: 700;
+    letter-spacing: .08em; text-transform: uppercase; margin-right: 2px;
+  }
+  .sec-sources a {
+    color: var(--muted); text-decoration: none;
+    padding: 2px 9px; border: 1px solid var(--line); border-radius: 999px;
+  }
+  .sec-sources a:hover { color: var(--text); border-color: var(--accent); }
+  .src-index { margin-top: 0; }
+  .src-index ol { margin: 0; padding-left: 0; list-style: none; columns: 2 380px; column-gap: 28px; }
+  .src-index li { break-inside: avoid; margin: 0 0 14px; font-size: 13px; color: var(--muted); }
+  .src-index li .ctx { display: block; color: var(--dim); font-size: 11px; letter-spacing: .04em; text-transform: uppercase; margin-bottom: 3px; }
+  .src-index li a { color: var(--text); text-decoration: none; border-bottom: 1px solid var(--line); word-break: break-word; }
+  .src-index li a:hover { border-color: var(--accent); }
+  .src-index li .host { color: var(--dim); font-size: 12px; margin-left: 6px; }
+  .briefing-end {
+    margin-top: 36px; padding-top: 22px;
+    border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 13px; text-align: center;
+  }
+
+  /* ── Grid for cards (Breaking News + Claude Code) ────────── */
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 980px) { .grid.cols-3, .grid.cols-2 { grid-template-columns: 1fr; } }
+
+  .card {
+    background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+    border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 18px 18px 16px; box-shadow: var(--shadow);
+    position: relative; overflow: hidden;
+  }
+  .card h3 { margin: 0 0 6px; font-size: 16px; font-weight: 700; letter-spacing: -.005em; }
+  .card p  { margin: 0 0 10px; color: var(--muted); font-size: 13.5px; }
+  .card .row { display: flex; align-items: center; gap: 8px; }
+  .card ul { margin: 8px 0 0; padding-left: 18px; }
+  .card li { font-size: 13.5px; color: var(--muted); margin-bottom: 4px; }
+
+  /* ── Breaking News ───────────────────────────────────────── */
+  .news-card { padding-left: 18px; }
+  .news-card::before {
+    content: ""; position: absolute; left: 0; top: 0; bottom: 0;
+    width: 4px; background: var(--accent-2);
+  }
+  .news-card.crit::before { background: var(--crit); }
+  .news-card.hot::before  { background: var(--hot); }
+  .news-card.warn::before { background: var(--warn); }
+  .news-card.info::before { background: var(--accent-2); }
+  .news-meta {
+    display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
+    font-size: 12px; color: var(--dim); margin-top: 10px;
+  }
+  .pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 2px 9px; border-radius: 999px;
+    border: 1px solid var(--line); color: var(--muted);
+    font-size: 11px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase;
+  }
+  .pill.crit { color: #f1bdfb; border-color: rgba(176,75,209,.45); background: rgba(176,75,209,.10); }
+  .pill.hot  { color: #ffc4c4; border-color: rgba(225,90,90,.4);  background: rgba(225,90,90,.08); }
+  .pill.warn { color: #ffd99a; border-color: rgba(224,168,87,.4); background: rgba(224,168,87,.08); }
+  .pill.info { color: #cfe0ff; border-color: rgba(122,162,247,.4); background: rgba(122,162,247,.08); }
+  .score {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 2px 9px; border-radius: 999px;
+    background: rgba(255,255,255,.04); border: 1px solid var(--line);
+    font-family: ui-monospace, monospace; font-size: 11px; color: var(--text);
+  }
+  .score b { color: var(--accent); }
+
+  /* ── Claude Code ─────────────────────────────────────────── */
+  .cc-grid { grid-template-columns: 1.2fr .8fr; }
+  @media (max-width: 980px) { .cc-grid { grid-template-columns: 1fr; } }
+  .release {
+    display: flex; align-items: flex-start; gap: 12px; padding: 10px 0;
+    border-bottom: 1px dashed var(--line);
+  }
+  .release:last-child { border-bottom: none; }
+  .release .ver {
+    flex: 0 0 auto; min-width: 76px;
+    font-family: ui-monospace, monospace; font-size: 12.5px;
+    color: var(--accent); font-weight: 600;
+  }
+  .release .when { flex: 0 0 78px; color: var(--dim); font-size: 12px; font-family: ui-monospace, monospace; }
+  .release .what { color: var(--text); font-size: 13.5px; }
+  .release .what em { color: var(--muted); font-style: normal; }
+  .release .what strong { color: var(--text); }
+  .badge { display: inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 999px; font-size: 10.5px; font-weight: 700; letter-spacing: .04em; }
+  .badge.feat { color: #b9efcb; background: rgba(110,195,139,.12); border: 1px solid rgba(110,195,139,.3); }
+  .badge.sec  { color: #ffc4c4; background: rgba(225,90,90,.12);  border: 1px solid rgba(225,90,90,.35); }
+  .badge.fix  { color: #ffd99a; background: rgba(224,168,87,.12); border: 1px solid rgba(224,168,87,.3); }
+  .src-card .links { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
+  .src-card .links a {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 8px 10px; border-radius: 8px;
+    border: 1px solid var(--line); background: rgba(255,255,255,.02);
+    color: var(--text); font-size: 13.5px;
+    transition: background .12s ease, border-color .12s ease;
+  }
+  .src-card .links a:hover { background: rgba(122,162,247,.06); border-color: rgba(122,162,247,.4); text-decoration: none; }
+  .src-card .links a .arrow { color: var(--dim); font-size: 12px; }
+
+  /* ── Snapshot banner (archive only) ──────────────────────── */
+  .snap-banner {
+    display: none;
+    background: rgba(195,154,74,.10);
+    border: 1px solid rgba(195,154,74,.3);
+    border-radius: 10px; padding: 10px 14px; margin-bottom: 18px;
+    color: var(--accent); font-size: 13px;
+    align-items: center; justify-content: space-between; gap: 12px;
+  }
+  .snap-banner.show { display: flex; }
+
+  /* ── Footer ──────────────────────────────────────────────── */
+  footer {
+    margin-top: 60px; padding-top: 18px;
+    border-top: 1px solid var(--line);
+    color: var(--dim); font-size: 12px;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+  footer .mono { color: var(--muted); }
+</style>
+</head>
+<body data-snapshot-date="2026-11-21" data-snapshot-mode="archive">
+<div class="wrap">
+
+  <!-- ─── Top Nav ─── -->
+  <nav class="topnav">
+    <a href="/agentic-info-dashboard/">📊 Übersicht</a>
+    <a href="/agentic-info-dashboard/ai-news/" class="active">📰 AI News (Tagesbriefing)</a>
+    <a href="/agentic-info-dashboard/youtube/">▶ YouTube Hot</a>
+    <a href="/agentic-info-dashboard/whoiswho/">👥 Who is Who</a>
+    <a href="/agentic-info-dashboard/sources/">📚 Quellen</a>
+    <a href="/agentic-info-dashboard/it-services/">🏢 IT-Services-Radar</a>
+    <a href="/agentic-info-dashboard/regulation/">⚖ Regulatorik</a>
+    <a href="/agentic-info-dashboard/coding-tools/">⌘ Coding-Tools</a>
+    <a href="/agentic-info-dashboard/calendar/">📅 Kalender</a>
+    <a href="/agentic-info-dashboard/extensions/">🧩 Extensions</a>
+  </nav>
+
+  <!-- ─── Timeline strip ─── -->
+  <div class="timeline-bar" id="timeline">
+    <span class="label">Zeitstrahl</span>
+    <!-- JS füllt aus archive/manifest.json. Fallback statisch: -->
+    <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-11-17.html" data-date="2026-11-17">
+      <span class="dow">Di</span><span class="date">17.11.</span>
+    </a>
+    <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-11-18.html" data-date="2026-11-18">
+      <span class="dow">Mi</span><span class="date">18.11.</span>
+    </a>
+    <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-11-19.html" data-date="2026-11-19">
+      <span class="dow">Do</span><span class="date">19.11.</span>
+    </a>
+    <a class="tl-pill" href="/agentic-info-dashboard/ai-news/archive/2026-11-20.html" data-date="2026-11-20">
+      <span class="dow">Fr</span><span class="date">20.11.</span>
+    </a>
+    <a class="tl-pill active" href="/agentic-info-dashboard/ai-news/" data-date="2026-11-21">
+      <span class="dow">Sa</span><span class="date">21.11.</span>
+    </a>
+  </div>
+
+  <!-- ─── Snapshot Banner (nur in Archiv-Versionen) ─── -->
+  <div class="snap-banner" id="snap-banner">
+    <span>📌 Du siehst einen archivierten Snapshot.</span>
+    <a href="/agentic-info-dashboard/ai-news/">← Zurück zum heutigen Briefing</a>
+  </div>
+
+  <!-- ─── Header ─── -->
+  <header class="main">
+    <div class="title">
+      <span class="dot" title="Live"></span>
+      <div>
+        <h1>Agentic AI · Tagesbriefing</h1>
+        <div class="subtitle">Was heute zählt — in 10 Minuten Lesezeit auf den Punkt.</div>
+      </div>
+    </div>
+    <div class="meta">
+      <div class="date" id="today">Samstag, 21. November 2026</div>
+      <div class="tag">Snapshot · KW 47 / 2026</div>
+    </div>
+  </header>
+
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <!-- ════════════════ TAGESBRIEFING (Editorial) ═══════════════ -->
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <article class="briefing-wrap">
+
+    <header class="briefing-head">
+      <h2 class="kicker">Samstag · Agentic AI &amp; GenAI</h2>
+      <h1>Das Urteil beginnt: ANT pendelt um den Ausgabepreis, während Googles Gemini 4 Neon den Preiskrieg an die Frontier zurückträgt</h1>
+      <div class="byline">
+        <span>✍️ Kuratiert &amp; analysiert</span>
+        <span class="dot-sep">·</span>
+        <span>~9 Min Lesezeit</span>
+        <span class="dot-sep">·</span>
+        <span id="byline-date">21. November 2026</span>
+      </div>
+      <p class="lede">
+        Vor zwei Tagen war Anthropics Börsengang noch eine Schlagzeile, jetzt ist er ein laufendes Experiment. Nach dem Debüt unter dem Ticker <strong>ANT</strong> liefern die ersten vollen Handelstage das, was ein Prospekt nie kann: ein tägliches, öffentliches Urteil — und es fällt bislang nüchtern aus, mit einem Kurs, der um den Ausgabepreis pendelt, statt ihn zu feiern. Die eigentliche Bewegung der Woche aber kommt aus Mountain View: <span data-person="demis-hassabis">Demis Hassabis’</span> <strong>Google DeepMind</strong> hat mit <strong>Gemini 4 Neon</strong> ein Frontier-Modell zu <strong>3 $ pro Million Input-Token</strong> auf den Markt gebracht — grob die Hälfte dessen, was <strong>OpenAI</strong> und <strong>Anthropic</strong> für ihre Spitzenmodelle verlangen — und reklamiert zugleich die Spitze des meistzitierten Intelligenz-Index. Kapitalmarkt und Preiskrieg prüfen dieselbe These gleichzeitig: Was ist ein Frontier-Labor wert, wenn Fähigkeit zur Ware wird?
+      </p>
+    </header>
+
+    <div class="briefing-body">
+
+      <section>
+        <h3><span class="num">01</span>ANT nach dem Debüt — der Markt beginnt zu urteilen</h3>
+        <p>Das historische Listing ist vollzogen, jetzt läuft der Stresstest: <span data-person="dario-amodei">Dario Amodeis</span> <strong>Anthropic</strong> handelt seit dem Debüt unter dem Ticker <strong>ANT</strong> an der Nasdaq, und die ersten vollen Sessions liefern das erste öffentliche Urteil über das größte Listing der US-Börsengeschichte. Es fällt zurückhaltend aus. Statt eines euphorischen Aufschlags bewegte sich die Aktie in volatilen Sitzungen eng um ihren Ausgabepreis, zeitweise darunter — ein Verlauf, der zur Capex-Skepsis passt, die den Gesamtmarkt die ganze Woche über prägte. Einen belastbaren Schlusskurs tragen wir nach, sobald die Quellenlage eindeutig ist; die Aggregatoren widersprechen sich bei den konkreten Zahlen noch, und wir raten keine.</p>
+        <p>Entscheidend ist nicht der Tagespunkt, sondern der Wechsel des Maßstabs. Solange Anthropic privat war, wurde sein Wert in Finanzierungsrunden alle paar Monate gesetzt — jetzt wird er jeden Handelstag neu ausgehandelt, von einem Markt, der die zweigeteilte Geschichte des Prospekts live bepreist: rasantes Umsatzwachstum gegen einen bilanziell verzerrten Nettoverlust und eine Bewertung, die fast vollständig auf künftiger, über Plattformen vermittelter Nachfrage ruht. Genau dort liegt das strukturelle Risiko, an das sich die Zurückhaltung festmacht — die am Donnerstag kursierenden Signale, dass Apple an einem hauseigenen, autonom agierenden Assistenten arbeitet, erinnern daran, dass der nächste große Distributions-Kanal die Frontier-Labore umgehen könnte, statt sie einzukaufen.</p>
+        <div class="sec-sources"><span class="lbl">Quellen</span><a href="https://stockanalysis.com/stocks/ant/" target="_blank" rel="noreferrer">stockanalysis.com — ANT-Kursdaten</a><a href="https://9to5mac.com/2026/11/08/apple-working-on-agentic-siri-ai-next-year-report" target="_blank" rel="noreferrer">9to5Mac — Apple arbeitet an agentischer Siri (nach Bloomberg, 08.11.)</a><a href="https://macrumors.com/2026/11/19/apple-ai-agent-development" target="_blank" rel="noreferrer">MacRumors — Apple baut KI-Agenten für Apps und Code (19.11.)</a></div>
+        <blockquote class="takeaway">
+          <strong>Was es bedeutet</strong>
+          Für uns: Mit dem Handelsstart hat die Branche erstmals einen Frontier-Anbieter, dessen Viabilität sich an einem täglichen, öffentlichen Kurs ablesen lässt — und dessen größtes Risiko, der Distributions-Kanal, nun laufend neu bepreist wird. Für Kunden-Architekturen heißt das: Anbieter-Abhängigkeit ist eine Design-Entscheidung, keine Glaubensfrage. Konkret billbar: eine Modell-Router-Ebene, die den Frontier-Anbieter austauschbar hält, Vendor-Viability-Checks als festen Baustein jeder KI-Architektur, und die nüchterne Trennung von Narrativ und Cashflow, wenn ein Kunde sein Agenten-Fundament auf ein einzelnes Labor stellen will.
+        </blockquote>
+      </section>
+
+      <section>
+        <h3><span class="num">02</span>Gemini 4 Neon: Google trägt den Preiskrieg an die Frontier zurück</h3>
+        <p>Die wichtigste Produktmeldung der Woche ist kein neuer Spitzen-Score, sondern ein Preis. <strong>Google</strong> hat am Dienstag <strong>Gemini 4 Neon</strong> gestartet — ein Frontier-Modell zu <strong>3 $ / 15 $</strong> pro Million Input-/Output-Token (Cache-Reads bei rund 0,15 $). Zum Vergleich: OpenAI und Anthropic rufen für ihre jeweiligen Spitzenmodelle etwa <strong>8 $</strong> auf der Input-Seite auf. Google positioniert Neon also nicht im billigen Volumen-Tier, sondern an der Spitze — und reklamiert dort zugleich die Führung: Auf dem viel zitierten Artificial-Analysis-Intelligence-Index soll Neon bei maximaler Reasoning-Stufe <strong>61</strong> Punkte erreichen, vor <strong>Claude Opus 5.5</strong> (59) und <strong>GPT-6.2 Sol</strong> (57).</p>
+        <p>Die Einordnung verlangt zwei Sternchen. Erstens sind die Spitzenwerte Googles eigene bzw. index-gestützte Angaben; andere Lesarten sortieren Neon im Gesamtbild eher auf Rang drei ein, und der Vorsprung schmilzt bei niedrigeren Reasoning-Stufen deutlich. Zweitens entscheidet im Alltag ohnehin nicht der Leaderboard-Punkt, sondern das Verhältnis aus Nutzen und Kosten pro Aufgabe. Doch genau hier liegt die strategische Pointe: Google führt den Preiskampf, der bislang den Volumen-Boden (Haiku, Luna, MAI) betraf, jetzt an die Frontier-Spitze. Wenn frontier-nahe Fähigkeit zum halben Preis zu haben ist, verschiebt das die Build-vs-Buy-Rechnung für jede anspruchsvolle Agenten-Pipeline.</p>
+        <div class="sec-sources"><span class="lbl">Quellen</span><a href="https://artificialanalysis.ai/models/gemini-4-neon" target="_blank" rel="noreferrer">Artificial Analysis — Gemini 4 Neon (Index, Preise)</a><a href="https://aiweekly.co/alerts/google-launches-gemini-4-neon-at-315-per-million-tokens" target="_blank" rel="noreferrer">AI Weekly — Launch zu 3 $/15 $</a><a href="https://pricepertoken.com/news/model-releases" target="_blank" rel="noreferrer">pricepertoken.com — Preisvergleich Frontier-Modelle</a></div>
+        <blockquote class="takeaway">
+          <strong>Was es bedeutet</strong>
+          Für uns: Die These des Jahres — Fähigkeit ist Ware, der Wert liegt in Orchestrierung und Nachweis — bestätigt sich jetzt auch an der Spitze: Selbst dort fällt der Preis. Ein Frontier-Modell zum halben Preis ist für kostenintensive, reasoning-lastige Workloads ein harter Hebel. Konkret billbar: Model-Routing- und FinOps-Konzepte, die Preissenkungen an der Spitze automatisch mitnehmen; eigene, kundennahe Evals statt Hersteller-Benchmarks, um die Lücke zwischen Index-Punkt und Alltagsnutzen messbar zu machen; und eine Architektur, die den Frontier-Slot austauschbar hält, damit ein 3-$-Modell den 8-$-Platz einnehmen kann, sobald es im eigenen Eval besteht.
+        </blockquote>
+      </section>
+
+      <section>
+        <h3><span class="num">03</span>Die Agenten-Schicht konsolidiert — Sicherheit wird vertikal, Baukästen verschwinden</h3>
+        <p>Unterhalb der Modell-Schlagzeilen reift der Agenten-Markt sichtbar, und zwar durch Zukäufe und Bereinigung. <span data-person="aidan-gomez">Aidan Gomez’</span> <strong>Cohere</strong> hat die Übernahme von <strong>AISLE</strong> abgeschlossen — einem Spezialisten für autonome Schwachstellen-Suche; es ist Coheres vierter strategischer Deal dieses Jahr und schiebt das Enterprise-Labor erkennbar in Richtung agentische Sicherheit. Parallel bringt <strong>Cognition</strong> mit <strong>Devin Bots</strong> einen persistenten Software-Entwicklungs-Agenten, der dauerhaft statt sitzungsweise arbeitet. Und <strong>OpenAI</strong> schaltet seinen <strong>Agent Builder</strong> zum <strong>30. November</strong> ab — das visuelle No-Code-Werkzeug weicht der Konsolidierung auf der Plattform.</p>
+        <p>Das Muster dahinter: Der erste Hype um frei zusammensteckbare Agenten-Baukästen weicht einer zweiten Phase, in der sich Fähigkeiten in Plattformen und in vertikale Spezialisten bündeln — Sicherheit, Software-Entwicklung, Finanzmodellierung. Dazu passt, dass das Kapital weiter fließt, aber gezielter: <strong>Model ML</strong>, das Agenten für Finanzmodellierung und Due Diligence baut, sammelte rund <strong>250 Mio. $</strong> bei einer Bewertung von etwa <strong>1,5 Mrd. $</strong> ein. Nicht mehr der generische Agent zieht das Geld, sondern der mit nachweisbarem Umsatz in einer klar umrissenen Domäne.</p>
+        <div class="sec-sources"><span class="lbl">Quellen</span><a href="https://pulse2.com/cohere-expands-sovereign-ai-platform-with-aisle-acquisition-and-cubic-team-addition/" target="_blank" rel="noreferrer">Pulse 2.0 — Cohere schließt AISLE-Übernahme ab (13.11.)</a><a href="https://aiagentsdirectory.com/news/ai-agents-news-brief-november-18-2026" target="_blank" rel="noreferrer">AI Agents Directory — Brief 18.11. (Devin Bots, Agent-Builder-Sunset, Model ML)</a></div>
+        <blockquote class="takeaway">
+          <strong>Was es bedeutet</strong>
+          Für uns: Die Agenten-Schicht wird erwachsen — und das heißt Konsolidierung. Generische Baukästen verlieren, vertikale Spezialisten und integrierte Plattformen gewinnen. Für Kunden steigt damit das Lock-in- und Abkündigungs-Risiko (der OpenAI-Agent-Builder-Sunset ist die Blaupause). Konkret billbar: Agentische Sicherheit (autonome Schwachstellen- und Angriffsflächen-Analyse) als eigenständiges Beratungsangebot; Migrations- und Exit-Strategien für Kunden auf abgekündigten No-Code-Agenten-Tools; und eine nüchterne Plattform-Due-Diligence, die Staying-Power und Roadmap eines Agenten-Anbieters vor dem Commitment bewertet.
+        </blockquote>
+      </section>
+
+      <section>
+        <h3><span class="num">04</span>Der ROI-Graben: 79 % deployen, 15 % messen</h3>
+        <p>Während die Anbieter um Preis und Spitzenplätze ringen, legt die Nachfrageseite einen unbequemen Befund vor. Genpacts Studie „Autonomy in Practice” (Befragung von über 2.000 Führungskräften, 12. November) kommt zu dem Ergebnis, dass <strong>79 %</strong> der Unternehmen inzwischen KI-Agenten produktiv im Einsatz haben — aber nur <strong>15 %</strong> ihre KI-Investitionen vollständig an P&amp;L-Ergebnisse koppeln. McKinsey liefert mit „The State of AI in 2026” (August) die Flankierung: Nur <strong>37 %</strong> der Befragten sehen überhaupt einen Beitrag von KI zum EBIT — praktisch unverändert gegenüber dem Vorjahr. Zwischen „eingeführt” und „zahlt sich aus” klafft also eine Lücke, die mit der Reife der Technik nicht kleiner, sondern sichtbarer geworden ist.</p>
+        <p>Das ist kein Argument gegen Agenten, sondern eines gegen agentenlose Euphorie. Die Deployment-Quote beweist, dass die Werkzeuge in der Breite angekommen sind; die Mess-Quote beweist, dass die wenigsten Organisationen Prozesse, Datengrundlage und Verantwortlichkeiten so aufgestellt haben, dass sich der Beitrag zur P&L überhaupt zeigen ließe. Genau diese Lücke ist die Chance für Integratoren: Der Wert entsteht nicht im Einstöpseln eines weiteren Agenten, sondern im Verbinden von Agent und Ergebnis.</p>
+        <div class="sec-sources"><span class="lbl">Quellen</span><a href="https://www.genpact.com/insight/autonomy-in-practice" target="_blank" rel="noreferrer">Genpact — „Autonomy in Practice” (Studie, 12.11.2026)</a><a href="https://finviz.com/news/421427/79-of-enterprises-report-ai-agents-in-production-but-only-15-have-fully-tied-ai-investment-to-pl-outcomes" target="_blank" rel="noreferrer">Genpact-Pressemitteilung via Finviz (79 % / 15 %)</a><a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="noreferrer">McKinsey — „The State of AI in 2026: On the road to ROI” (37 % EBIT)</a></div>
+        <blockquote class="takeaway">
+          <strong>Was es bedeutet</strong>
+          Für uns: Die lohnendste Arbeit liegt nicht im nächsten Pilot, sondern im Schließen des ROI-Grabens bei bereits deployten Agenten. Wer belegen kann, was ein Agent zur P&L beiträgt, verkauft keine Technik, sondern Gewissheit. Konkret billbar: Outcome-gekoppelte Engagements (Honorar an messbaren Geschäftswert gebunden statt an Lizenz-Rollouts); FinOps- und Value-Measurement-Frameworks, die Token-Kosten, Durchsatz und Geschäftswirkung zusammenführen; und Daten- und Prozess-Readiness-Assessments, die die 85 % adressieren, die heute messen müssten und es nicht tun.
+        </blockquote>
+      </section>
+      <div class="briefing-end">
+        <strong>Was als Nächstes zu beobachten ist:</strong> Der erste belastbare Datenpunkt ist <strong>ANTs Kursverlauf über die kommenden vollen Handelstage</strong> — stabilisiert sich die Aktie über dem Ausgabepreis, oder setzt sich die Capex-Skepsis durch? Dazu: ob unabhängige Prüfer <strong>Gemini 4 Neons</strong> Index-Führung bestätigen oder relativieren, wie reibungslos die Migration vor dem <strong>Agent-Builder-Sunset am 30. November</strong> läuft, und ob die <strong>Apple-Eigenagent</strong>-Signale sich zu einer konkreten Produktankündigung verdichten. Der Compliance-Anker bleibt scharf: bis zum <strong>2. Dezember</strong> müssen Bestands-Agentensysteme unter Artikel 50 des EU AI Act maschinenlesbar gekennzeichnet sein. Claude Code steht bei <code>v2.1.330</code>.
+      </div>
+
+    </div>
+
+  </article>
+
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <!-- ════════════════════ BREAKING NEWS ═══════════════════════ -->
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <section>
+    <div class="section-head">
+      <h2>⚡ Breaking News</h2>
+      <div class="rule"></div>
+      <div class="hint">LLM-Score 1–10 · letzte 7 Tage</div>
+    </div>
+
+    <div class="grid cols-3">
+
+      <article class="card news-card crit">
+        <div class="row">
+          <span class="pill crit">Major Release</span>
+          <span class="score">Score <b>8.5</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Google startet Gemini 4 Neon: Frontier-Modell zu 3 $/15 $ — halber Preis der Rivalen</h3>
+        <p><strong>Google</strong> bringt <strong>Gemini 4 Neon</strong> zu <strong>3 $ / 15 $</strong> pro Mio. Token (Cache 0,15 $) — rund die Hälfte der ~8 $ Input, die OpenAI und Anthropic für ihre Spitzenmodelle verlangen. Auf dem Artificial-Analysis-Intelligence-Index soll Neon bei max. Reasoning <strong>61</strong> erreichen, vor <strong>Claude Opus 5.5</strong> (59) und <strong>GPT-6.2 Sol</strong> (57) — andere Lesarten sehen eher Rang 3. Der Preiskampf erreicht die Frontier-Spitze.</p>
+        <div class="news-meta">
+          <span>📅 18.11.2026</span><span>·</span><span>🏢 Google</span><span>·</span>
+          <a href="https://artificialanalysis.ai/models/gemini-4-neon" target="_blank" rel="noreferrer">artificialanalysis.ai</a><span>·</span>
+          <a href="https://aiweekly.co/alerts/google-launches-gemini-4-neon-at-315-per-million-tokens" target="_blank" rel="noreferrer">aiweekly.co</a>
+        </div>
+      </article>
+
+      <article class="card news-card hot">
+        <div class="row">
+          <span class="pill hot">Marktdaten</span>
+          <span class="score">Score <b>8.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">ANT nach dem Debüt: Anthropic-Aktie pendelt um den Ausgabepreis, Empfang bleibt kühl</h3>
+        <p><span data-person="dario-amodei">Dario Amodeis</span> <strong>Anthropic</strong> handelt seit dem Debüt unter dem Ticker <strong>ANT</strong> an der Nasdaq — dem größten Listing der US-Börsengeschichte. Die ersten vollen Sessions verlaufen volatil und eng um den Ausgabepreis, zeitweise darunter; die Capex-Skepsis des Gesamtmarkts dominiert. Ein belastbarer Schlusskurs ist angesichts widersprüchlicher Quellen noch offen. Erstmals wird ein Frontier-Labor täglich öffentlich bepreist.</p>
+        <div class="news-meta">
+          <span>📅 21.11.2026</span><span>·</span><span>🏢 Anthropic</span><span>·</span>
+          <a href="https://stockanalysis.com/stocks/ant/" target="_blank" rel="noreferrer">stockanalysis.com</a>
+        </div>
+      </article>
+
+      <article class="card news-card hot">
+        <div class="row">
+          <span class="pill hot">Major Release</span>
+          <span class="score">Score <b>6.5</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">OpenAI startet GPT-6.2 Astra und Sol — gemischte frühe Resonanz</h3>
+        <p><strong>OpenAI</strong> hat diese Woche <strong>GPT-6.2 Astra</strong> (8 $/40 $) und <strong>Sol</strong> (2 $/10 $) ausgerollt. OpenAI reklamiert neue Eval-Höchstwerte bei gesenkten Kosten pro Aufgabe, während ein Teil der Power-User die Modelle im Alltag als wenig überzeugend beschreibt. Die Lücke zwischen Benchmark und gelebtem Nutzen bleibt das eigentliche Produktrisiko — und der Kontext für Googles aggressives Neon-Pricing.</p>
+        <div class="news-meta">
+          <span>📅 17.11.2026</span><span>·</span><span>🏢 OpenAI</span><span>·</span>
+          <a href="https://pricepertoken.com/news/model-releases" target="_blank" rel="noreferrer">pricepertoken.com</a>
+        </div>
+      </article>
+
+      <article class="card news-card info">
+        <div class="row">
+          <span class="pill info">Security</span>
+          <span class="score">Score <b>6.5</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Cohere schließt Übernahme von AISLE ab — Vorstoß in agentische Sicherheit</h3>
+        <p><span data-person="aidan-gomez">Aidan Gomez’</span> <strong>Cohere</strong> hat die Übernahme von <strong>AISLE</strong> abgeschlossen — einem Spezialisten für <strong>autonome Schwachstellen-Suche</strong>. Es ist Coheres vierter strategischer Deal dieses Jahr (Terms unveröffentlicht) und schiebt das Enterprise-Labor erkennbar Richtung agentische Security. Ein Signal, dass sich die Agenten-Schicht in vertikale Spezialisten bündelt statt in generische Baukästen.</p>
+        <div class="news-meta">
+          <span>📅 13.11.2026</span><span>·</span><span>🏢 Cohere</span><span>·</span>
+          <a href="https://pulse2.com/cohere-expands-sovereign-ai-platform-with-aisle-acquisition-and-cubic-team-addition/" target="_blank" rel="noreferrer">pulse2.com</a>
+        </div>
+      </article>
+
+      <article class="card news-card info">
+        <div class="row">
+          <span class="pill info">Tooling</span>
+          <span class="score">Score <b>6.0</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Cognition bringt Devin Bots — persistente Software-Entwicklungs-Agenten</h3>
+        <p><strong>Cognition</strong> hat <strong>Devin Bots</strong> vorgestellt: Software-Entwicklungs-Agenten, die <strong>dauerhaft statt sitzungsweise</strong> arbeiten. Zugleich schaltet <strong>OpenAI</strong> seinen <strong>Agent Builder</strong> zum 30. November ab. Beides zeigt dieselbe Bewegung: Der erste Baukasten-Hype weicht einer zweiten Phase, in der sich Agenten-Fähigkeit in Plattformen und persistente Spezial-Agenten bündelt.</p>
+        <div class="news-meta">
+          <span>📅 17.11.2026</span><span>·</span><span>🏢 Cognition</span><span>·</span>
+          <a href="https://aiagentsdirectory.com/news/ai-agents-news-brief-november-18-2026" target="_blank" rel="noreferrer">aiagentsdirectory.com</a>
+        </div>
+      </article>
+
+      <article class="card news-card info">
+        <div class="row">
+          <span class="pill info">M&amp;A</span>
+          <span class="score">Score <b>5.5</b>/10</span>
+        </div>
+        <h3 style="margin-top:10px">Model ML sammelt 250 Mio. $ bei 1,5 Mrd. $ — Agenten für Finanzmodellierung</h3>
+        <p><strong>Model ML</strong>, das KI-Agenten für <strong>Finanzmodellierung und Due Diligence</strong> baut, hat rund <strong>250 Mio. $</strong> bei einer Bewertung von ~<strong>1,5 Mrd. $</strong> eingesammelt. Das Kapital fließt weiter, aber gezielter: nicht in den generischen Agenten, sondern in vertikale Spezialisten mit nachweisbarem Umsatz in einer klar umrissenen Domäne. Teil der Reifephase des Agenten-Markts.</p>
+        <div class="news-meta">
+          <span>📅 18.11.2026</span><span>·</span><span>🏢 Model ML</span><span>·</span>
+          <a href="https://aiagentsdirectory.com/news/ai-agents-news-brief-november-18-2026" target="_blank" rel="noreferrer">aiagentsdirectory.com</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <!-- ═══════════════ QUELLEN (Gerüst, JS füllt) ═══════════════ -->
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <section id="quellen">
+    <div class="section-head">
+      <h2>📎 Quellen dieses Briefings</h2>
+      <div class="rule"></div>
+      <div class="hint">aus Briefing-Abschnitten und Breaking News</div>
+    </div>
+    <div class="card src-index"><ol id="src-index-list"><li>Quellen stehen direkt unter jedem Abschnitt und auf jeder Karte.</li></ol></div>
+  </section>
+
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <!-- ═════════════════════ CLAUDE CODE ═══════════════════════ -->
+  <!-- ═════════════════════════════════════════════════════════ -->
+  <section>
+    <div class="section-head">
+      <h2>🛠 Claude Code · Releases &amp; Watch</h2>
+      <div class="rule"></div>
+      <div class="hint">Quelle: anthropics/claude-code · GitHub Releases</div>
+    </div>
+
+    <div class="grid cc-grid">
+
+      <article class="card">
+        <h3>Letzte Releases</h3>
+        <p>Aktuelle Version <code>v2.1.330</code> (20.11.) ist ein breiter Stabilitäts- und Governance-Release: Neu sind die <strong>Anmeldung an Organisationen aus Anthropics Enterprise Admin Console</strong> (Claude Code übernimmt nach <code>claude auth login</code> die Org-Settings und deren Cloud-Provider/Gateway), der eingebaute Mod <strong>easel</strong> (zeichnet auf Wunsch Charts, in <code>/config</code> abschaltbar) und zahlreiche <code>--start-dir</code>/Metrics-Optionen für Self-hosted-Runner. Für unbeaufsichtigte Läufe wie diesen zählen zwei Fixes besonders: <code>claude -p</code> beendet jetzt mit <strong>Exit 1 statt stiller 0</strong>, wenn der Output auf eine volle Platte läuft, und ein auf Bedrock <strong>gepinntes Opus-Modell wird nicht mehr ignoriert</strong> (kein stiller Fallback auf ein nicht verfügbares Default-Modell mehr). Dazu behoben: Einfrieren nach dem Kompaktieren langer Konversationen, hängende/leere <strong>WebFetch</strong>-Aufrufe, <code>ExitWorktree</code>, das das Worktree einer anderen laufenden Session löschte, und verlorene User-Settings bei gleichzeitigem Speichern. <strong>Geändert</strong>: wiederkehrende Tasks und <code>/loop</code> laufen jetzt bis zu <strong>30 statt 7 Tage</strong>, solange die Session lebt; mehr <code>rm</code>-Befehle Richtung Root/Home/Arbeitsordner fragen nach (wo niemand antworten kann, werden sie verweigert); und der automatische <code>max_tokens</code>-Retry aus 2.1.329 ist <strong>wieder da</strong>. Davor ergänzte <code>v2.1.329</code> (19.11.) eine <strong>Trust-Dialog-Warnung</strong>, die anzeigt, wo die Hooks eines Ordners deklariert sind, eine <strong>Warnung in Claude Desktop und anderen nicht-interaktiven Hosts</strong>, wenn Hooks aus Managed Settings nicht laden, und nimmt <strong>geplante Tasks, <code>/loop</code>-Wakeups, das Ziel und Forks dieser Session in <code>/tasks</code></strong> auf (<code>x</code> stoppt einen nach Rückfrage) — dazu eine „Server message"-Zeile. Davor brachte <code>v2.1.328</code> (19.11.) den <strong>Auto-Modus für Claude Opus 4.6 und Sonnet 4.6</strong> auf Amazon Bedrock, Google Clouds Agent Platform, Microsoft Foundry und das Claude-Apps-Gateway — interaktive Sessions ohne gesetzten Permission-Modus starten jetzt darin — sowie <code>onFailure: "block"</code> für <code>mcp_tool</code>-Hooks (wie schon für Command- und HTTP-Hooks). Davor ergänzte <code>v2.1.327</code> (17.11.) eine <strong>Bestätigung, bevor <code>/install-github-app</code></strong> ein Repository verändert, <code>claude mcp add-json &lt;name&gt; -</code> zum Einlesen der Server-JSON aus stdin (hält Tokens von der Kommandozeile fern; nicht innerhalb einer Session), einen Hinweis, wenn sich ältere Nachrichten einer fortgesetzten Session nicht laden lassen, und eine Liste in <code>/status</code> defekter Agent-, Skill-, Command- und Output-Style-Dateien, Keybinding-Fehler, einer nicht verfügbaren Sandbox, ignorierter Permission-Settings und Hook-Matcher. Davor schaltet <code>v2.1.326</code> (16.11.) <strong>Code Mode</strong> automatisch ein, wenn <strong>Agent-Teams</strong> aktiv sind — Sessions mit eingeschalteten Teams starten jetzt im Code Mode —, warnt beim Start, wenn ein <code>--allowedTools</code>-, <code>--disallowedTools</code>- oder <code>--tools</code>-Wert einen Eintrag enthält, der nicht wie eine vollständige Regel aussieht, und erklärt in einer neuen Meldung, warum MCP-Server nicht mehr geladen werden, sobald ein Administrator Managed Settings setzt. Davor schloss <code>v2.1.325</code> (13.11.) eine <strong>Sicherheitslücke im zstd-Decoding</strong> komprimierter Responses, ergänzte einen Spinner-Hinweis in VS Code zum erneuten Ausführen einer Notebook-Zelle (sobald Claude ein Jupyter-Notebook gelesen oder editiert hat) und eine Zusatzzeile unter der Org-Fehlermeldung. Davor führte <code>v2.1.323</code> (12.11.) <strong>Code Mode</strong> ein — ein experimentelles Opt-in, in dem Claude <strong>JavaScript schreibt, um seine Tools aufzurufen</strong> (org-weit abschaltbar); dazu kommen <code>engines["claude-code"]</code> in <code>plugin.json</code> (Plugins außerhalb ihres angegebenen Versionsbereichs werden nicht installiert/geladen), Type-Checking der TypeScript-Hooks eines Plugins in <code>claude plugin validate</code> und <code>CLAUDE_CODE_AUTO_MODE_MODEL</code> in Managed-Settings für Claude-Desktop-Sessions auf Drittanbietern. Davor ergänzte <code>v2.1.322</code> (10.11.) den <strong>Fast-Mode auf Vertex</strong> (global, us, eu — mit Fallback auf Standard-Tempo, falls Vertex ihn verweigert). Das Highlight der Vorwoche steht in <code>v2.1.321</code> (09.11.): Claude Code führt <strong>Claude Fable 5.2</strong> (<code>claude-fable-5-2</code>) als neues <strong>Default-Fable-Modell</strong> ein — 1M Kontext, <strong>8/40 $ pro Mio. Token</strong>, 0,20 $/Mtok Cache-Reads; dazu kommt <code>--settings &lt;file&gt;</code> für <code>claude remote-control</code> (wendet eine Settings-Datei auf jede gestartete Session an) und ein Fix für MCP-OAuth-Requests. Das erklärt, warum die 5.2-Generation unmittelbar im Werkzeug verfügbar war. Davor war <code>v2.1.319</code> (06.11.) das für unbeaufsichtigte Läufe wie diesen wichtigste Release: <code>claude -p</code> im Auto-Modus <strong>beendet jetzt mit Exit 1 statt 0</strong>, wenn Aktionen mangels Safety-Check verweigert wurden (Text- und JSON-Output) — ein stiller Falsch-Erfolg ist damit behoben. Dazu <strong><code>permissions.denyInsteadOfPrompting</code></strong>, eine Auto-Modus-Umstellung ohne Klassifikator-Fallback bei abgeschalteter Telemetrie (<code>CLAUDE_CODE_AUTO_MODE_SERVER=0</code> hält ihn), MCP-Tasks im Terminal und harte <strong>Security-Fixes</strong> (Bash-Permission-Bypass via Environment-Präfix, <code>sed</code>-Check-Skip im Auto-Modus, Sandbox-Escape beim Worktree, <code>/rewind</code>-Symlink-Durchgriff). <code>v2.1.318</code> (04.11.) brachte Mod-Aktivierungs-Protokoll, <code>assume_role</code> auf <code>mantle</code>-Upstreams und eine <code>effort</code>-Option für Mods; <code>v2.1.317</code> (03.11.) ließ einen Check nachfragen, bevor ein Web-/Shell-Tool die Account-E-Mail ins Netz schickt, <code>/schedule</code> vor ungefragten Connectors warnen und <code>onFailure: "block"</code> für Agent-SDK-Hook-Callbacks blockieren; <code>v2.1.316</code> (31.10.) ergänzte <code>CLAUDE_CODE_DISABLE_ULTRATHINK</code>, pooled Group-Budgets und <code>CLAUDE_CODE_DISABLE_LOOPED_CROSS_CERT_DROP</code>. Die Linie bleibt: Modelle schnell verfügbar, dazu Governance, Sicherheit und Robustheit für genau die Oneshot- und Cron-Läufe, die dieses Briefing erzeugen.</p>
+
+        <div class="release">
+          <div class="ver">v2.1.330</div>
+          <div class="when">20.11.</div>
+          <div class="what">
+            <strong>Enterprise-Admin-Console-Login · easel-Chart-Mod · breiter Stabilitäts-Sweep</strong> — Anmeldung an <strong>Org aus Anthropics Enterprise Admin Console</strong> (übernimmt Org-Settings + Cloud-Provider/Gateway nach <code>claude auth login</code>) · eingebauter Mod <strong>easel</strong> zeichnet Charts (in <code>/config</code> abschaltbar) · <code>claude -p</code> beendet mit <strong>Exit 1 statt stiller 0</strong> bei vollem Datenträger · <strong>gepinntes Opus-Modell</strong> auf Bedrock wird nicht mehr ignoriert · Fixes für Kompaktier-Freeze, hängende <strong>WebFetch</strong>-Aufrufe und <code>ExitWorktree</code>, das fremde Worktrees löschte · wiederkehrende Tasks &amp; <code>/loop</code> laufen jetzt bis zu <strong>30 statt 7 Tage</strong> · mehr <code>rm</code> Richtung Root/Home fragt nach · <code>max_tokens</code>-Retry wieder aktiv
+            <span class="badge fix">FIXES</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.329</div>
+          <div class="when">19.11.</div>
+          <div class="what">
+            <strong>Trust-Dialog zeigt Hook-Herkunft · <code>/tasks</code> listet Wakeups &amp; Forks</strong> — neue <strong>Trust-Dialog-Warnung</strong>, die angibt, <strong>wo die Hooks eines Ordners deklariert</strong> sind · Warnung in Claude Desktop und anderen nicht-interaktiven Hosts, wenn <strong>Hooks aus Managed Settings nicht laden</strong> · <code>/tasks</code> zeigt jetzt die <strong>geplanten Tasks, <code>/loop</code>-Wakeups, das Ziel und Forks dieser Session</strong> (<code>x</code> stoppt einen nach Rückfrage) · neue „Server message"-Zeile
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.328</div>
+          <div class="when">19.11.</div>
+          <div class="what">
+            <strong>Auto-Modus für Opus 4.6 &amp; Sonnet 4.6 · <code>onFailure: "block"</code> für MCP-Hooks</strong> — neuer <strong>Auto-Modus</strong> für <code>claude-opus-4-6</code> und <code>claude-sonnet-4-6</code> auf <strong>Amazon Bedrock</strong>, <strong>Google Clouds Agent Platform</strong>, <strong>Microsoft Foundry</strong> und dem <strong>Claude-Apps-Gateway</strong>; interaktive Sessions ohne gesetzten Permission-Modus starten jetzt darin · <code>onFailure: "block"</code> jetzt auch für <code>mcp_tool</code>-Hooks (wie zuvor schon für Command- und HTTP-Hooks)
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.327</div>
+          <div class="when">17.11.</div>
+          <div class="what">
+            <strong>Bestätigung vor <code>/install-github-app</code> &amp; <code>/status</code>-Diagnose</strong> — neue <strong>Rückfrage</strong>, bevor <code>/install-github-app</code> ein Repository verändert · <code>claude mcp add-json &lt;name&gt; -</code> liest die Server-JSON aus <strong>stdin</strong>, damit Tokens von der Kommandozeile fernbleiben (nicht innerhalb einer Session) · Hinweis, wenn ältere Nachrichten einer fortgesetzten Session nicht geladen werden können · <code>/status</code> listet jetzt defekte Agent-, Skill-, Command- und Output-Style-Dateien, Keybinding-Fehler, eine nicht verfügbare Sandbox, ignorierte Permission-Settings und Hook-Matcher
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.326</div>
+          <div class="when">16.11.</div>
+          <div class="what">
+            <strong>Code Mode mit Agent-Teams &amp; Tool-Regel-Warnung</strong> — Code Mode lässt sich jetzt einschalten, während <strong>Agent-Teams</strong> aktiv sind; wer es schon an hat, startet Team-Sessions ab sofort im Code Mode · <strong>Startup-Warnung</strong>, wenn ein <code>--allowedTools</code>-, <code>--disallowedTools</code>- oder <code>--tools</code>-Eintrag nicht wie eine vollständige Regel aussieht · neue Meldung, die erklärt, warum MCP-Server nicht mehr laden, sobald ein Administrator Managed Settings setzt
+            <span class="badge feat">FEATURE</span>
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="ver">v2.1.325</div>
+          <div class="when">13.11.</div>
+          <div class="what">
+            <strong>zstd-Decoding-Fix &amp; Notebook-Hinweis</strong> — behebt eine <strong>Sicherheitslücke</strong> beim Dekodieren zstd-komprimierter Responses · Spinner-Tipp in VS Code und ähnlichen integrierten Terminals zum erneuten Ausführen einer Notebook-Zelle (einmalig gezeigt, sobald Claude ein Jupyter-Notebook gelesen oder editiert hat) · zusätzliche Zeile unter der Fehlermeldung bei Org-Beschränkungen
+            <span class="badge sec">SECURITY</span>
+          </div>
+        </div>
+
+        <p style="margin-top: 14px;">
+          <a href="https://github.com/anthropics/claude-code/releases">→ Alle Releases auf GitHub</a><br/>
+          <a href="https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md">→ Vollständiger CHANGELOG.md</a>
+        </p>
+      </article>
+
+      <article class="card src-card">
+        <h3>Watch-List</h3>
+        <p>Worauf in den nächsten Releases zu achten ist:</p>
+        <ul>
+          <li><strong>Managed-Settings über die ganze Session (v2.1.312)</strong>: Org-Policy und Managed Settings werden nicht mehr nur zu Session-Beginn geladen — für lange Oneshot-/Cron-Läufe relevant, wenn sich Policies während des Laufs ändern; Verhalten an echten Timer-Läufen beobachten.</li>
+          <li><strong>Self-hosted-Runner-Hold (v2.1.311)</strong>: <code>--hold-idle-file</code>/<code>--max-hold-min</code> halten eine Idle-Session, solange der Host noch Prozesse meldet — prüfen, ob das die bekannten Idle-Exit-Symptome im Daily-Run entschärft.</li>
+          <li><strong>Monitor-Tool (v2.1.310)</strong>: neues Tool + Plugin-Monitore zur Beobachtung laufender Agenten-Prozesse (auch auf Bedrock/Vertex/Foundry) — für unbeaufsichtigte Läufe prüfen, welche Signale es liefert und wie es sich zu <code>safety_event</code> verhält.</li>
+          <li><strong><code>safety_event</code>-Telemetrie</strong>: das OTel-Event macht gestoppte/abgefragte Tool-Aufrufe sichtbar — ideal für Audit-Trails unbeaufsichtigter Läufe; Integration in bestehende OTel-Pipelines prüfen.</li>
+          <li><strong>API-Version 2026-10-21</strong>: <code>/claude-api api-version</code> automatisiert den Umzug — Breaking Changes der neuen Version gegen Produktions-Code abgleichen.</li>
+          <li><strong>Sandbox-Härtung (v2.1.309)</strong>: Shell-Startup-Dateien laufen nicht mehr außerhalb der Sandbox, <code>denyWrite</code> greift auch über Symlinks — für isolierte Oneshot-Läufe nach dem Upgrade nachprüfen, dass nichts unbeabsichtigt blockiert. <code>allowNestedUserNamespaces</code> nur dort aktivieren, wo Chromium/podman es wirklich brauchen.</li>
+          <li><strong>Retry-Watchdog-Feintuning</strong>: die neuen Usage-Limit-Recheck-Variablen betreffen genau Oneshot/Cron — Verhalten an echten Timer-Läufen beobachten.</li>
+          <li><strong>Haiku 5.5 als Default-Haiku</strong>: <code>claude-haiku-5-5</code> (1M Kontext, 0,10 $/0,50 $) — Kosten und Verhalten in echten Sessions beobachten; Modell-IDs in Produktion explizit pinnen.</li>
+        </ul>
+        <p style="margin-top:12px"><strong>Empfohlene Watch-Quellen:</strong></p>
+        <div class="links">
+          <a href="https://github.com/anthropics/claude-code/releases.atom"><span>📡 RSS · GitHub Releases</span><span class="arrow">→</span></a>
+          <a href="https://github.com/anthropics/claude-code/commits/main.atom"><span>📡 RSS · main-Branch Commits</span><span class="arrow">→</span></a>
+          <a href="https://docs.claude.com/en/docs/claude-code/overview"><span>📘 Offizielle Docs</span><span class="arrow">→</span></a>
+          <a href="https://www.anthropic.com/news"><span>📰 Anthropic News</span><span class="arrow">→</span></a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <footer>
+    <div>Snapshot · <span class="mono" id="generated">29. Oktober 2026</span></div>
+    <div>
+      <a href="/agentic-info-dashboard/sources/">📚 Quellen-Sammlung</a> ·
+      <a href="/agentic-info-dashboard/">📊 Übersicht</a>
+    </div>
+  </footer>
+
+</div>
+
+<script src="/agentic-info-dashboard/_shared/people.js" defer></script>
+<script>
+  // ── Quellen-Index: alle externen Links aus Briefing + Breaking News ──
+  (function buildSourceIndex() {
+    const list = document.getElementById('src-index-list');
+    if (!list) return;
+    const clean = el => (el ? el.textContent : '').replace(/\s+/g, ' ').trim();
+    const seen = new Map();
+    const add = (a, ctx) => {
+      const href = a.href;
+      if (!/^https?:/.test(href)) return;
+      if (seen.has(href)) { seen.get(href).ctx.add(ctx); return; }
+      seen.set(href, { label: clean(a), ctx: new Set([ctx]) });
+    };
+    document.querySelectorAll('.briefing-body section').forEach(sec => {
+      const ctx = clean(sec.querySelector('h3'));
+      sec.querySelectorAll('.sec-sources a').forEach(a => add(a, ctx));
+    });
+    document.querySelectorAll('.news-card').forEach(card => {
+      const ctx = 'News: ' + clean(card.querySelector('h3'));
+      card.querySelectorAll('.news-meta a').forEach(a => add(a, ctx));
+    });
+    if (!seen.size) return;
+    list.innerHTML = '';
+    seen.forEach((v, href) => {
+      const li = document.createElement('li');
+      const ctx = document.createElement('span'); ctx.className = 'ctx';
+      ctx.textContent = [...v.ctx].join(' · ');
+      const a = document.createElement('a');
+      a.href = href; a.target = '_blank'; a.rel = 'noreferrer'; a.textContent = v.label;
+      const host = document.createElement('span'); host.className = 'host';
+      host.textContent = new URL(href).hostname.replace(/^www\./, '');
+      li.append(ctx, a, host); list.append(li);
+    });
+  })();
+
+  // ── Datum im Header lokalisieren ──────────────────────────
+  const SNAPSHOT_DATE = document.body.dataset.snapshotDate; // YYYY-MM-DD
+  const fmtLong = new Intl.DateTimeFormat('de-DE', {
+    weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'
+  });
+  if (SNAPSHOT_DATE) {
+    const d = new Date(SNAPSHOT_DATE);
+    document.getElementById('today').textContent = fmtLong.format(d);
+    document.getElementById('byline-date').textContent = fmtLong.format(d);
+    document.getElementById('generated').textContent = fmtLong.format(d);
+  }
+
+  // ── Timeline aus manifest.json bauen ──────────────────────
+  (async () => {
+    try {
+      const res = await fetch('/agentic-info-dashboard/ai-news/archive/manifest.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error('manifest not found');
+      const data = await res.json();
+      const snapshots = (data.snapshots || []).sort((a, b) => b.date.localeCompare(a.date));
+      if (!snapshots.length) return;
+
+      const bar = document.getElementById('timeline');
+      // Bestehende Pills (Fallback) entfernen, label behalten
+      bar.querySelectorAll('.tl-pill').forEach(p => p.remove());
+
+      const fmtPill = new Intl.DateTimeFormat('de-DE', { weekday: 'short' });
+      for (const s of snapshots) {
+        const d = new Date(s.date);
+        const dow = fmtPill.format(d).replace('.', '');
+        const dd = String(d.getDate()).padStart(2, '0');
+        const mm = String(d.getMonth() + 1).padStart(2, '0');
+        const a = document.createElement('a');
+        a.className = 'tl-pill';
+        a.dataset.date = s.date;
+        a.href = s.url;
+        a.title = s.summary || '';
+        a.innerHTML = `<span class="dow">${dow}</span><span class="date">${dd}.${mm}.</span>`;
+        if (s.date === SNAPSHOT_DATE) a.classList.add('active');
+        bar.appendChild(a);
+      }
+    } catch (e) {
+      // Manifest fehlt oder Fehler — der Fallback im HTML bleibt sichtbar.
+    }
+  })();
+
+  // ── Snapshot-Banner bei Archiv-Versionen ──────────────────
+  if (document.body.dataset.snapshotMode === 'archive') {
+    document.getElementById('snap-banner').classList.add('show');
+  }
+
+  // ── Stale-Banner (nur Live-Version) ───────────────────────
+  // Briefing ≥ 2 Tage alt heißt: der tägliche Update-Loop steht. Rein
+  // clientseitig, damit die Warnung auch dann erscheint, wenn genau der
+  // Loop ausgefallen ist, der sonst neu deployen würde.
+  if (document.body.dataset.snapshotMode === 'live' && SNAPSHOT_DATE) {
+    const ageDays = Math.floor((Date.now() - new Date(SNAPSHOT_DATE + 'T12:00:00')) / 86400000);
+    if (ageDays >= 2) {
+      const b = document.getElementById('snap-banner');
+      b.innerHTML = '<span>⚠️ Dieses Briefing ist vom ' + fmtLong.format(new Date(SNAPSHOT_DATE)) +
+        ' — ' + ageDays + ' Tage alt. Der tägliche Update-Loop läuft gerade nicht.</span>';
+      b.classList.add('show');
+    }
+  }
+</script>
+</body>
+</html>
