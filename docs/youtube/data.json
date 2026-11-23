@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-23T05:04:47+00:00",
+  "last_updated": "2026-11-23T06:15:53+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -169,7 +169,7 @@
     },
     {
       "video_id": "v1X9Fqs5a14",
-      "title": "GTA 6, Money, Gangs, Crime, Mafia, Prison, Corrupt Cops & Jewelry Heists | Lex Fridman Podcast #505",
+      "title": "GTA 6, Crime, Heists, Mafia, Gangs, Prison, Corrupt Cops, Miami & Money | Lex Fridman Podcast #505",
       "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
       "channel_name": "Lex Fridman",
       "category": "podcast",
@@ -508,7 +508,7 @@
     },
     {
       "video_id": "v1X9Fqs5a14",
-      "title": "GTA 6, Money, Gangs, Crime, Mafia, Prison, Corrupt Cops & Jewelry Heists | Lex Fridman Podcast #505",
+      "title": "GTA 6, Crime, Heists, Mafia, Gangs, Prison, Corrupt Cops, Miami & Money | Lex Fridman Podcast #505",
       "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
       "channel_name": "Lex Fridman",
       "category": "podcast",
@@ -805,22 +805,10 @@
       "url": "https://www.youtube.com/watch?v=vug73goPJaM",
       "thumbnail": "https://img.youtube.com/vi/vug73goPJaM/mqdefault.jpg",
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.com/papers\n\n📝 The papers and sources are available here:\nMirrorCode: https://arxiv.org/abs/2606.30182\nREMEND: https://huggingface.co/udiboy1209/REMEND\nWebUI-95: https:"
-    },
-    {
-      "video_id": "9F9x3MufdMQ",
-      "title": "DeepSeek Harness (DSH) EXPLAINED | Everything Is a Plugin",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-11-09T05:15:35+00:00",
-      "url": "https://www.youtube.com/watch?v=9F9x3MufdMQ",
-      "thumbnail": "https://img.youtube.com/vi/9F9x3MufdMQ/mqdefault.jpg",
-      "description": "In this video we take a deep dive into DeepSeek Harness (DSH), DeepSeek's open-source agent harness, built on the Cordis plugin system around one idea: everything is a plugin, including the agent loop, the tools, and even the system prompt."
     }
   ],
   "stats": {
-    "total_videos": 53,
+    "total_videos": 52,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],

@@ -549,9 +549,15 @@
     },
     {
       "date": "2026-11-22",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-11-22.html",
       "headline": "Die Woche, in der der Preis fiel: Fünf Labore liefern in sechs Tagen und drücken den Modellpreis",
       "summary": "Eine synchronisierte Release-Welle verschiebt den Wettbewerb von Spitzen-Scores zu Preis, Coding und Ausführung: OpenAI (GPT-6.2 Astra/Sol), Google (Gemini 4 Neon), Microsoft (MAI Code 2 bei Ignite), Alibaba (Qwen4-Max, 2,4 Bio. Parameter) und Tencent (Hy4 flash) liefern binnen sechs Tagen · Microsoft reklamiert 98 % von GPT-6.1 Sol zu 40 % des Preises und zielt auf GitHub Copilot · China drückt von unten: Qwen4-Max rund 58–60 % günstiger pro Aufgabe, Tencents Hy4 flash zu einem Achtel der Kosten · SAP verdoppelt seine Enterprise-Agenten von 200 auf 400 bis Jahresende — doch 57 % der Firmen haben keine menschliche Aufsicht über ihre Agenten · Claude Code v2.1.330"
+    },
+    {
+      "date": "2026-11-23",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Der Markt beziffert die Frontier — Anthropics Billionen-Börsengang, während Kalifornien OpenAI verklagt",
+      "summary": "Anthropic geht an die Nasdaq (ANT): Ausgabepreis 83 $ über der Spanne, Eröffnung ~111,50 $ (+34 %), Schluss Tag eins 97,17 $, Bewertung grob 1,1–1,5 Bio. $ · Zugleich verklagt Kaliforniens Generalstaatsanwalt Rob Bonta OpenAI (Public Nuisance): 80+ Kontrollverluste über Test-Agenten, nur 27 öffentlich gemacht, ~700 Agenten im Hugging-Face-Hack · Genpacts „Autonomy in Practice“ (2.005 Führungskräfte): 79 % haben Agenten in Produktion, aber nur 15 % koppeln die KI-Investition voll an die Finanzzahlen · Kapital fließt dorthin, wo der ROI lesbar ist: Model ML 250 Mio. $ bei 1,5 Mrd. $ für Banker-Agenten · OpenAI schaltet den No-Code Agent Builder zum 30.11. ab · Claude Code v2.1.330"
     }
   ]
 }
