@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-23T06:15:53+00:00",
+  "last_updated": "2026-11-23T12:04:32+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -182,6 +182,30 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "IUcrxIM0K-Y",
+      "title": "AI Just Pours Tokens Into the Problem (Kevin Buzzard)",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-23T10:51:27+00:00",
+      "url": "https://www.youtube.com/shorts/IUcrxIM0K-Y",
+      "thumbnail": "https://img.youtube.com/vi/IUcrxIM0K-Y/mqdefault.jpg",
+      "description": "Kevin Buzzard (Imperial College London) on why human mathematicians redesign definitions when a proof gets too complicated, while AI autoformalisation tools in Lean can just push through by brute force. Mathematics is changing; it isn't cle"
+    },
+    {
+      "video_id": "1jPdehG3Hms",
+      "title": "Claude AI Solved The Secret Of Black Holes",
+      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+      "channel_name": "Two Minute Papers",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-11-23T07:37:52+00:00",
+      "url": "https://www.youtube.com/watch?v=1jPdehG3Hms",
+      "thumbnail": "https://img.youtube.com/vi/1jPdehG3Hms/mqdefault.jpg",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.com/papers\n\n📝 The paper is available here:\nhttps://www.anthropic.com/research/claude-black-hole-physics\nhttps://hexagonmath.org/2611.00175v1\n\n🙏 We would like to thank "
+    },
     {
       "video_id": "zqzk43bSdDI",
       "title": "Since last year, we asked: “What if AI solved the Riemann Hypothesis?”",
@@ -711,18 +735,6 @@
       "description": "Lying only works because we're cooperative. \"If I tell you it's raining outside, it would never occur to you that I'm lying about that.\" Michael Tomasello, developmental psychologist at Duke University, on why chimpanzees don't lie to one a"
     },
     {
-      "video_id": "0w2Crs8RzFE",
-      "title": "How Would You Make a Traffic Light Smart? (Michael Tomasello)",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-12T03:03:27+00:00",
-      "url": "https://www.youtube.com/shorts/0w2Crs8RzFE",
-      "thumbnail": "https://img.youtube.com/vi/0w2Crs8RzFE/mqdefault.jpg",
-      "description": "How would you make a traffic light smart? Michael Tomasello, developmental psychologist at Duke University, on why there's only one solution: perception, a goal, and a decision-making mechanism that acts to make the world conform to that go"
-    },
-    {
       "video_id": "uND6iY2qp_c",
       "title": "AlphaGenome 2: Teaching AI to read the entire human genome",
       "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
@@ -793,18 +805,6 @@
       "url": "https://www.youtube.com/watch?v=1FurWDiK9A4",
       "thumbnail": "https://img.youtube.com/vi/1FurWDiK9A4/mqdefault.jpg",
       "description": "Mux is the video API that translates audio and answers questions about your video. Get $50 in free credits: https://mux.com/fireship\n\nAnthropic just dropped Fable and Mythos 5.2 in the middle of a rocky IPO roadshow. Let's dive into what th"
-    },
-    {
-      "video_id": "vug73goPJaM",
-      "title": "Is Software Over?",
-      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
-      "channel_name": "Two Minute Papers",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-11-10T10:15:57+00:00",
-      "url": "https://www.youtube.com/watch?v=vug73goPJaM",
-      "thumbnail": "https://img.youtube.com/vi/vug73goPJaM/mqdefault.jpg",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.com/papers\n\n📝 The papers and sources are available here:\nMirrorCode: https://arxiv.org/abs/2606.30182\nREMEND: https://huggingface.co/udiboy1209/REMEND\nWebUI-95: https:"
     }
   ],
   "stats": {
