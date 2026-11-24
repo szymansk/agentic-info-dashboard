@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-23T12:04:32+00:00",
+  "last_updated": "2026-11-24T05:02:19+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,16 @@
   ],
   "featured": [
     {
-      "video_id": "mX7wHNnsghs",
-      "title": "How to claim your business in ChatGPT with Shopify",
+      "video_id": "asUuxCqj0GE",
+      "title": "Waiting for a better price on that gift? Use ChatGPT.",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-11-20T20:48:27+00:00",
-      "url": "https://www.youtube.com/watch?v=mX7wHNnsghs",
-      "thumbnail": "https://img.youtube.com/vi/mX7wHNnsghs/mqdefault.jpg",
-      "description": "Claim your business in ChatGPT by connecting your Shopify store. This demo shows how to start in Business Hub or the Shopify App Store, then connect your store directly to ChatGPT. After that, you can manage your business information to sha",
+      "published": "2026-11-24T01:36:38+00:00",
+      "url": "https://www.youtube.com/shorts/asUuxCqj0GE",
+      "thumbnail": "https://img.youtube.com/vi/asUuxCqj0GE/mqdefault.jpg",
+      "description": "Try it yourself 👉 Check the price of this item every day and let me know when it drops. Include the old price, new price, and a link to the offer.",
       "why": ""
     },
     {
@@ -169,7 +169,7 @@
     },
     {
       "video_id": "v1X9Fqs5a14",
-      "title": "GTA 6, Crime, Heists, Mafia, Gangs, Prison, Corrupt Cops, Miami & Money | Lex Fridman Podcast #505",
+      "title": "GTA 6, Crime, Jewel Heists, Prison, Corrupt Cops, Mafia, Miami & Money | Lex Fridman Podcast #505",
       "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
       "channel_name": "Lex Fridman",
       "category": "podcast",
@@ -182,6 +182,102 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "MkeKXJzJo98",
+      "title": "Did AI JUST Solve Mathematics?",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-24T02:30:08+00:00",
+      "url": "https://www.youtube.com/watch?v=MkeKXJzJo98",
+      "thumbnail": "https://img.youtube.com/vi/MkeKXJzJo98/mqdefault.jpg",
+      "description": "Try Grok Bot by SpaceXSI (starts at $30 with X Subscription Premium): https://tinyurl.com/yc4b4ymz\n\nThis video was fully edited by Scarlet, our free and open source AI video editor: https://github.com/Forward-Future/scarlet\n\n3Blue1Brown: ht"
+    },
+    {
+      "video_id": "asUuxCqj0GE",
+      "title": "Waiting for a better price on that gift? Use ChatGPT.",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-24T01:36:38+00:00",
+      "url": "https://www.youtube.com/shorts/asUuxCqj0GE",
+      "thumbnail": "https://img.youtube.com/vi/asUuxCqj0GE/mqdefault.jpg",
+      "description": "Try it yourself 👉 Check the price of this item every day and let me know when it drops. Include the old price, new price, and a link to the offer."
+    },
+    {
+      "video_id": "w-ltt0Np2cY",
+      "title": "Investigating Linux Vulnerabilities with GPT-6 Cyber",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-23T20:03:11+00:00",
+      "url": "https://www.youtube.com/shorts/w-ltt0Np2cY",
+      "thumbnail": "https://img.youtube.com/vi/w-ltt0Np2cY/mqdefault.jpg",
+      "description": "AI can help security teams move faster from finding vulnerabilities to getting fixes into the software people rely on.\n\nIn one run, GPT-6 Cyber helped validate 948 Linux kernel vulnerabilities and generate candidate patches for human review"
+    },
+    {
+      "video_id": "MpsO8Ds8uyo",
+      "title": "Investigating Linux Vulnerabilities with GPT-6 Cyber",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-23T20:02:15+00:00",
+      "url": "https://www.youtube.com/watch?v=MpsO8Ds8uyo",
+      "thumbnail": "https://img.youtube.com/vi/MpsO8Ds8uyo/mqdefault.jpg",
+      "description": "AI can help security teams move faster from finding vulnerabilities to getting fixes into the software people rely on.\n\nIn one run, GPT-6 Cyber helped validate 948 Linux kernel vulnerabilities and generate candidate patches for human review"
+    },
+    {
+      "video_id": "jP9yjEDlc4k",
+      "title": "Opus just lost to the last company you'd expect...",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-11-23T19:14:30+00:00",
+      "url": "https://www.youtube.com/watch?v=jP9yjEDlc4k",
+      "thumbnail": "https://img.youtube.com/vi/jP9yjEDlc4k/mqdefault.jpg",
+      "description": "Railway is the smoothest way to deploy software: https://railway.com/?referralCode=fireship\n\nGoogle just dropped Gemini 4 Neon, a mid tier model that somehow outscores its own three week old flagship. Let's break it down.\n\nWant more Fireshi"
+    },
+    {
+      "video_id": "RwYz8XhZiu0",
+      "title": "Why OpenAI Acquired a Biotech Startup",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-23T15:30:33+00:00",
+      "url": "https://www.youtube.com/watch?v=RwYz8XhZiu0",
+      "thumbnail": "https://img.youtube.com/vi/RwYz8XhZiu0/mqdefault.jpg",
+      "description": "What happens when scientists are no longer limited by human attention? OpenAI’s Joy Jiao and Ashoka Rajendra join a16z’s Jay Rughani and Jorge Conde to discuss how AI and thousands of parallel agents could reshape drug discovery and develop"
+    },
+    {
+      "video_id": "gAmjBqXNoFI",
+      "title": "How Franklin Templeton uses AI for investment research | OpenAI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-23T15:23:23+00:00",
+      "url": "https://www.youtube.com/shorts/gAmjBqXNoFI",
+      "thumbnail": "https://img.youtube.com/vi/gAmjBqXNoFI/mqdefault.jpg",
+      "description": "“Just delivering data is not enough.”\n\nFranklin Templeton’s Katrina Dudley explains how OpenAI is helping the firm connect information from compliance, risk and trading, then turn it into insights for portfolio managers.\n\nThat gives analyst"
+    },
+    {
+      "video_id": "PXKvR8ta22Q",
+      "title": "How Franklin Templeton uses AI for investment research | OpenAI",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-23T15:21:09+00:00",
+      "url": "https://www.youtube.com/watch?v=PXKvR8ta22Q",
+      "thumbnail": "https://img.youtube.com/vi/PXKvR8ta22Q/mqdefault.jpg",
+      "description": "“Just delivering data is not enough.”\n\nFranklin Templeton’s Katrina Dudley explains how OpenAI is helping the firm connect information from compliance, risk and trading, then turn it into insights for portfolio managers.\n\nThat gives analyst"
+    },
     {
       "video_id": "IUcrxIM0K-Y",
       "title": "AI Just Pours Tokens Into the Problem (Kevin Buzzard)",
@@ -216,7 +312,7 @@
       "published": "2026-11-22T02:02:12+00:00",
       "url": "https://www.youtube.com/watch?v=zqzk43bSdDI",
       "thumbnail": "https://img.youtube.com/vi/zqzk43bSdDI/mqdefault.jpg",
-      "description": "Hypothetical no more\nAnnouncement by Levent Alpöge: https://alpo.ge/remark.pdf\nAnnouncement by Alessandro Masullo on his (human) proof:\nhttps://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/\n\n-----------------"
+      "description": "Hypothetical no more\nAnnouncement by Levent Alpöge: https://alpo.ge/remark.pdf\nAnnouncement by Alessandro Masullo on his (human) proof:\nhttps://sites.google.com/view/tmotp/home\n\n0:00 - Kevin Buzzard\n0:45 - Ken Ono\n1:14 - Elliot Glazer\n1:28 "
     },
     {
       "video_id": "I0Fasi1-teQ",
@@ -255,18 +351,6 @@
       "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
     },
     {
-      "video_id": "mX7wHNnsghs",
-      "title": "How to claim your business in ChatGPT with Shopify",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-20T20:48:27+00:00",
-      "url": "https://www.youtube.com/watch?v=mX7wHNnsghs",
-      "thumbnail": "https://img.youtube.com/vi/mX7wHNnsghs/mqdefault.jpg",
-      "description": "Claim your business in ChatGPT by connecting your Shopify store. This demo shows how to start in Business Hub or the Shopify App Store, then connect your store directly to ChatGPT. After that, you can manage your business information to sha"
-    },
-    {
       "video_id": "_EFi5y_ULE4",
       "title": "How one college football game nearly bankrupted DoorDash.",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -291,30 +375,6 @@
       "description": "Paper gives your coding agent a design canvas built on real HTML and CSS. Try it: https://paper.design/?utm_source=youtube&utm_medium=sponsor&utm_campaign=fireship&utm_content=fireship-1\n\nHackers hijacked 178 major websites through Optimize"
     },
     {
-      "video_id": "X19Q12hmRjY",
-      "title": "An underrated way to use ChatGPT: Finding a doctor",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-20T17:22:23+00:00",
-      "url": "https://www.youtube.com/shorts/X19Q12hmRjY",
-      "thumbnail": "https://img.youtube.com/vi/X19Q12hmRjY/mqdefault.jpg",
-      "description": "Your yearly checkups start with finding the right doctor. Magan Chin shares how she uses ChatGPT to find highly rated doctors nearby.\n\nTip by 💡:\nInstagram @genzbestie · TikTok @genzbestie_"
-    },
-    {
-      "video_id": "WGvsk0LIveU",
-      "title": "3 Tips to Save Money With ChatGPT",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-20T16:00:17+00:00",
-      "url": "https://www.youtube.com/watch?v=WGvsk0LIveU",
-      "thumbnail": "https://img.youtube.com/vi/WGvsk0LIveU/mqdefault.jpg",
-      "description": "ChatGPT can help you find ways to save, whether you’re shopping for a desk chair or wondering what you’re still paying for after a free trial ends.\n\nLearn three ways to save money with ChatGPT. Use a product screenshot to compare prices bef"
-    },
-    {
       "video_id": "TtOoLanFzGw",
       "title": "Why AI Has DHH Working 16-Hour Days",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -325,30 +385,6 @@
       "url": "https://www.youtube.com/watch?v=TtOoLanFzGw",
       "thumbnail": "https://img.youtube.com/vi/TtOoLanFzGw/mqdefault.jpg",
       "description": "David Heinemeier Hansson thinks the agent era is reopening a window in computing that has been closed for decades: the chance to build a new operating system people actually want to use.\n\nDHH joins a16z General Partners Martin Casado and An"
-    },
-    {
-      "video_id": "OSHSopaYjTw",
-      "title": "Create and Share a Dashboard in ChatGPT",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-20T06:07:50+00:00",
-      "url": "https://www.youtube.com/watch?v=OSHSopaYjTw",
-      "thumbnail": "https://img.youtube.com/vi/OSHSopaYjTw/mqdefault.jpg",
-      "description": "Turn your analysis into a dashboard your team can use. Building on the fictional Acme sales example, this walkthrough brings quarterly metrics and customer follow-ups into one view.\n\nSee how to inspect the data behind a chart, edit its appe"
-    },
-    {
-      "video_id": "JEgTn37Sk50",
-      "title": "Ask Questions About Your Data in ChatGPT",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-20T06:05:59+00:00",
-      "url": "https://www.youtube.com/watch?v=JEgTn37Sk50",
-      "thumbnail": "https://img.youtube.com/vi/JEgTn37Sk50/mqdefault.jpg",
-      "description": "Prepare for a sales meeting by asking ChatGPT what changed in your data and which customers need attention. Using sample data from the fictional company Acme, this walkthrough compares quarterly sales, visualizes the segments behind the cha"
     },
     {
       "video_id": "5eON_8rgKzk",
@@ -411,18 +447,6 @@
       "description": "GPT 6.2 Astra is OpenAI’s best model, so for each of the last 4 years this would have been the only headline. But now Gemini is catching up fast, with 4 Carbon and Neon, and Anthropic are IPO-ing after promising imminent RSI. And even all t"
     },
     {
-      "video_id": "nEYuoqqMgyg",
-      "title": "What's going on with GPT-6.2?",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-19T20:02:19+00:00",
-      "url": "https://www.youtube.com/watch?v=nEYuoqqMgyg",
-      "thumbnail": "https://img.youtube.com/vi/nEYuoqqMgyg/mqdefault.jpg",
-      "description": "Check out Spacesheep: https://spacesheep.dev/matt\nFirst 1,000 signups get 3 months free\n\nCheck out Scarlet: https://github.com/Forward-Future/scarlet\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: "
-    },
-    {
       "video_id": "-aL8XcfEbu0",
       "title": "Build something big.",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -480,7 +504,7 @@
       "published": "2026-11-19T17:40:33+00:00",
       "url": "https://www.youtube.com/watch?v=Qxor6jpfSiU",
       "thumbnail": "https://img.youtube.com/vi/Qxor6jpfSiU/mqdefault.jpg",
-      "description": "Use all your coding agents side by side in one IDE with JetBrains Air: https://jb.gg/https://jb.gg/JetBrainsAir-in-IDEs\n\nSolid 2.0 is the framework's first major release in over five years. Why should you care? Let's dive in.\n\nWant more Fir"
+      "description": "Use all your coding agents side by side in one IDE with JetBrains Air: https://jb.gg/JetBrainsAir-in-IDEs\n\nSolid 2.0 is the framework's first major release in over five years. Why should you care? Let's dive in.\n\nWant more Fireship?\n\n🗞️ New"
     },
     {
       "video_id": "gDW9An30_c0",
@@ -532,7 +556,7 @@
     },
     {
       "video_id": "v1X9Fqs5a14",
-      "title": "GTA 6, Crime, Heists, Mafia, Gangs, Prison, Corrupt Cops, Miami & Money | Lex Fridman Podcast #505",
+      "title": "GTA 6, Crime, Jewel Heists, Prison, Corrupt Cops, Mafia, Miami & Money | Lex Fridman Podcast #505",
       "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
       "channel_name": "Lex Fridman",
       "category": "podcast",
@@ -541,18 +565,6 @@
       "url": "https://www.youtube.com/watch?v=v1X9Fqs5a14",
       "thumbnail": "https://img.youtube.com/vi/v1X9Fqs5a14/mqdefault.jpg",
       "description": "Larry Lawton is one of the most notorious and prolific jewelry thieves in US history, who was eventually caught by the FBI, spent more than a decade in prison, including a lot of time in the hole, and then he turned his life around to run t"
-    },
-    {
-      "video_id": "oRmAbrpECkQ",
-      "title": "John Schulman on Getting AI Models to Tell the Truth",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-18T20:30:27+00:00",
-      "url": "https://www.youtube.com/shorts/oRmAbrpECkQ",
-      "thumbnail": "https://img.youtube.com/vi/oRmAbrpECkQ/mqdefault.jpg",
-      "description": "John Schulman, CTO of Thinking Machines Lab and co-founder of OpenAI, on the alignment approach he is most bullish on: training objectives that get models to report what they otherwise wouldn't verbalize.\n\nSchulman was one of OpenAI's found"
     },
     {
       "video_id": "pVc6KkjeCfU",
@@ -793,18 +805,6 @@
       "url": "https://www.youtube.com/watch?v=583ThJIqQ7k",
       "thumbnail": "https://img.youtube.com/vi/583ThJIqQ7k/mqdefault.jpg",
       "description": "I’ve read the full Fable 5.2 report at 264 pages, the 30 page METR RSI report, and tested Gemini Carbon and Fable 5.2 hundreds of times. There’s too much to cover in one video, but let’s explore everything from how fast AI is accelerating A"
-    },
-    {
-      "video_id": "1FurWDiK9A4",
-      "title": "Did Anthropic just save its $1 trillion IPO?",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-11-10T18:19:55+00:00",
-      "url": "https://www.youtube.com/watch?v=1FurWDiK9A4",
-      "thumbnail": "https://img.youtube.com/vi/1FurWDiK9A4/mqdefault.jpg",
-      "description": "Mux is the video API that translates audio and answers questions about your video. Get $50 in free credits: https://mux.com/fireship\n\nAnthropic just dropped Fable and Mythos 5.2 in the middle of a rocky IPO roadshow. Let's dive into what th"
     }
   ],
   "stats": {
