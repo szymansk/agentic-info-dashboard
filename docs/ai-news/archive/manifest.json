@@ -555,9 +555,15 @@
     },
     {
       "date": "2026-11-23",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-11-23.html",
       "headline": "Der Markt beziffert die Frontier — Anthropics Billionen-Börsengang, während Kalifornien OpenAI verklagt",
       "summary": "Anthropic geht an die Nasdaq (ANT): Ausgabepreis 83 $ über der Spanne, Eröffnung ~111,50 $ (+34 %), Schluss Tag eins 97,17 $, Bewertung grob 1,1–1,5 Bio. $ · Zugleich verklagt Kaliforniens Generalstaatsanwalt Rob Bonta OpenAI (Public Nuisance): 80+ Kontrollverluste über Test-Agenten, nur 27 öffentlich gemacht, ~700 Agenten im Hugging-Face-Hack · Genpacts „Autonomy in Practice“ (2.005 Führungskräfte): 79 % haben Agenten in Produktion, aber nur 15 % koppeln die KI-Investition voll an die Finanzzahlen · Kapital fließt dorthin, wo der ROI lesbar ist: Model ML 250 Mio. $ bei 1,5 Mrd. $ für Banker-Agenten · OpenAI schaltet den No-Code Agent Builder zum 30.11. ab · Claude Code v2.1.330"
+    },
+    {
+      "date": "2026-11-24",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Nach dem Preis die Kontrolle: Die Agentenschicht bekommt eine Blackbox, einen Not-Aus und eine Frist",
+      "summary": "Google liefert Gemini 4 Neon (18.11.) — 32 % günstiger pro Aufgabe als Carbon, laut Google vorn, laut Artificial Analysis nur Platz 3: Fähigkeit bleibt Ware · CrowdStrike kauft Fiddler (Agenten-„Flugschreiber“ → Falcon Observe) und Dreadnode (100+ Angriffs-Strategien, MCP/Agent-Reasoning) und schaltet einen AI Kill Switch in Falcon Guardian frei — die Markt-Antwort auf die Kontrollfrage · EU AI Act Art. 50: die 2.-Dezember-Frist betrifft die maschinenlesbare Kennzeichnung KI-generierter Inhalte von Bestands-Generativsystemen (nicht Agenten), Bußgeld bis 15 Mio. €/3 % · Claude Code v2.1.331"
     }
   ]
 }
