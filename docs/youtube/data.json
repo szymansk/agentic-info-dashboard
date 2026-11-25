@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-24T12:02:11+00:00",
+  "last_updated": "2026-11-25T05:01:32+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,29 @@
   ],
   "featured": [
     {
-      "video_id": "asUuxCqj0GE",
-      "title": "Waiting for a better price on that gift? Use ChatGPT.",
+      "video_id": "1u0hTd86_HU",
+      "title": "Experiment with SVG & 3D Design with the Codex Plugin",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-11-24T01:36:38+00:00",
-      "url": "https://www.youtube.com/shorts/asUuxCqj0GE",
-      "thumbnail": "https://img.youtube.com/vi/asUuxCqj0GE/mqdefault.jpg",
-      "description": "Try it yourself 👉 Check the price of this item every day and let me know when it drops. Include the old price, new price, and a link to the offer.",
+      "published": "2026-11-24T21:32:42+00:00",
+      "url": "https://www.youtube.com/watch?v=1u0hTd86_HU",
+      "thumbnail": "https://img.youtube.com/vi/1u0hTd86_HU/mqdefault.jpg",
+      "description": "Craig Dennis had never drawn an SVG by hand or used Blender. With the SVG & 3D Design plugin for Codex, he shows how to turn a reference image into an editable graphic or 3D model, then ask for changes in plain language.\n\nSee how a small ch",
+      "why": ""
+    },
+    {
+      "video_id": "K8rdrWQRd20",
+      "title": "The brain helped us build AI. Now AI is explaining the brain.",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_name": "Google DeepMind",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-24T17:51:08+00:00",
+      "url": "https://www.youtube.com/watch?v=K8rdrWQRd20",
+      "thumbnail": "https://img.youtube.com/vi/K8rdrWQRd20/mqdefault.jpg",
+      "description": "The human brain remains one of the greatest unsolved mysteries in science. We have roughly 86 billion neurons firing in a way that somehow produces intelligence, and yet the brain is still largely a black box. In the early days of AI, resea",
       "why": ""
     },
     {
@@ -155,21 +168,8 @@
       "why": ""
     },
     {
-      "video_id": "FORdPIWOH5k",
-      "title": "Gemini and the path to AGI with Koray Kavukcuoglu",
-      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
-      "channel_name": "Google DeepMind",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-19T19:58:06+00:00",
-      "url": "https://www.youtube.com/watch?v=FORdPIWOH5k",
-      "thumbnail": "https://img.youtube.com/vi/FORdPIWOH5k/mqdefault.jpg",
-      "description": "Seven years after their last conversation at Google DeepMind’s London office, Professor Hannah Fry reunites with Koray Kavukcuoglu, SVP at Google DeepMind and Chief AI Architect at Google. Back then, DeepMind was focused on specialized brea",
-      "why": ""
-    },
-    {
       "video_id": "v1X9Fqs5a14",
-      "title": "GTA 6, Crime, Heists, Mafia, Gangs, Prison, Corrupt Cops, Miami & Money | Lex Fridman Podcast #505",
+      "title": "GTA 6, Crime, Jewel Heists, Prison, Corrupt Cops, Mafia, Miami & Money | Lex Fridman Podcast #505",
       "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
       "channel_name": "Lex Fridman",
       "category": "podcast",
@@ -183,6 +183,102 @@
   ],
   "recent": [
     {
+      "video_id": "1u0hTd86_HU",
+      "title": "Experiment with SVG & 3D Design with the Codex Plugin",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-24T21:32:42+00:00",
+      "url": "https://www.youtube.com/watch?v=1u0hTd86_HU",
+      "thumbnail": "https://img.youtube.com/vi/1u0hTd86_HU/mqdefault.jpg",
+      "description": "Craig Dennis had never drawn an SVG by hand or used Blender. With the SVG & 3D Design plugin for Codex, he shows how to turn a reference image into an editable graphic or 3D model, then ask for changes in plain language.\n\nSee how a small ch"
+    },
+    {
+      "video_id": "p8lvQQebvpg",
+      "title": "How to Search for Exoplanets",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-24T20:00:45+00:00",
+      "url": "https://www.youtube.com/watch?v=p8lvQQebvpg",
+      "thumbnail": "https://img.youtube.com/vi/p8lvQQebvpg/mqdefault.jpg",
+      "description": "Two amateur astronomers, Kevin Bond and Ethan Byrd, independently found signals that could point to planets around distant stars. They knew you didn't need your own telescope for this kind of hunt. \n\nKevin used Codex and Ethan used Astra to"
+    },
+    {
+      "video_id": "4nFA4zntF7I",
+      "title": "Java4Shell Exploit - Computerphile",
+      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
+      "channel_name": "Computerphile",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-11-24T19:07:58+00:00",
+      "url": "https://www.youtube.com/watch?v=4nFA4zntF7I",
+      "thumbnail": "https://img.youtube.com/vi/4nFA4zntF7I/mqdefault.jpg",
+      "description": "Another week, another exploit has Dr Steve Bagley urging people to \"Patch, Patch, Patch!\"\n\nExploit discovered by: https://calif.io/java4shell \n\nComputerphile is supported by Jane Street. Learn more about them (and exciting career opportunit"
+    },
+    {
+      "video_id": "K8rdrWQRd20",
+      "title": "The brain helped us build AI. Now AI is explaining the brain.",
+      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
+      "channel_name": "Google DeepMind",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-24T17:51:08+00:00",
+      "url": "https://www.youtube.com/watch?v=K8rdrWQRd20",
+      "thumbnail": "https://img.youtube.com/vi/K8rdrWQRd20/mqdefault.jpg",
+      "description": "The human brain remains one of the greatest unsolved mysteries in science. We have roughly 86 billion neurons firing in a way that somehow produces intelligence, and yet the brain is still largely a black box. In the early days of AI, resea"
+    },
+    {
+      "video_id": "2DUJ2whBJRM",
+      "title": "Make sense of your day | with ChatGPT",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-24T17:14:03+00:00",
+      "url": "https://www.youtube.com/watch?v=2DUJ2whBJRM",
+      "thumbnail": "https://img.youtube.com/vi/2DUJ2whBJRM/mqdefault.jpg",
+      "description": "Snap a photo and ask ChatGPT to help you figure out what you’re looking at, and highlight anything you should double-check."
+    },
+    {
+      "video_id": "4MFBNFyBmQg",
+      "title": "Make a day of it | with ChatGPT",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-24T17:14:01+00:00",
+      "url": "https://www.youtube.com/watch?v=4MFBNFyBmQg",
+      "thumbnail": "https://img.youtube.com/vi/4MFBNFyBmQg/mqdefault.jpg",
+      "description": "ChatGPT can turn a rough idea into the perfect-sized plan for your family. Tell ChatGPT what you’re looking for and it’ll browse sites on your behalf to find local information, and even help you book things."
+    },
+    {
+      "video_id": "Faoam45LT-Q",
+      "title": "Make room in your day | with ChatGPT",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-24T17:13:58+00:00",
+      "url": "https://www.youtube.com/watch?v=Faoam45LT-Q",
+      "thumbnail": "https://img.youtube.com/vi/Faoam45LT-Q/mqdefault.jpg",
+      "description": "A little more time at the park? Connect your calendar and ask ChatGPT to find a later time for your meeting."
+    },
+    {
+      "video_id": "RrepvxPUGko",
+      "title": "Agents that learn while they're idle #deeplearningai #aiagents #oracle",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-24T16:00:17+00:00",
+      "url": "https://www.youtube.com/shorts/RrepvxPUGko",
+      "thumbnail": "https://img.youtube.com/vi/RrepvxPUGko/mqdefault.jpg",
+      "description": "Your agents can learn while they sleep.\n\nWhen an agent isn't serving requests, it can review its past runs, learn from its mistakes, and turn yesterday's traces into reusable skills. A coding agent that spends 10 minutes fixing an error tod"
+    },
+    {
       "video_id": "MkeKXJzJo98",
       "title": "Did AI JUST Solve Mathematics?",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
@@ -193,42 +289,6 @@
       "url": "https://www.youtube.com/watch?v=MkeKXJzJo98",
       "thumbnail": "https://img.youtube.com/vi/MkeKXJzJo98/mqdefault.jpg",
       "description": "Try Grok Bot by SpaceXSI (starts at $30 with X Subscription Premium): https://tinyurl.com/yc4b4ymz\n\nThis video was fully edited by Scarlet, our free and open source AI video editor: https://github.com/Forward-Future/scarlet\n\n3Blue1Brown: ht"
-    },
-    {
-      "video_id": "asUuxCqj0GE",
-      "title": "Waiting for a better price on that gift? Use ChatGPT.",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-24T01:36:38+00:00",
-      "url": "https://www.youtube.com/shorts/asUuxCqj0GE",
-      "thumbnail": "https://img.youtube.com/vi/asUuxCqj0GE/mqdefault.jpg",
-      "description": "Try it yourself 👉 Check the price of this item every day and let me know when it drops. Include the old price, new price, and a link to the offer."
-    },
-    {
-      "video_id": "w-ltt0Np2cY",
-      "title": "Investigating Linux Vulnerabilities with GPT-6 Cyber",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-23T20:03:11+00:00",
-      "url": "https://www.youtube.com/shorts/w-ltt0Np2cY",
-      "thumbnail": "https://img.youtube.com/vi/w-ltt0Np2cY/mqdefault.jpg",
-      "description": "AI can help security teams move faster from finding vulnerabilities to getting fixes into the software people rely on.\n\nIn one run, GPT-6 Cyber helped validate 948 Linux kernel vulnerabilities and generate candidate patches for human review"
-    },
-    {
-      "video_id": "MpsO8Ds8uyo",
-      "title": "Investigating Linux Vulnerabilities with GPT-6 Cyber",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-23T20:02:15+00:00",
-      "url": "https://www.youtube.com/watch?v=MpsO8Ds8uyo",
-      "thumbnail": "https://img.youtube.com/vi/MpsO8Ds8uyo/mqdefault.jpg",
-      "description": "AI can help security teams move faster from finding vulnerabilities to getting fixes into the software people rely on.\n\nIn one run, GPT-6 Cyber helped validate 948 Linux kernel vulnerabilities and generate candidate patches for human review"
     },
     {
       "video_id": "jP9yjEDlc4k",
@@ -244,7 +304,7 @@
     },
     {
       "video_id": "RwYz8XhZiu0",
-      "title": "Why OpenAI Acquired a Biotech Startup",
+      "title": "OpenAI’s Plan to Reinvent Drug Discovery",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
       "channel_name": "a16z",
       "category": "industry",
@@ -253,30 +313,6 @@
       "url": "https://www.youtube.com/watch?v=RwYz8XhZiu0",
       "thumbnail": "https://img.youtube.com/vi/RwYz8XhZiu0/mqdefault.jpg",
       "description": "What happens when scientists are no longer limited by human attention? OpenAI’s Joy Jiao and Ashoka Rajendra join a16z’s Jay Rughani and Jorge Conde to discuss how AI and thousands of parallel agents could reshape drug discovery and develop"
-    },
-    {
-      "video_id": "gAmjBqXNoFI",
-      "title": "How Franklin Templeton uses AI for investment research | OpenAI",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-23T15:23:23+00:00",
-      "url": "https://www.youtube.com/shorts/gAmjBqXNoFI",
-      "thumbnail": "https://img.youtube.com/vi/gAmjBqXNoFI/mqdefault.jpg",
-      "description": "“Just delivering data is not enough.”\n\nFranklin Templeton’s Katrina Dudley explains how OpenAI is helping the firm connect information from compliance, risk and trading, then turn it into insights for portfolio managers.\n\nThat gives analyst"
-    },
-    {
-      "video_id": "PXKvR8ta22Q",
-      "title": "How Franklin Templeton uses AI for investment research | OpenAI",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-23T15:21:09+00:00",
-      "url": "https://www.youtube.com/watch?v=PXKvR8ta22Q",
-      "thumbnail": "https://img.youtube.com/vi/PXKvR8ta22Q/mqdefault.jpg",
-      "description": "“Just delivering data is not enough.”\n\nFranklin Templeton’s Katrina Dudley explains how OpenAI is helping the firm connect information from compliance, risk and trading, then turn it into insights for portfolio managers.\n\nThat gives analyst"
     },
     {
       "video_id": "IUcrxIM0K-Y",
@@ -304,7 +340,7 @@
     },
     {
       "video_id": "zqzk43bSdDI",
-      "title": "Since last year, we asked: “What if AI solved the Riemann Hypothesis?”",
+      "title": "We've been asking: “What if AI solved the Riemann Hypothesis?”",
       "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
       "channel_name": "3Blue1Brown",
       "category": "researcher",
@@ -312,7 +348,7 @@
       "published": "2026-11-22T02:02:12+00:00",
       "url": "https://www.youtube.com/watch?v=zqzk43bSdDI",
       "thumbnail": "https://img.youtube.com/vi/zqzk43bSdDI/mqdefault.jpg",
-      "description": "Hypothetical no more\nAnnouncement by Levent Alpöge: https://alpo.ge/remark.pdf\nAnnouncement by Alessandro Masullo on his (human) proof:\nhttps://sites.google.com/view/tmotp/home\n\n0:00 - Kevin Buzzard\n0:45 - Ken Ono\n1:14 - Elliot Glazer\n1:28 "
+      "description": "Hypothetical no more\nAnnouncement by Levent Alpöge: https://alpo.ge/remark.pdf\n\nAnnouncement from Alessandro Maria Masullo on his work on GHR: https://sites.google.com/view/tmotp/home\n\n0:00 - Kevin Buzzard\n0:45 - Ken Ono\n1:14 - Elliot Glaze"
     },
     {
       "video_id": "I0Fasi1-teQ",
@@ -472,7 +508,7 @@
     },
     {
       "video_id": "FORdPIWOH5k",
-      "title": "Gemini and the path to AGI with Koray Kavukcuoglu",
+      "title": "Is Gemini our path to AGI?",
       "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
       "channel_name": "Google DeepMind",
       "category": "lab",
@@ -556,7 +592,7 @@
     },
     {
       "video_id": "v1X9Fqs5a14",
-      "title": "GTA 6, Crime, Heists, Mafia, Gangs, Prison, Corrupt Cops, Miami & Money | Lex Fridman Podcast #505",
+      "title": "GTA 6, Crime, Jewel Heists, Prison, Corrupt Cops, Mafia, Miami & Money | Lex Fridman Podcast #505",
       "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
       "channel_name": "Lex Fridman",
       "category": "podcast",
@@ -759,18 +795,6 @@
       "description": "98% of human DNA doesn't build proteins—it controls how our cells work, and holds vital clues to why diseases happen and why 90% of new drugs fail in clinical trials. Understanding the genome at the molecular level is the key to deciphering"
     },
     {
-      "video_id": "0NbLVdCZHF0",
-      "title": "Tabular Foundation Models for Data Science Agents",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-11T11:00:19+00:00",
-      "url": "https://www.youtube.com/watch?v=0NbLVdCZHF0",
-      "thumbnail": "https://img.youtube.com/vi/0NbLVdCZHF0/mqdefault.jpg",
-      "description": "Learn More: https://bit.ly/4j2WLq8\n\nTabular foundation models use in-context learning to make predictions on new datasets without training a model from scratch. In this short course, built in partnership with Prior Labs and taught by Frank "
-    },
-    {
       "video_id": "il0dgxjpoC0",
       "title": "Local AI 301: Quantization",
       "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
@@ -781,30 +805,6 @@
       "url": "https://www.youtube.com/watch?v=il0dgxjpoC0",
       "thumbnail": "https://img.youtube.com/vi/il0dgxjpoC0/mqdefault.jpg",
       "description": "Learn about quantization in this livestream and get started with quantization using llama.cpp and vLLM.\nProgram: \n-  Introduction to Quantization, Merve Noyan, Hugging Face\n- Calibration based quantization, Colin Kealty (aka bartowski), Red"
-    },
-    {
-      "video_id": "2hJkprFnzhY",
-      "title": "Russia-Ukraine War: Putin, Zelenskyy, Drones and the Future of Warfare | Lex Fridman Podcast #504",
-      "channel_id": "UCSHZKyawb77ixDdsGog4iWA",
-      "channel_name": "Lex Fridman",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-10T23:52:20+00:00",
-      "url": "https://www.youtube.com/watch?v=2hJkprFnzhY",
-      "thumbnail": "https://img.youtube.com/vi/2hJkprFnzhY/mqdefault.jpg",
-      "description": "Preston Stewart is a West Point graduate and Afghanistan veteran who covers the Ukraine war extensively on his YouTube channel, his podcast called War and Conflict, and his newsletter called Defense Tech News. Michael Kofman is a world-clas"
-    },
-    {
-      "video_id": "583ThJIqQ7k",
-      "title": "Fable 5.2: The Self-Improvement Loop Keeps Loopin’ … (plus Gemini Carbon)",
-      "channel_id": "UCNJ1Ymd5yFuUPtn21xtRbbw",
-      "channel_name": "AI Explained",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-10T23:11:36+00:00",
-      "url": "https://www.youtube.com/watch?v=583ThJIqQ7k",
-      "thumbnail": "https://img.youtube.com/vi/583ThJIqQ7k/mqdefault.jpg",
-      "description": "I’ve read the full Fable 5.2 report at 264 pages, the 30 page METR RSI report, and tested Gemini Carbon and Fable 5.2 hundreds of times. There’s too much to cover in one video, but let’s explore everything from how fast AI is accelerating A"
     }
   ],
   "stats": {
