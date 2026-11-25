@@ -561,9 +561,15 @@
     },
     {
       "date": "2026-11-24",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-11-24.html",
       "headline": "Nach dem Preis die Kontrolle: Die Agentenschicht bekommt eine Blackbox, einen Not-Aus und eine Frist",
       "summary": "Google liefert Gemini 4 Neon (18.11.) — 32 % günstiger pro Aufgabe als Carbon, laut Google vorn, laut Artificial Analysis nur Platz 3: Fähigkeit bleibt Ware · CrowdStrike kauft Fiddler (Agenten-„Flugschreiber“ → Falcon Observe) und Dreadnode (100+ Angriffs-Strategien, MCP/Agent-Reasoning) und schaltet einen AI Kill Switch in Falcon Guardian frei — die Markt-Antwort auf die Kontrollfrage · EU AI Act Art. 50: die 2.-Dezember-Frist betrifft die maschinenlesbare Kennzeichnung KI-generierter Inhalte von Bestands-Generativsystemen (nicht Agenten), Bußgeld bis 15 Mio. €/3 % · Claude Code v2.1.331"
+    },
+    {
+      "date": "2026-11-25",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Rekord-Börsengang, offene Zweifel: Anthropic ist ~1,5 Billionen wert — während die Labore streiten, ob ihre besten Modelle überhaupt erscheinen dürfen",
+      "summary": "Anthropic-IPO: $81,3 Mrd. eingesammelt, ~$1,5 Bio. Bewertung, ANT an der Nasdaq · Anthropic-/OpenAI-Mitarbeiter zweifeln laut Axios, ob Top-Modelle sicher releasebar sind · Amazon kauft Decarts Optimierungs-Tech + Team für ~$7,5 Mrd. (Trainium gegen Nvidia) · GPT-6.2 Sol im ChatGPT-Chat-Tab · Claude Code v2.1.332"
     }
   ]
 }
