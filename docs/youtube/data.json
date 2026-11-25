@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-25T06:15:35+00:00",
+  "last_updated": "2026-11-25T12:01:02+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -182,6 +182,42 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "hwWlEuI359w",
+      "title": "Claude AI’s Biggest Math Breakthrough Has A Problem.",
+      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+      "channel_name": "Two Minute Papers",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-11-25T09:54:23+00:00",
+      "url": "https://www.youtube.com/watch?v=hwWlEuI359w",
+      "thumbnail": "https://img.youtube.com/vi/hwWlEuI359w/mqdefault.jpg",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.com/papers\n\n📝 The paper is available here:\nhttps://nasqret.github.io/riemann-rev/guide/proof-guide.pdf\nhttps://alpo.ge/remark.pdf\n\nCompression and building in public:\n"
+    },
+    {
+      "video_id": "DvQ08TWOCtM",
+      "title": "Grokking Is Just Expensive Therapy for Bad Representations #shorts",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-25T06:43:28+00:00",
+      "url": "https://www.youtube.com/shorts/DvQ08TWOCtM",
+      "thumbnail": "https://img.youtube.com/vi/DvQ08TWOCtM/mqdefault.jpg",
+      "description": "Kenneth Stanley (Lila Sciences) explains why neural networks trained on fractured, entangled representations spend huge compute grokking their way back to the clean, factored structure that open-ended evolution builds naturally.\n\nWatch the "
+    },
+    {
+      "video_id": "ZeplNfEg0WQ",
+      "title": "One Giant AI vs. A Million Specialists: The $1 Quadrillion Problem #shorts",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-25T06:43:03+00:00",
+      "url": "https://www.youtube.com/shorts/ZeplNfEg0WQ",
+      "thumbnail": "https://img.youtube.com/vi/ZeplNfEg0WQ/mqdefault.jpg",
+      "description": "Kenneth Stanley (Lila Sciences, author of Why Greatness Cannot Be Planned) explains why scaling one monolithic AI model runs into a hard wall, and why real open-ended discovery looks more like an ecosystem of diverse specialists than a sing"
+    },
     {
       "video_id": "1u0hTd86_HU",
       "title": "Experiment with SVG & 3D Design with the Codex Plugin",
@@ -747,42 +783,6 @@
       "description": "Operations that complete without interruption, known as 'atomic' operations are extremely useful and allow us to go about our business unimpeded. Matt Godbolt of 'Compiler Explorer' fame explains. \n\nComputerphile is supported by Jane Street"
     },
     {
-      "video_id": "gPNiuyYirfw",
-      "title": "DeepMind’s AI Just Did The Impossible",
-      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
-      "channel_name": "Two Minute Papers",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-11-12T13:41:41+00:00",
-      "url": "https://www.youtube.com/watch?v=gPNiuyYirfw",
-      "thumbnail": "https://img.youtube.com/vi/gPNiuyYirfw/mqdefault.jpg",
-      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.com/papers\n\n📝 The DeepMind paper AlphaProof Code is available here:\nhttps://deepmind.google/blog/introducing-alphaproof-code/\nhttps://deepmind.google/documents/36/Form"
-    },
-    {
-      "video_id": "inwyawObxL4",
-      "title": "AlexNet Left My Old Book in the Dust (Simon Prince) #Shorts",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-12T11:28:24+00:00",
-      "url": "https://www.youtube.com/shorts/inwyawObxL4",
-      "thumbnail": "https://img.youtube.com/vi/inwyawObxL4/mqdefault.jpg",
-      "description": "In 2010 Simon Prince spent a sabbatical in Toronto writing a book that recast computer vision as probabilistic graphical models, with Alex Krizhevsky in the next room. He released it in 2012, a few months before AlexNet came out.\n\nFull conv"
-    },
-    {
-      "video_id": "10glKhm5LW4",
-      "title": "Lying Only Works Because We're Cooperative (Michael Tomasello)",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-12T11:27:47+00:00",
-      "url": "https://www.youtube.com/shorts/10glKhm5LW4",
-      "thumbnail": "https://img.youtube.com/vi/10glKhm5LW4/mqdefault.jpg",
-      "description": "Lying only works because we're cooperative. \"If I tell you it's raining outside, it would never occur to you that I'm lying about that.\" Michael Tomasello, developmental psychologist at Duke University, on why chimpanzees don't lie to one a"
-    },
-    {
       "video_id": "uND6iY2qp_c",
       "title": "AlphaGenome 2: Teaching AI to read the entire human genome",
       "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
@@ -793,22 +793,10 @@
       "url": "https://www.youtube.com/watch?v=uND6iY2qp_c",
       "thumbnail": "https://img.youtube.com/vi/uND6iY2qp_c/mqdefault.jpg",
       "description": "98% of human DNA doesn't build proteins—it controls how our cells work, and holds vital clues to why diseases happen and why 90% of new drugs fail in clinical trials. Understanding the genome at the molecular level is the key to deciphering"
-    },
-    {
-      "video_id": "il0dgxjpoC0",
-      "title": "Local AI 301: Quantization",
-      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
-      "channel_name": "Hugging Face",
-      "category": "lab",
-      "color": "#c39a4a",
-      "published": "2026-11-11T06:39:06+00:00",
-      "url": "https://www.youtube.com/watch?v=il0dgxjpoC0",
-      "thumbnail": "https://img.youtube.com/vi/il0dgxjpoC0/mqdefault.jpg",
-      "description": "Learn about quantization in this livestream and get started with quantization using llama.cpp and vLLM.\nProgram: \n-  Introduction to Quantization, Merve Noyan, Hugging Face\n- Calibration based quantization, Colin Kealty (aka bartowski), Red"
     }
   ],
   "stats": {
-    "total_videos": 52,
+    "total_videos": 51,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
