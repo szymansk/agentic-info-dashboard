@@ -567,9 +567,15 @@
     },
     {
       "date": "2026-11-25",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-11-25.html",
       "headline": "Rekord-Börsengang, offene Zweifel: Anthropic ist ~1,5 Billionen wert — während die Labore streiten, ob ihre besten Modelle überhaupt erscheinen dürfen",
       "summary": "Anthropic-IPO: $81,3 Mrd. eingesammelt, ~$1,5 Bio. Bewertung, ANT an der Nasdaq · Anthropic-/OpenAI-Mitarbeiter zweifeln laut Axios, ob Top-Modelle sicher releasebar sind · Amazon kauft Decarts Optimierungs-Tech + Team für ~$7,5 Mrd. (Trainium gegen Nvidia) · GPT-6.2 Sol im ChatGPT-Chat-Tab · Claude Code v2.1.332"
+    },
+    {
+      "date": "2026-11-26",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Die Rechnung für autonome Agenten: 20 Milliarden fürs Bewerten, 79 % im Einsatz — aber erst 15 % zahlen sich aus",
+      "summary": "Die Schlagzeilen gehören den Modell-Bewertungen, doch der Wert der Agenten-Ökonomie wandert in die Kontrollschicht: Mercor wird mit 20 Mrd. $ fürs Bewerten von Agenten bepreist, eine Genpact-Studie misst die Lücke zwischen Einsatz (79 %) und Wertschöpfung (15 %), Microsoft gibt Agenten eigene Identitäten — und die EU-Transparenzpflichten rücken näher."
     }
   ]
 }

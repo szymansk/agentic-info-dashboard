@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-26T05:00:37+00:00",
+  "last_updated": "2026-11-26T06:15:26+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -130,7 +130,7 @@
     },
     {
       "video_id": "K8rdrWQRd20",
-      "title": "The brain helped us build AI. Now AI is explaining the brain.",
+      "title": "How AI is finding the hidden rules of the human brain",
       "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
       "channel_name": "Google DeepMind",
       "category": "lab",
@@ -182,6 +182,30 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "vDDRbEOyEVc",
+      "title": "AI Engineering Is a Decade Ahead of the Maths #shorts",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-26T05:52:46+00:00",
+      "url": "https://www.youtube.com/shorts/vDDRbEOyEVc",
+      "thumbnail": "https://img.youtube.com/vi/vDDRbEOyEVc/mqdefault.jpg",
+      "description": "Is deep learning alchemy? Julian Gould (Sakana AI) pushes back on that claim and explains why AI carries a growing maths debt, with modern engineering running a decade ahead of our theoretical framework.\n\nSubscribe to Machine Learning Stree"
+    },
+    {
+      "video_id": "4HGQvNT8guw",
+      "title": "The Paradox of Random Noise and Algorithmic Statistics #shorts",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-26T05:32:42+00:00",
+      "url": "https://www.youtube.com/shorts/4HGQvNT8guw",
+      "thumbnail": "https://img.youtube.com/vi/4HGQvNT8guw/mqdefault.jpg",
+      "description": "TV static has maximum Kolmogorov complexity, yet it is completely meaningless. Julian Gould (Sakana AI) explains the paradox of random noise, sophistication, and why algorithmic statistics spent forty years waiting to find its use in modern"
+    },
     {
       "video_id": "nD1X9iYsHT4",
       "title": "Why Rewarding AI for Creativity Causes Mode Collapse #shorts",
@@ -327,30 +351,6 @@
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.com/papers\n\n📝 The paper is available here:\nhttps://nasqret.github.io/riemann-rev/guide/proof-guide.pdf\nhttps://alpo.ge/remark.pdf\n\nCompression and building in public:\n"
     },
     {
-      "video_id": "DvQ08TWOCtM",
-      "title": "Grokking Is Just Expensive Therapy for Bad Representations #shorts",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-25T06:43:28+00:00",
-      "url": "https://www.youtube.com/shorts/DvQ08TWOCtM",
-      "thumbnail": "https://img.youtube.com/vi/DvQ08TWOCtM/mqdefault.jpg",
-      "description": "Kenneth Stanley (Lila Sciences) explains why neural networks trained on fractured, entangled representations spend huge compute grokking their way back to the clean, factored structure that open-ended evolution builds naturally.\n\nWatch the "
-    },
-    {
-      "video_id": "ZeplNfEg0WQ",
-      "title": "One Giant AI vs. A Million Specialists: The $1 Quadrillion Problem #shorts",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-25T06:43:03+00:00",
-      "url": "https://www.youtube.com/shorts/ZeplNfEg0WQ",
-      "thumbnail": "https://img.youtube.com/vi/ZeplNfEg0WQ/mqdefault.jpg",
-      "description": "Kenneth Stanley (Lila Sciences, author of Why Greatness Cannot Be Planned) explains why scaling one monolithic AI model runs into a hard wall, and why real open-ended discovery looks more like an ecosystem of diverse specialists than a sing"
-    },
-    {
       "video_id": "1u0hTd86_HU",
       "title": "Experiment with SVG & 3D Design with the Codex Plugin",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
@@ -376,7 +376,7 @@
     },
     {
       "video_id": "K8rdrWQRd20",
-      "title": "The brain helped us build AI. Now AI is explaining the brain.",
+      "title": "How AI is finding the hidden rules of the human brain",
       "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
       "channel_name": "Google DeepMind",
       "category": "lab",
