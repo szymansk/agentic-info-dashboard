@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-25T12:01:02+00:00",
+  "last_updated": "2026-11-26T05:00:37+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -116,16 +116,16 @@
   ],
   "featured": [
     {
-      "video_id": "1u0hTd86_HU",
-      "title": "Experiment with SVG & 3D Design with the Codex Plugin",
+      "video_id": "C6DENY3rgqg",
+      "title": "You had us at Deployed",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
       "channel_name": "OpenAI",
       "category": "lab",
       "color": "#6ec38b",
-      "published": "2026-11-24T21:32:42+00:00",
-      "url": "https://www.youtube.com/watch?v=1u0hTd86_HU",
-      "thumbnail": "https://img.youtube.com/vi/1u0hTd86_HU/mqdefault.jpg",
-      "description": "Craig Dennis had never drawn an SVG by hand or used Blender. With the SVG & 3D Design plugin for Codex, he shows how to turn a reference image into an editable graphic or 3D model, then ask for changes in plain language.\n\nSee how a small ch",
+      "published": "2026-11-25T23:50:43+00:00",
+      "url": "https://www.youtube.com/watch?v=C6DENY3rgqg",
+      "thumbnail": "https://img.youtube.com/vi/C6DENY3rgqg/mqdefault.jpg",
+      "description": "You had us at deployed. ❤️\n\nWe’re thankful for our customers and everything we’re building together. Thank you for trusting us and sharing what you’re learning along the way.",
       "why": ""
     },
     {
@@ -183,6 +183,138 @@
   ],
   "recent": [
     {
+      "video_id": "nD1X9iYsHT4",
+      "title": "Why Rewarding AI for Creativity Causes Mode Collapse #shorts",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-26T02:19:31+00:00",
+      "url": "https://www.youtube.com/shorts/nD1X9iYsHT4",
+      "thumbnail": "https://img.youtube.com/vi/nD1X9iYsHT4/mqdefault.jpg",
+      "description": "Kenneth Stanley (Lila Sciences, author of Why Greatness Cannot Be Planned) explains why training AI with reinforcement learning to reward creative outputs causes mode collapse immediately, and how Creative Priming avoids collapsing to a sin"
+    },
+    {
+      "video_id": "cgveN7Hc8bE",
+      "title": "Why Naive PhD Students Beat Entrenched Experts in AI #Shorts",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-26T02:19:08+00:00",
+      "url": "https://www.youtube.com/shorts/cgveN7Hc8bE",
+      "thumbnail": "https://img.youtube.com/vi/cgveN7Hc8bE/mqdefault.jpg",
+      "description": "Kenneth Stanley (Lila Sciences, author of Why Greatness Cannot Be Planned) explains why naive PhD students often have a better shot at paradigm-shifting breakthroughs than deeply entrenched experts, drawing on ideas from The Value of Not Kn"
+    },
+    {
+      "video_id": "ngZ1_I_RWS0",
+      "title": "This changed my life...",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-25T23:56:32+00:00",
+      "url": "https://www.youtube.com/shorts/ngZ1_I_RWS0",
+      "thumbnail": "https://img.youtube.com/vi/ngZ1_I_RWS0/mqdefault.jpg",
+      "description": "Don’t miss this Black Friday Deal! https://eightsleep.com/matthewberman use code MATTHEWBERMAN at checkout"
+    },
+    {
+      "video_id": "C6DENY3rgqg",
+      "title": "You had us at Deployed",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-25T23:50:43+00:00",
+      "url": "https://www.youtube.com/watch?v=C6DENY3rgqg",
+      "thumbnail": "https://img.youtube.com/vi/C6DENY3rgqg/mqdefault.jpg",
+      "description": "You had us at deployed. ❤️\n\nWe’re thankful for our customers and everything we’re building together. Thank you for trusting us and sharing what you’re learning along the way."
+    },
+    {
+      "video_id": "nMPyC3s4Q-0",
+      "title": "They're doing what in the arctic?!",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-25T21:42:34+00:00",
+      "url": "https://www.youtube.com/shorts/nMPyC3s4Q-0",
+      "thumbnail": "https://img.youtube.com/vi/nMPyC3s4Q-0/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "iA0ns69dZGM",
+      "title": "RANKING the BEST AI Models for Coding | TIER LIST",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-25T19:28:41+00:00",
+      "url": "https://www.youtube.com/watch?v=iA0ns69dZGM",
+      "thumbnail": "https://img.youtube.com/vi/iA0ns69dZGM/mqdefault.jpg",
+      "description": "HUGE Eight Sleep Black Friday Deal $700 OFF! https://www.eightsleep.com/matthewberman\nUse Code: MATTHEWBERMAN\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward F"
+    },
+    {
+      "video_id": "A4UNP-axGHU",
+      "title": "How your dot can keep work moving while you’re away",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-25T18:21:11+00:00",
+      "url": "https://www.youtube.com/watch?v=A4UNP-axGHU",
+      "thumbnail": "https://img.youtube.com/vi/A4UNP-axGHU/mqdefault.jpg",
+      "description": "Even when you step away for the holidays, work doesn’t always stop. Your dot can help.\n\nRaymond walks through how his dot keeps an eye on ongoing projects, flags what needs his attention, and helps move work forward so he can review and app"
+    },
+    {
+      "video_id": "Jatwf_XOncE",
+      "title": "17 million lines of AI slop just cracked a 167-year-old math problem...",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-11-25T17:19:51+00:00",
+      "url": "https://www.youtube.com/watch?v=Jatwf_XOncE",
+      "thumbnail": "https://img.youtube.com/vi/Jatwf_XOncE/mqdefault.jpg",
+      "description": "Start a free 14-day CodeRabbit Explain trial, no credit card required: https://coderabbit.link/fireship-012\n\nA 41 day conversation with Claude just spat out 17 million lines of Lean that claim to prove the Riemann Hypothesis, the most famou"
+    },
+    {
+      "video_id": "kfGYU_-SuaE",
+      "title": "School Day | Make a day do anything with ChatGPT  (Official)",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-25T16:45:33+00:00",
+      "url": "https://www.youtube.com/watch?v=kfGYU_-SuaE",
+      "thumbnail": "https://img.youtube.com/vi/kfGYU_-SuaE/mqdefault.jpg",
+      "description": "When an unexpected change of plans throws Marla and Ava’s day off course, the pair embark on a spontaneous adventure with a little help from ChatGPT.\n\nChatGPT can move things around, plan trips and create room in your day to spend doing thi"
+    },
+    {
+      "video_id": "hwKct_1ilEQ",
+      "title": "Finances in ChatGPT: A Beginner’s Guide",
+      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
+      "channel_name": "OpenAI",
+      "category": "lab",
+      "color": "#6ec38b",
+      "published": "2026-11-25T14:00:28+00:00",
+      "url": "https://www.youtube.com/watch?v=hwKct_1ilEQ",
+      "thumbnail": "https://img.youtube.com/vi/hwKct_1ilEQ/mqdefault.jpg",
+      "description": "Finances in ChatGPT can help you get a clearer picture of your spending and find ways to make progress toward your financial goals.\n\nIn this video, we'll get you up to speed with the basics of Finances in ChatGPT: connect your bank account,"
+    },
+    {
+      "video_id": "KaraiGjLJAQ",
+      "title": "The Billion-Dollar Blind Spot of AI Benchmarks #shorts",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-25T12:44:54+00:00",
+      "url": "https://www.youtube.com/shorts/KaraiGjLJAQ",
+      "thumbnail": "https://img.youtube.com/vi/KaraiGjLJAQ/mqdefault.jpg",
+      "description": "Kenneth Stanley (Lila Sciences, author of Why Greatness Cannot Be Planned) explains why benchmark-driven AI and tree search miss truly transformative discoveries, because you cannot write a grading rubric for ideas that have not been invent"
+    },
+    {
       "video_id": "hwWlEuI359w",
       "title": "Claude AI’s Biggest Math Breakthrough Has A Problem.",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -231,18 +363,6 @@
       "description": "Craig Dennis had never drawn an SVG by hand or used Blender. With the SVG & 3D Design plugin for Codex, he shows how to turn a reference image into an editable graphic or 3D model, then ask for changes in plain language.\n\nSee how a small ch"
     },
     {
-      "video_id": "p8lvQQebvpg",
-      "title": "How to Search for Exoplanets",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-24T20:00:45+00:00",
-      "url": "https://www.youtube.com/watch?v=p8lvQQebvpg",
-      "thumbnail": "https://img.youtube.com/vi/p8lvQQebvpg/mqdefault.jpg",
-      "description": "Two amateur astronomers, Kevin Bond and Ethan Byrd, independently found signals that could point to planets around distant stars. They knew you didn't need your own telescope for this kind of hunt. \n\nKevin used Codex and Ethan used Astra to"
-    },
-    {
       "video_id": "4nFA4zntF7I",
       "title": "Java4Shell Exploit - Computerphile",
       "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
@@ -265,42 +385,6 @@
       "url": "https://www.youtube.com/watch?v=K8rdrWQRd20",
       "thumbnail": "https://img.youtube.com/vi/K8rdrWQRd20/mqdefault.jpg",
       "description": "The human brain remains one of the greatest unsolved mysteries in science. We have roughly 86 billion neurons firing in a way that somehow produces intelligence, and yet the brain is still largely a black box. In the early days of AI, resea"
-    },
-    {
-      "video_id": "2DUJ2whBJRM",
-      "title": "Make sense of your day | with ChatGPT",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-24T17:14:03+00:00",
-      "url": "https://www.youtube.com/watch?v=2DUJ2whBJRM",
-      "thumbnail": "https://img.youtube.com/vi/2DUJ2whBJRM/mqdefault.jpg",
-      "description": "Snap a photo and ask ChatGPT to help you figure out what you’re looking at, and highlight anything you should double-check."
-    },
-    {
-      "video_id": "4MFBNFyBmQg",
-      "title": "Make a day of it | with ChatGPT",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-24T17:14:01+00:00",
-      "url": "https://www.youtube.com/watch?v=4MFBNFyBmQg",
-      "thumbnail": "https://img.youtube.com/vi/4MFBNFyBmQg/mqdefault.jpg",
-      "description": "ChatGPT can turn a rough idea into the perfect-sized plan for your family. Tell ChatGPT what you’re looking for and it’ll browse sites on your behalf to find local information, and even help you book things."
-    },
-    {
-      "video_id": "Faoam45LT-Q",
-      "title": "Make room in your day | with ChatGPT",
-      "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
-      "channel_name": "OpenAI",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-24T17:13:58+00:00",
-      "url": "https://www.youtube.com/watch?v=Faoam45LT-Q",
-      "thumbnail": "https://img.youtube.com/vi/Faoam45LT-Q/mqdefault.jpg",
-      "description": "A little more time at the park? Connect your calendar and ask ChatGPT to find a later time for your meeting."
     },
     {
       "video_id": "RrepvxPUGko",
@@ -351,18 +435,6 @@
       "description": "What happens when scientists are no longer limited by human attention? OpenAI’s Joy Jiao and Ashoka Rajendra join a16z’s Jay Rughani and Jorge Conde to discuss how AI and thousands of parallel agents could reshape drug discovery and develop"
     },
     {
-      "video_id": "IUcrxIM0K-Y",
-      "title": "AI Just Pours Tokens Into the Problem (Kevin Buzzard)",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-23T10:51:27+00:00",
-      "url": "https://www.youtube.com/shorts/IUcrxIM0K-Y",
-      "thumbnail": "https://img.youtube.com/vi/IUcrxIM0K-Y/mqdefault.jpg",
-      "description": "Kevin Buzzard (Imperial College London) on why human mathematicians redesign definitions when a proof gets too complicated, while AI autoformalisation tools in Lean can just push through by brute force. Mathematics is changing; it isn't cle"
-    },
-    {
       "video_id": "1jPdehG3Hms",
       "title": "Claude AI Solved The Secret Of Black Holes",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -399,30 +471,6 @@
       "description": "Try Grok Bot from SpaceXSI, the sponsor of this video: https://tinyurl.com/yc4b4ymz\n\nAnthropic is now a public company. I look at how its warnings about AI risk square with its pitch to Wall Street, why it restricted Claude subscription acc"
     },
     {
-      "video_id": "INeNb0wwErg",
-      "title": "Chimps Quit When Paid (Michael Tomasello)",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-21T14:30:43+00:00",
-      "url": "https://www.youtube.com/shorts/INeNb0wwErg",
-      "thumbnail": "https://img.youtube.com/vi/INeNb0wwErg/mqdefault.jpg",
-      "description": "Chimpanzees quit the moment they're paid. Children keep working until their partner gets paid too. Michael Tomasello, developmental psychologist at Duke University, on experiments comparing chimpanzees and human children in collaboration, a"
-    },
-    {
-      "video_id": "BoBe0tepch4",
-      "title": "Six Robots Worked a 24-Hour Shift at a Shanghai Convenience Store",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-20T22:53:25+00:00",
-      "url": "https://www.youtube.com/shorts/BoBe0tepch4",
-      "thumbnail": "https://img.youtube.com/vi/BoBe0tepch4/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
       "video_id": "_EFi5y_ULE4",
       "title": "How one college football game nearly bankrupted DoorDash.",
       "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
@@ -457,30 +505,6 @@
       "url": "https://www.youtube.com/watch?v=TtOoLanFzGw",
       "thumbnail": "https://img.youtube.com/vi/TtOoLanFzGw/mqdefault.jpg",
       "description": "David Heinemeier Hansson thinks the agent era is reopening a window in computing that has been closed for decades: the chance to build a new operating system people actually want to use.\n\nDHH joins a16z General Partners Martin Casado and An"
-    },
-    {
-      "video_id": "5eON_8rgKzk",
-      "title": "Gemini 4 Neon is ridiculous...",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-20T02:37:36+00:00",
-      "url": "https://www.youtube.com/watch?v=5eON_8rgKzk",
-      "thumbnail": "https://img.youtube.com/vi/5eON_8rgKzk/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nCheck out Scarlet: https://github.com/Forward-Future/scarlet\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram"
-    },
-    {
-      "video_id": "2qd2LEXDYpo",
-      "title": "I Gave Hark Pro Three Everyday Tasks",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-19T22:36:08+00:00",
-      "url": "https://www.youtube.com/shorts/2qd2LEXDYpo",
-      "thumbnail": "https://img.youtube.com/vi/2qd2LEXDYpo/mqdefault.jpg",
-      "description": "https://hark.link/mattberman\n\nI gave Hark Pro three jobs and kept my hands off the keyboard. First, it sorted my inbox and flagged receipts over $200. Then it ordered dinner through DoorDash. When I asked for a recap, it put the emails, rec"
     },
     {
       "video_id": "TmZ4RCXYsTQ",
@@ -601,18 +625,6 @@
       "url": "https://www.youtube.com/watch?v=JDsFHmq9hlA",
       "thumbnail": "https://img.youtube.com/vi/JDsFHmq9hlA/mqdefault.jpg",
       "description": "What we* make of this moment, will make this moment.\n\n*a food bank in Texas, a PhD student in Tokyo with a floating fish robot, a first-time builder mapping 800 years of Indian history, a developer tracking potholes in Slovenia, and million"
-    },
-    {
-      "video_id": "io7qhEjJoik",
-      "title": "What a Squirrel Does That LLMs Don't (Michael Tomasello)",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-19T14:22:11+00:00",
-      "url": "https://www.youtube.com/watch?v=io7qhEjJoik",
-      "thumbnail": "https://img.youtube.com/vi/io7qhEjJoik/mqdefault.jpg",
-      "description": "Michael Tomasello is a developmental psychologist who spent twenty years at the Max Planck Institute in Germany putting children and great apes into the same experiments, and is now back at Duke University. His book The Evolution of Agency "
     },
     {
       "video_id": "Cy7Wz6Z4TWU",
@@ -747,18 +759,6 @@
       "description": "After finishing this song, it took me 3 months to gather the courage to stand in front of the camera to record it. Hope you Fellow Scholars enjoy it! Thank you so much for the amazing musicians for their help!\n- Vocals: Carolina Padrón\n- Dr"
     },
     {
-      "video_id": "SOwUWPtXQ9I",
-      "title": "Jensen Huang just pulled out of Nvidia...",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-11-12T21:17:10+00:00",
-      "url": "https://www.youtube.com/watch?v=SOwUWPtXQ9I",
-      "thumbnail": "https://img.youtube.com/vi/SOwUWPtXQ9I/mqdefault.jpg",
-      "description": "Manufact is the easiest way to build and deploy your MCP. Get $100 in free credits: https://manufact.com/fireship\n\nJensen Huang just resigned as Nvidia’s CEO four days after admitting to an affair with a suspected Chinese spy whose tiny Sin"
-    },
-    {
       "video_id": "j246dqfIJJg",
       "title": "What could you build with voice? | Andrew Ng #deeplearningai #aiagents",
       "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
@@ -781,22 +781,10 @@
       "url": "https://www.youtube.com/watch?v=BHOw09O3ZsI",
       "thumbnail": "https://img.youtube.com/vi/BHOw09O3ZsI/mqdefault.jpg",
       "description": "Operations that complete without interruption, known as 'atomic' operations are extremely useful and allow us to go about our business unimpeded. Matt Godbolt of 'Compiler Explorer' fame explains. \n\nComputerphile is supported by Jane Street"
-    },
-    {
-      "video_id": "uND6iY2qp_c",
-      "title": "AlphaGenome 2: Teaching AI to read the entire human genome",
-      "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
-      "channel_name": "Google DeepMind",
-      "category": "lab",
-      "color": "#6ec38b",
-      "published": "2026-11-11T18:00:31+00:00",
-      "url": "https://www.youtube.com/watch?v=uND6iY2qp_c",
-      "thumbnail": "https://img.youtube.com/vi/uND6iY2qp_c/mqdefault.jpg",
-      "description": "98% of human DNA doesn't build proteins—it controls how our cells work, and holds vital clues to why diseases happen and why 90% of new drugs fail in clinical trials. Understanding the genome at the molecular level is the key to deciphering"
     }
   ],
   "stats": {
-    "total_videos": 51,
+    "total_videos": 50,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
