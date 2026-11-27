@@ -573,9 +573,15 @@
     },
     {
       "date": "2026-11-26",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-11-26.html",
       "headline": "Die Rechnung für autonome Agenten: 20 Milliarden fürs Bewerten, 79 % im Einsatz — aber erst 15 % zahlen sich aus",
       "summary": "Die Schlagzeilen gehören den Modell-Bewertungen, doch der Wert der Agenten-Ökonomie wandert in die Kontrollschicht: Mercor wird mit 20 Mrd. $ fürs Bewerten von Agenten bepreist, eine Genpact-Studie misst die Lücke zwischen Einsatz (79 %) und Wertschöpfung (15 %), Microsoft gibt Agenten eigene Identitäten — und die EU-Transparenzpflichten rücken näher."
+    },
+    {
+      "date": "2026-11-27",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Die KI-Wette wackelt: Der Chip-Krieg eskaliert, Nvidias Bonität sinkt — und Agenten greifen autonom an",
+      "summary": "US-Chipkontrollen und ein Distillations-Crackdown bremsen Chinas Modelle (Z.AI, Moonshot), Nvidia stoppt Server-Lieferungen nach Südostasien · Moody's und S&P senken den Nvidia-Ausblick, die KI-Handels-Wette wackelt · Anthropic migriert seine Messages-API mit Claude-Agenten von Python nach Rust (−70 % CPU) · Microsoft dokumentiert das ARTEX-Angriffs-Framework, die Schweiz meldet fünf KI-Agenten-Cyberangriffe · OpenAI führt Chat- und Work-Limits zusammen · Kanada stockt seinen Compute-Fonds auf 1 Mrd. C$ auf."
     }
   ]
 }

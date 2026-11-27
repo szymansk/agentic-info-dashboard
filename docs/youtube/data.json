@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-27T05:01:06+00:00",
+  "last_updated": "2026-11-27T06:15:27+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -183,66 +183,6 @@
   ],
   "recent": [
     {
-      "video_id": "vDDRbEOyEVc",
-      "title": "AI Engineering Is a Decade Ahead of the Maths #shorts",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-26T05:52:46+00:00",
-      "url": "https://www.youtube.com/shorts/vDDRbEOyEVc",
-      "thumbnail": "https://img.youtube.com/vi/vDDRbEOyEVc/mqdefault.jpg",
-      "description": "Is deep learning alchemy? Julian Gould (Sakana AI) pushes back on that claim and explains why AI carries a growing maths debt, with modern engineering running a decade ahead of our theoretical framework.\n\nSubscribe to Machine Learning Stree"
-    },
-    {
-      "video_id": "4HGQvNT8guw",
-      "title": "The Paradox of Random Noise and Algorithmic Statistics #shorts",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-26T05:32:42+00:00",
-      "url": "https://www.youtube.com/shorts/4HGQvNT8guw",
-      "thumbnail": "https://img.youtube.com/vi/4HGQvNT8guw/mqdefault.jpg",
-      "description": "TV static has maximum Kolmogorov complexity, yet it is completely meaningless. Julian Gould (Sakana AI) explains the paradox of random noise, sophistication, and why algorithmic statistics spent forty years waiting to find its use in modern"
-    },
-    {
-      "video_id": "nD1X9iYsHT4",
-      "title": "Why Rewarding AI for Creativity Causes Mode Collapse #shorts",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-26T02:19:31+00:00",
-      "url": "https://www.youtube.com/shorts/nD1X9iYsHT4",
-      "thumbnail": "https://img.youtube.com/vi/nD1X9iYsHT4/mqdefault.jpg",
-      "description": "Kenneth Stanley (Lila Sciences, author of Why Greatness Cannot Be Planned) explains why training AI with reinforcement learning to reward creative outputs causes mode collapse immediately, and how Creative Priming avoids collapsing to a sin"
-    },
-    {
-      "video_id": "cgveN7Hc8bE",
-      "title": "Why Naive PhD Students Beat Entrenched Experts in AI #Shorts",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-26T02:19:08+00:00",
-      "url": "https://www.youtube.com/shorts/cgveN7Hc8bE",
-      "thumbnail": "https://img.youtube.com/vi/cgveN7Hc8bE/mqdefault.jpg",
-      "description": "Kenneth Stanley (Lila Sciences, author of Why Greatness Cannot Be Planned) explains why naive PhD students often have a better shot at paradigm-shifting breakthroughs than deeply entrenched experts, drawing on ideas from The Value of Not Kn"
-    },
-    {
-      "video_id": "ngZ1_I_RWS0",
-      "title": "This changed my life...",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-25T23:56:32+00:00",
-      "url": "https://www.youtube.com/shorts/ngZ1_I_RWS0",
-      "thumbnail": "https://img.youtube.com/vi/ngZ1_I_RWS0/mqdefault.jpg",
-      "description": "Don’t miss this Black Friday Deal! https://eightsleep.com/matthewberman use code MATTHEWBERMAN at checkout"
-    },
-    {
       "video_id": "C6DENY3rgqg",
       "title": "You had us at Deployed",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
@@ -253,30 +193,6 @@
       "url": "https://www.youtube.com/watch?v=C6DENY3rgqg",
       "thumbnail": "https://img.youtube.com/vi/C6DENY3rgqg/mqdefault.jpg",
       "description": "You had us at deployed. ❤️\n\nWe’re thankful for our customers and everything we’re building together. Thank you for trusting us and sharing what you’re learning along the way."
-    },
-    {
-      "video_id": "nMPyC3s4Q-0",
-      "title": "They're doing what in the arctic?!",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-25T21:42:34+00:00",
-      "url": "https://www.youtube.com/shorts/nMPyC3s4Q-0",
-      "thumbnail": "https://img.youtube.com/vi/nMPyC3s4Q-0/mqdefault.jpg",
-      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
-    },
-    {
-      "video_id": "iA0ns69dZGM",
-      "title": "RANKING the BEST AI Models for Coding | TIER LIST",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-25T19:28:41+00:00",
-      "url": "https://www.youtube.com/watch?v=iA0ns69dZGM",
-      "thumbnail": "https://img.youtube.com/vi/iA0ns69dZGM/mqdefault.jpg",
-      "description": "HUGE Eight Sleep Black Friday Deal $700 OFF! https://www.eightsleep.com/matthewberman\nUse Code: MATTHEWBERMAN\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward F"
     },
     {
       "video_id": "A4UNP-axGHU",
@@ -327,18 +243,6 @@
       "description": "Finances in ChatGPT can help you get a clearer picture of your spending and find ways to make progress toward your financial goals.\n\nIn this video, we'll get you up to speed with the basics of Finances in ChatGPT: connect your bank account,"
     },
     {
-      "video_id": "KaraiGjLJAQ",
-      "title": "The Billion-Dollar Blind Spot of AI Benchmarks #shorts",
-      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
-      "channel_name": "Machine Learning Street Talk",
-      "category": "podcast",
-      "color": "#b04bd1",
-      "published": "2026-11-25T12:44:54+00:00",
-      "url": "https://www.youtube.com/shorts/KaraiGjLJAQ",
-      "thumbnail": "https://img.youtube.com/vi/KaraiGjLJAQ/mqdefault.jpg",
-      "description": "Kenneth Stanley (Lila Sciences, author of Why Greatness Cannot Be Planned) explains why benchmark-driven AI and tree search miss truly transformative discoveries, because you cannot write a grading rubric for ideas that have not been invent"
-    },
-    {
       "video_id": "hwWlEuI359w",
       "title": "Claude AI’s Biggest Math Breakthrough Has A Problem.",
       "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
@@ -387,16 +291,16 @@
       "description": "The human brain remains one of the greatest unsolved mysteries in science. We have roughly 86 billion neurons firing in a way that somehow produces intelligence, and yet the brain is still largely a black box. In the early days of AI, resea"
     },
     {
-      "video_id": "MkeKXJzJo98",
-      "title": "Did AI JUST Solve Mathematics?",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-24T02:30:08+00:00",
-      "url": "https://www.youtube.com/watch?v=MkeKXJzJo98",
-      "thumbnail": "https://img.youtube.com/vi/MkeKXJzJo98/mqdefault.jpg",
-      "description": "Try Grok Bot by SpaceXSI (starts at $30 with X Subscription Premium): https://tinyurl.com/yc4b4ymz\n\nThis video was fully edited by Scarlet, our free and open source AI video editor: https://github.com/Forward-Future/scarlet\n\n3Blue1Brown: ht"
+      "video_id": "RrepvxPUGko",
+      "title": "Agents that learn while they're idle #deeplearningai #aiagents #oracle",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-24T16:00:17+00:00",
+      "url": "https://www.youtube.com/shorts/RrepvxPUGko",
+      "thumbnail": "https://img.youtube.com/vi/RrepvxPUGko/mqdefault.jpg",
+      "description": "Your agents can learn while they sleep.\n\nWhen an agent isn't serving requests, it can review its past runs, learn from its mistakes, and turn yesterday's traces into reusable skills. A coding agent that spends 10 minutes fixing an error tod"
     },
     {
       "video_id": "jP9yjEDlc4k",
@@ -409,6 +313,18 @@
       "url": "https://www.youtube.com/watch?v=jP9yjEDlc4k",
       "thumbnail": "https://img.youtube.com/vi/jP9yjEDlc4k/mqdefault.jpg",
       "description": "Railway is the smoothest way to deploy software: https://railway.com/?referralCode=fireship\n\nGoogle just dropped Gemini 4 Neon, a mid tier model that somehow outscores its own three week old flagship. Let's break it down.\n\nWant more Fireshi"
+    },
+    {
+      "video_id": "RwYz8XhZiu0",
+      "title": "OpenAI’s Plan to Reinvent Drug Discovery",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-23T15:30:33+00:00",
+      "url": "https://www.youtube.com/watch?v=RwYz8XhZiu0",
+      "thumbnail": "https://img.youtube.com/vi/RwYz8XhZiu0/mqdefault.jpg",
+      "description": "What happens when scientists are no longer limited by human attention? OpenAI’s Joy Jiao and Ashoka Rajendra join a16z’s Jay Rughani and Jorge Conde to discuss how AI and thousands of parallel agents could reshape drug discovery and develop"
     },
     {
       "video_id": "1jPdehG3Hms",
@@ -435,16 +351,16 @@
       "description": "Hypothetical no more\nAnnouncement by Levent Alpöge: https://alpo.ge/remark.pdf\n\nAnnouncement from Alessandro Maria Masullo on his work on GHR: https://sites.google.com/view/tmotp/home\n\n0:00 - Kevin Buzzard\n0:45 - Ken Ono\n1:14 - Elliot Glaze"
     },
     {
-      "video_id": "I0Fasi1-teQ",
-      "title": "I’m Crashing Out About Anthropic",
-      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
-      "channel_name": "Matthew Berman",
-      "category": "news",
-      "color": "#e0a857",
-      "published": "2026-11-21T21:23:31+00:00",
-      "url": "https://www.youtube.com/watch?v=I0Fasi1-teQ",
-      "thumbnail": "https://img.youtube.com/vi/I0Fasi1-teQ/mqdefault.jpg",
-      "description": "Try Grok Bot from SpaceXSI, the sponsor of this video: https://tinyurl.com/yc4b4ymz\n\nAnthropic is now a public company. I look at how its warnings about AI risk square with its pitch to Wall Street, why it restricted Claude subscription acc"
+      "video_id": "_EFi5y_ULE4",
+      "title": "How one college football game nearly bankrupted DoorDash.",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-20T20:00:18+00:00",
+      "url": "https://www.youtube.com/shorts/_EFi5y_ULE4",
+      "thumbnail": "https://img.youtube.com/vi/_EFi5y_ULE4/mqdefault.jpg",
+      "description": "Tony Xu, co-founder and CEO of DoorDash, on the Stanford football Saturday that became a company value.\n\nIt was the fall of 2013, shortly after Xu and three fellow Stanford students started the company. Refunding every customer that night t"
     },
     {
       "video_id": "rMaMe32qQkA",
@@ -457,6 +373,18 @@
       "url": "https://www.youtube.com/watch?v=rMaMe32qQkA",
       "thumbnail": "https://img.youtube.com/vi/rMaMe32qQkA/mqdefault.jpg",
       "description": "Paper gives your coding agent a design canvas built on real HTML and CSS. Try it: https://paper.design/?utm_source=youtube&utm_medium=sponsor&utm_campaign=fireship&utm_content=fireship-1\n\nHackers hijacked 178 major websites through Optimize"
+    },
+    {
+      "video_id": "TtOoLanFzGw",
+      "title": "Why AI Has DHH Working 16-Hour Days",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-20T15:39:04+00:00",
+      "url": "https://www.youtube.com/watch?v=TtOoLanFzGw",
+      "thumbnail": "https://img.youtube.com/vi/TtOoLanFzGw/mqdefault.jpg",
+      "description": "David Heinemeier Hansson thinks the agent era is reopening a window in computing that has been closed for decades: the chance to build a new operating system people actually want to use.\n\nDHH joins a16z General Partners Martin Casado and An"
     },
     {
       "video_id": "TmZ4RCXYsTQ",
@@ -495,6 +423,30 @@
       "description": "GPT 6.2 Astra is OpenAI’s best model, so for each of the last 4 years this would have been the only headline. But now Gemini is catching up fast, with 4 Carbon and Neon, and Anthropic are IPO-ing after promising imminent RSI. And even all t"
     },
     {
+      "video_id": "-aL8XcfEbu0",
+      "title": "Build something big.",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-19T20:00:30+00:00",
+      "url": "https://www.youtube.com/shorts/-aL8XcfEbu0",
+      "thumbnail": "https://img.youtube.com/vi/-aL8XcfEbu0/mqdefault.jpg",
+      "description": "Bridgit Mendler, CEO & Co-Founder at Northwood Space."
+    },
+    {
+      "video_id": "8cPAg4KEtNM",
+      "title": "Andrew Ng on adding voice to his daughter’s math quiz #deeplearningai #aiagents",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-19T20:00:20+00:00",
+      "url": "https://www.youtube.com/shorts/8cPAg4KEtNM",
+      "thumbnail": "https://img.youtube.com/vi/8cPAg4KEtNM/mqdefault.jpg",
+      "description": "How do you want people to feel when they use your app? A friendly spoken question and the chance to answer aloud can make a familiar activity feel more personal. Think about where that kind of exchange could fit in your own project.\nExplore"
+    },
+    {
       "video_id": "FORdPIWOH5k",
       "title": "Is Gemini our path to AGI?",
       "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
@@ -507,6 +459,18 @@
       "description": "Seven years after their last conversation at Google DeepMind’s London office, Professor Hannah Fry reunites with Koray Kavukcuoglu, SVP at Google DeepMind and Chief AI Architect at Google. Back then, DeepMind was focused on specialized brea"
     },
     {
+      "video_id": "H2tmNDX9FnQ",
+      "title": "Full Course: AI Coding Workflows From Cloud to Local",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-19T18:02:34+00:00",
+      "url": "https://www.youtube.com/watch?v=H2tmNDX9FnQ",
+      "thumbnail": "https://img.youtube.com/vi/H2tmNDX9FnQ/mqdefault.jpg",
+      "description": "Coding agents like Claude Code are convenient, but they limit your control over which models you use, what you spend, and where your code goes. This course gives you that control back one layer at a time, rebuilding the same Python app in c"
+    },
+    {
       "video_id": "Qxor6jpfSiU",
       "title": "The only software that didn’t break this week...",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -517,6 +481,18 @@
       "url": "https://www.youtube.com/watch?v=Qxor6jpfSiU",
       "thumbnail": "https://img.youtube.com/vi/Qxor6jpfSiU/mqdefault.jpg",
       "description": "Use all your coding agents side by side in one IDE with JetBrains Air: https://jb.gg/JetBrainsAir-in-IDEs\n\nSolid 2.0 is the framework's first major release in over five years. Why should you care? Let's dive in.\n\nWant more Fireship?\n\n🗞️ New"
+    },
+    {
+      "video_id": "gDW9An30_c0",
+      "title": "Why Nick Bostrom Thinks Superintelligence Could End Aging",
+      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
+      "channel_name": "a16z",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-19T15:30:01+00:00",
+      "url": "https://www.youtube.com/watch?v=gDW9An30_c0",
+      "thumbnail": "https://img.youtube.com/vi/gDW9An30_c0/mqdefault.jpg",
+      "description": "The question isn’t simply whether humanity should race toward superintelligence or stop. Nick Bostrom argues the harder challenge is preserving the ability to slow down when safety falls behind, without turning a temporary pause into perman"
     },
     {
       "video_id": "JDsFHmq9hlA",
@@ -577,6 +553,18 @@
       "url": "https://www.youtube.com/watch?v=EDp4IoAUsXY",
       "thumbnail": "https://img.youtube.com/vi/EDp4IoAUsXY/mqdefault.jpg",
       "description": "Step inside your imagination with Project Genie, now powered by Google DeepMind’s most realistic and interactive world model yet, Genie 4.\n\nProject Genie brings our most advanced world and multimodal models together with Gemini so you can t"
+    },
+    {
+      "video_id": "yvFC-X0pAZY",
+      "title": "Why agents repeat their mistakes #deeplearningai #aiagents #oracle",
+      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
+      "channel_name": "DeepLearningAI",
+      "category": "industry",
+      "color": "#e15a5a",
+      "published": "2026-11-18T14:16:16+00:00",
+      "url": "https://www.youtube.com/shorts/yvFC-X0pAZY",
+      "thumbnail": "https://img.youtube.com/vi/yvFC-X0pAZY/mqdefault.jpg",
+      "description": "Why do AI agents keep making the same mistakes?\n\nMost carry nothing forward between sessions. A coding agent that spends 10 minutes fixing an error today starts from scratch tomorrow. Adaptive agents remember the fix and skip the mistake ne"
     },
     {
       "video_id": "qbsb9DpdZ6s",
@@ -652,13 +640,12 @@
     }
   ],
   "stats": {
-    "total_videos": 39,
+    "total_videos": 38,
     "total_channels": 16,
-    "successful_channels": 13,
+    "successful_channels": 14,
     "failed_channels": [
-      "Andrej Karpathy",
-      "a16z",
-      "DeepLearningAI"
+      "Matthew Berman",
+      "Machine Learning Street Talk"
     ],
     "window_days": 14
   }
