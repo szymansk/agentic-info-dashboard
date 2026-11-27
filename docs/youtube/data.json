@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-27T06:15:27+00:00",
+  "last_updated": "2026-11-27T12:03:39+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -183,6 +183,102 @@
   ],
   "recent": [
     {
+      "video_id": "ZGX2NLLLYkY",
+      "title": "How Tesla Generates Its Third-Person Reality View",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-27T10:57:41+00:00",
+      "url": "https://www.youtube.com/shorts/ZGX2NLLLYkY",
+      "thumbnail": "https://img.youtube.com/vi/ZGX2NLLLYkY/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "SUP5rlVHI0Y",
+      "title": "Simple Scaling of Swarms viaCooperative Multi-agent RL",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-11-27T09:09:34+00:00",
+      "url": "https://www.youtube.com/watch?v=SUP5rlVHI0Y",
+      "thumbnail": "https://img.youtube.com/vi/SUP5rlVHI0Y/mqdefault.jpg",
+      "description": "The Hugging Face research team discuss a simple extension to GRPO for training multi-agent systems of agents to collaborate.\n\nPaper: https://huggingface.co/papers/2611.08615"
+    },
+    {
+      "video_id": "u6UYsl-KEoc",
+      "title": "DeepMind’s New AI Just Changed The AI Race",
+      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
+      "channel_name": "Two Minute Papers",
+      "category": "researcher",
+      "color": "#7aa2f7",
+      "published": "2026-11-27T08:42:30+00:00",
+      "url": "https://www.youtube.com/watch?v=u6UYsl-KEoc",
+      "thumbnail": "https://img.youtube.com/vi/u6UYsl-KEoc/mqdefault.jpg",
+      "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.com/papers\n\n📝 The security report is available here:\nhttps://storage.googleapis.com/deepmind-media/gemini/gemini_4_neon_safety_report.pdf\n\nSources:\n- https://x.com/Pro"
+    },
+    {
+      "video_id": "vDDRbEOyEVc",
+      "title": "AI Engineering Is a Decade Ahead of the Maths #shorts",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-26T05:52:46+00:00",
+      "url": "https://www.youtube.com/shorts/vDDRbEOyEVc",
+      "thumbnail": "https://img.youtube.com/vi/vDDRbEOyEVc/mqdefault.jpg",
+      "description": "Is deep learning alchemy? Julian Gould (Sakana AI) pushes back on that claim and explains why AI carries a growing maths debt, with modern engineering running a decade ahead of our theoretical framework.\n\nSubscribe to Machine Learning Stree"
+    },
+    {
+      "video_id": "4HGQvNT8guw",
+      "title": "The Paradox of Random Noise and Algorithmic Statistics #shorts",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-26T05:32:42+00:00",
+      "url": "https://www.youtube.com/shorts/4HGQvNT8guw",
+      "thumbnail": "https://img.youtube.com/vi/4HGQvNT8guw/mqdefault.jpg",
+      "description": "TV static has maximum Kolmogorov complexity, yet it is completely meaningless. Julian Gould (Sakana AI) explains the paradox of random noise, sophistication, and why algorithmic statistics spent forty years waiting to find its use in modern"
+    },
+    {
+      "video_id": "nD1X9iYsHT4",
+      "title": "Why Rewarding AI for Creativity Causes Mode Collapse #shorts",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-26T02:19:31+00:00",
+      "url": "https://www.youtube.com/shorts/nD1X9iYsHT4",
+      "thumbnail": "https://img.youtube.com/vi/nD1X9iYsHT4/mqdefault.jpg",
+      "description": "Kenneth Stanley (Lila Sciences, author of Why Greatness Cannot Be Planned) explains why training AI with reinforcement learning to reward creative outputs causes mode collapse immediately, and how Creative Priming avoids collapsing to a sin"
+    },
+    {
+      "video_id": "cgveN7Hc8bE",
+      "title": "Why Naive PhD Students Beat Entrenched Experts in AI #Shorts",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-26T02:19:08+00:00",
+      "url": "https://www.youtube.com/shorts/cgveN7Hc8bE",
+      "thumbnail": "https://img.youtube.com/vi/cgveN7Hc8bE/mqdefault.jpg",
+      "description": "Kenneth Stanley (Lila Sciences, author of Why Greatness Cannot Be Planned) explains why naive PhD students often have a better shot at paradigm-shifting breakthroughs than deeply entrenched experts, drawing on ideas from The Value of Not Kn"
+    },
+    {
+      "video_id": "ngZ1_I_RWS0",
+      "title": "This changed my life...",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-25T23:56:32+00:00",
+      "url": "https://www.youtube.com/shorts/ngZ1_I_RWS0",
+      "thumbnail": "https://img.youtube.com/vi/ngZ1_I_RWS0/mqdefault.jpg",
+      "description": "Don’t miss this Black Friday Deal! https://eightsleep.com/matthewberman use code MATTHEWBERMAN at checkout"
+    },
+    {
       "video_id": "C6DENY3rgqg",
       "title": "You had us at Deployed",
       "channel_id": "UCXZCJLdBC09xxGZ6gcdrc6A",
@@ -193,6 +289,30 @@
       "url": "https://www.youtube.com/watch?v=C6DENY3rgqg",
       "thumbnail": "https://img.youtube.com/vi/C6DENY3rgqg/mqdefault.jpg",
       "description": "You had us at deployed. ❤️\n\nWe’re thankful for our customers and everything we’re building together. Thank you for trusting us and sharing what you’re learning along the way."
+    },
+    {
+      "video_id": "nMPyC3s4Q-0",
+      "title": "They're doing what in the arctic?!",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-25T21:42:34+00:00",
+      "url": "https://www.youtube.com/shorts/nMPyC3s4Q-0",
+      "thumbnail": "https://img.youtube.com/vi/nMPyC3s4Q-0/mqdefault.jpg",
+      "description": "Join My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward Future X: https://x.com/forwardfuture\n👉🏻 Instagram: https://www.instagram.com/matthewberman_ai\n👉🏻 Discord: https"
+    },
+    {
+      "video_id": "iA0ns69dZGM",
+      "title": "RANKING the BEST AI Models for Coding | TIER LIST",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-25T19:28:41+00:00",
+      "url": "https://www.youtube.com/watch?v=iA0ns69dZGM",
+      "thumbnail": "https://img.youtube.com/vi/iA0ns69dZGM/mqdefault.jpg",
+      "description": "HUGE Eight Sleep Black Friday Deal $700 OFF! https://www.eightsleep.com/matthewberman\nUse Code: MATTHEWBERMAN\n\nJoin My Newsletter for Regular AI Updates 👇🏼\nhttps://forwardfuture.com\n\nMy Links 🔗\n👉🏻 X: https://x.com/matthewberman\n👉🏻 Forward F"
     },
     {
       "video_id": "A4UNP-axGHU",
@@ -241,6 +361,18 @@
       "url": "https://www.youtube.com/watch?v=hwKct_1ilEQ",
       "thumbnail": "https://img.youtube.com/vi/hwKct_1ilEQ/mqdefault.jpg",
       "description": "Finances in ChatGPT can help you get a clearer picture of your spending and find ways to make progress toward your financial goals.\n\nIn this video, we'll get you up to speed with the basics of Finances in ChatGPT: connect your bank account,"
+    },
+    {
+      "video_id": "KaraiGjLJAQ",
+      "title": "The Billion-Dollar Blind Spot of AI Benchmarks #shorts",
+      "channel_id": "UCMLtBahI5DMrt0NPvDSoIRQ",
+      "channel_name": "Machine Learning Street Talk",
+      "category": "podcast",
+      "color": "#b04bd1",
+      "published": "2026-11-25T12:44:54+00:00",
+      "url": "https://www.youtube.com/shorts/KaraiGjLJAQ",
+      "thumbnail": "https://img.youtube.com/vi/KaraiGjLJAQ/mqdefault.jpg",
+      "description": "Kenneth Stanley (Lila Sciences, author of Why Greatness Cannot Be Planned) explains why benchmark-driven AI and tree search miss truly transformative discoveries, because you cannot write a grading rubric for ideas that have not been invent"
     },
     {
       "video_id": "hwWlEuI359w",
@@ -301,6 +433,18 @@
       "url": "https://www.youtube.com/shorts/RrepvxPUGko",
       "thumbnail": "https://img.youtube.com/vi/RrepvxPUGko/mqdefault.jpg",
       "description": "Your agents can learn while they sleep.\n\nWhen an agent isn't serving requests, it can review its past runs, learn from its mistakes, and turn yesterday's traces into reusable skills. A coding agent that spends 10 minutes fixing an error tod"
+    },
+    {
+      "video_id": "MkeKXJzJo98",
+      "title": "Did AI JUST Solve Mathematics?",
+      "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
+      "channel_name": "Matthew Berman",
+      "category": "news",
+      "color": "#e0a857",
+      "published": "2026-11-24T02:30:08+00:00",
+      "url": "https://www.youtube.com/watch?v=MkeKXJzJo98",
+      "thumbnail": "https://img.youtube.com/vi/MkeKXJzJo98/mqdefault.jpg",
+      "description": "Try Grok Bot by SpaceXSI (starts at $30 with X Subscription Premium): https://tinyurl.com/yc4b4ymz\n\nThis video was fully edited by Scarlet, our free and open source AI video editor: https://github.com/Forward-Future/scarlet\n\n3Blue1Brown: ht"
     },
     {
       "video_id": "jP9yjEDlc4k",
@@ -625,28 +769,13 @@
       "url": "https://www.youtube.com/watch?v=7Yx_7byZiFU",
       "thumbnail": "https://img.youtube.com/vi/7Yx_7byZiFU/mqdefault.jpg",
       "description": "How to use 🤗 Jobs to run any kind of training task when your GPU is too small\n\nCode: https://github.com/scienceetonnante/nanogpt-jobs\n\n00:00 Introduction\n01:21 Model and training code\n02:57 Using Jobs\n04:15 The shell script\n05:35 Run and re"
-    },
-    {
-      "video_id": "x7iwI6WfWS0",
-      "title": "AI Can Do Everything…Except This",
-      "channel_id": "UCbfYPyITQ-7l4upoX8nvctg",
-      "channel_name": "Two Minute Papers",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-11-14T08:40:55+00:00",
-      "url": "https://www.youtube.com/watch?v=x7iwI6WfWS0",
-      "thumbnail": "https://img.youtube.com/vi/x7iwI6WfWS0/mqdefault.jpg",
-      "description": "After finishing this song, it took me 3 months to gather the courage to stand in front of the camera to record it. Hope you Fellow Scholars enjoy it! Thank you so much for the amazing musicians for their help!\n- Vocals: Carolina Padrón\n- Dr"
     }
   ],
   "stats": {
-    "total_videos": 38,
+    "total_videos": 49,
     "total_channels": 16,
-    "successful_channels": 14,
-    "failed_channels": [
-      "Matthew Berman",
-      "Machine Learning Street Talk"
-    ],
+    "successful_channels": 16,
+    "failed_channels": [],
     "window_days": 14
   }
 }
