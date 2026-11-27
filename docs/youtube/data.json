@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-26T12:01:19+00:00",
+  "last_updated": "2026-11-27T05:01:06+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -387,18 +387,6 @@
       "description": "The human brain remains one of the greatest unsolved mysteries in science. We have roughly 86 billion neurons firing in a way that somehow produces intelligence, and yet the brain is still largely a black box. In the early days of AI, resea"
     },
     {
-      "video_id": "RrepvxPUGko",
-      "title": "Agents that learn while they're idle #deeplearningai #aiagents #oracle",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-24T16:00:17+00:00",
-      "url": "https://www.youtube.com/shorts/RrepvxPUGko",
-      "thumbnail": "https://img.youtube.com/vi/RrepvxPUGko/mqdefault.jpg",
-      "description": "Your agents can learn while they sleep.\n\nWhen an agent isn't serving requests, it can review its past runs, learn from its mistakes, and turn yesterday's traces into reusable skills. A coding agent that spends 10 minutes fixing an error tod"
-    },
-    {
       "video_id": "MkeKXJzJo98",
       "title": "Did AI JUST Solve Mathematics?",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
@@ -421,18 +409,6 @@
       "url": "https://www.youtube.com/watch?v=jP9yjEDlc4k",
       "thumbnail": "https://img.youtube.com/vi/jP9yjEDlc4k/mqdefault.jpg",
       "description": "Railway is the smoothest way to deploy software: https://railway.com/?referralCode=fireship\n\nGoogle just dropped Gemini 4 Neon, a mid tier model that somehow outscores its own three week old flagship. Let's break it down.\n\nWant more Fireshi"
-    },
-    {
-      "video_id": "RwYz8XhZiu0",
-      "title": "OpenAI’s Plan to Reinvent Drug Discovery",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-23T15:30:33+00:00",
-      "url": "https://www.youtube.com/watch?v=RwYz8XhZiu0",
-      "thumbnail": "https://img.youtube.com/vi/RwYz8XhZiu0/mqdefault.jpg",
-      "description": "What happens when scientists are no longer limited by human attention? OpenAI’s Joy Jiao and Ashoka Rajendra join a16z’s Jay Rughani and Jorge Conde to discuss how AI and thousands of parallel agents could reshape drug discovery and develop"
     },
     {
       "video_id": "1jPdehG3Hms",
@@ -471,18 +447,6 @@
       "description": "Try Grok Bot from SpaceXSI, the sponsor of this video: https://tinyurl.com/yc4b4ymz\n\nAnthropic is now a public company. I look at how its warnings about AI risk square with its pitch to Wall Street, why it restricted Claude subscription acc"
     },
     {
-      "video_id": "_EFi5y_ULE4",
-      "title": "How one college football game nearly bankrupted DoorDash.",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-20T20:00:18+00:00",
-      "url": "https://www.youtube.com/shorts/_EFi5y_ULE4",
-      "thumbnail": "https://img.youtube.com/vi/_EFi5y_ULE4/mqdefault.jpg",
-      "description": "Tony Xu, co-founder and CEO of DoorDash, on the Stanford football Saturday that became a company value.\n\nIt was the fall of 2013, shortly after Xu and three fellow Stanford students started the company. Refunding every customer that night t"
-    },
-    {
       "video_id": "rMaMe32qQkA",
       "title": "If you’ve deployed anything since 2015, I have bad news...",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -493,18 +457,6 @@
       "url": "https://www.youtube.com/watch?v=rMaMe32qQkA",
       "thumbnail": "https://img.youtube.com/vi/rMaMe32qQkA/mqdefault.jpg",
       "description": "Paper gives your coding agent a design canvas built on real HTML and CSS. Try it: https://paper.design/?utm_source=youtube&utm_medium=sponsor&utm_campaign=fireship&utm_content=fireship-1\n\nHackers hijacked 178 major websites through Optimize"
-    },
-    {
-      "video_id": "TtOoLanFzGw",
-      "title": "Why AI Has DHH Working 16-Hour Days",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-20T15:39:04+00:00",
-      "url": "https://www.youtube.com/watch?v=TtOoLanFzGw",
-      "thumbnail": "https://img.youtube.com/vi/TtOoLanFzGw/mqdefault.jpg",
-      "description": "David Heinemeier Hansson thinks the agent era is reopening a window in computing that has been closed for decades: the chance to build a new operating system people actually want to use.\n\nDHH joins a16z General Partners Martin Casado and An"
     },
     {
       "video_id": "TmZ4RCXYsTQ",
@@ -543,30 +495,6 @@
       "description": "GPT 6.2 Astra is OpenAI’s best model, so for each of the last 4 years this would have been the only headline. But now Gemini is catching up fast, with 4 Carbon and Neon, and Anthropic are IPO-ing after promising imminent RSI. And even all t"
     },
     {
-      "video_id": "-aL8XcfEbu0",
-      "title": "Build something big.",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-19T20:00:30+00:00",
-      "url": "https://www.youtube.com/shorts/-aL8XcfEbu0",
-      "thumbnail": "https://img.youtube.com/vi/-aL8XcfEbu0/mqdefault.jpg",
-      "description": "Bridgit Mendler, CEO & Co-Founder at Northwood Space."
-    },
-    {
-      "video_id": "8cPAg4KEtNM",
-      "title": "Andrew Ng on adding voice to his daughter’s math quiz #deeplearningai #aiagents",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-19T20:00:20+00:00",
-      "url": "https://www.youtube.com/shorts/8cPAg4KEtNM",
-      "thumbnail": "https://img.youtube.com/vi/8cPAg4KEtNM/mqdefault.jpg",
-      "description": "How do you want people to feel when they use your app? A friendly spoken question and the chance to answer aloud can make a familiar activity feel more personal. Think about where that kind of exchange could fit in your own project.\nExplore"
-    },
-    {
       "video_id": "FORdPIWOH5k",
       "title": "Is Gemini our path to AGI?",
       "channel_id": "UCP7jMXSY2xbc3KCAE0MHQ-A",
@@ -579,18 +507,6 @@
       "description": "Seven years after their last conversation at Google DeepMind’s London office, Professor Hannah Fry reunites with Koray Kavukcuoglu, SVP at Google DeepMind and Chief AI Architect at Google. Back then, DeepMind was focused on specialized brea"
     },
     {
-      "video_id": "H2tmNDX9FnQ",
-      "title": "Full Course: AI Coding Workflows From Cloud to Local",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-19T18:02:34+00:00",
-      "url": "https://www.youtube.com/watch?v=H2tmNDX9FnQ",
-      "thumbnail": "https://img.youtube.com/vi/H2tmNDX9FnQ/mqdefault.jpg",
-      "description": "Coding agents like Claude Code are convenient, but they limit your control over which models you use, what you spend, and where your code goes. This course gives you that control back one layer at a time, rebuilding the same Python app in c"
-    },
-    {
       "video_id": "Qxor6jpfSiU",
       "title": "The only software that didn’t break this week...",
       "channel_id": "UCsBjURrPoezykLs9EqgamOA",
@@ -601,18 +517,6 @@
       "url": "https://www.youtube.com/watch?v=Qxor6jpfSiU",
       "thumbnail": "https://img.youtube.com/vi/Qxor6jpfSiU/mqdefault.jpg",
       "description": "Use all your coding agents side by side in one IDE with JetBrains Air: https://jb.gg/JetBrainsAir-in-IDEs\n\nSolid 2.0 is the framework's first major release in over five years. Why should you care? Let's dive in.\n\nWant more Fireship?\n\n🗞️ New"
-    },
-    {
-      "video_id": "gDW9An30_c0",
-      "title": "Why Nick Bostrom Thinks Superintelligence Could End Aging",
-      "channel_id": "UC9cn0TuPq4dnbTY-CBsm8XA",
-      "channel_name": "a16z",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-19T15:30:01+00:00",
-      "url": "https://www.youtube.com/watch?v=gDW9An30_c0",
-      "thumbnail": "https://img.youtube.com/vi/gDW9An30_c0/mqdefault.jpg",
-      "description": "The question isn’t simply whether humanity should race toward superintelligence or stop. Nick Bostrom argues the harder challenge is preserving the ability to slow down when safety falls behind, without turning a temporary pause into perman"
     },
     {
       "video_id": "JDsFHmq9hlA",
@@ -675,20 +579,8 @@
       "description": "Step inside your imagination with Project Genie, now powered by Google DeepMind’s most realistic and interactive world model yet, Genie 4.\n\nProject Genie brings our most advanced world and multimodal models together with Gemini so you can t"
     },
     {
-      "video_id": "yvFC-X0pAZY",
-      "title": "Why agents repeat their mistakes #deeplearningai #aiagents #oracle",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-18T14:16:16+00:00",
-      "url": "https://www.youtube.com/shorts/yvFC-X0pAZY",
-      "thumbnail": "https://img.youtube.com/vi/yvFC-X0pAZY/mqdefault.jpg",
-      "description": "Why do AI agents keep making the same mistakes?\n\nMost carry nothing forward between sessions. A coding agent that spends 10 minutes fixing an error today starts from scratch tomorrow. Adaptive agents remember the fix and skip the mistake ne"
-    },
-    {
       "video_id": "qbsb9DpdZ6s",
-      "title": "This algorithm changed how I think about compression | Information theory, part 3",
+      "title": "This algorithm changed how I think about compression | Compression & Intelligence, part 3",
       "channel_id": "UCYO_jab_esuFRV4b17AJtAw",
       "channel_name": "3Blue1Brown",
       "category": "researcher",
@@ -757,37 +649,17 @@
       "url": "https://www.youtube.com/watch?v=x7iwI6WfWS0",
       "thumbnail": "https://img.youtube.com/vi/x7iwI6WfWS0/mqdefault.jpg",
       "description": "After finishing this song, it took me 3 months to gather the courage to stand in front of the camera to record it. Hope you Fellow Scholars enjoy it! Thank you so much for the amazing musicians for their help!\n- Vocals: Carolina Padrón\n- Dr"
-    },
-    {
-      "video_id": "j246dqfIJJg",
-      "title": "What could you build with voice? | Andrew Ng #deeplearningai #aiagents",
-      "channel_id": "UCcIXc5mJsHVYTZR1maL5l9w",
-      "channel_name": "DeepLearningAI",
-      "category": "industry",
-      "color": "#e15a5a",
-      "published": "2026-11-12T16:00:37+00:00",
-      "url": "https://www.youtube.com/shorts/j246dqfIJJg",
-      "thumbnail": "https://img.youtube.com/vi/j246dqfIJJg/mqdefault.jpg",
-      "description": "The mouse brought point-and-click. Touchscreens opened up mobile apps. What can better voice interfaces make possible?\n\nStart building with Voice for AI Agents and Applications, our course with @VocalBridgeAI  taught by Ashwyn Sharma. You'l"
-    },
-    {
-      "video_id": "BHOw09O3ZsI",
-      "title": "Atomic Operations - Computerphile",
-      "channel_id": "UC9-y-6csu5WGm29I7JiwpnA",
-      "channel_name": "Computerphile",
-      "category": "researcher",
-      "color": "#7aa2f7",
-      "published": "2026-11-12T14:59:29+00:00",
-      "url": "https://www.youtube.com/watch?v=BHOw09O3ZsI",
-      "thumbnail": "https://img.youtube.com/vi/BHOw09O3ZsI/mqdefault.jpg",
-      "description": "Operations that complete without interruption, known as 'atomic' operations are extremely useful and allow us to go about our business unimpeded. Matt Godbolt of 'Compiler Explorer' fame explains. \n\nComputerphile is supported by Jane Street"
     }
   ],
   "stats": {
-    "total_videos": 50,
+    "total_videos": 39,
     "total_channels": 16,
-    "successful_channels": 16,
-    "failed_channels": [],
+    "successful_channels": 13,
+    "failed_channels": [
+      "Andrej Karpathy",
+      "a16z",
+      "DeepLearningAI"
+    ],
     "window_days": 14
   }
 }
