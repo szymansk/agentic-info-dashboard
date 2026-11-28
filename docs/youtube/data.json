@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-27T12:03:39+00:00",
+  "last_updated": "2026-11-28T05:03:02+00:00",
   "channels": [
     {
       "id": "UCPk8m_r6fkUSYmvgCBwq-sw",
@@ -182,6 +182,30 @@
     }
   ],
   "recent": [
+    {
+      "video_id": "sPGzM3ktJVE",
+      "title": "The wild world of tech in 2027...",
+      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
+      "channel_name": "Fireship",
+      "category": "practitioner",
+      "color": "#6ec38b",
+      "published": "2026-11-27T16:08:25+00:00",
+      "url": "https://www.youtube.com/watch?v=sPGzM3ktJVE",
+      "thumbnail": "https://img.youtube.com/vi/sPGzM3ktJVE/mqdefault.jpg",
+      "description": "Get 67% off VPS hosting with Hostinger's Black Friday sale. Use code FIRESHIP for an extra discount - https://hostinger.com/fireship\n\nThe junior dev job is dead, open source is drowning in slop, and npm install is a gamble. Here are 10 tren"
+    },
+    {
+      "video_id": "oFI3ohzJDTY",
+      "title": "AI for Science at Hugging Face",
+      "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
+      "channel_name": "Hugging Face",
+      "category": "lab",
+      "color": "#c39a4a",
+      "published": "2026-11-27T14:00:18+00:00",
+      "url": "https://www.youtube.com/watch?v=oFI3ohzJDTY",
+      "thumbnail": "https://img.youtube.com/vi/oFI3ohzJDTY/mqdefault.jpg",
+      "description": "What does the AI for Science team actually do at Hugging Face? In this deep dive, Aritra sits down with ML researcher Emma to explore Hugging Science (Hugging Face’s initiative to make open-source scientific AI models, datasets, and tools a"
+    },
     {
       "video_id": "ZGX2NLLLYkY",
       "title": "How Tesla Generates Its Third-Person Reality View",
@@ -436,7 +460,7 @@
     },
     {
       "video_id": "MkeKXJzJo98",
-      "title": "Did AI JUST Solve Mathematics?",
+      "title": "Claude Just Solved Mathematics (and people are freaking out…)",
       "channel_id": "UCawZsQWqfGSbCI5yjkdVkTA",
       "channel_name": "Matthew Berman",
       "category": "news",
@@ -747,18 +771,6 @@
       "description": "❤️ Check out Lambda here and sign up for their GPU Cloud: https://lambda.com/papers\n\n📝 The paper is available here:\nhttps://www.kitp.ucsb.edu/sites/default/files/YM_working_group.pdf\nhttps://openai.com/index/building-scientific-understandin"
     },
     {
-      "video_id": "ytmawkPTP24",
-      "title": "Why Microsoft couldn’t fix its own servers for 36 hours...",
-      "channel_id": "UCsBjURrPoezykLs9EqgamOA",
-      "channel_name": "Fireship",
-      "category": "practitioner",
-      "color": "#6ec38b",
-      "published": "2026-11-16T20:18:59+00:00",
-      "url": "https://www.youtube.com/watch?v=ytmawkPTP24",
-      "thumbnail": "https://img.youtube.com/vi/ytmawkPTP24/mqdefault.jpg",
-      "description": "OpenRouter gives you one API for every AI model that routes and governs every request, so your AI is better, faster, and cheaper. Try it free: https://openrouter.ai/?utm_source=fireship&utm_medium=video&utm_campaign=2026-11_dev-sponsorships"
-    },
-    {
       "video_id": "7Yx_7byZiFU",
       "title": "Using Hugging Face Jobs to train a NanoGPT model",
       "channel_id": "UCHlNU7kIZhRgSbhHvFoy72w",
@@ -772,7 +784,7 @@
     }
   ],
   "stats": {
-    "total_videos": 49,
+    "total_videos": 50,
     "total_channels": 16,
     "successful_channels": 16,
     "failed_channels": [],
