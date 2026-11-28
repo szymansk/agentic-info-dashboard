@@ -579,9 +579,15 @@
     },
     {
       "date": "2026-11-27",
-      "url": "/agentic-info-dashboard/ai-news/",
+      "url": "/agentic-info-dashboard/ai-news/archive/2026-11-27.html",
       "headline": "Die KI-Wette wackelt: Der Chip-Krieg eskaliert, Nvidias Bonität sinkt — und Agenten greifen autonom an",
       "summary": "US-Chipkontrollen und ein Distillations-Crackdown bremsen Chinas Modelle (Z.AI, Moonshot), Nvidia stoppt Server-Lieferungen nach Südostasien · Moody's und S&P senken den Nvidia-Ausblick, die KI-Handels-Wette wackelt · Anthropic migriert seine Messages-API mit Claude-Agenten von Python nach Rust (−70 % CPU) · Microsoft dokumentiert das ARTEX-Angriffs-Framework, die Schweiz meldet fünf KI-Agenten-Cyberangriffe · OpenAI führt Chat- und Work-Limits zusammen · Kanada stockt seinen Compute-Fonds auf 1 Mrd. C$ auf."
+    },
+    {
+      "date": "2026-11-28",
+      "url": "/agentic-info-dashboard/ai-news/",
+      "headline": "Agenten schreiben jetzt die Beweise — und keiner kann sie prüfen: Cogentic, der 9/4-Claim und die Verifikations-Lücke",
+      "summary": "Googles Cogentic (Multi-Agenten auf Gemini 4) postet sechs Mathe-Aufsätze, darunter ein behaupteter unbedingter Faktorisierungs-Beweis L[1/3]; OpenAI verortet den Matmul-Exponenten bei 9/4 — beide ohne externes Review, Lean-4-Beweise nicht veröffentlicht · Das Verifikations-Problem: Produktion überholt Prüfung · Persistente Agenten gehen in Produktion: Cognition Devin Bots, Databricks Genie, Perplexity Teammates · Kapital fließt zu vertikalen Agenten (Rox, Traversal, Blue J) und zur Management-Schicht (LangChain)."
     }
   ]
 }
